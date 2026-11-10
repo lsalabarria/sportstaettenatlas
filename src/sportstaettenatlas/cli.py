@@ -1,4 +1,4 @@
-"""Kommandozeile: sportstaettenatlas laden | bauen | werte | anreichern | karte | seite | lauf."""
+"""Kommandozeile: sportstaettenatlas laden | bauen | werte | anreichern | karte | bestand | seite | lauf."""
 
 from __future__ import annotations
 
@@ -235,6 +235,40 @@ def _abgleich(ziel: Path):
     return abgleich
 
 
+def cmd_bestand(args):
+    """Quelldatei (z. B. Atlas-Export) in den Datenbestand daten/<LAND>/*.json überführen."""
+    from .bestand import LESER, README_DATEN, erkenne_format, schreibe_bestand
+
+    quelle, ziel = Path(args.quelle), Path(args.ziel)
+    if not quelle.is_file():
+        raise SystemExit(f"{quelle} nicht gefunden.")
+    fmt = args.format if args.format != "auto" else erkenne_format(quelle)
+    land = args.land.upper()
+    e = schreibe_bestand(LESER[fmt](quelle, land), ziel, land, args.modus)
+    if not (ziel / "README.md").exists():
+        (ziel / "README.md").write_text(README_DATEN, encoding="utf-8")
+    print(f"{quelle.name} ({fmt}) → {ziel}/{land}/")
+    print(f"  neu angelegt:        {e.neu}")
+    if args.modus == "aktualisieren":
+        print(f"  aktualisiert:        {e.aktualisiert}")
+        print(f"  unverändert:         {e.unveraendert}")
+    else:
+        print(
+            f"  schon vorhanden:     {e.behalten} (nicht verändert; --modus aktualisieren überschreibt)"
+        )
+    if e.ohne_lage:
+        print(f"  ohne Koordinate:     {e.ohne_lage} (übersprungen)")
+    if e.doppelt:
+        print(f"  doppelte ID:         {e.doppelt} (nur der erste Eintrag übernommen)")
+    if e.nicht_mehr_in_quelle:
+        print(f"  nicht in der Quelle: {e.nicht_mehr_in_quelle} Dateien (bleiben unverändert)")
+    if e.entfernt:
+        print(
+            "  entfernt (enthielt E-Mail-Adresse): "
+            + ", ".join(f"{k} {v}×" for k, v in sorted(e.entfernt.items()))
+        )
+
+
 def cmd_seite(args):
     """Statische Webseite für GitHub Pages (Ordner docs/) erzeugen."""
     from .seite import schreibe_webseite
@@ -355,6 +389,21 @@ def main(argv: list[str] | None = None) -> None:
     sp.add_argument("--ziel", default=str(DATEN / "out"))
     sp.add_argument("--oeffnen", action="store_true", help="Karte im Browser öffnen")
     sp.set_defaults(func=cmd_karte)
+
+    sp = sub.add_parser(
+        "bestand", help="Quelldatei (z. B. Atlas-Export) in den Datenbestand daten/ überführen"
+    )
+    sp.add_argument("quelle", help="Datei, z. B. der CSV-Export des bisherigen Atlas")
+    sp.add_argument("--format", default="auto", choices=["auto", "atlas-export"])
+    sp.add_argument("--land", default="rp", help="Länderkürzel, bestimmt Ordner und ID-Präfix")
+    sp.add_argument("--ziel", default="daten", help="Ordner des Datenbestands (Standard: daten)")
+    sp.add_argument(
+        "--modus",
+        default="neu",
+        choices=["neu", "aktualisieren"],
+        help="neu: nur fehlende anlegen (Standard); aktualisieren: vorhandene überschreiben",
+    )
+    sp.set_defaults(func=cmd_bestand)
 
     sp = sub.add_parser("seite", help="Webseite für GitHub Pages (Ordner docs/) erzeugen")
     sp.add_argument("--land", default="rp", choices=sorted(QUELLEN))

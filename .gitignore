@@ -1,6 +1,36 @@
+# Rohdaten, Zwischenstände und Ergebnisse der Pipeline (ALKIS, Atlas-Export) – nur lokal.
+# Ins Git gehören nur daten/ (Bestand) und docs/ (Webseite).
 data/
+_transfer/
+
+# Quelldateien mit Kontaktdaten nie versehentlich einchecken
+*.csv
+*.xlsx
+*.xls
+*.gpkg
+*.zip
+
+# Zugangsdaten und lokale Einstellungen
+.env
+.env.*
+*.key
+*.pem
+
+# Python, Werkzeuge
 .venv/
 __pycache__/
 *.pyc
+*.egg-info/
+build/
+dist/
 .pytest_cache/
 .ruff_cache/
+.coverage
+htmlcov/
+
+# Editor und Betriebssystem
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

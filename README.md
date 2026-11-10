@@ -228,6 +228,29 @@ Zum Neuladen einfach die jeweilige Datei bzw. den Ordner löschen.
   Quelle in Klammern. Bei einer Sportanlage folgt der Abschnitt „Sportstätte – gilt für alle
   ihre Anlagen“. In der Legende lässt sich nach Verifikationsstufe filtern.
 
+## Datenbestand im Git (`bestand`)
+
+Der Bestand liegt als **eine JSON-Datei je Sportstätte** im Ordner `daten/`
+(`daten/RP/RP-12345.json`). Ab der ersten Überführung sind diese Dateien die Quelle:
+Änderungen werden dort vorgenommen – direkt auf GitHub oder per Pull Request – und sind
+in der Git-Historie nachvollziehbar.
+
+```bash
+uv run sportstaettenatlas bestand pfad/zum/atlas-export.csv     # erstmalig überführen
+git add daten && git commit -m "Bestand aus dem Atlas-Export übernommen"
+```
+
+- Die ID setzt sich aus Land und Atlas-ID zusammen (`RP-12345`) und bleibt stabil.
+- **Standard (`--modus neu`)**: Nur fehlende Sportstätten werden angelegt; vorhandene
+  Dateien werden nie verändert, weil sie inzwischen gepflegt sein können.
+  `--modus aktualisieren` überschreibt sie mit dem Stand der Quelle (Änderungen zeigt
+  danach `git diff`).
+- Dateien, die in der Quelle fehlen, werden gezählt, aber nicht gelöscht.
+- Kontaktdaten werden nie übernommen: Die Spalte E-Mail wird nicht gelesen, und jeder
+  Wert, der eine E-Mail-Adresse enthält, entfällt.
+- Weitere Quellformate: in `src/sportstaettenatlas/bestand.py` eine Lesefunktion
+  ergänzen und in `LESER` eintragen (`--format`).
+
 ## Webseite veröffentlichen (GitHub Pages)
 
 `seite` erzeugt aus dem Ergebnis eine statische Webseite im Ordner `docs/`. GitHub Pages
