@@ -1,0 +1,176 @@
+# Zuordnung von ALKIS-Werten zu Sportstätten-Typen.
+#
+# Regeln werden je Quelle der Reihe nach geprüft; die erste passende gewinnt.
+# "enthaelt" vergleicht Teilzeichenketten ohne Groß-/Kleinschreibung.
+# Begriffe: Eine SPORTSTÄTTE ist der Standort (Sportpark, Schulsportzentrum, Bad) und
+# besteht aus einer oder mehreren SPORTANLAGEN (Halle, Spielfeld, Becken …).
+# rolle:
+#   sportanlage    – eigenständig nutzbare Sportanlage
+#   gesamtanlage   – Bauwerk, das eher die ganze Sportstätte kennzeichnet (z. B. Stadion)
+#   zubehoer       – Nebengebäude/Bauwerk ohne eigene Sportnutzung (Tribüne, Umkleide)
+# Nebengebäude (zubehoer) außerhalb einer Sportstätten-Fläche werden verworfen.
+# pruefen = true markiert unsichere Zuordnungen für die manuelle Kontrolle.
+#
+# Mit `sportstaettenatlas werte` lassen sich alle im Ausschnitt vorkommenden
+# Werte auflisten, um diese Datei zu verfeinern.
+
+# --- Tatsächliche Nutzung (ave:Nutzung) – Flächen = Sportstätten ---
+# Es werden nur Flächen der Nutzungsart unten berücksichtigt.
+[nutzung]
+nutzart = "Sport-, Freizeit- und Erholungsfläche"
+
+[[nutzung.regel]]
+enthaelt = ["golf"]
+typgruppe = "spezial"
+typ = "golfplatz"
+
+[[nutzung.regel]]
+enthaelt = ["tennis"]
+typgruppe = "spielfeld"
+typ = "tennisanlage"
+
+[[nutzung.regel]]
+enthaelt = ["schwimm", "freibad", "bad"]
+typgruppe = "becken"
+typ = "freibad"
+pruefen = true
+
+# ALKIS fasst "Spielplatz, Bolzplatz" zusammen – meist Kinderspielplätze.
+[[nutzung.regel]]
+enthaelt = ["bolzplatz"]
+typgruppe = "sportgelegenheit"
+typ = "spielplatz_bolzplatz"
+pruefen = true
+
+[[nutzung.regel]]
+enthaelt = ["reit"]
+typgruppe = "spezial"
+typ = "reitanlage"
+
+[[nutzung.regel]]
+enthaelt = ["schieß", "schiess"]
+typgruppe = "spezial"
+typ = "schiessanlage"
+
+# Rennbahn: Motorsport (Nürburgring), auch Pferde- oder Radrennbahnen
+[[nutzung.regel]]
+enthaelt = ["rennbahn"]
+typgruppe = "spezial"
+typ = "rennbahn"
+
+[[nutzung.regel]]
+enthaelt = ["modellflug"]
+typgruppe = "spezial"
+typ = "modellfluggelaende"
+
+[[nutzung.regel]]
+enthaelt = ["eis-", "eisbahn", "rollschuh"]
+typgruppe = "eis"
+typ = "eis_rollschuhbahn"
+
+[[nutzung.regel]]
+enthaelt = ["stadion"]
+typgruppe = "spielfeld"
+typ = "stadion"
+
+[[nutzung.regel]]
+enthaelt = ["sportplatz", "spielfeld"]
+typgruppe = "spielfeld"
+typ = "sportplatz"
+
+# "Sportanlage" ist in ALKIS ein Sammelbegriff für das ganze Gelände einer Sportanlage,
+# oft mit Nebenflächen wie Parkplätzen. Daher eine eigene Gruppe, nicht "spielfeld".
+# "Parken", "Campingplatz", "Verkehrsübungsplatz" bleiben bewusst ohne Regel (kein Sport).
+[[nutzung.regel]]
+enthaelt = ["sport"]
+typgruppe = "unbestimmt"
+typ = "sportanlage_unbestimmt"
+pruefen = true
+
+# --- Gebäude und Bauwerke (ave:GebaeudeBauwerk), Feld "funktion" ---
+# Nebengebäude zuerst, sonst greift z. B. "sportplatz" bei "Gebäude zum Sportplatz".
+[[gebaeude.regel]]
+enthaelt = ["tribüne", "tribuene", "gebäude zum sportplatz", "gebäude im freibad",
+            "badegebäude", "gebäude im stadion", "umkleide", "sportlerheim", "vereinsheim"]
+typgruppe = "zubehoer"
+typ = "nebengebaeude_sport"
+rolle = "zubehoer"
+
+[[gebaeude.regel]]
+enthaelt = ["hallenbad", "schwimmhalle"]
+typgruppe = "becken"
+typ = "hallenbad"
+
+[[gebaeude.regel]]
+enthaelt = ["schwimmbecken"]
+typgruppe = "becken"
+typ = "becken"
+
+[[gebaeude.regel]]
+enthaelt = ["tennishalle"]
+typgruppe = "halle"
+typ = "tennishalle"
+
+[[gebaeude.regel]]
+enthaelt = ["reithalle"]
+typgruppe = "spezial"
+typ = "reithalle"
+
+[[gebaeude.regel]]
+enthaelt = ["eissport", "eishalle", "eisstadion"]
+typgruppe = "eis"
+typ = "eishalle"
+
+[[gebaeude.regel]]
+enthaelt = ["kegel", "bowling"]
+typgruppe = "spezial"
+typ = "kegelbahn"
+
+[[gebaeude.regel]]
+enthaelt = ["schießanlage", "schießstand", "schiessstand", "schießhalle"]
+typgruppe = "spezial"
+typ = "schiessanlage"
+
+[[gebaeude.regel]]
+enthaelt = ["sprungschanze"]
+typgruppe = "spezial"
+typ = "sprungschanze"
+
+[[gebaeude.regel]]
+enthaelt = ["turnhalle", "sporthalle", "sport-, turnhalle", "mehrzweckhalle"]
+typgruppe = "halle"
+typ = "sporthalle"
+
+[[gebaeude.regel]]
+enthaelt = ["laufbahn"]
+typgruppe = "leichtathletik"
+typ = "laufbahn"
+pruefen = true
+
+[[gebaeude.regel]]
+enthaelt = ["rennbahn", "rennstrecke"]
+typgruppe = "spezial"
+typ = "rennbahn"
+
+[[gebaeude.regel]]
+enthaelt = ["tennisplatz"]
+typgruppe = "spielfeld"
+typ = "tennisplatz"
+
+[[gebaeude.regel]]
+enthaelt = ["spielfeld", "sportplatz", "fußballplatz", "fussballplatz"]
+typgruppe = "spielfeld"
+typ = "spielfeld"
+
+[[gebaeude.regel]]
+enthaelt = ["stadion"]
+typgruppe = "spielfeld"
+typ = "stadion"
+rolle = "gesamtanlage"
+pruefen = true
+
+[[gebaeude.regel]]
+enthaelt = ["gebäude für sportzwecke", "sport"]
+typgruppe = "halle"
+typ = "sportgebaeude_unbestimmt"
+pruefen = true
