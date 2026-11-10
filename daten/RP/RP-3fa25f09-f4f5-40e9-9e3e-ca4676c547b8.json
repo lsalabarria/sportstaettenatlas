@@ -1,0 +1,25 @@
+{
+  "id": "RP-3fa25f09-f4f5-40e9-9e3e-ca4676c547b8",
+  "name": "Sporthalle Nelson-Mandela-Realschule plus",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Speestraße",
+    "hausnummer": "12b",
+    "plz": "54290",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.628361,
+    "lat": 49.748555
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "3fa25f09-f4f5-40e9-9e3e-ca4676c547b8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

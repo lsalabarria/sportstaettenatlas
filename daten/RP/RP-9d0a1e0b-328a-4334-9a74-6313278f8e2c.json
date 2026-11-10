@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e0b-328a-4334-9a74-6313278f8e2c",
+  "name": "Bolzplatz Am Wiebelsborn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Wiebelsborn",
+    "plz": "56281",
+    "ort": "Emmelshausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.540052,
+    "lat": 50.152438
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0b-328a-4334-9a74-6313278f8e2c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

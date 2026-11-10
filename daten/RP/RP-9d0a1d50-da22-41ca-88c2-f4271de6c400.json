@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d50-da22-41ca-88c2-f4271de6c400",
+  "name": "Sportplatz Niederdürenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56651",
+    "ort": "Niederdürenbach"
+  },
+  "lage": {
+    "lon": 7.181761,
+    "lat": 50.455322
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-da22-41ca-88c2-f4271de6c400",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

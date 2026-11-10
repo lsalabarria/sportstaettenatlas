@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc54-4546-45d6-a3aa-97f70cdf9cfb",
+  "name": "Queichtalbad Offenbach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Konrad-Lerch-Ring",
+    "hausnummer": "7",
+    "plz": "76877",
+    "ort": "Offenbach an der Queich"
+  },
+  "lage": {
+    "lon": 8.19344,
+    "lat": 49.20085
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc54-4546-45d6-a3aa-97f70cdf9cfb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

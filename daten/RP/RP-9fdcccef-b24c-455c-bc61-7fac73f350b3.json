@@ -1,0 +1,42 @@
+{
+  "id": "RP-9fdcccef-b24c-455c-bc61-7fac73f350b3",
+  "name": "Sportplatz TuS Hahnstätten",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf dem Heideberg",
+    "hausnummer": "2A",
+    "plz": "65623",
+    "ort": "Hahnstätten"
+  },
+  "lage": {
+    "lon": 8.058485,
+    "lat": 50.300874
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccef-b24c-455c-bc61-7fac73f350b3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "RP-9c24bfa9-d668-441a-a3c8-dcc42b53186a",
+  "name": "Außensportbereich der Universität Koblenz-Landau",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Universitätsstraße",
+    "hausnummer": "1",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.556875,
+    "lat": 50.363439
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa9-d668-441a-a3c8-dcc42b53186a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

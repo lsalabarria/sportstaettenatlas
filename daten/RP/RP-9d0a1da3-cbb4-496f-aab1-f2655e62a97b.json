@@ -1,0 +1,40 @@
+{
+  "id": "RP-9d0a1da3-cbb4-496f-aab1-f2655e62a97b",
+  "name": "Sportpark Hillesheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportpark",
+    "plz": "54576",
+    "ort": "Hillesheim"
+  },
+  "lage": {
+    "lon": 6.669018,
+    "lat": 50.288354
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da3-cbb4-496f-aab1-f2655e62a97b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

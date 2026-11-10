@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdccda1-28ac-44bf-af04-6dacc6523152",
+  "name": "Sportplatz Haus Wasserburg Pallottinische Jugendbildungs GmbH",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Pallottistraße",
+    "hausnummer": "2",
+    "plz": "56179",
+    "ort": "Vallendar, Stadt"
+  },
+  "lage": {
+    "lon": 7.626555,
+    "lat": 50.402909
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccda1-28ac-44bf-af04-6dacc6523152",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

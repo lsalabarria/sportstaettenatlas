@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e0c-6876-4efe-9d9b-b95ee2f910fc",
+  "name": "Schießstand Kastellaun",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Graf-Moltke-Straße",
+    "plz": "56288",
+    "ort": "Kastellaun, Stadt"
+  },
+  "lage": {
+    "lon": 7.444382,
+    "lat": 50.056295
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0c-6876-4efe-9d9b-b95ee2f910fc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

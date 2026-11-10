@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7c8a-87e0-4a95-9652-adfcd8d9dd5b",
+  "name": "Turnhalle Gundheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "plz": "67599",
+    "ort": "Gundheim"
+  },
+  "lage": {
+    "lon": 8.239581,
+    "lat": 49.673109
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c8a-87e0-4a95-9652-adfcd8d9dd5b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

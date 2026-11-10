@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdc8-2d29-48a3-8fa5-6c2161a6bd7b",
+  "name": "Sportanlage Bundespolizeiaus- und -fortbildungszentrum Diez",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Limburger Str.",
+    "hausnummer": "146",
+    "plz": "65582",
+    "ort": "Diez, Stadt"
+  },
+  "lage": {
+    "lon": 8.042584,
+    "lat": 50.385789
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdc8-2d29-48a3-8fa5-6c2161a6bd7b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

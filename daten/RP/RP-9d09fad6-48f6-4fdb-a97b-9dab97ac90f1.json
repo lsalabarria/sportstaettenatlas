@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fad6-48f6-4fdb-a97b-9dab97ac90f1",
+  "name": "Sportplatz Ortsgemeinde Anhausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf dem Löh",
+    "hausnummer": "10",
+    "plz": "56584",
+    "ort": "Anhausen"
+  },
+  "lage": {
+    "lon": 7.55851,
+    "lat": 50.497655
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad6-48f6-4fdb-a97b-9dab97ac90f1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

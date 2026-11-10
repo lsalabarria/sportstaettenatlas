@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a91e-8a40-44e6-a199-dcbaa9e0ea40",
+  "name": "Sportplatz Pleisweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schäfergasse",
+    "plz": "76889",
+    "ort": "Pleisweiler-Oberhofen"
+  },
+  "lage": {
+    "lon": 8.007011,
+    "lat": 49.117294
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91e-8a40-44e6-a199-dcbaa9e0ea40",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da6-8297-43a8-8ee9-91a1f7bcac9a",
+  "name": "Kinderspielplatz Dreis-Brück",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hillesheimer Straße",
+    "plz": "54552",
+    "ort": "Dreis-Brück"
+  },
+  "lage": {
+    "lon": 6.792641,
+    "lat": 50.263379
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da6-8297-43a8-8ee9-91a1f7bcac9a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

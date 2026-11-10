@@ -1,0 +1,32 @@
+{
+  "id": "RP-9fdccc89-9784-4afa-b6de-cb22a834f597",
+  "name": "Reit- und Springplatz Weingarten",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "plz": "67366",
+    "ort": "Weingarten (Pfalz)"
+  },
+  "lage": {
+    "lon": 8.287238,
+    "lat": 49.256323
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Springparcours"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc89-9784-4afa-b6de-cb22a834f597",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

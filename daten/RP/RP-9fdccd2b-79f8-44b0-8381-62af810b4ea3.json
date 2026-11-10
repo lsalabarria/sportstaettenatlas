@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdccd2b-79f8-44b0-8381-62af810b4ea3",
+  "name": "Sportanlage an der Kühweide",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gönnheimer Straße",
+    "hausnummer": "18a",
+    "plz": "67127",
+    "ort": "Rödersheim-Gronau"
+  },
+  "lage": {
+    "lon": 8.241692,
+    "lat": 49.432914
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd2b-79f8-44b0-8381-62af810b4ea3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

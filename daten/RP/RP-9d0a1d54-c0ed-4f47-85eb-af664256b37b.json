@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d54-c0ed-4f47-85eb-af664256b37b",
+  "name": "Schießstand Brachtendorf",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Schützenstraße",
+    "plz": "56716",
+    "ort": "Brachtendorf"
+  },
+  "lage": {
+    "lon": 7.233406,
+    "lat": 50.234939
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d54-c0ed-4f47-85eb-af664256b37b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

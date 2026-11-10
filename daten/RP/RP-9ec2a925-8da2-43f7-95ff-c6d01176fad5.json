@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a925-8da2-43f7-95ff-c6d01176fad5",
+  "name": "Sportplatz Seebach Bad Dürkheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Meisterwasental",
+    "hausnummer": "3",
+    "plz": "67098",
+    "ort": "Bad Dürkheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.151045,
+    "lat": 49.449999
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a925-8da2-43f7-95ff-c6d01176fad5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

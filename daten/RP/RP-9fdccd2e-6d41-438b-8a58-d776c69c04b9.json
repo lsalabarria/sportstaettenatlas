@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd2e-6d41-438b-8a58-d776c69c04b9",
+  "name": "Sporthalle Grundschule Hanhofen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "3",
+    "plz": "67374",
+    "ort": "Hanhofen"
+  },
+  "lage": {
+    "lon": 8.345842,
+    "lat": 49.313105
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd2e-6d41-438b-8a58-d776c69c04b9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

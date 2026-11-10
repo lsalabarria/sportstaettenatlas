@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a917-6583-4811-b4f0-710cb00af691",
+  "name": "Wing Tai Alzey – Kampfsport",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Im Viertelgarten",
+    "hausnummer": "6",
+    "plz": "67294",
+    "ort": "Morschheim"
+  },
+  "lage": {
+    "lon": 8.028631,
+    "lat": 49.698448
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a917-6583-4811-b4f0-710cb00af691",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24f4ec-fa35-4a3f-b5ba-0a3c37fee4da",
+  "name": "Sporthalle Lützkampen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Grenzstraße",
+    "hausnummer": "7",
+    "plz": "54617",
+    "ort": "Lützkampen"
+  },
+  "lage": {
+    "lon": 6.185794,
+    "lat": 50.148316
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle Sondermaße"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ec-fa35-4a3f-b5ba-0a3c37fee4da",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

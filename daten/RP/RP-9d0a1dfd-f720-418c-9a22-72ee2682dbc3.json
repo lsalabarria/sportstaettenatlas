@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1dfd-f720-418c-9a22-72ee2682dbc3",
+  "name": "Sportplatz Mörlen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Nassauer Straße",
+    "plz": "57583",
+    "ort": "Mörlen"
+  },
+  "lage": {
+    "lon": 7.886985,
+    "lat": 50.691255
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfd-f720-418c-9a22-72ee2682dbc3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

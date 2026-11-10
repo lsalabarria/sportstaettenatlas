@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a940-9c9d-4e9d-a522-57f7507206c3",
+  "name": "ASV Gräfenhausen E.V. 1949",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zur Holderquelle",
+    "hausnummer": "14",
+    "plz": "76855",
+    "ort": "Annweiler am Trifels, Stadt"
+  },
+  "lage": {
+    "lon": 7.962845,
+    "lat": 49.225404
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a940-9c9d-4e9d-a522-57f7507206c3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

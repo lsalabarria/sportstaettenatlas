@@ -1,0 +1,38 @@
+{
+  "id": "RP-a0044bf0-7db7-4d63-86ea-534a85aa14c3",
+  "name": "Zucht-, Reit- und Fahrverein Langenscheid",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Heckenweg",
+    "hausnummer": "4",
+    "plz": "65558",
+    "ort": "Langenscheid"
+  },
+  "lage": {
+    "lon": 7.955829,
+    "lat": 50.353835
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Springparcours"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0044bf0-7db7-4d63-86ea-534a85aa14c3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

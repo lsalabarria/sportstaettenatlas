@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdb1-e022-4c82-b41b-ad52a13b82dd",
+  "name": "Schießkino Mittelrhein",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Rudolf-Diesel-Straße",
+    "hausnummer": "15",
+    "plz": "56751",
+    "ort": "Polch, Stadt"
+  },
+  "lage": {
+    "lon": 7.315639,
+    "lat": 50.309626
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdb1-e022-4c82-b41b-ad52a13b82dd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

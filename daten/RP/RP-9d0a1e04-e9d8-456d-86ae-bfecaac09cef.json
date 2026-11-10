@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e04-e9d8-456d-86ae-bfecaac09cef",
+  "name": "Tennis Club Bad Bodendorf e. V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Bäderstraße",
+    "hausnummer": "49",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.218918,
+    "lat": 50.5511
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e04-e9d8-456d-86ae-bfecaac09cef",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

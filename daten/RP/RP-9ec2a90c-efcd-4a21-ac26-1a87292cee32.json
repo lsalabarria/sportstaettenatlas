@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90c-efcd-4a21-ac26-1a87292cee32",
+  "name": "Ulmenhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Essenheimer Str.",
+    "hausnummer": "17",
+    "plz": "55270",
+    "ort": "Ober-Olm"
+  },
+  "lage": {
+    "lon": 8.188481,
+    "lat": 49.938922
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Zweifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90c-efcd-4a21-ac26-1a87292cee32",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

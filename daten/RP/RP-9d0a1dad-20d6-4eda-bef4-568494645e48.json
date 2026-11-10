@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d0a1dad-20d6-4eda-bef4-568494645e48",
+  "name": "Sportplatz VfL Oberbieber",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Grafenwiese",
+    "hausnummer": "3",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.497831,
+    "lat": 50.473809
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dad-20d6-4eda-bef4-568494645e48",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

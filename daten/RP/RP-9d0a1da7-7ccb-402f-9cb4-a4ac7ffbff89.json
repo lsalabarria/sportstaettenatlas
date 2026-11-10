@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da7-7ccb-402f-9cb4-a4ac7ffbff89",
+  "name": "Minigolf Gunderath",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Am Kurberg",
+    "plz": "56767",
+    "ort": "Gunderath"
+  },
+  "lage": {
+    "lon": 6.97437,
+    "lat": 50.257713
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bahnengolf"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da7-7ccb-402f-9cb4-a4ac7ffbff89",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

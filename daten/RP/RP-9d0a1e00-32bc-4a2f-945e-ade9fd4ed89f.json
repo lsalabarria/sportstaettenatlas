@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e00-32bc-4a2f-945e-ade9fd4ed89f",
+  "name": "BBS Bad Neuenahr-Ahrweiler",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kreuzstraße",
+    "hausnummer": "120",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.155838,
+    "lat": 50.543669
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e00-32bc-4a2f-945e-ade9fd4ed89f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

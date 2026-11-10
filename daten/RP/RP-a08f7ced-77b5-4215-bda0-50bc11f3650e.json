@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7ced-77b5-4215-bda0-50bc11f3650e",
+  "name": "Neubornhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "15",
+    "plz": "55286",
+    "ort": "Wörrstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.116583,
+    "lat": 49.835982
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ced-77b5-4215-bda0-50bc11f3650e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

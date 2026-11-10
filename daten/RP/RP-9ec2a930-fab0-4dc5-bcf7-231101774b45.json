@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a930-fab0-4dc5-bcf7-231101774b45",
+  "name": "Sporthalle Landsbergschule Obermoschel",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Klausengarten",
+    "hausnummer": "2",
+    "plz": "67823",
+    "ort": "Obermoschel, Stadt"
+  },
+  "lage": {
+    "lon": 7.774886,
+    "lat": 49.725429
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a930-fab0-4dc5-bcf7-231101774b45",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24f4e7-ddcb-421e-a0e4-6f24640d0642",
+  "name": "Sportplatz Röhl",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Speicherer Straße",
+    "hausnummer": "8",
+    "plz": "54636",
+    "ort": "Röhl"
+  },
+  "lage": {
+    "lon": 6.585049,
+    "lat": 49.934405
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e7-ddcb-421e-a0e4-6f24640d0642",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

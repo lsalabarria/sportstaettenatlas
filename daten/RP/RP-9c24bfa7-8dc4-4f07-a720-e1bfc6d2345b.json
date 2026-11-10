@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfa7-8dc4-4f07-a720-e1bfc6d2345b",
+  "name": "Bolzplatz Arenberg",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Pater-Fröhlich-Straße",
+    "hausnummer": "25",
+    "plz": "56077",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.648003,
+    "lat": 50.369494
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa7-8dc4-4f07-a720-e1bfc6d2345b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

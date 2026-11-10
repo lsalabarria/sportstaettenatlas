@@ -1,0 +1,40 @@
+{
+  "id": "RP-9d09faf0-7154-403e-bb57-e29854116bc8",
+  "name": "Sportplatz Schulstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "56414",
+    "ort": "Meudt"
+  },
+  "lage": {
+    "lon": 7.896079,
+    "lat": 50.498369
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf0-7154-403e-bb57-e29854116bc8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

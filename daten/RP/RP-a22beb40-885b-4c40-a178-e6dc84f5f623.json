@@ -1,0 +1,30 @@
+{
+  "id": "RP-a22beb40-885b-4c40-a178-e6dc84f5f623",
+  "name": "Reithalle Neuwied-Oberbieber",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Zum Aubachtal",
+    "hausnummer": "77",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.512741,
+    "lat": 50.476943
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Reithalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a22beb40-885b-4c40-a178-e6dc84f5f623",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

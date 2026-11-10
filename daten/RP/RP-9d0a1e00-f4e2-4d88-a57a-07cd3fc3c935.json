@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1e00-f4e2-4d88-a57a-07cd3fc3c935",
+  "name": "Bella Vita Frauen-Fitness",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Walporzheimer Straße",
+    "hausnummer": "125",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.079686,
+    "lat": 50.532274
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    },
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e00-f4e2-4d88-a57a-07cd3fc3c935",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

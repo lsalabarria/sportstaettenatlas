@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1e0d-68fe-4f6e-bee0-b2abb7e7fc3a",
+  "name": "Institut für Körperschulung",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Kappeler Straße",
+    "hausnummer": "21",
+    "plz": "55481",
+    "ort": "Kirchberg (Hunsrück), Stadt"
+  },
+  "lage": {
+    "lon": 7.407343,
+    "lat": 49.944871
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    },
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0d-68fe-4f6e-bee0-b2abb7e7fc3a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

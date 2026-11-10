@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccc89-e124-42cd-a03f-ae6011f2921c",
+  "name": "Schulzentrum Lingenfeld",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schillerstraße",
+    "hausnummer": "10",
+    "plz": "67360",
+    "ort": "Lingenfeld"
+  },
+  "lage": {
+    "lon": 8.34667,
+    "lat": 49.245232
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc89-e124-42cd-a03f-ae6011f2921c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

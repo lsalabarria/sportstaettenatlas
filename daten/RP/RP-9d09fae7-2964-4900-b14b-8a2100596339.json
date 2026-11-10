@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fae7-2964-4900-b14b-8a2100596339",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Talbachring",
+    "hausnummer": "20",
+    "plz": "54456",
+    "ort": "Tawern"
+  },
+  "lage": {
+    "lon": 6.518403,
+    "lat": 49.672495
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae7-2964-4900-b14b-8a2100596339",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

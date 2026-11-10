@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24f4ef-1ad1-47b9-8541-5df825b0121c",
+  "name": "Sportplatz Habscheid",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Neustraße",
+    "plz": "54597",
+    "ort": "Habscheid"
+  },
+  "lage": {
+    "lon": 6.273847,
+    "lat": 50.189455
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ef-1ad1-47b9-8541-5df825b0121c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

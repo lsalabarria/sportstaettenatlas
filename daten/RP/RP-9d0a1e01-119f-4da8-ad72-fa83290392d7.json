@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e01-119f-4da8-ad72-fa83290392d7",
+  "name": "Körperformen Bad Neuenahr-Ahrweiler - EMS Training",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Wilhelmstraße",
+    "hausnummer": "4",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.099313,
+    "lat": 50.544262
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e01-119f-4da8-ad72-fa83290392d7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

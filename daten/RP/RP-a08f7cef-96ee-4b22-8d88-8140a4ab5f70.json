@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7cef-96ee-4b22-8d88-8140a4ab5f70",
+  "name": "Sporthalle TUS 1893 e.V. Heimersheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Erbes-Büdesheimer Str.",
+    "plz": "55232",
+    "ort": "Alzey, Stadt"
+  },
+  "lage": {
+    "lon": 8.080833,
+    "lat": 49.760447
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cef-96ee-4b22-8d88-8140a4ab5f70",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

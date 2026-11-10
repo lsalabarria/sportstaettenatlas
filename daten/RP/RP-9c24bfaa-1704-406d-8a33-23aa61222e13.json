@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfaa-1704-406d-8a33-23aa61222e13",
+  "name": "Salto Koblenz",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Im Metternicher Feld",
+    "hausnummer": "1",
+    "plz": "56072",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.54974,
+    "lat": 50.373898
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfaa-1704-406d-8a33-23aa61222e13",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

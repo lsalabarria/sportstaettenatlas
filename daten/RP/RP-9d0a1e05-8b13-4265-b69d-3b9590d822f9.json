@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e05-8b13-4265-b69d-3b9590d822f9",
+  "name": "Hocheifelhalle Adenau",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "157",
+    "plz": "53518",
+    "ort": "Adenau, Stadt"
+  },
+  "lage": {
+    "lon": 6.934126,
+    "lat": 50.382255
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e05-8b13-4265-b69d-3b9590d822f9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

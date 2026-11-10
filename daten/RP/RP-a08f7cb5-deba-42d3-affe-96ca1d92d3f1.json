@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7cb5-deba-42d3-affe-96ca1d92d3f1",
+  "name": "Schwimmbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Austraße",
+    "hausnummer": "25",
+    "plz": "66887",
+    "ort": "Jettenbach"
+  },
+  "lage": {
+    "lon": 7.563936,
+    "lat": 49.529612
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb5-deba-42d3-affe-96ca1d92d3f1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

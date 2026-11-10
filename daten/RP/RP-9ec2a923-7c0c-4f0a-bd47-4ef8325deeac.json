@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a923-7c0c-4f0a-bd47-4ef8325deeac",
+  "name": "Modelflugplatz Grünstadt",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "strasse": "Grünstadter Berg",
+    "plz": "67269",
+    "ort": "Grünstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.127597,
+    "lat": 49.554861
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a923-7c0c-4f0a-bd47-4ef8325deeac",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

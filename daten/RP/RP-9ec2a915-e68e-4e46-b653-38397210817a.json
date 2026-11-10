@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a915-e68e-4e46-b653-38397210817a",
+  "name": "Sportplatz Teschenmoschel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "67806",
+    "ort": "Teschenmoschel"
+  },
+  "lage": {
+    "lon": 7.734032,
+    "lat": 49.629675
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a915-e68e-4e46-b653-38397210817a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

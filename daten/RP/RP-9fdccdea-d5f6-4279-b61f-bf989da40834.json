@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdea-d5f6-4279-b61f-bf989da40834",
+  "name": "Trainingshalle der Post SG Kaiserslautern",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Turnerstraße",
+    "hausnummer": "42",
+    "plz": "67659",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.75626,
+    "lat": 49.445551
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdea-d5f6-4279-b61f-bf989da40834",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

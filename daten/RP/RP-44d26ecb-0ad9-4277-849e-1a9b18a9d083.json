@@ -1,0 +1,29 @@
+{
+  "id": "RP-44d26ecb-0ad9-4277-849e-1a9b18a9d083",
+  "name": "Bürgerhaus Heinzenhausen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "18",
+    "plz": "67742",
+    "ort": "Heinzenhausen"
+  },
+  "lage": {
+    "lon": 7.605167,
+    "lat": 49.627587
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "44d26ecb-0ad9-4277-849e-1a9b18a9d083",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

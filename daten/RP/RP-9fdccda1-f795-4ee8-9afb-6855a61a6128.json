@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccda1-f795-4ee8-9afb-6855a61a6128",
+  "name": "Sportanlage Mallendarer Berg",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Albert-Schweitzer-Straße",
+    "hausnummer": "19",
+    "plz": "56179",
+    "ort": "Vallendar, Stadt"
+  },
+  "lage": {
+    "lon": 7.632319,
+    "lat": 50.388416
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccda1-f795-4ee8-9afb-6855a61a6128",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

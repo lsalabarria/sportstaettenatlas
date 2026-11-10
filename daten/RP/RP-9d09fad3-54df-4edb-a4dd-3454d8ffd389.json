@@ -1,0 +1,37 @@
+{
+  "id": "RP-9d09fad3-54df-4edb-a4dd-3454d8ffd389",
+  "name": "SC Rot-Weiß Dattenberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Römerich",
+    "plz": "53547",
+    "ort": "Dattenberg"
+  },
+  "lage": {
+    "lon": 7.294074,
+    "lat": 50.560113
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad3-54df-4edb-a4dd-3454d8ffd389",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

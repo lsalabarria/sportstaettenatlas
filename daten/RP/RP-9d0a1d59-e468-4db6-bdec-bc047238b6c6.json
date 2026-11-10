@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1d59-e468-4db6-bdec-bc047238b6c6",
+  "name": "Beachvolleyballfeld Halsenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kastanienstraße",
+    "plz": "56283",
+    "ort": "Halsenbach"
+  },
+  "lage": {
+    "lon": 7.558154,
+    "lat": 50.175159
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d59-e468-4db6-bdec-bc047238b6c6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a929-fe80-41a6-b63f-a35c1cc44892",
+  "name": "Großwinternheim Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An d. Selzer Mühle",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.076643,
+    "lat": 49.941308
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a929-fe80-41a6-b63f-a35c1cc44892",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "RP-a0d96737-d95b-4852-be49-4f40a9da006d",
+  "name": "Spielplatz Elsterweg",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Elsterweg",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.244221,
+    "lat": 49.974769
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "sportarten": [
+    "Basketball"
+  ],
+  "anlagen": [
+    {
+      "bezeichnung": "Spielplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0d96737-d95b-4852-be49-4f40a9da006d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

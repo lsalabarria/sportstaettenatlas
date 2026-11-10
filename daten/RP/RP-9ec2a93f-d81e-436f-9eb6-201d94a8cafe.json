@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a93f-d81e-436f-9eb6-201d94a8cafe",
+  "name": "Sportanlage Stauferschulzentrum Annweiler",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Herrenteich",
+    "hausnummer": "12",
+    "plz": "76855",
+    "ort": "Annweiler am Trifels, Stadt"
+  },
+  "lage": {
+    "lon": 7.975803,
+    "lat": 49.203081
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93f-d81e-436f-9eb6-201d94a8cafe",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

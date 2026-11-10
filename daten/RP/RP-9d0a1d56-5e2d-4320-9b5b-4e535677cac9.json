@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d56-5e2d-4320-9b5b-4e535677cac9",
+  "name": "Spielplatz Masburg I",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Glockenstraße",
+    "hausnummer": "10",
+    "plz": "56761",
+    "ort": "Masburg"
+  },
+  "lage": {
+    "lon": 7.113067,
+    "lat": 50.241133
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d56-5e2d-4320-9b5b-4e535677cac9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

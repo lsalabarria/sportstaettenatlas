@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcce00-6371-4e14-8f14-f8846e54c7bc",
+  "name": "Bezirkssportanlage Mundenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ebernburgstraße",
+    "hausnummer": "1",
+    "plz": "67065",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.422679,
+    "lat": 49.454585
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce00-6371-4e14-8f14-f8846e54c7bc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

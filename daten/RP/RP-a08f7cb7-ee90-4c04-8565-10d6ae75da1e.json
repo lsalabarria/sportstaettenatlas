@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7cb7-ee90-4c04-8565-10d6ae75da1e",
+  "name": "Sportplatz am Mittelberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hirsauer Straße",
+    "plz": "67749",
+    "ort": "Offenbach-Hundheim"
+  },
+  "lage": {
+    "lon": 7.543885,
+    "lat": 49.616145
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb7-ee90-4c04-8565-10d6ae75da1e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

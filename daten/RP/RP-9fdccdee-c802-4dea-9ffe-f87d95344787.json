@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccdee-c802-4dea-9ffe-f87d95344787",
+  "name": "Sporthalle Bertha von Allebrand",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Stadtwald",
+    "plz": "67663",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.771127,
+    "lat": 49.426424
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdee-c802-4dea-9ffe-f87d95344787",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

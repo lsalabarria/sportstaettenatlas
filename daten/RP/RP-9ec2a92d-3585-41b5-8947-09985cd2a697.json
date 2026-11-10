@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a92d-3585-41b5-8947-09985cd2a697",
+  "name": "Spielplatz Andreas-Holzamer Weg",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Andreas-Holzamer Ring",
+    "plz": "55268",
+    "ort": "Nieder-Olm, Stadt"
+  },
+  "lage": {
+    "lon": 8.216195,
+    "lat": 49.907444
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92d-3585-41b5-8947-09985cd2a697",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

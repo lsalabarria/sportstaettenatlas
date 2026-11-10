@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a904-6a4e-4a8d-836b-1c0eb4bdc422",
+  "name": "Sportgelände in der Nachtweide",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Sportgelände",
+    "hausnummer": "1",
+    "plz": "67150",
+    "ort": "Niederkirchen bei Deidesheim"
+  },
+  "lage": {
+    "lon": 8.222303,
+    "lat": 49.410592
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a904-6a4e-4a8d-836b-1c0eb4bdc422",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

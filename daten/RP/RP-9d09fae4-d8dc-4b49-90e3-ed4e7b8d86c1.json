@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d09fae4-d8dc-4b49-90e3-ed4e7b8d86c1",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Kirchberg",
+    "plz": "54314",
+    "ort": "Hentern"
+  },
+  "lage": {
+    "lon": 6.691342,
+    "lat": 49.615307
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae4-d8dc-4b49-90e3-ed4e7b8d86c1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

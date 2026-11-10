@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a93e-8a2b-4346-9339-c7640e042a26",
+  "name": "EasyFitness Bad Bergzabern",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Friedrich-Ebert-Straße",
+    "hausnummer": "42",
+    "plz": "76887",
+    "ort": "Bad Bergzabern, Stadt"
+  },
+  "lage": {
+    "lon": 7.999163,
+    "lat": 49.093828
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93e-8a2b-4346-9339-c7640e042a26",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

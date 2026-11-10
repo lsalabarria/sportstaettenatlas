@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faef-904b-4d1e-9e10-584a63cd3594",
+  "name": "Sportplatz Steinefrenz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L314",
+    "plz": "56414",
+    "ort": "Steinefrenz"
+  },
+  "lage": {
+    "lon": 7.941563,
+    "lat": 50.459417
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faef-904b-4d1e-9e10-584a63cd3594",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

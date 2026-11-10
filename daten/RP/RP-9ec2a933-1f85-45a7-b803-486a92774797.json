@@ -1,0 +1,41 @@
+{
+  "id": "RP-9ec2a933-1f85-45a7-b803-486a92774797",
+  "name": "Reitclub Neustadt",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Branchweilerhofstraße",
+    "hausnummer": "250",
+    "plz": "67433",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.175744,
+    "lat": 49.355086
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    },
+    {
+      "bezeichnung": "Springparcours"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a933-1f85-45a7-b803-486a92774797",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

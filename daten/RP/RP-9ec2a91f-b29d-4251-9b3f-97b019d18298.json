@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a91f-b29d-4251-9b3f-97b019d18298",
+  "name": "Sportanlage SV Silz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "76857",
+    "ort": "Silz"
+  },
+  "lage": {
+    "lon": 7.940196,
+    "lat": 49.144815
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91f-b29d-4251-9b3f-97b019d18298",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

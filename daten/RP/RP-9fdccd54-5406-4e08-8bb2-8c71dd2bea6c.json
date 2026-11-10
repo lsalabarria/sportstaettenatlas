@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdccd54-5406-4e08-8bb2-8c71dd2bea6c",
+  "name": "Reitstall Oberer",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Mühlstraße",
+    "hausnummer": "8",
+    "plz": "66484",
+    "ort": "Walshausen"
+  },
+  "lage": {
+    "lon": 7.479901,
+    "lat": 49.209479
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd54-5406-4e08-8bb2-8c71dd2bea6c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

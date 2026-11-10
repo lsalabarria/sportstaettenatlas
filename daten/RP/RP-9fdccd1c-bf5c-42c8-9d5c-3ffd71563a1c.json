@@ -1,0 +1,32 @@
+{
+  "id": "RP-9fdccd1c-bf5c-42c8-9d5c-3ffd71563a1c",
+  "name": "Sportanlage im Haseltal",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf dem Kleehügel",
+    "plz": "67706",
+    "ort": "Krickenbach"
+  },
+  "lage": {
+    "lon": 7.664883,
+    "lat": 49.359373
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd1c-bf5c-42c8-9d5c-3ffd71563a1c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

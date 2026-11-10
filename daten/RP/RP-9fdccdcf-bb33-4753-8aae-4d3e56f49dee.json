@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccdcf-bb33-4753-8aae-4d3e56f49dee",
+  "name": "Bolzplatz Hinterwald",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hüttenweg",
+    "plz": "56388",
+    "ort": "Braubach, Stadt"
+  },
+  "lage": {
+    "lon": 7.712565,
+    "lat": 50.27393
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdcf-bb33-4753-8aae-4d3e56f49dee",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

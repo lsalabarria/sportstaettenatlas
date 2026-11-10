@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a922-6961-43c7-a32b-0c29922247ca",
+  "name": "Sport und Freizeithalle Kindenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Andingstraße",
+    "hausnummer": "5",
+    "plz": "67271",
+    "ort": "Kindenheim"
+  },
+  "lage": {
+    "lon": 8.163396,
+    "lat": 49.612188
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a922-6961-43c7-a32b-0c29922247ca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

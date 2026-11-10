@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a93f-9839-4bee-8212-334df39cd1ab",
+  "name": "Freibad Annweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zweibrückenstraße",
+    "hausnummer": "47",
+    "plz": "76855",
+    "ort": "Annweiler am Trifels, Stadt"
+  },
+  "lage": {
+    "lon": 7.951491,
+    "lat": 49.203325
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93f-9839-4bee-8212-334df39cd1ab",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

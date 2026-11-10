@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09face-090b-4ec4-85d7-51455651fccb",
+  "name": "Sportplatz Nauroth",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Heidchen",
+    "plz": "57583",
+    "ort": "Nauroth"
+  },
+  "lage": {
+    "lon": 7.882148,
+    "lat": 50.704752
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09face-090b-4ec4-85d7-51455651fccb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

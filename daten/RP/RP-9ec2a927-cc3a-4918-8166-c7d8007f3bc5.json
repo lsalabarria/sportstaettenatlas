@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a927-cc3a-4918-8166-c7d8007f3bc5",
+  "name": "Sporthalle Rochus-Realschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Nuits-Saint-Georges-Straße",
+    "hausnummer": "4A",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.905345,
+    "lat": 49.946445
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a927-cc3a-4918-8166-c7d8007f3bc5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

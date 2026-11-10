@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d0a1d4e-86ed-459e-a607-6c32cdd015df",
+  "name": "Vischeltalhalle Freisheim",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Erwin-Kessel-Platz",
+    "hausnummer": "1-3",
+    "plz": "53505",
+    "ort": "Berg"
+  },
+  "lage": {
+    "lon": 6.926919,
+    "lat": 50.551519
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4e-86ed-459e-a607-6c32cdd015df",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

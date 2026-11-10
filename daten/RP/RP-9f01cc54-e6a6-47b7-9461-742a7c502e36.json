@@ -1,0 +1,29 @@
+{
+  "id": "RP-9f01cc54-e6a6-47b7-9461-742a7c502e36",
+  "name": "Naturfreibad Meerfeld (Meerfelder Maar)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Naturfreibad Meefelder Maar",
+    "plz": "54531",
+    "ort": "Meerfeld"
+  },
+  "lage": {
+    "lon": 6.76273,
+    "lat": 50.10117
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Naturbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc54-e6a6-47b7-9461-742a7c502e36",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

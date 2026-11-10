@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faf2-064a-4ec6-a632-f0d64f2737a1",
+  "name": "Bolzplatz Oberrod",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "1",
+    "plz": "56479",
+    "ort": "Oberrod"
+  },
+  "lage": {
+    "lon": 8.12649,
+    "lat": 50.583119
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf2-064a-4ec6-a632-f0d64f2737a1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

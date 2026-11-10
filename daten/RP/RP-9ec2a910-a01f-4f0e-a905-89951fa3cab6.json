@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a910-a01f-4f0e-a905-89951fa3cab6",
+  "name": "Sporthalle Grundschule am Goldbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Staatsrat-Schwamb-Straße",
+    "hausnummer": "109",
+    "plz": "55278",
+    "ort": "Undenheim"
+  },
+  "lage": {
+    "lon": 8.232589,
+    "lat": 49.84042
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a910-a01f-4f0e-a905-89951fa3cab6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

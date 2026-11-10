@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d09fae6-bdc0-4c2f-b407-460a52ad2804",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "126",
+    "plz": "54441",
+    "ort": "Schoden"
+  },
+  "lage": {
+    "lon": 6.581559,
+    "lat": 49.637497
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae6-bdc0-4c2f-b407-460a52ad2804",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

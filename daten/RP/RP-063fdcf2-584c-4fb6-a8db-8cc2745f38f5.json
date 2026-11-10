@@ -1,0 +1,29 @@
+{
+  "id": "RP-063fdcf2-584c-4fb6-a8db-8cc2745f38f5",
+  "name": "Sporthalle Friedrich-Ebert-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Veilchenstraße",
+    "hausnummer": "5",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.497911,
+    "lat": 50.473171
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "063fdcf2-584c-4fb6-a8db-8cc2745f38f5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

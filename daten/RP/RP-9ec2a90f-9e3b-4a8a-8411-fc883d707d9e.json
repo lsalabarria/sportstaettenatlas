@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90f-9e3b-4a8a-8411-fc883d707d9e",
+  "name": "Tennisclub Lörzweiler e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Apfelgasse",
+    "hausnummer": "20",
+    "plz": "55296",
+    "ort": "Lörzweiler"
+  },
+  "lage": {
+    "lon": 8.298235,
+    "lat": 49.897478
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90f-9e3b-4a8a-8411-fc883d707d9e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a91b-b654-45e3-a0e6-9e1ce9a1e6da",
+  "name": "Tennisclub Rohrbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Bellensee",
+    "hausnummer": "4",
+    "plz": "76865",
+    "ort": "Rohrbach"
+  },
+  "lage": {
+    "lon": 8.136348,
+    "lat": 49.132637
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91b-b654-45e3-a0e6-9e1ce9a1e6da",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

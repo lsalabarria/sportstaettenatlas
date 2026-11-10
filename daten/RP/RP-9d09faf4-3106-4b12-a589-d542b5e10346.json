@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faf4-3106-4b12-a589-d542b5e10346",
+  "name": "Tennisplätze Herschbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Tennisplatz",
+    "plz": "56249",
+    "ort": "Herschbach"
+  },
+  "lage": {
+    "lon": 7.738262,
+    "lat": 50.581683
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf4-3106-4b12-a589-d542b5e10346",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d09fad7-f736-47e9-bf6b-f161ead2f5a3",
+  "name": "Pferdetraining Westerwald",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Mittelstraße",
+    "hausnummer": "20",
+    "plz": "56305",
+    "ort": "Döttesfeld"
+  },
+  "lage": {
+    "lon": 7.575355,
+    "lat": 50.613018
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad7-f736-47e9-bf6b-f161ead2f5a3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

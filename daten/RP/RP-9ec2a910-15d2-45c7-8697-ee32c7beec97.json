@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a910-15d2-45c7-8697-ee32c7beec97",
+  "name": "Turnhalle Grundschule am Selzbogen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "68",
+    "plz": "55278",
+    "ort": "Hahnheim"
+  },
+  "lage": {
+    "lon": 8.246448,
+    "lat": 49.86228
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a910-15d2-45c7-8697-ee32c7beec97",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

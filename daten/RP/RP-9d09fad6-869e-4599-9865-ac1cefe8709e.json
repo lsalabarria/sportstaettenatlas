@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fad6-869e-4599-9865-ac1cefe8709e",
+  "name": "Sporthalle Grundschule Anhausen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Auf dem Löh",
+    "hausnummer": "5",
+    "plz": "56584",
+    "ort": "Anhausen"
+  },
+  "lage": {
+    "lon": 7.557643,
+    "lat": 50.496969
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad6-869e-4599-9865-ac1cefe8709e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

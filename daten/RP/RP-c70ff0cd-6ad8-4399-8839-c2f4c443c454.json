@@ -1,0 +1,30 @@
+{
+  "id": "RP-c70ff0cd-6ad8-4399-8839-c2f4c443c454",
+  "name": "Historisches Thermalfreibad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Kurgarten",
+    "hausnummer": "1",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.220404,
+    "lat": 50.548474
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "stillgelegt/geschlossen",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "c70ff0cd-6ad8-4399-8839-c2f4c443c454",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

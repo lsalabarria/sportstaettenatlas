@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1df8-53c5-48df-a404-3219e4980336",
+  "name": "Bolzplatz Ettesdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brückenstraße",
+    "plz": "46410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.881318,
+    "lat": 50.39498
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df8-53c5-48df-a404-3219e4980336",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

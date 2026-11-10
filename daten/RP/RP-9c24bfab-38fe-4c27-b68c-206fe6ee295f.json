@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfab-38fe-4c27-b68c-206fe6ee295f",
+  "name": "CGM Arena",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jupp-Gauchel-Straße",
+    "hausnummer": "10",
+    "plz": "56075",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.584737,
+    "lat": 50.331356
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfab-38fe-4c27-b68c-206fe6ee295f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

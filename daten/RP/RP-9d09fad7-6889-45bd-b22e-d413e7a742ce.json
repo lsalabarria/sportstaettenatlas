@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fad7-6889-45bd-b22e-d413e7a742ce",
+  "name": "Sporthalle Urbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "1",
+    "plz": "56317",
+    "ort": "Urbach"
+  },
+  "lage": {
+    "lon": 7.585339,
+    "lat": 50.560059
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad7-6889-45bd-b22e-d413e7a742ce",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

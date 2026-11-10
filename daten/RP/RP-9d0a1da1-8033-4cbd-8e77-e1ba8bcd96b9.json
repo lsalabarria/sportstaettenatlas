@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da1-8033-4cbd-8e77-e1ba8bcd96b9",
+  "name": "Turnhalle Birresborn",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Neustraße",
+    "hausnummer": "7",
+    "plz": "54574",
+    "ort": "Birresborn"
+  },
+  "lage": {
+    "lon": 6.625032,
+    "lat": 50.177732
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da1-8033-4cbd-8e77-e1ba8bcd96b9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

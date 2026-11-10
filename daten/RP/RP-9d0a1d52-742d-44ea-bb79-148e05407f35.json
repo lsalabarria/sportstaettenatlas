@@ -1,0 +1,37 @@
+{
+  "id": "RP-9d0a1d52-742d-44ea-bb79-148e05407f35",
+  "name": "Sportplatz Bremm",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Calmontstraße",
+    "plz": "56814",
+    "ort": "Bremm"
+  },
+  "lage": {
+    "lon": 7.124527,
+    "lat": 50.096945
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d52-742d-44ea-bb79-148e05407f35",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

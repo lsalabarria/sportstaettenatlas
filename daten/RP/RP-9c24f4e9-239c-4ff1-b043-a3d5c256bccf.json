@@ -1,0 +1,40 @@
+{
+  "id": "RP-9c24f4e9-239c-4ff1-b043-a3d5c256bccf",
+  "name": "Sportplatz Air Base",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Air Base",
+    "plz": "54529",
+    "ort": "Spangdahlem"
+  },
+  "lage": {
+    "lon": 6.702774,
+    "lat": 49.984411
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e9-239c-4ff1-b043-a3d5c256bccf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RP-9ec2a93a-ee2b-4155-9aa6-6a4f8164bfde",
+  "name": "TSV Schott Mainz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Karlsbader Straße",
+    "hausnummer": "23",
+    "plz": "55122",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.226886,
+    "lat": 50.010547
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Speerwurfanlage"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93a-ee2b-4155-9aa6-6a4f8164bfde",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

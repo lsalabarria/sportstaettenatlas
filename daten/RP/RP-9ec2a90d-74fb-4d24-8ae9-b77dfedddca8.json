@@ -1,0 +1,38 @@
+{
+  "id": "RP-9ec2a90d-74fb-4d24-8ae9-b77dfedddca8",
+  "name": "Reitanlage Illges-Holl",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Schildweg",
+    "hausnummer": "9",
+    "plz": "55271",
+    "ort": "Stadecken-Elsheim"
+  },
+  "lage": {
+    "lon": 8.144591,
+    "lat": 49.905519
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90d-74fb-4d24-8ae9-b77dfedddca8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

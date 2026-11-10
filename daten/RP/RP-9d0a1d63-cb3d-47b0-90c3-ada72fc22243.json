@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d63-cb3d-47b0-90c3-ada72fc22243",
+  "name": "DFB Minifeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "43",
+    "plz": "54424",
+    "ort": "Thalfang"
+  },
+  "lage": {
+    "lon": 6.99227,
+    "lat": 49.758765
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d63-cb3d-47b0-90c3-ada72fc22243",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

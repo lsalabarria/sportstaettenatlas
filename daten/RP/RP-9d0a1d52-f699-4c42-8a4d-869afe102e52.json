@@ -1,0 +1,44 @@
+{
+  "id": "RP-9d0a1d52-f699-4c42-8a4d-869afe102e52",
+  "name": "St. Martinus Grundschule Ediger-Eller Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Paulusstraße",
+    "hausnummer": "48",
+    "plz": "56814",
+    "ort": "Ediger-Eller"
+  },
+  "lage": {
+    "lon": 7.151275,
+    "lat": 50.097698
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d52-f699-4c42-8a4d-869afe102e52",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

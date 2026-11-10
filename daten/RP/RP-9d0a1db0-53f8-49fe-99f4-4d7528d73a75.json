@@ -1,0 +1,40 @@
+{
+  "id": "RP-9d0a1db0-53f8-49fe-99f4-4d7528d73a75",
+  "name": "Kaiserbergstadion Linz am Rhein",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Kaiserberg",
+    "plz": "53545",
+    "ort": "Linz am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.288193,
+    "lat": 50.565378
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db0-53f8-49fe-99f4-4d7528d73a75",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

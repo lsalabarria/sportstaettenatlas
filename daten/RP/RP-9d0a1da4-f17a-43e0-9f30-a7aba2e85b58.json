@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da4-f17a-43e0-9f30-a7aba2e85b58",
+  "name": "Grundschule Dockweiler",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "6",
+    "plz": "54552",
+    "ort": "Dockweiler"
+  },
+  "lage": {
+    "lon": 6.783672,
+    "lat": 50.253458
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da4-f17a-43e0-9f30-a7aba2e85b58",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

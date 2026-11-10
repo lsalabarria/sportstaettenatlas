@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a90b-a8a1-4ec5-ae3f-c16c615006a2",
+  "name": "Bolzplatz Am Heidesheimer Weg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Heidesheimer Weg",
+    "plz": "55257",
+    "ort": "Budenheim"
+  },
+  "lage": {
+    "lon": 8.160462,
+    "lat": 50.020385
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90b-a8a1-4ec5-ae3f-c16c615006a2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

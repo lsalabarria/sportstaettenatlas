@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc5a-5381-4435-be7f-a393952cd0e0",
+  "name": "Freibad Unnau",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schwimmbadstraße",
+    "hausnummer": "31",
+    "plz": "57648",
+    "ort": "Unnau"
+  },
+  "lage": {
+    "lon": 7.911808,
+    "lat": 50.605237
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc5a-5381-4435-be7f-a393952cd0e0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faea-4d9a-4a4a-872f-2ea65f711c96",
+  "name": "Sportplatz Stahlhofen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "plz": "56412",
+    "ort": "Stahlhofen"
+  },
+  "lage": {
+    "lon": 7.855403,
+    "lat": 50.399
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faea-4d9a-4a4a-872f-2ea65f711c96",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

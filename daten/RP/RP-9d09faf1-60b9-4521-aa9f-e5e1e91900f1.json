@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faf1-60b9-4521-aa9f-e5e1e91900f1",
+  "name": "Verein für deutsche Schäferhunde e.V",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Tanneck",
+    "hausnummer": "1",
+    "plz": "56459",
+    "ort": "Kaden"
+  },
+  "lage": {
+    "lon": 7.899837,
+    "lat": 50.554479
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf1-60b9-4521-aa9f-e5e1e91900f1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

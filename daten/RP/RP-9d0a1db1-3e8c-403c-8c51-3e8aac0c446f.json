@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db1-3e8c-403c-8c51-3e8aac0c446f",
+  "name": "Fit-Up Rhein-Wied",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Igelweg",
+    "hausnummer": "2B",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.542996,
+    "lat": 50.434963
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db1-3e8c-403c-8c51-3e8aac0c446f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

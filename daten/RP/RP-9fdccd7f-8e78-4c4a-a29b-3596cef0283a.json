@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd7f-8e78-4c4a-a29b-3596cef0283a",
+  "name": "Sportanlage TSG Godramstein",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "50",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.073294,
+    "lat": 49.209081
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd7f-8e78-4c4a-a29b-3596cef0283a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

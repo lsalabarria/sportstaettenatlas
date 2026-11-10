@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fae4-c053-4572-ba5b-1576badae4cb",
+  "name": "Reitanlage Kimmlerhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Kimmlerhof",
+    "plz": "54314",
+    "ort": "Schömerich"
+  },
+  "lage": {
+    "lon": 6.710293,
+    "lat": 49.633981
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae4-c053-4572-ba5b-1576badae4cb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

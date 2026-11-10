@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d63-a6e3-4646-8614-72cffaaff798",
+  "name": "Erholungs- und Gesundheitszentrum",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Talstraße",
+    "hausnummer": "3",
+    "plz": "54424",
+    "ort": "Thalfang"
+  },
+  "lage": {
+    "lon": 6.998882,
+    "lat": 49.750595
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d63-a6e3-4646-8614-72cffaaff798",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

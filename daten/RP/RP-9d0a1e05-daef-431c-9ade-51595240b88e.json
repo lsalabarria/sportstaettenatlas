@@ -1,0 +1,40 @@
+{
+  "id": "RP-9d0a1e05-daef-431c-9ade-51595240b88e",
+  "name": "Rheinstadion Bad Breisig",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Remagener Straße",
+    "plz": "53498",
+    "ort": "Bad Breisig, Stadt"
+  },
+  "lage": {
+    "lon": 7.290504,
+    "lat": 50.519471
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Stabhochsprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e05-daef-431c-9ade-51595240b88e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

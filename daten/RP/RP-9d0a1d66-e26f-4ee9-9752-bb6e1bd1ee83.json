@@ -1,0 +1,43 @@
+{
+  "id": "RP-9d0a1d66-e26f-4ee9-9752-bb6e1bd1ee83",
+  "name": "Mittelmosel-Sportanlage",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Brühl",
+    "plz": "54487",
+    "ort": "Wintrich"
+  },
+  "lage": {
+    "lon": 6.949215,
+    "lat": 49.884908
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d66-e26f-4ee9-9752-bb6e1bd1ee83",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

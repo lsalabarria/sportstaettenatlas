@@ -1,0 +1,35 @@
+{
+  "id": "RP-9ec2a907-baa2-4af1-840c-dc4eeb53c1c5",
+  "name": "Grundschule Petersackerhof Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "19",
+    "plz": "55413",
+    "ort": "Oberdiebach"
+  },
+  "lage": {
+    "lon": 7.799718,
+    "lat": 50.037903
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a907-baa2-4af1-840c-dc4eeb53c1c5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

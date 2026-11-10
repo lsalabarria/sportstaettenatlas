@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24f4e5-f48b-44b7-a15c-f7e7ccdbcb70",
+  "name": "Bolzplatz Brimingen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dorfstraße",
+    "plz": "54646",
+    "ort": "Brimingen"
+  },
+  "lage": {
+    "lon": 6.364773,
+    "lat": 49.969887
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e5-f48b-44b7-a15c-f7e7ccdbcb70",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "RP-9ec2a930-5c7e-484e-b3de-22b36212a496",
+  "name": "Stadion Obermühle",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Obermühle",
+    "plz": "67806",
+    "ort": "Rockenhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.82068,
+    "lat": 49.621024
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a930-5c7e-484e-b3de-22b36212a496",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

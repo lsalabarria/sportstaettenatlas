@@ -1,0 +1,41 @@
+{
+  "id": "RP-9d0a1dfb-adbe-461e-b3cc-7ee725724156",
+  "name": "netclusive Arena",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Stadionstraße",
+    "hausnummer": "2-4",
+    "plz": "56457",
+    "ort": "Westerburg, Stadt"
+  },
+  "lage": {
+    "lon": 7.985191,
+    "lat": 50.559598
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfb-adbe-461e-b3cc-7ee725724156",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

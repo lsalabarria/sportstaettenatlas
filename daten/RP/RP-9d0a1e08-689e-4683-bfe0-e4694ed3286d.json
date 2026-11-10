@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1e08-689e-4683-bfe0-e4694ed3286d",
+  "name": "Sportplatz St. Aldegund",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Moselstausee",
+    "plz": "56858",
+    "ort": "Sankt Aldegund"
+  },
+  "lage": {
+    "lon": 7.130815,
+    "lat": 50.077645
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e08-689e-4683-bfe0-e4694ed3286d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

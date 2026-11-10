@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad4-ecfc-4a0f-b8a8-04b0dc30d324",
+  "name": "Grundschulhalle Windhagen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Sportpark",
+    "plz": "53578",
+    "ort": "Windhagen"
+  },
+  "lage": {
+    "lon": 7.352957,
+    "lat": 50.636068
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad4-ecfc-4a0f-b8a8-04b0dc30d324",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

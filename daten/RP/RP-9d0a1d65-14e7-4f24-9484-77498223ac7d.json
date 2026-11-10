@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d0a1d65-14e7-4f24-9484-77498223ac7d",
+  "name": "Bolzplatz Morbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "54497",
+    "ort": "Morbach"
+  },
+  "lage": {
+    "lon": 7.128624,
+    "lat": 49.807806
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d65-14e7-4f24-9484-77498223ac7d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

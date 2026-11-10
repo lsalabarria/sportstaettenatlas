@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da6-e6aa-4253-bbe8-25c17a515ed9",
+  "name": "Bolzplatz Berenbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Brückenstraße",
+    "plz": "56766",
+    "ort": "Berenbach"
+  },
+  "lage": {
+    "lon": 6.955606,
+    "lat": 50.232622
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da6-e6aa-4253-bbe8-25c17a515ed9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

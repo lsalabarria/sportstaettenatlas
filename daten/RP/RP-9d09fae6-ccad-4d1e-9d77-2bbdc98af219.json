@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d09fae6-ccad-4d1e-9d77-2bbdc98af219",
+  "name": "Beachvolleyballfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "54441",
+    "ort": "Schoden"
+  },
+  "lage": {
+    "lon": 6.57541,
+    "lat": 49.634967
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae6-ccad-4d1e-9d77-2bbdc98af219",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

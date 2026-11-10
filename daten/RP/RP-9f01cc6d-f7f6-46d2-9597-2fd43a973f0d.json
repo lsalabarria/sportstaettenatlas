@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc6d-f7f6-46d2-9597-2fd43a973f0d",
+  "name": "Mineral Thermalbad Bad Münster am Stein",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kurhausstraße",
+    "hausnummer": "43",
+    "plz": "55583",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.84389,
+    "lat": 49.80818
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6d-f7f6-46d2-9597-2fd43a973f0d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

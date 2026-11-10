@@ -1,0 +1,28 @@
+{
+  "id": "RP-a08f7cb1-190d-4cbc-99b3-17de53ccc930",
+  "name": "Sportplatz Börsborn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "66904",
+    "ort": "Börsborn"
+  },
+  "lage": {
+    "lon": 7.408284,
+    "lat": 49.440576
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb1-190d-4cbc-99b3-17de53ccc930",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

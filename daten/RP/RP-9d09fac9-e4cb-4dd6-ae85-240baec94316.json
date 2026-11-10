@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d09fac9-e4cb-4dd6-ae85-240baec94316",
+  "name": "TC-RW Flammersfeld",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Siebengebirgsstraße",
+    "hausnummer": "14",
+    "plz": "57632",
+    "ort": "Flammersfeld"
+  },
+  "lage": {
+    "lon": 7.521584,
+    "lat": 50.646901
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac9-e4cb-4dd6-ae85-240baec94316",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

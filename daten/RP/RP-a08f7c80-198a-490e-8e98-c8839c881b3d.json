@@ -1,0 +1,33 @@
+{
+  "id": "RP-a08f7c80-198a-490e-8e98-c8839c881b3d",
+  "name": "Kloppberghalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Lerchenweg",
+    "hausnummer": "8",
+    "plz": "67596",
+    "ort": "Dittelsheim-Heßloch"
+  },
+  "lage": {
+    "lon": 8.241071,
+    "lat": 49.743424
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    },
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c80-198a-490e-8e98-c8839c881b3d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

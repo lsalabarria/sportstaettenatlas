@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a908-3736-4441-a00e-73b05905153c",
+  "name": "Grundschule Waldalgesheim, Astrid-Lindgren-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "12",
+    "plz": "55425",
+    "ort": "Waldalgesheim"
+  },
+  "lage": {
+    "lon": 7.827689,
+    "lat": 49.948251
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a908-3736-4441-a00e-73b05905153c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

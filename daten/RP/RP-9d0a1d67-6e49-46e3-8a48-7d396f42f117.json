@@ -1,0 +1,38 @@
+{
+  "id": "RP-9d0a1d67-6e49-46e3-8a48-7d396f42f117",
+  "name": "Salmtalstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Salmaue",
+    "hausnummer": "6",
+    "plz": "54528",
+    "ort": "Salmtal"
+  },
+  "lage": {
+    "lon": 6.838842,
+    "lat": 49.927933
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d67-6e49-46e3-8a48-7d396f42f117",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

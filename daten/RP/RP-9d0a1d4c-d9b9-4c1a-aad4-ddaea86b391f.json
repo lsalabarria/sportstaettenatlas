@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d4c-d9b9-4c1a-aad4-ddaea86b391f",
+  "name": "Spielplatz Müsch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ahrstaße",
+    "hausnummer": "16",
+    "plz": "53533",
+    "ort": "Müsch"
+  },
+  "lage": {
+    "lon": 6.827727,
+    "lat": 50.388015
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4c-d9b9-4c1a-aad4-ddaea86b391f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

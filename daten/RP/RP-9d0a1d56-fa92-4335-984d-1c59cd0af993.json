@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1d56-fa92-4335-984d-1c59cd0af993",
+  "name": "Üßbachtalstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L103",
+    "plz": "56864",
+    "ort": "Bad Bertrich"
+  },
+  "lage": {
+    "lon": 7.01965,
+    "lat": 50.076359
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d56-fa92-4335-984d-1c59cd0af993",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

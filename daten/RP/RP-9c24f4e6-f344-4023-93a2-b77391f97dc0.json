@@ -1,0 +1,31 @@
+{
+  "id": "RP-9c24f4e6-f344-4023-93a2-b77391f97dc0",
+  "name": "Lundberg Court",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lundberg Court",
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.535816,
+    "lat": 49.961423
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e6-f344-4023-93a2-b77391f97dc0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

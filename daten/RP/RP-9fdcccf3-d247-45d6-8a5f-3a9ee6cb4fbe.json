@@ -1,0 +1,36 @@
+{
+  "id": "RP-9fdcccf3-d247-45d6-8a5f-3a9ee6cb4fbe",
+  "name": "Sonnenhof Oberneisen",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "8",
+    "plz": "65558",
+    "ort": "Oberneisen"
+  },
+  "lage": {
+    "lon": 8.073602,
+    "lat": 50.325764
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Geländeparcours"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccf3-d247-45d6-8a5f-3a9ee6cb4fbe",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

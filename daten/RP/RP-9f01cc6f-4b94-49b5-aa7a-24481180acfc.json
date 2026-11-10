@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc6f-4b94-49b5-aa7a-24481180acfc",
+  "name": "Weidenthaler Badeweiher",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Weiher",
+    "hausnummer": "40",
+    "plz": "67475",
+    "ort": "Weidenthal"
+  },
+  "lage": {
+    "lon": 7.97658,
+    "lat": 49.41499
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Naturbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6f-4b94-49b5-aa7a-24481180acfc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

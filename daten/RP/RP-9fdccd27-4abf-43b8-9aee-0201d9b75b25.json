@@ -1,0 +1,36 @@
+{
+  "id": "RP-9fdccd27-4abf-43b8-9aee-0201d9b75b25",
+  "name": "Sportplatz Karl-Wendel-Schule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Neustadter Straße",
+    "hausnummer": "23",
+    "plz": "67245",
+    "ort": "Lambsheim"
+  },
+  "lage": {
+    "lon": 8.281939,
+    "lat": 49.51024
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd27-4abf-43b8-9aee-0201d9b75b25",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

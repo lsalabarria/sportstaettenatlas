@@ -1,0 +1,24 @@
+{
+  "id": "RP-11ca2c99-0c07-47f5-9f90-44f38c45c8c3",
+  "name": "Schützenverein 1958 e.V. Wallhausen",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "plz": "55595",
+    "ort": "Wallhausen"
+  },
+  "lage": {
+    "lon": 7.755677,
+    "lat": 49.889346
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "11ca2c99-0c07-47f5-9f90-44f38c45c8c3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcce0f-b7b5-4807-a802-eb0767c53f0d",
+  "name": "Bolzplatz Städtischer Kindergarten",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Jean-Ganss-Straße",
+    "hausnummer": "54.0",
+    "plz": "67227",
+    "ort": "Frankenthal (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.352965,
+    "lat": 49.524196
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce0f-b7b5-4807-a802-eb0767c53f0d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

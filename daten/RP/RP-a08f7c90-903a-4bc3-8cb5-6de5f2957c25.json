@@ -1,0 +1,32 @@
+{
+  "id": "RP-a08f7c90-903a-4bc3-8cb5-6de5f2957c25",
+  "name": "Sportanlage Longneckpark",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "55767",
+    "ort": "Buhlenberg"
+  },
+  "lage": {
+    "lon": 7.113301,
+    "lat": 49.659992
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c90-903a-4bc3-8cb5-6de5f2957c25",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

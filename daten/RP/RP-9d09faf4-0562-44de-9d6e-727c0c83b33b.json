@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faf4-0562-44de-9d6e-727c0c83b33b",
+  "name": "Sportplatz Schenkelberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56244",
+    "ort": "Hartenfels"
+  },
+  "lage": {
+    "lon": 7.78348,
+    "lat": 50.577145
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf4-0562-44de-9d6e-727c0c83b33b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

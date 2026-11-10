@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d09fad9-0fef-4841-970f-8dfee2a5dc7e",
+  "name": "Sportplatz Niederbreitbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Freizeitpark",
+    "hausnummer": "1",
+    "plz": "56589",
+    "ort": "Niederbreitbach"
+  },
+  "lage": {
+    "lon": 7.414389,
+    "lat": 50.528005
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad9-0fef-4841-970f-8dfee2a5dc7e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

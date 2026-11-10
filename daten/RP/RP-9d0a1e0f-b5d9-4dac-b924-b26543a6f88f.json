@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d0a1e0f-b5d9-4dac-b924-b26543a6f88f",
+  "name": "Peter-Wust-Gymnasium Wittlich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Koblenzer Straße",
+    "hausnummer": "56",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.895535,
+    "lat": 49.99393
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0f-b5d9-4dac-b924-b26543a6f88f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

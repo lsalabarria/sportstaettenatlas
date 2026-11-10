@@ -1,0 +1,31 @@
+{
+  "id": "RP-9c24f4e9-a24b-480b-a4b3-073a99eb2679",
+  "name": "Spangdahlem Air Base Fitness Center",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Air Base",
+    "plz": "54529",
+    "ort": "Spangdahlem"
+  },
+  "lage": {
+    "lon": 6.699588,
+    "lat": 50.000573
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e9-a24b-480b-a4b3-073a99eb2679",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

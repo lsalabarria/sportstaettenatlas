@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a93d-6b6c-4c19-b7bd-072019f53fe8",
+  "name": "Sportplatz im Waldstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "St.-Christophorus-Straße",
+    "hausnummer": "14",
+    "plz": "76863",
+    "ort": "Herxheim bei Landau/ Pfalz"
+  },
+  "lage": {
+    "lon": 8.220073,
+    "lat": 49.134956
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93d-6b6c-4c19-b7bd-072019f53fe8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

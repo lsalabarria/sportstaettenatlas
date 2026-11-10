@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1da9-0896-42c0-9706-c171b004d0c3",
+  "name": "BE FIT Betzdorf",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Hellerstraße",
+    "hausnummer": "29-31",
+    "plz": "57518",
+    "ort": "Betzdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.876041,
+    "lat": 50.785992
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    },
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da9-0896-42c0-9706-c171b004d0c3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

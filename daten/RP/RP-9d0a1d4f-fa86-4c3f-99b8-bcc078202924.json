@@ -1,0 +1,37 @@
+{
+  "id": "RP-9d0a1d4f-fa86-4c3f-99b8-bcc078202924",
+  "name": "Rhodius Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gleeser Straße",
+    "plz": "56659",
+    "ort": "Burgbrohl"
+  },
+  "lage": {
+    "lon": 7.27176,
+    "lat": 50.45172
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4f-fa86-4c3f-99b8-bcc078202924",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "RP-9c24f4ea-f8a2-4457-aec1-fbb239214a6b",
+  "name": "TSV Seffern 1982 e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Bachstraße",
+    "hausnummer": "22",
+    "plz": "54636",
+    "ort": "Seffern"
+  },
+  "lage": {
+    "lon": 6.505233,
+    "lat": 50.067053
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ea-f8a2-4457-aec1-fbb239214a6b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fae1-3866-4950-9218-5b6c9258f6f2",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "plz": "54316",
+    "ort": "Pluwig"
+  },
+  "lage": {
+    "lon": 6.713821,
+    "lat": 49.691713
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae1-3866-4950-9218-5b6c9258f6f2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

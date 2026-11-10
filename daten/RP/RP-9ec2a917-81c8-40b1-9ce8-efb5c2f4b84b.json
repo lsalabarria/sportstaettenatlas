@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a917-81c8-40b1-9ce8-efb5c2f4b84b",
+  "name": "Sportplatz Ilbesheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Flomborner Weg",
+    "hausnummer": "15",
+    "plz": "67294",
+    "ort": "Ilbesheim"
+  },
+  "lage": {
+    "lon": 8.080342,
+    "lat": 49.689932
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a917-81c8-40b1-9ce8-efb5c2f4b84b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

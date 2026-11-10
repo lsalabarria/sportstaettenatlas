@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fae2-b64d-4e0d-ac26-973ac574b79f",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Fraubachtal",
+    "plz": "54422",
+    "ort": "Züsch"
+  },
+  "lage": {
+    "lon": 7.012738,
+    "lat": 49.646901
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae2-b64d-4e0d-ac26-973ac574b79f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

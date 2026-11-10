@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcccdc-61b7-42d5-8c10-b14eaf602b95",
+  "name": "Sportplatz Hausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56745",
+    "ort": "Hausten"
+  },
+  "lage": {
+    "lon": 7.122442,
+    "lat": 50.394622
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccdc-61b7-42d5-8c10-b14eaf602b95",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

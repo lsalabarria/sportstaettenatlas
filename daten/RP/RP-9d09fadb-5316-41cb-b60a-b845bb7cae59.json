@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fadb-5316-41cb-b60a-b845bb7cae59",
+  "name": "Gestüt Hohensonne",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Kapellenstraße",
+    "hausnummer": "18c",
+    "plz": "54298",
+    "ort": "Aach"
+  },
+  "lage": {
+    "lon": 6.570514,
+    "lat": 49.79131
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadb-5316-41cb-b60a-b845bb7cae59",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

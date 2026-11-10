@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a928-3fe4-466f-9fa9-b9aba7b27ac8",
+  "name": "Eisweinhalle Bingen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ernst-Müller-Straße",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.96248,
+    "lat": 49.9241
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a928-3fe4-466f-9fa9-b9aba7b27ac8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

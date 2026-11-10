@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a909-7887-44d0-81e0-00e5b19b91b0",
+  "name": "Bolzplatz Horrweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An der Pforte",
+    "plz": "55457",
+    "ort": "Horrweiler"
+  },
+  "lage": {
+    "lon": 7.965399,
+    "lat": 49.896053
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a909-7887-44d0-81e0-00e5b19b91b0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

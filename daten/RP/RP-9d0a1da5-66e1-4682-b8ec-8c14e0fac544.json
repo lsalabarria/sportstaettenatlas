@@ -1,0 +1,40 @@
+{
+  "id": "RP-9d0a1da5-66e1-4682-b8ec-8c14e0fac544",
+  "name": "Sportplatz Gillenfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ronntalweg",
+    "plz": "54558",
+    "ort": "Gillenfeld"
+  },
+  "lage": {
+    "lon": 6.903935,
+    "lat": 50.131759
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da5-66e1-4682-b8ec-8c14e0fac544",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

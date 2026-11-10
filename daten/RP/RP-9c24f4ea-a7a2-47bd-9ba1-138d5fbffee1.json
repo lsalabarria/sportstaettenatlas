@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24f4ea-a7a2-47bd-9ba1-138d5fbffee1",
+  "name": "Pooshof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "L9",
+    "plz": "54636",
+    "ort": "Wißmannsdorf"
+  },
+  "lage": {
+    "lon": 6.414308,
+    "lat": 50.009068
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ea-a7a2-47bd-9ba1-138d5fbffee1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

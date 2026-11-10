@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e08-d422-45af-a70b-1c6b32c582bb",
+  "name": "Tennisanlage Zell",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "hausnummer": "1",
+    "plz": "56856",
+    "ort": "Zell (Mosel), Stadt"
+  },
+  "lage": {
+    "lon": 7.175539,
+    "lat": 50.015825
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e08-d422-45af-a70b-1c6b32c582bb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

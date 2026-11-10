@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90a-cc96-49d8-bf6c-13d11009ea36",
+  "name": "TSG 1891 Ober-Hilbersheim e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "8",
+    "plz": "55437",
+    "ort": "Ober-Hilbersheim"
+  },
+  "lage": {
+    "lon": 8.033018,
+    "lat": 49.900301
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90a-cc96-49d8-bf6c-13d11009ea36",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a93a-162b-4ede-a2d0-093589cc8262",
+  "name": "Sporthalle Leibnizschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Leibnizstraße",
+    "hausnummer": "15",
+    "plz": "55118",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.262038,
+    "lat": 50.005887
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93a-162b-4ede-a2d0-093589cc8262",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

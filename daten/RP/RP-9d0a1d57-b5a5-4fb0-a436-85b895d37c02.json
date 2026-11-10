@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d57-b5a5-4fb0-a436-85b895d37c02",
+  "name": "Sportplatz FZM Wollmerath",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L102",
+    "plz": "56826",
+    "ort": "Wollmerath"
+  },
+  "lage": {
+    "lon": 6.985217,
+    "lat": 50.159859
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d57-b5a5-4fb0-a436-85b895d37c02",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

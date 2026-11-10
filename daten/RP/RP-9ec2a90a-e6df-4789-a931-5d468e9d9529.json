@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a90a-e6df-4789-a931-5d468e9d9529",
+  "name": "Bolzplatz Ockenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am St. Jakobsberg",
+    "plz": "55435",
+    "ort": "Ockenheim"
+  },
+  "lage": {
+    "lon": 7.986392,
+    "lat": 49.934978
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90a-e6df-4789-a931-5d468e9d9529",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

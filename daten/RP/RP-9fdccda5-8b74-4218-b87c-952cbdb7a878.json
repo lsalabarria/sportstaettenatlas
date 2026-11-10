@@ -1,0 +1,48 @@
+{
+  "id": "RP-9fdccda5-8b74-4218-b87c-952cbdb7a878",
+  "name": "Stadion Andernach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Stadionstraße",
+    "hausnummer": "78",
+    "plz": "56626",
+    "ort": "Andernach, Stadt"
+  },
+  "lage": {
+    "lon": 7.41999,
+    "lat": 50.426567
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccda5-8b74-4218-b87c-952cbdb7a878",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "RP-9d0a1e0f-36c5-4b6d-82cb-9dcf7a6bb78f",
+  "name": "Eventum Wittlich",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Brautweg",
+    "hausnummer": "5",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.894,
+    "lat": 49.982748
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0f-36c5-4b6d-82cb-9dcf7a6bb78f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

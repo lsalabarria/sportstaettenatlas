@@ -1,0 +1,27 @@
+{
+  "id": "RP-b730f357-a93c-4915-91b4-3333fcf967ce",
+  "name": "Kahlheid Loipe",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "plz": "54497",
+    "ort": "Morbach"
+  },
+  "lage": {
+    "lon": 7.113414,
+    "lat": 49.747857
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skilanglauf- und Biathlonanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "b730f357-a93c-4915-91b4-3333fcf967ce",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "RP-9ec2a92a-d28f-457f-99e9-7dab23c6e7b6",
+  "name": "Bolzplatz an der Grundschule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kreuzstraße",
+    "hausnummer": "47",
+    "plz": "55262",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.123481,
+    "lat": 49.993691
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92a-d28f-457f-99e9-7dab23c6e7b6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

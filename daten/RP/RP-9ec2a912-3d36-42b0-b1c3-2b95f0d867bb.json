@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a912-3d36-42b0-b1c3-2b95f0d867bb",
+  "name": "Gemeindehalle / Mehrzweckhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "plz": "67585",
+    "ort": "Dorn-Dürkheim"
+  },
+  "lage": {
+    "lon": 8.265692,
+    "lat": 49.766963
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a912-3d36-42b0-b1c3-2b95f0d867bb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

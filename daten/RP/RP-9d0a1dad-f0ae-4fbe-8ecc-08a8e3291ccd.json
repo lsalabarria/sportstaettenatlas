@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dad-f0ae-4fbe-8ecc-08a8e3291ccd",
+  "name": "Schützengesellschaft Heimbach-Weis e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "199",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.560891,
+    "lat": 50.457338
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dad-f0ae-4fbe-8ecc-08a8e3291ccd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

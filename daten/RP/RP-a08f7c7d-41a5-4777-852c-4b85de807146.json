@@ -1,0 +1,39 @@
+{
+  "id": "RP-a08f7c7d-41a5-4777-852c-4b85de807146",
+  "name": "Adelbergstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Berliner Straße",
+    "hausnummer": "16",
+    "plz": "55237",
+    "ort": "Flonheim"
+  },
+  "lage": {
+    "lon": 8.039444,
+    "lat": 49.781414
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c7d-41a5-4777-852c-4b85de807146",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

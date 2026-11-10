@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a939-1cee-4731-93f6-01cf90df3311",
+  "name": "USC Mainz Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Dahlheimer Weg",
+    "hausnummer": "2",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.241671,
+    "lat": 49.989749
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a939-1cee-4731-93f6-01cf90df3311",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

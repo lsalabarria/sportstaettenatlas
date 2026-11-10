@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d0a1db6-a3bc-466c-a33b-5972b74692bd",
+  "name": "Bolzplatz Ehrang",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "54293",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.683734,
+    "lat": 49.795375
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db6-a3bc-466c-a33b-5972b74692bd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

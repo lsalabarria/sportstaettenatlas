@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a921-cd45-4eba-ad02-0962535e8779",
+  "name": "Bouleplatz Ramberg",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "L506",
+    "plz": "76857",
+    "ort": "Ramberg"
+  },
+  "lage": {
+    "lon": 8.005595,
+    "lat": 49.251931
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a921-cd45-4eba-ad02-0962535e8779",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

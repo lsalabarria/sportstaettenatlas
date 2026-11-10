@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a90c-be18-4134-a109-380197c402f4",
+  "name": "Pferdepension Fam. Schöneberger",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Erlenhof",
+    "plz": "55270",
+    "ort": "Ober-Olm"
+  },
+  "lage": {
+    "lon": 8.18339,
+    "lat": 49.938615
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90c-be18-4134-a109-380197c402f4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

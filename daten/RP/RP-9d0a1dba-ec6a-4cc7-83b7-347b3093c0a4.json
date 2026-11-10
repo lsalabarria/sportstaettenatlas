@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dba-ec6a-4cc7-83b7-347b3093c0a4",
+  "name": "Turnhalle Olewig",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Auf der Ayl",
+    "hausnummer": "40",
+    "plz": "54295",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.66459,
+    "lat": 49.74152
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dba-ec6a-4cc7-83b7-347b3093c0a4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

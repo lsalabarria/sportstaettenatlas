@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24f4ea-1d4d-4ceb-8f0a-3f672ebdaaee",
+  "name": "Sportplatz Nattenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportplatzstraße",
+    "plz": "54636",
+    "ort": "Nattenheim"
+  },
+  "lage": {
+    "lon": 6.520443,
+    "lat": 50.022163
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ea-1d4d-4ceb-8f0a-3f672ebdaaee",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

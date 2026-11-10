@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d09fae7-bdd0-4379-8171-444afd614660",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54439",
+    "ort": "Palzem"
+  },
+  "lage": {
+    "lon": 6.383337,
+    "lat": 49.586143
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae7-bdd0-4379-8171-444afd614660",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

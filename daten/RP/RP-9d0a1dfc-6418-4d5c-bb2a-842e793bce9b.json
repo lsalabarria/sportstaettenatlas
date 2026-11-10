@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d0a1dfc-6418-4d5c-bb2a-842e793bce9b",
+  "name": "Außensportbereich der Steinsbergschule Grundschule Rennerod",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Westernoher Str.",
+    "hausnummer": "30",
+    "plz": "56477",
+    "ort": "Rennerod, Stadt"
+  },
+  "lage": {
+    "lon": 8.068921,
+    "lat": 50.603619
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfc-6418-4d5c-bb2a-842e793bce9b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdf2-813c-46cf-ad63-a4fb25382e1c",
+  "name": "Reitplatz Kaiserslautern",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Gersweilerweg",
+    "hausnummer": "70a",
+    "plz": "67657",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.779966,
+    "lat": 49.456481
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdf2-813c-46cf-ad63-a4fb25382e1c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

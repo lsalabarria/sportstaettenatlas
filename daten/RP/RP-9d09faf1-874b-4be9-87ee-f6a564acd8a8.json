@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faf1-874b-4be9-87ee-f6a564acd8a8",
+  "name": "Turnhalle der Grundschule Kaden",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Elberbütz",
+    "hausnummer": "14",
+    "plz": "56459",
+    "ort": "Kaden"
+  },
+  "lage": {
+    "lon": 7.920061,
+    "lat": 50.548562
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf1-874b-4be9-87ee-f6a564acd8a8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

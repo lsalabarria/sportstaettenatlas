@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a935-74ad-4cec-83b7-70cbabaa047e",
+  "name": "Spielplatz An den Lehmgruben",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "An den Lehmgruben",
+    "hausnummer": "15",
+    "plz": "55126",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.186995,
+    "lat": 49.987736
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a935-74ad-4cec-83b7-70cbabaa047e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e05-2f0d-45f2-8eef-ac3b5fd23f37",
+  "name": "Thermalschwimmbad Bad Bodendorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Burggrafenstraße",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.220096,
+    "lat": 50.548312
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e05-2f0d-45f2-8eef-ac3b5fd23f37",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

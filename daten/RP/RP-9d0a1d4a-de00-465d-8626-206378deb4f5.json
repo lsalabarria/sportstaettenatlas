@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d4a-de00-465d-8626-206378deb4f5",
+  "name": "Mehrzweckhalle Bengen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Leonhard-Scholz-Weg",
+    "hausnummer": "2",
+    "plz": "53501",
+    "ort": "Grafschaft"
+  },
+  "lage": {
+    "lon": 7.134064,
+    "lat": 50.56641
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4a-de00-465d-8626-206378deb4f5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

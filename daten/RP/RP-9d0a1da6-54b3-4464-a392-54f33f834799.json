@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da6-54b3-4464-a392-54f33f834799",
+  "name": "Reitplatz Nerdlen",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "An der Treib",
+    "plz": "53539",
+    "ort": "Nerdlen"
+  },
+  "lage": {
+    "lon": 6.863707,
+    "lat": 50.235601
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da6-54b3-4464-a392-54f33f834799",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1d64-b849-4573-a3c9-7eeb037a42e3",
+  "name": "Sportplatz Jungenwäldchen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "K80",
+    "plz": "54497",
+    "ort": "Morbach"
+  },
+  "lage": {
+    "lon": 7.042435,
+    "lat": 49.82224
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d64-b849-4573-a3c9-7eeb037a42e3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

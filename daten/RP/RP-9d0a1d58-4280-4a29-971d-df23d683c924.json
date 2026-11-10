@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d58-4280-4a29-971d-df23d683c924",
+  "name": "Sporthalle Grundschule Bullay",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Moselufer",
+    "plz": "56859",
+    "ort": "Bullay"
+  },
+  "lage": {
+    "lon": 7.130926,
+    "lat": 50.055376
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d58-4280-4a29-971d-df23d683c924",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

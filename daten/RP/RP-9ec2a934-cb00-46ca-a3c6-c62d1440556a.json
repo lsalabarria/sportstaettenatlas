@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a934-cb00-46ca-a3c6-c62d1440556a",
+  "name": "Sportplatz am Weinberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Diedesfelder Weg",
+    "hausnummer": "89",
+    "plz": "67434",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.136385,
+    "lat": 49.331233
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a934-cb00-46ca-a3c6-c62d1440556a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

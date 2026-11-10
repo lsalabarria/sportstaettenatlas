@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e06-8c9f-4c68-9989-ffe25199c2ca",
+  "name": "Realschule plus Cochem Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schlossstraße",
+    "hausnummer": "34",
+    "plz": "56812",
+    "ort": "Cochem, Stadt"
+  },
+  "lage": {
+    "lon": 7.163893,
+    "lat": 50.141802
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e06-8c9f-4c68-9989-ffe25199c2ca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

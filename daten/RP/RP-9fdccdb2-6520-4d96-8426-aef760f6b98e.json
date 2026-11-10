@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccdb2-6520-4d96-8426-aef760f6b98e",
+  "name": "Sporthalle Integrierte Gesamtschule Maifeld",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Dechant-Riegel-Straße",
+    "plz": "56751",
+    "ort": "Polch, Stadt"
+  },
+  "lage": {
+    "lon": 7.318204,
+    "lat": 50.304222
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdb2-6520-4d96-8426-aef760f6b98e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

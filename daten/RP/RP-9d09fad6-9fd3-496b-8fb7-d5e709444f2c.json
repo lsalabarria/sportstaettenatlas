@@ -1,0 +1,34 @@
+{
+  "id": "RP-9d09fad6-9fd3-496b-8fb7-d5e709444f2c",
+  "name": "Tennisanlage Waldstadion Maischeid",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Stebacher Weg",
+    "plz": "56276",
+    "ort": "Großmaischeid"
+  },
+  "lage": {
+    "lon": 7.645512,
+    "lat": 50.50692
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad6-9fd3-496b-8fb7-d5e709444f2c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

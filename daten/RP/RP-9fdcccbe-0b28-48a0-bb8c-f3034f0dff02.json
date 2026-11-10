@@ -1,0 +1,42 @@
+{
+  "id": "RP-9fdcccbe-0b28-48a0-bb8c-f3034f0dff02",
+  "name": "Stadion an der Rheinbrücke",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kaltenengerser Str.",
+    "hausnummer": "3a",
+    "plz": "56220",
+    "ort": "Urmitz"
+  },
+  "lage": {
+    "lon": 7.526955,
+    "lat": 50.418239
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccbe-0b28-48a0-bb8c-f3034f0dff02",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

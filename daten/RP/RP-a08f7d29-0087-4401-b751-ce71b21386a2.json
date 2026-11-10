@@ -1,0 +1,33 @@
+{
+  "id": "RP-a08f7d29-0087-4401-b751-ce71b21386a2",
+  "name": "Reitanlage am alten Fahr",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Meddersheimer Straße",
+    "hausnummer": "51",
+    "plz": "55566",
+    "ort": "Bad Sobernheim, Stadt"
+  },
+  "lage": {
+    "lon": 7.638126,
+    "lat": 49.779953
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d29-0087-4401-b751-ce71b21386a2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

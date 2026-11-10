@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a900-c28a-46b7-a376-6bd59c0b2f96",
+  "name": "Kegelbahn Dorfgemeinschaftshaus Wiesengrund",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "16",
+    "plz": "67229",
+    "ort": "Großkarlbach"
+  },
+  "lage": {
+    "lon": 8.226467,
+    "lat": 49.540812
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kegelbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a900-c28a-46b7-a376-6bd59c0b2f96",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

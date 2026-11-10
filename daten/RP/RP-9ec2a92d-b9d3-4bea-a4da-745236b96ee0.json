@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a92d-b9d3-4bea-a4da-745236b96ee0",
+  "name": "Rundsporthalle Nierstein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rossbergstraße",
+    "hausnummer": "2",
+    "plz": "55283",
+    "ort": "Nierstein, Stadt"
+  },
+  "lage": {
+    "lon": 8.335543,
+    "lat": 49.869777
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92d-b9d3-4bea-a4da-745236b96ee0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

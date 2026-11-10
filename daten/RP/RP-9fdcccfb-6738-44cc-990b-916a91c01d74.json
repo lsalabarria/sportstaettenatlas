@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcccfb-6738-44cc-990b-916a91c01d74",
+  "name": "Sportplatz Rettershain",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L337",
+    "plz": "56357",
+    "ort": "Rettershain"
+  },
+  "lage": {
+    "lon": 7.836042,
+    "lat": 50.154964
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccfb-6738-44cc-990b-916a91c01d74",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

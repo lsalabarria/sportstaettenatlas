@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a940-3e2b-4738-b8ec-63089f6f1aaa",
+  "name": "Triefelsstadion Annweiler",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Landauer Str.",
+    "hausnummer": "75",
+    "plz": "76855",
+    "ort": "Annweiler am Trifels, Stadt"
+  },
+  "lage": {
+    "lon": 7.980405,
+    "lat": 49.210902
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bogenschießanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a940-3e2b-4738-b8ec-63089f6f1aaa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

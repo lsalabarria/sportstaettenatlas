@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdd2-fc79-4e0a-a61a-1e6c3c522eab",
+  "name": "Easy Fit Studio",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Bürgermeister-Müller-Straße",
+    "hausnummer": "2",
+    "plz": "56112",
+    "ort": "Lahnstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.604264,
+    "lat": 50.299869
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdd2-fc79-4e0a-a61a-1e6c3c522eab",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

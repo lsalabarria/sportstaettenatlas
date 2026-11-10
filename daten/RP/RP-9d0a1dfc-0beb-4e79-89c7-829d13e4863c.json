@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1dfc-0beb-4e79-89c7-829d13e4863c",
+  "name": "Skateboard-Parkour",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hofwiesenstraße",
+    "plz": "56457",
+    "ort": "Westerburg, Stadt"
+  },
+  "lage": {
+    "lon": 7.973771,
+    "lat": 50.558221
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfc-0beb-4e79-89c7-829d13e4863c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

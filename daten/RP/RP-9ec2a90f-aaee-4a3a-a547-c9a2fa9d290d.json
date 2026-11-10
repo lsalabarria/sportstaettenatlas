@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90f-aaee-4a3a-a547-c9a2fa9d290d",
+  "name": "Wiesgartenstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Herrweg",
+    "hausnummer": "1",
+    "plz": "55278",
+    "ort": "Mommenheim"
+  },
+  "lage": {
+    "lon": 8.273575,
+    "lat": 49.882378
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90f-aaee-4a3a-a547-c9a2fa9d290d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

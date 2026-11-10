@@ -1,0 +1,56 @@
+{
+  "id": "RP-9c24bfa4-4d81-4b20-b49c-25811051e672",
+  "name": "Tennisplatz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "An d. Königsbach",
+    "hausnummer": "20",
+    "plz": "56075",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.587159,
+    "lat": 50.326496
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa4-4d81-4b20-b49c-25811051e672",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

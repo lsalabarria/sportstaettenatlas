@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7cab-3f40-4f4b-a415-1605597e734b",
+  "name": "Sportplatz Am Hoppelberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Hoppelberg",
+    "plz": "55624",
+    "ort": "Oberkirn"
+  },
+  "lage": {
+    "lon": 7.377783,
+    "lat": 49.881043
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cab-3f40-4f4b-a415-1605597e734b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

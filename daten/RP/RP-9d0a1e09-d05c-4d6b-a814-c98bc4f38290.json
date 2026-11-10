@@ -1,0 +1,34 @@
+{
+  "id": "RP-9d0a1e09-d05c-4d6b-a814-c98bc4f38290",
+  "name": "Sportplatz Realschule Marienberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Marienberg Park",
+    "plz": "56154",
+    "ort": "Boppard, Stadt"
+  },
+  "lage": {
+    "lon": 7.596278,
+    "lat": 50.228117
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e09-d05c-4d6b-a814-c98bc4f38290",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

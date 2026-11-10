@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d0a1db6-49f8-4c57-91a4-9dc2719b6ea9",
+  "name": "Bouleplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Ferienpark Warsberg",
+    "hausnummer": "1",
+    "plz": "54439",
+    "ort": "Saarburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.541283,
+    "lat": 49.620357
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db6-49f8-4c57-91a4-9dc2719b6ea9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

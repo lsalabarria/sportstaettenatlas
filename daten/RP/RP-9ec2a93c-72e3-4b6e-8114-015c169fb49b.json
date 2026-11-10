@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a93c-72e3-4b6e-8114-015c169fb49b",
+  "name": "Turnhalle Grundschule Edenkoben",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Weinstr.",
+    "hausnummer": "132",
+    "plz": "67480",
+    "ort": "Edenkoben, Stadt"
+  },
+  "lage": {
+    "lon": 8.130399,
+    "lat": 49.285781
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93c-72e3-4b6e-8114-015c169fb49b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

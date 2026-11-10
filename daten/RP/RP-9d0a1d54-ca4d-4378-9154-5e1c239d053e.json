@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d54-ca4d-4378-9154-5e1c239d053e",
+  "name": "Bolzplatz Brachtendorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56716",
+    "ort": "Brachtendorf"
+  },
+  "lage": {
+    "lon": 7.232647,
+    "lat": 50.232319
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d54-ca4d-4378-9154-5e1c239d053e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-a22beb3c-a190-4841-9c02-4c1269506ce8",
+  "name": "SWT Arena",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Fort-Worth-Platz",
+    "hausnummer": "1",
+    "plz": "54292",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.663787,
+    "lat": 49.771613
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a22beb3c-a190-4841-9c02-4c1269506ce8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

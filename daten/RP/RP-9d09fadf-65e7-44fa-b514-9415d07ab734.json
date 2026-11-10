@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d09fadf-65e7-44fa-b514-9415d07ab734",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "St. Andreas-Straße",
+    "hausnummer": "2",
+    "plz": "54340",
+    "ort": "Pölich"
+  },
+  "lage": {
+    "lon": 6.851512,
+    "lat": 49.79582
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadf-65e7-44fa-b514-9415d07ab734",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

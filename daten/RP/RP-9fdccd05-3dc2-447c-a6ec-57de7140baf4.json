@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd05-3dc2-447c-a6ec-57de7140baf4",
+  "name": "Sporthalle Dachsenhausen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Rhein-Taunus-Straße",
+    "hausnummer": "45",
+    "plz": "56340",
+    "ort": "Dachsenhausen"
+  },
+  "lage": {
+    "lon": 7.730895,
+    "lat": 50.254336
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd05-3dc2-447c-a6ec-57de7140baf4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

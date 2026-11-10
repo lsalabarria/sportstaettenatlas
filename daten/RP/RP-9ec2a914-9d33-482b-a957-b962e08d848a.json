@@ -1,0 +1,44 @@
+{
+  "id": "RP-9ec2a914-9d33-482b-a957-b962e08d848a",
+  "name": "Sportanlage Weierhof am Donnersberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Hofwiesbach",
+    "hausnummer": "1",
+    "plz": "67295",
+    "ort": "Bolanden"
+  },
+  "lage": {
+    "lon": 8.027579,
+    "lat": 49.63553
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a914-9d33-482b-a957-b962e08d848a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

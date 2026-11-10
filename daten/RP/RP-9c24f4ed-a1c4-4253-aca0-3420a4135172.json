@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24f4ed-a1c4-4253-aca0-3420a4135172",
+  "name": "Sportplatz Weinsfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Steinmehlener Straße",
+    "plz": "54595",
+    "ort": "Prüm, Stadt"
+  },
+  "lage": {
+    "lon": 6.368555,
+    "lat": 50.195265
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ed-a1c4-4253-aca0-3420a4135172",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

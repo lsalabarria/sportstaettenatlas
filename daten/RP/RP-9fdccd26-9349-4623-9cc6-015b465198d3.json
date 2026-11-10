@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd26-9349-4623-9cc6-015b465198d3",
+  "name": "Tennisanlage Heßheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Nachtweideweg",
+    "plz": "67258",
+    "ort": "Heßheim"
+  },
+  "lage": {
+    "lon": 8.310762,
+    "lat": 49.540197
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd26-9349-4623-9cc6-015b465198d3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

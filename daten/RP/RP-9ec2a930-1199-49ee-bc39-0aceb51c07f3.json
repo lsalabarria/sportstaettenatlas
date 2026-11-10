@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a930-1199-49ee-bc39-0aceb51c07f3",
+  "name": "Sportplatz Rupperstecken",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "67808",
+    "ort": "Ruppertsecken"
+  },
+  "lage": {
+    "lon": 7.883251,
+    "lat": 49.64724
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a930-1199-49ee-bc39-0aceb51c07f3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

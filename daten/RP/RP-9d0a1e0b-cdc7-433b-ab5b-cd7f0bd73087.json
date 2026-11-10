@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e0b-cdc7-433b-ab5b-cd7f0bd73087",
+  "name": "Bolzplatz Rheinhöhenstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rheinhöhenstraße",
+    "plz": "55430",
+    "ort": "Oberwesel, Stadt"
+  },
+  "lage": {
+    "lon": 7.720114,
+    "lat": 50.088428
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0b-cdc7-433b-ab5b-cd7f0bd73087",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

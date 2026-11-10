@@ -1,0 +1,29 @@
+{
+  "id": "RP-f0e323b9-1ee7-4c88-8826-c162e7182a3b",
+  "name": "Sporthalle GS Wülfersberg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Frans-Hals-Straße",
+    "hausnummer": "6",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.519162,
+    "lat": 50.458757
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "f0e323b9-1ee7-4c88-8826-c162e7182a3b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

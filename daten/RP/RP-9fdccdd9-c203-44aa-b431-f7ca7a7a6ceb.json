@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccdd9-c203-44aa-b431-f7ca7a7a6ceb",
+  "name": "Otterberger Tennisclub",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Mühlwoog",
+    "plz": "67697",
+    "ort": "Otterberg, Stadt"
+  },
+  "lage": {
+    "lon": 7.779952,
+    "lat": 49.495952
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdd9-c203-44aa-b431-f7ca7a7a6ceb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

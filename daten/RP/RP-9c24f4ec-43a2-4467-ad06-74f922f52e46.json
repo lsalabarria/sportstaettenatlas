@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24f4ec-43a2-4467-ad06-74f922f52e46",
+  "name": "Bolzplatz Neuerburg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Burgstraße",
+    "hausnummer": "13",
+    "plz": "54673",
+    "ort": "Neuerburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.291399,
+    "lat": 50.010612
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ec-43a2-4467-ad06-74f922f52e46",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

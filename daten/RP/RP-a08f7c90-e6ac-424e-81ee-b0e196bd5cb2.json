@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7c90-e6ac-424e-81ee-b0e196bd5cb2",
+  "name": "Sportanlage In der Struth Platz 2",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirchweg",
+    "plz": "55767",
+    "ort": "Rinzenberg"
+  },
+  "lage": {
+    "lon": 7.137833,
+    "lat": 49.668968
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c90-e6ac-424e-81ee-b0e196bd5cb2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

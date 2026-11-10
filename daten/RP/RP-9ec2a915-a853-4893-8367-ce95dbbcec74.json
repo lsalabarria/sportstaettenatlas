@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a915-a853-4893-8367-ce95dbbcec74",
+  "name": "Sportplatz Katzenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "B48",
+    "plz": "67806",
+    "ort": "Katzenbach"
+  },
+  "lage": {
+    "lon": 7.823987,
+    "lat": 49.645364
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a915-a853-4893-8367-ce95dbbcec74",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

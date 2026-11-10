@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a937-25e8-4c02-913c-e454cd79ab61",
+  "name": "Polizeisportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dekan-Laist-Straße",
+    "hausnummer": "7",
+    "plz": "55129",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.258852,
+    "lat": 49.966673
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a937-25e8-4c02-913c-e454cd79ab61",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

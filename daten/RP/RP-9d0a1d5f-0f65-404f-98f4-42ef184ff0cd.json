@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5f-0f65-404f-98f4-42ef184ff0cd",
+  "name": "Bolzplatz Maitzborn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "55481",
+    "ort": "Maitzborn"
+  },
+  "lage": {
+    "lon": 7.437681,
+    "lat": 49.933438
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5f-0f65-404f-98f4-42ef184ff0cd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09facc-c9a5-4749-89c7-36d9c94c8d90",
+  "name": "Grundschule Alsdorf",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "53",
+    "plz": "57518",
+    "ort": "Alsdorf"
+  },
+  "lage": {
+    "lon": 7.880868,
+    "lat": 50.778134
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facc-c9a5-4749-89c7-36d9c94c8d90",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

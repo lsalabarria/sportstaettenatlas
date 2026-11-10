@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e0e-6e46-4407-a809-85c17065826b",
+  "name": "Sporthalle Simmern",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kümbdcher Hohl",
+    "plz": "55469",
+    "ort": "Simmern/ Hunsrück, Stadt"
+  },
+  "lage": {
+    "lon": 7.51673,
+    "lat": 49.988938
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0e-6e46-4407-a809-85c17065826b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

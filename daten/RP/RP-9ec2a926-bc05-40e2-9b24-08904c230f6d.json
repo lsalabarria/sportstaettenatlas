@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a926-bc05-40e2-9b24-08904c230f6d",
+  "name": "Sportanlage Realschule plus Lambrecht",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wiesenstraße",
+    "hausnummer": "17",
+    "plz": "67466",
+    "ort": "Lambrecht (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.077957,
+    "lat": 49.372415
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a926-bc05-40e2-9b24-08904c230f6d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

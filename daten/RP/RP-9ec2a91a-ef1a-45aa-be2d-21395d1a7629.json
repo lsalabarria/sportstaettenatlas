@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a91a-ef1a-45aa-be2d-21395d1a7629",
+  "name": "Bornheimer Boule Club",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Hofgraben",
+    "hausnummer": "4",
+    "plz": "76879",
+    "ort": "Bornheim"
+  },
+  "lage": {
+    "lon": 8.168245,
+    "lat": 49.220747
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91a-ef1a-45aa-be2d-21395d1a7629",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

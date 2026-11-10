@@ -1,0 +1,35 @@
+{
+  "id": "RP-9ec2a906-95d4-444d-ba12-0dc66fdbea64",
+  "name": "Ponyfarm & Gestüt Die Pfalz",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "An der Ponyfarm",
+    "hausnummer": "1",
+    "plz": "67454",
+    "ort": "Haßloch"
+  },
+  "lage": {
+    "lon": 8.291204,
+    "lat": 49.322302
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a906-95d4-444d-ba12-0dc66fdbea64",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

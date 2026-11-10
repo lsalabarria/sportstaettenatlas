@@ -1,0 +1,44 @@
+{
+  "id": "RP-9d0a1dff-79ea-4e8f-941c-3aa9aa26546b",
+  "name": "Sportplatz Erich Kästner Realschule plus",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "St.-Pius-Straße",
+    "hausnummer": "29",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.120854,
+    "lat": 50.541014
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dff-79ea-4e8f-941c-3aa9aa26546b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

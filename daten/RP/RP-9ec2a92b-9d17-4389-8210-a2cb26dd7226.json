@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a92b-9d17-4389-8210-a2cb26dd7226",
+  "name": "Tennisclub Boehringer Ingelheim e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "40",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.037977,
+    "lat": 49.979265
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennishalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92b-9d17-4389-8210-a2cb26dd7226",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

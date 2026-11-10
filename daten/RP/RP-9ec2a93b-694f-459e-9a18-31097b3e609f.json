@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a93b-694f-459e-9a18-31097b3e609f",
+  "name": "Sporthalle Pestalozzigrundschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Pestalozziplatz",
+    "hausnummer": "6",
+    "plz": "55120",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.223873,
+    "lat": 50.019391
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93b-694f-459e-9a18-31097b3e609f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

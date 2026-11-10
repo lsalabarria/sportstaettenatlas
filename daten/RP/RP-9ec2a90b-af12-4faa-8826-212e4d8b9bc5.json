@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a90b-af12-4faa-8826-212e4d8b9bc5",
+  "name": "Outdoor Fitnessgeräte & Streetballfeld am Hallenbad",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Römerstraße",
+    "hausnummer": "70",
+    "plz": "55257",
+    "ort": "Budenheim"
+  },
+  "lage": {
+    "lon": 8.158158,
+    "lat": 50.017855
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Calisthenicsanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90b-af12-4faa-8826-212e4d8b9bc5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1dfb-06cb-4c32-8c80-1cb66523adad",
+  "name": "Tennisclub Blau-Weiß Wirges",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Nordstraße",
+    "plz": "56422",
+    "ort": "Wirges, Stadt"
+  },
+  "lage": {
+    "lon": 7.794591,
+    "lat": 50.479878
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfb-06cb-4c32-8c80-1cb66523adad",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

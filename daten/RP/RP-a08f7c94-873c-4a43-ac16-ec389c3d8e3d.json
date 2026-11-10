@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7c94-873c-4a43-ac16-ec389c3d8e3d",
+  "name": "Sportplatz Hohlstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hohlstraße",
+    "plz": "55758",
+    "ort": "Hettenrodt"
+  },
+  "lage": {
+    "lon": 7.248244,
+    "lat": 49.742602
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c94-873c-4a43-ac16-ec389c3d8e3d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

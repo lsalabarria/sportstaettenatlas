@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcce2c-b906-4e54-8a89-d09effe26672",
+  "name": "Reitsportanlage Wittemer",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Zellertalstraße",
+    "hausnummer": "70",
+    "plz": "67551",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.262257,
+    "lat": 49.626599
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce2c-b906-4e54-8a89-d09effe26672",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

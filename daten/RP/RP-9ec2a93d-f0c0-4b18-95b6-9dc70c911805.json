@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a93d-f0c0-4b18-95b6-9dc70c911805",
+  "name": "Skatepark Herxheim",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Albert-Detzel-Straße",
+    "plz": "76863",
+    "ort": "Herxheim bei Landau/ Pfalz"
+  },
+  "lage": {
+    "lon": 8.210063,
+    "lat": 49.140974
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93d-f0c0-4b18-95b6-9dc70c911805",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

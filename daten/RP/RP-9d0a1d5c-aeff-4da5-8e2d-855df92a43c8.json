@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d5c-aeff-4da5-8e2d-855df92a43c8",
+  "name": "Grundschule Gödenroth",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "4",
+    "plz": "56290",
+    "ort": "Gödenroth"
+  },
+  "lage": {
+    "lon": 7.488958,
+    "lat": 50.086665
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5c-aeff-4da5-8e2d-855df92a43c8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

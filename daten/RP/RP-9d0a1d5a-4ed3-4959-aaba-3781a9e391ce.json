@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5a-4ed3-4959-aaba-3781a9e391ce",
+  "name": "Bolzplatz Kratzenburg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Burgweg",
+    "plz": "56382",
+    "ort": "Kratzenburg"
+  },
+  "lage": {
+    "lon": 7.556205,
+    "lat": 50.189202
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5a-4ed3-4959-aaba-3781a9e391ce",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

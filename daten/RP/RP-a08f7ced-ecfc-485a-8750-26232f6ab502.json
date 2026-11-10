@@ -1,0 +1,33 @@
+{
+  "id": "RP-a08f7ced-ecfc-485a-8750-26232f6ab502",
+  "name": "JUWI GmbH",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Energie-Allee",
+    "hausnummer": "1",
+    "plz": "55286",
+    "ort": "Wörrstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.13317,
+    "lat": 49.839791
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Beachvolleyball Feld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ced-ecfc-485a-8750-26232f6ab502",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

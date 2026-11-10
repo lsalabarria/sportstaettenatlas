@@ -1,0 +1,35 @@
+{
+  "id": "RP-9c24bfa6-80ff-4029-8950-9bb99f5b0f49",
+  "name": "Leichtathletik Schulzentrum",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lehrhohl",
+    "hausnummer": "46",
+    "plz": "56077",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.617823,
+    "lat": 50.344731
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa6-80ff-4029-8950-9bb99f5b0f49",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

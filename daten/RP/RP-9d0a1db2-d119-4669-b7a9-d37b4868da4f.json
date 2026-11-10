@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db2-d119-4669-b7a9-d37b4868da4f",
+  "name": "Grundschule Jungeroth Buchholz/Westerwald",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "1",
+    "plz": "53567",
+    "ort": "Buchholz (Westerwald)"
+  },
+  "lage": {
+    "lon": 7.379195,
+    "lat": 50.7062
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db2-d119-4669-b7a9-d37b4868da4f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

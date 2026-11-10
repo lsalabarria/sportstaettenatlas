@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d4d-0604-433b-b70c-8a9660313f3a",
+  "name": "Bolzplatz Ohlenhard",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rohrer Straße",
+    "plz": "53520",
+    "ort": "Ohlenhard"
+  },
+  "lage": {
+    "lon": 6.768354,
+    "lat": 50.444367
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4d-0604-433b-b70c-8a9660313f3a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

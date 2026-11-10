@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d57-73b3-44eb-8e0f-8e245fa76694",
+  "name": "Bolzplatz Gillenbeuren",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lindenstraße",
+    "plz": "56825",
+    "ort": "Gillenbeuren"
+  },
+  "lage": {
+    "lon": 7.017044,
+    "lat": 50.155748
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d57-73b3-44eb-8e0f-8e245fa76694",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

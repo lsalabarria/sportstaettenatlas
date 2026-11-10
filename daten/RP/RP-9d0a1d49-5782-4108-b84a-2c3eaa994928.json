@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d49-5782-4108-b84a-2c3eaa994928",
+  "name": "Sportplatz Mudenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L265",
+    "plz": "57614",
+    "ort": "Mudenbach"
+  },
+  "lage": {
+    "lon": 7.730981,
+    "lat": 50.671197
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d49-5782-4108-b84a-2c3eaa994928",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

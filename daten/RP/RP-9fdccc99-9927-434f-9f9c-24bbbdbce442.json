@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccc99-9927-434f-9f9c-24bbbdbce442",
+  "name": "Sport- Schulzentrum Rülzheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "15",
+    "plz": "76761",
+    "ort": "Rülzheim"
+  },
+  "lage": {
+    "lon": 8.290363,
+    "lat": 49.150367
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc99-9927-434f-9f9c-24bbbdbce442",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

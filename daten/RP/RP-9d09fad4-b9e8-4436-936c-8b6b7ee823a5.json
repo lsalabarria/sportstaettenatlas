@@ -1,0 +1,40 @@
+{
+  "id": "RP-9d09fad4-b9e8-4436-936c-8b6b7ee823a5",
+  "name": "Tennisplatz am Sportpark",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Sportpark",
+    "plz": "53578",
+    "ort": "Windhagen"
+  },
+  "lage": {
+    "lon": 7.349421,
+    "lat": 50.636468
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad4-b9e8-4436-936c-8b6b7ee823a5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

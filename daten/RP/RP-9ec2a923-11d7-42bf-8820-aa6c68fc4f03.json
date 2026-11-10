@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a923-11d7-42bf-8820-aa6c68fc4f03",
+  "name": "Fitnessstudio Evas Apfel Grünstadt",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Kirchheimer Str.",
+    "hausnummer": "67",
+    "plz": "67269",
+    "ort": "Grünstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.174505,
+    "lat": 49.557012
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a923-11d7-42bf-8820-aa6c68fc4f03",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dfa-e3df-4980-a844-2d663090ec7f",
+  "name": "Sporthalle Schulzentrum Wirges",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Theodor-Heuss-Ring",
+    "hausnummer": "4",
+    "plz": "56422",
+    "ort": "Wirges, Stadt"
+  },
+  "lage": {
+    "lon": 7.801061,
+    "lat": 50.469827
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfa-e3df-4980-a844-2d663090ec7f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

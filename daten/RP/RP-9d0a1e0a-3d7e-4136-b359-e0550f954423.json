@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1e0a-3d7e-4136-b359-e0550f954423",
+  "name": "Sportplatz Oppenhausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Pastor-Wiegand-Straße",
+    "hausnummer": "1",
+    "plz": "56154",
+    "ort": "Boppard, Stadt"
+  },
+  "lage": {
+    "lon": 7.491204,
+    "lat": 50.204242
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0a-3d7e-4136-b359-e0550f954423",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

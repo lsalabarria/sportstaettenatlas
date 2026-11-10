@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d53-f10a-4fd8-a199-c9b8db1890b1",
+  "name": "Bolzplatz Pommern",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "B49",
+    "plz": "56829",
+    "ort": "Pommern"
+  },
+  "lage": {
+    "lon": 7.273884,
+    "lat": 50.168683
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d53-f10a-4fd8-a199-c9b8db1890b1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

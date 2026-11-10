@@ -1,0 +1,39 @@
+{
+  "id": "RP-9fdcce20-4cf0-400d-add6-3029fea6bf34",
+  "name": "Friedrich-Magnus-Schwerd-Gymnasium",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Vincentiusstraße",
+    "hausnummer": "5.0",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.417418,
+    "lat": 49.317383
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Diskus- und Hammerwurfanlage"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce20-4cf0-400d-add6-3029fea6bf34",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a910-aa79-4310-a4da-a6462318d0c1",
+  "name": "Sportschule Aita Sports",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "An d. Molkerei",
+    "hausnummer": "1",
+    "plz": "55278",
+    "ort": "Undenheim"
+  },
+  "lage": {
+    "lon": 8.240155,
+    "lat": 49.840304
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a910-aa79-4310-a4da-a6462318d0c1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9f01cc54-74b7-4864-95be-8b5e8c390465",
+  "name": "Waldwarmfreibad Bruchmühlbach-Miesau",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Hasensprung",
+    "plz": "66892",
+    "ort": "Bruchmühlbach-Miesau"
+  },
+  "lage": {
+    "lon": 7.44376,
+    "lat": 49.41195
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc54-74b7-4864-95be-8b5e8c390465",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

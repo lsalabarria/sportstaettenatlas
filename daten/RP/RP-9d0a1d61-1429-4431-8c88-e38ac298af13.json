@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d61-1429-4431-8c88-e38ac298af13",
+  "name": "Bolzplatz Keidelheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ahornweg",
+    "plz": "55471",
+    "ort": "Keidelheim"
+  },
+  "lage": {
+    "lon": 7.500056,
+    "lat": 49.988103
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d61-1429-4431-8c88-e38ac298af13",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc72-1a43-4f22-9486-9a278c2001ff",
+  "name": "Hallenbad Lahnstein",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Blücherstraße",
+    "hausnummer": "20",
+    "plz": "56112",
+    "ort": "Lahnstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.59285,
+    "lat": 50.31314
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc72-1a43-4f22-9486-9a278c2001ff",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

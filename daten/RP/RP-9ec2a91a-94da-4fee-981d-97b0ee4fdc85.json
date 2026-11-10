@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a91a-94da-4fee-981d-97b0ee4fdc85",
+  "name": "Bouleplatz Dreihof",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Oskar-Stübinger-Straße",
+    "plz": "76879",
+    "ort": "Essingen"
+  },
+  "lage": {
+    "lon": 8.18547,
+    "lat": 49.218772
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91a-94da-4fee-981d-97b0ee4fdc85",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

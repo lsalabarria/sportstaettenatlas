@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d4e-5251-4046-ab62-cd2a2591174a",
+  "name": "Bolzplatz Altes Wehr 2",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Langfigtal",
+    "hausnummer": "8",
+    "plz": "53505",
+    "ort": "Altenahr"
+  },
+  "lage": {
+    "lon": 6.994266,
+    "lat": 50.51173
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4e-5251-4046-ab62-cd2a2591174a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

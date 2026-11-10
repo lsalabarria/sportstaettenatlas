@@ -1,0 +1,33 @@
+{
+  "id": "RP-9f01cc5a-bbe2-4e6b-b9a1-aac9a58b4b94",
+  "name": "Rheinhessen-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Pariser Straße",
+    "hausnummer": "165",
+    "plz": "55268",
+    "ort": "Nieder-Olm, Stadt"
+  },
+  "lage": {
+    "lon": 8.191698,
+    "lat": 49.859402
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    },
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc5a-bbe2-4e6b-b9a1-aac9a58b4b94",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a932-d837-424f-9d52-2e1244fce329",
+  "name": "FitBase Neustadt",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Rosslaufstraße",
+    "hausnummer": "9",
+    "plz": "67433",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.162425,
+    "lat": 49.353241
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a932-d837-424f-9d52-2e1244fce329",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

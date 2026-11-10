@@ -1,0 +1,29 @@
+{
+  "id": "RP-a020a646-41f7-4285-94c5-1c1137d6998b",
+  "name": "Sporthalle Neustadt/Wied",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Raiffeisenstr.",
+    "hausnummer": "9",
+    "plz": "53577",
+    "ort": "Neustadt (Wied)"
+  },
+  "lage": {
+    "lon": 7.424947,
+    "lat": 50.621438
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a020a646-41f7-4285-94c5-1c1137d6998b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

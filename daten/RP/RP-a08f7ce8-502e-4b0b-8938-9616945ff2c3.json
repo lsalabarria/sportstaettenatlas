@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7ce8-502e-4b0b-8938-9616945ff2c3",
+  "name": "Sportplatz Rümmelsheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "hausnummer": "20",
+    "plz": "55452",
+    "ort": "Rümmelsheim"
+  },
+  "lage": {
+    "lon": 7.855125,
+    "lat": 49.931865
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ce8-502e-4b0b-8938-9616945ff2c3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

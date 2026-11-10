@@ -1,0 +1,39 @@
+{
+  "id": "RP-9fdccdef-cfb2-48a5-a19d-e54de86eaf4d",
+  "name": "Waldstadion am Erbsenberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Erbsenberg",
+    "hausnummer": "5",
+    "plz": "67663",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.784982,
+    "lat": 49.43723
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdef-cfb2-48a5-a19d-e54de86eaf4d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

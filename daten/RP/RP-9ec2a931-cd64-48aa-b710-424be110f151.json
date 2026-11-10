@@ -1,0 +1,35 @@
+{
+  "id": "RP-9ec2a931-cd64-48aa-b710-424be110f151",
+  "name": "Sportzentrum Hildebrandseck",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hildenbrandseck",
+    "hausnummer": "10",
+    "plz": "67435",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.1713,
+    "lat": 49.383956
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a931-cd64-48aa-b710-424be110f151",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

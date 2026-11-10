@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd5e-f26e-4e85-81fd-7cbceecfb36c",
+  "name": "Jahnstadion",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Jahnweg",
+    "plz": "66978",
+    "ort": "Clausen"
+  },
+  "lage": {
+    "lon": 7.674445,
+    "lat": 49.265408
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd5e-f26e-4e85-81fd-7cbceecfb36c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

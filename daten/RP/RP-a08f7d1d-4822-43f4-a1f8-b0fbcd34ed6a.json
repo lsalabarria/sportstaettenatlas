@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7d1d-4822-43f4-a1f8-b0fbcd34ed6a",
+  "name": "Sportplatz Winterhelle",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zur Winterhelle",
+    "hausnummer": "1",
+    "plz": "66869",
+    "ort": "Kusel, Stadt"
+  },
+  "lage": {
+    "lon": 7.405183,
+    "lat": 49.534092
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d1d-4822-43f4-a1f8-b0fbcd34ed6a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

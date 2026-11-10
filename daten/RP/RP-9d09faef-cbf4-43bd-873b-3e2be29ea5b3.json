@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faef-cbf4-43bd-873b-3e2be29ea5b3",
+  "name": "Ollmersch-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Günterstraße",
+    "hausnummer": "11",
+    "plz": "56414",
+    "ort": "Hundsangen"
+  },
+  "lage": {
+    "lon": 7.991176,
+    "lat": 50.455082
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faef-cbf4-43bd-873b-3e2be29ea5b3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

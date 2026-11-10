@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a923-1f73-40c0-b576-38a8381d881a",
+  "name": "Kegelcenter Grünstadt",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Uhlandstraße",
+    "hausnummer": "32",
+    "plz": "67269",
+    "ort": "Grünstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.170062,
+    "lat": 49.573433
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bowlingbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a923-1f73-40c0-b576-38a8381d881a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

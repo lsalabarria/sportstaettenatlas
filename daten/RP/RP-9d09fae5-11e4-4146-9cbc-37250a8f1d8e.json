@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fae5-11e4-4146-9cbc-37250a8f1d8e",
+  "name": "Ruwertalhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "54314",
+    "ort": "Zerf"
+  },
+  "lage": {
+    "lon": 6.687195,
+    "lat": 49.599391
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae5-11e4-4146-9cbc-37250a8f1d8e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

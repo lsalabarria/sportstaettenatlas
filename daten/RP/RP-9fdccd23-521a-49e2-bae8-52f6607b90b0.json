@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd23-521a-49e2-bae8-52f6607b90b0",
+  "name": "Tennisanlage Bobenheim-Roxheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Binnendamm",
+    "hausnummer": "26",
+    "plz": "67240",
+    "ort": "Bobenheim-Roxheim"
+  },
+  "lage": {
+    "lon": 8.373608,
+    "lat": 49.583667
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd23-521a-49e2-bae8-52f6607b90b0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

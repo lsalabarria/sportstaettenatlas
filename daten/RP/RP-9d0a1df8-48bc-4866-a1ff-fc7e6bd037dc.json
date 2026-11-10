@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1df8-48bc-4866-a1ff-fc7e6bd037dc",
+  "name": "TTC Zugbrücke Grenzau",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Brexbachstraße",
+    "hausnummer": "11-17",
+    "plz": "56203",
+    "ort": "Höhr-Grenzhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.661612,
+    "lat": 50.452703
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df8-48bc-4866-a1ff-fc7e6bd037dc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

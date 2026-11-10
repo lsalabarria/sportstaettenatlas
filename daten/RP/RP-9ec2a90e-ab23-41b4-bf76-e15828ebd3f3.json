@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a90e-ab23-41b4-bf76-e15828ebd3f3",
+  "name": "Skatepark Bodenheim",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Seurreallee",
+    "hausnummer": "1",
+    "plz": "55294",
+    "ort": "Bodenheim"
+  },
+  "lage": {
+    "lon": 8.309774,
+    "lat": 49.935116
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90e-ab23-41b4-bf76-e15828ebd3f3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

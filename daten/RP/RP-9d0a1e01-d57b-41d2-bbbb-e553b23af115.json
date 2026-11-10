@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e01-d57b-41d2-bbbb-e553b23af115",
+  "name": "Sporthalle Kripp",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Baumschulenweg",
+    "hausnummer": "59",
+    "plz": "53424",
+    "ort": "Remagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.263446,
+    "lat": 50.559435
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e01-d57b-41d2-bbbb-e553b23af115",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

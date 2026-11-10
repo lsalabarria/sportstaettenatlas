@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a913-3ec1-47d0-a8af-c9c6fe122de3",
+  "name": "Sportplatz an der Pfrimm",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Pfrimmstraße",
+    "plz": "67725",
+    "ort": "Breunigweiler"
+  },
+  "lage": {
+    "lon": 7.961673,
+    "lat": 49.566378
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a913-3ec1-47d0-a8af-c9c6fe122de3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

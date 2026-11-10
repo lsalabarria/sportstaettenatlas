@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24f4e5-93f5-4768-a930-f2b84cd42b22",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gaytalstraße",
+    "plz": "54675",
+    "ort": "Körperich"
+  },
+  "lage": {
+    "lon": 6.261045,
+    "lat": 49.919903
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e5-93f5-4768-a930-f2b84cd42b22",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

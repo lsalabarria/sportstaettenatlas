@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a93b-387b-4841-ad91-f28f5705ff3e",
+  "name": "MTV Tennisplätze",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Auf der Langen Lein",
+    "hausnummer": "1A",
+    "plz": "55120",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.222725,
+    "lat": 50.013562
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93b-387b-4841-ad91-f28f5705ff3e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

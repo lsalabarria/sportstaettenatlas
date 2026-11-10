@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a916-8ce4-4ec9-96cc-eff8a93d421c",
+  "name": "Reitanlage Schmalfelderhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Glockenstraße",
+    "plz": "67822",
+    "ort": "Gaugrehweiler"
+  },
+  "lage": {
+    "lon": 7.842759,
+    "lat": 49.696827
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Stall"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a916-8ce4-4ec9-96cc-eff8a93d421c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

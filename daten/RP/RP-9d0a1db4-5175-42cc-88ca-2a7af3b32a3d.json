@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1db4-5175-42cc-88ca-2a7af3b32a3d",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Alte Straße",
+    "plz": "54329",
+    "ort": "Konz, Stadt"
+  },
+  "lage": {
+    "lon": 6.573681,
+    "lat": 49.702327
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db4-5175-42cc-88ca-2a7af3b32a3d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7c91-0955-443e-b0b2-5828780af05b",
+  "name": "Sportplatz an der Schule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf dem Wasen",
+    "plz": "55767",
+    "ort": "Niederbrombach"
+  },
+  "lage": {
+    "lon": 7.237226,
+    "lat": 49.683282
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c91-0955-443e-b0b2-5828780af05b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

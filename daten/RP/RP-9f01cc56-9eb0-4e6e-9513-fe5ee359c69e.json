@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc56-9eb0-4e6e-9513-fe5ee359c69e",
+  "name": "Bergbad Heltersberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "hausnummer": "26",
+    "plz": "67716",
+    "ort": "Heltersberg"
+  },
+  "lage": {
+    "lon": 7.70364,
+    "lat": 49.31696
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc56-9eb0-4e6e-9513-fe5ee359c69e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

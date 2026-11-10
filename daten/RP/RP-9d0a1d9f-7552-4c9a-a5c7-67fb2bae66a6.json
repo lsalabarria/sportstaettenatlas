@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d9f-7552-4c9a-a5c7-67fb2bae66a6",
+  "name": "Sportzentrum Bausendorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "2",
+    "plz": "54538",
+    "ort": "Bausendorf"
+  },
+  "lage": {
+    "lon": 6.99296,
+    "lat": 50.013943
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d9f-7552-4c9a-a5c7-67fb2bae66a6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

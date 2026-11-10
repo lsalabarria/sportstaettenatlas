@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcce01-3bd2-4c14-a881-61283a7cd9e6",
+  "name": "VTV Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Anebosstraße",
+    "hausnummer": "4",
+    "plz": "67065",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.425166,
+    "lat": 49.457844
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce01-3bd2-4c14-a881-61283a7cd9e6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

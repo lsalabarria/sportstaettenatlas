@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc71-bd81-49b3-b3dc-74c0f2c9638a",
+  "name": "Schwimmbad Hochspeyer",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Weiherberg",
+    "hausnummer": "7",
+    "plz": "67691",
+    "ort": "Hochspeyer"
+  },
+  "lage": {
+    "lon": 7.89223,
+    "lat": 49.44063
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc71-bd81-49b3-b3dc-74c0f2c9638a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

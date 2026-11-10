@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faca-9750-464f-892f-56c3270390f9",
+  "name": "Sportplatz Helmenzen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mühlenweg",
+    "plz": "57612",
+    "ort": "Helmenzen"
+  },
+  "lage": {
+    "lon": 7.619137,
+    "lat": 50.696744
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faca-9750-464f-892f-56c3270390f9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

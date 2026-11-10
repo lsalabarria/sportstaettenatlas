@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fae8-95d5-4c9b-a8e9-767dd5ac2b4f",
+  "name": "Oberwaldhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "5",
+    "plz": "56204",
+    "ort": "Hillscheid"
+  },
+  "lage": {
+    "lon": 7.702259,
+    "lat": 50.405082
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae8-95d5-4c9b-a8e9-767dd5ac2b4f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

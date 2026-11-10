@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7cb8-118e-4331-a77b-7cfc7ce24a2e",
+  "name": "Tennisanlage Offenbach-Hundheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Kreuz",
+    "hausnummer": "42",
+    "plz": "67749",
+    "ort": "Offenbach-Hundheim"
+  },
+  "lage": {
+    "lon": 7.562035,
+    "lat": 49.626253
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb8-118e-4331-a77b-7cfc7ce24a2e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

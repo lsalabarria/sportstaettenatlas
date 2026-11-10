@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdcce26-d87b-4cd0-8eea-266d56ac401b",
+  "name": "Pfrimmparkarena",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Wehrgasse",
+    "hausnummer": "20",
+    "plz": "67549",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.327745,
+    "lat": 49.636137
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce26-d87b-4cd0-8eea-266d56ac401b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

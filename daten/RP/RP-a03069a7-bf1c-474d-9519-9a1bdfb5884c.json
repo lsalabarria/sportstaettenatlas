@@ -1,0 +1,29 @@
+{
+  "id": "RP-a03069a7-bf1c-474d-9519-9a1bdfb5884c",
+  "name": "Sportplatz Dornholzhausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "8",
+    "plz": "56357",
+    "ort": "Dornholzhausen"
+  },
+  "lage": {
+    "lon": 7.789846,
+    "lat": 50.272756
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a03069a7-bf1c-474d-9519-9a1bdfb5884c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24bfaa-7304-4b7c-81db-0f2d3da2b929",
+  "name": "Spielplatz am Mühlenteich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Mühlteich",
+    "plz": "56072",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.521335,
+    "lat": 50.368222
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfaa-7304-4b7c-81db-0f2d3da2b929",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

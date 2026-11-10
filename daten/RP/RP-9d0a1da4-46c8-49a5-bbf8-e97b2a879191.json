@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da4-46c8-49a5-bbf8-e97b2a879191",
+  "name": "Tennisanlage Üxheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "St.-Wendelin-Straße",
+    "hausnummer": "3",
+    "plz": "54579",
+    "ort": "Üxheim"
+  },
+  "lage": {
+    "lon": 6.753024,
+    "lat": 50.342125
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da4-46c8-49a5-bbf8-e97b2a879191",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

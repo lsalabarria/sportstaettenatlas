@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd38-c289-41df-8d1d-b6dbc63a5978",
+  "name": "TC Mutterstadt",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "100",
+    "plz": "67112",
+    "ort": "Mutterstadt"
+  },
+  "lage": {
+    "lon": 8.372528,
+    "lat": 49.421771
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd38-c289-41df-8d1d-b6dbc63a5978",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

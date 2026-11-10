@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fad0-6831-4fba-abac-bfd23db8eed5",
+  "name": "Sporthalle Hamm (Sieg)",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "1",
+    "plz": "57577",
+    "ort": "Hamm (Sieg)"
+  },
+  "lage": {
+    "lon": 7.670522,
+    "lat": 50.761347
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad0-6831-4fba-abac-bfd23db8eed5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

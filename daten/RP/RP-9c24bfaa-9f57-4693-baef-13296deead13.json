@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfaa-9f57-4693-baef-13296deead13",
+  "name": "Sporthalle Wallersheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kammertsweg",
+    "hausnummer": "18",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.606082,
+    "lat": 50.384455
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfaa-9f57-4693-baef-13296deead13",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

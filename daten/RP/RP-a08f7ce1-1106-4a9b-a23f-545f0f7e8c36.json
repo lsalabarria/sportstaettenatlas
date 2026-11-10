@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7ce1-1106-4a9b-a23f-545f0f7e8c36",
+  "name": "Skateplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Sportheim",
+    "hausnummer": "1",
+    "plz": "55596",
+    "ort": "Waldböckelheim"
+  },
+  "lage": {
+    "lon": 7.702809,
+    "lat": 49.810678
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ce1-1106-4a9b-a23f-545f0f7e8c36",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

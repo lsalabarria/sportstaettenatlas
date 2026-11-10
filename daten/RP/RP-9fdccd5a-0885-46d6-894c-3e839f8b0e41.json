@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdccd5a-0885-46d6-894c-3e839f8b0e41",
+  "name": "Reitanlage Fath",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Römerstraße",
+    "hausnummer": "18",
+    "plz": "66989",
+    "ort": "Höheischweiler"
+  },
+  "lage": {
+    "lon": 7.546651,
+    "lat": 49.230299
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd5a-0885-46d6-894c-3e839f8b0e41",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d65-b87a-48fc-9835-3afd0092a05d",
+  "name": "Sportanlage Leienhaus",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L155",
+    "plz": "54347",
+    "ort": "Neumagen-Dhron"
+  },
+  "lage": {
+    "lon": 6.928764,
+    "lat": 49.842284
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d65-b87a-48fc-9835-3afd0092a05d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

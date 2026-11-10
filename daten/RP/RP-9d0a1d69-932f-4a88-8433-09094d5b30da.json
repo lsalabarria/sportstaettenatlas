@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d69-932f-4a88-8433-09094d5b30da",
+  "name": "Turnhalle Zeltingen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Deutschherrenstraße",
+    "hausnummer": "45",
+    "plz": "54492",
+    "ort": "Zeltingen-Rachtig"
+  },
+  "lage": {
+    "lon": 7.001241,
+    "lat": 49.964047
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d69-932f-4a88-8433-09094d5b30da",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

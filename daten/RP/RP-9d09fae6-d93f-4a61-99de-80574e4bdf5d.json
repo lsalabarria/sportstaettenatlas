@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fae6-d93f-4a61-99de-80574e4bdf5d",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Cordel",
+    "plz": "54441",
+    "ort": "Ockfen"
+  },
+  "lage": {
+    "lon": 6.588618,
+    "lat": 49.620786
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae6-d93f-4a61-99de-80574e4bdf5d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

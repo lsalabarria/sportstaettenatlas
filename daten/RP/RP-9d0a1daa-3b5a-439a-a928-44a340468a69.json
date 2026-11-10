@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1daa-3b5a-439a-a928-44a340468a69",
+  "name": "Grundschule Herdorf",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Homscheidstraße",
+    "hausnummer": "18",
+    "plz": "57562",
+    "ort": "Herdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.946845,
+    "lat": 50.775277
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daa-3b5a-439a-a928-44a340468a69",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

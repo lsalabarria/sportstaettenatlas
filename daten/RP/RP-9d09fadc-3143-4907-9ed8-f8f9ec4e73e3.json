@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fadc-3143-4907-9ed8-f8f9ec4e73e3",
+  "name": "Beachvolleyballplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Wallendorfer Straße",
+    "plz": "54669",
+    "ort": "Bollendorf"
+  },
+  "lage": {
+    "lon": 6.356828,
+    "lat": 49.851743
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadc-3143-4907-9ed8-f8f9ec4e73e3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

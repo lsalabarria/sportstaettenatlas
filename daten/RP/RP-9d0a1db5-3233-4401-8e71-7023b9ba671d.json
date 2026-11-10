@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1db5-3233-4401-8e71-7023b9ba671d",
+  "name": "Tennisplätze FC Könen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Charnystraße",
+    "hausnummer": "5a",
+    "plz": "54329",
+    "ort": "Konz, Stadt"
+  },
+  "lage": {
+    "lon": 6.560202,
+    "lat": 49.678727
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db5-3233-4401-8e71-7023b9ba671d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

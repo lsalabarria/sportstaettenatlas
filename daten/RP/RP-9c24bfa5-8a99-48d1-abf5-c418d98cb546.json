@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfa5-8a99-48d1-abf5-c418d98cb546",
+  "name": "Sporthalle Grundschule Freiherr-vom-Stein",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Steinstraße",
+    "hausnummer": "20",
+    "plz": "56073",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.577996,
+    "lat": 50.361862
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa5-8a99-48d1-abf5-c418d98cb546",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

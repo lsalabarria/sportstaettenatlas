@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7c80-af7c-4f74-b6f3-ef9d34af5371",
+  "name": "Sportplatz Wonsheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Fürfelder Straße",
+    "hausnummer": "9",
+    "plz": "55599",
+    "ort": "Wonsheim"
+  },
+  "lage": {
+    "lon": 7.955084,
+    "lat": 49.782507
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c80-af7c-4f74-b6f3-ef9d34af5371",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

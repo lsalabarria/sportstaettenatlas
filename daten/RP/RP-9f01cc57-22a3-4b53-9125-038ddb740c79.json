@@ -1,0 +1,33 @@
+{
+  "id": "RP-9f01cc57-22a3-4b53-9125-038ddb740c79",
+  "name": "Freibad Gimbsheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Schwimmbad",
+    "hausnummer": "1",
+    "plz": "67578",
+    "ort": "Gimbsheim"
+  },
+  "lage": {
+    "lon": 8.38302,
+    "lat": 49.77774
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Schwimmverein Freibad Gimbsheim",
+  "betreiber": "Schwimmverein Freibad Gimbsheim",
+  "website": "www.schwimmbad-gimbsheim.de",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc57-22a3-4b53-9125-038ddb740c79",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

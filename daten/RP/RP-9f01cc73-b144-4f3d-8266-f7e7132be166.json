@@ -1,0 +1,33 @@
+{
+  "id": "RP-9f01cc73-b144-4f3d-8266-f7e7132be166",
+  "name": "Nettebad Mayen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bachstraße",
+    "hausnummer": "44",
+    "plz": "56727",
+    "ort": "Mayen, Stadt"
+  },
+  "lage": {
+    "lon": 7.2201,
+    "lat": 50.33403
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    },
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc73-b144-4f3d-8266-f7e7132be166",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

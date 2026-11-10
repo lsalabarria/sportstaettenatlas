@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a903-a0cf-47fa-b072-87fec0ef2fb1",
+  "name": "Sport- und Freizeitgelände Kallstadt",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Leistadter Str.",
+    "hausnummer": "24",
+    "plz": "67169",
+    "ort": "Kallstadt"
+  },
+  "lage": {
+    "lon": 8.169508,
+    "lat": 49.493709
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a903-a0cf-47fa-b072-87fec0ef2fb1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

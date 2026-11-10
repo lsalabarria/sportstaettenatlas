@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a932-6c47-43d5-9ae0-f666ec11cd8a",
+  "name": "Sportanlage Mußbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Heidweg",
+    "hausnummer": "12",
+    "plz": "67435",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.176761,
+    "lat": 49.36204
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a932-6c47-43d5-9ae0-f666ec11cd8a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

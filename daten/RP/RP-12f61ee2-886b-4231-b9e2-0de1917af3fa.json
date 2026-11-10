@@ -1,0 +1,29 @@
+{
+  "id": "RP-12f61ee2-886b-4231-b9e2-0de1917af3fa",
+  "name": "Sportplatz Studernheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Eichwiesenweg",
+    "hausnummer": "8",
+    "plz": "67227",
+    "ort": "Frankenthal (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.361679,
+    "lat": 49.512102
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "12f61ee2-886b-4231-b9e2-0de1917af3fa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

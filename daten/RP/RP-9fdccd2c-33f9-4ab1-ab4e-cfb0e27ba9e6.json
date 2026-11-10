@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd2c-33f9-4ab1-ab4e-cfb0e27ba9e6",
+  "name": "Sportzentrum TV Hochdorf",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Einolf",
+    "hausnummer": "2",
+    "plz": "67126",
+    "ort": "Hochdorf-Assenheim"
+  },
+  "lage": {
+    "lon": 8.28456,
+    "lat": 49.419497
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd2c-33f9-4ab1-ab4e-cfb0e27ba9e6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

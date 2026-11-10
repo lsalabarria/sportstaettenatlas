@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90a-99cb-4cae-b258-ba1fc2c47bab",
+  "name": "Sportplatz Nieder-Hilbersheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Außerhalb",
+    "hausnummer": "3",
+    "plz": "55437",
+    "ort": "Nieder-Hilbersheim"
+  },
+  "lage": {
+    "lon": 8.048762,
+    "lat": 49.914962
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90a-99cb-4cae-b258-ba1fc2c47bab",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

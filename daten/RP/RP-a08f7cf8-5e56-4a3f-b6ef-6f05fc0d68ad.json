@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7cf8-5e56-4a3f-b6ef-6f05fc0d68ad",
+  "name": "Sportplatz Am Bornberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Bornberg",
+    "plz": "55777",
+    "ort": "Berschweiler bei Baumholder"
+  },
+  "lage": {
+    "lon": 7.293777,
+    "lat": 49.580966
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cf8-5e56-4a3f-b6ef-6f05fc0d68ad",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

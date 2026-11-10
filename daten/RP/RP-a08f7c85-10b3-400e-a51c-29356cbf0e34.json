@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7c85-10b3-400e-a51c-29356cbf0e34",
+  "name": "Gemeindehalle Monzernheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Töpferstraße",
+    "plz": "55234",
+    "ort": "Monzernheim"
+  },
+  "lage": {
+    "lon": 8.224866,
+    "lat": 49.72197
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c85-10b3-400e-a51c-29356cbf0e34",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

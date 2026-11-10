@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd91-237c-46d7-b921-de6d82d7fdb7",
+  "name": "Sportanlage Maximilansau",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Turnerplatz",
+    "plz": "76744",
+    "ort": "Wörth am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.289806,
+    "lat": 49.029031
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd91-237c-46d7-b921-de6d82d7fdb7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d4b-873e-4510-a0d3-013a34908800",
+  "name": "Sportplatz \"Rote Erde\" Lantershofen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rheinstraße",
+    "hausnummer": "32",
+    "plz": "53501",
+    "ort": "Grafschaft"
+  },
+  "lage": {
+    "lon": 7.110354,
+    "lat": 50.552644
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4b-873e-4510-a0d3-013a34908800",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

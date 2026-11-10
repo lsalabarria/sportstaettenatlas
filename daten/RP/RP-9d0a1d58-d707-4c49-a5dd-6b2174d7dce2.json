@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d58-d707-4c49-a5dd-6b2174d7dce2",
+  "name": "Grundschule Briedel-Pünderich",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "2",
+    "plz": "56862",
+    "ort": "Pünderich"
+  },
+  "lage": {
+    "lon": 7.127021,
+    "lat": 50.04156
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d58-d707-4c49-a5dd-6b2174d7dce2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

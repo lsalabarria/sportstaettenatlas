@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d09fadd-9b82-49f1-ad75-ce1152ed7bdd",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Brühl",
+    "plz": "54343",
+    "ort": "Föhren"
+  },
+  "lage": {
+    "lon": 6.761256,
+    "lat": 49.855127
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadd-9b82-49f1-ad75-ce1152ed7bdd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

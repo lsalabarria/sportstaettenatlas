@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d52-a2e1-41bf-8bb5-e5b1242c2268",
+  "name": "Sporthalle Bruttig-Fankel",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Birkenweg",
+    "plz": "56814",
+    "ort": "Bruttig-Fankel"
+  },
+  "lage": {
+    "lon": 7.230309,
+    "lat": 50.130258
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d52-a2e1-41bf-8bb5-e5b1242c2268",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

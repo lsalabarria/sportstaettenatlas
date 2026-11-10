@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a928-f079-4647-9f51-8338c1c92502",
+  "name": "SV 1914 Bingerbrück e.V",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Bangert",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.877704,
+    "lat": 49.961947
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a928-f079-4647-9f51-8338c1c92502",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

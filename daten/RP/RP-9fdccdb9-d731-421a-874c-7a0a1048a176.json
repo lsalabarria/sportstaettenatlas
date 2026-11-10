@@ -1,0 +1,41 @@
+{
+  "id": "RP-9fdccdb9-d731-421a-874c-7a0a1048a176",
+  "name": "Reit-und Zuchtverein Mayen e.V.",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Thomashof",
+    "plz": "56727",
+    "ort": "Mayen, Stadt"
+  },
+  "lage": {
+    "lon": 7.208731,
+    "lat": 50.311068
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Führ- und Longierplatz"
+    },
+    {
+      "bezeichnung": "Springparcours"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdb9-d731-421a-874c-7a0a1048a176",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

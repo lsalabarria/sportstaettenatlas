@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90d-d32f-4c2a-a699-c635ead33efb",
+  "name": "Spielplatz An der Oberhecke",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "An d. Oberhecke",
+    "hausnummer": "4",
+    "plz": "55270",
+    "ort": "Sörgenloch"
+  },
+  "lage": {
+    "lon": 8.202625,
+    "lat": 49.885169
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90d-d32f-4c2a-a699-c635ead33efb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

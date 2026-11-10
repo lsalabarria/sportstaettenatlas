@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d65-5c1e-4e85-9b02-3a4a20c72cb9",
+  "name": "IGS Morbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Klosterweg",
+    "hausnummer": "7",
+    "plz": "54497",
+    "ort": "Morbach"
+  },
+  "lage": {
+    "lon": 7.127618,
+    "lat": 49.81334
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d65-5c1e-4e85-9b02-3a4a20c72cb9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

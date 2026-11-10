@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e06-6075-4b33-85a7-9b448c0508fd",
+  "name": "Haus der Begegnung Bad Breisig",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Koblenzer Straße",
+    "hausnummer": "27",
+    "plz": "53498",
+    "ort": "Bad Breisig, Stadt"
+  },
+  "lage": {
+    "lon": 7.300536,
+    "lat": 50.508807
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e06-6075-4b33-85a7-9b448c0508fd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

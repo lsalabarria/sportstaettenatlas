@@ -1,0 +1,36 @@
+{
+  "id": "RP-9fdccd22-dbcc-4f02-8798-e30098808e65",
+  "name": "Bernd-Jung-Sportstätten",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Binnendamm",
+    "hausnummer": "20",
+    "plz": "67240",
+    "ort": "Bobenheim-Roxheim"
+  },
+  "lage": {
+    "lon": 8.372871,
+    "lat": 49.582889
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd22-dbcc-4f02-8798-e30098808e65",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

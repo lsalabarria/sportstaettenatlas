@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5b-43bb-486b-be22-febfd58f0345",
+  "name": "Bolzplatz Schwall",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Karthause",
+    "plz": "56281",
+    "ort": "Schwall"
+  },
+  "lage": {
+    "lon": 7.558084,
+    "lat": 50.143543
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5b-43bb-486b-be22-febfd58f0345",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a91d-2964-460e-b3ab-59eb9518271e",
+  "name": "Bolzplatz Niederotterbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Niedergasse",
+    "hausnummer": "8",
+    "plz": "76889",
+    "ort": "Niederotterbach"
+  },
+  "lage": {
+    "lon": 8.046822,
+    "lat": 49.060127
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91d-2964-460e-b3ab-59eb9518271e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

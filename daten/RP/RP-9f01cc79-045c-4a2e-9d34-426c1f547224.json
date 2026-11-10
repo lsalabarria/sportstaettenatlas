@@ -1,0 +1,33 @@
+{
+  "id": "RP-9f01cc79-045c-4a2e-9d34-426c1f547224",
+  "name": "Mainzer Taubertsbergbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wallstraße",
+    "hausnummer": "9",
+    "plz": "55122",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.256218,
+    "lat": 49.953058
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    },
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc79-045c-4a2e-9d34-426c1f547224",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

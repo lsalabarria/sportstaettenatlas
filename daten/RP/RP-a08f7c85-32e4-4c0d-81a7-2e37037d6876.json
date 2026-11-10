@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7c85-32e4-4c0d-81a7-2e37037d6876",
+  "name": "Sportplatz In den Niederwiesen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wiesenweg",
+    "plz": "67582",
+    "ort": "Mettenheim"
+  },
+  "lage": {
+    "lon": 8.327935,
+    "lat": 49.736944
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c85-32e4-4c0d-81a7-2e37037d6876",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

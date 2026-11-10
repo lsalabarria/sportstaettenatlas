@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1db2-9803-40bf-bded-90f91de35cf5",
+  "name": "Sonderlandeplatz Dierdorf-Wienau",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "strasse": "Flugplatz",
+    "plz": "56269",
+    "ort": "Dierdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.652628,
+    "lat": 50.565075
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sonderlandeplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db2-9803-40bf-bded-90f91de35cf5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

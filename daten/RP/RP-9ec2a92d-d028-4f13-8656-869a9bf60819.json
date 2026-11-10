@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a92d-d028-4f13-8656-869a9bf60819",
+  "name": "Minigolf Nierstein",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Wörrstädter Str.",
+    "hausnummer": "71",
+    "plz": "55283",
+    "ort": "Nierstein, Stadt"
+  },
+  "lage": {
+    "lon": 8.333543,
+    "lat": 49.863276
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bahnengolf"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92d-d028-4f13-8656-869a9bf60819",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

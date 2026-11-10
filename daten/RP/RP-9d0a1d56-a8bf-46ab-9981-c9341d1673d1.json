@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d56-a8bf-46ab-9981-c9341d1673d1",
+  "name": "Bolzplatz Zettingen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brunnenstraße",
+    "plz": "56761",
+    "ort": "Zettingen"
+  },
+  "lage": {
+    "lon": 7.19799,
+    "lat": 50.230303
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d56-a8bf-46ab-9981-c9341d1673d1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

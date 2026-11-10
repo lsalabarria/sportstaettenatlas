@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da8-6583-4f4c-abe6-3d1d427ff0fc",
+  "name": "Bertha-von-Suttner-Realschule plus",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Auf dem Bühl",
+    "hausnummer": "1",
+    "plz": "57518",
+    "ort": "Betzdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.867769,
+    "lat": 50.786605
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da8-6583-4f4c-abe6-3d1d427ff0fc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

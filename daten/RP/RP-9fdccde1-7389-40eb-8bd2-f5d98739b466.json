@@ -1,0 +1,36 @@
+{
+  "id": "RP-9fdccde1-7389-40eb-8bd2-f5d98739b466",
+  "name": "Stadion Kieferberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Freiherr-Vom-Stein-Straße",
+    "hausnummer": "12",
+    "plz": "67659",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.76426,
+    "lat": 49.463708
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccde1-7389-40eb-8bd2-f5d98739b466",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

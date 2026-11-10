@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a932-1dcc-45a7-9abf-cf65e990e717",
+  "name": "Flug- und Landeplatz Motorschirmfreunde Pfalz e.V",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "strasse": "L519",
+    "plz": "67435",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.208082,
+    "lat": 49.379146
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sonderlandeplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a932-1dcc-45a7-9abf-cf65e990e717",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

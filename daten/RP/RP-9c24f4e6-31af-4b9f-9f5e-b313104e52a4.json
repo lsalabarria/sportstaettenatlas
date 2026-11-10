@@ -1,0 +1,32 @@
+{
+  "id": "RP-9c24f4e6-31af-4b9f-9f5e-b313104e52a4",
+  "name": "Sportplatz Stahler Kopf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Unter`m Stahler Kopf",
+    "hausnummer": "5",
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.49587,
+    "lat": 49.969416
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e6-31af-4b9f-9f5e-b313104e52a4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

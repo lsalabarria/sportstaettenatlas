@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a936-858f-473e-81fd-53b63b46cfa0",
+  "name": "Beachvolleyballfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Gewerbestraße",
+    "hausnummer": "25",
+    "plz": "55130",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.326227,
+    "lat": 49.95758
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a936-858f-473e-81fd-53b63b46cfa0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

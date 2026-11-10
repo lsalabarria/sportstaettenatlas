@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccde1-1820-4413-b16f-db14826dfa04",
+  "name": "Tennisclub Morlautern",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Kalkreuthstraße",
+    "plz": "67659",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.751176,
+    "lat": 49.475144
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccde1-1820-4413-b16f-db14826dfa04",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

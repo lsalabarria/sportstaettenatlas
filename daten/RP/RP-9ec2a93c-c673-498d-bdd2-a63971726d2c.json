@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a93c-c673-498d-bdd2-a63971726d2c",
+  "name": "Schliitschuhbahn Edenkoben",
+  "kategorie": "Eissportstätte",
+  "adresse": {
+    "strasse": "Villastraße",
+    "hausnummer": "61",
+    "plz": "67480",
+    "ort": "Edenkoben, Stadt"
+  },
+  "lage": {
+    "lon": 8.095903,
+    "lat": 49.279822
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Eissportanlage ungedeckt"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93c-c673-498d-bdd2-a63971726d2c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

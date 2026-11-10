@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccda0-d6ad-4f53-8371-c69347dc347f",
+  "name": "Sporthalle Grundschule Karl d'Ester",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "9",
+    "plz": "56179",
+    "ort": "Vallendar, Stadt"
+  },
+  "lage": {
+    "lon": 7.615995,
+    "lat": 50.402622
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccda0-d6ad-4f53-8371-c69347dc347f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

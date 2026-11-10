@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a91c-855f-4f42-a1ef-62ff9a193e41",
+  "name": "Sportanlage Sportfreunde Dierbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "30",
+    "plz": "76889",
+    "ort": "Dierbach"
+  },
+  "lage": {
+    "lon": 8.062439,
+    "lat": 49.080781
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91c-855f-4f42-a1ef-62ff9a193e41",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

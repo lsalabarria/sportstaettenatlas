@@ -1,0 +1,44 @@
+{
+  "id": "RP-9ec2a935-ecea-45ff-a036-05e913ddeae9",
+  "name": "Bezirkssportanlage Lerchenberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rilkeallee",
+    "hausnummer": "58",
+    "plz": "55127",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.198242,
+    "lat": 49.955317
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a935-ecea-45ff-a036-05e913ddeae9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

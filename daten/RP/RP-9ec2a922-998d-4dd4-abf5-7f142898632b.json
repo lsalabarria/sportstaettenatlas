@@ -1,0 +1,53 @@
+{
+  "id": "RP-9ec2a922-998d-4dd4-abf5-7f142898632b",
+  "name": "Rudolf-Harbig-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Uhlandstraße",
+    "hausnummer": "30A",
+    "plz": "67269",
+    "ort": "Grünstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.172371,
+    "lat": 49.5731
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a922-998d-4dd4-abf5-7f142898632b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

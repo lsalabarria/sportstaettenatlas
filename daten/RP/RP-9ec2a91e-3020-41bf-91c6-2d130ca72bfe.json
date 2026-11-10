@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a91e-3020-41bf-91c6-2d130ca72bfe",
+  "name": "Sportanlage Birkenhördt",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Sandfield",
+    "plz": "76889",
+    "ort": "Birkenhördt"
+  },
+  "lage": {
+    "lon": 7.920916,
+    "lat": 49.111389
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91e-3020-41bf-91c6-2d130ca72bfe",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

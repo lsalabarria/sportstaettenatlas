@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7c94-2e6b-4771-bfe4-814ba22ee834",
+  "name": "Sportplatz am Geißling",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "B270",
+    "plz": "55758",
+    "ort": "Oberreidenbach"
+  },
+  "lage": {
+    "lon": 7.461844,
+    "lat": 49.712069
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c94-2e6b-4771-bfe4-814ba22ee834",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7d23-235a-410a-b76f-8d708ec4187f",
+  "name": "Tennisanlage Kirn",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Turnstraße",
+    "hausnummer": "4",
+    "plz": "55606",
+    "ort": "Kirn, Stadt"
+  },
+  "lage": {
+    "lon": 7.450284,
+    "lat": 49.790181
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d23-235a-410a-b76f-8d708ec4187f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e0f-0b65-41fe-8c49-b7e46c8f4f16",
+  "name": "Schützengesellschaft 1883 Wittlich",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Bergweilerweg",
+    "hausnummer": "57",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.869968,
+    "lat": 49.982983
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0f-0b65-41fe-8c49-b7e46c8f4f16",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfa8-ca3b-4f7a-9377-c517654361d2",
+  "name": "Sporthalle der Goethe Realschule plus",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Brenderweg",
+    "hausnummer": "123",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.60041,
+    "lat": 50.371669
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa8-ca3b-4f7a-9377-c517654361d2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

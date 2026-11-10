@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d09fad0-0521-4ae0-bfd4-56067e52a675",
+  "name": "Tennisplatz Fürthen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "2",
+    "plz": "57539",
+    "ort": "Fürthen"
+  },
+  "lage": {
+    "lon": 7.679604,
+    "lat": 50.777738
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad0-0521-4ae0-bfd4-56067e52a675",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

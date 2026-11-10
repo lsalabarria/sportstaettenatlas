@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a913-33dd-48c2-ab17-485a5ee1b360",
+  "name": "Sportanlage Sippersfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportplatzstraße",
+    "plz": "67729",
+    "ort": "Sippersfeld"
+  },
+  "lage": {
+    "lon": 7.931807,
+    "lat": 49.552458
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a913-33dd-48c2-ab17-485a5ee1b360",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

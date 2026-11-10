@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdccd56-6b73-4cee-a5c5-7077866d385b",
+  "name": "Gestüt Wiesenhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Wiesenhof",
+    "hausnummer": "1",
+    "plz": "66484",
+    "ort": "Battweiler"
+  },
+  "lage": {
+    "lon": 7.456538,
+    "lat": 49.269224
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd56-6b73-4cee-a5c5-7077866d385b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a907-c888-44d9-b419-329b064e019d",
+  "name": "Fussballplatz Spvgg.Viertäler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rheinhöhenstraße",
+    "plz": "55413",
+    "ort": "Oberdiebach"
+  },
+  "lage": {
+    "lon": 7.774929,
+    "lat": 50.040772
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a907-c888-44d9-b419-329b064e019d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

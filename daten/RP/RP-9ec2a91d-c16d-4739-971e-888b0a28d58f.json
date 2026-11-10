@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a91d-c16d-4739-971e-888b0a28d58f",
+  "name": "Schützengilde Erzental Oberotterbach e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Oberdorfstraße",
+    "hausnummer": "74",
+    "plz": "76889",
+    "ort": "Oberotterbach"
+  },
+  "lage": {
+    "lon": 7.956242,
+    "lat": 49.071529
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91d-c16d-4739-971e-888b0a28d58f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

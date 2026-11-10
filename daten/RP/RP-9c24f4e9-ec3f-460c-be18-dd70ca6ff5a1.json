@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24f4e9-ec3f-460c-be18-dd70ca6ff5a1",
+  "name": "Grundschule Kyllburg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bademer Straße",
+    "hausnummer": "76",
+    "plz": "54655",
+    "ort": "Kyllburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.59592,
+    "lat": 50.036283
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle Sondermaße"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e9-ec3f-460c-be18-dd70ca6ff5a1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd70-7c33-4690-b97f-6d865a57c958",
+  "name": "Turnhalle Nußdorf",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Lindenbergstraße",
+    "hausnummer": "67",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.103607,
+    "lat": 49.222139
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd70-7c33-4690-b97f-6d865a57c958",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

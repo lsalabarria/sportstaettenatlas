@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e05-05ca-4e83-84cc-e28fc0f783ca",
+  "name": "Grundschule St. Sebastianus Bad Bodendorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gartenstraße",
+    "hausnummer": "17",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.22256,
+    "lat": 50.556363
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e05-05ca-4e83-84cc-e28fc0f783ca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

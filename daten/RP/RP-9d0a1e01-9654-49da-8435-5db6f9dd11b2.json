@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e01-9654-49da-8435-5db6f9dd11b2",
+  "name": "Bogenschießanlage Kaiser-Wilhelm-Park",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Schwanenteichbrücke",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.155956,
+    "lat": 50.542088
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bogenschießanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e01-9654-49da-8435-5db6f9dd11b2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

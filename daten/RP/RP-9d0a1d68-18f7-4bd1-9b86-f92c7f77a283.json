@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1d68-18f7-4bd1-9b86-f92c7f77a283",
+  "name": "Sportplatz am Märchen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Peter-von-Binsfeld-Straße",
+    "plz": "54518",
+    "ort": "Binsfeld"
+  },
+  "lage": {
+    "lon": 6.700512,
+    "lat": 49.96692
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d68-18f7-4bd1-9b86-f92c7f77a283",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

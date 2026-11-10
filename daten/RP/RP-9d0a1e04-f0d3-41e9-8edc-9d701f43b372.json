@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e04-f0d3-41e9-8edc-9d701f43b372",
+  "name": "Bolzplatz Bad Bodendorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bäderstraße",
+    "hausnummer": "30",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.221897,
+    "lat": 50.550722
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e04-f0d3-41e9-8edc-9d701f43b372",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

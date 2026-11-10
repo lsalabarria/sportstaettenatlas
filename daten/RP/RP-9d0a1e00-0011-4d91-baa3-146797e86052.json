@@ -1,0 +1,41 @@
+{
+  "id": "RP-9d0a1e00-0011-4d91-baa3-146797e86052",
+  "name": "Are Gymnasium",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mittelstraße",
+    "hausnummer": "110",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.148769,
+    "lat": 50.539266
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e00-0011-4d91-baa3-146797e86052",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

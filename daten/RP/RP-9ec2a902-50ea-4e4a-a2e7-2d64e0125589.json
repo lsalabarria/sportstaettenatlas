@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a902-50ea-4e4a-a2e7-2d64e0125589",
+  "name": "Sportanlage TuS Altleiningen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportplatzstraße",
+    "hausnummer": "8",
+    "plz": "67317",
+    "ort": "Altleiningen"
+  },
+  "lage": {
+    "lon": 8.078332,
+    "lat": 49.504363
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a902-50ea-4e4a-a2e7-2d64e0125589",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7c84-ae54-4f5b-9c70-8aaf96fb0933",
+  "name": "Sporthalle VFL Eppelsheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Albert-Schweitzer-Straße",
+    "hausnummer": "8",
+    "plz": "55234",
+    "ort": "Eppelsheim"
+  },
+  "lage": {
+    "lon": 8.171045,
+    "lat": 49.704909
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c84-ae54-4f5b-9c70-8aaf96fb0933",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

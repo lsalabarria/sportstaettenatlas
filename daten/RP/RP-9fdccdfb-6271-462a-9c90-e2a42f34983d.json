@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdfb-6271-462a-9c90-e2a42f34983d",
+  "name": "Sporthalle der IGSLO",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hermann-Hesse-Straße",
+    "hausnummer": "11",
+    "plz": "67071",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.366797,
+    "lat": 49.484524
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdfb-6271-462a-9c90-e2a42f34983d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

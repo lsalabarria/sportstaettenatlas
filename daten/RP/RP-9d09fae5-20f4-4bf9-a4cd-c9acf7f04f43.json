@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d09fae5-20f4-4bf9-a4cd-c9acf7f04f43",
+  "name": "Sportplatz Zerf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Deeswiese",
+    "plz": "54314",
+    "ort": "Zerf"
+  },
+  "lage": {
+    "lon": 6.683994,
+    "lat": 49.597123
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae5-20f4-4bf9-a4cd-c9acf7f04f43",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

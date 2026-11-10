@@ -1,0 +1,39 @@
+{
+  "id": "RP-9fdccdfd-3472-46b7-97e6-7eab9a152c0d",
+  "name": "Sportplatz Brunnenweg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brunnenweg",
+    "hausnummer": "65",
+    "plz": "67071",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.335506,
+    "lat": 49.473717
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdfd-3472-46b7-97e6-7eab9a152c0d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

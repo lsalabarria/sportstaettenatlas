@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a917-a79d-47b6-a751-8d1e17ebd697",
+  "name": "Schützenverein Albisheim",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Stetter Str.",
+    "plz": "67308",
+    "ort": "Albisheim (Pfrimm)"
+  },
+  "lage": {
+    "lon": 8.09825,
+    "lat": 49.652597
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a917-a79d-47b6-a751-8d1e17ebd697",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

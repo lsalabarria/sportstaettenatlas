@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d50-9707-409f-b7da-db3a19a48e9f",
+  "name": "Leyberghalle Kempenich",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Leygasse",
+    "plz": "56746",
+    "ort": "Kempenich"
+  },
+  "lage": {
+    "lon": 7.122597,
+    "lat": 50.419197
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-9707-409f-b7da-db3a19a48e9f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

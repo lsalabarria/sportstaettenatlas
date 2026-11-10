@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d66-30e7-4f70-bfc0-d345119de6c4",
+  "name": "Multifunktionsfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Kirchgäßchen",
+    "hausnummer": "6",
+    "plz": "54523",
+    "ort": "Hetzerath"
+  },
+  "lage": {
+    "lon": 6.812077,
+    "lat": 49.876166
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d66-30e7-4f70-bfc0-d345119de6c4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

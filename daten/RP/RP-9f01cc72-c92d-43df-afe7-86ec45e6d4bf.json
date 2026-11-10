@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc72-c92d-43df-afe7-86ec45e6d4bf",
+  "name": "Freibad Mußbach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am weißen Haus",
+    "hausnummer": "23",
+    "plz": "67435",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.16574,
+    "lat": 49.37002
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc72-c92d-43df-afe7-86ec45e6d4bf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

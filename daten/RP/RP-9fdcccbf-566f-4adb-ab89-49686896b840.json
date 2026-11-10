@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcccbf-566f-4adb-ab89-49686896b840",
+  "name": "Sportanlage Kaltenengers",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rübenacher Straße",
+    "plz": "56220",
+    "ort": "Kaltenengers"
+  },
+  "lage": {
+    "lon": 7.54135,
+    "lat": 50.402375
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccbf-566f-4adb-ab89-49686896b840",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

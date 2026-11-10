@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e01-32f9-4649-83fe-3030ebb4740e",
+  "name": "clever fit Bad Neuenahr-Ahrweiler",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Sprengnetter-Campus",
+    "hausnummer": "4",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.131296,
+    "lat": 50.548584
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e01-32f9-4649-83fe-3030ebb4740e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "RP-9fdcccff-e1c4-4b43-a8e1-89b128e02a18",
+  "name": "RFV Buchenhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Taunusstraße",
+    "hausnummer": "2",
+    "plz": "56357",
+    "ort": "Kasdorf"
+  },
+  "lage": {
+    "lon": 7.780059,
+    "lat": 50.206168
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Springparcours"
+    },
+    {
+      "bezeichnung": "Führ- und Longierplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccff-e1c4-4b43-a8e1-89b128e02a18",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

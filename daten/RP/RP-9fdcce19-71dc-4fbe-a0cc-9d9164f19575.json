@@ -1,0 +1,38 @@
+{
+  "id": "RP-9fdcce19-71dc-4fbe-a0cc-9d9164f19575",
+  "name": "Sportplatz Kurpfalzkaserne",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Spaldinger Straße",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.42883,
+    "lat": 49.360914
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce19-71dc-4fbe-a0cc-9d9164f19575",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

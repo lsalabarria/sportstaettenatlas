@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e0c-e0ae-4e3e-a3a7-76a449996da7",
+  "name": "INSIDE FITNESS Kastellaun",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Fordstraße",
+    "hausnummer": "1/3 OG",
+    "plz": "56288",
+    "ort": "Kastellaun, Stadt"
+  },
+  "lage": {
+    "lon": 7.456317,
+    "lat": 50.079229
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0c-e0ae-4e3e-a3a7-76a449996da7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

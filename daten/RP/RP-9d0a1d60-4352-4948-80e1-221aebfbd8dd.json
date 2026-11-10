@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d60-4352-4948-80e1-221aebfbd8dd",
+  "name": "Tennisplatz Argenthal",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Zum Tennisplatz",
+    "plz": "55496",
+    "ort": "Argenthal"
+  },
+  "lage": {
+    "lon": 7.600051,
+    "lat": 49.968063
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d60-4352-4948-80e1-221aebfbd8dd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

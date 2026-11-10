@@ -1,0 +1,29 @@
+{
+  "id": "RP-db0b65d7-e48e-4605-8165-d8e7f04f92c6",
+  "name": "Schießanlage mit Vereinsheim Hoppstädten",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Sportplatzweg",
+    "hausnummer": "1",
+    "plz": "67744",
+    "ort": "Hoppstädten"
+  },
+  "lage": {
+    "lon": 7.570126,
+    "lat": 49.678651
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "db0b65d7-e48e-4605-8165-d8e7f04f92c6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

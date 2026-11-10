@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d62-71b4-4020-83df-908cbb9e6932",
+  "name": "Bolzplatz Pleizenhausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brühlstraße",
+    "hausnummer": "4",
+    "plz": "55469",
+    "ort": "Pleizenhausen"
+  },
+  "lage": {
+    "lon": 7.569034,
+    "lat": 50.014249
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d62-71b4-4020-83df-908cbb9e6932",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

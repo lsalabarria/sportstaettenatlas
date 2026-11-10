@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd60-063c-44c5-bff7-5eb2e68efdec",
+  "name": "Beachvolleyballfeld Waldfischbach-Burgalben",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Carentaner Pl.",
+    "plz": "67714",
+    "ort": "Waldfischbach-Burgalben"
+  },
+  "lage": {
+    "lon": 7.647577,
+    "lat": 49.280308
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd60-063c-44c5-bff7-5eb2e68efdec",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

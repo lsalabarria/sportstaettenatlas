@@ -1,0 +1,28 @@
+{
+  "id": "RP-f8a80875-da3e-4f9c-a9c2-34e0f1e14ac6",
+  "name": "Sportplatz Engers Tenne",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Johannes-Seiz-Straße",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.544453,
+    "lat": 50.427535
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "f8a80875-da3e-4f9c-a9c2-34e0f1e14ac6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

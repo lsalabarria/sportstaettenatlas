@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da8-051a-4444-97e4-af136f2709fb",
+  "name": "Bolzplatz Seelbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bahnhostraße",
+    "plz": "57632",
+    "ort": "Selbach (Sieg)"
+  },
+  "lage": {
+    "lon": 7.561986,
+    "lat": 50.637954
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da8-051a-4444-97e4-af136f2709fb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

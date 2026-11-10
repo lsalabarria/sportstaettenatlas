@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d64-c676-4f06-95a8-6d0bd33df5ce",
+  "name": "Sportplatz Merscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Merscheider Straße",
+    "hausnummer": "2",
+    "plz": "54497",
+    "ort": "Morbach"
+  },
+  "lage": {
+    "lon": 7.073876,
+    "lat": 49.822821
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d64-c676-4f06-95a8-6d0bd33df5ce",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

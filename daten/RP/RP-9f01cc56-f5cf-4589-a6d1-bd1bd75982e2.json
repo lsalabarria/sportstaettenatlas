@@ -1,0 +1,29 @@
+{
+  "id": "RP-9f01cc56-f5cf-4589-a6d1-bd1bd75982e2",
+  "name": "Naturerlebnisbad Bingerbrück",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wilhelm-Beumer-Weg",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.87624,
+    "lat": 49.96139
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Naturbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc56-f5cf-4589-a6d1-bd1bd75982e2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

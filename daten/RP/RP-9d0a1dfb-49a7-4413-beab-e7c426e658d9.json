@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dfb-49a7-4413-beab-e7c426e658d9",
+  "name": "Festhalle Oberwaldschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "9",
+    "plz": "56242",
+    "ort": "Selters (Westerwald), Stadt"
+  },
+  "lage": {
+    "lon": 7.761567,
+    "lat": 50.532189
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfb-49a7-4413-beab-e7c426e658d9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

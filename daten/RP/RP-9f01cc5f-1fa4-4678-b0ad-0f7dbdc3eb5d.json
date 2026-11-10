@@ -1,0 +1,29 @@
+{
+  "id": "RP-9f01cc5f-1fa4-4678-b0ad-0f7dbdc3eb5d",
+  "name": "Gemünder Maar",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Maarstraße",
+    "plz": "54550",
+    "ort": "Daun, Stadt"
+  },
+  "lage": {
+    "lon": 6.83834,
+    "lat": 50.1782
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Naturbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc5f-1fa4-4678-b0ad-0f7dbdc3eb5d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

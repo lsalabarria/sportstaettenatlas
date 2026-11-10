@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a908-02e0-465a-83b1-e7fbd2f4a7b5",
+  "name": "Frankfurter Kletterwand",
+  "kategorie": "Klettersportstätte",
+  "adresse": {
+    "strasse": "Morgenbachtal",
+    "plz": "55413",
+    "ort": "Trechtingshausen"
+  },
+  "lage": {
+    "lon": 7.846172,
+    "lat": 50.000235
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Klettersportanlage Outdoor"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a908-02e0-465a-83b1-e7fbd2f4a7b5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

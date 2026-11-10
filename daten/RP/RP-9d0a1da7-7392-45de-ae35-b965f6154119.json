@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da7-7392-45de-ae35-b965f6154119",
+  "name": "Multifunktionsfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Kurberg",
+    "plz": "56767",
+    "ort": "Gunderath"
+  },
+  "lage": {
+    "lon": 6.974882,
+    "lat": 50.257884
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da7-7392-45de-ae35-b965f6154119",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

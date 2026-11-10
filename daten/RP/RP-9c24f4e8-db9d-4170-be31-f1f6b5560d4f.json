@@ -1,0 +1,27 @@
+{
+  "id": "RP-9c24f4e8-db9d-4170-be31-f1f6b5560d4f",
+  "name": "Sportplatz Erdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.576945,
+    "lat": 50.008084
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e8-db9d-4170-be31-f1f6b5560d4f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

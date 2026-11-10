@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdc5-b841-408a-b652-dcbe6ca054fb",
+  "name": "Sportanlage Sophie-Hedwig-Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Danziger Str.",
+    "hausnummer": "30",
+    "plz": "65582",
+    "ort": "Diez, Stadt"
+  },
+  "lage": {
+    "lon": 8.017251,
+    "lat": 50.363921
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdc5-b841-408a-b652-dcbe6ca054fb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

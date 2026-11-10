@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1dae-7bde-4018-9d12-04236a88e1f8",
+  "name": "Fusballplatz Astrid-Lindgren-Straße Neuwied",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Astrid-Lindgren-Straße",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.473943,
+    "lat": 50.451049
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dae-7bde-4018-9d12-04236a88e1f8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-a08f7cf4-c7ed-4ae0-aef8-7a00a949b078",
+  "name": "Schwimmbecken Haus Soonwald Alzey",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "plz": "55232",
+    "ort": "Alzey, Stadt"
+  },
+  "lage": {
+    "lon": 8.135368,
+    "lat": 49.74151
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cf4-c7ed-4ae0-aef8-7a00a949b078",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a918-55a4-4a72-9582-84fbd5b912c8",
+  "name": "Tennis-Club Kirrweiler",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Unterried",
+    "plz": "67489",
+    "ort": "Kirrweiler (Pfalz)"
+  },
+  "lage": {
+    "lon": 8.173288,
+    "lat": 49.295465
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a918-55a4-4a72-9582-84fbd5b912c8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

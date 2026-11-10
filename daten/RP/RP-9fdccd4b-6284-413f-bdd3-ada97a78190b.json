@@ -1,0 +1,39 @@
+{
+  "id": "RP-9fdccd4b-6284-413f-bdd3-ada97a78190b",
+  "name": "Turnverein 1904 e.V. Hinterweidenthal",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Turnstraße",
+    "hausnummer": "16",
+    "plz": "66999",
+    "ort": "Hinterweidenthal"
+  },
+  "lage": {
+    "lon": 7.7592,
+    "lat": 49.19192
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Diskus- und Hammerwurfanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd4b-6284-413f-bdd3-ada97a78190b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

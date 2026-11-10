@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24f4e5-bda0-4e73-b4f0-912aff94c6b2",
+  "name": "Tennisplatz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Bitburger Straße",
+    "plz": "54675",
+    "ort": "Körperich"
+  },
+  "lage": {
+    "lon": 6.25456,
+    "lat": 49.933256
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e5-bda0-4e73-b4f0-912aff94c6b2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

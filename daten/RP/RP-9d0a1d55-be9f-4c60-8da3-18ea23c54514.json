@@ -1,0 +1,38 @@
+{
+  "id": "RP-9d0a1d55-be9f-4c60-8da3-18ea23c54514",
+  "name": "Westernreithof Auf den großen Gärten",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "14",
+    "plz": "56829",
+    "ort": "Kail"
+  },
+  "lage": {
+    "lon": 7.242717,
+    "lat": 50.184585
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d55-be9f-4c60-8da3-18ea23c54514",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

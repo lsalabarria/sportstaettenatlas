@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccca7-bdc2-40b4-bf70-e43a1f2bfb0d",
+  "name": "SV 1965 ERLENBACH",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kandeler Straße",
+    "plz": "76872",
+    "ort": "Erlenbach bei Kandel"
+  },
+  "lage": {
+    "lon": 8.185974,
+    "lat": 49.106167
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccca7-bdc2-40b4-bf70-e43a1f2bfb0d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

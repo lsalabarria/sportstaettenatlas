@@ -1,0 +1,41 @@
+{
+  "id": "RP-a08f7cfb-4fc3-4092-8d4a-937d553537e2",
+  "name": "Minick Field",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Avenue D",
+    "plz": "55774",
+    "ort": "Baumholder, Stadt"
+  },
+  "lage": {
+    "lon": 7.324505,
+    "lat": 49.625065
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Diskus- und Hammerwurfanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cfb-4fc3-4092-8d4a-937d553537e2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

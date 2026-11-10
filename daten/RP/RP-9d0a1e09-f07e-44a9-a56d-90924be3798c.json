@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e09-f07e-44a9-a56d-90924be3798c",
+  "name": "Helene-Pagés-Schule Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Buchenauer Straße",
+    "hausnummer": "70",
+    "plz": "56154",
+    "ort": "Boppard, Stadt"
+  },
+  "lage": {
+    "lon": 7.60782,
+    "lat": 50.204907
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e09-f07e-44a9-a56d-90924be3798c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

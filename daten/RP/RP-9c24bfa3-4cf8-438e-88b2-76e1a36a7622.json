@@ -1,0 +1,40 @@
+{
+  "id": "RP-9c24bfa3-4cf8-438e-88b2-76e1a36a7622",
+  "name": "Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Winninger Weg",
+    "plz": "56072",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.546946,
+    "lat": 50.334168
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa3-4cf8-438e-88b2-76e1a36a7622",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

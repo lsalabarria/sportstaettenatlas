@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d61-9c60-481e-91a6-bd779001232a",
+  "name": "Sportplatz Mengerschied",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportplatz",
+    "plz": "55490",
+    "ort": "Mengerschied"
+  },
+  "lage": {
+    "lon": 7.511704,
+    "lat": 49.907643
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d61-9c60-481e-91a6-bd779001232a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

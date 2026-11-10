@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7d2f-2b2f-48f5-9223-ec8336a50db8",
+  "name": "Ropeventure Hochseilgarten",
+  "kategorie": "Klettersportstätte",
+  "adresse": {
+    "strasse": "Rheingrafenstraße",
+    "hausnummer": "5414",
+    "plz": "55543",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.870951,
+    "lat": 49.812878
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Klettersportanlage Outdoor"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d2f-2b2f-48f5-9223-ec8336a50db8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

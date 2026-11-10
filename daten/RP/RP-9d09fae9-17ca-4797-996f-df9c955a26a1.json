@@ -1,0 +1,38 @@
+{
+  "id": "RP-9d09fae9-17ca-4797-996f-df9c955a26a1",
+  "name": "Augst-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Westerwaldstraße",
+    "hausnummer": "49",
+    "plz": "56335",
+    "ort": "Neuhäusel"
+  },
+  "lage": {
+    "lon": 7.710945,
+    "lat": 50.37853
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Speerwurfanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae9-17ca-4797-996f-df9c955a26a1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

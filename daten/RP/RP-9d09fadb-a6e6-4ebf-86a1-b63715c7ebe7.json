@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fadb-a6e6-4ebf-86a1-b63715c7ebe7",
+  "name": "Beachvolleyballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf der Formgasse",
+    "plz": "54310",
+    "ort": "Ralingen"
+  },
+  "lage": {
+    "lon": 6.508335,
+    "lat": 49.79016
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadb-a6e6-4ebf-86a1-b63715c7ebe7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

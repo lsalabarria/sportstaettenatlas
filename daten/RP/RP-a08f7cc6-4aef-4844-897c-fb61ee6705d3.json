@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7cc6-4aef-4844-897c-fb61ee6705d3",
+  "name": "Münchwalder Hubertushalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Dorfstraße",
+    "plz": "55595",
+    "ort": "Münchwald"
+  },
+  "lage": {
+    "lon": 7.674623,
+    "lat": 49.896423
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cc6-4aef-4844-897c-fb61ee6705d3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

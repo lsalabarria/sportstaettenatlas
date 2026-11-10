@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24bfaa-e793-4b22-89c1-2268ffe14ef0",
+  "name": "Anton-Mehlbreuer-Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kurfürst-Schönborn-Straße",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.58225,
+    "lat": 50.396629
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfaa-e793-4b22-89c1-2268ffe14ef0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

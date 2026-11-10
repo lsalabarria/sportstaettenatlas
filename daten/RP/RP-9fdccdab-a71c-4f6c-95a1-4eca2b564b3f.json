@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdccdab-a71c-4f6c-95a1-4eca2b564b3f",
+  "name": "Sportplatz Grundschule Hasenfänger",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kurt-Schumacher-Straße",
+    "hausnummer": "107",
+    "plz": "56626",
+    "ort": "Andernach, Stadt"
+  },
+  "lage": {
+    "lon": 7.399305,
+    "lat": 50.424971
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdab-a71c-4f6c-95a1-4eca2b564b3f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

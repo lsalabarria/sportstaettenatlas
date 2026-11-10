@@ -1,0 +1,31 @@
+{
+  "id": "RP-9c24f4ee-f37a-49a1-a117-90ef36fbec96",
+  "name": "Sportplatz Bleialf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bergwerkstraße",
+    "plz": "54608",
+    "ort": "Bleialf"
+  },
+  "lage": {
+    "lon": 6.295929,
+    "lat": 50.239116
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ee-f37a-49a1-a117-90ef36fbec96",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

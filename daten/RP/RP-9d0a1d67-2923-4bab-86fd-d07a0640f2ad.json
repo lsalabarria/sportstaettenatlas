@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d67-2923-4bab-86fd-d07a0640f2ad",
+  "name": "Sportplatz am Bach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Veldenzer Bach",
+    "plz": "54472",
+    "ort": "Veldenz"
+  },
+  "lage": {
+    "lon": 7.021205,
+    "lat": 49.892366
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d67-2923-4bab-86fd-d07a0640f2ad",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d09fae2-61ce-42c4-aab6-9d18115e4d72",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54413",
+    "ort": "Bescheid"
+  },
+  "lage": {
+    "lon": 6.881495,
+    "lat": 49.742741
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae2-61ce-42c4-aab6-9d18115e4d72",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

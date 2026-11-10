@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfa7-1c22-4c0a-824f-92548f96406d",
+  "name": "AdventureGolf Koblenz",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Greiffenklaustraße",
+    "hausnummer": "3",
+    "plz": "56077",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.622215,
+    "lat": 50.371746
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bahnengolf"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa7-1c22-4c0a-824f-92548f96406d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "RP-9ec2a93b-afd2-4d90-87c8-f4a375c7ab12",
+  "name": "Sportplatz Sankt Martin",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Dörnel",
+    "hausnummer": "15",
+    "plz": "67487",
+    "ort": "Sankt Martin"
+  },
+  "lage": {
+    "lon": 8.101761,
+    "lat": 49.30376
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93b-afd2-4d90-87c8-f4a375c7ab12",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

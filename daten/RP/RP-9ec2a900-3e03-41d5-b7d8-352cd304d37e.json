@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a900-3e03-41d5-b7d8-352cd304d37e",
+  "name": "Soccerpark Dirmstein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am alten Sportplatz",
+    "plz": "67246",
+    "ort": "Dirmstein"
+  },
+  "lage": {
+    "lon": 8.250719,
+    "lat": 49.560511
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a900-3e03-41d5-b7d8-352cd304d37e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

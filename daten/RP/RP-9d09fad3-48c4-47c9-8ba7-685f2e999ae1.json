@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fad3-48c4-47c9-8ba7-685f2e999ae1",
+  "name": "St. Sebastianus Schützenbruderschaft Leubsdorf-Rhein 1574/1925 e. V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "An der Koppe",
+    "hausnummer": "1",
+    "plz": "53547",
+    "ort": "Leubsdorf"
+  },
+  "lage": {
+    "lon": 7.298979,
+    "lat": 50.549383
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad3-48c4-47c9-8ba7-685f2e999ae1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "RP-9d0a1d56-b344-45ab-b409-e3b5a328cb58",
+  "name": "Sportanlage Alflen Militärstützpunkt",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L52",
+    "plz": "56828",
+    "ort": "Alflen"
+  },
+  "lage": {
+    "lon": 7.062517,
+    "lat": 50.178589
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d56-b344-45ab-b409-e3b5a328cb58",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

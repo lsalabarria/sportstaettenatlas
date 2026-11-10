@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a93d-8553-44cc-8a1e-0283361f6d91",
+  "name": "Schützenverein Herxheim",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "St.-Christophorus-Straße",
+    "hausnummer": "14",
+    "plz": "76863",
+    "ort": "Herxheim bei Landau/ Pfalz"
+  },
+  "lage": {
+    "lon": 8.222732,
+    "lat": 49.136369
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93d-8553-44cc-8a1e-0283361f6d91",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfa5-c517-4f35-b29c-c0dd012956b8",
+  "name": "Sporthalle der Diesterwegschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kastorpfaffenstraße",
+    "hausnummer": "9-11",
+    "plz": "56068",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.601912,
+    "lat": 50.360821
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa5-c517-4f35-b29c-c0dd012956b8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

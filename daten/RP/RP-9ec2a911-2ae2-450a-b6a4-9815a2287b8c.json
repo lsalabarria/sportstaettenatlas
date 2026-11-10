@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a911-2ae2-450a-b6a4-9815a2287b8c",
+  "name": "Riesling-Arena",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "plz": "55278",
+    "ort": "Ludwigshöhe"
+  },
+  "lage": {
+    "lon": 8.355165,
+    "lat": 49.81606
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a911-2ae2-450a-b6a4-9815a2287b8c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

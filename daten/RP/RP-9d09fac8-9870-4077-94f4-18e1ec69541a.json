@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fac8-9870-4077-94f4-18e1ec69541a",
+  "name": "Großsporthalle Altenkirchen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Sportzentrum",
+    "plz": "57610",
+    "ort": "Altenkirchen"
+  },
+  "lage": {
+    "lon": 7.65839,
+    "lat": 50.693191
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac8-9870-4077-94f4-18e1ec69541a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

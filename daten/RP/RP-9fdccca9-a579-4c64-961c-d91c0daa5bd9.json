@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccca9-a579-4c64-961c-d91c0daa5bd9",
+  "name": "Bolzplatz Steinweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Klingbachstraße",
+    "hausnummer": "3",
+    "plz": "76872",
+    "ort": "Steinweiler"
+  },
+  "lage": {
+    "lon": 8.145519,
+    "lat": 49.123416
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccca9-a579-4c64-961c-d91c0daa5bd9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

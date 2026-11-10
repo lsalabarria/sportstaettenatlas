@@ -1,0 +1,38 @@
+{
+  "id": "RP-9d09faec-3700-4e4d-a0b2-c285d12ccff7",
+  "name": "Sportplatz Wittgert Spvgg. Haiderbach e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "38A",
+    "plz": "56237",
+    "ort": "Wittgert"
+  },
+  "lage": {
+    "lon": 7.702589,
+    "lat": 50.502722
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faec-3700-4e4d-a0b2-c285d12ccff7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

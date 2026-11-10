@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24f4e9-c057-44b2-abf8-f5dbb182263a",
+  "name": "Sportplatz Oberkail",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Laacher Weg",
+    "plz": "54533",
+    "ort": "Oberkail"
+  },
+  "lage": {
+    "lon": 6.679487,
+    "lat": 50.045227
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e9-c057-44b2-abf8-f5dbb182263a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad6-2f92-4389-968c-853cf5492768",
+  "name": "Boltzplatz Altenburg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Burgstraße",
+    "plz": "53567",
+    "ort": "Asbach"
+  },
+  "lage": {
+    "lon": 7.460571,
+    "lat": 50.638826
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad6-2f92-4389-968c-853cf5492768",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

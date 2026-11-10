@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24f4ef-46db-4a11-aa03-66f12d601bd8",
+  "name": "Turnhalle KiTa Winterspelt",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Pulverstraße",
+    "hausnummer": "19",
+    "plz": "54616",
+    "ort": "Winterspelt"
+  },
+  "lage": {
+    "lon": 6.209153,
+    "lat": 50.211345
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle Sondermaße"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ef-46db-4a11-aa03-66f12d601bd8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1dfa-1726-4ab6-b780-dba7f5635129",
+  "name": "Bolzplatz am Erlenhofsee",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "St.-Martin-Straße",
+    "plz": "56235",
+    "ort": "Ransbach-Baumbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.735543,
+    "lat": 50.463674
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfa-1726-4ab6-b780-dba7f5635129",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

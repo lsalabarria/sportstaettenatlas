@@ -1,0 +1,35 @@
+{
+  "id": "RP-9ec2a902-b1c0-415f-be8a-2069e1838068",
+  "name": "Wranglein Ranch",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Bickelhaube",
+    "hausnummer": "1",
+    "plz": "67271",
+    "ort": "Battenberg (Pfalz)"
+  },
+  "lage": {
+    "lon": 8.123704,
+    "lat": 49.528925
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Stall"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a902-b1c0-415f-be8a-2069e1838068",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

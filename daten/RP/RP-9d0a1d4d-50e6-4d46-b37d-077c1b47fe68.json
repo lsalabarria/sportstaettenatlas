@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d4d-50e6-4d46-b37d-077c1b47fe68",
+  "name": "Schwarz Kaul",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Im Domauel",
+    "plz": "53520",
+    "ort": "Schuld"
+  },
+  "lage": {
+    "lon": 6.890804,
+    "lat": 50.452516
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Naturbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4d-50e6-4d46-b37d-077c1b47fe68",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

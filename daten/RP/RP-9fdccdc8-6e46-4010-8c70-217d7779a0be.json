@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdc8-6e46-4010-8c70-217d7779a0be",
+  "name": "Fitnessstudio DIEz ARENA GmbH & Co. KG",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Industriestraße",
+    "hausnummer": "12",
+    "plz": "65582",
+    "ort": "Diez, Stadt"
+  },
+  "lage": {
+    "lon": 8.040527,
+    "lat": 50.373406
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdc8-6e46-4010-8c70-217d7779a0be",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

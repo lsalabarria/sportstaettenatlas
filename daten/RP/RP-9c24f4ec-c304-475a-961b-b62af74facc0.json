@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24f4ec-c304-475a-961b-b62af74facc0",
+  "name": "Sporthalle Grundschule Daleiden",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "5",
+    "plz": "54689",
+    "ort": "Daleiden"
+  },
+  "lage": {
+    "lon": 6.188211,
+    "lat": 50.072635
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle Sondermaße"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ec-c304-475a-961b-b62af74facc0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

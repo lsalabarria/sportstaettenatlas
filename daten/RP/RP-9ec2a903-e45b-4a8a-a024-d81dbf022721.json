@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a903-e45b-4a8a-a024-d81dbf022721",
+  "name": "Tennisclub Ellerstadt",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Bruchstraße",
+    "hausnummer": "111",
+    "plz": "67158",
+    "ort": "Ellerstadt"
+  },
+  "lage": {
+    "lon": 8.260254,
+    "lat": 49.472115
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a903-e45b-4a8a-a024-d81dbf022721",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

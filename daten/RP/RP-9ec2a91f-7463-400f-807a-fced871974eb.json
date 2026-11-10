@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a91f-7463-400f-807a-fced871974eb",
+  "name": "Sportanlage Waldhambach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportpl.",
+    "plz": "76857",
+    "ort": "Waldhambach"
+  },
+  "lage": {
+    "lon": 7.988496,
+    "lat": 49.162942
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91f-7463-400f-807a-fced871974eb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

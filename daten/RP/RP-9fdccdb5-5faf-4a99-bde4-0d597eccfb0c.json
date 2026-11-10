@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccdb5-5faf-4a99-bde4-0d597eccfb0c",
+  "name": "Sportplatz Jugendhilfezentrum Bernardshof",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Polcher Str.",
+    "plz": "56727",
+    "ort": "Mayen, Stadt"
+  },
+  "lage": {
+    "lon": 7.243378,
+    "lat": 50.317641
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdb5-5faf-4a99-bde4-0d597eccfb0c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fae3-08da-45e5-8855-12f2c08795fe",
+  "name": "Bouleanlage",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hunsrückstraße",
+    "hausnummer": "52",
+    "plz": "54421",
+    "ort": "Reinsfeld"
+  },
+  "lage": {
+    "lon": 6.878418,
+    "lat": 49.675461
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae3-08da-45e5-8855-12f2c08795fe",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

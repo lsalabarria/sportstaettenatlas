@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a931-185a-4f94-84c7-e6a4f9aee675",
+  "name": "Sportfeld Gaugrehweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "ob. Waldstraße",
+    "plz": "67822",
+    "ort": "Gaugrehweiler"
+  },
+  "lage": {
+    "lon": 7.867095,
+    "lat": 49.705217
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a931-185a-4f94-84c7-e6a4f9aee675",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

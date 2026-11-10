@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d5e-60b2-4166-bea3-af1e4f55e7b6",
+  "name": "Soonwaldschule Gemünden",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Soonwaldstraße",
+    "hausnummer": "3",
+    "plz": "55490",
+    "ort": "Gemünden"
+  },
+  "lage": {
+    "lon": 7.482733,
+    "lat": 49.892606
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5e-60b2-4166-bea3-af1e4f55e7b6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

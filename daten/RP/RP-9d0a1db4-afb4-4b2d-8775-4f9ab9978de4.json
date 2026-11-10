@@ -1,0 +1,40 @@
+{
+  "id": "RP-9d0a1db4-afb4-4b2d-8775-4f9ab9978de4",
+  "name": "Tennis-Club Konz 1970 e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Stadion",
+    "plz": "54329",
+    "ort": "Konz, Stadt"
+  },
+  "lage": {
+    "lon": 6.587915,
+    "lat": 49.694124
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Ballwand"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db4-afb4-4b2d-8775-4f9ab9978de4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

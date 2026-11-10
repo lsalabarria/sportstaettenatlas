@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd5f-af19-407d-8c08-e7373be67e04",
+  "name": "Bruchwiesenhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Carentaner Pl.",
+    "plz": "67714",
+    "ort": "Waldfischbach-Burgalben"
+  },
+  "lage": {
+    "lon": 7.648153,
+    "lat": 49.281376
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd5f-af19-407d-8c08-e7373be67e04",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

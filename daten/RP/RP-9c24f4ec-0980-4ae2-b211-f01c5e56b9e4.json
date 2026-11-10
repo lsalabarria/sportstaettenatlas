@@ -1,0 +1,31 @@
+{
+  "id": "RP-9c24f4ec-0980-4ae2-b211-f01c5e56b9e4",
+  "name": "Sportplatz Utscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L8",
+    "plz": "54675",
+    "ort": "Utscheid"
+  },
+  "lage": {
+    "lon": 6.359136,
+    "lat": 49.997394
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ec-0980-4ae2-b211-f01c5e56b9e4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcccb2-6ed4-4d50-a50f-115ba35867e3",
+  "name": "Tennisclub Nörtershausen/Udenhausen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "2",
+    "plz": "56283",
+    "ort": "Nörtershausen"
+  },
+  "lage": {
+    "lon": 7.490886,
+    "lat": 50.233847
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccb2-6ed4-4d50-a50f-115ba35867e3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

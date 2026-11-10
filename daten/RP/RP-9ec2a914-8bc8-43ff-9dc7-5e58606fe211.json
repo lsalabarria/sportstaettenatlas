@@ -1,0 +1,41 @@
+{
+  "id": "RP-9ec2a914-8bc8-43ff-9dc7-5e58606fe211",
+  "name": "Sportverein FC Marnheim 1919 e. V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportpl.",
+    "hausnummer": "2",
+    "plz": "67297",
+    "ort": "Marnheim"
+  },
+  "lage": {
+    "lon": 8.036131,
+    "lat": 49.635791
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a914-8bc8-43ff-9dc7-5e58606fe211",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

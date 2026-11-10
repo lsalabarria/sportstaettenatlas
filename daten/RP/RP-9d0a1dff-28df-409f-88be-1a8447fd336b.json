@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dff-28df-409f-88be-1a8447fd336b",
+  "name": "Basketballfeld Ahrstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "hausnummer": "3",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.098123,
+    "lat": 50.538747
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dff-28df-409f-88be-1a8447fd336b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

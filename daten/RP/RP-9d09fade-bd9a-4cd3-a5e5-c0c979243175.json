@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d09fade-bd9a-4cd3-a5e5-c0c979243175",
+  "name": "Sportplatz Leiwen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "12",
+    "plz": "54340",
+    "ort": "Leiwen"
+  },
+  "lage": {
+    "lon": 6.87804,
+    "lat": 49.824104
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fade-bd9a-4cd3-a5e5-c0c979243175",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

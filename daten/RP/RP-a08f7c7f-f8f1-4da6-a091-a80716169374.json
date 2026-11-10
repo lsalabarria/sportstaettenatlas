@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7c7f-f8f1-4da6-a091-a80716169374",
+  "name": "Sportplatz Dittelsheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "67596",
+    "ort": "Dittelsheim-Heßloch"
+  },
+  "lage": {
+    "lon": 8.232616,
+    "lat": 49.74581
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c7f-f8f1-4da6-a091-a80716169374",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

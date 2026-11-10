@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a91f-09a9-476f-8f32-5eb046a5fe92",
+  "name": "Sportplatz SV 1927 Heuchelheim-Klingen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "76831",
+    "ort": "Heuchelheim-Klingen"
+  },
+  "lage": {
+    "lon": 8.045404,
+    "lat": 49.147996
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91f-09a9-476f-8f32-5eb046a5fe92",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

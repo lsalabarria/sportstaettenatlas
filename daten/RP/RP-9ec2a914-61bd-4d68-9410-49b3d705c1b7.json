@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a914-61bd-4d68-9410-49b3d705c1b7",
+  "name": "Boule-Platz Weitersweiler",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Bolander Str.",
+    "plz": "67808",
+    "ort": "Weitersweiler"
+  },
+  "lage": {
+    "lon": 7.999084,
+    "lat": 49.617472
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a914-61bd-4d68-9410-49b3d705c1b7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

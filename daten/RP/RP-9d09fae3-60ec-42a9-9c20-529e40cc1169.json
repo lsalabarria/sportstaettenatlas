@@ -1,0 +1,37 @@
+{
+  "id": "RP-9d09fae3-60ec-42a9-9c20-529e40cc1169",
+  "name": "Tennisanlage",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Herrenmarkt",
+    "plz": "54427",
+    "ort": "Kell am See"
+  },
+  "lage": {
+    "lon": 6.81571,
+    "lat": 49.630522
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae3-60ec-42a9-9c20-529e40cc1169",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

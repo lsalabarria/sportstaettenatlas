@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d60-ade7-4e15-8728-359be7c0e0e7",
+  "name": "Sportplatz Budenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Klingelbach",
+    "plz": "55469",
+    "ort": "Budenbach"
+  },
+  "lage": {
+    "lon": 7.565546,
+    "lat": 50.040902
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d60-ade7-4e15-8728-359be7c0e0e7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dad-34eb-43a7-bf12-f129db1a1392",
+  "name": "Jugendheim Oberbieber",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Heimstraße",
+    "hausnummer": "33",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.504691,
+    "lat": 50.473475
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dad-34eb-43a7-bf12-f129db1a1392",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

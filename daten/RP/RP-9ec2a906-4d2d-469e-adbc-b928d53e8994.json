@@ -1,0 +1,38 @@
+{
+  "id": "RP-9ec2a906-4d2d-469e-adbc-b928d53e8994",
+  "name": "Stegerwald-Sportplatz Haßloch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Adam-Stegerwald-Straße",
+    "hausnummer": "1",
+    "plz": "67454",
+    "ort": "Haßloch"
+  },
+  "lage": {
+    "lon": 8.244551,
+    "lat": 49.349828
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a906-4d2d-469e-adbc-b928d53e8994",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

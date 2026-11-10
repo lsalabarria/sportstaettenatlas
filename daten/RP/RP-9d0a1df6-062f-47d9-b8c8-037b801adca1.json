@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1df6-062f-47d9-b8c8-037b801adca1",
+  "name": "Mehrzweckhalle Trier-Kernscheid",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Auf der Redoute",
+    "hausnummer": "31",
+    "plz": "54290",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.684883,
+    "lat": 49.726968
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df6-062f-47d9-b8c8-037b801adca1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

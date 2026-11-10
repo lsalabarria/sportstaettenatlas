@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d0a1db5-7466-4e6b-8ce4-1ab4547658eb",
+  "name": "Beachvolleyballfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "54329",
+    "ort": "Konz, Stadt"
+  },
+  "lage": {
+    "lon": 6.623693,
+    "lat": 49.692156
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db5-7466-4e6b-8ce4-1ab4547658eb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

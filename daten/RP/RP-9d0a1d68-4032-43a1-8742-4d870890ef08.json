@@ -1,0 +1,30 @@
+{
+  "id": "RP-9d0a1d68-4032-43a1-8742-4d870890ef08",
+  "name": "Sport und Freizeitgelände",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54526",
+    "ort": "Landscheid"
+  },
+  "lage": {
+    "lon": 6.74677,
+    "lat": 49.974997
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d68-4032-43a1-8742-4d870890ef08",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc58-c4ad-4f18-b8e0-e8d6e06a21d2",
+  "name": "Freibad Echternacherbrück",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Mindener Straße",
+    "hausnummer": "18",
+    "plz": "54668",
+    "ort": "Echternacherbrück"
+  },
+  "lage": {
+    "lon": 6.433072,
+    "lat": 49.764638
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc58-c4ad-4f18-b8e0-e8d6e06a21d2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

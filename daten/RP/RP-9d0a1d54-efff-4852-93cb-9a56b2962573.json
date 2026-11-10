@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d54-efff-4852-93cb-9a56b2962573",
+  "name": "Sporthalle Brohl",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "11",
+    "plz": "56754",
+    "ort": "Brohl"
+  },
+  "lage": {
+    "lon": 7.279722,
+    "lat": 50.218608
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d54-efff-4852-93cb-9a56b2962573",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

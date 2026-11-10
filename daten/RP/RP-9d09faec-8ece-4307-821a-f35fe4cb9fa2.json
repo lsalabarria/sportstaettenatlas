@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faec-8ece-4307-821a-f35fe4cb9fa2",
+  "name": "Sportplatz Dernbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Burgweg",
+    "hausnummer": "3",
+    "plz": "56428",
+    "ort": "Dernbach"
+  },
+  "lage": {
+    "lon": 7.79448,
+    "lat": 50.454884
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faec-8ece-4307-821a-f35fe4cb9fa2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

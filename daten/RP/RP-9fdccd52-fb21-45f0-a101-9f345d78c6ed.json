@@ -1,0 +1,39 @@
+{
+  "id": "RP-9fdccd52-fb21-45f0-a101-9f345d78c6ed",
+  "name": "Reitsportanlage Hauter Horses GmbH",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Großsteinhausermühle",
+    "hausnummer": "2",
+    "plz": "66484",
+    "ort": "Großsteinhausen"
+  },
+  "lage": {
+    "lon": 7.445288,
+    "lat": 49.191035
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Springparcours"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd52-fb21-45f0-a101-9f345d78c6ed",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

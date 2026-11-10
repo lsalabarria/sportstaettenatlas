@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d51-d82b-4bbb-8203-5e6f3d5e7010",
+  "name": "FV Vilja Wehr 1925 e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "plz": "56653",
+    "ort": "Wehr"
+  },
+  "lage": {
+    "lon": 7.200331,
+    "lat": 50.424086
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d51-d82b-4bbb-8203-5e6f3d5e7010",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

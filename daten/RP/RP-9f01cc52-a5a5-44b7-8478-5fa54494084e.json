@@ -1,0 +1,33 @@
+{
+  "id": "RP-9f01cc52-a5a5-44b7-8478-5fa54494084e",
+  "name": "Cubo",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kaiserstraße",
+    "hausnummer": "126",
+    "plz": "66849",
+    "ort": "Landstuhl, Sickingenstadt, Stadt"
+  },
+  "lage": {
+    "lon": 7.58561,
+    "lat": 49.41397
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    },
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc52-a5a5-44b7-8478-5fa54494084e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

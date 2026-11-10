@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d0a1d69-7a41-44fd-b334-29e47b216ccf",
+  "name": "Startplatz der Moselfalken",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "plz": "54470",
+    "ort": "Graach an der Mosel"
+  },
+  "lage": {
+    "lon": 7.061392,
+    "lat": 49.944056
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sportflugplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d69-7a41-44fd-b334-29e47b216ccf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

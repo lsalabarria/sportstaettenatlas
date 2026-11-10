@@ -1,0 +1,34 @@
+{
+  "id": "RP-9ec2a934-8905-4c8c-baa3-c20d33de5b92",
+  "name": "Sportanlage TuS Diedesfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportzentrum Pferdsaliment",
+    "plz": "67434",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.15985,
+    "lat": 49.320132
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a934-8905-4c8c-baa3-c20d33de5b92",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

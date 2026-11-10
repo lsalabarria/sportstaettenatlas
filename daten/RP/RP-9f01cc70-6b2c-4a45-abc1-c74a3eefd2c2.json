@@ -1,0 +1,29 @@
+{
+  "id": "RP-9f01cc70-6b2c-4a45-abc1-c74a3eefd2c2",
+  "name": "Waldschwimmbad Nastätten",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Waldschwimmbad",
+    "plz": "56355",
+    "ort": "Nastätten, Stadt"
+  },
+  "lage": {
+    "lon": 7.86739,
+    "lat": 50.18539
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc70-6b2c-4a45-abc1-c74a3eefd2c2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

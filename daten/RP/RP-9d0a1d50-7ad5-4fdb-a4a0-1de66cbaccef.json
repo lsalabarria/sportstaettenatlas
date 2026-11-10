@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d50-7ad5-4fdb-a4a0-1de66cbaccef",
+  "name": "Sportplatz Hohenleimbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dorfstraße",
+    "plz": "56746",
+    "ort": "Hohenleimbach"
+  },
+  "lage": {
+    "lon": 7.073301,
+    "lat": 50.411115
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-7ad5-4fdb-a4a0-1de66cbaccef",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

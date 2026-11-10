@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fae2-83fb-4a0c-b2b5-b6c54cd7c027",
+  "name": "Sporthalle Beuren",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "4",
+    "plz": "54413",
+    "ort": "Beuren (Hochwald)"
+  },
+  "lage": {
+    "lon": 6.915751,
+    "lat": 49.725615
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae2-83fb-4a0c-b2b5-b6c54cd7c027",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

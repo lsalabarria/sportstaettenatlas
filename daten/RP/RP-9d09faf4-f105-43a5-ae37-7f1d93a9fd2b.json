@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faf4-f105-43a5-ae37-7f1d93a9fd2b",
+  "name": "Skatepark Stockum-Püschen",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Zum Stöffel",
+    "plz": "56459",
+    "ort": "Stockum-Püschen"
+  },
+  "lage": {
+    "lon": 7.901647,
+    "lat": 50.608412
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf4-f105-43a5-ae37-7f1d93a9fd2b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

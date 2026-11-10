@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faef-81a4-40b0-a67f-5e5751a2c27b",
+  "name": "Bürgerhaus Weroth",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Auf dem Pfad",
+    "plz": "56414",
+    "ort": "Weroth"
+  },
+  "lage": {
+    "lon": 7.950915,
+    "lat": 50.460797
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faef-81a4-40b0-a67f-5e5751a2c27b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

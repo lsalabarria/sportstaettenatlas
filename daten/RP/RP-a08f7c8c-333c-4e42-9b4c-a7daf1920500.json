@@ -1,0 +1,32 @@
+{
+  "id": "RP-a08f7c8c-333c-4e42-9b4c-a7daf1920500",
+  "name": "Grillhütte Kriegsheim",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Wiesenmühlenweg",
+    "plz": "67590",
+    "ort": "Monsheim"
+  },
+  "lage": {
+    "lon": 8.226412,
+    "lat": 49.63495
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Beachvolleyball Feld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c8c-333c-4e42-9b4c-a7daf1920500",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

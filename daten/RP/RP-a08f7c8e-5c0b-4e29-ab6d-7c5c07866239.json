@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7c8e-5c0b-4e29-ab6d-7c5c07866239",
+  "name": "Mehrzweckhalle Hoppstädten-Weiersbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kapellengasse",
+    "hausnummer": "8",
+    "plz": "55768",
+    "ort": "Hoppstädten-Weiersbach"
+  },
+  "lage": {
+    "lon": 7.193483,
+    "lat": 49.618636
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c8e-5c0b-4e29-ab6d-7c5c07866239",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

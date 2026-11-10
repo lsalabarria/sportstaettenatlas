@@ -1,0 +1,38 @@
+{
+  "id": "RP-9ec2a92f-eeea-4740-b124-bc14fae6c380",
+  "name": "Dressurausbildungsstall Stilgenbauer",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "13C",
+    "plz": "67808",
+    "ort": "Weitersweiler"
+  },
+  "lage": {
+    "lon": 8.001266,
+    "lat": 49.613197
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Führ- und Logierhalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92f-eeea-4740-b124-bc14fae6c380",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

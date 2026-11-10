@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1e0c-37f6-48e6-aeb8-98bdf592a40d",
+  "name": "Sportplatz Sankt Goar",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Pfalzfelder Straße",
+    "plz": "56329",
+    "ort": "Sankt Goar, Stadt"
+  },
+  "lage": {
+    "lon": 7.702329,
+    "lat": 50.14699
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0c-37f6-48e6-aeb8-98bdf592a40d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

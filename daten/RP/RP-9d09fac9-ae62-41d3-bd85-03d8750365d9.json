@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fac9-ae62-41d3-bd85-03d8750365d9",
+  "name": "SV Maulsbach",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Fiersbacher Straße",
+    "plz": "57635",
+    "ort": "Hirz-Maulsbach"
+  },
+  "lage": {
+    "lon": 7.490181,
+    "lat": 50.689713
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac9-ae62-41d3-bd85-03d8750365d9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

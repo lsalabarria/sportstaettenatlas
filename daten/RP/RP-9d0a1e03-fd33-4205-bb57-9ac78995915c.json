@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e03-fd33-4205-bb57-9ac78995915c",
+  "name": "Kleinspielfeld Franken",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Obergase",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.233276,
+    "lat": 50.502328
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e03-fd33-4205-bb57-9ac78995915c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

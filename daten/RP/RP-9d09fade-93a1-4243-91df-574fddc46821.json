@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d09fade-93a1-4243-91df-574fddc46821",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54340",
+    "ort": "Köwerich"
+  },
+  "lage": {
+    "lon": 6.874687,
+    "lat": 49.838094
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fade-93a1-4243-91df-574fddc46821",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

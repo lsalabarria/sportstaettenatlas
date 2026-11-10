@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcccb6-c5e8-4cf3-867f-7090e2545f6c",
+  "name": "Wassersportclub Untermosel e.V.",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Kalkofen",
+    "plz": "56330",
+    "ort": "Kobern-Gondorf"
+  },
+  "lage": {
+    "lon": 7.4615,
+    "lat": 50.302942
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Regattastrecke"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccb6-c5e8-4cf3-867f-7090e2545f6c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

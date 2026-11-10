@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90f-4c2a-48c8-80ad-10bcd436b021",
+  "name": "Carl-Zuckmayer-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Lörzweiler Str.",
+    "hausnummer": "15",
+    "plz": "55299",
+    "ort": "Nackenheim"
+  },
+  "lage": {
+    "lon": 8.337136,
+    "lat": 49.915174
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90f-4c2a-48c8-80ad-10bcd436b021",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

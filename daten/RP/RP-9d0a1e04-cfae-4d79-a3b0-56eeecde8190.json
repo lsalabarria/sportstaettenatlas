@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e04-cfae-4d79-a3b0-56eeecde8190",
+  "name": "Bolzplatz Westumer Straße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Westumer Straße",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.241522,
+    "lat": 50.541523
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e04-cfae-4d79-a3b0-56eeecde8190",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

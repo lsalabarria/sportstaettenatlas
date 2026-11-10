@@ -1,0 +1,32 @@
+{
+  "id": "RP-a08f7d21-a504-4107-97be-d3f098a948d7",
+  "name": "Sportanlage in den Steinwerken",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Windhofstraße",
+    "plz": "67742",
+    "ort": "Lauterecken, Stadt"
+  },
+  "lage": {
+    "lon": 7.58808,
+    "lat": 49.661404
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d21-a504-4107-97be-d3f098a948d7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd51-1f21-4ab8-a803-547929266f60",
+  "name": "Sportverein Rot-Weiß Kröppen e.V. 1928",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "In den Birken",
+    "hausnummer": "9",
+    "plz": "66957",
+    "ort": "Kröppen"
+  },
+  "lage": {
+    "lon": 7.53465,
+    "lat": 49.150247
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd51-1f21-4ab8-a803-547929266f60",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

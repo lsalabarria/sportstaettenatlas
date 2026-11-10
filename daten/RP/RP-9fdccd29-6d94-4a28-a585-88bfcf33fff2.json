@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd29-6d94-4a28-a585-88bfcf33fff2",
+  "name": "Bolzplatz Maxdorf",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "An der Katzengewanne",
+    "hausnummer": "7",
+    "plz": "67133",
+    "ort": "Maxdorf"
+  },
+  "lage": {
+    "lon": 8.282898,
+    "lat": 49.487183
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd29-6d94-4a28-a585-88bfcf33fff2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

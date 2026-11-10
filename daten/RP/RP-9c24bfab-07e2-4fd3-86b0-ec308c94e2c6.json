@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24bfab-07e2-4fd3-86b0-ec308c94e2c6",
+  "name": "Sportplatz Kesselheim Naturrasenplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kurfürst-Schönborn-Straße",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.574152,
+    "lat": 50.403627
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfab-07e2-4fd3-86b0-ec308c94e2c6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

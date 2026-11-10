@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a91a-303a-4fba-945c-c3e3481ca75a",
+  "name": "Sportplatz Knöringen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "38",
+    "plz": "76833",
+    "ort": "Knöringen"
+  },
+  "lage": {
+    "lon": 8.142542,
+    "lat": 49.233023
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91a-303a-4fba-945c-c3e3481ca75a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

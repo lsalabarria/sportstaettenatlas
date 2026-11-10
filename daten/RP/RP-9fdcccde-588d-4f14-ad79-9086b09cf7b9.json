@@ -1,0 +1,38 @@
+{
+  "id": "RP-9fdcccde-588d-4f14-ad79-9086b09cf7b9",
+  "name": "Sportplatz Wiesenweg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wiesenweg",
+    "plz": "56337",
+    "ort": "Arzbach"
+  },
+  "lage": {
+    "lon": 7.743951,
+    "lat": 50.377623
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccde-588d-4f14-ad79-9086b09cf7b9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

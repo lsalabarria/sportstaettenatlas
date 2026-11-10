@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faed-80e2-47a6-8d42-26b6f3d21a61",
+  "name": "Krugbäckerhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Mittelstraße",
+    "hausnummer": "5A",
+    "plz": "56424",
+    "ort": "Mogendorf"
+  },
+  "lage": {
+    "lon": 7.758647,
+    "lat": 50.492892
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faed-80e2-47a6-8d42-26b6f3d21a61",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

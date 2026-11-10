@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d53-2571-445d-8015-19feff5e9fb7",
+  "name": "Turnhalle Ellenz-Poltersdorf",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "St. Sebastianusstraße",
+    "hausnummer": "45",
+    "plz": "56821",
+    "ort": "Ellenz-Poltersdorf"
+  },
+  "lage": {
+    "lon": 7.229932,
+    "lat": 50.112425
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d53-2571-445d-8015-19feff5e9fb7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

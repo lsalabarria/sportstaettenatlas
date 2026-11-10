@@ -1,0 +1,30 @@
+{
+  "id": "RP-20c00728-d706-4028-a47e-558d0a330175",
+  "name": "Turnhalle Odenbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "4A",
+    "plz": "67748",
+    "ort": "Lauterecken, Stadt"
+  },
+  "lage": {
+    "lon": 7.653319,
+    "lat": 49.683356
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "stillgelegt/geschlossen",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "20c00728-d706-4028-a47e-558d0a330175",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

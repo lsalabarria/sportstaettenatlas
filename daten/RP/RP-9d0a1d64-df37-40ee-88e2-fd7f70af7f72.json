@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d0a1d64-df37-40ee-88e2-fd7f70af7f72",
+  "name": "Sportplatz Rapperath",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54497",
+    "ort": "Morbach"
+  },
+  "lage": {
+    "lon": 7.104942,
+    "lat": 49.814491
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d64-df37-40ee-88e2-fd7f70af7f72",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

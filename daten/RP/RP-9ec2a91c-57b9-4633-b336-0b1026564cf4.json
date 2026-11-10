@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a91c-57b9-4633-b336-0b1026564cf4",
+  "name": "Sportplatz TSV Fortuna",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Klingener Str.",
+    "hausnummer": "54",
+    "plz": "76831",
+    "ort": "Billigheim-Ingenheim"
+  },
+  "lage": {
+    "lon": 8.073098,
+    "lat": 49.136296
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91c-57b9-4633-b336-0b1026564cf4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

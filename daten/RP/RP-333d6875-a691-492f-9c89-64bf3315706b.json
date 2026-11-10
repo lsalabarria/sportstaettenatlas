@@ -1,0 +1,24 @@
+{
+  "id": "RP-333d6875-a691-492f-9c89-64bf3315706b",
+  "name": "Turnhalle der GS Kleistschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kleiststraße",
+    "plz": "55543",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.873238,
+    "lat": 49.829253
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "333d6875-a691-492f-9c89-64bf3315706b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

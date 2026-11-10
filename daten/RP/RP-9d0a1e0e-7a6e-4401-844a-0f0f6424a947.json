@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e0e-7a6e-4401-844a-0f0f6424a947",
+  "name": "Sporthalle Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kümbdcher Hohl",
+    "plz": "55469",
+    "ort": "Simmern/ Hunsrück, Stadt"
+  },
+  "lage": {
+    "lon": 7.515938,
+    "lat": 49.988829
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0e-7a6e-4401-844a-0f0f6424a947",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

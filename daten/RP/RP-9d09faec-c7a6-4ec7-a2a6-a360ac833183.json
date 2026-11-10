@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faec-c7a6-4ec7-a2a6-a360ac833183",
+  "name": "Birkensportplatz Staudt",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "plz": "56424",
+    "ort": "Staudt"
+  },
+  "lage": {
+    "lon": 7.824063,
+    "lat": 50.45658
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faec-c7a6-4ec7-a2a6-a360ac833183",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

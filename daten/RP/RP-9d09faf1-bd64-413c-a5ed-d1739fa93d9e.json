@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faf1-bd64-413c-a5ed-d1739fa93d9e",
+  "name": "TC Gemünden 1985 e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Unter dem Kahlenberg",
+    "plz": "56459",
+    "ort": "Gemünden"
+  },
+  "lage": {
+    "lon": 8.019485,
+    "lat": 50.564343
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf1-bd64-413c-a5ed-d1739fa93d9e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

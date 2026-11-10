@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fadd-b998-4516-b822-bf1916cb882b",
+  "name": "Park Monéteau",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Im Brühl",
+    "plz": "54343",
+    "ort": "Föhren"
+  },
+  "lage": {
+    "lon": 6.762142,
+    "lat": 49.856727
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadd-b998-4516-b822-bf1916cb882b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

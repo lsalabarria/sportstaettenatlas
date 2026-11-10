@@ -1,0 +1,35 @@
+{
+  "id": "RP-9c24f4ee-04f8-4fcc-8f1e-b1952c839aca",
+  "name": "Kunstrasenfeld Feriendorf Prüm",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Postferiendorf",
+    "hausnummer": "50",
+    "plz": "54595",
+    "ort": "Prüm, Stadt"
+  },
+  "lage": {
+    "lon": 6.422668,
+    "lat": 50.21426
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ee-04f8-4fcc-8f1e-b1952c839aca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

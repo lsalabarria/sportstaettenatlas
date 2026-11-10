@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e03-60c9-4280-9268-f7e6dc53527f",
+  "name": "Grundschule Oberwinter Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Pfarrer-Sachsse-Straße",
+    "hausnummer": "1",
+    "plz": "53424",
+    "ort": "Remagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.208308,
+    "lat": 50.613094
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e03-60c9-4280-9268-f7e6dc53527f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad9-21b6-45be-9eaf-76dd762d7843",
+  "name": "St. Hubertus Schützenbruderschaft Niederbreitbach e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Im Freizeitpark",
+    "plz": "56589",
+    "ort": "Niederbreitbach"
+  },
+  "lage": {
+    "lon": 7.413208,
+    "lat": 50.527459
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad9-21b6-45be-9eaf-76dd762d7843",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

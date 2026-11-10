@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcccbb-392f-4ecc-a936-34553d7eecf3",
+  "name": "Karmelenberghalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Koblenzer Str.",
+    "hausnummer": "51",
+    "plz": "56220",
+    "ort": "Bassenheim"
+  },
+  "lage": {
+    "lon": 7.461197,
+    "lat": 50.358441
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccbb-392f-4ecc-a936-34553d7eecf3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad0-c6c5-48dd-b850-8fbd184dea60",
+  "name": "Spielplatz Brachbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Austraße",
+    "plz": "57555",
+    "ort": "Brachbach"
+  },
+  "lage": {
+    "lon": 7.93533,
+    "lat": 50.816424
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad0-c6c5-48dd-b850-8fbd184dea60",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

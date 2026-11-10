@@ -1,0 +1,33 @@
+{
+  "id": "RP-9f01cc59-6eef-4633-97af-f48e97d73dba",
+  "name": "Oranienbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Hallenbad",
+    "hausnummer": "1",
+    "plz": "65582",
+    "ort": "Diez, Stadt"
+  },
+  "lage": {
+    "lon": 8.03336,
+    "lat": 50.3751
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    },
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc59-6eef-4633-97af-f48e97d73dba",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

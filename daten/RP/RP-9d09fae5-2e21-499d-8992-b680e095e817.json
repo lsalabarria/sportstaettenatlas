@@ -1,0 +1,34 @@
+{
+  "id": "RP-9d09fae5-2e21-499d-8992-b680e095e817",
+  "name": "Sportplatz Zerf",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Deeswiese",
+    "plz": "54314",
+    "ort": "Zerf"
+  },
+  "lage": {
+    "lon": 6.684406,
+    "lat": 49.598067
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae5-2e21-499d-8992-b680e095e817",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

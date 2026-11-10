@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a92a-924e-4dfe-9162-04c352fdeb65",
+  "name": "Theodor-Heuss-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ludwig-Richter-Straße",
+    "hausnummer": "7",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.028912,
+    "lat": 49.973643
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92a-924e-4dfe-9162-04c352fdeb65",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

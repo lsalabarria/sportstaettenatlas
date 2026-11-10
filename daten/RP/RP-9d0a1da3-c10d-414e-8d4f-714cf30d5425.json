@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da3-c10d-414e-8d4f-714cf30d5425",
+  "name": "Sporthalle RS+ Hillesheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Auf dem Bungert",
+    "plz": "54576",
+    "ort": "Hillesheim"
+  },
+  "lage": {
+    "lon": 6.667804,
+    "lat": 50.289337
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da3-c10d-414e-8d4f-714cf30d5425",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

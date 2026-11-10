@@ -1,0 +1,33 @@
+{
+  "id": "RP-9f01cc5d-69fa-42c1-b9aa-6e05733b05bb",
+  "name": "Emser Therme",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Viktoriaallee",
+    "hausnummer": "25",
+    "plz": "56130",
+    "ort": "Bad Ems, Stadt"
+  },
+  "lage": {
+    "lon": 7.71346,
+    "lat": 50.33267
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    },
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc5d-69fa-42c1-b9aa-6e05733b05bb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

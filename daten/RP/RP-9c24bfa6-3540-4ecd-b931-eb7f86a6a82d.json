@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24bfa6-3540-4ecd-b931-eb7f86a6a82d",
+  "name": "Sporthalle Horchheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Erbenstraße",
+    "plz": "56076",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.595521,
+    "lat": 50.32923
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Zweifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa6-3540-4ecd-b931-eb7f86a6a82d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

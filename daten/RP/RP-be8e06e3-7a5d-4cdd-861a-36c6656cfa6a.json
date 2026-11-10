@@ -1,0 +1,32 @@
+{
+  "id": "RP-be8e06e3-7a5d-4cdd-861a-36c6656cfa6a",
+  "name": "Sportplatz Ernst-Moritz-Arndt-Straße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ernst-Moritz-Arndt-Straße",
+    "hausnummer": "11",
+    "plz": "67227",
+    "ort": "Frankenthal (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.327143,
+    "lat": 49.50572
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "be8e06e3-7a5d-4cdd-861a-36c6656cfa6a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

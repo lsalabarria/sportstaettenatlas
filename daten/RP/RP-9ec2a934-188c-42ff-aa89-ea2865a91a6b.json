@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a934-188c-42ff-aa89-ea2865a91a6b",
+  "name": "CrossFit Weinstrasse Neustadt",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Im Altenschemel",
+    "hausnummer": "8",
+    "plz": "67435",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.214919,
+    "lat": 49.3359
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a934-188c-42ff-aa89-ea2865a91a6b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcce32-f1f2-48d0-9acd-0ad580b6cb72",
+  "name": "Felsland Badeparadies",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Eybergstraße",
+    "hausnummer": "1",
+    "plz": "66994",
+    "ort": "Dahn, Stadt"
+  },
+  "lage": {
+    "lon": 7.771333,
+    "lat": 49.143159
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce32-f1f2-48d0-9acd-0ad580b6cb72",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

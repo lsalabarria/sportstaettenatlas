@@ -1,0 +1,32 @@
+{
+  "id": "RP-9c24bfa9-bcc2-43b0-9f86-aa032062d040",
+  "name": "Rasenplatz \"In der Kaul\"",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Osterhausstr.",
+    "hausnummer": "1",
+    "plz": "56072",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.555044,
+    "lat": 50.367978
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa9-bcc2-43b0-9f86-aa032062d040",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

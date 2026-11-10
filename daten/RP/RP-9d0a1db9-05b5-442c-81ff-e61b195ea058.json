@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db9-05b5-442c-81ff-e61b195ea058",
+  "name": "Multifunktionsfeld GS Ambrosius",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Thyrsusstraße",
+    "hausnummer": "43",
+    "plz": "54292",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.657484,
+    "lat": 49.764837
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db9-05b5-442c-81ff-e61b195ea058",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

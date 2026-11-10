@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09facf-3387-4cc4-9a71-192707f5ba68",
+  "name": "Bolzplatz Weitefeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hachenburgerstraße",
+    "plz": "57586",
+    "ort": "Weitefeld"
+  },
+  "lage": {
+    "lon": 7.930855,
+    "lat": 50.721388
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facf-3387-4cc4-9a71-192707f5ba68",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

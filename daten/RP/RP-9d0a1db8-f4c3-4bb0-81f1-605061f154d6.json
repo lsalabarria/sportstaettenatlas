@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db8-f4c3-4bb0-81f1-605061f154d6",
+  "name": "Turnhalle Geschwister-Scholl-Hauptschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Peter-Friedhofen-Straße",
+    "hausnummer": "48",
+    "plz": "54292",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.64234,
+    "lat": 49.76668
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db8-f4c3-4bb0-81f1-605061f154d6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

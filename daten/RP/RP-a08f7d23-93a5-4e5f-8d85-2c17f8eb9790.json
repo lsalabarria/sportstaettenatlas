@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7d23-93a5-4e5f-8d85-2c17f8eb9790",
+  "name": "Sporthalle Gymnasium Kirn",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Turnstraße",
+    "hausnummer": "2",
+    "plz": "55606",
+    "ort": "Kirn, Stadt"
+  },
+  "lage": {
+    "lon": 7.451921,
+    "lat": 49.791684
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d23-93a5-4e5f-8d85-2c17f8eb9790",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

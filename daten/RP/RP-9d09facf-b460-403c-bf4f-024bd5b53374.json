@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09facf-b460-403c-bf4f-024bd5b53374",
+  "name": "Tennisplatz Breitscheidt",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Marienthaler Straße",
+    "plz": "57539",
+    "ort": "Breitscheidt"
+  },
+  "lage": {
+    "lon": 7.66538,
+    "lat": 50.752691
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facf-b460-403c-bf4f-024bd5b53374",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24f4e8-eb10-483a-8783-c97291eccc68",
+  "name": "Sportplatz Gindorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bademer Straße",
+    "plz": "54657",
+    "ort": "Gindorf"
+  },
+  "lage": {
+    "lon": 6.634616,
+    "lat": 50.009667
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e8-eb10-483a-8783-c97291eccc68",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

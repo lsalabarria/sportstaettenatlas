@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a904-09e8-49e1-9284-dd0a54c07043",
+  "name": "Sportplatz am Schwabenbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Dürkheimer Str.",
+    "hausnummer": "1",
+    "plz": "67159",
+    "ort": "Friedelsheim"
+  },
+  "lage": {
+    "lon": 8.216738,
+    "lat": 49.447075
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a904-09e8-49e1-9284-dd0a54c07043",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

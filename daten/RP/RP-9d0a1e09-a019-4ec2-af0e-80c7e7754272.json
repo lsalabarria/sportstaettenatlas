@@ -1,0 +1,41 @@
+{
+  "id": "RP-9d0a1e09-a019-4ec2-af0e-80c7e7754272",
+  "name": "Kant-Gymnasium Boppard",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mainzer Straße",
+    "hausnummer": "24",
+    "plz": "56154",
+    "ort": "Boppard, Stadt"
+  },
+  "lage": {
+    "lon": 7.601391,
+    "lat": 50.231146
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e09-a019-4ec2-af0e-80c7e7754272",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

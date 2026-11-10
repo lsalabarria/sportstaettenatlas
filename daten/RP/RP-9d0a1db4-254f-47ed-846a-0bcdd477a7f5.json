@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db4-254f-47ed-846a-0bcdd477a7f5",
+  "name": "Sporthalle St. Johann",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Albanstraße",
+    "hausnummer": "8a",
+    "plz": "54329",
+    "ort": "Konz, Stadt"
+  },
+  "lage": {
+    "lon": 6.594201,
+    "lat": 49.71033
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db4-254f-47ed-846a-0bcdd477a7f5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

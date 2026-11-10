@@ -1,0 +1,34 @@
+{
+  "id": "RP-9d09fae1-6711-474b-8222-b07919558836",
+  "name": "Sprunganlage Schöndorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Oberm Schulhaus",
+    "plz": "54316",
+    "ort": "Schöndorf"
+  },
+  "lage": {
+    "lon": 6.743745,
+    "lat": 49.678249
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae1-6711-474b-8222-b07919558836",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

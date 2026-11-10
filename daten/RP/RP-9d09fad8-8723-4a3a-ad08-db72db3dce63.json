@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad8-8723-4a3a-ad08-db72db3dce63",
+  "name": "Schützenhaus SSG Honnefeld",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "K99",
+    "plz": "56587",
+    "ort": "Straßenhaus"
+  },
+  "lage": {
+    "lon": 7.521003,
+    "lat": 50.546848
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad8-8723-4a3a-ad08-db72db3dce63",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

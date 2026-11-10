@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da2-1c01-42b6-904c-497a9505b3f4",
+  "name": "Mehrzweckhalle Üdersdorf",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Neue Schulstraße",
+    "hausnummer": "37",
+    "plz": "54552",
+    "ort": "Üdersdorf"
+  },
+  "lage": {
+    "lon": 6.811232,
+    "lat": 50.154677
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da2-1c01-42b6-904c-497a9505b3f4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

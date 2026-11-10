@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d09faf2-1258-4a3a-95fb-7dea9f3970f6",
+  "name": "Sportplatz Torweg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Torweg",
+    "plz": "56479",
+    "ort": "Westernohe"
+  },
+  "lage": {
+    "lon": 8.104893,
+    "lat": 50.58684
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf2-1258-4a3a-95fb-7dea9f3970f6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

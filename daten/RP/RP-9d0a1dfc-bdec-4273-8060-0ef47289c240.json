@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d0a1dfc-bdec-4273-8060-0ef47289c240",
+  "name": "Außensportbereich der Realschule plus Hoher Westerwald",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kohlaustraße",
+    "hausnummer": "13",
+    "plz": "56477",
+    "ort": "Rennerod, Stadt"
+  },
+  "lage": {
+    "lon": 8.073593,
+    "lat": 50.606767
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfc-bdec-4273-8060-0ef47289c240",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

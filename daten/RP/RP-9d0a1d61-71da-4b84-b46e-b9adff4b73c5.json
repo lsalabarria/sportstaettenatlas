@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d61-71da-4b84-b46e-b9adff4b73c5",
+  "name": "Sportplatz Liebshausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Perscheider Straße",
+    "plz": "55494",
+    "ort": "Liebshausen"
+  },
+  "lage": {
+    "lon": 7.638185,
+    "lat": 50.037397
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d61-71da-4b84-b46e-b9adff4b73c5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a93a-5f0f-4031-8a8c-931a50734b94",
+  "name": "Tennisanlage",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "An Schneiders Mühle",
+    "hausnummer": "2",
+    "plz": "55122",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.229371,
+    "lat": 50.003963
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93a-5f0f-4031-8a8c-931a50734b94",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "RP-84e6ca77-d710-406a-a7dd-d63f88d45086",
+  "name": "Turnhalle des Gymnasium an der Stadtmauer",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hospitalgasse",
+    "hausnummer": "6",
+    "plz": "55543",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.859967,
+    "lat": 49.841542
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Bad Kreuznach, Landkreis",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "84e6ca77-d710-406a-a7dd-d63f88d45086",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

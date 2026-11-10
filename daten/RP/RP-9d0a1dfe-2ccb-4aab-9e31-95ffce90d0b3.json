@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1dfe-2ccb-4aab-9e31-95ffce90d0b3",
+  "name": "Pumptrack am Sportplatz Lochmühle",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Lohmühle",
+    "plz": "57627",
+    "ort": "Hachenburg, Stadt"
+  },
+  "lage": {
+    "lon": 7.81979,
+    "lat": 50.657435
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Mountainbikestrecke"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfe-2ccb-4aab-9e31-95ffce90d0b3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

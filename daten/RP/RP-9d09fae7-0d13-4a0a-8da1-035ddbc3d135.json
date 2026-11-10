@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d09fae7-0d13-4a0a-8da1-035ddbc3d135",
+  "name": "Weitsprunganlage",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "1",
+    "plz": "54451",
+    "ort": "Irsch"
+  },
+  "lage": {
+    "lon": 6.598246,
+    "lat": 49.604632
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae7-0d13-4a0a-8da1-035ddbc3d135",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da1-9eb4-45d5-b1fa-4d0b941285f9",
+  "name": "Skateanlage",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Im Lierchesseiffen",
+    "plz": "54574",
+    "ort": "Birresborn"
+  },
+  "lage": {
+    "lon": 6.621443,
+    "lat": 50.167368
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da1-9eb4-45d5-b1fa-4d0b941285f9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

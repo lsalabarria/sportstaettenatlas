@@ -1,0 +1,45 @@
+{
+  "id": "RP-9fdcccc8-8039-46d2-a7b4-f9474b51af3d",
+  "name": "Vulkanstadion Kruft",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "39",
+    "plz": "56642",
+    "ort": "Kruft"
+  },
+  "lage": {
+    "lon": 7.337363,
+    "lat": 50.391426
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccc8-8039-46d2-a7b4-f9474b51af3d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

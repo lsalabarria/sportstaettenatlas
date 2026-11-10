@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a936-8e5f-4455-aa16-05f8d9fe4a70",
+  "name": "Reitbetrieb Göthling",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Neuweg",
+    "hausnummer": "101",
+    "plz": "55130",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.327389,
+    "lat": 49.958803
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reithalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a936-8e5f-4455-aa16-05f8d9fe4a70",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

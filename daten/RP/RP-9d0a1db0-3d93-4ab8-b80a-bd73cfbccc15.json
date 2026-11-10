@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db0-3d93-4ab8-b80a-bd73cfbccc15",
+  "name": "Tennis-Club Bad Hönningen Grün-Weiß e.V.",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Vogelberg",
+    "hausnummer": "5A",
+    "plz": "53557",
+    "ort": "Bad Hönningen, Stadt"
+  },
+  "lage": {
+    "lon": 7.31579,
+    "lat": 50.508597
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db0-3d93-4ab8-b80a-bd73cfbccc15",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d67-e084-4176-a49b-80a3a98f8d40",
+  "name": "Heckenlandhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Peter-Mergen-Straße",
+    "hausnummer": "2",
+    "plz": "54518",
+    "ort": "Gladbach"
+  },
+  "lage": {
+    "lon": 6.767893,
+    "lat": 49.935979
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d67-e084-4176-a49b-80a3a98f8d40",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

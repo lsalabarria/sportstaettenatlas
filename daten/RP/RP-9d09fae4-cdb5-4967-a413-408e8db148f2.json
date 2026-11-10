@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d09fae4-cdb5-4967-a413-408e8db148f2",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54314",
+    "ort": "Hentern"
+  },
+  "lage": {
+    "lon": 6.696278,
+    "lat": 49.621918
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae4-cdb5-4967-a413-408e8db148f2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

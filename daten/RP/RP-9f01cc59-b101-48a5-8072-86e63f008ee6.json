@@ -1,0 +1,33 @@
+{
+  "id": "RP-9f01cc59-b101-48a5-8072-86e63f008ee6",
+  "name": "Wiedtalbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hönninger Straße",
+    "hausnummer": "1",
+    "plz": "53547",
+    "ort": "Hausen (Wied)"
+  },
+  "lage": {
+    "lon": 7.412421,
+    "lat": 50.495053
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    },
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc59-b101-48a5-8072-86e63f008ee6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

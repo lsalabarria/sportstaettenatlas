@@ -1,0 +1,35 @@
+{
+  "id": "RP-9ec2a93e-6672-4df7-a7c0-4e51a9c020f4",
+  "name": "Sportplatz SpVgg 1920 Bad Bergzabern e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Theodor-Heuss-Straße",
+    "hausnummer": "3",
+    "plz": "76887",
+    "ort": "Bad Bergzabern, Stadt"
+  },
+  "lage": {
+    "lon": 7.996044,
+    "lat": 49.09433
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93e-6672-4df7-a7c0-4e51a9c020f4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

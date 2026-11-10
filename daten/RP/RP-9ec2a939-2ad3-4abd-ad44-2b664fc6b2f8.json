@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a939-2ad3-4abd-ad44-2b664fc6b2f8",
+  "name": "Multifunktionsfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Albert-Schweitzer-Straße",
+    "hausnummer": "19",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.244971,
+    "lat": 49.988573
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a939-2ad3-4abd-ad44-2b664fc6b2f8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

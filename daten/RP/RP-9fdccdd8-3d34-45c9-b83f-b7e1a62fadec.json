@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccdd8-3d34-45c9-b83f-b7e1a62fadec",
+  "name": "Sportplatz Friedrichssegen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Erzbachstraße",
+    "plz": "56112",
+    "ort": "Lahnstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.658452,
+    "lat": 50.308782
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdd8-3d34-45c9-b83f-b7e1a62fadec",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

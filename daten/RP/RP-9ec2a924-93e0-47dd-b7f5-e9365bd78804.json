@@ -1,0 +1,53 @@
+{
+  "id": "RP-9ec2a924-93e0-47dd-b7f5-e9365bd78804",
+  "name": "Stadion der Sportanlage Trift",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Stadion",
+    "hausnummer": "32A",
+    "plz": "67098",
+    "ort": "Bad Dürkheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.192458,
+    "lat": 49.467598
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    },
+    {
+      "bezeichnung": "Stabhochsprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a924-93e0-47dd-b7f5-e9365bd78804",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

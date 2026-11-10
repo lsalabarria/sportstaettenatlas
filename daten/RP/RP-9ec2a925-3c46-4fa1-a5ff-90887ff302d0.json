@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a925-3c46-4fa1-a5ff-90887ff302d0",
+  "name": "Freizeitbad Salinarium Bad Dürkheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kurbrunnenstraße",
+    "hausnummer": "28",
+    "plz": "67098",
+    "ort": "Bad Dürkheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.172348,
+    "lat": 49.465151
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    },
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a925-3c46-4fa1-a5ff-90887ff302d0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

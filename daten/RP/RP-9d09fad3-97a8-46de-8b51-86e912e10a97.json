@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad3-97a8-46de-8b51-86e912e10a97",
+  "name": "Mehrgenerationenplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Röttgenstraße",
+    "plz": "53547",
+    "ort": "Kasbach-Ohlenberg"
+  },
+  "lage": {
+    "lon": 7.285577,
+    "lat": 50.588832
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad3-97a8-46de-8b51-86e912e10a97",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

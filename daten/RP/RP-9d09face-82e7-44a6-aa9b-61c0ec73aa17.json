@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09face-82e7-44a6-aa9b-61c0ec73aa17",
+  "name": "Sportplatz Emmerzhausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L280",
+    "plz": "57520",
+    "ort": "Emmerzhausen"
+  },
+  "lage": {
+    "lon": 8.017434,
+    "lat": 50.725234
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09face-82e7-44a6-aa9b-61c0ec73aa17",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

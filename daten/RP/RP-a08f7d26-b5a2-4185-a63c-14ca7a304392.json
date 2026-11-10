@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7d26-b5a2-4185-a63c-14ca7a304392",
+  "name": "Sportplatz Becherbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L385",
+    "plz": "67827",
+    "ort": "Becherbach bei Kirn"
+  },
+  "lage": {
+    "lon": 7.676294,
+    "lat": 49.650157
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d26-b5a2-4185-a63c-14ca7a304392",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

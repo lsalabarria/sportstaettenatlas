@@ -1,0 +1,30 @@
+{
+  "id": "RP-a22beb3e-f0c8-498e-b9e7-d4a90cabed25",
+  "name": "Turnhalle der Freiherr-vom-Stein Grundschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Karl Busch Straße",
+    "hausnummer": "1",
+    "plz": "56130",
+    "ort": "Bad Ems, Stadt"
+  },
+  "lage": {
+    "lon": 7.727955,
+    "lat": 50.326215
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle Größe unbekannt"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a22beb3e-f0c8-498e-b9e7-d4a90cabed25",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

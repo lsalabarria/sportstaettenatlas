@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faee-c45b-417a-8734-85c9d33c715e",
+  "name": "Eisbachtalstadion Kunstrasen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Eppenroder Str.",
+    "hausnummer": "32",
+    "plz": "56412",
+    "ort": "Nentershausen"
+  },
+  "lage": {
+    "lon": 7.933157,
+    "lat": 50.416575
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faee-c45b-417a-8734-85c9d33c715e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

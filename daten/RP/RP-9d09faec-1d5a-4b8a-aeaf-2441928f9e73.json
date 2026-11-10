@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faec-1d5a-4b8a-aeaf-2441928f9e73",
+  "name": "Bolzplatz Sessenbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56237",
+    "ort": "Sessenbach"
+  },
+  "lage": {
+    "lon": 7.649524,
+    "lat": 50.47601
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faec-1d5a-4b8a-aeaf-2441928f9e73",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

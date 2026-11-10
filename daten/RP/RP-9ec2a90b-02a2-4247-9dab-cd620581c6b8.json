@@ -1,0 +1,37 @@
+{
+  "id": "RP-9ec2a90b-02a2-4247-9dab-cd620581c6b8",
+  "name": "Sportplatz Ockenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sporkenheimer Weg",
+    "plz": "55435",
+    "ort": "Ockenheim"
+  },
+  "lage": {
+    "lon": 7.97433,
+    "lat": 49.948499
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90b-02a2-4247-9dab-cd620581c6b8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

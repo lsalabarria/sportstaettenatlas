@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a909-aafc-41e7-9a3c-9691a1f74512",
+  "name": "Stahlinators Arena",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Weiher",
+    "plz": "55576",
+    "ort": "Sprendlingen"
+  },
+  "lage": {
+    "lon": 7.991517,
+    "lat": 49.865355
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a909-aafc-41e7-9a3c-9691a1f74512",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

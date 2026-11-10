@@ -1,0 +1,34 @@
+{
+  "id": "RP-9d0a1d9f-07c6-4ce9-8a60-b3d4eeacd3c7",
+  "name": "Sportplatz Reil",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Über der Gardin",
+    "plz": "56861",
+    "ort": "Reil"
+  },
+  "lage": {
+    "lon": 7.119678,
+    "lat": 50.016804
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d9f-07c6-4ce9-8a60-b3d4eeacd3c7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

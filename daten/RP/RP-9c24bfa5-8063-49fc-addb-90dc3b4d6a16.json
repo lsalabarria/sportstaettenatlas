@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfa5-8063-49fc-addb-90dc3b4d6a16",
+  "name": "Schulhof St.-Franziskus-Schule",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Thielenstraße",
+    "hausnummer": "3",
+    "plz": "56073",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.587907,
+    "lat": 50.356816
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa5-8063-49fc-addb-90dc3b4d6a16",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

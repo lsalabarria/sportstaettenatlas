@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d64-2ac0-43a7-b9e7-e673742b340e",
+  "name": "Bolzplatz Morscheid-Riedenburg",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Steineweg",
+    "plz": "54497",
+    "ort": "Morbach"
+  },
+  "lage": {
+    "lon": 7.072311,
+    "lat": 49.771927
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d64-2ac0-43a7-b9e7-e673742b340e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

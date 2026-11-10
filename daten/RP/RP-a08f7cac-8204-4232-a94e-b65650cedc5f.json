@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7cac-8204-4232-a94e-b65650cedc5f",
+  "name": "Sportplatz Sien",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "K44",
+    "plz": "55758",
+    "ort": "Sien"
+  },
+  "lage": {
+    "lon": 7.516639,
+    "lat": 49.693996
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cac-8204-4232-a94e-b65650cedc5f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

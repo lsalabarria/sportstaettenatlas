@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a92b-437d-4661-a600-aa09173f8839",
+  "name": "TG 1847 Sport Zentrum",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ludwig-Langstädter-Straße",
+    "hausnummer": "2",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.060807,
+    "lat": 49.979367
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    },
+    {
+      "bezeichnung": "Geräteraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92b-437d-4661-a600-aa09173f8839",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

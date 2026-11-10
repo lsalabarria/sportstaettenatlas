@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1df9-1cbf-4e54-a402-b8f10fb8cb56",
+  "name": "Beachvolleyballfeld an der Kreissporthalle",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Von-Bodelschwingh-Straße",
+    "hausnummer": "29",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.814939,
+    "lat": 50.438923
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df9-1cbf-4e54-a402-b8f10fb8cb56",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

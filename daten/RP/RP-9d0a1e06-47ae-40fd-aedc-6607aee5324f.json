@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e06-47ae-40fd-aedc-6607aee5324f",
+  "name": "Segelfluggelände Mönchsheide",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "strasse": "A61",
+    "plz": "53498",
+    "ort": "Bad Breisig, Stadt"
+  },
+  "lage": {
+    "lon": 7.254076,
+    "lat": 50.507328
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Segelfluggelände"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e06-47ae-40fd-aedc-6607aee5324f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

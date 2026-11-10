@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90f-bf47-4f92-a380-0b94000c87ae",
+  "name": "Gym7 Mommenheim",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Römerring",
+    "hausnummer": "9",
+    "plz": "55278",
+    "ort": "Mommenheim"
+  },
+  "lage": {
+    "lon": 8.261456,
+    "lat": 49.887954
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90f-bf47-4f92-a380-0b94000c87ae",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

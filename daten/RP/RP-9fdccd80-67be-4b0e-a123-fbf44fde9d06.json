@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd80-67be-4b0e-a123-fbf44fde9d06",
+  "name": "Fitness VeniceBeach Germersheim",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Münchener Str.",
+    "hausnummer": "8",
+    "plz": "76726",
+    "ort": "Germersheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.374004,
+    "lat": 49.227393
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd80-67be-4b0e-a123-fbf44fde9d06",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

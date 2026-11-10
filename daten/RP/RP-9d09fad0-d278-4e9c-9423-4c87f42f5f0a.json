@@ -1,0 +1,38 @@
+{
+  "id": "RP-9d09fad0-d278-4e9c-9423-4c87f42f5f0a",
+  "name": "Gösinger Hof Reitanlage",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Gösingen",
+    "hausnummer": "1",
+    "plz": "51598",
+    "ort": "Friesenhagen"
+  },
+  "lage": {
+    "lon": 7.794401,
+    "lat": 50.888895
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad0-d278-4e9c-9423-4c87f42f5f0a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

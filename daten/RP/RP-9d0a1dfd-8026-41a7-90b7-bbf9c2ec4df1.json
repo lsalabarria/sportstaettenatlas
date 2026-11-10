@@ -1,0 +1,52 @@
+{
+  "id": "RP-9d0a1dfd-8026-41a7-90b7-bbf9c2ec4df1",
+  "name": "Sportplatz Bad Marienberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirburger Str.",
+    "plz": "56470",
+    "ort": "Bad Marienberg (Westerwald), Stadt"
+  },
+  "lage": {
+    "lon": 7.951848,
+    "lat": 50.661162
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Speerwurfanlage"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfd-8026-41a7-90b7-bbf9c2ec4df1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

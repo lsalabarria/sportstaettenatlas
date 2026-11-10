@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdcccf0-773e-4d2a-a1f0-791084d57c3c",
+  "name": "Tennis-Zentrum Hahnstätten",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "21",
+    "plz": "66523",
+    "ort": "Hahnstätten"
+  },
+  "lage": {
+    "lon": 8.06449,
+    "lat": 50.299717
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennishalle"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccf0-773e-4d2a-a1f0-791084d57c3c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

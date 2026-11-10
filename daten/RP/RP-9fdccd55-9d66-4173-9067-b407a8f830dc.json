@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd55-9d66-4173-9067-b407a8f830dc",
+  "name": "Sporthalle IGS Contwig",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Oberauerbacher Str.",
+    "plz": "66497",
+    "ort": "Contwig"
+  },
+  "lage": {
+    "lon": 7.429529,
+    "lat": 49.253513
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd55-9d66-4173-9067-b407a8f830dc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d0a1daf-6ace-4290-a91e-18633df1c9bf",
+  "name": "Hauptschule Pestalozzi",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Julius-Remy-Straße",
+    "hausnummer": "1",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.466777,
+    "lat": 50.428245
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daf-6ace-4290-a91e-18633df1c9bf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

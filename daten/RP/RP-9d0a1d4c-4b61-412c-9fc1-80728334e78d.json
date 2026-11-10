@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d4c-4b61-412c-9fc1-80728334e78d",
+  "name": "Sportplatz Hoffeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kummstraße",
+    "plz": "53534",
+    "ort": "Hoffeld"
+  },
+  "lage": {
+    "lon": 6.81907,
+    "lat": 50.373407
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4c-4b61-412c-9fc1-80728334e78d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

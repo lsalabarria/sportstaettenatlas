@@ -1,0 +1,28 @@
+{
+  "id": "RP-9fdccd19-12a8-445b-ab34-b9a9ae495bcd",
+  "name": "Bergfeld Reiterhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "plz": "67661",
+    "ort": "Trippstadt"
+  },
+  "lage": {
+    "lon": 7.751958,
+    "lat": 49.389473
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd19-12a8-445b-ab34-b9a9ae495bcd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

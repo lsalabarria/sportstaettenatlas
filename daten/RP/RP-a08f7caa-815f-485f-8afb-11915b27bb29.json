@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7caa-815f-485f-8afb-11915b27bb29",
+  "name": "Idarwaldhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Sonnenschlicher",
+    "hausnummer": "5",
+    "plz": "55624",
+    "ort": "Rhaunen"
+  },
+  "lage": {
+    "lon": 7.335469,
+    "lat": 49.860351
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Zweifach-Sporthalle (Größe IV)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7caa-815f-485f-8afb-11915b27bb29",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

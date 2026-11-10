@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a929-1a70-419e-a37f-64ec86b0f641",
+  "name": "Turnverein 1846 Bingen e. V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Schützenweg",
+    "hausnummer": "5",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.902459,
+    "lat": 49.959084
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a929-1a70-419e-a37f-64ec86b0f641",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

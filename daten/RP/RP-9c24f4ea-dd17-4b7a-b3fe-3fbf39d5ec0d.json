@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24f4ea-dd17-4b7a-b3fe-3fbf39d5ec0d",
+  "name": "Sportplatz Ehlenz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportplatzstraße",
+    "plz": "54636",
+    "ort": "Ehlenz"
+  },
+  "lage": {
+    "lon": 6.47406,
+    "lat": 50.04113
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ea-dd17-4b7a-b3fe-3fbf39d5ec0d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

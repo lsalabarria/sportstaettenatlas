@@ -1,0 +1,50 @@
+{
+  "id": "RP-9ec2a939-f404-4658-aaea-3711308e62ad",
+  "name": "Sportplatz Goetheschule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Goethestraße",
+    "hausnummer": "20",
+    "plz": "55118",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.2535,
+    "lat": 50.009519
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Spielplatz"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "Bouleanlage"
+    },
+    {
+      "bezeichnung": "Rollsportplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a939-f404-4658-aaea-3711308e62ad",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

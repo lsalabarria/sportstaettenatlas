@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d0a1d68-fe9d-42c3-8ff1-3c357949bd50",
+  "name": "Bolzplatz Kesten",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "54518",
+    "ort": "Kesten"
+  },
+  "lage": {
+    "lon": 6.962004,
+    "lat": 49.907171
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d68-fe9d-42c3-8ff1-3c357949bd50",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

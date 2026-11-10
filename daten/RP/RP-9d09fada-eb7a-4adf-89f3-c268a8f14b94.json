@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fada-eb7a-4adf-89f3-c268a8f14b94",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "In Möhn",
+    "hausnummer": "39",
+    "plz": "54298",
+    "ort": "Welschbillig"
+  },
+  "lage": {
+    "lon": 6.591142,
+    "lat": 49.8368
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fada-eb7a-4adf-89f3-c268a8f14b94",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

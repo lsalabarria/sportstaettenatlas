@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e0c-2b93-4928-b23f-bc4c9a8e197d",
+  "name": "Welterbespielplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Hafen",
+    "hausnummer": "2",
+    "plz": "56329",
+    "ort": "Sankt Goar, Stadt"
+  },
+  "lage": {
+    "lon": 7.71035,
+    "lat": 50.153204
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0c-2b93-4928-b23f-bc4c9a8e197d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "RP-9fdccca8-ccd6-459a-b1b9-457eb6808c35",
+  "name": "Reitsportanlage Fohlenhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Fohlenhof",
+    "plz": "76872",
+    "ort": "Steinweiler"
+  },
+  "lage": {
+    "lon": 8.135836,
+    "lat": 49.115895
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Führ- und Longierplatz"
+    },
+    {
+      "bezeichnung": "Springparcours"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccca8-ccd6-459a-b1b9-457eb6808c35",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

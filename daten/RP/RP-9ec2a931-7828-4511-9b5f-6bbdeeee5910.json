@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a931-7828-4511-9b5f-6bbdeeee5910",
+  "name": "Beachvolleyballplatz Schillerhain",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Eichenweg",
+    "plz": "67292",
+    "ort": "Kirchheimbolanden, Stadt"
+  },
+  "lage": {
+    "lon": 8.000465,
+    "lat": 49.662014
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a931-7828-4511-9b5f-6bbdeeee5910",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

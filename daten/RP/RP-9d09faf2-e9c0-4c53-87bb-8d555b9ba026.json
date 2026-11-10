@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faf2-e9c0-4c53-87bb-8d555b9ba026",
+  "name": "Flugplatz des Luftsportclub Marienberg e.V.",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "strasse": "Flugplatz Bad Marienberg/Oberroßbach",
+    "plz": "56479",
+    "ort": "Oberroßbach"
+  },
+  "lage": {
+    "lon": 8.022191,
+    "lat": 50.662088
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sportflugplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf2-e9c0-4c53-87bb-8d555b9ba026",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

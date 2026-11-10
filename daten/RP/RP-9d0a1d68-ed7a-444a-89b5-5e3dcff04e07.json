@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1d68-ed7a-444a-89b5-5e3dcff04e07",
+  "name": "Spielplatz Oestelbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Oestelbach",
+    "hausnummer": "20",
+    "plz": "54518",
+    "ort": "Osann-Monzel"
+  },
+  "lage": {
+    "lon": 6.954839,
+    "lat": 49.918181
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d68-ed7a-444a-89b5-5e3dcff04e07",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

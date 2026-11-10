@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fad5-d67f-4b04-8ee7-3efb9a3989f7",
+  "name": "Schwimmbad DRK Kamillus Klinik Asbach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hospitalstraße",
+    "hausnummer": "6",
+    "plz": "53567",
+    "ort": "Asbach"
+  },
+  "lage": {
+    "lon": 7.424647,
+    "lat": 50.667656
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad5-d67f-4b04-8ee7-3efb9a3989f7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

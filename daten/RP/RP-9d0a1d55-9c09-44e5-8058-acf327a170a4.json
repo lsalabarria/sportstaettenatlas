@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d55-9c09-44e5-8058-acf327a170a4",
+  "name": "Bolzplatz Kaifenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lindenstraße",
+    "hausnummer": "2B",
+    "plz": "56761",
+    "ort": "Kaifenheim"
+  },
+  "lage": {
+    "lon": 7.228075,
+    "lat": 50.242557
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d55-9c09-44e5-8058-acf327a170a4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

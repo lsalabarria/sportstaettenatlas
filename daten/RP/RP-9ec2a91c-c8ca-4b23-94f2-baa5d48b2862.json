@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a91c-c8ca-4b23-94f2-baa5d48b2862",
+  "name": "Palatina Bogenschützen",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "L543",
+    "plz": "76865",
+    "ort": "Insheim"
+  },
+  "lage": {
+    "lon": 8.146427,
+    "lat": 49.167943
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bogenschießanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91c-c8ca-4b23-94f2-baa5d48b2862",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

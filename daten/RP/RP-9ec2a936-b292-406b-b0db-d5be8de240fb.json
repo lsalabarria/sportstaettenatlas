@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a936-b292-406b-b0db-d5be8de240fb",
+  "name": "Bolzplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Jungstück",
+    "plz": "55130",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.30866,
+    "lat": 49.957176
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a936-b292-406b-b0db-d5be8de240fb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

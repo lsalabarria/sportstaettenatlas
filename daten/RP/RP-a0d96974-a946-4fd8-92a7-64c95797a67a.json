@@ -1,0 +1,31 @@
+{
+  "id": "RP-a0d96974-a946-4fd8-92a7-64c95797a67a",
+  "name": "Spielplatz Carl-Zuckmayer-Straße",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Carl-Zuckmayer-Straße",
+    "plz": "55127",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.194588,
+    "lat": 49.979084
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "sportarten": [
+    "Basketball"
+  ],
+  "anlagen": [
+    {
+      "bezeichnung": "Spielplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0d96974-a946-4fd8-92a7-64c95797a67a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d66-5e56-40b5-9b74-e9bae2703054",
+  "name": "Hansenhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hansenhof",
+    "plz": "54518",
+    "ort": "Sehlem"
+  },
+  "lage": {
+    "lon": 6.822904,
+    "lat": 49.896637
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d66-5e56-40b5-9b74-e9bae2703054",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

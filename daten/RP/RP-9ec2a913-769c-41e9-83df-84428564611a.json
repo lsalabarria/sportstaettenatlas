@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a913-769c-41e9-83df-84428564611a",
+  "name": "Sportanlage Grundschule Sembach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Heuberg",
+    "hausnummer": "17",
+    "plz": "67681",
+    "ort": "Sembach"
+  },
+  "lage": {
+    "lon": 7.862427,
+    "lat": 49.539768
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a913-769c-41e9-83df-84428564611a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

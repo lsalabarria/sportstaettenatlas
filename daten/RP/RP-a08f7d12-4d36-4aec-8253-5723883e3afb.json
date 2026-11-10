@@ -1,0 +1,45 @@
+{
+  "id": "RP-a08f7d12-4d36-4aec-8253-5723883e3afb",
+  "name": "Außensportbereich des Gymnasiums an der Heinzenwies",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Heinzenwies",
+    "hausnummer": "3",
+    "plz": "55743",
+    "ort": "Idar-Oberstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.314655,
+    "lat": 49.72483
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d12-4d36-4aec-8253-5723883e3afb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

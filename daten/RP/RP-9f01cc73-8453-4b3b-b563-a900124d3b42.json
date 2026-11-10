@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc73-8453-4b3b-b563-a900124d3b42",
+  "name": "Westerwaldbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Stadionstraße",
+    "hausnummer": "4",
+    "plz": "56457",
+    "ort": "Westerburg, Stadt"
+  },
+  "lage": {
+    "lon": 7.98695,
+    "lat": 50.511547
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc73-8453-4b3b-b563-a900124d3b42",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

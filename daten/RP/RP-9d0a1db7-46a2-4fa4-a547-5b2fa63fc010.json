@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1db7-46a2-4fa4-a547-5b2fa63fc010",
+  "name": "Bolzplatz Pfalzel",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hans-Adamy-Straße",
+    "plz": "54293",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.697883,
+    "lat": 49.782137
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db7-46a2-4fa4-a547-5b2fa63fc010",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

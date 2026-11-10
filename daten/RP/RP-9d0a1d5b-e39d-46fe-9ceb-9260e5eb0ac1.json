@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d5b-e39d-46fe-9ceb-9260e5eb0ac1",
+  "name": "Sportplatz SV Bell",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Markt",
+    "hausnummer": "1",
+    "plz": "56288",
+    "ort": "Bell"
+  },
+  "lage": {
+    "lon": 7.417602,
+    "lat": 50.052398
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5b-e39d-46fe-9ceb-9260e5eb0ac1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

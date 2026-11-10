@@ -1,0 +1,28 @@
+{
+  "id": "RP-a08f7cbe-8ca2-444e-84f7-93fa52aa9a8c",
+  "name": "Sportplatz Eselsheck",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "55606",
+    "ort": "Meckenbach"
+  },
+  "lage": {
+    "lon": 7.497286,
+    "lat": 49.782112
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cbe-8ca2-444e-84f7-93fa52aa9a8c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

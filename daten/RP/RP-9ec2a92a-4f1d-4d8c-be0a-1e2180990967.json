@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a92a-4f1d-4d8c-be0a-1e2180990967",
+  "name": "VG-Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Binger Straße",
+    "hausnummer": "71",
+    "plz": "55262",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.103712,
+    "lat": 49.996462
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92a-4f1d-4d8c-be0a-1e2180990967",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da5-78ee-4723-8286-23db2cd5ebe4",
+  "name": "Kleinspielfeld Gillenfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Ronntalweg",
+    "hausnummer": "14",
+    "plz": "54558",
+    "ort": "Gillenfeld"
+  },
+  "lage": {
+    "lon": 6.904306,
+    "lat": 50.1303
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da5-78ee-4723-8286-23db2cd5ebe4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

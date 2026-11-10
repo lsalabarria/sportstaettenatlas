@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d4b-9c37-4440-bb9a-978a22019a67",
+  "name": "Mehrzweckhalle Lanteshofen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Graf-Blankard-Straße",
+    "hausnummer": "25",
+    "plz": "53501",
+    "ort": "Grafschaft"
+  },
+  "lage": {
+    "lon": 7.103059,
+    "lat": 50.555026
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4b-9c37-4440-bb9a-978a22019a67",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

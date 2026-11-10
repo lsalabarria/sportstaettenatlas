@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da5-f82b-463a-85dc-680536d9428c",
+  "name": "Sportplatz Strotzbüsch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf der Steinrausch",
+    "hausnummer": "12a",
+    "plz": "54552",
+    "ort": "Strotzbüsch"
+  },
+  "lage": {
+    "lon": 6.969248,
+    "lat": 50.112439
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da5-f82b-463a-85dc-680536d9428c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

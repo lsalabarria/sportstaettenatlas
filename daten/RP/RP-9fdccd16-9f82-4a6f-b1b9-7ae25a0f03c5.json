@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd16-9f82-4a6f-b1b9-7ae25a0f03c5",
+  "name": "Pfalzwaldhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "117",
+    "plz": "67735",
+    "ort": "Mehlbach"
+  },
+  "lage": {
+    "lon": 7.71451,
+    "lat": 49.52794
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd16-9f82-4a6f-b1b9-7ae25a0f03c5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

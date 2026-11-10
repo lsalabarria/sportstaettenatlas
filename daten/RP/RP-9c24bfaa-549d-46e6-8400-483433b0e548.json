@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24bfaa-549d-46e6-8400-483433b0e548",
+  "name": "Kleinspielfeld des TV Rübenach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Mühlenteich",
+    "plz": "56072",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.523346,
+    "lat": 50.368992
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfaa-549d-46e6-8400-483433b0e548",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

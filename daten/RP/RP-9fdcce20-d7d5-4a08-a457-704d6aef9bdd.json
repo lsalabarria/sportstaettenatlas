@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcce20-d7d5-4a08-a457-704d6aef9bdd",
+  "name": "Ballspielanlage Schützengarten",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Holzstraße",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.424027,
+    "lat": 49.31703
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce20-d7d5-4a08-a457-704d6aef9bdd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

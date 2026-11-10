@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e01-a46a-41c9-86a8-4c7e1771437d",
+  "name": "Augustinum Seniorenresidenz Bad Neuenahr",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Mittelstraße",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.15234,
+    "lat": 50.541419
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e01-a46a-41c9-86a8-4c7e1771437d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

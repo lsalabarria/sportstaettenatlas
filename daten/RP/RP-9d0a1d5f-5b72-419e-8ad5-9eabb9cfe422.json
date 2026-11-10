@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5f-5b72-419e-8ad5-9eabb9cfe422",
+  "name": "Sportplatz Rödelhausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56858",
+    "ort": "Rödelhausen"
+  },
+  "lage": {
+    "lon": 7.328014,
+    "lat": 49.990509
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5f-5b72-419e-8ad5-9eabb9cfe422",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

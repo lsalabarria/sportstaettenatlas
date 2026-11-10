@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e13-c140-4363-9e0a-3b927d9b47e3",
+  "name": "Offroadpark Nürburgring",
+  "kategorie": "Motorsportstätte",
+  "adresse": {
+    "strasse": "Otto-Flimm-Straße",
+    "plz": "53520",
+    "ort": "Nürburg"
+  },
+  "lage": {
+    "lon": 6.991846,
+    "lat": 50.344203
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Rennbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e13-c140-4363-9e0a-3b927d9b47e3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

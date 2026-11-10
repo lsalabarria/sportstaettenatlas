@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faca-bc98-46ee-b96a-0290c2955bea",
+  "name": "Sportplatz Hirz-Maulsbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Fiersbacher Straße",
+    "plz": "57635",
+    "ort": "Hirz-Maulsbach"
+  },
+  "lage": {
+    "lon": 7.482223,
+    "lat": 50.687118
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faca-bc98-46ee-b96a-0290c2955bea",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

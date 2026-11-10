@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdc8-4de1-434d-b259-8bac538ae85b",
+  "name": "Get Up Fitnesstudio",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Industriestraße",
+    "hausnummer": "32",
+    "plz": "65582",
+    "ort": "Diez, Stadt"
+  },
+  "lage": {
+    "lon": 8.052708,
+    "lat": 50.374666
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdc8-4de1-434d-b259-8bac538ae85b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

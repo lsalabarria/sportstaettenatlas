@@ -1,0 +1,44 @@
+{
+  "id": "RP-9d0a1df7-c044-442e-b193-5107ffe33565",
+  "name": "Tennisplatz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Moorsberg",
+    "hausnummer": "4",
+    "plz": "56203",
+    "ort": "Höhr-Grenzhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.665139,
+    "lat": 50.448525
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df7-c044-442e-b193-5107ffe33565",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

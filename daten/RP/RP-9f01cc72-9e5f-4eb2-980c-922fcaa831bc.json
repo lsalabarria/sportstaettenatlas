@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc72-9e5f-4eb2-980c-922fcaa831bc",
+  "name": "Hallenbad im Berufsförderungswerk Vallendar",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Sebastian-Kneipp-Str.",
+    "hausnummer": "10",
+    "plz": "56179",
+    "ort": "Vallendar, Stadt"
+  },
+  "lage": {
+    "lon": 7.63591,
+    "lat": 50.38937
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc72-9e5f-4eb2-980c-922fcaa831bc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

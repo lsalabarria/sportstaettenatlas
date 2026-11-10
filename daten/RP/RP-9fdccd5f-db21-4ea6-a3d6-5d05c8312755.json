@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd5f-db21-4ea6-a3d6-5d05c8312755",
+  "name": "Tennisplatz Waldfischbach-Burgalben",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Carentaner Pl.",
+    "plz": "67714",
+    "ort": "Waldfischbach-Burgalben"
+  },
+  "lage": {
+    "lon": 7.64792,
+    "lat": 49.280312
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd5f-db21-4ea6-a3d6-5d05c8312755",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

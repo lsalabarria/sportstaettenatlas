@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e02-219c-4dc7-b742-58ff69097514",
+  "name": "Tennis Center Remagen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Von-Cramm-Straße",
+    "hausnummer": "8",
+    "plz": "53424",
+    "ort": "Remagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.250055,
+    "lat": 50.573706
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e02-219c-4dc7-b742-58ff69097514",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

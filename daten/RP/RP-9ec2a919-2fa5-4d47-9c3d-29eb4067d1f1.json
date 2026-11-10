@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a919-2fa5-4d47-9c3d-29eb4067d1f1",
+  "name": "Tennis Club Kleinfischlingen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Lingenfeld Bruch",
+    "plz": "67483",
+    "ort": "Kleinfischlingen"
+  },
+  "lage": {
+    "lon": 8.187411,
+    "lat": 49.258989
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a919-2fa5-4d47-9c3d-29eb4067d1f1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

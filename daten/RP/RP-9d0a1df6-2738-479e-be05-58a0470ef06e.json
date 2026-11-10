@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1df6-2738-479e-be05-58a0470ef06e",
+  "name": "Karl-Ostermann-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Lärchenweg",
+    "plz": "54296",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.692068,
+    "lat": 49.724988
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df6-2738-479e-be05-58a0470ef06e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

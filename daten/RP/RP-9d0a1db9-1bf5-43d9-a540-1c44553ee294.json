@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db9-1bf5-43d9-a540-1c44553ee294",
+  "name": "Multifunktionsfeld St. Maximin Schule",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Maximinstraße",
+    "hausnummer": "18b",
+    "plz": "54292",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.651527,
+    "lat": 49.759364
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db9-1bf5-43d9-a540-1c44553ee294",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

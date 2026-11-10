@@ -1,0 +1,38 @@
+{
+  "id": "RP-9ec2a933-8814-49ca-9096-c069f50f40bd",
+  "name": "Heidehof Neustadt an der Weinstraße",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Heidehof",
+    "hausnummer": "1",
+    "plz": "67433",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.182836,
+    "lat": 49.348024
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a933-8814-49ca-9096-c069f50f40bd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

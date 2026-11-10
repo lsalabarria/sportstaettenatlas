@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d4a-9ba8-404a-8cd2-0a67a3f16bad",
+  "name": "Schulbad in der Sporthalle der St. Barabara Gundschule Höhn",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zehntgrafstraße",
+    "hausnummer": "12",
+    "plz": "56462",
+    "ort": "Höhn"
+  },
+  "lage": {
+    "lon": 7.98357,
+    "lat": 50.616566
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4a-9ba8-404a-8cd2-0a67a3f16bad",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

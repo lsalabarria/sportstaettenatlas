@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfa5-cf3c-40a5-af07-c20696823037",
+  "name": "Sporthalle des Eichendorff-Gymnasiums",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Friedrich-Ebert-Ring",
+    "hausnummer": "26",
+    "plz": "56068",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.595854,
+    "lat": 50.35533
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa5-cf3c-40a5-af07-c20696823037",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

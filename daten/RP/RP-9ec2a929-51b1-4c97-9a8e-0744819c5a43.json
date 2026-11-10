@@ -1,0 +1,47 @@
+{
+  "id": "RP-9ec2a929-51b1-4c97-9a8e-0744819c5a43",
+  "name": "Sportpark Gau-Algesheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rheinstraße",
+    "hausnummer": "5",
+    "plz": "55435",
+    "ort": "Gau-Algesheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.014084,
+    "lat": 49.964196
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a929-51b1-4c97-9a8e-0744819c5a43",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

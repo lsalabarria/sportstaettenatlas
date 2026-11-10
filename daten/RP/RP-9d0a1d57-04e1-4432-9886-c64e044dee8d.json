@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d57-04e1-4432-9886-c64e044dee8d",
+  "name": "TC Bad Bertrich",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "L103",
+    "plz": "56864",
+    "ort": "Bad Bertrich"
+  },
+  "lage": {
+    "lon": 7.018854,
+    "lat": 50.076345
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d57-04e1-4432-9886-c64e044dee8d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

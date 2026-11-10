@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1d66-38c5-4572-9d29-75d0d31bbb83",
+  "name": "Tennisanlage",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Kirchgäßchen",
+    "hausnummer": "6",
+    "plz": "54523",
+    "ort": "Hetzerath"
+  },
+  "lage": {
+    "lon": 6.811521,
+    "lat": 49.87585
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d66-38c5-4572-9d29-75d0d31bbb83",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

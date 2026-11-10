@@ -1,0 +1,29 @@
+{
+  "id": "RP-4eaeb739-544f-4f63-aec1-6d69ace1107f",
+  "name": "Mehrzweckhalle St. Georg-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Apostelstraße",
+    "hausnummer": "5",
+    "plz": "565567",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.445557,
+    "lat": 50.444532
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "4eaeb739-544f-4f63-aec1-6d69ace1107f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1daa-2e94-402f-8705-89c96c3bd416",
+  "name": "Fit & Fun Herdorf",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Quarzstraße",
+    "hausnummer": "1",
+    "plz": "57562",
+    "ort": "Herdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.965805,
+    "lat": 50.775446
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    },
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daa-2e94-402f-8705-89c96c3bd416",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

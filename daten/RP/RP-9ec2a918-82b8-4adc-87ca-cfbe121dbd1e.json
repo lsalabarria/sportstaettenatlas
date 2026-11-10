@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a918-82b8-4adc-87ca-cfbe121dbd1e",
+  "name": "Sportplatz Venningen",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "3",
+    "plz": "67482",
+    "ort": "Venningen"
+  },
+  "lage": {
+    "lon": 8.174854,
+    "lat": 49.278232
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a918-82b8-4adc-87ca-cfbe121dbd1e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

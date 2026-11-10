@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a932-e28b-46df-ba04-3e7f8ea37c48",
+  "name": "Stadionbad Neustadt an der Weinstraße",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Talstraße",
+    "hausnummer": "110",
+    "plz": "67434",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.121632,
+    "lat": 49.352249
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    },
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a932-e28b-46df-ba04-3e7f8ea37c48",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

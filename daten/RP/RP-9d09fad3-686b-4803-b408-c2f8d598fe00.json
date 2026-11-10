@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad3-686b-4803-b408-c2f8d598fe00",
+  "name": "Sportplatz Ockenfels",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "plz": "53545",
+    "ort": "Ockenfels"
+  },
+  "lage": {
+    "lon": 7.276838,
+    "lat": 50.57782
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad3-686b-4803-b408-c2f8d598fe00",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

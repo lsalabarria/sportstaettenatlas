@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1db3-abd2-4869-87b6-2b4c704b117a",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hockweilerstraße",
+    "plz": "54316",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.689588,
+    "lat": 49.703574
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db3-abd2-4869-87b6-2b4c704b117a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

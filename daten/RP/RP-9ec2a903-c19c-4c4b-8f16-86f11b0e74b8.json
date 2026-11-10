@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a903-c19c-4c4b-8f16-86f11b0e74b8",
+  "name": "Sportplatz Ellerstadt",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Erpolzheimer Str.",
+    "hausnummer": "51",
+    "plz": "67158",
+    "ort": "Ellerstadt"
+  },
+  "lage": {
+    "lon": 8.258451,
+    "lat": 49.469424
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a903-c19c-4c4b-8f16-86f11b0e74b8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

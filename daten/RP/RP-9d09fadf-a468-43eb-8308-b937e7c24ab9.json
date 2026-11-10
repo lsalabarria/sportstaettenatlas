@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d09fadf-a468-43eb-8308-b937e7c24ab9",
+  "name": "Tennisplatz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "plz": "54346",
+    "ort": "Mehring"
+  },
+  "lage": {
+    "lon": 6.858647,
+    "lat": 49.773922
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadf-a468-43eb-8308-b937e7c24ab9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

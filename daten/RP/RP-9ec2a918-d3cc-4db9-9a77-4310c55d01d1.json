@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a918-d3cc-4db9-9a77-4310c55d01d1",
+  "name": "Ludwig-Werst-Stadion Gommersheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gartenstraße",
+    "hausnummer": "6",
+    "plz": "67377",
+    "ort": "Gommersheim"
+  },
+  "lage": {
+    "lon": 8.267048,
+    "lat": 49.288657
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a918-d3cc-4db9-9a77-4310c55d01d1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

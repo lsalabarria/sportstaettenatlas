@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faf0-b8a7-4b04-9ddc-72214df5ac3f",
+  "name": "Sporthalle Oberahr",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "40-42",
+    "plz": "56414",
+    "ort": "Oberahr"
+  },
+  "lage": {
+    "lon": 7.867666,
+    "lat": 50.504346
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf0-b8a7-4b04-9ddc-72214df5ac3f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

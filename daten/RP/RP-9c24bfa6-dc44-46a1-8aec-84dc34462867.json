@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfa6-dc44-46a1-8aec-84dc34462867",
+  "name": "Hartplatz Lindenallee",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lindenallee",
+    "hausnummer": "32",
+    "plz": "56077",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.615827,
+    "lat": 50.35388
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa6-dc44-46a1-8aec-84dc34462867",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

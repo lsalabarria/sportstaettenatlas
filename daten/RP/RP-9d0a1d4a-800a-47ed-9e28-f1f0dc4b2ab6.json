@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1d4a-800a-47ed-9e28-f1f0dc4b2ab6",
+  "name": "Strandbad Freilingen (Postweiher)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hohe Str.",
+    "hausnummer": "30",
+    "plz": "56244",
+    "ort": "Freilingen"
+  },
+  "lage": {
+    "lon": 7.82329,
+    "lat": 50.564325
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4a-800a-47ed-9e28-f1f0dc4b2ab6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

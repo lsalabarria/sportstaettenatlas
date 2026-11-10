@@ -1,0 +1,31 @@
+{
+  "id": "RP-9c24bfa8-784e-4ab8-88c0-d05a10018a27",
+  "name": "Sportplatz am Ufer",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Ufer",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.609472,
+    "lat": 50.373107
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa8-784e-4ab8-88c0-d05a10018a27",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

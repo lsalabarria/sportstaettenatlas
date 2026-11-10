@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a909-60d9-43df-90bd-f2c4c386a649",
+  "name": "Sportplatz Grolsheim Ölbergstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Aspisheimer Weg",
+    "hausnummer": "32",
+    "plz": "55459",
+    "ort": "Grolsheim"
+  },
+  "lage": {
+    "lon": 7.919741,
+    "lat": 49.910241
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a909-60d9-43df-90bd-f2c4c386a649",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

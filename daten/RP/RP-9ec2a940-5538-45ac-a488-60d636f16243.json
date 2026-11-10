@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a940-5538-45ac-a488-60d636f16243",
+  "name": "Trifels Erlebnis Minigolf",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Markwardstraße",
+    "hausnummer": "25",
+    "plz": "76855",
+    "ort": "Annweiler am Trifels, Stadt"
+  },
+  "lage": {
+    "lon": 7.968522,
+    "lat": 49.19623
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bahnengolf"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a940-5538-45ac-a488-60d636f16243",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

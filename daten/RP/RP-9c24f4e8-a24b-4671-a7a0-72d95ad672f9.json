@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24f4e8-a24b-4671-a7a0-72d95ad672f9",
+  "name": "Bolzplatz Dudeldorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "4",
+    "plz": "54647",
+    "ort": "Dudeldorf"
+  },
+  "lage": {
+    "lon": 6.635347,
+    "lat": 49.973354
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e8-a24b-4671-a7a0-72d95ad672f9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

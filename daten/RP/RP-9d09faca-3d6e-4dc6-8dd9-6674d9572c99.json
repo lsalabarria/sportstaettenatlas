@@ -1,0 +1,43 @@
+{
+  "id": "RP-9d09faca-3d6e-4dc6-8dd9-6674d9572c99",
+  "name": "Kunstrasenplatz Güllesheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Oklahoma Straße",
+    "plz": "56593",
+    "ort": "Güllesheim"
+  },
+  "lage": {
+    "lon": 7.522876,
+    "lat": 50.597569
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faca-3d6e-4dc6-8dd9-6674d9572c99",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

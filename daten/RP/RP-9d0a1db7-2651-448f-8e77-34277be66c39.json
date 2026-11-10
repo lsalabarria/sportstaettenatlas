@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db7-2651-448f-8e77-34277be66c39",
+  "name": "Basketballfeld GS Gregor v. Pfalzel",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Pfalzgrafenstraße",
+    "hausnummer": "49",
+    "plz": "54293",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.689074,
+    "lat": 49.779235
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db7-2651-448f-8e77-34277be66c39",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

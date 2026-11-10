@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccc96-8201-4fb9-b908-9cb6023178ed",
+  "name": "Tennisclub TC86 Ottersheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "plz": "76879",
+    "ort": "Ottersheim bei Landau"
+  },
+  "lage": {
+    "lon": 8.228643,
+    "lat": 49.198691
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc96-8201-4fb9-b908-9cb6023178ed",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

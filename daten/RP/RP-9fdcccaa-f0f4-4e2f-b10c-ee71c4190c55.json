@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcccaa-f0f4-4e2f-b10c-ee71c4190c55",
+  "name": "Mundohalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Markhof",
+    "hausnummer": "1",
+    "plz": "76872",
+    "ort": "Minfeld"
+  },
+  "lage": {
+    "lon": 8.141293,
+    "lat": 49.071246
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccaa-f0f4-4e2f-b10c-ee71c4190c55",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

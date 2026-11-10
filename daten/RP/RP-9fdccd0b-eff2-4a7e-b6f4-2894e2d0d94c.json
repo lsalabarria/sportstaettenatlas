@@ -1,0 +1,32 @@
+{
+  "id": "RP-9fdccd0b-eff2-4a7e-b6f4-2894e2d0d94c",
+  "name": "Sportplatz Singhofen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "56379",
+    "ort": "Singhofen"
+  },
+  "lage": {
+    "lon": 7.834589,
+    "lat": 50.277952
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd0b-eff2-4a7e-b6f4-2894e2d0d94c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

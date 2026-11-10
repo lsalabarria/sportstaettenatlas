@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdaf-9d01-4936-bc41-eaebb62b3b7c",
+  "name": "Schul- und Sportzentrum Mendig",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Fallerstraße",
+    "hausnummer": "65",
+    "plz": "56743",
+    "ort": "Mendig, Stadt"
+  },
+  "lage": {
+    "lon": 7.267773,
+    "lat": 50.371091
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdaf-9d01-4936-bc41-eaebb62b3b7c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

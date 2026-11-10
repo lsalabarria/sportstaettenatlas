@@ -1,0 +1,29 @@
+{
+  "id": "RP-9f01cc74-a2dd-4ef3-b5ce-7f21601298e4",
+  "name": "Waldschwimmbad Kandel",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Badallee",
+    "plz": "76870",
+    "ort": "Kandel, Stadt"
+  },
+  "lage": {
+    "lon": 8.1947,
+    "lat": 49.07062
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc74-a2dd-4ef3-b5ce-7f21601298e4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

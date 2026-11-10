@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc79-cb2f-4d01-8516-84e48dda02bf",
+  "name": "Campingplatz Camping Schenk",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "165",
+    "plz": "54470",
+    "ort": "Bernkastel-Kues, Stadt"
+  },
+  "lage": {
+    "lon": 7.04872,
+    "lat": 49.93759
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc79-cb2f-4d01-8516-84e48dda02bf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

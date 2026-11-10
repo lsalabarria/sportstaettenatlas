@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a900-6be8-420f-b440-309fb8c0ba84",
+  "name": "Sportplatz Geroisheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An d. Weet",
+    "hausnummer": "4",
+    "plz": "67229",
+    "ort": "Gerolsheim"
+  },
+  "lage": {
+    "lon": 8.26073,
+    "lat": 49.550828
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a900-6be8-420f-b440-309fb8c0ba84",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

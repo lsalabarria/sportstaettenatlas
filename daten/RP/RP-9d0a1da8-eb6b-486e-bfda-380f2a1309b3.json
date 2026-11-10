@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da8-eb6b-486e-bfda-380f2a1309b3",
+  "name": "Molzberghalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Auf dem Molzberg",
+    "plz": "57548",
+    "ort": "Kirchen (Sieg), Stadt"
+  },
+  "lage": {
+    "lon": 7.873236,
+    "lat": 50.804131
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da8-eb6b-486e-bfda-380f2a1309b3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

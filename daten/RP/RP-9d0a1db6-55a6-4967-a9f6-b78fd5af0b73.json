@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db6-55a6-4967-a9f6-b78fd5af0b73",
+  "name": "Hallenbad Warsberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Ferienpark Warsberg",
+    "hausnummer": "1",
+    "plz": "54439",
+    "ort": "Saarburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.543223,
+    "lat": 49.620335
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db6-55a6-4967-a9f6-b78fd5af0b73",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

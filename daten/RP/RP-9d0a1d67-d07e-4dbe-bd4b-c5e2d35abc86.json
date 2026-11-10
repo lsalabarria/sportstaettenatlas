@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d67-d07e-4dbe-bd4b-c5e2d35abc86",
+  "name": "Sportplatz am Wald",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Borngraben",
+    "plz": "54518",
+    "ort": "Gladbach"
+  },
+  "lage": {
+    "lon": 6.763874,
+    "lat": 49.932187
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d67-d07e-4dbe-bd4b-c5e2d35abc86",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

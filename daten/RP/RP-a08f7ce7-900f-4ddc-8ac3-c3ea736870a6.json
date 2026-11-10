@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7ce7-900f-4ddc-8ac3-c3ea736870a6",
+  "name": "Bad Kreuznacher Schützengemeinschaft",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "L236",
+    "plz": "55593",
+    "ort": "Rüdesheim"
+  },
+  "lage": {
+    "lon": 7.820803,
+    "lat": 49.8412
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ce7-900f-4ddc-8ac3-c3ea736870a6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

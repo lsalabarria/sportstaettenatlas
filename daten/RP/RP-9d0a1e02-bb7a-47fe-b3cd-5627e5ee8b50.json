@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e02-bb7a-47fe-b3cd-5627e5ee8b50",
+  "name": "Bouleplatz Kripp",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Quellenstraße",
+    "plz": "53424",
+    "ort": "Remagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.273432,
+    "lat": 50.561257
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e02-bb7a-47fe-b3cd-5627e5ee8b50",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

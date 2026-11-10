@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d09fae4-1609-4897-ad0e-e26789508f7e",
+  "name": "Tennisanlage TC Waldweiler",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Steinberger Straße",
+    "plz": "54429",
+    "ort": "Waldweiler"
+  },
+  "lage": {
+    "lon": 6.806935,
+    "lat": 49.61035
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae4-1609-4897-ad0e-e26789508f7e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

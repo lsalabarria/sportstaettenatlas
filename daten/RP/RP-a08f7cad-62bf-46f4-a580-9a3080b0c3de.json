@@ -1,0 +1,33 @@
+{
+  "id": "RP-a08f7cad-62bf-46f4-a580-9a3080b0c3de",
+  "name": "Sportanlage Zwerchstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zwerchstraße",
+    "hausnummer": "32",
+    "plz": "66901",
+    "ort": "Schönenberg-Kübelberg"
+  },
+  "lage": {
+    "lon": 7.382431,
+    "lat": 49.406502
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cad-62bf-46f4-a580-9a3080b0c3de",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

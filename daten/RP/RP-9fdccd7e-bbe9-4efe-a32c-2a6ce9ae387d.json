@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd7e-bbe9-4efe-a32c-2a6ce9ae387d",
+  "name": "Tennisverein Mörzheim e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Johann-Thomas-Schley-Straße",
+    "hausnummer": "11",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.072392,
+    "lat": 49.16702
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd7e-bbe9-4efe-a32c-2a6ce9ae387d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

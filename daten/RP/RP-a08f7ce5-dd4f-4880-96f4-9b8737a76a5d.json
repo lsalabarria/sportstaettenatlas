@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7ce5-dd4f-4880-96f4-9b8737a76a5d",
+  "name": "Sporthalle Alfred-Delp-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "hausnummer": "54",
+    "plz": "55595",
+    "ort": "Hargesheim"
+  },
+  "lage": {
+    "lon": 7.834405,
+    "lat": 49.866168
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ce5-dd4f-4880-96f4-9b8737a76a5d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

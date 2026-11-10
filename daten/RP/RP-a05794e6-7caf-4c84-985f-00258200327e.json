@@ -1,0 +1,28 @@
+{
+  "id": "RP-a05794e6-7caf-4c84-985f-00258200327e",
+  "name": "Mayen Sporthalle Weiersbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Weiersbach Straße",
+    "plz": "56727",
+    "ort": "Mayen, Stadt"
+  },
+  "lage": {
+    "lon": 7.228705,
+    "lat": 50.324024
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a05794e6-7caf-4c84-985f-00258200327e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

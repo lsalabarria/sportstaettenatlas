@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da0-a04c-4d27-bd31-64b4b1b0551f",
+  "name": "Beachvolleyball",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Cusanusstraße",
+    "plz": "54531",
+    "ort": "Manderscheid"
+  },
+  "lage": {
+    "lon": 6.813358,
+    "lat": 50.088405
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da0-a04c-4d27-bd31-64b4b1b0551f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

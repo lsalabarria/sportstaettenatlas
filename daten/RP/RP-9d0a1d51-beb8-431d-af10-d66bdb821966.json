@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d51-beb8-431d-af10-d66bdb821966",
+  "name": "Tennisanlage Wassenach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Laacher Straße",
+    "hausnummer": "34",
+    "plz": "56653",
+    "ort": "Wassenach"
+  },
+  "lage": {
+    "lon": 7.277474,
+    "lat": 50.427818
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d51-beb8-431d-af10-d66bdb821966",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

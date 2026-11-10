@@ -1,0 +1,32 @@
+{
+  "id": "RP-9c24f4ec-75ac-499f-9072-964d9a4a2fbd",
+  "name": "Sportplatz Karlshausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "5",
+    "plz": "54673",
+    "ort": "Karlshausen"
+  },
+  "lage": {
+    "lon": 6.235206,
+    "lat": 50.025011
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ec-75ac-499f-9072-964d9a4a2fbd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

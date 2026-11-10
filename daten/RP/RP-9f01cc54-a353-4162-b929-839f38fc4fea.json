@@ -1,0 +1,33 @@
+{
+  "id": "RP-9f01cc54-a353-4162-b929-839f38fc4fea",
+  "name": "Crucenia Thermen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kurhausstraße",
+    "hausnummer": "26",
+    "plz": "55543",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.852936,
+    "lat": 49.841963
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    },
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc54-a353-4162-b929-839f38fc4fea",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

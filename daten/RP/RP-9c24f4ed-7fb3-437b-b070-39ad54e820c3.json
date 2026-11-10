@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24f4ed-7fb3-437b-b070-39ad54e820c3",
+  "name": "Sportplatz Bahnhofstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "plz": "54597",
+    "ort": "Pronsfeld"
+  },
+  "lage": {
+    "lon": 6.33933,
+    "lat": 50.165511
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ed-7fb3-437b-b070-39ad54e820c3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

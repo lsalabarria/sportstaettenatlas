@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a918-a2c3-494e-9e4b-3b237c56c600",
+  "name": "Sportanlage an der Schloßkirche",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "1a",
+    "plz": "67482",
+    "ort": "Altdorf"
+  },
+  "lage": {
+    "lon": 8.221937,
+    "lat": 49.285216
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a918-a2c3-494e-9e4b-3b237c56c600",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

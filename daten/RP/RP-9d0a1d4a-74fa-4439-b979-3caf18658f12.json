@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d4a-74fa-4439-b979-3caf18658f12",
+  "name": "Nauberghalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "4",
+    "plz": "57645",
+    "ort": "Nister"
+  },
+  "lage": {
+    "lon": 7.841007,
+    "lat": 50.675446
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4a-74fa-4439-b979-3caf18658f12",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

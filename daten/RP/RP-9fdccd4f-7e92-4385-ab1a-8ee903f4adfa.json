@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd4f-7e92-4385-ab1a-8ee903f4adfa",
+  "name": "Reitplatz Vinningen",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Dinschelt",
+    "plz": "66957",
+    "ort": "Vinningen"
+  },
+  "lage": {
+    "lon": 7.561003,
+    "lat": 49.154213
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd4f-7e92-4385-ab1a-8ee903f4adfa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

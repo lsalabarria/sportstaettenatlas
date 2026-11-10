@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09face-529d-4113-bf52-b926e8dd1784",
+  "name": "Spielplatz-Peter-Hellinghausen-Straße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Peter-Hellinghausen-Straße",
+    "plz": "57518",
+    "ort": "Steineroth"
+  },
+  "lage": {
+    "lon": 7.855331,
+    "lat": 50.760907
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09face-529d-4113-bf52-b926e8dd1784",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09facd-49af-4a15-af53-8c183a6809de",
+  "name": "Bolzplatz Fensdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Löhrstraße",
+    "plz": "57580",
+    "ort": "Fensdorf"
+  },
+  "lage": {
+    "lon": 7.779618,
+    "lat": 50.742233
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facd-49af-4a15-af53-8c183a6809de",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

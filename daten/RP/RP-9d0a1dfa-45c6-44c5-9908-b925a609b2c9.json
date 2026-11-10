@@ -1,0 +1,37 @@
+{
+  "id": "RP-9d0a1dfa-45c6-44c5-9908-b925a609b2c9",
+  "name": "Tennisplätze der Tennisfreunde Ransbach-Baumbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Freiherr-vom-Stein-Straße",
+    "plz": "56235",
+    "ort": "Ransbach-Baumbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.73087,
+    "lat": 50.474551
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfa-45c6-44c5-9908-b925a609b2c9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

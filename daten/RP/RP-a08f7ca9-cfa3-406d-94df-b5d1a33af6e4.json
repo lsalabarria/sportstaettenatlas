@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7ca9-cfa3-406d-94df-b5d1a33af6e4",
+  "name": "Gückauf-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "25",
+    "plz": "55626",
+    "ort": "Bundenbach"
+  },
+  "lage": {
+    "lon": 7.379997,
+    "lat": 49.842312
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ca9-cfa3-406d-94df-b5d1a33af6e4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcccf9-d8cf-4369-9d70-df07dbf8a781",
+  "name": "Waldschwimmbad Holzhausen an der Haide",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schwimmbadweg",
+    "plz": "56357",
+    "ort": "Holzhausen an der Haide"
+  },
+  "lage": {
+    "lon": 7.924577,
+    "lat": 50.225206
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccf9-d8cf-4369-9d70-df07dbf8a781",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

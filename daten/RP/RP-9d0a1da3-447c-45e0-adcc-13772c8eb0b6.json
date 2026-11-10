@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da3-447c-45e0-adcc-13772c8eb0b6",
+  "name": "Sportplatz Tüschwieschen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Tüschwieschen",
+    "hausnummer": "1",
+    "plz": "54584",
+    "ort": "Gönnersdorf"
+  },
+  "lage": {
+    "lon": 6.593967,
+    "lat": 50.330531
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da3-447c-45e0-adcc-13772c8eb0b6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

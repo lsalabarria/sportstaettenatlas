@@ -1,0 +1,32 @@
+{
+  "id": "RP-9fdccd9c-f628-494a-8351-77297a133d05",
+  "name": "Bolzplatz am Lindenweg Bendorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lindenweg",
+    "plz": "56170",
+    "ort": "Bendorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.554398,
+    "lat": 50.427235
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd9c-f628-494a-8351-77297a133d05",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

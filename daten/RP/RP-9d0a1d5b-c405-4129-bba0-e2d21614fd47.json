@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5b-c405-4129-bba0-e2d21614fd47",
+  "name": "Bolzplatz Bell (Hunsrück)",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bucher Weg",
+    "plz": "56288",
+    "ort": "Bell"
+  },
+  "lage": {
+    "lon": 7.412853,
+    "lat": 50.062974
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5b-c405-4129-bba0-e2d21614fd47",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

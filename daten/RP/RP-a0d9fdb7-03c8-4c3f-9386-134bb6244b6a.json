@@ -1,0 +1,29 @@
+{
+  "id": "RP-a0d9fdb7-03c8-4c3f-9386-134bb6244b6a",
+  "name": "Elberthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Gartenstraße",
+    "hausnummer": "13",
+    "plz": "54516",
+    "ort": "Niederelbert"
+  },
+  "lage": {
+    "lon": 7.814435,
+    "lat": 50.408711
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0d9fdb7-03c8-4c3f-9386-134bb6244b6a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

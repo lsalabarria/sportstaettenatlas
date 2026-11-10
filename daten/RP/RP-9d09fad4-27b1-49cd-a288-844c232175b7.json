@@ -1,0 +1,38 @@
+{
+  "id": "RP-9d09fad4-27b1-49cd-a288-844c232175b7",
+  "name": "Sportplatz Gebrüder-Grimm-Schule Rheinbreitbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "4",
+    "plz": "53619",
+    "ort": "Rheinbreitbach"
+  },
+  "lage": {
+    "lon": 7.228469,
+    "lat": 50.615615
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad4-27b1-49cd-a288-844c232175b7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

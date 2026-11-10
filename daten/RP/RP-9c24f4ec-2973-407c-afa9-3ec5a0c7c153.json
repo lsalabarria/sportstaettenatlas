@@ -1,0 +1,32 @@
+{
+  "id": "RP-9c24f4ec-2973-407c-afa9-3ec5a0c7c153",
+  "name": "Sporthalle Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Pestalozzistraße",
+    "hausnummer": "19-21",
+    "plz": "54673",
+    "ort": "Neuerburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.299367,
+    "lat": 50.004492
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle Sondermaße"
+    },
+    {
+      "bezeichnung": "Sporthalle Sondermaße"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ec-2973-407c-afa9-3ec5a0c7c153",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "RP-9fdccde2-2075-415e-b6e9-6007ba398acd",
+  "name": "Sportanlage Erzhütter Straße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Erzhütter Straße",
+    "hausnummer": "100",
+    "plz": "67659",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.732259,
+    "lat": 49.460393
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccde2-2075-415e-b6e9-6007ba398acd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

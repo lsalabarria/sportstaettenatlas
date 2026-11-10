@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a91c-8e80-4347-8d8c-188a46558603",
+  "name": "Sportanlage Sportfreunde Dierbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "30",
+    "plz": "76889",
+    "ort": "Dierbach"
+  },
+  "lage": {
+    "lon": 8.062292,
+    "lat": 49.081298
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91c-8e80-4347-8d8c-188a46558603",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

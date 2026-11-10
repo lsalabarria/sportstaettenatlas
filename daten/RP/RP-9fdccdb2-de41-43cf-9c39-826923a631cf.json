@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdb2-de41-43cf-9c39-826923a631cf",
+  "name": "Sportplatz Ruitsch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "42",
+    "plz": "56751",
+    "ort": "Polch, Stadt"
+  },
+  "lage": {
+    "lon": 7.340247,
+    "lat": 50.316624
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdb2-de41-43cf-9c39-826923a631cf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

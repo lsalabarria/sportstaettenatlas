@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a91e-20b4-4788-aa60-b6c4453c3d2c",
+  "name": "Schützenverein Dörrenbach 1960 e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "76889",
+    "ort": "Dörrenbach"
+  },
+  "lage": {
+    "lon": 7.964247,
+    "lat": 49.092348
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91e-20b4-4788-aa60-b6c4453c3d2c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da9-d959-415c-948c-dddeace152d0",
+  "name": "Bolzplatz Daaden",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Martin-Luther-Straße",
+    "plz": "57567",
+    "ort": "Daaden, Stadt"
+  },
+  "lage": {
+    "lon": 7.97956,
+    "lat": 50.737077
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da9-d959-415c-948c-dddeace152d0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

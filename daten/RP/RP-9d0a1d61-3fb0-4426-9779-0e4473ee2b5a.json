@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d61-3fb0-4426-9779-0e4473ee2b5a",
+  "name": "Sportplatz Kümbdchen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "In den Gärten",
+    "plz": "55471",
+    "ort": "Kümbdchen"
+  },
+  "lage": {
+    "lon": 7.504612,
+    "lat": 49.994152
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d61-3fb0-4426-9779-0e4473ee2b5a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

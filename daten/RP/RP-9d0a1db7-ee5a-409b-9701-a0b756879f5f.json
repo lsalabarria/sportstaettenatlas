@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db7-ee5a-409b-9701-a0b756879f5f",
+  "name": "Don Bosco Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Gneisenausstraße",
+    "hausnummer": "31",
+    "plz": "54294",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.616177,
+    "lat": 49.752768
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db7-ee5a-409b-9701-a0b756879f5f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

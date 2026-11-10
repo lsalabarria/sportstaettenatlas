@@ -1,0 +1,38 @@
+{
+  "id": "RP-9ec2a93c-fe05-4b3f-8fc6-16876e37463a",
+  "name": "Reitstall Müller",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Gäxwald",
+    "hausnummer": "20",
+    "plz": "76863",
+    "ort": "Herxheim bei Landau/ Pfalz"
+  },
+  "lage": {
+    "lon": 8.239915,
+    "lat": 49.142287
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    },
+    {
+      "bezeichnung": "Springparcours"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93c-fe05-4b3f-8fc6-16876e37463a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

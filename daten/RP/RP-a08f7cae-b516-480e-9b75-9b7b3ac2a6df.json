@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7cae-b516-480e-9b75-9b7b3ac2a6df",
+  "name": "Sportplatz Gries",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportplatzstraße",
+    "hausnummer": "6",
+    "plz": "66903",
+    "ort": "Gries"
+  },
+  "lage": {
+    "lon": 7.401924,
+    "lat": 49.422131
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cae-b516-480e-9b75-9b7b3ac2a6df",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

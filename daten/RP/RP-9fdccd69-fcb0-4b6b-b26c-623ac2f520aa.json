@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd69-fcb0-4b6b-b26c-623ac2f520aa",
+  "name": "Schulsportanlage Sickingen-Gymnasium",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Talstraße",
+    "hausnummer": "1",
+    "plz": "66917",
+    "ort": "Wallhalben"
+  },
+  "lage": {
+    "lon": 7.523007,
+    "lat": 49.314675
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd69-fcb0-4b6b-b26c-623ac2f520aa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

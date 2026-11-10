@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdd5-baaa-4455-82f1-c53ea688d7b7",
+  "name": "Tennisclub Rhein-Lahn e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Stolzenfelsstraße",
+    "hausnummer": "1",
+    "plz": "56112",
+    "ort": "Lahnstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.593788,
+    "lat": 50.311795
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdd5-baaa-4455-82f1-c53ea688d7b7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

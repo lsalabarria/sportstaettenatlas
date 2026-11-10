@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a90a-72da-48fb-9e30-f5ab37848b83",
+  "name": "Sportplatz Engelstadt",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Reiffeisenstraße",
+    "plz": "55270",
+    "ort": "Engelstadt"
+  },
+  "lage": {
+    "lon": 8.07079,
+    "lat": 49.903497
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90a-72da-48fb-9e30-f5ab37848b83",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

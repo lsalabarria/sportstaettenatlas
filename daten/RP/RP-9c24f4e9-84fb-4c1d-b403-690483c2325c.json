@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24f4e9-84fb-4c1d-b403-690483c2325c",
+  "name": "Basketballfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Air Base",
+    "plz": "54529",
+    "ort": "Spangdahlem"
+  },
+  "lage": {
+    "lon": 6.706828,
+    "lat": 49.997337
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e9-84fb-4c1d-b403-690483c2325c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

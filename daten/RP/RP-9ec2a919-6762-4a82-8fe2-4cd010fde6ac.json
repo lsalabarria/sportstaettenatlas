@@ -1,0 +1,40 @@
+{
+  "id": "RP-9ec2a919-6762-4a82-8fe2-4cd010fde6ac",
+  "name": "Mehrzweck-Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Turnstraße",
+    "plz": "76835",
+    "ort": "Rhodt unter Rietburg"
+  },
+  "lage": {
+    "lon": 8.101339,
+    "lat": 49.271997
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a919-6762-4a82-8fe2-4cd010fde6ac",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-7ebfd044-fb0f-4261-94a0-6c51261fa44d",
+  "name": "Sportplatz Flomersheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ludwig-Wolker-Straße",
+    "hausnummer": "8",
+    "plz": "67227",
+    "ort": "Frankenthal (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.335547,
+    "lat": 49.505763
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "7ebfd044-fb0f-4261-94a0-6c51261fa44d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

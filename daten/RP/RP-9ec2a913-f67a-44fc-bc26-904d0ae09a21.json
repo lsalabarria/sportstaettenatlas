@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a913-f67a-44fc-bc26-904d0ae09a21",
+  "name": "Sportplatz Am Rauhen Weg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Rauhen Weg",
+    "hausnummer": "10",
+    "plz": "67722",
+    "ort": "Winnweiler"
+  },
+  "lage": {
+    "lon": 7.839703,
+    "lat": 49.568664
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a913-f67a-44fc-bc26-904d0ae09a21",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

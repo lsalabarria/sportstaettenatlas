@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a918-291c-492c-94a4-62a58e41bcd2",
+  "name": "Schützenverein Maikammer",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Kalmithöhenstraße",
+    "plz": "67487",
+    "ort": "Maikammer"
+  },
+  "lage": {
+    "lon": 8.105161,
+    "lat": 49.308198
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    },
+    {
+      "bezeichnung": "Bogenschießanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a918-291c-492c-94a4-62a58e41bcd2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

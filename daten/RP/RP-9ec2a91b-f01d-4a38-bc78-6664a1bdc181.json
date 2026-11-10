@@ -1,0 +1,38 @@
+{
+  "id": "RP-9ec2a91b-f01d-4a38-bc78-6664a1bdc181",
+  "name": "Reit- und Fahrverein e.V. Billigheim",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "In den Wartgärten",
+    "hausnummer": "3",
+    "plz": "76831",
+    "ort": "Billigheim-Ingenheim"
+  },
+  "lage": {
+    "lon": 8.11111,
+    "lat": 49.132397
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Springparcours"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91b-f01d-4a38-bc78-6664a1bdc181",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

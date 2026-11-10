@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d53-a847-4099-9555-6b39239f1ab6",
+  "name": "Wendelinus-Grundschule Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "9",
+    "plz": "56290",
+    "ort": "Lieg"
+  },
+  "lage": {
+    "lon": 7.349432,
+    "lat": 50.13821
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d53-a847-4099-9555-6b39239f1ab6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

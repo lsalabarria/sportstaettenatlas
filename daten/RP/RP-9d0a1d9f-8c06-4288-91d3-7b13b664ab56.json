@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d9f-8c06-4288-91d3-7b13b664ab56",
+  "name": "Bolzplatz Flußbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Reichelberg",
+    "plz": "54516",
+    "ort": "Flußbach"
+  },
+  "lage": {
+    "lon": 6.929806,
+    "lat": 50.017916
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d9f-8c06-4288-91d3-7b13b664ab56",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

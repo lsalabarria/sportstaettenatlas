@@ -1,0 +1,22 @@
+{
+  "id": "RP-a0a37300-b0da-412d-a518-a3df6636ae8e",
+  "name": "Wintersportanlage in Arft",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "plz": "56729",
+    "ort": "Arft"
+  },
+  "lage": {
+    "lon": 7.066872,
+    "lat": 50.387206
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0a37300-b0da-412d-a518-a3df6636ae8e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

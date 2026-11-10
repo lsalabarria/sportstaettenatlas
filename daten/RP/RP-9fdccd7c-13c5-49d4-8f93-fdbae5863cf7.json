@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd7c-13c5-49d4-8f93-fdbae5863cf7",
+  "name": "GATE99 Trampolinhalle Landau",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Albert-Einstein-Straße",
+    "hausnummer": "8",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.134118,
+    "lat": 49.187802
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd7c-13c5-49d4-8f93-fdbae5863cf7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

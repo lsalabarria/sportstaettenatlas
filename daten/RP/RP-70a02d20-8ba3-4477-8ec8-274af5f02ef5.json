@@ -1,0 +1,30 @@
+{
+  "id": "RP-70a02d20-8ba3-4477-8ec8-274af5f02ef5",
+  "name": "Turnhalle Offenbach-Hundsheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "22",
+    "plz": "67742",
+    "ort": "Buborn"
+  },
+  "lage": {
+    "lon": 7.541506,
+    "lat": 49.635613
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "70a02d20-8ba3-4477-8ec8-274af5f02ef5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

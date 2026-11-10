@@ -1,0 +1,29 @@
+{
+  "id": "RP-938b17bc-fb77-4ef4-a8a7-c1903c891c98",
+  "name": "Gemeindehaus Kappeln",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "17",
+    "plz": "67744",
+    "ort": "Kappeln"
+  },
+  "lage": {
+    "lon": 7.569774,
+    "lat": 49.676078
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "938b17bc-fb77-4ef4-a8a7-c1903c891c98",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

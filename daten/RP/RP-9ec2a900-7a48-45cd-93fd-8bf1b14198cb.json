@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a900-7a48-45cd-93fd-8bf1b14198cb",
+  "name": "Schützenverein Gerolsheim",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Am Palmberg",
+    "plz": "67229",
+    "ort": "Gerolsheim"
+  },
+  "lage": {
+    "lon": 8.252733,
+    "lat": 49.544636
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a900-7a48-45cd-93fd-8bf1b14198cb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

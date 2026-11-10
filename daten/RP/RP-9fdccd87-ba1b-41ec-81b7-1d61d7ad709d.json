@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd87-ba1b-41ec-81b7-1d61d7ad709d",
+  "name": "Sporthalle IGS Kandel",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "41",
+    "plz": "76870",
+    "ort": "Kandel, Stadt"
+  },
+  "lage": {
+    "lon": 8.192268,
+    "lat": 49.076319
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd87-ba1b-41ec-81b7-1d61d7ad709d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

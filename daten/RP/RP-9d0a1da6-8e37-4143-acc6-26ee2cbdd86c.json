@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da6-8e37-4143-acc6-26ee2cbdd86c",
+  "name": "Sportplatz Brück-Dreis",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mühlenweg",
+    "plz": "54552",
+    "ort": "Dreis-Brück"
+  },
+  "lage": {
+    "lon": 6.797081,
+    "lat": 50.269931
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da6-8e37-4143-acc6-26ee2cbdd86c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

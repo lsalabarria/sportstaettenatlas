@@ -1,0 +1,29 @@
+{
+  "id": "RP-9f01cc50-fe66-4245-acf4-efeac2b243be",
+  "name": "Sport- und Freizeitbad Altenglan",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "In der Godersbach",
+    "plz": "66885",
+    "ort": "Altenglan"
+  },
+  "lage": {
+    "lon": 7.47485,
+    "lat": 49.55381
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc50-fe66-4245-acf4-efeac2b243be",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a92e-c0b0-4c49-8d5e-8596c17dd7bf",
+  "name": "Sportanlage GS Eisenberg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Friedrich-Ebert-Straße",
+    "hausnummer": "19",
+    "plz": "67304",
+    "ort": "Eisenberg (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.065955,
+    "lat": 49.558671
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92e-c0b0-4c49-8d5e-8596c17dd7bf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

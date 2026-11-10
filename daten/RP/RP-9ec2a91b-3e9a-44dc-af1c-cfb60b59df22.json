@@ -1,0 +1,53 @@
+{
+  "id": "RP-9ec2a91b-3e9a-44dc-af1c-cfb60b59df22",
+  "name": "Sportanlage am Queichtalstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Konrad-Lerch-Ring",
+    "hausnummer": "5a",
+    "plz": "76877",
+    "ort": "Offenbach an der Queich"
+  },
+  "lage": {
+    "lon": 8.191006,
+    "lat": 49.201633
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91b-3e9a-44dc-af1c-cfb60b59df22",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

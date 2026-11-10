@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcccfe-a8c6-4d99-aec6-d7186bd0f7b2",
+  "name": "SportanlageLoreleystraße",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Loreleystraße",
+    "plz": "56357",
+    "ort": "Lierschied"
+  },
+  "lage": {
+    "lon": 7.739267,
+    "lat": 50.164531
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccfe-a8c6-4d99-aec6-d7186bd0f7b2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

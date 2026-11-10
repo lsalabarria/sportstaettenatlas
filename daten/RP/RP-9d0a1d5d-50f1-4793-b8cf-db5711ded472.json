@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5d-50f1-4793-b8cf-db5711ded472",
+  "name": "Uhler Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bucher Weg",
+    "plz": "56290",
+    "ort": "Uhler"
+  },
+  "lage": {
+    "lon": 7.421091,
+    "lat": 50.086976
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5d-50f1-4793-b8cf-db5711ded472",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

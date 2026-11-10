@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a940-741b-498b-8d38-7742b7cfad13",
+  "name": "Vereinigter Turn- und Gesangverein Queichhambach e. V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Breitbusch",
+    "plz": "76855",
+    "ort": "Annweiler am Trifels, Stadt"
+  },
+  "lage": {
+    "lon": 8.000245,
+    "lat": 49.215532
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a940-741b-498b-8d38-7742b7cfad13",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

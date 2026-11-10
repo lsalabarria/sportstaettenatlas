@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7c79-2c36-4081-9d5c-4d334a6d8808",
+  "name": "Tennisplätze TC Armsheim-Schimsheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Keltenweg",
+    "hausnummer": "15",
+    "plz": "55288",
+    "ort": "Armsheim"
+  },
+  "lage": {
+    "lon": 8.06108,
+    "lat": 49.81178
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c79-2c36-4081-9d5c-4d334a6d8808",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

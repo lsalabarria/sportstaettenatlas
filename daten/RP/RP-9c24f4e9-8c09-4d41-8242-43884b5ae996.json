@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24f4e9-8c09-4d41-8242-43884b5ae996",
+  "name": "Spangdahlem High School",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Air Base",
+    "plz": "54529",
+    "ort": "Spangdahlem"
+  },
+  "lage": {
+    "lon": 6.695138,
+    "lat": 49.99939
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e9-8c09-4d41-8242-43884b5ae996",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

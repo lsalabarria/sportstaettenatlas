@@ -1,0 +1,36 @@
+{
+  "id": "RP-9fdcccda-e4d5-42cd-a8f1-d595a68d0d42",
+  "name": "Sportanlage Herresbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "961",
+    "plz": "56729",
+    "ort": "Herresbach"
+  },
+  "lage": {
+    "lon": 7.01549,
+    "lat": 50.353576
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccda-e4d5-42cd-a8f1-d595a68d0d42",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

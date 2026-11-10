@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccdca-8b0a-4efb-8267-3a5e210ca522",
+  "name": "Sportplatz Marktstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Marktstraße",
+    "plz": "56368",
+    "ort": "Katzenelnbogen, Stadt"
+  },
+  "lage": {
+    "lon": 7.973016,
+    "lat": 50.266234
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdca-8b0a-4efb-8267-3a5e210ca522",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

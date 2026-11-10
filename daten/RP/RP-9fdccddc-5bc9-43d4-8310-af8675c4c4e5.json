@@ -1,0 +1,39 @@
+{
+  "id": "RP-9fdccddc-5bc9-43d4-8310-af8675c4c4e5",
+  "name": "Beachvolleyballfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Kaiserstraße",
+    "hausnummer": "126",
+    "plz": "66849",
+    "ort": "Landstuhl, Sickingenstadt, Stadt"
+  },
+  "lage": {
+    "lon": 7.583505,
+    "lat": 49.412566
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccddc-5bc9-43d4-8310-af8675c4c4e5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

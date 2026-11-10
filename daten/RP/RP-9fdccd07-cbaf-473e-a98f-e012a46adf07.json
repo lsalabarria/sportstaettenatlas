@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd07-cbaf-473e-a98f-e012a46adf07",
+  "name": "Sportplatz Miehlen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L323",
+    "plz": "56357",
+    "ort": "Miehlen"
+  },
+  "lage": {
+    "lon": 7.831176,
+    "lat": 50.232201
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd07-cbaf-473e-a98f-e012a46adf07",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

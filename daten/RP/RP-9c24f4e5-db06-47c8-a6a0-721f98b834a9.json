@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24f4e5-db06-47c8-a6a0-721f98b834a9",
+  "name": "Reitplatz Bauler",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Kammerwaldstraße",
+    "plz": "54673",
+    "ort": "Bauler"
+  },
+  "lage": {
+    "lon": 6.204913,
+    "lat": 49.968097
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e5-db06-47c8-a6a0-721f98b834a9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

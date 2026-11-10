@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcce07-a1d1-4597-a09c-959c823448ae",
+  "name": "Bolzplatz Alwin-Mittasch-Park",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Fichtestraße",
+    "plz": "67063",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.423084,
+    "lat": 49.492914
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce07-a1d1-4597-a09c-959c823448ae",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

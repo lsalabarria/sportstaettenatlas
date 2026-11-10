@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd00-60a0-4008-8cec-32a8a537a666",
+  "name": "Sportanlage Weyer",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "2",
+    "plz": "56357",
+    "ort": "Weyer"
+  },
+  "lage": {
+    "lon": 7.730725,
+    "lat": 50.195764
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd00-60a0-4008-8cec-32a8a537a666",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

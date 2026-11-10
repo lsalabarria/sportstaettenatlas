@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5c-98f6-4545-aaf7-c58042086fab",
+  "name": "Bolzplatz Dorweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waldecker Weg",
+    "plz": "56290",
+    "ort": "Dommershausen"
+  },
+  "lage": {
+    "lon": 7.42428,
+    "lat": 50.138072
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5c-98f6-4545-aaf7-c58042086fab",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

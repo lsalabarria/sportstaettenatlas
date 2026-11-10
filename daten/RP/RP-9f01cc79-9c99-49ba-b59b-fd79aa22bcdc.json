@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc79-9c99-49ba-b59b-fd79aa22bcdc",
+  "name": "Mosel Camingplatz Rissbach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Rissbacherstraße",
+    "hausnummer": "155",
+    "plz": "56841",
+    "ort": "Traben-Trarbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.10543,
+    "lat": 49.96652
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc79-9c99-49ba-b59b-fd79aa22bcdc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

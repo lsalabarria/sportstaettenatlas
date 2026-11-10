@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dfb-c18b-4bdd-b716-0e9a275c90b7",
+  "name": "Fitness Now! Westerwald",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wörthstraße",
+    "hausnummer": "67",
+    "plz": "56457",
+    "ort": "Westerburg, Stadt"
+  },
+  "lage": {
+    "lon": 7.980632,
+    "lat": 50.557571
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfb-c18b-4bdd-b716-0e9a275c90b7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

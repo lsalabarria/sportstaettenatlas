@@ -1,0 +1,29 @@
+{
+  "id": "RP-e8ed3fbb-16e0-48a3-9edc-3936f3801293",
+  "name": "Johann-Heinrich-Roos-Halle Reipoltskirchen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hirtenstraße",
+    "hausnummer": "12",
+    "plz": "67753",
+    "ort": "Reipoltskirchen"
+  },
+  "lage": {
+    "lon": 7.663416,
+    "lat": 49.632355
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "e8ed3fbb-16e0-48a3-9edc-3936f3801293",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

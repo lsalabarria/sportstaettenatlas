@@ -1,0 +1,36 @@
+{
+  "id": "RP-9fdccd1f-4445-4d68-9f5a-bd88fe4b0c07",
+  "name": "Stadion Westpfalzschule am Schwarzhübel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "In der Nasserde",
+    "hausnummer": "30",
+    "plz": "67685",
+    "ort": "Weilerbach"
+  },
+  "lage": {
+    "lon": 7.645055,
+    "lat": 49.480444
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd1f-4445-4d68-9f5a-bd88fe4b0c07",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

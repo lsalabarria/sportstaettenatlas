@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24bfa5-4ec5-462e-9c05-cd999a5e9428",
+  "name": "Rasenplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Maigesetzweg",
+    "plz": "56073",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.569249,
+    "lat": 50.350712
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa5-4ec5-462e-9c05-cd999a5e9428",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

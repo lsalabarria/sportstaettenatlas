@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a930-2f2d-4641-9735-9d98aa9a060b",
+  "name": "Boule-Platz Rockenhausen",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Alten Steinbruch",
+    "hausnummer": "1",
+    "plz": "67806",
+    "ort": "Rockenhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.843961,
+    "lat": 49.620294
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a930-2f2d-4641-9735-9d98aa9a060b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

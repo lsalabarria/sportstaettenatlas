@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a925-1b31-4746-a2a2-be45b49beec6",
+  "name": "Sportanlage Berufsbildende Schule Bad Dürkheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Salzbrunnen",
+    "hausnummer": "7",
+    "plz": "67098",
+    "ort": "Bad Dürkheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.167137,
+    "lat": 49.467204
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a925-1b31-4746-a2a2-be45b49beec6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

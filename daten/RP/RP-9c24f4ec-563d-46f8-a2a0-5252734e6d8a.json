@@ -1,0 +1,35 @@
+{
+  "id": "RP-9c24f4ec-563d-46f8-a2a0-5252734e6d8a",
+  "name": "Tennis-Club Rot-Weiß Neuerburg 1979 e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "In der Enz",
+    "hausnummer": "23",
+    "plz": "54673",
+    "ort": "Neuerburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.275068,
+    "lat": 50.027041
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ec-563d-46f8-a2a0-5252734e6d8a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

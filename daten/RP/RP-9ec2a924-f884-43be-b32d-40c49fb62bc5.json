@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a924-f884-43be-b32d-40c49fb62bc5",
+  "name": "Basketballplatz am Tennisclub",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kanalstraße",
+    "hausnummer": "44",
+    "plz": "67098",
+    "ort": "Bad Dürkheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.189199,
+    "lat": 49.468354
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a924-f884-43be-b32d-40c49fb62bc5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

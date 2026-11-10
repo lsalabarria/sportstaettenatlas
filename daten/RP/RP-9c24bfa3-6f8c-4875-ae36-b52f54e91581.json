@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfa3-6f8c-4875-ae36-b52f54e91581",
+  "name": "Mehrzweckhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Karl-Möhling-Straße",
+    "hausnummer": "12A",
+    "plz": "56072",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.543062,
+    "lat": 50.339689
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa3-6f8c-4875-ae36-b52f54e91581",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

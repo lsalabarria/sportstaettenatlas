@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faf5-17e1-4f7d-9dc0-9ef43d082ed2",
+  "name": "Sportplatz Nistertal",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "57647",
+    "ort": "Nistertal"
+  },
+  "lage": {
+    "lon": 7.898464,
+    "lat": 50.627898
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf5-17e1-4f7d-9dc0-9ef43d082ed2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

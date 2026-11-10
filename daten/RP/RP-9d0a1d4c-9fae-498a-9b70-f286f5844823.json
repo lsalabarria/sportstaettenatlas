@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d4c-9fae-498a-9b70-f286f5844823",
+  "name": "Sportplatz \"DJK Müllenbach\"",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Elsbergstraße",
+    "hausnummer": "19",
+    "plz": "53520",
+    "ort": "Müllenbach"
+  },
+  "lage": {
+    "lon": 6.917981,
+    "lat": 50.317574
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4c-9fae-498a-9b70-f286f5844823",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1df9-bd19-448c-9352-72ff4eb8d1b2",
+  "name": "Hundsporthalle Westerwald",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Moorsberg",
+    "hausnummer": "5",
+    "plz": "56203",
+    "ort": "Höhr-Grenzhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.665309,
+    "lat": 50.449489
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df9-bd19-448c-9352-72ff4eb8d1b2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

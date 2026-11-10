@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad4-9865-4554-9b0a-e0b34384267e",
+  "name": "Spielplatz Rederscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rederscheider Straße",
+    "plz": "53578",
+    "ort": "Windhagen"
+  },
+  "lage": {
+    "lon": 7.324211,
+    "lat": 50.637907
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad4-9865-4554-9b0a-e0b34384267e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

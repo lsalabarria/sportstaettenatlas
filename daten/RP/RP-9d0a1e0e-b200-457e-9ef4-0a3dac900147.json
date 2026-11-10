@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e0e-b200-457e-9ef4-0a3dac900147",
+  "name": "Sportpark Tennisplatz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Naturfreibad",
+    "hausnummer": "1",
+    "plz": "55469",
+    "ort": "Simmern/ Hunsrück, Stadt"
+  },
+  "lage": {
+    "lon": 7.523343,
+    "lat": 49.975243
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0e-b200-457e-9ef4-0a3dac900147",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

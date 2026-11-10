@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a920-3c1e-429b-8ec3-1f06b84f0c38",
+  "name": "Sportanlage SV 1959 Wernersberg e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Maisbachstraße",
+    "plz": "76857",
+    "ort": "Wernersberg"
+  },
+  "lage": {
+    "lon": 7.929536,
+    "lat": 49.184223
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a920-3c1e-429b-8ec3-1f06b84f0c38",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

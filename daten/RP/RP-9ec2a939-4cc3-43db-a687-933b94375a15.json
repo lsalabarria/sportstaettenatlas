@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a939-4cc3-43db-a687-933b94375a15",
+  "name": "Tenniclub Mainz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Dahlheimer Weg",
+    "hausnummer": "33",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.235931,
+    "lat": 49.986875
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a939-4cc3-43db-a687-933b94375a15",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

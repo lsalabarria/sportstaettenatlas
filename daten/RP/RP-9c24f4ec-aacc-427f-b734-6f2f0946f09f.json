@@ -1,0 +1,32 @@
+{
+  "id": "RP-9c24f4ec-aacc-427f-b734-6f2f0946f09f",
+  "name": "Stephanshof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Stephanshof",
+    "hausnummer": "1a",
+    "plz": "54689",
+    "ort": "Dahnen"
+  },
+  "lage": {
+    "lon": 6.138368,
+    "lat": 50.06757
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ec-aacc-427f-b734-6f2f0946f09f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

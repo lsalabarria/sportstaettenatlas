@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7cba-caab-4eae-aacd-aec8d5f520f4",
+  "name": "Tennisclub Hoppstädten e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "67744",
+    "ort": "Hoppstädten"
+  },
+  "lage": {
+    "lon": 7.53249,
+    "lat": 49.686817
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cba-caab-4eae-aacd-aec8d5f520f4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

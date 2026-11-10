@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfa5-aa3c-4088-81a9-fe554e07be24",
+  "name": "Canyon PumpTrack Koblenz",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Peter-Klöckner-Straße",
+    "hausnummer": "2",
+    "plz": "56073",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.572394,
+    "lat": 50.364321
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Mountainbikestrecke"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa5-aa3c-4088-81a9-fe554e07be24",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

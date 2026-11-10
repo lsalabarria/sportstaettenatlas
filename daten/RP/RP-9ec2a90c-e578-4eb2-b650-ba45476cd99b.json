@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90c-e578-4eb2-b650-ba45476cd99b",
+  "name": "Turnhalle Turnverein 1848 Ober-Olm e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Essenheimer Str.",
+    "hausnummer": "19",
+    "plz": "55270",
+    "ort": "Ober-Olm"
+  },
+  "lage": {
+    "lon": 8.187478,
+    "lat": 49.938843
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90c-e578-4eb2-b650-ba45476cd99b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

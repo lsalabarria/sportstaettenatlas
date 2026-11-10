@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a933-9b81-40fa-9b7a-0edf95f16bec",
+  "name": "Fitnesscenter Ipach",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Speyerdorfer Str.",
+    "hausnummer": "8",
+    "plz": "67433",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.155944,
+    "lat": 49.346126
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a933-9b81-40fa-9b7a-0edf95f16bec",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

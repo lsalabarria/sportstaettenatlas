@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccda9-c677-4c9e-9792-12a602356789",
+  "name": "Sportplatz Koblenzer Straße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Koblenzer Str.",
+    "hausnummer": "36",
+    "plz": "56626",
+    "ort": "Andernach, Stadt"
+  },
+  "lage": {
+    "lon": 7.411119,
+    "lat": 50.437949
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccda9-c677-4c9e-9792-12a602356789",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

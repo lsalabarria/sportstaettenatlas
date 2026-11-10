@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcce33-fd3d-44e2-85b4-302a5c1f09bd",
+  "name": "Turnhalle Grundschule Dahn",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Geschwister-Scholl-Straße",
+    "hausnummer": "4",
+    "plz": "66994",
+    "ort": "Dahn, Stadt"
+  },
+  "lage": {
+    "lon": 7.787844,
+    "lat": 49.153183
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce33-fd3d-44e2-85b4-302a5c1f09bd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

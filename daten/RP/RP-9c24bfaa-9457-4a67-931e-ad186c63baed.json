@@ -1,0 +1,27 @@
+{
+  "id": "RP-9c24bfaa-9457-4a67-931e-ad186c63baed",
+  "name": "Flugplatz Modellfluggruppe Koblenz e.V.",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "plz": "56072",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.49646,
+    "lat": 50.355369
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfaa-9457-4a67-931e-ad186c63baed",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccda7-dd02-4382-b27a-33cff34c5612",
+  "name": "Kleinspielfeld Kindergarten Südernacher Pänz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schillerring",
+    "hausnummer": "70a",
+    "plz": "56626",
+    "ort": "Andernach, Stadt"
+  },
+  "lage": {
+    "lon": 7.412143,
+    "lat": 50.427548
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccda7-dd02-4382-b27a-33cff34c5612",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

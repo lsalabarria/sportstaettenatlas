@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faef-b8c2-4ce1-beed-318af26a07de",
+  "name": "JU Ranch Westernreiten",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Buch",
+    "hausnummer": "6",
+    "plz": "56414",
+    "ort": "Hundsangen"
+  },
+  "lage": {
+    "lon": 7.971509,
+    "lat": 50.460324
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reithalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faef-b8c2-4ce1-beed-318af26a07de",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

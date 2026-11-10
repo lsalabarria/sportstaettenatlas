@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1d5c-c61a-4d24-ae30-c3a5525e9096",
+  "name": "Hollnich Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schinderhannes-Radweg",
+    "plz": "56288",
+    "ort": "Hollnich"
+  },
+  "lage": {
+    "lon": 7.488025,
+    "lat": 50.067872
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5c-c61a-4d24-ae30-c3a5525e9096",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e12-f9f6-4884-a3db-a4cb90e177ff",
+  "name": "Bolzplatz Pützborn",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Pützborner Straße",
+    "plz": "54550",
+    "ort": "Daun, Stadt"
+  },
+  "lage": {
+    "lon": 6.812395,
+    "lat": 50.191758
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e12-f9f6-4884-a3db-a4cb90e177ff",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

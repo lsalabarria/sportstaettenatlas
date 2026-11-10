@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a93b-711a-4c7f-91f5-919b9cdd2388",
+  "name": "Bolzplatz Pestalozzischule",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Pestalozziplatz",
+    "hausnummer": "6",
+    "plz": "55120",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.224859,
+    "lat": 50.018786
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93b-711a-4c7f-91f5-919b9cdd2388",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

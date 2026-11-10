@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dfc-71af-4f21-bd11-76a60c9cdfc2",
+  "name": "Sporthalle der Steinsbergschule Grundschule Rennerod",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Westernoher Str.",
+    "hausnummer": "30",
+    "plz": "56477",
+    "ort": "Rennerod, Stadt"
+  },
+  "lage": {
+    "lon": 8.069319,
+    "lat": 50.60346
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfc-71af-4f21-bd11-76a60c9cdfc2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

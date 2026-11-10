@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5e-3e5e-4294-8fe4-7a8e17abde48",
+  "name": "Sportplatz Gehlweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "55490",
+    "ort": "Gehlweiler"
+  },
+  "lage": {
+    "lon": 7.472183,
+    "lat": 49.88189
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5e-3e5e-4294-8fe4-7a8e17abde48",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

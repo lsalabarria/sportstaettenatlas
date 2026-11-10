@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fadd-0371-48e1-9b5a-085068a06ef8",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Daufenbacher Weg",
+    "plz": "54664",
+    "ort": "Auw an der Kyll"
+  },
+  "lage": {
+    "lon": 6.61287,
+    "lat": 49.899382
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadd-0371-48e1-9b5a-085068a06ef8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

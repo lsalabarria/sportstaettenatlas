@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d62-4ffb-413d-865d-7be6d001e2fd",
+  "name": "Bolzplatz Oppertshausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Unterstraße",
+    "plz": "55469",
+    "ort": "Oppertshausen"
+  },
+  "lage": {
+    "lon": 7.474674,
+    "lat": 49.946361
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d62-4ffb-413d-865d-7be6d001e2fd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

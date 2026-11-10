@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdccd3a-1fbc-4b67-8ae7-cafb0961b33c",
+  "name": "Grundschule Carl-Bosch-Schule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Carl-Bosch-Straße",
+    "hausnummer": "9",
+    "plz": "67117",
+    "ort": "Limburgerhof"
+  },
+  "lage": {
+    "lon": 8.388645,
+    "lat": 49.417512
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd3a-1fbc-4b67-8ae7-cafb0961b33c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

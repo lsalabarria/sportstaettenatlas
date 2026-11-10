@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fac8-1294-458d-b465-2c8975d207e6",
+  "name": "Tennishalle Almersbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Auf dem Altdriesch",
+    "plz": "57610",
+    "ort": "Almersbach"
+  },
+  "lage": {
+    "lon": 7.664028,
+    "lat": 50.693121
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennishalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac8-1294-458d-b465-2c8975d207e6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

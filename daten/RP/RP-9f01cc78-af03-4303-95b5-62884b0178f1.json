@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc78-af03-4303-95b5-62884b0178f1",
+  "name": "Panoramabad Römische Weinstraße",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Tannenweg",
+    "hausnummer": "18",
+    "plz": "54340",
+    "ort": "Leiwen"
+  },
+  "lage": {
+    "lon": 6.89262,
+    "lat": 49.80955
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc78-af03-4303-95b5-62884b0178f1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

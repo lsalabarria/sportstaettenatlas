@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a91a-4c21-4955-9c73-8bd7842c969e",
+  "name": "Skaterplatz Essingen",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "76879",
+    "ort": "Essingen"
+  },
+  "lage": {
+    "lon": 8.169511,
+    "lat": 49.231372
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91a-4c21-4955-9c73-8bd7842c969e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

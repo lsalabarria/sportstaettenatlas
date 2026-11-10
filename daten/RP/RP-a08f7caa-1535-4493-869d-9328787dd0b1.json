@@ -1,0 +1,42 @@
+{
+  "id": "RP-a08f7caa-1535-4493-869d-9328787dd0b1",
+  "name": "Sportplatz an der Idarwaldschule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sonnenschlicher",
+    "hausnummer": "3",
+    "plz": "55624",
+    "ort": "Rhaunen"
+  },
+  "lage": {
+    "lon": 7.334382,
+    "lat": 49.859316
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7caa-1535-4493-869d-9328787dd0b1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

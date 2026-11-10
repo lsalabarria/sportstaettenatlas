@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dac-524a-4a60-9458-c3bd4f59aaa4",
+  "name": "Bouleanlage TuS Rodenbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Rast",
+    "hausnummer": "51",
+    "plz": "56567",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.449556,
+    "lat": 50.459334
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dac-524a-4a60-9458-c3bd4f59aaa4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

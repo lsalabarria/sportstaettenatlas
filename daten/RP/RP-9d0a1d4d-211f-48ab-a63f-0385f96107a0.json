@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d4d-211f-48ab-a63f-0385f96107a0",
+  "name": "Bolzplatz Reifferscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Fuchshofener Straße",
+    "plz": "53520",
+    "ort": "Reifferscheid"
+  },
+  "lage": {
+    "lon": 6.880223,
+    "lat": 50.404931
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4d-211f-48ab-a63f-0385f96107a0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

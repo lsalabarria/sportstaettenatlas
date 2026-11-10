@@ -1,0 +1,27 @@
+{
+  "id": "RP-9ec2a936-cadb-4cb9-8654-f48c21ad4024",
+  "name": "RSV Schwarz-Weiss Mainz-Hechtsheim",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "plz": "55129",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.285249,
+    "lat": 49.951762
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a936-cadb-4cb9-8654-f48c21ad4024",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

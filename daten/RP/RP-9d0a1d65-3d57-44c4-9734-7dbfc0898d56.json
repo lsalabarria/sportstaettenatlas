@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d65-3d57-44c4-9734-7dbfc0898d56",
+  "name": "Schwimmbad Morbach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Sportzentrum",
+    "plz": "54497",
+    "ort": "Morbach"
+  },
+  "lage": {
+    "lon": 7.12974,
+    "lat": 49.816333
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d65-3d57-44c4-9734-7dbfc0898d56",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faf1-d342-4136-8cd6-c3713fc03edc",
+  "name": "Sportplatz Langewies",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "6",
+    "plz": "56479",
+    "ort": "Irmtraut"
+  },
+  "lage": {
+    "lon": 8.061536,
+    "lat": 50.557846
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf1-d342-4136-8cd6-c3713fc03edc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

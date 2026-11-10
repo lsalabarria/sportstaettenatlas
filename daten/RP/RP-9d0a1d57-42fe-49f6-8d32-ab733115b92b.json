@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d57-42fe-49f6-8d32-ab733115b92b",
+  "name": "Sporthalle Büchel",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "56823",
+    "ort": "Büchel"
+  },
+  "lage": {
+    "lon": 7.084411,
+    "lat": 50.173654
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d57-42fe-49f6-8d32-ab733115b92b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

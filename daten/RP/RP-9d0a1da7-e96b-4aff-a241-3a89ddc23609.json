@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1da7-e96b-4aff-a241-3a89ddc23609",
+  "name": "Multifunktionsfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Parkstraße",
+    "plz": "53520",
+    "ort": "Drees"
+  },
+  "lage": {
+    "lon": 7.003855,
+    "lat": 50.341046
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da7-e96b-4aff-a241-3a89ddc23609",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d0a1da4-e491-4433-82a7-a3d3da04f014",
+  "name": "Waldstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54570",
+    "ort": "Betteldorf"
+  },
+  "lage": {
+    "lon": 6.76116,
+    "lat": 50.251839
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da4-e491-4433-82a7-a3d3da04f014",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

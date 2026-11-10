@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d09fae8-417c-4bee-9ca9-90593b85895f",
+  "name": "Tennisplatz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Leukstraße",
+    "hausnummer": "20",
+    "plz": "54450",
+    "ort": "Freudenburg"
+  },
+  "lage": {
+    "lon": 6.528647,
+    "lat": 49.545222
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae8-417c-4bee-9ca9-90593b85895f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

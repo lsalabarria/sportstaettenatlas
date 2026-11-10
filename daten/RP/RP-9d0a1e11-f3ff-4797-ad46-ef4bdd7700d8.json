@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e11-f3ff-4797-ad46-ef4bdd7700d8",
+  "name": "TC Gerolstein",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Raderstraße",
+    "plz": "54568",
+    "ort": "Gerolstein, Stadt"
+  },
+  "lage": {
+    "lon": 6.652873,
+    "lat": 50.220971
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e11-f3ff-4797-ad46-ef4bdd7700d8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a938-812c-46a1-82d7-6b0721e6eae5",
+  "name": "Sporthalle Erich-Kästner-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Küferweg",
+    "hausnummer": "53",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.238509,
+    "lat": 49.971497
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a938-812c-46a1-82d7-6b0721e6eae5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

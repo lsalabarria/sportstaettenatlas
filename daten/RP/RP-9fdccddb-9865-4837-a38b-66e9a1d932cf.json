@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccddb-9865-4837-a38b-66e9a1d932cf",
+  "name": "Playground",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Geb",
+    "hausnummer": "3869",
+    "plz": "66849",
+    "ort": "Landstuhl, Sickingenstadt, Stadt"
+  },
+  "lage": {
+    "lon": 7.556374,
+    "lat": 49.40265
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccddb-9865-4837-a38b-66e9a1d932cf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

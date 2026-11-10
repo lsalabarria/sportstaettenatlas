@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdccd56-2b55-45e7-b5d1-8286e7c8f704",
+  "name": "Gödelsteinhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Gödelsteinhof",
+    "hausnummer": "1",
+    "plz": "66497",
+    "ort": "Contwig"
+  },
+  "lage": {
+    "lon": 7.443143,
+    "lat": 49.261533
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd56-2b55-45e7-b5d1-8286e7c8f704",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

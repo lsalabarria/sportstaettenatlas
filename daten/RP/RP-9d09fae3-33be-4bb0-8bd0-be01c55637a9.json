@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fae3-33be-4bb0-8bd0-be01c55637a9",
+  "name": "Landal Hallenschwimmbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Landal Hochwald",
+    "plz": "54427",
+    "ort": "Kell am See"
+  },
+  "lage": {
+    "lon": 6.810365,
+    "lat": 49.648098
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae3-33be-4bb0-8bd0-be01c55637a9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

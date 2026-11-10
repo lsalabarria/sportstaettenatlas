@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e13-4b8c-4ab0-b0c7-4adc71c6a5e3",
+  "name": "Turnhalle Grundschule Daun",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Freiherr-vom-Stein-Straße",
+    "hausnummer": "3",
+    "plz": "54550",
+    "ort": "Daun, Stadt"
+  },
+  "lage": {
+    "lon": 6.824471,
+    "lat": 50.197957
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e13-4b8c-4ab0-b0c7-4adc71c6a5e3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

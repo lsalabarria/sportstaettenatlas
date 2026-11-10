@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a90a-7e3b-4fdd-974b-5a0c0332c254",
+  "name": "Sporthalle Engelstadt",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Reiffeisenstraße",
+    "plz": "55270",
+    "ort": "Engelstadt"
+  },
+  "lage": {
+    "lon": 8.069697,
+    "lat": 49.903452
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    },
+    {
+      "bezeichnung": "Kegelbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90a-7e3b-4fdd-974b-5a0c0332c254",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fad1-bbb2-4155-b406-23eb2bb385cb",
+  "name": "Mittelhof Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf dem Stuhl",
+    "hausnummer": "2",
+    "plz": "57537",
+    "ort": "Mittelhof"
+  },
+  "lage": {
+    "lon": 7.793907,
+    "lat": 50.773049
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad1-bbb2-4155-b406-23eb2bb385cb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

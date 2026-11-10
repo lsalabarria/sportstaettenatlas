@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccdc1-8ec0-4abd-9117-4bc341f1255a",
+  "name": "Freibad Nassau",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Leifheitstraße",
+    "plz": "56377",
+    "ort": "Nassau, Stadt"
+  },
+  "lage": {
+    "lon": 7.797798,
+    "lat": 50.310495
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdc1-8ec0-4abd-9117-4bc341f1255a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

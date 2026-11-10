@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1db9-a33a-4ca5-9fd8-f30aa990eb04",
+  "name": "Friedrich-Wilhelm-Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Olewiger Straße",
+    "hausnummer": "2",
+    "plz": "54295",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.644383,
+    "lat": 49.747165
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    },
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db9-a33a-4ca5-9fd8-f30aa990eb04",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

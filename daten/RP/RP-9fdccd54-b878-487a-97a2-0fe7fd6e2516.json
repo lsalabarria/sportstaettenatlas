@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd54-b878-487a-97a2-0fe7fd6e2516",
+  "name": "Sporthalle Nünschweiler",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Füllengartenstraße",
+    "plz": "66989",
+    "ort": "Nünschweiler"
+  },
+  "lage": {
+    "lon": 7.502235,
+    "lat": 49.226448
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd54-b878-487a-97a2-0fe7fd6e2516",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

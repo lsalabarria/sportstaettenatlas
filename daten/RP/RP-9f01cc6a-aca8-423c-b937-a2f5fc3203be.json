@@ -1,0 +1,32 @@
+{
+  "id": "RP-9f01cc6a-aca8-423c-b937-a2f5fc3203be",
+  "name": "Hallen- und Freibad Kirchberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schulzentrum Kirchberg",
+    "plz": "55481",
+    "ort": "Kirchberg (Hunsrück), Stadt"
+  },
+  "lage": {
+    "lon": 7.40414,
+    "lat": 49.94765
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    },
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6a-aca8-423c-b937-a2f5fc3203be",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

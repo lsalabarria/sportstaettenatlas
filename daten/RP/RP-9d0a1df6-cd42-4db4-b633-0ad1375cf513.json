@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d0a1df6-cd42-4db4-b633-0ad1375cf513",
+  "name": "Sportanlagen FSV Trier-Tarforst",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Tarforster Straße",
+    "hausnummer": "1a",
+    "plz": "54296",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.696204,
+    "lat": 49.742253
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df6-cd42-4db4-b633-0ad1375cf513",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

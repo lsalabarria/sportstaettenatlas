@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdb7-880f-4f49-add8-fac32082d79f",
+  "name": "Nettebad Mayen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bachstraße",
+    "hausnummer": "44",
+    "plz": "56727",
+    "ort": "Mayen, Stadt"
+  },
+  "lage": {
+    "lon": 7.222046,
+    "lat": 50.333659
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdb7-880f-4f49-add8-fac32082d79f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d0a1db7-802c-40a6-848f-46c0149d6406",
+  "name": "Bolzplatz Biewer",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "54293",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.652219,
+    "lat": 49.77522
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db7-802c-40a6-848f-46c0149d6406",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

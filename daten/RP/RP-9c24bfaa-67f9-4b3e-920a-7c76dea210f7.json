@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfaa-67f9-4b3e-920a-7c76dea210f7",
+  "name": "Sporthalle Rübenach/Franz-Mohrs-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "In Der Klause",
+    "hausnummer": "1",
+    "plz": "56072",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.522724,
+    "lat": 50.368739
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfaa-67f9-4b3e-920a-7c76dea210f7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

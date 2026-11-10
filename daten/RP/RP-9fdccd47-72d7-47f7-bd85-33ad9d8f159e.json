@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd47-72d7-47f7-bd85-33ad9d8f159e",
+  "name": "DFB Kleinfeld Lug",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Günter-Bauer-Straße",
+    "hausnummer": "2",
+    "plz": "76848",
+    "ort": "Lug"
+  },
+  "lage": {
+    "lon": 7.887193,
+    "lat": 49.181899
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd47-72d7-47f7-bd85-33ad9d8f159e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

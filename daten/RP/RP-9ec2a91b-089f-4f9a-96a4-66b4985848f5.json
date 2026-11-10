@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a91b-089f-4f9a-96a4-66b4985848f5",
+  "name": "Tennisclub Offenbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Hochstadter Str.",
+    "hausnummer": "22",
+    "plz": "76877",
+    "ort": "Offenbach an der Queich"
+  },
+  "lage": {
+    "lon": 8.213124,
+    "lat": 49.199844
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91b-089f-4f9a-96a4-66b4985848f5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

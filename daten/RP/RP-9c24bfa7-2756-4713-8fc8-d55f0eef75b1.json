@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfa7-2756-4713-8fc8-d55f0eef75b1",
+  "name": "Sporthalle des TuS 1890 e.V. Niederberg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Friesenstraße",
+    "hausnummer": "8",
+    "plz": "56077",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.630617,
+    "lat": 50.369301
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa7-2756-4713-8fc8-d55f0eef75b1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

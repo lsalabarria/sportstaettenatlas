@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd98-9e4f-4a90-94f0-60bf0a08e156",
+  "name": "TC Mülheim-Kärlich e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Heeresstraße",
+    "plz": "56218",
+    "ort": "Mülheim-Kärlich, Stadt"
+  },
+  "lage": {
+    "lon": 7.480306,
+    "lat": 50.393562
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd98-9e4f-4a90-94f0-60bf0a08e156",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

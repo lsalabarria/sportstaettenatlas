@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fad7-4287-4583-b688-a9c15d90f1c2",
+  "name": "Schwimmbad Puderbach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "27",
+    "plz": "56305",
+    "ort": "Puderbach"
+  },
+  "lage": {
+    "lon": 7.615228,
+    "lat": 50.599091
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad7-4287-4583-b688-a9c15d90f1c2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

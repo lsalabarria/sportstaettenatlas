@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a907-df74-47be-8e11-f1894f2787c8",
+  "name": "Sportzentrum & Vereinsheim Tus Trechtingshausen - Am Pfaffenfels",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Pfaffenfels",
+    "plz": "55413",
+    "ort": "Trechtingshausen"
+  },
+  "lage": {
+    "lon": 7.833296,
+    "lat": 50.015435
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a907-df74-47be-8e11-f1894f2787c8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

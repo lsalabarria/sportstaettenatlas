@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a909-da0c-4d7d-8512-2f466cac327d",
+  "name": "Joker-Tennis-Park Sprendlingen Tennishalle",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "plz": "55576",
+    "ort": "Sprendlingen"
+  },
+  "lage": {
+    "lon": 7.984491,
+    "lat": 49.854513
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennishalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a909-da0c-4d7d-8512-2f466cac327d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

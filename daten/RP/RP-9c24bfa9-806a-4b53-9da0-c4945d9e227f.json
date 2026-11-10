@@ -1,0 +1,32 @@
+{
+  "id": "RP-9c24bfa9-806a-4b53-9da0-c4945d9e227f",
+  "name": "Außenbereich der IGS Koblenz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Johannesstraße",
+    "hausnummer": "58-60",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.574767,
+    "lat": 50.373757
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa9-806a-4b53-9da0-c4945d9e227f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

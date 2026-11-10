@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da4-5867-4d7a-9765-71aa5235460d",
+  "name": "Sporthalle Ahbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "4",
+    "plz": "54579",
+    "ort": "Üxheim"
+  },
+  "lage": {
+    "lon": 6.759786,
+    "lat": 50.340007
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da4-5867-4d7a-9765-71aa5235460d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

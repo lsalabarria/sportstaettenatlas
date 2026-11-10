@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7cc1-2b64-416f-8d03-e9b71b118944",
+  "name": "Turnhalle Lettweiler",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "1",
+    "plz": "67823",
+    "ort": "Lettweiler"
+  },
+  "lage": {
+    "lon": 7.724474,
+    "lat": 49.736809
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cc1-2b64-416f-8d03-e9b71b118944",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

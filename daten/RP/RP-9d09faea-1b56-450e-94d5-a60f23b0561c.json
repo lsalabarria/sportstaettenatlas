@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d09faea-1b56-450e-94d5-a60f23b0561c",
+  "name": "Schießstand Gackenbach",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "plz": "56412",
+    "ort": "Gackenbach"
+  },
+  "lage": {
+    "lon": 7.856188,
+    "lat": 50.363464
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faea-1b56-450e-94d5-a60f23b0561c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faea-8ce2-498a-826b-df306b48a1a0",
+  "name": "Sportplatz Oberelbert",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Wiesengrund",
+    "plz": "56412",
+    "ort": "Oberelbert"
+  },
+  "lage": {
+    "lon": 7.81951,
+    "lat": 50.390457
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faea-8ce2-498a-826b-df306b48a1a0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

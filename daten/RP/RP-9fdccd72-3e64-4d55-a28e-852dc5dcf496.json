@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd72-3e64-4d55-a28e-852dc5dcf496",
+  "name": "Tennisanlage Mürlheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Mürlheimer Hauptstraße",
+    "hausnummer": "47",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.168434,
+    "lat": 49.18988
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd72-3e64-4d55-a28e-852dc5dcf496",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

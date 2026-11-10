@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1db6-86a4-42f7-9403-258cbd47df96",
+  "name": "Beachvolleyballfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Im Karrenbachtal",
+    "plz": "54293",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.689169,
+    "lat": 49.82014
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db6-86a4-42f7-9403-258cbd47df96",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

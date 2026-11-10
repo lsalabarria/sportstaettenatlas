@@ -1,0 +1,28 @@
+{
+  "id": "RP-a00426e5-6b15-428c-9b98-4050ad472dae",
+  "name": "Minigolf Dahn \"Golfheisel\"",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "In den Hohlwiesen",
+    "plz": "66994",
+    "ort": "Dahn, Stadt"
+  },
+  "lage": {
+    "lon": 7.784297,
+    "lat": 49.150136
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bahnengolf"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a00426e5-6b15-428c-9b98-4050ad472dae",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

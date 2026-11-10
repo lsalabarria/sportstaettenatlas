@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fae2-2d93-45b5-9f75-1772c2ba4ecc",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Römerstraße",
+    "hausnummer": "2",
+    "plz": "54317",
+    "ort": "Thomm"
+  },
+  "lage": {
+    "lon": 6.800329,
+    "lat": 49.740652
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae2-2d93-45b5-9f75-1772c2ba4ecc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

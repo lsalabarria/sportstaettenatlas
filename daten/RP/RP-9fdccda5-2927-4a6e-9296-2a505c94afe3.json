@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccda5-2927-4a6e-9296-2a505c94afe3",
+  "name": "Andernacher Tennisclub 1926 e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Stadionstraße",
+    "hausnummer": "75",
+    "plz": "56626",
+    "ort": "Andernach, Stadt"
+  },
+  "lage": {
+    "lon": 7.423471,
+    "lat": 50.426884
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennishalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccda5-2927-4a6e-9296-2a505c94afe3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7cb1-b421-46b4-ba91-40f376e6c628",
+  "name": "Sporthalle Herzog-Christian-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "10",
+    "plz": "66909",
+    "ort": "Herschweiler-Pettersheim"
+  },
+  "lage": {
+    "lon": 7.348311,
+    "lat": 49.475157
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb1-b421-46b4-ba91-40f376e6c628",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

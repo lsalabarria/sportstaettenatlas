@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da1-959b-41b5-9e36-4381c2ab719c",
+  "name": "Sportplatz im Lerchesseiffen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Lierchesseiffen",
+    "plz": "54574",
+    "ort": "Birresborn"
+  },
+  "lage": {
+    "lon": 6.621484,
+    "lat": 50.167378
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da1-959b-41b5-9e36-4381c2ab719c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

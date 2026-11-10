@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e0d-f701-4dfe-b49c-452894ab99c9",
+  "name": "Rollbrettinsel Rheinböllen Basketball",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "E31",
+    "plz": "55494",
+    "ort": "Rheinböllen, Stadt"
+  },
+  "lage": {
+    "lon": 7.679918,
+    "lat": 49.999976
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0d-f701-4dfe-b49c-452894ab99c9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

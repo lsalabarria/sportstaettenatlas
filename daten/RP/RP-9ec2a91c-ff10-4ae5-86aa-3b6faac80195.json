@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a91c-ff10-4ae5-86aa-3b6faac80195",
+  "name": "Freizeitgelände Betze",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Friedhofstraße",
+    "hausnummer": "9",
+    "plz": "76887",
+    "ort": "Oberhausen"
+  },
+  "lage": {
+    "lon": 8.057509,
+    "lat": 49.101014
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91c-ff10-4ae5-86aa-3b6faac80195",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

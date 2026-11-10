@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a931-bde3-470b-97eb-74d453501052",
+  "name": "M.P. Ranch Königsbach",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Blütenstraße",
+    "plz": "67435",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.16554,
+    "lat": 49.388678
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Stall"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a931-bde3-470b-97eb-74d453501052",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

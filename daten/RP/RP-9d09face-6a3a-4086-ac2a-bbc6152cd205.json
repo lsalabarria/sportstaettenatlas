@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09face-6a3a-4086-ac2a-bbc6152cd205",
+  "name": "Sportplatz Wallmenroth",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "60",
+    "plz": "57584",
+    "ort": "Wallmenroth"
+  },
+  "lage": {
+    "lon": 7.832969,
+    "lat": 50.794014
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09face-6a3a-4086-ac2a-bbc6152cd205",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

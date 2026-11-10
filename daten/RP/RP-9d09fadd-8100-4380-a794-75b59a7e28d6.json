@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d09fadd-8100-4380-a794-75b59a7e28d6",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "54313",
+    "ort": "Zemmer"
+  },
+  "lage": {
+    "lon": 6.706417,
+    "lat": 49.890486
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadd-8100-4380-a794-75b59a7e28d6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

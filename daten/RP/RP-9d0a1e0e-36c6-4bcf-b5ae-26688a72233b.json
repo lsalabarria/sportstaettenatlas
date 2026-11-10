@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e0e-36c6-4bcf-b5ae-26688a72233b",
+  "name": "Bolzplatz Teves-Straße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Teves-Straße",
+    "plz": "55494",
+    "ort": "Rheinböllen, Stadt"
+  },
+  "lage": {
+    "lon": 7.701116,
+    "lat": 49.984898
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0e-36c6-4bcf-b5ae-26688a72233b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

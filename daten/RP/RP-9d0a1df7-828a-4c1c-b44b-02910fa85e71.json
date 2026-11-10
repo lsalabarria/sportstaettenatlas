@@ -1,0 +1,38 @@
+{
+  "id": "RP-9d0a1df7-828a-4c1c-b44b-02910fa85e71",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "hausnummer": "90",
+    "plz": "56203",
+    "ort": "Höhr-Grenzhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.68814,
+    "lat": 50.429189
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Bogenschießanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df7-828a-4c1c-b44b-02910fa85e71",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

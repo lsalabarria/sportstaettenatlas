@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccdc8-afdd-4f33-ad72-a2614baff4e1",
+  "name": "Bolzplatz Laurenberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56379",
+    "ort": "Laurenburg"
+  },
+  "lage": {
+    "lon": 7.910665,
+    "lat": 50.330557
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdc8-afdd-4f33-ad72-a2614baff4e1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7d32-20ae-414e-857d-aba100ef4c78",
+  "name": "Tennisanlage Friedrich-Moebus-Stadion",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Güterbahnhofstraße",
+    "plz": "55543",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.868727,
+    "lat": 49.854116
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d32-20ae-414e-857d-aba100ef4c78",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

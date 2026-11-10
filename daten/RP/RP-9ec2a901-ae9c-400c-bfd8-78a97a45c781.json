@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a901-ae9c-400c-bfd8-78a97a45c781",
+  "name": "Freibad Hettenleidelheim",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "hausnummer": "25",
+    "plz": "67310",
+    "ort": "Hettenleidelheim"
+  },
+  "lage": {
+    "lon": 8.062788,
+    "lat": 49.531068
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a901-ae9c-400c-bfd8-78a97a45c781",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd19-d091-4796-bb9b-332463b92c67",
+  "name": "1. Tennisclub Trippstadt",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Auf dem Steig",
+    "hausnummer": "1",
+    "plz": "67705",
+    "ort": "Trippstadt"
+  },
+  "lage": {
+    "lon": 7.768416,
+    "lat": 49.356744
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd19-d091-4796-bb9b-332463b92c67",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

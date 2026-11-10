@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a908-c074-4a72-a5de-028ffa2f7c89",
+  "name": "Sportplatz Badenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hinter der Mühle",
+    "plz": "55576",
+    "ort": "Badenheim"
+  },
+  "lage": {
+    "lon": 7.97081,
+    "lat": 49.843427
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a908-c074-4a72-a5de-028ffa2f7c89",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

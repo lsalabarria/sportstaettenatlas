@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd3f-8095-4c0c-a417-cb0bb9ff101f",
+  "name": "Sportplatz Naturcampingplatz Am Berwartstein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Laichfeld",
+    "hausnummer": "1",
+    "plz": "76891",
+    "ort": "Erlenbach bei Dahn"
+  },
+  "lage": {
+    "lon": 7.864807,
+    "lat": 49.101656
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd3f-8095-4c0c-a417-cb0bb9ff101f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

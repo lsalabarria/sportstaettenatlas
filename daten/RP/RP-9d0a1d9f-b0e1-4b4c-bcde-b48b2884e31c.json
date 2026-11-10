@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1d9f-b0e1-4b4c-bcde-b48b2884e31c",
+  "name": "Beachvolleyball",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Feldstraße",
+    "plz": "54518",
+    "ort": "Hupperath"
+  },
+  "lage": {
+    "lon": 6.843842,
+    "lat": 49.998836
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d9f-b0e1-4b4c-bcde-b48b2884e31c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

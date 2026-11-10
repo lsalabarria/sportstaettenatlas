@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a92b-1c7a-4858-941d-470589620512",
+  "name": "Sportplatz Ober-Olmer-Straße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ober-Olmer-Straße",
+    "plz": "55262",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.118514,
+    "lat": 49.966354
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92b-1c7a-4858-941d-470589620512",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

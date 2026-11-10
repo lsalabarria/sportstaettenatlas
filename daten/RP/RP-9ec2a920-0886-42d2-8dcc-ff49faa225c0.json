@@ -1,0 +1,41 @@
+{
+  "id": "RP-9ec2a920-0886-42d2-8dcc-ff49faa225c0",
+  "name": "Ausbildungsstall Pelz",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hohlgasse",
+    "hausnummer": "25",
+    "plz": "76857",
+    "ort": "Gossersweiler-Stein"
+  },
+  "lage": {
+    "lon": 7.919758,
+    "lat": 49.166479
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Springparcours"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a920-0886-42d2-8dcc-ff49faa225c0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

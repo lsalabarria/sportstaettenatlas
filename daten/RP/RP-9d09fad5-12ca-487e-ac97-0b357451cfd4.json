@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d09fad5-12ca-487e-ac97-0b357451cfd4",
+  "name": "Zentrum für Therapeutisches Reiten Johannisberg e. V.",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Johannisberg",
+    "hausnummer": "1",
+    "plz": "53578",
+    "ort": "Windhagen"
+  },
+  "lage": {
+    "lon": 7.36982,
+    "lat": 50.643662
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad5-12ca-487e-ac97-0b357451cfd4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

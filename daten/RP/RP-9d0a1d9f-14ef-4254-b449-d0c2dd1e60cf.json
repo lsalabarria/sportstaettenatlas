@@ -1,0 +1,30 @@
+{
+  "id": "RP-9d0a1d9f-14ef-4254-b449-d0c2dd1e60cf",
+  "name": "Tennishaus Enkirch",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "plz": "56850",
+    "ort": "Enkirch"
+  },
+  "lage": {
+    "lon": 7.155681,
+    "lat": 49.983966
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d9f-14ef-4254-b449-d0c2dd1e60cf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

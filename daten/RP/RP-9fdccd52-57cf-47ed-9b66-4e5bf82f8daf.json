@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd52-57cf-47ed-9b66-4e5bf82f8daf",
+  "name": "Bolzplatz Riedelberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "6",
+    "plz": "66484",
+    "ort": "Riedelberg"
+  },
+  "lage": {
+    "lon": 7.448085,
+    "lat": 49.177084
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd52-57cf-47ed-9b66-4e5bf82f8daf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

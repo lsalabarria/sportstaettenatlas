@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a935-0f70-43fe-97b5-2409080977b4",
+  "name": "Boulderhalle Neustadt PETZ",
+  "kategorie": "Klettersportstätte",
+  "adresse": {
+    "strasse": "Europastraße",
+    "hausnummer": "17",
+    "plz": "67433",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.154329,
+    "lat": 49.341121
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Klettersporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a935-0f70-43fe-97b5-2409080977b4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

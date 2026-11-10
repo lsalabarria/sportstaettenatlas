@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a929-3243-4838-82dc-2da9a05a03e2",
+  "name": "Sportanlage Schloss Ardeck Gau-Algesheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schlossgasse",
+    "hausnummer": "14",
+    "plz": "55435",
+    "ort": "Gau-Algesheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.017339,
+    "lat": 49.953417
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a929-3243-4838-82dc-2da9a05a03e2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

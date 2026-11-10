@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da5-44ff-4fb7-8678-43ac4aea403c",
+  "name": "Kleinspielfeld Strohn",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Im Bruch",
+    "plz": "54558",
+    "ort": "Strohn"
+  },
+  "lage": {
+    "lon": 6.917953,
+    "lat": 50.109911
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da5-44ff-4fb7-8678-43ac4aea403c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

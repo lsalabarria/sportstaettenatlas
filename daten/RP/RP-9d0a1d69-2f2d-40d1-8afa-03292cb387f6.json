@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d69-2f2d-40d1-8afa-03292cb387f6",
+  "name": "Herrmann-Heil-Sportstätte",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bahnhofsstraße",
+    "plz": "54484",
+    "ort": "Maring-Noviand"
+  },
+  "lage": {
+    "lon": 6.993283,
+    "lat": 49.932427
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d69-2f2d-40d1-8afa-03292cb387f6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

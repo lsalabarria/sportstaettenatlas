@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd4b-3bc7-4d72-8cac-9b58f3e0f7ec",
+  "name": "Turnverein 1904 e.V. Hinterweidenthal",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Turnstraße",
+    "hausnummer": "16",
+    "plz": "66999",
+    "ort": "Hinterweidenthal"
+  },
+  "lage": {
+    "lon": 7.758873,
+    "lat": 49.192385
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd4b-3bc7-4d72-8cac-9b58f3e0f7ec",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d64-8b62-4a3b-a7b1-fe1ec353c74f",
+  "name": "Sportplatz Berglicht",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "L155",
+    "plz": "54426",
+    "ort": "Berglicht"
+  },
+  "lage": {
+    "lon": 6.973976,
+    "lat": 49.781565
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d64-8b62-4a3b-a7b1-fe1ec353c74f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

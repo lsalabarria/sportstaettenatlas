@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd79-7b8d-4365-a293-4ee92f126471",
+  "name": "Turnverein 1861 im ASV Landau 1946 e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Spitalmühlweg",
+    "hausnummer": "14A",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.100777,
+    "lat": 49.196461
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd79-7b8d-4365-a293-4ee92f126471",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

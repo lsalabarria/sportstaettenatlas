@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d09facc-859e-4bfb-b67a-2694420307df",
+  "name": "Grubenstadion Willroth",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Steinstraße",
+    "plz": "56594",
+    "ort": "Willroth"
+  },
+  "lage": {
+    "lon": 7.523508,
+    "lat": 50.572395
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facc-859e-4bfb-b67a-2694420307df",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

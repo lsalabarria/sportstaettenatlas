@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7c7e-a9de-4718-8fdc-58bd96b17d99",
+  "name": "Sportplatz Albig",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Langgasse",
+    "hausnummer": "93",
+    "plz": "55234",
+    "ort": "Albig"
+  },
+  "lage": {
+    "lon": 8.125973,
+    "lat": 49.777163
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c7e-a9de-4718-8fdc-58bd96b17d99",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

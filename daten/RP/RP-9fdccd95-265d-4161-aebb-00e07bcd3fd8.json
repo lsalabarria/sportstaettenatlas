@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd95-265d-4161-aebb-00e07bcd3fd8",
+  "name": "Sportanlage an der Dorschberghalle",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Zeisigweg",
+    "hausnummer": "2",
+    "plz": "76744",
+    "ort": "Wörth am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.249932,
+    "lat": 49.047031
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd95-265d-4161-aebb-00e07bcd3fd8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

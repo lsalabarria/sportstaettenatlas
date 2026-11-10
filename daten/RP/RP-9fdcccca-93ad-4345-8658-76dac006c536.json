@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcccca-93ad-4345-8658-76dac006c536",
+  "name": "Mehrzweckhalle Thür",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Lindenweg",
+    "hausnummer": "4",
+    "plz": "56743",
+    "ort": "Thür"
+  },
+  "lage": {
+    "lon": 7.274279,
+    "lat": 50.359972
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccca-93ad-4345-8658-76dac006c536",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

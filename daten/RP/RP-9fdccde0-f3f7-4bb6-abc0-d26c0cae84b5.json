@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccde0-f3f7-4bb6-abc0-d26c0cae84b5",
+  "name": "Theo-Barth-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Matzenberg",
+    "hausnummer": "9",
+    "plz": "67659",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.778312,
+    "lat": 49.480265
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccde0-f3f7-4bb6-abc0-d26c0cae84b5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

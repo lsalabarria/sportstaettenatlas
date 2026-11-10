@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a921-e299-4bbe-9691-0a895cc2e733",
+  "name": "Sport Club SC Ramberg e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportpl",
+    "hausnummer": "1",
+    "plz": "76857",
+    "ort": "Ramberg"
+  },
+  "lage": {
+    "lon": 8.008211,
+    "lat": 49.256269
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a921-e299-4bbe-9691-0a895cc2e733",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

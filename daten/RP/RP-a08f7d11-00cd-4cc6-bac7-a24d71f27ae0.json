@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7d11-00cd-4cc6-bac7-a24d71f27ae0",
+  "name": "Standortschießanlage Idar-Oberstein",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Im Stäbel",
+    "hausnummer": "50",
+    "plz": "55743",
+    "ort": "Idar-Oberstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.280773,
+    "lat": 49.722565
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d11-00cd-4cc6-bac7-a24d71f27ae0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "RP-9ec2a92d-a4a9-4e19-9a8d-b449e9076a4a",
+  "name": "Sportplatz Bachgasse",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bachgasse",
+    "plz": "55283",
+    "ort": "Nierstein, Stadt"
+  },
+  "lage": {
+    "lon": 8.334639,
+    "lat": 49.870888
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92d-a4a9-4e19-9a8d-b449e9076a4a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7ce1-d3e8-49ee-9ab9-6a8189892872",
+  "name": "Sportplatz Jahnstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "4",
+    "plz": "55585",
+    "ort": "Duchroth"
+  },
+  "lage": {
+    "lon": 7.742865,
+    "lat": 49.787281
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ce1-d3e8-49ee-9ab9-6a8189892872",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-a109cd9b-a675-418c-b9d9-13175cc53fed",
+  "name": "Dieter-Trennheuser-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Telegraphenberg",
+    "hausnummer": "15",
+    "plz": "56170",
+    "ort": "Bendorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.596854,
+    "lat": 50.458494
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a109cd9b-a675-418c-b9d9-13175cc53fed",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

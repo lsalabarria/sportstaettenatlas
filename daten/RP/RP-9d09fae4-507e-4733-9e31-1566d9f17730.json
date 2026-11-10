@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fae4-507e-4733-9e31-1566d9f17730",
+  "name": "Sportplatz Grimburg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "54413",
+    "ort": "Grimburg"
+  },
+  "lage": {
+    "lon": 6.883505,
+    "lat": 49.628841
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae4-507e-4733-9e31-1566d9f17730",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

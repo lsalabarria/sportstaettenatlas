@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1db0-9c55-496a-bac1-45b235db4f17",
+  "name": "Martinus-Gymnasium Linz am Rhein",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Bondorf",
+    "hausnummer": "14",
+    "plz": "53545",
+    "ort": "Linz am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.281757,
+    "lat": 50.569195
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    },
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db0-9c55-496a-bac1-45b235db4f17",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

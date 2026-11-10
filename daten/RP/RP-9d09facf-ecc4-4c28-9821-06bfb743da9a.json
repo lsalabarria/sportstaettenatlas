@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09facf-ecc4-4c28-9821-06bfb743da9a",
+  "name": "Bolzplatz Forst",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "57537",
+    "ort": "Forst"
+  },
+  "lage": {
+    "lon": 7.684103,
+    "lat": 50.806423
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facf-ecc4-4c28-9821-06bfb743da9a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

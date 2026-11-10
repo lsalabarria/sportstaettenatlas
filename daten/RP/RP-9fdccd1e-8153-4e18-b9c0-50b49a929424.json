@@ -1,0 +1,32 @@
+{
+  "id": "RP-9fdccd1e-8153-4e18-b9c0-50b49a929424",
+  "name": "Bännjer Sportplatz Bärenloch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "66851",
+    "ort": "Bann"
+  },
+  "lage": {
+    "lon": 7.603255,
+    "lat": 49.403559
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd1e-8153-4e18-b9c0-50b49a929424",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

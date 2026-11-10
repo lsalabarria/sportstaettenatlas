@@ -1,0 +1,39 @@
+{
+  "id": "RP-9fdcccd1-8f4b-4c5e-94b2-08c5fd4ad8da",
+  "name": "Reiterpension Karduck",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Ackerweg",
+    "hausnummer": "1",
+    "plz": "56729",
+    "ort": "Anschau"
+  },
+  "lage": {
+    "lon": 7.074379,
+    "lat": 50.302866
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Führ- und Longierplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccd1-8f4b-4c5e-94b2-08c5fd4ad8da",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

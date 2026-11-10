@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d49-378e-4ebe-8058-5c71c9bf124d",
+  "name": "Mehrzweckhalle Höchstenbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Brückenstraße",
+    "hausnummer": "10a",
+    "plz": "57629",
+    "ort": "Höchstenbach"
+  },
+  "lage": {
+    "lon": 7.742888,
+    "lat": 50.634444
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d49-378e-4ebe-8058-5c71c9bf124d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

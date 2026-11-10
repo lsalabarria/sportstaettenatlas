@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db1-ba7d-41c1-b121-b448d4834a06",
+  "name": "McFIT Fitnessstudio Neuwied",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Langendorfer Straße",
+    "hausnummer": "84-86",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.457137,
+    "lat": 50.431149
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db1-ba7d-41c1-b121-b448d4834a06",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

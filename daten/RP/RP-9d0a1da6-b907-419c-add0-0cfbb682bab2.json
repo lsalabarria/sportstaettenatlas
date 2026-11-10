@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da6-b907-419c-add0-0cfbb682bab2",
+  "name": "Hockelberghalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "hausnummer": "5",
+    "plz": "53539",
+    "ort": "Kelberg"
+  },
+  "lage": {
+    "lon": 6.91655,
+    "lat": 50.282191
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da6-b907-419c-add0-0cfbb682bab2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

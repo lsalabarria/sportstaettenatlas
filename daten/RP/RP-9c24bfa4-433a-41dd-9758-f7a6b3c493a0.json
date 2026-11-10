@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24bfa4-433a-41dd-9758-f7a6b3c493a0",
+  "name": "Cage-Soccer",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rüsternallee",
+    "plz": "56075",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.574899,
+    "lat": 50.335141
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa4-433a-41dd-9758-f7a6b3c493a0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

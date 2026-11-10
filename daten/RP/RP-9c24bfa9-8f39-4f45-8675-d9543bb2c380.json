@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24bfa9-8f39-4f45-8675-d9543bb2c380",
+  "name": "Hartplatz Eifelstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Eifelstraße",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.572498,
+    "lat": 50.374428
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa9-8f39-4f45-8675-d9543bb2c380",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

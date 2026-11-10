@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccda6-cf73-44b7-a1c9-0a36e150dcbf",
+  "name": "Beachvolleyballfelder DJK Andernach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Stadionstraße",
+    "hausnummer": "90",
+    "plz": "56626",
+    "ort": "Andernach, Stadt"
+  },
+  "lage": {
+    "lon": 7.424544,
+    "lat": 50.424236
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccda6-cf73-44b7-a1c9-0a36e150dcbf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

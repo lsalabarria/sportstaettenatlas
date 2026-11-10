@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09facc-3516-4e4c-9540-d998884ba847",
+  "name": "Sportplatz Seifen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L269",
+    "plz": "57632",
+    "ort": "Seifen"
+  },
+  "lage": {
+    "lon": 7.558784,
+    "lat": 50.627518
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facc-3516-4e4c-9540-d998884ba847",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-238b547a-dd7d-4404-9c58-36275b499c1e",
+  "name": "Dorfgemeinschaftshaus Eßweiler",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Eck",
+    "hausnummer": "3",
+    "plz": "67754",
+    "ort": "Eßweiler"
+  },
+  "lage": {
+    "lon": 7.564658,
+    "lat": 49.558162
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "238b547a-dd7d-4404-9c58-36275b499c1e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad8-fc7a-446d-bbbc-4de0d7b8aa8a",
+  "name": "Sportplatz Oberhonnefeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Johanniskrautweg",
+    "plz": "56587",
+    "ort": "Oberhonnefeld-Gierend"
+  },
+  "lage": {
+    "lon": 7.523248,
+    "lat": 50.55632
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad8-fc7a-446d-bbbc-4de0d7b8aa8a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

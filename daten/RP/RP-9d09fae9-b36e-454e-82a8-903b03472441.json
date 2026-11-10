@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d09fae9-b36e-454e-82a8-903b03472441",
+  "name": "Reitanlage-Welschneudorf",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "5",
+    "plz": "56412",
+    "ort": "Welschneudorf"
+  },
+  "lage": {
+    "lon": 7.797053,
+    "lat": 50.368921
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae9-b36e-454e-82a8-903b03472441",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a902-9fa1-45bb-8954-b6320201d5c0",
+  "name": "Engelhof Neuleiningen",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Engelhof",
+    "hausnummer": "1",
+    "plz": "67311",
+    "ort": "Neuleiningen"
+  },
+  "lage": {
+    "lon": 8.089796,
+    "lat": 49.51643
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a902-9fa1-45bb-8954-b6320201d5c0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

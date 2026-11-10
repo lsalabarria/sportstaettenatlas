@@ -1,0 +1,38 @@
+{
+  "id": "RP-9d09facf-79cb-4cac-a9d6-800d8bb0557b",
+  "name": "Reitanlage Weißenbrüchen",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Gartenstraße",
+    "hausnummer": "16",
+    "plz": "57589",
+    "ort": "Birkenbeul"
+  },
+  "lage": {
+    "lon": 7.627912,
+    "lat": 50.745871
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Führ- und Logierhalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facf-79cb-4cac-a9d6-800d8bb0557b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

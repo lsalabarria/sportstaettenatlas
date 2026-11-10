@@ -1,0 +1,40 @@
+{
+  "id": "RP-9d0a1db2-4dc7-48d6-90cb-8ad7a67a44c3",
+  "name": "Reitverein Dierdorf",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "L267",
+    "plz": "56269",
+    "ort": "Dierdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.671762,
+    "lat": 50.543961
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Stall"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db2-4dc7-48d6-90cb-8ad7a67a44c3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

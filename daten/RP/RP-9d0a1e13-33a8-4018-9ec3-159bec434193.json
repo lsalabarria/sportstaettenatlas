@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e13-33a8-4018-9ec3-159bec434193",
+  "name": "Multifunktionsfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "6",
+    "plz": "54550",
+    "ort": "Daun, Stadt"
+  },
+  "lage": {
+    "lon": 6.822995,
+    "lat": 50.19435
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e13-33a8-4018-9ec3-159bec434193",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "RP-9d0a1e0f-2783-4710-85a6-810d30862908",
+  "name": "Cusanus-Gymnasium Wittlich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kurfürstenstraße",
+    "hausnummer": "14",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.895712,
+    "lat": 49.98187
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Stabhochsprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0f-2783-4710-85a6-810d30862908",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

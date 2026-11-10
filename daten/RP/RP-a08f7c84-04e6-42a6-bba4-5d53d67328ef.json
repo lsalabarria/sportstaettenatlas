@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7c84-04e6-42a6-bba4-5d53d67328ef",
+  "name": "BOX GYM DREGER e.V.",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "27",
+    "plz": "55234",
+    "ort": "Freimersheim"
+  },
+  "lage": {
+    "lon": 8.087156,
+    "lat": 49.709303
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Kurs- / Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c84-04e6-42a6-bba4-5d53d67328ef",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

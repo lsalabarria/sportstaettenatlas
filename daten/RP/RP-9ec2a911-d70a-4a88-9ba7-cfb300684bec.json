@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a911-d70a-4a88-9ba7-cfb300684bec",
+  "name": "Sportplatz Uelversheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Eimsheimer Straße",
+    "hausnummer": "24",
+    "plz": "55278",
+    "ort": "Uelversheim"
+  },
+  "lage": {
+    "lon": 8.289806,
+    "lat": 49.807923
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a911-d70a-4a88-9ba7-cfb300684bec",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

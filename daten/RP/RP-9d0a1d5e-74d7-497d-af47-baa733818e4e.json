@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5e-74d7-497d-af47-baa733818e4e",
+  "name": "Schützenhaus SV Hubertus Gemünden",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "B421",
+    "plz": "55490",
+    "ort": "Gemünden"
+  },
+  "lage": {
+    "lon": 7.466488,
+    "lat": 49.893787
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5e-74d7-497d-af47-baa733818e4e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09facd-0ab5-454b-9ed1-52d91ca861a3",
+  "name": "Sportplatz Weitefeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sandstraße",
+    "hausnummer": "36",
+    "plz": "57586",
+    "ort": "Weitefeld"
+  },
+  "lage": {
+    "lon": 7.911783,
+    "lat": 50.728262
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facd-0ab5-454b-9ed1-52d91ca861a3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

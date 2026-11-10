@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24f4e4-ccd8-41da-9aba-522d8ed44c84",
+  "name": "Reitplatz Holsthum",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Ferschweilerstraße",
+    "hausnummer": "7",
+    "plz": "54668",
+    "ort": "Holsthum"
+  },
+  "lage": {
+    "lon": 6.407625,
+    "lat": 49.888644
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e4-ccd8-41da-9aba-522d8ed44c84",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

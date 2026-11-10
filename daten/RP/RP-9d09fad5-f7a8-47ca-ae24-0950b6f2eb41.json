@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fad5-f7a8-47ca-ae24-0950b6f2eb41",
+  "name": "Schützenhaus Rott",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Sebastianusweg",
+    "hausnummer": "3",
+    "plz": "53577",
+    "ort": "Neustadt (Wied)"
+  },
+  "lage": {
+    "lon": 7.372964,
+    "lat": 50.613235
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad5-f7a8-47ca-ae24-0950b6f2eb41",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

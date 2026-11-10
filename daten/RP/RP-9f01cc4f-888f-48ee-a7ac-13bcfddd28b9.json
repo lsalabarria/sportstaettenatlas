@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc4f-888f-48ee-a7ac-13bcfddd28b9",
+  "name": "Freibad Duttweiler",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Oberer Dorfwiesenweg",
+    "hausnummer": "3",
+    "plz": "67435",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.2037,
+    "lat": 49.2973
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc4f-888f-48ee-a7ac-13bcfddd28b9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

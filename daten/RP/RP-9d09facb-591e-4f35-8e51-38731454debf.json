@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09facb-591e-4f35-8e51-38731454debf",
+  "name": "Sportplatz Mehren",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mehrbachtalstraße",
+    "hausnummer": "8",
+    "plz": "57635",
+    "ort": "Mehren"
+  },
+  "lage": {
+    "lon": 7.511451,
+    "lat": 50.685535
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facb-591e-4f35-8e51-38731454debf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

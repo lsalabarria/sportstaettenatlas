@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1d48-f175-4587-8fef-0f48191ea624",
+  "name": "Sportplatz Langenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulweg",
+    "plz": "57520",
+    "ort": "Langenbach bei Kirburg"
+  },
+  "lage": {
+    "lon": 7.932317,
+    "lat": 50.696958
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d48-f175-4587-8fef-0f48191ea624",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

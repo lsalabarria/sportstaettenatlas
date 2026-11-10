@@ -1,0 +1,35 @@
+{
+  "id": "RP-9ec2a906-a79e-480b-a476-e61c68f13469",
+  "name": "Pferdepension Ganerbhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Ganerb",
+    "hausnummer": "3",
+    "plz": "67454",
+    "ort": "Haßloch"
+  },
+  "lage": {
+    "lon": 8.30742,
+    "lat": 49.320473
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    },
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a906-a79e-480b-a476-e61c68f13469",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

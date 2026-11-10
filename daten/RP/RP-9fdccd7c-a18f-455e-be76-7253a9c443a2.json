@@ -1,0 +1,36 @@
+{
+  "id": "RP-9fdccd7c-a18f-455e-be76-7253a9c443a2",
+  "name": "Landau Reiterverein im ASV eV.",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Birnbach",
+    "hausnummer": "51",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.118751,
+    "lat": 49.183701
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Springparcours"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd7c-a18f-455e-be76-7253a9c443a2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

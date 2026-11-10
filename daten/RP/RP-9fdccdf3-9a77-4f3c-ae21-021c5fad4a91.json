@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdf3-9a77-4f3c-ae21-021c5fad4a91",
+  "name": "Sporthalle Betzenbergschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kantstraße",
+    "hausnummer": "97",
+    "plz": "67663",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.780899,
+    "lat": 49.428875
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdf3-9a77-4f3c-ae21-021c5fad4a91",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

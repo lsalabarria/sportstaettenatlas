@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1d64-34af-4c2d-ad90-71dc18992dd8",
+  "name": "Sportplatz Morscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "plz": "54497",
+    "ort": "Morbach"
+  },
+  "lage": {
+    "lon": 7.096248,
+    "lat": 49.768581
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d64-34af-4c2d-ad90-71dc18992dd8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

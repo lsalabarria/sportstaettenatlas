@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d50-cf34-4d8c-b692-d74fd27c39b0",
+  "name": "Sportplatz Hain",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dürenbacher Straße",
+    "plz": "56651",
+    "ort": "Niederdürenbach"
+  },
+  "lage": {
+    "lon": 7.175614,
+    "lat": 50.453238
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-cf34-4d8c-b692-d74fd27c39b0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

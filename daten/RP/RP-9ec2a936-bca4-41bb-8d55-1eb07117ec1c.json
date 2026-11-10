@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a936-bca4-41bb-8d55-1eb07117ec1c",
+  "name": "Basketballplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Rüsselsheimer Allee",
+    "plz": "55130",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.323813,
+    "lat": 49.965535
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a936-bca4-41bb-8d55-1eb07117ec1c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

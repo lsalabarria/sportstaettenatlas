@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1dad-12b1-4fd3-8879-93faead70782",
+  "name": "Minigolf Altwied",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Im Wiedtal",
+    "plz": "56567",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.468183,
+    "lat": 50.482848
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bahnengolf"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dad-12b1-4fd3-8879-93faead70782",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

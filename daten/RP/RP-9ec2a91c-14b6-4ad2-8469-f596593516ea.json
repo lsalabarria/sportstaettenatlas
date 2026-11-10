@@ -1,0 +1,35 @@
+{
+  "id": "RP-9ec2a91c-14b6-4ad2-8469-f596593516ea",
+  "name": "Reitschule PonyMim",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "In den Wartgärten",
+    "hausnummer": "6",
+    "plz": "76831",
+    "ort": "Billigheim-Ingenheim"
+  },
+  "lage": {
+    "lon": 8.108263,
+    "lat": 49.133041
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91c-14b6-4ad2-8469-f596593516ea",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

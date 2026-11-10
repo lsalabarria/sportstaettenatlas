@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d09fade-11f8-4566-9127-1dfc175a74ca",
+  "name": "Tennisplatz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Martinstraße",
+    "plz": "54340",
+    "ort": "Riol"
+  },
+  "lage": {
+    "lon": 6.786955,
+    "lat": 49.7899
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fade-11f8-4566-9127-1dfc175a74ca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

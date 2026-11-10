@@ -1,0 +1,27 @@
+{
+  "id": "RP-6c0798f8-2e11-44c7-b556-0ab24e9c8105",
+  "name": "Nisterberger Loipe",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "plz": "56472",
+    "ort": "Nisterberg"
+  },
+  "lage": {
+    "lon": 7.9819,
+    "lat": 50.680797
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skilanglauf- und Biathlonanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "6c0798f8-2e11-44c7-b556-0ab24e9c8105",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

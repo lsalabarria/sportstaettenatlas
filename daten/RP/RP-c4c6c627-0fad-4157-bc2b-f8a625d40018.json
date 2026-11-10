@@ -1,0 +1,28 @@
+{
+  "id": "RP-c4c6c627-0fad-4157-bc2b-f8a625d40018",
+  "name": "VfSK-Bouleanlage",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Friedrichstraße",
+    "hausnummer": "99",
+    "plz": "67069",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Verein für Sport- und Körperpflege 1900 eV Ludwigshafen-Oppau",
+  "betreiber": "Verein für Sport- und Körperpflege 1900 eV Ludwigshafen-Oppau",
+  "website": "www.athletenbouler.de",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "c4c6c627-0fad-4157-bc2b-f8a625d40018",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

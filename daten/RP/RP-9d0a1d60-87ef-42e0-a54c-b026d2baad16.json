@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d60-87ef-42e0-a54c-b026d2baad16",
+  "name": "Bolzplatz Benzweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "55494",
+    "ort": "Benzweiler"
+  },
+  "lage": {
+    "lon": 7.605062,
+    "lat": 50.023817
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d60-87ef-42e0-a54c-b026d2baad16",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

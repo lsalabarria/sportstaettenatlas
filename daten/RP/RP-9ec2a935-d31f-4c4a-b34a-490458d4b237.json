@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a935-d31f-4c4a-b34a-490458d4b237",
+  "name": "Basketsballfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hindemithstraße",
+    "hausnummer": "1-5",
+    "plz": "55127",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.196488,
+    "lat": 49.96034
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a935-d31f-4c4a-b34a-490458d4b237",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

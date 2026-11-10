@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5b-5c08-4d6b-a1f4-3c84a8d7335d",
+  "name": "Sportplatz Urbar",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lönsstraße",
+    "plz": "55430",
+    "ort": "Urbar"
+  },
+  "lage": {
+    "lon": 7.720382,
+    "lat": 50.127169
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5b-5c08-4d6b-a1f4-3c84a8d7335d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

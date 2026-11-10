@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1d64-1299-447f-8f3a-9e1cd3f31c07",
+  "name": "Tennisanlage TC Deuselbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Erbeskopfstraße",
+    "plz": "54411",
+    "ort": "Deuselbach"
+  },
+  "lage": {
+    "lon": 7.052402,
+    "lat": 49.754746
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d64-1299-447f-8f3a-9e1cd3f31c07",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

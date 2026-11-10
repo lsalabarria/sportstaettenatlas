@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a929-463c-45a7-9926-7fe8f568b766",
+  "name": "Realschule plus Christian Erbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Appenheimer Straße",
+    "hausnummer": "4",
+    "plz": "55435",
+    "ort": "Gau-Algesheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.014717,
+    "lat": 49.954631
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a929-463c-45a7-9926-7fe8f568b766",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24f4eb-e374-4f41-98f0-ac8174f3f06e",
+  "name": "Sportplatz Ringhuscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ringhuscheid-Hauptstraße",
+    "hausnummer": "3",
+    "plz": "54673",
+    "ort": "Krautscheid"
+  },
+  "lage": {
+    "lon": 6.33731,
+    "lat": 50.062955
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4eb-e374-4f41-98f0-ac8174f3f06e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

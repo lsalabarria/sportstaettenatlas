@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e0a-b6e2-4d9d-a816-decfe9186dcb",
+  "name": "Kleinspielfeld Hungenroth",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gründelbachstraße",
+    "plz": "56281",
+    "ort": "Hungenroth"
+  },
+  "lage": {
+    "lon": 7.60075,
+    "lat": 50.142356
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0a-b6e2-4d9d-a816-decfe9186dcb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

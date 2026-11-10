@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a8ff-e0f9-41fa-8fb8-40162b78bd66",
+  "name": "Tennisclub Obrigheim/Pfalz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am alten Sportplatz",
+    "plz": "67283",
+    "ort": "Obrigheim (Pfalz)"
+  },
+  "lage": {
+    "lon": 8.185951,
+    "lat": 49.579735
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a8ff-e0f9-41fa-8fb8-40162b78bd66",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

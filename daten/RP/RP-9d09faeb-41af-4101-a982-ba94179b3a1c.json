@@ -1,0 +1,38 @@
+{
+  "id": "RP-9d09faeb-41af-4101-a982-ba94179b3a1c",
+  "name": "Tennisclub Heiligenroth e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "26",
+    "plz": "56412",
+    "ort": "Heiligenroth"
+  },
+  "lage": {
+    "lon": 7.857202,
+    "lat": 50.447638
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faeb-41af-4101-a982-ba94179b3a1c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

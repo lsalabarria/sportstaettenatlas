@@ -1,0 +1,35 @@
+{
+  "id": "RP-9ec2a904-adda-4dcf-bd8c-0e1b633b9c4c",
+  "name": "Sportplatz Meckenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rödersheimer Str.",
+    "hausnummer": "20",
+    "plz": "67149",
+    "ort": "Meckenheim"
+  },
+  "lage": {
+    "lon": 8.243237,
+    "lat": 49.412426
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a904-adda-4dcf-bd8c-0e1b633b9c4c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

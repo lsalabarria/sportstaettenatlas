@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db2-ee9c-4083-8591-4f60bb0738a5",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "hausnummer": "10",
+    "plz": "54340",
+    "ort": "Naurath (Eifel)"
+  },
+  "lage": {
+    "lon": 6.751134,
+    "lat": 49.881036
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db2-ee9c-4083-8591-4f60bb0738a5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

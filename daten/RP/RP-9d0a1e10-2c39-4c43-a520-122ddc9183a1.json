@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e10-2c39-4c43-a520-122ddc9183a1",
+  "name": "Bolzplatz Lüxem",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Zum Wenigenberg",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.904696,
+    "lat": 49.995688
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e10-2c39-4c43-a520-122ddc9183a1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

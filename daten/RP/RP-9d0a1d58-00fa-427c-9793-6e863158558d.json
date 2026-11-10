@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d58-00fa-427c-9793-6e863158558d",
+  "name": "Tennisanlage Blankenrath",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "L202",
+    "plz": "56865",
+    "ort": "Blankenrath"
+  },
+  "lage": {
+    "lon": 7.307017,
+    "lat": 50.04572
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d58-00fa-427c-9793-6e863158558d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

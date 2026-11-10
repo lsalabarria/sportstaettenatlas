@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a910-3992-48ab-a05e-d9c9048fb583",
+  "name": "Swingolf am Selzbogen",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Außerhalb",
+    "hausnummer": "14",
+    "plz": "55278",
+    "ort": "Hahnheim"
+  },
+  "lage": {
+    "lon": 8.254515,
+    "lat": 49.859653
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Golfplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a910-3992-48ab-a05e-d9c9048fb583",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

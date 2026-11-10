@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e0c-aa9b-4c00-98be-8b018e889191",
+  "name": "Minigolf Kastellaun",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Theodor-Heuss-Straße",
+    "plz": "56288",
+    "ort": "Kastellaun, Stadt"
+  },
+  "lage": {
+    "lon": 7.449228,
+    "lat": 50.070212
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bahnengolf"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0c-aa9b-4c00-98be-8b018e889191",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

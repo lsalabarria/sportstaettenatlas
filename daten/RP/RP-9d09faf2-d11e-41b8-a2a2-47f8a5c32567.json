@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faf2-d11e-41b8-a2a2-47f8a5c32567",
+  "name": "Bärenstadion im Schul- und Sportzentrum",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schul- u. Sportzentrum",
+    "plz": "56472",
+    "ort": "Hof"
+  },
+  "lage": {
+    "lon": 8.018886,
+    "lat": 50.674012
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf2-d11e-41b8-a2a2-47f8a5c32567",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

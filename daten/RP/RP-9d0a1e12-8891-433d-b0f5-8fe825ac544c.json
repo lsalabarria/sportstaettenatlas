@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e12-8891-433d-b0f5-8fe825ac544c",
+  "name": "Sportplatz Auel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf der Buch",
+    "plz": "54597",
+    "ort": "Auel"
+  },
+  "lage": {
+    "lon": 6.583534,
+    "lat": 50.279672
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e12-8891-433d-b0f5-8fe825ac544c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

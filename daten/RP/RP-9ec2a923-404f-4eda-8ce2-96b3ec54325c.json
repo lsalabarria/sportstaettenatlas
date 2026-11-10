@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a923-404f-4eda-8ce2-96b3ec54325c",
+  "name": "Park-Tennisclub Grünstadt",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Stadtpark",
+    "hausnummer": "3",
+    "plz": "67269",
+    "ort": "Grünstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.154302,
+    "lat": 49.613128
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a923-404f-4eda-8ce2-96b3ec54325c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc5c-1ff1-42c5-b098-ed7b50b609ce",
+  "name": "Bad an den Kaiserthermen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Südallee",
+    "hausnummer": "10-12",
+    "plz": "54290",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.63994,
+    "lat": 49.74916
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc5c-1ff1-42c5-b098-ed7b50b609ce",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

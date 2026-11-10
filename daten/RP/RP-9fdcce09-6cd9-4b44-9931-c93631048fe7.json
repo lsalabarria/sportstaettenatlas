@@ -1,0 +1,36 @@
+{
+  "id": "RP-9fdcce09-6cd9-4b44-9931-c93631048fe7",
+  "name": "Wilfried-Dietrich-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Sportzentrum",
+    "hausnummer": "1",
+    "plz": "67105",
+    "ort": "Schifferstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.372881,
+    "lat": 49.371319
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    },
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    },
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce09-6cd9-4b44-9931-c93631048fe7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5c-19db-4c23-b3dc-147158bc8421",
+  "name": "Sportplatz Beltheim 2",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L215",
+    "plz": "56290",
+    "ort": "Beltheim"
+  },
+  "lage": {
+    "lon": 7.4793,
+    "lat": 50.113531
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5c-19db-4c23-b3dc-147158bc8421",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

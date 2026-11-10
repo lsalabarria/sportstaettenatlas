@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09facc-210e-4727-867f-d93129853017",
+  "name": "Sportplatz Rott",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Walter-Bartels-Weg",
+    "plz": "57632",
+    "ort": "Rott"
+  },
+  "lage": {
+    "lon": 7.514494,
+    "lat": 50.639823
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facc-210e-4727-867f-d93129853017",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

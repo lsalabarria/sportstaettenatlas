@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad7-858c-4593-8739-05cd2edab52c",
+  "name": "Sportplatz Lautzert",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "57639",
+    "ort": "Oberdreis"
+  },
+  "lage": {
+    "lon": 7.661117,
+    "lat": 50.645153
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad7-858c-4593-8739-05cd2edab52c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

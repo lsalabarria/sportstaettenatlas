@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7c88-d893-4ba6-89d2-808424c9b79f",
+  "name": "Skatepark Westhofen",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "An d. Brennerei",
+    "hausnummer": "28",
+    "plz": "67593",
+    "ort": "Westhofen"
+  },
+  "lage": {
+    "lon": 8.252732,
+    "lat": 49.703
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c88-d893-4ba6-89d2-808424c9b79f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

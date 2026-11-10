@@ -1,0 +1,54 @@
+{
+  "id": "RP-9fdcccf0-c09e-40a9-a376-faf2511e8a46",
+  "name": "ZSA Hahnstätten Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "27",
+    "plz": "66523",
+    "ort": "Hahnstätten"
+  },
+  "lage": {
+    "lon": 8.064254,
+    "lat": 50.29815
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Speerwurfanlage"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccf0-c09e-40a9-a376-faf2511e8a46",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

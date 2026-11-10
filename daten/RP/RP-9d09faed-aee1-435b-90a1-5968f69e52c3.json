@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faed-aee1-435b-90a1-5968f69e52c3",
+  "name": "Sportplatz Sessenhausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "77",
+    "plz": "56244",
+    "ort": "Sessenhausen"
+  },
+  "lage": {
+    "lon": 7.711791,
+    "lat": 50.522125
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faed-aee1-435b-90a1-5968f69e52c3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

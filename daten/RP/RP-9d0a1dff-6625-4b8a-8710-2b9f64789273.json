@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dff-6625-4b8a-8710-2b9f64789273",
+  "name": "Philipp-Freiherr-von-Boeselager-Realschule plus Ahrweiler",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schützenstraße",
+    "hausnummer": "109",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.112617,
+    "lat": 50.544064
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dff-6625-4b8a-8710-2b9f64789273",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

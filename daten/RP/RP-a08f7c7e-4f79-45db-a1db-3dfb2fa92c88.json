@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7c7e-4f79-45db-a1db-3dfb2fa92c88",
+  "name": "Turnhalle der Gemeinde Bermersheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "An d. Turnhalle",
+    "plz": "55234",
+    "ort": "Bermersheim vor der Höhe"
+  },
+  "lage": {
+    "lon": 8.098784,
+    "lat": 49.778891
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c7e-4f79-45db-a1db-3dfb2fa92c88",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

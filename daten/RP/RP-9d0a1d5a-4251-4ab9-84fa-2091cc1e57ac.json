@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1d5a-4251-4ab9-84fa-2091cc1e57ac",
+  "name": "Sportplatz Kratzenburg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56382",
+    "ort": "Kratzenburg"
+  },
+  "lage": {
+    "lon": 7.561402,
+    "lat": 50.184077
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5a-4251-4ab9-84fa-2091cc1e57ac",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

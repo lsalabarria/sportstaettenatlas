@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdcce1a-6091-4cf0-93a8-26bb1862e683",
+  "name": "Multifunktionsfeld Arche Speyer",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Birkenweg",
+    "hausnummer": "61.0",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.426115,
+    "lat": 49.355153
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce1a-6091-4cf0-93a8-26bb1862e683",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

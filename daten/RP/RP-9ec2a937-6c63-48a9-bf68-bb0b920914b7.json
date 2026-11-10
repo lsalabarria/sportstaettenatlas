@@ -1,0 +1,27 @@
+{
+  "id": "RP-9ec2a937-6c63-48a9-bf68-bb0b920914b7",
+  "name": "Ziegeleitrails-Mainz",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.255887,
+    "lat": 49.971923
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Mountainbikestrecke"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a937-6c63-48a9-bf68-bb0b920914b7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

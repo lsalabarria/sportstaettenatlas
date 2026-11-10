@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a916-15dc-4e7b-82f7-4d35a6e72f9d",
+  "name": "Reitanlage Gersweilerhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hohlstraße",
+    "hausnummer": "6",
+    "plz": "67822",
+    "ort": "Finkenbach-Gersweiler"
+  },
+  "lage": {
+    "lon": 7.744655,
+    "lat": 49.684799
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Stall"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a916-15dc-4e7b-82f7-4d35a6e72f9d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

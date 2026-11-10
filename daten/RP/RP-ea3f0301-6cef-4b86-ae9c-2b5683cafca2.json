@@ -1,0 +1,24 @@
+{
+  "id": "RP-ea3f0301-6cef-4b86-ae9c-2b5683cafca2",
+  "name": "Kunstrasenplatz des VfB Reichenbach 1921 e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "66879",
+    "ort": "Reichenbach-Steegen"
+  },
+  "lage": {
+    "lon": 7.532136,
+    "lat": 49.500934
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "ea3f0301-6cef-4b86-ae9c-2b5683cafca2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

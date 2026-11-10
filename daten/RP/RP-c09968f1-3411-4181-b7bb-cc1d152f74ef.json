@@ -1,0 +1,29 @@
+{
+  "id": "RP-c09968f1-3411-4181-b7bb-cc1d152f74ef",
+  "name": "Sporthalle Heinrich-Haus",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Neuwieder Str.",
+    "hausnummer": "21 a",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.54061,
+    "lat": 50.424487
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "c09968f1-3411-4181-b7bb-cc1d152f74ef",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

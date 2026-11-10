@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d09fae3-d47e-4bd1-abd5-a4975f8be363",
+  "name": "Tennisanlage SV Mandern",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Gartenfeldstraße",
+    "plz": "54429",
+    "ort": "Mandern"
+  },
+  "lage": {
+    "lon": 6.767721,
+    "lat": 49.605093
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae3-d47e-4bd1-abd5-a4975f8be363",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

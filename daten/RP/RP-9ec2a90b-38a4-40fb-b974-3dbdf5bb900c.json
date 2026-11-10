@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90b-38a4-40fb-b974-3dbdf5bb900c",
+  "name": "Olbornhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Sportfeld",
+    "hausnummer": "90",
+    "plz": "55270",
+    "ort": "Schwabenheim an der Selz"
+  },
+  "lage": {
+    "lon": 8.095449,
+    "lat": 49.924623
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90b-38a4-40fb-b974-3dbdf5bb900c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

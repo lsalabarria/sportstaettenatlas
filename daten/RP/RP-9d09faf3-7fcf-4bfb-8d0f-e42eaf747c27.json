@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faf3-7fcf-4bfb-8d0f-e42eaf747c27",
+  "name": "Sportplatz Hahn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ostring",
+    "hausnummer": "11",
+    "plz": "56472",
+    "ort": "Hahn bei Marienberg"
+  },
+  "lage": {
+    "lon": 7.945993,
+    "lat": 50.633868
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf3-7fcf-4bfb-8d0f-e42eaf747c27",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

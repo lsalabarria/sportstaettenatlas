@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da2-3ba8-4253-926e-4f842d9ea34a",
+  "name": "Basketballfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "54570",
+    "ort": "Niederstadtfeld"
+  },
+  "lage": {
+    "lon": 6.766882,
+    "lat": 50.162728
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da2-3ba8-4253-926e-4f842d9ea34a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

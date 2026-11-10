@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccddc-1830-4791-8ad5-23fef5f89fdf",
+  "name": "Jakob-Weber-Schule Bolzplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Neugasse",
+    "hausnummer": "2",
+    "plz": "66849",
+    "ort": "Landstuhl, Sickingenstadt, Stadt"
+  },
+  "lage": {
+    "lon": 7.568104,
+    "lat": 49.408337
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccddc-1830-4791-8ad5-23fef5f89fdf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

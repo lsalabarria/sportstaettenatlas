@@ -1,0 +1,43 @@
+{
+  "id": "RP-9ec2a90e-b8ff-4ab4-b852-ae2f791d8837",
+  "name": "Reitanlage des LRFV Bodenheim",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Setzerweg",
+    "plz": "55294",
+    "ort": "Bodenheim"
+  },
+  "lage": {
+    "lon": 8.31155,
+    "lat": 49.93621
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90e-b8ff-4ab4-b852-ae2f791d8837",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

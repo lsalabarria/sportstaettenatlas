@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc6c-f17d-4416-a632-d929299ad3be",
+  "name": "Hallenbad Andernach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schillerring",
+    "hausnummer": "9",
+    "plz": "56626",
+    "ort": "Andernach, Stadt"
+  },
+  "lage": {
+    "lon": 7.41234,
+    "lat": 50.43153
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6c-f17d-4416-a632-d929299ad3be",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

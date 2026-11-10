@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7cb5-40c1-4038-bea6-179dc6d894b9",
+  "name": "Tennisplatz Bosenbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Eckstraße",
+    "hausnummer": "28",
+    "plz": "66887",
+    "ort": "Bosenbach"
+  },
+  "lage": {
+    "lon": 7.526017,
+    "lat": 49.543346
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb5-40c1-4038-bea6-179dc6d894b9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

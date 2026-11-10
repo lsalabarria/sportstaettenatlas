@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfaa-0a9b-4d2d-928f-010db1e8bb88",
+  "name": "Bowling Room Koblenz",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Im Metternicher Feld",
+    "hausnummer": "24",
+    "plz": "56072",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.551874,
+    "lat": 50.372393
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bowlingbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfaa-0a9b-4d2d-928f-010db1e8bb88",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

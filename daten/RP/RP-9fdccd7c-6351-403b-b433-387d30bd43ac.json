@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdccd7c-6351-403b-b433-387d30bd43ac",
+  "name": "Flugplatz Landau-Ebenberg",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "strasse": "Am Flugplatz",
+    "hausnummer": "1",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.138794,
+    "lat": 49.17536
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Segelfluggelände"
+    },
+    {
+      "bezeichnung": "Sonderlandeplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd7c-6351-403b-b433-387d30bd43ac",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

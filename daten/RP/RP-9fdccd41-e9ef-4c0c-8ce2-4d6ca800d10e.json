@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd41-e9ef-4c0c-8ce2-4d6ca800d10e",
+  "name": "Sportplatz Blumenstein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gebüger Straße",
+    "plz": "66996",
+    "ort": "Schönau (Pfalz)"
+  },
+  "lage": {
+    "lon": 7.725744,
+    "lat": 49.062809
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd41-e9ef-4c0c-8ce2-4d6ca800d10e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

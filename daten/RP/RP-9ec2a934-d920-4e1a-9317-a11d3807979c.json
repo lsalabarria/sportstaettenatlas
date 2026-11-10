@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a934-d920-4e1a-9317-a11d3807979c",
+  "name": "Förderverein Hambacher Schwimmbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Diedesfelder Weg",
+    "hausnummer": "88",
+    "plz": "67434",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.133535,
+    "lat": 49.331343
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a934-d920-4e1a-9317-a11d3807979c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

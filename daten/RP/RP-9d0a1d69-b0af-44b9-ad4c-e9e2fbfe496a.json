@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d69-b0af-44b9-ad4c-e9e2fbfe496a",
+  "name": "Sportplatz Ürziger Höhe",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wittlicher Straße",
+    "hausnummer": "19",
+    "plz": "54539",
+    "ort": "Ürzig"
+  },
+  "lage": {
+    "lon": 6.995547,
+    "lat": 49.982622
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d69-b0af-44b9-ad4c-e9e2fbfe496a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

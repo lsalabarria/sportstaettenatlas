@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc56-412e-4468-a4b2-294e51bdd6ae",
+  "name": "Freibad Oberweis",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "In der Klaus",
+    "hausnummer": "17",
+    "plz": "54636",
+    "ort": "Oberweis"
+  },
+  "lage": {
+    "lon": 6.42426,
+    "lat": 49.95886
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc56-412e-4468-a4b2-294e51bdd6ae",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

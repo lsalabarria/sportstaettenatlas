@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d52-2221-410a-988a-34dd6b4435ef",
+  "name": "Sportplatz Weibern",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Tannenweg",
+    "plz": "56745",
+    "ort": "Weibern"
+  },
+  "lage": {
+    "lon": 7.154836,
+    "lat": 50.407211
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d52-2221-410a-988a-34dd6b4435ef",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

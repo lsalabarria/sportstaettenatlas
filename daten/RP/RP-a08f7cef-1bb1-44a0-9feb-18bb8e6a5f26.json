@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7cef-1bb1-44a0-9feb-18bb8e6a5f26",
+  "name": "Bolzplatz Schafhausen",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Friedhofstraße",
+    "hausnummer": "8",
+    "plz": "55232",
+    "ort": "Alzey, Stadt"
+  },
+  "lage": {
+    "lon": 8.152384,
+    "lat": 49.760442
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cef-1bb1-44a0-9feb-18bb8e6a5f26",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccc8f-48b2-449c-b9a6-6648acc842e6",
+  "name": "Sportanlage TB Jahn Zeiskam 1896 e.v.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "89",
+    "plz": "67378",
+    "ort": "Zeiskam"
+  },
+  "lage": {
+    "lon": 8.248826,
+    "lat": 49.222877
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc8f-48b2-449c-b9a6-6648acc842e6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

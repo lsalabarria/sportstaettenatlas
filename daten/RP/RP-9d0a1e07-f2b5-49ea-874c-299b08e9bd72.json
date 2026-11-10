@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1e07-f2b5-49ea-874c-299b08e9bd72",
+  "name": "Fitness Rondell",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Eifel-Maar-Park",
+    "hausnummer": "1",
+    "plz": "56766",
+    "ort": "Ulmen, Stadt"
+  },
+  "lage": {
+    "lon": 6.968901,
+    "lat": 50.211133
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Übungsraum"
+    },
+    {
+      "bezeichnung": "Geräteraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e07-f2b5-49ea-874c-299b08e9bd72",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcccbc-c969-48fe-adb5-27f5dd0b6237",
+  "name": "Beachvolleyballfeld DJK Ochtendung",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Krufter Str.",
+    "plz": "56299",
+    "ort": "Ochtendung"
+  },
+  "lage": {
+    "lon": 7.382853,
+    "lat": 50.353654
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccbc-c969-48fe-adb5-27f5dd0b6237",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

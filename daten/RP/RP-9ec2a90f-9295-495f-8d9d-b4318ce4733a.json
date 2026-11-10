@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90f-9295-495f-8d9d-b4318ce4733a",
+  "name": "Hohberghalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schlossstraße",
+    "hausnummer": "13a",
+    "plz": "55296",
+    "ort": "Lörzweiler"
+  },
+  "lage": {
+    "lon": 8.300603,
+    "lat": 49.900933
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90f-9295-495f-8d9d-b4318ce4733a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccde7-2f4c-4474-b6f8-5d843ec3cd0c",
+  "name": "Bolzplatz Im Grundbirngarten",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Im Grundbirngarten",
+    "plz": "67661",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.687782,
+    "lat": 49.418474
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccde7-2f4c-4474-b6f8-5d843ec3cd0c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

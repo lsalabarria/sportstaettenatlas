@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1d69-38c5-41e5-9a71-c345268e91e8",
+  "name": "Sportplatz Siebenborn",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Bahnhofsstraße",
+    "plz": "54484",
+    "ort": "Maring-Noviand"
+  },
+  "lage": {
+    "lon": 6.99189,
+    "lat": 49.932753
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d69-38c5-41e5-9a71-c345268e91e8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

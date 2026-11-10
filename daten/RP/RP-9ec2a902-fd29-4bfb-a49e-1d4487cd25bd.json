@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a902-fd29-4bfb-a49e-1d4487cd25bd",
+  "name": "Schulsporthalle Weisenheim am Berg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Neumayerstraße",
+    "hausnummer": "27",
+    "plz": "67273",
+    "ort": "Weisenheim am Berg"
+  },
+  "lage": {
+    "lon": 8.146836,
+    "lat": 49.515915
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a902-fd29-4bfb-a49e-1d4487cd25bd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

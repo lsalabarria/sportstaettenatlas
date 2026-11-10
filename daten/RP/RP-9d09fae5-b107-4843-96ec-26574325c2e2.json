@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d09fae5-b107-4843-96ec-26574325c2e2",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54308",
+    "ort": "Langsur"
+  },
+  "lage": {
+    "lon": 6.513671,
+    "lat": 49.727187
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae5-b107-4843-96ec-26574325c2e2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

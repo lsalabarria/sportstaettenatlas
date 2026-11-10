@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d48-e403-4c43-9f7d-91610f84da93",
+  "name": "Sportplatz Kirburg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "57629",
+    "ort": "Kirburg"
+  },
+  "lage": {
+    "lon": 7.936008,
+    "lat": 50.674625
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d48-e403-4c43-9f7d-91610f84da93",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

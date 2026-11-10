@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da6-785a-40a0-b0b0-ad6ed52cd845",
+  "name": "Reitplatz Boxberg",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "plz": "54552",
+    "ort": "Boxberg"
+  },
+  "lage": {
+    "lon": 6.867129,
+    "lat": 50.27077
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da6-785a-40a0-b0b0-ad6ed52cd845",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

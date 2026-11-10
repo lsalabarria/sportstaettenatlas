@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faf2-b012-429e-b54e-3344e14a0fcc",
+  "name": "Bolzplatz Hof",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Löffelsterzer Weg",
+    "hausnummer": "2A",
+    "plz": "56472",
+    "ort": "Hof"
+  },
+  "lage": {
+    "lon": 8.01838,
+    "lat": 50.671832
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf2-b012-429e-b54e-3344e14a0fcc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

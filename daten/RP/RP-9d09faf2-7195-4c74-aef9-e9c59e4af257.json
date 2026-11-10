@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faf2-7195-4c74-aef9-e9c59e4af257",
+  "name": "Sportplatz Zehnhausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Friedhofsweg",
+    "plz": "56477",
+    "ort": "Zehnhausen bei Rennerod"
+  },
+  "lage": {
+    "lon": 8.067764,
+    "lat": 50.644268
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf2-7195-4c74-aef9-e9c59e4af257",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

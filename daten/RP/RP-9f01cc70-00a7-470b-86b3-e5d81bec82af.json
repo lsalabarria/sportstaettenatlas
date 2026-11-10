@@ -1,0 +1,33 @@
+{
+  "id": "RP-9f01cc70-00a7-470b-86b3-e5d81bec82af",
+  "name": "Römer-Thermen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Albert-Mertes-Straße",
+    "hausnummer": "11",
+    "plz": "53498",
+    "ort": "Bad Breisig, Stadt"
+  },
+  "lage": {
+    "lon": 7.29891,
+    "lat": 50.50704
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    },
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc70-00a7-470b-86b3-e5d81bec82af",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

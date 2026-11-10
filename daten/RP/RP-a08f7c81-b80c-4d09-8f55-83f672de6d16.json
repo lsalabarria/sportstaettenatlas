@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7c81-b80c-4d09-8f55-83f672de6d16",
+  "name": "Sportplatz TuS 1882 Erbes-Buedesheim e. V",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Nacker Straße",
+    "hausnummer": "24",
+    "plz": "55234",
+    "ort": "Erbes-Büdesheim"
+  },
+  "lage": {
+    "lon": 8.026649,
+    "lat": 49.754622
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c81-b80c-4d09-8f55-83f672de6d16",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

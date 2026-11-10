@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d4f-a47d-434a-8c7e-bdb3868d8f66",
+  "name": "Sportplatz Waldorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Marienhof",
+    "plz": "53498",
+    "ort": "Waldorf"
+  },
+  "lage": {
+    "lon": 7.238954,
+    "lat": 50.491099
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4f-a47d-434a-8c7e-bdb3868d8f66",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dfc-b733-4095-972b-04deb359cba4",
+  "name": "Sporthaller der Realschule plus Hoher Westerwald",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kohlaustraße",
+    "hausnummer": "13",
+    "plz": "56477",
+    "ort": "Rennerod, Stadt"
+  },
+  "lage": {
+    "lon": 8.072432,
+    "lat": 50.606875
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfc-b733-4095-972b-04deb359cba4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

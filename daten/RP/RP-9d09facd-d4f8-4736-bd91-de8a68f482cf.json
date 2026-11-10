@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09facd-d4f8-4736-bd91-de8a68f482cf",
+  "name": "Mehrzweckgebäude (Bürgerhaus) Malberg",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Sportheim",
+    "plz": "57629",
+    "ort": "Malberg"
+  },
+  "lage": {
+    "lon": 7.821062,
+    "lat": 50.715698
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facd-d4f8-4736-bd91-de8a68f482cf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

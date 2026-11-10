@@ -1,0 +1,43 @@
+{
+  "id": "RP-9c24f4ed-aec0-4f0a-ac77-96ec72eac526",
+  "name": "Stadion in der Dell",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Walter-Schmitz-Weg",
+    "plz": "54595",
+    "ort": "Prüm, Stadt"
+  },
+  "lage": {
+    "lon": 6.413987,
+    "lat": 50.20281
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ed-aec0-4f0a-ac77-96ec72eac526",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "RP-a0183458-9505-46d1-b068-2206110fb7c9",
+  "name": "Kleinfeld Rasenplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Neudorfstr.",
+    "plz": "54332",
+    "ort": "Wasserliesch"
+  },
+  "lage": {
+    "lon": 6.532435,
+    "lat": 49.712488
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0183458-9505-46d1-b068-2206110fb7c9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

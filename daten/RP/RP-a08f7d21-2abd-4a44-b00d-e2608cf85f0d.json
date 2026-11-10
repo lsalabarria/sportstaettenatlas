@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7d21-2abd-4a44-b00d-e2608cf85f0d",
+  "name": "Veldenz Gymnasium Lauterecken",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Amselstraße",
+    "hausnummer": "22",
+    "plz": "67742",
+    "ort": "Lauterecken, Stadt"
+  },
+  "lage": {
+    "lon": 7.578462,
+    "lat": 49.648378
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d21-2abd-4a44-b00d-e2608cf85f0d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a928-2aa6-4231-9105-c16cb6655484",
+  "name": "Drei-Königs-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Seppel-Loos-Straße",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.93979,
+    "lat": 49.961548
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a928-2aa6-4231-9105-c16cb6655484",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

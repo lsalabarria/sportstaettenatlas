@@ -1,0 +1,33 @@
+{
+  "id": "RP-9f01cc78-1965-4686-8e57-6896e7432baf",
+  "name": "Kreisbad Heidespaß",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Heideweg",
+    "hausnummer": "111",
+    "plz": "67133",
+    "ort": "Maxdorf"
+  },
+  "lage": {
+    "lon": 8.28476,
+    "lat": 49.49843
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    },
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc78-1965-4686-8e57-6896e7432baf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

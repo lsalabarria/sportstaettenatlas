@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faec-a77c-449e-8fa3-a71e6af3dfea",
+  "name": "Multifunktionales Außensportfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Burgweg",
+    "hausnummer": "21-23",
+    "plz": "56428",
+    "ort": "Dernbach"
+  },
+  "lage": {
+    "lon": 7.798422,
+    "lat": 50.452208
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faec-a77c-449e-8fa3-a71e6af3dfea",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

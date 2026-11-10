@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a934-0af2-46f9-9aa3-c47b69faafed",
+  "name": "Sportanlage Lachen- Speyerdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Flugplatzstraße",
+    "plz": "67435",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.222144,
+    "lat": 49.324254
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a934-0af2-46f9-9aa3-c47b69faafed",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

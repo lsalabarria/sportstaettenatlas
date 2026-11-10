@@ -1,0 +1,32 @@
+{
+  "id": "RP-9fdcccab-da3e-424f-8bb3-73007aac9ac9",
+  "name": "Islandpferde-Gestüt Bienwald",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Sportplatzweg",
+    "plz": "76872",
+    "ort": "Freckenfeld"
+  },
+  "lage": {
+    "lon": 8.126595,
+    "lat": 49.063831
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccab-da3e-424f-8bb3-73007aac9ac9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

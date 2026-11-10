@@ -1,0 +1,44 @@
+{
+  "id": "RP-9fdccd49-44a8-4598-b7e2-ba52b086ae4e",
+  "name": "Wasgaustadion Hauenstein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Speyerstraße",
+    "plz": "76846",
+    "ort": "Hauenstein"
+  },
+  "lage": {
+    "lon": 7.853008,
+    "lat": 49.195634
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd49-44a8-4598-b7e2-ba52b086ae4e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

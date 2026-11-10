@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fae7-d32a-4429-9c23-304af9c555cb",
+  "name": "Tennisanlage Palzem",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "B419",
+    "plz": "54439",
+    "ort": "Palzem"
+  },
+  "lage": {
+    "lon": 6.380746,
+    "lat": 49.570458
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae7-d32a-4429-9c23-304af9c555cb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

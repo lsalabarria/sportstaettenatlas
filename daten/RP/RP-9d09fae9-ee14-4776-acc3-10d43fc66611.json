@@ -1,0 +1,34 @@
+{
+  "id": "RP-9d09fae9-ee14-4776-acc3-10d43fc66611",
+  "name": "Tennisanlage TV Hübingen e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Boden",
+    "plz": "56412",
+    "ort": "Hübingen"
+  },
+  "lage": {
+    "lon": 7.846746,
+    "lat": 50.355654
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae9-ee14-4776-acc3-10d43fc66611",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

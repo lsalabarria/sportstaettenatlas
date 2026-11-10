@@ -1,0 +1,28 @@
+{
+  "id": "RP-54ce6796-cb47-479a-a283-c9f0f3bd706c",
+  "name": "Soonwald-Schwimmbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Soonwaldstraße",
+    "plz": "55444",
+    "ort": "Seibersbach"
+  },
+  "lage": {
+    "lon": 7.713186,
+    "lat": 49.961244
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "54ce6796-cb47-479a-a283-c9f0f3bd706c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

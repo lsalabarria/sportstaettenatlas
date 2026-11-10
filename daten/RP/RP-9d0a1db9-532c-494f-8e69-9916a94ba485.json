@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db9-532c-494f-8e69-9916a94ba485",
+  "name": "Turnhalle Humboldt Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Augustinerstraße",
+    "hausnummer": "1",
+    "plz": "54290",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.633695,
+    "lat": 49.751139
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db9-532c-494f-8e69-9916a94ba485",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

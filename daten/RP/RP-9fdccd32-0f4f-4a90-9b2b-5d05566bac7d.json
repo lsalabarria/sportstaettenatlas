@@ -1,0 +1,32 @@
+{
+  "id": "RP-9fdccd32-0f4f-4a90-9b2b-5d05566bac7d",
+  "name": "Sportanlage Große Hohl",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Große Hohl",
+    "plz": "67354",
+    "ort": "Römerberg"
+  },
+  "lage": {
+    "lon": 8.413469,
+    "lat": 49.293058
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd32-0f4f-4a90-9b2b-5d05566bac7d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

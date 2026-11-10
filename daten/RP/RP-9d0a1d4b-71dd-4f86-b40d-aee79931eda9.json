@@ -1,0 +1,37 @@
+{
+  "id": "RP-9d0a1d4b-71dd-4f86-b40d-aee79931eda9",
+  "name": "Sportplatz Ringen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Kreuzerfeld",
+    "plz": "53501",
+    "ort": "Grafschaft"
+  },
+  "lage": {
+    "lon": 7.084916,
+    "lat": 50.573508
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4b-71dd-4f86-b40d-aee79931eda9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

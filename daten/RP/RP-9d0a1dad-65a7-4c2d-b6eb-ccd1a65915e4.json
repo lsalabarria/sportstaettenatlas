@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dad-65a7-4c2d-b6eb-ccd1a65915e4",
+  "name": "Reitverein Neuwied e.V.",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Zum Aubachtal",
+    "hausnummer": "77",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.511921,
+    "lat": 50.476166
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dad-65a7-4c2d-b6eb-ccd1a65915e4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

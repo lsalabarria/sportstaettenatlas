@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24f4e8-432a-4659-9356-d0635311fd4f",
+  "name": "Sportschützen Speicher",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "4",
+    "plz": "54662",
+    "ort": "Speicher, Stadt"
+  },
+  "lage": {
+    "lon": 6.643984,
+    "lat": 49.940885
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e8-432a-4659-9356-d0635311fd4f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

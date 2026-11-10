@@ -1,0 +1,39 @@
+{
+  "id": "RP-4275c1d4-0797-451c-9ba3-20641b6f6de8",
+  "name": "Ice Dome Messepark Mainz",
+  "kategorie": "Eissportstätte",
+  "adresse": {
+    "strasse": "Genfer-Allee",
+    "plz": "55129",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.256242,
+    "lat": 49.939918
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "MMG – Mainzer Messe Gesellschaft GmbH",
+  "betreiber": "MMG – Mainzer Messe Gesellschaft GmbH",
+  "sportarten": [
+    "Eissport",
+    "Eistanz",
+    "Eisstockschießen",
+    "Eishockey",
+    "Eiskunstlauf",
+    "Eislauf"
+  ],
+  "anlagen": [
+    {
+      "bezeichnung": "Eissporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "4275c1d4-0797-451c-9ba3-20641b6f6de8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

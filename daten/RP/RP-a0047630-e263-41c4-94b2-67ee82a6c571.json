@@ -1,0 +1,23 @@
+{
+  "id": "RP-a0047630-e263-41c4-94b2-67ee82a6c571",
+  "name": "Sportplatz am Wasserwerk",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Wasserwerk",
+    "plz": "54558",
+    "ort": "Strohn"
+  },
+  "lage": {
+    "lon": 6.92024,
+    "lat": 50.116137
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0047630-e263-41c4-94b2-67ee82a6c571",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

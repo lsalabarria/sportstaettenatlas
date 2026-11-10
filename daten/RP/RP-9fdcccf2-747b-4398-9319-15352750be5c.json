@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcccf2-747b-4398-9319-15352750be5c",
+  "name": "Vital Plus Hahnstätten",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Aarstraße",
+    "hausnummer": "5",
+    "plz": "66523",
+    "ort": "Hahnstätten"
+  },
+  "lage": {
+    "lon": 8.066685,
+    "lat": 50.310239
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccf2-747b-4398-9319-15352750be5c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

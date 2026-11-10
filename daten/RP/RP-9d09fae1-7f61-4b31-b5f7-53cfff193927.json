@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d09fae1-7f61-4b31-b5f7-53cfff193927",
+  "name": "Stadion Schöndorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "plz": "54316",
+    "ort": "Schöndorf"
+  },
+  "lage": {
+    "lon": 6.751523,
+    "lat": 49.675819
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae1-7f61-4b31-b5f7-53cfff193927",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

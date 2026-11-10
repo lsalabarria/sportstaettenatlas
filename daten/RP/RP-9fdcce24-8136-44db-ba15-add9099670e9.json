@@ -1,0 +1,32 @@
+{
+  "id": "RP-9fdcce24-8136-44db-ba15-add9099670e9",
+  "name": "Bartists Sportpark",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Richard-Knies-Straße",
+    "plz": "67550",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.321213,
+    "lat": 49.653746
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Bewegungsparcours"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce24-8136-44db-ba15-add9099670e9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

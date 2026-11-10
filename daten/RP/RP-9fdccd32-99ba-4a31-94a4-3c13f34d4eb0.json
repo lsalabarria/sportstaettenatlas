@@ -1,0 +1,36 @@
+{
+  "id": "RP-9fdccd32-99ba-4a31-94a4-3c13f34d4eb0",
+  "name": "Schulsportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gutenbergstraße",
+    "hausnummer": "15",
+    "plz": "67354",
+    "ort": "Römerberg"
+  },
+  "lage": {
+    "lon": 8.40632,
+    "lat": 49.292806
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd32-99ba-4a31-94a4-3c13f34d4eb0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a907-f685-4fcc-9968-77e28051803b",
+  "name": "Bolzplatz Trechtingshausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mainzer Straße",
+    "plz": "55413",
+    "ort": "Trechtingshausen"
+  },
+  "lage": {
+    "lon": 7.853448,
+    "lat": 50.008746
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a907-f685-4fcc-9968-77e28051803b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

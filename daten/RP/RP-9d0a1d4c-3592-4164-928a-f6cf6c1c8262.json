@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d4c-3592-4164-928a-f6cf6c1c8262",
+  "name": "Grundschule Wershofen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Nordstraße",
+    "hausnummer": "34",
+    "plz": "53520",
+    "ort": "Wershofen"
+  },
+  "lage": {
+    "lon": 6.815016,
+    "lat": 50.446593
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4c-3592-4164-928a-f6cf6c1c8262",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

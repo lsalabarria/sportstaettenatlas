@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d54-579b-446b-854b-0d715a8c35ae",
+  "name": "Rudergesellschaft Treis-Karden 1969 e.V.",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Moselallee",
+    "hausnummer": "44",
+    "plz": "56253",
+    "ort": "Treis-Karden"
+  },
+  "lage": {
+    "lon": 7.29841,
+    "lat": 50.172472
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bootshaus/-halle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d54-579b-446b-854b-0d715a8c35ae",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

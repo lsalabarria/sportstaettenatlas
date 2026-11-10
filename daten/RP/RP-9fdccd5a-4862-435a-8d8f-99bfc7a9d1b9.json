@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd5a-4862-435a-8d8f-99bfc7a9d1b9",
+  "name": "Sportplatz FC Höheischweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hainbüchelstraße",
+    "hausnummer": "16",
+    "plz": "66989",
+    "ort": "Höheischweiler"
+  },
+  "lage": {
+    "lon": 7.555368,
+    "lat": 49.231884
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd5a-4862-435a-8d8f-99bfc7a9d1b9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24f4e6-0221-4d19-9f8a-c991532ef501",
+  "name": "Sportplatz Kobenborn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kobenborn",
+    "plz": "54636",
+    "ort": "Baustert"
+  },
+  "lage": {
+    "lon": 6.38496,
+    "lat": 49.979284
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e6-0221-4d19-9f8a-c991532ef501",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09facc-2b33-4afc-88b4-d2b8555c5cac",
+  "name": "Waldstadion an der Wied",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wiedstraße",
+    "plz": "57632",
+    "ort": "Döttesfeld"
+  },
+  "lage": {
+    "lon": 7.548528,
+    "lat": 50.627679
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facc-2b33-4afc-88b4-d2b8555c5cac",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

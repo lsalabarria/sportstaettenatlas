@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d4f-3ee1-4e9d-b1a7-d36455bd49e8",
+  "name": "Sportplatz Rech",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brückenstraße",
+    "plz": "53506",
+    "ort": "Rech"
+  },
+  "lage": {
+    "lon": 7.034737,
+    "lat": 50.514039
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4f-3ee1-4e9d-b1a7-d36455bd49e8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

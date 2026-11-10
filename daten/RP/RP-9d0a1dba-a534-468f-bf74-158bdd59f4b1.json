@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dba-a534-468f-bf74-158bdd59f4b1",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Montessoriweg",
+    "hausnummer": "1",
+    "plz": "54296",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.651507,
+    "lat": 49.729031
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dba-a534-468f-bf74-158bdd59f4b1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

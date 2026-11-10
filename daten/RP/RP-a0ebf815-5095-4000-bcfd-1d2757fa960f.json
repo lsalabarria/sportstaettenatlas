@@ -1,0 +1,29 @@
+{
+  "id": "RP-a0ebf815-5095-4000-bcfd-1d2757fa960f",
+  "name": "Grundschule Nord Bitburg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Theobald-Simon Straße",
+    "hausnummer": "10",
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.522704,
+    "lat": 49.977038
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0ebf815-5095-4000-bcfd-1d2757fa960f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a913-6bda-4fd6-aa1b-ee09fe572e3e",
+  "name": "Sportplatz TuS Münchweiler an der Alsenz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "1B",
+    "plz": "67728",
+    "ort": "Münchweiler an der Alsenz"
+  },
+  "lage": {
+    "lon": 7.887134,
+    "lat": 49.551902
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a913-6bda-4fd6-aa1b-ee09fe572e3e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

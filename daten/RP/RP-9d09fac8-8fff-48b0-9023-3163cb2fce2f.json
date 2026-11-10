@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fac8-8fff-48b0-9023-3163cb2fce2f",
+  "name": "Skatepark Bell Top",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Im Sportzentrum",
+    "hausnummer": "10",
+    "plz": "57610",
+    "ort": "Altenkirchen"
+  },
+  "lage": {
+    "lon": 7.656451,
+    "lat": 50.691694
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac8-8fff-48b0-9023-3163cb2fce2f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

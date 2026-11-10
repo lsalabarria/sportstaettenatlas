@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccc8d-1c17-4697-aca4-4a30a31e70d9",
+  "name": "Tennisclub Lustadt",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Ob. Hauptstraße",
+    "hausnummer": "179b",
+    "plz": "67363",
+    "ort": "Lustadt"
+  },
+  "lage": {
+    "lon": 8.270591,
+    "lat": 49.2426
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc8d-1c17-4697-aca4-4a30a31e70d9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "RP-919c801d-7532-45ef-b5ec-d6a0c858aa36",
+  "name": "Turnhalle Hochstetten-Dhaun",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Herrmann-Besemüller-Straße",
+    "plz": "55606",
+    "ort": "Hochstetten-Dhaun"
+  },
+  "lage": {
+    "lon": 7.503372,
+    "lat": 49.798987
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "919c801d-7532-45ef-b5ec-d6a0c858aa36",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

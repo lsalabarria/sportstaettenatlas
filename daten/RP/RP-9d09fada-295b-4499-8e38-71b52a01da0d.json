@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fada-295b-4499-8e38-71b52a01da0d",
+  "name": "Sporthalle Grundschule Melsbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Friedrich-Ebert-Straße",
+    "hausnummer": "21A",
+    "plz": "56581",
+    "ort": "Melsbach"
+  },
+  "lage": {
+    "lon": 7.478851,
+    "lat": 50.486882
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fada-295b-4499-8e38-71b52a01da0d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

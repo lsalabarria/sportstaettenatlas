@@ -1,0 +1,29 @@
+{
+  "id": "RP-1f81a402-0ddf-488f-a1bd-112e266bd691",
+  "name": "Wolfsschlucht",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Wolfsschlucht",
+    "hausnummer": "1",
+    "plz": "54595",
+    "ort": "Prüm, Stadt"
+  },
+  "lage": {
+    "lon": 6.436936,
+    "lat": 50.228474
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skilanglauf- und Biathlonanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "1f81a402-0ddf-488f-a1bd-112e266bd691",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

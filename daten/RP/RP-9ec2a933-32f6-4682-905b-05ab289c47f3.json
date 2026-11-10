@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a933-32f6-4682-905b-05ab289c47f3",
+  "name": "Käthe-Kollwitz-Gymnasium Schulsportanlage",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Villenstraße",
+    "hausnummer": "1",
+    "plz": "67433",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.137729,
+    "lat": 49.356253
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a933-32f6-4682-905b-05ab289c47f3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

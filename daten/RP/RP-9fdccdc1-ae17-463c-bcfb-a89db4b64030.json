@@ -1,0 +1,54 @@
+{
+  "id": "RP-9fdccdc1-ae17-463c-bcfb-a89db4b64030",
+  "name": "Zentrale Sportanlage Nassau",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf der Au",
+    "hausnummer": "1",
+    "plz": "56377",
+    "ort": "Nassau, Stadt"
+  },
+  "lage": {
+    "lon": 7.799695,
+    "lat": 50.309345
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Diskus- und Hammerwurfanlage"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdc1-ae17-463c-bcfb-a89db4b64030",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

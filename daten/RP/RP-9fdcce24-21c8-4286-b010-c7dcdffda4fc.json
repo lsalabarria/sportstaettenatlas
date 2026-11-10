@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcce24-21c8-4286-b010-c7dcdffda4fc",
+  "name": "Sportplatz Dalbergschule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Höhenstraße",
+    "hausnummer": "19",
+    "plz": "67550",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.329863,
+    "lat": 49.655407
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce24-21c8-4286-b010-c7dcdffda4fc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

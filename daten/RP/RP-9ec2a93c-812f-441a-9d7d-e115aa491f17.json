@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a93c-812f-441a-9d7d-e115aa491f17",
+  "name": "Gymnasium Sporthalle Edenkoben",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Weinstraße",
+    "hausnummer": "134",
+    "plz": "67480",
+    "ort": "Edenkoben, Stadt"
+  },
+  "lage": {
+    "lon": 8.130483,
+    "lat": 49.288247
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93c-812f-441a-9d7d-e115aa491f17",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

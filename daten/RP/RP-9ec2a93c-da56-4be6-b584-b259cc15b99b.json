@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a93c-da56-4be6-b584-b259cc15b99b",
+  "name": "Sportschule Edenkoben",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Villastraße",
+    "hausnummer": "63",
+    "plz": "67480",
+    "ort": "Edenkoben, Stadt"
+  },
+  "lage": {
+    "lon": 8.091311,
+    "lat": 49.280097
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93c-da56-4be6-b584-b259cc15b99b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

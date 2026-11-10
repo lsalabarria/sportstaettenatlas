@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1db2-e151-4c63-b4b5-b8359d6b21a1",
+  "name": "Hunde-Uni Trier",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Am Gillenbach",
+    "plz": "54293",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.605439,
+    "lat": 49.762451
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db2-e151-4c63-b4b5-b8359d6b21a1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

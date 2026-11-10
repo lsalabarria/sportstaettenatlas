@@ -1,0 +1,32 @@
+{
+  "id": "RP-a1020d7a-d96d-44b0-a798-4e98db0c3641",
+  "name": "Sporthalle Wilhelm-von-Humboldt-Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Mühlaustraße",
+    "hausnummer": "13",
+    "plz": "67069",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.382805,
+    "lat": 49.529331
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    },
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a1020d7a-d96d-44b0-a798-4e98db0c3641",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

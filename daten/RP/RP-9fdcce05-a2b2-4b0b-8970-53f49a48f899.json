@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcce05-a2b2-4b0b-8970-53f49a48f899",
+  "name": "Bolzplatz Lüderitzstraße",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Lüderitzstraße",
+    "plz": "67065",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.404382,
+    "lat": 49.472833
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce05-a2b2-4b0b-8970-53f49a48f899",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da2-0d75-4d75-81e0-058d171c5bed",
+  "name": "Tennisplatz Üdersdorf",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Brühl",
+    "plz": "54552",
+    "ort": "Üdersdorf"
+  },
+  "lage": {
+    "lon": 6.806874,
+    "lat": 50.154756
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da2-0d75-4d75-81e0-058d171c5bed",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

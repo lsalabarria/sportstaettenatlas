@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a936-34a2-45df-b430-78433677c2dc",
+  "name": "Bolzplatz Zum Knechelsberg",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Zum Knechelsberg",
+    "plz": "55127",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.23288,
+    "lat": 49.96432
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a936-34a2-45df-b430-78433677c2dc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

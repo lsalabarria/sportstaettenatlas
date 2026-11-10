@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad4-6c37-4dcd-80af-e47dfe25f7a3",
+  "name": "Archery Team Vettelschoß – Bogenschießen",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Dompfaffenstraße",
+    "plz": "53560",
+    "ort": "Vettelschoß"
+  },
+  "lage": {
+    "lon": 7.332121,
+    "lat": 50.613836
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bogenschießanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad4-6c37-4dcd-80af-e47dfe25f7a3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

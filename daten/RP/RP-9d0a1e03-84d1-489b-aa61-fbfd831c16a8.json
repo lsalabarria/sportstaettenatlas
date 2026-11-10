@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e03-84d1-489b-aa61-fbfd831c16a8",
+  "name": "Sportplatz Am Humboldtstein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Humboldtstein",
+    "plz": "53424",
+    "ort": "Remagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.205343,
+    "lat": 50.634184
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e03-84d1-489b-aa61-fbfd831c16a8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

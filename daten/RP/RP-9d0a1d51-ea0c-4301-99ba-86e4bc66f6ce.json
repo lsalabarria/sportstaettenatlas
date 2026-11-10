@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d51-ea0c-4301-99ba-86e4bc66f6ce",
+  "name": "Römerhalle Wehr",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bachstraße",
+    "plz": "56653",
+    "ort": "Wehr"
+  },
+  "lage": {
+    "lon": 7.210771,
+    "lat": 50.425003
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d51-ea0c-4301-99ba-86e4bc66f6ce",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

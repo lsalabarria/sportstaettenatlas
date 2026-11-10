@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc52-481f-4691-8b23-0d661e105855",
+  "name": "Schwimmbad Windesheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "12",
+    "plz": "55452",
+    "ort": "Windesheim"
+  },
+  "lage": {
+    "lon": 7.810713,
+    "lat": 49.907485
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc52-481f-4691-8b23-0d661e105855",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

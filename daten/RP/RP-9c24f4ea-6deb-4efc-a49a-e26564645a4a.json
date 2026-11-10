@@ -1,0 +1,27 @@
+{
+  "id": "RP-9c24f4ea-6deb-4efc-a49a-e26564645a4a",
+  "name": "Reitplatz Wißmannsdorf",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "plz": "54636",
+    "ort": "Wißmannsdorf"
+  },
+  "lage": {
+    "lon": 6.44255,
+    "lat": 49.986516
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ea-6deb-4efc-a49a-e26564645a4a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

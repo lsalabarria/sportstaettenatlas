@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d09face-9080-4517-92c1-0029fffe45a2",
+  "name": "Sportplatz Friedewald",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Graf-Gottfried-Straße",
+    "plz": "57520",
+    "ort": "Friedewald"
+  },
+  "lage": {
+    "lon": 7.964621,
+    "lat": 50.707609
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09face-9080-4517-92c1-0029fffe45a2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

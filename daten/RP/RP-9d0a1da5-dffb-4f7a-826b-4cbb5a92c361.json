@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da5-dffb-4f7a-826b-4cbb5a92c361",
+  "name": "Bolzplatz Pulvermaar",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Vulkanstraße",
+    "plz": "54558",
+    "ort": "Gillenfeld"
+  },
+  "lage": {
+    "lon": 6.934753,
+    "lat": 50.132303
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da5-dffb-4f7a-826b-4cbb5a92c361",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

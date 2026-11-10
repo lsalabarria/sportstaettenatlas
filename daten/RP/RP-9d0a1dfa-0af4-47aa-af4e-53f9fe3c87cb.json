@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1dfa-0af4-47aa-af4e-53f9fe3c87cb",
+  "name": "Basketball und Skatepark Ransbach-Baumbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Haselstraße",
+    "hausnummer": "43",
+    "plz": "56235",
+    "ort": "Ransbach-Baumbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.718771,
+    "lat": 50.465425
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfa-0af4-47aa-af4e-53f9fe3c87cb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

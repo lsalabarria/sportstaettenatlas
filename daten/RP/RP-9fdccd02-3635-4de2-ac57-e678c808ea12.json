@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd02-3635-4de2-ac57-e678c808ea12",
+  "name": "Schulsportanlage Josef-Guggenmos Grundschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "12",
+    "plz": "56348",
+    "ort": "Dahlheim"
+  },
+  "lage": {
+    "lon": 7.688858,
+    "lat": 50.211192
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd02-3635-4de2-ac57-e678c808ea12",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

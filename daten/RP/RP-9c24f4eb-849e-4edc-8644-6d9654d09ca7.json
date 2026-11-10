@@ -1,0 +1,31 @@
+{
+  "id": "RP-9c24f4eb-849e-4edc-8644-6d9654d09ca7",
+  "name": "Sportplatz Lasel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "54612",
+    "ort": "Lasel"
+  },
+  "lage": {
+    "lon": 6.470815,
+    "lat": 50.116589
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4eb-849e-4edc-8644-6d9654d09ca7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

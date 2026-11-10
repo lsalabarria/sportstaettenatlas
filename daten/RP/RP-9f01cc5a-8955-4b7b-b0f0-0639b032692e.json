@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc5a-8955-4b7b-b0f0-0639b032692e",
+  "name": "Marienbad Unnau",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bismarckstraße",
+    "hausnummer": "65",
+    "plz": "56470",
+    "ort": "Bad Marienberg (Westerwald), Stadt"
+  },
+  "lage": {
+    "lon": 7.936691,
+    "lat": 50.596915
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc5a-8955-4b7b-b0f0-0639b032692e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

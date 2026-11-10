@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a922-be04-4263-aaa0-bf82db6a21ba",
+  "name": "Sporthalle TSG Grünstadt",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Asselheimer Str.",
+    "hausnummer": "19A",
+    "plz": "67269",
+    "ort": "Grünstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.164351,
+    "lat": 49.571496
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a922-be04-4263-aaa0-bf82db6a21ba",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "RP-ec5312bc-8751-4c74-a5f0-67a8d8559ab9",
+  "name": "Sportheim SV Liebshausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Perscheider Strasse",
+    "plz": "55494",
+    "ort": "Liebshausen"
+  },
+  "lage": {
+    "lon": 7.633667,
+    "lat": 50.032037
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "ec5312bc-8751-4c74-a5f0-67a8d8559ab9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fadb-3ab8-4ce2-b097-a7daa71dce3f",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Hamborn",
+    "hausnummer": "17",
+    "plz": "54310",
+    "ort": "Ralingen"
+  },
+  "lage": {
+    "lon": 6.501534,
+    "lat": 49.811073
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadb-3ab8-4ce2-b097-a7daa71dce3f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a92f-ba0c-4993-89ac-2ac09df789cc",
+  "name": "Sportplatz Börrstadt",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "9",
+    "plz": "67725",
+    "ort": "Börrstadt"
+  },
+  "lage": {
+    "lon": 7.942978,
+    "lat": 49.574254
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92f-ba0c-4993-89ac-2ac09df789cc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

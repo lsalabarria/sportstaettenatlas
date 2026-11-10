@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccdb4-3c15-4721-bcb6-a743ff9d7796",
+  "name": "St. Sebastianus Schützenbruderschaft Hausen",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Industriestraße",
+    "plz": "56727",
+    "ort": "Mayen, Stadt"
+  },
+  "lage": {
+    "lon": 7.279394,
+    "lat": 50.330888
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdb4-3c15-4721-bcb6-a743ff9d7796",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a907-0a39-403e-9340-dfadb0ea5271",
+  "name": "Waldsportplatz Neidenfels",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Zwerlenbachstraße",
+    "hausnummer": "54",
+    "plz": "67468",
+    "ort": "Neidenfels"
+  },
+  "lage": {
+    "lon": 8.055387,
+    "lat": 49.389967
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a907-0a39-403e-9340-dfadb0ea5271",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

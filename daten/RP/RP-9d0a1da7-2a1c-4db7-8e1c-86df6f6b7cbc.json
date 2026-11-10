@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d0a1da7-2a1c-4db7-8e1c-86df6f6b7cbc",
+  "name": "Schützenhalle Höchstberg",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "plz": "56767",
+    "ort": "Höchstberg"
+  },
+  "lage": {
+    "lon": 7.003365,
+    "lat": 50.236358
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da7-2a1c-4db7-8e1c-86df6f6b7cbc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

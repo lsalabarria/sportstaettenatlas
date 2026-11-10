@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d0a1e12-b0cc-4862-9807-f3e19ca398c6",
+  "name": "Reitplatz Kerpen",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "plz": "54578",
+    "ort": "Kerpen (Eifel)"
+  },
+  "lage": {
+    "lon": 6.728909,
+    "lat": 50.313736
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e12-b0cc-4862-9807-f3e19ca398c6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

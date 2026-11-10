@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7d2c-5c69-4808-9d38-5efb5490e911",
+  "name": "Islandpferde von der Osterhöll",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Osterhöll",
+    "hausnummer": "1",
+    "plz": "55545",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.831552,
+    "lat": 49.849486
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d2c-5c69-4808-9d38-5efb5490e911",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

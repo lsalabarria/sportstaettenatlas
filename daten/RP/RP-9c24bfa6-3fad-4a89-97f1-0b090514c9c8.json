@@ -1,0 +1,41 @@
+{
+  "id": "RP-9c24bfa6-3fad-4a89-97f1-0b090514c9c8",
+  "name": "Sportplatz Pfaffendorfer Höhe",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Alte Heerstraße",
+    "hausnummer": "149",
+    "plz": "56076",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.610834,
+    "lat": 50.336075
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa6-3fad-4a89-97f1-0b090514c9c8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

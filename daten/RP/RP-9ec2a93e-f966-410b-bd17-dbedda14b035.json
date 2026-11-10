@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a93e-f966-410b-bd17-dbedda14b035",
+  "name": "Minigolf im Kurpark Bad Bergzabern",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Böhämmerweg",
+    "hausnummer": "8",
+    "plz": "76887",
+    "ort": "Bad Bergzabern, Stadt"
+  },
+  "lage": {
+    "lon": 7.98623,
+    "lat": 49.099108
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bahnengolf"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93e-f966-410b-bd17-dbedda14b035",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

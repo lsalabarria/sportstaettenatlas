@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcce18-c4c5-46fa-81c6-29fe57d89b68",
+  "name": "Tennisclub Erlenbrunn",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Forststraße",
+    "hausnummer": "16",
+    "plz": "66955",
+    "ort": "Pirmasens, Stadt"
+  },
+  "lage": {
+    "lon": 7.621602,
+    "lat": 49.170272
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce18-c4c5-46fa-81c6-29fe57d89b68",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

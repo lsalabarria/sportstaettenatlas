@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d09fad8-e418-442c-a99d-97b4dfc93936",
+  "name": "Sportplatz Roßbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "In der Au",
+    "plz": "53547",
+    "ort": "Roßbach"
+  },
+  "lage": {
+    "lon": 7.418761,
+    "lat": 50.568133
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad8-e418-442c-a99d-97b4dfc93936",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

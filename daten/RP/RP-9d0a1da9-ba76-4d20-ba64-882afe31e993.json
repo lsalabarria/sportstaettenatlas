@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da9-ba76-4d20-ba64-882afe31e993",
+  "name": "Minigolfanlage Daaden",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Saynische Straße",
+    "hausnummer": "60",
+    "plz": "57567",
+    "ort": "Daaden, Stadt"
+  },
+  "lage": {
+    "lon": 7.98458,
+    "lat": 50.734998
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bahnengolf"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da9-ba76-4d20-ba64-882afe31e993",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

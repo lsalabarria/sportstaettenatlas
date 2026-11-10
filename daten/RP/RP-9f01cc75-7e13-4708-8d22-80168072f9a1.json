@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc75-7e13-4708-8d22-80168072f9a1",
+  "name": "Freizeitbad Molzberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Auf dem Molzberg",
+    "hausnummer": "6",
+    "plz": "57548",
+    "ort": "Kirchen (Sieg), Stadt"
+  },
+  "lage": {
+    "lon": 7.87348,
+    "lat": 50.80203
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Cabriobad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc75-7e13-4708-8d22-80168072f9a1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

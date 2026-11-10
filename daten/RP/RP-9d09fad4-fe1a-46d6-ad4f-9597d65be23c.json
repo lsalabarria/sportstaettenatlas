@@ -1,0 +1,41 @@
+{
+  "id": "RP-9d09fad4-fe1a-46d6-ad4f-9597d65be23c",
+  "name": "Birkengestüt Armonia",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Birken",
+    "hausnummer": "3",
+    "plz": "53578",
+    "ort": "Windhagen"
+  },
+  "lage": {
+    "lon": 7.367683,
+    "lat": 50.637175
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Führ- und Logierhalle"
+    },
+    {
+      "bezeichnung": "Springparcours"
+    },
+    {
+      "bezeichnung": "Stall"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad4-fe1a-46d6-ad4f-9597d65be23c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

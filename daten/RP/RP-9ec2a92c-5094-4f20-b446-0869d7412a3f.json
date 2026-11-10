@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a92c-5094-4f20-b446-0869d7412a3f",
+  "name": "New Fitness Ingelheim GmbH",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Am Langenberg",
+    "hausnummer": "38",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.063261,
+    "lat": 49.98183
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    },
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92c-5094-4f20-b446-0869d7412a3f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc50-75ea-408e-8dd2-b2a3ad82192c",
+  "name": "Frei- und Erlebnisbad Am Rosenberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Staudernheimer Str.",
+    "hausnummer": "100",
+    "plz": "55566",
+    "ort": "Bad Sobernheim, Stadt"
+  },
+  "lage": {
+    "lon": 7.67145,
+    "lat": 49.78288
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc50-75ea-408e-8dd2-b2a3ad82192c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

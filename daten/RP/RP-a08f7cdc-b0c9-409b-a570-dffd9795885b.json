@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7cdc-b0c9-409b-a570-dffd9795885b",
+  "name": "Sportplatz am Schwimmbad",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mühlenstraße",
+    "plz": "55452",
+    "ort": "Windesheim"
+  },
+  "lage": {
+    "lon": 7.809738,
+    "lat": 49.908125
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cdc-b0c9-409b-a570-dffd9795885b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcccfd-258a-41bc-a6b6-6a0fea4d6549",
+  "name": "Tennisclub Weisel",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Auf dem Dewald",
+    "plz": "56348",
+    "ort": "Weisel"
+  },
+  "lage": {
+    "lon": 7.809052,
+    "lat": 50.117202
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccfd-258a-41bc-a6b6-6a0fea4d6549",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

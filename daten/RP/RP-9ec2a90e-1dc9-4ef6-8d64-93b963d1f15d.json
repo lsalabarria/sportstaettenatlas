@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a90e-1dc9-4ef6-8d64-93b963d1f15d",
+  "name": "Tennisclub Zornheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "K34",
+    "plz": "55270",
+    "ort": "Zornheim"
+  },
+  "lage": {
+    "lon": 8.236311,
+    "lat": 49.892536
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90e-1dc9-4ef6-8d64-93b963d1f15d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

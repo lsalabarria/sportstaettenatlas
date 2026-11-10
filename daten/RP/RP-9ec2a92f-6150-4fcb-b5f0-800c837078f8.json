@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a92f-6150-4fcb-b5f0-800c837078f8",
+  "name": "Sembach Tiger Stadium",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Heuberg",
+    "plz": "67681",
+    "ort": "Münchweiler an der Alsenz"
+  },
+  "lage": {
+    "lon": 7.867597,
+    "lat": 49.531535
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92f-6150-4fcb-b5f0-800c837078f8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

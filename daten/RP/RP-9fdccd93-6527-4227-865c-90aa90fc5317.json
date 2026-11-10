@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd93-6527-4227-865c-90aa90fc5317",
+  "name": "Bella Vitalis Fitnessstudio & Gesundheitszentrum Wörth am Rhein",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "In den Niederwiesen",
+    "hausnummer": "4",
+    "plz": "76744",
+    "ort": "Wörth am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.264574,
+    "lat": 49.058181
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd93-6527-4227-865c-90aa90fc5317",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

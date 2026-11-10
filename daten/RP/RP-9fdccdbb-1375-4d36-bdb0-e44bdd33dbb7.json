@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccdbb-1375-4d36-bdb0-e44bdd33dbb7",
+  "name": "Sportanlage Kürrenberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Hansenkreuz",
+    "plz": "56727",
+    "ort": "Mayen, Stadt"
+  },
+  "lage": {
+    "lon": 7.167083,
+    "lat": 50.335981
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdbb-1375-4d36-bdb0-e44bdd33dbb7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

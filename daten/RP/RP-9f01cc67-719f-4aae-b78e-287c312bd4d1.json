@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc67-719f-4aae-b78e-287c312bd4d1",
+  "name": "Freibad Wallhausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "L",
+    "hausnummer": "239",
+    "plz": "55595",
+    "ort": "Wallhausen"
+  },
+  "lage": {
+    "lon": 7.75977,
+    "lat": 49.89003
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc67-719f-4aae-b78e-287c312bd4d1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

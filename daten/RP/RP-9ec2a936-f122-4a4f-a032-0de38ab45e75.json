@@ -1,0 +1,49 @@
+{
+  "id": "RP-9ec2a936-f122-4a4f-a032-0de38ab45e75",
+  "name": "Bezirkssportanlage Bereitschaftspolizei",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Heinz-Lemb-Weg",
+    "plz": "55129",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.265575,
+    "lat": 49.955777
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a936-f122-4a4f-a032-0de38ab45e75",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

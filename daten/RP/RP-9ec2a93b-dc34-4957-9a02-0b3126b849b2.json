@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a93b-dc34-4957-9a02-0b3126b849b2",
+  "name": "Bolzplatz St. Martin",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Stöckelfeld",
+    "plz": "67487",
+    "ort": "Sankt Martin"
+  },
+  "lage": {
+    "lon": 8.095891,
+    "lat": 49.299272
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93b-dc34-4957-9a02-0b3126b849b2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

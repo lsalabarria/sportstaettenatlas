@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd97-3ebb-45f5-a05c-c5eaddf86ecc",
+  "name": "Schulsportanlage Rhens",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "4",
+    "plz": "56321",
+    "ort": "Rhens, Stadt"
+  },
+  "lage": {
+    "lon": 7.618858,
+    "lat": 50.278844
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd97-3ebb-45f5-a05c-c5eaddf86ecc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

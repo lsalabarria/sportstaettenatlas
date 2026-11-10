@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7d21-e754-428d-88f0-b8be249cdff6",
+  "name": "Schützenverein Kallenfels",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Schützenweg",
+    "hausnummer": "1",
+    "plz": "55606",
+    "ort": "Kirn, Stadt"
+  },
+  "lage": {
+    "lon": 7.440482,
+    "lat": 49.80018
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d21-e754-428d-88f0-b8be249cdff6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

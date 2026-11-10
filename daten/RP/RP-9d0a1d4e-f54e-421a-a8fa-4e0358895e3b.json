@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d4e-f54e-421a-a8fa-4e0358895e3b",
+  "name": "Sportplatz im Ahrknick",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "3",
+    "plz": "53506",
+    "ort": "Hönningen"
+  },
+  "lage": {
+    "lon": 6.950925,
+    "lat": 50.474493
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4e-f54e-421a-a8fa-4e0358895e3b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

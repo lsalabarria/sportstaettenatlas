@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dba-d6d7-424f-8899-e0c4c9a31bc3",
+  "name": "Spielplatz Grundschule Mariahof",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Mariahof",
+    "hausnummer": "23",
+    "plz": "54296",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.658304,
+    "lat": 49.730239
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dba-d6d7-424f-8899-e0c4c9a31bc3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

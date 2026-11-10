@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24bfa3-8409-4a3a-bb98-98c49f0c3aaf",
+  "name": "Reitsportanlage",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Mühlbach",
+    "plz": "56072",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.533909,
+    "lat": 50.346095
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa3-8409-4a3a-bb98-98c49f0c3aaf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

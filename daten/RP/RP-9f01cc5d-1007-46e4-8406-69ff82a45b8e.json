@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc5d-1007-46e4-8406-69ff82a45b8e",
+  "name": "Naturschwimmbad Niederhonnefeld",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "hausnummer": "103",
+    "plz": "56587",
+    "ort": "Straßenhaus"
+  },
+  "lage": {
+    "lon": 7.507385,
+    "lat": 50.545523
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Naturbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc5d-1007-46e4-8406-69ff82a45b8e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1df6-df7b-4441-8c41-d8fd79cc7a47",
+  "name": "Trimmelter Sportverein Trier",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kohlenstraße",
+    "hausnummer": "57",
+    "plz": "54296",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.693887,
+    "lat": 49.742224
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df6-df7b-4441-8c41-d8fd79cc7a47",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e03-0119-4356-bc22-b9ec8e166864",
+  "name": "Tennisplatz Kölner Straße",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Kölner Straße",
+    "plz": "53424",
+    "ort": "Remagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.208797,
+    "lat": 50.589808
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e03-0119-4356-bc22-b9ec8e166864",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

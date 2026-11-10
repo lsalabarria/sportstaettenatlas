@@ -1,0 +1,29 @@
+{
+  "id": "RP-e725a6ef-69d4-4a44-a5ce-60eb63bbb26c",
+  "name": "Vitalbad Kusel",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Trierer Straße",
+    "hausnummer": "194",
+    "plz": "66896",
+    "ort": "Kusel, Stadt"
+  },
+  "lage": {
+    "lon": 7.38175,
+    "lat": 49.546055
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "e725a6ef-69d4-4a44-a5ce-60eb63bbb26c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

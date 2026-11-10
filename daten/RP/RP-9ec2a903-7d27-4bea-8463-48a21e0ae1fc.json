@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a903-7d27-4bea-8463-48a21e0ae1fc",
+  "name": "Beachvolleyball Erpolzheim",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "8",
+    "plz": "67167",
+    "ort": "Erpolzheim"
+  },
+  "lage": {
+    "lon": 8.222487,
+    "lat": 49.487626
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a903-7d27-4bea-8463-48a21e0ae1fc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

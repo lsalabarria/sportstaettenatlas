@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7caa-a174-4627-a54c-d70213b94fec",
+  "name": "Cage-Soccer IGS Herrstein-Rhaunen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sonnenschlicher",
+    "hausnummer": "5",
+    "plz": "55624",
+    "ort": "Rhaunen"
+  },
+  "lage": {
+    "lon": 7.336935,
+    "lat": 49.861004
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7caa-a174-4627-a54c-d70213b94fec",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

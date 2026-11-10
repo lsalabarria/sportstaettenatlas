@@ -1,0 +1,38 @@
+{
+  "id": "RP-9d09fadf-baf9-4709-ac9b-a85b10f8220b",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waldracher Straße",
+    "hausnummer": "15",
+    "plz": "54341",
+    "ort": "Fell"
+  },
+  "lage": {
+    "lon": 6.777045,
+    "lat": 49.776307
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadf-baf9-4709-ac9b-a85b10f8220b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

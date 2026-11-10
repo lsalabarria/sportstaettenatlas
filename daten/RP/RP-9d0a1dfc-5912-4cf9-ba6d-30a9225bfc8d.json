@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1dfc-5912-4cf9-ba6d-30a9225bfc8d",
+  "name": "Lasterbachhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Oberroderstraße",
+    "plz": "56479",
+    "ort": "Elsoff (Westerwald)"
+  },
+  "lage": {
+    "lon": 8.123401,
+    "lat": 50.575299
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfc-5912-4cf9-ba6d-30a9225bfc8d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

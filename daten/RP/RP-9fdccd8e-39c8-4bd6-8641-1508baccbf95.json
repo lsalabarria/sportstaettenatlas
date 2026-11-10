@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd8e-39c8-4bd6-8641-1508baccbf95",
+  "name": "Sporthalle Grundschule Hainbuchenschule Hagenbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Stadtrand",
+    "hausnummer": "1",
+    "plz": "76767",
+    "ort": "Hagenbach, Stadt"
+  },
+  "lage": {
+    "lon": 8.242929,
+    "lat": 49.01972
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd8e-39c8-4bd6-8641-1508baccbf95",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

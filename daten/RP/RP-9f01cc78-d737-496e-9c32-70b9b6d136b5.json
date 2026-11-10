@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc78-d737-496e-9c32-70b9b6d136b5",
+  "name": "Hallenbad der Johannes-Gutenberg-Universität",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Saarstraße",
+    "hausnummer": "21",
+    "plz": "55122",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.24632,
+    "lat": 49.99587
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc78-d737-496e-9c32-70b9b6d136b5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "RP-5c715d06-1321-4d31-a8be-7375ad288658",
+  "name": "DSV Nordic aktiv Ausbildungszentrum Skiverband Rheinland e.V.",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Waldstrasse",
+    "hausnummer": "160",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "5c715d06-1321-4d31-a8be-7375ad288658",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

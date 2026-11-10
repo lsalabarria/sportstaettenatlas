@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a909-8a50-4efc-991e-66f618095882",
+  "name": "IGS Gerhard Ertl Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Weiher",
+    "plz": "55576",
+    "ort": "Sprendlingen"
+  },
+  "lage": {
+    "lon": 7.990797,
+    "lat": 49.864438
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a909-8a50-4efc-991e-66f618095882",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

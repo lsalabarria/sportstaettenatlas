@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09facc-b3b7-4cad-a598-1cf6c6a794b0",
+  "name": "Neues Leben Arena",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Raiffeisenstraße",
+    "hausnummer": "2",
+    "plz": "57635",
+    "ort": "Wölmersen"
+  },
+  "lage": {
+    "lon": 7.598385,
+    "lat": 50.717442
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facc-b3b7-4cad-a598-1cf6c6a794b0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

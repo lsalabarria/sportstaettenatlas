@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da6-9952-45ea-bc55-243df94b26fd",
+  "name": "Sportplatz im Wolfswieschen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Wolfswieschen",
+    "hausnummer": "3",
+    "plz": "53539",
+    "ort": "Bongard"
+  },
+  "lage": {
+    "lon": 6.82639,
+    "lat": 50.293222
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da6-9952-45ea-bc55-243df94b26fd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

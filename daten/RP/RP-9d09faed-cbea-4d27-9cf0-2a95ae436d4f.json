@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faed-cbea-4d27-9cf0-2a95ae436d4f",
+  "name": "Pfauenhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "7",
+    "plz": "56242",
+    "ort": "Nordhofen"
+  },
+  "lage": {
+    "lon": 7.753299,
+    "lat": 50.516605
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faed-cbea-4d27-9cf0-2a95ae436d4f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

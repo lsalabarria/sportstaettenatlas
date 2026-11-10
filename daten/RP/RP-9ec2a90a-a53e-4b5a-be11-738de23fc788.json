@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a90a-a53e-4b5a-be11-738de23fc788",
+  "name": "Spielplatz am Wald",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kreisstraße",
+    "plz": "55437",
+    "ort": "Nieder-Hilbersheim"
+  },
+  "lage": {
+    "lon": 8.044258,
+    "lat": 49.912682
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90a-a53e-4b5a-be11-738de23fc788",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

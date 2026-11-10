@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1db7-3131-4e12-8ff0-81f4efd5f2d1",
+  "name": "Sportplatz an der Mosel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hans-Adamy-Straße",
+    "plz": "54293",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.696738,
+    "lat": 49.782842
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db7-3131-4e12-8ff0-81f4efd5f2d1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e07-a1a0-4093-bf13-7b07c17a2f8b",
+  "name": "Orthalle Kaiseresch",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schwalbenweg",
+    "hausnummer": "19",
+    "plz": "56759",
+    "ort": "Kaisersesch, Stadt"
+  },
+  "lage": {
+    "lon": 7.136929,
+    "lat": 50.234511
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e07-a1a0-4093-bf13-7b07c17a2f8b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

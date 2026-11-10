@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1df8-d6c4-4437-aba1-f728955f9eaf",
+  "name": "Sportplatz am Forsthaus in Elgendorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Baumbacher Straße",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.785619,
+    "lat": 50.445546
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df8-d6c4-4437-aba1-f728955f9eaf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

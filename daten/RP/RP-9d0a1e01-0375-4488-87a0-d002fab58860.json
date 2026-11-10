@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1e01-0375-4488-87a0-d002fab58860",
+  "name": "Fit & Fun GmbH",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Am Silberberg",
+    "hausnummer": "2",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.087088,
+    "lat": 50.539402
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    },
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e01-0375-4488-87a0-d002fab58860",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

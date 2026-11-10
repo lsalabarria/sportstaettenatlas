@@ -1,0 +1,41 @@
+{
+  "id": "RP-a08f7d25-5cb7-48b8-9366-017288f242cf",
+  "name": "Stadion Meisenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Präses-Held-Straße",
+    "plz": "55590",
+    "ort": "Meisenheim, Stadt"
+  },
+  "lage": {
+    "lon": 7.662798,
+    "lat": 49.710491
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d25-5cb7-48b8-9366-017288f242cf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

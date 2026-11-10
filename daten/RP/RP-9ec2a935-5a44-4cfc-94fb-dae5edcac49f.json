@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a935-5a44-4cfc-94fb-dae5edcac49f",
+  "name": "Spiel- und Sportplatz Königsborn",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Thüringer Straße",
+    "plz": "55126",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.180023,
+    "lat": 49.993149
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a935-5a44-4cfc-94fb-dae5edcac49f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

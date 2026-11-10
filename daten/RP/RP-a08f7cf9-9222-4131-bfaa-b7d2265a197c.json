@@ -1,0 +1,38 @@
+{
+  "id": "RP-a08f7cf9-9222-4131-bfaa-b7d2265a197c",
+  "name": "Brühl-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Brühl",
+    "plz": "55774",
+    "ort": "Baumholder, Stadt"
+  },
+  "lage": {
+    "lon": 7.341343,
+    "lat": 49.611671
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cf9-9222-4131-bfaa-b7d2265a197c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

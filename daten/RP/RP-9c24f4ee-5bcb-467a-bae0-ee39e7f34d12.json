@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24f4ee-5bcb-467a-bae0-ee39e7f34d12",
+  "name": "Sportplatz Hauptstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "52",
+    "plz": "54597",
+    "ort": "Rommersheim"
+  },
+  "lage": {
+    "lon": 6.451487,
+    "lat": 50.193462
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ee-5bcb-467a-bae0-ee39e7f34d12",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1d57-4f6c-4cba-889a-353958b75910",
+  "name": "Sportplatz Gevenich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L16",
+    "plz": "56825",
+    "ort": "Gevenich"
+  },
+  "lage": {
+    "lon": 7.085329,
+    "lat": 50.147162
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d57-4f6c-4cba-889a-353958b75910",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

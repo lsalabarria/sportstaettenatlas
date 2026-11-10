@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccce3-19b4-4b63-a0e5-52af8dd1e927",
+  "name": "Sportplatz am Herthasee",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Herthasee",
+    "plz": "56379",
+    "ort": "Holzappel"
+  },
+  "lage": {
+    "lon": 7.903629,
+    "lat": 50.36215
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccce3-19b4-4b63-a0e5-52af8dd1e927",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d68-d9f6-4991-b821-40a02debdb29",
+  "name": "Oestelbachhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Eichflur",
+    "plz": "54518",
+    "ort": "Osann-Monzel"
+  },
+  "lage": {
+    "lon": 6.953522,
+    "lat": 49.916719
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d68-d9f6-4991-b821-40a02debdb29",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

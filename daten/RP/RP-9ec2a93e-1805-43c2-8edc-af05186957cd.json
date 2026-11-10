@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a93e-1805-43c2-8edc-af05186957cd",
+  "name": "Sporthalle Grundschule Herxheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bonifatiusstraße",
+    "hausnummer": "22",
+    "plz": "76863",
+    "ort": "Herxheim bei Landau/ Pfalz"
+  },
+  "lage": {
+    "lon": 8.216713,
+    "lat": 49.144227
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93e-1805-43c2-8edc-af05186957cd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

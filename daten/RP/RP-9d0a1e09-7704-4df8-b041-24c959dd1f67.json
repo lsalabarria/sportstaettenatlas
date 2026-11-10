@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e09-7704-4df8-b041-24c959dd1f67",
+  "name": "Thermalfreibad Boppard",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Eisenberg",
+    "hausnummer": "4",
+    "plz": "56154",
+    "ort": "Boppard, Stadt"
+  },
+  "lage": {
+    "lon": 7.600698,
+    "lat": 50.221784
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e09-7704-4df8-b041-24c959dd1f67",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

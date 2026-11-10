@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09face-9c3b-4561-b7cc-bb2092b09b4e",
+  "name": "Turnhalle Friedewald",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Graf-Gottfried-Straße",
+    "plz": "57520",
+    "ort": "Friedewald"
+  },
+  "lage": {
+    "lon": 7.96342,
+    "lat": 50.7075
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09face-9c3b-4561-b7cc-bb2092b09b4e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcccfd-d0eb-4e52-a47d-e1fbfd8b02b3",
+  "name": "Schützenverein Reitzenhain",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Ortsstraße",
+    "plz": "56357",
+    "ort": "Reitzenhain"
+  },
+  "lage": {
+    "lon": 7.779825,
+    "lat": 50.151536
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccfd-d0eb-4e52-a47d-e1fbfd8b02b3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd86-ec8c-4b43-b278-5c7b6ebda2f6",
+  "name": "Tennisplatz TV 80 Sondernheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "An der Tränke",
+    "plz": "76726",
+    "ort": "Germersheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.36478,
+    "lat": 49.192629
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd86-ec8c-4b43-b278-5c7b6ebda2f6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

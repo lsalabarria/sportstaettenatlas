@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d09fae2-f0b6-45fe-9eb7-ca87ccb6bb1b",
+  "name": "Reitanlage Reinsfeld",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "plz": "54421",
+    "ort": "Reinsfeld"
+  },
+  "lage": {
+    "lon": 6.866258,
+    "lat": 49.670461
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae2-f0b6-45fe-9eb7-ca87ccb6bb1b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

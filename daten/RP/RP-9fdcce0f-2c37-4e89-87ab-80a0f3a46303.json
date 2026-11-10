@@ -1,0 +1,36 @@
+{
+  "id": "RP-9fdcce0f-2c37-4e89-87ab-80a0f3a46303",
+  "name": "Sportplatz Friedrich-Ebert-Realschule plus",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jakobsplatz",
+    "hausnummer": "3.0",
+    "plz": "67227",
+    "ort": "Frankenthal (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.360752,
+    "lat": 49.524662
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce0f-2c37-4e89-87ab-80a0f3a46303",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

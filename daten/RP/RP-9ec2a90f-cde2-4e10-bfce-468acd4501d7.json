@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90f-cde2-4e10-bfce-468acd4501d7",
+  "name": "Fitness & Wellness Borngarten",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Gaustraße",
+    "hausnummer": "39",
+    "plz": "55278",
+    "ort": "Mommenheim"
+  },
+  "lage": {
+    "lon": 8.264714,
+    "lat": 49.880894
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90f-cde2-4e10-bfce-468acd4501d7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

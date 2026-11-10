@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccdc8-8d87-46a9-8fe0-2989ac21ab81",
+  "name": "Schützenverein Diez-Freiendiez 1928 e. V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Am Wässerweg",
+    "plz": "65582",
+    "ort": "Diez, Stadt"
+  },
+  "lage": {
+    "lon": 8.032235,
+    "lat": 50.359298
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdc8-8d87-46a9-8fe0-2989ac21ab81",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

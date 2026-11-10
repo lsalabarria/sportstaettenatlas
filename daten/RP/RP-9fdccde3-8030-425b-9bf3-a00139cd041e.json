@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdccde3-8030-425b-9bf3-a00139cd041e",
+  "name": "Spieplatz am Zoo",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Geiersberg",
+    "hausnummer": "23",
+    "plz": "67661",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.686224,
+    "lat": 49.465978
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccde3-8030-425b-9bf3-a00139cd041e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

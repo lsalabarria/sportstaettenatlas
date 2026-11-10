@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d09fae5-6db3-4dbf-9bc9-6a58f1affb58",
+  "name": "Bolzplatz Greimerath",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54314",
+    "ort": "Greimerath"
+  },
+  "lage": {
+    "lon": 6.686619,
+    "lat": 49.561831
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae5-6db3-4dbf-9bc9-6a58f1affb58",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

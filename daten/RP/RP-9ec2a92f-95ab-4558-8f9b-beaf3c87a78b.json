@@ -1,0 +1,44 @@
+{
+  "id": "RP-9ec2a92f-95ab-4558-8f9b-beaf3c87a78b",
+  "name": "Reiterhof Engelbert Demmerle",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Amtsstraße",
+    "hausnummer": "4",
+    "plz": "67725",
+    "ort": "Börrstadt"
+  },
+  "lage": {
+    "lon": 7.941824,
+    "lat": 49.580083
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    },
+    {
+      "bezeichnung": "Führ- und Logierhalle"
+    },
+    {
+      "bezeichnung": "Springparcours"
+    },
+    {
+      "bezeichnung": "Stall"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92f-95ab-4558-8f9b-beaf3c87a78b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

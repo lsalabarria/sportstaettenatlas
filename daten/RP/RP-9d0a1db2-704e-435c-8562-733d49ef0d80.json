@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db2-704e-435c-8562-733d49ef0d80",
+  "name": "Tennis-Club Dierdorf e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Neuwieder Straße",
+    "hausnummer": "60",
+    "plz": "56269",
+    "ort": "Dierdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.65863,
+    "lat": 50.552616
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db2-704e-435c-8562-733d49ef0d80",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

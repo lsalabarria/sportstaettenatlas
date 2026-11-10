@@ -1,0 +1,28 @@
+{
+  "id": "RP-9fdccccc-c565-4da2-9b73-278e95076073",
+  "name": "MSC Dreckenach",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "plz": "56330",
+    "ort": "Kobern-Gondorf"
+  },
+  "lage": {
+    "lon": 7.418298,
+    "lat": 50.29594
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Mountainbikestrecke"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccccc-c565-4da2-9b73-278e95076073",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

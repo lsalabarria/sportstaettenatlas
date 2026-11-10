@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d68-ce02-4952-8829-ee966b481e1d",
+  "name": "Schützenhaus Osann-Monzel",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "L47",
+    "plz": "54518",
+    "ort": "Osann-Monzel"
+  },
+  "lage": {
+    "lon": 6.935782,
+    "lat": 49.924347
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d68-ce02-4952-8829-ee966b481e1d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

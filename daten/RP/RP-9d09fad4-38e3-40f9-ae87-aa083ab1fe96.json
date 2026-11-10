@@ -1,0 +1,44 @@
+{
+  "id": "RP-9d09fad4-38e3-40f9-ae87-aa083ab1fe96",
+  "name": "SV Vettelschoß-Kalenborn 1924 e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Willscheider Weg",
+    "hausnummer": "28",
+    "plz": "53560",
+    "ort": "Vettelschoß"
+  },
+  "lage": {
+    "lon": 7.339256,
+    "lat": 50.619523
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad4-38e3-40f9-ae87-aa083ab1fe96",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d09fade-7b76-4583-a22e-58b6069a8b36",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Moselvorland",
+    "plz": "54340",
+    "ort": "Klüsserath"
+  },
+  "lage": {
+    "lon": 6.852372,
+    "lat": 49.842306
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fade-7b76-4583-a22e-58b6069a8b36",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

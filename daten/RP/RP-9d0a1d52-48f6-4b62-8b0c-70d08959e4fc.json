@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d52-48f6-4b62-8b0c-70d08959e4fc",
+  "name": "Schullandheim des Friedrich-Ebert-Gymnasium und Ernst-Moritz-Arndt-Gymnasium Bonn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Höhenweg",
+    "hausnummer": "1",
+    "plz": "53533",
+    "ort": "Aremberg"
+  },
+  "lage": {
+    "lon": 6.797515,
+    "lat": 50.412128
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d52-48f6-4b62-8b0c-70d08959e4fc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

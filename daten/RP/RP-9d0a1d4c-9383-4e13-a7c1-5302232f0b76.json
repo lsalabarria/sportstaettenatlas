@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d4c-9383-4e13-a7c1-5302232f0b76",
+  "name": "Sportplatz der Gemeinde Leimbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "plz": "53518",
+    "ort": "Leimbach"
+  },
+  "lage": {
+    "lon": 6.950378,
+    "lat": 50.40367
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4c-9383-4e13-a7c1-5302232f0b76",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d0a1df7-06b9-4ab0-9ddb-9ca1150681c1",
+  "name": "Hartplatz Uni Trier",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54296",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.691016,
+    "lat": 49.7416
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df7-06b9-4ab0-9ddb-9ca1150681c1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

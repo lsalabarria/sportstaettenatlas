@@ -1,0 +1,29 @@
+{
+  "id": "RP-a0ebf745-8ff9-4c2a-936e-1a0df4d1b832",
+  "name": "Grundschule Süd Bitburg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Borenweg",
+    "hausnummer": "9",
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.525515,
+    "lat": 49.971221
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0ebf745-8ff9-4c2a-936e-1a0df4d1b832",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

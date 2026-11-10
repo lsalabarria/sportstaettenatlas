@@ -1,0 +1,44 @@
+{
+  "id": "RP-9ec2a90c-a507-4c3c-9f7a-430c44c38f33",
+  "name": "Sportplatz Klein-Winternheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Bandweidenweg",
+    "hausnummer": "1",
+    "plz": "55270",
+    "ort": "Klein-Winternheim"
+  },
+  "lage": {
+    "lon": 8.216662,
+    "lat": 49.941953
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Calisthenicsanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90c-a507-4c3c-9f7a-430c44c38f33",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

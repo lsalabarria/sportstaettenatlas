@@ -1,0 +1,47 @@
+{
+  "id": "RP-9fdcce1e-74a3-46a9-9cea-08b09c051748",
+  "name": "Helmut-Bantz-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Fritz-Ober-Straße",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.436464,
+    "lat": 49.324404
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Diskus- und Hammerwurfanlage"
+    },
+    {
+      "bezeichnung": "Wassergraben Hindernislauf"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce1e-74a3-46a9-9cea-08b09c051748",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

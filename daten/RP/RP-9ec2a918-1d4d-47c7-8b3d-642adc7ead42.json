@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a918-1d4d-47c7-8b3d-642adc7ead42",
+  "name": "Kalmit-Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "An d. Steinmühle",
+    "plz": "67487",
+    "ort": "Maikammer"
+  },
+  "lage": {
+    "lon": 8.136385,
+    "lat": 49.301273
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a918-1d4d-47c7-8b3d-642adc7ead42",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

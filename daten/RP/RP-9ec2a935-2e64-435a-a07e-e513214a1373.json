@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a935-2e64-435a-a07e-e513214a1373",
+  "name": "Sporthalle Peter-Härtling-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Layenhofstraße",
+    "hausnummer": "26",
+    "plz": "55126",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.165341,
+    "lat": 49.988782
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a935-2e64-435a-a07e-e513214a1373",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

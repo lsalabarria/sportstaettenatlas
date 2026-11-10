@@ -1,0 +1,38 @@
+{
+  "id": "RP-9d0a1df9-ff8b-41bd-a298-cc1939087936",
+  "name": "Beachvolleyballfelder Sportpark Ransbach-Baumbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Haselstraße",
+    "hausnummer": "43",
+    "plz": "56235",
+    "ort": "Ransbach-Baumbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.718398,
+    "lat": 50.465169
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df9-ff8b-41bd-a298-cc1939087936",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a91d-80c8-4de8-86ed-0f5cb783ac50",
+  "name": "Sportplatz SV Schweighofen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Speckstraße",
+    "plz": "76889",
+    "ort": "Schweighofen"
+  },
+  "lage": {
+    "lon": 7.995966,
+    "lat": 49.031217
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91d-80c8-4de8-86ed-0f5cb783ac50",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

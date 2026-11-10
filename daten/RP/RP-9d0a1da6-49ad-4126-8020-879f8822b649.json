@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da6-49ad-4126-8020-879f8822b649",
+  "name": "Sportplatz Nerdlen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An der Treib",
+    "hausnummer": "6",
+    "plz": "53539",
+    "ort": "Nerdlen"
+  },
+  "lage": {
+    "lon": 6.864492,
+    "lat": 50.234041
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da6-49ad-4126-8020-879f8822b649",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

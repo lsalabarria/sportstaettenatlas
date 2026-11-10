@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d0a1d5d-1cde-4ddb-95ba-0c767dd61d8e",
+  "name": "Hof Rabenley",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Treiser Straße",
+    "hausnummer": "32",
+    "plz": "56290",
+    "ort": "Mörsdorf"
+  },
+  "lage": {
+    "lon": 7.344126,
+    "lat": 50.107059
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5d-1cde-4ddb-95ba-0c767dd61d8e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

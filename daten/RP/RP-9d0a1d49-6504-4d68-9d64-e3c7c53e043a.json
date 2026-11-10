@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d49-6504-4d68-9d64-e3c7c53e043a",
+  "name": "Reiner-Meutsch-Arena",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "57612",
+    "ort": "Kroppach"
+  },
+  "lage": {
+    "lon": 7.73201,
+    "lat": 50.690274
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d49-6504-4d68-9d64-e3c7c53e043a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

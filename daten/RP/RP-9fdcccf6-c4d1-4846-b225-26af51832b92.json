@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcccf6-c4d1-4846-b225-26af51832b92",
+  "name": "Motocrossland Kaltenholzhausen",
+  "kategorie": "Motorsportstätte",
+  "adresse": {
+    "strasse": "L320",
+    "plz": "65558",
+    "ort": "Kaltenholzhausen"
+  },
+  "lage": {
+    "lon": 8.095012,
+    "lat": 50.303592
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Motocross-Strecke"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccf6-c4d1-4846-b225-26af51832b92",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

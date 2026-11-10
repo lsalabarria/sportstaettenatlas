@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fad7-3ade-4b8b-aa9f-73380b7e0b92",
+  "name": "Turnhalle Puderbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "16",
+    "plz": "56305",
+    "ort": "Puderbach"
+  },
+  "lage": {
+    "lon": 7.614084,
+    "lat": 50.598124
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad7-3ade-4b8b-aa9f-73380b7e0b92",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

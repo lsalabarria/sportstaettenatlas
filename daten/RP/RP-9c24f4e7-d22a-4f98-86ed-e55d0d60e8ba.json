@@ -1,0 +1,27 @@
+{
+  "id": "RP-9c24f4e7-d22a-4f98-86ed-e55d0d60e8ba",
+  "name": "Reitplatz Altbach",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.564746,
+    "lat": 49.976468
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e7-d22a-4f98-86ed-e55d0d60e8ba",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

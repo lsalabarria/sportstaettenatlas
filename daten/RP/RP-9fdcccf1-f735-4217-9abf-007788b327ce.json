@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcccf1-f735-4217-9abf-007788b327ce",
+  "name": "Sporthallle Realschule plus im Aartal",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "27",
+    "plz": "66523",
+    "ort": "Hahnstätten"
+  },
+  "lage": {
+    "lon": 8.065272,
+    "lat": 50.299193
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccf1-f735-4217-9abf-007788b327ce",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

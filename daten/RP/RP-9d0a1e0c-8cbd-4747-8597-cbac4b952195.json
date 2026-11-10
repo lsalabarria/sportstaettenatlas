@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e0c-8cbd-4747-8597-cbac4b952195",
+  "name": "Bolzplatz Carl-Zuckmeyer-Straße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Carl-Zuckmeyer-Straße",
+    "plz": "56288",
+    "ort": "Kastellaun, Stadt"
+  },
+  "lage": {
+    "lon": 7.431367,
+    "lat": 50.062111
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0c-8cbd-4747-8597-cbac4b952195",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

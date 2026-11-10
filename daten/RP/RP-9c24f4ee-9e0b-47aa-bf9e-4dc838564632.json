@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24f4ee-9e0b-47aa-bf9e-4dc838564632",
+  "name": "Turnhalle Weinsheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Dausfelder Straße",
+    "hausnummer": "8",
+    "plz": "54595",
+    "ort": "Weinsheim"
+  },
+  "lage": {
+    "lon": 6.467266,
+    "lat": 50.225911
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle Sondermaße"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ee-9e0b-47aa-bf9e-4dc838564632",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

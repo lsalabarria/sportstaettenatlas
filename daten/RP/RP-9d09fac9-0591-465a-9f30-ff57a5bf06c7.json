@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fac9-0591-465a-9f30-ff57a5bf06c7",
+  "name": "Bolzplatz Pestalozzi Grundschule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ziegelweg",
+    "hausnummer": "4",
+    "plz": "57610",
+    "ort": "Altenkirchen"
+  },
+  "lage": {
+    "lon": 7.637666,
+    "lat": 50.688175
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac9-0591-465a-9f30-ff57a5bf06c7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

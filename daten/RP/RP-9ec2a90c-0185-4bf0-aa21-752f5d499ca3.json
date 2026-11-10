@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a90c-0185-4bf0-aa21-752f5d499ca3",
+  "name": "Fitnessstudio A&G Budenheim",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "In den Vierzehn Morgen",
+    "hausnummer": "9",
+    "plz": "55257",
+    "ort": "Budenheim"
+  },
+  "lage": {
+    "lon": 8.198384,
+    "lat": 50.026463
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    },
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90c-0185-4bf0-aa21-752f5d499ca3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

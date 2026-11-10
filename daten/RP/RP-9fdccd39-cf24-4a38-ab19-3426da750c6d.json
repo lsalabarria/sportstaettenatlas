@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd39-cf24-4a38-ab19-3426da750c6d",
+  "name": "Sporthalle Domholzschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hermann-Löns-Straße",
+    "hausnummer": "21",
+    "plz": "67117",
+    "ort": "Limburgerhof"
+  },
+  "lage": {
+    "lon": 8.378578,
+    "lat": 49.422037
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd39-cf24-4a38-ab19-3426da750c6d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

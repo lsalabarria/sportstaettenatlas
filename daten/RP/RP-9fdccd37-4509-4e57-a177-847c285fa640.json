@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd37-4509-4e57-a177-847c285fa640",
+  "name": "Reitanlage Sülzerhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Sülzerhof",
+    "hausnummer": "4",
+    "plz": "67112",
+    "ort": "Mutterstadt"
+  },
+  "lage": {
+    "lon": 8.344936,
+    "lat": 49.460107
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd37-4509-4e57-a177-847c285fa640",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

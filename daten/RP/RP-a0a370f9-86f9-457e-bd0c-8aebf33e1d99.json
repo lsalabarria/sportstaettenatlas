@@ -1,0 +1,22 @@
+{
+  "id": "RP-a0a370f9-86f9-457e-bd0c-8aebf33e1d99",
+  "name": "Skipiste Schwarzer Mann",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "plz": "54595",
+    "ort": "Gondenbrett"
+  },
+  "lage": {
+    "lon": 6.373961,
+    "lat": 50.264475
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0a370f9-86f9-457e-bd0c-8aebf33e1d99",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

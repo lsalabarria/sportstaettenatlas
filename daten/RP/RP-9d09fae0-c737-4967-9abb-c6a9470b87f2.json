@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fae0-c737-4967-9abb-c6a9470b87f2",
+  "name": "Alternberghalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "hausnummer": "8",
+    "plz": "54317",
+    "ort": "Gutweiler"
+  },
+  "lage": {
+    "lon": 6.7294,
+    "lat": 49.721004
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae0-c737-4967-9abb-c6a9470b87f2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

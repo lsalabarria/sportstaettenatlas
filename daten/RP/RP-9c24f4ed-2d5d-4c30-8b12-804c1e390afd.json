@@ -1,0 +1,27 @@
+{
+  "id": "RP-9c24f4ed-2d5d-4c30-8b12-804c1e390afd",
+  "name": "Sportplatz Euscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54597",
+    "ort": "Euscheid"
+  },
+  "lage": {
+    "lon": 6.307492,
+    "lat": 50.131724
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ed-2d5d-4c30-8b12-804c1e390afd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "RP-a1020e30-3429-4562-9f57-776be2fc877d",
+  "name": "Sporthalle Wittelsbachschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Wittelsbachstraße",
+    "hausnummer": "73",
+    "plz": "67061",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.444892,
+    "lat": 49.474426
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    },
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a1020e30-3429-4562-9f57-776be2fc877d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

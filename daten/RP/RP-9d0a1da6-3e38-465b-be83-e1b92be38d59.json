@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da6-3e38-465b-be83-e1b92be38d59",
+  "name": "Pferdehof Schuh",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "35",
+    "plz": "54552",
+    "ort": "Hörscheid"
+  },
+  "lage": {
+    "lon": 6.872143,
+    "lat": 50.217154
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da6-3e38-465b-be83-e1b92be38d59",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

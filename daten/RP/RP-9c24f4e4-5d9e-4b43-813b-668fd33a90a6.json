@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24f4e4-5d9e-4b43-813b-668fd33a90a6",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportplatz",
+    "plz": "54675",
+    "ort": "Wallendorf"
+  },
+  "lage": {
+    "lon": 6.295293,
+    "lat": 49.87279
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e4-5d9e-4b43-813b-668fd33a90a6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

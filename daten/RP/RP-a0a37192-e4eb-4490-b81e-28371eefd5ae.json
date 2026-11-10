@@ -1,0 +1,24 @@
+{
+  "id": "RP-a0a37192-e4eb-4490-b81e-28371eefd5ae",
+  "name": "Skipiste Wolfsschlucht",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Wolfsschlucht",
+    "hausnummer": "1",
+    "plz": "54595",
+    "ort": "Prüm, Stadt"
+  },
+  "lage": {
+    "lon": 6.436936,
+    "lat": 50.228474
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0a37192-e4eb-4490-b81e-28371eefd5ae",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

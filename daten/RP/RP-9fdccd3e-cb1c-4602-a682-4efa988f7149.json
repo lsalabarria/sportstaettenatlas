@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd3e-cb1c-4602-a682-4efa988f7149",
+  "name": "TV Otterstadt",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Speyerer Straße",
+    "hausnummer": "74",
+    "plz": "67166",
+    "ort": "Otterstadt"
+  },
+  "lage": {
+    "lon": 8.449851,
+    "lat": 49.366647
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd3e-cb1c-4602-a682-4efa988f7149",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

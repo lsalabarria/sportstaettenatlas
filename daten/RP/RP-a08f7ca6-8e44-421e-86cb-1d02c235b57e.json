@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7ca6-8e44-421e-86cb-1d02c235b57e",
+  "name": "Sportplatz TuS 1889 Mörschied e.V. Platz 2",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirschweiler Str.",
+    "plz": "55758",
+    "ort": "Mörschied"
+  },
+  "lage": {
+    "lon": 7.297117,
+    "lat": 49.785879
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ca6-8e44-421e-86cb-1d02c235b57e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

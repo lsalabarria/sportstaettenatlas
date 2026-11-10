@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a93e-cdcb-4bd1-a136-7db4e52d27c9",
+  "name": "Verbandsgemeindestadion im Schul- und Sportzentrum Bad Bergzabern",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Haydnstraße",
+    "hausnummer": "1",
+    "plz": "76887",
+    "ort": "Bad Bergzabern, Stadt"
+  },
+  "lage": {
+    "lon": 7.996505,
+    "lat": 49.09585
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93e-cdcb-4bd1-a136-7db4e52d27c9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

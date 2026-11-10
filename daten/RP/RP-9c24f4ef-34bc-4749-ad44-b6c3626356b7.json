@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24f4ef-34bc-4749-ad44-b6c3626356b7",
+  "name": "Waldstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L16",
+    "plz": "54616",
+    "ort": "Winterspelt"
+  },
+  "lage": {
+    "lon": 6.222652,
+    "lat": 50.207821
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ef-34bc-4749-ad44-b6c3626356b7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

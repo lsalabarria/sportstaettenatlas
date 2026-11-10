@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcce0f-da69-450e-ba68-09e7fb43d2d5",
+  "name": "Waldorfkindergarten Sterntaler",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Julius-Bettinger-Straße",
+    "hausnummer": "1.0",
+    "plz": "67227",
+    "ort": "Frankenthal (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.353975,
+    "lat": 49.520937
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce0f-da69-450e-ba68-09e7fb43d2d5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

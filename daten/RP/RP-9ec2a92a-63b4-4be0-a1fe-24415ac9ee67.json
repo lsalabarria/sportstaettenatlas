@@ -1,0 +1,38 @@
+{
+  "id": "RP-9ec2a92a-63b4-4be0-a1fe-24415ac9ee67",
+  "name": "Pestalozzischule Nieder-Ingelheim Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Carolinenstraße",
+    "hausnummer": "7",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.073126,
+    "lat": 49.97531
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92a-63b4-4be0-a1fe-24415ac9ee67",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

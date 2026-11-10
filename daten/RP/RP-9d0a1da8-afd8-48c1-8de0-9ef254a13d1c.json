@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da8-afd8-48c1-8de0-9ef254a13d1c",
+  "name": "Christophorus-Schule Betzdorf",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Johannes-Krell-Straße",
+    "hausnummer": "17",
+    "plz": "57518",
+    "ort": "Betzdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.851233,
+    "lat": 50.791012
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da8-afd8-48c1-8de0-9ef254a13d1c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

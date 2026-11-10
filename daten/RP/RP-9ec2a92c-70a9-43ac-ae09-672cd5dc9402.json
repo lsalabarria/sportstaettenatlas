@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a92c-70a9-43ac-ae09-672cd5dc9402",
+  "name": "CrossFit 8674",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Im Löwenthal",
+    "hausnummer": "10",
+    "plz": "55268",
+    "ort": "Nieder-Olm, Stadt"
+  },
+  "lage": {
+    "lon": 8.180909,
+    "lat": 49.909817
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92c-70a9-43ac-ae09-672cd5dc9402",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

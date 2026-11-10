@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7d32-b2b5-4714-9a8c-1725f45607aa",
+  "name": "Gravity Boulderhalle",
+  "kategorie": "Klettersportstätte",
+  "adresse": {
+    "strasse": "Industriestraße",
+    "hausnummer": "12",
+    "plz": "55543",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.892076,
+    "lat": 49.85467
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Klettersporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d32-b2b5-4714-9a8c-1725f45607aa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

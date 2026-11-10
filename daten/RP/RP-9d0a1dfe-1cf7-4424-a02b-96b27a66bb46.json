@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1dfe-1cf7-4424-a02b-96b27a66bb46",
+  "name": "Sportplatz Lohmühle",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lohmühle",
+    "plz": "57627",
+    "ort": "Hachenburg, Stadt"
+  },
+  "lage": {
+    "lon": 7.818804,
+    "lat": 50.657281
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfe-1cf7-4424-a02b-96b27a66bb46",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a938-a1b3-4ebb-b65b-5c66251a5ce5",
+  "name": "IGS Mainz-Bretzenheim",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hans-Böckler-Straße",
+    "hausnummer": "2",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.248641,
+    "lat": 49.976448
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a938-a1b3-4ebb-b65b-5c66251a5ce5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

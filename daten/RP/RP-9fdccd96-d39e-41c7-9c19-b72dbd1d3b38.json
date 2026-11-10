@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd96-d39e-41c7-9c19-b72dbd1d3b38",
+  "name": "Tennisclub Rhens",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Mühlental",
+    "hausnummer": "37C",
+    "plz": "56321",
+    "ort": "Rhens, Stadt"
+  },
+  "lage": {
+    "lon": 7.601421,
+    "lat": 50.281865
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd96-d39e-41c7-9c19-b72dbd1d3b38",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

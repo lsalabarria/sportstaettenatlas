@@ -1,0 +1,25 @@
+{
+  "id": "RP-a22beb40-67b1-4f15-8197-8c70ff5cba5c",
+  "name": "Geschäftsstelle LStP Reiten",
+  "kategorie": "Leistungsstützpunkt",
+  "adresse": {
+    "strasse": "Offenheimer Str.",
+    "hausnummer": "5",
+    "plz": "55234",
+    "ort": "Erbes-Büdesheim"
+  },
+  "lage": {
+    "lon": 8.03235,
+    "lat": 49.751085
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a22beb40-67b1-4f15-8197-8c70ff5cba5c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

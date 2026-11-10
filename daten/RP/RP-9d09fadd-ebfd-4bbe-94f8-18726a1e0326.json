@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d09fadd-ebfd-4bbe-94f8-18726a1e0326",
+  "name": "Beachvolleyballplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Maximinstraße",
+    "plz": "54340",
+    "ort": "Longuich"
+  },
+  "lage": {
+    "lon": 6.770815,
+    "lat": 49.809758
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "Geräteraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadd-ebfd-4bbe-94f8-18726a1e0326",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

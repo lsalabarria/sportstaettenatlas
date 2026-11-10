@@ -1,0 +1,29 @@
+{
+  "id": "RP-9f01cc5d-3a71-4735-b7cc-d70605221ab7",
+  "name": "Waldschwimmbad Thalhausermühle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Thalhauser Mühle",
+    "plz": "57577",
+    "ort": "Hamm (Sieg)"
+  },
+  "lage": {
+    "lon": 7.675659,
+    "lat": 50.756301
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Naturbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc5d-3a71-4735-b7cc-d70605221ab7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

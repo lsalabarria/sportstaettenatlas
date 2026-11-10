@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdcce1b-8ab2-42d1-afe7-9e5ee65ffb3a",
+  "name": "Hockey Club Blau-Weiss Speyer",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Weiherhof",
+    "hausnummer": "2.0",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.461343,
+    "lat": 49.338438
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce1b-8ab2-42d1-afe7-9e5ee65ffb3a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

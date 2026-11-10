@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da3-392b-49a6-8b31-78ced51c333d",
+  "name": "Tennisanlage Jünkerath",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "54584",
+    "ort": "Jünkerath"
+  },
+  "lage": {
+    "lon": 6.582172,
+    "lat": 50.348627
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da3-392b-49a6-8b31-78ced51c333d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

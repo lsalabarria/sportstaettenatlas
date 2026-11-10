@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc75-2a29-4efe-9a87-a748b1b62cc4",
+  "name": "Schwimmbad Felsland Badeparadies & Saunawelt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Eybergstr.",
+    "hausnummer": "1",
+    "plz": "66994",
+    "ort": "Dahn, Stadt"
+  },
+  "lage": {
+    "lon": 7.77136,
+    "lat": 49.14376
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc75-2a29-4efe-9a87-a748b1b62cc4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fad2-e4dd-42ee-a752-10182307fd91",
+  "name": "F.V. 1910 Rheinbrohl e.V. Hans-Zimmermann-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Hofacker",
+    "hausnummer": "9A",
+    "plz": "56598",
+    "ort": "Rheinbrohl"
+  },
+  "lage": {
+    "lon": 7.325942,
+    "lat": 50.498715
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad2-e4dd-42ee-a752-10182307fd91",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

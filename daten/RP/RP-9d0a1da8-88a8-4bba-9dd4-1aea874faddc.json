@@ -1,0 +1,44 @@
+{
+  "id": "RP-9d0a1da8-88a8-4bba-9dd4-1aea874faddc",
+  "name": "Sportplatz IGS Betzdorf-Kirchen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirchener Straße",
+    "hausnummer": "64",
+    "plz": "57518",
+    "ort": "Betzdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.879418,
+    "lat": 50.797239
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da8-88a8-4bba-9dd4-1aea874faddc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

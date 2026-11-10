@@ -1,0 +1,31 @@
+{
+  "id": "RP-9c24f4e5-61cb-4d04-87bc-1eb4829b9b25",
+  "name": "TG Mettendorf",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Gewerbegebiet",
+    "plz": "54675",
+    "ort": "Mettendorf"
+  },
+  "lage": {
+    "lon": 6.324097,
+    "lat": 49.960116
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e5-61cb-4d04-87bc-1eb4829b9b25",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

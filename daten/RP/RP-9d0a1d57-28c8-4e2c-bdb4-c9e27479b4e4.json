@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d57-28c8-4e2c-bdb4-c9e27479b4e4",
+  "name": "Sportplatz Beuren",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Oberdorfstraße",
+    "hausnummer": "48",
+    "plz": "56825",
+    "ort": "Beuren"
+  },
+  "lage": {
+    "lon": 7.076974,
+    "lat": 50.09757
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d57-28c8-4e2c-bdb4-c9e27479b4e4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

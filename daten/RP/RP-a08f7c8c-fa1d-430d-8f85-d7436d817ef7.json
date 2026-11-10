@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7c8c-fa1d-430d-8f85-d7436d817ef7",
+  "name": "Landhotel Knell-Kehr Ferienwohnungen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "In d. Brunnenwiese",
+    "hausnummer": "5",
+    "plz": "55288",
+    "ort": "Armsheim"
+  },
+  "lage": {
+    "lon": 8.06069,
+    "lat": 49.809339
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c8c-fa1d-430d-8f85-d7436d817ef7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

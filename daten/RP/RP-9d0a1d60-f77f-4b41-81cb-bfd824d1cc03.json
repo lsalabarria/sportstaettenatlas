@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d60-f77f-4b41-81cb-bfd824d1cc03",
+  "name": "Bolzplatz Holzbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "55469",
+    "ort": "Holzbach"
+  },
+  "lage": {
+    "lon": 7.52941,
+    "lat": 49.956494
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d60-f77f-4b41-81cb-bfd824d1cc03",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

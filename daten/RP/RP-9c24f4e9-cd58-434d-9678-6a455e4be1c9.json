@@ -1,0 +1,28 @@
+{
+  "id": "RP-9c24f4e9-cd58-434d-9678-6a455e4be1c9",
+  "name": "Sportplatz Seinsfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "B257",
+    "plz": "54655",
+    "ort": "Seinsfeld"
+  },
+  "lage": {
+    "lon": 6.643855,
+    "lat": 50.053141
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e9-cd58-434d-9678-6a455e4be1c9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

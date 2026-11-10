@@ -1,0 +1,37 @@
+{
+  "id": "RP-9d09fac9-349b-40a6-9791-40c24b95ed54",
+  "name": "Stadion Oberlahr",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brucher Straße",
+    "plz": "57641",
+    "ort": "Bürdenbach"
+  },
+  "lage": {
+    "lon": 7.52852,
+    "lat": 50.620017
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac9-349b-40a6-9791-40c24b95ed54",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

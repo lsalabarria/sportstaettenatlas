@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90c-75ec-4c36-a2d7-9510a35c4e37",
+  "name": "Sport- und Gemeindehalle Jugenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "5",
+    "plz": "55270",
+    "ort": "Jugenheim in Rheinhessen"
+  },
+  "lage": {
+    "lon": 8.080431,
+    "lat": 49.893915
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90c-75ec-4c36-a2d7-9510a35c4e37",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

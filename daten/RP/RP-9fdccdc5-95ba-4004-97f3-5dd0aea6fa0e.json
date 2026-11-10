@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdc5-95ba-4004-97f3-5dd0aea6fa0e",
+  "name": "Zentrale Sportanlage Diez",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Katzenstein",
+    "hausnummer": "2A",
+    "plz": "65582",
+    "ort": "Diez, Stadt"
+  },
+  "lage": {
+    "lon": 8.008871,
+    "lat": 50.36528
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdc5-95ba-4004-97f3-5dd0aea6fa0e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

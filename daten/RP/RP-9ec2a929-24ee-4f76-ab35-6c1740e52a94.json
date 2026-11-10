@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a929-24ee-4f76-ab35-6c1740e52a94",
+  "name": "Golfclub Rheinhessen Hofgut Wißberg St. Johann e.V.",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Hofgut Wißberg",
+    "plz": "55578",
+    "ort": "Sankt Johann"
+  },
+  "lage": {
+    "lon": 8.028181,
+    "lat": 49.850742
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Golfplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a929-24ee-4f76-ab35-6c1740e52a94",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

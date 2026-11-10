@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e02-a609-44e9-885a-427a4a699389",
+  "name": "Rudergesellschaft Remagen",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Rheinpromenade",
+    "hausnummer": "4",
+    "plz": "53424",
+    "ort": "Remagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.240552,
+    "lat": 50.578195
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e02-a609-44e9-885a-427a4a699389",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "RP-9fdccce7-63f8-4ca5-9088-607701db48d6",
+  "name": "Stadion Königstein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Königstein",
+    "plz": "65558",
+    "ort": "Gückingen"
+  },
+  "lage": {
+    "lon": 8.003674,
+    "lat": 50.38986
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccce7-63f8-4ca5-9088-607701db48d6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "RP-a08f7cfa-d14f-4970-84fe-bbecb5501e06",
+  "name": "Soldier Field",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Avenue B",
+    "plz": "55774",
+    "ort": "Baumholder, Stadt"
+  },
+  "lage": {
+    "lon": 7.330718,
+    "lat": 49.623676
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cfa-d14f-4970-84fe-bbecb5501e06",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

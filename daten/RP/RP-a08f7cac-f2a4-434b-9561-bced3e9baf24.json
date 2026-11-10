@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7cac-f2a4-434b-9561-bced3e9baf24",
+  "name": "Moarbaer",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "14",
+    "plz": "66901",
+    "ort": "Schönenberg-Kübelberg"
+  },
+  "lage": {
+    "lon": 7.360402,
+    "lat": 49.399462
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cac-f2a4-434b-9561-bced3e9baf24",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

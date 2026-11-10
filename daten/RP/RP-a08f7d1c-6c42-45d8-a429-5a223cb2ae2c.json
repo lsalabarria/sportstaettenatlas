@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7d1c-6c42-45d8-a429-5a223cb2ae2c",
+  "name": "Bärenfelderhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Friedhofstraße",
+    "plz": "66869",
+    "ort": "Kusel, Stadt"
+  },
+  "lage": {
+    "lon": 7.385214,
+    "lat": 49.530617
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d1c-6c42-45d8-a429-5a223cb2ae2c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

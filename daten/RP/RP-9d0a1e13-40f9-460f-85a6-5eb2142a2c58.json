@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e13-40f9-460f-85a6-5eb2142a2c58",
+  "name": "Sporthalle Thomas-Morus-Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Michael-Reineke-Straße",
+    "plz": "54550",
+    "ort": "Daun, Stadt"
+  },
+  "lage": {
+    "lon": 6.822676,
+    "lat": 50.198598
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e13-40f9-460f-85a6-5eb2142a2c58",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

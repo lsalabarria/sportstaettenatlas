@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcccca-3e8f-4b97-a032-4eea6e6e70e2",
+  "name": "TC Thür",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Golokreuz",
+    "plz": "56743",
+    "ort": "Thür"
+  },
+  "lage": {
+    "lon": 7.28905,
+    "lat": 50.361333
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccca-3e8f-4b97-a032-4eea6e6e70e2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

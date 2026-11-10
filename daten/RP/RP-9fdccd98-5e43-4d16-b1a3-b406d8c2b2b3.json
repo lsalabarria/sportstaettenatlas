@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd98-5e43-4d16-b1a3-b406d8c2b2b3",
+  "name": "Schützenplatz Kärlich",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Kettiger Str.",
+    "hausnummer": "31",
+    "plz": "56218",
+    "ort": "Mülheim-Kärlich, Stadt"
+  },
+  "lage": {
+    "lon": 7.47747,
+    "lat": 50.390296
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd98-5e43-4d16-b1a3-b406d8c2b2b3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

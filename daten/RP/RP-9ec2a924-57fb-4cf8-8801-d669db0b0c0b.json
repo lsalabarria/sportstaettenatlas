@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a924-57fb-4cf8-8801-d669db0b0c0b",
+  "name": "Flugplatz Bad Dürkheim",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "strasse": "In den Almen",
+    "hausnummer": "5",
+    "plz": "67098",
+    "ort": "Bad Dürkheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.194703,
+    "lat": 49.472489
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sportflugplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a924-57fb-4cf8-8801-d669db0b0c0b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a902-e52a-4510-9f57-726df3b19169",
+  "name": "Sportplatz in der Mandel TV Weisenheim am Berg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Sportpl.",
+    "plz": "67273",
+    "ort": "Weisenheim am Berg"
+  },
+  "lage": {
+    "lon": 8.145438,
+    "lat": 49.516421
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a902-e52a-4510-9f57-726df3b19169",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

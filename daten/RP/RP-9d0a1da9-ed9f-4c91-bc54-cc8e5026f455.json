@@ -1,0 +1,44 @@
+{
+  "id": "RP-9d0a1da9-ed9f-4c91-bc54-cc8e5026f455",
+  "name": "Ludwig-Wolker-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Berghardt",
+    "hausnummer": "15",
+    "plz": "57562",
+    "ort": "Herdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.936623,
+    "lat": 50.77763
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Speerwurfanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da9-ed9f-4c91-bc54-cc8e5026f455",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

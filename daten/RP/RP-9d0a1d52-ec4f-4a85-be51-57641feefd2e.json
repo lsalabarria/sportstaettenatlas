@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d52-ec4f-4a85-be51-57641feefd2e",
+  "name": "Golf-Club Cochem/Mosel e.V.",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Am Kellerborn",
+    "hausnummer": "2",
+    "plz": "56814",
+    "ort": "Ediger-Eller"
+  },
+  "lage": {
+    "lon": 7.167725,
+    "lat": 50.118413
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Golfplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d52-ec4f-4a85-be51-57641feefd2e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

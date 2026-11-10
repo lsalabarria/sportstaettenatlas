@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7cea-0d56-49cb-b24d-a1662e493066",
+  "name": "Sportplatz Biebelsheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "55546",
+    "ort": "Biebelsheim"
+  },
+  "lage": {
+    "lon": 7.943211,
+    "lat": 49.872006
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cea-0d56-49cb-b24d-a1662e493066",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a937-ec45-40cd-b60e-a656ca585529",
+  "name": "Sporthalle Gymnasium Theresianium Mainz",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Oberer Laubenheimer Weg",
+    "hausnummer": "58",
+    "plz": "55131",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.283903,
+    "lat": 49.98314
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Zweifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a937-ec45-40cd-b60e-a656ca585529",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

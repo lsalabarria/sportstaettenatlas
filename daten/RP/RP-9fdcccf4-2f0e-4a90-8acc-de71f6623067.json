@@ -1,0 +1,31 @@
+{
+  "id": "RP-9fdcccf4-2f0e-4a90-8acc-de71f6623067",
+  "name": "Hof Seiters",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "plz": "65558",
+    "ort": "Oberneisen"
+  },
+  "lage": {
+    "lon": 8.078981,
+    "lat": 50.315707
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccf4-2f0e-4a90-8acc-de71f6623067",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

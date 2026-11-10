@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a911-422c-4d11-b6aa-0b167c4b668d",
+  "name": "Turnhalle der Grundschule Guntersblum",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Götzenstraße",
+    "hausnummer": "19",
+    "plz": "67583",
+    "ort": "Guntersblum"
+  },
+  "lage": {
+    "lon": 8.340645,
+    "lat": 49.795387
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a911-422c-4d11-b6aa-0b167c4b668d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7cc5-2024-44e8-8e69-2296ee2a1d4c",
+  "name": "Freibad Winterbach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Felsen",
+    "plz": "55595",
+    "ort": "Winterbach"
+  },
+  "lage": {
+    "lon": 7.632943,
+    "lat": 49.879322
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cc5-2024-44e8-8e69-2296ee2a1d4c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

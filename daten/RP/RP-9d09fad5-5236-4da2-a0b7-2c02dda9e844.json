@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d09fad5-5236-4da2-a0b7-2c02dda9e844",
+  "name": "Beachvolleyballfelder TuS Asbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Steinchen",
+    "hausnummer": "9",
+    "plz": "53567",
+    "ort": "Asbach"
+  },
+  "lage": {
+    "lon": 7.430085,
+    "lat": 50.659878
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad5-5236-4da2-a0b7-2c02dda9e844",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

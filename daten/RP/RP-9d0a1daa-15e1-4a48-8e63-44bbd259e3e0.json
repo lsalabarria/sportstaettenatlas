@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1daa-15e1-4a48-8e63-44bbd259e3e0",
+  "name": "Sportplatz Herdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rolandstraße",
+    "plz": "57562",
+    "ort": "Herdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.943714,
+    "lat": 50.790897
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daa-15e1-4a48-8e63-44bbd259e3e0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

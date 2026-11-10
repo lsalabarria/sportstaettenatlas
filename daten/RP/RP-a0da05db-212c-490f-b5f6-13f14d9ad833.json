@@ -1,0 +1,29 @@
+{
+  "id": "RP-a0da05db-212c-490f-b5f6-13f14d9ad833",
+  "name": "Gelbachtalhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Rübenstock",
+    "hausnummer": "2",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.880654,
+    "lat": 50.395475
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0da05db-212c-490f-b5f6-13f14d9ad833",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

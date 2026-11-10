@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fae8-3ab3-4485-ae8d-7975055b7cc5",
+  "name": "Beachvolleyballfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Leukstraße",
+    "hausnummer": "20",
+    "plz": "54450",
+    "ort": "Freudenburg"
+  },
+  "lage": {
+    "lon": 6.527885,
+    "lat": 49.543902
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae8-3ab3-4485-ae8d-7975055b7cc5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "RP-9c24bfaa-f8fc-45ab-80c8-39719540df2e",
+  "name": "Tennisplätze VfL Kesselheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Kurfürst-Schönborn-Straße",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.581778,
+    "lat": 50.396866
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfaa-f8fc-45ab-80c8-39719540df2e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

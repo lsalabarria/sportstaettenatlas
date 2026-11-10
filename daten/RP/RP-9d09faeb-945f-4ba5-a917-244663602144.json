@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faeb-945f-4ba5-a917-244663602144",
+  "name": "Sportplatz Nomborn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "56412",
+    "ort": "Nomborn"
+  },
+  "lage": {
+    "lon": 7.916855,
+    "lat": 50.424096
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faeb-945f-4ba5-a917-244663602144",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

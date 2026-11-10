@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7c74-958f-40c2-a76c-3de209c0f214",
+  "name": "Mehrzweckhalle Sportplatz Udenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Osterstraße",
+    "hausnummer": "39",
+    "plz": "55288",
+    "ort": "Udenheim"
+  },
+  "lage": {
+    "lon": 8.176547,
+    "lat": 49.86702
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c74-958f-40c2-a76c-3de209c0f214",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

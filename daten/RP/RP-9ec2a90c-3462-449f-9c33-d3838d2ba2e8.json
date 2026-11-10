@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a90c-3462-449f-9c33-d3838d2ba2e8",
+  "name": "Bolzplatz Esseheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Koppelberg",
+    "plz": "55270",
+    "ort": "Essenheim"
+  },
+  "lage": {
+    "lon": 8.155963,
+    "lat": 49.924468
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90c-3462-449f-9c33-d3838d2ba2e8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

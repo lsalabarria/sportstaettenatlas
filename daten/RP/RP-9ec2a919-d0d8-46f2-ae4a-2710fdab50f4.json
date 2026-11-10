@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a919-d0d8-46f2-ae4a-2710fdab50f4",
+  "name": "Südhaardter Sportverein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Leonhard-Eckel-Siedlung",
+    "hausnummer": "29",
+    "plz": "67483",
+    "ort": "Edesheim"
+  },
+  "lage": {
+    "lon": 8.109,
+    "lat": 49.257342
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a919-d0d8-46f2-ae4a-2710fdab50f4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

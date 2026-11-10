@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e11-b4b5-4944-bdb9-aee0b864bd98",
+  "name": "Sportplatz Lissingen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Prümer Straße",
+    "plz": "54568",
+    "ort": "Gerolstein, Stadt"
+  },
+  "lage": {
+    "lon": 6.635057,
+    "lat": 50.214952
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e11-b4b5-4944-bdb9-aee0b864bd98",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

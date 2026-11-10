@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dfc-da15-4ff8-a56b-ec83bb5c6a01",
+  "name": "Skateboard Bahn",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Löhchen",
+    "hausnummer": "5",
+    "plz": "56477",
+    "ort": "Rennerod, Stadt"
+  },
+  "lage": {
+    "lon": 8.076572,
+    "lat": 50.617718
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfc-da15-4ff8-a56b-ec83bb5c6a01",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

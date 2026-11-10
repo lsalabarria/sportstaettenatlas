@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90f-36d5-4a19-8893-82283afe8196",
+  "name": "Sporthalle Grundschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Pommardstraße",
+    "hausnummer": "17",
+    "plz": "55299",
+    "ort": "Nackenheim"
+  },
+  "lage": {
+    "lon": 8.342026,
+    "lat": 49.923136
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90f-36d5-4a19-8893-82283afe8196",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

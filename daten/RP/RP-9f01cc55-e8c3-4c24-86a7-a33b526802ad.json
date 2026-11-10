@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc55-e8c3-4c24-86a7-a33b526802ad",
+  "name": "Hallenbad der Verbandsgemeinde Unkel",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "6",
+    "plz": "53572",
+    "ort": "Unkel, Stadt"
+  },
+  "lage": {
+    "lon": 7.21807,
+    "lat": 50.59806
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc55-e8c3-4c24-86a7-a33b526802ad",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

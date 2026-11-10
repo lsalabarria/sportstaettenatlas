@@ -1,0 +1,32 @@
+{
+  "id": "RP-9c24bfa9-cb31-40f1-9bbb-0c8b82fba102",
+  "name": "Sporthalle der Universität Koblenz-Landau",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Universitätsstraße",
+    "hausnummer": "1",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.557641,
+    "lat": 50.364
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    },
+    {
+      "bezeichnung": "Einfachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa9-cb31-40f1-9bbb-0c8b82fba102",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

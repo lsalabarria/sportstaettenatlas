@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d63-9263-4731-808f-5f5b251714f7",
+  "name": "Gestüt Eichenhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Vorwald",
+    "plz": "54424",
+    "ort": "Thalfang"
+  },
+  "lage": {
+    "lon": 7.02032,
+    "lat": 49.750541
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d63-9263-4731-808f-5f5b251714f7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

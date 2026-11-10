@@ -1,0 +1,25 @@
+{
+  "id": "RP-a22beb40-a785-40ac-84ca-caf05d762f71",
+  "name": "Geschäftsstelle LStP Rhythmische Sportgymnastik",
+  "kategorie": "Leistungsstützpunkt",
+  "adresse": {
+    "strasse": "Metternichstraße",
+    "hausnummer": "37",
+    "plz": "54292",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.6758,
+    "lat": 49.770118
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a22beb40-a785-40ac-84ca-caf05d762f71",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

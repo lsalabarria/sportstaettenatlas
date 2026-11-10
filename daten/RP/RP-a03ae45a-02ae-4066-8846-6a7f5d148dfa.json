@@ -1,0 +1,28 @@
+{
+  "id": "RP-a03ae45a-02ae-4066-8846-6a7f5d148dfa",
+  "name": "Oberfell Rasenplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Moselstr.",
+    "plz": "56332",
+    "ort": "Oberfell"
+  },
+  "lage": {
+    "lon": 7.453047,
+    "lat": 50.266311
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a03ae45a-02ae-4066-8846-6a7f5d148dfa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

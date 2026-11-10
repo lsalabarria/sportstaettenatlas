@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a91f-5c0d-4ca3-86ad-7c52c952140b",
+  "name": "Bolzplatz Leinsweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "26",
+    "plz": "76829",
+    "ort": "Leinsweiler"
+  },
+  "lage": {
+    "lon": 8.024802,
+    "lat": 49.183053
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91f-5c0d-4ca3-86ad-7c52c952140b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

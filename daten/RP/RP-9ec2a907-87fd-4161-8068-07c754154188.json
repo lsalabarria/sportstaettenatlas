@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a907-87fd-4161-8068-07c754154188",
+  "name": "Ziplinepark Elmstein",
+  "kategorie": "Klettersportstätte",
+  "adresse": {
+    "strasse": "Eschkopfstraße",
+    "plz": "67471",
+    "ort": "Elmstein"
+  },
+  "lage": {
+    "lon": 7.916076,
+    "lat": 49.335886
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Klettersportanlage Outdoor"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a907-87fd-4161-8068-07c754154188",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

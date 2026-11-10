@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1daa-214c-424a-a0ea-63c1bdca5c8e",
+  "name": "Bolzplatz Sassenroth",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hellertalstraße",
+    "hausnummer": "49",
+    "plz": "57562",
+    "ort": "Herdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.914835,
+    "lat": 50.77216
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daa-214c-424a-a0ea-63c1bdca5c8e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

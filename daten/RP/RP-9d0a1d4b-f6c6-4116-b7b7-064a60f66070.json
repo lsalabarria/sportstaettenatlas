@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d4b-f6c6-4116-b7b7-064a60f66070",
+  "name": "Sportplatz Dümpelfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "16",
+    "plz": "53520",
+    "ort": "Dümpelfeld"
+  },
+  "lage": {
+    "lon": 6.927938,
+    "lat": 50.444477
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4b-f6c6-4116-b7b7-064a60f66070",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

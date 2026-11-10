@@ -1,0 +1,41 @@
+{
+  "id": "RP-9d0a1df8-afea-46c2-bedb-daa2f84dc539",
+  "name": "Tennisplätze TC Mittelwald e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Buchenstraße",
+    "hausnummer": "50",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.792336,
+    "lat": 50.434499
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df8-afea-46c2-bedb-daa2f84dc539",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

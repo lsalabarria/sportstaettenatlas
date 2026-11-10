@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a923-5a11-41fe-9706-dbd5ad928e68",
+  "name": "Bolzplatz Sausenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Weinbietstraße",
+    "hausnummer": "33B",
+    "plz": "67269",
+    "ort": "Grünstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.168887,
+    "lat": 49.552294
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a923-5a11-41fe-9706-dbd5ad928e68",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

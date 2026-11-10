@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd8a-2216-4ea8-8485-6e10d3fc4689",
+  "name": "Waldschwimmbad Kandel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Badallee",
+    "hausnummer": "6",
+    "plz": "76870",
+    "ort": "Kandel, Stadt"
+  },
+  "lage": {
+    "lon": 8.194418,
+    "lat": 49.071188
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd8a-2216-4ea8-8485-6e10d3fc4689",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

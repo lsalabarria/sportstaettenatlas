@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90b-c375-4af5-b998-eaf3044eebf7",
+  "name": "Lenneberg Grund- Und Realschule Plus",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mühlstraße",
+    "hausnummer": "28",
+    "plz": "55257",
+    "ort": "Budenheim"
+  },
+  "lage": {
+    "lon": 8.173283,
+    "lat": 50.022486
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90b-c375-4af5-b998-eaf3044eebf7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

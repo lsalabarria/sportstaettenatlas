@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fac9-d9ec-4eec-81b1-a2f44bd375d6",
+  "name": "VfL Oberlahr/Flammersfeld e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Siebengebirgsstraße",
+    "hausnummer": "32",
+    "plz": "57632",
+    "ort": "Flammersfeld"
+  },
+  "lage": {
+    "lon": 7.519531,
+    "lat": 50.645616
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac9-d9ec-4eec-81b1-a2f44bd375d6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

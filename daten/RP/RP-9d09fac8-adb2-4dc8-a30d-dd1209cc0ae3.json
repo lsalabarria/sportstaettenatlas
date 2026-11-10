@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d09fac8-adb2-4dc8-a30d-dd1209cc0ae3",
+  "name": "pure fitness Clubs GmbH & Co. KG",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Kölner Straße",
+    "hausnummer": "76",
+    "plz": "57610",
+    "ort": "Altenkirchen"
+  },
+  "lage": {
+    "lon": 7.630799,
+    "lat": 50.688194
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    },
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac8-adb2-4dc8-a30d-dd1209cc0ae3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "RP-9d0a1db7-f923-4d5b-8802-27755b720388",
+  "name": "Bezirkssportanlage Trier-West",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Eurener Straße",
+    "hausnummer": "118",
+    "plz": "54294",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.61254,
+    "lat": 49.745388
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db7-f923-4d5b-8802-27755b720388",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

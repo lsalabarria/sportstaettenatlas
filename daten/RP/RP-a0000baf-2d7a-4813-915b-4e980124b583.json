@@ -1,0 +1,30 @@
+{
+  "id": "RP-a0000baf-2d7a-4813-915b-4e980124b583",
+  "name": "Schulsporthalle IGS Deidesheim-Wachenheim Standort Deidesheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bürgermeister-Oberhettinger-Straße",
+    "hausnummer": "1",
+    "plz": "67146",
+    "ort": "Deidesheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.194459,
+    "lat": 49.405793
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0000baf-2d7a-4813-915b-4e980124b583",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

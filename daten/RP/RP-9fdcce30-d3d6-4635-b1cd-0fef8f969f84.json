@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcce30-d3d6-4635-b1cd-0fef8f969f84",
+  "name": "Bolzplatz Galgenbergsiedlung",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Fliederweg",
+    "plz": "66482",
+    "ort": "Zweibrücken, Stadt"
+  },
+  "lage": {
+    "lon": 7.381258,
+    "lat": 49.241134
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce30-d3d6-4635-b1cd-0fef8f969f84",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

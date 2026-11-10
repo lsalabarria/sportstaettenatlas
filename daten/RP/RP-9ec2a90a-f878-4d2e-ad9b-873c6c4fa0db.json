@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a90a-f878-4d2e-ad9b-873c6c4fa0db",
+  "name": "Turnverein 1895 e.V. Ockenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Mainzer Straße",
+    "plz": "55435",
+    "ort": "Ockenheim"
+  },
+  "lage": {
+    "lon": 7.975588,
+    "lat": 49.943524
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90a-f878-4d2e-ad9b-873c6c4fa0db",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

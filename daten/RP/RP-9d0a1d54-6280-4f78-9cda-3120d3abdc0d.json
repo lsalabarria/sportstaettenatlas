@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d54-6280-4f78-9cda-3120d3abdc0d",
+  "name": "Sportplatz Valwig",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kapellenstraße",
+    "plz": "56812",
+    "ort": "Valwig"
+  },
+  "lage": {
+    "lon": 7.224363,
+    "lat": 50.149515
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d54-6280-4f78-9cda-3120d3abdc0d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

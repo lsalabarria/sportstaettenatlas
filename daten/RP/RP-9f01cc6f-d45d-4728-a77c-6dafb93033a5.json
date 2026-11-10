@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc6f-d45d-4728-a77c-6dafb93033a5",
+  "name": "Schwimmteichanlage Linderhohl",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "L",
+    "hausnummer": "307",
+    "plz": "56203",
+    "ort": "Höhr-Grenzhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.67834,
+    "lat": 50.44573
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Naturbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6f-d45d-4728-a77c-6dafb93033a5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

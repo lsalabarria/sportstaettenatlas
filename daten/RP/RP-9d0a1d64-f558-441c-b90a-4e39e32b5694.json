@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d64-f558-441c-b90a-4e39e32b5694",
+  "name": "Mehrzweckhalle Grundschule Morscheid-Riedenburg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Laurentiusstraße",
+    "hausnummer": "19",
+    "plz": "54497",
+    "ort": "Morbach"
+  },
+  "lage": {
+    "lon": 7.090755,
+    "lat": 49.773357
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d64-f558-441c-b90a-4e39e32b5694",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

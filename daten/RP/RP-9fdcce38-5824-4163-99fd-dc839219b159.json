@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcce38-5824-4163-99fd-dc839219b159",
+  "name": "Sporthalle BBS Rodalben",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Gabelsbergerstraße",
+    "hausnummer": "6",
+    "plz": "66976",
+    "ort": "Rodalben, Stadt"
+  },
+  "lage": {
+    "lon": 7.647251,
+    "lat": 49.245977
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce38-5824-4163-99fd-dc839219b159",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

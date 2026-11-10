@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a914-4bd5-457c-b807-dcc05a130608",
+  "name": "Tennisplätze TC 1988 Dreissen e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "In den Kappesäckern",
+    "plz": "67816",
+    "ort": "Dreisen"
+  },
+  "lage": {
+    "lon": 8.020699,
+    "lat": 49.60262
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a914-4bd5-457c-b807-dcc05a130608",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

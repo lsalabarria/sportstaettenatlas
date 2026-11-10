@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d09fac9-7fa7-4d1b-9ea2-dd950e5152e5",
+  "name": "Pferdehof Beyer",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Peschbach",
+    "hausnummer": "8",
+    "plz": "57635",
+    "ort": "Ersfeld"
+  },
+  "lage": {
+    "lon": 7.518964,
+    "lat": 50.696468
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac9-7fa7-4d1b-9ea2-dd950e5152e5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

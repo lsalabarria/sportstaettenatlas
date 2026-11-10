@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1dfa-1e70-4b2f-a109-5fd32b728368",
+  "name": "Dirt Park Ransbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "St.-Martin-Straße",
+    "plz": "56235",
+    "ort": "Ransbach-Baumbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.736116,
+    "lat": 50.463852
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Mountainbikestrecke"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfa-1e70-4b2f-a109-5fd32b728368",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

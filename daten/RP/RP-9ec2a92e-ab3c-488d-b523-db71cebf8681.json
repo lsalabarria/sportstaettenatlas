@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a92e-ab3c-488d-b523-db71cebf8681",
+  "name": "Sportanlage Nordpfalzgymnasium",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Dr.-Heinrich-von-Brunck-Straße",
+    "plz": "67292",
+    "ort": "Kirchheimbolanden, Stadt"
+  },
+  "lage": {
+    "lon": 8.010252,
+    "lat": 49.654513
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92e-ab3c-488d-b523-db71cebf8681",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

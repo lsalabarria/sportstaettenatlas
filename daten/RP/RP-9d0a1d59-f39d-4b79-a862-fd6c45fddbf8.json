@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d59-f39d-4b79-a862-fd6c45fddbf8",
+  "name": "Bolzplatz Ehr",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ehrerheide Straße",
+    "plz": "56283",
+    "ort": "Halsenbach"
+  },
+  "lage": {
+    "lon": 7.570249,
+    "lat": 50.177243
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d59-f39d-4b79-a862-fd6c45fddbf8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

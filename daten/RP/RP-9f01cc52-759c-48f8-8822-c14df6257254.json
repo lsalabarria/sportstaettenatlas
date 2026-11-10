@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc52-759c-48f8-8822-c14df6257254",
+  "name": "Neubornbad Wörrstadt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "hausnummer": "3",
+    "plz": "55286",
+    "ort": "Wörrstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.10645,
+    "lat": 49.83181
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc52-759c-48f8-8822-c14df6257254",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

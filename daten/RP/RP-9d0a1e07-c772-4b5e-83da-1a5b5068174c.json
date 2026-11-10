@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e07-c772-4b5e-83da-1a5b5068174c",
+  "name": "St. Hubertus Schützenbruderschaft Kaisersesch 1905 e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Im Wehrholz",
+    "plz": "56759",
+    "ort": "Kaisersesch, Stadt"
+  },
+  "lage": {
+    "lon": 7.131264,
+    "lat": 50.235949
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e07-c772-4b5e-83da-1a5b5068174c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

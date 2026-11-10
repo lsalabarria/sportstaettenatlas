@@ -1,0 +1,38 @@
+{
+  "id": "RP-9ec2a900-15d1-4b80-b46a-7a9d75f379bd",
+  "name": "Pferdepension Leßner",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Karlbacher Weg",
+    "hausnummer": "30",
+    "plz": "67271",
+    "ort": "Obersülzen"
+  },
+  "lage": {
+    "lon": 8.209052,
+    "lat": 49.562468
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a900-15d1-4b80-b46a-7a9d75f379bd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

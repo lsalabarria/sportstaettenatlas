@@ -1,0 +1,41 @@
+{
+  "id": "RP-9d09fad2-9e88-4b11-adc1-466db5cf7dec",
+  "name": "Tennisanlage TC Rengsdorf",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Auf der Luft",
+    "hausnummer": "8",
+    "plz": "56579",
+    "ort": "Rengsdorf"
+  },
+  "lage": {
+    "lon": 7.483004,
+    "lat": 50.504232
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad2-9e88-4b11-adc1-466db5cf7dec",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

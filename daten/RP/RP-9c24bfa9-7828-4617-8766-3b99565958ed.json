@@ -1,0 +1,35 @@
+{
+  "id": "RP-9c24bfa9-7828-4617-8766-3b99565958ed",
+  "name": "Schulhof der IGS Koblenz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Johannesstraße",
+    "hausnummer": "58-60",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.574278,
+    "lat": 50.374475
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa9-7828-4617-8766-3b99565958ed",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

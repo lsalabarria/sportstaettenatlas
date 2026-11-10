@@ -1,0 +1,44 @@
+{
+  "id": "RP-9d0a1e07-8994-4689-a2ac-2e817c9f87a1",
+  "name": "Sportplatz Kaisersesch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schwalbenweg",
+    "hausnummer": "19",
+    "plz": "56759",
+    "ort": "Kaisersesch, Stadt"
+  },
+  "lage": {
+    "lon": 7.138314,
+    "lat": 50.234956
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e07-8994-4689-a2ac-2e817c9f87a1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "RP-9ec2a940-87c4-4a86-a2f9-e34c60884b27",
+  "name": "Hahnenbacher Hof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hahnenbach",
+    "plz": "76855",
+    "ort": "Annweiler am Trifels, Stadt"
+  },
+  "lage": {
+    "lon": 7.981572,
+    "lat": 49.220964
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a940-87c4-4a86-a2f9-e34c60884b27",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

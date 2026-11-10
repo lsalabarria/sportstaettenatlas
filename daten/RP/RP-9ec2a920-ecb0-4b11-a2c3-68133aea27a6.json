@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a920-ecb0-4b11-a2c3-68133aea27a6",
+  "name": "Turnhalle Siebeldingen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "6",
+    "plz": "76833",
+    "ort": "Siebeldingen"
+  },
+  "lage": {
+    "lon": 8.057352,
+    "lat": 49.209587
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a920-ecb0-4b11-a2c3-68133aea27a6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

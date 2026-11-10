@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1db6-ddad-4c50-9755-69f8f048deea",
+  "name": "Sportplatz im Flürchen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Flürchen",
+    "plz": "54293",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.673484,
+    "lat": 49.777862
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db6-ddad-4c50-9755-69f8f048deea",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

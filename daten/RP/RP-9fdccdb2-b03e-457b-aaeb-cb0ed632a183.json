@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdb2-b03e-457b-aaeb-cb0ed632a183",
+  "name": "Fitness- & Freizeittreff Polch",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Klöppelstraße",
+    "hausnummer": "17",
+    "plz": "56751",
+    "ort": "Polch, Stadt"
+  },
+  "lage": {
+    "lon": 7.311116,
+    "lat": 50.300135
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdb2-b03e-457b-aaeb-cb0ed632a183",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

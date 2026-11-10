@@ -1,0 +1,34 @@
+{
+  "id": "RP-9d0a1e0a-1a49-4c15-ab6b-8c0d7128cba1",
+  "name": "Sportplatz Buchholz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Casinostraße",
+    "plz": "56154",
+    "ort": "Boppard, Stadt"
+  },
+  "lage": {
+    "lon": 7.534322,
+    "lat": 50.214382
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0a-1a49-4c15-ab6b-8c0d7128cba1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

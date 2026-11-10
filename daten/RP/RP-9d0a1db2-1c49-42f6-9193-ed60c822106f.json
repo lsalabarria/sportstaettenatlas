@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1db2-1c49-42f6-9193-ed60c822106f",
+  "name": "Bikepark Buchholz",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Mühlenweg",
+    "plz": "53567",
+    "ort": "Buchholz (Westerwald)"
+  },
+  "lage": {
+    "lon": 7.404285,
+    "lat": 50.69097
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "BMX-Strecke"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db2-1c49-42f6-9193-ed60c822106f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

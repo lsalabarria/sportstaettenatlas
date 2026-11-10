@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09facb-4d40-4478-bd92-2850ce063df5",
+  "name": "Sportplatz SV Mammelzen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hohlengarten",
+    "plz": "57636",
+    "ort": "Mammelzen"
+  },
+  "lage": {
+    "lon": 7.66525,
+    "lat": 50.706428
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facb-4d40-4478-bd92-2850ce063df5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

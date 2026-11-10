@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfa6-6667-434d-b49a-0b7e0b856a1d",
+  "name": "Sporthalle Ravensteynstraße",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ravensteynstr.",
+    "hausnummer": "86",
+    "plz": "56076",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.60162,
+    "lat": 50.341782
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa6-6667-434d-b49a-0b7e0b856a1d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

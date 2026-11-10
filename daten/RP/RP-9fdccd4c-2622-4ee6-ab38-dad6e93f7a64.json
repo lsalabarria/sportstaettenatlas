@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd4c-2622-4ee6-ab38-dad6e93f7a64",
+  "name": "Tennisclub Hinterweidenthal",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Windelstal",
+    "plz": "66999",
+    "ort": "Hinterweidenthal"
+  },
+  "lage": {
+    "lon": 7.740481,
+    "lat": 49.186419
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd4c-2622-4ee6-ab38-dad6e93f7a64",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

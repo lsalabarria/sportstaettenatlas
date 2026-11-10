@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a935-86e3-4f16-bd55-e4b0bb239f81",
+  "name": "Tennisanlage Drais",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Hesslerweg",
+    "hausnummer": "30",
+    "plz": "55126",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.186303,
+    "lat": 49.974072
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a935-86e3-4f16-bd55-e4b0bb239f81",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

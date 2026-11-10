@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a93b-d169-4150-a3f1-6b24b2d3bff0",
+  "name": "Minigolf in St. Martin",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Im Stöckelfeld",
+    "hausnummer": "7",
+    "plz": "67487",
+    "ort": "Sankt Martin"
+  },
+  "lage": {
+    "lon": 8.096793,
+    "lat": 49.299298
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bahnengolf"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93b-d169-4150-a3f1-6b24b2d3bff0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

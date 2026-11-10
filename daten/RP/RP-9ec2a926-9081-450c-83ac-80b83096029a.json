@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a926-9081-450c-83ac-80b83096029a",
+  "name": "Tennisclub Deidesheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Schlosswiese",
+    "hausnummer": "1b",
+    "plz": "67146",
+    "ort": "Deidesheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.191506,
+    "lat": 49.405092
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennishalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a926-9081-450c-83ac-80b83096029a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

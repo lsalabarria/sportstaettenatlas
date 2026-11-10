@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1dab-d44f-4920-9473-3a5f7621e24d",
+  "name": "Tennisplatz Hüllenberg",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Windhäuser Weg",
+    "hausnummer": "10",
+    "plz": "56567",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.40703,
+    "lat": 50.451501
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dab-d44f-4920-9473-3a5f7621e24d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

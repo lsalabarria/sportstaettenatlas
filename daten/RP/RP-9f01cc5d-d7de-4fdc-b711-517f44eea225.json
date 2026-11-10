@@ -1,0 +1,29 @@
+{
+  "id": "RP-9f01cc5d-d7de-4fdc-b711-517f44eea225",
+  "name": "Panorama-Bad Stromberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Neupfälzer Weg",
+    "plz": "55442",
+    "ort": "Stromberg, Stadt"
+  },
+  "lage": {
+    "lon": 7.76825,
+    "lat": 49.94137
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc5d-d7de-4fdc-b711-517f44eea225",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

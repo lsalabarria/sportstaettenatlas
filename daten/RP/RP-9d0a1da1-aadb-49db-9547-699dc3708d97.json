@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da1-aadb-49db-9547-699dc3708d97",
+  "name": "Sportplatz Pelm",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "18",
+    "plz": "54570",
+    "ort": "Pelm"
+  },
+  "lage": {
+    "lon": 6.686052,
+    "lat": 50.229795
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da1-aadb-49db-9547-699dc3708d97",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

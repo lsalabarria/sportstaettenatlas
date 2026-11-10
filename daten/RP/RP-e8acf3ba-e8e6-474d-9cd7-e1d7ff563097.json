@@ -1,0 +1,27 @@
+{
+  "id": "RP-e8acf3ba-e8e6-474d-9cd7-e1d7ff563097",
+  "name": "CSV Andernach e.V.",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Erfurter Straße",
+    "hausnummer": "9",
+    "plz": "56626",
+    "ort": "Andernach, Stadt"
+  },
+  "lage": {
+    "lon": 7.402532,
+    "lat": 50.42332
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "FeG City Church Andernach",
+  "website": "www.csv-andernach.de",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "e8acf3ba-e8e6-474d-9cd7-e1d7ff563097",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

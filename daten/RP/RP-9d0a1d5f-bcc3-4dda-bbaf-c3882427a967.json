@@ -1,0 +1,34 @@
+{
+  "id": "RP-9d0a1d5f-bcc3-4dda-bbaf-c3882427a967",
+  "name": "Sportplatz Sohren",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Niedersohrener Straße",
+    "plz": "55487",
+    "ort": "Sohren"
+  },
+  "lage": {
+    "lon": 7.311833,
+    "lat": 49.931035
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5f-bcc3-4dda-bbaf-c3882427a967",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

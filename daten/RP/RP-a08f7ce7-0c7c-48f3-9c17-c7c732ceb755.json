@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7ce7-0c7c-48f3-9c17-c7c732ceb755",
+  "name": "Turnhalle Rüdesheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Mühlenstraße",
+    "hausnummer": "11",
+    "plz": "55593",
+    "ort": "Rüdesheim"
+  },
+  "lage": {
+    "lon": 7.808313,
+    "lat": 49.846787
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ce7-0c7c-48f3-9c17-c7c732ceb755",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a91c-407e-46ed-bd54-ea96751a83d2",
+  "name": "Sportanlage Klingbachschule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Muehlhofener Str.",
+    "hausnummer": "39",
+    "plz": "76831",
+    "ort": "Billigheim-Ingenheim"
+  },
+  "lage": {
+    "lon": 8.088912,
+    "lat": 49.136436
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91c-407e-46ed-bd54-ea96751a83d2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e12-93f0-4585-996e-46473ab9c850",
+  "name": "Sportplatz Steffeln",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lindenstraße",
+    "hausnummer": "6",
+    "plz": "54597",
+    "ort": "Steffeln"
+  },
+  "lage": {
+    "lon": 6.570813,
+    "lat": 50.286918
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e12-93f0-4585-996e-46473ab9c850",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7d33-52f5-4665-baa2-d328966306d8",
+  "name": "Nahetalhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Rheinpfalzstraße",
+    "hausnummer": "2",
+    "plz": "55545",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.908963,
+    "lat": 49.860501
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d33-52f5-4665-baa2-d328966306d8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da6-d06d-4203-bba1-964981be00f9",
+  "name": "Reiterhof Heupenmühle",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "B257",
+    "plz": "53520",
+    "ort": "Müllenbach"
+  },
+  "lage": {
+    "lon": 6.905118,
+    "lat": 50.312036
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da6-d06d-4203-bba1-964981be00f9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

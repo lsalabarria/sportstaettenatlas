@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faca-8bec-47e6-b733-408f6843d92a",
+  "name": "Spielplatz Hasselbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "24A",
+    "plz": "57635",
+    "ort": "Hasselbach"
+  },
+  "lage": {
+    "lon": 7.529023,
+    "lat": 50.713044
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faca-8bec-47e6-b733-408f6843d92a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

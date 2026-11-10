@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faca-fc24-4035-8a2a-a789ffa94bc4",
+  "name": "Sportplatz Ingelbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "hausnummer": "1",
+    "plz": "57610",
+    "ort": "Ingelbach"
+  },
+  "lage": {
+    "lon": 7.704713,
+    "lat": 50.681556
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faca-fc24-4035-8a2a-a789ffa94bc4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

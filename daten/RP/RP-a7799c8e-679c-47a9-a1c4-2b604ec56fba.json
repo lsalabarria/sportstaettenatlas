@@ -1,0 +1,28 @@
+{
+  "id": "RP-a7799c8e-679c-47a9-a1c4-2b604ec56fba",
+  "name": "Trainingsschleife an der Talstation WSV Salzburger Kopf",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Burbacher Straße",
+    "plz": "56479",
+    "ort": "Stein-Neukirch"
+  },
+  "lage": {
+    "lon": 8.059821,
+    "lat": 50.673602
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skilanglauf- und Biathlonanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a7799c8e-679c-47a9-a1c4-2b604ec56fba",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

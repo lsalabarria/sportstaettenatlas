@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fae3-c817-411e-b328-5e35c55e15fd",
+  "name": "Bolzplatz Mandern",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf’m Scheerchen",
+    "plz": "54429",
+    "ort": "Mandern"
+  },
+  "lage": {
+    "lon": 6.773856,
+    "lat": 49.605337
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae3-c817-411e-b328-5e35c55e15fd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

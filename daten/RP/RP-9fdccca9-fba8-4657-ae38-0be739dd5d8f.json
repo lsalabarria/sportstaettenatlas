@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccca9-fba8-4657-ae38-0be739dd5d8f",
+  "name": "Tennisplatz Steinweiler",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Kohlweg",
+    "plz": "76872",
+    "ort": "Steinweiler"
+  },
+  "lage": {
+    "lon": 8.155827,
+    "lat": 49.128205
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccca9-fba8-4657-ae38-0be739dd5d8f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

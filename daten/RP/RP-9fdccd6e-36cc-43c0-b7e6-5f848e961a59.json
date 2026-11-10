@@ -1,0 +1,32 @@
+{
+  "id": "RP-9fdccd6e-36cc-43c0-b7e6-5f848e961a59",
+  "name": "Sportanlage FC Gräfenstein Merzalben",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportpl.",
+    "plz": "66978",
+    "ort": "Merzalben"
+  },
+  "lage": {
+    "lon": 7.733229,
+    "lat": 49.248437
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd6e-36cc-43c0-b7e6-5f848e961a59",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

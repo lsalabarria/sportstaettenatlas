@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a91e-a64c-4eff-91ae-1d60439cb9a2",
+  "name": "Bouleplatz Gleiszellen-Gleishorbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "76889",
+    "ort": "Gleiszellen-Gleishorbach"
+  },
+  "lage": {
+    "lon": 8.010716,
+    "lat": 49.126266
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91e-a64c-4eff-91ae-1d60439cb9a2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

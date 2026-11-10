@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1d5d-fe3a-4143-8b99-2fd59cc38a72",
+  "name": "INSIDE Fitness Büchenbeuren",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Im Schiffels",
+    "hausnummer": "4",
+    "plz": "55491",
+    "ort": "Büchenbeuren"
+  },
+  "lage": {
+    "lon": 7.281194,
+    "lat": 49.927014
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    },
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5d-fe3a-4143-8b99-2fd59cc38a72",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

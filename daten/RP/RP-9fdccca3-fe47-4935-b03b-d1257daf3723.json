@@ -1,0 +1,32 @@
+{
+  "id": "RP-9fdccca3-fe47-4935-b03b-d1257daf3723",
+  "name": "Stall Schmitt",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Ochsweg",
+    "plz": "76770",
+    "ort": "Hatzenbühl"
+  },
+  "lage": {
+    "lon": 8.24594,
+    "lat": 49.116388
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccca3-fe47-4935-b03b-d1257daf3723",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

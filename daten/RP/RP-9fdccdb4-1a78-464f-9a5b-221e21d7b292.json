@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccdb4-1a78-464f-9a5b-221e21d7b292",
+  "name": "Sportanlage Hausen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Industriestraße",
+    "plz": "56727",
+    "ort": "Mayen, Stadt"
+  },
+  "lage": {
+    "lon": 7.278555,
+    "lat": 50.331937
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdb4-1a78-464f-9a5b-221e21d7b292",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

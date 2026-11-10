@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e10-0d1a-4df2-9cb5-d664c904a68d",
+  "name": "Bolzplatz Wengerohr",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Johannisstraße",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.938515,
+    "lat": 49.977854
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e10-0d1a-4df2-9cb5-d664c904a68d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

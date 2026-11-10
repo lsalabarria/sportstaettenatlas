@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d53-55ca-477e-9849-e1d8062e784c",
+  "name": "Alter Sportplatz Ernst",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Fahlsbach",
+    "plz": "56814",
+    "ort": "Ernst"
+  },
+  "lage": {
+    "lon": 7.21454,
+    "lat": 50.135504
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d53-55ca-477e-9849-e1d8062e784c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

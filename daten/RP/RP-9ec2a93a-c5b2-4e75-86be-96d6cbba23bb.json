@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a93a-c5b2-4e75-86be-96d6cbba23bb",
+  "name": "Basketballplatz Hartenbergpark",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Lungenberg",
+    "hausnummer": "16",
+    "plz": "55122",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.241096,
+    "lat": 50.010749
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "Rollsportplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93a-c5b2-4e75-86be-96d6cbba23bb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

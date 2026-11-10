@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a91a-25f6-4443-8ea9-b0a18a065cd7",
+  "name": "Skatepark Knöringen",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "76833",
+    "ort": "Knöringen"
+  },
+  "lage": {
+    "lon": 8.141468,
+    "lat": 49.232543
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91a-25f6-4443-8ea9-b0a18a065cd7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

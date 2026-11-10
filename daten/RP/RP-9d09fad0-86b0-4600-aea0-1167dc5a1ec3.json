@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fad0-86b0-4600-aea0-1167dc5a1ec3",
+  "name": "Sportplatz \"Auf dem Häslich\"",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportstraße",
+    "hausnummer": "12",
+    "plz": "57555",
+    "ort": "Brachbach"
+  },
+  "lage": {
+    "lon": 7.946815,
+    "lat": 50.815161
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad0-86b0-4600-aea0-1167dc5a1ec3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

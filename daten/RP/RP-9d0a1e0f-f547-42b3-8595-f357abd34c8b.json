@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e0f-f547-42b3-8595-f357abd34c8b",
+  "name": "Stadion an der Polizeischule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Zur Polizeischule",
+    "hausnummer": "1",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.932132,
+    "lat": 49.976427
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0f-f547-42b3-8595-f357abd34c8b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

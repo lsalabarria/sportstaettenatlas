@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7d1a-dde5-4540-afd1-1d0ab5894026",
+  "name": "Rothenfeldhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Saarpfalzstraße",
+    "hausnummer": "4b",
+    "plz": "66914",
+    "ort": "Waldmohr, Stadt"
+  },
+  "lage": {
+    "lon": 7.332009,
+    "lat": 49.383107
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d1a-dde5-4540-afd1-1d0ab5894026",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d53-b353-462d-b792-3f9559bbc74e",
+  "name": "Sportplatz Lütz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schnellbachstraße",
+    "plz": "56290",
+    "ort": "Lütz"
+  },
+  "lage": {
+    "lon": 7.35896,
+    "lat": 50.156676
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d53-b353-462d-b792-3f9559bbc74e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

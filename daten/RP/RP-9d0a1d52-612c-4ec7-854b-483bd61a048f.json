@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d52-612c-4ec7-854b-483bd61a048f",
+  "name": "Sportplatz Lind",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hochkreuzstraße",
+    "plz": "53506",
+    "ort": "Lind"
+  },
+  "lage": {
+    "lon": 6.937957,
+    "lat": 50.48584
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d52-612c-4ec7-854b-483bd61a048f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

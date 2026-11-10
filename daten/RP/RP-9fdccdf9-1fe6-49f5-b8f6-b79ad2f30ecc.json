@@ -1,0 +1,42 @@
+{
+  "id": "RP-9fdccdf9-1fe6-49f5-b8f6-b79ad2f30ecc",
+  "name": "Eulenpark-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Teichgasse",
+    "hausnummer": "30",
+    "plz": "67063",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.405534,
+    "lat": 49.500831
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdf9-1fe6-49f5-b8f6-b79ad2f30ecc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "RP-9d0a1dae-6b08-4b37-b978-0455415813a5",
+  "name": "Tennis-Club Rot-Weiß Neuwied e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Krasnaer Straße",
+    "hausnummer": "3",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.498087,
+    "lat": 50.433277
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dae-6b08-4b37-b978-0455415813a5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

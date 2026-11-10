@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdccca1-612a-4a1d-b9b1-d7c916c0cad5",
+  "name": "Schützenverein St. Hubertus Rheinzabern e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "An d. Freizeitanlage",
+    "hausnummer": "8",
+    "plz": "76764",
+    "ort": "Rheinzabern"
+  },
+  "lage": {
+    "lon": 8.268435,
+    "lat": 49.110335
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    },
+    {
+      "bezeichnung": "Bogenschießanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccca1-612a-4a1d-b9b1-d7c916c0cad5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-a0579d68-7218-47c8-b230-6ae3d9a8dbc0",
+  "name": "Mayen Hinter Burg Hartplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Einsteinstraße",
+    "plz": "56727",
+    "ort": "Mayen, Stadt"
+  },
+  "lage": {
+    "lon": 7.218199,
+    "lat": 50.322207
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0579d68-7218-47c8-b230-6ae3d9a8dbc0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

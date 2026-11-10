@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a928-1f74-4510-8569-d652f17c8f48",
+  "name": "Bolzplatz Bachweg Dietersheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bachweg",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.909315,
+    "lat": 49.941336
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a928-1f74-4510-8569-d652f17c8f48",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

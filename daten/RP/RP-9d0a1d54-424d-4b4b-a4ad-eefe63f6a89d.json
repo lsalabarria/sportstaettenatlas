@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d54-424d-4b4b-a4ad-eefe63f6a89d",
+  "name": "Moselstadion Karden",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "St.-Castor-Straße",
+    "hausnummer": "34",
+    "plz": "56253",
+    "ort": "Treis-Karden"
+  },
+  "lage": {
+    "lon": 7.300009,
+    "lat": 50.182641
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d54-424d-4b4b-a4ad-eefe63f6a89d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

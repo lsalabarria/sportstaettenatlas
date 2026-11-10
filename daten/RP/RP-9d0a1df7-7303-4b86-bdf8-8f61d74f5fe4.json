@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d0a1df7-7303-4b86-bdf8-8f61d74f5fe4",
+  "name": "Bolzplatz „am Deimelberg“",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "54295",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.654721,
+    "lat": 49.755318
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df7-7303-4b86-bdf8-8f61d74f5fe4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

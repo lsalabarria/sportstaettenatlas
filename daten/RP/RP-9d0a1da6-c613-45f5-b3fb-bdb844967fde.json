@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da6-c613-45f5-b3fb-bdb844967fde",
+  "name": "St.-Sebastianus-Schützenbrüderschaft Kelberg",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "plz": "53539",
+    "ort": "Kelberg"
+  },
+  "lage": {
+    "lon": 6.919602,
+    "lat": 50.278827
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da6-c613-45f5-b3fb-bdb844967fde",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

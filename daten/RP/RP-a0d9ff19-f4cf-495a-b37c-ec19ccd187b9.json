@@ -1,0 +1,29 @@
+{
+  "id": "RP-a0d9ff19-f4cf-495a-b37c-ec19ccd187b9",
+  "name": "Löwensteinhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ringstraße",
+    "hausnummer": "11",
+    "plz": "56412",
+    "ort": "Görgeshausen"
+  },
+  "lage": {
+    "lon": 7.955641,
+    "lat": 50.409484
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0d9ff19-f4cf-495a-b37c-ec19ccd187b9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5b-d8ba-4f0c-8a36-947ea4958e03",
+  "name": "Bolzplatz Wohnroth",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Buchgarten",
+    "plz": "56288",
+    "ort": "Bell"
+  },
+  "lage": {
+    "lon": 7.381301,
+    "lat": 50.057214
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5b-d8ba-4f0c-8a36-947ea4958e03",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

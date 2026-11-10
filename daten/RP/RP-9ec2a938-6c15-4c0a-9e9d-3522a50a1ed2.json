@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a938-6c15-4c0a-9e9d-3522a50a1ed2",
+  "name": "Reitanlage Stefanshof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Heilig-Geist-Gewann",
+    "hausnummer": "1",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.24722,
+    "lat": 49.968786
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a938-6c15-4c0a-9e9d-3522a50a1ed2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

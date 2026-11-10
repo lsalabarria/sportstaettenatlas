@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a927-dea8-4c07-bbe6-221cee2a2b26",
+  "name": "Grundschule Bingen-Dietersheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Pommernstraße",
+    "hausnummer": "4",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.912333,
+    "lat": 49.935857
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a927-dea8-4c07-bbe6-221cee2a2b26",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

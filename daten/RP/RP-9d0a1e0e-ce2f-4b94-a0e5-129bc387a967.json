@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e0e-ce2f-4b94-a0e5-129bc387a967",
+  "name": "Skaterpark Simmern",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Am Naturfreibad",
+    "hausnummer": "1",
+    "plz": "55469",
+    "ort": "Simmern/ Hunsrück, Stadt"
+  },
+  "lage": {
+    "lon": 7.518929,
+    "lat": 49.975474
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0e-ce2f-4b94-a0e5-129bc387a967",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

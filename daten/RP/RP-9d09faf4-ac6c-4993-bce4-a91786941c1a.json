@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faf4-ac6c-4993-bce4-a91786941c1a",
+  "name": "Sportplatz Langenhahn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Koblenzer Straße 2",
+    "plz": "56459",
+    "ort": "Langenhahn"
+  },
+  "lage": {
+    "lon": 7.914915,
+    "lat": 50.588859
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf4-ac6c-4993-bce4-a91786941c1a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

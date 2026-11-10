@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a92d-4c4f-4f9b-aec4-5097a2274825",
+  "name": "Spielplatz Königsberger Straße",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Königsberger Straße",
+    "plz": "55268",
+    "ort": "Nieder-Olm, Stadt"
+  },
+  "lage": {
+    "lon": 8.208116,
+    "lat": 49.904912
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92d-4c4f-4f9b-aec4-5097a2274825",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

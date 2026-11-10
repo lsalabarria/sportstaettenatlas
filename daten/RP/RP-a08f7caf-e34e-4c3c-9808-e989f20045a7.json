@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7caf-e34e-4c3c-9808-e989f20045a7",
+  "name": "Waldsportplatz am der Landesgrenze",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L354",
+    "plz": "66916",
+    "ort": "Dunzweiler"
+  },
+  "lage": {
+    "lon": 7.292504,
+    "lat": 49.411449
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7caf-e34e-4c3c-9808-e989f20045a7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

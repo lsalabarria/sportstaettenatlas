@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcce17-0ff0-4afe-a475-2ab8f2071db5",
+  "name": "Käthe Dassler Realschule plus",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirchbergstraße",
+    "hausnummer": "41",
+    "plz": "66955",
+    "ort": "Pirmasens, Stadt"
+  },
+  "lage": {
+    "lon": 7.60596,
+    "lat": 49.190847
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce17-0ff0-4afe-a475-2ab8f2071db5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

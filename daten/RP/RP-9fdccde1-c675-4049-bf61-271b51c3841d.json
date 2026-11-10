@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccde1-c675-4049-bf61-271b51c3841d",
+  "name": "Turnerheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Freiherr-Vom-Stein-Straße",
+    "hausnummer": "12",
+    "plz": "67659",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.764211,
+    "lat": 49.465111
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccde1-c675-4049-bf61-271b51c3841d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

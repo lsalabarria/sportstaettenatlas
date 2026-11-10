@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5a-6e50-4848-b661-21ee826fa63c",
+  "name": "Bolzplatz Laudert",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Kroppenberg",
+    "plz": "56291",
+    "ort": "Laudert"
+  },
+  "lage": {
+    "lon": 7.603271,
+    "lat": 50.079309
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5a-6e50-4848-b661-21ee826fa63c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

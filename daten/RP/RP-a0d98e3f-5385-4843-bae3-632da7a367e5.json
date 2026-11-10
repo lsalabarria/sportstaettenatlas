@@ -1,0 +1,28 @@
+{
+  "id": "RP-a0d98e3f-5385-4843-bae3-632da7a367e5",
+  "name": "Bolzplatz Michael-Müller-Ring",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Michael-Müller-Ring",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.249601,
+    "lat": 49.984542
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0d98e3f-5385-4843-bae3-632da7a367e5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

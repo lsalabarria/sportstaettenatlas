@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdccccb-1644-4813-8c39-ebdd5ca5f2a3",
+  "name": "Reitanlage sueno-espanol Elena. Durlâch",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Auf Banneid",
+    "hausnummer": "3",
+    "plz": "56295",
+    "ort": "Lonnig"
+  },
+  "lage": {
+    "lon": 7.394579,
+    "lat": 50.304402
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Stall"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccccb-1644-4813-8c39-ebdd5ca5f2a3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-9d09fadf-2649-4cfd-8553-48338e308d54",
+  "name": "Fußballplatz Ensch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54340",
+    "ort": "Ensch"
+  },
+  "lage": {
+    "lon": 6.835905,
+    "lat": 49.823883
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadf-2649-4cfd-8553-48338e308d54",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faef-db81-48aa-bf9e-9ecf34784305",
+  "name": "Bolzplatz Im Kennel",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Im Kennel",
+    "plz": "56414",
+    "ort": "Hundsangen"
+  },
+  "lage": {
+    "lon": 7.991854,
+    "lat": 50.454324
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faef-db81-48aa-bf9e-9ecf34784305",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

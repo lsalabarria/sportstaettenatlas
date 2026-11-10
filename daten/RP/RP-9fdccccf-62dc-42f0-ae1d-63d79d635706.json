@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccccf-62dc-42f0-ae1d-63d79d635706",
+  "name": "Nettetalhalle Welling",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "56753",
+    "ort": "Welling"
+  },
+  "lage": {
+    "lon": 7.318237,
+    "lat": 50.330351
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccccf-62dc-42f0-ae1d-63d79d635706",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

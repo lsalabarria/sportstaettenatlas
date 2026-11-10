@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcccaa-6e95-4ac1-850e-0cdaa5ec04e0",
+  "name": "Tennisclub Winden 1982 e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Sportpl.",
+    "hausnummer": "11a",
+    "plz": "76872",
+    "ort": "Winden"
+  },
+  "lage": {
+    "lon": 8.119304,
+    "lat": 49.101485
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccaa-6e95-4ac1-850e-0cdaa5ec04e0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

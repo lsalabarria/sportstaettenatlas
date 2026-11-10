@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccda2-c025-4278-beb1-b46e09927461",
+  "name": "Freizeitbad Vallendar",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sebastian-Kneipp-Straße",
+    "hausnummer": "14",
+    "plz": "56179",
+    "ort": "Vallendar, Stadt"
+  },
+  "lage": {
+    "lon": 7.635783,
+    "lat": 50.39271
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccda2-c025-4278-beb1-b46e09927461",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d4f-1231-4451-b5f2-7befdc6ccedb",
+  "name": "Bolzplatz Kesseling",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "28",
+    "plz": "53506",
+    "ort": "Kesseling"
+  },
+  "lage": {
+    "lon": 7.022354,
+    "lat": 50.482943
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4f-1231-4451-b5f2-7befdc6ccedb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

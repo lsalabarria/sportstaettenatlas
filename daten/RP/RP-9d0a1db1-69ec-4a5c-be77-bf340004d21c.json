@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db1-69ec-4a5c-be77-bf340004d21c",
+  "name": "activelady health club Neuwied",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Breslauer Straße",
+    "hausnummer": "55",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.489364,
+    "lat": 50.435691
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db1-69ec-4a5c-be77-bf340004d21c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

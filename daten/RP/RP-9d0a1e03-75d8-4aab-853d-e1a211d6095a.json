@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e03-75d8-4aab-853d-e1a211d6095a",
+  "name": "Bolzplatz Rolandseck",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bonner Straße",
+    "hausnummer": "44",
+    "plz": "53424",
+    "ort": "Remagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.209523,
+    "lat": 50.627252
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e03-75d8-4aab-853d-e1a211d6095a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "RP-9ec2a911-6ba3-4dbc-afc6-30e9178fbc23",
+  "name": "Sportplatz Guntersblum Platz 2",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Alsheimer Straße",
+    "hausnummer": "67",
+    "plz": "67583",
+    "ort": "Guntersblum"
+  },
+  "lage": {
+    "lon": 8.342206,
+    "lat": 49.790796
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a911-6ba3-4dbc-afc6-30e9178fbc23",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

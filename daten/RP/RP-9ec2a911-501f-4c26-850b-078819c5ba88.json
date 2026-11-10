@@ -1,0 +1,33 @@
+{
+  "id": "RP-9ec2a911-501f-4c26-850b-078819c5ba88",
+  "name": "Reit- und Fahrverein Guntersblum",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "plz": "67583",
+    "ort": "Guntersblum"
+  },
+  "lage": {
+    "lon": 8.353546,
+    "lat": 49.796532
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a911-501f-4c26-850b-078819c5ba88",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

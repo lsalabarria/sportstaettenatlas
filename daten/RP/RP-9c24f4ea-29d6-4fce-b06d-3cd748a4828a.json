@@ -1,0 +1,27 @@
+{
+  "id": "RP-9c24f4ea-29d6-4fce-b06d-3cd748a4828a",
+  "name": "Reitplatz Rittersdorf",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "plz": "54636",
+    "ort": "Rittersdorf"
+  },
+  "lage": {
+    "lon": 6.492807,
+    "lat": 49.992007
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ea-29d6-4fce-b06d-3cd748a4828a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

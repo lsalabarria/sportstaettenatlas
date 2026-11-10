@@ -1,0 +1,26 @@
+{
+  "id": "RP-454144ce-ca6d-41aa-be82-d55b959f0846",
+  "name": "Boulodrom la boule Queichheim e.V.",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Zum Queichanger",
+    "hausnummer": "23",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.137377,
+    "lat": 49.197843
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "website": "www.la-boule.de",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "454144ce-ca6d-41aa-be82-d55b959f0846",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

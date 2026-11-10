@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7c8d-3abb-489e-a5ce-b62414dd90cb",
+  "name": "Sportplatz am Umwelt-Campus",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Neubrücker Str.",
+    "plz": "55768",
+    "ort": "Hoppstädten-Weiersbach"
+  },
+  "lage": {
+    "lon": 7.164663,
+    "lat": 49.608147
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c8d-3abb-489e-a5ce-b62414dd90cb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a937-c6df-49aa-b938-dca2eeefdc72",
+  "name": "Bolzplatz Vogelsbergstraße",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Vogelsbergstraße",
+    "plz": "55129",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.275871,
+    "lat": 49.973206
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a937-c6df-49aa-b938-dca2eeefdc72",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

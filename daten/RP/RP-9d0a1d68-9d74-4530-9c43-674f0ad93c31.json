@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d68-9d74-4530-9c43-674f0ad93c31",
+  "name": "Kleinspielfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Klausener Straße",
+    "hausnummer": "15",
+    "plz": "54518",
+    "ort": "Altrich"
+  },
+  "lage": {
+    "lon": 6.906617,
+    "lat": 49.951745
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d68-9d74-4530-9c43-674f0ad93c31",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

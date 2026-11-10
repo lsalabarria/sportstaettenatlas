@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a92a-e15e-4aa9-9c59-2e37a55b8b5d",
+  "name": "Gymnastikhalle der Mühlschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Frauenlobstraße",
+    "hausnummer": "3a",
+    "plz": "55262",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.114242,
+    "lat": 49.995902
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92a-e15e-4aa9-9c59-2e37a55b8b5d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

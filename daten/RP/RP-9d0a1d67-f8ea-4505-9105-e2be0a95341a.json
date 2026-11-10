@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d67-f8ea-4505-9105-e2be0a95341a",
+  "name": "Mehrzweckhalle Niersbach-Greverath",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Maareckenstraße",
+    "plz": "54518",
+    "ort": "Niersbach"
+  },
+  "lage": {
+    "lon": 6.739269,
+    "lat": 49.940102
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d67-f8ea-4505-9105-e2be0a95341a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

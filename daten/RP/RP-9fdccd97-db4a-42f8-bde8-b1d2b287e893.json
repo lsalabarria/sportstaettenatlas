@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd97-db4a-42f8-bde8-b1d2b287e893",
+  "name": "Tennisclub Münstermaifeld 1978 e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Pilliger Weg",
+    "plz": "56294",
+    "ort": "Münstermaifeld, Stadt"
+  },
+  "lage": {
+    "lon": 7.355012,
+    "lat": 50.244739
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd97-db4a-42f8-bde8-b1d2b287e893",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

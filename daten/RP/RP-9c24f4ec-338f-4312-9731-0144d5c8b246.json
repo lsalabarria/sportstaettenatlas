@@ -1,0 +1,40 @@
+{
+  "id": "RP-9c24f4ec-338f-4312-9731-0144d5c8b246",
+  "name": "Sportplatz Schulzentrum",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bitburger Straße",
+    "plz": "54673",
+    "ort": "Neuerburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.300748,
+    "lat": 50.002892
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ec-338f-4312-9731-0144d5c8b246",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d64-7497-4f40-ae9f-7dd18f6c019a",
+  "name": "Mehrzweckhalle Heidenburg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Auf Ripp",
+    "plz": "54426",
+    "ort": "Heidenburg"
+  },
+  "lage": {
+    "lon": 6.915723,
+    "lat": 49.79944
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d64-7497-4f40-ae9f-7dd18f6c019a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

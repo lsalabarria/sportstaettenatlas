@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd52-2db5-4c8e-a025-532032136e06",
+  "name": "Tischtennis-Club 1969 Riedelberg e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "1",
+    "plz": "66484",
+    "ort": "Riedelberg"
+  },
+  "lage": {
+    "lon": 7.448977,
+    "lat": 49.177546
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd52-2db5-4c8e-a025-532032136e06",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

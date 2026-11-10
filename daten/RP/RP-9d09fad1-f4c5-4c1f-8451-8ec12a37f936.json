@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad1-f4c5-4c1f-8451-8ec12a37f936",
+  "name": "Bolzplatz Katzwinkel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "plz": "57581",
+    "ort": "Katzwinkel (Sieg)"
+  },
+  "lage": {
+    "lon": 7.794814,
+    "lat": 50.821622
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad1-f4c5-4c1f-8451-8ec12a37f936",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

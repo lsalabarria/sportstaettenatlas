@@ -1,0 +1,29 @@
+{
+  "id": "RP-a10203f0-e69a-4990-b5de-6198ce33559e",
+  "name": "Sporthalle Lessingschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bürgermeister-Fries-Straße",
+    "hausnummer": "1",
+    "plz": "67069",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.391764,
+    "lat": 49.530072
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a10203f0-e69a-4990-b5de-6198ce33559e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

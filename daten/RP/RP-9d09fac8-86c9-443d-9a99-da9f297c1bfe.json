@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d09fac8-86c9-443d-9a99-da9f297c1bfe",
+  "name": "Sportclub Optimum-Fitness GmbH",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Im Sportzentrum",
+    "hausnummer": "4",
+    "plz": "57610",
+    "ort": "Altenkirchen"
+  },
+  "lage": {
+    "lon": 7.657992,
+    "lat": 50.691775
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    },
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac8-86c9-443d-9a99-da9f297c1bfe",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

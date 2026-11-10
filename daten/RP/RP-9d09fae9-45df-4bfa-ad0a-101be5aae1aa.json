@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fae9-45df-4bfa-ad0a-101be5aae1aa",
+  "name": "Sportplatz auf der Nörr",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf dem Nörrberg",
+    "plz": "56337",
+    "ort": "Eitelborn"
+  },
+  "lage": {
+    "lon": 7.712683,
+    "lat": 50.371471
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae9-45df-4bfa-ad0a-101be5aae1aa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faf1-c792-4a9e-b5fe-9b9fd135a6a0",
+  "name": "Sportplatz im Wald",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L302",
+    "plz": "56459",
+    "ort": "Gemünden"
+  },
+  "lage": {
+    "lon": 8.016796,
+    "lat": 50.566677
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf1-c792-4a9e-b5fe-9b9fd135a6a0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "RP-9d09faf1-4101-41a3-b3de-38e88fd8d1e9",
+  "name": "Tennisplätze des Tennisverein Guckheim e.V",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "L300",
+    "plz": "56459",
+    "ort": "Guckheim"
+  },
+  "lage": {
+    "lon": 7.943574,
+    "lat": 50.522139
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf1-4101-41a3-b3de-38e88fd8d1e9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

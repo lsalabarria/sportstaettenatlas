@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da8-50b7-42ea-bf9d-6188be6eabd3",
+  "name": "Dirt-Park Betzdorf",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Am Scheuerberg",
+    "plz": "57518",
+    "ort": "Betzdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.857753,
+    "lat": 50.786615
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Mountainbikestrecke"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da8-50b7-42ea-bf9d-6188be6eabd3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

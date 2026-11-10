@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a91a-5716-4f27-b836-30a07905f70f",
+  "name": "Dalberghalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Turnpl.",
+    "plz": "76879",
+    "ort": "Essingen"
+  },
+  "lage": {
+    "lon": 8.170852,
+    "lat": 49.236858
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91a-5716-4f27-b836-30a07905f70f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

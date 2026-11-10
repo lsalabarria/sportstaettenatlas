@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd8f-9167-411e-8bbb-8283d3ca0ae0",
+  "name": "Tennishalle Sporttreff",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Hochufer",
+    "hausnummer": "2",
+    "plz": "76767",
+    "ort": "Hagenbach, Stadt"
+  },
+  "lage": {
+    "lon": 8.237748,
+    "lat": 49.019533
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennishalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd8f-9167-411e-8bbb-8283d3ca0ae0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "RP-9c24bfa5-54d7-437a-beba-df7be082f64f",
+  "name": "oberer Tennenplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Maigesetzweg",
+    "plz": "56073",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.569582,
+    "lat": 50.349755
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa5-54d7-437a-beba-df7be082f64f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

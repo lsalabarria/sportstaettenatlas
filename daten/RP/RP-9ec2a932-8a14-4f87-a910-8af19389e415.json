@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a932-8a14-4f87-a910-8af19389e415",
+  "name": "Sportanlage des Abenteurspielplatzes Neustadt an der Weinstraße",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Harthäuserweg",
+    "plz": "67433",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.162228,
+    "lat": 49.358334
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Calisthenicsanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a932-8a14-4f87-a910-8af19389e415",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

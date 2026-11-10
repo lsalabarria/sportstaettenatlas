@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a933-1519-4789-a28a-72467a4eb716",
+  "name": "Sportanlage Schöntalschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Sauterstraße",
+    "hausnummer": "95",
+    "plz": "67433",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.117558,
+    "lat": 49.354681
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a933-1519-4789-a28a-72467a4eb716",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

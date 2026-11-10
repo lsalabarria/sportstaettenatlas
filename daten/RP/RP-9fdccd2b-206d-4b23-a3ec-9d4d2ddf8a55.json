@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd2b-206d-4b23-a3ec-9d4d2ddf8a55",
+  "name": "TV Fußgönheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Ruchheimer Straße",
+    "hausnummer": "67",
+    "plz": "67136",
+    "ort": "Fußgönheim"
+  },
+  "lage": {
+    "lon": 8.297618,
+    "lat": 49.464822
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd2b-206d-4b23-a3ec-9d4d2ddf8a55",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

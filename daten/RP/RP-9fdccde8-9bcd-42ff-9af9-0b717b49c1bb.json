@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccde8-9bcd-42ff-9af9-0b717b49c1bb",
+  "name": "Bolzplatz Stresemannschule",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Stresemannstraße",
+    "hausnummer": "3",
+    "plz": "67663",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.740553,
+    "lat": 49.436682
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccde8-9bcd-42ff-9af9-0b717b49c1bb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

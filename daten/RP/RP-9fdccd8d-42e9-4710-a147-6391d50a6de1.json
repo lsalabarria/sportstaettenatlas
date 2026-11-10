@@ -1,0 +1,31 @@
+{
+  "id": "RP-9fdccd8d-42e9-4710-a147-6391d50a6de1",
+  "name": "Tennisverein Hagenbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "plz": "76767",
+    "ort": "Hagenbach, Stadt"
+  },
+  "lage": {
+    "lon": 8.253319,
+    "lat": 49.01914
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennishalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd8d-42e9-4710-a147-6391d50a6de1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

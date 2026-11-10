@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90c-1d87-4779-b417-3082459e0841",
+  "name": "Tennisverein Essenheim e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Klotzklauer",
+    "hausnummer": "1",
+    "plz": "55270",
+    "ort": "Essenheim"
+  },
+  "lage": {
+    "lon": 8.167373,
+    "lat": 49.924843
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90c-1d87-4779-b417-3082459e0841",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

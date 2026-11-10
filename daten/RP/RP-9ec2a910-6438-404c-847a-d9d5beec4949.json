@@ -1,0 +1,40 @@
+{
+  "id": "RP-9ec2a910-6438-404c-847a-d9d5beec4949",
+  "name": "Sportanlage Goldbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hinter dem Hofgraben",
+    "plz": "55278",
+    "ort": "Undenheim"
+  },
+  "lage": {
+    "lon": 8.213327,
+    "lat": 49.836455
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a910-6438-404c-847a-d9d5beec4949",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

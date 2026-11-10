@@ -1,0 +1,32 @@
+{
+  "id": "RP-9f01cc68-5669-4018-99da-8dc3bf18c318",
+  "name": "Löwenbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Lohmühle",
+    "plz": "57627",
+    "ort": "Hachenburg, Stadt"
+  },
+  "lage": {
+    "lon": 7.826006,
+    "lat": 50.611268
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    },
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc68-5669-4018-99da-8dc3bf18c318",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

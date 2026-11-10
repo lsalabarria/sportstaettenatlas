@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd3d-3a48-475e-9840-2e9e52ee6060",
+  "name": "Skatepark Altrip",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Friedrich-Ebert-Straße",
+    "hausnummer": "24",
+    "plz": "67122",
+    "ort": "Altrip"
+  },
+  "lage": {
+    "lon": 8.503333,
+    "lat": 49.429512
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd3d-3a48-475e-9840-2e9e52ee6060",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

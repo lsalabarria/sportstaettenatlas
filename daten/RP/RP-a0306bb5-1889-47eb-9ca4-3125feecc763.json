@@ -1,0 +1,28 @@
+{
+  "id": "RP-a0306bb5-1889-47eb-9ca4-3125feecc763",
+  "name": "Flacht Hartplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bahnhofsweg",
+    "plz": "65558",
+    "ort": "Flacht"
+  },
+  "lage": {
+    "lon": 8.055473,
+    "lat": 50.343089
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0306bb5-1889-47eb-9ca4-3125feecc763",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

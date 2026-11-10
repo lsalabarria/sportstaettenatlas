@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a930-528a-4d4d-a357-8073ca0fb1a5",
+  "name": "Tennisclub 1964 Rockenhausen e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Obermühle",
+    "hausnummer": "3",
+    "plz": "67806",
+    "ort": "Rockenhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.822205,
+    "lat": 49.619641
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a930-528a-4d4d-a357-8073ca0fb1a5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

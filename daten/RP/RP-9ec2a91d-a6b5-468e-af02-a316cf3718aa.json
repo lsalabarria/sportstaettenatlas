@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a91d-a6b5-468e-af02-a316cf3718aa",
+  "name": "Reitclub Oberotterbach",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "K25",
+    "plz": "76889",
+    "ort": "Oberotterbach"
+  },
+  "lage": {
+    "lon": 7.994564,
+    "lat": 49.071236
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91d-a6b5-468e-af02-a316cf3718aa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

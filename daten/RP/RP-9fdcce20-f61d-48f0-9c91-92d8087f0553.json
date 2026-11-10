@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcce20-f61d-48f0-9c91-92d8087f0553",
+  "name": "Tennisanlage Schützengarten",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Holzstraße",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.422735,
+    "lat": 49.31687
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce20-f61d-48f0-9c91-92d8087f0553",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

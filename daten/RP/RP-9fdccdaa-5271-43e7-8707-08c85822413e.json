@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdaa-5271-43e7-8707-08c85822413e",
+  "name": "Sporthalle Martinsschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Frankenstraße",
+    "hausnummer": "41",
+    "plz": "56626",
+    "ort": "Andernach, Stadt"
+  },
+  "lage": {
+    "lon": 7.396205,
+    "lat": 50.435442
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdaa-5271-43e7-8707-08c85822413e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

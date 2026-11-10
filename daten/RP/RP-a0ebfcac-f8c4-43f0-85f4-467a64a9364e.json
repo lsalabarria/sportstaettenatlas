@@ -1,0 +1,29 @@
+{
+  "id": "RP-a0ebfcac-f8c4-43f0-85f4-467a64a9364e",
+  "name": "Dorfgemeinschaftshaus Masholder",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Brückenstraße",
+    "hausnummer": "3",
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.512438,
+    "lat": 49.955348
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0ebfcac-f8c4-43f0-85f4-467a64a9364e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

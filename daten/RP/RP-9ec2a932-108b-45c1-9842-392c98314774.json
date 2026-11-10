@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a932-108b-45c1-9842-392c98314774",
+  "name": "Bewegung und Begegnung",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Meisental",
+    "hausnummer": "81",
+    "plz": "67433",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.130631,
+    "lat": 49.360573
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "TuS Haardt 1886 e.V. und Pfalzbiker e.V.",
+  "betreiber": "TuS Haardt 1886 e.V. und Pfalzbiker e.V.",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a932-108b-45c1-9842-392c98314774",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

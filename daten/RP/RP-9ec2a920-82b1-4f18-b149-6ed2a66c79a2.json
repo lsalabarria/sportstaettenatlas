@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a920-82b1-4f18-b149-6ed2a66c79a2",
+  "name": "Sportanlage TSV Wernersberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "5",
+    "plz": "76857",
+    "ort": "Wernersberg"
+  },
+  "lage": {
+    "lon": 7.923886,
+    "lat": 49.191018
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a920-82b1-4f18-b149-6ed2a66c79a2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

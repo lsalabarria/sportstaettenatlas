@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7d12-26d3-42f5-a11b-a1e57ad2ce7b",
+  "name": "Sporthalle des Gymnasiums an der Heinzenwies",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Heinzenwies",
+    "hausnummer": "3",
+    "plz": "55743",
+    "ort": "Idar-Oberstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.314991,
+    "lat": 49.724634
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d12-26d3-42f5-a11b-a1e57ad2ce7b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

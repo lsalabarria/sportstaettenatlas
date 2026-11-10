@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a917-8ec8-4759-b8ae-6cf7f089445e",
+  "name": "Sportplatz Stetten",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hohlstraße",
+    "hausnummer": "8",
+    "plz": "67294",
+    "ort": "Stetten"
+  },
+  "lage": {
+    "lon": 8.08553,
+    "lat": 49.669479
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a917-8ec8-4759-b8ae-6cf7f089445e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

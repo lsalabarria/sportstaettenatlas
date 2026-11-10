@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcce1b-6a4b-49d8-b466-60c33591260b",
+  "name": "Jugendtreff Speyer",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Fliederweg",
+    "hausnummer": "1.0",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.427802,
+    "lat": 49.343944
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce1b-6a4b-49d8-b466-60c33591260b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

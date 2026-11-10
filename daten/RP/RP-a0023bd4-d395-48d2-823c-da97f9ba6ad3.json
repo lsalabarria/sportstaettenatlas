@@ -1,0 +1,28 @@
+{
+  "id": "RP-a0023bd4-d395-48d2-823c-da97f9ba6ad3",
+  "name": "Alter Sportplatz Reinsfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L146",
+    "plz": "54421",
+    "ort": "Reinsfeld"
+  },
+  "lage": {
+    "lon": 6.861141,
+    "lat": 49.672235
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0023bd4-d395-48d2-823c-da97f9ba6ad3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

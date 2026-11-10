@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da6-f1c0-4d2d-9137-4cb663988f72",
+  "name": "Pfauenhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Mühlenweg",
+    "hausnummer": "2-4",
+    "plz": "54552",
+    "ort": "Utzerath"
+  },
+  "lage": {
+    "lon": 6.934068,
+    "lat": 50.224164
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da6-f1c0-4d2d-9137-4cb663988f72",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

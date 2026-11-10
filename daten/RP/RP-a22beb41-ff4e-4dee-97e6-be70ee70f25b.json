@@ -1,0 +1,30 @@
+{
+  "id": "RP-a22beb41-ff4e-4dee-97e6-be70ee70f25b",
+  "name": "Cube Trier",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Diedenhofener Str.",
+    "hausnummer": "27C",
+    "plz": "54294",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.615383,
+    "lat": 49.729438
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Klettersporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a22beb41-ff4e-4dee-97e6-be70ee70f25b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

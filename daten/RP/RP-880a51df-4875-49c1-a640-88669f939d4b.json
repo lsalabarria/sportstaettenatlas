@@ -1,0 +1,28 @@
+{
+  "id": "RP-880a51df-4875-49c1-a640-88669f939d4b",
+  "name": "Schießstand Kreimbach-Kaulbach",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "plz": "67757",
+    "ort": "Kreimbach-Kaulbach"
+  },
+  "lage": {
+    "lon": 7.625087,
+    "lat": 49.549585
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "stillgelegt/geschlossen",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "880a51df-4875-49c1-a640-88669f939d4b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

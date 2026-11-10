@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d55-3d88-43eb-a607-cb1f6419bb31",
+  "name": "Tennisplatz Forst",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Binninger Straße",
+    "plz": "56754",
+    "ort": "Forst"
+  },
+  "lage": {
+    "lon": 7.248703,
+    "lat": 50.214322
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d55-3d88-43eb-a607-cb1f6419bb31",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

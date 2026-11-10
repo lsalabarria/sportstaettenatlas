@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fad3-d826-4b1d-92eb-bb795d1fc15f",
+  "name": "Bürgersaal Erpel",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Heisterer Straße",
+    "hausnummer": "29",
+    "plz": "53579",
+    "ort": "Erpel"
+  },
+  "lage": {
+    "lon": 7.232005,
+    "lat": 50.587302
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad3-d826-4b1d-92eb-bb795d1fc15f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

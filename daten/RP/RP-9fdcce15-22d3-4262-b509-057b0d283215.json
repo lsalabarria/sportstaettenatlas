@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcce15-22d3-4262-b509-057b0d283215",
+  "name": "Multifunktionsfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Wiesenstraße",
+    "hausnummer": "3",
+    "plz": "66954",
+    "ort": "Pirmasens, Stadt"
+  },
+  "lage": {
+    "lon": 7.602717,
+    "lat": 49.19929
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce15-22d3-4262-b509-057b0d283215",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

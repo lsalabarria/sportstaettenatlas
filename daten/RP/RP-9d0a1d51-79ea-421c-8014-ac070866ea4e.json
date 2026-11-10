@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d51-79ea-421c-8014-ac070866ea4e",
+  "name": "Schützenhalle Oberzissen",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Im Bröhl",
+    "hausnummer": "8",
+    "plz": "56651",
+    "ort": "Oberzissen"
+  },
+  "lage": {
+    "lon": 7.203764,
+    "lat": 50.453533
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d51-79ea-421c-8014-ac070866ea4e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

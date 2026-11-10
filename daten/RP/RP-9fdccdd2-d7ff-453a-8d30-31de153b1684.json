@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdd2-d7ff-453a-8d30-31de153b1684",
+  "name": "Sporthalle Goetheschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "24",
+    "plz": "56112",
+    "ort": "Lahnstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.610748,
+    "lat": 50.300432
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdd2-d7ff-453a-8d30-31de153b1684",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

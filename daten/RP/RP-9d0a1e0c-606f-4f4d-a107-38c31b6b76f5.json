@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e0c-606f-4f4d-a107-38c31b6b76f5",
+  "name": "Kaserne Kastellaun",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Graf-Moltke-Straße",
+    "plz": "56288",
+    "ort": "Kastellaun, Stadt"
+  },
+  "lage": {
+    "lon": 7.434455,
+    "lat": 50.057817
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0c-606f-4f4d-a107-38c31b6b76f5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

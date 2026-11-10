@@ -1,0 +1,41 @@
+{
+  "id": "RP-9ec2a903-5555-410d-925c-5e8272c9af69",
+  "name": "Reit- und Fahrverein Weisenheim am Sand",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Ludwigshain",
+    "hausnummer": "8",
+    "plz": "67256",
+    "ort": "Weisenheim am Sand"
+  },
+  "lage": {
+    "lon": 8.243521,
+    "lat": 49.50741
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Springparcours"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a903-5555-410d-925c-5e8272c9af69",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

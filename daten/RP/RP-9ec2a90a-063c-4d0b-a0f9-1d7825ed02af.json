@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90a-063c-4d0b-a0f9-1d7825ed02af",
+  "name": "Sportplatz Wolfsheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirchgasse",
+    "hausnummer": "37",
+    "plz": "55578",
+    "ort": "Wolfsheim"
+  },
+  "lage": {
+    "lon": 8.041132,
+    "lat": 49.875641
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90a-063c-4d0b-a0f9-1d7825ed02af",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfa6-7a93-4bc9-ae5a-94607aa4c027",
+  "name": "Sporthalle der Albert-Schweitzer-Realschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Lehrhohl",
+    "hausnummer": "46a",
+    "plz": "56077",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.618348,
+    "lat": 50.345861
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa6-7a93-4bc9-ae5a-94607aa4c027",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

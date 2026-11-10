@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdccd53-ec02-4d69-8433-816aba37ceeb",
+  "name": "Sandwaldhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Sandwaldhof",
+    "hausnummer": "1",
+    "plz": "66484",
+    "ort": "Dietrichingen"
+  },
+  "lage": {
+    "lon": 7.417217,
+    "lat": 49.204453
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd53-ec02-4d69-8433-816aba37ceeb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

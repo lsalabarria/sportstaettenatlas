@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da1-f106-4500-bf70-12c6e4fcd0cb",
+  "name": "Bolzplatz Trittscheid",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Flurweg",
+    "plz": "54552",
+    "ort": "Üdersdorf"
+  },
+  "lage": {
+    "lon": 6.823007,
+    "lat": 50.150032
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da1-f106-4500-bf70-12c6e4fcd0cb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

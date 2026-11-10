@@ -1,0 +1,38 @@
+{
+  "id": "RP-9d09facc-5c53-4517-9052-f3932181c8ca",
+  "name": "SSV Weyerbusch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportplatz",
+    "hausnummer": "5",
+    "plz": "57635",
+    "ort": "Weyerbusch"
+  },
+  "lage": {
+    "lon": 7.550073,
+    "lat": 50.708883
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facc-5c53-4517-9052-f3932181c8ca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

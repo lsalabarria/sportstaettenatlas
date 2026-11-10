@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a915-59a4-4fea-a056-a17573cb60f9",
+  "name": "Sportplatz Gundersweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Otterberger Str,",
+    "plz": "67724",
+    "ort": "Gundersweiler"
+  },
+  "lage": {
+    "lon": 7.781837,
+    "lat": 49.588873
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a915-59a4-4fea-a056-a17573cb60f9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a928-0ca3-45db-b803-bf7a48805d0a",
+  "name": "Rhein-Nahe Sport & Fitness Center",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Saarlandstraße",
+    "hausnummer": "379",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.913765,
+    "lat": 49.934532
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    },
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a928-0ca3-45db-b803-bf7a48805d0a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

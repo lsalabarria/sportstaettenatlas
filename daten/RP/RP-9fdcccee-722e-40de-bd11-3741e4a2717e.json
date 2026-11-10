@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcccee-722e-40de-bd11-3741e4a2717e",
+  "name": "Bolzplatz Bremberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "56370",
+    "ort": "Bremberg"
+  },
+  "lage": {
+    "lon": 7.920176,
+    "lat": 50.304564
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccee-722e-40de-bd11-3741e4a2717e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

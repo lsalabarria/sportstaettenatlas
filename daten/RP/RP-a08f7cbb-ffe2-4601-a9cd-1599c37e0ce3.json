@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7cbb-ffe2-4601-a9cd-1599c37e0ce3",
+  "name": "Sportplatz Schwarzerden",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "55629",
+    "ort": "Schwarzerden"
+  },
+  "lage": {
+    "lon": 7.515717,
+    "lat": 49.865181
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cbb-ffe2-4601-a9cd-1599c37e0ce3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

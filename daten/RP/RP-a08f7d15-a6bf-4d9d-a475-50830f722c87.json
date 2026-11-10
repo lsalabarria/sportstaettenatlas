@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7d15-a6bf-4d9d-a475-50830f722c87",
+  "name": "Cage-Soccer am Schulzentrum",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bein",
+    "plz": "55743",
+    "ort": "Idar-Oberstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.389388,
+    "lat": 49.719131
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d15-a6bf-4d9d-a475-50830f722c87",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

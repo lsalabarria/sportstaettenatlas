@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1dfd-3081-42c9-a9ce-d604308b3bdf",
+  "name": "Sportplatz am Wiesensee",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Erwin-Bensing-Allee",
+    "plz": "56459",
+    "ort": "Stahlhofen am Wiesensee"
+  },
+  "lage": {
+    "lon": 7.994191,
+    "lat": 50.581152
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfd-3081-42c9-a9ce-d604308b3bdf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

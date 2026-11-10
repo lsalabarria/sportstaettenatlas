@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7c8f-60ca-47f1-86b2-14d5cd662c81",
+  "name": "Sportplatz an der Berggrube",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dr.Darge-Straße",
+    "hausnummer": "1",
+    "plz": "55777",
+    "ort": "Fohren-Linden"
+  },
+  "lage": {
+    "lon": 7.288982,
+    "lat": 49.582849
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c8f-60ca-47f1-86b2-14d5cd662c81",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "RP-9d0a1d50-6c02-4361-9c9e-a282786b987f",
+  "name": "Aktivstall Kuhnigk´s Ranch",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Lederbach",
+    "hausnummer": "25",
+    "plz": "56746",
+    "ort": "Hohenleimbach"
+  },
+  "lage": {
+    "lon": 7.078473,
+    "lat": 50.422434
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-6c02-4361-9c9e-a282786b987f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

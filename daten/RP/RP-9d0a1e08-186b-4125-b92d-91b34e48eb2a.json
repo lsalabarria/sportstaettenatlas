@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e08-186b-4125-b92d-91b34e48eb2a",
+  "name": "Sporthalle Realschule Plus",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Jungferweiher",
+    "hausnummer": "2",
+    "plz": "56766",
+    "ort": "Ulmen, Stadt"
+  },
+  "lage": {
+    "lon": 6.975824,
+    "lat": 50.216462
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e08-186b-4125-b92d-91b34e48eb2a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

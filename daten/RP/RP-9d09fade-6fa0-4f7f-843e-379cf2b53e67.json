@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d09fade-6fa0-4f7f-843e-379cf2b53e67",
+  "name": "Drachen & Gleitschirm-Startplatz Klüsserath",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "plz": "54340",
+    "ort": "Klüsserath"
+  },
+  "lage": {
+    "lon": 6.871158,
+    "lat": 49.847519
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fade-6fa0-4f7f-843e-379cf2b53e67",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

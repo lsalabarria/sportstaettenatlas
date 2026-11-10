@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7cfa-a680-4e98-86d4-ef9494a8c514",
+  "name": "Rod & Gun Club",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Smith Kaserne",
+    "plz": "55774",
+    "ort": "Baumholder, Stadt"
+  },
+  "lage": {
+    "lon": 7.316994,
+    "lat": 49.617621
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cfa-a680-4e98-86d4-ef9494a8c514",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

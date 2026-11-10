@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1e04-da33-4437-8046-1fd7baa3b831",
+  "name": "Sportplatz Bad Bodendorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bäderstraße",
+    "hausnummer": "30",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.215543,
+    "lat": 50.551129
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e04-da33-4437-8046-1fd7baa3b831",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

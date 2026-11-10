@@ -1,0 +1,29 @@
+{
+  "id": "RP-a0da0032-36b2-4a21-b320-0486ebcca67d",
+  "name": "Waldbachhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Asterstraße",
+    "hausnummer": "14",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.812846,
+    "lat": 50.447833
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0da0032-36b2-4a21-b320-0486ebcca67d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

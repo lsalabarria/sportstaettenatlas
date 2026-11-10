@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc61-5e84-4a3b-9c39-95f21d8fe017",
+  "name": "Freibad Linz am Rhein",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "hausnummer": "2",
+    "plz": "53545",
+    "ort": "Linz am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.285636,
+    "lat": 50.52261
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc61-5e84-4a3b-9c39-95f21d8fe017",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90f-30d8-4f0e-b84a-73527782b577",
+  "name": "Schulsporthalle Nackenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Pommardstraße",
+    "hausnummer": "17",
+    "plz": "55299",
+    "ort": "Nackenheim"
+  },
+  "lage": {
+    "lon": 8.341469,
+    "lat": 49.922997
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90f-30d8-4f0e-b84a-73527782b577",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

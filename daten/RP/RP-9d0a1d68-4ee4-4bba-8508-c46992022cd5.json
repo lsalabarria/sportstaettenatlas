@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d68-4ee4-4bba-8508-c46992022cd5",
+  "name": "Kailbachhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Brückenstraße",
+    "hausnummer": "2",
+    "plz": "54526",
+    "ort": "Landscheid"
+  },
+  "lage": {
+    "lon": 6.745803,
+    "lat": 49.976885
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d68-4ee4-4bba-8508-c46992022cd5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

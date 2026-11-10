@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d0a1e13-aa3a-4b1e-b0ef-25db254e2e03",
+  "name": "Ski Club Daun",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "plz": "54550",
+    "ort": "Daun, Stadt"
+  },
+  "lage": {
+    "lon": 6.841835,
+    "lat": 50.178322
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Alpine Skianlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e13-aa3a-4b1e-b0ef-25db254e2e03",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

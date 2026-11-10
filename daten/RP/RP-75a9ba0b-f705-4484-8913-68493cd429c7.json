@@ -1,0 +1,28 @@
+{
+  "id": "RP-75a9ba0b-f705-4484-8913-68493cd429c7",
+  "name": "Anschluss von Stein-Neukirch über Hof an die Nisterberger Loipe",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Neukircher Straße",
+    "plz": "56479",
+    "ort": "Stein-Neukirch"
+  },
+  "lage": {
+    "lon": 8.043415,
+    "lat": 50.673827
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skilanglauf- und Biathlonanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "75a9ba0b-f705-4484-8913-68493cd429c7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9f01cc7b-caaf-4ece-830b-08f03bf16260",
+  "name": "Klingelwiese",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Campingplatz Klingelwiese",
+    "plz": "56244",
+    "ort": "Maxsain"
+  },
+  "lage": {
+    "lon": 7.761204,
+    "lat": 50.505763
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Naturbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc7b-caaf-4ece-830b-08f03bf16260",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

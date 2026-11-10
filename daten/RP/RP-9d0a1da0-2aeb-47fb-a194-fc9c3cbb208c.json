@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d0a1da0-2aeb-47fb-a194-fc9c3cbb208c",
+  "name": "Sportplatz Greimerath",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54533",
+    "ort": "Greimerath"
+  },
+  "lage": {
+    "lon": 6.911909,
+    "lat": 50.042718
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da0-2aeb-47fb-a194-fc9c3cbb208c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

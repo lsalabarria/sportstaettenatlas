@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a91a-0bde-4926-9ab2-53c8a2bec95d",
+  "name": "Sportanlage Walsheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "1",
+    "plz": "76833",
+    "ort": "Walsheim"
+  },
+  "lage": {
+    "lon": 8.127063,
+    "lat": 49.238314
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91a-0bde-4926-9ab2-53c8a2bec95d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

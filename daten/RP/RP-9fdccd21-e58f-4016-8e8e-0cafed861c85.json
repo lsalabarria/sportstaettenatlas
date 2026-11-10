@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd21-e58f-4016-8e8e-0cafed861c85",
+  "name": "Tennisplatz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Geb",
+    "hausnummer": "1222",
+    "plz": "66892",
+    "ort": "Bruchmühlbach-Miesau"
+  },
+  "lage": {
+    "lon": 7.430665,
+    "lat": 49.392205
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd21-e58f-4016-8e8e-0cafed861c85",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

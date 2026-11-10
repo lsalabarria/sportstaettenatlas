@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfaa-8a36-4521-8c6b-6f1e81797da0",
+  "name": "Schießsportanlage",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Anderbachstraße",
+    "hausnummer": "22",
+    "plz": "56072",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.521054,
+    "lat": 50.363537
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfaa-8a36-4521-8c6b-6f1e81797da0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

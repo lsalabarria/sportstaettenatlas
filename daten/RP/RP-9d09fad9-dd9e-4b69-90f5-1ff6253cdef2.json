@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fad9-dd9e-4b69-90f5-1ff6253cdef2",
+  "name": "Sportplatz Nassen Breitscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gewerbepark Siebenmorgen",
+    "hausnummer": "10",
+    "plz": "53547",
+    "ort": "Breitscheid"
+  },
+  "lage": {
+    "lon": 7.459439,
+    "lat": 50.572653
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad9-dd9e-4b69-90f5-1ff6253cdef2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

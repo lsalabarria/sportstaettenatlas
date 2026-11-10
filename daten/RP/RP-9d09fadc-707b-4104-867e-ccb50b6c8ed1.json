@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fadc-707b-4104-867e-ccb50b6c8ed1",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Holsthumer Straße",
+    "plz": "54668",
+    "ort": "Ferschweiler"
+  },
+  "lage": {
+    "lon": 6.401895,
+    "lat": 49.872958
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadc-707b-4104-867e-ccb50b6c8ed1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

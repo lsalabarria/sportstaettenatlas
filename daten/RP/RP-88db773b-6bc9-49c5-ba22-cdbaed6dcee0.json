@@ -1,0 +1,28 @@
+{
+  "id": "RP-88db773b-6bc9-49c5-ba22-cdbaed6dcee0",
+  "name": "Im Adrian",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "L151",
+    "plz": "54411",
+    "ort": "Hermeskeil, Stadt"
+  },
+  "lage": {
+    "lon": 6.950259,
+    "lat": 49.642831
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skilanglauf- und Biathlonanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "88db773b-6bc9-49c5-ba22-cdbaed6dcee0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

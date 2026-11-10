@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db9-71ea-4591-9920-d45e6090a767",
+  "name": "Turnhalle Grundschule Matthias",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kentenichstraße",
+    "hausnummer": "2",
+    "plz": "54290",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.631286,
+    "lat": 49.741581
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db9-71ea-4591-9920-d45e6090a767",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

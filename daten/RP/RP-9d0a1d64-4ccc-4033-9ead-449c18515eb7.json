@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d64-4ccc-4033-9ead-449c18515eb7",
+  "name": "Basketballplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Blasiusstraße",
+    "hausnummer": "13",
+    "plz": "54497",
+    "ort": "Morbach"
+  },
+  "lage": {
+    "lon": 7.070854,
+    "lat": 49.787267
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d64-4ccc-4033-9ead-449c18515eb7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

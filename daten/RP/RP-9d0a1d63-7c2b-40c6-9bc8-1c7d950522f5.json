@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d63-7c2b-40c6-9bc8-1c7d950522f5",
+  "name": "Boltplatz Hilscheid",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Burggrabenstraße",
+    "plz": "54426",
+    "ort": "Hilscheid"
+  },
+  "lage": {
+    "lon": 7.014598,
+    "lat": 49.735619
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d63-7c2b-40c6-9bc8-1c7d950522f5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

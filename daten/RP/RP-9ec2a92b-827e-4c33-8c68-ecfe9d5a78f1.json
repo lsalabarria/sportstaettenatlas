@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a92b-827e-4c33-8c68-ecfe9d5a78f1",
+  "name": "HSC Ingelheim e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hans-Fluck-Straße",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.052615,
+    "lat": 49.972571
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    },
+    {
+      "bezeichnung": "Sport- Turnhalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92b-827e-4c33-8c68-ecfe9d5a78f1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1d9f-9b53-4618-b260-1f92c4aa4339",
+  "name": "Sportplatz Feldstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Feldstraße",
+    "plz": "54518",
+    "ort": "Hupperath"
+  },
+  "lage": {
+    "lon": 6.843954,
+    "lat": 50.00007
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d9f-9b53-4618-b260-1f92c4aa4339",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-44f017f7-850c-4ae1-b382-8364f815d896",
+  "name": "Anhausen Loipe",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "L258",
+    "plz": "56584",
+    "ort": "Anhausen"
+  },
+  "lage": {
+    "lon": 7.54879,
+    "lat": 50.49346
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skilanglauf- und Biathlonanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "44f017f7-850c-4ae1-b382-8364f815d896",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

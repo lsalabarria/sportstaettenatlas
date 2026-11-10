@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc7a-da0b-4b76-8eb7-a4f79b03b441",
+  "name": "Campingplatz Pommern",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Moselweinstraße",
+    "hausnummer": "12",
+    "plz": "56829",
+    "ort": "Pommern"
+  },
+  "lage": {
+    "lon": 7.2659,
+    "lat": 50.16859
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc7a-da0b-4b76-8eb7-a4f79b03b441",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

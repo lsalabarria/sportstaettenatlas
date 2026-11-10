@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24f4ea-347c-49cb-a99d-d86b71576a30",
+  "name": "Sportplatz Rittersdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "12a",
+    "plz": "54636",
+    "ort": "Rittersdorf"
+  },
+  "lage": {
+    "lon": 6.488862,
+    "lat": 49.998068
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ea-347c-49cb-a99d-d86b71576a30",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

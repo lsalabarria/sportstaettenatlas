@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a917-e789-47ab-acc1-95d21291c0f2",
+  "name": "Sportplatz Einselthum",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wasserweg",
+    "plz": "67308",
+    "ort": "Einselthum"
+  },
+  "lage": {
+    "lon": 8.119033,
+    "lat": 49.650659
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a917-e789-47ab-acc1-95d21291c0f2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

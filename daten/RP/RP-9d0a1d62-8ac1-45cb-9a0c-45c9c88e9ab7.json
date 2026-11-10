@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d62-8ac1-45cb-9a0c-45c9c88e9ab7",
+  "name": "Bolzplatz Ravengiersburg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mühlengasse",
+    "plz": "55471",
+    "ort": "Ravengiersburg"
+  },
+  "lage": {
+    "lon": 7.477993,
+    "lat": 49.936582
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d62-8ac1-45cb-9a0c-45c9c88e9ab7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

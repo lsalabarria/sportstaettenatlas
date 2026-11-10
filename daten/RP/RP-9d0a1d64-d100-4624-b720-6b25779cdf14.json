@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1d64-d100-4624-b720-6b25779cdf14",
+  "name": "Sportplatz Weiperath",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "K99",
+    "plz": "54497",
+    "ort": "Morbach"
+  },
+  "lage": {
+    "lon": 7.086547,
+    "lat": 49.804726
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d64-d100-4624-b720-6b25779cdf14",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

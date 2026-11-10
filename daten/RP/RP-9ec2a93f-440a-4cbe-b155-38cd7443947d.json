@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a93f-440a-4cbe-b155-38cd7443947d",
+  "name": "Waldsportplatz Böllenborn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L492",
+    "plz": "76887",
+    "ort": "Bad Bergzabern, Stadt"
+  },
+  "lage": {
+    "lon": 7.921724,
+    "lat": 49.095633
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93f-440a-4cbe-b155-38cd7443947d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

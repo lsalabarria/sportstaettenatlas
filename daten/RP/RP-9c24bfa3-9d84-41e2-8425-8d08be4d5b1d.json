@@ -1,0 +1,31 @@
+{
+  "id": "RP-9c24bfa3-9d84-41e2-8425-8d08be4d5b1d",
+  "name": "DANY Fitness Beachvolleyballfelder",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Am Gülser Bootshafen",
+    "plz": "56072",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.55604,
+    "lat": 50.335347
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa3-9d84-41e2-8425-8d08be4d5b1d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d50-f4f5-45c1-b1c1-d4ffa642042f",
+  "name": "Grundschule Niederdürenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "In der Hohl",
+    "hausnummer": "16",
+    "plz": "56651",
+    "ort": "Niederdürenbach"
+  },
+  "lage": {
+    "lon": 7.179255,
+    "lat": 50.458944
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-f4f5-45c1-b1c1-d4ffa642042f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

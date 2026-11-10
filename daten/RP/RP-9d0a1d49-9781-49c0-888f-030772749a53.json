@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d49-9781-49c0-888f-030772749a53",
+  "name": "Sportplatz des Jugendzeltplatzes Astert",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "K14 45",
+    "plz": "57627",
+    "ort": "Astert"
+  },
+  "lage": {
+    "lon": 7.775999,
+    "lat": 50.694036
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d49-9781-49c0-888f-030772749a53",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

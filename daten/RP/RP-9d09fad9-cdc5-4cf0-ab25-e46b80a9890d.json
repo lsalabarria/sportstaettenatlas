@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad9-cdc5-4cf0-ab25-e46b80a9890d",
+  "name": "Bolzplatz Hardert",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Alter Weg",
+    "plz": "56579",
+    "ort": "Hardert"
+  },
+  "lage": {
+    "lon": 7.516007,
+    "lat": 50.522096
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad9-cdc5-4cf0-ab25-e46b80a9890d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

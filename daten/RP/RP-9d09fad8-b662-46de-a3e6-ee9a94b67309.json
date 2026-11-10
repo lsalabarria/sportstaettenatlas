@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad8-b662-46de-a3e6-ee9a94b67309",
+  "name": "Sporthalle / Sportplatz Waldbreitbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "plz": "56588",
+    "ort": "Waldbreitbach"
+  },
+  "lage": {
+    "lon": 7.412385,
+    "lat": 50.546506
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad8-b662-46de-a3e6-ee9a94b67309",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

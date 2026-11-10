@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcce24-5f1c-467f-8d27-8f8dcca8b92e",
+  "name": "Sporthalle Dalbergschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Höhenstraße",
+    "hausnummer": "19",
+    "plz": "67550",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.328481,
+    "lat": 49.655102
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce24-5f1c-467f-8d27-8f8dcca8b92e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

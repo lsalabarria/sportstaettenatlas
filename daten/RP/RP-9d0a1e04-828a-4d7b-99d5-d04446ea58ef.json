@@ -1,0 +1,43 @@
+{
+  "id": "RP-9d0a1e04-828a-4d7b-99d5-d04446ea58ef",
+  "name": "Rhein-Ahr-Stadion Sinzig",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Grüner Weg",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.247962,
+    "lat": 50.551316
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e04-828a-4d7b-99d5-d04446ea58ef",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

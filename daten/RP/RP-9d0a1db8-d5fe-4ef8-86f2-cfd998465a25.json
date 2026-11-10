@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db8-d5fe-4ef8-86f2-cfd998465a25",
+  "name": "Nordbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zurmaiener Straße",
+    "hausnummer": "120",
+    "plz": "54292",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.647312,
+    "lat": 49.770415
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db8-d5fe-4ef8-86f2-cfd998465a25",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

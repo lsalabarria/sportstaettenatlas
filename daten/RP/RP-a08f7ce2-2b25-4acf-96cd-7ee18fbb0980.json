@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7ce2-2b25-4acf-96cd-7ee18fbb0980",
+  "name": "Montforterhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Montforterhof",
+    "plz": "55585",
+    "ort": "Duchroth"
+  },
+  "lage": {
+    "lon": 7.765569,
+    "lat": 49.76657
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ce2-2b25-4acf-96cd-7ee18fbb0980",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

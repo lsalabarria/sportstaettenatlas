@@ -1,0 +1,28 @@
+{
+  "id": "RP-a08f7cc7-5cc5-4bb9-a8a2-0a3edb138d1f",
+  "name": "Sportplatz am Rabenfels",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "55595",
+    "ort": "Dalberg"
+  },
+  "lage": {
+    "lon": 7.736971,
+    "lat": 49.899755
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cc7-5cc5-4bb9-a8a2-0a3edb138d1f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

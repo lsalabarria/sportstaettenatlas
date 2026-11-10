@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a929-f304-4fb9-83fc-7babc926ec1f",
+  "name": "Minigolfanlage im Blumengarten",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Im Blumengarten",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.060277,
+    "lat": 49.982128
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bahnengolf"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a929-f304-4fb9-83fc-7babc926ec1f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-30dedba5-7b09-4a04-bf81-7cd582d5cf68",
+  "name": "Schützenhaus Hettenhausen",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "9",
+    "plz": "66919",
+    "ort": "Hettenhausen"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Bogenschießanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "30dedba5-7b09-4a04-bf81-7cd582d5cf68",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

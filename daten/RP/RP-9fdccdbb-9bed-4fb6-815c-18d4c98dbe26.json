@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccdbb-9bed-4fb6-815c-18d4c98dbe26",
+  "name": "Skateboard Rampe Kürrenberg",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Am Hansenkreuz",
+    "plz": "56727",
+    "ort": "Mayen, Stadt"
+  },
+  "lage": {
+    "lon": 7.16625,
+    "lat": 50.336813
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdbb-9bed-4fb6-815c-18d4c98dbe26",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

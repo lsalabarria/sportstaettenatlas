@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e03-2970-4c81-b8c9-d49e53f21c1f",
+  "name": "Sportanlage Oedingen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wachtbergstraße",
+    "plz": "53424",
+    "ort": "Remagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.161504,
+    "lat": 50.60481
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e03-2970-4c81-b8c9-d49e53f21c1f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

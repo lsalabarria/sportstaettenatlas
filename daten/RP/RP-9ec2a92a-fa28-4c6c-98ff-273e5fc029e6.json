@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a92a-fa28-4c6c-98ff-273e5fc029e6",
+  "name": "Reitplatz am Kiefernwald",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Kiefernwald",
+    "plz": "55262",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.144506,
+    "lat": 50.001838
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Springparcours"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92a-fa28-4c6c-98ff-273e5fc029e6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "RP-9d09faf1-145c-4a89-bdf5-0ef649c7c8a6",
+  "name": "Realschule Plus Salz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "10",
+    "plz": "56414",
+    "ort": "Salz"
+  },
+  "lage": {
+    "lon": 7.965717,
+    "lat": 50.512705
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf1-145c-4a89-bdf5-0ef649c7c8a6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

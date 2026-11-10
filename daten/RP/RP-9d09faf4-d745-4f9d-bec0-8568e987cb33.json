@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faf4-d745-4f9d-bec0-8568e987cb33",
+  "name": "Sportplatz VFB Rotenhain-Bellingen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "20",
+    "plz": "56459",
+    "ort": "Bellingen"
+  },
+  "lage": {
+    "lon": 7.905285,
+    "lat": 50.588652
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf4-d745-4f9d-bec0-8568e987cb33",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

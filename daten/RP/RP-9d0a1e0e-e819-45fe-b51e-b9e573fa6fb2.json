@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1e0e-e819-45fe-b51e-b9e573fa6fb2",
+  "name": "KRAV Maga Fitclub Welk / EW-SELFDEFENSE",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Oberstraße",
+    "hausnummer": "34",
+    "plz": "55469",
+    "ort": "Simmern/ Hunsrück, Stadt"
+  },
+  "lage": {
+    "lon": 7.52366,
+    "lat": 49.984484
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    },
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0e-e819-45fe-b51e-b9e573fa6fb2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

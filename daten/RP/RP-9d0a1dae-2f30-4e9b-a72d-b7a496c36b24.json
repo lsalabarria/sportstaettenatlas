@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dae-2f30-4e9b-a72d-b7a496c36b24",
+  "name": "Stadion Engers",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Johannes-Seiz-Straße",
+    "hausnummer": "5A",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.543404,
+    "lat": 50.427638
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Rundlaufbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dae-2f30-4e9b-a72d-b7a496c36b24",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

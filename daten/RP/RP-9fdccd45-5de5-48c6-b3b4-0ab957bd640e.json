@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd45-5de5-48c6-b3b4-0ab957bd640e",
+  "name": "Waldstadion Busenberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "16",
+    "plz": "76891",
+    "ort": "Busenberg"
+  },
+  "lage": {
+    "lon": 7.83428,
+    "lat": 49.133934
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd45-5de5-48c6-b3b4-0ab957bd640e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

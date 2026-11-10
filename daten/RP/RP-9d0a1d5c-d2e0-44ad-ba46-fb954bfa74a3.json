@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5c-d2e0-44ad-ba46-fb954bfa74a3",
+  "name": "Bouleplatz Hollnich",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Dorfstraße",
+    "plz": "56288",
+    "ort": "Hollnich"
+  },
+  "lage": {
+    "lon": 7.487572,
+    "lat": 50.072948
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5c-d2e0-44ad-ba46-fb954bfa74a3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

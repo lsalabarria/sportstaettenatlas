@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faf1-aaa5-4bd5-999a-838a5c6eab94",
+  "name": "Dorfgemeinschaftshaus",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56459",
+    "ort": "Gemünden"
+  },
+  "lage": {
+    "lon": 8.016313,
+    "lat": 50.557311
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf1-aaa5-4bd5-999a-838a5c6eab94",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

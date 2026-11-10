@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1df7-97a2-4eb0-86a8-3495e90310e6",
+  "name": "Schießsportanlage",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "hausnummer": "87",
+    "plz": "56203",
+    "ort": "Höhr-Grenzhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.689592,
+    "lat": 50.431157
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df7-97a2-4eb0-86a8-3495e90310e6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

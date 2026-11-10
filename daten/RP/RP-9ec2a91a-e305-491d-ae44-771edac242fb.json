@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a91a-e305-491d-ae44-771edac242fb",
+  "name": "Freizeitcenter Bornheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Hornbachstraße",
+    "hausnummer": "19",
+    "plz": "76879",
+    "ort": "Bornheim"
+  },
+  "lage": {
+    "lon": 8.168868,
+    "lat": 49.214599
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Squashhalle"
+    },
+    {
+      "bezeichnung": "Tennishalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91a-e305-491d-ae44-771edac242fb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

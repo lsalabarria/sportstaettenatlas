@@ -1,0 +1,32 @@
+{
+  "id": "RP-9fdccd7a-2bf5-4446-8fe2-bd3f3b1a5887",
+  "name": "Bolzplatz Savoyenpark",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schlossstraße",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.112101,
+    "lat": 49.192627
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd7a-2bf5-4446-8fe2-bd3f3b1a5887",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

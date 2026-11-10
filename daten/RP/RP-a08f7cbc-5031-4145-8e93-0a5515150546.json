@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7cbc-5031-4145-8e93-0a5515150546",
+  "name": "Sportanlage Seesbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "55629",
+    "ort": "Seesbach"
+  },
+  "lage": {
+    "lon": 7.543673,
+    "lat": 49.852072
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cbc-5031-4145-8e93-0a5515150546",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

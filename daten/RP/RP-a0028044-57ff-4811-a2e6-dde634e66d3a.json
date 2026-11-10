@@ -1,0 +1,37 @@
+{
+  "id": "RP-a0028044-57ff-4811-a2e6-dde634e66d3a",
+  "name": "Gut Peterhof Malenga Arabians | Vollblutaraber-Gestüt",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Peterhof",
+    "plz": "56154",
+    "ort": "Boppard, Stadt"
+  },
+  "lage": {
+    "lon": 7.64143,
+    "lat": 50.160599
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0028044-57ff-4811-a2e6-dde634e66d3a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcce10-4484-4e6e-b79d-40db77fcfb58",
+  "name": "Ormsheimer Hof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Ormsheimer Hof",
+    "plz": "67227",
+    "ort": "Frankenthal (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.326222,
+    "lat": 49.532679
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce10-4484-4e6e-b79d-40db77fcfb58",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

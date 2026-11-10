@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccce0-7fbe-4e40-8bf8-6544e3bff61f",
+  "name": "Birkenhof Dörnberg",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Birkenhof",
+    "hausnummer": "1",
+    "plz": "56379",
+    "ort": "Dörnberg"
+  },
+  "lage": {
+    "lon": 7.879819,
+    "lat": 50.333772
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccce0-7fbe-4e40-8bf8-6544e3bff61f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e09-c3df-410e-aed2-d4d77cbbd5ad",
+  "name": "TC Rot-Weiß Boppard e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Mainzer Straße",
+    "hausnummer": "6",
+    "plz": "56154",
+    "ort": "Boppard, Stadt"
+  },
+  "lage": {
+    "lon": 7.606281,
+    "lat": 50.228867
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e09-c3df-410e-aed2-d4d77cbbd5ad",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

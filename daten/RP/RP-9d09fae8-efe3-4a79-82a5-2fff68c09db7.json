@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fae8-efe3-4a79-82a5-2fff68c09db7",
+  "name": "Waldspielplatz Simmern",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "plz": "56337",
+    "ort": "Simmern"
+  },
+  "lage": {
+    "lon": 7.675341,
+    "lat": 50.384803
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae8-efe3-4a79-82a5-2fff68c09db7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

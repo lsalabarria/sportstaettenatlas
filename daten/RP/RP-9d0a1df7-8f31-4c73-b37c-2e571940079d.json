@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1df7-8f31-4c73-b37c-2e571940079d",
+  "name": "Reitsportanlage",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "hausnummer": "91",
+    "plz": "56203",
+    "ort": "Höhr-Grenzhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.689854,
+    "lat": 50.429847
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df7-8f31-4c73-b37c-2e571940079d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

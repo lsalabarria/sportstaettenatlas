@@ -1,0 +1,35 @@
+{
+  "id": "RP-0ed744bf-a85d-4522-838e-33391a7badbe",
+  "name": "Schützengesellschaft 1968 Abenheim e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Abenheimer Landstr.",
+    "hausnummer": "91",
+    "plz": "67550",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.310256,
+    "lat": 49.667538
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportarten": [
+    "Pistole",
+    "Gewehr",
+    "Schießsport"
+  ],
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "0ed744bf-a85d-4522-838e-33391a7badbe",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

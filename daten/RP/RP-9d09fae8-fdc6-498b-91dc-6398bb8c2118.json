@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fae8-fdc6-498b-91dc-6398bb8c2118",
+  "name": "Augststadion Neuhäusel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hillscheider Str.",
+    "plz": "56335",
+    "ort": "Neuhäusel"
+  },
+  "lage": {
+    "lon": 7.709757,
+    "lat": 50.390182
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae8-fdc6-498b-91dc-6398bb8c2118",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

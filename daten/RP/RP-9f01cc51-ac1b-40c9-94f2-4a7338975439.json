@@ -1,0 +1,33 @@
+{
+  "id": "RP-9f01cc51-ac1b-40c9-94f2-4a7338975439",
+  "name": "Siegtalbad Wissen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Stadionstraße",
+    "hausnummer": "42",
+    "plz": "57537",
+    "ort": "Wissen, Stadt"
+  },
+  "lage": {
+    "lon": 7.721892,
+    "lat": 50.737578
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    },
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc51-ac1b-40c9-94f2-4a7338975439",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

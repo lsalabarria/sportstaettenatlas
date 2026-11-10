@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccca5-d4fe-40b0-8737-7a22bdd02b85",
+  "name": "Grundschulsporthalle Lina Sommer",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schelmenwaldstraße",
+    "hausnummer": "3",
+    "plz": "76751",
+    "ort": "Jockgrim"
+  },
+  "lage": {
+    "lon": 8.282905,
+    "lat": 49.097949
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccca5-d4fe-40b0-8737-7a22bdd02b85",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccc98-27c4-43f2-8cc0-7c95160c803f",
+  "name": "Schulturnhalle Grundschule Hördt",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "hausnummer": "7",
+    "plz": "76711",
+    "ort": "Hördt"
+  },
+  "lage": {
+    "lon": 8.327724,
+    "lat": 49.163148
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc98-27c4-43f2-8cc0-7c95160c803f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

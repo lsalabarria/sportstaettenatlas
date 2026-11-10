@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d4d-2ce3-4c25-ab49-3dc39ef6fc4e",
+  "name": "Bolzplatz Rodder",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Weiherstraße",
+    "hausnummer": "9",
+    "plz": "53520",
+    "ort": "Rodder"
+  },
+  "lage": {
+    "lon": 6.857814,
+    "lat": 50.397208
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4d-2ce3-4c25-ab49-3dc39ef6fc4e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

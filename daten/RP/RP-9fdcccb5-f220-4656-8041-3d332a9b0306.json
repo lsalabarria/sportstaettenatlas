@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcccb5-f220-4656-8041-3d332a9b0306",
+  "name": "Sportplatz In den Wingertsgärten",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "In den Wingertsgärten",
+    "plz": "56332",
+    "ort": "Niederfell"
+  },
+  "lage": {
+    "lon": 7.459915,
+    "lat": 50.287244
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccb5-f220-4656-8041-3d332a9b0306",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

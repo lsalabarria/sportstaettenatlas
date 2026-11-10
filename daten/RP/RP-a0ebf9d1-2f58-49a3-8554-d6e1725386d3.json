@@ -1,0 +1,29 @@
+{
+  "id": "RP-a0ebf9d1-2f58-49a3-8554-d6e1725386d3",
+  "name": "Dorfgemeinschaftshaus Stahl",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Neuenweg",
+    "hausnummer": "1",
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.500688,
+    "lat": 49.967316
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0ebf9d1-2f58-49a3-8554-d6e1725386d3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

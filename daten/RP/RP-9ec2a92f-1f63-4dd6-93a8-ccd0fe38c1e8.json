@@ -1,0 +1,61 @@
+{
+  "id": "RP-9ec2a92f-1f63-4dd6-93a8-ccd0fe38c1e8",
+  "name": "Waldstadion Eisenberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Friedrich-Ebert-Straße",
+    "plz": "67304",
+    "ort": "Eisenberg (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.057647,
+    "lat": 49.554268
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Diskus-"
+    },
+    {
+      "bezeichnung": "Hammerwurfanlage"
+    },
+    {
+      "bezeichnung": "Stabhochsprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92f-1f63-4dd6-93a8-ccd0fe38c1e8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

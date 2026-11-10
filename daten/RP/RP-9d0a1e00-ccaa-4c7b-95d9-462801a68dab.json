@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1e00-ccaa-4c7b-95d9-462801a68dab",
+  "name": "Sportplatz Hinter dem Bach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bonner Straße",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.165853,
+    "lat": 50.557651
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e00-ccaa-4c7b-95d9-462801a68dab",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

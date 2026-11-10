@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faec-4834-41ab-b283-e120ed330ae6",
+  "name": "Butzis Fitness",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Sälzerstraße",
+    "hausnummer": "4",
+    "plz": "56424",
+    "ort": "Ebernhahn"
+  },
+  "lage": {
+    "lon": 7.756493,
+    "lat": 50.474513
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faec-4834-41ab-b283-e120ed330ae6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

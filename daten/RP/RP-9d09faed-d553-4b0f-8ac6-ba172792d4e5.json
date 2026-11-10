@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faed-d553-4b0f-8ac6-ba172792d4e5",
+  "name": "Bolzplatz Nordhofen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "56242",
+    "ort": "Nordhofen"
+  },
+  "lage": {
+    "lon": 7.753853,
+    "lat": 50.516458
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faed-d553-4b0f-8ac6-ba172792d4e5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

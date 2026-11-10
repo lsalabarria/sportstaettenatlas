@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faf4-933a-4ee8-8456-0682991d52c9",
+  "name": "Sportplatz Dreifelden",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Alten Wehr",
+    "plz": "57629",
+    "ort": "Dreifelden"
+  },
+  "lage": {
+    "lon": 7.833393,
+    "lat": 50.589177
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf4-933a-4ee8-8456-0682991d52c9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

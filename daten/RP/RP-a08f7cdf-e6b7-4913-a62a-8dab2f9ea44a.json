@@ -1,0 +1,33 @@
+{
+  "id": "RP-a08f7cdf-e6b7-4913-a62a-8dab2f9ea44a",
+  "name": "Sportanlage Schulstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "26",
+    "plz": "55595",
+    "ort": "Weinsheim"
+  },
+  "lage": {
+    "lon": 7.770256,
+    "lat": 49.834122
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cdf-e6b7-4913-a62a-8dab2f9ea44a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

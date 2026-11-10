@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d0a1db8-2db1-4d89-9988-5f9d95a52b19",
+  "name": "Ballpark Baseballfeld Trier Cardinals",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54294",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.616267,
+    "lat": 49.73082
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db8-2db1-4d89-9988-5f9d95a52b19",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

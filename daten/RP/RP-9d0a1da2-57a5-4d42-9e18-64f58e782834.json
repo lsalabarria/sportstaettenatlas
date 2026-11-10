@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da2-57a5-4d42-9e18-64f58e782834",
+  "name": "Tennisanlage Neroth",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "hausnummer": "37",
+    "plz": "54570",
+    "ort": "Neroth"
+  },
+  "lage": {
+    "lon": 6.740951,
+    "lat": 50.191478
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da2-57a5-4d42-9e18-64f58e782834",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

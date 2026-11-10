@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1e04-aafd-49ed-9013-3311c90d22f3",
+  "name": "Rhein-Gymnasium Sinzig",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dreifaltigkeitsweg",
+    "hausnummer": "37b",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.251036,
+    "lat": 50.549491
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e04-aafd-49ed-9013-3311c90d22f3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

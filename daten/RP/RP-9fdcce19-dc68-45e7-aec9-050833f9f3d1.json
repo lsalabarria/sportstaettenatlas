@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcce19-dc68-45e7-aec9-050833f9f3d1",
+  "name": "Tennisanlage Kurpfalzkaserne",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Spaldinger Straße",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.429429,
+    "lat": 49.361538
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce19-dc68-45e7-aec9-050833f9f3d1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

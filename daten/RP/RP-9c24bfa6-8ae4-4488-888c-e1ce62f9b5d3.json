@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfa6-8ae4-4488-888c-e1ce62f9b5d3",
+  "name": "Schulhof Gymnasium auf dem Asterstein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lehrhohl",
+    "hausnummer": "50",
+    "plz": "56077",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.619927,
+    "lat": 50.344259
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa6-8ae4-4488-888c-e1ce62f9b5d3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

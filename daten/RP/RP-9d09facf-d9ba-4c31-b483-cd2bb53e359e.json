@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09facf-d9ba-4c31-b483-cd2bb53e359e",
+  "name": "Grundschule Etzbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wiesenstraße",
+    "hausnummer": "21",
+    "plz": "57539",
+    "ort": "Etzbach"
+  },
+  "lage": {
+    "lon": 7.6881,
+    "lat": 50.774695
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facf-d9ba-4c31-b483-cd2bb53e359e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

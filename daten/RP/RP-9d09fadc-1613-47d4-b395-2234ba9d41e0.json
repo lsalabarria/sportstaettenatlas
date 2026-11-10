@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fadc-1613-47d4-b395-2234ba9d41e0",
+  "name": "Schwimmbad Bollendorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Sauerstaden",
+    "plz": "54669",
+    "ort": "Bollendorf"
+  },
+  "lage": {
+    "lon": 6.349323,
+    "lat": 49.851086
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadc-1613-47d4-b395-2234ba9d41e0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

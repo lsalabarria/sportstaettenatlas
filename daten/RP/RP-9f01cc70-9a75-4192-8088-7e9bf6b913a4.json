@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc70-9a75-4192-8088-7e9bf6b913a4",
+  "name": "Ostparkbad Frankenthal",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Kanal",
+    "hausnummer": "2",
+    "plz": "67227",
+    "ort": "Frankenthal (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.36223,
+    "lat": 49.53484
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc70-9a75-4192-8088-7e9bf6b913a4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

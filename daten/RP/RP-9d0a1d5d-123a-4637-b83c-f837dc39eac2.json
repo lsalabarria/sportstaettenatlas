@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d5d-123a-4637-b83c-f837dc39eac2",
+  "name": "Sportplatz Mörsdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Windorfer Straße",
+    "hausnummer": "8",
+    "plz": "56290",
+    "ort": "Mörsdorf"
+  },
+  "lage": {
+    "lon": 7.33857,
+    "lat": 50.106754
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5d-123a-4637-b83c-f837dc39eac2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

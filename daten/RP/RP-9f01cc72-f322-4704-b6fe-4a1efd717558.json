@@ -1,0 +1,29 @@
+{
+  "id": "RP-9f01cc72-f322-4704-b6fe-4a1efd717558",
+  "name": "Freibad Saarburg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am City-Parkplatz",
+    "plz": "54439",
+    "ort": "Saarburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.54584,
+    "lat": 49.60616
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc72-f322-4704-b6fe-4a1efd717558",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

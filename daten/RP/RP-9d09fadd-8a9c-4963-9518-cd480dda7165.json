@@ -1,0 +1,34 @@
+{
+  "id": "RP-9d09fadd-8a9c-4963-9518-cd480dda7165",
+  "name": "Tennisplatz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "54313",
+    "ort": "Zemmer"
+  },
+  "lage": {
+    "lon": 6.706213,
+    "lat": 49.890095
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadd-8a9c-4963-9518-cd480dda7165",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

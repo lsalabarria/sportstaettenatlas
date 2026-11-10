@@ -1,0 +1,49 @@
+{
+  "id": "RP-9c24f4e7-2361-4648-8f64-d9e2a044b57f",
+  "name": "Stadion-Ost",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ostring",
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.541482,
+    "lat": 49.973663
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Diskus-"
+    },
+    {
+      "bezeichnung": "Hammerwurfanlage"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e7-2361-4648-8f64-d9e2a044b57f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

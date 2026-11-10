@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d0a1dae-aaf9-4ea0-9269-54bd1a94b70b",
+  "name": "Sportplatz Dierdorfer Straße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bimsstraße",
+    "hausnummer": "2",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.480155,
+    "lat": 50.443567
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dae-aaf9-4ea0-9269-54bd1a94b70b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

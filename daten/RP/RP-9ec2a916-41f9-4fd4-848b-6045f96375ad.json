@@ -1,0 +1,27 @@
+{
+  "id": "RP-9ec2a916-41f9-4fd4-848b-6045f96375ad",
+  "name": "Schützenverein SG Alsenz",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "plz": "67821",
+    "ort": "Alsenz"
+  },
+  "lage": {
+    "lon": 7.810211,
+    "lat": 49.732955
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a916-41f9-4fd4-848b-6045f96375ad",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

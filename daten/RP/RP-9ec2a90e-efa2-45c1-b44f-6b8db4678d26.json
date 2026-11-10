@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90e-efa2-45c1-b44f-6b8db4678d26",
+  "name": "Tennishalle Tennis Academy Mainz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Rheinallee",
+    "hausnummer": "95",
+    "plz": "55294",
+    "ort": "Bodenheim"
+  },
+  "lage": {
+    "lon": 8.326269,
+    "lat": 49.936924
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennishalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90e-efa2-45c1-b44f-6b8db4678d26",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

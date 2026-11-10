@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1dac-a873-49f4-9d00-253039ea5b0f",
+  "name": "Neuwieder Schützengesellschaft",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Wiedpfad",
+    "plz": "56567",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.461223,
+    "lat": 50.454947
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dac-a873-49f4-9d00-253039ea5b0f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

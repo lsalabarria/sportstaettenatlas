@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a915-b305-4f57-84c0-95087b553410",
+  "name": "Reitstall Katzenbach",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Kirchweg",
+    "plz": "67806",
+    "ort": "Katzenbach"
+  },
+  "lage": {
+    "lon": 7.813703,
+    "lat": 49.640979
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Stall"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a915-b305-4f57-84c0-95087b553410",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

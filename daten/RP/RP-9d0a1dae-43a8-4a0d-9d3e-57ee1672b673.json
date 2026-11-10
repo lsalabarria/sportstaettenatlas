@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dae-43a8-4a0d-9d3e-57ee1672b673",
+  "name": "Gymnastikhalle Carl-Orff-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Orffstraße",
+    "hausnummer": "37",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.542756,
+    "lat": 50.430409
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sport- Turnhalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dae-43a8-4a0d-9d3e-57ee1672b673",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

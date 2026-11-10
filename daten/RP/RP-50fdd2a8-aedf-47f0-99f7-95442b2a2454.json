@@ -1,0 +1,36 @@
+{
+  "id": "RP-50fdd2a8-aedf-47f0-99f7-95442b2a2454",
+  "name": "DJK Spvgg. Moguntia Mainz-Bretzenheim e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Fort Gonsenheim",
+    "hausnummer": "51 A",
+    "plz": "55122",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "DJK Spvgg Moguntia Mainz-Bretzenheim",
+  "betreiber": "DJK Spvgg Moguntia Mainz-Bretzenheim",
+  "website": "www.djk-bretzenheim.de",
+  "sportarten": [
+    "Tennis"
+  ],
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "50fdd2a8-aedf-47f0-99f7-95442b2a2454",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

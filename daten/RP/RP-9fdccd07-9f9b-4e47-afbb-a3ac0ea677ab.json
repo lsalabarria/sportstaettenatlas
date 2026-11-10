@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd07-9f9b-4e47-afbb-a3ac0ea677ab",
+  "name": "Beachvolleyballfeld Miehlen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56357",
+    "ort": "Miehlen"
+  },
+  "lage": {
+    "lon": 7.828935,
+    "lat": 50.230964
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd07-9f9b-4e47-afbb-a3ac0ea677ab",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

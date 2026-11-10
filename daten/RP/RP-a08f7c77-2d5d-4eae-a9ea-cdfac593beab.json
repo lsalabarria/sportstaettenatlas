@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7c77-2d5d-4eae-a9ea-cdfac593beab",
+  "name": "Sports and more Fitnessclub Wöllstein",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "In d. Krummgewann",
+    "hausnummer": "5",
+    "plz": "55597",
+    "ort": "Wöllstein"
+  },
+  "lage": {
+    "lon": 7.975608,
+    "lat": 49.823622
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Gerätebereich"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c77-2d5d-4eae-a9ea-cdfac593beab",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

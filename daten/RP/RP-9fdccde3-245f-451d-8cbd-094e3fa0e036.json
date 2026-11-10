@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccde3-245f-451d-8cbd-094e3fa0e036",
+  "name": "Tennisanlage Jahnheide",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "160",
+    "plz": "67659",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.71355,
+    "lat": 49.468651
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccde3-245f-451d-8cbd-094e3fa0e036",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

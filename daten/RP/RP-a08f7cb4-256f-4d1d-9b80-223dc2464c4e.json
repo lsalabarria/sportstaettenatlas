@@ -1,0 +1,32 @@
+{
+  "id": "RP-a08f7cb4-256f-4d1d-9b80-223dc2464c4e",
+  "name": "Sportplatz Hüffler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Flurstraße",
+    "plz": "66909",
+    "ort": "Hüffler"
+  },
+  "lage": {
+    "lon": 7.384118,
+    "lat": 49.500682
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb4-256f-4d1d-9b80-223dc2464c4e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

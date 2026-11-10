@@ -1,0 +1,30 @@
+{
+  "id": "RP-a22beb41-4250-4902-bfc9-d0f191be1760",
+  "name": "Jahnhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hochstr.",
+    "hausnummer": "27",
+    "plz": "55545",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 8.292855,
+    "lat": 49.976508
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifach-Sporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a22beb41-4250-4902-bfc9-d0f191be1760",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

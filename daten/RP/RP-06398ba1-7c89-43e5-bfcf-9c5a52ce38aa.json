@@ -1,0 +1,29 @@
+{
+  "id": "RP-06398ba1-7c89-43e5-bfcf-9c5a52ce38aa",
+  "name": "Tennisclub Minfeld",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Wiesental",
+    "plz": "76872",
+    "ort": "Minfeld"
+  },
+  "lage": {
+    "lon": 8.146502,
+    "lat": 49.066873
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "06398ba1-7c89-43e5-bfcf-9c5a52ce38aa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

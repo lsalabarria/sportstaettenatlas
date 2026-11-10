@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad4-7788-4534-a64a-f1456cade324",
+  "name": "Sportschützen Vettelschoß",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "L252",
+    "plz": "53560",
+    "ort": "Vettelschoß"
+  },
+  "lage": {
+    "lon": 7.361383,
+    "lat": 50.614584
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad4-7788-4534-a64a-f1456cade324",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-d0de2113-d92d-4438-bb77-bb22deef3d1c",
+  "name": "Bürgerhaus Rutsweiler an der Lauter",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hirtenstraße",
+    "hausnummer": "6",
+    "plz": "67752",
+    "ort": "Rutsweiler an der Lauter"
+  },
+  "lage": {
+    "lon": 7.619659,
+    "lat": 49.566396
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "d0de2113-d92d-4438-bb77-bb22deef3d1c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

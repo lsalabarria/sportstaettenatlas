@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1df8-0aa1-4f02-a3b6-e3900e7dd669",
+  "name": "Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Westerwaldstraße",
+    "plz": "56203",
+    "ort": "Höhr-Grenzhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.666695,
+    "lat": 50.439783
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df8-0aa1-4f02-a3b6-e3900e7dd669",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

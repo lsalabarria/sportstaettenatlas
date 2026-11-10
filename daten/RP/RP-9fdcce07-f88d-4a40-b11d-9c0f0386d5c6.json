@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcce07-f88d-4a40-b11d-9c0f0386d5c6",
+  "name": "Sportplatz Jugendstrafanstalt",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rudolf-Diesel-Straße",
+    "plz": "67105",
+    "ort": "Schifferstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.393163,
+    "lat": 49.35968
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce07-f88d-4a40-b11d-9c0f0386d5c6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

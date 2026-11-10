@@ -1,0 +1,29 @@
+{
+  "id": "RP-99c24fa2-1862-43c0-bd0f-bb5cd19ccc50",
+  "name": "Gemeindehaus Aschbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kieselbachstraße",
+    "hausnummer": "18",
+    "plz": "67753",
+    "ort": "Aschbach"
+  },
+  "lage": {
+    "lon": 7.573071,
+    "lat": 49.60035
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "99c24fa2-1862-43c0-bd0f-bb5cd19ccc50",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

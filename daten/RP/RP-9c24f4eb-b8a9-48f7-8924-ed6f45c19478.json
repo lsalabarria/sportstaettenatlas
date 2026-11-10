@@ -1,0 +1,31 @@
+{
+  "id": "RP-9c24f4eb-b8a9-48f7-8924-ed6f45c19478",
+  "name": "Sporthalle Grundschule St.-Willibrord",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "11a",
+    "plz": "54649",
+    "ort": "Waxweiler"
+  },
+  "lage": {
+    "lon": 6.357924,
+    "lat": 50.094399
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "im Bau",
+  "website": "www.vg-arzfeld.de",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle Sondermaße"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4eb-b8a9-48f7-8924-ed6f45c19478",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

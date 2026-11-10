@@ -1,0 +1,35 @@
+{
+  "id": "RP-9ec2a934-fdc1-4dd4-aa76-e300bde83656",
+  "name": "Gaby Klehr Reiterhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Im Hirschgarten",
+    "hausnummer": "12",
+    "plz": "67435",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.254166,
+    "lat": 49.308021
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a934-fdc1-4dd4-aa76-e300bde83656",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

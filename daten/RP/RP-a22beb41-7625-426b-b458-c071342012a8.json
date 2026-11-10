@@ -1,0 +1,30 @@
+{
+  "id": "RP-a22beb41-7625-426b-b458-c071342012a8",
+  "name": "Bootshaus Koblenzer Ruderclub Rhenania e.V. 1877",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Am Moselstausee",
+    "hausnummer": "16",
+    "plz": "56073",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.567042,
+    "lat": 50.361214
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Rudersportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a22beb41-7625-426b-b458-c071342012a8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

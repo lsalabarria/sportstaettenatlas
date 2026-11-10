@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d0a1d51-70a8-468e-8328-a7ecec578688",
+  "name": "SV Oberzissen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Bröhl",
+    "hausnummer": "10",
+    "plz": "56651",
+    "ort": "Oberzissen"
+  },
+  "lage": {
+    "lon": 7.203024,
+    "lat": 50.454106
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d51-70a8-468e-8328-a7ecec578688",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

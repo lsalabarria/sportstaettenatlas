@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfab-5dd5-4f5a-9a63-cea0ad5d74ef",
+  "name": "Crossfight Koblenz",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Markenbildchenweg",
+    "hausnummer": "36",
+    "plz": "56068",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.592476,
+    "lat": 50.350754
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfab-5dd5-4f5a-9a63-cea0ad5d74ef",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

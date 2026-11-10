@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1db1-27dc-4857-9a5e-f57df8f5f66c",
+  "name": "Bolzplatz Scheurener Straße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Scheurener Straße",
+    "plz": "53572",
+    "ort": "Unkel, Stadt"
+  },
+  "lage": {
+    "lon": 7.221298,
+    "lat": 50.605981
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db1-27dc-4857-9a5e-f57df8f5f66c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

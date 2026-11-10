@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d0a1d63-54e8-44b4-8078-8a405677564a",
+  "name": "Sportplatz Thiergarten",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54426",
+    "ort": "Malborn"
+  },
+  "lage": {
+    "lon": 6.984509,
+    "lat": 49.694413
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d63-54e8-44b4-8078-8a405677564a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

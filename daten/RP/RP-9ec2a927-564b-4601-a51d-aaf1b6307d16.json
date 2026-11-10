@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a927-564b-4601-a51d-aaf1b6307d16",
+  "name": "Berufsbildende Schule Bingen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Pennrichstraße",
+    "hausnummer": "9",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.912316,
+    "lat": 49.968533
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a927-564b-4601-a51d-aaf1b6307d16",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

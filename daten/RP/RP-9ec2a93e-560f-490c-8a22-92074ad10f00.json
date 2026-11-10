@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a93e-560f-490c-8a22-92074ad10f00",
+  "name": "Sportanlage Hayna",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Obere Hauptstraße",
+    "hausnummer": "75",
+    "plz": "76863",
+    "ort": "Herxheim bei Landau/ Pfalz"
+  },
+  "lage": {
+    "lon": 8.203733,
+    "lat": 49.128481
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93e-560f-490c-8a22-92074ad10f00",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

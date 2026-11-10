@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a921-69f4-45d6-ba33-9aac7347c963",
+  "name": "Turnhalle Grundschule Albersweiler",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Auf der Lehr",
+    "hausnummer": "1",
+    "plz": "76857",
+    "ort": "Albersweiler"
+  },
+  "lage": {
+    "lon": 8.033706,
+    "lat": 49.220079
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a921-69f4-45d6-ba33-9aac7347c963",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

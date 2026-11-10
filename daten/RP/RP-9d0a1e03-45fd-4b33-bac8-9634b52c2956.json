@@ -1,0 +1,40 @@
+{
+  "id": "RP-9d0a1e03-45fd-4b33-bac8-9634b52c2956",
+  "name": "Walter Assenmacher Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Erlenbrunnen",
+    "plz": "53424",
+    "ort": "Remagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.195323,
+    "lat": 50.612966
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e03-45fd-4b33-bac8-9634b52c2956",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

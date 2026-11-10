@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faf3-a3df-4165-9005-7b03ef4cbcaf",
+  "name": "Sportplatz am Eichelgarten",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56244",
+    "ort": "Weidenhahn"
+  },
+  "lage": {
+    "lon": 7.841908,
+    "lat": 50.547307
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf3-a3df-4165-9005-7b03ef4cbcaf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

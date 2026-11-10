@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfa5-6ad6-4935-9b20-202996f038f3",
+  "name": "Sporthalle BBS Technik",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Beatusstraße",
+    "hausnummer": "143-147",
+    "plz": "56073",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.565247,
+    "lat": 50.350635
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa5-6ad6-4935-9b20-202996f038f3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

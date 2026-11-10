@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd43-576c-4010-8e4a-e33fdc3c1ebe",
+  "name": "Bolzplatz Fischbach bei Dahn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hanauerweg",
+    "plz": "66996",
+    "ort": "Fischbach bei Dahn"
+  },
+  "lage": {
+    "lon": 7.708866,
+    "lat": 49.085984
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd43-576c-4010-8e4a-e33fdc3c1ebe",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

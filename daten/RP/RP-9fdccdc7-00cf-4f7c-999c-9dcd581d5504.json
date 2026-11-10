@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdc7-00cf-4f7c-999c-9dcd581d5504",
+  "name": "Eissportzentrum Diez",
+  "kategorie": "Eissportstätte",
+  "adresse": {
+    "strasse": "Am Hallenbad",
+    "hausnummer": "4",
+    "plz": "65582",
+    "ort": "Diez, Stadt"
+  },
+  "lage": {
+    "lon": 8.03238,
+    "lat": 50.375676
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Eissporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdc7-00cf-4f7c-999c-9dcd581d5504",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

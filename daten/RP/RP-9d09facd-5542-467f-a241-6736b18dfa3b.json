@@ -1,0 +1,44 @@
+{
+  "id": "RP-9d09facd-5542-467f-a241-6736b18dfa3b",
+  "name": "Rasenplatz Gebhardshain",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Steinweg",
+    "hausnummer": "10",
+    "plz": "57580",
+    "ort": "Gebhardshain"
+  },
+  "lage": {
+    "lon": 7.823075,
+    "lat": 50.742194
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facd-5542-467f-a241-6736b18dfa3b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

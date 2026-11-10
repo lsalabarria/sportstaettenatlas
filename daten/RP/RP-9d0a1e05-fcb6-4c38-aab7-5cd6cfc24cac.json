@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e05-fcb6-4c38-aab7-5cd6cfc24cac",
+  "name": "Minigolf Bad Breisig",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Koblenzer Straße",
+    "hausnummer": "29",
+    "plz": "53498",
+    "ort": "Bad Breisig, Stadt"
+  },
+  "lage": {
+    "lon": 7.303041,
+    "lat": 50.507395
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bahnengolf"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e05-fcb6-4c38-aab7-5cd6cfc24cac",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc73-2082-46c7-ab81-ff7aba905a37",
+  "name": "Naturerlebnisbad Landstuhl",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kaiserstraße",
+    "hausnummer": "126",
+    "plz": "66849",
+    "ort": "Landstuhl, Sickingenstadt, Stadt"
+  },
+  "lage": {
+    "lon": 7.58561,
+    "lat": 49.41397
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Naturbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc73-2082-46c7-ab81-ff7aba905a37",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

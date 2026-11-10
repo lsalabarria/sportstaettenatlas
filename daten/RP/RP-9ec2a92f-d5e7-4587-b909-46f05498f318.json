@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a92f-d5e7-4587-b909-46f05498f318",
+  "name": "Sportanlage TUS 07 Steinbach e. V.",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Marienthaler Str.",
+    "hausnummer": "20",
+    "plz": "67808",
+    "ort": "Steinbach am Donnersberg"
+  },
+  "lage": {
+    "lon": 7.953711,
+    "lat": 49.601234
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kegelbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92f-d5e7-4587-b909-46f05498f318",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

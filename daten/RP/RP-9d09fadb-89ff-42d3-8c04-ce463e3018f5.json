@@ -1,0 +1,41 @@
+{
+  "id": "RP-9d09fadb-89ff-42d3-8c04-ce463e3018f5",
+  "name": "Reithalle",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Römerstraße",
+    "hausnummer": "3",
+    "plz": "54311",
+    "ort": "Trierweiler"
+  },
+  "lage": {
+    "lon": 6.594058,
+    "lat": 49.770176
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadb-89ff-42d3-8c04-ce463e3018f5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

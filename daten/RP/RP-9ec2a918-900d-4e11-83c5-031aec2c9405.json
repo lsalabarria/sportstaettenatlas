@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a918-900d-4e11-83c5-031aec2c9405",
+  "name": "Schützenhaus Venningen",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "L542",
+    "plz": "67482",
+    "ort": "Venningen"
+  },
+  "lage": {
+    "lon": 8.172922,
+    "lat": 49.285087
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a918-900d-4e11-83c5-031aec2c9405",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

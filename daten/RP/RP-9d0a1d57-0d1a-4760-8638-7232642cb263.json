@@ -1,0 +1,34 @@
+{
+  "id": "RP-9d0a1d57-0d1a-4760-8638-7232642cb263",
+  "name": "Sportplatz Bad Bertrich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf dem Gang",
+    "plz": "56864",
+    "ort": "Bad Bertrich"
+  },
+  "lage": {
+    "lon": 7.017812,
+    "lat": 50.086717
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d57-0d1a-4760-8638-7232642cb263",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

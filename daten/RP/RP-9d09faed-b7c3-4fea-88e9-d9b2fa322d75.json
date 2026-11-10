@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d09faed-b7c3-4fea-88e9-d9b2fa322d75",
+  "name": "Tennisplätze TC Sessenhausen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "77",
+    "plz": "56244",
+    "ort": "Sessenhausen"
+  },
+  "lage": {
+    "lon": 7.713419,
+    "lat": 50.522961
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faed-b7c3-4fea-88e9-d9b2fa322d75",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

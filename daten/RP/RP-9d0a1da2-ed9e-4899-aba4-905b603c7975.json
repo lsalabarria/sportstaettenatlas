@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da2-ed9e-4899-aba4-905b603c7975",
+  "name": "Discgolf Parcours",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Wirftstraße",
+    "hausnummer": "81",
+    "plz": "54589",
+    "ort": "Stadtkyll"
+  },
+  "lage": {
+    "lon": 6.543604,
+    "lat": 50.339786
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da2-ed9e-4899-aba4-905b603c7975",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

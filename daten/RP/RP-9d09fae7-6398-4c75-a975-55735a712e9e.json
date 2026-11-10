@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d09fae7-6398-4c75-a975-55735a712e9e",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Windhof",
+    "plz": "54453",
+    "ort": "Nittel"
+  },
+  "lage": {
+    "lon": 6.456707,
+    "lat": 49.653847
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae7-6398-4c75-a975-55735a712e9e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

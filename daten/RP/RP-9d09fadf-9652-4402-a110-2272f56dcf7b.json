@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d09fadf-9652-4402-a110-2272f56dcf7b",
+  "name": "Schießanlage",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "plz": "54346",
+    "ort": "Mehring"
+  },
+  "lage": {
+    "lon": 6.839326,
+    "lat": 49.778304
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadf-9652-4402-a110-2272f56dcf7b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

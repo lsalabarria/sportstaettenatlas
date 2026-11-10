@@ -1,0 +1,27 @@
+{
+  "id": "RP-c8267abf-b9b4-46e0-ac39-e2155ab36b83",
+  "name": "Bärenlay",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "An den Mühlensteinen",
+    "hausnummer": "7",
+    "plz": "56727",
+    "ort": "Mayen, Stadt"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "betreiber": "Mayener Bogenschützen 1978 e.V.",
+  "website": "www.mayenerbogenschuetzen.de",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "c8267abf-b9b4-46e0-ac39-e2155ab36b83",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

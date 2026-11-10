@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a916-3406-4277-a55d-00d3d6b51cde",
+  "name": "Sportanlage Niedermoschel",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "B420",
+    "plz": "67822",
+    "ort": "Niedermoschel"
+  },
+  "lage": {
+    "lon": 7.805281,
+    "lat": 49.732806
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a916-3406-4277-a55d-00d3d6b51cde",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

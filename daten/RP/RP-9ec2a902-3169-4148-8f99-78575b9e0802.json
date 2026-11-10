@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a902-3169-4148-8f99-78575b9e0802",
+  "name": "Sportplatz Hertlinghausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportpl.",
+    "hausnummer": "9",
+    "plz": "67316",
+    "ort": "Carlsberg"
+  },
+  "lage": {
+    "lon": 8.027698,
+    "lat": 49.491481
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a902-3169-4148-8f99-78575b9e0802",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

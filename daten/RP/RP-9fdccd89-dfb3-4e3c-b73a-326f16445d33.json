@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd89-dfb3-4e3c-b73a-326f16445d33",
+  "name": "Bogensportverein Kandel",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Badallee",
+    "plz": "76870",
+    "ort": "Kandel, Stadt"
+  },
+  "lage": {
+    "lon": 8.191397,
+    "lat": 49.072561
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Bogenschießanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd89-dfb3-4e3c-b73a-326f16445d33",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

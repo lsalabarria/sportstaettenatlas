@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd13-f9a9-4079-a230-425196ce04a6",
+  "name": "Tennisplatz Polizei RLP",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Birkenstraße",
+    "plz": "67677",
+    "ort": "Enkenbach-Alsenborn"
+  },
+  "lage": {
+    "lon": 7.882711,
+    "lat": 49.471722
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd13-f9a9-4079-a230-425196ce04a6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

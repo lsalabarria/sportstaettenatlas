@@ -1,0 +1,28 @@
+{
+  "id": "RP-a00225bb-5379-429b-8e10-4089e01f2a30",
+  "name": "Turnhalle Trierweiler",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Feldweg bei Schulstraße",
+    "plz": "54311",
+    "ort": "Trierweiler"
+  },
+  "lage": {
+    "lon": 6.559166,
+    "lat": 49.759571
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a00225bb-5379-429b-8e10-4089e01f2a30",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

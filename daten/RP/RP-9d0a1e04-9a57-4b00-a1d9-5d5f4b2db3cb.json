@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e04-9a57-4b00-a1d9-5d5f4b2db3cb",
+  "name": "Rudi-Altig-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Dreifaltigkeitsweg",
+    "hausnummer": "37b",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.249828,
+    "lat": 50.549725
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e04-9a57-4b00-a1d9-5d5f4b2db3cb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

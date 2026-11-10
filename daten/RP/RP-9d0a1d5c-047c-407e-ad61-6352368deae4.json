@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5c-047c-407e-ad61-6352368deae4",
+  "name": "Bell-Hundheim Flugplatz",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "strasse": "Boregass",
+    "plz": "56288",
+    "ort": "Bell"
+  },
+  "lage": {
+    "lon": 7.422965,
+    "lat": 50.027314
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Segelfluggelände"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5c-047c-407e-ad61-6352368deae4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

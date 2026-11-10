@@ -1,0 +1,32 @@
+{
+  "id": "RP-9fdccd68-2131-41ed-bbc7-3c849f862a08",
+  "name": "Sportplatz SV Herschberg 1908 e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Saalstadter Strasse",
+    "plz": "66919",
+    "ort": "Herschberg"
+  },
+  "lage": {
+    "lon": 7.55373,
+    "lat": 49.310989
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd68-2131-41ed-bbc7-3c849f862a08",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

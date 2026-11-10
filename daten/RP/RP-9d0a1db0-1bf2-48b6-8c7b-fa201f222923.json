@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db0-1bf2-48b6-8c7b-fa201f222923",
+  "name": "Schulsportplatz Sprudelhalle",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rudolf-Buse-Straße",
+    "hausnummer": "4",
+    "plz": "53557",
+    "ort": "Bad Hönningen, Stadt"
+  },
+  "lage": {
+    "lon": 7.312864,
+    "lat": 50.516289
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db0-1bf2-48b6-8c7b-fa201f222923",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d09faca-ac52-4a6c-a44a-7b533d8e3791",
+  "name": "Fahr-, Reit- u. Zuchtverein Asbacher Land e. V.",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "19",
+    "plz": "57635",
+    "ort": "Hirz-Maulsbach"
+  },
+  "lage": {
+    "lon": 7.475563,
+    "lat": 50.681212
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faca-ac52-4a6c-a44a-7b533d8e3791",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

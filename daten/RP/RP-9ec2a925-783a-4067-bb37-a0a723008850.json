@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a925-783a-4067-bb37-a0a723008850",
+  "name": "Evas Apfel Fitness und Gesundheit Bad Dürkheim",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Bruchstraße",
+    "hausnummer": "1D",
+    "plz": "67098",
+    "ort": "Bad Dürkheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.197167,
+    "lat": 49.46909
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a925-783a-4067-bb37-a0a723008850",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

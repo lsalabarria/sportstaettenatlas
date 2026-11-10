@@ -1,0 +1,38 @@
+{
+  "id": "RP-9d09fada-3250-4ddc-b61d-14ef294ea589",
+  "name": "Sportplatz Grundschule Melsbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Friedrich-Ebert-Straße",
+    "hausnummer": "21A",
+    "plz": "56581",
+    "ort": "Melsbach"
+  },
+  "lage": {
+    "lon": 7.478568,
+    "lat": 50.486474
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fada-3250-4ddc-b61d-14ef294ea589",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

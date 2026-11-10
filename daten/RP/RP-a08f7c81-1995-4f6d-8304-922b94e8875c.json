@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7c81-1995-4f6d-8304-922b94e8875c",
+  "name": "Gemeindehalle Wendelsheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Oberwendelsheim",
+    "hausnummer": "5",
+    "plz": "55234",
+    "ort": "Wendelsheim"
+  },
+  "lage": {
+    "lon": 7.989287,
+    "lat": 49.764188
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c81-1995-4f6d-8304-922b94e8875c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

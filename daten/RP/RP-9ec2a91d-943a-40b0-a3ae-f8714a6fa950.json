@@ -1,0 +1,35 @@
+{
+  "id": "RP-9ec2a91d-943a-40b0-a3ae-f8714a6fa950",
+  "name": "Reit Art Schweighofen UG",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "32",
+    "plz": "76889",
+    "ort": "Schweighofen"
+  },
+  "lage": {
+    "lon": 7.993383,
+    "lat": 49.038214
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91d-943a-40b0-a3ae-f8714a6fa950",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

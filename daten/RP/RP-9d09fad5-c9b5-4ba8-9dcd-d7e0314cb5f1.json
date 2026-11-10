@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fad5-c9b5-4ba8-9dcd-d7e0314cb5f1",
+  "name": "Basketballplatz Niedermühlen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Niedermühlen",
+    "hausnummer": "4",
+    "plz": "53567",
+    "ort": "Asbach"
+  },
+  "lage": {
+    "lon": 7.479635,
+    "lat": 50.659879
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad5-c9b5-4ba8-9dcd-d7e0314cb5f1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "RP-9ec2a910-4491-4d48-ad09-71b8a9956418",
+  "name": "Sportplatz SpVgg Selzen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gaustraße",
+    "hausnummer": "79",
+    "plz": "55278",
+    "ort": "Selzen"
+  },
+  "lage": {
+    "lon": 8.253965,
+    "lat": 49.85795
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "website": "spvgg-selzen.de",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a910-4491-4d48-ad09-71b8a9956418",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

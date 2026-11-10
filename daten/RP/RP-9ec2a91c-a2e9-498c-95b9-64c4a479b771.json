@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a91c-a2e9-498c-95b9-64c4a479b771",
+  "name": "Sportanlage FC 1924 Insheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kettelerstraße",
+    "hausnummer": "31",
+    "plz": "76865",
+    "ort": "Insheim"
+  },
+  "lage": {
+    "lon": 8.134452,
+    "lat": 49.154502
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91c-a2e9-498c-95b9-64c4a479b771",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

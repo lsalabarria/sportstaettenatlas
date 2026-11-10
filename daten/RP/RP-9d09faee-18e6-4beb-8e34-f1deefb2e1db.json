@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faee-18e6-4beb-8e34-f1deefb2e1db",
+  "name": "Sportplatz Helferskirchen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "plz": "56244",
+    "ort": "Helferskirchen"
+  },
+  "lage": {
+    "lon": 7.814398,
+    "lat": 50.507332
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faee-18e6-4beb-8e34-f1deefb2e1db",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

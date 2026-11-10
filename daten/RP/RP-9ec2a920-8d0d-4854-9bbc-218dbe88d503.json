@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a920-8d0d-4854-9bbc-218dbe88d503",
+  "name": "Schützenverein „St. Werner“ Wernersberg 1961e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Zum Osterbrunnen",
+    "hausnummer": "16",
+    "plz": "76857",
+    "ort": "Wernersberg"
+  },
+  "lage": {
+    "lon": 7.921793,
+    "lat": 49.193396
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a920-8d0d-4854-9bbc-218dbe88d503",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

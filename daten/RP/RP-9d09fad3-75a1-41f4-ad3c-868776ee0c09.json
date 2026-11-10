@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad3-75a1-41f4-ad3c-868776ee0c09",
+  "name": "Bürgerhaus Ockenfels",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Auf der Heide",
+    "plz": "53545",
+    "ort": "Ockenfels"
+  },
+  "lage": {
+    "lon": 7.273985,
+    "lat": 50.578209
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad3-75a1-41f4-ad3c-868776ee0c09",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

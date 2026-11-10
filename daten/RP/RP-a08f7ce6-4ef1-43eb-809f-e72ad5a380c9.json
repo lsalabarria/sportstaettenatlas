@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7ce6-4ef1-43eb-809f-e72ad5a380c9",
+  "name": "Tennisplatz Alfred-Delp-Schule",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Alfred-Delp-Straße",
+    "plz": "55595",
+    "ort": "Hargesheim"
+  },
+  "lage": {
+    "lon": 7.83532,
+    "lat": 49.866714
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ce6-4ef1-43eb-809f-e72ad5a380c9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

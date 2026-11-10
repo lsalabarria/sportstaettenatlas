@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d4e-1611-4009-abe0-219c04f7727a",
+  "name": "Bolzplatz Altenburg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Campingplatz",
+    "plz": "53505",
+    "ort": "Altenahr"
+  },
+  "lage": {
+    "lon": 6.986955,
+    "lat": 50.513843
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4e-1611-4009-abe0-219c04f7727a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "RP-9fdccca7-6040-4cad-8518-799bd0d242ff",
+  "name": "Schützenverein Diana Jockgrim e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "K10",
+    "plz": "76751",
+    "ort": "Jockgrim"
+  },
+  "lage": {
+    "lon": 8.273654,
+    "lat": 49.078542
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    },
+    {
+      "bezeichnung": "Bogenschießanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccca7-6040-4cad-8518-799bd0d242ff",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

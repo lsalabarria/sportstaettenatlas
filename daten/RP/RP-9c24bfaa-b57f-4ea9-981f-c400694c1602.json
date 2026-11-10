@@ -1,0 +1,37 @@
+{
+  "id": "RP-9c24bfaa-b57f-4ea9-981f-c400694c1602",
+  "name": "Tennisanlage TV Koblenz-Wallersheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "August-Borsig-Straße",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.602604,
+    "lat": 50.385229
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfaa-b57f-4ea9-981f-c400694c1602",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

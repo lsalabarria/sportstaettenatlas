@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09facf-5104-4c06-ac3f-27957651c95d",
+  "name": "Grunschule Weitefeld",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "1",
+    "plz": "57586",
+    "ort": "Weitefeld"
+  },
+  "lage": {
+    "lon": 7.92753,
+    "lat": 50.724937
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facf-5104-4c06-ac3f-27957651c95d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

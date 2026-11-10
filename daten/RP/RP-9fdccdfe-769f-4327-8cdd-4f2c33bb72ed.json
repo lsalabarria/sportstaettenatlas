@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdfe-769f-4327-8cdd-4f2c33bb72ed",
+  "name": "Sportplatz Riedstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Riedstraße",
+    "hausnummer": "2b",
+    "plz": "67067",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.378077,
+    "lat": 49.458401
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdfe-769f-4327-8cdd-4f2c33bb72ed",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

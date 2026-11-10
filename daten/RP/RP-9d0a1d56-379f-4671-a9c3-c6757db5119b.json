@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d0a1d56-379f-4671-a9c3-c6757db5119b",
+  "name": "Reitanlage Maria-Schacht",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Grubenstraße",
+    "hausnummer": "90",
+    "plz": "56759",
+    "ort": "Leienkaul"
+  },
+  "lage": {
+    "lon": 7.079816,
+    "lat": 50.215241
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Stall"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d56-379f-4671-a9c3-c6757db5119b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

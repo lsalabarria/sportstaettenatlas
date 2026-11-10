@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fada-520e-4a80-810e-a6985f1b9b80",
+  "name": "Fußballgolf Dürrholz",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "K127",
+    "plz": "56307",
+    "ort": "Dürrholz"
+  },
+  "lage": {
+    "lon": 7.581076,
+    "lat": 50.596224
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Golfplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fada-520e-4a80-810e-a6985f1b9b80",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

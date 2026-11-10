@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d09faf0-1595-469d-a42c-4f272c0dbe9f",
+  "name": "Tennishalle - ProBase Wallmerod",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Sportpl",
+    "hausnummer": "16",
+    "plz": "56414",
+    "ort": "Wallmerod"
+  },
+  "lage": {
+    "lon": 7.959061,
+    "lat": 50.480584
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf0-1595-469d-a42c-4f272c0dbe9f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

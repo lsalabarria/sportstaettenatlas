@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d09fadb-2847-4031-b954-b00679b3bead",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "54310",
+    "ort": "Ralingen"
+  },
+  "lage": {
+    "lon": 6.51204,
+    "lat": 49.803535
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadb-2847-4031-b954-b00679b3bead",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

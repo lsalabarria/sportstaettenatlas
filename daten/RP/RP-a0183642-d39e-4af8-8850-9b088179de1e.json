@@ -1,0 +1,23 @@
+{
+  "id": "RP-a0183642-d39e-4af8-8850-9b088179de1e",
+  "name": "Ruwertalhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstr.",
+    "plz": "54318",
+    "ort": "Mertesdorf"
+  },
+  "lage": {
+    "lon": 6.742089,
+    "lat": 49.772115
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0183642-d39e-4af8-8850-9b088179de1e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

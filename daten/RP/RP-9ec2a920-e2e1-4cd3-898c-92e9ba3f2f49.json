@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a920-e2e1-4cd3-898c-92e9ba3f2f49",
+  "name": "Sportplatz Siebeldingen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "4",
+    "plz": "76833",
+    "ort": "Siebeldingen"
+  },
+  "lage": {
+    "lon": 8.057799,
+    "lat": 49.208937
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a920-e2e1-4cd3-898c-92e9ba3f2f49",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdca-cb36-459d-9bdd-b5355f493f6a",
+  "name": "CentrumPferd Pferde im Schwall",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Feriendorf",
+    "hausnummer": "1",
+    "plz": "56355",
+    "ort": "Nastätten, Stadt"
+  },
+  "lage": {
+    "lon": 7.877764,
+    "lat": 50.182851
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdca-cb36-459d-9bdd-b5355f493f6a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

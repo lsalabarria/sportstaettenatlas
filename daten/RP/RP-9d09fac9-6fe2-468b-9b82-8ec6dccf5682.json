@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d09fac9-6fe2-468b-9b82-8ec6dccf5682",
+  "name": "Heinrichshof Burglahr",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Baumgarten",
+    "hausnummer": "10",
+    "plz": "57632",
+    "ort": "Burglahr"
+  },
+  "lage": {
+    "lon": 7.500631,
+    "lat": 50.61815
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac9-6fe2-468b-9b82-8ec6dccf5682",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

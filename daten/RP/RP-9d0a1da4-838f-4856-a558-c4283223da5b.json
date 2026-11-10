@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da4-838f-4856-a558-c4283223da5b",
+  "name": "Sportplatz Niederehe",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf der Lay",
+    "hausnummer": "17",
+    "plz": "54579",
+    "ort": "Üxheim"
+  },
+  "lage": {
+    "lon": 6.755131,
+    "lat": 50.317115
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da4-838f-4856-a558-c4283223da5b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9de4f7f0-16e2-430a-9562-cff86d7198e6",
+  "name": "Runde vom Skilift oder Parkplatz Fiedhof um Stein-Neukirch",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Am Christenrain",
+    "plz": "56479",
+    "ort": "Stein-Neukirch"
+  },
+  "lage": {
+    "lon": 8.055952,
+    "lat": 50.674568
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skilanglauf- und Biathlonanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9de4f7f0-16e2-430a-9562-cff86d7198e6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

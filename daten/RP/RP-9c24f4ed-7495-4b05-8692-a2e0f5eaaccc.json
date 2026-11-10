@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24f4ed-7495-4b05-8692-a2e0f5eaaccc",
+  "name": "Turnhalle Grundschule St. Remigus",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "6",
+    "plz": "54597",
+    "ort": "Pronsfeld"
+  },
+  "lage": {
+    "lon": 6.340177,
+    "lat": 50.160672
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle Sondermaße"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ed-7495-4b05-8692-a2e0f5eaaccc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

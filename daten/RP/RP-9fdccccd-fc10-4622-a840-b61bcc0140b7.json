@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccccd-fc10-4622-a840-b61bcc0140b7",
+  "name": "Sportplatz Mertloch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "56753",
+    "ort": "Mertloch"
+  },
+  "lage": {
+    "lon": 7.301197,
+    "lat": 50.272683
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccccd-fc10-4622-a840-b61bcc0140b7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

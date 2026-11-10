@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccdab-6452-402b-b3bb-d4668ab83844",
+  "name": "Bolzplatz Rennweg Andernach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rennweg",
+    "plz": "56626",
+    "ort": "Andernach, Stadt"
+  },
+  "lage": {
+    "lon": 7.382679,
+    "lat": 50.428644
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdab-6452-402b-b3bb-d4668ab83844",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

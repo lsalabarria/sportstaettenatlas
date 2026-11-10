@@ -1,0 +1,40 @@
+{
+  "id": "RP-9d0a1e05-43fe-46f5-b680-df213e6870bf",
+  "name": "Eifelstadion Adenau",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Lenzenkessel",
+    "plz": "53518",
+    "ort": "Adenau, Stadt"
+  },
+  "lage": {
+    "lon": 6.923637,
+    "lat": 50.374099
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    },
+    {
+      "bezeichnung": "Speerwurfanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e05-43fe-46f5-b680-df213e6870bf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "RP-9d0a1d62-5e26-4299-8604-792f86be71c3",
+  "name": "Freizeitgelände Pleizenhausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L223",
+    "plz": "55469",
+    "ort": "Pleizenhausen"
+  },
+  "lage": {
+    "lon": 7.562655,
+    "lat": 50.017049
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d62-5e26-4299-8604-792f86be71c3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

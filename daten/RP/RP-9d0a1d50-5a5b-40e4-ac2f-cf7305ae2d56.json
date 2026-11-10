@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d50-5a5b-40e4-ac2f-cf7305ae2d56",
+  "name": "Beachvolleyballfeld Glees",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L115",
+    "plz": "56653",
+    "ort": "Glees"
+  },
+  "lage": {
+    "lon": 7.250883,
+    "lat": 50.427268
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-5a5b-40e4-ac2f-cf7305ae2d56",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

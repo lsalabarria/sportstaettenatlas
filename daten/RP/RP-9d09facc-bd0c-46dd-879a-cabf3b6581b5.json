@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09facc-bd0c-46dd-879a-cabf3b6581b5",
+  "name": "Sportplatz Wölmersen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Wald",
+    "hausnummer": "12",
+    "plz": "57635",
+    "ort": "Wölmersen"
+  },
+  "lage": {
+    "lon": 7.606644,
+    "lat": 50.716471
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facc-bd0c-46dd-879a-cabf3b6581b5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

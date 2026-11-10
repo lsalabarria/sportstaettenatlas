@@ -1,0 +1,40 @@
+{
+  "id": "RP-9d0a1d9e-f04f-4091-a3ed-16e2b153fddd",
+  "name": "Sportplatz Enkirch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Bungert",
+    "plz": "56850",
+    "ort": "Enkirch"
+  },
+  "lage": {
+    "lon": 7.13802,
+    "lat": 49.994073
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d9e-f04f-4091-a3ed-16e2b153fddd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

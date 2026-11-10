@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc53-3bf2-4af5-90be-385c08efa59a",
+  "name": "Freibad Biebermühle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "L",
+    "hausnummer": "477",
+    "plz": "66987",
+    "ort": "Thaleischweiler-Fröschen"
+  },
+  "lage": {
+    "lon": 7.60529,
+    "lat": 49.26423
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc53-3bf2-4af5-90be-385c08efa59a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

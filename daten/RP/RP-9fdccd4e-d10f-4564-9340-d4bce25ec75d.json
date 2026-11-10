@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd4e-d10f-4564-9340-d4bce25ec75d",
+  "name": "Hilster Sportverein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mühlstraße",
+    "plz": "66957",
+    "ort": "Hilst"
+  },
+  "lage": {
+    "lon": 7.522344,
+    "lat": 49.128717
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd4e-d10f-4564-9340-d4bce25ec75d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

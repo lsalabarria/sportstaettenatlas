@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90b-cf02-4bd7-929d-7472bee9a9f8",
+  "name": "TGM 1886 Budenheim e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Binger Straße",
+    "hausnummer": "52",
+    "plz": "55257",
+    "ort": "Budenheim"
+  },
+  "lage": {
+    "lon": 8.170124,
+    "lat": 50.020829
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90b-cf02-4bd7-929d-7472bee9a9f8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

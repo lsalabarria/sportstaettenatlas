@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a937-04ed-4c2c-a091-567f951d3b5a",
+  "name": "Skateanlage Hechtsheim",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Heinz-Lemb-Weg",
+    "plz": "55129",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.264264,
+    "lat": 49.95803
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a937-04ed-4c2c-a091-567f951d3b5a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

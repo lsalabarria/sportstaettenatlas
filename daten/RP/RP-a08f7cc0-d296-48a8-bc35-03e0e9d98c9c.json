@@ -1,0 +1,32 @@
+{
+  "id": "RP-a08f7cc0-d296-48a8-bc35-03e0e9d98c9c",
+  "name": "Sportanlage am Bröckelsberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Weiher",
+    "plz": "55592",
+    "ort": "Rehborn"
+  },
+  "lage": {
+    "lon": 7.689584,
+    "lat": 49.72856
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cc0-d296-48a8-bc35-03e0e9d98c9c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

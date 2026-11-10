@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1e0c-77a3-4e68-afbf-31a0cf89ef92",
+  "name": "Sportplatz SVC Kastellaun",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Graf-Moltke-Straße",
+    "plz": "56288",
+    "ort": "Kastellaun, Stadt"
+  },
+  "lage": {
+    "lon": 7.442491,
+    "lat": 50.060749
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0c-77a3-4e68-afbf-31a0cf89ef92",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

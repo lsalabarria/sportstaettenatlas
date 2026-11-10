@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fae1-f9b8-480a-a5d1-725074ab4c27",
+  "name": "Sportplatz Osburg",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Misselbachstraße",
+    "hausnummer": "24",
+    "plz": "54317",
+    "ort": "Osburg"
+  },
+  "lage": {
+    "lon": 6.795602,
+    "lat": 49.712334
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae1-f9b8-480a-a5d1-725074ab4c27",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

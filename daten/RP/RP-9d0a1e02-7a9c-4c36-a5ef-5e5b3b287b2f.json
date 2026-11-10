@@ -1,0 +1,41 @@
+{
+  "id": "RP-9d0a1e02-7a9c-4c36-a5ef-5e5b3b287b2f",
+  "name": "Grundschule St. Martin",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Alte Straße",
+    "hausnummer": "11",
+    "plz": "53424",
+    "ort": "Remagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.237123,
+    "lat": 50.578485
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e02-7a9c-4c36-a5ef-5e5b3b287b2f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

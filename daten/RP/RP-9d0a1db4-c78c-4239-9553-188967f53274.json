@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db4-c78c-4239-9553-188967f53274",
+  "name": "Saar-Mosel-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Stadion",
+    "hausnummer": "4",
+    "plz": "54329",
+    "ort": "Konz, Stadt"
+  },
+  "lage": {
+    "lon": 6.583715,
+    "lat": 49.69409
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db4-c78c-4239-9553-188967f53274",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

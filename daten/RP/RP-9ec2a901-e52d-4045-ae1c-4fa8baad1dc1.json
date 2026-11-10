@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a901-e52d-4045-ae1c-4fa8baad1dc1",
+  "name": "Turnhalle Grundschule Carlsberg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Lindenstraße",
+    "hausnummer": "55",
+    "plz": "67316",
+    "ort": "Carlsberg"
+  },
+  "lage": {
+    "lon": 8.042211,
+    "lat": 49.503826
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a901-e52d-4045-ae1c-4fa8baad1dc1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

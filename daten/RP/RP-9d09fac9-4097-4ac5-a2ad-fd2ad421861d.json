@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d09fac9-4097-4ac5-a2ad-fd2ad421861d",
+  "name": "Tennisanlage Bürdenbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Brucher Straße",
+    "plz": "57641",
+    "ort": "Bürdenbach"
+  },
+  "lage": {
+    "lon": 7.529902,
+    "lat": 50.619675
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac9-4097-4ac5-a2ad-fd2ad421861d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

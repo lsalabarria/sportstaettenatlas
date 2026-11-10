@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7d22-1387-4671-840a-46c734263d42",
+  "name": "Bolzplatz Kirn",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Josef-Görres-Straße",
+    "plz": "55606",
+    "ort": "Kirn, Stadt"
+  },
+  "lage": {
+    "lon": 7.467336,
+    "lat": 49.801903
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d22-1387-4671-840a-46c734263d42",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

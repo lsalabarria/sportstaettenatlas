@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1daa-f162-4429-a1f8-53c7cba41233",
+  "name": "Großspielfeld neben Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Stadionstraße",
+    "hausnummer": "39",
+    "plz": "57537",
+    "ort": "Wissen, Stadt"
+  },
+  "lage": {
+    "lon": 7.720527,
+    "lat": 50.783922
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daa-f162-4429-a1f8-53c7cba41233",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

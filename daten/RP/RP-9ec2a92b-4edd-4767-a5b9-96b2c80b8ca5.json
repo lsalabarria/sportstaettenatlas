@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a92b-4edd-4767-a5b9-96b2c80b8ca5",
+  "name": "Kaiserpfalz-Realschule plus",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ludwig-Langstädter-Straße",
+    "hausnummer": "6",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.062387,
+    "lat": 49.979743
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92b-4edd-4767-a5b9-96b2c80b8ca5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

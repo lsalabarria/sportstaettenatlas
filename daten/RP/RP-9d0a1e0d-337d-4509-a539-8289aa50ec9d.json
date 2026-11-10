@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e0d-337d-4509-a539-8289aa50ec9d",
+  "name": "Kooperative Gesamtschule Kirchberg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "55481",
+    "ort": "Kirchberg (Hunsrück), Stadt"
+  },
+  "lage": {
+    "lon": 7.404986,
+    "lat": 49.947456
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0d-337d-4509-a539-8289aa50ec9d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

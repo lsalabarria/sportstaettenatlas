@@ -1,0 +1,32 @@
+{
+  "id": "RP-a0d9637b-6a6a-4eab-816b-127b21ccfade",
+  "name": "Haus der Jugend - Basketballanlage",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Mitternachtsgasse",
+    "hausnummer": "8",
+    "plz": "55116",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.272336,
+    "lat": 50.003905
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "sportarten": [
+    "Basketball"
+  ],
+  "anlagen": [
+    {
+      "bezeichnung": "Spielplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0d9637b-6a6a-4eab-816b-127b21ccfade",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

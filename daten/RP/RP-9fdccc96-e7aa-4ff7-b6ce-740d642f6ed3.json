@@ -1,0 +1,32 @@
+{
+  "id": "RP-9fdccc96-e7aa-4ff7-b6ce-740d642f6ed3",
+  "name": "Bolzplatz Ottersheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "plz": "76879",
+    "ort": "Ottersheim bei Landau"
+  },
+  "lage": {
+    "lon": 8.22852,
+    "lat": 49.199535
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc96-e7aa-4ff7-b6ce-740d642f6ed3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

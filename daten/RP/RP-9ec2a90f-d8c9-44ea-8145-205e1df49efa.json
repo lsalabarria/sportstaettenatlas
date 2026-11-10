@@ -1,0 +1,27 @@
+{
+  "id": "RP-9ec2a90f-d8c9-44ea-8145-205e1df49efa",
+  "name": "Bogenplatz SC Mommenheim",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "plz": "55278",
+    "ort": "Mommenheim"
+  },
+  "lage": {
+    "lon": 8.270166,
+    "lat": 49.8898
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bogenschießanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90f-d8c9-44ea-8145-205e1df49efa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

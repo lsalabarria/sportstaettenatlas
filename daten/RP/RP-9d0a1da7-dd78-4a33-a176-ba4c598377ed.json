@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d0a1da7-dd78-4a33-a176-ba4c598377ed",
+  "name": "Bolzplatz Drees",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "53520",
+    "ort": "Drees"
+  },
+  "lage": {
+    "lon": 6.992978,
+    "lat": 50.336343
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da7-dd78-4a33-a176-ba4c598377ed",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "RP-a08f7cf7-16a7-40f9-ba92-348ed9a256c8",
+  "name": "Außensportbereich IGS Osthofen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Heinrich-Heine-Straße",
+    "hausnummer": "9-11",
+    "plz": "67574",
+    "ort": "Osthofen, Stadt"
+  },
+  "lage": {
+    "lon": 8.320652,
+    "lat": 49.700594
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cf7-16a7-40f9-ba92-348ed9a256c8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

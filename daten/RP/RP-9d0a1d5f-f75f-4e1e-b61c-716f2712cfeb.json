@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5f-f75f-4e1e-b61c-716f2712cfeb",
+  "name": "Sportplatz Womrath",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Langenauer Weg",
+    "plz": "55481",
+    "ort": "Womrath"
+  },
+  "lage": {
+    "lon": 7.446692,
+    "lat": 49.919698
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5f-f75f-4e1e-b61c-716f2712cfeb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

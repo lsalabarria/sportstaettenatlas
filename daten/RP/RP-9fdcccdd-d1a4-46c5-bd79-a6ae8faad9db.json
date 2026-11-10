@@ -1,0 +1,28 @@
+{
+  "id": "RP-9fdcccdd-d1a4-46c5-bd79-a6ae8faad9db",
+  "name": "Emser Bikepark (MTB-Strecke)",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "plz": "56132",
+    "ort": "Kemmenau"
+  },
+  "lage": {
+    "lon": 7.744687,
+    "lat": 50.348131
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Mountainbikestrecke"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccdd-d1a4-46c5-bd79-a6ae8faad9db",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a90b-1352-4820-b177-32d1fe16feed",
+  "name": "Skatepark Ockenheim",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Sporkenheimer Weg",
+    "plz": "55435",
+    "ort": "Ockenheim"
+  },
+  "lage": {
+    "lon": 7.972833,
+    "lat": 49.947664
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90b-1352-4820-b177-32d1fe16feed",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

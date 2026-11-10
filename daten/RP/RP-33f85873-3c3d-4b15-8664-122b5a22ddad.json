@@ -1,0 +1,30 @@
+{
+  "id": "RP-33f85873-3c3d-4b15-8664-122b5a22ddad",
+  "name": "AZUR Ramstein",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schernauer Str.",
+    "hausnummer": "50",
+    "plz": "66877",
+    "ort": "Ramstein-Miesenbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.568893,
+    "lat": 49.445797
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "stillgelegt/geschlossen",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "33f85873-3c3d-4b15-8664-122b5a22ddad",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

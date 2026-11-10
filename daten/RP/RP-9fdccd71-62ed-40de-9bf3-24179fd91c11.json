@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdccd71-62ed-40de-9bf3-24179fd91c11",
+  "name": "Bolzplatz Dammheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Adlerstraße",
+    "hausnummer": "1",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.152885,
+    "lat": 49.22037
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd71-62ed-40de-9bf3-24179fd91c11",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

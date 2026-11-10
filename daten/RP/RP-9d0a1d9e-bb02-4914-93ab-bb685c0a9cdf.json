@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d9e-bb02-4914-93ab-bb685c0a9cdf",
+  "name": "Grundschule St. Remigus",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulweg",
+    "hausnummer": "1",
+    "plz": "54536",
+    "ort": "Kröv"
+  },
+  "lage": {
+    "lon": 7.085236,
+    "lat": 49.978264
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d9e-bb02-4914-93ab-bb685c0a9cdf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

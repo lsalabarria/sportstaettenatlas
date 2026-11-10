@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e10-01f4-46b6-b203-63aa5aa2f0cf",
+  "name": "Liesertal-Schule",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Petrusstraße",
+    "hausnummer": "28",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.931749,
+    "lat": 49.975925
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e10-01f4-46b6-b203-63aa5aa2f0cf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

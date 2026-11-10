@@ -1,0 +1,40 @@
+{
+  "id": "RP-9c24f4e6-d3de-4624-bfc9-2c3c5902a10f",
+  "name": "Tennisplätze Bitburg Middle School",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Barnwell Street",
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.534519,
+    "lat": 49.958779
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e6-d3de-4624-bfc9-2c3c5902a10f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

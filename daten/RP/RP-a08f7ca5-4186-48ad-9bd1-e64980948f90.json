@@ -1,0 +1,36 @@
+{
+  "id": "RP-a08f7ca5-4186-48ad-9bd1-e64980948f90",
+  "name": "Sportplatz Kempfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wildenburgerstraße",
+    "hausnummer": "17",
+    "plz": "55758",
+    "ort": "Kempfeld"
+  },
+  "lage": {
+    "lon": 7.250315,
+    "lat": 49.785158
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ca5-4186-48ad-9bd1-e64980948f90",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "RP-1e19a11e-8d7f-4f8c-8321-bbc7c3e26d88",
+  "name": "Schützenverein SV Gut Schuss Nieder-Olm e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Im Wiesengrund",
+    "plz": "55268",
+    "ort": "Nieder-Olm, Stadt"
+  },
+  "lage": {
+    "lon": 8.201676,
+    "lat": 49.917921
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "website": "https://www.schützenverein-nieder-olm.de/",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "1e19a11e-8d7f-4f8c-8321-bbc7c3e26d88",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

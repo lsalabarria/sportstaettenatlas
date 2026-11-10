@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1d5b-9712-4fa4-a8ca-c25588aed23b",
+  "name": "Spielplatz Wiebelsheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf d. Gaß",
+    "hausnummer": "1",
+    "plz": "56291",
+    "ort": "Wiebelsheim"
+  },
+  "lage": {
+    "lon": 7.633083,
+    "lat": 50.076885
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5b-9712-4fa4-a8ca-c25588aed23b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

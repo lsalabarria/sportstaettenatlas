@@ -1,0 +1,29 @@
+{
+  "id": "RP-9f01cc79-4ab6-44db-94e9-3dbc7a7e90d9",
+  "name": "Vulkanbad Mendig",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Laachgraben",
+    "plz": "56743",
+    "ort": "Mendig, Stadt"
+  },
+  "lage": {
+    "lon": 7.279,
+    "lat": 50.38279
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc79-4ab6-44db-94e9-3dbc7a7e90d9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

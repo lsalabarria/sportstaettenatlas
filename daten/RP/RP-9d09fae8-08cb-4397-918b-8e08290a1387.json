@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fae8-08cb-4397-918b-8e08290a1387",
+  "name": "Sportplatz Kreuzweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Moselstraße",
+    "plz": "54439",
+    "ort": "Palzem"
+  },
+  "lage": {
+    "lon": 6.409272,
+    "lat": 49.556563
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae8-08cb-4397-918b-8e08290a1387",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

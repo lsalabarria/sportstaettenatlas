@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e07-98af-4a91-884c-ee3ec54969a1",
+  "name": "Tennisplatz TuS Kaisersesch",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Pankratiusstraße",
+    "plz": "56759",
+    "ort": "Kaisersesch, Stadt"
+  },
+  "lage": {
+    "lon": 7.140616,
+    "lat": 50.234552
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e07-98af-4a91-884c-ee3ec54969a1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

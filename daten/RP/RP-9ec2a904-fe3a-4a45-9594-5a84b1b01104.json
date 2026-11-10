@@ -1,0 +1,27 @@
+{
+  "id": "RP-9ec2a904-fe3a-4a45-9594-5a84b1b01104",
+  "name": "Flug- und Landeplatz Ruppertsberg",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "plz": "67152",
+    "ort": "Ruppertsberg"
+  },
+  "lage": {
+    "lon": 8.201605,
+    "lat": 49.386561
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sonderlandeplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a904-fe3a-4a45-9594-5a84b1b01104",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

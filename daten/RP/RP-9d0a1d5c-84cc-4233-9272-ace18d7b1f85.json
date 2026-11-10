@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5c-84cc-4233-9272-ace18d7b1f85",
+  "name": "Sportplatz Dommershausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L205",
+    "plz": "56290",
+    "ort": "Dommershausen"
+  },
+  "lage": {
+    "lon": 7.407475,
+    "lat": 50.143887
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5c-84cc-4233-9272-ace18d7b1f85",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d52-6a3a-4567-8632-9ac2d2cf306d",
+  "name": "Bolzplatz Oblier",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bachstraße",
+    "plz": "53506",
+    "ort": "Lind"
+  },
+  "lage": {
+    "lon": 6.909216,
+    "lat": 50.486712
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d52-6a3a-4567-8632-9ac2d2cf306d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

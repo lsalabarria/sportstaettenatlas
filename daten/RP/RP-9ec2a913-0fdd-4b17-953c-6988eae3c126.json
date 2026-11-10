@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a913-0fdd-4b17-953c-6988eae3c126",
+  "name": "Sportanlage Tus 05 Ramsen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Pfaffenhecke",
+    "hausnummer": "19",
+    "plz": "67305",
+    "ort": "Ramsen"
+  },
+  "lage": {
+    "lon": 8.024065,
+    "lat": 49.537132
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a913-0fdd-4b17-953c-6988eae3c126",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

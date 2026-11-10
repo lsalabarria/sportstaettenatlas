@@ -1,0 +1,36 @@
+{
+  "id": "RP-9fdcce27-e318-4ec6-b7cd-421ce486b2e1",
+  "name": "EWR-Arena Nebenplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Alzeyer Straße",
+    "hausnummer": "131",
+    "plz": "67549",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.335298,
+    "lat": 49.629677
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce27-e318-4ec6-b7cd-421ce486b2e1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

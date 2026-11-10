@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd28-ab79-4cd7-becc-a7ad32da6705",
+  "name": "Streetball Feld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Holzacker",
+    "plz": "67245",
+    "ort": "Lambsheim"
+  },
+  "lage": {
+    "lon": 8.301211,
+    "lat": 49.50622
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd28-ab79-4cd7-becc-a7ad32da6705",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

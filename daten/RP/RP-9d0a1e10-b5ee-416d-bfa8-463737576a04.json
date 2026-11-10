@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e10-b5ee-416d-bfa8-463737576a04",
+  "name": "Bolzplatz Bernkastel-Kues",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Gartenstraße",
+    "plz": "54470",
+    "ort": "Bernkastel-Kues, Stadt"
+  },
+  "lage": {
+    "lon": 7.066935,
+    "lat": 49.913871
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e10-b5ee-416d-bfa8-463737576a04",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

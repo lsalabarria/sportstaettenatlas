@@ -1,0 +1,34 @@
+{
+  "id": "RP-9d0a1d65-4ac5-4c4c-9502-8eb145fa6108",
+  "name": "TC Morbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Sportzentrum",
+    "plz": "54497",
+    "ort": "Morbach"
+  },
+  "lage": {
+    "lon": 7.130922,
+    "lat": 49.817045
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d65-4ac5-4c4c-9502-8eb145fa6108",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

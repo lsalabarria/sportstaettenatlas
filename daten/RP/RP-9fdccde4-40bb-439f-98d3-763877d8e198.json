@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdccde4-40bb-439f-98d3-763877d8e198",
+  "name": "Pulasci Track and Field",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Vogelweh",
+    "hausnummer": "2944",
+    "plz": "67661",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.69359,
+    "lat": 49.433418
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Bewegungsparcours"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccde4-40bb-439f-98d3-763877d8e198",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

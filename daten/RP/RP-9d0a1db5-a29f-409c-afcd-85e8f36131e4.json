@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db5-a29f-409c-afcd-85e8f36131e4",
+  "name": "Turnhalle Oberemmel",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Großengarten",
+    "hausnummer": "7",
+    "plz": "54329",
+    "ort": "Konz, Stadt"
+  },
+  "lage": {
+    "lon": 6.627559,
+    "lat": 49.662585
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db5-a29f-409c-afcd-85e8f36131e4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

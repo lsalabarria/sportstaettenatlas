@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a90b-1a1a-4bc5-9e9b-067bf0c0f10d",
+  "name": "Beachvolleyballfeld Ockenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sporkenheimer Weg",
+    "plz": "55435",
+    "ort": "Ockenheim"
+  },
+  "lage": {
+    "lon": 7.972238,
+    "lat": 49.947176
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90b-1a1a-4bc5-9e9b-067bf0c0f10d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

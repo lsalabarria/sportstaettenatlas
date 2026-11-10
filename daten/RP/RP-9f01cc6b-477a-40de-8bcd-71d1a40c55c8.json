@@ -1,0 +1,33 @@
+{
+  "id": "RP-9f01cc6b-477a-40de-8bcd-71d1a40c55c8",
+  "name": "Freizeitbad Kurcenter Prüm",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Teichstraße",
+    "hausnummer": "20",
+    "plz": "54595",
+    "ort": "Prüm, Stadt"
+  },
+  "lage": {
+    "lon": 6.428,
+    "lat": 50.21085
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Hallenbad"
+    },
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6b-477a-40de-8bcd-71d1a40c55c8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

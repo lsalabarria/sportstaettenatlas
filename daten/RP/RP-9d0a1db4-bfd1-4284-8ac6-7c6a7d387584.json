@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1db4-bfd1-4284-8ac6-7c6a7d387584",
+  "name": "Kunstrasenplatz Konz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Stadion",
+    "plz": "54329",
+    "ort": "Konz, Stadt"
+  },
+  "lage": {
+    "lon": 6.584869,
+    "lat": 49.694033
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db4-bfd1-4284-8ac6-7c6a7d387584",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

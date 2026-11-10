@@ -1,0 +1,33 @@
+{
+  "id": "RP-a08f7c73-3b46-4e66-9c88-cddd85948f13",
+  "name": "Stadion Mühlbachaue Platz 2",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Westring",
+    "hausnummer": "2",
+    "plz": "55291",
+    "ort": "Saulheim"
+  },
+  "lage": {
+    "lon": 8.144019,
+    "lat": 49.870137
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c73-3b46-4e66-9c88-cddd85948f13",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

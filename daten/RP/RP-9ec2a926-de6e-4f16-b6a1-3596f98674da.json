@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a926-de6e-4f16-b6a1-3596f98674da",
+  "name": "Sportplatz am Staatsforst",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Leimener Weg",
+    "plz": "67471",
+    "ort": "Elmstein"
+  },
+  "lage": {
+    "lon": 7.915804,
+    "lat": 49.335384
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a926-de6e-4f16-b6a1-3596f98674da",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

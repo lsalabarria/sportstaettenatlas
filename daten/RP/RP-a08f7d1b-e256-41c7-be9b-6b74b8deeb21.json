@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7d1b-e256-41c7-be9b-6b74b8deeb21",
+  "name": "Warmfreibad Waldmohr",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Badstraße",
+    "hausnummer": "12",
+    "plz": "66914",
+    "ort": "Waldmohr, Stadt"
+  },
+  "lage": {
+    "lon": 7.340068,
+    "lat": 49.389904
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d1b-e256-41c7-be9b-6b74b8deeb21",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

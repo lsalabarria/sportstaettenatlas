@@ -1,0 +1,30 @@
+{
+  "id": "RP-9c44d78d-f0dd-40cf-8ed0-59995c886963",
+  "name": "Test Linus \"user\"",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "hausnummer": "100",
+    "plz": "56203",
+    "ort": "Höhr-Grenzhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.691975,
+    "lat": 50.429422
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "nein",
+  "betriebsstatus": "im Bau",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c44d78d-f0dd-40cf-8ed0-59995c886963",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

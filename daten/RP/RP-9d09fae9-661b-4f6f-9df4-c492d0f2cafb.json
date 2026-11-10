@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fae9-661b-4f6f-9df4-c492d0f2cafb",
+  "name": "Bouleanlage Tennisclub Eitelborn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Udilopark",
+    "plz": "56337",
+    "ort": "Eitelborn"
+  },
+  "lage": {
+    "lon": 7.721384,
+    "lat": 50.373195
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae9-661b-4f6f-9df4-c492d0f2cafb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

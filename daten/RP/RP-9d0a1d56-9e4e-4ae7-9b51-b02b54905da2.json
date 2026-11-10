@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d56-9e4e-4ae7-9b51-b02b54905da2",
+  "name": "Sportplatz Urmersbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An der Hardt",
+    "hausnummer": "15",
+    "plz": "56761",
+    "ort": "Urmersbach"
+  },
+  "lage": {
+    "lon": 7.128406,
+    "lat": 50.258075
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d56-9e4e-4ae7-9b51-b02b54905da2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "RP-a08f7ce1-61a9-4570-abef-13255e1de7e2",
+  "name": "Turnhalle Geschwister-Scholl-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "5-7",
+    "plz": "55596",
+    "ort": "Waldböckelheim"
+  },
+  "lage": {
+    "lon": 7.719791,
+    "lat": 49.8151
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    },
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ce1-61a9-4570-abef-13255e1de7e2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

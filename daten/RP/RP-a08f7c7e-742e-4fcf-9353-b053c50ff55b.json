@@ -1,0 +1,31 @@
+{
+  "id": "RP-a08f7c7e-742e-4fcf-9353-b053c50ff55b",
+  "name": "Sportplatz Bermersheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "55234",
+    "ort": "Bermersheim vor der Höhe"
+  },
+  "lage": {
+    "lon": 8.100811,
+    "lat": 49.781727
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c7e-742e-4fcf-9353-b053c50ff55b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

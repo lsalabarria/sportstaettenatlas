@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a910-7695-49ce-95aa-18bbc7f5cb80",
+  "name": "Goldbach-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Alzeyer Str.",
+    "hausnummer": "33",
+    "plz": "55278",
+    "ort": "Undenheim"
+  },
+  "lage": {
+    "lon": 8.214792,
+    "lat": 49.836674
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a910-7695-49ce-95aa-18bbc7f5cb80",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

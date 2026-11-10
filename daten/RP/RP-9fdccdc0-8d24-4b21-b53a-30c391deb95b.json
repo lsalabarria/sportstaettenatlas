@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdc0-8d24-4b21-b53a-30c391deb95b",
+  "name": "Center Court Hallentennis Bad Ems",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Emser Hütte",
+    "hausnummer": "14",
+    "plz": "56130",
+    "ort": "Bad Ems, Stadt"
+  },
+  "lage": {
+    "lon": 7.71977,
+    "lat": 50.350593
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennishalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdc0-8d24-4b21-b53a-30c391deb95b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

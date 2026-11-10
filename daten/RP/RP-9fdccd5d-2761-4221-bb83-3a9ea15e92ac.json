@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd5d-2761-4221-bb83-3a9ea15e92ac",
+  "name": "Sporthalle Uferstraße",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Uferstraße",
+    "hausnummer": "25",
+    "plz": "66987",
+    "ort": "Thaleischweiler-Fröschen"
+  },
+  "lage": {
+    "lon": 7.572236,
+    "lat": 49.263345
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd5d-2761-4221-bb83-3a9ea15e92ac",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

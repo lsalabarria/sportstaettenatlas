@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcccc4-2017-420e-96b2-0b7a371ed3c0",
+  "name": "Schützenhaus Nickenich",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Laacherstraße",
+    "plz": "56645",
+    "ort": "Nickenich"
+  },
+  "lage": {
+    "lon": 7.314087,
+    "lat": 50.414989
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccc4-2017-420e-96b2-0b7a371ed3c0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

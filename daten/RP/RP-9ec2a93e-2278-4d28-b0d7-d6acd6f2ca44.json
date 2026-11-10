@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a93e-2278-4d28-b0d7-d6acd6f2ca44",
+  "name": "Bella Vitalis Fitnessstudio & Gesundheitszentrum",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "u. Hauptstraße",
+    "hausnummer": "103",
+    "plz": "76863",
+    "ort": "Herxheim bei Landau/ Pfalz"
+  },
+  "lage": {
+    "lon": 8.220298,
+    "lat": 49.147644
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93e-2278-4d28-b0d7-d6acd6f2ca44",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

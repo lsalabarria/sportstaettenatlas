@@ -1,0 +1,31 @@
+{
+  "id": "RP-a0028738-b063-4430-9d45-6f28d827b979",
+  "name": "Spielplatz Mehrgenerationenplatz Spielraum-S Schwall",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Lindenstraße",
+    "plz": "56281",
+    "ort": "Schwall"
+  },
+  "lage": {
+    "lon": 7.555751,
+    "lat": 50.144554
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Spielplatz"
+    },
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0028738-b063-4430-9d45-6f28d827b979",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

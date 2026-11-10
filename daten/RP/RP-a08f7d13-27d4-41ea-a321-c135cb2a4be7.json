@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7d13-27d4-41ea-a321-c135cb2a4be7",
+  "name": "Fitness First Idar-Oberstein – Am Kreisel",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Vollmersbachstraße",
+    "hausnummer": "71",
+    "plz": "55743",
+    "ort": "Idar-Oberstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.320156,
+    "lat": 49.726741
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Gerätebereich"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d13-27d4-41ea-a321-c135cb2a4be7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

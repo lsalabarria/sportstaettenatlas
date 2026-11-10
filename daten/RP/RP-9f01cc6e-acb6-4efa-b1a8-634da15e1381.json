@@ -1,0 +1,29 @@
+{
+  "id": "RP-9f01cc6e-acb6-4efa-b1a8-634da15e1381",
+  "name": "Naturerlebnisbad Rockenhausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Obermühle",
+    "plz": "67806",
+    "ort": "Rockenhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.82135,
+    "lat": 49.622
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Naturbad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6e-acb6-4efa-b1a8-634da15e1381",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

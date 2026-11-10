@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fae4-5b3f-46f7-96c3-95cc520ded3b",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Pluwiger Straße",
+    "hausnummer": "2",
+    "plz": "54316",
+    "ort": "Franzenheim"
+  },
+  "lage": {
+    "lon": 6.688187,
+    "lat": 49.683702
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae4-5b3f-46f7-96c3-95cc520ded3b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

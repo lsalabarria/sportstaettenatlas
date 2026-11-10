@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fae5-d6de-45e9-8788-9347c18a3e4c",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "plz": "54308",
+    "ort": "Langsur"
+  },
+  "lage": {
+    "lon": 6.503166,
+    "lat": 49.722319
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae5-d6de-45e9-8788-9347c18a3e4c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da2-500a-4609-aad9-26313f3a6a87",
+  "name": "Sportplatz Neroth",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "hausnummer": "37",
+    "plz": "54570",
+    "ort": "Neroth"
+  },
+  "lage": {
+    "lon": 6.739866,
+    "lat": 50.190729
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da2-500a-4609-aad9-26313f3a6a87",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

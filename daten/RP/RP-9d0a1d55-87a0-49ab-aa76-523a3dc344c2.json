@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d55-87a0-49ab-aa76-523a3dc344c2",
+  "name": "Sportplatz Illerich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Acker",
+    "plz": "56714",
+    "ort": "Illerich"
+  },
+  "lage": {
+    "lon": 7.17324,
+    "lat": 50.206108
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d55-87a0-49ab-aa76-523a3dc344c2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

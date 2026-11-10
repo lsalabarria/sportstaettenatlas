@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccdca-4a12-491d-9451-d87a54b1f277",
+  "name": "Freibad Katzenelnbogen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An der L318",
+    "plz": "56368",
+    "ort": "Katzenelnbogen, Stadt"
+  },
+  "lage": {
+    "lon": 7.982369,
+    "lat": 50.278998
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdca-4a12-491d-9451-d87a54b1f277",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

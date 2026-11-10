@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90c-9c5c-4940-8c90-81a506d79adf",
+  "name": "Haybachhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Bandweidenweg",
+    "hausnummer": "1",
+    "plz": "55270",
+    "ort": "Klein-Winternheim"
+  },
+  "lage": {
+    "lon": 8.215021,
+    "lat": 49.941306
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90c-9c5c-4940-8c90-81a506d79adf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d09fae3-1455-4c67-bde2-142ab0c92d84",
+  "name": "Gestüt Fronhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Fronhof",
+    "hausnummer": "1",
+    "plz": "54427",
+    "ort": "Kell am See"
+  },
+  "lage": {
+    "lon": 6.812227,
+    "lat": 49.64395
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae3-1455-4c67-bde2-142ab0c92d84",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1d61-c1c6-4533-9542-6bb1e88aa89f",
+  "name": "Spielplatz Schmiedel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schmiedel",
+    "plz": "55469",
+    "ort": "Nannhausen"
+  },
+  "lage": {
+    "lon": 7.503613,
+    "lat": 49.978219
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d61-c1c6-4533-9542-6bb1e88aa89f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

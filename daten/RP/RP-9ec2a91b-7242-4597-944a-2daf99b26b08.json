@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a91b-7242-4597-944a-2daf99b26b08",
+  "name": "Evil Nine Fitness",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Im Schlangengarten",
+    "hausnummer": "10",
+    "plz": "76877",
+    "ort": "Offenbach an der Queich"
+  },
+  "lage": {
+    "lon": 8.201059,
+    "lat": 49.199308
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91b-7242-4597-944a-2daf99b26b08",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

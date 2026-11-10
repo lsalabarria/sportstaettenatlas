@@ -1,0 +1,32 @@
+{
+  "id": "RP-9fdccd37-ca9b-4c85-9440-7588a9b8fdad",
+  "name": "Grundschule im Mandelgraben",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Speyerer Weg",
+    "plz": "67112",
+    "ort": "Mutterstadt"
+  },
+  "lage": {
+    "lon": 8.367869,
+    "lat": 49.438773
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd37-ca9b-4c85-9440-7588a9b8fdad",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

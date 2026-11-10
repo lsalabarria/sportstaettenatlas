@@ -1,0 +1,28 @@
+{
+  "id": "RP-85103f12-89c1-4973-8cb6-a1738fcc198d",
+  "name": "Turngemeinde 1861 e.v. Mainz-Gonsenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "hausnummer": "45-47",
+    "plz": "55124",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.206337,
+    "lat": 50.002444
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Turngemeinde 1861 e.V. Mainz-Gonsenheim",
+  "betreiber": "Turngemeinde 1861 e.V. Mainz-Gonsenheim",
+  "website": "www.tgm-gonsenheim.de",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "85103f12-89c1-4973-8cb6-a1738fcc198d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09facb-c59a-4c3c-a4ee-93a2eb5ba6d8",
+  "name": "Schützenverein Im Grunde e.V. Schützenhaus",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Schützenweg",
+    "hausnummer": "1",
+    "plz": "57635",
+    "ort": "Oberirsen"
+  },
+  "lage": {
+    "lon": 7.565517,
+    "lat": 50.725388
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facb-c59a-4c3c-a4ee-93a2eb5ba6d8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

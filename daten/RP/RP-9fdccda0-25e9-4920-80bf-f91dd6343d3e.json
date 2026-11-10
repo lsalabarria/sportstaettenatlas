@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdccda0-25e9-4920-80bf-f91dd6343d3e",
+  "name": "Sportanlage Stromberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Püschstraße",
+    "hausnummer": "7",
+    "plz": "56170",
+    "ort": "Bendorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.595149,
+    "lat": 50.455598
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccda0-25e9-4920-80bf-f91dd6343d3e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

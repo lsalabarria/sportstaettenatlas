@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d09fad9-7f15-4b05-9926-8ab184a65b43",
+  "name": "Hof Weingarten",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Escherwiese",
+    "hausnummer": "7",
+    "plz": "56581",
+    "ort": "Kurtscheid"
+  },
+  "lage": {
+    "lon": 7.472671,
+    "lat": 50.540369
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad9-7f15-4b05-9926-8ab184a65b43",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

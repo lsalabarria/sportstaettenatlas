@@ -1,0 +1,27 @@
+{
+  "id": "RP-9ec2a936-418a-4325-a4d2-46b3137941d3",
+  "name": "Schießtstand LJV Ebersheim",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "plz": "55129",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.233272,
+    "lat": 49.905834
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a936-418a-4325-a4d2-46b3137941d3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

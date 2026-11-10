@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09faef-6b15-439e-9915-8f74fe2aa335",
+  "name": "Sportplatz Auf der Heide",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf der Heide",
+    "plz": "56414",
+    "ort": "Weroth"
+  },
+  "lage": {
+    "lon": 7.943692,
+    "lat": 50.462503
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faef-6b15-439e-9915-8f74fe2aa335",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

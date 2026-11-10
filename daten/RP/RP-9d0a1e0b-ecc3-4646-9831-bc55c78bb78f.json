@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e0b-ecc3-4646-9831-bc55c78bb78f",
+  "name": "City Fitness Oberwesel",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Koblenzer Straße",
+    "hausnummer": "1",
+    "plz": "55430",
+    "ort": "Oberwesel, Stadt"
+  },
+  "lage": {
+    "lon": 7.724281,
+    "lat": 50.108936
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0b-ecc3-4646-9831-bc55c78bb78f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

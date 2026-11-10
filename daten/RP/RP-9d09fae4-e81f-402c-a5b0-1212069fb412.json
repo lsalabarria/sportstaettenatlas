@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d09fae4-e81f-402c-a5b0-1212069fb412",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54314",
+    "ort": "Baldringen"
+  },
+  "lage": {
+    "lon": 6.681483,
+    "lat": 49.61242
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae4-e81f-402c-a5b0-1212069fb412",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

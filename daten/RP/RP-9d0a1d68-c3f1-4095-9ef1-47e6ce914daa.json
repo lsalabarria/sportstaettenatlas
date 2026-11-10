@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d68-c3f1-4095-9ef1-47e6ce914daa",
+  "name": "Waldsportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L47",
+    "plz": "54518",
+    "ort": "Osann-Monzel"
+  },
+  "lage": {
+    "lon": 6.933893,
+    "lat": 49.924871
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d68-c3f1-4095-9ef1-47e6ce914daa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a909-c9d7-4992-be49-498fe28e25f1",
+  "name": "Tennisclub 1972 e.V. Sprendlingen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "plz": "55576",
+    "ort": "Sprendlingen"
+  },
+  "lage": {
+    "lon": 7.985028,
+    "lat": 49.855192
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a909-c9d7-4992-be49-498fe28e25f1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

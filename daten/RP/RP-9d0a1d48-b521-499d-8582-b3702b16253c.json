@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d48-b521-499d-8582-b3702b16253c",
+  "name": "Concordia Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schwimmbadstraße",
+    "hausnummer": "36",
+    "plz": "57648",
+    "ort": "Unnau"
+  },
+  "lage": {
+    "lon": 7.911988,
+    "lat": 50.652073
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d48-b521-499d-8582-b3702b16253c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

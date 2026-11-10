@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d68-3394-4a97-9151-204c2a0709d4",
+  "name": "Mehrzweckfeld Binsfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "plz": "54518",
+    "ort": "Binsfeld"
+  },
+  "lage": {
+    "lon": 6.711754,
+    "lat": 49.963373
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d68-3394-4a97-9151-204c2a0709d4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

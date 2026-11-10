@@ -1,0 +1,27 @@
+{
+  "id": "RP-9ec2a92e-7120-456c-9a83-541ea7cfcba2",
+  "name": "Flugplatz Oppenheim",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "plz": "55276",
+    "ort": "Oppenheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.376571,
+    "lat": 49.841404
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sportflugplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92e-7120-456c-9a83-541ea7cfcba2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

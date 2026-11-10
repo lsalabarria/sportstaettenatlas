@@ -1,0 +1,29 @@
+{
+  "id": "RP-9f01cc6a-7b1f-43e3-b568-d5abe9f75ba5",
+  "name": "Freibad Sprendlingen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bleichstraße",
+    "plz": "55576",
+    "ort": "Sprendlingen"
+  },
+  "lage": {
+    "lon": 7.986351,
+    "lat": 49.806644
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6a-7b1f-43e3-b568-d5abe9f75ba5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

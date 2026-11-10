@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24bfa7-1132-42fb-8029-b223843c8755",
+  "name": "Arzheimer Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An d. Arzheimer Schanze",
+    "hausnummer": "11C",
+    "plz": "56077",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.622546,
+    "lat": 50.359586
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa7-1132-42fb-8029-b223843c8755",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

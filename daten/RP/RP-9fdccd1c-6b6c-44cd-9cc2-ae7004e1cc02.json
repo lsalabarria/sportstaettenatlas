@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd1c-6b6c-44cd-9cc2-ae7004e1cc02",
+  "name": "Mehrzweckhalle Krickenbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Dorfwiesen",
+    "hausnummer": "1",
+    "plz": "67706",
+    "ort": "Krickenbach"
+  },
+  "lage": {
+    "lon": 7.667847,
+    "lat": 49.361314
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd1c-6b6c-44cd-9cc2-ae7004e1cc02",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

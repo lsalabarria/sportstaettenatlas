@@ -1,0 +1,35 @@
+{
+  "id": "RP-9ec2a92b-bdb3-4b09-b11d-6c0a3d5da328",
+  "name": "Ingelheimer Reiterverein e.V.",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "40",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.036876,
+    "lat": 49.979685
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Springparcours"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92b-bdb3-4b09-b11d-6c0a3d5da328",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

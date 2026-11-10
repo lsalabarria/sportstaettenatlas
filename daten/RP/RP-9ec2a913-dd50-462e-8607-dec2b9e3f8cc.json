@@ -1,0 +1,38 @@
+{
+  "id": "RP-9ec2a913-dd50-462e-8607-dec2b9e3f8cc",
+  "name": "Schulzentrum Förderverein Albert-Schweitzer-Realschule plus e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "20A",
+    "plz": "67722",
+    "ort": "Winnweiler"
+  },
+  "lage": {
+    "lon": 7.846358,
+    "lat": 49.570344
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a913-dd50-462e-8607-dec2b9e3f8cc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

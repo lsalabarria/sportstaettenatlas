@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24f4e8-c483-44b8-a32b-5120cd1f71fa",
+  "name": "Sportplatz Badem",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf Urbett",
+    "hausnummer": "4",
+    "plz": "54657",
+    "ort": "Badem"
+  },
+  "lage": {
+    "lon": 6.60822,
+    "lat": 50.004697
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e8-c483-44b8-a32b-5120cd1f71fa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d50-847b-4767-8b59-c1a012797d89",
+  "name": "Rudi-Klein-Stadion Kempenich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Burgstraße",
+    "hausnummer": "38",
+    "plz": "56746",
+    "ort": "Kempenich"
+  },
+  "lage": {
+    "lon": 7.125459,
+    "lat": 50.415169
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-847b-4767-8b59-c1a012797d89",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

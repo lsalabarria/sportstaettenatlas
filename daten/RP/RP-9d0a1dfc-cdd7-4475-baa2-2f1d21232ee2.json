@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dfc-cdd7-4475-baa2-2f1d21232ee2",
+  "name": "Tennisclub Rennerod e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Kohlaustraße",
+    "hausnummer": "26",
+    "plz": "56477",
+    "ort": "Rennerod, Stadt"
+  },
+  "lage": {
+    "lon": 8.074511,
+    "lat": 50.606784
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfc-cdd7-4475-baa2-2f1d21232ee2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

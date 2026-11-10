@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5b-a657-4df2-afa2-d731e1832098",
+  "name": "Sporplatz Alterkülz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "K28",
+    "plz": "56288",
+    "ort": "Alterkülz"
+  },
+  "lage": {
+    "lon": 7.47704,
+    "lat": 50.03614
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5b-a657-4df2-afa2-d731e1832098",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "RP-9d0a1df6-e738-41a9-bf8a-fced2296f209",
+  "name": "Trimmelter Sportverein Trier",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Kohlenstraße",
+    "hausnummer": "55",
+    "plz": "54296",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.693648,
+    "lat": 49.743173
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df6-e738-41a9-bf8a-fced2296f209",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

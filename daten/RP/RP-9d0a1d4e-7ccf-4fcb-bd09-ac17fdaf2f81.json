@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d4e-7ccf-4fcb-bd09-ac17fdaf2f81",
+  "name": "Sportplatz Berg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Hellental",
+    "plz": "53505",
+    "ort": "Berg"
+  },
+  "lage": {
+    "lon": 6.94493,
+    "lat": 50.557414
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4e-7ccf-4fcb-bd09-ac17fdaf2f81",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

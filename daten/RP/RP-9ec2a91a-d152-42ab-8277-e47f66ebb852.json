@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a91a-d152-42ab-8277-e47f66ebb852",
+  "name": "Freizeitcenter Bornheim",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Hornbachstraße",
+    "hausnummer": "19",
+    "plz": "76879",
+    "ort": "Bornheim"
+  },
+  "lage": {
+    "lon": 8.168868,
+    "lat": 49.214599
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kegelbahn"
+    },
+    {
+      "bezeichnung": "Bowlingbahn"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91a-d152-42ab-8277-e47f66ebb852",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

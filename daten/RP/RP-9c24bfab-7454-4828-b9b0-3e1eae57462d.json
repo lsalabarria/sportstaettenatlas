@@ -1,0 +1,32 @@
+{
+  "id": "RP-9c24bfab-7454-4828-b9b0-3e1eae57462d",
+  "name": "Außensportbereich des Bischöflichen Cusanus-Gymnasiums",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hohenzollernstraße",
+    "hausnummer": "13",
+    "plz": "56068",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.59433,
+    "lat": 50.352624
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfab-7454-4828-b9b0-3e1eae57462d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

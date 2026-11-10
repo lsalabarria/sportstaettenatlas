@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d56-7280-4627-b8bf-498565f21286",
+  "name": "Sportplatz Müllenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56761",
+    "ort": "Müllenbach"
+  },
+  "lage": {
+    "lon": 7.064631,
+    "lat": 50.227465
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d56-7280-4627-b8bf-498565f21286",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

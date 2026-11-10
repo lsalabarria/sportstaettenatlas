@@ -1,0 +1,28 @@
+{
+  "id": "RP-6da5910f-ae91-4865-8d11-c163dda0bed2",
+  "name": "Sporthalle Fischbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Frontalstr.",
+    "hausnummer": "8",
+    "plz": "67693",
+    "ort": "Fischbach"
+  },
+  "lage": {
+    "lon": 7.90948,
+    "lat": 49.453445
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Sportverein Fischbach 1959 eV",
+  "betreiber": "Sportverein Fischbach 1959 eV",
+  "website": "www.svfischbach.net",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "6da5910f-ae91-4865-8d11-c163dda0bed2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

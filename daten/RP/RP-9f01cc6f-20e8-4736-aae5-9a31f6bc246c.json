@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc6f-20e8-4736-aae5-9a31f6bc246c",
+  "name": "Freibad Waxweiler",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schwimmbadstraße",
+    "hausnummer": "9",
+    "plz": "54649",
+    "ort": "Waxweiler"
+  },
+  "lage": {
+    "lon": 6.36257,
+    "lat": 50.045347
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6f-20e8-4736-aae5-9a31f6bc246c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

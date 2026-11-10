@@ -1,0 +1,39 @@
+{
+  "id": "RP-9fdccdb3-6af8-4f61-a0a1-65055610895d",
+  "name": "Nettehof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Nettehof",
+    "hausnummer": "1",
+    "plz": "56727",
+    "ort": "Mayen, Stadt"
+  },
+  "lage": {
+    "lon": 7.284671,
+    "lat": 50.324814
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Führ- und Longierplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdb3-6af8-4f61-a0a1-65055610895d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

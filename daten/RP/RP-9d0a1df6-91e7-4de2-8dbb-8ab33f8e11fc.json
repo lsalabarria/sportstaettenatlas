@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d0a1df6-91e7-4de2-8dbb-8ab33f8e11fc",
+  "name": "Wilhelm-Hubert-Cüppers-Gehörlosenschule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Trimmelter Hof",
+    "hausnummer": "210",
+    "plz": "54296",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.690176,
+    "lat": 49.739407
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df6-91e7-4de2-8dbb-8ab33f8e11fc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

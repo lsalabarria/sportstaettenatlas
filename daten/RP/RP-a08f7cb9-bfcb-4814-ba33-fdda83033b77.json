@@ -1,0 +1,28 @@
+{
+  "id": "RP-a08f7cb9-bfcb-4814-ba33-fdda83033b77",
+  "name": "Bolzplatz Odenbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "67748",
+    "ort": "Odenbach"
+  },
+  "lage": {
+    "lon": 7.6532,
+    "lat": 49.688565
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb9-bfcb-4814-ba33-fdda83033b77",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

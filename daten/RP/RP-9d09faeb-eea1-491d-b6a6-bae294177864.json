@@ -1,0 +1,43 @@
+{
+  "id": "RP-9d09faeb-eea1-491d-b6a6-bae294177864",
+  "name": "Sportplatz Nauort",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rheinstraße",
+    "plz": "56237",
+    "ort": "Nauort"
+  },
+  "lage": {
+    "lon": 7.617884,
+    "lat": 50.46731
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faeb-eea1-491d-b6a6-bae294177864",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da6-6c80-491d-b9e1-4cbbfd107c00",
+  "name": "Sportplatz Neichen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Römerstraße",
+    "plz": "54552",
+    "ort": "Neichen"
+  },
+  "lage": {
+    "lon": 6.873199,
+    "lat": 50.26714
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da6-6c80-491d-b9e1-4cbbfd107c00",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

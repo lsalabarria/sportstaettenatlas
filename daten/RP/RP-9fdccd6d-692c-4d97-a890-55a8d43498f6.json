@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd6d-692c-4d97-a890-55a8d43498f6",
+  "name": "Turn- und Sportverein Bechhofen e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportpl.",
+    "hausnummer": "3",
+    "plz": "66894",
+    "ort": "Bechhofen"
+  },
+  "lage": {
+    "lon": 7.393301,
+    "lat": 49.353416
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd6d-692c-4d97-a890-55a8d43498f6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

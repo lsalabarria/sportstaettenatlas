@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1e10-37ae-4c05-9b3d-0d02ff1734af",
+  "name": "Tennisclub Rot Weiß Bombogen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Brühl",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.946139,
+    "lat": 49.987479
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e10-37ae-4c05-9b3d-0d02ff1734af",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

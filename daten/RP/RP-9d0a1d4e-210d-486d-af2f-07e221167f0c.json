@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d4e-210d-486d-af2f-07e221167f0c",
+  "name": "Sportplatz Altenahr",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Brunnen",
+    "plz": "53505",
+    "ort": "Altenahr"
+  },
+  "lage": {
+    "lon": 6.976877,
+    "lat": 50.510682
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4e-210d-486d-af2f-07e221167f0c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

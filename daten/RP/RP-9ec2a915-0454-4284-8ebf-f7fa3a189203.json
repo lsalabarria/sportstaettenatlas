@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a915-0454-4284-8ebf-f7fa3a189203",
+  "name": "Fluggelände Donnersberg Bärenloch",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "strasse": "K51",
+    "plz": "67814",
+    "ort": "Dannenfels"
+  },
+  "lage": {
+    "lon": 7.931543,
+    "lat": 49.634505
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sportflugplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a915-0454-4284-8ebf-f7fa3a189203",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "RP-9ec2a906-83b8-4f53-bc44-c5e9b98b4037",
+  "name": "Gestüt von Erden Haßloch",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Untere Bleiche",
+    "hausnummer": "47",
+    "plz": "67454",
+    "ort": "Haßloch"
+  },
+  "lage": {
+    "lon": 8.289938,
+    "lat": 49.351052
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a906-83b8-4f53-bc44-c5e9b98b4037",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

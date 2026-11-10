@@ -1,0 +1,37 @@
+{
+  "id": "RP-9ec2a91e-f527-4cd1-b7b9-14d010fc316b",
+  "name": "Sportanlage Pfalzklinikum",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Johanna-Weg",
+    "plz": "76889",
+    "ort": "Klingenmünster"
+  },
+  "lage": {
+    "lon": 8.013177,
+    "lat": 49.147951
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    },
+    {
+      "bezeichnung": "Tischtennistisch"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91e-f527-4cd1-b7b9-14d010fc316b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90c-6448-4a0f-b011-0148f8671b43",
+  "name": "TC Jugenheim Tennishalle",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Wiesenweg",
+    "hausnummer": "16",
+    "plz": "55270",
+    "ort": "Jugenheim in Rheinhessen"
+  },
+  "lage": {
+    "lon": 8.090709,
+    "lat": 49.894619
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennishalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90c-6448-4a0f-b011-0148f8671b43",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

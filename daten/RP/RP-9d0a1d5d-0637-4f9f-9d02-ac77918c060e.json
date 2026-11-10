@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5d-0637-4f9f-9d02-ac77918c060e",
+  "name": "Sportplatz Michelbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "56288",
+    "ort": "Michelbach"
+  },
+  "lage": {
+    "lon": 7.453183,
+    "lat": 50.016324
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5d-0637-4f9f-9d02-ac77918c060e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

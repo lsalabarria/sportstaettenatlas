@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e07-3c71-47b9-bc0a-109ae877da21",
+  "name": "Grundschule Josef-Görres Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Görresstraße",
+    "hausnummer": "38",
+    "plz": "56254",
+    "ort": "Müden (Mosel)"
+  },
+  "lage": {
+    "lon": 7.344062,
+    "lat": 50.186335
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e07-3c71-47b9-bc0a-109ae877da21",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

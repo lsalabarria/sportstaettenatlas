@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a908-11f0-4297-aa3b-1186cb66f74a",
+  "name": "Stadion an der Waldstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "1",
+    "plz": "55425",
+    "ort": "Waldalgesheim"
+  },
+  "lage": {
+    "lon": 7.829791,
+    "lat": 49.951753
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a908-11f0-4297-aa3b-1186cb66f74a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

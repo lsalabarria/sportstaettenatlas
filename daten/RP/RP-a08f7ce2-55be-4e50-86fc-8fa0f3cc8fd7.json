@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7ce2-55be-4e50-86fc-8fa0f3cc8fd7",
+  "name": "Sportplatz an der Burgschule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "55596",
+    "ort": "Schloßböckelheim"
+  },
+  "lage": {
+    "lon": 7.747065,
+    "lat": 49.810738
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ce2-55be-4e50-86fc-8fa0f3cc8fd7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

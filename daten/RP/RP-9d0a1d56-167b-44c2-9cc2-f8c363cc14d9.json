@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d56-167b-44c2-9cc2-f8c363cc14d9",
+  "name": "Sportplatz Laubach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "56759",
+    "ort": "Laubach"
+  },
+  "lage": {
+    "lon": 7.070239,
+    "lat": 50.233378
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d56-167b-44c2-9cc2-f8c363cc14d9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

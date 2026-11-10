@@ -1,0 +1,29 @@
+{
+  "id": "RP-9f01cc74-cc81-4430-821a-414a82980d4d",
+  "name": "Freibad Winningen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Inselweg",
+    "plz": "56333",
+    "ort": "Winningen"
+  },
+  "lage": {
+    "lon": 7.50962,
+    "lat": 50.30914
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc74-cc81-4430-821a-414a82980d4d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

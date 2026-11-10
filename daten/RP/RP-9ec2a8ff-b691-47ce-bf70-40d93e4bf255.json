@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a8ff-b691-47ce-bf70-40d93e4bf255",
+  "name": "Sportplatz Kindenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Andingstraße",
+    "plz": "67271",
+    "ort": "Kindenheim"
+  },
+  "lage": {
+    "lon": 8.162592,
+    "lat": 49.612721
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a8ff-b691-47ce-bf70-40d93e4bf255",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

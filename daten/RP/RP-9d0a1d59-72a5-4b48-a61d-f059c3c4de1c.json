@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1d59-72a5-4b48-a61d-f059c3c4de1c",
+  "name": "Sportplatz Dörth",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Dorngarten",
+    "hausnummer": "13",
+    "plz": "56281",
+    "ort": "Dörth"
+  },
+  "lage": {
+    "lon": 7.591347,
+    "lat": 50.147046
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d59-72a5-4b48-a61d-f059c3c4de1c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

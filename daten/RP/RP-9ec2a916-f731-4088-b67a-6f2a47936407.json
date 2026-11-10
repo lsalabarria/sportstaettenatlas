@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a916-f731-4088-b67a-6f2a47936407",
+  "name": "Sporthalle Grundschule Kriegsfeld",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hinter Kirch",
+    "hausnummer": "10",
+    "plz": "67819",
+    "ort": "Kriegsfeld"
+  },
+  "lage": {
+    "lon": 7.917893,
+    "lat": 49.712004
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a916-f731-4088-b67a-6f2a47936407",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

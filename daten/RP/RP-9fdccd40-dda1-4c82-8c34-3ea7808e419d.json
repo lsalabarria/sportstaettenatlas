@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd40-dda1-4c82-8c34-3ea7808e419d",
+  "name": "Sportanlage Bruchweiler",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Gartenstraße",
+    "plz": "76891",
+    "ort": "Bruchweiler-Bärenbach"
+  },
+  "lage": {
+    "lon": 7.794619,
+    "lat": 49.108519
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd40-dda1-4c82-8c34-3ea7808e419d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

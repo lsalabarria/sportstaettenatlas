@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da0-37db-4fff-a514-721fbb1e099c",
+  "name": "Turnhalle Hasborn",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am bhf",
+    "plz": "54533",
+    "ort": "Hasborn"
+  },
+  "lage": {
+    "lon": 6.910918,
+    "lat": 50.054906
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da0-37db-4fff-a514-721fbb1e099c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

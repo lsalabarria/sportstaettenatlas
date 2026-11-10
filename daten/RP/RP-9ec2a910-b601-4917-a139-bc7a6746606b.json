@@ -1,0 +1,34 @@
+{
+  "id": "RP-9ec2a910-b601-4917-a139-bc7a6746606b",
+  "name": "Mehrzwecksportplatz TV 1862 Köngernheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Wiesengrund",
+    "plz": "55278",
+    "ort": "Köngernheim"
+  },
+  "lage": {
+    "lon": 8.243274,
+    "lat": 49.847969
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Volleyballfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a910-b601-4917-a139-bc7a6746606b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

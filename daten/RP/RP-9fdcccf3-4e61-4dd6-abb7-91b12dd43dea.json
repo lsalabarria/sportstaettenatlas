@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcccf3-4e61-4dd6-abb7-91b12dd43dea",
+  "name": "Sportgelände SV Lohrheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bachstraße",
+    "hausnummer": "40a",
+    "plz": "65558",
+    "ort": "Lohrheim"
+  },
+  "lage": {
+    "lon": 8.043474,
+    "lat": 50.319117
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccf3-4e61-4dd6-abb7-91b12dd43dea",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

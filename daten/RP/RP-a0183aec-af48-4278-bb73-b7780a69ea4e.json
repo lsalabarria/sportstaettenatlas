@@ -1,0 +1,24 @@
+{
+  "id": "RP-a0183aec-af48-4278-bb73-b7780a69ea4e",
+  "name": "Turn- und Sporthalle Reinsfeld",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Friedhofstr.",
+    "hausnummer": "5",
+    "plz": "54421",
+    "ort": "Reinsfeld"
+  },
+  "lage": {
+    "lon": 6.871235,
+    "lat": 49.676785
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0183aec-af48-4278-bb73-b7780a69ea4e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

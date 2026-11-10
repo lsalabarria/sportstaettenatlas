@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a926-789f-4859-8c7d-66e1e747a9ad",
+  "name": "alla hoop Anlage Deidesheim",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Bürgermeister-Oberhettinger-Straße",
+    "hausnummer": "1",
+    "plz": "67146",
+    "ort": "Deidesheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.193737,
+    "lat": 49.405275
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bewegungsparcours"
+    },
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a926-789f-4859-8c7d-66e1e747a9ad",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

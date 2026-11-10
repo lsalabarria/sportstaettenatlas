@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09face-a8fc-49f9-b368-9eab28a30a61",
+  "name": "Sportplatz Niederdreisbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Koppelberg",
+    "plz": "57520",
+    "ort": "Niederdreisbach"
+  },
+  "lage": {
+    "lon": 7.919777,
+    "lat": 50.749695
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09face-a8fc-49f9-b368-9eab28a30a61",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

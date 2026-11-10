@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d62-fe78-4a97-bf21-d33eb4079882",
+  "name": "Sportplatz Schnorchbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "55497",
+    "ort": "Schnorbach"
+  },
+  "lage": {
+    "lon": 7.615684,
+    "lat": 49.993786
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d62-fe78-4a97-bf21-d33eb4079882",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

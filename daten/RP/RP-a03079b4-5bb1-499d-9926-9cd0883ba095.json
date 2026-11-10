@@ -1,0 +1,29 @@
+{
+  "id": "RP-a03079b4-5bb1-499d-9926-9cd0883ba095",
+  "name": "Fachbach Kleinspielfeld Hartplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Fachbachtal",
+    "hausnummer": "39",
+    "plz": "56133",
+    "ort": "Fachbach"
+  },
+  "lage": {
+    "lon": 7.690107,
+    "lat": 50.342478
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a03079b4-5bb1-499d-9926-9cd0883ba095",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdf6-eb31-4b98-ac5b-9d66b87bc298",
+  "name": "Bolzplatz Edigheim",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Rüdigerstraße",
+    "hausnummer": "140",
+    "plz": "67069",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.391206,
+    "lat": 49.524674
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdf6-eb31-4b98-ac5b-9d66b87bc298",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

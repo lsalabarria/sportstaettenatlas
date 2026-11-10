@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db6-d20a-4229-913e-1f2f068e5949",
+  "name": "Mehrzweckhalle auf der Kipp",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Johannes-Kerscht-Straße",
+    "hausnummer": "9",
+    "plz": "54293",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.6626,
+    "lat": 49.77973
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db6-d20a-4229-913e-1f2f068e5949",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

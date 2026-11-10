@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad0-aef1-4130-9ef5-459d8da46d4a",
+  "name": "Schützenverein St. Josef Brachbach 1960 e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Findlingstraße",
+    "plz": "57555",
+    "ort": "Brachbach"
+  },
+  "lage": {
+    "lon": 7.956631,
+    "lat": 50.817372
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad0-aef1-4130-9ef5-459d8da46d4a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

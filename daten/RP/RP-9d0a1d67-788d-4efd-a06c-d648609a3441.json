@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d0a1d67-788d-4efd-a06c-d648609a3441",
+  "name": "Tennisplatz Salmtal",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Salmaue",
+    "hausnummer": "6",
+    "plz": "54528",
+    "ort": "Salmtal"
+  },
+  "lage": {
+    "lon": 6.840553,
+    "lat": 49.928306
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d67-788d-4efd-a06c-d648609a3441",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

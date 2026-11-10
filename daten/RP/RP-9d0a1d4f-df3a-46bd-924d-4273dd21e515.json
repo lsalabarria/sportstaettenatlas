@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d4f-df3a-46bd-924d-4273dd21e515",
+  "name": "Schützenhalle Oberlützingen",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Neuwiese",
+    "plz": "56659",
+    "ort": "Burgbrohl"
+  },
+  "lage": {
+    "lon": 7.273013,
+    "lat": 50.465662
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4f-df3a-46bd-924d-4273dd21e515",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

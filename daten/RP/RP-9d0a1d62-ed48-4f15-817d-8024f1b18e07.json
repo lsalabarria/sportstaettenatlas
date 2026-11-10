@@ -1,0 +1,38 @@
+{
+  "id": "RP-9d0a1d62-ed48-4f15-817d-8024f1b18e07",
+  "name": "Jugendherberge Sargenroth",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirchweg",
+    "hausnummer": "1",
+    "plz": "55471",
+    "ort": "Sargenroth"
+  },
+  "lage": {
+    "lon": 7.522551,
+    "lat": 49.935989
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d62-ed48-4f15-817d-8024f1b18e07",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

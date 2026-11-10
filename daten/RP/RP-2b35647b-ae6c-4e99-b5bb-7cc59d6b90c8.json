@@ -1,0 +1,28 @@
+{
+  "id": "RP-2b35647b-ae6c-4e99-b5bb-7cc59d6b90c8",
+  "name": "Loipe 1 Wachtberg",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "K35",
+    "plz": "54570",
+    "ort": "Hinterweiler"
+  },
+  "lage": {
+    "lon": 6.784276,
+    "lat": 50.23409
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skilanglauf- und Biathlonanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "2b35647b-ae6c-4e99-b5bb-7cc59d6b90c8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

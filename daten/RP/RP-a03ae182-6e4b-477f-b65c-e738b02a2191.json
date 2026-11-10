@@ -1,0 +1,28 @@
+{
+  "id": "RP-a03ae182-6e4b-477f-b65c-e738b02a2191",
+  "name": "Karl-Adam-Platz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jupp-Gauchel-Str.",
+    "plz": "56075",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.586549,
+    "lat": 50.327591
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a03ae182-6e4b-477f-b65c-e738b02a2191",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

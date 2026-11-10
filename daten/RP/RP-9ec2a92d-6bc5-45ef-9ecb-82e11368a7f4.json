@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a92d-6bc5-45ef-9ecb-82e11368a7f4",
+  "name": "Sportplatz im Ried Platz 2",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Riedstraße",
+    "hausnummer": "7",
+    "plz": "55283",
+    "ort": "Nierstein, Stadt"
+  },
+  "lage": {
+    "lon": 8.320381,
+    "lat": 49.863797
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92d-6bc5-45ef-9ecb-82e11368a7f4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

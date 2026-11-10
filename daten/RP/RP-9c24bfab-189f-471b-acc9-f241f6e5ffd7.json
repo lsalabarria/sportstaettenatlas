@@ -1,0 +1,31 @@
+{
+  "id": "RP-9c24bfab-189f-471b-acc9-f241f6e5ffd7",
+  "name": "Beachvolleyballfelder VfL Kesselheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kurfürst-Schönborn-Straße",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.574511,
+    "lat": 50.403024
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfab-189f-471b-acc9-f241f6e5ffd7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

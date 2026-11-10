@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad8-2c48-45f8-b030-6ea47cf7597d",
+  "name": "Dirtpark Harschbach",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56307",
+    "ort": "Harschbach"
+  },
+  "lage": {
+    "lon": 7.587376,
+    "lat": 50.573169
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Mountainbikestrecke"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad8-2c48-45f8-b030-6ea47cf7597d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d4c-f12d-43a4-ac77-2dbf8f21ba31",
+  "name": "Nürburgring",
+  "kategorie": "Motorsportstätte",
+  "adresse": {
+    "strasse": "Otto-Flimm-Straße",
+    "plz": "53520",
+    "ort": "Nürburg"
+  },
+  "lage": {
+    "lon": 6.945669,
+    "lat": 50.333232
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Motorsport-Rennstrecke"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4c-f12d-43a4-ac77-2dbf8f21ba31",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

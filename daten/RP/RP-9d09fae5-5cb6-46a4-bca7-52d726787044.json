@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d09fae5-5cb6-46a4-bca7-52d726787044",
+  "name": "Sportplatz Greimerath",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "54314",
+    "ort": "Greimerath"
+  },
+  "lage": {
+    "lon": 6.677123,
+    "lat": 49.563755
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae5-5cb6-46a4-bca7-52d726787044",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

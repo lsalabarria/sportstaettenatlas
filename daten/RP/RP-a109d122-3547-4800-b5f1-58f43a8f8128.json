@@ -1,0 +1,29 @@
+{
+  "id": "RP-a109d122-3547-4800-b5f1-58f43a8f8128",
+  "name": "Mehrzweckhalle Kenn",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Gartenstraße",
+    "hausnummer": "13",
+    "plz": "54344",
+    "ort": "Kenn"
+  },
+  "lage": {
+    "lon": 6.721745,
+    "lat": 49.799536
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a109d122-3547-4800-b5f1-58f43a8f8128",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

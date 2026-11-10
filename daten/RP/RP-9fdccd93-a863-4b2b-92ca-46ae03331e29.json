@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd93-a863-4b2b-92ca-46ae03331e29",
+  "name": "Badepark Wörth am Rhein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Badallee",
+    "hausnummer": "1",
+    "plz": "76744",
+    "ort": "Wörth am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.243093,
+    "lat": 49.060309
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd93-a863-4b2b-92ca-46ae03331e29",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dfc-8471-4206-ba68-4b29f64b39c4",
+  "name": "Reitplatz der Reitanlage Reuscher",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Talhof",
+    "hausnummer": "2",
+    "plz": "56477",
+    "ort": "Rennerod, Stadt"
+  },
+  "lage": {
+    "lon": 8.076237,
+    "lat": 50.603065
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfc-8471-4206-ba68-4b29f64b39c4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

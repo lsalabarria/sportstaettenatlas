@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccdd8-6130-4b33-b085-bc701d46e20c",
+  "name": "1. Tennisclub Otterberg",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Schwimmbad",
+    "plz": "67697",
+    "ort": "Otterberg, Stadt"
+  },
+  "lage": {
+    "lon": 7.782986,
+    "lat": 49.507263
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdd8-6130-4b33-b085-bc701d46e20c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90f-55d1-48af-8c37-f8aae1022680",
+  "name": "Ringerhalle SV Alemannia Nackenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Brühl",
+    "hausnummer": "15",
+    "plz": "55299",
+    "ort": "Nackenheim"
+  },
+  "lage": {
+    "lon": 8.341701,
+    "lat": 49.918861
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90f-55d1-48af-8c37-f8aae1022680",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

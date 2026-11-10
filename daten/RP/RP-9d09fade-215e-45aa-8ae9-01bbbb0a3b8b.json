@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fade-215e-45aa-8ae9-01bbbb0a3b8b",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Moselstraße",
+    "plz": "54338",
+    "ort": "Longen"
+  },
+  "lage": {
+    "lon": 6.787611,
+    "lat": 49.802956
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fade-215e-45aa-8ae9-01bbbb0a3b8b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

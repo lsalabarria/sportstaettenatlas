@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd3f-2a3f-41a9-9c5b-786d61065878",
+  "name": "Bolzplatz Bobenthal",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Forststraße",
+    "plz": "76891",
+    "ort": "Bobenthal"
+  },
+  "lage": {
+    "lon": 7.85641,
+    "lat": 49.062262
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd3f-2a3f-41a9-9c5b-786d61065878",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

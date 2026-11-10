@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1df9-027e-4176-814a-06d1ca6d98c6",
+  "name": "Sporthalle der BBS Montabaur",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Von-Bodelschwingh-Straße",
+    "hausnummer": "33",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.811014,
+    "lat": 50.439342
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df9-027e-4176-814a-06d1ca6d98c6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

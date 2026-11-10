@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1db5-b8a8-465e-8fa0-0ef0fee8073e",
+  "name": "Sportplatz Grau Acht",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Grau Acht",
+    "plz": "54441",
+    "ort": "Palzem"
+  },
+  "lage": {
+    "lon": 6.414576,
+    "lat": 49.594618
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db5-b8a8-465e-8fa0-0ef0fee8073e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

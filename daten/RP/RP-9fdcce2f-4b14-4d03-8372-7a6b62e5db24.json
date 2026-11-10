@@ -1,0 +1,38 @@
+{
+  "id": "RP-9fdcce2f-4b14-4d03-8372-7a6b62e5db24",
+  "name": "Grasrennbahn Zweibrücken",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hofenfelsstraße",
+    "plz": "66482",
+    "ort": "Zweibrücken, Stadt"
+  },
+  "lage": {
+    "lon": 7.372335,
+    "lat": 49.253441
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Rennbahn"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Gerätebereich"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce2f-4b14-4d03-8372-7a6b62e5db24",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a935-c958-4f7d-8f27-caf8d474dc79",
+  "name": "Turnhalle A Grundschule Mainz-Lerchenberg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hindemithstraße",
+    "hausnummer": "1-5",
+    "plz": "55127",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.195824,
+    "lat": 49.958747
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    },
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a935-c958-4f7d-8f27-caf8d474dc79",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

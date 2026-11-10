@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a938-d1eb-438e-9f0f-eb8acb276938",
+  "name": "Heinrich-Mumbächer Grundschule",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Essenheimer Straße",
+    "hausnummer": "40",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.244303,
+    "lat": 49.978276
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a938-d1eb-438e-9f0f-eb8acb276938",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

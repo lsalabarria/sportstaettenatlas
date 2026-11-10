@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d51-e021-4995-ba2b-32d0f1b087a9",
+  "name": "Schützenhalle Wehr",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "plz": "56653",
+    "ort": "Wehr"
+  },
+  "lage": {
+    "lon": 7.2008,
+    "lat": 50.425065
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d51-e021-4995-ba2b-32d0f1b087a9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

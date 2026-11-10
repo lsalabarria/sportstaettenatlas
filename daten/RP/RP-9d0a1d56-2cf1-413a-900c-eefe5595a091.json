@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d56-2cf1-413a-900c-eefe5595a091",
+  "name": "Sportplatz Leienkaul",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hohmarktstraße",
+    "plz": "56759",
+    "ort": "Leienkaul"
+  },
+  "lage": {
+    "lon": 7.084377,
+    "lat": 50.221055
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d56-2cf1-413a-900c-eefe5595a091",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

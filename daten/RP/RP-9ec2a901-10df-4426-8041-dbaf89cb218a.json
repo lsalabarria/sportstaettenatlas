@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a901-10df-4426-8041-dbaf89cb218a",
+  "name": "Sporthalle Grundschule Ebertsheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Rodenbacher Str.",
+    "hausnummer": "4",
+    "plz": "67280",
+    "ort": "Ebertsheim"
+  },
+  "lage": {
+    "lon": 8.108561,
+    "lat": 49.568741
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a901-10df-4426-8041-dbaf89cb218a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

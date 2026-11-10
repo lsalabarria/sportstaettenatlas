@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a916-6751-44f3-92df-7529ef174ad9",
+  "name": "Tennisgelände Alsenz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Steinhauerweg",
+    "hausnummer": "7",
+    "plz": "67821",
+    "ort": "Alsenz"
+  },
+  "lage": {
+    "lon": 7.820069,
+    "lat": 49.718752
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a916-6751-44f3-92df-7529ef174ad9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

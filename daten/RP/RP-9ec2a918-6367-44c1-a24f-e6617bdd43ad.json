@@ -1,0 +1,35 @@
+{
+  "id": "RP-9ec2a918-6367-44c1-a24f-e6617bdd43ad",
+  "name": "Sportplatz Kirrweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Marktstraße",
+    "hausnummer": "13",
+    "plz": "67489",
+    "ort": "Kirrweiler (Pfalz)"
+  },
+  "lage": {
+    "lon": 8.1665,
+    "lat": 49.294993
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a918-6367-44c1-a24f-e6617bdd43ad",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

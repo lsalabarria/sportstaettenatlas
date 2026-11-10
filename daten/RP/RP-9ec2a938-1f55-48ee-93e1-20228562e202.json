@@ -1,0 +1,44 @@
+{
+  "id": "RP-9ec2a938-1f55-48ee-93e1-20228562e202",
+  "name": "Bezirkssportanlage Schillstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schillstraße",
+    "hausnummer": "15",
+    "plz": "55131",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.263789,
+    "lat": 49.987208
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a938-1f55-48ee-93e1-20228562e202",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

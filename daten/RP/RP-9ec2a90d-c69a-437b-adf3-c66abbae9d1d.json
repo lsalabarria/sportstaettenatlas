@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90d-c69a-437b-adf3-c66abbae9d1d",
+  "name": "Horst-Schlager-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Mühlenweg",
+    "hausnummer": "21",
+    "plz": "55270",
+    "ort": "Sörgenloch"
+  },
+  "lage": {
+    "lon": 8.196476,
+    "lat": 49.881547
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90d-c69a-437b-adf3-c66abbae9d1d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

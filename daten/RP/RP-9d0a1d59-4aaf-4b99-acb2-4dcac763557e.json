@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d59-4aaf-4b99-acb2-4dcac763557e",
+  "name": "Spielplatz Grabenweg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Grabenweg",
+    "plz": "56291",
+    "ort": "Bickenbach"
+  },
+  "lage": {
+    "lon": 7.528615,
+    "lat": 50.125059
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d59-4aaf-4b99-acb2-4dcac763557e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

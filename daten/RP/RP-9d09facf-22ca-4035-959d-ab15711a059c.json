@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09facf-22ca-4035-959d-ab15711a059c",
+  "name": "Turnhalle Weitefeld",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Turnhallenweg",
+    "plz": "57586",
+    "ort": "Weitefeld"
+  },
+  "lage": {
+    "lon": 7.932285,
+    "lat": 50.722049
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facf-22ca-4035-959d-ab15711a059c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

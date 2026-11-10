@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d4b-b316-4bd8-a477-5d7253274ef8",
+  "name": "Spielplatz Landschulheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ahrtalstraße",
+    "plz": "53533",
+    "ort": "Antweiler"
+  },
+  "lage": {
+    "lon": 6.832387,
+    "lat": 50.405219
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4b-b316-4bd8-a477-5d7253274ef8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

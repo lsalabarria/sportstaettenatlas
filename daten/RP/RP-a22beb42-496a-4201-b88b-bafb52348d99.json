@@ -1,0 +1,30 @@
+{
+  "id": "RP-a22beb42-496a-4201-b88b-bafb52348d99",
+  "name": "St. Seb. Schützenbruderschaft Gering",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Brunnenstraße",
+    "hausnummer": "35",
+    "plz": "56751",
+    "ort": "Gering"
+  },
+  "lage": {
+    "lon": 7.261719,
+    "lat": 50.274181
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a22beb42-496a-4201-b88b-bafb52348d99",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

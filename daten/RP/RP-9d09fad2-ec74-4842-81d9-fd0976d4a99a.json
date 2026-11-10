@@ -1,0 +1,41 @@
+{
+  "id": "RP-9d09fad2-ec74-4842-81d9-fd0976d4a99a",
+  "name": "Tennisclub Rheinbrohl",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Pfarrer-Volk-Straße",
+    "hausnummer": "44",
+    "plz": "56598",
+    "ort": "Rheinbrohl"
+  },
+  "lage": {
+    "lon": 7.326592,
+    "lat": 50.49787
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad2-ec74-4842-81d9-fd0976d4a99a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

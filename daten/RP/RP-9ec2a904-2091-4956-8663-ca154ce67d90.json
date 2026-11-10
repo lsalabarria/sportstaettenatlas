@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a904-2091-4956-8663-ca154ce67d90",
+  "name": "Sportpark Friedelsheim",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Am Schwabenbach",
+    "hausnummer": "22",
+    "plz": "67159",
+    "ort": "Friedelsheim"
+  },
+  "lage": {
+    "lon": 8.212267,
+    "lat": 49.447974
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a904-2091-4956-8663-ca154ce67d90",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

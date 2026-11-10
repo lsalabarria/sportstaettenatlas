@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1dfa-6b6f-43cc-a16d-5a6cb55bb226",
+  "name": "Schiess-Sportzentrum Westerwald GmbH",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Sälzerstraße",
+    "hausnummer": "22a",
+    "plz": "56235",
+    "ort": "Ransbach-Baumbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.748274,
+    "lat": 50.479407
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfa-6b6f-43cc-a16d-5a6cb55bb226",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

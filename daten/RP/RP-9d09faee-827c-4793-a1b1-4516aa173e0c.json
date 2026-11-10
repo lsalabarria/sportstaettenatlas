@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faee-827c-4793-a1b1-4516aa173e0c",
+  "name": "Bolzplatz Boden",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "An d. Hofwiese",
+    "hausnummer": "6",
+    "plz": "56412",
+    "ort": "Boden"
+  },
+  "lage": {
+    "lon": 7.860637,
+    "lat": 50.472917
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faee-827c-4793-a1b1-4516aa173e0c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

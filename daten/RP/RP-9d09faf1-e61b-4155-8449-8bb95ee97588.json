@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09faf1-e61b-4155-8449-8bb95ee97588",
+  "name": "Außenspielfeld Löwenzahnschule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "6",
+    "plz": "56479",
+    "ort": "Irmtraut"
+  },
+  "lage": {
+    "lon": 8.061335,
+    "lat": 50.556549
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf1-e61b-4155-8449-8bb95ee97588",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

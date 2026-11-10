@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a91c-789a-4356-8002-573ef94ff586",
+  "name": "Bolzplatz Hergersweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Billigheimer Weg",
+    "plz": "76872",
+    "ort": "Hergersweiler"
+  },
+  "lage": {
+    "lon": 8.091828,
+    "lat": 49.09799
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91c-789a-4356-8002-573ef94ff586",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

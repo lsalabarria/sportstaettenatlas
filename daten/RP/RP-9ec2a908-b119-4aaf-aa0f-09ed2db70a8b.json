@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a908-b119-4aaf-aa0f-09ed2db70a8b",
+  "name": "Sportplatz Aspisheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Spangenberg",
+    "plz": "55459",
+    "ort": "Aspisheim"
+  },
+  "lage": {
+    "lon": 7.977043,
+    "lat": 49.909856
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a908-b119-4aaf-aa0f-09ed2db70a8b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

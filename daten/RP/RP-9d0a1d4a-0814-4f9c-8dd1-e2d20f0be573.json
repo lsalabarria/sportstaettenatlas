@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d4a-0814-4f9c-8dd1-e2d20f0be573",
+  "name": "Schützenverein 1970 Hattert Oberwesterwald e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Schützenstraße",
+    "hausnummer": "9",
+    "plz": "57644",
+    "ort": "Hattert"
+  },
+  "lage": {
+    "lon": 7.761662,
+    "lat": 50.656148
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4a-0814-4f9c-8dd1-e2d20f0be573",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

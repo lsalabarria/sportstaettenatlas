@@ -1,0 +1,61 @@
+{
+  "id": "RP-9d0a1db0-61fb-4fb9-8dbb-2c0da49d5da9",
+  "name": "Kaiserbergstadion Linz am Rhein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Kaiserberg",
+    "plz": "53545",
+    "ort": "Linz am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.287378,
+    "lat": 50.564503
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db0-61fb-4fb9-8dbb-2c0da49d5da9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

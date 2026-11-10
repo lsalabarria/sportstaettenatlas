@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90a-21ab-4d50-b455-9c98420eb51a",
+  "name": "Sportplatz Zotzenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kreuznacher Straße",
+    "hausnummer": "25",
+    "plz": "55576",
+    "ort": "Zotzenheim"
+  },
+  "lage": {
+    "lon": 7.964989,
+    "lat": 49.872613
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90a-21ab-4d50-b455-9c98420eb51a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdccd48-d7f4-479a-a284-f17a269f7a5e",
+  "name": "SC 1919 Hauenstein Fußballverein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Speyerstraße",
+    "hausnummer": "2",
+    "plz": "76846",
+    "ort": "Hauenstein"
+  },
+  "lage": {
+    "lon": 7.850829,
+    "lat": 49.196089
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd48-d7f4-479a-a284-f17a269f7a5e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

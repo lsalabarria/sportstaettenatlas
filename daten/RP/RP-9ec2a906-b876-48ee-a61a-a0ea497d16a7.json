@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a906-b876-48ee-a61a-a0ea497d16a7",
+  "name": "Sporthalle Grundschule Weidenthal",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Langentalstraße",
+    "hausnummer": "3",
+    "plz": "67475",
+    "ort": "Weidenthal"
+  },
+  "lage": {
+    "lon": 7.989049,
+    "lat": 49.421516
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a906-b876-48ee-a61a-a0ea497d16a7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d4a-a78f-43a3-b012-c502eddab2dd",
+  "name": "Waldsee Maroth",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Seehaus",
+    "hausnummer": "1",
+    "plz": "56271",
+    "ort": "Maroth"
+  },
+  "lage": {
+    "lon": 7.688393,
+    "lat": 50.581429
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4a-a78f-43a3-b012-c502eddab2dd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

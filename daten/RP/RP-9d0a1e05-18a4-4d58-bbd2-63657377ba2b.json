@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1e05-18a4-4d58-bbd2-63657377ba2b",
+  "name": "Janusz-Korczak-Schule Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Beethovenstraße",
+    "hausnummer": "3",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.254534,
+    "lat": 50.546917
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e05-18a4-4d58-bbd2-63657377ba2b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

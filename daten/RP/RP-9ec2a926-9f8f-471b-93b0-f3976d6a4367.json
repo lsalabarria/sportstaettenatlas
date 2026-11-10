@@ -1,0 +1,41 @@
+{
+  "id": "RP-9ec2a926-9f8f-471b-93b0-f3976d6a4367",
+  "name": "Sportanlage Lambrecht",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wiesenstraße",
+    "hausnummer": "32",
+    "plz": "67466",
+    "ort": "Lambrecht (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.075836,
+    "lat": 49.37043
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a926-9f8f-471b-93b0-f3976d6a4367",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

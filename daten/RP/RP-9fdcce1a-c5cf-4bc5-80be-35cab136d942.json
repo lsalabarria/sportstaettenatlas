@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcce1a-c5cf-4bc5-80be-35cab136d942",
+  "name": "PSD Bank Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Birkenweg",
+    "hausnummer": "10.0",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.429532,
+    "lat": 49.351464
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce1a-c5cf-4bc5-80be-35cab136d942",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

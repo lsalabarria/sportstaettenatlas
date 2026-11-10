@@ -1,0 +1,42 @@
+{
+  "id": "RP-9fdccc9e-0d50-42f3-9248-b1000396bc79",
+  "name": "Erlenhof Neupotz",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Erlenhof Aussiedlung",
+    "hausnummer": "1",
+    "plz": "76777",
+    "ort": "Neupotz"
+  },
+  "lage": {
+    "lon": 8.316414,
+    "lat": 49.12083
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Führ- und Longierplatz"
+    },
+    {
+      "bezeichnung": "Springparcours"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc9e-0d50-42f3-9248-b1000396bc79",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

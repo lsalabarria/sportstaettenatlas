@@ -1,0 +1,36 @@
+{
+  "id": "RP-9fdccd63-1869-4d08-b813-56c21333d641",
+  "name": "Sportanlage Jahnstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "13",
+    "plz": "67716",
+    "ort": "Heltersberg"
+  },
+  "lage": {
+    "lon": 7.72179,
+    "lat": 49.315174
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd63-1869-4d08-b813-56c21333d641",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

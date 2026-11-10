@@ -1,0 +1,32 @@
+{
+  "id": "RP-9c24f4e8-7256-4da7-af06-366ceaa0cee6",
+  "name": "Terra Ventura",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Philippsheimer Straße",
+    "hausnummer": "8",
+    "plz": "54647",
+    "ort": "Gondorf"
+  },
+  "lage": {
+    "lon": 6.624844,
+    "lat": 49.965043
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e8-7256-4da7-af06-366ceaa0cee6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

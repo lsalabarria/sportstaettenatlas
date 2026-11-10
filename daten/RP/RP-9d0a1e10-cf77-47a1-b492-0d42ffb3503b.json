@@ -1,0 +1,52 @@
+{
+  "id": "RP-9d0a1e10-cf77-47a1-b492-0d42ffb3503b",
+  "name": "Sportzentrum Kues",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Peter-Kremer-Weg",
+    "plz": "54470",
+    "ort": "Bernkastel-Kues, Stadt"
+  },
+  "lage": {
+    "lon": 7.062769,
+    "lat": 49.926062
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Wassergraben-"
+    },
+    {
+      "bezeichnung": "Hindernislauf"
+    },
+    {
+      "bezeichnung": "Stabhochsprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e10-cf77-47a1-b492-0d42ffb3503b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

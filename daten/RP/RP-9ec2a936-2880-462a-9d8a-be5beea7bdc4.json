@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a936-2880-462a-9d8a-be5beea7bdc4",
+  "name": "Tennisclub",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Klausberg",
+    "plz": "55127",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.228244,
+    "lat": 49.956456
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a936-2880-462a-9d8a-be5beea7bdc4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

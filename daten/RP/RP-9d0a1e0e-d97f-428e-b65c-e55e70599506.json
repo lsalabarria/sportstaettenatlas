@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1e0e-d97f-428e-b65c-e55e70599506",
+  "name": "Hunsrück-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirchberger Straße",
+    "plz": "55469",
+    "ort": "Simmern/ Hunsrück, Stadt"
+  },
+  "lage": {
+    "lon": 7.514942,
+    "lat": 49.979921
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0e-d97f-428e-b65c-e55e70599506",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

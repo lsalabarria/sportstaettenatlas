@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e05-731c-470f-8fdb-5115b276e8fb",
+  "name": "Erich-Klausener-Gymnasium Adenau",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Dr.-Klausener-Straße",
+    "hausnummer": "43-45",
+    "plz": "53518",
+    "ort": "Adenau, Stadt"
+  },
+  "lage": {
+    "lon": 6.933951,
+    "lat": 50.382728
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e05-731c-470f-8fdb-5115b276e8fb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

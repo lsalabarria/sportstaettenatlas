@@ -1,0 +1,30 @@
+{
+  "id": "RP-a08f7d0f-f4c1-4e4e-bf72-1cad1330011c",
+  "name": "Sporthalle der Grundschule Algenrodt",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Weiherstraße",
+    "hausnummer": "20",
+    "plz": "55743",
+    "ort": "Idar-Oberstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.282526,
+    "lat": 49.714699
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d0f-f4c1-4e4e-bf72-1cad1330011c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

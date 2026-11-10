@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccce9-2c37-4f2d-8293-082ff6a5c22e",
+  "name": "Tennisanlage VfL Altendiez",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Lahnblick",
+    "plz": "65624",
+    "ort": "Altendiez"
+  },
+  "lage": {
+    "lon": 7.981313,
+    "lat": 50.365257
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccce9-2c37-4f2d-8293-082ff6a5c22e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

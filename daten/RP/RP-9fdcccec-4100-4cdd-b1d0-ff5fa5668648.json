@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcccec-4100-4cdd-b1d0-ff5fa5668648",
+  "name": "Schiess-Kino Cramberg",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "In d. Krummsohl",
+    "hausnummer": "6",
+    "plz": "65558",
+    "ort": "Cramberg"
+  },
+  "lage": {
+    "lon": 7.949917,
+    "lat": 50.342269
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccec-4100-4cdd-b1d0-ff5fa5668648",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad9-694a-43d7-84ed-f36ecca87171",
+  "name": "Schützenhaus Kurtscheid",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Tannenstraße",
+    "plz": "56581",
+    "ort": "Kurtscheid"
+  },
+  "lage": {
+    "lon": 7.462045,
+    "lat": 50.54076
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad9-694a-43d7-84ed-f36ecca87171",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

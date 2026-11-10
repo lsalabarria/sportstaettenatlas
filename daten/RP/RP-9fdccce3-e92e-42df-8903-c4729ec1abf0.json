@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccce3-e92e-42df-8903-c4729ec1abf0",
+  "name": "Sportplatz Isselbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gelbachstraße",
+    "plz": "65558",
+    "ort": "Isselbach"
+  },
+  "lage": {
+    "lon": 7.887834,
+    "lat": 50.388855
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccce3-e92e-42df-8903-c4729ec1abf0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

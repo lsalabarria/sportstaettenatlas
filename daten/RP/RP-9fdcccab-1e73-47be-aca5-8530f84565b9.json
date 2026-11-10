@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcccab-1e73-47be-aca5-8530f84565b9",
+  "name": "Sporthalle Grundschule Minfeld",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Herrengasse",
+    "hausnummer": "7",
+    "plz": "76872",
+    "ort": "Minfeld"
+  },
+  "lage": {
+    "lon": 8.141354,
+    "lat": 49.070923
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccab-1e73-47be-aca5-8530f84565b9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

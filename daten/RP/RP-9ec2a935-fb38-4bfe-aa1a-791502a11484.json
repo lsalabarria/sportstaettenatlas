@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a935-fb38-4bfe-aa1a-791502a11484",
+  "name": "Sportzentrum Rilkeallee",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Rilkeallee",
+    "hausnummer": "58",
+    "plz": "55127",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.195542,
+    "lat": 49.953916
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a935-fb38-4bfe-aa1a-791502a11484",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

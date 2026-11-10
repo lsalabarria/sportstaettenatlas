@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcce16-4657-4cbc-a5a0-3c6074dc01e3",
+  "name": "Bolzplatz Matzenbergschule",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Winzler Straße",
+    "hausnummer": "36",
+    "plz": "66955",
+    "ort": "Pirmasens, Stadt"
+  },
+  "lage": {
+    "lon": 7.603397,
+    "lat": 49.196573
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce16-4657-4cbc-a5a0-3c6074dc01e3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

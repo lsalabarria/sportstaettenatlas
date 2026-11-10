@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1dfa-96e1-49f7-a067-c16a0b95290c",
+  "name": "Rossbornerhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Staudter Str.",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.826952,
+    "lat": 50.453695
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reithalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfa-96e1-49f7-a067-c16a0b95290c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

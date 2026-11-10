@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e13-5966-49b4-898d-e3b97cd674e0",
+  "name": "Sporthalle Geschwister-Scholl-Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bitburger Straße",
+    "plz": "54550",
+    "ort": "Daun, Stadt"
+  },
+  "lage": {
+    "lon": 6.818736,
+    "lat": 50.197103
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e13-5966-49b4-898d-e3b97cd674e0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

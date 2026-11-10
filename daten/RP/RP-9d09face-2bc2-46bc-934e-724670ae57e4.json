@@ -1,0 +1,37 @@
+{
+  "id": "RP-9d09face-2bc2-46bc-934e-724670ae57e4",
+  "name": "Sportplatz Scheuerfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Maximilian-Kolbe-Straße",
+    "plz": "57584",
+    "ort": "Scheuerfeld"
+  },
+  "lage": {
+    "lon": 7.84885,
+    "lat": 50.786384
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09face-2bc2-46bc-934e-724670ae57e4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

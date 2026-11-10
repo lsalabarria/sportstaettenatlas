@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a911-1c68-44bd-9e0b-5eb0a4c31c75",
+  "name": "Gemeindezentrum/Feuerwehr Ludwigshöhe",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Weiler",
+    "plz": "55278",
+    "ort": "Ludwigshöhe"
+  },
+  "lage": {
+    "lon": 8.345464,
+    "lat": 49.815432
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a911-1c68-44bd-9e0b-5eb0a4c31c75",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

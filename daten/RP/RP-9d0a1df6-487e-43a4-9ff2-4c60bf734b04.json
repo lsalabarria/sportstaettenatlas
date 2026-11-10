@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1df6-487e-43a4-9ff2-4c60bf734b04",
+  "name": "Pferdezentrum Bodenhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Forst",
+    "hausnummer": "17",
+    "plz": "54296",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.71074,
+    "lat": 49.731584
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df6-487e-43a4-9ff2-4c60bf734b04",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

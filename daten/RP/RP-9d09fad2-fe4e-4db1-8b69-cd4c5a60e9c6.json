@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad2-fe4e-4db1-8b69-cd4c5a60e9c6",
+  "name": "Sportplatz Fährstraße Rheinbrohl",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Fährstraße",
+    "plz": "56598",
+    "ort": "Rheinbrohl"
+  },
+  "lage": {
+    "lon": 7.333099,
+    "lat": 50.491667
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad2-fe4e-4db1-8b69-cd4c5a60e9c6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

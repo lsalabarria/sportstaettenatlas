@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a90b-59be-4b9b-9725-7a12b7315f46",
+  "name": "Tennisanlage Schwabenheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Sportfeld",
+    "hausnummer": "90",
+    "plz": "55270",
+    "ort": "Schwabenheim an der Selz"
+  },
+  "lage": {
+    "lon": 8.095246,
+    "lat": 49.923234
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90b-59be-4b9b-9725-7a12b7315f46",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

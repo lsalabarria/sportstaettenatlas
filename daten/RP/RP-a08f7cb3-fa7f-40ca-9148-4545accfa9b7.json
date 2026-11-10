@@ -1,0 +1,28 @@
+{
+  "id": "RP-a08f7cb3-fa7f-40ca-9148-4545accfa9b7",
+  "name": "Sportplatz Rehweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "66907",
+    "ort": "Rehweiler"
+  },
+  "lage": {
+    "lon": 7.436088,
+    "lat": 49.494241
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb3-fa7f-40ca-9148-4545accfa9b7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "RP-1c5e4e08-2065-4fe3-b196-4032179a8455",
+  "name": "Reitsportzentrum Rheinhessen",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Heiligen Häuschen",
+    "hausnummer": "2",
+    "plz": "55234",
+    "ort": "Albig"
+  },
+  "lage": {
+    "lon": 8.126557,
+    "lat": 49.778768
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "1c5e4e08-2065-4fe3-b196-4032179a8455",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

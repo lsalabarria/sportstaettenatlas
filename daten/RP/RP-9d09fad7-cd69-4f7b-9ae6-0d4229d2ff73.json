@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad7-cd69-4f7b-9ae6-0d4229d2ff73",
+  "name": "Sportplatz Rodenbach bei Puderbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "K142",
+    "plz": "57639",
+    "ort": "Rodenbach bei Puderbach"
+  },
+  "lage": {
+    "lon": 7.646239,
+    "lat": 50.643101
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad7-cd69-4f7b-9ae6-0d4229d2ff73",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

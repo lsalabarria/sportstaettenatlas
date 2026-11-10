@@ -1,0 +1,30 @@
+{
+  "id": "RP-9f01cc64-7e4a-4851-a862-ccac2e2f1ceb",
+  "name": "Con Aqua Contwig",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "hausnummer": "1",
+    "plz": "66497",
+    "ort": "Contwig"
+  },
+  "lage": {
+    "lon": 7.44359,
+    "lat": 49.24751
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc64-7e4a-4851-a862-ccac2e2f1ceb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

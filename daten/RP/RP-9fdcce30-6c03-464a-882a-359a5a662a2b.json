@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcce30-6c03-464a-882a-359a5a662a2b",
+  "name": "VB-Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schlachthofstraße",
+    "hausnummer": "17a",
+    "plz": "66482",
+    "ort": "Zweibrücken, Stadt"
+  },
+  "lage": {
+    "lon": 7.358802,
+    "lat": 49.23882
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce30-6c03-464a-882a-359a5a662a2b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

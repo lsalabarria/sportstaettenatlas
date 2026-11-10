@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a93a-9ada-4ba4-a9c0-58f9347818e5",
+  "name": "Sporthalle Weserstraße",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Rektor-Forestier-Straße",
+    "hausnummer": "2",
+    "plz": "55122",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.216138,
+    "lat": 50.00746
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifachsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93a-9ada-4ba4-a9c0-58f9347818e5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

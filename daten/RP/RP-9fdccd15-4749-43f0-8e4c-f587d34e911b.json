@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd15-4749-43f0-8e4c-f587d34e911b",
+  "name": "Reit- und Fahrverein Lautertal",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Alte Brücke",
+    "hausnummer": "4",
+    "plz": "67734",
+    "ort": "Katzweiler"
+  },
+  "lage": {
+    "lon": 7.698648,
+    "lat": 49.500256
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd15-4749-43f0-8e4c-f587d34e911b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

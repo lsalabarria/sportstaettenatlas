@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a929-646d-4587-aeea-d8c79114c29a",
+  "name": "Skatepark Gau-Algesheim",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Rheinstraße",
+    "hausnummer": "5",
+    "plz": "55435",
+    "ort": "Gau-Algesheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.013034,
+    "lat": 49.964483
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Skateplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a929-646d-4587-aeea-d8c79114c29a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

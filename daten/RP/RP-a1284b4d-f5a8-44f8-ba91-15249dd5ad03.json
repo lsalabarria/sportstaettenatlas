@@ -1,0 +1,31 @@
+{
+  "id": "RP-a1284b4d-f5a8-44f8-ba91-15249dd5ad03",
+  "name": "Sportplatz Wolken",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zur Wildwies",
+    "plz": "56332",
+    "ort": "Wolken"
+  },
+  "lage": {
+    "lon": 7.464396,
+    "lat": 50.338455
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a1284b4d-f5a8-44f8-ba91-15249dd5ad03",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

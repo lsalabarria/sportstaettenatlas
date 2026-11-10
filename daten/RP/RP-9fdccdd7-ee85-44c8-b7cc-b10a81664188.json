@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdd7-ee85-44c8-b7cc-b10a81664188",
+  "name": "Sportanlage Krankenhaus Lahnhöhe",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Kurpark",
+    "hausnummer": "1",
+    "plz": "56112",
+    "ort": "Lahnstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.643142,
+    "lat": 50.302443
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdd7-ee85-44c8-b7cc-b10a81664188",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

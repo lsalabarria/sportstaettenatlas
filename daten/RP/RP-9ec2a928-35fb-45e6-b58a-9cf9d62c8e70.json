@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a928-35fb-45e6-b58a-9cf9d62c8e70",
+  "name": "Rheinauenhalle Bingen-Gaulsheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Mainzer Straße",
+    "hausnummer": "439",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.965077,
+    "lat": 49.965698
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a928-35fb-45e6-b58a-9cf9d62c8e70",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

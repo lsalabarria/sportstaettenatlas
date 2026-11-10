@@ -1,0 +1,34 @@
+{
+  "id": "RP-9d09fad1-7747-4e3b-94d2-cc6156481690",
+  "name": "Tennis Club Niederfischbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "In der Kräm",
+    "plz": "57572",
+    "ort": "Niederfischbach"
+  },
+  "lage": {
+    "lon": 7.861287,
+    "lat": 50.846112
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad1-7747-4e3b-94d2-cc6156481690",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

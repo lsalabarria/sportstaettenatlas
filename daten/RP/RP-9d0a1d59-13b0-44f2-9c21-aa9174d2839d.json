@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d59-13b0-44f2-9c21-aa9174d2839d",
+  "name": "Badenhard Bolzplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56291",
+    "ort": "Badenhard"
+  },
+  "lage": {
+    "lon": 7.631535,
+    "lat": 50.12192
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d59-13b0-44f2-9c21-aa9174d2839d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

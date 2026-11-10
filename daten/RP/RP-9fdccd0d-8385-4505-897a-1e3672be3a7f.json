@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd0d-8385-4505-897a-1e3672be3a7f",
+  "name": "Sportplatz Geisig",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rhein-Taunus-Straße",
+    "hausnummer": "28",
+    "plz": "56357",
+    "ort": "Geisig"
+  },
+  "lage": {
+    "lon": 7.794468,
+    "lat": 50.251631
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd0d-8385-4505-897a-1e3672be3a7f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

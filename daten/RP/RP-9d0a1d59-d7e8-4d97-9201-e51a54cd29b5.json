@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d59-d7e8-4d97-9201-e51a54cd29b5",
+  "name": "Bürgerhalle Halsenbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "11-13",
+    "plz": "56283",
+    "ort": "Halsenbach"
+  },
+  "lage": {
+    "lon": 7.554098,
+    "lat": 50.172222
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d59-d7e8-4d97-9201-e51a54cd29b5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

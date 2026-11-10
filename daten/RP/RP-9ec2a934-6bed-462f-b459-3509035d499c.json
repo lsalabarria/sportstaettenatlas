@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a934-6bed-462f-b459-3509035d499c",
+  "name": "Sportanlage Am Wäldchen Geinsheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Wäldchen",
+    "plz": "67435",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.277225,
+    "lat": 49.309493
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a934-6bed-462f-b459-3509035d499c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

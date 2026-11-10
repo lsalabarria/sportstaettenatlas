@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1dfc-16f0-46af-90b0-98f22153cfd5",
+  "name": "Pferdepension Christinenhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Lindenhof",
+    "plz": "56479",
+    "ort": "Elsoff (Westerwald)"
+  },
+  "lage": {
+    "lon": 8.105502,
+    "lat": 50.561385
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reithalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfc-16f0-46af-90b0-98f22153cfd5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

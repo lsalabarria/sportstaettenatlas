@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a91e-160f-411c-9a6c-94d177eb9c12",
+  "name": "SV 1946 Dörrenbach Fußballverein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Kickplatz",
+    "plz": "76889",
+    "ort": "Dörrenbach"
+  },
+  "lage": {
+    "lon": 7.969439,
+    "lat": 49.088728
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91e-160f-411c-9a6c-94d177eb9c12",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7cba-6570-410b-8e24-411a6628120f",
+  "name": "Tennisanlage Grumbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Sonnenhof",
+    "plz": "67745",
+    "ort": "Grumbach"
+  },
+  "lage": {
+    "lon": 7.560254,
+    "lat": 49.661643
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cba-6570-410b-8e24-411a6628120f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad8-d696-4ed9-a900-c3fd7d65b498",
+  "name": "Sportplatz Rüscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Oberdorfstraße",
+    "plz": "56584",
+    "ort": "Rüscheid"
+  },
+  "lage": {
+    "lon": 7.557506,
+    "lat": 50.521808
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad8-d696-4ed9-a900-c3fd7d65b498",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

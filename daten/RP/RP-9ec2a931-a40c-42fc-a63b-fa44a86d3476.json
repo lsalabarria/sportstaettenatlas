@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a931-a40c-42fc-a63b-fa44a86d3476",
+  "name": "Injoy Fitnessworld Eisinger GmbH",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Kaiserstraße",
+    "plz": "67292",
+    "ort": "Kirchheimbolanden, Stadt"
+  },
+  "lage": {
+    "lon": 8.022013,
+    "lat": 49.658049
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a931-a40c-42fc-a63b-fa44a86d3476",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

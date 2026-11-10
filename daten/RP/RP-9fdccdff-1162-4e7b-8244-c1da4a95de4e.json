@@ -1,0 +1,39 @@
+{
+  "id": "RP-9fdccdff-1162-4e7b-8244-c1da4a95de4e",
+  "name": "Bezirkssportanlage Rheingönheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hoher Weg",
+    "hausnummer": "86",
+    "plz": "67065",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.427822,
+    "lat": 49.43832
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdff-1162-4e7b-8244-c1da4a95de4e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

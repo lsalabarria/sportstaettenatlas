@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e02-b03f-480f-8c32-efbb77ac80bd",
+  "name": "Kanu- und Kajakverein Remagen",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Rheinpromenade",
+    "hausnummer": "4",
+    "plz": "53424",
+    "ort": "Remagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.240366,
+    "lat": 50.578264
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e02-b03f-480f-8c32-efbb77ac80bd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

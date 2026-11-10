@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da7-1f67-4fa5-bada-574ca0af6d71",
+  "name": "Sportplatz Höchstberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "69",
+    "plz": "56767",
+    "ort": "Höchstberg"
+  },
+  "lage": {
+    "lon": 7.005065,
+    "lat": 50.238645
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da7-1f67-4fa5-bada-574ca0af6d71",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e0a-f815-4d0c-8278-b2030f787d50",
+  "name": "Großsporthalle Emmelshausen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Stadion",
+    "hausnummer": "8",
+    "plz": "56281",
+    "ort": "Emmelshausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.545698,
+    "lat": 50.155064
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großsporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0a-f815-4d0c-8278-b2030f787d50",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

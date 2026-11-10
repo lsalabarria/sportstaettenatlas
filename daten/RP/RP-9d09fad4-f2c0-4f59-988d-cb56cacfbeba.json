@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad4-f2c0-4f59-988d-cb56cacfbeba",
+  "name": "Gymnastikraum im Forum",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Sportpark",
+    "plz": "53578",
+    "ort": "Windhagen"
+  },
+  "lage": {
+    "lon": 7.352549,
+    "lat": 50.637205
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad4-f2c0-4f59-988d-cb56cacfbeba",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

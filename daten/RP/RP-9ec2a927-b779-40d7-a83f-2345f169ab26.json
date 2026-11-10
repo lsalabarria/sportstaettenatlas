@@ -1,0 +1,59 @@
+{
+  "id": "RP-9ec2a927-b779-40d7-a83f-2345f169ab26",
+  "name": "Stadion Rundsporthalle",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Nuits-Saint-Georges-Straße",
+    "hausnummer": "4A",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.905715,
+    "lat": 49.947607
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Wassergraben-"
+    },
+    {
+      "bezeichnung": "Hindernislauf"
+    },
+    {
+      "bezeichnung": "Diskus-"
+    },
+    {
+      "bezeichnung": "Hammerwurfanlage"
+    },
+    {
+      "bezeichnung": "Speerwurfanlage"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a927-b779-40d7-a83f-2345f169ab26",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

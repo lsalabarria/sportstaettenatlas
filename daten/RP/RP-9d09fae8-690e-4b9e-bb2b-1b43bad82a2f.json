@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fae8-690e-4b9e-bb2b-1b43bad82a2f",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "33a",
+    "plz": "54455",
+    "ort": "Serrig"
+  },
+  "lage": {
+    "lon": 6.573406,
+    "lat": 49.573842
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae8-690e-4b9e-bb2b-1b43bad82a2f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

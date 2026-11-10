@@ -1,0 +1,62 @@
+{
+  "id": "RP-9ec2a938-ffc4-4215-b4c0-981f49bec17f",
+  "name": "Universitätsstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dahlheimer Weg",
+    "hausnummer": "2",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.243577,
+    "lat": 49.989913
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    },
+    {
+      "bezeichnung": "Diskus-"
+    },
+    {
+      "bezeichnung": "Hammerwurfanlage"
+    },
+    {
+      "bezeichnung": "Speerwurfanlage"
+    },
+    {
+      "bezeichnung": "Stabhochsprunganlage"
+    },
+    {
+      "bezeichnung": "Wassergraben-"
+    },
+    {
+      "bezeichnung": "Hindernislauf"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a938-ffc4-4215-b4c0-981f49bec17f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

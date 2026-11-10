@@ -1,0 +1,27 @@
+{
+  "id": "RP-9d0a1e13-7f10-4e08-9bb6-4fe7c2aafeca",
+  "name": "Tennisanlage TuS 05 Daun",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "plz": "54550",
+    "ort": "Daun, Stadt"
+  },
+  "lage": {
+    "lon": 6.834173,
+    "lat": 50.189468
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e13-7f10-4e08-9bb6-4fe7c2aafeca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

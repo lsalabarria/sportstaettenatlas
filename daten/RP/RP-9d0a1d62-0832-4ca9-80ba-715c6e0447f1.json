@@ -1,0 +1,31 @@
+{
+  "id": "RP-9d0a1d62-0832-4ca9-80ba-715c6e0447f1",
+  "name": "Sportplatz Niederkumbd",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Simmener Straße",
+    "plz": "55469",
+    "ort": "Niederkumbd"
+  },
+  "lage": {
+    "lon": 7.53791,
+    "lat": 50.01459
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d62-0832-4ca9-80ba-715c6e0447f1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

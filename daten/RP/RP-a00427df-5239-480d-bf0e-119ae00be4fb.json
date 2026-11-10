@@ -1,0 +1,34 @@
+{
+  "id": "RP-a00427df-5239-480d-bf0e-119ae00be4fb",
+  "name": "Anlage TC Gräfenstein",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "66978",
+    "ort": "Merzalben"
+  },
+  "lage": {
+    "lon": 7.73418,
+    "lat": 49.248302
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a00427df-5239-480d-bf0e-119ae00be4fb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

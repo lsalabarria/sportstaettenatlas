@@ -1,0 +1,36 @@
+{
+  "id": "RP-9fdccd6a-75c0-42d0-bffd-2e94af1abcfd",
+  "name": "Reit- und Fahrverein Bundenbacherhöhe e. V.",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "82",
+    "plz": "66501",
+    "ort": "Kleinbundenbach"
+  },
+  "lage": {
+    "lon": 7.446091,
+    "lat": 49.311615
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Stall"
+    },
+    {
+      "bezeichnung": "Reithalle"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd6a-75c0-42d0-bffd-2e94af1abcfd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

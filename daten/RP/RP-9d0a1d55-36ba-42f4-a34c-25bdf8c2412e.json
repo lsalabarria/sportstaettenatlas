@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d55-36ba-42f4-a34c-25bdf8c2412e",
+  "name": "Sportplatz Forst",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Binninger Straße",
+    "plz": "56754",
+    "ort": "Forst"
+  },
+  "lage": {
+    "lon": 7.24872,
+    "lat": 50.213458
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d55-36ba-42f4-a34c-25bdf8c2412e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

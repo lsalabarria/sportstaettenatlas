@@ -1,0 +1,36 @@
+{
+  "id": "RP-9fdcce21-48c0-43f9-a75d-e87050827cd2",
+  "name": "Nikolaus-von-Weis Realschule plus",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Holzstraße",
+    "hausnummer": "8.0",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.417225,
+    "lat": 49.313883
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce21-48c0-43f9-a75d-e87050827cd2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

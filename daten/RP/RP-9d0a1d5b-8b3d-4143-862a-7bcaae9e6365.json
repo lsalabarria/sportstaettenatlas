@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5b-8b3d-4143-862a-7bcaae9e6365",
+  "name": "Sportplatz Wiebelsheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L220",
+    "plz": "56291",
+    "ort": "Wiebelsheim"
+  },
+  "lage": {
+    "lon": 7.63776,
+    "lat": 50.071148
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5b-8b3d-4143-862a-7bcaae9e6365",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

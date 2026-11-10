@@ -1,0 +1,47 @@
+{
+  "id": "RP-9d0a1dff-9636-4046-afcb-4d0724b64ee1",
+  "name": "Sportplatz Peter-Joerres-Gymnasium",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "St.-Pius-Straße",
+    "hausnummer": "29",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.12255,
+    "lat": 50.542039
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    },
+    {
+      "bezeichnung": "Klettersportanlage Outdoor"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dff-9636-4046-afcb-4d0724b64ee1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

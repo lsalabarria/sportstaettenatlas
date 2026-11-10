@@ -1,0 +1,29 @@
+{
+  "id": "RP-a08f7cca-0b6a-4ad3-a1da-ef327d9eade9",
+  "name": "Bolzplatz Opelwiese",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L239",
+    "plz": "55595",
+    "ort": "Spall"
+  },
+  "lage": {
+    "lon": 7.654535,
+    "lat": 49.925666
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cca-0b6a-4ad3-a1da-ef327d9eade9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "RP-9d0a1d9f-50ab-4901-beb3-9f559dc2dcf0",
+  "name": "Reit- und Zuchtverein Alftal",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Zum Reiterhof",
+    "hausnummer": "8",
+    "plz": "54538",
+    "ort": "Bausendorf"
+  },
+  "lage": {
+    "lon": 7.002074,
+    "lat": 50.016322
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d9f-50ab-4901-beb3-9f559dc2dcf0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

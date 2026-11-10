@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e0d-4c0d-4376-b455-11c6914fbbba",
+  "name": "Sportplatz Kirchberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Maitzborner Straße",
+    "plz": "55481",
+    "ort": "Kirchberg (Hunsrück), Stadt"
+  },
+  "lage": {
+    "lon": 7.411931,
+    "lat": 49.938871
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0d-4c0d-4376-b455-11c6914fbbba",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

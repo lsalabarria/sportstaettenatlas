@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a915-3ff7-4b4b-b382-634b08aaac81",
+  "name": "Sportanlage SV Gundersweiler",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Friedhofstraße",
+    "plz": "67724",
+    "ort": "Gundersweiler"
+  },
+  "lage": {
+    "lon": 7.784546,
+    "lat": 49.597251
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a915-3ff7-4b4b-b382-634b08aaac81",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

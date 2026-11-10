@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d50-9ea3-4b7a-9812-2abb209fdf13",
+  "name": "Leyberghalle Kempenich Kleinspielfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Leygasse",
+    "plz": "56746",
+    "ort": "Kempenich"
+  },
+  "lage": {
+    "lon": 7.122641,
+    "lat": 50.418793
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-9ea3-4b7a-9812-2abb209fdf13",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

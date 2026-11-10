@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1da3-dc6c-4dfd-a7dd-126d369069e7",
+  "name": "Spielplatz Bolsdorfer Plätzchen",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Sportpark",
+    "plz": "54576",
+    "ort": "Hillesheim"
+  },
+  "lage": {
+    "lon": 6.6668,
+    "lat": 50.287491
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da3-dc6c-4dfd-a7dd-126d369069e7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

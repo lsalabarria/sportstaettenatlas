@@ -1,0 +1,29 @@
+{
+  "id": "RP-a22beb3e-640b-45e8-89b5-2853569d87a8",
+  "name": "IGS-Sporthalle in Nieder-Olm",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Karl-Sieben-Straße",
+    "plz": "55268",
+    "ort": "Nieder-Olm, Stadt"
+  },
+  "lage": {
+    "lon": 8.195755,
+    "lat": 49.899956
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Dreifach-Sporthalle"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a22beb3e-640b-45e8-89b5-2853569d87a8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

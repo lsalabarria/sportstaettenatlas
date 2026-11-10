@@ -1,0 +1,32 @@
+{
+  "id": "RP-9fdcccbc-8cf3-4a02-8e4b-dfed725e537d",
+  "name": "Tenniscenter Ochtendung",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Krufter Str.",
+    "plz": "56299",
+    "ort": "Ochtendung"
+  },
+  "lage": {
+    "lon": 7.384408,
+    "lat": 50.35381
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennishalle"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccbc-8cf3-4a02-8e4b-dfed725e537d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

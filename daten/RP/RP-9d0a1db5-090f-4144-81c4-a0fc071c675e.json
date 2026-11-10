@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1db5-090f-4144-81c4-a0fc071c675e",
+  "name": "Bolzplatz Berendsborn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kurfürstenstraße",
+    "plz": "54329",
+    "ort": "Konz, Stadt"
+  },
+  "lage": {
+    "lon": 6.57419,
+    "lat": 49.685966
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db5-090f-4144-81c4-a0fc071c675e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

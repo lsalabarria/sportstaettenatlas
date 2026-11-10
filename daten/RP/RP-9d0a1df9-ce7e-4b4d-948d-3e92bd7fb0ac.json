@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1df9-ce7e-4b4d-948d-3e92bd7fb0ac",
+  "name": "W. u. E. Meyer GbR / Pferdeland Meyer",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hofgut Grenzau",
+    "plz": "56203",
+    "ort": "Höhr-Grenzhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.652925,
+    "lat": 50.452566
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Führ- und Logierplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df9-ce7e-4b4d-948d-3e92bd7fb0ac",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a91c-4b88-49a0-a469-85b9b695900f",
+  "name": "TSV Fortuna Tennisanlage",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Klingener Str.",
+    "hausnummer": "30",
+    "plz": "76831",
+    "ort": "Billigheim-Ingenheim"
+  },
+  "lage": {
+    "lon": 8.074256,
+    "lat": 49.137055
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91c-4b88-49a0-a469-85b9b695900f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

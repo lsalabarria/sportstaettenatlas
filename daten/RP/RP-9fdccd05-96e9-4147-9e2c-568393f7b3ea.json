@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdccd05-96e9-4147-9e2c-568393f7b3ea",
+  "name": "Tennisplatz Hainau",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Brückenstraße",
+    "plz": "56357",
+    "ort": "Hainau"
+  },
+  "lage": {
+    "lon": 7.780342,
+    "lat": 50.223638
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd05-96e9-4147-9e2c-568393f7b3ea",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

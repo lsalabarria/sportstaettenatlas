@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e07-4fe1-47b9-bf66-3e3aee071f5a",
+  "name": "Bungerthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Grüngürtel",
+    "hausnummer": "7",
+    "plz": "56254",
+    "ort": "Müden (Mosel)"
+  },
+  "lage": {
+    "lon": 7.343895,
+    "lat": 50.185074
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e07-4fe1-47b9-bf66-3e3aee071f5a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

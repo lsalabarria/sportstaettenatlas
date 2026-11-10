@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e08-5100-4338-bf1d-5477c4313d7b",
+  "name": "St. Mathias Schützenbruderschaft Ulmen e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Kleewiesenweg",
+    "hausnummer": "29",
+    "plz": "56766",
+    "ort": "Ulmen, Stadt"
+  },
+  "lage": {
+    "lon": 6.991136,
+    "lat": 50.210018
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Schießstand"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e08-5100-4338-bf1d-5477c4313d7b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

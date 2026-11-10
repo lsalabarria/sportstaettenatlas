@@ -1,0 +1,53 @@
+{
+  "id": "RP-9d0a1dfb-cb91-4ec3-824b-e978b30f3ea3",
+  "name": "Schulstadion Westerburg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wörthstraße",
+    "hausnummer": "18",
+    "plz": "56457",
+    "ort": "Westerburg, Stadt"
+  },
+  "lage": {
+    "lon": 7.97688,
+    "lat": 50.556135
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Rundlaufbahn"
+    },
+    {
+      "bezeichnung": "Weit-"
+    },
+    {
+      "bezeichnung": "Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    },
+    {
+      "bezeichnung": "Wassergraben-"
+    },
+    {
+      "bezeichnung": "Hindernislauf"
+    },
+    {
+      "bezeichnung": "Hochsprunganlage"
+    },
+    {
+      "bezeichnung": "Speerwurfanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfb-cb91-4ec3-824b-e978b30f3ea3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

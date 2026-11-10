@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcce35-f015-4a7c-be24-be3ad440a118",
+  "name": "Sommer-Outdoor-Freizeitanlage",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "plz": "66500",
+    "ort": "Hornbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.36509,
+    "lat": 49.183172
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce35-f015-4a7c-be24-be3ad440a118",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

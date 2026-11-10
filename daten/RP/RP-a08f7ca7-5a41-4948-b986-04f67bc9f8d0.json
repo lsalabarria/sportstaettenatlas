@@ -1,0 +1,32 @@
+{
+  "id": "RP-a08f7ca7-5a41-4948-b986-04f67bc9f8d0",
+  "name": "Sportplatz Gerach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Kupferstollen",
+    "plz": "55743",
+    "ort": "Gerach"
+  },
+  "lage": {
+    "lon": 7.337138,
+    "lat": 49.749318
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "sonstige Sportanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ca7-5a41-4948-b986-04f67bc9f8d0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

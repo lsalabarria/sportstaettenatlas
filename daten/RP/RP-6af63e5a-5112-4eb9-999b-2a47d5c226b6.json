@@ -1,0 +1,28 @@
+{
+  "id": "RP-6af63e5a-5112-4eb9-999b-2a47d5c226b6",
+  "name": "Jahnturnhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "5",
+    "plz": "67273",
+    "ort": "Weisenheim am Berg"
+  },
+  "lage": {
+    "lon": 8.150632,
+    "lat": 49.513936
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Turnverein 1920 eV Weisenheim am Berg",
+  "betreiber": "Turnverein 1920 eV Weisenheim am Berg",
+  "website": "https://www.turnvereinweisenheim.de/",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "6af63e5a-5112-4eb9-999b-2a47d5c226b6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcccbd-282e-4470-9ef1-c113d8797afd",
+  "name": "Tennisanlage DJK Ochtendung",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Schillerstraße",
+    "plz": "56299",
+    "ort": "Ochtendung"
+  },
+  "lage": {
+    "lon": 7.375761,
+    "lat": 50.346836
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccbd-282e-4470-9ef1-c113d8797afd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

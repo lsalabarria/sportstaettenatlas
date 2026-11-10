@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a923-4de0-4403-a549-cb2542e59003",
+  "name": "Bolzplatz Bissersheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Schild",
+    "plz": "67281",
+    "ort": "Bissersheim"
+  },
+  "lage": {
+    "lon": 8.197878,
+    "lat": 49.535724
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a923-4de0-4403-a549-cb2542e59003",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

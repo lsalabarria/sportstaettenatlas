@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1db6-9182-4090-9257-78744401ac27",
+  "name": "Bolzplatz Quint",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Taubenbergstraße",
+    "hausnummer": "16",
+    "plz": "54293",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.706047,
+    "lat": 49.821339
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db6-9182-4090-9257-78744401ac27",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

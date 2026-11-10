@@ -1,0 +1,32 @@
+{
+  "id": "RP-a08f7ce7-56b1-4b69-bde9-a48c2ece03c9",
+  "name": "Freibad Rüdesheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Kesselberg",
+    "plz": "55593",
+    "ort": "Rüdesheim"
+  },
+  "lage": {
+    "lon": 7.807124,
+    "lat": 49.842661
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Freibad"
+    },
+    {
+      "bezeichnung": "Volleyballfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ce7-56b1-4b69-bde9-a48c2ece03c9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

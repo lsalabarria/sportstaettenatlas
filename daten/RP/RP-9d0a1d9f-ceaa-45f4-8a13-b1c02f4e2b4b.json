@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1d9f-ceaa-45f4-8a13-b1c02f4e2b4b",
+  "name": "Mehrzweckhalle Großlittgen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schladter Straße",
+    "hausnummer": "45",
+    "plz": "54534",
+    "ort": "Großlittgen"
+  },
+  "lage": {
+    "lon": 6.801393,
+    "lat": 50.028758
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d9f-ceaa-45f4-8a13-b1c02f4e2b4b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

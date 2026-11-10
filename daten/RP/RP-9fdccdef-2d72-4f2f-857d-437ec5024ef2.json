@@ -1,0 +1,39 @@
+{
+  "id": "RP-9fdccdef-2d72-4f2f-857d-437ec5024ef2",
+  "name": "Fritz-Walter-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Fritz-Walter-Straße",
+    "hausnummer": "1",
+    "plz": "67663",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.77641,
+    "lat": 49.434693
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdef-2d72-4f2f-857d-437ec5024ef2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

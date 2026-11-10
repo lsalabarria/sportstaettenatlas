@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a92d-c3e5-4636-9efa-e7b8a3177bee",
+  "name": "clever fit Nierstein",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Boschstraße",
+    "hausnummer": "1",
+    "plz": "55283",
+    "ort": "Nierstein, Stadt"
+  },
+  "lage": {
+    "lon": 8.331808,
+    "lat": 49.863532
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92d-c3e5-4636-9efa-e7b8a3177bee",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a920-9f71-46a1-8e0b-699002992dc8",
+  "name": "Sportanlage Rinnthal",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Almental",
+    "plz": "76857",
+    "ort": "Rinnthal"
+  },
+  "lage": {
+    "lon": 7.909741,
+    "lat": 49.215907
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a920-9f71-46a1-8e0b-699002992dc8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

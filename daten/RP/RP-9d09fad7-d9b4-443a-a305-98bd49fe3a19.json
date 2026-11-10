@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad7-d9b4-443a-a305-98bd49fe3a19",
+  "name": "Sportplatz Ratzert",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "57614",
+    "ort": "Ratzert"
+  },
+  "lage": {
+    "lon": 7.604072,
+    "lat": 50.643251
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad7-d9b4-443a-a305-98bd49fe3a19",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d09fae0-8f31-4c1d-8678-d0f5a3ce932c",
+  "name": "Naumeshof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "43",
+    "plz": "54317",
+    "ort": "Morscheid"
+  },
+  "lage": {
+    "lon": 6.754798,
+    "lat": 49.728993
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Reitplatz"
+    },
+    {
+      "bezeichnung": "Reitplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae0-8f31-4c1d-8678-d0f5a3ce932c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

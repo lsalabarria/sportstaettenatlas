@@ -1,0 +1,35 @@
+{
+  "id": "RP-9fdcccc1-d25e-44ea-8167-3e65d28c83c0",
+  "name": "Sportanlage auf der Südspitze",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rheinstraße",
+    "plz": "56179",
+    "ort": "Niederwerth"
+  },
+  "lage": {
+    "lon": 7.615354,
+    "lat": 50.386479
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccc1-d25e-44ea-8167-3e65d28c83c0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

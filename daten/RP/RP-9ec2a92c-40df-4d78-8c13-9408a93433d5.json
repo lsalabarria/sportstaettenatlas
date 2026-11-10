@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a92c-40df-4d78-8c13-9408a93433d5",
+  "name": "woman’s GmbH FITNESS NUR FÜR DIE FRAU.",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Stauferring",
+    "hausnummer": "60",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.075787,
+    "lat": 49.982702
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Geräteraum"
+    },
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92c-40df-4d78-8c13-9408a93433d5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "RP-9d0a1d4a-fee1-4726-92c1-f7d7016c33fe",
+  "name": "Sportplatz Ahrtalschule Realschule plus",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Grünstraße",
+    "hausnummer": "10",
+    "plz": "53501",
+    "ort": "Grafschaft"
+  },
+  "lage": {
+    "lon": 7.030914,
+    "lat": 50.5852
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4a-fee1-4726-92c1-f7d7016c33fe",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

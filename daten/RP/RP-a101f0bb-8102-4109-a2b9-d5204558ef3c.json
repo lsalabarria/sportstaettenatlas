@@ -1,0 +1,32 @@
+{
+  "id": "RP-a101f0bb-8102-4109-a2b9-d5204558ef3c",
+  "name": "Sporthalle Geschwister-Scholl-Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Platz der weißen Rose",
+    "hausnummer": "1",
+    "plz": "67061",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.451029,
+    "lat": 49.473238
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Zweifachsporthalle"
+    },
+    {
+      "bezeichnung": "Übungsraum"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a101f0bb-8102-4109-a2b9-d5204558ef3c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

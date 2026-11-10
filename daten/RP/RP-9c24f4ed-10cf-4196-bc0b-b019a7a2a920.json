@@ -1,0 +1,29 @@
+{
+  "id": "RP-9c24f4ed-10cf-4196-bc0b-b019a7a2a920",
+  "name": "Sportplatz Großkampenberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "2",
+    "plz": "54619",
+    "ort": "Großkampenberg"
+  },
+  "lage": {
+    "lon": 6.217139,
+    "lat": 50.153407
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ed-10cf-4196-bc0b-b019a7a2a920",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

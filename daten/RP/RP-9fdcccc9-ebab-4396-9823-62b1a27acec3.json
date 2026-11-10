@@ -1,0 +1,29 @@
+{
+  "id": "RP-9fdcccc9-ebab-4396-9823-62b1a27acec3",
+  "name": "Sporthalle Kruft",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kruppstraße",
+    "plz": "56642",
+    "ort": "Kruft"
+  },
+  "lage": {
+    "lon": 7.336759,
+    "lat": 50.386966
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccc9-ebab-4396-9823-62b1a27acec3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1da0-1f9c-4407-8847-bc08c4bcadcc",
+  "name": "Bouleplatz Gipperath",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "9",
+    "plz": "54533",
+    "ort": "Gipperath"
+  },
+  "lage": {
+    "lon": 6.864765,
+    "lat": 50.037767
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da0-1f9c-4407-8847-bc08c4bcadcc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

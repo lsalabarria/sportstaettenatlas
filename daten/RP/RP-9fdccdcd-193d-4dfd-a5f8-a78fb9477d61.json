@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccdcd-193d-4dfd-a5f8-a78fb9477d61",
+  "name": "Kauber Tennisclub e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Adolfstraße",
+    "hausnummer": "101",
+    "plz": "56349",
+    "ort": "Kaub, Stadt"
+  },
+  "lage": {
+    "lon": 7.782448,
+    "lat": 50.087362
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdcd-193d-4dfd-a5f8-a78fb9477d61",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

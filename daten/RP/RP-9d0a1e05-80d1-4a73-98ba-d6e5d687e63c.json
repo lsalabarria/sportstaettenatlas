@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d0a1e05-80d1-4a73-98ba-d6e5d687e63c",
+  "name": "Fußballplatz Erich-Klausener-Gymnasium Adenau",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dr.-Klausener-Straße",
+    "hausnummer": "43-45",
+    "plz": "53518",
+    "ort": "Adenau, Stadt"
+  },
+  "lage": {
+    "lon": 6.933603,
+    "lat": 50.382965
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e05-80d1-4a73-98ba-d6e5d687e63c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "RP-9fdccd9b-eddc-47c1-91fd-d9d9d2d78eaf",
+  "name": "Tennispark Bendorf",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "In d. Langfuhr",
+    "hausnummer": "20",
+    "plz": "56170",
+    "ort": "Bendorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.565671,
+    "lat": 50.425073
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Tennishalle"
+    },
+    {
+      "bezeichnung": "Tennisplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd9b-eddc-47c1-91fd-d9d9d2d78eaf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

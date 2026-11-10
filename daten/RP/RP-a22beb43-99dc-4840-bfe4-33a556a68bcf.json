@@ -1,0 +1,30 @@
+{
+  "id": "RP-a22beb43-99dc-4840-bfe4-33a556a68bcf",
+  "name": "Apollinarisstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kreuzstr.",
+    "hausnummer": "118",
+    "plz": "535474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.15395,
+    "lat": 50.544317
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a22beb43-99dc-4840-bfe4-33a556a68bcf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

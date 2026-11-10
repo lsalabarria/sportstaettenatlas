@@ -1,0 +1,29 @@
+{
+  "id": "RP-9d09fac7-fc6d-4e48-9ecc-6cefb72f5b4a",
+  "name": "Fußballplatz Almersbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Koblenzer Straße",
+    "hausnummer": "2",
+    "plz": "57610",
+    "ort": "Almersbach"
+  },
+  "lage": {
+    "lon": 7.62777,
+    "lat": 50.674083
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac7-fc6d-4e48-9ecc-6cefb72f5b4a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

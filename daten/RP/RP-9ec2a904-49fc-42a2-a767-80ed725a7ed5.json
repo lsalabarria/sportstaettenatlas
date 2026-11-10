@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a904-49fc-42a2-a767-80ed725a7ed5",
+  "name": "Sportanlage Forst an der Weinstraße",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Stift",
+    "hausnummer": "32",
+    "plz": "67147",
+    "ort": "Forst an der Weinstraße"
+  },
+  "lage": {
+    "lon": 8.191822,
+    "lat": 49.425831
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a904-49fc-42a2-a767-80ed725a7ed5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

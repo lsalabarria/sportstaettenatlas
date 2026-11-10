@@ -1,0 +1,29 @@
+{
+  "id": "RP-9ec2a934-56f7-470c-bea5-f22d0e97302a",
+  "name": "Golfanlage Neustadt Geinsheim",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Im Lochbusch",
+    "hausnummer": "1",
+    "plz": "67435",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.272842,
+    "lat": 49.31128
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Golfplatz"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a934-56f7-470c-bea5-f22d0e97302a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

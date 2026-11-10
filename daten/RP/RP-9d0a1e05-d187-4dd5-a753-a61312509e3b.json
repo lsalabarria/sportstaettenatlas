@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1e05-d187-4dd5-a753-a61312509e3b",
+  "name": "Spielplatz Wiedweg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wiedweg",
+    "plz": "53498",
+    "ort": "Bad Breisig, Stadt"
+  },
+  "lage": {
+    "lon": 7.286802,
+    "lat": 50.521197
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e05-d187-4dd5-a753-a61312509e3b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

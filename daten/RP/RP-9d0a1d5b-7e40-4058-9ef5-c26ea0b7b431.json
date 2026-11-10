@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d5b-7e40-4058-9ef5-c26ea0b7b431",
+  "name": "Bolzplatz Utzenhain",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56291",
+    "ort": "Utzenhain"
+  },
+  "lage": {
+    "lon": 7.637121,
+    "lat": 50.131123
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5b-7e40-4058-9ef5-c26ea0b7b431",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

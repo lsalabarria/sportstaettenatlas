@@ -1,0 +1,31 @@
+{
+  "id": "RP-9ec2a920-1c40-4624-a21a-b2617b4dfbbc",
+  "name": "Sportplatz Völkersweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "plz": "76857",
+    "ort": "Völkersweiler"
+  },
+  "lage": {
+    "lon": 7.935862,
+    "lat": 49.166951
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    },
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a920-1c40-4624-a21a-b2617b4dfbbc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

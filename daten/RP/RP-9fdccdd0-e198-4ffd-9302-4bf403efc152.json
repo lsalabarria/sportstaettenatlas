@@ -1,0 +1,42 @@
+{
+  "id": "RP-9fdccdd0-e198-4ffd-9302-4bf403efc152",
+  "name": "Sportanlage Marksburgschule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Stiftstraße",
+    "hausnummer": "1",
+    "plz": "56388",
+    "ort": "Braubach, Stadt"
+  },
+  "lage": {
+    "lon": 7.639858,
+    "lat": 50.275782
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    },
+    {
+      "bezeichnung": "Weit- und Dreisprunganlage"
+    },
+    {
+      "bezeichnung": "Kurzstreckenbahn"
+    },
+    {
+      "bezeichnung": "Kugelstoßanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdd0-e198-4ffd-9302-4bf403efc152",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

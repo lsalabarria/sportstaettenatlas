@@ -1,0 +1,32 @@
+{
+  "id": "RP-9ec2a93b-8e43-495e-88b0-376983df2a67",
+  "name": "Sporthalle Grundschule Am Lemmchen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Lemmchen",
+    "hausnummer": "50",
+    "plz": "55120",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.215324,
+    "lat": 50.021298
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Einfachsporthalle"
+    },
+    {
+      "bezeichnung": "Bouleanlage"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93b-8e43-495e-88b0-376983df2a67",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

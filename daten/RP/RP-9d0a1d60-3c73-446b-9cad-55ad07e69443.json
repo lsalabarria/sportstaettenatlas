@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d0a1d60-3c73-446b-9cad-55ad07e69443",
+  "name": "Bolzplatz Argenthal",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Tennisplatz",
+    "plz": "55496",
+    "ort": "Argenthal"
+  },
+  "lage": {
+    "lon": 7.59912,
+    "lat": 49.969392
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d60-3c73-446b-9cad-55ad07e69443",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

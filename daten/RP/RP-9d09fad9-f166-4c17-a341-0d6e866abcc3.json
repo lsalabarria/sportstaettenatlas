@@ -1,0 +1,28 @@
+{
+  "id": "RP-9d09fad9-f166-4c17-a341-0d6e866abcc3",
+  "name": "Sportplatz Siebenmorgen Breitscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Siebenmorgener Staße",
+    "plz": "53547",
+    "ort": "Breitscheid"
+  },
+  "lage": {
+    "lon": 7.473464,
+    "lat": 50.573485
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Nicht normiertes Spielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad9-f166-4c17-a341-0d6e866abcc3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "RP-9ec2a8ff-f66d-4bbe-a257-a0210b13031b",
+  "name": "Sportplatz Obrigheim (Pfalz)",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "plz": "67283",
+    "ort": "Obrigheim (Pfalz)"
+  },
+  "lage": {
+    "lon": 8.210113,
+    "lat": 49.591285
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a8ff-f66d-4bbe-a257-a0210b13031b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

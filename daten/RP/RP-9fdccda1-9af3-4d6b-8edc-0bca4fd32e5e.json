@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccda1-9af3-4d6b-8edc-0bca4fd32e5e",
+  "name": "Sportanlage Mallendarer Berg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Albert-Schweitzer-Straße",
+    "hausnummer": "19",
+    "plz": "56179",
+    "ort": "Vallendar, Stadt"
+  },
+  "lage": {
+    "lon": 7.631304,
+    "lat": 50.388997
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccda1-9af3-4d6b-8edc-0bca4fd32e5e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

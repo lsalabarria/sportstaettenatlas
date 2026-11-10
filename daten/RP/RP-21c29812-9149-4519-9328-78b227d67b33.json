@@ -1,0 +1,28 @@
+{
+  "id": "RP-21c29812-9149-4519-9328-78b227d67b33",
+  "name": "Sportschützenverein Dreis",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Auf’m Eichelfeld",
+    "hausnummer": "4",
+    "plz": "54518",
+    "ort": "Dreis"
+  },
+  "lage": {
+    "lon": 6.811674,
+    "lat": 49.936279
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "SSV Dreis 1958 e.V.",
+  "betreiber": "SSV Dreis 1958 e.V.",
+  "website": "https://www.schuetzen-hetzerath.de/schuetzenhaus/",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "21c29812-9149-4519-9328-78b227d67b33",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

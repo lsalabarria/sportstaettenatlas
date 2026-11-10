@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdccd7a-6b51-482d-816c-0825205c5c57",
+  "name": "Maria-Ward-Sporthalle Landau",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Parkstraße",
+    "hausnummer": "13",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.111944,
+    "lat": 49.192959
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Sporthalle (Größe unbekannt)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd7a-6b51-482d-816c-0825205c5c57",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

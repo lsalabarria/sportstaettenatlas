@@ -1,0 +1,30 @@
+{
+  "id": "RP-9fdcccfd-5182-4e42-954c-c308cc75de43",
+  "name": "Sport- und Gemeindezentrum Bornich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "3",
+    "plz": "56348",
+    "ort": "Bornich"
+  },
+  "lage": {
+    "lon": 7.771307,
+    "lat": 50.1278
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "anlagen": [
+    {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccfd-5182-4e42-954c-c308cc75de43",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}
