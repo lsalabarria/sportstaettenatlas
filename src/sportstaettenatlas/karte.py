@@ -135,7 +135,13 @@ def html_seite(
                     Daten aus daten/ nach: Bestand sofort, ALKIS erst in der Verifikation.
     """
     if webseite:
-        skript = '<script src="konfig.js"></script>\n<script>\nconst EINGEBETTET = null;'
+        # konfig.js wird auf GitHub von Hand bearbeitet: immer frisch laden, sonst zeigt der
+        # Browser bis zu zehn Minuten (oder länger) den alten Stand aus dem Zwischenspeicher
+        skript = (
+            "<script>document.write('<script src=\"konfig.js?' + Date.now() + '\"><\\/script>');"
+            "</script>\n"
+            "<script>\nconst EINGEBETTET = null;"
+        )
         laden = '<div id="laden"><span class="kreisel"></span><span>Sportstätten werden geladen …</span></div>'
     else:
         leer = {"type": "FeatureCollection", "features": []}

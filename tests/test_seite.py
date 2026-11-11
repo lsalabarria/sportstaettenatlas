@@ -54,7 +54,7 @@ def test_webseite_laedt_daten_nach():
         leaflet="vendor/leaflet",
     )
     assert '<script src="vendor/leaflet/leaflet.js"></script>' in seite
-    assert '<script src="konfig.js"></script>' in seite and "const EINGEBETTET = null;" in seite
+    assert "konfig.js?' + Date.now()" in seite and "const EINGEBETTET = null;" in seite
     assert '"sportstaetten.geojson"' in seite and "bestand.geojson" in seite
     assert 'id="laden"' in seite
     assert "<h1>Atlas &lt;RLP&gt;</h1>" in seite

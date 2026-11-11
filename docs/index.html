@@ -220,7 +220,7 @@
 <div id="seite-vorschlag" class="seite" hidden></div>
 <div id="laden"><span class="kreisel"></span><span>Sportstätten werden geladen …</span></div></div>
 <script src="vendor/leaflet/leaflet.js"></script>
-<script src="konfig.js"></script>
+<script>document.write('<script src="konfig.js?' + Date.now() + '"><\/script>');</script>
 <script>
 const EINGEBETTET = null;
 const KONFIG = window.KONFIG || {};
@@ -1213,9 +1213,11 @@ function ansichtVerifikation() {
 // ---------- Ansicht „Vorschlag“: Sportstätte neu eintragen oder ändern ------------------
 // Das Formular prüft auf Doppelungen und übergibt die Werte als URL-Parameter an die
 // LimeSurvey-Umfrage (konfig.js: vorschlag_url). Dort wird der Vorschlag abgeschickt.
-// Parameternamen = Fragecodes in LimeSurvey; in konfig.js mit vorschlag_felder änderbar
-// (Wert "" = Feld nicht übertragen).
-const VORSCHLAG_FELDER = Object.assign({
+// Parameternamen = Fragecodes in LimeSurvey. Ist in konfig.js vorschlag_felder gesetzt,
+// werden nur die dort genannten Felder übertragen ({ name: "Q00", lage: "G01Q04" }),
+// sonst alle mit den Vorgabe-Codes unten.
+const VORSCHLAG_FELDER = KONFIG.vorschlag_felder && Object.keys(KONFIG.vorschlag_felder).length
+  ? KONFIG.vorschlag_felder : {
   art: "art", id: "id", quelle: "quelle", name: "name", kategorie: "kategorie",
   betriebsstatus: "status", strasse: "strasse", hausnummer: "hausnr", adresszusatz: "zusatz",
   plz: "plz", ort: "ort", ars: "ars", gemeinde: "gemeinde", lat: "lat", lon: "lon",
@@ -1223,7 +1225,7 @@ const VORSCHLAG_FELDER = Object.assign({
   sportarten: "sportarten", anlagen: "anlagen", eigentuemer: "eigentuemer",
   betreiber: "betreiber", website: "website", anmerkung: "anmerkung", geaendert: "geaendert",
   dubletten: "dubletten",
-}, KONFIG.vorschlag_felder || {});
+};
 const FELD_TEXT = {
   name: "Name", kategorie: "Kategorie", betriebsstatus: "Betriebsstatus", strasse: "Straße",
   hausnummer: "Hausnummer", adresszusatz: "Adresszusatz", plz: "PLZ", ort: "Ort",
@@ -1697,7 +1699,8 @@ function ansichtVorschlag(bestand) {
     }
     zeigeFehlerliste(fehler);
     if (fehler.length) return;
-    const daten = { ...v, geaendert: geaendert.join(", "),
+    const daten = { ...v, geaendert: geaendert.join(", "), lage: v.lat ? `${v.lat}, ${v.lon}` : "",
+      adresse: [`${v.strasse} ${v.hausnummer}`.trim(), `${v.plz} ${v.ort}`.trim()].filter(Boolean).join(", "),
       dubletten: dubletten.length ? dubletten.map(d => d.e.p.id).join(", ") + (cb && cb.checked ? " (geprüft: andere Sportstätte)" : "") : "" };
     const params = new URLSearchParams();
     for (const [k, code] of Object.entries(VORSCHLAG_FELDER)) {
