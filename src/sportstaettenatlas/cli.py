@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import logging
 from pathlib import Path
 
@@ -271,21 +272,60 @@ def cmd_bestand(args):
 
 def cmd_seite(args):
     """Statische Webseite für GitHub Pages (Ordner docs/) erzeugen."""
+    from . import gebiete as gb
+    from .bestand import lies_bestand
     from .seite import schreibe_webseite
 
     ziel, ausgabe = Path(args.ziel), Path(args.ausgabe)
-    _, staetten, anlagen = _lies_ergebnis(ziel)
+    anlagen = staetten = None
+    verifikation = (ziel / "sportstaetten.gpkg").exists()
+    if verifikation:
+        _, staetten, anlagen = _lies_ergebnis(ziel)
+        vermerk = _vermerk(ziel, args.land)
+    else:
+        print(
+            f"Hinweis: {ziel}/sportstaetten.gpkg fehlt – die Ansicht „Verifikation“ behält "
+            "ihren bisherigen Stand (neu mit `bauen` und `anreichern`)."
+        )
+        vermerk = QUELLEN[args.land].quellenvermerk.format(jahr=dt.datetime.now(dt.UTC).year)
+
+    bestand = None
+    if Path(args.bestand).is_dir():
+        bestand = list(lies_bestand(Path(args.bestand)))
+    else:
+        print(f"Hinweis: kein Datenbestand unter {args.bestand}/ – zuerst `bestand` ausführen.")
+
+    gebiete = None
+    if args.gebiete != "aus":
+        quelle = None if args.gebiete == "auto" else Path(args.gebiete)
+        cache = (
+            DATEN
+            / "cache"
+            / f"gebiete_{args.land}{'' if quelle is None else '_' + quelle.stem}.json"
+        )
+        try:
+            gebiete = gb.lade(args.land, cache, quelle)
+            bkg = gb.QUELLENVERMERK.format(jahr=dt.datetime.now(dt.UTC).year)
+            vermerk = f"{vermerk} | {bkg}" if vermerk else bkg
+        except Exception as exc:  # noqa: BLE001 – Netz, Dienst geändert …: Seite trotzdem bauen
+            print(f"Hinweis: Verwaltungsgebiete nicht verfügbar ({exc}) – ohne Gebietsauswahl.")
+
     info = schreibe_webseite(
         anlagen,
         staetten,
         ausgabe,
-        quellenvermerk=_vermerk(ziel, args.land),
+        quellenvermerk=vermerk,
         abgleich_altbestand=_abgleich(ziel),
         titel=args.titel,
+        bestand=bestand,
+        gebiete=gebiete,
+        verifikation=verifikation,
     )
     print(f"Webseite: {ausgabe}/  ({info['gesamt'] / 1e6:.1f} MB)")
     for name, _, anzahl, groesse in info["dateien"]:
         print(f"  daten/{name}: {anzahl} Objekte, {groesse / 1e6:.1f} MB")
+    for name, n in info["zugeordnet"].items():
+        print(f"  Gebiet zugeordnet: {name}: {n}")
     if info["entfernt"]:
         print(
             "Nicht veröffentlicht (Kontaktdaten): "
@@ -410,6 +450,13 @@ def main(argv: list[str] | None = None) -> None:
     sp.add_argument("--ziel", default=str(DATEN / "out"), help="Ergebnis von bauen/anreichern")
     sp.add_argument("--ausgabe", default="docs", help="Ordner der Webseite (Standard: docs)")
     sp.add_argument("--titel", default="Sportstättenatlas Rheinland-Pfalz")
+    sp.add_argument("--bestand", default="daten", help="Ordner des Datenbestands (Standard: daten)")
+    sp.add_argument(
+        "--gebiete",
+        default="auto",
+        help="Verwaltungsgebiete: auto (BKG-WFS, einmal geladen), Pfad zu einem "
+        "VG250-GeoPackage oder aus",
+    )
     sp.add_argument("--vorschau", action="store_true", help="danach lokal im Browser zeigen")
     sp.add_argument("--port", type=int, default=8000)
     sp.set_defaults(func=cmd_seite)

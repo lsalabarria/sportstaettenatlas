@@ -94,3 +94,25 @@ def test_echte_umrechnung():
 
     lon, lat = utm32_nach_wgs84(398000, 5578000)  # Koblenz
     assert 7.55 < lon < 7.6 and 50.33 < lat < 50.36
+
+
+def test_betreiber_art():
+    from sportstaettenatlas.bestand import betreiber_art
+
+    assert betreiber_art("TuS Koblenz 1911 e.V.") == "Verein"
+    assert betreiber_art("Turnverein Ortsgemeinde X") == "Verein"
+    assert betreiber_art("Ortsgemeinde Musterdorf") == "Kommune"
+    assert betreiber_art("Stadt Mainz") == "Kommune"
+    assert betreiber_art("Kreisverwaltung Mayen-Koblenz") == "Kommune"
+    assert betreiber_art("Fitness GmbH") == "sonstige"
+    assert betreiber_art("  ") is None and betreiber_art(None) is None
+
+
+def test_liste_haelt_anlagen_mit_bindestrich_zusammen():
+    from sportstaettenatlas.bestand import _liste
+
+    assert _liste("Großspielfeld, Weit-, Dreisprunganlage, Feld (A, B)") == [
+        "Großspielfeld",
+        "Weit-, Dreisprunganlage",
+        "Feld (A, B)",
+    ]

@@ -68,8 +68,19 @@ def _ganzzahl(wert: str) -> int | None:
 
 
 def _liste(wert: str) -> list[str]:
-    # "A, B (x, y), C" → ["A", "B (x, y)", "C"]: Kommas in Klammern trennen nicht
-    return [t.strip() for t in re.split(r",\s*(?![^()]*\))", wert or "") if t.strip()]
+    # "A, B (x, y), C" → ["A", "B (x, y)", "C"]: Kommas in Klammern trennen nicht.
+    # "Weit-, Dreisprunganlage" ist eine Anlage: ein Teil mit Bindestrich am Ende gehört
+    # zum nächsten.
+    out: list[str] = []
+    for t in re.split(r",\s*(?![^()]*\))", wert or ""):
+        t = t.strip()
+        if not t:
+            continue
+        if out and out[-1].endswith("-"):
+            out[-1] = f"{out[-1]}, {t}"
+        else:
+            out.append(t)
+    return out
 
 
 def datei_id(land: str, quell_id: str) -> str:
@@ -220,3 +231,121 @@ Request) und landen beim nächsten Erzeugen der Webseite auf der Karte.
   (legt nur fehlende Sportstätten an; `--modus aktualisieren` überschreibt vorhandene)
 - Kontaktdaten (E-Mail-Adressen, Telefonnummern) gehören nicht hierher.
 """
+
+
+# --- Für die Webseite --------------------------------------------------------------------
+
+# Art des Betreibers bzw. Eigentümers, geschätzt aus dem Namen. Verein zuerst prüfen:
+# "Turnverein Ortsgemeinde X e.V." ist ein Verein.
+_VEREIN = re.compile(
+    r"e\.\s?v\b|\be\s?v\.?$|\bev\b|verein|sportgemeinde|sportgemeinschaft|sportfreunde|"
+    r"\b(tus|tsv|sv|fc|sc|sg|vfl|vfb|vfr|tv|tc|tsg|jsg|spvgg|fsv|ssv|djk|tura|dlrg|dav|"
+    r"rv|rfv|lc|ltv|asv|esv|psv|bsv|hsv|msv|svg|tg|ttc|ttv|vsg|ksv|sgm)\b|"
+    r"club|klub|schützen|gilde|alpenverein|kanu|ruder|turnerschaft|sportbund|sportkreis",
+    re.IGNORECASE,
+)
+_KOMMUNE = re.compile(
+    r"\b(orts|verbands|stadt)?gemeinde|\bstadt\b|städtisch|stadtverwaltung|"
+    r"landkreis|kreisverwaltung|\bkreis\b|kommun|bürgermeister|\b(og|vg|vgv)\b|stadtwerk|"
+    r"zweckverband|eigenbetrieb|^stadt|^gemeinde",
+    re.IGNORECASE,
+)
+ARTEN = ("Verein", "Kommune", "sonstige")
+
+
+def betreiber_art(name: str | None) -> str | None:
+    """'Verein', 'Kommune' oder 'sonstige' – Schätzung aus dem Namen; None ohne Namen."""
+    name = (name or "").strip()
+    if not name:
+        return None
+    if _VEREIN.search(name):
+        return "Verein"
+    if _KOMMUNE.search(name):
+        return "Kommune"
+    return "sonstige"
+
+
+ALKIS_STATUS = {  # Status im Abgleich → Text auf der Webseite
+    "zugeordnet": "in ALKIS",
+    "nah": "ALKIS in der Nähe",
+    "nicht in ALKIS": "nicht in ALKIS",
+}
+
+
+def _quell_id(v) -> str:
+    s = str(v).strip()
+    return s.removesuffix(".0")
+
+
+def _adresse_text(a: dict) -> str:
+    strasse = " ".join(x for x in (a.get("strasse"), a.get("hausnummer")) if x)
+    ort = " ".join(x for x in (a.get("plz"), a.get("ort")) if x)
+    return ", ".join(x for x in (strasse, ort) if x)
+
+
+def lies_bestand(ordner: Path) -> Iterator[dict]:
+    """Alle Datensätze unter daten/<LAND>/*.json."""
+    for datei in sorted(Path(ordner).glob("*/*.json")):
+        try:
+            yield json.loads(datei.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            raise ValueError(f"{datei}: kein gültiges JSON ({exc})") from exc
+
+
+def bestand_geojson(datensaetze, abgleich=None, praezision: int = 5) -> dict:
+    """Datensätze → GeoJSON-Punkte für die Karte (flache Eigenschaften).
+
+    `abgleich`: DataFrame des ALKIS-Abgleichs (Spalten alt_atlas_id, status) – ergänzt,
+    ob ALKIS die Sportstätte kennt.
+    """
+    status = {}
+    if abgleich is not None and len(abgleich) and {"alt_atlas_id", "status"} <= set(abgleich):
+        for aid, st in zip(abgleich["alt_atlas_id"], abgleich["status"], strict=True):
+            if aid is not None and str(aid) not in ("", "nan") and st in ALKIS_STATUS:
+                status[_quell_id(aid)] = ALKIS_STATUS[st]
+    features = []
+    for d in datensaetze:
+        lage = d.get("lage") or {}
+        if lage.get("lon") is None or lage.get("lat") is None:
+            continue
+        a = d.get("adresse") or {}
+        atlas_id = ((d.get("quellen") or {}).get("atlas_rlp") or {}).get("id")
+        p = {
+            "id": d.get("id"),
+            "name": d.get("name"),
+            "kategorie": d.get("kategorie"),
+            "adresse": _adresse_text(a),
+            "plz": a.get("plz"),
+            "ort": a.get("ort"),
+            "strasse": a.get("strasse"),
+            "sportarten": d.get("sportarten") or [],
+            "anlagen": [
+                x.get("bezeichnung") for x in d.get("anlagen") or [] if x.get("bezeichnung")
+            ],
+            "oeffentlicher_zugang": d.get("oeffentlicher_zugang"),
+            "schulsport": d.get("schulsport"),
+            "zuschauerplaetze": d.get("zuschauerplaetze"),
+            "betriebsstatus": d.get("betriebsstatus"),
+            "betreiber": d.get("betreiber"),
+            "betreiber_art": betreiber_art(d.get("betreiber")),
+            "eigentuemer": d.get("eigentuemer"),
+            "eigentuemer_art": betreiber_art(d.get("eigentuemer")),
+            "website": d.get("website"),
+        }
+        if atlas_id is not None and status:
+            p["alkis"] = status.get(_quell_id(atlas_id), "ohne Abgleich")
+        p = {k: v for k, v in p.items() if v not in (None, "", [])}
+        features.append(
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        round(float(lage["lon"]), praezision),
+                        round(float(lage["lat"]), praezision),
+                    ],
+                },
+                "properties": p,
+            }
+        )
+    return {"type": "FeatureCollection", "features": features}

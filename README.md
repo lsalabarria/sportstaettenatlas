@@ -253,14 +253,40 @@ git add daten && git commit -m "Bestand aus dem Atlas-Export übernommen"
 
 ## Webseite veröffentlichen (GitHub Pages)
 
-`seite` erzeugt aus dem Ergebnis eine statische Webseite im Ordner `docs/`. GitHub Pages
-liefert diesen Ordner direkt aus – ohne Server und Datenbank.
+`seite` erzeugt aus dem Datenbestand (`daten/`) und dem ALKIS-Ergebnis (`data/out/`) eine
+statische Webseite im Ordner `docs/`. GitHub Pages liefert diesen Ordner direkt aus – ohne
+Server und Datenbank.
 
 ```bash
 uv run sportstaettenatlas seite              # docs/ erzeugen bzw. aktualisieren
 uv run sportstaettenatlas seite --vorschau   # danach lokal ansehen (http://localhost:8000)
 git add docs && git commit -m "Daten aktualisiert" && git push
 ```
+
+Die Seite hat vier Ansichten (oben umschaltbar, die gewählte Ansicht und das Gebiet stehen
+in der Adresse, z. B. `…/#ansicht=uebersicht&gebiet=07137`, und lassen sich so verlinken):
+
+| Ansicht | Inhalt |
+|---|---|
+| **Karte** (Start) | der Datenbestand aus `daten/`; Filter nach Kategorie, Betreiber-Art und Sportarten |
+| **Liste** | Vereine und Kommunen als Betreiber bzw. Eigentümer, sortier- und filterbar; ein Klick zeigt ihre Sportstätten |
+| **Übersicht** | Zahl der Sportstätten und Anlagen, Befüllung der Felder, Kategorien, Abgleich mit ALKIS, Befüllung je Kreis |
+| **Verifikation (ALKIS)** | ALKIS-Sportstätten und -Anlagen und der Abgleich mit dem Atlas; lädt erst beim Öffnen (rund 27 MB) |
+
+In allen Ansichten lässt sich oben ein **Gebiet** wählen: Landkreis bzw. kreisfreie Stadt,
+darunter Verbandsgemeinde oder Gemeinde. Die Grenzen (VG250 des BKG, Stand 01.01.,
+dl-de/by-2-0) lädt `seite` beim ersten Lauf über den WFS des BKG und legt sie unter
+`data/cache/gebiete_rp.json` ab; jede Sportstätte bekommt den Regionalschlüssel ihrer
+Gemeinde. Ohne Netz: `--gebiete pfad/zu/vg250.gpkg` (heruntergeladenes GeoPackage) oder
+`--gebiete aus`. Die Grenzen sind auf 1:250 000 generalisiert; Sportstätten direkt an einer
+Gemeindegrenze können der Nachbargemeinde zugeordnet sein.
+
+**Verein oder Kommune** wird aus dem Namen des Betreibers bzw. Eigentümers geschätzt
+(„e.V.“, „TuS“, „SV“, „Verein“ → Verein; „Ortsgemeinde“, „Stadt“, „Kreisverwaltung“ →
+Kommune; sonst „sonstige“). Die Regeln stehen in `bestand.py` (`betreiber_art`).
+
+Ohne ALKIS-Ergebnis (`data/out/sportstaetten.gpkg` fehlt) erneuert `seite` nur Karte,
+Liste und Übersicht; die Dateien der Verifikation bleiben, wie sie sind.
 
 Inhalt von `docs/`:
 
@@ -269,7 +295,9 @@ Inhalt von `docs/`:
 | `index.html` | die Karte; lädt die Daten nach und zeigt solange einen Ladehinweis |
 | `konfig.js` | Titel, Link zum Meldeformular, Impressum, Datenschutz, Lizenz – **wird nur beim ersten Mal angelegt** und danach nie überschrieben |
 | `impressum.html`, `datenschutz.html` | Entwürfe der Rechtstexte – ebenfalls nur einmal angelegt |
-| `daten/*.geojson` | die offenen Daten (gleichzeitig der Download) |
+| `daten/bestand.geojson` | der Datenbestand (Karte, Liste, Übersicht) |
+| `daten/sportstaetten.geojson`, `sportanlagen.geojson`, `atlas_abgleich.geojson` | ALKIS und Abgleich (Verifikation) |
+| `daten/gebiete.json`, `gebiete_*.geojson` | Gebietsauswahl und Umrisse (werden erst bei Bedarf geladen) |
 | `daten/index.html` | Download-Seite mit Quellenvermerk |
 | `vendor/leaflet/` | Kartenbibliothek, lokal abgelegt (keine Anfragen an fremde Server) |
 
@@ -300,8 +328,9 @@ Mit einem kostenlosen GitHub-Konto geht das nur für öffentliche Repositorys.
 sowie jeder Wert, der eine E-Mail-Adresse enthält. Die Rohspalten des Atlas (`alt_*`)
 erscheinen nur, soweit die Karte sie braucht. Umrisse werden auf etwa 1 m geglättet.
 
-**Größe:** Für ganz RLP sind die Daten zusammen rund 25–30 MB; Besucher laden komprimiert
-etwa 4 MB. Im Git kostet die erste Fassung rund 3–4 MB, jede weitere Veröffentlichung nur
+**Größe:** Für ganz RLP sind die Daten zusammen rund 30–35 MB. Beim Öffnen lädt die Seite
+nur den Bestand (rund 4 MB, komprimiert unter 1 MB); die ALKIS-Daten erst in der
+Verifikation. Im Git kostet die erste Fassung rund 3–4 MB, jede weitere Veröffentlichung nur
 die Unterschiede: gemessen 2 kB für 30 geänderte Sportstätten, 140 kB, wenn sich alle
 laufenden Nummern verschieben. Häufiges Veröffentlichen ist also unproblematisch. Teuer wird
 nur, wenn sich das Format aller Objekte ändert (z. B. eine andere Rundung der Koordinaten).

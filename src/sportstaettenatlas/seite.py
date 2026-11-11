@@ -8,7 +8,11 @@ Aufbau:
     docs/impressum.html,            Entwürfe der Rechtstexte (Platzhalter gelb markiert) –
     docs/datenschutz.html           ebenfalls nur einmal angelegt
     docs/daten/index.html           Download-Seite
+    docs/daten/bestand.geojson      Sportstätten aus daten/ (Startansicht, Liste, Übersicht)
     docs/daten/sportstaetten.geojson, sportanlagen.geojson, atlas_abgleich.geojson
+                                    ALKIS und Abgleich (Ansicht „Verifikation“, lädt erst dann)
+    docs/daten/gebiete.json,        Kreise, Verbandsgemeinden, Gemeinden zur Auswahl
+    docs/daten/gebiete_*.geojson    (Umrisse werden erst bei Bedarf geladen)
     docs/vendor/leaflet/            Kartenbibliothek, lokal (keine Anfragen an Dritt-CDNs)
     docs/.nojekyll                  GitHub Pages soll die Dateien unverändert ausliefern
 
@@ -41,6 +45,12 @@ KONTAKT_FELDER = {
 ATLAS_ROH_BEHALTEN = {"alt_bezug", "alt_name", "alt_adresse", "alt_typ", "alt_atlas_id", "alt_id"}
 UEBERFLUESSIG = {"verifikation_sportstaette", "verifikation_anzahl"}
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+(\.[\w-]+)+")
+
+VERIFIKATION_DATEIEN = {
+    "sportstaetten.geojson": "ALKIS: Sportstätten (Standorte mit Umriss)",
+    "sportanlagen.geojson": "ALKIS: Sportanlagen (Hallen, Spielfelder, Becken …)",
+    "atlas_abgleich.geojson": "Einträge des bisherigen Atlas ohne passende ALKIS-Fläche",
+}
 
 LEAFLET_DATEIEN = (
     "leaflet.js",
@@ -137,6 +147,8 @@ mitgeteilt werden.</p>
  <li>Liegenschaftskataster: © GeoBasis-DE / LVermGeoRP, Datenlizenz Deutschland – Namensnennung –
      Version 2.0 (<a href="https://www.govdata.de/dl-de/by-2-0">dl-de/by-2-0</a>)</li>
  <li>Hintergrundkarte: © <a href="https://basemap.de">basemap.de</a> / BKG, CC BY 4.0</li>
+ <li>Verwaltungsgrenzen: © <a href="https://www.bkg.bund.de">BKG</a>, VG250,
+     <a href="https://www.govdata.de/dl-de/by-2-0">dl-de/by-2-0</a></li>
  <li>Ortssuche: © OpenStreetMap-Mitwirkende (ODbL)</li>
  <li>Kartenbibliothek: <a href="https://leafletjs.com">Leaflet</a> (BSD-2-Clause)</li>
 </ul>
@@ -308,6 +320,24 @@ Stand: {html.escape(stand)}.</p>
 """
 
 
+def _ars_setzen(fc: dict, zuordnung, ars_von: dict | None = None, schluessel: str = "") -> int:
+    """Jedem Objekt den ARS seiner Gemeinde geben (Koordinate bzw. lon/lat-Eigenschaften)."""
+    n = 0
+    for f in fc.get("features", []):
+        p = f.setdefault("properties", {})
+        ars = ars_von.get(p.get(schluessel)) if ars_von and schluessel else None
+        if ars is None:
+            g = f.get("geometry") or {}
+            if g.get("type") == "Point":
+                ars = zuordnung.ars(*g["coordinates"][:2])
+            else:
+                ars = zuordnung.ars(p.get("lon"), p.get("lat"))
+        if ars:
+            p["ars"] = ars
+            n += 1
+    return n
+
+
 def schreibe_webseite(
     anlagen,
     staetten,
@@ -316,35 +346,80 @@ def schreibe_webseite(
     abgleich_altbestand=None,
     titel: str = "Sportstättenatlas Rheinland-Pfalz",
     leaflet_laden: bool = True,
+    bestand=None,
+    gebiete: dict | None = None,
+    verifikation: bool = True,
 ) -> dict:
-    """Webseite nach `ausgabe` (z. B. docs/) schreiben. Liefert eine kleine Statistik."""
+    """Webseite nach `ausgabe` (z. B. docs/) schreiben. Liefert eine kleine Statistik.
+
+    bestand:      Datensätze aus daten/ (bestand.lies_bestand) – die Startansicht
+    gebiete:      Verwaltungsgebiete (gebiete.lade) für die Gebietsauswahl
+    verifikation: False = ALKIS-Dateien nicht neu schreiben (vorhandene bleiben)
+    """
+    from . import gebiete as gb
+    from .bestand import bestand_geojson
     from .karte import atlas_geojson, geojson
 
     ausgabe.mkdir(parents=True, exist_ok=True)
     daten = ausgabe / "daten"
     daten.mkdir(exist_ok=True)
 
-    entfernt: Counter = Counter()
-    fcs = {
-        "sportstaetten.geojson": (
-            "Sportstätten (Standorte mit Umriss)",
+    fcs: dict[str, tuple[str, dict]] = {}
+    if bestand is not None:
+        fcs["bestand.geojson"] = (
+            "Sportstätten (Datenbestand, Startansicht der Karte)",
+            bestand_geojson(bestand, abgleich_altbestand),
+        )
+    if verifikation:
+        fcs["sportstaetten.geojson"] = (
+            "ALKIS: Sportstätten (Standorte mit Umriss)",
             geojson(staetten, praezision=1e-5, vereinfachen_m=1.0),
-        ),
-        "sportanlagen.geojson": (
-            "Sportanlagen (Hallen, Spielfelder, Becken …)",
+        )
+        fcs["sportanlagen.geojson"] = (
+            "ALKIS: Sportanlagen (Hallen, Spielfelder, Becken …)",
             geojson(anlagen, praezision=1e-5, vereinfachen_m=1.0),
-        ),
-        "atlas_abgleich.geojson": (
+        )
+        fcs["atlas_abgleich.geojson"] = (
             "Einträge des bisherigen Atlas ohne passende ALKIS-Fläche",
             atlas_geojson(abgleich_altbestand),
-        ),
-    }
+        )
+
+    zugeordnet = {}
+    if gebiete and gebiete.get("gemeinde", {}).get("features"):
+        z = gb.Zuordnung(gebiete["gemeinde"])
+        st_ars: dict = {}
+        for name in ("bestand.geojson", "sportstaetten.geojson", "atlas_abgleich.geojson"):
+            if name in fcs:
+                zugeordnet[name] = _ars_setzen(fcs[name][1], z)
+        if "sportstaetten.geojson" in fcs:
+            st_ars = {
+                f["properties"].get("sportstaette_id"): f["properties"].get("ars")
+                for f in fcs["sportstaetten.geojson"][1]["features"]
+            }
+            zugeordnet["sportanlagen.geojson"] = _ars_setzen(
+                fcs["sportanlagen.geojson"][1], z, st_ars, "sportstaette_id"
+            )
+        for ebene in gb.EBENEN:
+            fcs[f"gebiete_{ebene}.geojson"] = (
+                f"Umrisse: {gb.EBENEN_TEXT[ebene]} (VG250, BKG)",
+                gb.umrisse(gebiete, ebene),
+            )
+
+    entfernt: Counter = Counter()
     liste = []
     for name, (text, fc) in fcs.items():
         fc, weg = oeffentlich(fc)
         entfernt += weg
         groesse = _schreibe_json(daten / name, fc)
         liste.append((name, text, len(fc["features"]), groesse))
+    if gebiete:
+        eintraege = gb.index(gebiete)
+        groesse = _schreibe_json(daten / "gebiete.json", {"eintraege": eintraege})
+        liste.append(
+            ("gebiete.json", "Verzeichnis der Gebiete (Auswahlliste)", len(eintraege), groesse)
+        )
+    elif (daten / "gebiete.json").exists():
+        (daten / "gebiete.json").unlink()  # sonst zeigt die Karte eine veraltete Auswahl
 
     lokal = leaflet_laden and leaflet_lokal(ausgabe / "vendor" / "leaflet")
     (ausgabe / "index.html").write_text(
@@ -369,6 +444,13 @@ def schreibe_webseite(
             (ausgabe / name).write_text(inhalt, encoding="utf-8")
             neu_angelegt.append(name)
     stand = dt.datetime.now(dt.UTC).strftime("%d.%m.%Y")
+    # in der Download-Liste auch Dateien früherer Läufe (z. B. ALKIS ohne neue Pipeline)
+    beschrieben = {n for n, *_ in liste}
+    for name, text in VERIFIKATION_DATEIEN.items():
+        pfad = daten / name
+        if name not in beschrieben and pfad.exists():
+            n = len(json.loads(pfad.read_text(encoding="utf-8")).get("features", []))
+            liste.append((name, text, n, pfad.stat().st_size))
     (daten / "index.html").write_text(
         download_seite(titel, quellenvermerk, liste, stand), encoding="utf-8"
     )
@@ -378,5 +460,6 @@ def schreibe_webseite(
         "entfernt": dict(entfernt),
         "leaflet_lokal": lokal,
         "neu_angelegt": neu_angelegt,
+        "zugeordnet": zugeordnet,
         "gesamt": sum(f.stat().st_size for f in ausgabe.rglob("*") if f.is_file()),
     }
