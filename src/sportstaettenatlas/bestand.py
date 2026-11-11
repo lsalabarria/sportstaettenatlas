@@ -318,6 +318,7 @@ def bestand_geojson(datensaetze, abgleich=None, praezision: int = 5) -> dict:
             "plz": a.get("plz"),
             "ort": a.get("ort"),
             "strasse": a.get("strasse"),
+            "hausnummer": a.get("hausnummer"),
             "sportarten": d.get("sportarten") or [],
             "anlagen": [
                 x.get("bezeichnung") for x in d.get("anlagen") or [] if x.get("bezeichnung")

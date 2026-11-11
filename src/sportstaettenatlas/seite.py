@@ -68,9 +68,18 @@ KONFIG_VORLAGE = """// Einstellungen der Webseite. Diese Datei kann direkt auf G
 window.KONFIG = {
   titel: "Sportstättenatlas Rheinland-Pfalz",
 
-  // Link zum Meldeformular (LimeSurvey). Leer lassen = kein Knopf „Sportstätte vorschlagen“.
+  // Link zur LimeSurvey-Umfrage. Der Reiter „Vorschlag“ übergibt die Werte seines Formulars
+  // als URL-Parameter (Fragecodes, siehe vorschlag_felder). Leer = Knopf „Weiter zu
+  // LimeSurvey“ zeigt nur an, was übertragen würde.
   // Beispiel: "https://limesurvey.hs-koblenz.de/index.php/123456?lang=de"
   vorschlag_url: "",
+  // Welche Felder des Formulars in welche Frage der Umfrage gehen: Feld: "Fragecode".
+  // Nur die hier genannten werden übertragen. Leer = alle Felder, Fragecode = Feldname.
+  // Felder: art id quelle name kategorie betriebsstatus strasse hausnummer adresszusatz plz
+  // ort adresse ars gemeinde lat lon lage ("Breite, Länge") oeffentlicher_zugang schulsport
+  // zuschauerplaetze sportarten anlagen eigentuemer betreiber website anmerkung geaendert
+  // dubletten
+  vorschlag_felder: {},
   // Optional: Name des URL-Parameters, mit dem das Formular die Nummer der Sportstätte
   // vorbelegt (Link „Änderung oder Fehler melden“ bei jeder Sportstätte). Leer = ohne.
   vorschlag_parameter: "",

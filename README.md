@@ -271,6 +271,7 @@ in der Adresse, z. B. `…/#ansicht=uebersicht&gebiet=07137`, und lassen sich so
 | **Karte** (Start) | der Datenbestand aus `daten/`; Filter nach Kategorie, Betreiber-Art und Sportarten |
 | **Liste** | Vereine und Kommunen als Betreiber bzw. Eigentümer, sortier- und filterbar; ein Klick zeigt ihre Sportstätten |
 | **Übersicht** | Zahl der Sportstätten und Anlagen, Befüllung der Felder, Kategorien, Abgleich mit ALKIS, Befüllung je Kreis |
+| **Vorschlag** | Formular: neue Sportstätte eintragen oder eine bestehende ändern, mit Prüfung auf Doppelungen; „Weiter zu LimeSurvey“ übergibt die Werte an die Umfrage |
 | **Verifikation (ALKIS)** | ALKIS-Sportstätten und -Anlagen und der Abgleich mit dem Atlas; lädt erst beim Öffnen (rund 27 MB) |
 
 In allen Ansichten lässt sich oben ein **Gebiet** wählen: Landkreis bzw. kreisfreie Stadt,
@@ -280,6 +281,19 @@ dl-de/by-2-0) lädt `seite` beim ersten Lauf über den WFS des BKG und legt sie 
 Gemeinde. Ohne Netz: `--gebiete pfad/zu/vg250.gpkg` (heruntergeladenes GeoPackage) oder
 `--gebiete aus`. Die Grenzen sind auf 1:250 000 generalisiert; Sportstätten direkt an einer
 Gemeindegrenze können der Nachbargemeinde zugeordnet sein.
+
+**Vorschläge:** Das Formular im Reiter „Vorschlag“ erreicht man auch über „Sportstätte
+vorschlagen“ oben, über „Ändern oder Fehler melden“ im Fenster einer Sportstätte, über „Als
+neue Sportstätte vorschlagen“ bei ALKIS-Objekten in der Verifikation und per Rechtsklick in
+die Karte. Eigentümer und Betreiber lassen sich aus den bisherigen Namen und allen Kommunen
+(aus den Verwaltungsgebieten) wählen. Doppelungen meldet das Formular, wenn eine vorhandene
+Sportstätte höchstens 60 m entfernt liegt, dieselbe Kategorie in 250 m Umkreis hat, einen
+sehr ähnlichen Namen trägt oder dieselbe Adresse hat; dann muss man bestätigen, dass es eine
+andere ist. „Weiter zu LimeSurvey“ öffnet `vorschlag_url` aus `konfig.js` mit den Werten als
+URL-Parametern (`?newtest=Y&Q00=…&G01Q02=…`). Welches Feld in welche Frage geht, steht in
+`konfig.js` unter `vorschlag_felder` (Feld: "Fragecode"); nur diese Felder werden übertragen.
+Ist `vorschlag_felder` leer, gehen alle Felder mit ihrem Namen als Code. Solange `vorschlag_url` leer ist, zeigt der Knopf nur an,
+was übertragen würde.
 
 **Verein oder Kommune** wird aus dem Namen des Betreibers bzw. Eigentümers geschätzt
 („e.V.“, „TuS“, „SV“, „Verein“ → Verein; „Ortsgemeinde“, „Stadt“, „Kreisverwaltung“ →

@@ -4,11 +4,20 @@
 window.KONFIG = {
   titel: "Sportstättenatlas Rheinland-Pfalz",
 
-  // Link zum Meldeformular (LimeSurvey). Leer lassen = kein Knopf „Sportstätte vorschlagen“.
-  // Beispiel: "https://limesurvey.hs-koblenz.de/index.php/123456?lang=de"
-  vorschlag_url: "",
-  // Optional: Name des URL-Parameters, mit dem das Formular die Nummer der Sportstätte
-  // vorbelegt (Link „Änderung oder Fehler melden“ bei jeder Sportstätte). Leer = ohne.
+  // LimeSurvey-Umfrage für Vorschläge. „Weiter zu LimeSurvey“ im Reiter „Vorschlag“ öffnet
+  // sie und füllt die Fragen mit den Werten des Formulars (newtest=Y hängt die Seite an).
+  vorschlag_url: "https://limesurvey.hs-koblenz.de/index.php/992924?lang=de",
+  // Welches Feld des Formulars in welche Frage geht: Feld: "Fragecode". Nur diese Felder
+  // werden übertragen. Weitere Felder: art id quelle strasse hausnummer adresszusatz plz ort
+  // adresse ars gemeinde lat lon oeffentlicher_zugang schulsport zuschauerplaetze sportarten
+  // anlagen eigentuemer betreiber website anmerkung geaendert dubletten
+  vorschlag_felder: {
+    name: "Q00",              // Name der Sportstätte
+    kategorie: "G01Q02",      // Sportstättenkategorie
+    betriebsstatus: "G01Q03", // Betriebsstatus
+    lage: "G01Q04",           // Lage als "Breite, Länge"
+  },
+  // Nur für die Karte ohne Bestand (eine Datei): Parameter für die Kennung der Sportstätte
   vorschlag_parameter: "",
 
   // Pflichtangaben für öffentliche Webseiten. Entwürfe liegen als impressum.html und
