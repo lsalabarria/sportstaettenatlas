@@ -258,7 +258,7 @@ function analyseAlkis() {
         + `<table class="meta"><tr><td>Verifikation</td><td><span class="verif" `
         + `style="background:${st.fillColor};color:${st.color}">${esc(st.kurz)}</span> `
         + `${esc(st.label)}</td></tr>${zeilenA}${koord(lat, lon)}`
-        + `${leer(p.alt_atlas_id) ? "" : aendernLink("RP-" + p.alt_atlas_id, "Eintrag ändern")}</table></div>`;
+        + `${leer(p.alt_atlas_id) ? "" : aendernLink(String(p.alt_atlas_id).toLowerCase())}</table></div>`;
       const kreis = { radius: 5, renderer: svgRenderer };
       const ziel = STAETTE[p.naechste_sportstaette_id];
       const pfeilHinweis = p.status === "nah" && ziel

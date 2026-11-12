@@ -1,16 +1,22 @@
-"""Datenbestand im Git: eine JSON-Datei je Sportstätte unter daten/<LAND>/<id>.json.
+"""Datenbestand im Git: ein Ordner je Sportstätte, darin eine Datei je Sportanlage.
 
-Ab der ersten Überführung sind diese Dateien die Quelle der Daten. Änderungen laufen
-über das Git (z. B. Pull Requests); Quelldateien wie der Atlas-Export werden mit
-`sportstaettenatlas bestand` eingelesen.
+    daten/RP/<id>/<id>_meta.json     die Sportstätte (Standort, Name, Betreiber …)
+    daten/RP/<id>/<anlage-id>.json   je Sportanlage eine Datei, z. B. ein Großspielfeld
+
+Die ID einer Sportstätte ist die UUID aus dem Atlas, der Ordner heißt wie sie. Jede
+Sportanlage gehört über `sportstaette_id` zu genau einer Sportstätte und liegt in deren
+Ordner; `lies_bestand` prüft das. Ab der ersten Überführung sind diese Dateien die Quelle
+der Daten. Änderungen laufen über das Git (z. B. Pull Requests); Quelldateien wie der
+Atlas-Export werden mit `sportstaettenatlas bestand` eingelesen.
 
 Neue Quellformate: eine Funktion `lies_<format>(pfad, land, umrechnen)` schreiben, die
-Datensätze im Format unten liefert, und in LESER eintragen.
+Datensätze im Format unten liefert (Sportstätte mit Liste ihrer Anlagen), und in LESER
+eintragen.
 
-Format einer Datei (leere Angaben werden weggelassen):
+Sportstätte (`<id>_meta.json`, leere Angaben werden weggelassen):
 
     {
-      "id": "RP-12345",
+      "id": "333d6875-a691-492f-9c89-64bf3315706b",
       "name": "Sportplatz Musterdorf",
       "kategorie": "Sportplatz",
       "adresse": {"strasse": "Am Weg", "hausnummer": "1", "plz": "56068", "ort": "Koblenz"},
@@ -21,9 +27,25 @@ Format einer Datei (leere Angaben werden weggelassen):
       "betriebsstatus": "in Betrieb",
       "eigentuemer": "…", "betreiber": "…", "website": "…",
       "sportarten": ["Fußball", "Leichtathletik"],
-      "anlagen": [{"bezeichnung": "Großspielfeld (ab 5.000 m²)"}],
-      "quellen": {"atlas_rlp": {"id": "12345", "datei": "…csv", "stand": "2026-11-04"}}
+      "quellen": {"atlas_rlp": {"id": "…", "datei": "…csv", "stand": "2026-11-04"}}
     }
+
+Sportanlage (`<anlage-id>.json`):
+
+    {
+      "id": "8f0c…",                        UUID, aus Sportstätte und Typ abgeleitet
+      "sportstaette_id": "333d6875-…",      Pflicht: die Sportstätte, zu der sie gehört
+      "typ": "Großspielfeld",               einheitlicher Typ (siehe anlagen.py)
+      "bezeichnung": "Kunstrasen B",        optional: eigener Name der Anlage
+      "sportarten": ["Fußball"],            was auf dieser Anlage betrieben wird
+      "baujahr": 1998,
+      "baukosten_eur": 1200000,
+      "ausstattung": ["Flutlicht", "Beregnung"],
+      "quellen": {"atlas_rlp": {"bezeichnung": "Großspielfeld (ab 5.000 m²)"}}
+    }
+
+Die Sportarten der Sportstätte (aus dem Atlas) bleiben daneben bestehen: Der Atlas kennt sie
+nur je Sportstätte, nicht je Anlage.
 
 Kontaktdaten (E-Mail, Telefon) werden nie gelesen. Zusätzlich wird jeder Wert entfernt,
 der eine E-Mail-Adresse enthält.
@@ -34,11 +56,13 @@ from __future__ import annotations
 import functools
 import json
 import re
+import uuid
 from collections import Counter
 from collections.abc import Callable, Iterator
 from dataclasses import dataclass, field
 from pathlib import Path
 
+from . import anlagen as anlagen_typen
 from .atlas import EXPORT_PFLICHT, _datum, _text, _utm, _zahl, _zeilen
 
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+(\.[\w-]+)+")
@@ -68,23 +92,37 @@ def _ganzzahl(wert: str) -> int | None:
 
 
 def _liste(wert: str) -> list[str]:
-    # "A, B (x, y), C" → ["A", "B (x, y)", "C"]: Kommas in Klammern trennen nicht.
-    # "Weit-, Dreisprunganlage" ist eine Anlage: ein Teil mit Bindestrich am Ende gehört
-    # zum nächsten.
-    out: list[str] = []
-    for t in re.split(r",\s*(?![^()]*\))", wert or ""):
-        t = t.strip()
-        if not t:
-            continue
-        if out and out[-1].endswith("-"):
-            out[-1] = f"{out[-1]}, {t}"
-        else:
-            out.append(t)
+    """ "A, B (x, y), C" → ["A", "B (x, y)", "C"]: Kommas in Klammern trennen nicht,
+    "Weit-, Dreisprunganlage" bleibt eine Anlage."""
+    return anlagen_typen.zusammenfuegen(re.split(r",\s*(?![^()]*\))", wert or ""))
+
+
+def staette_id(quell_id: str) -> str:
+    """ID einer Sportstätte (= Name ihres Ordners): die UUID aus der Quelle, bereinigt."""
+    return re.sub(r"[^A-Za-z0-9_-]+", "-", str(quell_id)).strip("-").lower()
+
+
+# feste Basis, damit dieselbe Anlage bei jedem Einlesen dieselbe ID bekommt
+_ANLAGEN_NAMENSRAUM = uuid.UUID("5c1e0b8e-6d0a-4c57-9a43-2f1d6b0c7a11")
+
+
+def anlage_id(staette: str, typ: str, nr: int) -> str:
+    """ID einer Sportanlage: aus Sportstätte, Typ und laufender Nummer je Typ (1, 2 …)."""
+    return str(uuid.uuid5(_ANLAGEN_NAMENSRAUM, f"{staette}/{typ}/{nr}"))
+
+
+def anlagen_aus(bezeichnungen: list[str], quelle: str = "atlas_rlp") -> list[dict]:
+    """Bezeichnungen aus einer Quelle → Sportanlagen mit einheitlichem Typ.
+
+    Weicht die Schreibweise der Quelle vom Typ ab ("Großspielfeld (ab 5.000 m²)"), steht
+    sie unter quellen.<quelle>.bezeichnung. Das Feld `bezeichnung` selbst bleibt für einen
+    eigenen Namen der Anlage frei ("Halle 1", "Kunstrasen B").
+    """
+    out = []
+    for b in anlagen_typen.zusammenfuegen(bezeichnungen):
+        t = anlagen_typen.typ(b)
+        out.append({"typ": t, **({"quellen": {quelle: {"bezeichnung": b}}} if b != t else {})})
     return out
-
-
-def datei_id(land: str, quell_id: str) -> str:
-    return f"{land.upper()}-{re.sub(r'[^A-Za-z0-9_-]+', '-', str(quell_id)).strip('-')}"
 
 
 def lies_atlas_export(
@@ -109,7 +147,7 @@ def lies_atlas_export(
             lon, lat = umrechnen(x, y)
             lage = {"lon": lon, "lat": lat}
         yield {
-            "id": datei_id(land, g("ID")),
+            "id": staette_id(g("ID")),
             "name": g("Name"),
             "kategorie": g("Sportstättenkategorie"),
             "adresse": {
@@ -127,7 +165,7 @@ def lies_atlas_export(
             "betreiber": g("Name des Betreibers"),
             "website": g("Webseite"),
             "sportarten": _liste(g("Sportarten")),
-            "anlagen": [{"bezeichnung": t} for t in _liste(g("Sportanlagen"))],
+            "anlagen": anlagen_aus(_liste(g("Sportanlagen"))),
             "quellen": {"atlas_rlp": {"id": g("ID"), "datei": pfad.name, "stand": stand}},
         }
 
@@ -181,18 +219,52 @@ class Ergebnis:
     entfernt: Counter = field(default_factory=Counter)
 
 
-def schreibe_bestand(datensaetze, ziel: Path, land: str, modus: str = "neu") -> Ergebnis:
-    """Datensätze als daten/<LAND>/<id>.json ablegen.
+def meta_datei(ordner: Path) -> Path:
+    """<id>_meta.json im Ordner einer Sportstätte."""
+    return ordner / f"{ordner.name}_meta.json"
 
-    modus="neu":           nur fehlende Dateien anlegen, vorhandene nie verändern
+
+def aufteilen(d: dict) -> dict[str, str]:
+    """Sportstätte mit Anlagen → {Dateiname: Inhalt} für ihren Ordner."""
+    sid = d["id"]
+    meta = {k: v for k, v in d.items() if k != "anlagen"}
+    dateien = {f"{sid}_meta.json": als_json(meta)}
+    nr: Counter = Counter()
+    for a in d.get("anlagen") or []:
+        typ = a.get("typ") or anlagen_typen.typ(a.get("bezeichnung", ""))
+        nr[typ] += 1
+        aid = a.get("id") or anlage_id(sid, typ, nr[typ])
+        rest = {k: v for k, v in a.items() if k not in ("id", "sportstaette_id", "typ")}
+        dateien[f"{aid}.json"] = als_json({"id": aid, "sportstaette_id": sid, "typ": typ, **rest})
+    return dateien
+
+
+def _altes_format(ordner: Path) -> list[Path]:
+    return sorted(Path(ordner).glob("*/*.json"))
+
+
+def _pruefe_format(ordner: Path) -> None:
+    if alt := _altes_format(ordner):
+        raise ValueError(
+            f"{len(alt)} Dateien im alten Format (eine Datei je Sportstätte, z. B. {alt[0]}). "
+            "Einmalig umstellen: `sportstaettenatlas umstellen`."
+        )
+
+
+def schreibe_bestand(datensaetze, ziel: Path, land: str, modus: str = "neu") -> Ergebnis:
+    """Datensätze als daten/<LAND>/<id>/ ablegen (Sportstätte und ihre Anlagen).
+
+    modus="neu":           nur fehlende Sportstätten anlegen, vorhandene nie verändern
                            (sie können inzwischen von Hand gepflegt sein)
-    modus="aktualisieren": vorhandene Dateien mit dem Stand der Quelle überschreiben
-    Dateien, die in der Quelle fehlen, werden nur gezählt, nie gelöscht.
+    modus="aktualisieren": Dateien vorhandener Sportstätten mit dem Stand der Quelle
+                           überschreiben; zusätzlich angelegte Anlagen bleiben
+    Sportstätten, die in der Quelle fehlen, werden nur gezählt, nie gelöscht.
     """
     if modus not in ("neu", "aktualisieren"):
         raise ValueError(f"Unbekannter Modus: {modus}")
     ordner = ziel / land.upper()
     ordner.mkdir(parents=True, exist_ok=True)
+    _pruefe_format(ziel)
     e = Ergebnis()
     gesehen: set[str] = set()
     for roh in datensaetze:
@@ -204,29 +276,75 @@ def schreibe_bestand(datensaetze, ziel: Path, land: str, modus: str = "neu") -> 
             e.doppelt += 1
             continue
         gesehen.add(d["id"])
-        datei = ordner / f"{d['id']}.json"
-        text = als_json(d)
-        if not datei.exists():
-            datei.write_text(text, encoding="utf-8")
+        st_ordner = ordner / d["id"]
+        dateien = aufteilen(d)
+        if not st_ordner.exists():
+            st_ordner.mkdir()
+            for name, text in dateien.items():
+                (st_ordner / name).write_text(text, encoding="utf-8")
             e.neu += 1
         elif modus == "neu":
             e.behalten += 1
-        elif datei.read_text(encoding="utf-8") == text:
-            e.unveraendert += 1
         else:
-            datei.write_text(text, encoding="utf-8")
-            e.aktualisiert += 1
-    e.nicht_mehr_in_quelle = sum(1 for p in ordner.glob("*.json") if p.stem not in gesehen)
+            geaendert = False
+            for name, text in dateien.items():
+                pfad = st_ordner / name
+                if not pfad.exists() or pfad.read_text(encoding="utf-8") != text:
+                    pfad.write_text(text, encoding="utf-8")
+                    geaendert = True
+            if geaendert:
+                e.aktualisiert += 1
+            else:
+                e.unveraendert += 1
+    e.nicht_mehr_in_quelle = sum(
+        1 for p in ordner.iterdir() if p.is_dir() and p.name not in gesehen
+    )
     return e
+
+
+def umstellen(ziel: Path) -> tuple[int, int]:
+    """Altes Format (daten/RP/RP-<id>.json) → ein Ordner je Sportstätte. Einmalig.
+
+    Von Hand gepflegte Angaben bleiben erhalten; aus der Liste "anlagen" werden einzelne
+    Dateien. Liefert (Sportstätten, Sportanlagen).
+    """
+    staetten = anlagen = 0
+    for alt in _altes_format(ziel):
+        d = json.loads(alt.read_text(encoding="utf-8"))
+        land = alt.parent.name
+        sid = staette_id(str(d.get("id") or alt.stem).removeprefix(f"{land}-"))
+        d["id"] = sid
+        d["anlagen"] = anlagen_aus([a.get("bezeichnung", "") for a in d.get("anlagen") or []])
+        st_ordner = alt.parent / sid
+        if st_ordner.exists():
+            raise ValueError(f"{st_ordner} gibt es schon – {alt} bitte von Hand zusammenführen.")
+        st_ordner.mkdir()
+        for name, text in aufteilen(d).items():
+            (st_ordner / name).write_text(text, encoding="utf-8")
+        alt.unlink()
+        staetten += 1
+        anlagen += len(d["anlagen"])
+    return staetten, anlagen
 
 
 README_DATEN = """# Datenbestand
 
-Eine JSON-Datei je Sportstätte, nach Land sortiert (`RP/RP-12345.json`). Diese Dateien sind
-die Quelle der Daten: Änderungen werden hier vorgenommen (direkt auf GitHub oder per Pull
-Request) und landen beim nächsten Erzeugen der Webseite auf der Karte.
+Ein Ordner je Sportstätte, nach Land sortiert. Darin beschreibt `<id>_meta.json` die
+Sportstätte (Standort, Name, Betreiber …) und je Sportanlage eine weitere Datei
+`<anlage-id>.json` (z. B. ein Großspielfeld, eine Rundlaufbahn):
 
-- Format und Felder: siehe `src/sportstaettenatlas/bestand.py`
+    RP/333d6875-…/333d6875-…_meta.json
+    RP/333d6875-…/8f0c41d2-….json
+
+Jede Sportanlage gehört zu genau einer Sportstätte: Sie liegt in deren Ordner und nennt sie
+in `sportstaette_id`. Diese Dateien sind die Quelle der Daten: Änderungen werden hier
+vorgenommen (direkt auf GitHub oder per Pull Request) und landen beim nächsten Erzeugen der
+Webseite auf der Karte.
+
+- Format und Felder: siehe `src/sportstaettenatlas/bestand.py`, Typen der Anlagen:
+  `src/sportstaettenatlas/anlagen.py`
+- Neue Sportanlage: Datei mit neuer UUID als Namen in den Ordner der Sportstätte legen
+  (`id`, `sportstaette_id`, `typ`)
 - Neue Quelldateien einlesen: `uv run sportstaettenatlas bestand <datei>`
   (legt nur fehlende Sportstätten an; `--modus aktualisieren` überschreibt vorhandene)
 - Kontaktdaten (E-Mail-Adressen, Telefonnummern) gehören nicht hierher.
@@ -234,6 +352,9 @@ Request) und landen beim nächsten Erzeugen der Webseite auf der Karte.
 
 
 # --- Für die Webseite --------------------------------------------------------------------
+
+# Angaben einer Sportanlage, die die Karte zeigt (neben Typ, Kennung und Name)
+ANLAGE_FELDER = ("sportarten", "baujahr", "baukosten_eur", "ausstattung")
 
 # Art des Betreibers bzw. Eigentümers, geschätzt aus dem Namen. Verein zuerst prüfen:
 # "Turnverein Ortsgemeinde X e.V." ist ein Verein.
@@ -271,18 +392,73 @@ def _adresse_text(a: dict) -> str:
     return ", ".join(x for x in (strasse, ort) if x)
 
 
+def _lies_json(datei: Path) -> dict:
+    try:
+        return json.loads(datei.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise ValueError(f"{datei}: kein gültiges JSON ({exc})") from exc
+
+
 def lies_bestand(ordner: Path) -> Iterator[dict]:
-    """Alle Datensätze unter daten/<LAND>/*.json."""
-    for datei in sorted(Path(ordner).glob("*/*.json")):
-        try:
-            yield json.loads(datei.read_text(encoding="utf-8"))
-        except (OSError, json.JSONDecodeError) as exc:
-            raise ValueError(f"{datei}: kein gültiges JSON ({exc})") from exc
+    """Alle Sportstätten unter daten/<LAND>/<id>/, jeweils mit ihren Anlagen ("anlagen").
+
+    Prüft den Aufbau: Jeder Ordner hat seine <id>_meta.json, jede Anlage nennt in
+    `sportstaette_id` die Sportstätte ihres Ordners, Dateiname = id.
+    """
+    _pruefe_format(ordner)
+    for st_ordner in sorted(p for p in Path(ordner).glob("*/*") if p.is_dir()):
+        sid = st_ordner.name
+        meta_pfad = meta_datei(st_ordner)
+        andere = sorted(p for p in st_ordner.glob("*.json") if p != meta_pfad)
+        if not meta_pfad.exists():
+            raise ValueError(
+                f"{st_ordner}: {meta_pfad.name} fehlt – Sportanlagen ohne Sportstätte"
+                + (f" ({len(andere)} Dateien)" if andere else "")
+            )
+        meta = _lies_json(meta_pfad)
+        if meta.get("id") != sid:
+            raise ValueError(f"{meta_pfad}: id {meta.get('id')!r} passt nicht zum Ordner {sid}")
+        anlagen = []
+        for pfad in andere:
+            a = _lies_json(pfad)
+            if a.get("sportstaette_id") != sid:
+                raise ValueError(
+                    f"{pfad}: sportstaette_id {a.get('sportstaette_id')!r} – jede Sportanlage "
+                    f"muss im Ordner ihrer Sportstätte liegen (hier {sid})"
+                )
+            if a.get("id") != pfad.stem:
+                raise ValueError(f"{pfad}: id {a.get('id')!r} passt nicht zum Dateinamen")
+            if not a.get("typ"):
+                raise ValueError(f"{pfad}: typ fehlt")
+            anlagen.append(a)
+        yield {**meta, "anlagen": anlagen}
+
+
+def _anlage_kurz(a: dict) -> list:
+    """Sportanlage für die Karte: [Typ, Kurz-ID, Name, {weitere Angaben}] – leere Teile am
+    Ende entfallen. Die Kurz-ID (Anfang der UUID) genügt, um die Datei im Ordner der
+    Sportstätte zu finden (Vorschläge zu Anlagen)."""
+    extra = {k: a[k] for k in ANLAGE_FELDER if a.get(k) not in (None, "", [])}
+    out = [
+        a.get("typ") or anlagen_typen.typ(a.get("bezeichnung", "")),
+        str(a.get("id", ""))[:8],
+        a.get("bezeichnung") or "",
+        extra,
+    ]
+    while len(out) > 2 and not out[-1]:
+        out.pop()
+    return out
 
 
 def bestand_geojson(datensaetze, praezision: int = 5) -> dict:
-    """Datensätze → GeoJSON-Punkte für die Karte (flache Eigenschaften)."""
+    """Sportstätten → GeoJSON-Punkte für die Karte (flache Eigenschaften).
+
+    `anlagen`: je Anlage [Typ, Kurz-ID, Name?, {Angaben}?] (siehe _anlage_kurz). Für den Filter
+    stehen neben den Punkten die Gruppen der Typen (`anlagengruppen`, `anlagentypen`).
+    """
     features = []
+    typen: set[str] = set()
+    reihe = {t: i for i, t in enumerate(anlagen_typen.GRUPPE_VON)}
     for d in datensaetze:
         lage = d.get("lage") or {}
         if lage.get("lon") is None or lage.get("lat") is None:
@@ -298,9 +474,7 @@ def bestand_geojson(datensaetze, praezision: int = 5) -> dict:
             "strasse": a.get("strasse"),
             "hausnummer": a.get("hausnummer"),
             "sportarten": d.get("sportarten") or [],
-            "anlagen": [
-                x.get("bezeichnung") for x in d.get("anlagen") or [] if x.get("bezeichnung")
-            ],
+            "anlagen": [_anlage_kurz(a) for a in d.get("anlagen") or []],
             "oeffentlicher_zugang": d.get("oeffentlicher_zugang"),
             "schulsport": d.get("schulsport"),
             "zuschauerplaetze": d.get("zuschauerplaetze"),
@@ -311,6 +485,8 @@ def bestand_geojson(datensaetze, praezision: int = 5) -> dict:
             "eigentuemer_art": betreiber_art(d.get("eigentuemer")),
             "website": d.get("website"),
         }
+        p["anlagen"].sort(key=lambda a: (reihe.get(a[0], len(reihe)), a[0], a[1]))
+        typen.update(a[0] for a in p["anlagen"])
         p = {k: v for k, v in p.items() if v not in (None, "", [])}
         features.append(
             {
@@ -325,4 +501,9 @@ def bestand_geojson(datensaetze, praezision: int = 5) -> dict:
                 "properties": p,
             }
         )
-    return {"type": "FeatureCollection", "features": features}
+    return {
+        "type": "FeatureCollection",
+        "features": features,
+        "anlagengruppen": [[g, text] for g, (text, _) in anlagen_typen.GRUPPEN.items()],
+        "anlagentypen": {t: anlagen_typen.gruppe(t) for t in sorted(typen)},
+    }

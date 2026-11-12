@@ -1,7 +1,7 @@
 # Sportstättenatlas Rheinland-Pfalz
 
-Ein offener Sportstättenatlas: Der **Datenbestand** liegt als eine JSON-Datei je Sportstätte
-im Git, eine **statische Webseite** auf GitHub Pages zeigt ihn als Karte, Liste und
+Ein offener Sportstättenatlas: Der **Datenbestand** liegt im Git, ein Ordner je Sportstätte
+mit einer Datei je Sportanlage, eine **statische Webseite** auf GitHub Pages zeigt ihn als Karte, Liste und
 Übersicht und nimmt Vorschläge über LimeSurvey entgegen. **Analysen** reichern den Bestand
 an oder prüfen ihn – zuerst der Abgleich mit dem Liegenschaftskataster (ALKIS). Sie rechnen
 auf dem eigenen Rechner; ihre Ergebnisse erscheinen auf der Webseite im Reiter „Analysen“.
@@ -17,13 +17,14 @@ auf dem eigenen Rechner; ihre Ergebnisse erscheinen auf der Webseite im Reiter �
 ## Aufbau
 
 ```
-daten/                       Datenbestand: eine JSON-Datei je Sportstätte (daten/RP/RP-12345.json)
+daten/                       Datenbestand: ein Ordner je Sportstätte, darin ihre Sportanlagen
 docs/                        Webseite für GitHub Pages (von `seite` erzeugt, siehe unten)
 data/                        Arbeitsordner der Analysen: raw/, cache/, out/ (nicht im Git)
 .github/ISSUE_TEMPLATE/      Vorlage für „Bug melden“ (fehler.yml)
 src/sportstaettenatlas/
   cli.py                     Befehle `bestand`, `seite` und die Befehlsgruppen der Analysen
   bestand.py                 Datenbestand lesen und schreiben, Atlas-Export überführen
+  anlagen.py                 Typen und Gruppen der Sportanlagen (für Filter und Formular)
   atlas.py                   Exporte des bisherigen Sportstättenatlas RLP lesen
   gebiete.py                 Verwaltungsgebiete (VG250 des BKG) und Zuordnung zur Gemeinde
   seite.py                   Webseite nach docs/ schreiben
@@ -42,22 +43,55 @@ uv sync
 
 ## Datenbestand im Git (`bestand`)
 
-Der Bestand liegt als **eine JSON-Datei je Sportstätte** im Ordner `daten/`
-(`daten/RP/RP-12345.json`). Ab der ersten Überführung sind diese Dateien die Quelle:
-Änderungen werden dort vorgenommen – direkt auf GitHub oder per Pull Request – und sind
-in der Git-Historie nachvollziehbar.
+Jede Sportstätte hat einen eigenen Ordner, benannt nach ihrer UUID aus dem Atlas. Darin
+beschreibt `<id>_meta.json` die Sportstätte, und jede Sportanlage hat eine eigene Datei:
+
+```
+daten/RP/9c24bfa6-71c1-4164-b226-061f0a139997/
+  9c24bfa6-71c1-4164-b226-061f0a139997_meta.json   Sportstätte: Name, Kategorie, Adresse, Lage,
+                                                   Betreiber, Eigentümer, Sportarten …
+  17abb3c4-7493-5549-a6ca-f432ef00fba3.json         Sportanlage, z. B. ein Großspielfeld
+  1fb06acd-a17f-5d6b-9031-9305ca1df42f.json         Sportanlage, z. B. eine Rundlaufbahn
+```
+
+Eine Sportanlage hat diese Felder (leere werden weggelassen):
+
+| Feld | Inhalt |
+|---|---|
+| `id` | UUID, zugleich der Dateiname |
+| `sportstaette_id` | **Pflicht:** die Sportstätte, zu der die Anlage gehört (= Name des Ordners) |
+| `typ` | einheitlicher Typ, z. B. „Großspielfeld“, „Rundlaufbahn“ (Liste und Gruppen in `anlagen.py`) |
+| `bezeichnung` | eigener Name der Anlage, z. B. „Halle 1“, „Kunstrasen B“ |
+| `sportarten` | was auf dieser Anlage betrieben wird |
+| `baujahr`, `baukosten_eur` | Baujahr, Baukosten in Euro |
+| `ausstattung` | z. B. „Flutlicht“, „Beregnung“, „Umkleiden“ |
+| `quellen` | Herkunft, z. B. die Schreibweise im Atlas („Großspielfeld (ab 5.000 m²)“) |
+
+Ab der ersten Überführung sind diese Dateien die Quelle: Änderungen werden dort
+vorgenommen, direkt auf GitHub oder per Pull Request, und sind in der Git-Historie
+nachvollziehbar. Eine neue Sportanlage ist eine neue Datei im Ordner der Sportstätte, mit
+einer neuen UUID als Namen. `seite` prüft den Aufbau: Jede Sportanlage muss im Ordner ihrer
+Sportstätte liegen und sie in `sportstaette_id` nennen, und jeder Ordner braucht seine
+`_meta.json`.
 
 ```bash
 uv run sportstaettenatlas bestand pfad/zum/atlas-export.csv     # erstmalig überführen
 git add daten && git commit -m "Bestand aus dem Atlas-Export übernommen"
 ```
 
-- Die ID setzt sich aus Land und Atlas-ID zusammen (`RP-12345`) und bleibt stabil.
+- Die ID einer Sportstätte ist die UUID aus dem Atlas und bleibt stabil. Die IDs der
+  Sportanlagen werden aus Sportstätte und Typ abgeleitet; ein zweites Einlesen ergibt
+  dieselben.
+- Der Atlas schreibt dieselbe Anlage oft verschieden („Nichtnormiertes Spielfeld“, „Nicht
+  normiertes Spielfeld“). `typ` vereinheitlicht das; die Schreibweise des Atlas steht unter
+  `quellen`. Neue Typen ergänzt man in `anlagen.py` (Typ und Gruppe).
+- Die Sportarten der Sportstätte (aus dem Atlas) bleiben in `_meta.json` stehen: Der Atlas
+  kennt sie nur je Sportstätte, nicht je Anlage.
 - **Standard (`--modus neu`)**: Nur fehlende Sportstätten werden angelegt; vorhandene
-  Dateien werden nie verändert, weil sie inzwischen gepflegt sein können.
-  `--modus aktualisieren` überschreibt sie mit dem Stand der Quelle (Änderungen zeigt
-  danach `git diff`).
-- Dateien, die in der Quelle fehlen, werden gezählt, aber nicht gelöscht.
+  Ordner werden nie verändert, weil sie inzwischen gepflegt sein können.
+  `--modus aktualisieren` überschreibt sie mit dem Stand der Quelle; zusätzlich angelegte
+  Anlagen bleiben. Änderungen zeigt danach `git diff`.
+- Sportstätten, die in der Quelle fehlen, werden gezählt, aber nicht gelöscht.
 - Kontaktdaten werden nie übernommen: Die Spalte E-Mail wird nicht gelesen, und jeder
   Wert, der eine E-Mail-Adresse enthält, entfällt.
 - Im Export stehen unter `Latitude`/`Longitude` UTM-Werte (Hochwert/Rechtswert); das wird
@@ -65,6 +99,16 @@ git add daten && git commit -m "Bestand aus dem Atlas-Export übernommen"
 - Der Export selbst gehört nicht ins Repository (er enthält Kontaktdaten).
 - Weitere Quellformate: in `src/sportstaettenatlas/bestand.py` eine Lesefunktion
   ergänzen und in `LESER` eintragen (`--format`).
+
+**Umstellen vom früheren Format** (eine Datei `daten/RP/RP-<id>.json` je Sportstätte mit
+einer Liste `anlagen`): einmalig
+
+```bash
+uv run sportstaettenatlas umstellen
+git add -A daten && git commit -m "Datenbestand: Ordner je Sportstätte"
+```
+
+Von Hand gepflegte Angaben bleiben erhalten; die IDs verlieren das Präfix `RP-`.
 
 ## Webseite veröffentlichen (GitHub Pages)
 
@@ -83,10 +127,10 @@ Die Seite hat fünf Reiter. Reiter und Gebiet stehen in der Adresse, z. B.
 
 | Reiter | Inhalt |
 |---|---|
-| **Karte** (Start) | nur der Datenbestand aus `daten/`; Filter nach Kategorie, Betreiber-Art und Sportarten |
+| **Karte** (Start) | nur der Datenbestand aus `daten/`, ein Punkt je Sportstätte; Filter nach den Sportanlagen darin (nach Gruppen), Kategorie, Betreiber-Art und Sportarten |
 | **Liste** | Vereine und Kommunen als Betreiber bzw. Eigentümer, sortier- und filterbar; ein Klick zeigt ihre Sportstätten |
-| **Übersicht** | Zahl der Sportstätten und Anlagen, Befüllung der Felder, Kategorien, Befüllung je Kreis |
-| **Vorschlag** | Formular: neue Sportstätte eintragen oder eine bestehende ändern, mit Prüfung auf Doppelungen; „Weiter zu LimeSurvey“ übergibt die Werte an die Umfrage |
+| **Übersicht** | Sportstätten und Sportanlagen getrennt: Zahl, Befüllung der Angaben, Kategorien, Gruppen und häufigste Typen der Anlagen, Anlagen je Sportstätte, beides je Kreis |
+| **Vorschlag** | Formular: neue Sportstätte mit ihren Sportanlagen eintragen, die Angaben einer Sportstätte ändern oder ihre Sportanlagen hinzufügen, ändern und entfernen, mit Prüfung auf Doppelungen; „Weiter zu LimeSurvey“ übergibt die Werte an die Umfrage |
 | **Analysen** | Ergebnisse der Analysen, derzeit der **ALKIS-Abgleich**; lädt erst beim Öffnen (für RLP rund 27 MB) |
 
 In allen Reitern lässt sich oben ein **Gebiet** wählen: Landkreis bzw. kreisfreie Stadt,
@@ -97,8 +141,17 @@ Gemeinde. Ohne Netz: `--gebiete pfad/zu/vg250.gpkg` (heruntergeladenes GeoPackag
 `--gebiete aus`. Die Grenzen sind auf 1:250 000 generalisiert; Sportstätten direkt an einer
 Gemeindegrenze können der Nachbargemeinde zugeordnet sein.
 
+**Sportstätten und ihre Sportanlagen:** Das Fenster einer Sportstätte listet ihre
+Sportanlagen nach Gruppen, mit ihren Angaben (Sportarten, Baujahr, Baukosten, Ausstattung).
+Ein Klick auf eine Anlage zeigt alle Sportstätten mit dieser Art von Anlage. Im Filter
+rechts sind die Typen in Gruppen geordnet (Spielfelder, Tennis, Hallen und Räume,
+Leichtathletik, Bäder …): Ein Häkchen an der Gruppe wählt alle ihre Typen, ▸ klappt die
+einzelnen Typen auf, und das Suchfeld findet Typen wie „Rundlaufbahn“. Gezeigt werden dann
+die Sportstätten mit mindestens einer der gewählten Anlagen; die Zahlen gelten für das
+gewählte Gebiet.
+
 **Suche:** Das Suchfeld oben links durchsucht beim Tippen die Daten des aktuellen Reiters
-(Name, Adresse, Betreiber, ID) und die Gebiete. Mit Enter oder „Suchen“ werden zusätzlich
+(Name, Adresse, Betreiber, ID, Typen der Anlagen) und die Gebiete. Mit Enter oder „Suchen“ werden zusätzlich
 Orte und Adressen über Nominatim (OpenStreetMap) gesucht, bei Ausfall über Photon.
 Angefragt wird nur auf Enter, nicht bei jedem Tastendruck. Escape leert die Suche.
 
@@ -106,10 +159,17 @@ Angefragt wird nur auf Enter, nicht bei jedem Tastendruck. Escape leert die Such
 Ein Rechtsklick auf die Karte kopiert die Koordinaten der Stelle in die Zwischenablage und
 bietet „Hier eine Sportstätte vorschlagen“ an.
 
-**Vorschläge:** Das Formular im Reiter „Vorschlag“ erreicht man auch über „Sportstätte
-vorschlagen“ oben, über „Ändern oder Fehler melden“ im Fenster einer Sportstätte, über „Als
-neue Sportstätte vorschlagen“ bei ALKIS-Objekten im ALKIS-Abgleich und per Rechtsklick in
-die Karte. Eigentümer und Betreiber lassen sich aus den bisherigen Namen und allen Kommunen
+**Vorschläge:** Das Formular im Reiter „Vorschlag“ kennt drei Arten:
+
+- **Neue Sportstätte** mit ihren Sportanlagen (je Zeile ein Typ, optional Name und Anzahl,
+  z. B. 3× Tennisplatz; „Angaben ▸“ öffnet Sportarten, Baujahr, Baukosten, Ausstattung)
+- **Angaben einer Sportstätte ändern**: Name, Adresse, Lage, Betreiber …, die Anlagen bleiben
+- **Sportanlagen einer Sportstätte ändern**: vorhandene Anlagen ändern oder entfernen (×),
+  neue hinzufügen; die Angaben der Sportstätte bleiben
+
+Man erreicht es auch über „Sportstätte vorschlagen“ oben, über „Angaben ändern“ bzw.
+„Sportanlagen ändern“ im Fenster einer Sportstätte, über „Als neue Sportstätte vorschlagen“
+bei ALKIS-Objekten im ALKIS-Abgleich und per Rechtsklick in die Karte. Eigentümer und Betreiber lassen sich aus den bisherigen Namen und allen Kommunen
 (aus den Verwaltungsgebieten) wählen. Doppelungen meldet das Formular, wenn eine vorhandene
 Sportstätte höchstens 60 m entfernt liegt, dieselbe Kategorie in 250 m Umkreis hat, einen
 sehr ähnlichen Namen trägt oder dieselbe Adresse hat; dann muss man bestätigen, dass es eine
@@ -117,7 +177,12 @@ andere ist. „Weiter zu LimeSurvey“ öffnet `vorschlag_url` aus `konfig.js` m
 URL-Parametern (`?newtest=Y&<Fragecode>=…`). Welches Feld in welche Frage geht, steht in
 `konfig.js` unter `vorschlag_felder` (Feld: "Fragecode"); nur diese Felder werden übertragen.
 Ist `vorschlag_felder` leer, gehen alle Felder mit ihrem Namen als Code. Solange
-`vorschlag_url` leer ist, zeigt der Knopf nur an, was übertragen würde.
+`vorschlag_url` leer ist, zeigt der Knopf nur an, was übertragen würde. Die Sportanlagen
+gehen als Text mit einer Zeile je Anlage: `anlagen` ist der Stand nach dem Vorschlag
+(„[17abb3c4] Großspielfeld (Kunstrasen B) – Baujahr: 1998“, neue mit „neu:“), und
+`anlagen_aenderung` beschreibt, was sich ändert („entfernen [1fb06acd]: Tennisplatz“). Die
+Kennung in eckigen Klammern ist der Anfang der UUID, also des Dateinamens im Ordner der
+Sportstätte. `art` ist `neu`, `aenderung` (Angaben) oder `anlagen`.
 
 **Bug melden:** Ist in `konfig.js` `fehler_url` eingetragen, steht oben der Link „Bug
 melden“. Er öffnet auf GitHub ein neues Ticket mit der Vorlage
@@ -137,7 +202,7 @@ Inhalt von `docs/`:
 | `app/` | Stil und Skripte, Kopie von `src/sportstaettenatlas/web/` – bei jedem Lauf neu |
 | `konfig.js` | Titel, Links zur Umfrage und zu „Bug melden“, Impressum, Datenschutz, Lizenz – **wird nur beim ersten Mal angelegt** und danach nie überschrieben |
 | `impressum.html`, `datenschutz.html` | Entwürfe der Rechtstexte – ebenfalls nur einmal angelegt |
-| `daten/bestand.geojson` | der Datenbestand (Karte, Liste, Übersicht, Vorschlag) |
+| `daten/bestand.geojson` | der Datenbestand: ein Punkt je Sportstätte, ihre Anlagen als Liste darin, dazu die Gruppen der Anlagentypen |
 | `daten/gebiete.json`, `gebiete_*.geojson` | Gebietsauswahl und Umrisse (werden erst bei Bedarf geladen) |
 | `daten/analysen/index.json` | welche Analysen der Reiter „Analysen“ zeigt |
 | `daten/analysen/alkis/` | Dateien des ALKIS-Abgleichs (siehe unten) |

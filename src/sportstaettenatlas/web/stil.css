@@ -161,8 +161,31 @@ table.balken { border-collapse: collapse; width: 100%; }
 .vorschlag table.anlagen { border-collapse: collapse; width: 100%; margin-bottom: 6px; }
 .anlagen th { text-align: left; font-weight: 600; color: #555; font-size: 13px; padding: 2px 6px 2px 0; }
 .anlagen td { padding: 3px 6px 3px 0; }
-.anlagen td:nth-child(2) { width: 90px; }
-.anlagen td:nth-child(3) { width: 30px; }
+.anlagen td { vertical-align: top; }
+.anlagen tr.anlage td:nth-child(3) { width: 70px; }
+.anlagen tr.anlage td:nth-child(3) .q { font-size: 11px; line-height: 28px; }
+.anlagen td.aktionen { width: 110px; white-space: nowrap; }
+.anlagen .mehr { font: inherit; font-size: 12px; border: 1px solid #ccc; background: #fff;
+  border-radius: 4px; padding: 2px 6px; cursor: pointer; color: #444; }
+.anlagen .mehr.hat { font-weight: 600; }
+.anlagen tr.entfernt input { text-decoration: line-through; color: #999; }
+.anlagen tr.anlage-mehr td { padding: 2px 0 8px 12px; }
+.anlage-felder { display: grid; grid-template-columns: 1fr 90px 120px; gap: 6px 10px;
+  background: #f7f7f7; border-radius: 6px; padding: 8px; }
+.anlage-felder label { display: flex; flex-direction: column; font-size: 12px; color: #555; gap: 2px; }
+.anlage-felder label.breit { grid-column: 1 / -1; }
+/* Filter: Sportanlagen nach Gruppen */
+.an-liste { max-height: 260px; overflow: auto; margin-top: 4px; }
+.an-kopf { display: flex; align-items: center; gap: 2px; }
+.an-kopf label { flex: 1; }
+.an-kopf .auf { border: 0; background: none; cursor: pointer; width: 18px; padding: 0; color: #555; }
+.an-typen { padding-left: 20px; }
+/* Popup: Sportanlagen einer Sportstätte */
+.anlagen-tip { margin: 4px 0 6px; padding: 6px 8px; background: #f4f6f9; border-radius: 6px; font-size: 12px; }
+.anlagen-tip h4 { margin: 0 0 3px; border: 0; padding: 0; font-size: 12px; }
+.anlagen-tip .gr { color: #666; }
+.anlagen-tip .details { color: #666; }
+.anlagen-tip.leer { color: #888; }
 .vorschlag .feld .art { align-self: flex-start; }
 .vorschlag .feld .art[hidden] { display: none; }
 #v-karte { height: 380px; border-radius: 8px; border: 1px solid #ddd; }

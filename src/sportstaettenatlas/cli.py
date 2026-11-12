@@ -1,6 +1,7 @@
 """Kommandozeile.
 
 sportstaettenatlas bestand QUELLE   Atlas-Export in den Datenbestand daten/ überführen
+sportstaettenatlas umstellen        daten/ ins Format „ein Ordner je Sportstätte“ bringen
 sportstaettenatlas seite            Webseite für GitHub Pages (docs/) bauen
 sportstaettenatlas alkis …          Analyse ALKIS-Abgleich (laden, bauen, abgleich …)
 """
@@ -25,11 +26,14 @@ def cmd_bestand(args):
         raise SystemExit(f"{quelle} nicht gefunden.")
     fmt = args.format if args.format != "auto" else erkenne_format(quelle)
     land = args.land.upper()
-    e = schreibe_bestand(LESER[fmt](quelle, land), ziel, land, args.modus)
+    try:
+        e = schreibe_bestand(LESER[fmt](quelle, land), ziel, land, args.modus)
+    except ValueError as exc:
+        raise SystemExit(str(exc)) from None
     if not (ziel / "README.md").exists():
         (ziel / "README.md").write_text(README_DATEN, encoding="utf-8")
     print(f"{quelle.name} ({fmt}) → {ziel}/{land}/")
-    print(f"  neu angelegt:        {e.neu}")
+    print(f"  neu angelegt:        {e.neu} Sportstätten (je ein Ordner mit ihren Anlagen)")
     if args.modus == "aktualisieren":
         print(f"  aktualisiert:        {e.aktualisiert}")
         print(f"  unverändert:         {e.unveraendert}")
@@ -50,6 +54,22 @@ def cmd_bestand(args):
         )
 
 
+def cmd_umstellen(args):
+    """Einmalig: daten/<LAND>/<id>.json → daten/<LAND>/<id>/ mit einer Datei je Anlage."""
+    from .bestand import README_DATEN, umstellen
+
+    ziel = Path(args.ziel)
+    staetten, anlagen = umstellen(ziel)
+    if not staetten:
+        print(f"{ziel}/: nichts umzustellen.")
+        return
+    (ziel / "README.md").write_text(README_DATEN, encoding="utf-8")
+    print(f"{ziel}/: {staetten} Sportstätten in eigene Ordner, {anlagen} Sportanlagen als Dateien.")
+    print(
+        'Prüfen und übernehmen: git add -A daten && git commit -m "Datenbestand: Ordner je Sportstätte"'
+    )
+
+
 def cmd_seite(args):
     """Statische Webseite für GitHub Pages (Ordner docs/) erzeugen."""
     from . import gebiete as gb
@@ -61,7 +81,10 @@ def cmd_seite(args):
 
     bestand = None
     if Path(args.bestand).is_dir():
-        bestand = list(lies_bestand(Path(args.bestand)))
+        try:
+            bestand = list(lies_bestand(Path(args.bestand)))
+        except ValueError as exc:
+            raise SystemExit(f"Datenbestand: {exc}") from None
     else:
         print(f"Hinweis: kein Datenbestand unter {args.bestand}/ – zuerst `bestand` ausführen.")
 
@@ -160,6 +183,12 @@ def main(argv: list[str] | None = None) -> None:
         help="neu: nur fehlende anlegen (Standard); aktualisieren: vorhandene überschreiben",
     )
     sp.set_defaults(func=cmd_bestand)
+
+    sp = sub.add_parser(
+        "umstellen", help="Datenbestand einmalig ins Format „ein Ordner je Sportstätte“ bringen"
+    )
+    sp.add_argument("--ziel", default="daten", help="Ordner des Datenbestands (Standard: daten)")
+    sp.set_defaults(func=cmd_umstellen)
 
     sp = sub.add_parser("seite", help="Webseite für GitHub Pages (Ordner docs/) erzeugen")
     sp.add_argument("--land", default="rp")

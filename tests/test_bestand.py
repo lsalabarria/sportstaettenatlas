@@ -1,10 +1,16 @@
-"""Datenbestand (eine JSON-Datei je Sportstätte) – synthetische Daten."""
+"""Datenbestand (ein Ordner je Sportstätte, eine Datei je Sportanlage) – synthetische Daten."""
 
 import json
 
 import pytest
 
-from sportstaettenatlas.bestand import erkenne_format, lies_atlas_export, schreibe_bestand
+from sportstaettenatlas.bestand import (
+    erkenne_format,
+    lies_atlas_export,
+    lies_bestand,
+    schreibe_bestand,
+    umstellen,
+)
 
 KOPF = (
     "ID,Name,Straße,Hausnummer,PLZ,Stadt,Sportstättenkategorie,Schulsport,"
@@ -37,48 +43,118 @@ def export(tmp_path):
 def test_atlas_export_lesen(export):
     assert erkenne_format(export) == "atlas-export"
     d = next(lies_atlas_export(export, "RP", umrechnen=_fake))
-    assert d["id"] == "RP-101"
+    assert d["id"] == "101"
     assert d["lage"] == {"lon": 4.027420, "lat": 55.148053}  # Latitude/Longitude waren UTM
     assert d["oeffentlicher_zugang"] == "nein" and d["schulsport"] == "ja"
     assert d["zuschauerplaetze"] == 250
     assert d["sportarten"] == ["Fußball", "Leichtathletik"]
+    # einheitlicher Typ; die Schreibweise des Atlas bleibt als Quelle erhalten
     assert d["anlagen"] == [
-        {"bezeichnung": "Großspielfeld (ab 5.000 m², Rasen)"},
-        {"bezeichnung": "Rundlaufbahn"},
+        {
+            "typ": "Großspielfeld (ab 5.000 m², Rasen)",
+        },
+        {"typ": "Rundlaufbahn"},
     ]
     assert d["quellen"]["atlas_rlp"] == {"id": "101", "datei": export.name, "stand": "2026-11-04"}
     assert "vorstand@tus.example" not in json.dumps(d)  # E-Mail-Spalte wird nie gelesen
 
 
-def test_schreiben_und_modi(export, tmp_path):
+def _lies(pfad):
+    return json.loads(pfad.read_text(encoding="utf-8"))
+
+
+def test_ordner_je_sportstaette(export, tmp_path):
     ziel = tmp_path / "daten"
     e = schreibe_bestand(lies_atlas_export(export, "RP", umrechnen=_fake), ziel, "RP")
     assert (e.neu, e.ohne_lage) == (2, 1)
     assert e.entfernt == {"eigentuemer": 1}  # Wert mit E-Mail-Adresse fliegt raus
-    datei = ziel / "RP" / "RP-101.json"
-    d = json.loads(datei.read_text(encoding="utf-8"))
-    assert "hausnummer" in d["adresse"] and "kategorie" in d
-    reit = json.loads((ziel / "RP" / "RP-103.json").read_text(encoding="utf-8"))
+    ordner = ziel / "RP" / "101"
+    meta = _lies(ordner / "101_meta.json")
+    assert "anlagen" not in meta and "hausnummer" in meta["adresse"] and meta["id"] == "101"
+    anlagen = [_lies(p) for p in sorted(ordner.glob("*.json")) if p.name != "101_meta.json"]
+    assert sorted(a["typ"] for a in anlagen) == [
+        "Großspielfeld (ab 5.000 m², Rasen)",
+        "Rundlaufbahn",
+    ]
+    for a, pfad in zip(anlagen, sorted(p for p in ordner.glob("*.json") if "_meta" not in p.name)):
+        assert a["sportstaette_id"] == "101" and pfad.stem == a["id"]
+    reit = _lies(ziel / "RP" / "103" / "103_meta.json")
     assert "eigentuemer" not in reit and "betriebsstatus" not in reit  # leer → weggelassen
 
-    # von Hand gepflegt: Modus "neu" lässt die Datei in Ruhe
-    d["name"] = "Sportpark Musterdorf"
-    datei.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    # Lesen setzt Sportstätte und Anlagen wieder zusammen
+    b = {d["id"]: d for d in lies_bestand(ziel)}
+    assert set(b) == {"101", "103"} and len(b["101"]["anlagen"]) == 2
+
+    # von Hand gepflegt: Modus "neu" lässt den Ordner in Ruhe
+    meta["name"] = "Sportpark Musterdorf"
+    (ordner / "101_meta.json").write_text(json.dumps(meta, ensure_ascii=False), encoding="utf-8")
     e = schreibe_bestand(lies_atlas_export(export, "RP", umrechnen=_fake), ziel, "RP")
     assert (e.neu, e.behalten) == (0, 2)
-    assert json.loads(datei.read_text(encoding="utf-8"))["name"] == "Sportpark Musterdorf"
+    assert _lies(ordner / "101_meta.json")["name"] == "Sportpark Musterdorf"
 
-    # "aktualisieren" übernimmt den Stand der Quelle
+    # "aktualisieren" übernimmt den Stand der Quelle; gleiche IDs der Anlagen
+    ids = sorted(p.name for p in ordner.glob("*.json"))
     e = schreibe_bestand(
         lies_atlas_export(export, "RP", umrechnen=_fake), ziel, "RP", modus="aktualisieren"
     )
     assert (e.aktualisiert, e.unveraendert) == (1, 1)
-    assert json.loads(datei.read_text(encoding="utf-8"))["name"] == "Sportplatz Musterdorf"
+    assert _lies(ordner / "101_meta.json")["name"] == "Sportplatz Musterdorf"
+    assert sorted(p.name for p in ordner.glob("*.json")) == ids
 
-    # Datei, die nicht (mehr) in der Quelle steht, wird gezählt, nicht gelöscht
-    (ziel / "RP" / "RP-999.json").write_text("{}", encoding="utf-8")
+    # Sportstätte, die nicht (mehr) in der Quelle steht, wird gezählt, nicht gelöscht
+    (ziel / "RP" / "999").mkdir()
     e = schreibe_bestand(lies_atlas_export(export, "RP", umrechnen=_fake), ziel, "RP")
-    assert e.nicht_mehr_in_quelle == 1 and (ziel / "RP" / "RP-999.json").exists()
+    assert e.nicht_mehr_in_quelle == 1 and (ziel / "RP" / "999").exists()
+
+
+def test_jede_anlage_braucht_ihre_sportstaette(tmp_path):
+    st = tmp_path / "RP" / "abc"
+    st.mkdir(parents=True)
+    (st / "abc_meta.json").write_text('{"id": "abc", "lage": {"lon": 7, "lat": 50}}', "utf-8")
+    (st / "a1.json").write_text(
+        '{"id": "a1", "sportstaette_id": "xyz", "typ": "Tennisplatz"}', "utf-8"
+    )
+    with pytest.raises(ValueError, match="im Ordner ihrer Sportstätte"):
+        list(lies_bestand(tmp_path))
+    (st / "a1.json").write_text(
+        '{"id": "a1", "sportstaette_id": "abc", "typ": "Tennisplatz"}', "utf-8"
+    )
+    assert [a["typ"] for a in next(lies_bestand(tmp_path))["anlagen"]] == ["Tennisplatz"]
+    # Ordner ohne Sportstätte
+    (tmp_path / "RP" / "def").mkdir()
+    (tmp_path / "RP" / "def" / "a2.json").write_text('{"id": "a2"}', "utf-8")
+    with pytest.raises(ValueError, match="ohne Sportstätte"):
+        list(lies_bestand(tmp_path))
+
+
+def test_umstellen_aus_altem_format(tmp_path):
+    alt = {
+        "id": "RP-9c24bfa6-71c1-4164-b226-061f0a139997",
+        "name": "Sportplatz",
+        "lage": {"lon": 7.0, "lat": 50.0},
+        "anlagen": [
+            {"bezeichnung": "Großspielfeld (ab 5.000 m²)"},
+            {"bezeichnung": "Weit-"},  # früher getrennt eingelesen
+            {"bezeichnung": "Dreisprunganlage"},
+            {"bezeichnung": "Tennisplatz"},
+            {"bezeichnung": "Tennisplatz"},
+        ],
+    }
+    (tmp_path / "RP").mkdir()
+    (tmp_path / "RP" / "RP-9c24bfa6-71c1-4164-b226-061f0a139997.json").write_text(
+        json.dumps(alt), "utf-8"
+    )
+    with pytest.raises(ValueError, match="umstellen"):
+        list(lies_bestand(tmp_path))
+    assert umstellen(tmp_path) == (1, 4)
+    assert not list((tmp_path / "RP").glob("*.json"))
+    d = next(lies_bestand(tmp_path))
+    assert d["id"] == "9c24bfa6-71c1-4164-b226-061f0a139997" and d["name"] == "Sportplatz"
+    typen = sorted(a["typ"] for a in d["anlagen"])
+    assert typen == ["Großspielfeld", "Tennisplatz", "Tennisplatz", "Weit- und Dreisprunganlage"]
+    gross = next(a for a in d["anlagen"] if a["typ"] == "Großspielfeld")
+    assert gross["quellen"] == {"atlas_rlp": {"bezeichnung": "Großspielfeld (ab 5.000 m²)"}}
+    assert len({a["id"] for a in d["anlagen"]}) == 4  # zwei Tennisplätze, zwei IDs
 
 
 def test_unbekanntes_format(tmp_path):
@@ -116,3 +192,41 @@ def test_liste_haelt_anlagen_mit_bindestrich_zusammen():
         "Weit-, Dreisprunganlage",
         "Feld (A, B)",
     ]
+
+
+def test_anlagentypen():
+    from sportstaettenatlas import anlagen
+
+    assert anlagen.typ(" Nichtnormiertes  Spielfeld") == "Nicht normiertes Spielfeld"
+    assert anlagen.typ("Dreifach-Sporthalle (Größe V)") == "Dreifachsporthalle"
+    assert anlagen.typ("Kunsteisbahn") == "Kunsteisbahn"  # unbekannt: bleibt
+    assert anlagen.gruppe("Rundlaufbahn") == "leichtathletik"
+    assert anlagen.gruppe("Kunsteisbahn") == "winter"  # über Stichwort
+    assert anlagen.gruppe("Irgendwas") == "weitere"
+    assert anlagen.zusammenfuegen(["Diskus-", "Hammerwurfanlage", "Feld"]) == [
+        "Diskus-, Hammerwurfanlage",
+        "Feld",
+    ]
+
+
+def test_bestand_geojson_mit_anlagen():
+    from sportstaettenatlas.bestand import bestand_geojson
+
+    d = {
+        "id": "abc",
+        "lage": {"lon": 7.0, "lat": 50.0},
+        "anlagen": [
+            {"id": "11111111-x", "typ": "Tennisplatz"},
+            {"id": "22222222-x", "typ": "Rundlaufbahn", "baujahr": 1980, "sportarten": []},
+            {"id": "33333333-x", "typ": "Großspielfeld", "bezeichnung": "Kunstrasen B"},
+        ],
+    }
+    fc = bestand_geojson([d])
+    # nach Gruppe sortiert: Spielfelder, Tennis, Leichtathletik; leere Angaben entfallen
+    assert fc["features"][0]["properties"]["anlagen"] == [
+        ["Großspielfeld", "33333333", "Kunstrasen B"],
+        ["Tennisplatz", "11111111"],
+        ["Rundlaufbahn", "22222222", "", {"baujahr": 1980}],
+    ]
+    assert fc["anlagentypen"]["Rundlaufbahn"] == "leichtathletik"
+    assert ["bad", "Bäder"] in fc["anlagengruppen"]

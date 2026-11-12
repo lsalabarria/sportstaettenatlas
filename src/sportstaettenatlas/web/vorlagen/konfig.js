@@ -11,10 +11,12 @@ window.KONFIG = {
   vorschlag_url: "",
   // Welche Felder des Formulars in welche Frage der Umfrage gehen: Feld: "Fragecode".
   // Nur die hier genannten werden übertragen. Leer = alle Felder, Fragecode = Feldname.
-  // Felder: art id quelle name kategorie betriebsstatus strasse hausnummer adresszusatz plz
-  // ort adresse ars gemeinde lat lon lage ("Breite, Länge") oeffentlicher_zugang schulsport
-  // zuschauerplaetze sportarten anlagen eigentuemer betreiber website anmerkung geaendert
-  // dubletten
+  // Felder: art (neu | aenderung | anlagen) id quelle name kategorie betriebsstatus strasse
+  // hausnummer adresszusatz plz ort adresse ars gemeinde lat lon lage ("Breite, Länge")
+  // oeffentlicher_zugang schulsport zuschauerplaetze sportarten eigentuemer betreiber website
+  // anmerkung geaendert dubletten
+  // anlagen: die Sportanlagen nach dem Vorschlag, je Zeile eine ("[Kennung] Typ (Name) – …"
+  //   bzw. "neu: …"); anlagen_aenderung: was sich an ihnen ändert (neu, ändern, entfernen)
   vorschlag_felder: {},
 
   // Knopf „Bug melden“: neues Ticket im GitHub-Repository mit der Vorlage
