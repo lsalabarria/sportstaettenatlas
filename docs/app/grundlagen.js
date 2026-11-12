@@ -20,7 +20,6 @@ function url(u) { return /^https?:\/\//i.test(u) ? u : "https://" + u; }
 // Kopfzeile: Links aus konfig.js (nur Webseite). „Sportstätte vorschlagen“ öffnet das
 // Formular, „Bug melden“ ein neues Ticket auf GitHub (konfig.js: fehler_url).
 function kopfzeile() {
-  if (EINGEBETTET) return;
   const k = KONFIG, el = document.getElementById("links");
   const link = (u, text, extra = "") => u ? `<a href="${esc(u)}"${extra}`
     + `${/^https?:/.test(u) ? ' target="_blank" rel="noopener"' : ""}>${text}</a>` : "";
@@ -59,7 +58,6 @@ function ladeFehler(fehler) {
 
 // Daten: eingebettet (Karte als eine Datei) oder aus daten/ nachladen; fehlt → null
 async function holeJson(name) {
-  if (EINGEBETTET) return EINGEBETTET[name] || null;
   const r = await fetch("daten/" + name);
   if (r.status === 404) return null;
   if (!r.ok) throw new Error(`${name}: HTTP ${r.status}`);

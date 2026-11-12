@@ -24,7 +24,7 @@ RP/                                       Land
   sie in `sportstaette_id`. Eine Sportstätte kann (noch) ohne Anlagen sein.
 - Der **Kreis-Ordner** ergibt sich aus der Lage (Verwaltungsgebiete VG250). Sportstätten
   außerhalb von Rheinland-Pfalz liegen in `ohne-kreis`. Liegt eine Sportstätte nach einer
-  Änderung ihrer Lage in einem anderen Kreis, bringt `uv run sportstaettenatlas umstellen`
+  Änderung ihrer Lage in einem anderen Kreis, bringt `uv run sportstaettenatlas einordnen`
   ihren Ordner dorthin.
 - **Sportkomplexe** (mehrere Sportstätten an einem Ort, wie im bisherigen Atlas) bildet das
   Modell vorerst nicht ab.

@@ -49,11 +49,10 @@ const FARBEN = {
   eis: "#0F6E56", spezial: "#854F0B", sportgelegenheit: "#888780", zubehoer: "#B4B2A9",
   unbestimmt: "#5F5E5A",  // ALKIS-Sammelbegriff "Sportanlage"
 };
-// Felder der Atlas-Einträge im Popup (Spalten aus analysen/alkis/karte.py: ATLAS_SPALTEN)
+// Felder der Atlas-Einträge im Popup (Spalten aus analysen/alkis/webdaten.py: ATLAS_SPALTEN)
 const ATLAS_FELDER = {
-  alt_name: "Name", alt_komplex: "Komplex", alt_typ: "Typ", alt_anlagentypen: "Anlagen",
-  alt_adresse: "Adresse", alkis_nutzung_vor_ort: "ALKIS-Nutzung hier",
-  alkis_gebaeude_vor_ort: "ALKIS-Gebäude hier", naechste_sportstaette_id: "nächste ALKIS-Sportstätte",
+  alt_name: "Name", alt_typ: "Typ", alt_anlagentypen: "Anlagen", alt_adresse: "Adresse",
+  naechste_sportstaette_id: "nächste ALKIS-Sportstätte",
   abstand_m: "Abstand m", alkis_typgruppen: "ALKIS dort", typ_passt: "Typ passt",
   alt_betriebsstatus: "Betriebsstatus", alt_datei: "Ordner in daten/", alt_atlas_id: "ID",
   alt_id: "Abgleich-ID",
@@ -68,7 +67,7 @@ function analyseAlkis() {
   let legende = null, aktualisiere = () => {}, zeigeZahlen = () => {}, startGrenzen = null;
   const such = [];
   async function starte() {
-    if (!EINGEBETTET) zeigeLaden("ALKIS-Daten werden geladen (einige MB) …");
+    zeigeLaden("ALKIS-Daten werden geladen (einige MB) …");
     const [ANLAGEN, STAETTEN, ATLAS, ZUSAMMEN] = await Promise.all(["sportanlagen.geojson",
       "sportstaetten.geojson", "atlas_abgleich.geojson", "zusammenfassung.json"]
       .map(n => holeJson("analysen/alkis/" + n)));
