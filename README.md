@@ -19,7 +19,7 @@ auf dem eigenen Rechner; ihre Ergebnisse erscheinen auf der Webseite im Reiter �
 ```
 daten/                       Datenbestand: Kreis / Sportstätte / ihre Sportanlagen
 docs/                        Webseite für GitHub Pages (von `seite` erzeugt, siehe unten)
-data/                        Arbeitsordner der Analysen: raw/, cache/, out/ (nicht im Git)
+results/                     Arbeitsordner der Analysen: raw/, cache/, out/ (nicht im Git)
 .github/ISSUE_TEMPLATE/      Vorlage für „Bug melden“ (fehler.yml)
 src/sportstaettenatlas/
   cli.py                     Befehle `bestand`, `seite` und die Befehlsgruppen der Analysen
@@ -145,7 +145,7 @@ Die Seite hat fünf Reiter. Reiter und Gebiet stehen in der Adresse, z. B.
 In allen Reitern lässt sich oben ein **Gebiet** wählen: Landkreis bzw. kreisfreie Stadt,
 darunter Verbandsgemeinde oder Gemeinde. Die Grenzen (VG250 des BKG, Stand 01.01.,
 dl-de/by-2-0) lädt `seite` beim ersten Lauf über den WFS des BKG und legt sie unter
-`data/cache/gebiete_rp.json` ab; jede Sportstätte bekommt den Regionalschlüssel ihrer
+`results/cache/gebiete_rp.json` ab; jede Sportstätte bekommt den Regionalschlüssel ihrer
 Gemeinde. Ohne Netz: `--gebiete pfad/zu/vg250.gpkg` (heruntergeladenes GeoPackage) oder
 `--gebiete aus`. Die Grenzen sind auf 1:250 000 generalisiert; Sportstätten direkt an einer
 Gemeindegrenze können der Nachbargemeinde zugeordnet sein.
@@ -218,7 +218,7 @@ Inhalt von `docs/`:
 | `daten/index.html` | Download-Seite mit Quellenvermerk |
 | `vendor/leaflet/` | Kartenbibliothek, lokal abgelegt (keine Anfragen an fremde Server) |
 
-Fehlt ein Analyse-Ergebnis (z. B. `data/out/sportstaetten.gpkg` auf einem anderen Rechner),
+Fehlt ein Analyse-Ergebnis (z. B. `results/out/sportstaetten.gpkg` auf einem anderen Rechner),
 erneuert `seite` nur den Bestand; die Dateien der Analyse in `docs/` bleiben, wie sie sind.
 Frühere Fassungen legten die ALKIS-Dateien direkt in `docs/daten/` ab; `seite` verschiebt sie
 beim nächsten Lauf nach `docs/daten/analysen/alkis/`.
@@ -266,7 +266,7 @@ Build-Schritt; nach einer Änderung `seite --vorschau` ausführen.
 
 Eine Analyse ist ein Ordner unter `src/sportstaettenatlas/analysen/` mit eigenen Befehlen
 (`sportstaettenatlas <name> …`). Sie rechnet auf dem eigenen Rechner, schreibt ihr
-Ergebnis nach `data/out/` und liefert `seite` die Dateien für die Webseite. Diese landen in
+Ergebnis nach `results/out/` und liefert `seite` die Dateien für die Webseite. Diese landen in
 `docs/daten/analysen/<name>/`; der Reiter „Analysen“ zeigt dann einen Knopf je Analyse.
 
 Eine neue Analyse braucht:
@@ -311,10 +311,10 @@ uv run sportstaettenatlas -v alkis lauf --gebiet rlp
 # eigener Ausschnitt in EPSG:25832 (xmin,ymin,xmax,ymax)
 uv run sportstaettenatlas alkis lauf --bbox 397500,5576500,401500,5580500
 
-# mit dem Atlas abgleichen
-uv run sportstaettenatlas -v alkis abgleich --atlas pfad/zum/atlas-export.csv
+# mit dem Datenbestand (daten/) abgleichen
+uv run sportstaettenatlas -v alkis abgleich
 
-# Karte (data/out/karte.html) aus dem vorhandenen Ergebnis erzeugen und öffnen
+# Karte (results/out/karte.html) aus dem vorhandenen Ergebnis erzeugen und öffnen
 uv run sportstaettenatlas alkis karte --oeffnen
 
 # welche ALKIS-Werte kommen vor und wie werden sie zugeordnet?
@@ -324,7 +324,7 @@ uv run sportstaettenatlas alkis werte --gebiet koblenz --alle
 uv run sportstaettenatlas seite
 ```
 
-`lauf` besteht aus `laden` (lädt die Daten in den Cache unter `data/raw/`) und `bauen`
+`lauf` besteht aus `laden` (lädt die Daten in den Cache unter `results/raw/`) und `bauen`
 (erzeugt daraus die Tabellen); beide lassen sich auch einzeln ausführen.
 
 ### Ganz Rheinland-Pfalz
@@ -337,7 +337,7 @@ Damit das machbar bleibt, gilt Folgendes:
   `funktion` eines der Stichwörter aus `regeln.toml` enthält. Ohne Filter wären es landesweit
   über 3 Mio. Gebäude. Lehnt der Server den Filter ab, wird die betroffene Kachel
   automatisch ungefiltert geladen; das dauert dann deutlich länger.
-- **Fortsetzbar:** Jede Kachel landet in `data/raw/<land>_<gebiet>_<typ>_kacheln/`. Nach
+- **Fortsetzbar:** Jede Kachel landet in `results/raw/<land>_<gebiet>_<typ>_kacheln/`. Nach
   einem Abbruch (Netz, Strg+C) setzt derselbe Befehl bei der nächsten fehlenden Kachel fort.
   `--neu` lädt alles neu.
 - **Dubletten:** Objekte, die über eine Kachelgrenze reichen, kommen mehrfach vor und werden
@@ -348,7 +348,7 @@ Hinweis: Der Vorfilter berücksichtigt nur das Feld `funktion`. Gebäude, die nu
 Namen als Sportstätte erkennbar wären, fehlen dadurch landesweit. Wenn man die Regeln
 ändert, muss man mit `--neu` neu laden, weil der Vorfilter aus den Regeln erzeugt wird.
 
-### Ergebnis (`data/out/`)
+### Ergebnis (`results/out/`)
 
 - `sportstaetten.csv` und `sportanlagen.csv`: die beiden Tabellen; nach `abgleich`
   zusätzlich `*_angereichert.csv`
@@ -376,16 +376,16 @@ Wichtige Spalten:
 | `gemeindeschluessel` | AGS (8-stellig) |
 | `flaeche_m2`, `lon`, `lat` | Fläche, Lagepunkt (WGS84) |
 
-### Abgleich mit dem Atlas (`alkis abgleich`)
+### Abgleich mit dem Datenbestand (`alkis abgleich`)
 
-Der Befehl liest `data/out/sportstaetten.gpkg`, gleicht die Sportstätten mit dem Export
-des bisherigen Sportstättenatlas RLP ab (CSV, eine Zeile je Sportstätte, Spalten
-`ID, Name, …, Sportanlagen, Latitude, Longitude`) und übernimmt dessen Angaben mit Herkunft.
-Statt einer Datei kann auch ein Ordner mit CSV-Dateien im Import-Format des Altsystems
-übergeben werden. Der Export gehört nicht ins Repository; `data/` ist deshalb in
-`.gitignore` ausgeschlossen.
+Der Befehl liest `results/out/sportstaetten.gpkg` und gleicht die Sportstätten mit dem
+**aktuellen Datenbestand in `daten/`** ab (`--bestand` für einen anderen Ordner). Was dort
+korrigiert oder neu eingetragen wurde, fließt also beim nächsten Abgleich ein. Die Angaben
+des Bestands werden mit Herkunft übernommen; ihre Spalten heißen `alt_*`, und als Quelle
+steht „Sportstättenatlas RLP“, weil der Bestand aus dem bisherigen Atlas stammt. Die
+Sportarten umfassen die der Sportstätte und die ihrer Anlagen.
 
-- **Zuordnung:** Jeder Atlas-Eintrag (Punkt) wird der ALKIS-Sportstätte zugeordnet,
+- **Zuordnung:** Jede Sportstätte des Bestands (Punkt) wird der ALKIS-Sportstätte zugeordnet,
   in der er liegt oder die ihm am nächsten ist (max. 100 m).
 - **Nachbarflächen:** ALKIS zerlegt einen Standort oft in mehrere Flächen (z. B. Tennishalle
   und, durch einen Weg getrennt, die Plätze). Der Atlas-Punkt bestätigt deshalb auch
@@ -394,8 +394,9 @@ Statt einer Datei kann auch ein Ordner mit CSV-Dateien im Import-Format des Alts
   „Nachbarfläche von ST…“.
 - **Zusammengeführte Felder:** Name (Komplex- bzw. Stättenname), Adresse, Betreiber,
   Eigentümer, Website, Sportarten, Betriebsstatus und `anlagen_laut_altbestand`, z. B.
-  „2× Großspielfeld; Weit- und Dreisprunganlage“; die Atlas-`ID` steht in `alt_atlas_id`.
-- **`abgleich_altbestand.csv`** ist die Sicht des Atlas, eine Zeile je Atlas-Eintrag:
+  „2× Großspielfeld; Weit- und Dreisprunganlage“. Die ID der Sportstätte steht in
+  `alt_atlas_id`, ihr Ordner in `daten/` in `alt_datei`.
+- **`abgleich_altbestand.csv`** ist die Sicht des Bestands, eine Zeile je Sportstätte:
   - `status` = `zugeordnet` (bis 100 m), `nah` (100–200 m, Koordinate prüfen) oder
     `nicht in ALKIS`
   - `typ_passt`: Passt der Atlas-Typ zu den Anlagen, die ALKIS dort kennt?
@@ -461,7 +462,7 @@ und `zusammenfassung.json` (Zahlen je Gemeinde). Code: `analysen/alkis/karte.py`
 
 ### Zwischenspeicher
 
-Alles liegt unter `data/cache/`; ein zweiter Lauf ist dadurch schnell:
+Alles liegt unter `results/cache/`; ein zweiter Lauf ist dadurch schnell:
 
 - `http/`: jede Antwort des ALKIS-WFS (30 Tage)
 - `alkis_vor_ort.json`: Nutzung und Gebäude je Atlas-Ort

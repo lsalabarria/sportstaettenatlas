@@ -55,7 +55,7 @@ const ATLAS_FELDER = {
   alt_adresse: "Adresse", alkis_nutzung_vor_ort: "ALKIS-Nutzung hier",
   alkis_gebaeude_vor_ort: "ALKIS-Gebäude hier", naechste_sportstaette_id: "nächste ALKIS-Sportstätte",
   abstand_m: "Abstand m", alkis_typgruppen: "ALKIS dort", typ_passt: "Typ passt",
-  alt_betriebsstatus: "Betriebsstatus", alt_datei: "Datei", alt_atlas_id: "Atlas-ID",
+  alt_betriebsstatus: "Betriebsstatus", alt_datei: "Ordner in daten/", alt_atlas_id: "ID",
   alt_id: "Abgleich-ID",
 };
 const ZOOM_FLAECHEN = 15;

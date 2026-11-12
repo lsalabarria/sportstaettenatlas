@@ -5,10 +5,10 @@ from __future__ import annotations
 import datetime as dt
 from pathlib import Path
 
-from ...hilfen import DATEN
+from ...hilfen import ERGEBNISSE
 from .quellen import GEBIETE, QUELLEN
 
-ZIEL = DATEN / "out"
+ZIEL = ERGEBNISSE / "out"
 
 
 def _bbox(args) -> tuple[float, float, float, float]:
@@ -21,7 +21,7 @@ def _bbox(args) -> tuple[float, float, float, float]:
 
 
 def _cache(args, typ: str) -> Path:
-    return DATEN / "raw" / f"{args.land}_{args.gebiet if not args.bbox else 'bbox'}_{typ}.gpkg"
+    return ERGEBNISSE / "raw" / f"{args.land}_{args.gebiet if not args.bbox else 'bbox'}_{typ}.gpkg"
 
 
 def cmd_laden(args):
@@ -116,18 +116,25 @@ def cmd_werte(args):
 
 
 def cmd_abgleich(args):
-    """Abgleich mit dem Atlas – mit Herkunft der Angaben und Verifikationsstufe."""
+    """Abgleich mit dem Datenbestand (daten/) – mit Herkunft der Angaben und Verifikation."""
+    from ...bestand import lies_bestand
     from ...http import Sitzung
-    from .abgleich import anreichern
+    from .abgleich import anreichern, aus_bestand
     from .karte import schreibe_karte
 
     ziel = Path(args.ziel)
     gpkg, staetten, anlagen = lies_ergebnis(ziel, roh=True)  # immer von ALKIS allein ausgehen
+    try:
+        bestand = list(lies_bestand(Path(args.bestand)))
+    except (OSError, ValueError) as exc:
+        raise SystemExit(f"Datenbestand {args.bestand}/: {exc}") from None
+    if not bestand:
+        raise SystemExit(f"Kein Datenbestand unter {args.bestand}/ – zuerst `bestand` ausführen.")
     st, an, bericht = anreichern(
         staetten,
         anlagen,
-        Sitzung(DATEN / "cache" / "http", pause_s=args.pause),
-        altbestand=Path(args.atlas),
+        Sitzung(ERGEBNISSE / "cache" / "http", pause_s=args.pause),
+        atlas=aus_bestand(bestand),
         alkis_quelle=None if args.ohne_alkis_vor_ort else QUELLEN[args.land],
     )
 
@@ -237,7 +244,7 @@ def befehle(sub) -> None:
             help="keinen serverseitigen Vorfilter senden (lädt alle Gebäude – sehr viel)",
         )
 
-    sp = gruppe.add_parser("laden", help="ALKIS-Daten per WFS laden (Cache in data/raw)")
+    sp = gruppe.add_parser("laden", help="ALKIS-Daten per WFS laden (Cache in results/raw)")
     gemeinsam(sp)
     laden_optionen(sp)
     sp.set_defaults(func=cmd_laden)
@@ -258,16 +265,10 @@ def befehle(sub) -> None:
     sp.add_argument("--alle", action="store_true")
     sp.set_defaults(func=cmd_werte)
 
-    sp = gruppe.add_parser("abgleich", help="Mit dem Atlas abgleichen und verifizieren")
+    sp = gruppe.add_parser("abgleich", help="Mit dem Datenbestand (daten/) abgleichen")
     sp.add_argument("--land", default="rp", choices=sorted(QUELLEN))
     sp.add_argument("--ziel", default=str(ZIEL))
-    sp.add_argument(
-        "--atlas",
-        "--altbestand",
-        dest="atlas",
-        required=True,
-        help="CSV-Export des Atlas oder Ordner mit CSV-Dateien",
-    )
+    sp.add_argument("--bestand", default="daten", help="Ordner des Datenbestands (Standard: daten)")
     sp.add_argument(
         "--ohne-alkis-vor-ort",
         action="store_true",

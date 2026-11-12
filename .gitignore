@@ -1,5 +1,7 @@
 # Rohdaten, Zwischenstände und Ergebnisse der Analysen (ALKIS, Atlas-Export) – nur lokal.
 # Ins Git gehören nur daten/ (Bestand) und docs/ (Webseite).
+results/
+# früherer Name von results/
 data/
 _transfer/
 

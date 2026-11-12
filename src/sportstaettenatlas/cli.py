@@ -14,7 +14,7 @@ import logging
 from pathlib import Path
 
 from .analysen.alkis import cli as alkis_cli
-from .hilfen import DATEN
+from .hilfen import ERGEBNISSE
 
 
 def _lade_gebiete(args, pflicht: bool):
@@ -31,7 +31,7 @@ def _lade_gebiete(args, pflicht: bool):
     quelle = None if args.gebiete == "auto" else Path(args.gebiete)
     name = f"gebiete_{args.land}{'' if quelle is None else '_' + quelle.stem}.json"
     try:
-        return gb.lade(args.land, DATEN / "cache" / name, quelle)
+        return gb.lade(args.land, ERGEBNISSE / "cache" / name, quelle)
     except Exception as exc:  # noqa: BLE001 – Netz, Dienst geändert …
         if pflicht:
             raise SystemExit(
@@ -244,7 +244,7 @@ def main(argv: list[str] | None = None) -> None:
         "--ziel",
         dest="alkis",
         default=str(alkis_cli.ZIEL),
-        help="Ergebnis des ALKIS-Abgleichs (Standard: data/out)",
+        help="Ergebnis des ALKIS-Abgleichs (Standard: results/out)",
     )
     sp.add_argument("--ausgabe", default="docs", help="Ordner der Webseite (Standard: docs)")
     sp.add_argument("--titel", default="Sportstättenatlas Rheinland-Pfalz")

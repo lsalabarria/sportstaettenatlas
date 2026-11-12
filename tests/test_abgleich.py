@@ -30,8 +30,8 @@ def test_je_objekt_punkt_geht_an_einen_kandidaten():
     assert erg["wd_id"].notna().sum() == 1
 
 
-def test_anreichern_mit_atlas(tmp_path):
-    """Atlas-Export (CSV) → Abgleich, Gebietsfilter, Herkunft und Verifikation."""
+def test_anreichern_mit_bestand():
+    """Datenbestand → Abgleich, Gebietsfilter, Herkunft und Verifikation."""
     from sportstaettenatlas.analysen.alkis import abgleich
 
     st = _kandidaten().rename(columns={"kandidat_id": "sportstaette_id"})
@@ -47,22 +47,43 @@ def test_anreichern_mit_atlas(tmp_path):
         geometry=[box(X + 10, Y + 10, X + 50, Y + 40), box(X + 501, Y + 1, X + 539, Y + 24)],
         crs=CRS,
     )
-    kopf = (
-        "ID,Name,Straße,Hausnummer,PLZ,Stadt,Sportstättenkategorie,Schulsport,"
-        '"Öffentlicher Zugang","Zuschauerplätze Gesamt",Betriebsstatus,'
-        '"Name des Eigentümers","Name des Betreibers",E-Mail,Webseite,Sportarten,'
-        "Sportanlagen,Latitude,Longitude\n"
-    )
-    # Latitude/Longitude enthalten im Export UTM-Werte (Nord/Ost)
-    zeilen = (
-        f'a-1,"Sportplatz Test",,,11111,Musterdorf,Sportplatz,Nein,Nein,,"in Betrieb",'
-        f',"TuS Test",,,,"Großspielfeld",{Y + 75}.0,{X + 100}.0\n'
-        f'a-2,"Weit weg",,,11111,Anderswo,Sportplatz,Nein,Nein,,,,,,,,,{Y}.0,{X + 9000}.0\n'
-    )
-    datei = tmp_path / "sportstaetten_04112026.csv"
-    datei.write_text(kopf + zeilen, encoding="utf-8")
+    # Datenbestand (wie aus bestand.lies_bestand); Lage in WGS84
+    wgs = gpd.GeoSeries([Point(X + 100, Y + 75), Point(X + 9000, Y)], crs=CRS).to_crs("EPSG:4326")
+    bestand = [
+        {
+            "id": "a-1",
+            "name": "Sportplatz Test",
+            "kategorie": "Sportplatz",
+            "betreiber": "TuS Test",
+            "betriebsstatus": "in Betrieb",
+            "lage": {"lon": wgs.iloc[0].x, "lat": wgs.iloc[0].y},
+            "_ordner": "07111-koblenz",
+            "anlagen": [
+                {"id": "x1", "sportstaette_id": "a-1", "typ": "Großspielfeld"},
+                {
+                    "id": "x2",
+                    "sportstaette_id": "a-1",
+                    "typ": "Großspielfeld",
+                    "sportarten": ["Fußball"],
+                },
+            ],
+        },
+        {
+            "id": "a-2",
+            "name": "Weit weg",
+            "kategorie": "Sportplatz",
+            "lage": {"lon": wgs.iloc[1].x, "lat": wgs.iloc[1].y},
+            "anlagen": [],
+        },
+    ]
+    atlas = abgleich.aus_bestand(bestand)
+    assert atlas.crs == CRS and list(atlas["alt_id"]) == ["a-1", "a-2"]
+    assert atlas.loc[0, "alt_anlagentypen"] == "2× Großspielfeld"
+    assert atlas.loc[0, "alt_sportarten"] == "Fußball"  # aus der Anlage
+    assert atlas.loc[0, "alt_datei"] == "07111-koblenz/a-1"
+    assert atlas.loc[0, "alt_typgruppe"] == "spielfeld"
 
-    erg_st, erg_an, bericht = abgleich.anreichern(st, an, sitzung=None, altbestand=datei)
+    erg_st, erg_an, bericht = abgleich.anreichern(st, an, sitzung=None, atlas=atlas)
     assert len(bericht.abgleich_altbestand) == 1  # a-2 liegt außerhalb des Gebiets
     assert erg_st.loc[0, "verifikation"] == "ALKIS, Sportstättenatlas RLP"
     assert erg_st.loc[0, "verifikation_stufe"] == "bestätigt"

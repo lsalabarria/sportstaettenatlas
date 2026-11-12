@@ -5,8 +5,8 @@ Atlas-Einträge ohne ALKIS-Sportobjekt fragt dieses Modul den WFS an genau diese
 ohne Filter ab: Welche Nutzung hat die Fläche, welche Gebäude stehen dort? So sieht
 man z. B., dass eine "Reitsportstätte" im Kataster als Landwirtschaft geführt wird.
 
-Zwischenspeicher auf zwei Ebenen: die WFS-Antworten (data/cache/http) und das fertige
-Ergebnis je Ort (data/cache/alkis_vor_ort.json, Schlüssel: Dienst, Koordinate auf 0,1 m,
+Zwischenspeicher auf zwei Ebenen: die WFS-Antworten (results/cache/http) und das fertige
+Ergebnis je Ort (results/cache/alkis_vor_ort.json, Schlüssel: Dienst, Koordinate auf 0,1 m,
 Radius). Ein zweiter Lauf fragt bekannte Orte also gar nicht mehr an. Fehlgeschlagene
 Abfragen werden nicht gespeichert und beim nächsten Lauf wiederholt.
 """
@@ -150,7 +150,7 @@ def ergaenze(
     """Hängt alkis_nutzung_vor_ort / alkis_gebaeude_vor_ort an die Zeilen mit `status` an.
 
     `speicher_pfad`: JSON mit fertigen Ergebnissen je Ort (Standard: neben dem
-    HTTP-Cache der Sitzung, data/cache/alkis_vor_ort.json).
+    HTTP-Cache der Sitzung, results/cache/alkis_vor_ort.json).
     """
     from ...hilfen import Fortschritt
 

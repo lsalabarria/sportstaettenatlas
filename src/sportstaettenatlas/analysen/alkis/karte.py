@@ -2,7 +2,7 @@
 
 Für die Webseite (Reiter „Analysen“ → „ALKIS-Abgleich“) liefert `webdaten` die Dateien,
 die `seite` nach docs/daten/analysen/alkis/ schreibt. `schreibe_karte` erzeugt dieselbe
-Ansicht als eine einzelne HTML-Datei (data/out/karte.html) zum lokalen Ansehen.
+Ansicht als eine einzelne HTML-Datei (results/out/karte.html) zum lokalen Ansehen.
 """
 
 from __future__ import annotations

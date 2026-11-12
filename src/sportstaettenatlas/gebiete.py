@@ -2,7 +2,7 @@
 
 Quelle: Verwaltungsgebiete 1:250 000 (VG250) des BKG, Stand 01.01., über den offenen
 WFS https://sgx.geodatenzentrum.de/wfs_vg250 – Lizenz dl-de/by-2-0. Einmal geladen und
-unter data/cache/ abgelegt. Alternativ eine heruntergeladene VG250-GeoPackage-Datei.
+unter results/cache/ abgelegt. Alternativ eine heruntergeladene VG250-GeoPackage-Datei.
 
 Der Amtliche Regionalschlüssel (ARS, 12 Stellen) ist hierarchisch:
     Land (2) · Regierungsbezirk (1) · Kreis (2) · Verbandsgemeinde (4) · Gemeinde (3)
