@@ -1,11 +1,14 @@
-"""Datenbestand im Git: ein Ordner je Sportstätte, darin eine Datei je Sportanlage.
+"""Datenbestand im Git: ein Ordner je Kreis, darin ein Ordner je Sportstätte mit einer Datei
+je Sportanlage.
 
-    daten/RP/<id>/<id>_meta.json     die Sportstätte (Standort, Name, Betreiber …)
-    daten/RP/<id>/<anlage-id>.json   je Sportanlage eine Datei, z. B. ein Großspielfeld
+    daten/RP/07111-koblenz/<id>/<id>_meta.json     die Sportstätte (Standort, Name …)
+    daten/RP/07111-koblenz/<id>/<anlage-id>.json   je Sportanlage eine Datei
 
-Die ID einer Sportstätte ist die UUID aus dem Atlas, der Ordner heißt wie sie. Jede
-Sportanlage gehört über `sportstaette_id` zu genau einer Sportstätte und liegt in deren
-Ordner; `lies_bestand` prüft das. Ab der ersten Überführung sind diese Dateien die Quelle
+Die ID einer Sportstätte ist die UUID aus dem Atlas, ihr Ordner heißt wie sie. Der Ordner
+des Kreises ergibt sich aus der Lage (Kreisschlüssel und Name, siehe `kreis_ordner`); liegt
+eine Sportstätte in keinem Kreis, landet sie in `ohne-kreis`. Jede Sportanlage gehört über
+`sportstaette_id` zu genau einer Sportstätte und liegt in deren Ordner; `lies_bestand`
+prüft das. Ab der ersten Überführung sind diese Dateien die Quelle
 der Daten. Änderungen laufen über das Git (z. B. Pull Requests); Quelldateien wie der
 Atlas-Export werden mit `sportstaettenatlas bestand` eingelesen.
 
@@ -56,6 +59,7 @@ from __future__ import annotations
 import functools
 import json
 import re
+import shutil
 import uuid
 from collections import Counter
 from collections.abc import Callable, Iterator
@@ -219,6 +223,52 @@ class Ergebnis:
     entfernt: Counter = field(default_factory=Counter)
 
 
+OHNE_KREIS = "ohne-kreis"
+KreisVon = Callable[[float, float], str]  # (lon, lat) → Name des Kreis-Ordners
+
+
+def _slug(text: str) -> str:
+    t = text.lower()
+    for a, b in (("ä", "ae"), ("ö", "oe"), ("ü", "ue"), ("ß", "ss")):
+        t = t.replace(a, b)
+    return re.sub(r"[^a-z0-9]+", "-", t).strip("-")
+
+
+def kreis_ordner(gebiete: dict) -> KreisVon:
+    """Aus den Verwaltungsgebieten (gebiete.lade): (lon, lat) → "07111-koblenz".
+
+    Gleichnamige Kreise (Stadt und Landkreis Kaiserslautern) unterscheidet der Schlüssel;
+    die kreisfreie Stadt bekommt zusätzlich "-stadt".
+    """
+    from .gebiete import Zuordnung
+
+    kreise = [f["properties"] for f in gebiete["kreis"]["features"]]
+    doppelt = {n for n in (k["name"] for k in kreise) if [x["name"] for x in kreise].count(n) > 1}
+    namen = {}
+    for k in kreise:
+        name = _slug(k["name"])
+        if k["name"] in doppelt and k.get("bez") == "Kreisfreie Stadt":
+            name += "-stadt"
+        namen[str(k["ars"])[:5]] = f"{str(k['ars'])[:5]}-{name}"
+    zuordnung = Zuordnung(gebiete["gemeinde"])
+
+    def ordner(lon: float, lat: float) -> str:
+        ars = zuordnung.ars(lon, lat)
+        return namen.get(ars[:5], OHNE_KREIS) if ars else OHNE_KREIS
+
+    return ordner
+
+
+def _kreis_von_daten(d: dict, kreis_von: KreisVon) -> str:
+    lage = d.get("lage") or {}
+    return kreis_von(lage.get("lon"), lage.get("lat"))
+
+
+def staetten_ordner(land_ordner: Path) -> dict[str, Path]:
+    """Alle Ordner von Sportstätten eines Landes: {id: Pfad} (über alle Kreise)."""
+    return {p.name: p for p in sorted(land_ordner.glob("*/*")) if p.is_dir()}
+
+
 def meta_datei(ordner: Path) -> Path:
     """<id>_meta.json im Ordner einer Sportstätte."""
     return ordner / f"{ordner.name}_meta.json"
@@ -227,7 +277,7 @@ def meta_datei(ordner: Path) -> Path:
 def aufteilen(d: dict) -> dict[str, str]:
     """Sportstätte mit Anlagen → {Dateiname: Inhalt} für ihren Ordner."""
     sid = d["id"]
-    meta = {k: v for k, v in d.items() if k != "anlagen"}
+    meta = {k: v for k, v in d.items() if k not in ("anlagen", "_ordner")}
     dateien = {f"{sid}_meta.json": als_json(meta)}
     nr: Counter = Counter()
     for a in d.get("anlagen") or []:
@@ -240,19 +290,30 @@ def aufteilen(d: dict) -> dict[str, str]:
 
 
 def _altes_format(ordner: Path) -> list[Path]:
-    return sorted(Path(ordner).glob("*/*.json"))
+    """Dateien früherer Formate: daten/RP/RP-<id>.json und daten/RP/<id>/ ohne Kreis."""
+    dateien = sorted(Path(ordner).glob("*/*.json"))
+    ohne_kreis = sorted(
+        p.parent
+        for p in Path(ordner).glob("*/*/*_meta.json")
+        if p.name == f"{p.parent.name}_meta.json"
+    )
+    return dateien + ohne_kreis
 
 
 def _pruefe_format(ordner: Path) -> None:
     if alt := _altes_format(ordner):
         raise ValueError(
-            f"{len(alt)} Dateien im alten Format (eine Datei je Sportstätte, z. B. {alt[0]}). "
+            f"{len(alt)} Sportstätten im früheren Format (z. B. {alt[0]}). "
             "Einmalig umstellen: `sportstaettenatlas umstellen`."
         )
 
 
-def schreibe_bestand(datensaetze, ziel: Path, land: str, modus: str = "neu") -> Ergebnis:
-    """Datensätze als daten/<LAND>/<id>/ ablegen (Sportstätte und ihre Anlagen).
+def schreibe_bestand(
+    datensaetze, ziel: Path, land: str, kreis_von: KreisVon, modus: str = "neu"
+) -> Ergebnis:
+    """Datensätze als daten/<LAND>/<Kreis>/<id>/ ablegen (Sportstätte und ihre Anlagen).
+
+    kreis_von: (lon, lat) → Ordner des Kreises (siehe kreis_ordner)
 
     modus="neu":           nur fehlende Sportstätten anlegen, vorhandene nie verändern
                            (sie können inzwischen von Hand gepflegt sein)
@@ -265,6 +326,7 @@ def schreibe_bestand(datensaetze, ziel: Path, land: str, modus: str = "neu") -> 
     ordner = ziel / land.upper()
     ordner.mkdir(parents=True, exist_ok=True)
     _pruefe_format(ziel)
+    vorhanden = staetten_ordner(ordner)
     e = Ergebnis()
     gesehen: set[str] = set()
     for roh in datensaetze:
@@ -276,10 +338,11 @@ def schreibe_bestand(datensaetze, ziel: Path, land: str, modus: str = "neu") -> 
             e.doppelt += 1
             continue
         gesehen.add(d["id"])
-        st_ordner = ordner / d["id"]
+        st_ordner = vorhanden.get(d["id"])
         dateien = aufteilen(d)
-        if not st_ordner.exists():
-            st_ordner.mkdir()
+        if st_ordner is None:
+            st_ordner = ordner / _kreis_von_daten(d, kreis_von) / d["id"]
+            st_ordner.mkdir(parents=True)
             for name, text in dateien.items():
                 (st_ordner / name).write_text(text, encoding="utf-8")
             e.neu += 1
@@ -296,45 +359,72 @@ def schreibe_bestand(datensaetze, ziel: Path, land: str, modus: str = "neu") -> 
                 e.aktualisiert += 1
             else:
                 e.unveraendert += 1
-    e.nicht_mehr_in_quelle = sum(
-        1 for p in ordner.iterdir() if p.is_dir() and p.name not in gesehen
-    )
+    e.nicht_mehr_in_quelle = len(set(vorhanden) - gesehen)
     return e
 
 
-def umstellen(ziel: Path) -> tuple[int, int]:
-    """Altes Format (daten/RP/RP-<id>.json) → ein Ordner je Sportstätte. Einmalig.
+@dataclass
+class Umstellung:
+    umgestellt: int = 0  # aus einer Datei je Sportstätte (RP-<id>.json)
+    verschoben: int = 0  # Ordner in den Ordner ihres Kreises gebracht
+    anlagen: int = 0  # dabei als eigene Dateien angelegte Sportanlagen
 
-    Von Hand gepflegte Angaben bleiben erhalten; aus der Liste "anlagen" werden einzelne
-    Dateien. Liefert (Sportstätten, Sportanlagen).
+
+def umstellen(ziel: Path, kreis_von: KreisVon) -> Umstellung:
+    """Datenbestand ins aktuelle Format bringen; kann jederzeit wieder laufen.
+
+    - daten/RP/RP-<id>.json (eine Datei je Sportstätte mit Liste "anlagen") → Ordner mit
+      einer Datei je Anlage; von Hand gepflegte Angaben bleiben erhalten
+    - Ordner einer Sportstätte, die nicht im Ordner ihres Kreises liegen (ohne Kreis-Ebene
+      oder nach einer Änderung der Lage), werden dorthin verschoben
     """
-    staetten = anlagen = 0
-    for alt in _altes_format(ziel):
-        d = json.loads(alt.read_text(encoding="utf-8"))
-        land = alt.parent.name
-        sid = staette_id(str(d.get("id") or alt.stem).removeprefix(f"{land}-"))
-        d["id"] = sid
-        d["anlagen"] = anlagen_aus([a.get("bezeichnung", "") for a in d.get("anlagen") or []])
-        st_ordner = alt.parent / sid
-        if st_ordner.exists():
-            raise ValueError(f"{st_ordner} gibt es schon – {alt} bitte von Hand zusammenführen.")
-        st_ordner.mkdir()
-        for name, text in aufteilen(d).items():
-            (st_ordner / name).write_text(text, encoding="utf-8")
-        alt.unlink()
-        staetten += 1
-        anlagen += len(d["anlagen"])
-    return staetten, anlagen
+    u = Umstellung()
+    for land in sorted(p for p in Path(ziel).iterdir() if p.is_dir()):
+        for alt in sorted(land.glob("*.json")):
+            d = json.loads(alt.read_text(encoding="utf-8"))
+            sid = staette_id(str(d.get("id") or alt.stem).removeprefix(f"{land.name}-"))
+            d["id"] = sid
+            bez = [a.get("bezeichnung", "") for a in d.get("anlagen") or []]
+            d["anlagen"] = anlagen_aus(bez)
+            st_ordner = land / _kreis_von_daten(d, kreis_von) / sid
+            if st_ordner.exists():
+                raise ValueError(
+                    f"{st_ordner} gibt es schon – {alt} bitte von Hand zusammenführen."
+                )
+            st_ordner.mkdir(parents=True)
+            for name, text in aufteilen(d).items():
+                (st_ordner / name).write_text(text, encoding="utf-8")
+            alt.unlink()
+            u.umgestellt += 1
+            u.anlagen += len(d["anlagen"])
+        # Ordner von Sportstätten: direkt unter dem Land oder im falschen Kreis
+        kandidaten = [p.parent for p in land.glob("*/*_meta.json")]
+        kandidaten += [p.parent for p in land.glob("*/*/*_meta.json")]
+        for st_ordner in sorted(kandidaten):
+            meta = meta_datei(st_ordner)
+            if not meta.exists():
+                continue
+            soll = land / _kreis_von_daten(_lies_json(meta), kreis_von) / st_ordner.name
+            if soll != st_ordner:
+                if soll.exists():
+                    raise ValueError(f"{soll} gibt es schon – {st_ordner} bitte von Hand prüfen.")
+                soll.parent.mkdir(parents=True, exist_ok=True)
+                shutil.move(st_ordner, soll)
+                u.verschoben += 1
+        for leer in land.iterdir():  # leere Kreis-Ordner
+            if leer.is_dir() and not any(leer.iterdir()):
+                leer.rmdir()
+    return u
 
 
 README_DATEN = """# Datenbestand
 
-Ein Ordner je Sportstätte, nach Land sortiert. Darin beschreibt `<id>_meta.json` die
-Sportstätte (Standort, Name, Betreiber …) und je Sportanlage eine weitere Datei
+Ein Ordner je Kreis, darin ein Ordner je Sportstätte. In dem beschreibt `<id>_meta.json` die
+Sportstätte (Standort, Name, Betreiber …), und jede Sportanlage hat eine weitere Datei
 `<anlage-id>.json` (z. B. ein Großspielfeld, eine Rundlaufbahn):
 
-    RP/333d6875-…/333d6875-…_meta.json
-    RP/333d6875-…/8f0c41d2-….json
+    RP/07111-koblenz/333d6875-…/333d6875-…_meta.json
+    RP/07111-koblenz/333d6875-…/8f0c41d2-….json
 
 Jede Sportanlage gehört zu genau einer Sportstätte: Sie liegt in deren Ordner und nennt sie
 in `sportstaette_id`. Diese Dateien sind die Quelle der Daten: Änderungen werden hier
@@ -345,6 +435,8 @@ Webseite auf der Karte.
   `src/sportstaettenatlas/anlagen.py`
 - Neue Sportanlage: Datei mit neuer UUID als Namen in den Ordner der Sportstätte legen
   (`id`, `sportstaette_id`, `typ`)
+- Neue Sportstätte: Ordner im Ordner ihres Kreises; liegt sie nach einer Änderung der Lage
+  in einem anderen Kreis, bringt `uv run sportstaettenatlas umstellen` sie dorthin
 - Neue Quelldateien einlesen: `uv run sportstaettenatlas bestand <datei>`
   (legt nur fehlende Sportstätten an; `--modus aktualisieren` überschreibt vorhandene)
 - Kontaktdaten (E-Mail-Adressen, Telefonnummern) gehören nicht hierher.
@@ -400,13 +492,15 @@ def _lies_json(datei: Path) -> dict:
 
 
 def lies_bestand(ordner: Path) -> Iterator[dict]:
-    """Alle Sportstätten unter daten/<LAND>/<id>/, jeweils mit ihren Anlagen ("anlagen").
+    """Alle Sportstätten unter daten/<LAND>/<Kreis>/<id>/, jeweils mit ihren Anlagen.
+
+    Im Ergebnis steht zusätzlich "_ordner" (Kreis-Ordner), um die Einordnung zu prüfen.
 
     Prüft den Aufbau: Jeder Ordner hat seine <id>_meta.json, jede Anlage nennt in
     `sportstaette_id` die Sportstätte ihres Ordners, Dateiname = id.
     """
     _pruefe_format(ordner)
-    for st_ordner in sorted(p for p in Path(ordner).glob("*/*") if p.is_dir()):
+    for st_ordner in sorted(p for p in Path(ordner).glob("*/*/*") if p.is_dir()):
         sid = st_ordner.name
         meta_pfad = meta_datei(st_ordner)
         andere = sorted(p for p in st_ordner.glob("*.json") if p != meta_pfad)
@@ -431,7 +525,17 @@ def lies_bestand(ordner: Path) -> Iterator[dict]:
             if not a.get("typ"):
                 raise ValueError(f"{pfad}: typ fehlt")
             anlagen.append(a)
-        yield {**meta, "anlagen": anlagen}
+        yield {**meta, "anlagen": anlagen, "_ordner": st_ordner.parent.name}
+
+
+def falsch_einsortiert(datensaetze, kreis_von: KreisVon) -> list[tuple[str, str, str]]:
+    """Sportstätten, die nicht im Ordner ihres Kreises liegen: [(id, ist, soll)]."""
+    out = []
+    for d in datensaetze:
+        soll = _kreis_von_daten(d, kreis_von)
+        if d.get("_ordner") and d["_ordner"] != soll:
+            out.append((d["id"], d["_ordner"], soll))
+    return out
 
 
 def _anlage_kurz(a: dict) -> list:

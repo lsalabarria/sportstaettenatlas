@@ -1,7 +1,7 @@
 # Sportstättenatlas Rheinland-Pfalz
 
-Ein offener Sportstättenatlas: Der **Datenbestand** liegt im Git, ein Ordner je Sportstätte
-mit einer Datei je Sportanlage, eine **statische Webseite** auf GitHub Pages zeigt ihn als Karte, Liste und
+Ein offener Sportstättenatlas: Der **Datenbestand** liegt im Git, nach Kreisen geordnet, ein
+Ordner je Sportstätte mit einer Datei je Sportanlage, eine **statische Webseite** auf GitHub Pages zeigt ihn als Karte, Liste und
 Übersicht und nimmt Vorschläge über LimeSurvey entgegen. **Analysen** reichern den Bestand
 an oder prüfen ihn – zuerst der Abgleich mit dem Liegenschaftskataster (ALKIS). Sie rechnen
 auf dem eigenen Rechner; ihre Ergebnisse erscheinen auf der Webseite im Reiter „Analysen“.
@@ -17,7 +17,7 @@ auf dem eigenen Rechner; ihre Ergebnisse erscheinen auf der Webseite im Reiter �
 ## Aufbau
 
 ```
-daten/                       Datenbestand: ein Ordner je Sportstätte, darin ihre Sportanlagen
+daten/                       Datenbestand: Kreis / Sportstätte / ihre Sportanlagen
 docs/                        Webseite für GitHub Pages (von `seite` erzeugt, siehe unten)
 data/                        Arbeitsordner der Analysen: raw/, cache/, out/ (nicht im Git)
 .github/ISSUE_TEMPLATE/      Vorlage für „Bug melden“ (fehler.yml)
@@ -43,16 +43,23 @@ uv sync
 
 ## Datenbestand im Git (`bestand`)
 
-Jede Sportstätte hat einen eigenen Ordner, benannt nach ihrer UUID aus dem Atlas. Darin
-beschreibt `<id>_meta.json` die Sportstätte, und jede Sportanlage hat eine eigene Datei:
+Der Bestand ist nach Kreisen geordnet (Kreisschlüssel und Name, z. B. `07111-koblenz`,
+`07137-mayen-koblenz`). Darin hat jede Sportstätte einen eigenen Ordner, benannt nach ihrer
+UUID aus dem Atlas. Darin beschreibt `<id>_meta.json` die Sportstätte, und jede Sportanlage
+hat eine eigene Datei:
 
 ```
-daten/RP/9c24bfa6-71c1-4164-b226-061f0a139997/
+daten/RP/07111-koblenz/9c24bfa6-71c1-4164-b226-061f0a139997/
   9c24bfa6-71c1-4164-b226-061f0a139997_meta.json   Sportstätte: Name, Kategorie, Adresse, Lage,
                                                    Betreiber, Eigentümer, Sportarten …
   17abb3c4-7493-5549-a6ca-f432ef00fba3.json         Sportanlage, z. B. ein Großspielfeld
   1fb06acd-a17f-5d6b-9031-9305ca1df42f.json         Sportanlage, z. B. eine Rundlaufbahn
 ```
+
+In welchen Kreis eine Sportstätte gehört, ergibt sich aus ihrer Lage und den
+Verwaltungsgebieten (VG250, wie bei der Webseite). Sportstätten außerhalb von
+Rheinland-Pfalz landen in `ohne-kreis`. Mit dieser Ebene bleibt jeder Ordner unter 1.000
+Einträgen; mehr zeigt die GitHub-Weboberfläche je Ordner nicht an.
 
 Eine Sportanlage hat diese Felder (leere werden weggelassen):
 
@@ -72,7 +79,8 @@ vorgenommen, direkt auf GitHub oder per Pull Request, und sind in der Git-Histor
 nachvollziehbar. Eine neue Sportanlage ist eine neue Datei im Ordner der Sportstätte, mit
 einer neuen UUID als Namen. `seite` prüft den Aufbau: Jede Sportanlage muss im Ordner ihrer
 Sportstätte liegen und sie in `sportstaette_id` nennen, und jeder Ordner braucht seine
-`_meta.json`.
+`_meta.json`. Liegt eine Sportstätte nach einer Änderung ihrer Lage in einem anderen Kreis,
+weist `seite` darauf hin, und `umstellen` verschiebt ihren Ordner.
 
 ```bash
 uv run sportstaettenatlas bestand pfad/zum/atlas-export.csv     # erstmalig überführen
@@ -100,12 +108,13 @@ git add daten && git commit -m "Bestand aus dem Atlas-Export übernommen"
 - Weitere Quellformate: in `src/sportstaettenatlas/bestand.py` eine Lesefunktion
   ergänzen und in `LESER` eintragen (`--format`).
 
-**Umstellen vom früheren Format** (eine Datei `daten/RP/RP-<id>.json` je Sportstätte mit
-einer Liste `anlagen`): einmalig
+**Umstellen** vom früheren Format (eine Datei `daten/RP/RP-<id>.json` je Sportstätte mit
+einer Liste `anlagen`, oder Ordner ohne Kreis-Ebene). Das lässt sich jederzeit wiederholen
+und ordnet dabei auch Sportstätten in den richtigen Kreis ein:
 
 ```bash
 uv run sportstaettenatlas umstellen
-git add -A daten && git commit -m "Datenbestand: Ordner je Sportstätte"
+git add -A daten && git commit -m "Datenbestand umgestellt"
 ```
 
 Von Hand gepflegte Angaben bleiben erhalten; die IDs verlieren das Präfix `RP-`.

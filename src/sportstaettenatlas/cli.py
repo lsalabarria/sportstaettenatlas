@@ -1,7 +1,7 @@
 """Kommandozeile.
 
 sportstaettenatlas bestand QUELLE   Atlas-Export in den Datenbestand daten/ überführen
-sportstaettenatlas umstellen        daten/ ins Format „ein Ordner je Sportstätte“ bringen
+sportstaettenatlas umstellen        daten/ ins aktuelle Format bringen (Kreis/Sportstätte/…)
 sportstaettenatlas seite            Webseite für GitHub Pages (docs/) bauen
 sportstaettenatlas alkis …          Analyse ALKIS-Abgleich (laden, bauen, abgleich …)
 """
@@ -17,9 +17,33 @@ from .analysen.alkis import cli as alkis_cli
 from .hilfen import DATEN
 
 
+def _lade_gebiete(args, pflicht: bool):
+    """Verwaltungsgebiete (VG250) laden – für die Gebietsauswahl und die Kreis-Ordner.
+
+    pflicht=False: bei einem Fehler None (die Webseite geht auch ohne Gebiete).
+    """
+    from . import gebiete as gb
+
+    if args.gebiete == "aus":
+        if pflicht:
+            raise SystemExit("Die Kreis-Ordner brauchen die Verwaltungsgebiete (--gebiete).")
+        return None
+    quelle = None if args.gebiete == "auto" else Path(args.gebiete)
+    name = f"gebiete_{args.land}{'' if quelle is None else '_' + quelle.stem}.json"
+    try:
+        return gb.lade(args.land, DATEN / "cache" / name, quelle)
+    except Exception as exc:  # noqa: BLE001 – Netz, Dienst geändert …
+        if pflicht:
+            raise SystemExit(
+                f"Verwaltungsgebiete nicht verfügbar ({exc}). Ohne Netz: --gebiete pfad/zu/vg250.gpkg"
+            ) from None
+        print(f"Hinweis: Verwaltungsgebiete nicht verfügbar ({exc}) – ohne Gebietsauswahl.")
+        return None
+
+
 def cmd_bestand(args):
-    """Quelldatei (z. B. Atlas-Export) in den Datenbestand daten/<LAND>/*.json überführen."""
-    from .bestand import LESER, README_DATEN, erkenne_format, schreibe_bestand
+    """Quelldatei (z. B. Atlas-Export) in den Datenbestand daten/<LAND>/<Kreis>/ überführen."""
+    from .bestand import LESER, README_DATEN, erkenne_format, kreis_ordner, schreibe_bestand
 
     quelle, ziel = Path(args.quelle), Path(args.ziel)
     if not quelle.is_file():
@@ -27,7 +51,8 @@ def cmd_bestand(args):
     fmt = args.format if args.format != "auto" else erkenne_format(quelle)
     land = args.land.upper()
     try:
-        e = schreibe_bestand(LESER[fmt](quelle, land), ziel, land, args.modus)
+        kreis_von = kreis_ordner(_lade_gebiete(args, pflicht=True))
+        e = schreibe_bestand(LESER[fmt](quelle, land), ziel, land, kreis_von, args.modus)
     except ValueError as exc:
         raise SystemExit(str(exc)) from None
     if not (ziel / "README.md").exists():
@@ -46,7 +71,7 @@ def cmd_bestand(args):
     if e.doppelt:
         print(f"  doppelte ID:         {e.doppelt} (nur der erste Eintrag übernommen)")
     if e.nicht_mehr_in_quelle:
-        print(f"  nicht in der Quelle: {e.nicht_mehr_in_quelle} Dateien (bleiben unverändert)")
+        print(f"  nicht in der Quelle: {e.nicht_mehr_in_quelle} Sportstätten (bleiben unverändert)")
     if e.entfernt:
         print(
             "  entfernt (enthielt E-Mail-Adresse): "
@@ -55,25 +80,32 @@ def cmd_bestand(args):
 
 
 def cmd_umstellen(args):
-    """Einmalig: daten/<LAND>/<id>.json → daten/<LAND>/<id>/ mit einer Datei je Anlage."""
-    from .bestand import README_DATEN, umstellen
+    """daten/ ins aktuelle Format bringen: Kreis-Ordner, ein Ordner je Sportstätte, eine
+    Datei je Sportanlage. Kann jederzeit wieder laufen (ordnet verschobene Sportstätten ein)."""
+    from .bestand import README_DATEN, kreis_ordner, umstellen
 
     ziel = Path(args.ziel)
-    staetten, anlagen = umstellen(ziel)
-    if not staetten:
-        print(f"{ziel}/: nichts umzustellen.")
+    try:
+        u = umstellen(ziel, kreis_ordner(_lade_gebiete(args, pflicht=True)))
+    except ValueError as exc:
+        raise SystemExit(str(exc)) from None
+    if not (u.umgestellt or u.verschoben):
+        print(f"{ziel}/: alles schon im aktuellen Format.")
         return
     (ziel / "README.md").write_text(README_DATEN, encoding="utf-8")
-    print(f"{ziel}/: {staetten} Sportstätten in eigene Ordner, {anlagen} Sportanlagen als Dateien.")
-    print(
-        'Prüfen und übernehmen: git add -A daten && git commit -m "Datenbestand: Ordner je Sportstätte"'
-    )
+    if u.umgestellt:
+        print(
+            f"{ziel}/: {u.umgestellt} Sportstätten umgestellt, {u.anlagen} Sportanlagen als Dateien."
+        )
+    if u.verschoben:
+        print(f"{ziel}/: {u.verschoben} Sportstätten in den Ordner ihres Kreises verschoben.")
+    print('Prüfen und übernehmen: git add -A daten && git commit -m "Datenbestand umgestellt"')
 
 
 def cmd_seite(args):
     """Statische Webseite für GitHub Pages (Ordner docs/) erzeugen."""
     from . import gebiete as gb
-    from .bestand import lies_bestand
+    from .bestand import falsch_einsortiert, kreis_ordner, lies_bestand
     from .seite import schreibe_webseite
 
     ausgabe = Path(args.ausgabe)
@@ -88,16 +120,17 @@ def cmd_seite(args):
     else:
         print(f"Hinweis: kein Datenbestand unter {args.bestand}/ – zuerst `bestand` ausführen.")
 
-    gebiete = ars_von = None
-    if args.gebiete != "aus":
-        quelle = None if args.gebiete == "auto" else Path(args.gebiete)
-        name = f"gebiete_{args.land}{'' if quelle is None else '_' + quelle.stem}.json"
-        try:
-            gebiete = gb.lade(args.land, DATEN / "cache" / name, quelle)
-            ars_von = gb.Zuordnung(gebiete["gemeinde"]).ars
-            vermerke.append(gb.QUELLENVERMERK.format(jahr=dt.datetime.now(dt.UTC).year))
-        except Exception as exc:  # noqa: BLE001 – Netz, Dienst geändert …: Seite trotzdem bauen
-            print(f"Hinweis: Verwaltungsgebiete nicht verfügbar ({exc}) – ohne Gebietsauswahl.")
+    gebiete = _lade_gebiete(args, pflicht=False)
+    ars_von = None
+    if gebiete:
+        ars_von = gb.Zuordnung(gebiete["gemeinde"]).ars
+        vermerke.append(gb.QUELLENVERMERK.format(jahr=dt.datetime.now(dt.UTC).year))
+        if bestand and (falsch := falsch_einsortiert(bestand, kreis_ordner(gebiete))):
+            print(
+                f"Hinweis: {len(falsch)} Sportstätten liegen nicht im Ordner ihres Kreises "
+                f"(z. B. {falsch[0][0]}: {falsch[0][1]} statt {falsch[0][2]}) – "
+                "`sportstaettenatlas umstellen` ordnet sie ein."
+            )
 
     analysen = {}
     alkis = alkis_cli.fuer_webseite(Path(args.alkis), args.land, ars_von)
@@ -169,6 +202,14 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("-v", "--verbose", action="store_true")
     sub = p.add_subparsers(dest="befehl", required=True)
 
+    def gebiete_option(sp):
+        sp.add_argument(
+            "--gebiete",
+            default="auto",
+            help="Verwaltungsgebiete: auto (BKG-WFS, einmal geladen), Pfad zu einem "
+            "VG250-GeoPackage oder aus",
+        )
+
     sp = sub.add_parser(
         "bestand", help="Quelldatei (z. B. Atlas-Export) in den Datenbestand daten/ überführen"
     )
@@ -182,12 +223,17 @@ def main(argv: list[str] | None = None) -> None:
         choices=["neu", "aktualisieren"],
         help="neu: nur fehlende anlegen (Standard); aktualisieren: vorhandene überschreiben",
     )
+    gebiete_option(sp)
     sp.set_defaults(func=cmd_bestand)
 
     sp = sub.add_parser(
-        "umstellen", help="Datenbestand einmalig ins Format „ein Ordner je Sportstätte“ bringen"
+        "umstellen",
+        help="Datenbestand ins aktuelle Format bringen (Kreis/Sportstätte/Anlagen), "
+        "verschobene Sportstätten einordnen",
     )
     sp.add_argument("--ziel", default="daten", help="Ordner des Datenbestands (Standard: daten)")
+    sp.add_argument("--land", default="rp")
+    gebiete_option(sp)
     sp.set_defaults(func=cmd_umstellen)
 
     sp = sub.add_parser("seite", help="Webseite für GitHub Pages (Ordner docs/) erzeugen")
@@ -202,12 +248,7 @@ def main(argv: list[str] | None = None) -> None:
     )
     sp.add_argument("--ausgabe", default="docs", help="Ordner der Webseite (Standard: docs)")
     sp.add_argument("--titel", default="Sportstättenatlas Rheinland-Pfalz")
-    sp.add_argument(
-        "--gebiete",
-        default="auto",
-        help="Verwaltungsgebiete: auto (BKG-WFS, einmal geladen), Pfad zu einem "
-        "VG250-GeoPackage oder aus",
-    )
+    gebiete_option(sp)
     sp.add_argument("--vorschau", action="store_true", help="danach lokal im Browser zeigen")
     sp.add_argument("--port", type=int, default=8000)
     sp.set_defaults(func=cmd_seite)
