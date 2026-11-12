@@ -6,19 +6,24 @@ window.KONFIG = {
 
   // LimeSurvey-Umfrage für Vorschläge. „Weiter zu LimeSurvey“ im Reiter „Vorschlag“ öffnet
   // sie und füllt die Fragen mit den Werten des Formulars (newtest=Y hängt die Seite an).
-  vorschlag_url: "https://limesurvey.hs-koblenz.de/index.php/992924?lang=de",
+  vorschlag_url: "https://limesurvey.hs-koblenz.de/index.php/718524?lang=de",
   // Welches Feld des Formulars in welche Frage geht: Feld: "Fragecode". Nur diese Felder
-  // werden übertragen. Weitere Felder: art id quelle strasse hausnummer adresszusatz plz ort
-  // adresse ars gemeinde lat lon oeffentlicher_zugang schulsport zuschauerplaetze sportarten
-  // anlagen eigentuemer betreiber website anmerkung geaendert dubletten
+  // werden übertragen (passend zur Umfrage sportstaette_vorschlagen.lss).
   vorschlag_felder: {
-    name: "Q00",              // Name der Sportstätte
-    kategorie: "G01Q02",      // Sportstättenkategorie
-    betriebsstatus: "G01Q03", // Betriebsstatus
-    lage: "G01Q04",           // Lage als "Breite, Länge"
+    art: "SSart", id: "SSid", geaendert: "SSgeaendert", quelle: "SSquelle",
+    name: "SSname", kategorie: "SSkategorie", betriebsstatus: "SSstatus",
+    strasse: "SSstrasse", hausnummer: "SShausnr", adresszusatz: "SSzusatz",
+    plz: "SSplz", ort: "SSort", gemeinde: "SSgemeinde", ars: "SSars",
+    lat: "SSlat", lon: "SSlon",
+    oeffentlicher_zugang: "SSoeffentlich", schulsport: "SSschulsport",
+    zuschauerplaetze: "SSzuschauer", sportarten: "SSsportarten", anlagen: "SSanlagen",
+    eigentuemer: "SSeigentuemer", betreiber: "SSbetreiber", website: "SSwebsite",
+    anmerkung: "SSanmerkung", dubletten: "SSdubletten",
   },
-  // Nur für die Karte ohne Bestand (eine Datei): Parameter für die Kennung der Sportstätte
-  vorschlag_parameter: "",
+
+  // Knopf „Bug melden“: neues Ticket auf GitHub mit der Vorlage .github/ISSUE_TEMPLATE/fehler.yml.
+  // Leer = kein Knopf.
+  fehler_url: "https://github.com/lsalabarria/sportstaettenatlas/issues/new?template=fehler.yml",
 
   // Pflichtangaben für öffentliche Webseiten. Entwürfe liegen als impressum.html und
   // datenschutz.html bei (gelb markierte Stellen ergänzen). Alternativ hier die Adressen
