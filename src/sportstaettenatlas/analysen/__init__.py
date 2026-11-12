@@ -1,12 +1,7 @@
-"""Analysen: Auswertungen, die auf dem Datenbestand oder zusätzlichen Quellen rechnen.
+"""Analysen: Auswertungen, die den Datenbestand prüfen oder ergänzen.
 
-Jede Analyse ist ein Unterpaket mit
-- `cli.py`: Befehle unter `sportstaettenatlas <name> …` (Funktion `befehle(sub)`),
-- `karte.py` (o. ä.): `webdaten(...)` liefert die Dateien für die Webseite; `seite`
-  schreibt sie nach docs/daten/analysen/<name>/ und trägt die Analyse in
-  docs/daten/analysen/index.json ein,
-- im Browser einen Eintrag in ANALYSEN in web/analysen.js.
-
-Bisher: alkis – Sportstätten aus dem Liegenschaftskataster (ALKIS) ableiten und mit dem
-Atlas abgleichen.
+Eine Analyse ist ein Unterpaket mit einem Befehl (`cli.py`: `befehle(sub)`) und einer
+Funktion, die die Dateien für die Webseite liefert; `seite` schreibt sie nach
+docs/daten/analysen/<name>/. Im Browser gehört dazu ein Eintrag in ANALYSEN
+(web/analysen.js). Bisher: alkis – Abgleich mit dem Liegenschaftskataster.
 """

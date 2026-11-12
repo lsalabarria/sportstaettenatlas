@@ -1,61 +1,23 @@
-"""Daten des bisherigen Sportstättenatlas RLP lesen (CSV-Export und älteres Import-Format).
+"""Export des bisherigen Sportstättenatlas RLP lesen (CSV, eine Zeile je Sportstätte).
 
-Zwei CSV-Formate werden gelesen:
-
-1. Import-Format: einheitliche Spalten sportkomplex_*, sportstaette_* (mit
-   utm32nrechts/utm32nhoch = EPSG:25832) und sportanlage_*; je Zeile eine Sportanlage.
-   Die IDs gelten nur innerhalb einer Datei. Mehrere Dateien (ein Ordner) werden
-   zusammengeführt; kommt eine Sportstätte mehrfach vor, gewinnt die jüngste Datei
-   (Datum im Dateinamen).
-
-Achtung Begriffe: Das Altsystem hat Sportkomplex → Sportstätte → Sportanlage. Eine
-Altsystem-"Sportstätte" (z. B. "Sportplatz Musterdorf" mit Großspielfeld und
-Laufbahn) entspricht in etwa unserer Sportstätte.
-
-2. Export aus dem laufenden Atlas (eine Zeile je Sportstätte, Spalten ID, Name, …,
-   Sportanlagen, Latitude, Longitude). Achtung: Unter "Latitude"/"Longitude" stehen dort
-   UTM-Koordinaten (Hochwert/Rechtswert, EPSG:25832); echte Grad-Werte werden erkannt
-   und umgerechnet.
-
-Die Dateien enthalten Kontaktdaten und gehören nicht ins Repository.
+Spalten ID, Name, Sportstättenkategorie, …, Sportanlagen, Latitude, Longitude. Achtung:
+Unter "Latitude"/"Longitude" stehen UTM-Werte (Hochwert/Rechtswert, EPSG:25832); echte
+Grad-Werte werden erkannt. Die E-Mail-Spalte wird nie gelesen. Der Export enthält
+Kontaktdaten und gehört nicht ins Repository.
 """
 
 from __future__ import annotations
 
 import csv
+import functools
 import io
 import re
+from collections.abc import Iterator
 from pathlib import Path
 
-import pandas as pd
+from . import anlagen as anlagen_typen
 
-QUELLE = "Sportstättenatlas RLP"
-
-PFLICHT = {"sportstaette_id", "sportstaette_bezeichnung", "utm32nrechts", "utm32nhoch"}
-
-# grobe Zuordnung Altsystem-Sportstättentyp → unsere Typgruppe (für den Typvergleich)
-TYP_ZU_GRUPPE = {
-    "sportplatz": "spielfeld",
-    "sporthalle": "halle",
-    "schwimmsportstätte": "becken",
-    "tennissportstätte": "spielfeld",
-    "reitsportstätte": "spezial",
-    "schießsportstätte": "spezial",
-    "roll- und skatesportstätte": "spezial",
-    "öffentlicher sport- und bewegungsraum": "sportgelegenheit",
-    "golfsportstätte": "spezial",
-    "eissportstätte": "eis",
-    "leichtathletiksportstätte": "leichtathletik",
-    "flugsportstätte": "spezial",
-    "radsportstätte": "spezial",
-    "wassersportstätte": "spezial",
-    "sportgelegenheiten in sonstigen gebäuden": "sportgelegenheit",
-    "wintersportstätte": "spezial",
-    "klettersportstätte": "spezial",
-    "motorsportstätte": "spezial",
-    "segelsportstätte": "spezial",
-    # Fitnessstudios führt ALKIS nicht als Sportobjekt → bewusst ohne Gruppe
-}
+PFLICHT = {"ID", "Name", "Sportstättenkategorie", "Latitude", "Longitude"}
 
 
 def _text(roh: bytes) -> str:
@@ -75,178 +37,97 @@ def _zeilen(text: str) -> list[dict]:
     return list(csv.DictReader(io.StringIO(text), dialect=dialekt))
 
 
-def dateien(pfad: Path) -> list[tuple[str, bytes]]:
-    """(Dateiname, Inhalt) der zu lesenden CSVs: eine CSV-Datei oder alle CSVs eines Ordners."""
-    pfad = Path(pfad).expanduser()
-    if not pfad.exists():
-        raise FileNotFoundError(
-            f"{pfad} nicht gefunden (Pfad prüfen, z. B. mit `ls {pfad.parent}`)"
-        )
-    if pfad.is_file() and pfad.suffix.lower() == ".csv":
-        return [(pfad.name, pfad.read_bytes())]
-    if pfad.is_dir():
-        return [(p.name, p.read_bytes()) for p in sorted(pfad.glob("*.csv")) if p.is_file()]
-    raise FileNotFoundError(f"{pfad} ist weder eine CSV-Datei noch ein Ordner mit CSV-Dateien")
-
-
 def _zahl(v: str | None) -> float | None:
-    if not v or not str(v).strip():
-        return None
     try:
-        return float(str(v).strip().replace(",", "."))
+        return float(str(v).strip().replace(",", ".")) if v and str(v).strip() else None
     except ValueError:
         return None
 
 
-def _adresse(z: dict, praefix: str) -> str | None:
-    g = lambda k: (z.get(f"{praefix}_{k}") or "").strip()
-    strasse = " ".join(x for x in (g("strasse"), g("hn")) if x)
-    ort = " ".join(x for x in (g("plz"), g("ort")) if x)
-    return ", ".join(x for x in (strasse, ort) if x) or None
-
-
-def _ags(v: str | None) -> str | None:
-    s = (v or "").strip().split(".")[0]
-    return s.zfill(8) if s.isdigit() else (s or None)
-
-
 def _datum(name: str) -> str:
+    """Stand aus dem Dateinamen: 2026-11-04 oder 04112026."""
     if m := re.search(r"(\d{4}-\d{2}-\d{2})", name):
         return m.group(1)
-    if m := re.search(r"(?<!\d)(\d{2})(\d{2})(20\d{2})(?!\d)", name):  # TTMMJJJJ
+    if m := re.search(r"(?<!\d)(\d{2})(\d{2})(20\d{2})(?!\d)", name):
         return f"{m.group(3)}-{m.group(2)}-{m.group(1)}"
     return ""
 
 
-EXPORT_PFLICHT = {"ID", "Name", "Sportstättenkategorie", "Latitude", "Longitude"}
-# Export-Spalte → unsere Spalte (Zusatzangaben, die im Import-Format fehlen)
-EXPORT_FELDER = {
-    "ID": "alt_atlas_id",
-    "Schulsport": "alt_schulsport",
-    "Öffentlicher Zugang": "alt_oeffentlich",
-    "Zuschauerplätze Gesamt": "alt_zuschauer",
-    "Betriebsstatus": "alt_betriebsstatus",
-    "Name des Eigentümers": "alt_eigentuemer",
-    "Name des Betreibers": "alt_betreiber",
-    "E-Mail": "alt_email",
-    "Webseite": "alt_website",
-    "Sportarten": "alt_sportarten",
-}
+@functools.cache
+def _transformer(von: str, nach: str):
+    from pyproj import Transformer
+
+    return Transformer.from_crs(von, nach, always_xy=True)
 
 
-def _utm(a: float, b: float) -> tuple[float, float]:
-    """(x, y) in EPSG:25832 aus den Export-Spalten Latitude=a, Longitude=b."""
-    if a > 1e5 and b > 1e5:  # UTM, nur falsch beschriftet: a = Hochwert, b = Rechtswert
-        return (b, a) if a > b else (a, b)
-    from pyproj import Transformer  # echte Grad-Werte
+def lage(a: float, b: float) -> dict:
+    """Spalten Latitude=a, Longitude=b → {"lon", "lat"} in WGS84."""
+    if a > 1e5 and b > 1e5:  # UTM, nur falsch beschriftet: Hochwert und Rechtswert
+        x, y = (b, a) if a > b else (a, b)
+        lon, lat = _transformer("EPSG:25832", "EPSG:4326").transform(x, y)
+    else:
+        lon, lat = b, a
+    return {"lon": round(lon, 6), "lat": round(lat, 6)}
 
-    return Transformer.from_crs("EPSG:4326", "EPSG:25832", always_xy=True).transform(b, a)
+
+def _ja_nein(wert: str) -> str | None:
+    w = wert.lower()
+    return w if w in ("ja", "nein") else None
 
 
-def _aus_export(name: str, zeilen: list[dict]) -> list[dict]:
+def _ganzzahl(wert: str) -> int | None:
+    z = _zahl(wert)
+    return int(z) if z is not None and z == int(z) and z >= 0 else None
+
+
+def _liste(wert: str) -> list[str]:
+    """ "A, B (x, y), C" → ["A", "B (x, y)", "C"]; Kommas in Klammern trennen nicht,
+    "Weit-, Dreisprunganlage" bleibt eine Anlage."""
+    return anlagen_typen.zusammenfuegen(re.split(r",\s*(?![^()]*\))", wert or ""))
+
+
+def anlagen_aus(bezeichnungen: list[str]) -> list[dict]:
+    """Bezeichnungen des Atlas → Sportanlagen mit einheitlichem Typ; eine abweichende
+    Schreibweise ("Großspielfeld (ab 5.000 m²)") bleibt unter quellen.atlas_rlp."""
     out = []
+    for b in anlagen_typen.zusammenfuegen(bezeichnungen):
+        t = anlagen_typen.typ(b)
+        out.append({"typ": t, **({"quellen": {"atlas_rlp": {"bezeichnung": b}}} if b != t else {})})
+    return out
+
+
+def lies_export(pfad: Path, lage_aus=lage) -> Iterator[dict]:
+    """Atlas-Export → Sportstätten im Format des Datenbestands (mit Liste "anlagen")."""
+    pfad = Path(pfad)
+    zeilen = _zeilen(_text(pfad.read_bytes()))
+    if not zeilen or not PFLICHT <= set(zeilen[0]):
+        raise ValueError(f"{pfad.name}: Spalten {sorted(PFLICHT)} fehlen – kein Atlas-Export?")
+    stand = _datum(pfad.name)
     for z in zeilen:
-        a, b = _zahl(z.get("Latitude")), _zahl(z.get("Longitude"))
-        if a is None or b is None:
-            continue
-        x, y = _utm(a, b)
 
         def g(k: str, z: dict = z) -> str:
             return (z.get(k) or "").strip()
 
-        strasse = " ".join(v for v in (g("Straße"), g("Hausnummer")) if v)
-        ort = " ".join(v for v in (g("PLZ"), g("Stadt")) if v)
-        st = {
-            "alt_name": g("Name") or None,
-            "alt_typ": g("Sportstättenkategorie") or None,
-            "alt_komplex": None,
-            "alt_adresse": ", ".join(v for v in (strasse, ort) if v) or None,
-            "alt_ags": None,
-            "alt_datei": name,
-            "alt_stand": _datum(name),
-            "x": x,
-            "y": y,
-            # Liste "A, B, C"; Klammern wie "Großspielfeld (ab 5.000 m²)" bleiben ganz
-            "_anlagen": [
-                t.strip() for t in re.split(r",\s*(?![^()]*\))", g("Sportanlagen")) if t.strip()
-            ],
+        a, b = _zahl(g("Latitude")), _zahl(g("Longitude"))
+        yield {
+            "id": re.sub(r"[^A-Za-z0-9_-]+", "-", g("ID")).strip("-").lower(),
+            "name": g("Name"),
+            "kategorie": g("Sportstättenkategorie"),
+            "adresse": {
+                "strasse": g("Straße"),
+                "hausnummer": g("Hausnummer"),
+                "plz": g("PLZ"),
+                "ort": g("Stadt"),
+            },
+            "lage": lage_aus(a, b) if a is not None and b is not None else None,
+            "oeffentlicher_zugang": _ja_nein(g("Öffentlicher Zugang")),
+            "schulsport": _ja_nein(g("Schulsport")),
+            "zuschauerplaetze": _ganzzahl(g("Zuschauerplätze Gesamt")),
+            "betriebsstatus": g("Betriebsstatus"),
+            "eigentuemer": g("Name des Eigentümers"),
+            "betreiber": g("Name des Betreibers"),
+            "website": g("Webseite"),
+            "sportarten": _liste(g("Sportarten")),
+            "anlagen": anlagen_aus(_liste(g("Sportanlagen"))),
+            "quellen": {"atlas_rlp": {"id": g("ID"), "datei": pfad.name, "stand": stand}},
         }
-        for spalte, ziel in EXPORT_FELDER.items():
-            st[ziel] = g(spalte) or None
-        out.append(st)
-    return out
-
-
-def lade_tabelle(pfad: Path, land_ags: str = "07") -> pd.DataFrame:
-    """Eine Zeile je Altsystem-Sportstätte (über alle Import-Dateien dedupliziert)."""
-    staetten: dict[tuple, dict] = {}
-    for name, roh in dateien(pfad):
-        zeilen = _zeilen(_text(roh))
-        if zeilen and EXPORT_PFLICHT <= set(zeilen[0]):
-            for st in _aus_export(name, zeilen):  # Export: eine Zeile je Sportstätte, ID eindeutig
-                staetten[("id", st["alt_atlas_id"])] = st
-            continue
-        if not zeilen or not PFLICHT <= set(zeilen[0]):
-            continue
-        je_id: dict[str, dict] = {}
-        for z in zeilen:
-            x, y = _zahl(z.get("utm32nrechts")), _zahl(z.get("utm32nhoch"))
-            if x is None or y is None:
-                continue
-            sid = (z.get("sportstaette_id") or "").strip()
-            st = je_id.setdefault(
-                sid,
-                {
-                    "alt_name": (z.get("sportstaette_bezeichnung") or "").strip() or None,
-                    "alt_typ": (z.get("sportstaette_typ_text") or "").strip() or None,
-                    "alt_komplex": (z.get("sportkomplex_bezeichnung") or "").strip() or None,
-                    "alt_adresse": _adresse(z, "sportstaette") or _adresse(z, "sportkomplex"),
-                    "alt_ags": _ags(z.get("AGS")),
-                    "alt_datei": name,
-                    "alt_stand": _datum(name),
-                    "x": x,
-                    "y": y,
-                    "_anlagen": [],
-                },
-            )
-            if typ := (z.get("sportanlage_typ_text") or "").strip():
-                st["_anlagen"].append(typ)
-        for st in je_id.values():
-            # gleiche Stätte in mehreren Import-Runden: jüngste Datei gewinnt
-            schluessel = (round(st["x"]), round(st["y"]), (st["alt_name"] or "").casefold())
-            alt = staetten.get(schluessel)
-            if alt is None or st["alt_stand"] >= alt["alt_stand"]:
-                staetten[schluessel] = st
-
-    df = pd.DataFrame(list(staetten.values()))
-    if not df.empty and "alt_ags" in df:
-        # Der Bäder-Import enthält auch NRW; nur Rheinland-Pfalz (AGS 07…) behalten
-        df = df[df["alt_ags"].isna() | df["alt_ags"].str.startswith(land_ags)]
-    if df.empty:
-        return pd.DataFrame(columns=["alt_id", "alt_name", "alt_typ", "x", "y"])
-    df["alt_anzahl_anlagen"] = df["_anlagen"].map(len)
-    df["alt_anlagentypen"] = df["_anlagen"].map(
-        lambda a: (
-            "; ".join(
-                f"{n}× {t}" if n > 1 else t
-                for t, n in pd.Series(a, dtype=object).value_counts().items()
-            )
-            or None
-        )
-    )
-    df["alt_typgruppe"] = df["alt_typ"].map(
-        lambda t: TYP_ZU_GRUPPE.get(str(t).strip().lower()) if t else None  # lower: ß bleibt
-    )
-    df = df.drop(columns="_anlagen").sort_values(["alt_stand", "alt_datei"]).reset_index(drop=True)
-    df.insert(0, "alt_id", [f"ALT{i + 1:06d}" for i in range(len(df))])
-    return df
-
-
-def lade(pfad: Path, crs: str = "EPSG:25832", land_ags: str = "07"):
-    """Altbestand als GeoDataFrame (Punkte in UTM32)."""
-    import geopandas as gpd
-
-    df = lade_tabelle(pfad, land_ags)
-    return gpd.GeoDataFrame(
-        df.drop(columns=["x", "y"]), geometry=gpd.points_from_xy(df["x"], df["y"]), crs=crs
-    )

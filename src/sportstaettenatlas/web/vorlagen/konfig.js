@@ -37,6 +37,6 @@ window.KONFIG = {
   // So sollen Nutzende die Quelle nennen (ergänzt um den Quellenvermerk der ALKIS-Daten)
   namensnennung: "Sportstättenatlas Rheinland-Pfalz",
 
-  // Ortssuche über OpenStreetMap (Nominatim/Photon). false = nur Suche in den eigenen Daten.
+  // Ortssuche über OpenStreetMap (Nominatim). false = nur Suche in den eigenen Daten.
   ortssuche: true,
 };

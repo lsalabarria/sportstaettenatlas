@@ -83,7 +83,7 @@ def test_anreichern_mit_bestand():
     assert atlas.loc[0, "alt_datei"] == "07111-koblenz/a-1"
     assert atlas.loc[0, "alt_typgruppe"] == "spielfeld"
 
-    erg_st, erg_an, bericht = abgleich.anreichern(st, an, sitzung=None, atlas=atlas)
+    erg_st, erg_an, bericht = abgleich.anreichern(st, an, atlas)
     assert len(bericht.abgleich_altbestand) == 1  # a-2 liegt außerhalb des Gebiets
     assert erg_st.loc[0, "verifikation"] == "ALKIS, Sportstättenatlas RLP"
     assert erg_st.loc[0, "verifikation_stufe"] == "bestätigt"
@@ -129,32 +129,6 @@ def test_atlas_bericht(tmp_path):
     assert b["lon"].between(7, 8.5).all() and b["lat"].between(49, 51.5).all()
 
 
-def test_alkis_vor_ort_beschreibung():
-    from sportstaettenatlas.analysen.alkis.vor_ort import beschreibe
-
-    nutzung = gpd.GeoDataFrame(
-        {"nutzart": ["Landwirtschaft", "Wald"], "bez": ["Grünland", None], "name": [None, None]},
-        geometry=[box(X, Y, X + 100, Y + 100), box(X + 100, Y, X + 200, Y + 100)],
-        crs=CRS,
-    )
-    gebaeude = gpd.GeoDataFrame(
-        {
-            "funktion": ["Land- und forstwirtschaftliches Betriebsgebäude", "Wohnhaus"],
-            "name": ["Reithalle Hof", None],
-        },
-        geometry=[box(X + 40, Y + 40, X + 60, Y + 60), box(X + 90, Y + 90, X + 95, Y + 95)],
-        crs=CRS,
-    )
-    e = beschreibe(Point(X + 30, Y + 50), nutzung, gebaeude, radius_m=25)
-    assert e["alkis_nutzung_vor_ort"] == "Landwirtschaft (Grünland)"
-    assert e["alkis_gebaeude_vor_ort"].startswith(
-        "Land- und forstwirtschaftliches Betriebsgebäude „Reithalle Hof“ (10 m)"
-    )
-    assert "Wohnhaus" not in e["alkis_gebaeude_vor_ort"]  # > 25 m entfernt
-    leer = beschreibe(Point(X + 30, Y + 50), nutzung, gebaeude.iloc[0:0], radius_m=25)
-    assert leer["alkis_gebaeude_vor_ort"] == "kein Gebäude im Umkreis von 25 m"
-
-
 def test_nachbarflaechen_werden_mitbestaetigt():
     from sportstaettenatlas.analysen.alkis.abgleich import nachbarn_mitbestaetigen
 
@@ -180,27 +154,3 @@ def test_nachbarflaechen_werden_mitbestaetigt():
     assert erg["alt_id"].iloc[:3].tolist() == ["ALT1"] * 3
     assert erg["alt_bezug"].iloc[0] is None
     assert erg["alt_bezug"].iloc[2] == "Nachbarfläche von ST1"
-
-
-def test_alkis_vor_ort_zwischenspeicher(tmp_path, monkeypatch):
-    import pandas as pd
-
-    from sportstaettenatlas.analysen.alkis import vor_ort
-    from sportstaettenatlas.analysen.alkis.quellen import QUELLEN
-
-    aufrufe = []
-
-    def falsch_lies(sitzung, quelle, typename, bbox):
-        aufrufe.append(typename)
-
-    monkeypatch.setattr(vor_ort, "_lies", falsch_lies)
-    alt = gpd.GeoDataFrame({"alt_id": ["A1"]}, geometry=[Point(X, Y)], crs=CRS)
-    bericht = pd.DataFrame({"alt_id": ["A1"], "status": ["nicht in ALKIS"]})
-    speicher = tmp_path / "vor_ort.json"
-    q = QUELLEN["rp"]
-    e1 = vor_ort.ergaenze(bericht, alt, None, q, speicher_pfad=speicher)
-    assert len(aufrufe) == 2 and speicher.exists()
-    e2 = vor_ort.ergaenze(bericht, alt, None, q, speicher_pfad=speicher)
-    assert len(aufrufe) == 2  # zweiter Lauf: nichts angefragt
-    assert e1.equals(e2)
-    assert e2.at[0, "alkis_gebaeude_vor_ort"].startswith("kein Gebäude")

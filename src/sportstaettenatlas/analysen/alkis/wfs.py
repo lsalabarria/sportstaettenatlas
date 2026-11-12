@@ -20,7 +20,6 @@ if TYPE_CHECKING:  # Geo-Bibliotheken erst bei Bedarf laden
 
 log = logging.getLogger(__name__)
 
-USER_AGENT = "sportstaettenatlas/0.1 (Forschungsprototyp)"
 BBox = tuple[float, float, float, float]
 
 
@@ -205,7 +204,7 @@ def lade(
     muster = list(muster)
     teile = []
 
-    from ...hilfen import Fortschritt
+    from ...hilfen import USER_AGENT, Fortschritt
 
     fb = Fortschritt(len(liste), f"ALKIS {typename}", "Kachel")
     with requests.Session() as s, fb:

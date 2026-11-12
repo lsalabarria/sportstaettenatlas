@@ -9,10 +9,8 @@
     start.js        Suche, Rechtsklick-Menü, Start
     vorlagen/       konfig.js, Impressum, Datenschutz, Download-Seite
 
-Zwei Arten, die Seite zu bauen (`html_seite`):
-- Webseite (GitHub Pages): Stil und Skripte werden nach docs/app/ kopiert und verlinkt,
-  die Daten lädt die Seite aus docs/daten/ nach.
-- Eine Datei (karte.html der ALKIS-Analyse): alles eingebettet, per Doppelklick zu öffnen.
+`html_seite` setzt Titel und Quellenvermerk ein und verlinkt Stil und Skripte, die
+`kopiere_app` nach docs/app/ kopiert; die Daten lädt die Seite aus docs/daten/ nach.
 
 Die Skripte sind normale Browser-Skripte ohne Build-Schritt; sie teilen sich ihre
 Funktionen über den globalen Namensraum und werden in der Reihenfolge SKRIPTE geladen.
@@ -47,51 +45,20 @@ def _version(text: str) -> str:
 
 
 def html_seite(
-    titel: str,
-    quellenvermerk: str = "",
-    eingebettet: dict | None = None,
-    leaflet: str = LEAFLET,
-    app: str = "app",
+    titel: str, quellenvermerk: str = "", leaflet: str = LEAFLET, app: str = "app"
 ) -> str:
-    """Die Seite als HTML-Text. Reine Funktion – testbar ohne Geo-Bibliotheken.
-
-    eingebettet=None: Webseite; Stil und Skripte liegen unter `app/` (siehe kopiere_app).
-    eingebettet={Pfad: Daten}: eine Datei mit allem darin; die Pfade sind die, unter denen
-        die Webseite die Daten aus daten/ laden würde (z. B. "analysen/alkis/…").
-    """
-    if eingebettet is None:
-        stil = f'<link rel="stylesheet" href="{app}/{STIL}?v={_version(datei(STIL))}">'
-        skripte = "\n".join(
-            f'<script src="{app}/{n}?v={_version(datei(n))}"></script>' for n in SKRIPTE
-        )
-        # konfig.js wird auf GitHub von Hand bearbeitet: immer frisch laden, sonst zeigt der
-        # Browser bis zu zehn Minuten den alten Stand aus dem Zwischenspeicher
-        konfig = (
-            "<script>document.write('<script src=\"konfig.js?' + Date.now() + '\"><\\/script>');"
-            "</script>"
-        )
-        laden = (
-            '<div id="laden"><span class="kreisel"></span>'
-            "<span>Sportstätten werden geladen …</span></div>"
-        )
-    else:
-        stil = f"<style>\n{datei(STIL)}</style>"
-        ende = "</" + "script"  # im eingebetteten Skript darf das Ende-Tag nicht vorkommen
-        skripte = "\n".join(
-            "<script>\n" + datei(n).replace(ende, "<\\/script") + "</script>" for n in SKRIPTE
-        )
-        konfig = laden = ""
+    """index.html der Webseite; Stil und Skripte liegen unter `app/` (siehe kopiere_app)."""
+    stil = f'<link rel="stylesheet" href="{app}/{STIL}?v={_version(datei(STIL))}">'
+    skripte = "\n".join(
+        f'<script src="{app}/{n}?v={_version(datei(n))}"></script>' for n in SKRIPTE
+    )
     return (
         datei("index.html")
         .replace("__TITEL__", html.escape(titel))
         .replace("__LEAFLET__", leaflet)
         .replace("__STIL__", stil)
-        .replace("__LADEN__", laden)
-        .replace("__KONFIG__", konfig)
         .replace("__QUELLE__", einbetten(quellenvermerk))
         .replace("__SKRIPTE__", skripte)
-        # zuletzt: eingebettete Daten nie nach Platzhaltern durchsuchen
-        .replace("__EINGEBETTET__", "null" if eingebettet is None else einbetten(eingebettet))
     )
 
 

@@ -2,7 +2,7 @@
 
 // ---------- Suche -----------------------------------------------------------------------
 // Zuerst in den eigenen Daten (Name, Adresse, Betreiber, ID) und den Gebieten, mit Enter auch
-// nach Orten und Adressen über den OSM-Geocoder Nominatim (Ausweich: Photon). Nur auf Enter
+// nach Orten und Adressen über den OSM-Geocoder Nominatim. Nur auf Enter
 // bzw. Klick wird angefragt, nicht bei jedem Tastendruck (Nutzungsregeln von Nominatim).
 const suchMarke = L.layerGroup().addTo(karte);
 let sucheLeeren = () => {};
@@ -39,26 +39,11 @@ async function geocode(q) {
   const nominatim = "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=6"
     + "&countrycodes=de&accept-language=de&q=" + encodeURIComponent(q)
     + `&viewbox=${b.getWest()},${b.getNorth()},${b.getEast()},${b.getSouth()}`;
-  try {
-    const r = await fetch(nominatim);
-    if (!r.ok) throw new Error(r.status);
-    return (await r.json()).map(t => ({ titel: t.name || t.display_name.split(",")[0],
-      sub: t.display_name, grenzen: () => L.latLngBounds(
-        [+t.boundingbox[0], +t.boundingbox[2]], [+t.boundingbox[1], +t.boundingbox[3]]) }));
-  } catch (_) {
-    const c = karte.getCenter();
-    const r = await fetch("https://photon.komoot.io/api/?limit=6&lang=de&q="
-      + encodeURIComponent(q) + `&lat=${c.lat}&lon=${c.lng}`);
-    if (!r.ok) throw new Error("Geocoder nicht erreichbar");
-    return (await r.json()).features.map(f => {
-      const p = f.properties, [lon, lat] = f.geometry.coordinates, e = p.extent;
-      return { titel: p.name || [p.street, p.housenumber].filter(Boolean).join(" "),
-        sub: [p.street && p.name ? p.street : "", p.postcode, p.city, p.state]
-          .filter(Boolean).join(", "),
-        grenzen: () => e ? L.latLngBounds([e[1], e[0]], [e[3], e[2]])
-          : L.latLngBounds([[lat, lon], [lat, lon]]) };
-    });
-  }
+  const r = await fetch(nominatim);
+  if (!r.ok) throw new Error("Ortssuche nicht erreichbar");
+  return (await r.json()).map(t => ({ titel: t.name || t.display_name.split(",")[0],
+    sub: t.display_name, grenzen: () => L.latLngBounds(
+      [+t.boundingbox[0], +t.boundingbox[2]], [+t.boundingbox[1], +t.boundingbox[3]]) }));
 }
 const suche = L.control({ position: "topleft" });
 suche.onAdd = () => {
@@ -143,15 +128,13 @@ karte.on("moveend", () => { const a = ANSICHTEN[AKTIV]; if (a && a.aktualisiere)
 
 // ---------- Start -----------------------------------------------------------------------
 (async function start() {
-  let bestand = null, gebiete = null, analysen = { analysen: [{ name: "alkis" }] };
-  if (!EINGEBETTET) {
-    try {
-      [bestand, gebiete, analysen] = await Promise.all(["bestand.geojson", "gebiete.json",
-        "analysen/index.json"].map(holeJson));
-    } catch (fehler) {
-      ladeFehler(fehler);
-      throw fehler;
-    }
+  let bestand, gebiete, analysen;
+  try {
+    [bestand, gebiete, analysen] = await Promise.all(["bestand.geojson", "gebiete.json",
+      "analysen/index.json"].map(holeJson));
+  } catch (fehler) {
+    ladeFehler(fehler);
+    throw fehler;
   }
   const hash = new URLSearchParams(location.hash.slice(1));
   starteGebietswahl(gebiete);
@@ -170,8 +153,7 @@ karte.on("moveend", () => { const a = ANSICHTEN[AKTIV]; if (a && a.aktualisiere)
   fertig();
   const g = hash.get("gebiet");
   if (g && NACH_S[g]) setzeGebiet(NACH_S[g], false);
-  // frühere Adressen mit #ansicht=verifikation führen zum ALKIS-Abgleich
-  const gewuenscht = hash.get("ansicht") === "verifikation" ? "analysen" : hash.get("ansicht");
+  const gewuenscht = hash.get("ansicht");
   await zeige(ANSICHTEN[gewuenscht] ? gewuenscht : STANDARD);
   if (GEBIET) karte.fitBounds(grenzenVon(GEBIET), GEBIET_RAND);
 })();

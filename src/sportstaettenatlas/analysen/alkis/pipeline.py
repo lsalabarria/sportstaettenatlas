@@ -283,38 +283,27 @@ def baue(
     )
 
 
-def schreibe(ergebnis: Ergebnis, ziel: Path, quelle: WfsQuelle, bbox) -> tuple[Path, Path, Path]:
-    """GeoPackage (Layer sportstaetten, sportanlagen, metadaten) und zwei CSV-Tabellen."""
+def schreibe(staetten, anlagen, bericht, ziel: Path, quelle: WfsQuelle, bbox) -> Path:
+    """Ergebnis nach `ziel`: sportstaetten.gpkg (Layer sportstaetten, sportanlagen,
+    metadaten), abgleich_altbestand.csv (Sicht des Datenbestands), QUELLENVERMERK.txt."""
     ziel.mkdir(parents=True, exist_ok=True)
     gpkg = ziel / "sportstaetten.gpkg"
-    if gpkg.exists():
-        gpkg.unlink()
-    ergebnis.sportstaetten.to_file(gpkg, layer="sportstaetten", driver="GPKG")
-    ergebnis.sportanlagen.to_file(gpkg, layer="sportanlagen", driver="GPKG")
-
-    jahr = dt.datetime.now(dt.UTC).year
-    vermerk = quelle.quellenvermerk.format(jahr=jahr)
-    meta = pd.DataFrame(
-        {
-            "schluessel": ["quelle", "url", "lizenz", "quellenvermerk", "bbox", "erstellt"],
-            "wert": [
-                quelle.name,
-                quelle.url,
-                quelle.lizenz,
-                vermerk,
-                ",".join(str(v) for v in bbox),
-                dt.datetime.now(dt.UTC).isoformat(timespec="seconds"),
-            ],
-        }
-    )
-    pyogrio.write_dataframe(meta, gpkg, layer="metadaten", driver="GPKG")
-    (ziel / "QUELLENVERMERK.txt").write_text(
-        f"{vermerk}\nLizenz: {quelle.lizenz}\n", encoding="utf-8"
-    )
-
-    csv_st = ziel / "sportstaetten.csv"
-    csv_an = ziel / "sportanlagen.csv"
-    ergebnis.sportstaetten.drop(columns="geometry").to_csv(csv_st, index=False, encoding="utf-8")
-    ergebnis.sportanlagen.drop(columns="geometry").to_csv(csv_an, index=False, encoding="utf-8")
-
-    return gpkg, csv_st, csv_an
+    gpkg.unlink(missing_ok=True)
+    staetten.to_file(gpkg, layer="sportstaetten", driver="GPKG")
+    anlagen.to_file(gpkg, layer="sportanlagen", driver="GPKG")
+    jetzt = dt.datetime.now(dt.UTC)
+    vermerk = quelle.quellenvermerk.format(jahr=jetzt.year)
+    meta = {
+        "quelle": quelle.name,
+        "url": quelle.url,
+        "lizenz": quelle.lizenz,
+        "quellenvermerk": vermerk,
+        "bbox": ",".join(str(v) for v in bbox),
+        "erstellt": jetzt.isoformat(timespec="seconds"),
+    }
+    tabelle = pd.DataFrame({"schluessel": list(meta), "wert": list(meta.values())})
+    pyogrio.write_dataframe(tabelle, gpkg, layer="metadaten", driver="GPKG")
+    bericht.abgleich_altbestand.to_csv(ziel / "abgleich_altbestand.csv", index=False)
+    zeilen = [vermerk, *bericht.lizenzen, f"Lizenz: {quelle.lizenz}"]
+    (ziel / "QUELLENVERMERK.txt").write_text("\n".join(zeilen) + "\n", encoding="utf-8")
+    return gpkg

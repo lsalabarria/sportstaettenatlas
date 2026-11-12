@@ -1,12 +1,12 @@
 import xml.etree.ElementTree as ET
 
 from sportstaettenatlas.analysen.alkis.klassifikation import Regelwerk
-from sportstaettenatlas.analysen.alkis.quellen import GEBIETE, QUELLEN
+from sportstaettenatlas.analysen.alkis.quellen import GEBIETE, RP
 from sportstaettenatlas.analysen.alkis.wfs import fes_filter, getfeature_params, kacheln
 
 
 def test_getfeature_params_bbox():
-    q = QUELLEN["rp"]
+    q = RP
     p = getfeature_params(q.typ_gebaeude, GEBIETE["koblenz-innenstadt"], q.crs, 100, 200)
     assert p["TYPENAMES"] == "ave:GebaeudeBauwerk"
     assert p["BBOX"].endswith("urn:ogc:def:crs:EPSG::25832")

@@ -26,14 +26,13 @@ __STIL__
   <div id="seite-liste" class="seite" hidden></div>
   <div id="seite-uebersicht" class="seite" hidden></div>
   <div id="seite-vorschlag" class="seite" hidden></div>
-  __LADEN__
+  <div id="laden"><span class="kreisel"></span><span>Sportstätten werden geladen …</span></div>
 </div>
 <script src="__LEAFLET__/leaflet.js"></script>
-__KONFIG__
-<script>
-const QUELLE = __QUELLE__;
-const EINGEBETTET = __EINGEBETTET__;
-</script>
+<!-- konfig.js wird auf GitHub von Hand bearbeitet: immer frisch laden, sonst zeigt der
+     Browser bis zu zehn Minuten den alten Stand aus seinem Zwischenspeicher -->
+<script>document.write('<script src="konfig.js?' + Date.now() + '"><\/script>');</script>
+<script>const QUELLE = __QUELLE__;</script>
 __SKRIPTE__
 </body>
 </html>

@@ -1,24 +1,18 @@
-"""Ausgaben des ALKIS-Abgleichs für die Karte: GeoJSON-Dateien und karte.html.
+"""Dateien des ALKIS-Abgleichs für die Webseite (Reiter „Analysen“ → „ALKIS-Abgleich“).
 
-Für die Webseite (Reiter „Analysen“ → „ALKIS-Abgleich“) liefert `webdaten` die Dateien,
-die `seite` nach docs/daten/analysen/alkis/ schreibt. `schreibe_karte` erzeugt dieselbe
-Ansicht als eine einzelne HTML-Datei (results/out/karte.html) zum lokalen Ansehen.
+`webdaten` liefert sie; `seite` schreibt sie nach docs/daten/analysen/alkis/.
 """
 
 from __future__ import annotations
 
 import json
-from pathlib import Path
 from typing import TYPE_CHECKING
-
-from ...web import html_seite
 
 if TYPE_CHECKING:
     from collections.abc import Callable
 
     import geopandas as gpd
 
-NAME = "alkis"
 TITEL = "ALKIS-Abgleich"
 DATEIEN = {  # Datei → Beschreibung auf der Download-Seite
     "sportstaetten.geojson": "ALKIS: Sportstätten (Standorte mit Umriss)",
@@ -29,15 +23,16 @@ DATEIEN = {  # Datei → Beschreibung auf der Download-Seite
 # Status im Abgleich (abgleich.atlas_bericht) → Text auf der Karte
 STATUS = {"zugeordnet": "in ALKIS", "nah": "in der Nähe", "nicht in ALKIS": "nicht in ALKIS"}
 NUR_ATLAS = ("nicht in ALKIS", "nah")  # diese Einträge erscheinen als eigene Punkte
+# Rohspalten des Bestands, die die Karte an ALKIS-Objekten noch braucht (Suche, Verweis);
+# alle anderen alt_* stecken schon in den zusammengeführten Feldern
+ALT_BEHALTEN = {"alt_bezug", "alt_name", "alt_adresse", "alt_typ", "alt_atlas_id", "alt_id"}
+UEBERFLUESSIG = {"verifikation_sportstaette", "verifikation_anzahl"}
 # Spalten des Abgleichs, die die Karte zu jedem Atlas-Punkt zeigt (Beschriftung: analysen.js)
 ATLAS_SPALTEN = (
     "alt_name",
-    "alt_komplex",
     "alt_typ",
     "alt_anlagentypen",
     "alt_adresse",
-    "alkis_nutzung_vor_ort",
-    "alkis_gebaeude_vor_ort",
     "naechste_sportstaette_id",
     "abstand_m",
     "alkis_typgruppen",
@@ -69,7 +64,16 @@ def geojson(gdf: gpd.GeoDataFrame, praezision: float = 1e-6, vereinfachen_m: flo
         if spalte != g.geometry.name and pd.api.types.is_datetime64_any_dtype(g[spalte]):
             g[spalte] = g[spalte].dt.strftime("%Y-%m-%d")
     # default=str fängt übrige Sondertypen ab (einzelne Timestamps, Decimal …)
-    return json.loads(g.to_json(drop_id=True, na="null", default=str))
+    fc = json.loads(g.to_json(drop_id=True, na="null", default=str))
+    for f in fc["features"]:  # leere und doppelte Angaben weglassen (spart rund ein Drittel)
+        f["properties"] = {
+            k: v
+            for k, v in f["properties"].items()
+            if v not in (None, "")
+            and k not in UEBERFLUESSIG
+            and (not k.startswith("alt_") or k in ALT_BEHALTEN)
+        }
+    return fc
 
 
 def _zeilen(bericht):
@@ -164,24 +168,3 @@ def webdaten(staetten, anlagen, bericht, ars_von: Callable | None = None) -> dic
     if (z := zusammenfassung(bericht, ars_von)) is not None:
         dateien["zusammenfassung.json"] = z
     return dateien
-
-
-def schreibe_karte(
-    anlagen: gpd.GeoDataFrame,
-    staetten: gpd.GeoDataFrame,
-    ziel: Path,
-    titel: str = "Sportstättenatlas – ALKIS-Abgleich",
-    quellenvermerk: str = "",
-    abgleich_altbestand=None,
-) -> Path:
-    """Die Ansicht „ALKIS-Abgleich“ als eine HTML-Datei mit eingebetteten Daten."""
-    pfad = f"analysen/{NAME}/"
-    daten = {
-        pfad + "sportanlagen.geojson": geojson(anlagen),
-        pfad + "sportstaetten.geojson": geojson(staetten),
-        pfad + "atlas_abgleich.geojson": atlas_geojson(abgleich_altbestand),
-    }
-    if (z := zusammenfassung(abgleich_altbestand)) is not None:
-        daten[pfad + "zusammenfassung.json"] = z
-    ziel.write_text(html_seite(titel, quellenvermerk, eingebettet=daten), encoding="utf-8")
-    return ziel

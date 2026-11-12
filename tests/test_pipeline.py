@@ -79,18 +79,17 @@ def test_baue():
     assert an["lon"].between(7, 8.5).all() and an["lat"].between(49, 51.5).all()
 
 
-def test_karte_mit_datumsspalte(tmp_path):
+def test_webdaten_mit_datumsspalte():
     import json
 
     import pandas as pd
 
-    from sportstaettenatlas.analysen.alkis.karte import geojson, schreibe_karte
+    from sportstaettenatlas.analysen.alkis.webdaten import geojson
 
     erg = baue(_nutzung(), _gebaeude())
     an = erg.sportanlagen.copy()
     an["alkis_stand"] = pd.to_datetime("2025-03-26")
     fc = geojson(an)
     assert fc["features"][0]["properties"]["alkis_stand"] == "2025-03-26"
+    assert all(v is not None for f in fc["features"] for v in f["properties"].values())
     json.dumps(fc)
-    pfad = schreibe_karte(an, erg.sportstaetten, tmp_path / "karte.html")
-    assert "2025-03-26" in pfad.read_text(encoding="utf-8")

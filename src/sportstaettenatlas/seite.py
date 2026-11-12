@@ -5,7 +5,7 @@
     docs/konfig.js                      Einstellungen – nur beim ersten Mal angelegt, danach
     docs/impressum.html, datenschutz.html   nie überschrieben (von Hand bzw. auf GitHub gepflegt)
     docs/daten/index.html               Download-Seite
-    docs/daten/bestand.geojson          Datenbestand aus daten/ (Karte, Liste, Übersicht, Vorschlag)
+    docs/daten/bestand.geojson          Datenbestand aus daten/ (bestand_geojson)
     docs/daten/gebiete.json,            Kreise, Verbandsgemeinden, Gemeinden zur Auswahl
     docs/daten/gebiete_*.geojson        (Umrisse werden erst bei Bedarf geladen)
     docs/daten/analysen/index.json      Verzeichnis der Analysen (Reiter „Analysen“)
@@ -29,21 +29,11 @@ from collections import Counter
 from collections.abc import Callable
 from pathlib import Path
 
+from . import anlagen as anlagen_typen
 from . import web
+from .bestand import EMAIL, adresse_text
 
-KONTAKT_FELDER = {
-    "email",
-    "email_quelle",
-    "alt_email",
-    "telefon",
-    "telefon_quelle",
-    "alt_telefon",
-}
-# Rohspalten des Atlas, die die Karte noch braucht (Suche, Verweis „Atlas: …“);
-# alle anderen alt_* stecken schon in den zusammengeführten Feldern.
-ATLAS_ROH_BEHALTEN = {"alt_bezug", "alt_name", "alt_adresse", "alt_typ", "alt_atlas_id", "alt_id"}
-UEBERFLUESSIG = {"verifikation_sportstaette", "verifikation_anzahl"}
-EMAIL = re.compile(r"[\w.+-]+@[\w-]+(\.[\w-]+)+")
+KONTAKT_FELDER = {"email", "email_quelle", "alt_email", "telefon", "telefon_quelle", "alt_telefon"}
 
 LEAFLET_DATEIEN = (
     "leaflet.js",
@@ -57,8 +47,105 @@ LEAFLET_DATEIEN = (
 VON_HAND = ("konfig.js", "impressum.html", "datenschutz.html")  # nie überschreiben
 
 
+# --- Datenbestand für die Karte ---------------------------------------------------------
+
+# Art des Betreibers bzw. Eigentümers, geschätzt aus dem Namen. Verein zuerst prüfen:
+# "Turnverein Ortsgemeinde X e.V." ist ein Verein.
+_VEREIN = re.compile(
+    r"e\.\s?v\b|\be\s?v\.?$|\bev\b|verein|sportgemeinde|sportgemeinschaft|sportfreunde|"
+    r"\b(tus|tsv|sv|fc|sc|sg|vfl|vfb|vfr|tv|tc|tsg|jsg|spvgg|fsv|ssv|djk|tura|dlrg|dav|"
+    r"rv|rfv|lc|ltv|asv|esv|psv|bsv|hsv|msv|svg|tg|ttc|ttv|vsg|ksv|sgm)\b|"
+    r"club|klub|schützen|gilde|alpenverein|kanu|ruder|turnerschaft|sportbund|sportkreis",
+    re.IGNORECASE,
+)
+_KOMMUNE = re.compile(
+    r"\b(orts|verbands|stadt)?gemeinde|\bstadt\b|städtisch|stadtverwaltung|"
+    r"landkreis|kreisverwaltung|\bkreis\b|kommun|bürgermeister|\b(og|vg|vgv)\b|stadtwerk|"
+    r"zweckverband|eigenbetrieb|^stadt|^gemeinde",
+    re.IGNORECASE,
+)
+# Angaben einer Sportanlage, die die Karte zeigt (neben Typ, Kennung und Name)
+ANLAGE_FELDER = ("sportarten", "baujahr", "baukosten_eur", "ausstattung")
+
+
+def betreiber_art(name: str | None) -> str | None:
+    """'Verein', 'Kommune' oder 'sonstige' – Schätzung aus dem Namen; None ohne Namen."""
+    name = (name or "").strip()
+    if not name:
+        return None
+    if _VEREIN.search(name):
+        return "Verein"
+    return "Kommune" if _KOMMUNE.search(name) else "sonstige"
+
+
+def _anlage_kurz(a: dict) -> list:
+    """Sportanlage für die Karte: [Typ, Kurz-ID, Name, {Angaben}]; leere Teile am Ende
+    entfallen. Die Kurz-ID (Anfang der UUID) genügt, um die Datei zu finden."""
+    extra = {k: a[k] for k in ANLAGE_FELDER if a.get(k) not in (None, "", [])}
+    out = [a["typ"], str(a.get("id", ""))[:8], a.get("bezeichnung") or "", extra]
+    while len(out) > 2 and not out[-1]:
+        out.pop()
+    return out
+
+
+def bestand_geojson(datensaetze, praezision: int = 5) -> dict:
+    """Sportstätten → GeoJSON-Punkte (flache Eigenschaften, Anlagen als Liste) und die
+    Gruppen der Anlagentypen für den Filter (`anlagengruppen`, `anlagentypen`)."""
+    features = []
+    typen: set[str] = set()
+    reihe = {t: i for i, t in enumerate(anlagen_typen.GRUPPE_VON)}
+    for d in datensaetze:
+        lage = d.get("lage") or {}
+        if lage.get("lon") is None or lage.get("lat") is None:
+            continue
+        a = d.get("adresse") or {}
+        anlagen = sorted(
+            (_anlage_kurz(x) for x in d.get("anlagen") or []),
+            key=lambda x: (reihe.get(x[0], len(reihe)), x[0], x[1]),
+        )
+        typen.update(x[0] for x in anlagen)
+        p = {
+            "id": d.get("id"),
+            "name": d.get("name"),
+            "kategorie": d.get("kategorie"),
+            "adresse": adresse_text(a),
+            "plz": a.get("plz"),
+            "ort": a.get("ort"),
+            "strasse": a.get("strasse"),
+            "hausnummer": a.get("hausnummer"),
+            "sportarten": d.get("sportarten") or [],
+            "anlagen": anlagen,
+            "oeffentlicher_zugang": d.get("oeffentlicher_zugang"),
+            "schulsport": d.get("schulsport"),
+            "zuschauerplaetze": d.get("zuschauerplaetze"),
+            "betriebsstatus": d.get("betriebsstatus"),
+            "betreiber": d.get("betreiber"),
+            "betreiber_art": betreiber_art(d.get("betreiber")),
+            "eigentuemer": d.get("eigentuemer"),
+            "eigentuemer_art": betreiber_art(d.get("eigentuemer")),
+            "website": d.get("website"),
+        }
+        punkt = [round(float(lage["lon"]), praezision), round(float(lage["lat"]), praezision)]
+        features.append(
+            {
+                "type": "Feature",
+                "geometry": {"type": "Point", "coordinates": punkt},
+                "properties": {k: v for k, v in p.items() if v not in (None, "", [])},
+            }
+        )
+    return {
+        "type": "FeatureCollection",
+        "features": features,
+        "anlagengruppen": [[g, text] for g, (text, _) in anlagen_typen.GRUPPEN.items()],
+        "anlagentypen": {t: anlagen_typen.gruppe(t) for t in sorted(typen)},
+    }
+
+
+# --- Veröffentlichen --------------------------------------------------------------------
+
+
 def oeffentlich(fc: dict) -> tuple[dict, Counter]:
-    """Eigenschaften für die Veröffentlichung bereinigen. Liefert (GeoJSON, entfernte Felder)."""
+    """Kontaktdaten und Werte mit E-Mail-Adresse entfernen. Liefert (GeoJSON, entfernt)."""
     entfernt: Counter = Counter()
     for f in fc.get("features", []):
         p = f.get("properties") or {}
@@ -67,8 +154,6 @@ def oeffentlich(fc: dict) -> tuple[dict, Counter]:
             if k in KONTAKT_FELDER:
                 if v not in (None, ""):
                     entfernt[k] += 1
-                continue
-            if (k.startswith("alt_") and k not in ATLAS_ROH_BEHALTEN) or k in UEBERFLUESSIG:
                 continue
             if isinstance(v, str) and EMAIL.search(v):
                 entfernt[f"E-Mail-Adresse in „{k}“"] += 1
@@ -131,19 +216,6 @@ def _anzahl(obj) -> int | None:
     return None
 
 
-def _alte_alkis_dateien(daten: Path) -> None:
-    """Frühere Ablage der ALKIS-Dateien direkt in docs/daten/ → analysen/alkis/."""
-    ziel = daten / "analysen" / "alkis"
-    for name in ("sportstaetten.geojson", "sportanlagen.geojson", "atlas_abgleich.geojson"):
-        alt = daten / name
-        if alt.exists():
-            ziel.mkdir(parents=True, exist_ok=True)
-            if (ziel / name).exists():
-                alt.unlink()
-            else:
-                shutil.move(alt, ziel / name)
-
-
 def schreibe_webseite(
     ausgabe: Path,
     bestand: list[dict] | None = None,
@@ -159,17 +231,15 @@ def schreibe_webseite(
     bestand:  Datensätze aus daten/ (bestand.lies_bestand)
     gebiete:  Verwaltungsgebiete (gebiete.lade) für die Gebietsauswahl
     analysen: {Name: (Titel, {Datei: Inhalt}, {Datei: Beschreibung})}, z. B. aus
-              analysen.alkis.karte.webdaten. Fehlt eine Analyse, bleiben ihre Dateien aus
+              analysen.alkis.webdaten. Fehlt eine Analyse, bleiben ihre Dateien aus
               einem früheren Lauf unverändert.
     ars_von:  (lon, lat) → Regionalschlüssel der Gemeinde, für Datensätze aus `bestand`
     """
     from . import gebiete as gb
-    from .bestand import bestand_geojson
 
     ausgabe.mkdir(parents=True, exist_ok=True)
     daten = ausgabe / "daten"
     daten.mkdir(exist_ok=True)
-    _alte_alkis_dateien(daten)
 
     # (Pfad unter daten/, Beschreibung, Inhalt)
     schreiben: list[tuple[str, str, dict]] = []
@@ -207,8 +277,6 @@ def schreibe_webseite(
         )
         if (daten / "analysen" / a["name"]).is_dir()
     }
-    if (daten / "analysen" / "alkis").is_dir() and "alkis" not in verzeichnis:
-        verzeichnis["alkis"] = {"name": "alkis", "titel": "ALKIS-Abgleich", "dateien": {}}
     for name, (titel_a, dateien, texte) in (analysen or {}).items():
         ordner = daten / "analysen" / name
         if ordner.exists():

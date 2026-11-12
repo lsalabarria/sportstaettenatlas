@@ -1,81 +1,70 @@
-"""Altbestand (synthetische Daten im Import- bzw. Export-Format des bisherigen Atlas)."""
+"""Atlas-Export lesen – synthetische Daten."""
 
-from sportstaettenatlas.atlas import dateien, lade_tabelle
+import json
+
+import pytest
+
+from sportstaettenatlas.atlas import _liste, lage, lies_export
 
 KOPF = (
-    "sportkomplex_id;sportkomplex_bezeichnung;sportkomplex_strasse;sportkomplex_hn;"
-    "sportkomplex_plz;sportkomplex_ort;sportstaette_id;sportstaette_bezeichnung;"
-    "sportstaette_typ_text;utm32nrechts;utm32nhoch;sportstaette_strasse;sportstaette_hn;"
-    "sportstaette_plz;sportstaette_ort;sportanlage_id;sportanlage_typ_text\n"
+    "ID,Name,Straße,Hausnummer,PLZ,Stadt,Sportstättenkategorie,Schulsport,"
+    '"Öffentlicher Zugang","Zuschauerplätze Gesamt",Betriebsstatus,'
+    '"Name des Eigentümers","Name des Betreibers",E-Mail,Webseite,Sportarten,'
+    "Sportanlagen,Latitude,Longitude\n"
 )
-ALT = KOPF + (
-    "1;Sportpark Nord;Am Park;1;56068;Koblenz;1;Sportplatz Nord;Sportplatz;399100;5578050;"
-    "Am Park;1;56068;Koblenz;1;Großspielfeld (ab 5.000 m²)\n"
-    "1;Sportpark Nord;Am Park;1;56068;Koblenz;1;Sportplatz Nord;Sportplatz;399100;5578050;"
-    "Am Park;1;56068;Koblenz;2;Weit- und Dreisprunganlage\n"
-    "2;Halle X;;;;;2;Halle X;Sporthalle;;;;;;;3;Sporthalle (Größe unbekannt)\n"
-)
-NEU = KOPF + (
-    "1;Sportpark Nord;Am Park;1;56068;Koblenz;1;Sportplatz Nord;Sportplatz;399100.4;5578049.8;"
-    "Am Park;1;56068;Koblenz;1;Großspielfeld (ab 5.000 m²)\n"
-    "1;Sportpark Nord;Am Park;1;56068;Koblenz;1;Sportplatz Nord;Sportplatz;399100.4;5578049.8;"
-    "Am Park;1;56068;Koblenz;2;Großspielfeld (ab 5.000 m²)\n"
-    "3;Schützen;;;;;3;Schießstand Süd;Schießsportstätte;401000;5579000;;;;;4;Schießstand\n"
+ZEILEN = (
+    '101,"Sportplatz Musterdorf","Am Weg",1,11111,Musterdorf,Sportplatz,Ja,Nein,250,'
+    '"in Betrieb","Ortsgemeinde Musterdorf","TuS Musterdorf",vorstand@tus.example,'
+    'www.tus.example,"Fußball, Leichtathletik",'
+    '"Großspielfeld (ab 5.000 m², Rasen), Rundlaufbahn",5514805.26,402741.96\n'
+    '102,"Halle ohne Lage",,,11111,Musterdorf,Sporthalle,,,,,,,,,,Einfeldhalle,,\n'
+    '103,"Reitplatz","Hof 2",,11111,Musterdorf,Reitsportstätte,,,,,'
+    '"Kontakt: max@privat.example",,,,,Reitplatz,5515000.0,403000.0\n'
 )
 
 
-def _ordner(tmp_path):
-    p = tmp_path / "importe"
-    p.mkdir()
-    (p / "import_2024-09-18.csv").write_text(ALT, encoding="utf-8")
-    (p / "import_2025-08-19.csv").write_text(NEU, encoding="utf-8")
-    (p / "notizen.txt").write_text("keine CSV", encoding="utf-8")
+def _fake(a, b):  # Ersatz für pyproj: nachvollziehbar, aber ohne Geo-Bibliothek
+    return {"lon": round(b / 1e5, 6), "lat": round(a / 1e5, 6)}
+
+
+@pytest.fixture
+def export(tmp_path):
+    p = tmp_path / "sportstaetten_04112026.csv"
+    p.write_text("\ufeff" + KOPF + ZEILEN, encoding="utf-8")
     return p
 
 
-def test_dateien(tmp_path):
-    ordner = _ordner(tmp_path)
-    assert [n for n, _ in dateien(ordner)] == ["import_2024-09-18.csv", "import_2025-08-19.csv"]
-    assert [n for n, _ in dateien(ordner / "import_2025-08-19.csv")] == ["import_2025-08-19.csv"]
+def test_export_lesen(export):
+    d = next(lies_export(export, lage_aus=_fake))
+    assert d["id"] == "101"
+    assert d["lage"] == {"lon": 4.02742, "lat": 55.148053}
+    assert d["oeffentlicher_zugang"] == "nein" and d["schulsport"] == "ja"
+    assert d["zuschauerplaetze"] == 250
+    assert d["sportarten"] == ["Fußball", "Leichtathletik"]
+    assert d["anlagen"] == [{"typ": "Großspielfeld (ab 5.000 m², Rasen)"}, {"typ": "Rundlaufbahn"}]
+    assert d["quellen"]["atlas_rlp"] == {"id": "101", "datei": export.name, "stand": "2026-11-04"}
+    assert "vorstand@tus.example" not in json.dumps(d)  # E-Mail-Spalte wird nie gelesen
+    halle = list(lies_export(export, lage_aus=_fake))[1]
+    assert halle["lage"] is None
 
 
-def test_lade_tabelle(tmp_path):
-    df = lade_tabelle(_ordner(tmp_path))
-    # Sportplatz Nord in zwei Importen → einmal, jüngste Datei gewinnt; Halle ohne Koordinate fehlt
-    assert len(df) == 2
-    nord = df[df["alt_name"] == "Sportplatz Nord"].iloc[0]
-    assert nord["alt_datei"] == "import_2025-08-19.csv"
-    assert nord["alt_anlagentypen"] == "2× Großspielfeld (ab 5.000 m²)"
-    assert nord["alt_adresse"] == "Am Park 1, 56068 Koblenz"
-    assert nord["alt_typgruppe"] == "spielfeld"
-    schuetzen = df[df["alt_typ"] == "Schießsportstätte"].iloc[0]
-    assert schuetzen["alt_typgruppe"] == "spezial"  # ß darf beim Nachschlagen nicht stören
-    assert df["alt_id"].is_unique
+def test_kein_export(tmp_path):
+    p = tmp_path / "x.csv"
+    p.write_text("a,b\n1,2\n", encoding="utf-8")
+    with pytest.raises(ValueError, match="kein Atlas-Export"):
+        list(lies_export(p))
 
 
-def test_export_format(tmp_path):
-    from sportstaettenatlas import atlas as altbestand
+def test_echte_umrechnung():
+    pytest.importorskip("pyproj")
+    g = lage(5578000, 398000)  # Koblenz, Hochwert/Rechtswert unter Latitude/Longitude
+    assert 7.55 < g["lon"] < 7.6 and 50.33 < g["lat"] < 50.36
+    assert lage(50.35, 7.59) == {"lon": 7.59, "lat": 50.35}  # schon Grad
 
-    kopf = (
-        "ID,Name,Straße,Hausnummer,PLZ,Stadt,Sportstättenkategorie,Schulsport,"
-        '"Öffentlicher Zugang","Zuschauerplätze Gesamt",Betriebsstatus,'
-        '"Name des Eigentümers","Name des Betreibers",E-Mail,Webseite,Sportarten,'
-        "Sportanlagen,Latitude,Longitude\n"
-    )
-    zeilen = (
-        'a-1,Tennisplatz,"Am Weg",,11111,Musterdorf,Tennissportstätte,Nein,Nein,,'
-        '"in Betrieb",,,,www.tc-muster.example,,"Tennisplatz, Tennishalle",5514805.26,402741.96\n'
-        'a-2,"Sportplatz X",,,11111,Musterdorf,Sportplatz,Nein,Nein,,,,,,,,'
-        '"Großspielfeld (ab 5.000 m², Rasen), Rundlaufbahn",5515000.0,403000.0\n'
-    )
-    datei = tmp_path / "sportstaetten_04112026.csv"
-    datei.write_text("﻿" + kopf + zeilen, encoding="utf-8")
-    df = altbestand.lade_tabelle(datei)
-    assert len(df) == 2
-    t = df[df["alt_atlas_id"] == "a-1"].iloc[0]
-    assert (t["x"], t["y"]) == (402741.96, 5514805.26)  # Latitude/Longitude vertauscht → UTM
-    assert t["alt_stand"] == "2026-11-04"
-    assert t["alt_website"] == "www.tc-muster.example"
-    assert t["alt_anzahl_anlagen"] == 2
-    s = df[df["alt_atlas_id"] == "a-2"].iloc[0]
-    assert s["alt_anzahl_anlagen"] == 2  # Komma in Klammern trennt nicht
+
+def test_liste_haelt_anlagen_mit_bindestrich_zusammen():
+    assert _liste("Großspielfeld, Weit-, Dreisprunganlage, Feld (A, B)") == [
+        "Großspielfeld",
+        "Weit-, Dreisprunganlage",
+        "Feld (A, B)",
+    ]

@@ -16,9 +16,30 @@ if TYPE_CHECKING:
     import geopandas as gpd
     import pandas as pd
 
-    from ...http import Sitzung
-
 log = logging.getLogger(__name__)
+
+# Kategorie einer Sportstätte im Atlas → Typgruppe in ALKIS (für den Typvergleich typ_passt)
+KATEGORIE_ZU_GRUPPE = {
+    "sportplatz": "spielfeld",
+    "sporthalle": "halle",
+    "schwimmsportstätte": "becken",
+    "tennissportstätte": "spielfeld",
+    "reitsportstätte": "spezial",
+    "schießsportstätte": "spezial",
+    "roll- und skatesportstätte": "spezial",
+    "öffentlicher sport- und bewegungsraum": "sportgelegenheit",
+    "golfsportstätte": "spezial",
+    "eissportstätte": "eis",
+    "leichtathletiksportstätte": "leichtathletik",
+    "flugsportstätte": "spezial",
+    "radsportstätte": "spezial",
+    "wassersportstätte": "spezial",
+    "sportgelegenheiten in sonstigen gebäuden": "sportgelegenheit",
+    "wintersportstätte": "spezial",
+    "klettersportstätte": "spezial",
+    "motorsportstätte": "spezial",
+    "segelsportstätte": "spezial",
+}
 
 
 def _paare(kandidaten: gpd.GeoDataFrame, objekte: gpd.GeoDataFrame, max_m: float):
@@ -173,8 +194,7 @@ def aus_bestand(datensaetze, crs: str = "EPSG:25832") -> gpd.GeoDataFrame:
     import geopandas as gpd
     import pandas as pd
 
-    from ...atlas import TYP_ZU_GRUPPE
-    from ...bestand import _adresse_text
+    from ...bestand import adresse_text
 
     def text(v):
         return None if v in (None, "", []) else str(v)
@@ -196,8 +216,7 @@ def aus_bestand(datensaetze, crs: str = "EPSG:25832") -> gpd.GeoDataFrame:
                 "alt_atlas_id": d["id"],
                 "alt_name": text(d.get("name")),
                 "alt_typ": text(d.get("kategorie")),
-                "alt_komplex": None,
-                "alt_adresse": text(_adresse_text(d.get("adresse") or {})),
+                "alt_adresse": text(adresse_text(d.get("adresse") or {})),
                 "alt_datei": "/".join(x for x in (d.get("_ordner"), d["id"]) if x),
                 "alt_stand": quelle.get("stand", ""),
                 "alt_schulsport": text(d.get("schulsport")),
@@ -218,7 +237,7 @@ def aus_bestand(datensaetze, crs: str = "EPSG:25832") -> gpd.GeoDataFrame:
         )
     df = pd.DataFrame(zeilen, columns=list(zeilen[0]) if zeilen else ["alt_id", "lon", "lat"])
     df["alt_typgruppe"] = df.get("alt_typ", pd.Series(dtype=object)).map(
-        lambda t: TYP_ZU_GRUPPE.get(str(t).strip().lower()) if t else None
+        lambda t: KATEGORIE_ZU_GRUPPE.get(str(t).strip().lower()) if t else None
     )
     punkte = gpd.points_from_xy(df["lon"], df["lat"])
     return gpd.GeoDataFrame(
@@ -227,24 +246,25 @@ def aus_bestand(datensaetze, crs: str = "EPSG:25832") -> gpd.GeoDataFrame:
 
 
 def anreichern(
-    staetten: gpd.GeoDataFrame,
-    anlagen: gpd.GeoDataFrame,
-    sitzung: Sitzung,
-    atlas: gpd.GeoDataFrame,
-    alkis_quelle=None,
+    staetten: gpd.GeoDataFrame, anlagen: gpd.GeoDataFrame, atlas: gpd.GeoDataFrame
 ) -> tuple[gpd.GeoDataFrame, gpd.GeoDataFrame, Bericht]:
     """Gleicht die ALKIS-Sportstätten mit dem Datenbestand ab (`atlas`, aus aus_bestand),
     übernimmt dessen Angaben und setzt Herkunft + Verifikation."""
     from shapely.geometry import box
 
-    from ... import atlas as alt_modul
-    from .verifikation import FELDER_ANLAGE, FELDER_STAETTE, verifiziere, zusammenfuehren
+    from .verifikation import (
+        FELDER_ANLAGE,
+        FELDER_STAETTE,
+        QUELLE_ALT,
+        verifiziere,
+        zusammenfuehren,
+    )
 
     bericht = Bericht()
     st, an = staetten.copy(), anlagen.copy()
     ab = atlas.to_crs(st.crs)
-    # nur Atlas-Einträge im bearbeiteten Gebiet (sonst wären bei einem Kreis alle
-    # übrigen Einträge des Landes "nicht in ALKIS" und würden nachgeschlagen)
+    # nur Einträge im bearbeiteten Gebiet (sonst wären bei einem Ausschnitt alle
+    # übrigen Einträge des Landes "nicht in ALKIS")
     x0, y0, x1, y1 = st.total_bounds
     rand = 500
     im_gebiet = ab.geometry.within(box(x0 - rand, y0 - rand, x1 + rand, y1 + rand))
@@ -258,12 +278,6 @@ def anreichern(
     zuordnung = nachbarn_mitbestaetigen(st, ab, zuordnung, spalten, "alt_")
     st = st.join(zuordnung)
     bericht.abgleich_altbestand = atlas_bericht(ab, st, an, direkt)
-    if alkis_quelle is not None:
-        from . import vor_ort
-
-        bericht.abgleich_altbestand = vor_ort.ergaenze(
-            bericht.abgleich_altbestand, ab, sitzung, alkis_quelle
-        )
     z = bericht.abgleich_altbestand["status"].value_counts().to_dict()
     bericht(
         f"Datenbestand: {len(ab)} Sportstätten im Gebiet; "
@@ -271,7 +285,7 @@ def anreichern(
         + f"; {_anzahl(st, 'alt_id')} ALKIS-Sportstätten bestätigt"
         + f" (davon {_anzahl(st, 'alt_bezug')} als Nachbarfläche)"
     )
-    bericht.lizenzen.append(alt_modul.QUELLE)
+    bericht.lizenzen.append(QUELLE_ALT)
 
     st = zusammenfuehren(st, FELDER_STAETTE)
     an = zusammenfuehren(an, FELDER_ANLAGE)
@@ -345,7 +359,6 @@ def atlas_bericht(alt, staetten, anlagen, zuordnung, max_nah_m: float = 200) -> 
         "alt_typgruppe",
         "alkis_typgruppen",
         "alt_name",
-        "alt_komplex",
         "alt_adresse",
         "alt_anlagentypen",
         "alt_betriebsstatus",

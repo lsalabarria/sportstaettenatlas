@@ -46,7 +46,13 @@ def test_kontaktdaten_werden_entfernt():
         )
     )
     p = fc["features"][0]["properties"]
-    assert p == {"name": "Sportpark", "alt_name": "Sportpark alt", "verifikation": "ALKIS"}
+    assert p == {
+        "name": "Sportpark",
+        "alt_name": "Sportpark alt",
+        "alt_stand": "2024",
+        "verifikation": "ALKIS",
+        "verifikation_sportstaette": "ALKIS",
+    }
     assert weg["email"] == 1 and weg["alt_email"] == 1 and weg["telefon"] == 1
     assert weg["E-Mail-Adresse in „betreiber“"] == 1
 
@@ -56,7 +62,7 @@ def test_webseite_verlinkt_app_und_laedt_daten_nach():
         "Atlas <RLP>", "©GeoBasis-DE / LVermGeoRP 2026", leaflet="vendor/leaflet"
     )
     assert '<script src="vendor/leaflet/leaflet.js"></script>' in seite
-    assert "konfig.js?' + Date.now()" in seite and "const EINGEBETTET = null;" in seite
+    assert "konfig.js?' + Date.now()" in seite and "const QUELLE = " in seite
     assert '<link rel="stylesheet" href="app/stil.css?v=' in seite
     for name in web.SKRIPTE:
         assert f'<script src="app/{name}?v=' in seite
@@ -211,24 +217,50 @@ def test_webseite_mit_bestand_gebieten_und_analyse(tmp_path):
 
 def test_ohne_neue_analyse_bleibt_der_alte_stand(tmp_path):
     docs = tmp_path / "docs"
-    daten = docs / "daten"
-    daten.mkdir(parents=True)
-    alt = '{"type":"FeatureCollection","features":[{"type":"Feature","properties":{},"geometry":null}]}'
-    # Ablage früherer Versionen direkt unter daten/ → wandert nach analysen/alkis/
-    (daten / "sportanlagen.geojson").write_text(alt, encoding="utf-8")
-    (daten / "gebiete.json").write_text("{}", encoding="utf-8")
+    analyse = ("ALKIS-Abgleich", {"alt.json": {"n": 1}}, {"alt.json": "früherer Lauf"})
+    schreibe_webseite(docs, analysen={"alkis": analyse}, leaflet_laden=False)
+    # ohne neues Ergebnis (z. B. auf einem anderen Rechner) bleibt die Analyse stehen
     info = schreibe_webseite(docs, bestand=[_datensatz(1, 7.2, 50.5)], leaflet_laden=False)
-    assert not (daten / "sportanlagen.geojson").exists()
-    assert (daten / "analysen/alkis/sportanlagen.geojson").read_text(encoding="utf-8") == alt
+    daten = docs / "daten"
     assert _lies(daten / "analysen/index.json")["analysen"][0]["name"] == "alkis"
-    assert not (daten / "gebiete.json").exists()  # veraltete Auswahl entfernt
-    assert [n for n, *_ in info["dateien"]] == [
-        "bestand.geojson",
-        "analysen/alkis/sportanlagen.geojson",
-    ]
-
+    assert [n for n, *_ in info["dateien"]] == ["bestand.geojson", "analysen/alkis/alt.json"]
     # eine neue Rechnung ersetzt den ganzen Ordner der Analyse
     schreibe_webseite(
         docs, analysen={"alkis": ("ALKIS-Abgleich", {"neu.json": {}}, {})}, leaflet_laden=False
     )
     assert sorted(p.name for p in (daten / "analysen/alkis").iterdir()) == ["neu.json"]
+
+
+def test_betreiber_art():
+    from sportstaettenatlas.seite import betreiber_art
+
+    assert betreiber_art("TuS Koblenz 1911 e.V.") == "Verein"
+    assert betreiber_art("Turnverein Ortsgemeinde X") == "Verein"
+    assert betreiber_art("Ortsgemeinde Musterdorf") == "Kommune"
+    assert betreiber_art("Stadt Mainz") == "Kommune"
+    assert betreiber_art("Kreisverwaltung Mayen-Koblenz") == "Kommune"
+    assert betreiber_art("Fitness GmbH") == "sonstige"
+    assert betreiber_art("  ") is None and betreiber_art(None) is None
+
+
+def test_bestand_geojson_mit_anlagen():
+    from sportstaettenatlas.seite import bestand_geojson
+
+    d = {
+        "id": "abc",
+        "lage": {"lon": 7.0, "lat": 50.0},
+        "anlagen": [
+            {"id": "11111111-x", "typ": "Tennisplatz"},
+            {"id": "22222222-x", "typ": "Rundlaufbahn", "baujahr": 1980, "sportarten": []},
+            {"id": "33333333-x", "typ": "Großspielfeld", "bezeichnung": "Kunstrasen B"},
+        ],
+    }
+    fc = bestand_geojson([d])
+    # nach Gruppe sortiert: Spielfelder, Tennis, Leichtathletik; leere Angaben entfallen
+    assert fc["features"][0]["properties"]["anlagen"] == [
+        ["Großspielfeld", "33333333", "Kunstrasen B"],
+        ["Tennisplatz", "11111111"],
+        ["Rundlaufbahn", "22222222", "", {"baujahr": 1980}],
+    ]
+    assert fc["anlagentypen"]["Rundlaufbahn"] == "leichtathletik"
+    assert ["bad", "Bäder"] in fc["anlagengruppen"]

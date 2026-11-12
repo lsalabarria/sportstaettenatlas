@@ -1,9 +1,8 @@
-"""Ausgaben des ALKIS-Abgleichs für die Karte – ohne Geo-Bibliotheken (synthetische Daten)."""
+"""Dateien des ALKIS-Abgleichs für die Webseite – ohne Geo-Bibliotheken (synthetische Daten)."""
 
 import pandas as pd
 
-from sportstaettenatlas.analysen.alkis.karte import atlas_geojson, zusammenfassung
-from sportstaettenatlas.web import html_seite
+from sportstaettenatlas.analysen.alkis.webdaten import atlas_geojson, zusammenfassung
 
 
 def _fc(props):
@@ -31,22 +30,6 @@ def _bericht():
             "lat": [50.3, 50.4, 50.5, None],
         }
     )
-
-
-def test_eine_datei_bettet_daten_sicher_ein():
-    seite = html_seite(
-        "Titel <i>",
-        "©GeoBasis-DE / LVermGeoRP 2026",
-        eingebettet={"analysen/alkis/sportanlagen.geojson": _fc({"name": "</script><b>x</b>"})},
-    )
-    # jedes Skript endet genau einmal: Leaflet, Werte, die fünf Skripte der Seite
-    assert seite.count("</script>") == 7
-    assert "<\\/script><b>x<\\/b>" in seite
-    assert "<title>Titel &lt;i&gt;</title>" in seite
-    assert "LVermGeoRP 2026" in seite and "leaflet@1.9.4" in seite
-    assert '<div id="laden"' not in seite and "konfig.js?" not in seite
-    assert "function analyseAlkis" in seite and "<style>" in seite
-    assert "__" not in seite.split("<body>")[1].replace("__log", "")  # keine Platzhalter übrig
 
 
 def test_atlas_punkte():

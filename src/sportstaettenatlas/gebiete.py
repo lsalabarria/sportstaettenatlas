@@ -2,7 +2,7 @@
 
 Quelle: Verwaltungsgebiete 1:250 000 (VG250) des BKG, Stand 01.01., über den offenen
 WFS https://sgx.geodatenzentrum.de/wfs_vg250 – Lizenz dl-de/by-2-0. Einmal geladen und
-unter results/cache/ abgelegt. Alternativ eine heruntergeladene VG250-GeoPackage-Datei.
+unter results/cache/gebiete_<land>.json abgelegt.
 
 Der Amtliche Regionalschlüssel (ARS, 12 Stellen) ist hierarchisch:
     Land (2) · Regierungsbezirk (1) · Kreis (2) · Verbandsgemeinde (4) · Gemeinde (3)
@@ -20,7 +20,6 @@ import json
 import logging
 import re
 from collections import defaultdict
-from pathlib import Path
 
 log = logging.getLogger(__name__)
 
@@ -120,32 +119,21 @@ def _hole_ebene(session, url: str, typ: str, land: str, seite: int = 1000):
     return gpd.GeoDataFrame(pd.concat(teile, ignore_index=True), crs=teile[0].crs)
 
 
-def lade(land: str, cache: Path, quelle: str | Path | None = None) -> dict[str, dict]:
-    """Ebenen als {ebene: GeoJSON}. `quelle`: VG250-GeoPackage statt WFS. Mit Cache."""
+def lade(land: str) -> dict[str, dict]:
+    """Ebenen als {ebene: GeoJSON}; einmal vom BKG geladen, danach aus dem Cache."""
+    from .hilfen import ERGEBNISSE, USER_AGENT
+
+    cache = ERGEBNISSE / "cache" / f"gebiete_{land}.json"
     if cache.exists():
         return json.loads(cache.read_text(encoding="utf-8"))
-    import geopandas as gpd
+    import requests
 
+    s = requests.Session()
+    s.headers["User-Agent"] = USER_AGENT
     out = {}
-    if quelle:
-        import pyogrio
-
-        layer = [n for n, _ in pyogrio.list_layers(quelle)]
-        for ebene, kurz in EBENEN.items():
-            name = next((n for n in layer if n.lower().endswith(f"vg250_{kurz}")), None)
-            if name is None:
-                raise SystemExit(f"{quelle}: Ebene vg250_{kurz} fehlt (VG250-GeoPackage?)")
-            out[ebene] = _aufbereiten(gpd.read_file(quelle, layer=name), land)
-    else:
-        import requests
-
-        from .http import USER_AGENT
-
-        s = requests.Session()
-        s.headers["User-Agent"] = USER_AGENT
-        for ebene, typ in _typnamen(s, BKG_WFS).items():
-            log.info("Verwaltungsgebiete: lade %s (%s)", ebene, typ)
-            out[ebene] = _aufbereiten(_hole_ebene(s, BKG_WFS, typ, land), land)
+    for ebene, typ in _typnamen(s, BKG_WFS).items():
+        log.info("Verwaltungsgebiete: lade %s (%s)", ebene, typ)
+        out[ebene] = _aufbereiten(_hole_ebene(s, BKG_WFS, typ, land), land)
     cache.parent.mkdir(parents=True, exist_ok=True)
     cache.write_text(json.dumps(out, ensure_ascii=False), encoding="utf-8")
     return out
