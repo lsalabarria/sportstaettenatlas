@@ -296,3 +296,13 @@ def test_kreis_ordner():
     assert k(7.2, 49.5) == "07312-kaiserslautern-stadt"
     assert k(7.7, 49.5) == "07335-kaiserslautern"
     assert k(9.0, 49.5) == "ohne-kreis"
+
+
+def test_readme_des_datenbestands(tmp_path):
+    from sportstaettenatlas.bestand import README_DATEN, schreibe_readme
+
+    assert README_DATEN.startswith("# Datenbestand") and "sportstaette_id" in README_DATEN
+    assert schreibe_readme(tmp_path) and not schreibe_readme(tmp_path)  # nur bei Änderung
+    (tmp_path / "README.md").write_text("alt", encoding="utf-8")
+    assert schreibe_readme(tmp_path)
+    assert (tmp_path / "README.md").read_text(encoding="utf-8") == README_DATEN

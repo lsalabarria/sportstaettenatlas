@@ -64,6 +64,7 @@ import uuid
 from collections import Counter
 from collections.abc import Callable, Iterator
 from dataclasses import dataclass, field
+from importlib import resources
 from pathlib import Path
 
 from . import anlagen as anlagen_typen
@@ -417,30 +418,19 @@ def umstellen(ziel: Path, kreis_von: KreisVon) -> Umstellung:
     return u
 
 
-README_DATEN = """# Datenbestand
+# daten/README.md: Aufbau und Datenmodell. Vorlage im Paket; bestand, umstellen und seite
+# halten die Datei auf dem Stand der Vorlage (Änderungen also in daten_readme.md machen).
+README_DATEN = resources.files("sportstaettenatlas").joinpath("daten_readme.md").read_text("utf-8")
 
-Ein Ordner je Kreis, darin ein Ordner je Sportstätte. In dem beschreibt `<id>_meta.json` die
-Sportstätte (Standort, Name, Betreiber …), und jede Sportanlage hat eine weitere Datei
-`<anlage-id>.json` (z. B. ein Großspielfeld, eine Rundlaufbahn):
 
-    RP/07111-koblenz/333d6875-…/333d6875-…_meta.json
-    RP/07111-koblenz/333d6875-…/8f0c41d2-….json
-
-Jede Sportanlage gehört zu genau einer Sportstätte: Sie liegt in deren Ordner und nennt sie
-in `sportstaette_id`. Diese Dateien sind die Quelle der Daten: Änderungen werden hier
-vorgenommen (direkt auf GitHub oder per Pull Request) und landen beim nächsten Erzeugen der
-Webseite auf der Karte.
-
-- Format und Felder: siehe `src/sportstaettenatlas/bestand.py`, Typen der Anlagen:
-  `src/sportstaettenatlas/anlagen.py`
-- Neue Sportanlage: Datei mit neuer UUID als Namen in den Ordner der Sportstätte legen
-  (`id`, `sportstaette_id`, `typ`)
-- Neue Sportstätte: Ordner im Ordner ihres Kreises; liegt sie nach einer Änderung der Lage
-  in einem anderen Kreis, bringt `uv run sportstaettenatlas umstellen` sie dorthin
-- Neue Quelldateien einlesen: `uv run sportstaettenatlas bestand <datei>`
-  (legt nur fehlende Sportstätten an; `--modus aktualisieren` überschreibt vorhandene)
-- Kontaktdaten (E-Mail-Adressen, Telefonnummern) gehören nicht hierher.
-"""
+def schreibe_readme(ziel: Path) -> bool:
+    """daten/README.md aus der Vorlage schreiben, wenn sie fehlt oder veraltet ist."""
+    pfad = Path(ziel) / "README.md"
+    if pfad.exists() and pfad.read_text(encoding="utf-8") == README_DATEN:
+        return False
+    pfad.parent.mkdir(parents=True, exist_ok=True)
+    pfad.write_text(README_DATEN, encoding="utf-8")
+    return True
 
 
 # --- Für die Webseite --------------------------------------------------------------------

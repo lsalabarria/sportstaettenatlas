@@ -43,7 +43,7 @@ def _lade_gebiete(args, pflicht: bool):
 
 def cmd_bestand(args):
     """Quelldatei (z. B. Atlas-Export) in den Datenbestand daten/<LAND>/<Kreis>/ überführen."""
-    from .bestand import LESER, README_DATEN, erkenne_format, kreis_ordner, schreibe_bestand
+    from .bestand import LESER, erkenne_format, kreis_ordner, schreibe_bestand, schreibe_readme
 
     quelle, ziel = Path(args.quelle), Path(args.ziel)
     if not quelle.is_file():
@@ -55,8 +55,7 @@ def cmd_bestand(args):
         e = schreibe_bestand(LESER[fmt](quelle, land), ziel, land, kreis_von, args.modus)
     except ValueError as exc:
         raise SystemExit(str(exc)) from None
-    if not (ziel / "README.md").exists():
-        (ziel / "README.md").write_text(README_DATEN, encoding="utf-8")
+    schreibe_readme(ziel)
     print(f"{quelle.name} ({fmt}) → {ziel}/{land}/")
     print(f"  neu angelegt:        {e.neu} Sportstätten (je ein Ordner mit ihren Anlagen)")
     if args.modus == "aktualisieren":
@@ -82,17 +81,18 @@ def cmd_bestand(args):
 def cmd_umstellen(args):
     """daten/ ins aktuelle Format bringen: Kreis-Ordner, ein Ordner je Sportstätte, eine
     Datei je Sportanlage. Kann jederzeit wieder laufen (ordnet verschobene Sportstätten ein)."""
-    from .bestand import README_DATEN, kreis_ordner, umstellen
+    from .bestand import kreis_ordner, schreibe_readme, umstellen
 
     ziel = Path(args.ziel)
     try:
         u = umstellen(ziel, kreis_ordner(_lade_gebiete(args, pflicht=True)))
     except ValueError as exc:
         raise SystemExit(str(exc)) from None
+    if schreibe_readme(ziel):
+        print(f"{ziel}/README.md aktualisiert.")
     if not (u.umgestellt or u.verschoben):
         print(f"{ziel}/: alles schon im aktuellen Format.")
         return
-    (ziel / "README.md").write_text(README_DATEN, encoding="utf-8")
     if u.umgestellt:
         print(
             f"{ziel}/: {u.umgestellt} Sportstätten umgestellt, {u.anlagen} Sportanlagen als Dateien."
@@ -105,7 +105,7 @@ def cmd_umstellen(args):
 def cmd_seite(args):
     """Statische Webseite für GitHub Pages (Ordner docs/) erzeugen."""
     from . import gebiete as gb
-    from .bestand import falsch_einsortiert, kreis_ordner, lies_bestand
+    from .bestand import falsch_einsortiert, kreis_ordner, lies_bestand, schreibe_readme
     from .seite import schreibe_webseite
 
     ausgabe = Path(args.ausgabe)
@@ -117,6 +117,8 @@ def cmd_seite(args):
             bestand = list(lies_bestand(Path(args.bestand)))
         except ValueError as exc:
             raise SystemExit(f"Datenbestand: {exc}") from None
+        if schreibe_readme(Path(args.bestand)):
+            print(f"{args.bestand}/README.md aktualisiert (Aufbau und Datenmodell).")
     else:
         print(f"Hinweis: kein Datenbestand unter {args.bestand}/ – zuerst `bestand` ausführen.")
 
