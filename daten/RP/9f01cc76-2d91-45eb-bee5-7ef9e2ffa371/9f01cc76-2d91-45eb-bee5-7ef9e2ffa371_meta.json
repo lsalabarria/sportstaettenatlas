@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc76-2d91-45eb-bee5-7ef9e2ffa371",
+  "name": "Zeno Bad St. Martin",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "St.-Martin-Straße",
+    "hausnummer": "33",
+    "plz": "56761",
+    "ort": "Düngenheim"
+  },
+  "lage": {
+    "lon": 7.15332,
+    "lat": 50.26514
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc76-2d91-45eb-bee5-7ef9e2ffa371",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

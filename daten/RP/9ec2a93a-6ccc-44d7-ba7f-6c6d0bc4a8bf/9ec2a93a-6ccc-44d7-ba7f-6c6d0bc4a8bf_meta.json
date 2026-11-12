@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a93a-6ccc-44d7-ba7f-6c6d0bc4a8bf",
+  "name": "Sportplatz Otto-Schott-Gymnasium",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An Schneiders Mühle",
+    "hausnummer": "1",
+    "plz": "55122",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.232472,
+    "lat": 50.004038
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93a-6ccc-44d7-ba7f-6c6d0bc4a8bf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

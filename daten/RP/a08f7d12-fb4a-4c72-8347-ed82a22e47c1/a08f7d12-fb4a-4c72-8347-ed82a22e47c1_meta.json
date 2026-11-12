@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d12-fb4a-4c72-8347-ed82a22e47c1",
+  "name": "Fitness First Idar-Oberstein – Am Festplatz",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Vollmersbachstraße",
+    "hausnummer": "78",
+    "plz": "55743",
+    "ort": "Idar-Oberstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.316724,
+    "lat": 49.723693
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d12-fb4a-4c72-8347-ed82a22e47c1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

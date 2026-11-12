@@ -1,0 +1,24 @@
+{
+  "id": "9f01cc57-5312-4069-bfcd-d209d34a4b31",
+  "name": "Hallenbad Hermeskeil",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "54411",
+    "ort": "Hermeskeil, Stadt"
+  },
+  "lage": {
+    "lon": 6.939916,
+    "lat": 49.605908
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc57-5312-4069-bfcd-d209d34a4b31",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

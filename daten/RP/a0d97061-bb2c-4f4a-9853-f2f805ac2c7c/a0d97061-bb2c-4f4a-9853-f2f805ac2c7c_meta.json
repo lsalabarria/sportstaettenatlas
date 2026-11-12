@@ -1,0 +1,27 @@
+{
+  "id": "a0d97061-bb2c-4f4a-9853-f2f805ac2c7c",
+  "name": "Sportanlage Grundschule im Feldgarten",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Feldgartenstraße",
+    "hausnummer": "5",
+    "plz": "55129",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.244547,
+    "lat": 49.915088
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "sportarten": [
+    "Basketball"
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0d97061-bb2c-4f4a-9853-f2f805ac2c7c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

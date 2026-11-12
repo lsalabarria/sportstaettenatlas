@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a904-7068-4087-b23d-ba16e7a7f73c",
+  "name": "Sportgelände in der Nachtweide",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Sportgelände",
+    "hausnummer": "1",
+    "plz": "67150",
+    "ort": "Niederkirchen bei Deidesheim"
+  },
+  "lage": {
+    "lon": 8.221786,
+    "lat": 49.410434
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a904-7068-4087-b23d-ba16e7a7f73c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c92-0d5a-43b4-bd2d-e913884e1322",
+  "name": "Bolzplatz Ferienanlage Hambachtal",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "60",
+    "plz": "55765",
+    "ort": "Oberhambach"
+  },
+  "lage": {
+    "lon": 7.145819,
+    "lat": 49.68644
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c92-0d5a-43b4-bd2d-e913884e1322",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

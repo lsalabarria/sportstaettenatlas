@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd98-1cea-4099-841b-915fb66794a1",
+  "name": "Fitnessstudio Powerhouse",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "An den Gärten",
+    "hausnummer": "2a",
+    "plz": "56294",
+    "ort": "Münstermaifeld, Stadt"
+  },
+  "lage": {
+    "lon": 7.36792,
+    "lat": 50.245442
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd98-1cea-4099-841b-915fb66794a1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

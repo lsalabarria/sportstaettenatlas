@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c83-0e20-4c08-9bf8-4e938181c538",
+  "name": "Wasserspielplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Marktpl.",
+    "hausnummer": "3",
+    "plz": "55234",
+    "ort": "Nieder-Wiesen"
+  },
+  "lage": {
+    "lon": 7.978459,
+    "lat": 49.730167
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c83-0e20-4c08-9bf8-4e938181c538",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

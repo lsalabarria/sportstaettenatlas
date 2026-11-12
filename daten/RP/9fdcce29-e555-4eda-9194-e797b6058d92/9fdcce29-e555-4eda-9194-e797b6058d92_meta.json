@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce29-e555-4eda-9194-e797b6058d92",
+  "name": "Reitanlage Worms",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Friedrichsweg",
+    "hausnummer": "95",
+    "plz": "67547",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.38341,
+    "lat": 49.616038
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce29-e555-4eda-9194-e797b6058d92",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

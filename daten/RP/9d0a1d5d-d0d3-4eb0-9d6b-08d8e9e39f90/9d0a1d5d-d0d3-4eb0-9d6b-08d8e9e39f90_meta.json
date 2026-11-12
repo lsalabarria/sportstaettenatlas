@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5d-d0d3-4eb0-9d6b-08d8e9e39f90",
+  "name": "Schulzentrum Büchenbeuren",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sohrener Straße",
+    "plz": "55483",
+    "ort": "Büchenbeuren"
+  },
+  "lage": {
+    "lon": 7.284357,
+    "lat": 49.923877
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5d-d0d3-4eb0-9d6b-08d8e9e39f90",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1df8-87ba-4f13-af69-57e3ef1ce72e",
+  "name": "Flugplatz Montabaur des LSC Westerwald e.V.",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "strasse": "L326",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.828173,
+    "lat": 50.423102
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df8-87ba-4f13-af69-57e3ef1ce72e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

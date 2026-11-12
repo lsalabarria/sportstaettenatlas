@@ -1,0 +1,24 @@
+{
+  "id": "9f01cc67-4864-4622-9ef9-7818306c3e2f",
+  "name": "Waldfreibad Idarwald",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Rhaunen",
+    "plz": "55624",
+    "ort": "Rhaunen"
+  },
+  "lage": {
+    "lon": 7.32367,
+    "lat": 49.86151
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc67-4864-4622-9ef9-7818306c3e2f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

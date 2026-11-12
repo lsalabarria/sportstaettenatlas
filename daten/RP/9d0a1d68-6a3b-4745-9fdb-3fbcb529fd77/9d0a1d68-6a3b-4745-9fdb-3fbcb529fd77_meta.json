@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1d68-6a3b-4745-9fdb-3fbcb529fd77",
+  "name": "Fußballplatz Landscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54526",
+    "ort": "Landscheid"
+  },
+  "lage": {
+    "lon": 6.778896,
+    "lat": 49.996414
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d68-6a3b-4745-9fdb-3fbcb529fd77",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

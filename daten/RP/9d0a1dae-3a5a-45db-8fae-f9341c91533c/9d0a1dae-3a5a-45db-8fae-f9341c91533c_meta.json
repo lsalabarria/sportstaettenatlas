@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dae-3a5a-45db-8fae-f9341c91533c",
+  "name": "Sporthalle Engers",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Orffstraße",
+    "hausnummer": "24",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.545405,
+    "lat": 50.429875
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dae-3a5a-45db-8fae-f9341c91533c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

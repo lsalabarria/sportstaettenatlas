@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e05-c637-4589-bafe-d251d213b4f2",
+  "name": "Bolzplatz Wissemscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "53534",
+    "ort": "Wiesemscheid"
+  },
+  "lage": {
+    "lon": 6.886026,
+    "lat": 50.33648
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e05-c637-4589-bafe-d251d213b4f2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

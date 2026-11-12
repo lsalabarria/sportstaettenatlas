@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d5f-b338-4f07-8100-3f225fd28771",
+  "name": "Bolzplatz Sohren",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Talstraße",
+    "hausnummer": "1",
+    "plz": "55487",
+    "ort": "Sohren"
+  },
+  "lage": {
+    "lon": 7.301954,
+    "lat": 49.930612
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5f-b338-4f07-8100-3f225fd28771",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

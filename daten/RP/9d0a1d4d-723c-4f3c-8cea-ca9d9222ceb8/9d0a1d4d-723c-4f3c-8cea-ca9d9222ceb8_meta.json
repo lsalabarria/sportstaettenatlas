@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4d-723c-4f3c-8cea-ca9d9222ceb8",
+  "name": "Modellflugplatz Michelsberg",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "strasse": "Kapellenstraße",
+    "plz": "53520",
+    "ort": "Sierscheid"
+  },
+  "lage": {
+    "lon": 6.926966,
+    "lat": 50.451259
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4d-723c-4f3c-8cea-ca9d9222ceb8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

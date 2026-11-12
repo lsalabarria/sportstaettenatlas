@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d53-8465-4654-851c-c03d66a1815c",
+  "name": "Zeltplatz Cochem-Klotten",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wildparkstraße",
+    "plz": "56818",
+    "ort": "Klotten"
+  },
+  "lage": {
+    "lon": 7.163052,
+    "lat": 50.169213
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d53-8465-4654-851c-c03d66a1815c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "a0a376ff-8663-4689-aed3-9e5dabc93cee",
+  "name": "Skipiste Kirburg",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "B414",
+    "plz": "57629",
+    "ort": "Kirburg"
+  },
+  "lage": {
+    "lon": 7.919364,
+    "lat": 50.675381
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0a376ff-8663-4689-aed3-9e5dabc93cee",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

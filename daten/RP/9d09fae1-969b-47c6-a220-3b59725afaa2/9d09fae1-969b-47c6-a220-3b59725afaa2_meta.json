@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae1-969b-47c6-a220-3b59725afaa2",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "54316",
+    "ort": "Schöndorf"
+  },
+  "lage": {
+    "lon": 6.759082,
+    "lat": 49.680859
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae1-969b-47c6-a220-3b59725afaa2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

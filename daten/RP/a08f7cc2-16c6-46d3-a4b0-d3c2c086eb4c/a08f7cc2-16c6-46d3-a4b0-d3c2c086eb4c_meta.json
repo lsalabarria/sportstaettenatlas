@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cc2-16c6-46d3-a4b0-d3c2c086eb4c",
+  "name": "Turnhalle Odernheim am Glan",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Turnhallstraße",
+    "hausnummer": "6",
+    "plz": "55571",
+    "ort": "Odernheim am Glan"
+  },
+  "lage": {
+    "lon": 7.703834,
+    "lat": 49.769454
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cc2-16c6-46d3-a4b0-d3c2c086eb4c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

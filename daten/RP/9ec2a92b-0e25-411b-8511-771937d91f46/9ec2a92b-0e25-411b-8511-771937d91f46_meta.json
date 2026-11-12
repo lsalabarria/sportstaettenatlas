@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a92b-0e25-411b-8511-771937d91f46",
+  "name": "Bolzplatz Heidenfahrt",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Unteraue",
+    "hausnummer": "20",
+    "plz": "55262",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.10002,
+    "lat": 50.010832
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92b-0e25-411b-8511-771937d91f46",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

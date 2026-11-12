@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a906-5fcd-49f2-9ea1-244071fc1af5",
+  "name": "Badepark Haßloch",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Lachener Weg",
+    "hausnummer": "175",
+    "plz": "67454",
+    "ort": "Haßloch"
+  },
+  "lage": {
+    "lon": 8.2492,
+    "lat": 49.349451
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a906-5fcd-49f2-9ea1-244071fc1af5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

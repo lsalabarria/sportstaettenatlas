@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da7-b357-4f65-9684-50c75408565b",
+  "name": "Sportplatz Salcherath",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "plz": "56769",
+    "ort": "Retterath"
+  },
+  "lage": {
+    "lon": 7.011153,
+    "lat": 50.281042
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da7-b357-4f65-9684-50c75408565b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

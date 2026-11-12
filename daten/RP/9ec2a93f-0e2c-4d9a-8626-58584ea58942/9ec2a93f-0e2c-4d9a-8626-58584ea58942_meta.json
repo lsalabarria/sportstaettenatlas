@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a93f-0e2c-4d9a-8626-58584ea58942",
+  "name": "Schießstand Liebfrauenberg Bad Bergzabern",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Liebfrauenberg",
+    "plz": "76887",
+    "ort": "Bad Bergzabern, Stadt"
+  },
+  "lage": {
+    "lon": 7.98154,
+    "lat": 49.108993
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93f-0e2c-4d9a-8626-58584ea58942",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

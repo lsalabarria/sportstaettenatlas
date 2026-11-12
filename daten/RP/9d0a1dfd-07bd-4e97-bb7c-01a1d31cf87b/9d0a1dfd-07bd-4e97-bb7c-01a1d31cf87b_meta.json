@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dfd-07bd-4e97-bb7c-01a1d31cf87b",
+  "name": "Sportanlage Siegener Straße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Siegener Straße",
+    "plz": "56477",
+    "ort": "Rennerod, Stadt"
+  },
+  "lage": {
+    "lon": 8.073838,
+    "lat": 50.626645
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfd-07bd-4e97-bb7c-01a1d31cf87b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

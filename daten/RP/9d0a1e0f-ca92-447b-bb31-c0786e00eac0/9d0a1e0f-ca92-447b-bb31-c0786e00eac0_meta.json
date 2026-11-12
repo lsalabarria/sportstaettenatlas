@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e0f-ca92-447b-bb31-c0786e00eac0",
+  "name": "Grünewaldstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Koblenzer Straße",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.896405,
+    "lat": 50.002437
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0f-ca92-447b-bb31-c0786e00eac0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

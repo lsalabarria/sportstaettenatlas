@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e0b-f903-47f8-a0ac-ec4706564844",
+  "name": "Sportplatz Werlau",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "56329",
+    "ort": "Sankt Goar, Stadt"
+  },
+  "lage": {
+    "lon": 7.682761,
+    "lat": 50.155179
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0b-f903-47f8-a0ac-ec4706564844",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

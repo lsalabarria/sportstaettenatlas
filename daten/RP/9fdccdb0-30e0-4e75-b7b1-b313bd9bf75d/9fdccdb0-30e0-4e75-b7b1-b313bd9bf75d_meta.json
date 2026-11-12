@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdb0-30e0-4e75-b7b1-b313bd9bf75d",
+  "name": "Polch Schützenplatz",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Am Blumenberg",
+    "hausnummer": "1",
+    "plz": "56751",
+    "ort": "Polch, Stadt"
+  },
+  "lage": {
+    "lon": 7.325891,
+    "lat": 50.298459
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdb0-30e0-4e75-b7b1-b313bd9bf75d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

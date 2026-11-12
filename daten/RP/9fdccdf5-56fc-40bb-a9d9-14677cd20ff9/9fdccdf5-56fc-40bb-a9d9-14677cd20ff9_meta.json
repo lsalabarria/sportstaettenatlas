@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdf5-56fc-40bb-a9d9-14677cd20ff9",
+  "name": "Sporthalle Grundschule Pfingstweide",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Budapester Straße",
+    "hausnummer": "30",
+    "plz": "67069",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.38761,
+    "lat": 49.538201
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdf5-56fc-40bb-a9d9-14677cd20ff9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

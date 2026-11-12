@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd92-7b70-4bd6-b55d-146a1ad2bb7e",
+  "name": "Fussballverein 1912 e.V. Pfortz-Maximiliansau",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rheinstr.",
+    "hausnummer": "9",
+    "plz": "76744",
+    "ort": "Wörth am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.298766,
+    "lat": 49.040753
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd92-7b70-4bd6-b55d-146a1ad2bb7e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

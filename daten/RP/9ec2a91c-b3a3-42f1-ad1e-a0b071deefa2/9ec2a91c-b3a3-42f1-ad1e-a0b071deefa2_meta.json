@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91c-b3a3-42f1-ad1e-a0b071deefa2",
+  "name": "Tennisplätze Insheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Sportplatzstraße",
+    "hausnummer": "10",
+    "plz": "76865",
+    "ort": "Insheim"
+  },
+  "lage": {
+    "lon": 8.132601,
+    "lat": 49.156066
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91c-b3a3-42f1-ad1e-a0b071deefa2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

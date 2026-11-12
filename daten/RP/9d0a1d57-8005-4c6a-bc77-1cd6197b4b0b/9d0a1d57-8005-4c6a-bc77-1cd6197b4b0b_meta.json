@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d57-8005-4c6a-bc77-1cd6197b4b0b",
+  "name": "Sportplatz Lutzerath",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Wäldchen",
+    "plz": "56826",
+    "ort": "Lutzerath"
+  },
+  "lage": {
+    "lon": 7.014149,
+    "lat": 50.133706
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d57-8005-4c6a-bc77-1cd6197b4b0b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

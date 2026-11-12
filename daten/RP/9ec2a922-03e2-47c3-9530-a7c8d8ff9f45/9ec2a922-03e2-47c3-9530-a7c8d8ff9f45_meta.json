@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a922-03e2-47c3-9530-a7c8d8ff9f45",
+  "name": "Boule Club Gleisweiler",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "L519",
+    "plz": "76835",
+    "ort": "Gleisweiler"
+  },
+  "lage": {
+    "lon": 8.070663,
+    "lat": 49.241108
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a922-03e2-47c3-9530-a7c8d8ff9f45",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

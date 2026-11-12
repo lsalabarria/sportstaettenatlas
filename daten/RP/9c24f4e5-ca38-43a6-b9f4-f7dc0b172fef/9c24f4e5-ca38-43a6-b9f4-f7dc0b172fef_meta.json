@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4e5-ca38-43a6-b9f4-f7dc0b172fef",
+  "name": "Sportplatz auf der Rell",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf der Rell",
+    "plz": "54675",
+    "ort": "Geichlingen"
+  },
+  "lage": {
+    "lon": 6.254503,
+    "lat": 49.953217
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e5-ca38-43a6-b9f4-f7dc0b172fef",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

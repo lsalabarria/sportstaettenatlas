@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4e4-aaf3-450a-be53-a3188181259b",
+  "name": "Reitplatz Stockigt",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Rohrbacher Straße",
+    "plz": "54675",
+    "ort": "Nusbaum"
+  },
+  "lage": {
+    "lon": 6.344236,
+    "lat": 49.904128
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e4-aaf3-450a-be53-a3188181259b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

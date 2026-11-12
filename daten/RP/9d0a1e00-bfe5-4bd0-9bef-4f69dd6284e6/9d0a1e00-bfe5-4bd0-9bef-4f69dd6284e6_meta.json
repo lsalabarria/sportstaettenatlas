@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e00-bfe5-4bd0-9bef-4f69dd6284e6",
+  "name": "Golf- und Landclub Bad Neuenahr",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Großer Weg",
+    "hausnummer": "100",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.190408,
+    "lat": 50.564205
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e00-bfe5-4bd0-9bef-4f69dd6284e6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91d-b092-4828-b623-9d598edd11dd",
+  "name": "Heiderbrunnenhof Vollblutaraberzucht",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Heidebrunnenhof",
+    "hausnummer": "1",
+    "plz": "76889",
+    "ort": "Oberotterbach"
+  },
+  "lage": {
+    "lon": 7.995908,
+    "lat": 49.071612
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91d-b092-4828-b623-9d598edd11dd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

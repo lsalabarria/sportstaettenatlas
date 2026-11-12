@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad2-d245-4c0b-b905-4c7d0824fddf",
+  "name": "Sportplatz Rheinstraße Leutesdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rheinstraße",
+    "plz": "56599",
+    "ort": "Leutesdorf"
+  },
+  "lage": {
+    "lon": 7.383459,
+    "lat": 50.450385
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad2-d245-4c0b-b905-4c7d0824fddf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

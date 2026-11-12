@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a935-9dca-4e71-953a-236cfb0f26ff",
+  "name": "Gymnastikhalle Drais",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Daniel-Brendel-Straße",
+    "hausnummer": "11",
+    "plz": "55127",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.191479,
+    "lat": 49.976272
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a935-9dca-4e71-953a-236cfb0f26ff",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "a08f7cde-177e-4296-a406-139e3e4448f5",
+  "name": "Modellflugplatz MFSV Gräfenbachtal",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "plz": "55452",
+    "ort": "Guldental"
+  },
+  "lage": {
+    "lon": 7.84972,
+    "lat": 49.878752
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cde-177e-4296-a406-139e3e4448f5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce06-85de-4ba7-9e42-a8042bc61c1d",
+  "name": "Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Freiastraße",
+    "hausnummer": "10",
+    "plz": "67059",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.428541,
+    "lat": 49.478487
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce06-85de-4ba7-9e42-a8042bc61c1d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

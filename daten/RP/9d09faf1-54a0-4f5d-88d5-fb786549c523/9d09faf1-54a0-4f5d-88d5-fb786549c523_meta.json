@@ -1,0 +1,24 @@
+{
+  "id": "9d09faf1-54a0-4f5d-88d5-fb786549c523",
+  "name": "Sportplatz DJK Elbingen Hahn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sandweg",
+    "hausnummer": "5c",
+    "plz": "56459",
+    "ort": "Elbingen"
+  },
+  "lage": {
+    "lon": 7.90254,
+    "lat": 50.528684
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf1-54a0-4f5d-88d5-fb786549c523",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

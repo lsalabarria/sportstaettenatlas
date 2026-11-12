@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d49-cbc7-46d5-beea-fe97d5f82854",
+  "name": "Sportplatz Priv. Gymn. Marienstatt",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "K21",
+    "plz": "57629",
+    "ort": "Streithausen"
+  },
+  "lage": {
+    "lon": 7.799202,
+    "lat": 50.683063
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d49-cbc7-46d5-beea-fe97d5f82854",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

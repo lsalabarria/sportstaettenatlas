@@ -1,0 +1,27 @@
+{
+  "id": "9ec2a908-a287-4b84-b67d-e8103c2b6810",
+  "name": "Grundschule Heilig-Kreuz Weiler",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Heilig-Kreuz-Weg",
+    "hausnummer": "3",
+    "plz": "55413",
+    "ort": "Weiler bei Bingen"
+  },
+  "lage": {
+    "lon": 7.863145,
+    "lat": 49.960195
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Verbandsgemeinde Rhein-Nahe",
+  "betreiber": "Verbandsgemeinde Rhein-Nahe",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a908-a287-4b84-b67d-e8103c2b6810",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

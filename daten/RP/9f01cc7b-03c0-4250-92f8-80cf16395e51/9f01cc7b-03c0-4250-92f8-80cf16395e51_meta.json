@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc7b-03c0-4250-92f8-80cf16395e51",
+  "name": "Campingplatz Landkern",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "2",
+    "plz": "56814",
+    "ort": "Landkern"
+  },
+  "lage": {
+    "lon": 7.15783,
+    "lat": 50.18642
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc7b-03c0-4250-92f8-80cf16395e51",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d65-f3b8-4f8d-9463-d040f22d2c3e",
+  "name": "DRK-Sportplatz Katharinenufer",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Katharinenufer",
+    "plz": "54347",
+    "ort": "Neumagen-Dhron"
+  },
+  "lage": {
+    "lon": 6.89724,
+    "lat": 49.861317
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d65-f3b8-4f8d-9463-d040f22d2c3e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

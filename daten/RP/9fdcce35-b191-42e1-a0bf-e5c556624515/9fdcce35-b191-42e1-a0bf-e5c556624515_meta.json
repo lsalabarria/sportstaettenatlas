@@ -1,0 +1,24 @@
+{
+  "id": "9fdcce35-b191-42e1-a0bf-e5c556624515",
+  "name": "Sommer-Outdoor-Freizeitanlage",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "plz": "66500",
+    "ort": "Hornbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.365335,
+    "lat": 49.183238
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce35-b191-42e1-a0bf-e5c556624515",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

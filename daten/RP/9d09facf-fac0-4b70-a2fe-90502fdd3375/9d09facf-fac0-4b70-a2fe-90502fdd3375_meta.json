@@ -1,0 +1,24 @@
+{
+  "id": "9d09facf-fac0-4b70-a2fe-90502fdd3375",
+  "name": "Sportplatz Fürthen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "2",
+    "plz": "57539",
+    "ort": "Fürthen"
+  },
+  "lage": {
+    "lon": 7.680639,
+    "lat": 50.777722
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facf-fac0-4b70-a2fe-90502fdd3375",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

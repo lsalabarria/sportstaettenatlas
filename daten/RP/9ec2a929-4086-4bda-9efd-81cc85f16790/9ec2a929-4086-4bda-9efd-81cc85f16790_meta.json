@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a929-4086-4bda-9efd-81cc85f16790",
+  "name": "Turn und Festhalle des Turnvereins Gau-Algesheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Appenheimer Straße",
+    "hausnummer": "5",
+    "plz": "55435",
+    "ort": "Gau-Algesheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.015532,
+    "lat": 49.954673
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a929-4086-4bda-9efd-81cc85f16790",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

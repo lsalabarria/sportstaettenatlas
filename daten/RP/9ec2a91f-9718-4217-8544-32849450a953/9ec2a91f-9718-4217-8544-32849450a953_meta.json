@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91f-9718-4217-8544-32849450a953",
+  "name": "Reitbetrieb Privatpension **** Schönbachhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Silzer Berg",
+    "hausnummer": "1",
+    "plz": "76857",
+    "ort": "Silz"
+  },
+  "lage": {
+    "lon": 7.946536,
+    "lat": 49.148429
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91f-9718-4217-8544-32849450a953",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

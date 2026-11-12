@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a91d-f650-4aa2-a09d-ce547b70542b",
+  "name": "Sportplatz SV Schweigen-Rechtenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zur Alm",
+    "plz": "76889",
+    "ort": "Schweigen-Rechtenbach"
+  },
+  "lage": {
+    "lon": 7.954233,
+    "lat": 49.062386
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91d-f650-4aa2-a09d-ce547b70542b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

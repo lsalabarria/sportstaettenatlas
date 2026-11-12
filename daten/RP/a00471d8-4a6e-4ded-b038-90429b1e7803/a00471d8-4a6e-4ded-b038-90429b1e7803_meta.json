@@ -1,0 +1,23 @@
+{
+  "id": "a00471d8-4a6e-4ded-b038-90429b1e7803",
+  "name": "Sportplatz Oberbettingen Platz 2",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lissendorfer Str.",
+    "plz": "54578",
+    "ort": "Oberbettingen"
+  },
+  "lage": {
+    "lon": 6.629789,
+    "lat": 50.287624
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a00471d8-4a6e-4ded-b038-90429b1e7803",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

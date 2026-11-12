@@ -1,0 +1,23 @@
+{
+  "id": "a0047749-9252-4915-8864-1d4b0d8f0b2a",
+  "name": "Sportplatz Dahlem",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Römerberg",
+    "plz": "54636",
+    "ort": "Dahlem"
+  },
+  "lage": {
+    "lon": 6.589056,
+    "lat": 49.910734
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0047749-9252-4915-8864-1d4b0d8f0b2a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

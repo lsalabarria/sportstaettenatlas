@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1da5-8005-4165-b1ec-ccfdd7e92616",
+  "name": "Schulturnhalle Gillenfeld",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "12",
+    "plz": "54558",
+    "ort": "Gillenfeld"
+  },
+  "lage": {
+    "lon": 6.905085,
+    "lat": 50.130089
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da5-8005-4165-b1ec-ccfdd7e92616",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

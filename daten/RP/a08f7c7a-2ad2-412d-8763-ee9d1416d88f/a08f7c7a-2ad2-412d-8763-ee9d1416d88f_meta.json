@@ -1,0 +1,24 @@
+{
+  "id": "a08f7c7a-2ad2-412d-8763-ee9d1416d88f",
+  "name": "Gemeindehalle Biebelnheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Gabsheimer Weg",
+    "plz": "55234",
+    "ort": "Biebelnheim"
+  },
+  "lage": {
+    "lon": 8.168652,
+    "lat": 49.798458
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c7a-2ad2-412d-8763-ee9d1416d88f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

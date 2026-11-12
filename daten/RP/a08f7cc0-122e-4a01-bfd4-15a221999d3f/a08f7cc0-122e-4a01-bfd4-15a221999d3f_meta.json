@@ -1,0 +1,23 @@
+{
+  "id": "a08f7cc0-122e-4a01-bfd4-15a221999d3f",
+  "name": "Sonnenhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "plz": "55592",
+    "ort": "Desloch"
+  },
+  "lage": {
+    "lon": 7.633821,
+    "lat": 49.712737
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cc0-122e-4a01-bfd4-15a221999d3f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

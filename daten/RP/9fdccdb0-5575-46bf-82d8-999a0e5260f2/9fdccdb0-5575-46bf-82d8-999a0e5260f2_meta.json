@@ -1,0 +1,24 @@
+{
+  "id": "9fdccdb0-5575-46bf-82d8-999a0e5260f2",
+  "name": "Leo-Schönberg-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Vormaystraße",
+    "plz": "56751",
+    "ort": "Polch, Stadt"
+  },
+  "lage": {
+    "lon": 7.319347,
+    "lat": 50.302448
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdb0-5575-46bf-82d8-999a0e5260f2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

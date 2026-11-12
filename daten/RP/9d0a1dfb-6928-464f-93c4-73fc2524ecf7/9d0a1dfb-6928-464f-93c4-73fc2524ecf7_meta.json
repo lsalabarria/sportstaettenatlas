@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dfb-6928-464f-93c4-73fc2524ecf7",
+  "name": "Sportplatz Obersayn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Haindorf",
+    "plz": "56459",
+    "ort": "Niedersayn"
+  },
+  "lage": {
+    "lon": 7.875159,
+    "lat": 50.545672
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfb-6928-464f-93c4-73fc2524ecf7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

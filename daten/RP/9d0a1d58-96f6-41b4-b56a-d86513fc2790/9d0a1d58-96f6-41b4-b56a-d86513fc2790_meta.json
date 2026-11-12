@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d58-96f6-41b4-b56a-d86513fc2790",
+  "name": "Bolzplatz Panzweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56856",
+    "ort": "Panzweiler"
+  },
+  "lage": {
+    "lon": 7.305891,
+    "lat": 50.021742
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d58-96f6-41b4-b56a-d86513fc2790",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

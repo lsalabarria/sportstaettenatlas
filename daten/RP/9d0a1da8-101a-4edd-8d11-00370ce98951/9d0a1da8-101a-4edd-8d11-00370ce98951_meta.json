@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1da8-101a-4edd-8d11-00370ce98951",
+  "name": "FITNESS & WELLNESS CLUB KÖRPERWELT",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Gewerbepark-Betzdorf",
+    "hausnummer": "7",
+    "plz": "57518",
+    "ort": "Betzdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.856648,
+    "lat": 50.76797
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da8-101a-4edd-8d11-00370ce98951",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

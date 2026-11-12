@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd03-c54f-4711-a95b-5cb6d7eaff1e",
+  "name": "Tennisplatz VfL Osterspai 1920 e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Filsener Str.",
+    "plz": "56340",
+    "ort": "Osterspai"
+  },
+  "lage": {
+    "lon": 7.600834,
+    "lat": 50.244937
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd03-c54f-4711-a95b-5cb6d7eaff1e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

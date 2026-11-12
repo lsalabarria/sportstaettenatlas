@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a90d-0741-4a94-bc8b-c616fb9d0165",
+  "name": "Gym7 Stadecken-Elsheim",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "51",
+    "plz": "55271",
+    "ort": "Stadecken-Elsheim"
+  },
+  "lage": {
+    "lon": 8.124182,
+    "lat": 49.912311
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90d-0741-4a94-bc8b-c616fb9d0165",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

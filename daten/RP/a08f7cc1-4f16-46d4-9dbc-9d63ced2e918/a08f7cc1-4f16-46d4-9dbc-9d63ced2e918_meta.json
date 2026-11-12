@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cc1-4f16-46d4-9dbc-9d63ced2e918",
+  "name": "Neudorferhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Neudorferhof",
+    "plz": "67823",
+    "ort": "Lettweiler"
+  },
+  "lage": {
+    "lon": 7.757966,
+    "lat": 49.740828
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cc1-4f16-46d4-9dbc-9d63ced2e918",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

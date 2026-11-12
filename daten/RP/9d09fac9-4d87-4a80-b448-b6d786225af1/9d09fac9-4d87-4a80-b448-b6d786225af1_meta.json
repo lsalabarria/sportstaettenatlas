@@ -1,0 +1,24 @@
+{
+  "id": "9d09fac9-4d87-4a80-b448-b6d786225af1",
+  "name": "Fußballplatz Kindergarten Busenhausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bachstraße",
+    "hausnummer": "5",
+    "plz": "57612",
+    "ort": "Busenhausen"
+  },
+  "lage": {
+    "lon": 7.63204,
+    "lat": 50.714622
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac9-4d87-4a80-b448-b6d786225af1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

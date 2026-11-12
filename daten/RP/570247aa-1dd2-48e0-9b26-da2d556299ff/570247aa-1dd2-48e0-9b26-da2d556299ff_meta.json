@@ -1,0 +1,24 @@
+{
+  "id": "570247aa-1dd2-48e0-9b26-da2d556299ff",
+  "name": "Außensportanlage Marienschule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Langendorfer Str.",
+    "hausnummer": "165",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.463309,
+    "lat": 50.425892
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "570247aa-1dd2-48e0-9b26-da2d556299ff",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

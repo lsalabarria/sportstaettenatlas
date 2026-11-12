@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd02-fe52-44a3-8edc-b8ed5f6a9f87",
+  "name": "Werner-Reifferscheid-Platz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Filsener Str.",
+    "hausnummer": "100",
+    "plz": "56340",
+    "ort": "Osterspai"
+  },
+  "lage": {
+    "lon": 7.598976,
+    "lat": 50.246596
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd02-fe52-44a3-8edc-b8ed5f6a9f87",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

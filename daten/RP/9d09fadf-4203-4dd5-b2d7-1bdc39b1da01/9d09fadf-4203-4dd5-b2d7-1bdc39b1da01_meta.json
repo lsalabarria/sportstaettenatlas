@@ -1,0 +1,24 @@
+{
+  "id": "9d09fadf-4203-4dd5-b2d7-1bdc39b1da01",
+  "name": "Hallenschwimmbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Sonnenberg",
+    "hausnummer": "1",
+    "plz": "54340",
+    "ort": "Leiwen"
+  },
+  "lage": {
+    "lon": 6.890693,
+    "lat": 49.802666
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadf-4203-4dd5-b2d7-1bdc39b1da01",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

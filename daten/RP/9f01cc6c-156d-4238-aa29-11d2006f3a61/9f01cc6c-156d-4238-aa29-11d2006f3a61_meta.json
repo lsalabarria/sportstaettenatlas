@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc6c-156d-4238-aa29-11d2006f3a61",
+  "name": "Schwimmbad-Thalfang",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Talstraße",
+    "hausnummer": "3",
+    "plz": "54424",
+    "ort": "Thalfang"
+  },
+  "lage": {
+    "lon": 6.99915,
+    "lat": 49.75071
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6c-156d-4238-aa29-11d2006f3a61",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

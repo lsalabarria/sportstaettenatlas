@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd2d-8214-4e06-8edc-8df339ffce37",
+  "name": "Sportanlage am Neugraben",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Neugraben",
+    "hausnummer": "14",
+    "plz": "67459",
+    "ort": "Böhl-Iggelheim"
+  },
+  "lage": {
+    "lon": 8.302964,
+    "lat": 49.357417
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd2d-8214-4e06-8edc-8df339ffce37",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

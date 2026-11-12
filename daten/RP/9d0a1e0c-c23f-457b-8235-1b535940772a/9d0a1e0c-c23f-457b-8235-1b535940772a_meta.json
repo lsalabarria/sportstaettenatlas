@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e0c-c23f-457b-8235-1b535940772a",
+  "name": "Tennis-Center Kastellaun",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Südstraße",
+    "hausnummer": "32",
+    "plz": "56288",
+    "ort": "Kastellaun, Stadt"
+  },
+  "lage": {
+    "lon": 7.451781,
+    "lat": 50.068177
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0c-c23f-457b-8235-1b535940772a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

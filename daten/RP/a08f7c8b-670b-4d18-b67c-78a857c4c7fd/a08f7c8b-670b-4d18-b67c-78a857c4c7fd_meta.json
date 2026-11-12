@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c8b-670b-4d18-b67c-78a857c4c7fd",
+  "name": "Eintrachthalle Mölsheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "1",
+    "plz": "67591",
+    "ort": "Mölsheim"
+  },
+  "lage": {
+    "lon": 8.171252,
+    "lat": 49.64727
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c8b-670b-4d18-b67c-78a857c4c7fd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

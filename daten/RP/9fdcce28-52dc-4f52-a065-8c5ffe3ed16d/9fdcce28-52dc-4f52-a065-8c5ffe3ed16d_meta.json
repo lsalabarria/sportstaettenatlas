@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce28-52dc-4f52-a065-8c5ffe3ed16d",
+  "name": "Westend Grundschule",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Von-Steuben-Straße",
+    "hausnummer": "11",
+    "plz": "67549",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.351335,
+    "lat": 49.636847
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce28-52dc-4f52-a065-8c5ffe3ed16d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

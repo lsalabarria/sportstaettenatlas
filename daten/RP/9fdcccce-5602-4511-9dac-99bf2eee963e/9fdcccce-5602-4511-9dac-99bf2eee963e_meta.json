@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccce-5602-4511-9dac-99bf2eee963e",
+  "name": "St. Seb. Schützenbruderschaft Gering 1876 e.V. Schützenhaus",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Elztalstraße",
+    "plz": "56751",
+    "ort": "Gering"
+  },
+  "lage": {
+    "lon": 7.259521,
+    "lat": 50.269458
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccce-5602-4511-9dac-99bf2eee963e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

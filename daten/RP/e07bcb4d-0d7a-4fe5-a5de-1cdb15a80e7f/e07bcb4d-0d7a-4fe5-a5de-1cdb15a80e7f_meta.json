@@ -1,0 +1,27 @@
+{
+  "id": "e07bcb4d-0d7a-4fe5-a5de-1cdb15a80e7f",
+  "name": "Altes Postlager",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Mombacher Straße",
+    "hausnummer": "11",
+    "plz": "55118",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.257202,
+    "lat": 50.001211
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "sportarten": [
+    "Skateboarden"
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "e07bcb4d-0d7a-4fe5-a5de-1cdb15a80e7f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

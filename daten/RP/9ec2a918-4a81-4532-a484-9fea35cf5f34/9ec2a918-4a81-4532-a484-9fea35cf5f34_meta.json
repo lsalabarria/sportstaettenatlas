@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a918-4a81-4532-a484-9fea35cf5f34",
+  "name": "Reblandhalle Kirrweiler",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Unterried",
+    "hausnummer": "6",
+    "plz": "67489",
+    "ort": "Kirrweiler (Pfalz)"
+  },
+  "lage": {
+    "lon": 8.172605,
+    "lat": 49.295844
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a918-4a81-4532-a484-9fea35cf5f34",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d09fada-640b-4dd7-9a0a-8460b1d46dc3",
+  "name": "Sportplatz Kordel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "plz": "54306",
+    "ort": "Kordel"
+  },
+  "lage": {
+    "lon": 6.640108,
+    "lat": 49.84576
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fada-640b-4dd7-9a0a-8460b1d46dc3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

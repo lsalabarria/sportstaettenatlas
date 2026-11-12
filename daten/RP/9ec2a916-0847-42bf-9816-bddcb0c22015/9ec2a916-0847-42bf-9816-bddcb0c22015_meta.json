@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a916-0847-42bf-9816-bddcb0c22015",
+  "name": "Sportplatz am Moschelbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "33",
+    "plz": "67822",
+    "ort": "Finkenbach-Gersweiler"
+  },
+  "lage": {
+    "lon": 7.745256,
+    "lat": 49.678688
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a916-0847-42bf-9816-bddcb0c22015",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

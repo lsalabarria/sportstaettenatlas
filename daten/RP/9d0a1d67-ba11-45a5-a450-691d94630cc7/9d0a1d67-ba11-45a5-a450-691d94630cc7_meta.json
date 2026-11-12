@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d67-ba11-45a5-a450-691d94630cc7",
+  "name": "Bolzplatz Dreyshalle",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Talstraße",
+    "plz": "54518",
+    "ort": "Dreis"
+  },
+  "lage": {
+    "lon": 6.820827,
+    "lat": 49.937166
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d67-ba11-45a5-a450-691d94630cc7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

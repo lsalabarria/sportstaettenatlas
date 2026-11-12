@@ -1,0 +1,24 @@
+{
+  "id": "9f01cc66-1672-432f-9bb5-8d93c9371334",
+  "name": "Freibad Singhofen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Dermbachtal",
+    "plz": "56379",
+    "ort": "Singhofen"
+  },
+  "lage": {
+    "lon": 7.82554,
+    "lat": 50.26612
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc66-1672-432f-9bb5-8d93c9371334",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

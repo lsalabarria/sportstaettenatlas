@@ -1,0 +1,23 @@
+{
+  "id": "a0025cbb-497a-432f-a8c5-74e46d72d593",
+  "name": "Reit- & Pensionsstall Eltzerhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Eltzerhof",
+    "plz": "56753",
+    "ort": "Mertloch"
+  },
+  "lage": {
+    "lon": 7.302837,
+    "lat": 50.267028
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0025cbb-497a-432f-a8c5-74e46d72d593",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

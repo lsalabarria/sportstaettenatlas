@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd19-f687-4ef2-aa79-8d02f90d964d",
+  "name": "Karlstalhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Auf dem Steig",
+    "hausnummer": "1",
+    "plz": "67705",
+    "ort": "Trippstadt"
+  },
+  "lage": {
+    "lon": 7.769175,
+    "lat": 49.35615
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd19-f687-4ef2-aa79-8d02f90d964d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

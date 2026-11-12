@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e06-2dba-44ed-83a5-1cdec6c8da14",
+  "name": "Schützenhalle Rheineck",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Mühlenstraße",
+    "hausnummer": "32",
+    "plz": "53498",
+    "ort": "Bad Breisig, Stadt"
+  },
+  "lage": {
+    "lon": 7.31099,
+    "lat": 50.49411
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e06-2dba-44ed-83a5-1cdec6c8da14",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

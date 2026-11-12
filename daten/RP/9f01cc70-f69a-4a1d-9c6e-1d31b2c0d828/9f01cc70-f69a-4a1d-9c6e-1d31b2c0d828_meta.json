@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc70-f69a-4a1d-9c6e-1d31b2c0d828",
+  "name": "Mosel-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Peter-Kremer-Weg",
+    "hausnummer": "1",
+    "plz": "54470",
+    "ort": "Bernkastel-Kues, Stadt"
+  },
+  "lage": {
+    "lon": 7.065012,
+    "lat": 49.877407
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc70-f69a-4a1d-9c6e-1d31b2c0d828",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

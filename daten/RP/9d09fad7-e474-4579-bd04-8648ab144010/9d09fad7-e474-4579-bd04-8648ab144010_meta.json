@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad7-e474-4579-bd04-8648ab144010",
+  "name": "TC Steimel",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "1",
+    "plz": "57614",
+    "ort": "Steimel"
+  },
+  "lage": {
+    "lon": 7.628558,
+    "lat": 50.616426
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad7-e474-4579-bd04-8648ab144010",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

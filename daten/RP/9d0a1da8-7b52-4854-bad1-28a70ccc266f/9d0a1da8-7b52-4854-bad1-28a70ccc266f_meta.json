@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1da8-7b52-4854-bad1-28a70ccc266f",
+  "name": "Sporthalle IGS Betzdorf-Kirchen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kirchener Straße",
+    "hausnummer": "64",
+    "plz": "57518",
+    "ort": "Betzdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.879034,
+    "lat": 50.796076
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da8-7b52-4854-bad1-28a70ccc266f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

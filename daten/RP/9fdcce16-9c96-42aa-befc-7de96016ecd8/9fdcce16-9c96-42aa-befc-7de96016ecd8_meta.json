@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce16-9c96-42aa-befc-7de96016ecd8",
+  "name": "Bolzplatz Arnulfstraße",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Arnulfstraße",
+    "hausnummer": "43",
+    "plz": "66954",
+    "ort": "Pirmasens, Stadt"
+  },
+  "lage": {
+    "lon": 7.591081,
+    "lat": 49.19619
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce16-9c96-42aa-befc-7de96016ecd8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

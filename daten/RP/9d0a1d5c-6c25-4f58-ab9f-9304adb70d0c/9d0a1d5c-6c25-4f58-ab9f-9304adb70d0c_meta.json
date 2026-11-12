@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d5c-6c25-4f58-ab9f-9304adb70d0c",
+  "name": "Steffenshof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Steffenshof",
+    "hausnummer": "1",
+    "plz": "56290",
+    "ort": "Dommershausen"
+  },
+  "lage": {
+    "lon": 7.441285,
+    "lat": 50.134578
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5c-6c25-4f58-ab9f-9304adb70d0c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

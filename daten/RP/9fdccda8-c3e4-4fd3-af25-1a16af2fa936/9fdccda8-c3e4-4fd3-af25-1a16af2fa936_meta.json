@@ -1,0 +1,25 @@
+{
+  "id": "9fdccda8-c3e4-4fd3-af25-1a16af2fa936",
+  "name": "Kleinspielfeld Andernach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Stifterstraße",
+    "hausnummer": "11",
+    "plz": "56626",
+    "ort": "Andernach, Stadt"
+  },
+  "lage": {
+    "lon": 7.41335,
+    "lat": 50.431882
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccda8-c3e4-4fd3-af25-1a16af2fa936",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

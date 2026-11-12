@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d50-eb61-4d93-b1e9-c4b5c59cd5cb",
+  "name": "Swingolf Maarheide",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Maarheiderweg",
+    "hausnummer": "10",
+    "plz": "56651",
+    "ort": "Niederdürenbach"
+  },
+  "lage": {
+    "lon": 7.183157,
+    "lat": 50.46227
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-eb61-4d93-b1e9-c4b5c59cd5cb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

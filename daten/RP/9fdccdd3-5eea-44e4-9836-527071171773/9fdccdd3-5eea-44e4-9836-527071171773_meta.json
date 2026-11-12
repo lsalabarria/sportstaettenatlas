@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdd3-5eea-44e4-9836-527071171773",
+  "name": "Sportplatz Johannes-Gymnasium",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Johannesstraße",
+    "hausnummer": "38",
+    "plz": "56112",
+    "ort": "Lahnstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.599247,
+    "lat": 50.310521
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdd3-5eea-44e4-9836-527071171773",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

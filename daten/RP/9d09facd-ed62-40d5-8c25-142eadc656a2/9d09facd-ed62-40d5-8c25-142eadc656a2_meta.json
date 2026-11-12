@@ -1,0 +1,24 @@
+{
+  "id": "9d09facd-ed62-40d5-8c25-142eadc656a2",
+  "name": "Freizeitanlage Molzhain",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Härdtchen",
+    "hausnummer": "1",
+    "plz": "57520",
+    "ort": "Molzhain"
+  },
+  "lage": {
+    "lon": 7.856157,
+    "lat": 50.745069
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facd-ed62-40d5-8c25-142eadc656a2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

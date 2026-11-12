@@ -1,0 +1,27 @@
+{
+  "id": "9c24bfa3-2a81-486b-89d4-7010b879f992",
+  "name": "Legiahalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Kieselborn",
+    "hausnummer": "1",
+    "plz": "56073",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.537817,
+    "lat": 50.317906
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "sportarten": [
+    "Parkour"
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa3-2a81-486b-89d4-7010b879f992",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

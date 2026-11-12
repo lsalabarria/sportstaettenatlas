@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc70-3f5f-426f-8509-8d1a5d5485eb",
+  "name": "Hallenbad Idar-Oberstein",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "213",
+    "plz": "55743",
+    "ort": "Idar-Oberstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.31329,
+    "lat": 49.71174
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc70-3f5f-426f-8509-8d1a5d5485eb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

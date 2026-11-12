@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dab-b5fe-41a3-b407-5b07ea482eb5",
+  "name": "100% Fitness",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Blähaustraße",
+    "hausnummer": "2",
+    "plz": "57537",
+    "ort": "Wissen, Stadt"
+  },
+  "lage": {
+    "lon": 7.724416,
+    "lat": 50.77758
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dab-b5fe-41a3-b407-5b07ea482eb5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

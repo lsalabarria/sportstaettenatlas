@@ -1,0 +1,24 @@
+{
+  "id": "a08f7caf-9ae8-47ac-b8cc-7a3b76bad55d",
+  "name": "Sportplatz am Kohlbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Römerstraße",
+    "plz": "66903",
+    "ort": "Dittweiler"
+  },
+  "lage": {
+    "lon": 7.337968,
+    "lat": 49.424171
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7caf-9ae8-47ac-b8cc-7a3b76bad55d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

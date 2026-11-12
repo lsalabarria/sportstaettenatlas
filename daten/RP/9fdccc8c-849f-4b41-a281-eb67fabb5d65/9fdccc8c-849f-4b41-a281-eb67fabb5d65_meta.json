@@ -1,0 +1,25 @@
+{
+  "id": "9fdccc8c-849f-4b41-a281-eb67fabb5d65",
+  "name": "Sportanlage Grundschule Lustadt",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "7",
+    "plz": "67363",
+    "ort": "Lustadt"
+  },
+  "lage": {
+    "lon": 8.274609,
+    "lat": 49.245917
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc8c-849f-4b41-a281-eb67fabb5d65",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

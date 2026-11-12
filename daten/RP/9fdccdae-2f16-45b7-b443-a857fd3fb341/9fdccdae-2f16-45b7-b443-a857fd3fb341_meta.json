@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdae-2f16-45b7-b443-a857fd3fb341",
+  "name": "Volleyballplatz Freibad Pellenz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rauscherstraße",
+    "hausnummer": "98",
+    "plz": "56626",
+    "ort": "Andernach, Stadt"
+  },
+  "lage": {
+    "lon": 7.407321,
+    "lat": 50.389123
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdae-2f16-45b7-b443-a857fd3fb341",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

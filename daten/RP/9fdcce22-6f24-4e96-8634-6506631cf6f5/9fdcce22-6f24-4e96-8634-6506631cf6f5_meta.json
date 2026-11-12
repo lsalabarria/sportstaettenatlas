@@ -1,0 +1,24 @@
+{
+  "id": "9fdcce22-6f24-4e96-8634-6506631cf6f5",
+  "name": "Spielplatz am Renngraben",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Haspelweg",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.438126,
+    "lat": 49.306539
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce22-6f24-4e96-8634-6506631cf6f5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

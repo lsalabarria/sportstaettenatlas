@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1daa-b0bc-448f-a387-fe2f2cd616fa",
+  "name": "Klickerarena",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirmesfeldstraße",
+    "hausnummer": "14",
+    "plz": "57548",
+    "ort": "Kirchen (Sieg), Stadt"
+  },
+  "lage": {
+    "lon": 7.886686,
+    "lat": 50.804297
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daa-b0bc-448f-a387-fe2f2cd616fa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

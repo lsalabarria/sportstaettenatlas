@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e04-fde0-435d-b4cb-bfe709d1b968",
+  "name": "AHRena Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Gartenstraße",
+    "hausnummer": "17",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.221547,
+    "lat": 50.556635
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e04-fde0-435d-b4cb-bfe709d1b968",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

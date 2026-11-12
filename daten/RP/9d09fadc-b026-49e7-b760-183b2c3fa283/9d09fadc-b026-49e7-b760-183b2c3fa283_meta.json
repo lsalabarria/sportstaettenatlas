@@ -1,0 +1,23 @@
+{
+  "id": "9d09fadc-b026-49e7-b760-183b2c3fa283",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "54668",
+    "ort": "Alsdorf"
+  },
+  "lage": {
+    "lon": 6.464752,
+    "lat": 49.880692
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadc-b026-49e7-b760-183b2c3fa283",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d09facb-fe21-4d47-8260-0f42bc2b62b5",
+  "name": "Sportplatz Reiferscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brunnenstraße",
+    "plz": "57632",
+    "ort": "Reiferscheid"
+  },
+  "lage": {
+    "lon": 7.544913,
+    "lat": 50.653194
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facb-fe21-4d47-8260-0f42bc2b62b5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

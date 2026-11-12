@@ -1,0 +1,24 @@
+{
+  "id": "9d09faed-224c-4ba2-8d3a-352e6f6a7f49",
+  "name": "Moschheimer Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Churfeld",
+    "hausnummer": "5",
+    "plz": "56424",
+    "ort": "Moschheim"
+  },
+  "lage": {
+    "lon": 7.843844,
+    "lat": 50.479056
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faed-224c-4ba2-8d3a-352e6f6a7f49",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

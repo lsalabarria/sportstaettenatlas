@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d55-47bc-495d-a27b-fed3e3eed90c",
+  "name": "Bolzplatz Gamlen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Alteck",
+    "plz": "56761",
+    "ort": "Gamlen"
+  },
+  "lage": {
+    "lon": 7.19725,
+    "lat": 50.23987
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d55-47bc-495d-a27b-fed3e3eed90c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

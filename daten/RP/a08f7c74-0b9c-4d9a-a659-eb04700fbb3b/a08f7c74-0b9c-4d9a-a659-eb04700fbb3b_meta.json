@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c74-0b9c-4d9a-a659-eb04700fbb3b",
+  "name": "Sportplatz Udenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Osterstraße",
+    "hausnummer": "39",
+    "plz": "55288",
+    "ort": "Udenheim"
+  },
+  "lage": {
+    "lon": 8.177341,
+    "lat": 49.867461
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c74-0b9c-4d9a-a659-eb04700fbb3b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

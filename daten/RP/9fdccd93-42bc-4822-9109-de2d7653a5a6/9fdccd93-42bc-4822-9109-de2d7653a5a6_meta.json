@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd93-42bc-4822-9109-de2d7653a5a6",
+  "name": "Schützenverein 1960 Wörth am Rhein e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Im Saubögel",
+    "plz": "76744",
+    "ort": "Wörth am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.268762,
+    "lat": 49.060124
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd93-42bc-4822-9109-de2d7653a5a6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

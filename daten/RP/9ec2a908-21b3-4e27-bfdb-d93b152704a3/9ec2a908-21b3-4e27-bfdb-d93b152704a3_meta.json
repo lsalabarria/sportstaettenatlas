@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a908-21b3-4e27-bfdb-d93b152704a3",
+  "name": "Kleinspielfeld Waldalgesheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "1",
+    "plz": "55425",
+    "ort": "Waldalgesheim"
+  },
+  "lage": {
+    "lon": 7.825777,
+    "lat": 49.951314
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a908-21b3-4e27-bfdb-d93b152704a3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

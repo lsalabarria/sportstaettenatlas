@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1db1-3155-4d39-8ca0-e9ba13d7c8b8",
+  "name": "Pferdepension Telohe",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Gut Hohenunkel",
+    "plz": "53572",
+    "ort": "Unkel, Stadt"
+  },
+  "lage": {
+    "lon": 7.235045,
+    "lat": 50.606865
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db1-3155-4d39-8ca0-e9ba13d7c8b8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d52-18e4-4b0f-8ab5-8a1c06b98596",
+  "name": "Robert Wolff-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Pfarrer-Kost-Platz",
+    "plz": "56745",
+    "ort": "Weibern"
+  },
+  "lage": {
+    "lon": 7.142455,
+    "lat": 50.405287
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d52-18e4-4b0f-8ab5-8a1c06b98596",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

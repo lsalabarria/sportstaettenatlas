@@ -1,0 +1,24 @@
+{
+  "id": "9d09faf1-7905-45fe-8771-b79b5d4a3a6a",
+  "name": "Sportplatz an der Grundschule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Elberbütz",
+    "hausnummer": "14",
+    "plz": "56459",
+    "ort": "Kaden"
+  },
+  "lage": {
+    "lon": 7.91914,
+    "lat": 50.549336
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf1-7905-45fe-8771-b79b5d4a3a6a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

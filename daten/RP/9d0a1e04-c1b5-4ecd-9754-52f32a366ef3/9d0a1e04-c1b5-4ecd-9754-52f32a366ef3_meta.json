@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e04-c1b5-4ecd-9754-52f32a366ef3",
+  "name": "Sportplatz Hohenstaufenstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hohenstaufenstraße",
+    "hausnummer": "29",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.241328,
+    "lat": 50.548643
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e04-c1b5-4ecd-9754-52f32a366ef3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

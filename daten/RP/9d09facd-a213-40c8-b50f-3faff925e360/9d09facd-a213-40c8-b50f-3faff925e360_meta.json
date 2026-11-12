@@ -1,0 +1,23 @@
+{
+  "id": "9d09facd-a213-40c8-b50f-3faff925e360",
+  "name": "Sportplatz Grünebach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "plz": "57520",
+    "ort": "Grünebach"
+  },
+  "lage": {
+    "lon": 7.904435,
+    "lat": 50.775363
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facd-a213-40c8-b50f-3faff925e360",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

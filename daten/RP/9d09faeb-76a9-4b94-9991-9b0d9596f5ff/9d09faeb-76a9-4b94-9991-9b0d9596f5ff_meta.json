@@ -1,0 +1,24 @@
+{
+  "id": "9d09faeb-76a9-4b94-9991-9b0d9596f5ff",
+  "name": "Tennisplätze Girod",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "28",
+    "plz": "56412",
+    "ort": "Girod"
+  },
+  "lage": {
+    "lon": 7.905198,
+    "lat": 50.450959
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faeb-76a9-4b94-9991-9b0d9596f5ff",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

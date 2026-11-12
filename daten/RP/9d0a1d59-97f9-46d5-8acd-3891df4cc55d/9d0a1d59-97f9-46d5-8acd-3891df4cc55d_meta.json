@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d59-97f9-46d5-8acd-3891df4cc55d",
+  "name": "Gunthershalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "56283",
+    "ort": "Gondershausen"
+  },
+  "lage": {
+    "lon": 7.489036,
+    "lat": 50.161473
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d59-97f9-46d5-8acd-3891df4cc55d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a935-8d44-4611-a199-762c36826b14",
+  "name": "Sportplatz Hesslerweg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hesslerweg",
+    "hausnummer": "30",
+    "plz": "55126",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.186123,
+    "lat": 49.974885
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a935-8d44-4611-a199-762c36826b14",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

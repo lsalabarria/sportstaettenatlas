@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd68-bc02-43a9-b3f9-84422c8b74a3",
+  "name": "Freizeitgelände Herschberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Thaleischweiler Str.",
+    "hausnummer": "31",
+    "plz": "66919",
+    "ort": "Herschberg"
+  },
+  "lage": {
+    "lon": 7.551509,
+    "lat": 49.303702
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd68-bc02-43a9-b3f9-84422c8b74a3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

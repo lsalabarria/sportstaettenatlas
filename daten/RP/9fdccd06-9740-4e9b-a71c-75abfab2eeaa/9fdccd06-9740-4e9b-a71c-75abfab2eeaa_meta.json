@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd06-9740-4e9b-a71c-75abfab2eeaa",
+  "name": "Schulsportplatz Miehlen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "56357",
+    "ort": "Miehlen"
+  },
+  "lage": {
+    "lon": 7.838423,
+    "lat": 50.229989
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd06-9740-4e9b-a71c-75abfab2eeaa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

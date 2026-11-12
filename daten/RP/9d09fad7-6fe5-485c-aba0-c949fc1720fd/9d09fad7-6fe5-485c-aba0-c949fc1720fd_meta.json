@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad7-6fe5-485c-aba0-c949fc1720fd",
+  "name": "Bolzplatz Urbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "1",
+    "plz": "56317",
+    "ort": "Urbach"
+  },
+  "lage": {
+    "lon": 7.586143,
+    "lat": 50.560581
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad7-6fe5-485c-aba0-c949fc1720fd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

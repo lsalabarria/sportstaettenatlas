@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a92c-266b-420a-95b5-2112d3fdb266",
+  "name": "Bolzplatz Großwinternheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Zuckerlottchen",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.07652,
+    "lat": 49.943767
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92c-266b-420a-95b5-2112d3fdb266",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

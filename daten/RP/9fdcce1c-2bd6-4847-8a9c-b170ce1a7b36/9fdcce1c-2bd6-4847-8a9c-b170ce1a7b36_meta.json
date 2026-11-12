@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce1c-2bd6-4847-8a9c-b170ce1a7b36",
+  "name": "Tennisclub Schwarz-Weiß Speyer",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Erster Richtweg",
+    "hausnummer": "6.0",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.405122,
+    "lat": 49.33407
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce1c-2bd6-4847-8a9c-b170ce1a7b36",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1df6-6fb8-400f-9c08-f30ecc840d7c",
+  "name": "Fußballplatz Fritz-von-Wille-Straße",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Fritz-von-Wille-Straße",
+    "hausnummer": "73",
+    "plz": "54296",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.689554,
+    "lat": 49.734978
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df6-6fb8-400f-9c08-f30ecc840d7c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

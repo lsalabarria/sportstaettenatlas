@@ -1,0 +1,24 @@
+{
+  "id": "9fdcce01-b9eb-4def-af11-555b25f3b0d3",
+  "name": "Bolzplatz Hoheneckernstraße",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hoheneckernstraße",
+    "plz": "67065",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.434566,
+    "lat": 49.459978
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce01-b9eb-4def-af11-555b25f3b0d3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9f01cc5f-4f3e-40b1-a893-016f28f8527d",
+  "name": "Schwimmbad Otterberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schwimmbad",
+    "plz": "67697",
+    "ort": "Otterberg, Stadt"
+  },
+  "lage": {
+    "lon": 7.77971,
+    "lat": 49.50805
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc5f-4f3e-40b1-a893-016f28f8527d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db0-e589-463b-9057-fdd99fb17aa4",
+  "name": "Hallenbad Unkel",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "6",
+    "plz": "53572",
+    "ort": "Unkel, Stadt"
+  },
+  "lage": {
+    "lon": 7.218699,
+    "lat": 50.59809
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db0-e589-463b-9057-fdd99fb17aa4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

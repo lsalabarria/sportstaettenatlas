@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cb0-a589-46a5-941f-142ddf386dc5",
+  "name": "Römertalhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Römertalhof",
+    "hausnummer": "1",
+    "plz": "66909",
+    "ort": "Steinbach am Glan"
+  },
+  "lage": {
+    "lon": 7.363793,
+    "lat": 49.454041
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb0-a589-46a5-941f-142ddf386dc5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

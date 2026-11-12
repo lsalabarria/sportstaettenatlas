@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd67-f571-4ab6-9ef9-b6958c841544",
+  "name": "Sportplatz zwischen den Orten",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L473",
+    "plz": "66919",
+    "ort": "Saalstadt"
+  },
+  "lage": {
+    "lon": 7.5737,
+    "lat": 49.327906
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd67-f571-4ab6-9ef9-b6958c841544",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

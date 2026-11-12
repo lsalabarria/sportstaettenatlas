@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1df8-34e6-4fd6-a6b4-5da84ac2e675",
+  "name": "Schwimmbad Hotel Heinz",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "hausnummer": "77",
+    "plz": "56203",
+    "ort": "Höhr-Grenzhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.684892,
+    "lat": 50.431572
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df8-34e6-4fd6-a6b4-5da84ac2e675",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

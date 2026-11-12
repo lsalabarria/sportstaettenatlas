@@ -1,0 +1,24 @@
+{
+  "id": "9d09face-f630-42ea-a382-b6fdfb0d4e2e",
+  "name": "Mehrgenerationenplatz Schutzbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Struthweg",
+    "hausnummer": "25",
+    "plz": "57520",
+    "ort": "Schutzbach"
+  },
+  "lage": {
+    "lon": 7.900883,
+    "lat": 50.756866
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09face-f630-42ea-a382-b6fdfb0d4e2e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

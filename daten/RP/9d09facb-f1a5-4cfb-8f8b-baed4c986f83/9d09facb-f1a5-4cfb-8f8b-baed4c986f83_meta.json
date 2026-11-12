@@ -1,0 +1,23 @@
+{
+  "id": "9d09facb-f1a5-4cfb-8f8b-baed4c986f83",
+  "name": "Waldstadion Pleckhausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waldweg",
+    "plz": "56593",
+    "ort": "Pleckhausen"
+  },
+  "lage": {
+    "lon": 7.540177,
+    "lat": 50.59785
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facb-f1a5-4cfb-8f8b-baed4c986f83",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

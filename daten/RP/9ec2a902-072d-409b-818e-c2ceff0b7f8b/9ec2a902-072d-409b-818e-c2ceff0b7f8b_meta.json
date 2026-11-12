@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a902-072d-409b-818e-c2ceff0b7f8b",
+  "name": "Skatepark Carlsberg",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "hausnummer": "28",
+    "plz": "67316",
+    "ort": "Carlsberg"
+  },
+  "lage": {
+    "lon": 8.026304,
+    "lat": 49.498613
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a902-072d-409b-818e-c2ceff0b7f8b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

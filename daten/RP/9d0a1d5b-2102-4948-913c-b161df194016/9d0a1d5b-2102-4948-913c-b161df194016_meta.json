@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5b-2102-4948-913c-b161df194016",
+  "name": "Sportplatz Perscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Dorfbrunnen",
+    "plz": "55430",
+    "ort": "Perscheid"
+  },
+  "lage": {
+    "lon": 7.706059,
+    "lat": 50.072514
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5b-2102-4948-913c-b161df194016",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

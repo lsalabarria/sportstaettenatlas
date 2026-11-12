@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a938-4b66-47cc-9858-2ba265f64db5",
+  "name": "Gutenberg Gymnasium",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "An der Philippsschanze",
+    "hausnummer": "5",
+    "plz": "55131",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.263133,
+    "lat": 49.988791
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a938-4b66-47cc-9858-2ba265f64db5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

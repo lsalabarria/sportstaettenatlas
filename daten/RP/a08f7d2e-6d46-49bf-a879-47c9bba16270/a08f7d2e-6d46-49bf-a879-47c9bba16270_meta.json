@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d2e-6d46-49bf-a879-47c9bba16270",
+  "name": "Tennisclub Salinental",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Eugen-Kramb-Weg",
+    "hausnummer": "2",
+    "plz": "55545",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.853703,
+    "lat": 49.822168
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d2e-6d46-49bf-a879-47c9bba16270",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

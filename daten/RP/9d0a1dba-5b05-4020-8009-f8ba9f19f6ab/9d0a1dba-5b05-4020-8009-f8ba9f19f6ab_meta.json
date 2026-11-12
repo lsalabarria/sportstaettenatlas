@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dba-5b05-4020-8009-f8ba9f19f6ab",
+  "name": "Turnhalle Medard-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Medardstraße",
+    "hausnummer": "2",
+    "plz": "54294",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.630152,
+    "lat": 49.738086
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dba-5b05-4020-8009-f8ba9f19f6ab",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e01-4992-4ea9-bd07-65982eee853a",
+  "name": "Sportplatz Martinusstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Martinusstraße",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.164017,
+    "lat": 50.547495
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e01-4992-4ea9-bd07-65982eee853a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db5-3dca-4169-9270-05fb48c54174",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Marienstraße",
+    "hausnummer": "21",
+    "plz": "54329",
+    "ort": "Konz, Stadt"
+  },
+  "lage": {
+    "lon": 6.557019,
+    "lat": 49.666164
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db5-3dca-4169-9270-05fb48c54174",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

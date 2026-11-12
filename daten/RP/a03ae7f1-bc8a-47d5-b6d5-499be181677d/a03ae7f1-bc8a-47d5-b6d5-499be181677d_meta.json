@@ -1,0 +1,23 @@
+{
+  "id": "a03ae7f1-bc8a-47d5-b6d5-499be181677d",
+  "name": "Stadthalle Weißenthurm",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kirchstr.",
+    "plz": "56575",
+    "ort": "Weißenthurm, Stadt"
+  },
+  "lage": {
+    "lon": 7.461087,
+    "lat": 50.413186
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a03ae7f1-bc8a-47d5-b6d5-499be181677d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

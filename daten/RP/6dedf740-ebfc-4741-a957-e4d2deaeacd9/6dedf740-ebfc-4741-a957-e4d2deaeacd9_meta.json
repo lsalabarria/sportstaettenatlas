@@ -1,0 +1,23 @@
+{
+  "id": "6dedf740-ebfc-4741-a957-e4d2deaeacd9",
+  "name": "Beachvolleyballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Benderstraße",
+    "plz": "67227",
+    "ort": "Frankenthal (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.360204,
+    "lat": 49.529891
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "6dedf740-ebfc-4741-a957-e4d2deaeacd9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

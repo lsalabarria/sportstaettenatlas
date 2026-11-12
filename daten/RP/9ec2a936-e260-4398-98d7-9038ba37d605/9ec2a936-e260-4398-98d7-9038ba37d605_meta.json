@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a936-e260-4398-98d7-9038ba37d605",
+  "name": "Bolzplatz an der Brausch",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Südstraße",
+    "plz": "55129",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.279589,
+    "lat": 49.95703
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a936-e260-4398-98d7-9038ba37d605",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

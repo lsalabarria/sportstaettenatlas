@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad4-5214-4854-9257-498385bf14ba",
+  "name": "SV Vettelschoß-Kalenborn 1924 e.V.",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am blauen See",
+    "plz": "53560",
+    "ort": "Vettelschoß"
+  },
+  "lage": {
+    "lon": 7.340355,
+    "lat": 50.621256
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad4-5214-4854-9257-498385bf14ba",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

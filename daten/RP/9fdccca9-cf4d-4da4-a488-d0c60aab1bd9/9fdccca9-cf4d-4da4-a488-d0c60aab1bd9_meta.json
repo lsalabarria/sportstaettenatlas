@@ -1,0 +1,24 @@
+{
+  "id": "9fdccca9-cf4d-4da4-a488-d0c60aab1bd9",
+  "name": "Schützenverein Steinweiler",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Im Rottgehäg",
+    "plz": "76872",
+    "ort": "Steinweiler"
+  },
+  "lage": {
+    "lon": 8.155728,
+    "lat": 49.127566
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccca9-cf4d-4da4-a488-d0c60aab1bd9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a928-534a-4497-a98f-88394b2d8934",
+  "name": "Palmensteinhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Dromersheimer Straße",
+    "hausnummer": "9",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.923938,
+    "lat": 49.92288
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a928-534a-4497-a98f-88394b2d8934",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd7d-b888-4276-82f2-84948398ee01",
+  "name": "TC Süd-West Landau e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Hagenauer Str.",
+    "hausnummer": "10",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.091968,
+    "lat": 49.190258
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd7d-b888-4276-82f2-84948398ee01",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

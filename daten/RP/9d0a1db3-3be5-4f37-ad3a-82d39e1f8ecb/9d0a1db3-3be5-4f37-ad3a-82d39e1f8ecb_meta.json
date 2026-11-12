@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1db3-3be5-4f37-ad3a-82d39e1f8ecb",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Corneliuspforte",
+    "plz": "54338",
+    "ort": "Schweich, Stadt"
+  },
+  "lage": {
+    "lon": 6.754566,
+    "lat": 49.825051
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db3-3be5-4f37-ad3a-82d39e1f8ecb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d58-c978-4793-b491-f2b5106bf38f",
+  "name": "Bolzplatz Bünderich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Moselufer",
+    "plz": "56862",
+    "ort": "Pünderich"
+  },
+  "lage": {
+    "lon": 7.127533,
+    "lat": 50.043835
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d58-c978-4793-b491-f2b5106bf38f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

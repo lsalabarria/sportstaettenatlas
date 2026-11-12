@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a92e-c961-4bb1-a248-2b7f0d49b042",
+  "name": "Sportanlage IGS Eisenberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Friedrich-Ebert-Straße",
+    "hausnummer": "19",
+    "plz": "67304",
+    "ort": "Eisenberg (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.065225,
+    "lat": 49.558603
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92e-c961-4bb1-a248-2b7f0d49b042",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

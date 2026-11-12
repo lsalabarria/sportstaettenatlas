@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5d-7a80-4c89-b981-11fb9afbbf4f",
+  "name": "Schützenhaus Bärenbach",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Schützenhausstraße",
+    "plz": "55438",
+    "ort": "Bärenbach"
+  },
+  "lage": {
+    "lon": 7.312214,
+    "lat": 49.947645
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5d-7a80-4c89-b981-11fb9afbbf4f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

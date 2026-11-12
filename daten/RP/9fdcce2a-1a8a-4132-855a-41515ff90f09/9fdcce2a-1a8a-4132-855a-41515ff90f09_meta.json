@@ -1,0 +1,23 @@
+{
+  "id": "9fdcce2a-1a8a-4132-855a-41515ff90f09",
+  "name": "Baseballfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "67547",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.389848,
+    "lat": 49.610468
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce2a-1a8a-4132-855a-41515ff90f09",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

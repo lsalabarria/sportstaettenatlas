@@ -1,0 +1,23 @@
+{
+  "id": "a0047374-594a-4066-b2de-5b449d242895",
+  "name": "Feusdorf Rasenplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wiesbaumer Str.",
+    "plz": "54584",
+    "ort": "Feusdorf"
+  },
+  "lage": {
+    "lon": 6.614782,
+    "lat": 50.349648
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0047374-594a-4066-b2de-5b449d242895",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

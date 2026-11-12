@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db9-f14b-4cc3-bc12-0ab4ac1f2fc4",
+  "name": "Turnhalle Heiligkreuz",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ludwig-Simon-Straße",
+    "hausnummer": "2",
+    "plz": "54295",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.648482,
+    "lat": 49.739071
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db9-f14b-4cc3-bc12-0ab4ac1f2fc4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

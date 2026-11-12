@@ -1,0 +1,23 @@
+{
+  "id": "a08f7c92-962b-4607-ac8d-7ed26d35f7e8",
+  "name": "Waldsportanlage",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "55767",
+    "ort": "Schwollen"
+  },
+  "lage": {
+    "lon": 7.178118,
+    "lat": 49.715027
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c92-962b-4607-ac8d-7ed26d35f7e8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

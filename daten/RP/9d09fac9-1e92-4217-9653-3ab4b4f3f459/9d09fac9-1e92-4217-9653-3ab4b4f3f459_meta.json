@@ -1,0 +1,24 @@
+{
+  "id": "9d09fac9-1e92-4217-9653-3ab4b4f3f459",
+  "name": "Spielplatz Berzhausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "54",
+    "plz": "57632",
+    "ort": "Berzhausen"
+  },
+  "lage": {
+    "lon": 7.565866,
+    "lat": 50.655918
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac9-1e92-4217-9653-3ab4b4f3f459",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

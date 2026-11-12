@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad8-081f-4d32-bcba-04a043cf6b84",
+  "name": "Sportplatz Dürrholz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mittelstraße",
+    "plz": "56307",
+    "ort": "Dürrholz"
+  },
+  "lage": {
+    "lon": 7.566883,
+    "lat": 50.582965
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad8-081f-4d32-bcba-04a043cf6b84",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

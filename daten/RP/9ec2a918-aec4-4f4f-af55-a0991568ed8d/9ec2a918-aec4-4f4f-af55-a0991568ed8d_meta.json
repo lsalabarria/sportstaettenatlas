@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a918-aec4-4f4f-af55-a0991568ed8d",
+  "name": "Bolzplatz Böbingen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brühlgraben",
+    "plz": "67482",
+    "ort": "Böbingen"
+  },
+  "lage": {
+    "lon": 8.232093,
+    "lat": 49.284921
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a918-aec4-4f4f-af55-a0991568ed8d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

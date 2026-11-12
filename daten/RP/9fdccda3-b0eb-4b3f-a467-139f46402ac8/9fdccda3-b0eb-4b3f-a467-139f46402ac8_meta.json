@@ -1,0 +1,25 @@
+{
+  "id": "9fdccda3-b0eb-4b3f-a467-139f46402ac8",
+  "name": "Sport und Freizeitanlage Weißenthurm",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Ob. Fährstraße",
+    "hausnummer": "7",
+    "plz": "56575",
+    "ort": "Weißenthurm, Stadt"
+  },
+  "lage": {
+    "lon": 7.449679,
+    "lat": 50.417208
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccda3-b0eb-4b3f-a467-139f46402ac8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

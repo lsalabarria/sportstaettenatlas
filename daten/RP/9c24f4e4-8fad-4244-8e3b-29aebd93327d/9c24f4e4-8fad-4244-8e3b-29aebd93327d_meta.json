@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4e4-8fad-4244-8e3b-29aebd93327d",
+  "name": "Reitplatz Kruchten",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Maximinstraße",
+    "plz": "54675",
+    "ort": "Kruchten"
+  },
+  "lage": {
+    "lon": 6.315968,
+    "lat": 49.901302
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e4-8fad-4244-8e3b-29aebd93327d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

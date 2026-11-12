@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc50-32a8-4b9f-ae3d-e9197d3b9407",
+  "name": "Pirmasenser Luft- und Badepark (PLUB)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Lemberger Str.",
+    "hausnummer": "41",
+    "plz": "66955",
+    "ort": "Pirmasens, Stadt"
+  },
+  "lage": {
+    "lon": 7.61656,
+    "lat": 49.19062
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc50-32a8-4b9f-ae3d-e9197d3b9407",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad3-21a0-479f-b227-5aabac1acc60",
+  "name": "Turnhalle TV Rheinbrohl",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Maria-Hilf-Straße",
+    "hausnummer": "8b",
+    "plz": "56598",
+    "ort": "Rheinbrohl"
+  },
+  "lage": {
+    "lon": 7.332725,
+    "lat": 50.496681
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad3-21a0-479f-b227-5aabac1acc60",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

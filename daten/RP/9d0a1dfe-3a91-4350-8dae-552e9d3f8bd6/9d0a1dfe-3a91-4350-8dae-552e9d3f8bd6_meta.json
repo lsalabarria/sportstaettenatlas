@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dfe-3a91-4350-8dae-552e9d3f8bd6",
+  "name": "Rundsporthalle Hachenburg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Lohmühle",
+    "hausnummer": "1",
+    "plz": "57627",
+    "ort": "Hachenburg, Stadt"
+  },
+  "lage": {
+    "lon": 7.818694,
+    "lat": 50.656039
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfe-3a91-4350-8dae-552e9d3f8bd6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

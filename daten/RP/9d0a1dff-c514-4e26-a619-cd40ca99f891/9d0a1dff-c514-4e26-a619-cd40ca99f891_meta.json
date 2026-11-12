@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dff-c514-4e26-a619-cd40ca99f891",
+  "name": "Sportplatz Poststraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Poststraße",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.138134,
+    "lat": 50.543765
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dff-c514-4e26-a619-cd40ca99f891",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

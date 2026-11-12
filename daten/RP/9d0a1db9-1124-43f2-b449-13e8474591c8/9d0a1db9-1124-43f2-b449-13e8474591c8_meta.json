@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db9-1124-43f2-b449-13e8474591c8",
+  "name": "Toni-Chorus-Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ausoniusstraße",
+    "hausnummer": "5",
+    "plz": "54292",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.63463,
+    "lat": 49.761018
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db9-1124-43f2-b449-13e8474591c8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

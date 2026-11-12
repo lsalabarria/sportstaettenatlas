@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1daf-c425-4f12-8174-e6a7fac46631",
+  "name": "Freigelände TV Heddesdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bürgermeister-Bidgenbach-Straße",
+    "hausnummer": "11",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.471279,
+    "lat": 50.44149
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daf-c425-4f12-8174-e6a7fac46631",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

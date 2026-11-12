@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e12-01c3-4df8-8dfa-c1cecbdd2eab",
+  "name": "Beachvolleyballplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Raderstraße",
+    "plz": "54568",
+    "ort": "Gerolstein, Stadt"
+  },
+  "lage": {
+    "lon": 6.653995,
+    "lat": 50.220679
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e12-01c3-4df8-8dfa-c1cecbdd2eab",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

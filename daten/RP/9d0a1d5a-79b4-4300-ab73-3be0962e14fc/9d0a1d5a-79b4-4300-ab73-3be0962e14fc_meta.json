@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5a-79b4-4300-ab73-3be0962e14fc",
+  "name": "Sportplatz Leiningen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56291",
+    "ort": "Leiningen"
+  },
+  "lage": {
+    "lon": 7.572879,
+    "lat": 50.12938
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5a-79b4-4300-ab73-3be0962e14fc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

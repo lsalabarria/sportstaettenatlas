@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc69-8e02-492d-8be3-ff2025f84a7b",
+  "name": "Regionalbad Rheinwelle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Binger Straße",
+    "hausnummer": "99",
+    "plz": "55435",
+    "ort": "Gau-Algesheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.00479,
+    "lat": 49.96836
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc69-8e02-492d-8be3-ff2025f84a7b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

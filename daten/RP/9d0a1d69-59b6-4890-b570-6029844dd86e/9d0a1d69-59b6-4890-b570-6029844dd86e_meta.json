@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d69-59b6-4890-b570-6029844dd86e",
+  "name": "Bolzplatz Kleinich",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Ortsstraße",
+    "hausnummer": "38",
+    "plz": "54483",
+    "ort": "Kleinich"
+  },
+  "lage": {
+    "lon": 7.18476,
+    "lat": 49.888818
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d69-59b6-4890-b570-6029844dd86e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

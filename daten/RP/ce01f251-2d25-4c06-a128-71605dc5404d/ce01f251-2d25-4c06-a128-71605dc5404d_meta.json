@@ -1,0 +1,23 @@
+{
+  "id": "ce01f251-2d25-4c06-a128-71605dc5404d",
+  "name": "Skilift, Bretthausen, Grünschlagswiese und zurück zum Skilift WSV Salzburger Kopf",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Burbacher Straße",
+    "plz": "56479",
+    "ort": "Bretthausen"
+  },
+  "lage": {
+    "lon": 8.06026,
+    "lat": 50.672284
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "ce01f251-2d25-4c06-a128-71605dc5404d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

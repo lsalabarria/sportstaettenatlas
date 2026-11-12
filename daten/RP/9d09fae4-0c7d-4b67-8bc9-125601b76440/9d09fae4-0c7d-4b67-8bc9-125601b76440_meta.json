@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae4-0c7d-4b67-8bc9-125601b76440",
+  "name": "Sportplatz Waldweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Steinberger Straße",
+    "plz": "54429",
+    "ort": "Waldweiler"
+  },
+  "lage": {
+    "lon": 6.806127,
+    "lat": 49.610775
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae4-0c7d-4b67-8bc9-125601b76440",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

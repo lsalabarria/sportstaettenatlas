@@ -1,0 +1,24 @@
+{
+  "id": "9fdccdad-cdfe-411a-9cac-cd7f922cbb7e",
+  "name": "Reiterhof Gut Nettehammer",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Gut Nettehammer",
+    "plz": "56626",
+    "ort": "Andernach, Stadt"
+  },
+  "lage": {
+    "lon": 7.420162,
+    "lat": 50.407007
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdad-cdfe-411a-9cac-cd7f922cbb7e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

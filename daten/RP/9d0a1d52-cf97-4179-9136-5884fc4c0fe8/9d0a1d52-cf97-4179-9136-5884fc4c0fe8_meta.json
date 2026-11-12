@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d52-cf97-4179-9136-5884fc4c0fe8",
+  "name": "Sportpark Cochem-Dohr GmbH",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "1",
+    "plz": "56812",
+    "ort": "Dohr"
+  },
+  "lage": {
+    "lon": 7.129065,
+    "lat": 50.134068
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d52-cf97-4179-9136-5884fc4c0fe8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

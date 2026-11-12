@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a916-7ff6-42c3-a048-86fc6dcbc972",
+  "name": "Waldsportplatz Hallgarten",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L379",
+    "plz": "67826",
+    "ort": "Hallgarten"
+  },
+  "lage": {
+    "lon": 7.798534,
+    "lat": 49.753501
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a916-7ff6-42c3-a048-86fc6dcbc972",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

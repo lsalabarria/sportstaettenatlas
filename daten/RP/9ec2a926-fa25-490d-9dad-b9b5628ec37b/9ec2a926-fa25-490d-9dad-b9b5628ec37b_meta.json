@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a926-fa25-490d-9dad-b9b5628ec37b",
+  "name": "Bolzplatz Bacharach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Strandbadweg",
+    "hausnummer": "6",
+    "plz": "55422",
+    "ort": "Bacharach, Stadt"
+  },
+  "lage": {
+    "lon": 7.770868,
+    "lat": 50.056638
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a926-fa25-490d-9dad-b9b5628ec37b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

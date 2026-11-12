@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d2d-5f36-4d04-bd86-f8746b68aa9c",
+  "name": "Stadion Salinental",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Eugen-Kramb-Weg",
+    "hausnummer": "4",
+    "plz": "55545",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.854708,
+    "lat": 49.823647
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d2d-5f36-4d04-bd86-f8746b68aa9c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

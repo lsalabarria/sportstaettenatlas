@@ -1,0 +1,23 @@
+{
+  "id": "9d09face-1c31-4620-b7ba-3d6780b04fca",
+  "name": "Tennisanlage Rosenheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Hachenburgerstraße",
+    "plz": "57520",
+    "ort": "Rosenheim (Landkreis Altenkirchen)"
+  },
+  "lage": {
+    "lon": 7.843675,
+    "lat": 50.708001
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09face-1c31-4620-b7ba-3d6780b04fca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

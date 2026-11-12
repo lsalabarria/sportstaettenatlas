@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e12-d179-4521-9deb-a47a41c39f7d",
+  "name": "Sportplatz Waldkönigen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waldkönigener Straße",
+    "plz": "54550",
+    "ort": "Daun, Stadt"
+  },
+  "lage": {
+    "lon": 6.802828,
+    "lat": 50.229527
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e12-d179-4521-9deb-a47a41c39f7d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

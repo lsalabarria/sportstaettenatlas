@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdc4-8f1a-4f66-a1da-51c38648d841",
+  "name": "Kraft Point Diez",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Wilhelmstraße",
+    "hausnummer": "50",
+    "plz": "65582",
+    "ort": "Diez, Stadt"
+  },
+  "lage": {
+    "lon": 8.015224,
+    "lat": 50.370181
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdc4-8f1a-4f66-a1da-51c38648d841",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

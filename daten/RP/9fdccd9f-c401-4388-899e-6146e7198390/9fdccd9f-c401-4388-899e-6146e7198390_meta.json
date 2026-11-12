@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd9f-c401-4388-899e-6146e7198390",
+  "name": "Kletterwald Sayn",
+  "kategorie": "Klettersportstätte",
+  "adresse": {
+    "strasse": "Im Brexbachtal",
+    "plz": "56170",
+    "ort": "Bendorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.587436,
+    "lat": 50.4374
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd9f-c401-4388-899e-6146e7198390",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

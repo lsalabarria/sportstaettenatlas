@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd46-8238-4151-b61b-ad5f166eda77",
+  "name": "Gestüt Erfweiler",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Kahlenberg",
+    "hausnummer": "1",
+    "plz": "66996",
+    "ort": "Erfweiler"
+  },
+  "lage": {
+    "lon": 7.81795,
+    "lat": 49.152506
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd46-8238-4151-b61b-ad5f166eda77",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

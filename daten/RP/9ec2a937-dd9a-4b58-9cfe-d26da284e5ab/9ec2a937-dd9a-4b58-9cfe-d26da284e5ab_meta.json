@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a937-dd9a-4b58-9cfe-d26da284e5ab",
+  "name": "Sporthalle Gymnasium Mainz-Oberstadt",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hechtsheimer Straße",
+    "hausnummer": "29",
+    "plz": "55131",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.277866,
+    "lat": 49.980118
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a937-dd9a-4b58-9cfe-d26da284e5ab",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

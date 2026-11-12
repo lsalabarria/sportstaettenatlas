@@ -1,0 +1,23 @@
+{
+  "id": "9d09fadc-cdd1-4ed3-9c2a-f0bf42494343",
+  "name": "Turnhalle Idenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "54636",
+    "ort": "Idenheim"
+  },
+  "lage": {
+    "lon": 6.574345,
+    "lat": 49.904196
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadc-cdd1-4ed3-9c2a-f0bf42494343",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

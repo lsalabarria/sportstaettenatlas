@@ -1,0 +1,24 @@
+{
+  "id": "9fdccc8e-061b-47fd-8b21-3ef1b8e60d12",
+  "name": "Sportanlage Fußball-Club Lustadt e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Unteren Griesweg",
+    "plz": "67363",
+    "ort": "Lustadt"
+  },
+  "lage": {
+    "lon": 8.28108,
+    "lat": 49.235541
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc8e-061b-47fd-8b21-3ef1b8e60d12",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

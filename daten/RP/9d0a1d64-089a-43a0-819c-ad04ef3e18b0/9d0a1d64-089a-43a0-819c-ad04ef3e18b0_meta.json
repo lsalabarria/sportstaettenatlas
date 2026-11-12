@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1d64-089a-43a0-819c-ad04ef3e18b0",
+  "name": "Modellsportclub Erbeskopf",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "plz": "54411",
+    "ort": "Deuselbach"
+  },
+  "lage": {
+    "lon": 7.03645,
+    "lat": 49.755412
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d64-089a-43a0-819c-ad04ef3e18b0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

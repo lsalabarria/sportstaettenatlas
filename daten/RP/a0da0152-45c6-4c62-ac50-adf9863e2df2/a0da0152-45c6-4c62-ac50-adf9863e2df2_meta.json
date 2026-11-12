@@ -1,0 +1,24 @@
+{
+  "id": "a0da0152-45c6-4c62-ac50-adf9863e2df2",
+  "name": "Haus Siebenborn",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Siebenbornstraße",
+    "hausnummer": "15",
+    "plz": "56337",
+    "ort": "Simmern"
+  },
+  "lage": {
+    "lon": 7.668609,
+    "lat": 50.390647
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0da0152-45c6-4c62-ac50-adf9863e2df2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

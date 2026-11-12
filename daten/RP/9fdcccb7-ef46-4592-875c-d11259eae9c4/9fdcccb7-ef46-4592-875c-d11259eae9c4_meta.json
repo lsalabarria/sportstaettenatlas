@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccb7-ef46-4592-875c-d11259eae9c4",
+  "name": "Distelberger Hof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Distelberger Weg",
+    "plz": "56333",
+    "ort": "Winningen"
+  },
+  "lage": {
+    "lon": 7.508031,
+    "lat": 50.317049
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccb7-ef46-4592-875c-d11259eae9c4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

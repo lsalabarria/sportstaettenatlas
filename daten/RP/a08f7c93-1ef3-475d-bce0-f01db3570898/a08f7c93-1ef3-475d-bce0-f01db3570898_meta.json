@@ -1,0 +1,24 @@
+{
+  "id": "a08f7c93-1ef3-475d-bce0-f01db3570898",
+  "name": "Sportplatz Auf der Dry",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf der Dry",
+    "plz": "55767",
+    "ort": "Wilzenberg-Hußweiler"
+  },
+  "lage": {
+    "lon": 7.219993,
+    "lat": 49.707395
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c93-1ef3-475d-bce0-f01db3570898",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

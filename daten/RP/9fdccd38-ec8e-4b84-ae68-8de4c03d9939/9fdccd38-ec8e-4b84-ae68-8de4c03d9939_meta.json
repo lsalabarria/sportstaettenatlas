@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd38-ec8e-4b84-ae68-8de4c03d9939",
+  "name": "Waldstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hermann-Löns-Straße",
+    "hausnummer": "2c",
+    "plz": "67117",
+    "ort": "Limburgerhof"
+  },
+  "lage": {
+    "lon": 8.379452,
+    "lat": 49.420477
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd38-ec8e-4b84-ae68-8de4c03d9939",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d58-7e7f-46ab-82f4-0617207afd27",
+  "name": "Mehrzweckhalle Mittelstrimmig",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "56858",
+    "ort": "Mittelstrimmig"
+  },
+  "lage": {
+    "lon": 7.287372,
+    "lat": 50.090989
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d58-7e7f-46ab-82f4-0617207afd27",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d09fade-a02a-4bcf-a1a0-2c645e2afc40",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An der Kelterstation",
+    "plz": "54340",
+    "ort": "Leiwen"
+  },
+  "lage": {
+    "lon": 6.856778,
+    "lat": 49.835164
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fade-a02a-4bcf-a1a0-2c645e2afc40",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

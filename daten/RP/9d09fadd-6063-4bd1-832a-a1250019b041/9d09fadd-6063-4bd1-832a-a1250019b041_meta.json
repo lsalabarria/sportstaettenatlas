@@ -1,0 +1,24 @@
+{
+  "id": "9d09fadd-6063-4bd1-832a-a1250019b041",
+  "name": "Turnhalle Rodt",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ringstraße",
+    "hausnummer": "16",
+    "plz": "54313",
+    "ort": "Zemmer"
+  },
+  "lage": {
+    "lon": 6.672121,
+    "lat": 49.870867
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadd-6063-4bd1-832a-a1250019b041",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

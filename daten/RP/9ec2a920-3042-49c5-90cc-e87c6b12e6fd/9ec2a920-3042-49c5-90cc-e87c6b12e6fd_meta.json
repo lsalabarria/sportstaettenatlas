@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a920-3042-49c5-90cc-e87c6b12e6fd",
+  "name": "Sportplatz TSV Wernersberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Altenberg",
+    "plz": "76857",
+    "ort": "Wernersberg"
+  },
+  "lage": {
+    "lon": 7.925663,
+    "lat": 49.182211
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a920-3042-49c5-90cc-e87c6b12e6fd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

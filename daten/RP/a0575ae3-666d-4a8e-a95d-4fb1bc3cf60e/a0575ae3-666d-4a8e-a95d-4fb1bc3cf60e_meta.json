@@ -1,0 +1,23 @@
+{
+  "id": "a0575ae3-666d-4a8e-a95d-4fb1bc3cf60e",
+  "name": "Kirchwald Rasenplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf Silchenrath",
+    "plz": "56729",
+    "ort": "Kirchwald"
+  },
+  "lage": {
+    "lon": 7.167762,
+    "lat": 50.367988
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0575ae3-666d-4a8e-a95d-4fb1bc3cf60e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

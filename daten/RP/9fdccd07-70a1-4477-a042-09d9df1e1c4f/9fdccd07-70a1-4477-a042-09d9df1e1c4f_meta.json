@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd07-70a1-4477-a042-09d9df1e1c4f",
+  "name": "Sporthalle Miehlen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "3",
+    "plz": "56357",
+    "ort": "Miehlen"
+  },
+  "lage": {
+    "lon": 7.830461,
+    "lat": 50.231043
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd07-70a1-4477-a042-09d9df1e1c4f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d59-568d-41a6-81c8-46c2e1164c9a",
+  "name": "Bolzplatz Birkheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Briel",
+    "plz": "56291",
+    "ort": "Birkheim"
+  },
+  "lage": {
+    "lon": 7.619549,
+    "lat": 50.114987
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d59-568d-41a6-81c8-46c2e1164c9a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a93a-5653-4a4a-92c7-7c99ea76f264",
+  "name": "Sporthalle Kanonikus-Kir-Realschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "An Schneiders Mühle",
+    "hausnummer": "2",
+    "plz": "55122",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.230941,
+    "lat": 50.003327
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93a-5653-4a4a-92c7-7c99ea76f264",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

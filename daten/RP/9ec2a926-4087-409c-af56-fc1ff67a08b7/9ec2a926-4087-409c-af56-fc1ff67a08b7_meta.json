@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a926-4087-409c-af56-fc1ff67a08b7",
+  "name": "Tennisclub Wachenheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "101",
+    "plz": "67157",
+    "ort": "Wachenheim an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.164713,
+    "lat": 49.434115
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a926-4087-409c-af56-fc1ff67a08b7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

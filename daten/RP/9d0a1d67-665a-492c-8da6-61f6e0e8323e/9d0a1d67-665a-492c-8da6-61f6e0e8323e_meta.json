@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d67-665a-492c-8da6-61f6e0e8323e",
+  "name": "IGS Salmtal Mehrzweckhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Salmaue",
+    "hausnummer": "8",
+    "plz": "54528",
+    "ort": "Salmtal"
+  },
+  "lage": {
+    "lon": 6.837361,
+    "lat": 49.928022
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d67-665a-492c-8da6-61f6e0e8323e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

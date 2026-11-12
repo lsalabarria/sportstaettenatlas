@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da3-f365-4f2f-a9e0-03c519526970",
+  "name": "Sportplatz Walsdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "54578",
+    "ort": "Walsdorf"
+  },
+  "lage": {
+    "lon": 6.704457,
+    "lat": 50.278662
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da3-f365-4f2f-a9e0-03c519526970",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

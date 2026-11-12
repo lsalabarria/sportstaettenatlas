@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce27-322f-4840-9fb2-e065747728dc",
+  "name": "Pfrimmtal Realschule Plus",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Nievergoltstraße",
+    "hausnummer": "63",
+    "plz": "67549",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.319386,
+    "lat": 49.638679
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce27-322f-4840-9fb2-e065747728dc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

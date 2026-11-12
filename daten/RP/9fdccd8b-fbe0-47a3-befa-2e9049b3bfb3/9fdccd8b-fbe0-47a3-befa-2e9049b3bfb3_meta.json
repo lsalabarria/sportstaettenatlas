@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd8b-fbe0-47a3-befa-2e9049b3bfb3",
+  "name": "Sporthalle Schaidt",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "K23",
+    "plz": "76744",
+    "ort": "Wörth am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.085758,
+    "lat": 49.052693
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd8b-fbe0-47a3-befa-2e9049b3bfb3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

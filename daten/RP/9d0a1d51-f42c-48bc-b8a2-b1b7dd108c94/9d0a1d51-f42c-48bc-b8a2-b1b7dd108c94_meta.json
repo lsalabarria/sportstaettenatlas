@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d51-f42c-48bc-b8a2-b1b7dd108c94",
+  "name": "Freizeitbad Brohltal",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hommersbergstraße",
+    "hausnummer": "95",
+    "plz": "56745",
+    "ort": "Weibern"
+  },
+  "lage": {
+    "lon": 7.13056,
+    "lat": 50.412876
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d51-f42c-48bc-b8a2-b1b7dd108c94",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

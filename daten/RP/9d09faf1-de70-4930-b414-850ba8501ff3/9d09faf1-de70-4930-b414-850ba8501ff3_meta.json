@@ -1,0 +1,24 @@
+{
+  "id": "9d09faf1-de70-4930-b414-850ba8501ff3",
+  "name": "Carl-Lefknecht-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "6",
+    "plz": "56479",
+    "ort": "Irmtraut"
+  },
+  "lage": {
+    "lon": 8.061282,
+    "lat": 50.557124
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf1-de70-4930-b414-850ba8501ff3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d59-ff85-4212-8bf6-23b8af4d7754",
+  "name": "Waldjugendheim Kolbenstein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "K117",
+    "plz": "56283",
+    "ort": "Halsenbach"
+  },
+  "lage": {
+    "lon": 7.580502,
+    "lat": 50.186659
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d59-ff85-4212-8bf6-23b8af4d7754",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

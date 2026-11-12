@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4d-9b29-42fd-b1b8-211160188d3b",
+  "name": "Sportplatz Winnerath",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Martinsnück",
+    "plz": "53520",
+    "ort": "Winnerath"
+  },
+  "lage": {
+    "lon": 6.880412,
+    "lat": 50.427808
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4d-9b29-42fd-b1b8-211160188d3b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

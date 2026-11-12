@@ -1,0 +1,23 @@
+{
+  "id": "a08f7cad-1741-4f3b-98e6-e17619de5ca5",
+  "name": "Bikepark",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "plz": "66901",
+    "ort": "Schönenberg-Kübelberg"
+  },
+  "lage": {
+    "lon": 7.365214,
+    "lat": 49.401163
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cad-1741-4f3b-98e6-e17619de5ca5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

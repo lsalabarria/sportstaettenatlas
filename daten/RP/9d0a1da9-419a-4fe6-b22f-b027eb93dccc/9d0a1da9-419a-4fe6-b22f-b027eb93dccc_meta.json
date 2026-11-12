@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1da9-419a-4fe6-b22f-b027eb93dccc",
+  "name": "Sportplatz Steinebach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gasgartenstraße",
+    "hausnummer": "13",
+    "plz": "57520",
+    "ort": "Steinebach/ Sieg"
+  },
+  "lage": {
+    "lon": 7.828817,
+    "lat": 50.735291
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da9-419a-4fe6-b22f-b027eb93dccc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d55-0ba9-46d0-bb15-216c74cd32ae",
+  "name": "Mehrzweckhalle Düngenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Urmersbacher Straße",
+    "plz": "56761",
+    "ort": "Düngenheim"
+  },
+  "lage": {
+    "lon": 7.164758,
+    "lat": 50.25914
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d55-0ba9-46d0-bb15-216c74cd32ae",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

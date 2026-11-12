@@ -1,0 +1,24 @@
+{
+  "id": "9fdccce3-4b78-4ca7-a980-5742c8656573",
+  "name": "Bolzplatz Horhausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Billensteiner Str.",
+    "plz": "56379",
+    "ort": "Horhausen"
+  },
+  "lage": {
+    "lon": 7.892264,
+    "lat": 50.36778
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccce3-4b78-4ca7-a980-5742c8656573",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

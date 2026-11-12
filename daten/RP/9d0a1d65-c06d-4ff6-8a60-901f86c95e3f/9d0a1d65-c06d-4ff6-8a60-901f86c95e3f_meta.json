@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d65-c06d-4ff6-8a60-901f86c95e3f",
+  "name": "Tennisplatz Neumagen-Dhron",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "L155",
+    "plz": "54347",
+    "ort": "Neumagen-Dhron"
+  },
+  "lage": {
+    "lon": 6.928095,
+    "lat": 49.843298
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d65-c06d-4ff6-8a60-901f86c95e3f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

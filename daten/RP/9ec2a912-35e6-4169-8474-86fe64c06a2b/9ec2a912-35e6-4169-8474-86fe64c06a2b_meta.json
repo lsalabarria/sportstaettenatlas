@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a912-35e6-4169-8474-86fe64c06a2b",
+  "name": "Sportplatz Jahnstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "38",
+    "plz": "67585",
+    "ort": "Dorn-Dürkheim"
+  },
+  "lage": {
+    "lon": 8.264995,
+    "lat": 49.767214
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a912-35e6-4169-8474-86fe64c06a2b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

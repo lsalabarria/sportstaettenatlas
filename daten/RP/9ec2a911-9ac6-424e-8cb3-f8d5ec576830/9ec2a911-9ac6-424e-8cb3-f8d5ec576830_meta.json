@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a911-9ac6-424e-8cb3-f8d5ec576830",
+  "name": "Sportplatz Jahnstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Haierweg",
+    "hausnummer": "10",
+    "plz": "55278",
+    "ort": "Dalheim"
+  },
+  "lage": {
+    "lon": 8.293335,
+    "lat": 49.829123
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a911-9ac6-424e-8cb3-f8d5ec576830",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

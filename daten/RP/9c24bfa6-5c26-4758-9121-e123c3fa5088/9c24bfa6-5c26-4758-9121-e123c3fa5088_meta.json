@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa6-5c26-4758-9121-e123c3fa5088",
+  "name": "Sporthalle der Balthasar-Neumann-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Karl-Friedrich-Goerdeler-Str",
+    "hausnummer": "8",
+    "plz": "56076",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.615017,
+    "lat": 50.338668
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa6-5c26-4758-9121-e123c3fa5088",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

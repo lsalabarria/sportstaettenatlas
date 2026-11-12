@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5f-7023-43ee-86e1-8d548896517b",
+  "name": "Bolzplatz Rohrbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Pferdsweide",
+    "plz": "55490",
+    "ort": "Rohrbach"
+  },
+  "lage": {
+    "lon": 7.416384,
+    "lat": 49.889326
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5f-7023-43ee-86e1-8d548896517b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

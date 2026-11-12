@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd75-ce1a-457c-b36a-9761bebbaeee",
+  "name": "Sportanlage Thomas-Nast-Grundschule Landau",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Albrecht-Dürer-Straße",
+    "hausnummer": "3",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.123193,
+    "lat": 49.205683
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd75-ce1a-457c-b36a-9761bebbaeee",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

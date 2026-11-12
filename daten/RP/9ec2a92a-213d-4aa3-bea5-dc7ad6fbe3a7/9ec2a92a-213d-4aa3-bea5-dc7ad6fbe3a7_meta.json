@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a92a-213d-4aa3-bea5-dc7ad6fbe3a7",
+  "name": "Kleinspielfeld Abenteuer-Spielplatz Ingelheim-Nord",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brüder-Grimm-Straße",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.019762,
+    "lat": 49.988502
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92a-213d-4aa3-bea5-dc7ad6fbe3a7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

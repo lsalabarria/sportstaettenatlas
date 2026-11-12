@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a925-4c7d-45d6-9ba2-4efc9081329a",
+  "name": "Minigolf im Park Bad Dürkheim",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Salinenstraße",
+    "hausnummer": "9A",
+    "plz": "67098",
+    "ort": "Bad Dürkheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.173302,
+    "lat": 49.463776
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a925-4c7d-45d6-9ba2-4efc9081329a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

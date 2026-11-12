@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae8-7d23-43cf-8df3-344c1e0f7992",
+  "name": "Tennisplatz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Martinusstraße",
+    "plz": "54455",
+    "ort": "Serrig"
+  },
+  "lage": {
+    "lon": 6.573024,
+    "lat": 49.571216
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae8-7d23-43cf-8df3-344c1e0f7992",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

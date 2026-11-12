@@ -1,0 +1,24 @@
+{
+  "id": "9d09fada-130e-4e3a-a0a2-a35055e7b297",
+  "name": "Sportplatz Hochscheid Breitscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Höhenweg",
+    "hausnummer": "15",
+    "plz": "53547",
+    "ort": "Breitscheid"
+  },
+  "lage": {
+    "lon": 7.450268,
+    "lat": 50.56334
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fada-130e-4e3a-a0a2-a35055e7b297",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

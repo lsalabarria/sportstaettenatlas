@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dff-8fca-443a-a614-f1c4423ef8bb",
+  "name": "Beachvolleyballfelder am Peter-Joerres-Gymnasium",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "St.-Pius-Straße",
+    "hausnummer": "29",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.122125,
+    "lat": 50.541718
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dff-8fca-443a-a614-f1c4423ef8bb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

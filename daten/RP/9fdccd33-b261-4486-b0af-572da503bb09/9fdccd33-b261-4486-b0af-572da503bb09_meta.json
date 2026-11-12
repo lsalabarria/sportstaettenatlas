@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd33-b261-4486-b0af-572da503bb09",
+  "name": "Sportanlage Dudenhofen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Iggelheimer Straße",
+    "hausnummer": "38",
+    "plz": "67373",
+    "ort": "Dudenhofen"
+  },
+  "lage": {
+    "lon": 8.387493,
+    "lat": 49.321636
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd33-b261-4486-b0af-572da503bb09",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

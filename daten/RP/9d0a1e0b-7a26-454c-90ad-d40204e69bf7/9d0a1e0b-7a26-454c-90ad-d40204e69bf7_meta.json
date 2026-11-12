@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e0b-7a26-454c-90ad-d40204e69bf7",
+  "name": "fit+ Emmelshausen",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Rhein-Mosel-Straße",
+    "hausnummer": "26",
+    "plz": "56281",
+    "ort": "Emmelshausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.559553,
+    "lat": 50.156118
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0b-7a26-454c-90ad-d40204e69bf7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

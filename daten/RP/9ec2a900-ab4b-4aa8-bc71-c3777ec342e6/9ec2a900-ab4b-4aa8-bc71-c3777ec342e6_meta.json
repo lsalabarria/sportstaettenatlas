@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a900-ab4b-4aa8-bc71-c3777ec342e6",
+  "name": "Sportanlage Laumersheim",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Zum Bürgerhaus",
+    "hausnummer": "3",
+    "plz": "67229",
+    "ort": "Laumersheim"
+  },
+  "lage": {
+    "lon": 8.235821,
+    "lat": 49.550395
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a900-ab4b-4aa8-bc71-c3777ec342e6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

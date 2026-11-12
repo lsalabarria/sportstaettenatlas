@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d58-bf6e-419c-8133-306dc34d939c",
+  "name": "Sportplatz Pünderich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "B53",
+    "plz": "56862",
+    "ort": "Pünderich"
+  },
+  "lage": {
+    "lon": 7.121115,
+    "lat": 50.035447
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d58-bf6e-419c-8133-306dc34d939c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

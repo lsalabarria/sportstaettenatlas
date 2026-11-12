@@ -1,0 +1,24 @@
+{
+  "id": "9d09faf3-5a99-4fca-8bcc-ddfcd9af4a67",
+  "name": "Sportplatz Schönberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "80",
+    "plz": "56462",
+    "ort": "Höhn"
+  },
+  "lage": {
+    "lon": 7.964391,
+    "lat": 50.621586
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf3-5a99-4fca-8bcc-ddfcd9af4a67",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

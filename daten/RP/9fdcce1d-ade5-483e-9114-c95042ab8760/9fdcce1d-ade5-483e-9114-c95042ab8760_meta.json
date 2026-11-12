@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce1d-ade5-483e-9114-c95042ab8760",
+  "name": "Bouleplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Burgstraße",
+    "hausnummer": "1.0",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.428149,
+    "lat": 49.319929
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce1d-ade5-483e-9114-c95042ab8760",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

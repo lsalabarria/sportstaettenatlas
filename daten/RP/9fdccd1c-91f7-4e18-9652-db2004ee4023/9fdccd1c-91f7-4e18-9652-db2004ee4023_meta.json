@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd1c-91f7-4e18-9652-db2004ee4023",
+  "name": "Bolzplatz Krickenbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "8",
+    "plz": "67706",
+    "ort": "Krickenbach"
+  },
+  "lage": {
+    "lon": 7.668303,
+    "lat": 49.361751
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd1c-91f7-4e18-9652-db2004ee4023",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

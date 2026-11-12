@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a908-19da-477c-bb7f-ab0a42f88ed1",
+  "name": "Waldalgesheim Kunstrasen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "1",
+    "plz": "55425",
+    "ort": "Waldalgesheim"
+  },
+  "lage": {
+    "lon": 7.827742,
+    "lat": 49.951661
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a908-19da-477c-bb7f-ab0a42f88ed1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

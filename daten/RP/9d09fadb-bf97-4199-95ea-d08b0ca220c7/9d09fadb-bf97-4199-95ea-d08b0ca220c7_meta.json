@@ -1,0 +1,23 @@
+{
+  "id": "9d09fadb-bf97-4199-95ea-d08b0ca220c7",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "plz": "54298",
+    "ort": "Gilzem"
+  },
+  "lage": {
+    "lon": 6.520804,
+    "lat": 49.866199
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadb-bf97-4199-95ea-d08b0ca220c7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa6-5175-436f-b455-975b697e41a4",
+  "name": "Augusta Kaserne",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Ellingshohl",
+    "hausnummer": "69",
+    "plz": "56076",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.617041,
+    "lat": 50.341329
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa6-5175-436f-b455-975b697e41a4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

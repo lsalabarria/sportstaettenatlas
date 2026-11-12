@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91b-c5db-4953-a726-b09ac47553b0",
+  "name": "Sportanlage Grundschule am Mandelbaum",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "4",
+    "plz": "78685",
+    "ort": "Rohrbach"
+  },
+  "lage": {
+    "lon": 8.136465,
+    "lat": 49.136992
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91b-c5db-4953-a726-b09ac47553b0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

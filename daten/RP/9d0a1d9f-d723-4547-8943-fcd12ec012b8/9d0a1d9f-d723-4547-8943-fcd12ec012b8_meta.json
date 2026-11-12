@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d9f-d723-4547-8943-fcd12ec012b8",
+  "name": "TV Rot-Weiß Großlittgen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Kindergartenstraße",
+    "plz": "54534",
+    "ort": "Großlittgen"
+  },
+  "lage": {
+    "lon": 6.800547,
+    "lat": 50.028328
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d9f-d723-4547-8943-fcd12ec012b8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

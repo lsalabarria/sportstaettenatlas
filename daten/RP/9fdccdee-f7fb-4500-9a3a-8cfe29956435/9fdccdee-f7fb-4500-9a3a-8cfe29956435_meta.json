@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdee-f7fb-4500-9a3a-8cfe29956435",
+  "name": "Sportplatz Grundschule auf dem Betzenberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kantstraße",
+    "hausnummer": "97",
+    "plz": "67663",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.78124,
+    "lat": 49.428483
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdee-f7fb-4500-9a3a-8cfe29956435",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

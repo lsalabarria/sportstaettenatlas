@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd56-a917-4081-87b7-20df40f5254b",
+  "name": "Schützenhaus Battweiler",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "K76",
+    "plz": "66484",
+    "ort": "Battweiler"
+  },
+  "lage": {
+    "lon": 7.455347,
+    "lat": 49.280057
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd56-a917-4081-87b7-20df40f5254b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

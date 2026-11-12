@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd04-7843-4f61-a82a-2f7e79c13964",
+  "name": "Reitanlage Hof Falkenborn",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hof Falkenborn",
+    "plz": "56340",
+    "ort": "Dachsenhausen"
+  },
+  "lage": {
+    "lon": 7.689483,
+    "lat": 50.243101
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd04-7843-4f61-a82a-2f7e79c13964",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdf3-58d5-46a9-ae2d-ec50ec96efb1",
+  "name": "Sporthalle Albert-Schweitzer-Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Martin-Luther-Straße",
+    "hausnummer": "5",
+    "plz": "67657",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.769383,
+    "lat": 49.448183
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdf3-58d5-46a9-ae2d-ec50ec96efb1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "a03ae6b1-309d-486d-bd1f-271cc8668bab",
+  "name": "Weißenthurm Hartplatz am Rhein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Langfuhr",
+    "plz": "56575",
+    "ort": "Weißenthurm, Stadt"
+  },
+  "lage": {
+    "lon": 7.466234,
+    "lat": 50.41278
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a03ae6b1-309d-486d-bd1f-271cc8668bab",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

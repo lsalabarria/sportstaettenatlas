@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d25-e32a-4e4f-8b6c-450e64d5f340",
+  "name": "Turnhalle Realschule plus Meisenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Carl-Hellermann-Straße",
+    "hausnummer": "48",
+    "plz": "55590",
+    "ort": "Meisenheim, Stadt"
+  },
+  "lage": {
+    "lon": 7.66071,
+    "lat": 49.711628
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d25-e32a-4e4f-8b6c-450e64d5f340",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

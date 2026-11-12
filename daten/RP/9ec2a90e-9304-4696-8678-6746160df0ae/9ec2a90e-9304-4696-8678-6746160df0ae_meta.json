@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a90e-9304-4696-8678-6746160df0ae",
+  "name": "Sportplatz Bodenheim Kleinspielfeld 2",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Laubenheimer Str.",
+    "hausnummer": "12",
+    "plz": "55294",
+    "ort": "Bodenheim"
+  },
+  "lage": {
+    "lon": 8.307665,
+    "lat": 49.932563
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90e-9304-4696-8678-6746160df0ae",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

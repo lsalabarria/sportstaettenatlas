@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a914-f375-42f6-8d4b-902a56d536df",
+  "name": "Waldsportanlage Dannenfels",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Steinbacher Straße",
+    "hausnummer": "394",
+    "plz": "67814",
+    "ort": "Dannenfels"
+  },
+  "lage": {
+    "lon": 7.948951,
+    "lat": 49.61952
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a914-f375-42f6-8d4b-902a56d536df",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

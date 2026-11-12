@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4e-0cbc-47cd-8d42-0be09dfc267a",
+  "name": "SV Altenahr Tennis",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Langfigtal",
+    "plz": "53505",
+    "ort": "Altenahr"
+  },
+  "lage": {
+    "lon": 6.994242,
+    "lat": 50.515965
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4e-0cbc-47cd-8d42-0be09dfc267a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

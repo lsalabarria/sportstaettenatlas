@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad6-913d-436f-acfa-3a1f6bbf783c",
+  "name": "Waldstadion Maischeid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Stebacher Weg",
+    "plz": "56276",
+    "ort": "Großmaischeid"
+  },
+  "lage": {
+    "lon": 7.645793,
+    "lat": 50.505457
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad6-913d-436f-acfa-3a1f6bbf783c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

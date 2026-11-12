@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4ed-4d6d-425c-9bdb-1d60d9c4fb84",
+  "name": "Turnhalle Graf-Hartard-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "An der Schule",
+    "plz": "54614",
+    "ort": "Schönecken"
+  },
+  "lage": {
+    "lon": 6.469983,
+    "lat": 50.15711
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ed-4d6d-425c-9bdb-1d60d9c4fb84",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

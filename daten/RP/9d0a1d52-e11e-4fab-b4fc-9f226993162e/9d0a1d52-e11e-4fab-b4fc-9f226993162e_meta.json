@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d52-e11e-4fab-b4fc-9f226993162e",
+  "name": "Tennisanlage Dohr",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "1",
+    "plz": "56812",
+    "ort": "Dohr"
+  },
+  "lage": {
+    "lon": 7.129662,
+    "lat": 50.133466
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d52-e11e-4fab-b4fc-9f226993162e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

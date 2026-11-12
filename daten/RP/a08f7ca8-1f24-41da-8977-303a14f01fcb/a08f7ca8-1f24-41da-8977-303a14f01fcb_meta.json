@@ -1,0 +1,25 @@
+{
+  "id": "a08f7ca8-1f24-41da-8977-303a14f01fcb",
+  "name": "Außensportbereich der IGS Magister Laukhard",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Neuer Weg",
+    "hausnummer": "12",
+    "plz": "55756",
+    "ort": "Herrstein"
+  },
+  "lage": {
+    "lon": 7.342249,
+    "lat": 49.776782
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ca8-1f24-41da-8977-303a14f01fcb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

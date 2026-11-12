@@ -1,0 +1,24 @@
+{
+  "id": "9fdccdc6-31c5-41ea-bbc4-c74e219f93c0",
+  "name": "Skatepark Diez",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "plz": "65582",
+    "ort": "Diez, Stadt"
+  },
+  "lage": {
+    "lon": 8.024496,
+    "lat": 50.366491
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdc6-31c5-41ea-bbc4-c74e219f93c0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

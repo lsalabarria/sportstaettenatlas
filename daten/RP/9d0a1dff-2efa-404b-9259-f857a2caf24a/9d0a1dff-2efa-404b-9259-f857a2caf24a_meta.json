@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dff-2efa-404b-9259-f857a2caf24a",
+  "name": "Beachvolleyballfeld Ahrstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "hausnummer": "3",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.101464,
+    "lat": 50.538486
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dff-2efa-404b-9259-f857a2caf24a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

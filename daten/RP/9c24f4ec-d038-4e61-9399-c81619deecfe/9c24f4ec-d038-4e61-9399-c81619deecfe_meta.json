@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4ec-d038-4e61-9399-c81619deecfe",
+  "name": "Turnhalle Grundschule Arzfeld",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "10",
+    "plz": "54687",
+    "ort": "Arzfeld"
+  },
+  "lage": {
+    "lon": 6.271594,
+    "lat": 50.087125
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ec-d038-4e61-9399-c81619deecfe",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

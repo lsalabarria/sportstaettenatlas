@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc4f-b3d3-47a0-802e-1f8a7dd2f8b6",
+  "name": "CabaLela",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bückelhaube",
+    "hausnummer": "11",
+    "plz": "67269",
+    "ort": "Grünstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.160119,
+    "lat": 49.569662
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc4f-b3d3-47a0-802e-1f8a7dd2f8b6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a93c-0c1b-438b-8168-c08b64745179",
+  "name": "Freibad Kalmitbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wiesenstraße",
+    "hausnummer": "18",
+    "plz": "67487",
+    "ort": "Sankt Martin"
+  },
+  "lage": {
+    "lon": 8.133781,
+    "lat": 49.301397
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93c-0c1b-438b-8168-c08b64745179",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

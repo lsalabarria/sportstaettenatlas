@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd59-544d-47a6-b612-806e91c0ca6e",
+  "name": "Christoph Weis Stadion An der dicken Eiche",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "66509",
+    "ort": "Rieschweiler-Mühlbach"
+  },
+  "lage": {
+    "lon": 7.520268,
+    "lat": 49.245347
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd59-544d-47a6-b612-806e91c0ca6e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

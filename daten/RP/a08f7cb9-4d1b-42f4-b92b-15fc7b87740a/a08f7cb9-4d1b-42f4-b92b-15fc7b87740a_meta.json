@@ -1,0 +1,23 @@
+{
+  "id": "a08f7cb9-4d1b-42f4-b92b-15fc7b87740a",
+  "name": "Bolzplatz Adenbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "67742",
+    "ort": "Adenbach"
+  },
+  "lage": {
+    "lon": 7.649036,
+    "lat": 49.670508
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb9-4d1b-42f4-b92b-15fc7b87740a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

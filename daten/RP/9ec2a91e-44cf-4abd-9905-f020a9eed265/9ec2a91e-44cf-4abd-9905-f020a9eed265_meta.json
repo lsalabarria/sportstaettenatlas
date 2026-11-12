@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91e-44cf-4abd-9905-f020a9eed265",
+  "name": "Pferdeinsel Birkenhördt",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Schwarzerdstraße",
+    "hausnummer": "17",
+    "plz": "76889",
+    "ort": "Birkenhördt"
+  },
+  "lage": {
+    "lon": 7.923449,
+    "lat": 49.118213
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91e-44cf-4abd-9905-f020a9eed265",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

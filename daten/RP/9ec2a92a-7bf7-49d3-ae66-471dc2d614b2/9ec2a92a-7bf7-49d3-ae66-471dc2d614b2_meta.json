@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a92a-7bf7-49d3-ae66-471dc2d614b2",
+  "name": "Grundschule Präsident-Mohr-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "12",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.058064,
+    "lat": 49.964681
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92a-7bf7-49d3-ae66-471dc2d614b2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

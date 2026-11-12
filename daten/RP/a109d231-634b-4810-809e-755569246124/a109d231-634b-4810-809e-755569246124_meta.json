@@ -1,0 +1,24 @@
+{
+  "id": "a109d231-634b-4810-809e-755569246124",
+  "name": "Bodenländchen-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Isseler Straße",
+    "hausnummer": "37",
+    "plz": "54338",
+    "ort": "Schweich, Stadt"
+  },
+  "lage": {
+    "lon": 6.748246,
+    "lat": 49.822871
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a109d231-634b-4810-809e-755569246124",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

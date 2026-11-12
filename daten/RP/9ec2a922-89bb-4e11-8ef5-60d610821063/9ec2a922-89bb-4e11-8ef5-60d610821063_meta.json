@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a922-89bb-4e11-8ef5-60d610821063",
+  "name": "Ponyreitservice Georgia Ranch",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Heidesheimer Straße",
+    "plz": "67283",
+    "ort": "Obrigheim (Pfalz)"
+  },
+  "lage": {
+    "lon": 8.184783,
+    "lat": 49.580998
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a922-89bb-4e11-8ef5-60d610821063",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

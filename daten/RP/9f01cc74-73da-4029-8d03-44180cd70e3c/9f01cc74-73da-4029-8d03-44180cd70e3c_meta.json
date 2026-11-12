@@ -1,0 +1,24 @@
+{
+  "id": "9f01cc74-73da-4029-8d03-44180cd70e3c",
+  "name": "Freibad Urbach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Strandbad",
+    "plz": "56317",
+    "ort": "Urbach"
+  },
+  "lage": {
+    "lon": 7.58293,
+    "lat": 50.56347
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc74-73da-4029-8d03-44180cd70e3c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

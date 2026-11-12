@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd21-9276-442b-b1f5-9e01e285bf98",
+  "name": "Multifunktionsspielfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Raiffeisenstraße",
+    "hausnummer": "4a",
+    "plz": "66892",
+    "ort": "Bruchmühlbach-Miesau"
+  },
+  "lage": {
+    "lon": 7.436383,
+    "lat": 49.406136
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd21-9276-442b-b1f5-9e01e285bf98",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

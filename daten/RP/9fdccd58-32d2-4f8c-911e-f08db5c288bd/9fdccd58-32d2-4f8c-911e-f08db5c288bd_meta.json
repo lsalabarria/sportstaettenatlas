@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd58-32d2-4f8c-911e-f08db5c288bd",
+  "name": "Golfclub Westpfalz Schwarzbachtal e.V.",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Hitscherhof",
+    "plz": "66506",
+    "ort": "Maßweiler"
+  },
+  "lage": {
+    "lon": 7.525434,
+    "lat": 49.253203
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd58-32d2-4f8c-911e-f08db5c288bd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

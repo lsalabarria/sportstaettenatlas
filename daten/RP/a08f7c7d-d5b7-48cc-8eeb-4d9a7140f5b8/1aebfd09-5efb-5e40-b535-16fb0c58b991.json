@@ -1,0 +1,10 @@
+{
+  "id": "1aebfd09-5efb-5e40-b535-16fb0c58b991",
+  "sportstaette_id": "a08f7c7d-d5b7-48cc-8eeb-4d9a7140f5b8",
+  "typ": "Beachvolleyballfeld",
+  "quellen": {
+    "atlas_rlp": {
+      "bezeichnung": "Beachvolleyball Feld"
+    }
+  }
+}

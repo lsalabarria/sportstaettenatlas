@@ -1,0 +1,22 @@
+{
+  "id": "a0d98f84-f398-4e02-95e2-ec7b1ffcd502",
+  "name": "Bolzplatz am Katzenberg",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "55126",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.183103,
+    "lat": 49.98428
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0d98f84-f398-4e02-95e2-ec7b1ffcd502",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

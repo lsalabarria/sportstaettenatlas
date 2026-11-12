@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e0b-8443-4ef9-862b-73209dee6c9f",
+  "name": "Olympia Sports & Fitness Clubs Emmelshausen",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Hunsrückhöhenstraße",
+    "hausnummer": "2",
+    "plz": "56281",
+    "ort": "Emmelshausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.557283,
+    "lat": 50.156674
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0b-8443-4ef9-862b-73209dee6c9f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf2-3d6b-4397-85af-c04c0d8249fe",
+  "name": "Sportplatz an der Klosterruine",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hellenhahner Straße",
+    "plz": "56479",
+    "ort": "Seck"
+  },
+  "lage": {
+    "lon": 8.039645,
+    "lat": 50.58463
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf2-3d6b-4397-85af-c04c0d8249fe",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

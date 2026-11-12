@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a926-28a3-4ec5-acfe-2646063ba797",
+  "name": "Freibad Wachenheim",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Friedelsheimer Str.",
+    "hausnummer": "13",
+    "plz": "67157",
+    "ort": "Wachenheim an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.182021,
+    "lat": 49.441204
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a926-28a3-4ec5-acfe-2646063ba797",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

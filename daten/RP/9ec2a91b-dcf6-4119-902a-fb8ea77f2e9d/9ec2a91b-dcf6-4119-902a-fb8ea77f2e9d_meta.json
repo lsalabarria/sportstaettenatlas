@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91b-dcf6-4119-902a-fb8ea77f2e9d",
+  "name": "Reitstall Petra Egalite",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Industreistraße",
+    "hausnummer": "20",
+    "plz": "76831",
+    "ort": "Billigheim-Ingenheim"
+  },
+  "lage": {
+    "lon": 8.117,
+    "lat": 49.131672
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91b-dcf6-4119-902a-fb8ea77f2e9d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

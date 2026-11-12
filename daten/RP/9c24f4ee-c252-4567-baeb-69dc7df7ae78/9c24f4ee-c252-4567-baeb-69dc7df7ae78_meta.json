@@ -1,0 +1,22 @@
+{
+  "id": "9c24f4ee-c252-4567-baeb-69dc7df7ae78",
+  "name": "Bolzplatz Sellerich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54608",
+    "ort": "Sellerich"
+  },
+  "lage": {
+    "lon": 6.367041,
+    "lat": 50.23046
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ee-c252-4567-baeb-69dc7df7ae78",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

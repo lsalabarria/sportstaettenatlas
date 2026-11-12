@@ -1,0 +1,24 @@
+{
+  "id": "9d09facf-69d5-4938-8cf7-4d684d9ae798",
+  "name": "heilpädagogisches Reiten Wächtler",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "36",
+    "plz": "57589",
+    "ort": "Birkenbeul"
+  },
+  "lage": {
+    "lon": 7.621398,
+    "lat": 50.737457
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facf-69d5-4938-8cf7-4d684d9ae798",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

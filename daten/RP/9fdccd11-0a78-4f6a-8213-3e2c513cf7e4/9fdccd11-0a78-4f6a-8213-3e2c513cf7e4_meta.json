@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd11-0a78-4f6a-8213-3e2c513cf7e4",
+  "name": "Integrierte Gesamtschule Schulsporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Mühlberg",
+    "hausnummer": "23",
+    "plz": "67677",
+    "ort": "Enkenbach-Alsenborn"
+  },
+  "lage": {
+    "lon": 7.904545,
+    "lat": 49.495373
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd11-0a78-4f6a-8213-3e2c513cf7e4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

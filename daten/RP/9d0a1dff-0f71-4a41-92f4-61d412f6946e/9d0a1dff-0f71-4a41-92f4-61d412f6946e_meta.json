@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dff-0f71-4a41-92f4-61d412f6946e",
+  "name": "Gymnasium Calvarienberg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Blandine-Merten-Straße",
+    "hausnummer": "30",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.092538,
+    "lat": 50.534122
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dff-0f71-4a41-92f4-61d412f6946e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dab-03e9-40b7-936f-a936856137c0",
+  "name": "Kopernikus-Gymnasium Wissen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Pirzenthaler Straße",
+    "hausnummer": "43",
+    "plz": "57537",
+    "ort": "Wissen, Stadt"
+  },
+  "lage": {
+    "lon": 7.718182,
+    "lat": 50.786127
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dab-03e9-40b7-936f-a936856137c0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d09faea-3428-4fc7-be49-9ad11d3ea13c",
+  "name": "Waldstadion Horbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Westerwaldstraße",
+    "hausnummer": "8",
+    "plz": "56412",
+    "ort": "Horbach"
+  },
+  "lage": {
+    "lon": 7.850368,
+    "lat": 50.369838
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faea-3428-4fc7-be49-9ad11d3ea13c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

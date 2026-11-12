@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d4b-5f23-40d9-b735-4150a296654c",
+  "name": "Tennisclub Grafschaft e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Franz-Ellerbrock-Straße",
+    "hausnummer": "41",
+    "plz": "53501",
+    "ort": "Grafschaft"
+  },
+  "lage": {
+    "lon": 7.14238,
+    "lat": 50.582606
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4b-5f23-40d9-b735-4150a296654c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

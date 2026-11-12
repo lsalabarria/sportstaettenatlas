@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd6e-a648-43fe-98d0-8388cf4a8c26",
+  "name": "Sportplatz an der Rotensteinhalle",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Bahnhof",
+    "plz": "66981",
+    "ort": "Münchweiler an der Rodalb"
+  },
+  "lage": {
+    "lon": 7.698844,
+    "lat": 49.221454
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd6e-a648-43fe-98d0-8388cf4a8c26",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

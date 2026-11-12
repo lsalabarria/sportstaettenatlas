@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c79-e331-4488-a2c9-128f0acfae44",
+  "name": "Ortsgemeinde Sängerhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Niederstraße",
+    "hausnummer": "4",
+    "plz": "55288",
+    "ort": "Spiesheim"
+  },
+  "lage": {
+    "lon": 8.129007,
+    "lat": 49.807753
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c79-e331-4488-a2c9-128f0acfae44",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

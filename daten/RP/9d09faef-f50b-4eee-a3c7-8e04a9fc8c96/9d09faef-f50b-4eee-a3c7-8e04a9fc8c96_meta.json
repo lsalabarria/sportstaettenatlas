@@ -1,0 +1,22 @@
+{
+  "id": "9d09faef-f50b-4eee-a3c7-8e04a9fc8c96",
+  "name": "Schützenverein Tell Hundsangen",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "plz": "56414",
+    "ort": "Hundsangen"
+  },
+  "lage": {
+    "lon": 7.999906,
+    "lat": 50.457307
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faef-f50b-4eee-a3c7-8e04a9fc8c96",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a904-f2e5-49ea-8595-e959ae8d9bb6",
+  "name": "Sportplatz Ruppertsberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "86",
+    "plz": "67152",
+    "ort": "Ruppertsberg"
+  },
+  "lage": {
+    "lon": 8.202699,
+    "lat": 49.398714
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a904-f2e5-49ea-8595-e959ae8d9bb6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

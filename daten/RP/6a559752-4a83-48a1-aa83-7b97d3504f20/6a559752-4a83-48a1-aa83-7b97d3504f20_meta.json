@@ -1,0 +1,23 @@
+{
+  "id": "6a559752-4a83-48a1-aa83-7b97d3504f20",
+  "name": "Loipe 4 Wachtberg",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "K35",
+    "plz": "54570",
+    "ort": "Hinterweiler"
+  },
+  "lage": {
+    "lon": 6.781996,
+    "lat": 50.231377
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "6a559752-4a83-48a1-aa83-7b97d3504f20",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

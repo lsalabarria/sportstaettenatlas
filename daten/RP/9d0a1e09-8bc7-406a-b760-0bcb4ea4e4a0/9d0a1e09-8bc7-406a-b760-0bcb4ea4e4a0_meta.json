@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e09-8bc7-406a-b760-0bcb4ea4e4a0",
+  "name": "Großsporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Auf der Zeil",
+    "hausnummer": "20",
+    "plz": "56154",
+    "ort": "Boppard, Stadt"
+  },
+  "lage": {
+    "lon": 7.5909,
+    "lat": 50.226495
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e09-8bc7-406a-b760-0bcb4ea4e4a0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

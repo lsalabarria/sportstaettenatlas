@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d50-30b1-4eaf-bf27-fa97da8164d1",
+  "name": "Fußballplatz Auf dem Strauben",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Nückental",
+    "plz": "56659",
+    "ort": "Burgbrohl"
+  },
+  "lage": {
+    "lon": 7.264049,
+    "lat": 50.460348
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-30b1-4eaf-bf27-fa97da8164d1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

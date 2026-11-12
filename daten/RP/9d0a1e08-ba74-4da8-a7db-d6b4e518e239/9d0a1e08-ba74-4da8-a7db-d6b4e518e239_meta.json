@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e08-ba74-4da8-a7db-d6b4e518e239",
+  "name": "Kunstrasen Zell",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "hausnummer": "1",
+    "plz": "56856",
+    "ort": "Zell (Mosel), Stadt"
+  },
+  "lage": {
+    "lon": 7.171568,
+    "lat": 50.01453
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e08-ba74-4da8-a7db-d6b4e518e239",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

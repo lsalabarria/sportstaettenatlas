@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1daa-81d5-421e-885d-2a7d5135fa31",
+  "name": "Druidenhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Wiesengrund",
+    "plz": "57548",
+    "ort": "Kirchen (Sieg), Stadt"
+  },
+  "lage": {
+    "lon": 7.909095,
+    "lat": 50.800641
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daa-81d5-421e-885d-2a7d5135fa31",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

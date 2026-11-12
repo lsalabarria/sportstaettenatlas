@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4ed-38e5-46f3-acef-5982d2054ee0",
+  "name": "Sportplatz Waxweilerstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waxweiler Straße",
+    "hausnummer": "5",
+    "plz": "54597",
+    "ort": "Lünebach"
+  },
+  "lage": {
+    "lon": 6.344806,
+    "lat": 50.134007
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ed-38e5-46f3-acef-5982d2054ee0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

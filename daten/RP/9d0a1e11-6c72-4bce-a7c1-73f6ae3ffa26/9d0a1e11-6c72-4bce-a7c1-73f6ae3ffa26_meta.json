@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e11-6c72-4bce-a7c1-73f6ae3ffa26",
+  "name": "Sportanlage Rißbacher Straße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rißbacher Straße",
+    "hausnummer": "124",
+    "plz": "56841",
+    "ort": "Traben-Trarbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.103888,
+    "lat": 49.957612
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e11-6c72-4bce-a7c1-73f6ae3ffa26",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

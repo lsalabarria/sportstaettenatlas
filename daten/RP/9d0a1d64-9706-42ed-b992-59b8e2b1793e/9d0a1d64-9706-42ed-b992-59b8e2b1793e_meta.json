@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1d64-9706-42ed-b992-59b8e2b1793e",
+  "name": "Sportplatz Gräfendhron",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54426",
+    "ort": "Gräfendhron"
+  },
+  "lage": {
+    "lon": 6.997203,
+    "lat": 49.791684
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d64-9706-42ed-b992-59b8e2b1793e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

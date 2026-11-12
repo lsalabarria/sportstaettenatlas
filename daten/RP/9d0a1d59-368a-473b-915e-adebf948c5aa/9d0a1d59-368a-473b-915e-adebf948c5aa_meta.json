@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d59-368a-473b-915e-adebf948c5aa",
+  "name": "Bolzplatz Eckmühle Ehrklammbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Eckmühle Ehrbachklamm",
+    "plz": "56238",
+    "ort": "Beulich"
+  },
+  "lage": {
+    "lon": 7.466278,
+    "lat": 50.19055
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d59-368a-473b-915e-adebf948c5aa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

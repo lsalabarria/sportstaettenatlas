@@ -1,0 +1,23 @@
+{
+  "id": "9d09fac9-f594-4844-8c10-769b63ea3f6e",
+  "name": "Seminarhof Waldwiese",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hardter Straße",
+    "plz": "57632",
+    "ort": "Kescheid"
+  },
+  "lage": {
+    "lon": 7.501202,
+    "lat": 50.65353
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac9-f594-4844-8c10-769b63ea3f6e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

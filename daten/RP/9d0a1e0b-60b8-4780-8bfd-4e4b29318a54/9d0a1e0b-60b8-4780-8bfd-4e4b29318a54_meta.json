@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e0b-60b8-4780-8bfd-4e4b29318a54",
+  "name": "Protrain Emmelshausen",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Poststraße",
+    "hausnummer": "1",
+    "plz": "56281",
+    "ort": "Emmelshausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.562677,
+    "lat": 50.156525
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0b-60b8-4780-8bfd-4e4b29318a54",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e10-ef75-4a3b-9a31-2d30b26ceccd",
+  "name": "Mosellandhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kueser Plateau",
+    "hausnummer": "2",
+    "plz": "54470",
+    "ort": "Bernkastel-Kues, Stadt"
+  },
+  "lage": {
+    "lon": 7.054605,
+    "lat": 49.917713
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e10-ef75-4a3b-9a31-2d30b26ceccd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

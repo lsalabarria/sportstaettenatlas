@@ -1,0 +1,23 @@
+{
+  "id": "9d09face-44a6-4049-8e09-939433ec5feb",
+  "name": "Schützenverein Scheuerfeld",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Schützenhaus",
+    "plz": "57584",
+    "ort": "Wallmenroth"
+  },
+  "lage": {
+    "lon": 7.835044,
+    "lat": 50.784178
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09face-44a6-4049-8e09-939433ec5feb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

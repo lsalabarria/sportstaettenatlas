@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dac-1625-4ace-90bb-64e3b3c04676",
+  "name": "Sporthalle Blindenschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Feldkircher Straße",
+    "hausnummer": "100",
+    "plz": "56567",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.435257,
+    "lat": 50.453737
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dac-1625-4ace-90bb-64e3b3c04676",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

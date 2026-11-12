@@ -1,0 +1,23 @@
+{
+  "id": "9c24bfa5-04db-484e-a5fe-6fff6e48a10d",
+  "name": "Bolzplatz am Fort Konstantin",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Fort Konstantin",
+    "plz": "56075",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.585677,
+    "lat": 50.350043
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa5-04db-484e-a5fe-6fff6e48a10d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

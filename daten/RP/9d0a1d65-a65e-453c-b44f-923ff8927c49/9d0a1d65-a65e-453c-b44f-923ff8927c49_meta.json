@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d65-a65e-453c-b44f-923ff8927c49",
+  "name": "Schackberghalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Zum Schackberg",
+    "hausnummer": "3",
+    "plz": "54497",
+    "ort": "Morbach"
+  },
+  "lage": {
+    "lon": 7.118471,
+    "lat": 49.854551
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d65-a65e-453c-b44f-923ff8927c49",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

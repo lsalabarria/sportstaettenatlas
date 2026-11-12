@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db4-7529-4413-9522-eab4f92bad5d",
+  "name": "Bolzplatz Roscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Roscheider Straße",
+    "hausnummer": "5",
+    "plz": "54329",
+    "ort": "Konz, Stadt"
+  },
+  "lage": {
+    "lon": 6.599288,
+    "lat": 49.704499
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db4-7529-4413-9522-eab4f92bad5d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

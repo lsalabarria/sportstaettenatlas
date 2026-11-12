@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d4a-b241-4264-abf2-11868968f1dd",
+  "name": "Hotel & Restaurant Rückert",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Erbacher Straße",
+    "hausnummer": "8",
+    "plz": "57647",
+    "ort": "Nistertal"
+  },
+  "lage": {
+    "lon": 7.904251,
+    "lat": 50.631352
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4a-b241-4264-abf2-11868968f1dd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

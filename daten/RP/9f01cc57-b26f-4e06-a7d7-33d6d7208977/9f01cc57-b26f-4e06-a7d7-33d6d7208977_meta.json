@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc57-b26f-4e06-a7d7-33d6d7208977",
+  "name": "Heinrich-Völker-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Alzeyer Straße",
+    "hausnummer": "111",
+    "plz": "67549",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.33816,
+    "lat": 49.63245
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc57-b26f-4e06-a7d7-33d6d7208977",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

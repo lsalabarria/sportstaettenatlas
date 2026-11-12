@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdda-0698-47a7-b1de-841a1c3f4653",
+  "name": "Turnhalle Hirschhorn",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Turnerstraße",
+    "hausnummer": "14",
+    "plz": "67732",
+    "ort": "Hirschhorn/ Pfalz"
+  },
+  "lage": {
+    "lon": 7.678633,
+    "lat": 49.521878
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdda-0698-47a7-b1de-841a1c3f4653",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

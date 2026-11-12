@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d49-2cda-4292-9fe4-f8b5277c75fc",
+  "name": "Sportplatz Höchstenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "plz": "57629",
+    "ort": "Höchstenbach"
+  },
+  "lage": {
+    "lon": 7.740823,
+    "lat": 50.623342
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d49-2cda-4292-9fe4-f8b5277c75fc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

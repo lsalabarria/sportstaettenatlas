@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e11-a7a0-4a32-8571-718ff35ca224",
+  "name": "Sportplatz Büscheich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Büscheicher Straße",
+    "hausnummer": "3",
+    "plz": "54568",
+    "ort": "Gerolstein, Stadt"
+  },
+  "lage": {
+    "lon": 6.673707,
+    "lat": 50.200513
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e11-a7a0-4a32-8571-718ff35ca224",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

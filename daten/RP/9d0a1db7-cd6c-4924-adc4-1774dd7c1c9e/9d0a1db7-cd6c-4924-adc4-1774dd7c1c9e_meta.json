@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1db7-cd6c-4924-adc4-1774dd7c1c9e",
+  "name": "PST Schützenverein Trier",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Stuckradweg",
+    "plz": "54293",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.626492,
+    "lat": 49.770404
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db7-cd6c-4924-adc4-1774dd7c1c9e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

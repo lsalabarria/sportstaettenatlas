@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1daf-9057-4dd5-aadc-23ed4df45b04",
+  "name": "Sporthalle Sonnenlandschule Neuwied",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Sonnenstraße",
+    "hausnummer": "43",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.47711,
+    "lat": 50.425665
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daf-9057-4dd5-aadc-23ed4df45b04",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

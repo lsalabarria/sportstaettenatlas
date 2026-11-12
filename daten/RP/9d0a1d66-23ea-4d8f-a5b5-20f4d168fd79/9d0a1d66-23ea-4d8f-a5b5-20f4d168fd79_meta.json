@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d66-23ea-4d8f-a5b5-20f4d168fd79",
+  "name": "Turnhalle Grundschule Hetzerath",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bahnhofsstraße",
+    "hausnummer": "14",
+    "plz": "54523",
+    "ort": "Hetzerath"
+  },
+  "lage": {
+    "lon": 6.81163,
+    "lat": 49.878658
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d66-23ea-4d8f-a5b5-20f4d168fd79",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccdc-3168-43e7-b01c-dda2de96edcd",
+  "name": "Tennisverein Langscheid EV",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Zum Nettetal",
+    "hausnummer": "1",
+    "plz": "56729",
+    "ort": "Langscheid"
+  },
+  "lage": {
+    "lon": 7.108274,
+    "lat": 50.379417
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccdc-3168-43e7-b01c-dda2de96edcd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

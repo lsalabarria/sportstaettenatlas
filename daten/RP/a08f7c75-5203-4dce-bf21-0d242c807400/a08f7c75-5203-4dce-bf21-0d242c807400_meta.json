@@ -1,0 +1,24 @@
+{
+  "id": "a08f7c75-5203-4dce-bf21-0d242c807400",
+  "name": "Sportplatz Schornsheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "plz": "55288",
+    "ort": "Schornsheim"
+  },
+  "lage": {
+    "lon": 8.169758,
+    "lat": 49.84766
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c75-5203-4dce-bf21-0d242c807400",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

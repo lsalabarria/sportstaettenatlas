@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a924-091f-4cd9-b2fe-54e009c023dc",
+  "name": "Sportanlage Ungstein",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Honigsäckelstraße",
+    "hausnummer": "1a",
+    "plz": "67098",
+    "ort": "Bad Dürkheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.187023,
+    "lat": 49.477366
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a924-091f-4cd9-b2fe-54e009c023dc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

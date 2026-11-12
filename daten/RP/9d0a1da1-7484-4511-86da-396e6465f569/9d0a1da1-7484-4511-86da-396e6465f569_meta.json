@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da1-7484-4511-86da-396e6465f569",
+  "name": "Sportplatz Mürlenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L16",
+    "plz": "54570",
+    "ort": "Mürlenbach"
+  },
+  "lage": {
+    "lon": 6.622106,
+    "lat": 50.139902
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da1-7484-4511-86da-396e6465f569",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

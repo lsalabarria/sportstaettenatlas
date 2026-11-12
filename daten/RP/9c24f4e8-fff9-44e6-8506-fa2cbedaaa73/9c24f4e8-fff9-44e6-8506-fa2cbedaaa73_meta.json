@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4e8-fff9-44e6-8506-fa2cbedaaa73",
+  "name": "Sportplatz Spangdahlem",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schleifweg",
+    "hausnummer": "16",
+    "plz": "54529",
+    "ort": "Spangdahlem"
+  },
+  "lage": {
+    "lon": 6.690171,
+    "lat": 49.986436
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e8-fff9-44e6-8506-fa2cbedaaa73",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

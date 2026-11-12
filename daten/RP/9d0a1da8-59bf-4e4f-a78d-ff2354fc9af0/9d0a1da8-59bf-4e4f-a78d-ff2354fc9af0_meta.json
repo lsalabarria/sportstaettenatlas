@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1da8-59bf-4e4f-a78d-ff2354fc9af0",
+  "name": "Betzdorfer Schützenverein 1868 e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Zur Klingelsbach",
+    "hausnummer": "30",
+    "plz": "57518",
+    "ort": "Betzdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.880492,
+    "lat": 50.791485
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da8-59bf-4e4f-a78d-ff2354fc9af0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

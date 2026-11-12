@@ -1,0 +1,24 @@
+{
+  "id": "a0028f33-29ae-4305-9905-abc70caac81e",
+  "name": "Anlage Zucht-, Reit- und Fahrverein Diez e.V.",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Kirschberg",
+    "hausnummer": "1",
+    "plz": "65582",
+    "ort": "Diez, Stadt"
+  },
+  "lage": {
+    "lon": 8.019126,
+    "lat": 50.361758
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0028f33-29ae-4305-9905-abc70caac81e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

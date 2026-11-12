@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce04-6b07-4c73-bb58-e99c884b90fc",
+  "name": "Tennisanlage Wollstraße",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Wollstraße",
+    "hausnummer": "4",
+    "plz": "67065",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.419373,
+    "lat": 49.468088
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce04-6b07-4c73-bb58-e99c884b90fc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

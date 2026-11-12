@@ -1,0 +1,24 @@
+{
+  "id": "9d09fada-1ebe-477f-96c9-1aaa2691d075",
+  "name": "Grundschule Limbach Asbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Altenkirchener Straße",
+    "hausnummer": "20",
+    "plz": "53567",
+    "ort": "Asbach"
+  },
+  "lage": {
+    "lon": 7.444695,
+    "lat": 50.684492
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fada-1ebe-477f-96c9-1aaa2691d075",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

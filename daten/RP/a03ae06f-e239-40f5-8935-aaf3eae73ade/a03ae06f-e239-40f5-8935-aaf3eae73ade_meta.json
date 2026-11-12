@@ -1,0 +1,24 @@
+{
+  "id": "a03ae06f-e239-40f5-8935-aaf3eae73ade",
+  "name": "Limeshalle Arzbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Wiesenweg",
+    "plz": "56337",
+    "ort": "Arzbach"
+  },
+  "lage": {
+    "lon": 7.744564,
+    "lat": 50.378738
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a03ae06f-e239-40f5-8935-aaf3eae73ade",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

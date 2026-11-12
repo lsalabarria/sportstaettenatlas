@@ -1,0 +1,24 @@
+{
+  "id": "9d09fae9-39b3-43af-97ee-366877b1cc9b",
+  "name": "Augst-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Eitelborner Str.",
+    "hausnummer": "22",
+    "plz": "56335",
+    "ort": "Neuhäusel"
+  },
+  "lage": {
+    "lon": 7.712575,
+    "lat": 50.379618
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae9-39b3-43af-97ee-366877b1cc9b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

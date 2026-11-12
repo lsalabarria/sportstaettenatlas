@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a934-b6e9-454b-a46a-eb2dc883bc00",
+  "name": "Tennisschule Neustadt",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Horstweg",
+    "hausnummer": "50",
+    "plz": "67434",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.138234,
+    "lat": 49.331238
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a934-b6e9-454b-a46a-eb2dc883bc00",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

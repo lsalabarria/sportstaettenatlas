@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc5b-efac-4f10-81c1-8c49d89946e9",
+  "name": "Freibad Ruwertal",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "4a",
+    "plz": "54318",
+    "ort": "Mertesdorf"
+  },
+  "lage": {
+    "lon": 6.723371,
+    "lat": 49.724485
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc5b-efac-4f10-81c1-8c49d89946e9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

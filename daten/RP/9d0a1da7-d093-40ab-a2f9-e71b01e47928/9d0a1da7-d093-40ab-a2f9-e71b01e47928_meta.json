@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1da7-d093-40ab-a2f9-e71b01e47928",
+  "name": "Sportplatz Kirsbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "53539",
+    "ort": "Kirsbach"
+  },
+  "lage": {
+    "lon": 6.991299,
+    "lat": 50.323182
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da7-d093-40ab-a2f9-e71b01e47928",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

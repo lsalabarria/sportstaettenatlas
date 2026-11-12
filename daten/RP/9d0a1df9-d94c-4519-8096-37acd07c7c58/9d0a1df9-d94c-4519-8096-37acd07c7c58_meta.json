@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1df9-d94c-4519-8096-37acd07c7c58",
+  "name": "Erich Kästner Realschule plus",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Osterfeldstraße",
+    "hausnummer": "25",
+    "plz": "56235",
+    "ort": "Ransbach-Baumbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.727053,
+    "lat": 50.45609
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df9-d94c-4519-8096-37acd07c7c58",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

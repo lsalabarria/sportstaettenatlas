@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd25-85e7-4268-b1e8-2ebc659697dc",
+  "name": "Tennisanlage",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Rudolf-Harbig-Straße",
+    "plz": "67259",
+    "ort": "Beindersheim"
+  },
+  "lage": {
+    "lon": 8.311612,
+    "lat": 49.559362
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd25-85e7-4268-b1e8-2ebc659697dc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

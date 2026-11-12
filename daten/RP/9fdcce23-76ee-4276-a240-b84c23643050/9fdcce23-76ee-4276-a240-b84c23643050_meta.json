@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce23-76ee-4276-a240-b84c23643050",
+  "name": "TC Rheindürkheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Oberrheinstraße",
+    "hausnummer": "13",
+    "plz": "67550",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.350239,
+    "lat": 49.691097
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce23-76ee-4276-a240-b84c23643050",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

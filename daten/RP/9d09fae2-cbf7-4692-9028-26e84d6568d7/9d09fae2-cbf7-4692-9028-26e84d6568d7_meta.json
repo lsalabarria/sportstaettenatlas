@@ -1,0 +1,24 @@
+{
+  "id": "9d09fae2-cbf7-4692-9028-26e84d6568d7",
+  "name": "Mehrzweckhalle Züsch",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "5",
+    "plz": "54422",
+    "ort": "Züsch"
+  },
+  "lage": {
+    "lon": 7.007392,
+    "lat": 49.647879
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae2-cbf7-4692-9028-26e84d6568d7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

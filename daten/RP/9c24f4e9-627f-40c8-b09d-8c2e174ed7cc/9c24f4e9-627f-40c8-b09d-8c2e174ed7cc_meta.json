@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4e9-627f-40c8-b09d-8c2e174ed7cc",
+  "name": "Tennis Courts AFB Spangdahlem",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Air Base",
+    "plz": "54529",
+    "ort": "Spangdahlem"
+  },
+  "lage": {
+    "lon": 6.704078,
+    "lat": 49.992295
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e9-627f-40c8-b09d-8c2e174ed7cc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

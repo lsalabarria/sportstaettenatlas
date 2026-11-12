@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cb3-8c62-4af2-8bab-ea3d5a020047",
+  "name": "Glantalschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Glanstraße",
+    "hausnummer": "9",
+    "plz": "66907",
+    "ort": "Glan-Münchweiler"
+  },
+  "lage": {
+    "lon": 7.444355,
+    "lat": 49.476194
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb3-8c62-4af2-8bab-ea3d5a020047",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccc0-e73e-41bf-a8f1-c7c5dbbd2445",
+  "name": "Hof Medel",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "an der Kreisstraße 84",
+    "plz": "56182",
+    "ort": "Urbar"
+  },
+  "lage": {
+    "lon": 7.638847,
+    "lat": 50.38154
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccc0-e73e-41bf-a8f1-c7c5dbbd2445",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

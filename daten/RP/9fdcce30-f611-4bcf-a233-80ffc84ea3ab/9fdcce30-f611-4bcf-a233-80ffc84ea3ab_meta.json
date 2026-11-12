@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce30-f611-4bcf-a233-80ffc84ea3ab",
+  "name": "Sportplatz am Raulstein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Raulstein",
+    "hausnummer": "1",
+    "plz": "66482",
+    "ort": "Zweibrücken, Stadt"
+  },
+  "lage": {
+    "lon": 7.3086,
+    "lat": 49.236846
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce30-f611-4bcf-a233-80ffc84ea3ab",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

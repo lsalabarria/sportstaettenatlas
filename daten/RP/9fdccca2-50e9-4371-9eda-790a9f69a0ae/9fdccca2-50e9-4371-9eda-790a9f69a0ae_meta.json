@@ -1,0 +1,24 @@
+{
+  "id": "9fdccca2-50e9-4371-9eda-790a9f69a0ae",
+  "name": "Sporthalle Römerbad",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Römerbadschule",
+    "plz": "76764",
+    "ort": "Rheinzabern"
+  },
+  "lage": {
+    "lon": 8.281863,
+    "lat": 49.105652
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccca2-50e9-4371-9eda-790a9f69a0ae",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

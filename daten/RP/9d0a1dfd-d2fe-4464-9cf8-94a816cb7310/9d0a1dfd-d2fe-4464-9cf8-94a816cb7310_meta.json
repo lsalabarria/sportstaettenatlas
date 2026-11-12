@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dfd-d2fe-4464-9cf8-94a816cb7310",
+  "name": "Sportanlage Roßbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mündersbacher Straße",
+    "plz": "56271",
+    "ort": "Roßbach"
+  },
+  "lage": {
+    "lon": 7.686707,
+    "lat": 50.605476
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfd-d2fe-4464-9cf8-94a816cb7310",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

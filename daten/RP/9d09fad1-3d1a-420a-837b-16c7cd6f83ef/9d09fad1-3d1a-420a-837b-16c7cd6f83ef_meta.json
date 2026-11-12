@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad1-3d1a-420a-837b-16c7cd6f83ef",
+  "name": "Fußballplatz SG Mudersbach/Brachbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "57555",
+    "ort": "Mudersbach"
+  },
+  "lage": {
+    "lon": 7.940143,
+    "lat": 50.8277
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad1-3d1a-420a-837b-16c7cd6f83ef",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

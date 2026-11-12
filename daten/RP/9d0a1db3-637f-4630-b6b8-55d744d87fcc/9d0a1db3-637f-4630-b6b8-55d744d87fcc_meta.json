@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1db3-637f-4630-b6b8-55d744d87fcc",
+  "name": "Sportplatz im Schulzentrum",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Stefan-Andres-Straße",
+    "plz": "54338",
+    "ort": "Schweich, Stadt"
+  },
+  "lage": {
+    "lon": 6.746969,
+    "lat": 49.818283
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db3-637f-4630-b6b8-55d744d87fcc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

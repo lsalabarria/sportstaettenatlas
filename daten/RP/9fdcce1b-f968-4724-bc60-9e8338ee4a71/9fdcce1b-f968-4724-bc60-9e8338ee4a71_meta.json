@@ -1,0 +1,24 @@
+{
+  "id": "9fdcce1b-f968-4724-bc60-9e8338ee4a71",
+  "name": "Sportanlage Kuhweide",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kuhweide",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.433919,
+    "lat": 49.332721
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce1b-f968-4724-bc60-9e8338ee4a71",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

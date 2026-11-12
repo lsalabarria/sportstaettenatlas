@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cbb-a291-4701-a83a-df2c43c4ab58",
+  "name": "Sportanlage Kirner Straße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirner Straße",
+    "plz": "55606",
+    "ort": "Oberhausen bei Kirn"
+  },
+  "lage": {
+    "lon": 7.452125,
+    "lat": 49.802924
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cbb-a291-4701-a83a-df2c43c4ab58",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

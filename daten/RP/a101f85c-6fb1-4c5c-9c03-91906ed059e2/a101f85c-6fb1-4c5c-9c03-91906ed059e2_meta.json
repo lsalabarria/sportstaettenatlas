@@ -1,0 +1,24 @@
+{
+  "id": "a101f85c-6fb1-4c5c-9c03-91906ed059e2",
+  "name": "Sporthalle Integrierte Gesamtschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Abteistraße",
+    "hausnummer": "18",
+    "plz": "67067",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.403752,
+    "lat": 49.468386
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a101f85c-6fb1-4c5c-9c03-91906ed059e2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

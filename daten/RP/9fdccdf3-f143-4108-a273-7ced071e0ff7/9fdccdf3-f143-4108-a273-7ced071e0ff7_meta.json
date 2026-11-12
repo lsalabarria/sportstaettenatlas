@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdf3-f143-4108-a273-7ced071e0ff7",
+  "name": "Burgherrenhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Forststraße",
+    "hausnummer": "2A",
+    "plz": "67661",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.696178,
+    "lat": 49.412281
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdf3-f143-4108-a273-7ced071e0ff7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

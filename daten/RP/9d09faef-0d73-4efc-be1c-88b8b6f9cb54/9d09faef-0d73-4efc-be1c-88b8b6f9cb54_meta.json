@@ -1,0 +1,24 @@
+{
+  "id": "9d09faef-0d73-4efc-be1c-88b8b6f9cb54",
+  "name": "Sportplatz auf der Kaiserwiese",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf der Kaiserwiese",
+    "hausnummer": "7",
+    "plz": "56412",
+    "ort": "Niedererbach"
+  },
+  "lage": {
+    "lon": 7.976927,
+    "lat": 50.428624
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faef-0d73-4efc-be1c-88b8b6f9cb54",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

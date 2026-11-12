@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a925-def2-491a-9e4f-f90f35cd1031",
+  "name": "Trimm-Dich-Pfad Outdoor Fitness Bad Dürkheim",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Schlamberg",
+    "hausnummer": "3",
+    "plz": "67098",
+    "ort": "Bad Dürkheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.153546,
+    "lat": 49.472035
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a925-def2-491a-9e4f-f90f35cd1031",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

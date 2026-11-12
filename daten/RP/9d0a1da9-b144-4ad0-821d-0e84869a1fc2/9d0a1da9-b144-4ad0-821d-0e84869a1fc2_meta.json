@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da9-b144-4ad0-821d-0e84869a1fc2",
+  "name": "Skateranlage Daaden",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Saynische Straße",
+    "plz": "57567",
+    "ort": "Daaden, Stadt"
+  },
+  "lage": {
+    "lon": 7.989011,
+    "lat": 50.733211
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da9-b144-4ad0-821d-0e84869a1fc2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

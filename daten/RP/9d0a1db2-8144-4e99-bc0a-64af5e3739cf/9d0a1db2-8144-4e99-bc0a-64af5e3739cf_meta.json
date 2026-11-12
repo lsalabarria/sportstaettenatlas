@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db2-8144-4e99-bc0a-64af5e3739cf",
+  "name": "Aquafit Dierdorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Neuwieder Straße",
+    "hausnummer": "60",
+    "plz": "56269",
+    "ort": "Dierdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.658534,
+    "lat": 50.551688
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db2-8144-4e99-bc0a-64af5e3739cf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

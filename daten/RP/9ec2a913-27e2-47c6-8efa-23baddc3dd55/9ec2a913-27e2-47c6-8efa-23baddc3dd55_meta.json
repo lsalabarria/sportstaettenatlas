@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a913-27e2-47c6-8efa-23baddc3dd55",
+  "name": "Schützenverein Ramsen e.V",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "An der Schleifmühle",
+    "plz": "67305",
+    "ort": "Ramsen"
+  },
+  "lage": {
+    "lon": 7.998759,
+    "lat": 49.533098
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a913-27e2-47c6-8efa-23baddc3dd55",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

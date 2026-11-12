@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a922-dc7d-46c9-80f3-366b7655518e",
+  "name": "Cabriobad Grünstadt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bückelhaube",
+    "hausnummer": "11",
+    "plz": "67269",
+    "ort": "Grünstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.16057,
+    "lat": 49.569195
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a922-dc7d-46c9-80f3-366b7655518e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

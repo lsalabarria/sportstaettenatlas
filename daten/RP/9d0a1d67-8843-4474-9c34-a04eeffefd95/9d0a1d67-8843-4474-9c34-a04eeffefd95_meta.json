@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d67-8843-4474-9c34-a04eeffefd95",
+  "name": "Sportplatz am Waldrand",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Waldrand",
+    "plz": "54528",
+    "ort": "Salmtal"
+  },
+  "lage": {
+    "lon": 6.827668,
+    "lat": 49.92543
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d67-8843-4474-9c34-a04eeffefd95",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9fdccde2-c24e-40c5-8c20-4f153c2bba72",
+  "name": "Bolzplatz Erzhütten",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Mühlbergstraße",
+    "plz": "67659",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.728404,
+    "lat": 49.457356
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccde2-c24e-40c5-8c20-4f153c2bba72",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

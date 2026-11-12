@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdf2-d271-4130-b4c3-e5627b0ae2fc",
+  "name": "Bolzplatz Geschwister-Scholl-Schule",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Schreberstraße",
+    "hausnummer": "37",
+    "plz": "67657",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.795276,
+    "lat": 49.45057
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdf2-d271-4130-b4c3-e5627b0ae2fc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

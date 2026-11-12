@@ -1,0 +1,24 @@
+{
+  "id": "9fdccdbe-fa79-4ce1-91aa-5338cc3659a0",
+  "name": "Tennis-Club Blau-Weiß Bad Ems e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Insel Silberau",
+    "plz": "56130",
+    "ort": "Bad Ems, Stadt"
+  },
+  "lage": {
+    "lon": 7.704205,
+    "lat": 50.333719
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdbe-fa79-4ce1-91aa-5338cc3659a0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

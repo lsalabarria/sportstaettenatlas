@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e09-3ec1-4e07-ac16-971f9640a8c1",
+  "name": "Sportplatz Rheinbay",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sonnenhof",
+    "plz": "56154",
+    "ort": "Boppard, Stadt"
+  },
+  "lage": {
+    "lon": 7.626335,
+    "lat": 50.174043
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e09-3ec1-4e07-ac16-971f9640a8c1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

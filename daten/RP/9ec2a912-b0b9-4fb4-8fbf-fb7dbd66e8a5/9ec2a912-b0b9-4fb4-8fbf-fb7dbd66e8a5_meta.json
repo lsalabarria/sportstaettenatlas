@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a912-b0b9-4fb4-8fbf-fb7dbd66e8a5",
+  "name": "Sportplatz Lautersheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Neun Morgen",
+    "plz": "67308",
+    "ort": "Lautersheim"
+  },
+  "lage": {
+    "lon": 8.102877,
+    "lat": 49.589228
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a912-b0b9-4fb4-8fbf-fb7dbd66e8a5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

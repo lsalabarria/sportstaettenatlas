@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdd9-6582-4b2a-ba16-502d9fd70b34",
+  "name": "Integrierte Gesamtschule Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "2",
+    "plz": "67697",
+    "ort": "Otterberg, Stadt"
+  },
+  "lage": {
+    "lon": 7.764054,
+    "lat": 49.500982
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdd9-6582-4b2a-ba16-502d9fd70b34",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

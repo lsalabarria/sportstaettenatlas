@@ -1,0 +1,24 @@
+{
+  "id": "9fdccdcf-3d71-44ce-9d58-233c137958d6",
+  "name": "Bolzplatz Nassau",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf dem Staffel",
+    "plz": "56377",
+    "ort": "Nassau, Stadt"
+  },
+  "lage": {
+    "lon": 7.796123,
+    "lat": 50.302275
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdcf-3d71-44ce-9d58-233c137958d6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

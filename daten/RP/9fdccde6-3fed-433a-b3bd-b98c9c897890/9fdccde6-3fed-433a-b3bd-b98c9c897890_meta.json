@@ -1,0 +1,25 @@
+{
+  "id": "9fdccde6-3fed-433a-b3bd-b98c9c897890",
+  "name": "Deutschherrnhof-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Deutschherrnstraße",
+    "hausnummer": "67",
+    "plz": "67661",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.694794,
+    "lat": 49.424436
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccde6-3fed-433a-b3bd-b98c9c897890",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

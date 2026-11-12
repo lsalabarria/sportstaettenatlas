@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a916-7293-4bde-a6b8-992cb85f21b1",
+  "name": "Sportplatz am Fichtenwald",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Morsbacherstraße",
+    "plz": "67822",
+    "ort": "Mannweiler-Cölln"
+  },
+  "lage": {
+    "lon": 7.809709,
+    "lat": 49.690052
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a916-7293-4bde-a6b8-992cb85f21b1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

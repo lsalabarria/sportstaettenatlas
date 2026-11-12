@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5b-07cd-499b-adef-a00ec686a26e",
+  "name": "Bolzplatz Niedert",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56291",
+    "ort": "Niedert"
+  },
+  "lage": {
+    "lon": 7.543649,
+    "lat": 50.126175
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5b-07cd-499b-adef-a00ec686a26e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c8c-0aaa-479f-91c7-5e9b0e34fe26",
+  "name": "Rheinhessenhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Gerd-Heinz-Schilling-Straße",
+    "hausnummer": "1",
+    "plz": "67590",
+    "ort": "Monsheim"
+  },
+  "lage": {
+    "lon": 8.213957,
+    "lat": 49.633419
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c8c-0aaa-479f-91c7-5e9b0e34fe26",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

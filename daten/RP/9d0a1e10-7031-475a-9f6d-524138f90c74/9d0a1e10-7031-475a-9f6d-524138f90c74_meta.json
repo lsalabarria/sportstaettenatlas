@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e10-7031-475a-9f6d-524138f90c74",
+  "name": "Sportplatz Neuerburg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lärchenweg",
+    "hausnummer": "100",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.956544,
+    "lat": 50.006624
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e10-7031-475a-9f6d-524138f90c74",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

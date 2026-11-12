@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c77-0736-4842-aaf7-879fafa7b1b4",
+  "name": "Justizvollzugsanstalt Rohrbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Peter-Caesar-Allee",
+    "hausnummer": "1",
+    "plz": "55597",
+    "ort": "Wöllstein"
+  },
+  "lage": {
+    "lon": 7.989857,
+    "lat": 49.824295
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c77-0736-4842-aaf7-879fafa7b1b4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

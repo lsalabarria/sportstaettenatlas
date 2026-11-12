@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4f-c501-42b8-9cdf-598fab6f4f9d",
+  "name": "Appentaler Hof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Bundesstraße 412",
+    "plz": "56651",
+    "ort": "Brenk"
+  },
+  "lage": {
+    "lon": 7.171991,
+    "lat": 50.421495
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4f-c501-42b8-9cdf-598fab6f4f9d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da3-e7e6-44fd-b0af-69ebbc5e52c8",
+  "name": "Reitplatz Hillesheim",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Rosenberg",
+    "plz": "54576",
+    "ort": "Hillesheim"
+  },
+  "lage": {
+    "lon": 6.688198,
+    "lat": 50.293523
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da3-e7e6-44fd-b0af-69ebbc5e52c8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

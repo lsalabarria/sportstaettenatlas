@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1dba-1bf1-472e-be57-3724ff9be4ff",
+  "name": "Bouleplatz Mattheiser Weiher",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "54295",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.641489,
+    "lat": 49.734998
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dba-1bf1-472e-be57-3724ff9be4ff",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

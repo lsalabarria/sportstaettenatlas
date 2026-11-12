@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad8-4190-4fef-aa1e-816579966b34",
+  "name": "Beachvolleyballfeld Wiedtalbad",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hönninger Straße",
+    "hausnummer": "1",
+    "plz": "53547",
+    "ort": "Hausen (Wied)"
+  },
+  "lage": {
+    "lon": 7.413394,
+    "lat": 50.540817
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad8-4190-4fef-aa1e-816579966b34",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

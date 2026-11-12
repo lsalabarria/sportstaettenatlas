@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e0c-41e3-46be-8a4d-a28a62955cb3",
+  "name": "Tennisplatz Sankt Goar",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Pfalzfelder Straße",
+    "plz": "56329",
+    "ort": "Sankt Goar, Stadt"
+  },
+  "lage": {
+    "lon": 7.70157,
+    "lat": 50.146595
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0c-41e3-46be-8a4d-a28a62955cb3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

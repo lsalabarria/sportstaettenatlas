@@ -1,0 +1,23 @@
+{
+  "id": "9c24bfab-119d-46c3-bbdd-a8ca915cc3eb",
+  "name": "Sportplatz Kesselheim Tennenplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kurfürst-Schönborn-Straße",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.575495,
+    "lat": 50.403274
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfab-119d-46c3-bbdd-a8ca915cc3eb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a910-c71b-4deb-8c81-ddf68fa96ed4",
+  "name": "Turnhalle TV 1862 Köngernheim e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Oppenheimer Str.",
+    "hausnummer": "22",
+    "plz": "55278",
+    "ort": "Köngernheim"
+  },
+  "lage": {
+    "lon": 8.24904,
+    "lat": 49.844709
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a910-c71b-4deb-8c81-ddf68fa96ed4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

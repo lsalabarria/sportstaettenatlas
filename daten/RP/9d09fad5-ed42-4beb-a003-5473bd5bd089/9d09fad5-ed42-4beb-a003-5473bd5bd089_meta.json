@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad5-ed42-4beb-a003-5473bd5bd089",
+  "name": "Schießsportanlage Neustadt-Fernthal, Schützengilde Fernthal e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Werner-Heisenberg-Straße",
+    "hausnummer": "9",
+    "plz": "53577",
+    "ort": "Neustadt (Wied)"
+  },
+  "lage": {
+    "lon": 7.457318,
+    "lat": 50.592196
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad5-ed42-4beb-a003-5473bd5bd089",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

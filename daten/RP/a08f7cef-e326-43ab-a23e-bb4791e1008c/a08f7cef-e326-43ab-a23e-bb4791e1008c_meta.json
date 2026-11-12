@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cef-e326-43ab-a23e-bb4791e1008c",
+  "name": "Riedbachhalle Weinheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Muskatellerweg",
+    "hausnummer": "22",
+    "plz": "55232",
+    "ort": "Alzey, Stadt"
+  },
+  "lage": {
+    "lon": 8.063334,
+    "lat": 49.740513
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cef-e326-43ab-a23e-bb4791e1008c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

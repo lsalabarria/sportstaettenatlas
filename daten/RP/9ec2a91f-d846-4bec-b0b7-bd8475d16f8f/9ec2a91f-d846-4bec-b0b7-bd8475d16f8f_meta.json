@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a91f-d846-4bec-b0b7-bd8475d16f8f",
+  "name": "Sportplatz SV Gossersweiler-Stein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Goßbrechtstraße",
+    "plz": "76857",
+    "ort": "Gossersweiler-Stein"
+  },
+  "lage": {
+    "lon": 7.916867,
+    "lat": 49.161846
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91f-d846-4bec-b0b7-bd8475d16f8f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

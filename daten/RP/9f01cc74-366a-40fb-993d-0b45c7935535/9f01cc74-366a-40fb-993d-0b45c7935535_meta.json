@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc74-366a-40fb-993d-0b45c7935535",
+  "name": "KiboBad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Fischbachweg",
+    "hausnummer": "3",
+    "plz": "67292",
+    "ort": "Kirchheimbolanden, Stadt"
+  },
+  "lage": {
+    "lon": 8.01078,
+    "lat": 49.65461
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc74-366a-40fb-993d-0b45c7935535",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a924-afbf-44d3-b8d2-6d5e1a0d0f6c",
+  "name": "Dürkheimer Hockey Club",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "19",
+    "plz": "67098",
+    "ort": "Bad Dürkheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.191015,
+    "lat": 49.466665
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a924-afbf-44d3-b8d2-6d5e1a0d0f6c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

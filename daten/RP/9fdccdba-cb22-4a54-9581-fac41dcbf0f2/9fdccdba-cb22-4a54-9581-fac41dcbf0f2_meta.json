@@ -1,0 +1,24 @@
+{
+  "id": "9fdccdba-cb22-4a54-9581-fac41dcbf0f2",
+  "name": "Bolzplatz Alzheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hohlstraße",
+    "plz": "56727",
+    "ort": "Mayen, Stadt"
+  },
+  "lage": {
+    "lon": 7.227817,
+    "lat": 50.292976
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdba-cb22-4a54-9581-fac41dcbf0f2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

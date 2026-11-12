@@ -1,0 +1,24 @@
+{
+  "id": "9d09fae7-b156-446e-9a5b-d062d0e2352b",
+  "name": "Waldsportplatz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "15",
+    "plz": "54457",
+    "ort": "Wincheringen"
+  },
+  "lage": {
+    "lon": 6.418686,
+    "lat": 49.6017
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae7-b156-446e-9a5b-d062d0e2352b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4ed-f314-4c5b-b238-1da024b2e708",
+  "name": "Cage Soccer Prüm",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Kalvarienbergstraße",
+    "hausnummer": "5",
+    "plz": "54595",
+    "ort": "Prüm, Stadt"
+  },
+  "lage": {
+    "lon": 6.419596,
+    "lat": 50.205608
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ed-f314-4c5b-b238-1da024b2e708",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

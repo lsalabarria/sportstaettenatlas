@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cc2-89f7-459d-b0a0-fbc7ede3cea1",
+  "name": "Sporthalle VfL Staudernheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Zum Sportfeld",
+    "hausnummer": "14",
+    "plz": "55568",
+    "ort": "Staudernheim"
+  },
+  "lage": {
+    "lon": 7.686513,
+    "lat": 49.77729
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cc2-89f7-459d-b0a0-fbc7ede3cea1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

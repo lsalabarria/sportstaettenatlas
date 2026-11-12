@@ -1,0 +1,21 @@
+{
+  "id": "2a65458b-0392-4f6b-b95e-a619f259896c",
+  "name": "Calisthenics",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "ort": "Dernau"
+  },
+  "lage": {
+    "lon": 7.049263,
+    "lat": 50.533072
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "2a65458b-0392-4f6b-b95e-a619f259896c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

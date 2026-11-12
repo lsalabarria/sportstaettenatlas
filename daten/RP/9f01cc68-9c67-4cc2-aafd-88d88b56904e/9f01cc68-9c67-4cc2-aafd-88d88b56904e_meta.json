@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc68-9c67-4cc2-aafd-88d88b56904e",
+  "name": "Erlebnisbad Zeller Land",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Sportzentrum",
+    "hausnummer": "1",
+    "plz": "56856",
+    "ort": "Zell (Mosel), Stadt"
+  },
+  "lage": {
+    "lon": 7.17473,
+    "lat": 50.01565
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc68-9c67-4cc2-aafd-88d88b56904e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

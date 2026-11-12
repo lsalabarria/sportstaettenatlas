@@ -1,0 +1,24 @@
+{
+  "id": "9d09fadc-7d94-49b0-8119-8675b52b139a",
+  "name": "Josef-Hoor-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Laeisenhofer Straße",
+    "hausnummer": "17",
+    "plz": "54668",
+    "ort": "Ferschweiler"
+  },
+  "lage": {
+    "lon": 6.409241,
+    "lat": 49.865215
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadc-7d94-49b0-8119-8675b52b139a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

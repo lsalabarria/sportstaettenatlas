@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e11-3043-4d67-85b2-4e533966c2cf",
+  "name": "Tennisclub Wildbad e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Wildbadstraße",
+    "hausnummer": "183",
+    "plz": "56841",
+    "ort": "Traben-Trarbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.110047,
+    "lat": 49.936701
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e11-3043-4d67-85b2-4e533966c2cf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

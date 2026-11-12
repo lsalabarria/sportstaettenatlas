@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1daa-fdcb-4b63-ac34-7a8f0e716699",
+  "name": "Wissener Schützenverein e.V. 1870",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Stadionstraße",
+    "plz": "57537",
+    "ort": "Wissen, Stadt"
+  },
+  "lage": {
+    "lon": 7.719742,
+    "lat": 50.784094
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daa-fdcb-4b63-ac34-7a8f0e716699",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

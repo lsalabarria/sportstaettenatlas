@@ -1,0 +1,24 @@
+{
+  "id": "a08f7ccb-4d2d-4339-8743-b3027d9a1fc9",
+  "name": "Reitplatz Hofmann",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Stromberger Straße",
+    "plz": "55444",
+    "ort": "Seibersbach"
+  },
+  "lage": {
+    "lon": 7.727461,
+    "lat": 49.95933
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ccb-4d2d-4339-8743-b3027d9a1fc9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

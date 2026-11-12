@@ -1,0 +1,23 @@
+{
+  "id": "9c24bfa4-f93e-483a-adb2-4126937fb11f",
+  "name": "Bolzplatz im Festungspark Kaiser Alexander",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Löwentor",
+    "plz": "56075",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.579495,
+    "lat": 50.347996
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa4-f93e-483a-adb2-4126937fb11f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

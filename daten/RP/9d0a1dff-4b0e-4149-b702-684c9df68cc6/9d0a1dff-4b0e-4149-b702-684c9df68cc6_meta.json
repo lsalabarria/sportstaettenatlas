@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dff-4b0e-4149-b702-684c9df68cc6",
+  "name": "Sportplatz Alosius-Grundschule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Blankartstraße",
+    "hausnummer": "13",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.103805,
+    "lat": 50.542068
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dff-4b0e-4149-b702-684c9df68cc6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

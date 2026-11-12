@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1da2-bdb9-4971-ae94-92a8c085058f",
+  "name": "Tennisanlage Stadtkyll",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "16",
+    "plz": "54589",
+    "ort": "Stadtkyll"
+  },
+  "lage": {
+    "lon": 6.52594,
+    "lat": 50.349728
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da2-bdb9-4971-ae94-92a8c085058f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

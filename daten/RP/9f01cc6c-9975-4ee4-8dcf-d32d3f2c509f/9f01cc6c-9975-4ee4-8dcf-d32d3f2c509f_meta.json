@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc6c-9975-4ee4-8dcf-d32d3f2c509f",
+  "name": "Waldschwimmbad Eisenberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Friedrich-Ebert-Str.",
+    "hausnummer": "60",
+    "plz": "67304",
+    "ort": "Eisenberg (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.057859,
+    "lat": 49.508103
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6c-9975-4ee4-8dcf-d32d3f2c509f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

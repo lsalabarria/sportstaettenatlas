@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e07-72d5-46fb-82f0-3539b52c2337",
+  "name": "Bolzplatz Dünfuß",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brunnenstraße",
+    "plz": "56754",
+    "ort": "Dünfus"
+  },
+  "lage": {
+    "lon": 7.234995,
+    "lat": 50.220383
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e07-72d5-46fb-82f0-3539b52c2337",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

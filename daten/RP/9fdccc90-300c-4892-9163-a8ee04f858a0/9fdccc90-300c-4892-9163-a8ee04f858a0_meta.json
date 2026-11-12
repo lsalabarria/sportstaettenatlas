@@ -1,0 +1,24 @@
+{
+  "id": "9fdccc90-300c-4892-9163-a8ee04f858a0",
+  "name": "Reit.- und Fahrverein Zeiskam e.V.",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Heinrich-Butz-Weg",
+    "plz": "67378",
+    "ort": "Zeiskam"
+  },
+  "lage": {
+    "lon": 8.259489,
+    "lat": 49.220607
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc90-300c-4892-9163-a8ee04f858a0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "a101ebd0-f97c-4b2e-af7c-97d4ac109daf",
+  "name": "Sporthalle BBS Wirtschaft 1 (Rheinschule)",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Mundenheimer Straße",
+    "hausnummer": "220",
+    "plz": "67061",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.451084,
+    "lat": 49.473212
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a101ebd0-f97c-4b2e-af7c-97d4ac109daf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

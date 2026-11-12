@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a90a-65e0-47ce-b4ca-7e61cf16ebb8",
+  "name": "Mehrzweckhalle Bubenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Sportplatzstraße",
+    "hausnummer": "29",
+    "plz": "55270",
+    "ort": "Bubenheim"
+  },
+  "lage": {
+    "lon": 8.084271,
+    "lat": 49.919582
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90a-65e0-47ce-b4ca-7e61cf16ebb8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

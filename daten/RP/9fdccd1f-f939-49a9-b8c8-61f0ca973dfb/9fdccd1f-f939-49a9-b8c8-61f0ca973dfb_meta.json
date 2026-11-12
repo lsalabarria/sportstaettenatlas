@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd1f-f939-49a9-b8c8-61f0ca973dfb",
+  "name": "Sportanlage Falltor",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Falltor",
+    "hausnummer": "43",
+    "plz": "67685",
+    "ort": "Weilerbach"
+  },
+  "lage": {
+    "lon": 7.62072,
+    "lat": 49.478798
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd1f-f939-49a9-b8c8-61f0ca973dfb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

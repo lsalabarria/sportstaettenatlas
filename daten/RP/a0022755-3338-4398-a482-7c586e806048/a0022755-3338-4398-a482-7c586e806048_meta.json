@@ -1,0 +1,23 @@
+{
+  "id": "a0022755-3338-4398-a482-7c586e806048",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Feldweg bei Schulstraße",
+    "plz": "54311",
+    "ort": "Trierweiler"
+  },
+  "lage": {
+    "lon": 6.559991,
+    "lat": 49.759393
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0022755-3338-4398-a482-7c586e806048",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

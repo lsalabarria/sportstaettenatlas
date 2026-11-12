@@ -1,0 +1,24 @@
+{
+  "id": "a1020c00-14c7-467c-8135-912993bbcad7",
+  "name": "Sporthalle Theodor-Heuss-Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Freiastraße",
+    "hausnummer": "10",
+    "plz": "67059",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.426863,
+    "lat": 49.478219
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a1020c00-14c7-467c-8135-912993bbcad7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

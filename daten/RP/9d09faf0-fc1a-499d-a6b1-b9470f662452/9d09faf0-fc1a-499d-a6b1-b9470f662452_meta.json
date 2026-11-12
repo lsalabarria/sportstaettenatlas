@@ -1,0 +1,24 @@
+{
+  "id": "9d09faf0-fc1a-499d-a6b1-b9470f662452",
+  "name": "Sportplatz Salz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "26",
+    "plz": "56414",
+    "ort": "Salz"
+  },
+  "lage": {
+    "lon": 7.96805,
+    "lat": 50.512429
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf0-fc1a-499d-a6b1-b9470f662452",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

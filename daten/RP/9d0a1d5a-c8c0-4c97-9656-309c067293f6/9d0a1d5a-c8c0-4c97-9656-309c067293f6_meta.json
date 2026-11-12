@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5a-c8c0-4c97-9656-309c067293f6",
+  "name": "Sportplatz Morshausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ehrenburgstraße",
+    "plz": "56283",
+    "ort": "Morshausen"
+  },
+  "lage": {
+    "lon": 7.447332,
+    "lat": 50.195884
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5a-c8c0-4c97-9656-309c067293f6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d67-5b30-40db-bc7a-458f62e1fd7c",
+  "name": "FSV Salmrohr Sportzentrum",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Kordel",
+    "hausnummer": "7",
+    "plz": "54528",
+    "ort": "Salmtal"
+  },
+  "lage": {
+    "lon": 6.846669,
+    "lat": 49.925533
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d67-5b30-40db-bc7a-458f62e1fd7c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce2c-dc83-4326-8c8c-85122833c0ca",
+  "name": "Sportplatz Oberauerbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Battweilerstraße",
+    "hausnummer": "45",
+    "plz": "66482",
+    "ort": "Zweibrücken, Stadt"
+  },
+  "lage": {
+    "lon": 7.42802,
+    "lat": 49.279823
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce2c-dc83-4326-8c8c-85122833c0ca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

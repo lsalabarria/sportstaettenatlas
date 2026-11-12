@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a930-c8d2-474a-8ffc-86787f1106ab",
+  "name": "Sportanlage TSV Dörnbach 1903 e.V.",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "K7",
+    "plz": "67806",
+    "ort": "Rockenhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.80375,
+    "lat": 49.612142
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a930-c8d2-474a-8ffc-86787f1106ab",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

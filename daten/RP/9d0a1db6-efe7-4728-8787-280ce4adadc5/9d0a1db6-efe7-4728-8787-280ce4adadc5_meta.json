@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db6-efe7-4728-8787-280ce4adadc5",
+  "name": "Bolzplatz Auf der Bausch",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Auf der Bausch",
+    "hausnummer": "138",
+    "plz": "54293",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.670506,
+    "lat": 49.794174
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db6-efe7-4728-8787-280ce4adadc5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

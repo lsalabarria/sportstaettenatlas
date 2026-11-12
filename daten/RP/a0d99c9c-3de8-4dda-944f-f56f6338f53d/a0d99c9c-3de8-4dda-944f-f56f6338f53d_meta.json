@@ -1,0 +1,23 @@
+{
+  "id": "a0d99c9c-3de8-4dda-944f-f56f6338f53d",
+  "name": "Spielplatz an der Ortsverwaltung",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Römerstraße",
+    "plz": "55129",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.244001,
+    "lat": 49.913298
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0d99c9c-3de8-4dda-944f-f56f6338f53d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

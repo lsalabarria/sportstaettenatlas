@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccc5-9cfb-4fad-8ea5-8d00b2889dee",
+  "name": "Skatepark Plaidt",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "10",
+    "plz": "56637",
+    "ort": "Plaidt"
+  },
+  "lage": {
+    "lon": 7.390848,
+    "lat": 50.387439
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccc5-9cfb-4fad-8ea5-8d00b2889dee",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

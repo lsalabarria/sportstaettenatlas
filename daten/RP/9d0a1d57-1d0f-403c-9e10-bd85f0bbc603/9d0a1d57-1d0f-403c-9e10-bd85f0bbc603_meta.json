@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d57-1d0f-403c-9e10-bd85f0bbc603",
+  "name": "Vulkaneifel Therme",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Clara-Viebig-Straße",
+    "hausnummer": "3-7",
+    "plz": "56864",
+    "ort": "Bad Bertrich"
+  },
+  "lage": {
+    "lon": 7.031126,
+    "lat": 50.069511
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d57-1d0f-403c-9e10-bd85f0bbc603",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

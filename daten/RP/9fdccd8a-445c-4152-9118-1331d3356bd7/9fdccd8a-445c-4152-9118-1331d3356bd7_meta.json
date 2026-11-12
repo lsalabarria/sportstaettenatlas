@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd8a-445c-4152-9118-1331d3356bd7",
+  "name": "Fitnesswerk Kandel",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Barthelsmühlring",
+    "hausnummer": "6",
+    "plz": "76870",
+    "ort": "Kandel, Stadt"
+  },
+  "lage": {
+    "lon": 8.179601,
+    "lat": 49.098808
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd8a-445c-4152-9118-1331d3356bd7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

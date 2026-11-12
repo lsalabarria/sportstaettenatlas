@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccb4-8f32-4b26-bc4a-f2fabf82b973",
+  "name": "Bolzplatz Kalt",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "St. -Martin-Straße",
+    "plz": "56294",
+    "ort": "Kalt"
+  },
+  "lage": {
+    "lon": 7.397319,
+    "lat": 50.266754
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccb4-8f32-4b26-bc4a-f2fabf82b973",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

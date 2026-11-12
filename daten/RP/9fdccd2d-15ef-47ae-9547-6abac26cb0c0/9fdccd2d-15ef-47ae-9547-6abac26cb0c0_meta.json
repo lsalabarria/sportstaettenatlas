@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd2d-15ef-47ae-9547-6abac26cb0c0",
+  "name": "Wahagnieshalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Schwarzweiher",
+    "plz": "67459",
+    "ort": "Böhl-Iggelheim"
+  },
+  "lage": {
+    "lon": 8.302986,
+    "lat": 49.37243
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd2d-15ef-47ae-9547-6abac26cb0c0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

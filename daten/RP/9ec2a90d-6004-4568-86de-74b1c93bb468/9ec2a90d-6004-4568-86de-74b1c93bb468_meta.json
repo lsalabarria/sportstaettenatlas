@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a90d-6004-4568-86de-74b1c93bb468",
+  "name": "Tennisclub Stadecken-Elsheim e.V",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Hinter der Höll",
+    "hausnummer": "1",
+    "plz": "55271",
+    "ort": "Stadecken-Elsheim"
+  },
+  "lage": {
+    "lon": 8.138156,
+    "lat": 49.91041
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90d-6004-4568-86de-74b1c93bb468",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

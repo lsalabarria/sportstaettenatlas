@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a927-6119-4e49-9e4f-5b331d46143f",
+  "name": "Stefan-George-Gymnasium Bingen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Morschfeldweg",
+    "hausnummer": "5",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.899727,
+    "lat": 49.963273
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a927-6119-4e49-9e4f-5b331d46143f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

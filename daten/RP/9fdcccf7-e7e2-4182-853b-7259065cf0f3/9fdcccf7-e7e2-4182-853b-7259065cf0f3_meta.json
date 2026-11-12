@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccf7-e7e2-4182-853b-7259065cf0f3",
+  "name": "Kleinspielfeld Burgschwalbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Panröder Str.",
+    "plz": "65558",
+    "ort": "Burgschwalbach"
+  },
+  "lage": {
+    "lon": 8.082915,
+    "lat": 50.282776
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccf7-e7e2-4182-853b-7259065cf0f3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5d-b93e-48bf-b07d-bbe0f76e3e76",
+  "name": "Sporthalle Polizeihochschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hunsrück Drive",
+    "plz": "55483",
+    "ort": "Büchenbeuren"
+  },
+  "lage": {
+    "lon": 7.25144,
+    "lat": 49.924491
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5d-b93e-48bf-b07d-bbe0f76e3e76",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

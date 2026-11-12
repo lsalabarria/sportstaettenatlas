@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1da6-1ba1-4070-ae9a-b20e576b6400",
+  "name": "Sportplatz Darscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Karl-Kaufmann-Straße",
+    "hausnummer": "2",
+    "plz": "54552",
+    "ort": "Darscheid"
+  },
+  "lage": {
+    "lon": 6.881971,
+    "lat": 50.211118
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da6-1ba1-4070-ae9a-b20e576b6400",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

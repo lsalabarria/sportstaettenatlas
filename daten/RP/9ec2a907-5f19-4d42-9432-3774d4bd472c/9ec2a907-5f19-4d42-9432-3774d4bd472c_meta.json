@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a907-5f19-4d42-9432-3774d4bd472c",
+  "name": "Schützenhaus Appenthal/Elmstein",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "L499",
+    "plz": "67471",
+    "ort": "Elmstein"
+  },
+  "lage": {
+    "lon": 7.959905,
+    "lat": 49.342472
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a907-5f19-4d42-9432-3774d4bd472c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

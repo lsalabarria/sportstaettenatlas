@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd8a-0117-4312-b7cd-01edc18e0a1e",
+  "name": "Fun Forest GmbH AbenteuerPark Kandel",
+  "kategorie": "Klettersportstätte",
+  "adresse": {
+    "strasse": "Badallee",
+    "plz": "76870",
+    "ort": "Kandel, Stadt"
+  },
+  "lage": {
+    "lon": 8.192702,
+    "lat": 49.072319
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd8a-0117-4312-b7cd-01edc18e0a1e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

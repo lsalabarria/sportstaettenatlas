@@ -1,0 +1,24 @@
+{
+  "id": "a101f15a-bbb4-462c-9afe-afde753bd1a2",
+  "name": "Sporthalle Goethe-Mozartschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kurt-Schumacher Straße",
+    "hausnummer": "38",
+    "plz": "67069",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.39885,
+    "lat": 49.521228
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a101f15a-bbb4-462c-9afe-afde753bd1a2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

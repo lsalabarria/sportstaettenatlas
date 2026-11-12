@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd16-4b57-485f-8ca4-ff9977046001",
+  "name": "Bolzplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hebelstraße",
+    "hausnummer": "16",
+    "plz": "67735",
+    "ort": "Mehlbach"
+  },
+  "lage": {
+    "lon": 7.711234,
+    "lat": 49.521139
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd16-4b57-485f-8ca4-ff9977046001",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

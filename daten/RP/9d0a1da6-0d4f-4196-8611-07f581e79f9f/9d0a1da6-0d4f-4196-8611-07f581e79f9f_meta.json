@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da6-0d4f-4196-8611-07f581e79f9f",
+  "name": "Reitplatz Steineberg",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "54552",
+    "ort": "Steineberg"
+  },
+  "lage": {
+    "lon": 6.911093,
+    "lat": 50.181693
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da6-0d4f-4196-8611-07f581e79f9f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

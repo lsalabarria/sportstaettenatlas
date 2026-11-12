@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da2-2730-4af2-99f9-92381c8c6590",
+  "name": "Sportplatz Niederstadtfeld/Oberstadtfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L27",
+    "plz": "54570",
+    "ort": "Niederstadtfeld"
+  },
+  "lage": {
+    "lon": 6.765599,
+    "lat": 50.16622
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da2-2730-4af2-99f9-92381c8c6590",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

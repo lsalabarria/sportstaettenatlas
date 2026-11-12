@@ -1,0 +1,24 @@
+{
+  "id": "9d09fae0-738a-4dd0-a1b6-f45a1eb7f707",
+  "name": "Tennisanlage TC Ruwer Waldrach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Stadion",
+    "hausnummer": "6",
+    "plz": "54320",
+    "ort": "Waldrach"
+  },
+  "lage": {
+    "lon": 6.752244,
+    "lat": 49.746412
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae0-738a-4dd0-a1b6-f45a1eb7f707",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

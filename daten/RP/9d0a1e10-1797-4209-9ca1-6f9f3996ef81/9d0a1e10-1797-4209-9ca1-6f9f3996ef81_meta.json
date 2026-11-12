@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e10-1797-4209-9ca1-6f9f3996ef81",
+  "name": "Sportplatz Wengerohr",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bornweg",
+    "hausnummer": "2a",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.933184,
+    "lat": 49.968476
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e10-1797-4209-9ca1-6f9f3996ef81",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

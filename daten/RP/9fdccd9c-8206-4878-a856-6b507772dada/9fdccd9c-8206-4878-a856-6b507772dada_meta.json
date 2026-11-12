@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd9c-8206-4878-a856-6b507772dada",
+  "name": "Reitschule Barbara Schönberger",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Engerser Landstraße",
+    "hausnummer": "110",
+    "plz": "56170",
+    "ort": "Bendorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.558355,
+    "lat": 50.434192
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd9c-8206-4878-a856-6b507772dada",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

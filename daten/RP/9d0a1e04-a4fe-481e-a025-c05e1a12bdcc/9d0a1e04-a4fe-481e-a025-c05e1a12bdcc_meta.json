@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e04-a4fe-481e-a025-c05e1a12bdcc",
+  "name": "Beachvolleyballfeld Rhein-Gymnasium Sinzig",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dreifaltigkeitsweg",
+    "hausnummer": "37b",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.249108,
+    "lat": 50.549732
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e04-a4fe-481e-a025-c05e1a12bdcc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cb2-16af-4dae-ac57-3ee7c036345d",
+  "name": "Kurpfalzhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "61",
+    "plz": "66909",
+    "ort": "Nanzdietschweiler"
+  },
+  "lage": {
+    "lon": 7.436084,
+    "lat": 49.442309
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb2-16af-4dae-ac57-3ee7c036345d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce16-732a-47f7-b4bd-56f3a6c27b5f",
+  "name": "Bolzplatz Margaretenstraße",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Margaretenstraße",
+    "hausnummer": "4",
+    "plz": "66955",
+    "ort": "Pirmasens, Stadt"
+  },
+  "lage": {
+    "lon": 7.600179,
+    "lat": 49.196318
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce16-732a-47f7-b4bd-56f3a6c27b5f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

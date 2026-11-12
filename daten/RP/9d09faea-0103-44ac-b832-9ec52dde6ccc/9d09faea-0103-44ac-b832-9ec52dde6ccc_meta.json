@@ -1,0 +1,23 @@
+{
+  "id": "9d09faea-0103-44ac-b832-9ec52dde6ccc",
+  "name": "Reitsportstätten Westwood-Quarters-stable",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Welschneudorfer Str.",
+    "plz": "56412",
+    "ort": "Hübingen"
+  },
+  "lage": {
+    "lon": 7.843375,
+    "lat": 50.362456
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faea-0103-44ac-b832-9ec52dde6ccc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1da9-9b41-413f-ae06-f132fd2206d3",
+  "name": "Sportplatz in der Direnbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "7",
+    "plz": "57567",
+    "ort": "Daaden, Stadt"
+  },
+  "lage": {
+    "lon": 7.994412,
+    "lat": 50.734445
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da9-9b41-413f-ae06-f132fd2206d3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a92b-cce2-4151-91ac-18906fde35e4",
+  "name": "Bolzplatz Frei-Weinheim Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rheinstraße",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.024139,
+    "lat": 49.993183
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92b-cce2-4151-91ac-18906fde35e4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

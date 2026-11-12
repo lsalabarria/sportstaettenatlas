@@ -1,0 +1,25 @@
+{
+  "id": "b17cefbf-3499-463b-b444-7b3a49a77fbe",
+  "name": "Andreas-Albert-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Petersgartenweg",
+    "hausnummer": "9",
+    "plz": "67227",
+    "ort": "Frankenthal (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.345708,
+    "lat": 49.531933
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "b17cefbf-3499-463b-b444-7b3a49a77fbe",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

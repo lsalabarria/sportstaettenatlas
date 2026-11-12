@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d54-6dd7-4327-90e0-ec95640a8a25",
+  "name": "Fußballplatz am Rhein Valwig",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Moselweinstraße",
+    "plz": "56812",
+    "ort": "Valwig"
+  },
+  "lage": {
+    "lon": 7.20799,
+    "lat": 50.141519
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d54-6dd7-4327-90e0-ec95640a8a25",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

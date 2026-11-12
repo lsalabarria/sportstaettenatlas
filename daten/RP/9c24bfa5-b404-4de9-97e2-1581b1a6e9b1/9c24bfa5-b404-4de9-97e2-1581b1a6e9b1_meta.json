@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa5-b404-4de9-97e2-1581b1a6e9b1",
+  "name": "Sporthalle der Clemens-Bretano-Overberg Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Weißergasse",
+    "hausnummer": "6",
+    "plz": "56068",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.592267,
+    "lat": 50.361982
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa5-b404-4de9-97e2-1581b1a6e9b1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

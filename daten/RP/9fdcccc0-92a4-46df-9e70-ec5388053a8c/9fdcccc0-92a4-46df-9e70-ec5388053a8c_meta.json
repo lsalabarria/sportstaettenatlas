@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccc0-92a4-46df-9e70-ec5388053a8c",
+  "name": "Sporthalle Peter-Friedhofen-Grundschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Peter-Friedhofen-Straße",
+    "hausnummer": "08. Okt",
+    "plz": "56191",
+    "ort": "Weitersburg"
+  },
+  "lage": {
+    "lon": 7.602243,
+    "lat": 50.410867
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccc0-92a4-46df-9e70-ec5388053a8c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

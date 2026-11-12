@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a927-f112-4dd8-ac94-e509d57b122f",
+  "name": "Spvgg Dietersheim 1918 e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sandstraße",
+    "hausnummer": "35",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.914202,
+    "lat": 49.936234
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a927-f112-4dd8-ac94-e509d57b122f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

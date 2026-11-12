@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a927-48fe-434b-acb2-abe2dcda9cca",
+  "name": "Hildegardisschule Bingen Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Holzhauserstraße",
+    "hausnummer": "16",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.903171,
+    "lat": 49.967066
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a927-48fe-434b-acb2-abe2dcda9cca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

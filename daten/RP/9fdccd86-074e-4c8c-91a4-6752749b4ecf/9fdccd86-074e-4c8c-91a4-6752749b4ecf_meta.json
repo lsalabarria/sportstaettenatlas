@@ -1,0 +1,23 @@
+{
+  "id": "9fdccd86-074e-4c8c-91a4-6752749b4ecf",
+  "name": "Schießanlage Germersheim",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "plz": "76726",
+    "ort": "Germersheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.339267,
+    "lat": 49.207931
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd86-074e-4c8c-91a4-6752749b4ecf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

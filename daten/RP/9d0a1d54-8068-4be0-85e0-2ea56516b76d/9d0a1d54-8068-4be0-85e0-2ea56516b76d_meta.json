@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d54-8068-4be0-85e0-2ea56516b76d",
+  "name": "Sportplatz Wirfus",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hohlstraße",
+    "plz": "56814",
+    "ort": "Wirfus"
+  },
+  "lage": {
+    "lon": 7.203947,
+    "lat": 50.197889
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d54-8068-4be0-85e0-2ea56516b76d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

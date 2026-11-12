@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e0c-00a2-4635-9dd8-36a4a330e693",
+  "name": "Tennisplatz Werlau",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "56329",
+    "ort": "Sankt Goar, Stadt"
+  },
+  "lage": {
+    "lon": 7.684214,
+    "lat": 50.154764
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0c-00a2-4635-9dd8-36a4a330e693",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

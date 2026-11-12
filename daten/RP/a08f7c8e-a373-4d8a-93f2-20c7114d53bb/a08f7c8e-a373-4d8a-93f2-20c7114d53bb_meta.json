@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c8e-a373-4d8a-93f2-20c7114d53bb",
+  "name": "Sportplatz auf der Schmittwiese",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "96",
+    "plz": "55768",
+    "ort": "Hoppstädten-Weiersbach"
+  },
+  "lage": {
+    "lon": 7.192342,
+    "lat": 49.625913
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c8e-a373-4d8a-93f2-20c7114d53bb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

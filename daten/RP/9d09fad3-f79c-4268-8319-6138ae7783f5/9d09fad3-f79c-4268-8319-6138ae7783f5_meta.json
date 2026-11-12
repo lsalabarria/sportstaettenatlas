@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad3-f79c-4268-8319-6138ae7783f5",
+  "name": "Tennisanlage TSG Rheinbreitbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Westerwaldstraße",
+    "hausnummer": "66",
+    "plz": "53619",
+    "ort": "Rheinbreitbach"
+  },
+  "lage": {
+    "lon": 7.241766,
+    "lat": 50.615763
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad3-f79c-4268-8319-6138ae7783f5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a90e-9ffa-47bc-b535-14dd9423395c",
+  "name": "Sporthalle am Guckenberg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Laubenheimer Str.",
+    "plz": "55294",
+    "ort": "Bodenheim"
+  },
+  "lage": {
+    "lon": 8.306491,
+    "lat": 49.932904
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90e-9ffa-47bc-b535-14dd9423395c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdfa-2ea7-404b-8132-577eaa9ca101",
+  "name": "Bolzplatz Grundschule In der Langgewann",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Adolf-Kolping-Straße",
+    "hausnummer": "30",
+    "plz": "67071",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.358205,
+    "lat": 49.494407
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdfa-2ea7-404b-8132-577eaa9ca101",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

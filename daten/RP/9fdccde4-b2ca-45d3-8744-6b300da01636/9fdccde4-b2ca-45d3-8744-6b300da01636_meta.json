@@ -1,0 +1,25 @@
+{
+  "id": "9fdccde4-b2ca-45d3-8744-6b300da01636",
+  "name": "Vogelweh Fitness Center",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Vogelweh",
+    "hausnummer": "2050",
+    "plz": "67661",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.700153,
+    "lat": 49.435057
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccde4-b2ca-45d3-8744-6b300da01636",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

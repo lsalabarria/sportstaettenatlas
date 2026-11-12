@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf0-f15b-4544-a98a-9e8062cf4e48",
+  "name": "Bolzplatz Bilkheim",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Erlenweg",
+    "plz": "56414",
+    "ort": "Bilkheim"
+  },
+  "lage": {
+    "lon": 7.953532,
+    "lat": 50.497325
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf0-f15b-4544-a98a-9e8062cf4e48",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

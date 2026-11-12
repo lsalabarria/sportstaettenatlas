@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cc3-7e81-429b-8f69-90ee0e07e840",
+  "name": "Sportplatz am Kaisergarten",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Kaisergarten",
+    "hausnummer": "4",
+    "plz": "55569",
+    "ort": "Monzingen"
+  },
+  "lage": {
+    "lon": 7.583414,
+    "lat": 49.794141
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cc3-7e81-429b-8f69-90ee0e07e840",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

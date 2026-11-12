@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccf6-4c21-4965-a5e3-40555ee29b05",
+  "name": "Bolzplatz Holzheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mühlstraße",
+    "plz": "65558",
+    "ort": "Holzheim"
+  },
+  "lage": {
+    "lon": 8.049585,
+    "lat": 50.348666
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccf6-4c21-4965-a5e3-40555ee29b05",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

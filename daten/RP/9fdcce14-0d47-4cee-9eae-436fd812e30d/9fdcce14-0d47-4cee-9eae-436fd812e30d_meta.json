@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce14-0d47-4cee-9eae-436fd812e30d",
+  "name": "TC Rot-Weiß Pirmasens",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Haseneckstraße",
+    "hausnummer": "40",
+    "plz": "66953",
+    "ort": "Pirmasens, Stadt"
+  },
+  "lage": {
+    "lon": 7.62451,
+    "lat": 49.206434
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce14-0d47-4cee-9eae-436fd812e30d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

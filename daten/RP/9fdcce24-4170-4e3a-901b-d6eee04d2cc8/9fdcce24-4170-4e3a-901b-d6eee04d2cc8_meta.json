@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce24-4170-4e3a-901b-d6eee04d2cc8",
+  "name": "Basketballplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Höhenstraße",
+    "hausnummer": "19",
+    "plz": "67550",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.329536,
+    "lat": 49.656017
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce24-4170-4e3a-901b-d6eee04d2cc8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

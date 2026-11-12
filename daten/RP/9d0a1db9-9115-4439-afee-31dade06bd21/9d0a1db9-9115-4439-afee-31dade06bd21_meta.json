@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db9-9115-4439-afee-31dade06bd21",
+  "name": "Blandine-Merten-Realschule Trier",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bernhardstraße",
+    "hausnummer": "26",
+    "plz": "54295",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.639363,
+    "lat": 49.745066
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db9-9115-4439-afee-31dade06bd21",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cba-17d1-447a-bc53-b24809cbfb95",
+  "name": "Sportplatz Röthselbusch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Röthselbusch",
+    "plz": "67745",
+    "ort": "Grumbach"
+  },
+  "lage": {
+    "lon": 7.545409,
+    "lat": 49.654884
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cba-17d1-447a-bc53-b24809cbfb95",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

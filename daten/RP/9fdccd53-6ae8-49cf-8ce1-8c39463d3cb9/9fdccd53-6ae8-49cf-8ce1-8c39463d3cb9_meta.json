@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd53-6ae8-49cf-8ce1-8c39463d3cb9",
+  "name": "Sportanlage TV 1903 Althornbach e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Turnstraße",
+    "plz": "66484",
+    "ort": "Althornbach"
+  },
+  "lage": {
+    "lon": 7.382792,
+    "lat": 49.202978
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd53-6ae8-49cf-8ce1-8c39463d3cb9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

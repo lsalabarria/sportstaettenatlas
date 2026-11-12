@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d48-964f-4d61-a447-2e46167cf9d4",
+  "name": "Turnhalle Alpenrod",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hensches Wiese",
+    "plz": "57642",
+    "ort": "Alpenrod"
+  },
+  "lage": {
+    "lon": 7.871924,
+    "lat": 50.631502
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d48-964f-4d61-a447-2e46167cf9d4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

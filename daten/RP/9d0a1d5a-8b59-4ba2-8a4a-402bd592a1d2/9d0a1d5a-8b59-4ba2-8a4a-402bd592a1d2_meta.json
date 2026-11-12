@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5a-8b59-4ba2-8a4a-402bd592a1d2",
+  "name": "Sportplatz Lingerhahn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportplatz",
+    "plz": "56291",
+    "ort": "Lingerhahn"
+  },
+  "lage": {
+    "lon": 7.573132,
+    "lat": 50.091211
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5a-8b59-4ba2-8a4a-402bd592a1d2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

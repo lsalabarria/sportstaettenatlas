@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d63-8668-4c44-a5c0-08703b363806",
+  "name": "Bolzplatz Lückenburg",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Im Fröhling",
+    "plz": "54424",
+    "ort": "Lückenburg"
+  },
+  "lage": {
+    "lon": 6.96331,
+    "lat": 49.743714
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d63-8668-4c44-a5c0-08703b363806",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

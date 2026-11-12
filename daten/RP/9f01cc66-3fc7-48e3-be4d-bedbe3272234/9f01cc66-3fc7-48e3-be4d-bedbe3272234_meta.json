@@ -1,0 +1,24 @@
+{
+  "id": "9f01cc66-3fc7-48e3-be4d-bedbe3272234",
+  "name": "Waldschwimmbad Holzhausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Haidegraben",
+    "plz": "56357",
+    "ort": "Holzhausen an der Haide"
+  },
+  "lage": {
+    "lon": 7.92313,
+    "lat": 50.22494
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc66-3fc7-48e3-be4d-bedbe3272234",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

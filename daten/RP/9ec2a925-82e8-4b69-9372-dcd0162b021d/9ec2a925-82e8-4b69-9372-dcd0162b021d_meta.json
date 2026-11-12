@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a925-82e8-4b69-9372-dcd0162b021d",
+  "name": "Fitness24studio Bad Dürkheim",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Bruchstraße",
+    "hausnummer": "54",
+    "plz": "67098",
+    "ort": "Bad Dürkheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.213158,
+    "lat": 49.471835
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a925-82e8-4b69-9372-dcd0162b021d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

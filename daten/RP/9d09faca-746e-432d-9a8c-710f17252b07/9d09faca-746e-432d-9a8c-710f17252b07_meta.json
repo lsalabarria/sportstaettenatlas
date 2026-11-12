@@ -1,0 +1,23 @@
+{
+  "id": "9d09faca-746e-432d-9a8c-710f17252b07",
+  "name": "Hölderstein Klettersteig",
+  "kategorie": "Klettersportstätte",
+  "adresse": {
+    "strasse": "Grenzbach",
+    "plz": "56305",
+    "ort": "Döttesfeld"
+  },
+  "lage": {
+    "lon": 7.543485,
+    "lat": 50.609242
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faca-746e-432d-9a8c-710f17252b07",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

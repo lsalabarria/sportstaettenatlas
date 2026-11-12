@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc6e-1f6b-44e7-8231-cf7e34b5ea62",
+  "name": "Hallenbad Daaden",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Hallenbad",
+    "hausnummer": "1",
+    "plz": "57567",
+    "ort": "Daaden, Stadt"
+  },
+  "lage": {
+    "lon": 7.973403,
+    "lat": 50.694657
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6e-1f6b-44e7-8231-cf7e34b5ea62",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cf1-d100-4081-bf54-db91cf796d92",
+  "name": "Sporthalle Elisabeth-Langgässer-Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Frankenstraße",
+    "hausnummer": "17",
+    "plz": "55232",
+    "ort": "Alzey, Stadt"
+  },
+  "lage": {
+    "lon": 8.11767,
+    "lat": 49.74098
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cf1-d100-4081-bf54-db91cf796d92",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

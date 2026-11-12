@@ -1,0 +1,24 @@
+{
+  "id": "9d09faf4-1ce6-41b2-924d-a7a0d07e9f14",
+  "name": "Sportplatz Herschbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Herrenheeg",
+    "hausnummer": "6",
+    "plz": "56249",
+    "ort": "Herschbach"
+  },
+  "lage": {
+    "lon": 7.742104,
+    "lat": 50.571598
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf4-1ce6-41b2-924d-a7a0d07e9f14",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

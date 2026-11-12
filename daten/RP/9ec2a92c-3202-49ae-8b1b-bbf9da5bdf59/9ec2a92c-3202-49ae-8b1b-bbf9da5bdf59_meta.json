@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a92c-3202-49ae-8b1b-bbf9da5bdf59",
+  "name": "BewegDich Ingelheim",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "125",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.059603,
+    "lat": 49.965245
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92c-3202-49ae-8b1b-bbf9da5bdf59",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

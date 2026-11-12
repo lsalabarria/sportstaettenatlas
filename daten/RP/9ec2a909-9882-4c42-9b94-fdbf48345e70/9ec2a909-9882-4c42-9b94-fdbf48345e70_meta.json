@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a909-9882-4c42-9b94-fdbf48345e70",
+  "name": "FC Sprendlingen 2023 e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Weiher",
+    "plz": "55576",
+    "ort": "Sprendlingen"
+  },
+  "lage": {
+    "lon": 7.989957,
+    "lat": 49.864299
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a909-9882-4c42-9b94-fdbf48345e70",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

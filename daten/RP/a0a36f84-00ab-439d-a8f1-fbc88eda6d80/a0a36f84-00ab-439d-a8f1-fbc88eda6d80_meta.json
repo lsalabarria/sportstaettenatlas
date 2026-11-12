@@ -1,0 +1,23 @@
+{
+  "id": "a0a36f84-00ab-439d-a8f1-fbc88eda6d80",
+  "name": "Skipiste Dollberg",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Dollbergstraße",
+    "plz": "54422",
+    "ort": "Neuhütten"
+  },
+  "lage": {
+    "lon": 7.019237,
+    "lat": 49.643207
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0a36f84-00ab-439d-a8f1-fbc88eda6d80",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

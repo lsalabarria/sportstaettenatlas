@@ -1,0 +1,24 @@
+{
+  "id": "572dfc58-708e-4cbb-b0df-41c1404702e0",
+  "name": "Allroundplatz Jettenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Austraße",
+    "hausnummer": "22",
+    "plz": "66887",
+    "ort": "Jettenbach"
+  },
+  "lage": {
+    "lon": 7.564831,
+    "lat": 49.528818
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "572dfc58-708e-4cbb-b0df-41c1404702e0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d09fae8-7068-4ce7-af67-49bfdd736d43",
+  "name": "Sporthalle Serrig",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Martinusstraße",
+    "hausnummer": "27",
+    "plz": "54455",
+    "ort": "Serrig"
+  },
+  "lage": {
+    "lon": 6.574188,
+    "lat": 49.572851
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae8-7068-4ce7-af67-49bfdd736d43",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

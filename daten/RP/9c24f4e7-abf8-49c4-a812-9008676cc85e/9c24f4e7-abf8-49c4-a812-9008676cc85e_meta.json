@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4e7-abf8-49c4-a812-9008676cc85e",
+  "name": "Sporthalle St. Matthias",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Prümer Straße",
+    "hausnummer": "18",
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.515359,
+    "lat": 49.977732
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e7-abf8-49c4-a812-9008676cc85e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

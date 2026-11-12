@@ -1,0 +1,25 @@
+{
+  "id": "9fdccc93-2fbb-47a6-9f31-eefa7281a048",
+  "name": "Schwimmpark Bellheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zeiskamer Str.",
+    "hausnummer": "63",
+    "plz": "76756",
+    "ort": "Bellheim"
+  },
+  "lage": {
+    "lon": 8.276376,
+    "lat": 49.194574
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc93-2fbb-47a6-9f31-eefa7281a048",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

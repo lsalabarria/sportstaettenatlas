@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dac-82e3-4288-a874-d0752025213f",
+  "name": "Sportplatz Irlich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gotenstraße",
+    "plz": "56567",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.449881,
+    "lat": 50.447223
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dac-82e3-4288-a874-d0752025213f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

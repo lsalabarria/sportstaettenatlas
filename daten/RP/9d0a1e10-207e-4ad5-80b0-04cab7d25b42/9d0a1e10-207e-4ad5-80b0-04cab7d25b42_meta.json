@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e10-207e-4ad5-80b0-04cab7d25b42",
+  "name": "Boulodrome Wengerohr",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Bornweg",
+    "hausnummer": "2a",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.933906,
+    "lat": 49.969514
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e10-207e-4ad5-80b0-04cab7d25b42",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

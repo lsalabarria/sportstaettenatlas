@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a930-496e-44a1-b2c8-f9c3c571f071",
+  "name": "Hartplatz FV Rockenhausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Obermühle",
+    "hausnummer": "5",
+    "plz": "67806",
+    "ort": "Rockenhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.823202,
+    "lat": 49.618768
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a930-496e-44a1-b2c8-f9c3c571f071",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

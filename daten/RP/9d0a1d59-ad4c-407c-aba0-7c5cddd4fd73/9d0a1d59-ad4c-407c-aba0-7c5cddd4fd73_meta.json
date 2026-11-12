@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d59-ad4c-407c-aba0-7c5cddd4fd73",
+  "name": "Spielplatz zur Post",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rhein-Mosel-Straße",
+    "plz": "56283",
+    "ort": "Gondershausen"
+  },
+  "lage": {
+    "lon": 7.493832,
+    "lat": 50.158567
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d59-ad4c-407c-aba0-7c5cddd4fd73",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

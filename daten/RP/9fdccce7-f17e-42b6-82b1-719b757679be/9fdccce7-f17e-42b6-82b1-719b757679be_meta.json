@@ -1,0 +1,25 @@
+{
+  "id": "9fdccce7-f17e-42b6-82b1-719b757679be",
+  "name": "Bolzplatz Aull",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Staffeler Str.",
+    "hausnummer": "19",
+    "plz": "65582",
+    "ort": "Aull"
+  },
+  "lage": {
+    "lon": 8.004578,
+    "lat": 50.385668
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccce7-f17e-42b6-82b1-719b757679be",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

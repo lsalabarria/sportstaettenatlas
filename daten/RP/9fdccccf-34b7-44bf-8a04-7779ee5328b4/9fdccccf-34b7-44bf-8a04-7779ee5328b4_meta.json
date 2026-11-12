@@ -1,0 +1,24 @@
+{
+  "id": "9fdccccf-34b7-44bf-8a04-7779ee5328b4",
+  "name": "Tennisanlage TC Welling",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "56753",
+    "ort": "Welling"
+  },
+  "lage": {
+    "lon": 7.318632,
+    "lat": 50.331103
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccccf-34b7-44bf-8a04-7779ee5328b4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

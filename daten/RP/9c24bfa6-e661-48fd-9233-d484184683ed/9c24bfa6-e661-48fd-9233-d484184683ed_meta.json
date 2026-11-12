@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa6-e661-48fd-9233-d484184683ed",
+  "name": "Grundschule Arzheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "In d. Felsch",
+    "hausnummer": "15",
+    "plz": "56077",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.626576,
+    "lat": 50.354344
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa6-e661-48fd-9233-d484184683ed",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

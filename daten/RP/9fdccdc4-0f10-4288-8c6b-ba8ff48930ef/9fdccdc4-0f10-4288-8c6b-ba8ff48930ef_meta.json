@@ -1,0 +1,24 @@
+{
+  "id": "9fdccdc4-0f10-4288-8c6b-ba8ff48930ef",
+  "name": "Minigolf im Hain",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Christiansweg",
+    "plz": "65582",
+    "ort": "Diez, Stadt"
+  },
+  "lage": {
+    "lon": 8.014597,
+    "lat": 50.375302
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdc4-0f10-4288-8c6b-ba8ff48930ef",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

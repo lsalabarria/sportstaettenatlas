@@ -1,0 +1,24 @@
+{
+  "id": "9fdccda8-f876-419e-9cd7-460831156c42",
+  "name": "Städtische Sporthalle Andernach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ludwig-Hillesheim-Straße",
+    "plz": "56626",
+    "ort": "Andernach, Stadt"
+  },
+  "lage": {
+    "lon": 7.403676,
+    "lat": 50.431884
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccda8-f876-419e-9cd7-460831156c42",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

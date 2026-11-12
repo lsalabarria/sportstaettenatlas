@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf1-b571-4799-ad4a-91f8d38e076f",
+  "name": "Sportplatz Fronwiese",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Fronwiese",
+    "plz": "56459",
+    "ort": "Gemünden"
+  },
+  "lage": {
+    "lon": 8.01886,
+    "lat": 50.563862
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf1-b571-4799-ad4a-91f8d38e076f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

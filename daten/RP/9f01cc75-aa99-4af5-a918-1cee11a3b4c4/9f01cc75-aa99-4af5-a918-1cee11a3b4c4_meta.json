@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc75-aa99-4af5-a918-1cee11a3b4c4",
+  "name": "Ons Schwemmbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Stadionstraße",
+    "hausnummer": "72",
+    "plz": "56626",
+    "ort": "Andernach, Stadt"
+  },
+  "lage": {
+    "lon": 7.42106,
+    "lat": 50.42622
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc75-aa99-4af5-a918-1cee11a3b4c4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

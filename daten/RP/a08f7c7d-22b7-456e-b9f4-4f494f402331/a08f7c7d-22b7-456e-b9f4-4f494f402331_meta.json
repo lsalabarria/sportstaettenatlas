@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c7d-22b7-456e-b9f4-4f494f402331",
+  "name": "Sportfeld am Adelberg 2",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Berliner Straße",
+    "hausnummer": "16",
+    "plz": "55237",
+    "ort": "Flonheim"
+  },
+  "lage": {
+    "lon": 8.038068,
+    "lat": 49.78344
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c7d-22b7-456e-b9f4-4f494f402331",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

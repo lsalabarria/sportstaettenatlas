@@ -1,0 +1,35 @@
+{
+  "id": "9d508b36-5938-44f3-b9ef-29fdb626f45e",
+  "name": "Test Lars 2024-10-23 #2",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Weiser Str.",
+    "hausnummer": "40",
+    "plz": "56170",
+    "ort": "Bendorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.567075,
+    "lat": 50.436967
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Planung",
+  "website": "bendelit.de",
+  "sportarten": [
+    "American Football",
+    "Fußball",
+    "Lauf- & Breitensport",
+    "Wurf- und Stoßdisziplinen",
+    "Wurfscheibe",
+    "Schwimmsport",
+    "Parkour"
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d508b36-5938-44f3-b9ef-29fdb626f45e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

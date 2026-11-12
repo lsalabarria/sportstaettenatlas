@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d11-fe7d-49b3-8c35-3ad9221aa7a0",
+  "name": "Familiensportpark des Idarer TV",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hohwies",
+    "hausnummer": "8",
+    "plz": "55743",
+    "ort": "Idar-Oberstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.312423,
+    "lat": 49.72471
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d11-fe7d-49b3-8c35-3ad9221aa7a0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

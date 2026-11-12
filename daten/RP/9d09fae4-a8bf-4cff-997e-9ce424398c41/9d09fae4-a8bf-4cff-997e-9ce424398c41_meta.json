@@ -1,0 +1,22 @@
+{
+  "id": "9d09fae4-a8bf-4cff-997e-9ce424398c41",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54316",
+    "ort": "Lampaden"
+  },
+  "lage": {
+    "lon": 6.714104,
+    "lat": 49.641919
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae4-a8bf-4cff-997e-9ce424398c41",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

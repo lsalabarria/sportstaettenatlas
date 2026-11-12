@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db8-384d-47c5-ba6c-281d60db3c84",
+  "name": "Reitanlage Schloss Monaise",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Schloß Monaise",
+    "hausnummer": "7",
+    "plz": "54294",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.599392,
+    "lat": 49.717302
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db8-384d-47c5-ba6c-281d60db3c84",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

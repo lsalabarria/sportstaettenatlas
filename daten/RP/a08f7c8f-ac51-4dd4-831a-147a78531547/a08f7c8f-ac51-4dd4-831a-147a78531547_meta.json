@@ -1,0 +1,24 @@
+{
+  "id": "a08f7c8f-ac51-4dd4-831a-147a78531547",
+  "name": "Schützenverein zu Ruschberg e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Kreuzhügel",
+    "plz": "55776",
+    "ort": "Ruschberg"
+  },
+  "lage": {
+    "lon": 7.286028,
+    "lat": 49.616686
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c8f-ac51-4dd4-831a-147a78531547",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

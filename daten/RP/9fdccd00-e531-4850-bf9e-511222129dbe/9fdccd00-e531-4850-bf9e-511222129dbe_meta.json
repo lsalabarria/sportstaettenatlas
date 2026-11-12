@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd00-e531-4850-bf9e-511222129dbe",
+  "name": "Sportplatz VfL Nochern 1900/49 e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "56357",
+    "ort": "Nochern"
+  },
+  "lage": {
+    "lon": 7.72659,
+    "lat": 50.172109
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd00-e531-4850-bf9e-511222129dbe",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae1-a33b-419f-8864-44756fa3c1df",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Boorwiese",
+    "plz": "54316",
+    "ort": "Bonerath"
+  },
+  "lage": {
+    "lon": 6.761337,
+    "lat": 49.689107
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae1-a33b-419f-8864-44756fa3c1df",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

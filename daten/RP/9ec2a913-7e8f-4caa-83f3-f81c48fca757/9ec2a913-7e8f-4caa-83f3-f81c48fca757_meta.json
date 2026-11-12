@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a913-7e8f-4caa-83f3-f81c48fca757",
+  "name": "Sportanlage Grundschule Sembach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Heuberg",
+    "hausnummer": "17",
+    "plz": "67681",
+    "ort": "Sembach"
+  },
+  "lage": {
+    "lon": 7.86333,
+    "lat": 49.540923
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a913-7e8f-4caa-83f3-f81c48fca757",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

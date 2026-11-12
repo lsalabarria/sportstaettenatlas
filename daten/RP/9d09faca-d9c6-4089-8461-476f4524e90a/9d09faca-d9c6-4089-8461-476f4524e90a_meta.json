@@ -1,0 +1,24 @@
+{
+  "id": "9d09faca-d9c6-4089-8461-476f4524e90a",
+  "name": "Reitanlage Sankt Georg",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Amselweg",
+    "hausnummer": "40",
+    "plz": "56593",
+    "ort": "Horhausen (Westerwald)"
+  },
+  "lage": {
+    "lon": 7.521954,
+    "lat": 50.585056
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faca-d9c6-4089-8461-476f4524e90a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

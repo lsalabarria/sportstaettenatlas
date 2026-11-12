@@ -1,0 +1,23 @@
+{
+  "id": "a056f9b5-4b54-4bb8-882c-9a87584300a7",
+  "name": "Sportplatz Ober Kostenz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brunnenstraße",
+    "plz": "55481",
+    "ort": "Ober Kostenz"
+  },
+  "lage": {
+    "lon": 7.344347,
+    "lat": 49.953487
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a056f9b5-4b54-4bb8-882c-9a87584300a7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

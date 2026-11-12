@@ -1,0 +1,22 @@
+{
+  "id": "9d09faee-3899-4efd-a1a2-060179ae664a",
+  "name": "Gestüt Falkenhorst",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "plz": "56244",
+    "ort": "Helferskirchen"
+  },
+  "lage": {
+    "lon": 7.821079,
+    "lat": 50.508623
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faee-3899-4efd-a1a2-060179ae664a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

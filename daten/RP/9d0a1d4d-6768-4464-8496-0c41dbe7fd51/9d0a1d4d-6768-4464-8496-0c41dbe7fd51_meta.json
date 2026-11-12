@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4d-6768-4464-8496-0c41dbe7fd51",
+  "name": "Bolzplatz Sierscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "plz": "53520",
+    "ort": "Sierscheid"
+  },
+  "lage": {
+    "lon": 6.916984,
+    "lat": 50.457854
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4d-6768-4464-8496-0c41dbe7fd51",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

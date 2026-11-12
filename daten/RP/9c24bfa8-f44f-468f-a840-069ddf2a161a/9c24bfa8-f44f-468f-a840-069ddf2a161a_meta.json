@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa8-f44f-468f-a840-069ddf2a161a",
+  "name": "Jump Fitness und Wellness GmbH",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Wallersheimer Weg",
+    "hausnummer": "23",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.596042,
+    "lat": 50.370965
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa8-f44f-468f-a840-069ddf2a161a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

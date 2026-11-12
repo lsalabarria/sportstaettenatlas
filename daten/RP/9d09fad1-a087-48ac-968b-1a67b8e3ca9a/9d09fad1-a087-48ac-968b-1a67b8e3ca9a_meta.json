@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad1-a087-48ac-968b-1a67b8e3ca9a",
+  "name": "Basketballfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Konrad-Adenauer-Straße",
+    "plz": "57572",
+    "ort": "Niederfischbach"
+  },
+  "lage": {
+    "lon": 7.883746,
+    "lat": 50.860952
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad1-a087-48ac-968b-1a67b8e3ca9a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d50-3fe0-43a8-a79b-445b88ad2c1c",
+  "name": "Brohltal – Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "plz": "56659",
+    "ort": "Burgbrohl"
+  },
+  "lage": {
+    "lon": 7.265867,
+    "lat": 50.457623
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-3fe0-43a8-a79b-445b88ad2c1c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

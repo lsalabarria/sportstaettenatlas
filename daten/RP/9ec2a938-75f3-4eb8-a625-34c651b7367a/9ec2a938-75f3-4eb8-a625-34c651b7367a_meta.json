@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a938-75f3-4eb8-a625-34c651b7367a",
+  "name": "Reitanlage Papelhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Heilig-Geist-Gewann",
+    "hausnummer": "3",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.246905,
+    "lat": 49.967594
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a938-75f3-4eb8-a625-34c651b7367a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

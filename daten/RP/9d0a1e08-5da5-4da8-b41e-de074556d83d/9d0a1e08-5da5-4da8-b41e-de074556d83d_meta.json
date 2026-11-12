@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e08-5da5-4da8-b41e-de074556d83d",
+  "name": "Bouleplatz Lieserich",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56858",
+    "ort": "Liesenich"
+  },
+  "lage": {
+    "lon": 7.26325,
+    "lat": 50.086502
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e08-5da5-4da8-b41e-de074556d83d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

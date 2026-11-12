@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a921-9314-4422-846d-8ed1787d70e6",
+  "name": "Vogelstockerhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Vogelstock",
+    "plz": "76857",
+    "ort": "Eußerthal"
+  },
+  "lage": {
+    "lon": 7.999336,
+    "lat": 49.232474
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a921-9314-4422-846d-8ed1787d70e6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

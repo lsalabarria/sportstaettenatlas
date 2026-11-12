@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cca-5eb6-4ea2-851c-911fbbd21439",
+  "name": "Sportplatz an der Kipp",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An der Kipp",
+    "plz": "55444",
+    "ort": "Dörrebach"
+  },
+  "lage": {
+    "lon": 7.722017,
+    "lat": 49.948915
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cca-5eb6-4ea2-851c-911fbbd21439",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

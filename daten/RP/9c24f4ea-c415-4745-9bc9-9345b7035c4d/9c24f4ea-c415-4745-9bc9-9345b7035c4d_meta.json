@@ -1,0 +1,22 @@
+{
+  "id": "9c24f4ea-c415-4745-9bc9-9345b7035c4d",
+  "name": "Bolzplatz Ließem",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54636",
+    "ort": "Ließem"
+  },
+  "lage": {
+    "lon": 6.480224,
+    "lat": 50.024075
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ea-c415-4745-9bc9-9345b7035c4d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

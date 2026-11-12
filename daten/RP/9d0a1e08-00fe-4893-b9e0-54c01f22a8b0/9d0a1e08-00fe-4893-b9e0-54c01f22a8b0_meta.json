@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e08-00fe-4893-b9e0-54c01f22a8b0",
+  "name": "Sportplatz Meiserich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf dem Knoten",
+    "plz": "56766",
+    "ort": "Ulmen, Stadt"
+  },
+  "lage": {
+    "lon": 6.964298,
+    "lat": 50.198424
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e08-00fe-4893-b9e0-54c01f22a8b0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

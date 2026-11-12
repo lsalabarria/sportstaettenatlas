@@ -1,0 +1,24 @@
+{
+  "id": "9d09fae0-54d6-43c9-8817-49a4b1603abe",
+  "name": "Tennishalle",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Brühlweg",
+    "hausnummer": "6a",
+    "plz": "54317",
+    "ort": "Kasel"
+  },
+  "lage": {
+    "lon": 6.732901,
+    "lat": 49.758728
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae0-54d6-43c9-8817-49a4b1603abe",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

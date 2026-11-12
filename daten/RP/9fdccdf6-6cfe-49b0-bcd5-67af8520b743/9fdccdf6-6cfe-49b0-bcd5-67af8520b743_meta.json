@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdf6-6cfe-49b0-bcd5-67af8520b743",
+  "name": "Bezirkssportanlage Edigheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mühlaustraße",
+    "hausnummer": "45",
+    "plz": "67069",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.382603,
+    "lat": 49.527534
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdf6-6cfe-49b0-bcd5-67af8520b743",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

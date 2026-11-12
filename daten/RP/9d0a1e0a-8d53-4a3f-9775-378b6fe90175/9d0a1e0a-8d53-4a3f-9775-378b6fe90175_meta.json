@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e0a-8d53-4a3f-9775-378b6fe90175",
+  "name": "Schießplatz Bopparder Schützengesellschaft",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Mühltal",
+    "hausnummer": "101",
+    "plz": "56154",
+    "ort": "Boppard, Stadt"
+  },
+  "lage": {
+    "lon": 7.559958,
+    "lat": 50.240912
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0a-8d53-4a3f-9775-378b6fe90175",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

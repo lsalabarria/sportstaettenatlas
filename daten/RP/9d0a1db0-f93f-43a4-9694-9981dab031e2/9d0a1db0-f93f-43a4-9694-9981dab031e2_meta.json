@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1db0-f93f-43a4-9694-9981dab031e2",
+  "name": "SV Ataspor Unkel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Linzer Straße",
+    "plz": "53572",
+    "ort": "Unkel, Stadt"
+  },
+  "lage": {
+    "lon": 7.221577,
+    "lat": 50.59522
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db0-f93f-43a4-9694-9981dab031e2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

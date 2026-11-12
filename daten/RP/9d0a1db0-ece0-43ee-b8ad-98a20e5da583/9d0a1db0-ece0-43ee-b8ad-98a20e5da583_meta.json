@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db0-ece0-43ee-b8ad-98a20e5da583",
+  "name": "Grundschule Am Sonnenberg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "6",
+    "plz": "53572",
+    "ort": "Unkel, Stadt"
+  },
+  "lage": {
+    "lon": 7.218211,
+    "lat": 50.597912
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db0-ece0-43ee-b8ad-98a20e5da583",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

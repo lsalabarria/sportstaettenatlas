@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae8-8806-4513-a605-7962936922bb",
+  "name": "Beachvolleyballfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Martinusstraße",
+    "plz": "54455",
+    "ort": "Serrig"
+  },
+  "lage": {
+    "lon": 6.574003,
+    "lat": 49.570724
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae8-8806-4513-a605-7962936922bb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

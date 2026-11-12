@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae9-0ac1-4f93-838e-b1ae4c112b2b",
+  "name": "Skatepark Neuhäusel",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hillscheider Str.",
+    "plz": "56335",
+    "ort": "Neuhäusel"
+  },
+  "lage": {
+    "lon": 7.709104,
+    "lat": 50.38986
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae9-0ac1-4f93-838e-b1ae4c112b2b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

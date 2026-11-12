@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e08-954a-44f3-a50a-beb513e669a9",
+  "name": "Sportplatz Mühlental Zell",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mühlental",
+    "plz": "56856",
+    "ort": "Zell (Mosel), Stadt"
+  },
+  "lage": {
+    "lon": 7.180535,
+    "lat": 50.042105
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e08-954a-44f3-a50a-beb513e669a9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

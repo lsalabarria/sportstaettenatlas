@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd14-531a-4082-8b87-8264458e64a9",
+  "name": "Stadion am Schloßberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sternbergerstraße",
+    "hausnummer": "23",
+    "plz": "67731",
+    "ort": "Otterbach"
+  },
+  "lage": {
+    "lon": 7.740086,
+    "lat": 49.481276
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd14-531a-4082-8b87-8264458e64a9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

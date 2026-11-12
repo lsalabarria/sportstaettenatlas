@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d53-3a24-424b-b881-4dbb23f65df3",
+  "name": "Beachvolleyballfeld am Rhein Ernst",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Moselstraße",
+    "plz": "56814",
+    "ort": "Ernst"
+  },
+  "lage": {
+    "lon": 7.225102,
+    "lat": 50.145443
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d53-3a24-424b-b881-4dbb23f65df3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

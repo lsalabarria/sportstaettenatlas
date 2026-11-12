@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d51-a94d-469f-a502-e9aaa7bd3ae1",
+  "name": "Vitalis Gesundheits- & Fitnesszentrum Spessart",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Eichenweg",
+    "hausnummer": "18",
+    "plz": "56746",
+    "ort": "Spessart"
+  },
+  "lage": {
+    "lon": 7.111974,
+    "lat": 50.433218
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d51-a94d-469f-a502-e9aaa7bd3ae1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

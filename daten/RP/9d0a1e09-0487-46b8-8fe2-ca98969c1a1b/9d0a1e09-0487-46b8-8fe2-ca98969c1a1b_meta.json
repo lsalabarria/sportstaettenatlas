@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e09-0487-46b8-8fe2-ca98969c1a1b",
+  "name": "Grundschule Bad Salzig Boppard",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wiltbergerstraße",
+    "hausnummer": "7",
+    "plz": "56154",
+    "ort": "Boppard, Stadt"
+  },
+  "lage": {
+    "lon": 7.634254,
+    "lat": 50.203296
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e09-0487-46b8-8fe2-ca98969c1a1b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

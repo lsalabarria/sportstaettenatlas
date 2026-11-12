@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a93f-03c1-4b1f-8746-38e69c43b268",
+  "name": "Mountainbike Strecke / Bike Park Bad Bergzabern",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "K29",
+    "plz": "76887",
+    "ort": "Bad Bergzabern, Stadt"
+  },
+  "lage": {
+    "lon": 7.981499,
+    "lat": 49.10896
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93f-03c1-4b1f-8746-38e69c43b268",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "a08f7d1e-e3d5-4be3-a324-b1c1e0160543",
+  "name": "Schützenverein Rammelsbach",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Rechenhäuschen",
+    "plz": "66869",
+    "ort": "Kusel, Stadt"
+  },
+  "lage": {
+    "lon": 7.434673,
+    "lat": 49.545419
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d1e-e3d5-4be3-a324-b1c1e0160543",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "9c24f4e8-cfbe-4518-9550-37be166b40b8",
+  "name": "Bolzplatz Erdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.571494,
+    "lat": 50.00096
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e8-cfbe-4518-9550-37be166b40b8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

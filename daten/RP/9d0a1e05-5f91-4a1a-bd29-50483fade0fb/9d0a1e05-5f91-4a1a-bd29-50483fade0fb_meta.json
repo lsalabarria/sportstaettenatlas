@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e05-5f91-4a1a-bd29-50483fade0fb",
+  "name": "Beachvolleyballfeld am Eifelstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Lenzenkessel",
+    "plz": "53518",
+    "ort": "Adenau, Stadt"
+  },
+  "lage": {
+    "lon": 6.925948,
+    "lat": 50.375615
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e05-5f91-4a1a-bd29-50483fade0fb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

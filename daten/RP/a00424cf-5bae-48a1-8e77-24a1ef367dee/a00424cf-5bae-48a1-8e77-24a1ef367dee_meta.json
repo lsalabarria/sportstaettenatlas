@@ -1,0 +1,24 @@
+{
+  "id": "a00424cf-5bae-48a1-8e77-24a1ef367dee",
+  "name": "Fitness und Gesundheitsstudio \"die Wirbelsäule\"",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "60",
+    "plz": "76855",
+    "ort": "Annweiler am Trifels, Stadt"
+  },
+  "lage": {
+    "lon": 7.965168,
+    "lat": 49.202616
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a00424cf-5bae-48a1-8e77-24a1ef367dee",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

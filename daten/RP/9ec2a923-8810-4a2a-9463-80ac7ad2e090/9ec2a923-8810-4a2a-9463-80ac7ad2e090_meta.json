@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a923-8810-4a2a-9463-80ac7ad2e090",
+  "name": "Dr.-Kausch-Stadion Freinsheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dackenheimer Str.",
+    "hausnummer": "40",
+    "plz": "67251",
+    "ort": "Freinsheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.204562,
+    "lat": 49.512222
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a923-8810-4a2a-9463-80ac7ad2e090",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

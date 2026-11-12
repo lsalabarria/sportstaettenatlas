@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cb0-7f99-49d2-aa15-d37f45146b83",
+  "name": "Sportplatz Ohmbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportplatzstraße",
+    "hausnummer": "26",
+    "plz": "66903",
+    "ort": "Ohmbach"
+  },
+  "lage": {
+    "lon": 7.35617,
+    "lat": 49.448962
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb0-7f99-49d2-aa15-d37f45146b83",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

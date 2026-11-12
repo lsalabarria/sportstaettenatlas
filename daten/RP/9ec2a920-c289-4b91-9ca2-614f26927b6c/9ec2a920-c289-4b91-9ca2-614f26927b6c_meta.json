@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a920-c289-4b91-9ca2-614f26927b6c",
+  "name": "Sportplatz Ranschbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportplatzstraße",
+    "hausnummer": "7",
+    "plz": "76829",
+    "ort": "Ranschbach"
+  },
+  "lage": {
+    "lon": 8.041937,
+    "lat": 49.198004
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a920-c289-4b91-9ca2-614f26927b6c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

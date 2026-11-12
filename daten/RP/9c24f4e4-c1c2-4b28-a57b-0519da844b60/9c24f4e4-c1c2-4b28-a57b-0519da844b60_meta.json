@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4e4-c1c2-4b28-a57b-0519da844b60",
+  "name": "Reitplatz Schankweiler",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Schaarenstraße",
+    "plz": "54668",
+    "ort": "Schankweiler"
+  },
+  "lage": {
+    "lon": 6.376135,
+    "lat": 49.895115
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e4-c1c2-4b28-a57b-0519da844b60",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

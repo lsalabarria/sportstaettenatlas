@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc6b-1b3e-4d0a-8e65-d825e696e2ed",
+  "name": "Freibad Kelberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "hausnummer": "3",
+    "plz": "53539",
+    "ort": "Kelberg"
+  },
+  "lage": {
+    "lon": 6.919393,
+    "lat": 50.235371
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6b-1b3e-4d0a-8e65-d825e696e2ed",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

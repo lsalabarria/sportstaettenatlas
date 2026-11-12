@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a91e-5468-40b1-8e24-19eeb2647abe",
+  "name": "Sportplatz Vorderweidenthal",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L493",
+    "plz": "76889",
+    "ort": "Vorderweidenthal"
+  },
+  "lage": {
+    "lon": 7.893012,
+    "lat": 49.13096
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91e-5468-40b1-8e24-19eeb2647abe",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

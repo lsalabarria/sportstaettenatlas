@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccda-3ef2-42f9-bc68-011bad67c6e0",
+  "name": "Reitplatz Baar",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Zum Bleiberg",
+    "hausnummer": "8",
+    "plz": "56729",
+    "ort": "Baar"
+  },
+  "lage": {
+    "lon": 7.065736,
+    "lat": 50.349044
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccda-3ef2-42f9-bc68-011bad67c6e0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

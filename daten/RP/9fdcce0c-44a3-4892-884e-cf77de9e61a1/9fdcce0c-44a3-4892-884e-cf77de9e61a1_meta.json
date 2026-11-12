@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce0c-44a3-4892-884e-cf77de9e61a1",
+  "name": "Ostparkstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Kanal",
+    "hausnummer": "8.0",
+    "plz": "67227",
+    "ort": "Frankenthal (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.368689,
+    "lat": 49.537065
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce0c-44a3-4892-884e-cf77de9e61a1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

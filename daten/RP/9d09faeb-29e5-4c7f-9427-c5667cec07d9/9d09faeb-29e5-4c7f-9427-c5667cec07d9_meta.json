@@ -1,0 +1,24 @@
+{
+  "id": "9d09faeb-29e5-4c7f-9427-c5667cec07d9",
+  "name": "Vogelsanghalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "26",
+    "plz": "56412",
+    "ort": "Heiligenroth"
+  },
+  "lage": {
+    "lon": 7.858766,
+    "lat": 50.447042
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faeb-29e5-4c7f-9427-c5667cec07d9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

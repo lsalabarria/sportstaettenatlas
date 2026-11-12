@@ -1,0 +1,24 @@
+{
+  "id": "9fdccda8-10d0-44a7-8cc1-fdc7567e02d7",
+  "name": "Staatliche Freisportanlage",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schillerring",
+    "plz": "56626",
+    "ort": "Andernach, Stadt"
+  },
+  "lage": {
+    "lon": 7.409758,
+    "lat": 50.432319
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccda8-10d0-44a7-8cc1-fdc7567e02d7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

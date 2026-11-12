@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccd9-b617-45f7-877e-1fdf45a5b872",
+  "name": "Sportplatz SC Kirchwald e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf d. Bachhell",
+    "plz": "56729",
+    "ort": "Kirchwald"
+  },
+  "lage": {
+    "lon": 7.167704,
+    "lat": 50.368046
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccd9-b617-45f7-877e-1fdf45a5b872",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

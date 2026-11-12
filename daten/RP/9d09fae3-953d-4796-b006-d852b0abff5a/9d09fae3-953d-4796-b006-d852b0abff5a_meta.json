@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae3-953d-4796-b006-d852b0abff5a",
+  "name": "Sportplatz Schillingen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L143",
+    "plz": "54427",
+    "ort": "Schillingen"
+  },
+  "lage": {
+    "lon": 6.771015,
+    "lat": 49.637874
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae3-953d-4796-b006-d852b0abff5a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

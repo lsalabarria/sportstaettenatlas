@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db6-14b5-49b2-a356-e3779eba42d8",
+  "name": "Tennisclub Schwarz Weiß Saarburg",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Güterstraße",
+    "hausnummer": "5",
+    "plz": "54439",
+    "ort": "Saarburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.553534,
+    "lat": 49.606052
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db6-14b5-49b2-a356-e3779eba42d8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

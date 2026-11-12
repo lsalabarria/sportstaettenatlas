@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4e6-4edb-49ae-a318-8c799c922f2f",
+  "name": "Sportplatz Masholder",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brückenstraße",
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.512022,
+    "lat": 49.951174
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e6-4edb-49ae-a318-8c799c922f2f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

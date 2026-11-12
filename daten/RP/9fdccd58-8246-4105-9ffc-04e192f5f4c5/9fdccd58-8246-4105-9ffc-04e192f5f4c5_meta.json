@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd58-8246-4105-9ffc-04e192f5f4c5",
+  "name": "Tennisplatz TC Rieschweiler",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "66509",
+    "ort": "Rieschweiler-Mühlbach"
+  },
+  "lage": {
+    "lon": 7.514418,
+    "lat": 49.247521
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd58-8246-4105-9ffc-04e192f5f4c5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

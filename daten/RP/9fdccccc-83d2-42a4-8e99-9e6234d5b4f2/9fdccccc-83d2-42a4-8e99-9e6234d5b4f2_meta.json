@@ -1,0 +1,25 @@
+{
+  "id": "9fdccccc-83d2-42a4-8e99-9e6234d5b4f2",
+  "name": "Sportplatz Rüber",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Küttiger Str.",
+    "hausnummer": "27",
+    "plz": "56295",
+    "ort": "Rüber"
+  },
+  "lage": {
+    "lon": 7.375732,
+    "lat": 50.288338
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccccc-83d2-42a4-8e99-9e6234d5b4f2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1db4-9308-420b-899e-d2069b251bef",
+  "name": "Schützengilde St. Sebastianus 1781 e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Lindenstraße",
+    "plz": "54329",
+    "ort": "Konz, Stadt"
+  },
+  "lage": {
+    "lon": 6.595543,
+    "lat": 49.694957
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db4-9308-420b-899e-d2069b251bef",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "a01834c5-5554-40a7-a8e4-ab983c290ea9",
+  "name": "Grimoldhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstr.",
+    "plz": "54314",
+    "ort": "Greimerath"
+  },
+  "lage": {
+    "lon": 6.678121,
+    "lat": 49.563348
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a01834c5-5554-40a7-a8e4-ab983c290ea9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "9c24f4e5-b2e4-4d93-83c2-f9d1c95050f3",
+  "name": "Reitplatz Gentingen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "plz": "54675",
+    "ort": "Gentingen"
+  },
+  "lage": {
+    "lon": 6.236753,
+    "lat": 49.900216
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e5-b2e4-4d93-83c2-f9d1c95050f3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

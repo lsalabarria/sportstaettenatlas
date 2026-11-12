@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dff-e600-4548-9aef-9fac373c5bf2",
+  "name": "Altes TWIN Schwimmbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Gartenschwimmbad",
+    "hausnummer": "21",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.147232,
+    "lat": 50.541401
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dff-e600-4548-9aef-9fac373c5bf2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

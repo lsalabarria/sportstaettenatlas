@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a905-9984-43fa-a5dd-0130c26b9cb7",
+  "name": "Boulanlage Friedrich-Ebert-Park Haßloch",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Friedrich-Ebert-Platz",
+    "plz": "67454",
+    "ort": "Haßloch"
+  },
+  "lage": {
+    "lon": 8.258888,
+    "lat": 49.36543
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a905-9984-43fa-a5dd-0130c26b9cb7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

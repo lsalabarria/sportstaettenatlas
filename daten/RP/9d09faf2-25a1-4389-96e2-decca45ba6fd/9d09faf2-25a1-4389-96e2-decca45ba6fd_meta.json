@@ -1,0 +1,24 @@
+{
+  "id": "9d09faf2-25a1-4389-96e2-decca45ba6fd",
+  "name": "Mehrzweckhalle DPSG Bundeszentrum Westernohe",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Zum Weitstein",
+    "hausnummer": "50",
+    "plz": "56479",
+    "ort": "Westernohe"
+  },
+  "lage": {
+    "lon": 8.113725,
+    "lat": 50.594939
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf2-25a1-4389-96e2-decca45ba6fd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

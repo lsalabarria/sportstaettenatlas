@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad9-bfb6-4e06-b6aa-8584edd4703a",
+  "name": "Basketballplatz Hümmerich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ober den Gärten",
+    "plz": "53547",
+    "ort": "Hümmerich"
+  },
+  "lage": {
+    "lon": 7.499795,
+    "lat": 50.567973
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad9-bfb6-4e06-b6aa-8584edd4703a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

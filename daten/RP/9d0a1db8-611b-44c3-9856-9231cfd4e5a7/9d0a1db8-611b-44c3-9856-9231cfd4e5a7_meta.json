@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db8-611b-44c3-9856-9231cfd4e5a7",
+  "name": "Moselstadion Trier",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Stadion",
+    "hausnummer": "1",
+    "plz": "54292",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.647889,
+    "lat": 49.76825
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db8-611b-44c3-9856-9231cfd4e5a7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

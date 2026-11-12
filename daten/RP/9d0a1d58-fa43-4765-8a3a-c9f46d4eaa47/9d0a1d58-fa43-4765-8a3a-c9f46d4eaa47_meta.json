@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d58-fa43-4765-8a3a-c9f46d4eaa47",
+  "name": "Sportplatz Tellig",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56858",
+    "ort": "Tellig"
+  },
+  "lage": {
+    "lon": 7.248984,
+    "lat": 50.023352
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d58-fa43-4765-8a3a-c9f46d4eaa47",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

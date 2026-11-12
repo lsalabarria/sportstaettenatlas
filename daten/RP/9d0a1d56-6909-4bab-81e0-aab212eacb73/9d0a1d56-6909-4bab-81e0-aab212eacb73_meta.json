@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d56-6909-4bab-81e0-aab212eacb73",
+  "name": "Bolzplatz Möntenich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Eltzer Straße",
+    "plz": "56754",
+    "ort": "Möntenich"
+  },
+  "lage": {
+    "lon": 7.300685,
+    "lat": 50.221615
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d56-6909-4bab-81e0-aab212eacb73",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

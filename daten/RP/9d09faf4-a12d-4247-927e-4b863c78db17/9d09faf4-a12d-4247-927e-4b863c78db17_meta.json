@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf4-a12d-4247-927e-4b863c78db17",
+  "name": "Golf-Club Westerwald e.V.",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Steinebacher Str.",
+    "plz": "57629",
+    "ort": "Dreifelden"
+  },
+  "lage": {
+    "lon": 7.832632,
+    "lat": 50.595393
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf4-a12d-4247-927e-4b863c78db17",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

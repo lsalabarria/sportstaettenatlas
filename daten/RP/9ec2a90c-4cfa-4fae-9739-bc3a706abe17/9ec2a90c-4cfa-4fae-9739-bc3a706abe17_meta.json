@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a90c-4cfa-4fae-9739-bc3a706abe17",
+  "name": "Sportplatz Jugenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Wiesenweg",
+    "hausnummer": "16",
+    "plz": "55270",
+    "ort": "Jugenheim in Rheinhessen"
+  },
+  "lage": {
+    "lon": 8.09241,
+    "lat": 49.893916
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90c-4cfa-4fae-9739-bc3a706abe17",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4ee-861a-4042-b714-de759b18eb67",
+  "name": "Sportplatz Wallersheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kopper Straße",
+    "plz": "54597",
+    "ort": "Wallersheim"
+  },
+  "lage": {
+    "lon": 6.534807,
+    "lat": 50.191718
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ee-861a-4042-b714-de759b18eb67",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

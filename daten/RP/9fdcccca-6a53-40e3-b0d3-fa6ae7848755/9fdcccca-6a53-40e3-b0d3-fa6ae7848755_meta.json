@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccca-6a53-40e3-b0d3-fa6ae7848755",
+  "name": "Bolzplatz Thür",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lindenweg",
+    "hausnummer": "4",
+    "plz": "56743",
+    "ort": "Thür"
+  },
+  "lage": {
+    "lon": 7.274205,
+    "lat": 50.360861
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccca-6a53-40e3-b0d3-fa6ae7848755",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

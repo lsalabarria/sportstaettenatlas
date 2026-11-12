@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a938-e7ad-45f9-b022-592f26d43d0e",
+  "name": "TSG Tennisanlage",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Ostergraben",
+    "hausnummer": "72",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.23208,
+    "lat": 49.984262
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a938-e7ad-45f9-b022-592f26d43d0e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

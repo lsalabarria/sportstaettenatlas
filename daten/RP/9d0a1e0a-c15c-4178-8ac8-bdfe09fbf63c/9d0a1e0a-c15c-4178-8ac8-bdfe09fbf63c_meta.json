@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e0a-c15c-4178-8ac8-bdfe09fbf63c",
+  "name": "equi-art Reitkunst GmbH",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Schwaller Höhe",
+    "hausnummer": "1",
+    "plz": "56281",
+    "ort": "Emmelshausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.562163,
+    "lat": 50.148469
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0a-c15c-4178-8ac8-bdfe09fbf63c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

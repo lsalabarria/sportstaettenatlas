@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd96-3cee-4c28-9b48-6c85cd0e1a13",
+  "name": "Jakob-Vogt-Sportanlage",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mühlental",
+    "hausnummer": "37",
+    "plz": "56321",
+    "ort": "Rhens, Stadt"
+  },
+  "lage": {
+    "lon": 7.602868,
+    "lat": 50.281837
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd96-3cee-4c28-9b48-6c85cd0e1a13",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "5cbc7975-54af-4ae4-818d-cba581f8b860",
+  "name": "Sauna & Kurbad Eberle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Basteigasse",
+    "hausnummer": "6",
+    "plz": "67655",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.772011,
+    "lat": 49.442319
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "stillgelegt/geschlossen",
+  "eigentuemer": "Sauna & Kurbad Eberle GmbH",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "5cbc7975-54af-4ae4-818d-cba581f8b860",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

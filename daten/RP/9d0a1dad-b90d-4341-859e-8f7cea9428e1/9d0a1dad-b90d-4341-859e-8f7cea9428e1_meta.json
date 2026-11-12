@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dad-b90d-4341-859e-8f7cea9428e1",
+  "name": "Berufsbildungswerk Neuwied",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Stiftsstraße",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.534185,
+    "lat": 50.453973
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dad-b90d-4341-859e-8f7cea9428e1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

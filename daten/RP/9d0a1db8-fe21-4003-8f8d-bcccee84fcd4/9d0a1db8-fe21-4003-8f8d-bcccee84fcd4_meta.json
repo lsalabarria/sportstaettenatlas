@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db8-fe21-4003-8f8d-bcccee84fcd4",
+  "name": "Turnhalle Grundschule Ambrosius",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Thyrsusstraße",
+    "hausnummer": "43",
+    "plz": "54292",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.657876,
+    "lat": 49.765349
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db8-fe21-4003-8f8d-bcccee84fcd4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d09fade-d528-4d10-809b-3bafd4ad8b29",
+  "name": "Tennisplatz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Bachtal",
+    "plz": "54340",
+    "ort": "Leiwen"
+  },
+  "lage": {
+    "lon": 6.867997,
+    "lat": 49.81944
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fade-d528-4d10-809b-3bafd4ad8b29",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

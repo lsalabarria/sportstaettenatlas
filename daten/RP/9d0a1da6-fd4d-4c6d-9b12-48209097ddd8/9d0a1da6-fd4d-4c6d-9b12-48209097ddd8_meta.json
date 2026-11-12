@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da6-fd4d-4c6d-9b12-48209097ddd8",
+  "name": "Birkenhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Birkenhof",
+    "plz": "54552",
+    "ort": "Utzerath"
+  },
+  "lage": {
+    "lon": 6.930847,
+    "lat": 50.218557
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da6-fd4d-4c6d-9b12-48209097ddd8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

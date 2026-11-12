@@ -1,0 +1,25 @@
+{
+  "id": "5c9bc19c-e1b0-42ae-9a89-0d2300a79eeb",
+  "name": "Dorfgemeinschaftshaus Homberg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Oberdorf",
+    "hausnummer": "16",
+    "plz": "67744",
+    "ort": "Homberg"
+  },
+  "lage": {
+    "lon": 7.517243,
+    "lat": 49.650191
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "5c9bc19c-e1b0-42ae-9a89-0d2300a79eeb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

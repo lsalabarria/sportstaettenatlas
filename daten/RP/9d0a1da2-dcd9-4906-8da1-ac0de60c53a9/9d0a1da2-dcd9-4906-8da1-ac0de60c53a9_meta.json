@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da2-dcd9-4906-8da1-ac0de60c53a9",
+  "name": "Kleinspielfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Wirftstraße",
+    "plz": "54589",
+    "ort": "Stadtkyll"
+  },
+  "lage": {
+    "lon": 6.537125,
+    "lat": 50.339496
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da2-dcd9-4906-8da1-ac0de60c53a9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

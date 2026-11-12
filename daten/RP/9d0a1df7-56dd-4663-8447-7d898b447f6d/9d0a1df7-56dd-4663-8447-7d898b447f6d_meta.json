@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1df7-56dd-4663-8447-7d898b447f6d",
+  "name": "Beachvolleyballfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Behringstraße",
+    "hausnummer": "4",
+    "plz": "54296",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.674212,
+    "lat": 49.750764
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df7-56dd-4663-8447-7d898b447f6d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

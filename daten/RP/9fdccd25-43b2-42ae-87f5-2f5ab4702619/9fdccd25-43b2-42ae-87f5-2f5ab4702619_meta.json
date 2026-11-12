@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd25-43b2-42ae-87f5-2f5ab4702619",
+  "name": "Sportplatz Rudolf-Harbig-Straße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rudolf-Harbig-Straße",
+    "hausnummer": "11",
+    "plz": "67259",
+    "ort": "Beindersheim"
+  },
+  "lage": {
+    "lon": 8.313249,
+    "lat": 49.559974
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd25-43b2-42ae-87f5-2f5ab4702619",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

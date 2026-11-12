@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a900-e60a-45df-be0d-8cb6bed40e2f",
+  "name": "Sportplatz Kleinkarlbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportpl.",
+    "plz": "67271",
+    "ort": "Kleinkarlbach"
+  },
+  "lage": {
+    "lon": 8.164311,
+    "lat": 49.540701
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a900-e60a-45df-be0d-8cb6bed40e2f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

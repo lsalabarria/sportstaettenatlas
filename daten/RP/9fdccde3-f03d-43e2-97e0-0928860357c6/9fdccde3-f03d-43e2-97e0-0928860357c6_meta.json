@@ -1,0 +1,25 @@
+{
+  "id": "9fdccde3-f03d-43e2-97e0-0928860357c6",
+  "name": "Sportplatz am Landstuhl",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kaiserstraße",
+    "hausnummer": "49",
+    "plz": "67661",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.669275,
+    "lat": 49.429309
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccde3-f03d-43e2-97e0-0928860357c6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

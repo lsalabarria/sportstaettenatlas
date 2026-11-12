@@ -1,0 +1,23 @@
+{
+  "id": "a0d9873a-c325-4ba0-8122-7431cd3a4b86",
+  "name": "Spielplatz am Mahnes",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Mahnes",
+    "plz": "55120",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.224224,
+    "lat": 50.0185
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0d9873a-c325-4ba0-8122-7431cd3a4b86",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

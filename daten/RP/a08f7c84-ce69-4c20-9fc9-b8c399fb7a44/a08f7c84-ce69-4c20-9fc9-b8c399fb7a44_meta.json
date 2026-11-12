@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c84-ce69-4c20-9fc9-b8c399fb7a44",
+  "name": "Tennisplätze VFL Eppelsheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Albert-Schweitzer-Straße",
+    "hausnummer": "8",
+    "plz": "55234",
+    "ort": "Eppelsheim"
+  },
+  "lage": {
+    "lon": 8.17161,
+    "lat": 49.704849
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c84-ce69-4c20-9fc9-b8c399fb7a44",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

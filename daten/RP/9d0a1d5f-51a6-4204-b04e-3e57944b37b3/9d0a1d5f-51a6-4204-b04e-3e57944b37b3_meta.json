@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5f-51a6-4204-b04e-3e57944b37b3",
+  "name": "Schützenverein St. Hub. Rödelhausen",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Schützenweg",
+    "plz": "56858",
+    "ort": "Rödelhausen"
+  },
+  "lage": {
+    "lon": 7.330146,
+    "lat": 49.994219
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5f-51a6-4204-b04e-3e57944b37b3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

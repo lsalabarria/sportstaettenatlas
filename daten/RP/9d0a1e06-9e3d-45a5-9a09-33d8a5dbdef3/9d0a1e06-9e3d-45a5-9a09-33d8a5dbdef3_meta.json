@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e06-9e3d-45a5-9a09-33d8a5dbdef3",
+  "name": "Skateplatz Cochem",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Bahnhofsvorplatz",
+    "plz": "56812",
+    "ort": "Cochem, Stadt"
+  },
+  "lage": {
+    "lon": 7.166546,
+    "lat": 50.15404
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e06-9e3d-45a5-9a09-33d8a5dbdef3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

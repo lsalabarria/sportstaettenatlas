@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1da6-2491-42d5-a9a7-497148d33837",
+  "name": "Kleinspielfeld Darscheid",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Karl-Kaufmann-Straße",
+    "hausnummer": "2",
+    "plz": "54552",
+    "ort": "Darscheid"
+  },
+  "lage": {
+    "lon": 6.881175,
+    "lat": 50.211059
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da6-2491-42d5-a9a7-497148d33837",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

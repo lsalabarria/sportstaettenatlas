@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a92d-06ee-446f-9dce-4bce0126750a",
+  "name": "Sporthalle der IGS Nieder-Olm",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Karl-Sieben-Straße",
+    "hausnummer": "33",
+    "plz": "55268",
+    "ort": "Nieder-Olm, Stadt"
+  },
+  "lage": {
+    "lon": 8.196455,
+    "lat": 49.903782
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92d-06ee-446f-9dce-4bce0126750a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

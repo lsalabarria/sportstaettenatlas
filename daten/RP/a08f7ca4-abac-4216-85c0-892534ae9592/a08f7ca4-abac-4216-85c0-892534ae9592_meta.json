@@ -1,0 +1,24 @@
+{
+  "id": "a08f7ca4-abac-4216-85c0-892534ae9592",
+  "name": "TuS Kirschweiler Tennisplätze",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Hofstraße",
+    "plz": "55743",
+    "ort": "Kirschweiler"
+  },
+  "lage": {
+    "lon": 7.232158,
+    "lat": 49.75625
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ca4-abac-4216-85c0-892534ae9592",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

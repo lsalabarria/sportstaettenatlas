@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d52-c40a-4a9e-9fb9-c452a415dfc2",
+  "name": "Astrid-Lindgren-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "1b",
+    "plz": "56812",
+    "ort": "Dohr"
+  },
+  "lage": {
+    "lon": 7.127306,
+    "lat": 50.132879
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d52-c40a-4a9e-9fb9-c452a415dfc2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

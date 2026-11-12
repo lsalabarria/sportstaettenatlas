@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5a-37a1-4963-9bef-16b615d7103f",
+  "name": "Bolzplatz Karbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hambuchstraße",
+    "plz": "56281",
+    "ort": "Karbach"
+  },
+  "lage": {
+    "lon": 7.618871,
+    "lat": 50.158475
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5a-37a1-4963-9bef-16b615d7103f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

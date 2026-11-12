@@ -1,0 +1,24 @@
+{
+  "id": "9d09fae4-663e-44f2-bf90-e6b8580cf76a",
+  "name": "Sporthalle Pellingen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "9",
+    "plz": "54331",
+    "ort": "Pellingen"
+  },
+  "lage": {
+    "lon": 6.671949,
+    "lat": 49.676495
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae4-663e-44f2-bf90-e6b8580cf76a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

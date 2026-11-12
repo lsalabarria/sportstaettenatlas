@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a936-20cf-4748-8789-1f26fd197322",
+  "name": "Sporthalle Marienborn",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "An der Kirschhecke",
+    "hausnummer": "25",
+    "plz": "55127",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.226191,
+    "lat": 49.957654
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a936-20cf-4748-8789-1f26fd197322",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

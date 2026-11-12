@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a906-6cb3-48c4-b72f-14bb8c10195e",
+  "name": "Reitsportverein Pfalzmühle Haßloch",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Pfalzmühle",
+    "plz": "67454",
+    "ort": "Haßloch"
+  },
+  "lage": {
+    "lon": 8.219088,
+    "lat": 49.360014
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a906-6cb3-48c4-b72f-14bb8c10195e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d09faed-0e03-4092-9b49-b774dde39f57",
+  "name": "Sportplatz Bannberscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "56424",
+    "ort": "Bannberscheid"
+  },
+  "lage": {
+    "lon": 7.842903,
+    "lat": 50.473731
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faed-0e03-4092-9b49-b774dde39f57",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

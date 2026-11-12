@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db3-24e0-4282-9e17-1ac4d4343552",
+  "name": "Reitplatz",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Auf Desburg",
+    "hausnummer": "2",
+    "plz": "54338",
+    "ort": "Schweich, Stadt"
+  },
+  "lage": {
+    "lon": 6.758116,
+    "lat": 49.828862
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db3-24e0-4282-9e17-1ac4d4343552",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

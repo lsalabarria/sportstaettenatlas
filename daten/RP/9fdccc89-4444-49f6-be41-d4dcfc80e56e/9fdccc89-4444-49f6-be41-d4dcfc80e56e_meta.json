@@ -1,0 +1,25 @@
+{
+  "id": "9fdccc89-4444-49f6-be41-d4dcfc80e56e",
+  "name": "Sporthalle Grundschule Weingarten",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "12",
+    "plz": "67366",
+    "ort": "Weingarten (Pfalz)"
+  },
+  "lage": {
+    "lon": 8.286197,
+    "lat": 49.257009
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc89-4444-49f6-be41-d4dcfc80e56e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

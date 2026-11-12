@@ -1,0 +1,25 @@
+{
+  "id": "9fdccca6-a9be-4759-afe4-4697935c6d83",
+  "name": "Move Light Jockgrim",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Prälat-Kopp-Straße",
+    "hausnummer": "13",
+    "plz": "76751",
+    "ort": "Jockgrim"
+  },
+  "lage": {
+    "lon": 8.278593,
+    "lat": 49.096807
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccca6-a9be-4759-afe4-4697935c6d83",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

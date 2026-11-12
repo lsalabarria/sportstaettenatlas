@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a933-a65d-4f28-8641-bb104735028f",
+  "name": "Fitnessstudio Pfitzenmeier Premium Resort Neustadt",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Le Quartier-Hornbach",
+    "hausnummer": "31",
+    "plz": "67433",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.168104,
+    "lat": 49.339065
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a933-a65d-4f28-8641-bb104735028f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

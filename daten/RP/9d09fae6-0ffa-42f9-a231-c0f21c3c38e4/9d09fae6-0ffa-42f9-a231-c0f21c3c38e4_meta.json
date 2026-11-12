@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae6-0ffa-42f9-a231-c0f21c3c38e4",
+  "name": "Bolzplatz in der Zehnt",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "In der Zehnt",
+    "plz": "54332",
+    "ort": "Wasserliesch"
+  },
+  "lage": {
+    "lon": 6.54968,
+    "lat": 49.70023
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae6-0ffa-42f9-a231-c0f21c3c38e4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

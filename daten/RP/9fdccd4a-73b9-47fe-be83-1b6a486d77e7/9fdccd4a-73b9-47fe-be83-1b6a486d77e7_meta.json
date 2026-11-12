@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd4a-73b9-47fe-be83-1b6a486d77e7",
+  "name": "Sportplatz Wilgartswiesen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportplatzstraße",
+    "hausnummer": "13",
+    "plz": "76848",
+    "ort": "Wilgartswiesen"
+  },
+  "lage": {
+    "lon": 7.875846,
+    "lat": 49.214515
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd4a-73b9-47fe-be83-1b6a486d77e7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

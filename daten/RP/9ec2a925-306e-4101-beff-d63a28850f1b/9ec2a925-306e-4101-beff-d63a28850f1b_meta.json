@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a925-306e-4101-beff-d63a28850f1b",
+  "name": "Basketballplatz Bad Dürkheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Thymianweg",
+    "plz": "67098",
+    "ort": "Bad Dürkheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.182797,
+    "lat": 49.455745
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a925-306e-4101-beff-d63a28850f1b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

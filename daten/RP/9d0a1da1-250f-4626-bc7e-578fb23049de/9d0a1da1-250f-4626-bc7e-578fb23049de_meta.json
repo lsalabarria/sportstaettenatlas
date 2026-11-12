@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1da1-250f-4626-bc7e-578fb23049de",
+  "name": "Mauritiushof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "plz": "54533",
+    "ort": "Oberscheidweiler"
+  },
+  "lage": {
+    "lon": 6.931652,
+    "lat": 50.066261
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da1-250f-4626-bc7e-578fb23049de",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

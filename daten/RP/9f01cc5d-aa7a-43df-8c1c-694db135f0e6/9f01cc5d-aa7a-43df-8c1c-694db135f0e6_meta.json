@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc5d-aa7a-43df-8c1c-694db135f0e6",
+  "name": "Welterbebad Kamp-Bornhofen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Rheinuferstraße",
+    "hausnummer": "69-70",
+    "plz": "56341",
+    "ort": "Kamp-Bornhofen"
+  },
+  "lage": {
+    "lon": 7.62011,
+    "lat": 50.22297
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc5d-aa7a-43df-8c1c-694db135f0e6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

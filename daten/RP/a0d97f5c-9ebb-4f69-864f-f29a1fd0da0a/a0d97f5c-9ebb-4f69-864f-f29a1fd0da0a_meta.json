@@ -1,0 +1,23 @@
+{
+  "id": "a0d97f5c-9ebb-4f69-864f-f29a1fd0da0a",
+  "name": "Spielwiese Rüsselheimer Allee",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Rüsselheimer Allee",
+    "plz": "55130",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.324065,
+    "lat": 49.965404
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0d97f5c-9ebb-4f69-864f-f29a1fd0da0a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

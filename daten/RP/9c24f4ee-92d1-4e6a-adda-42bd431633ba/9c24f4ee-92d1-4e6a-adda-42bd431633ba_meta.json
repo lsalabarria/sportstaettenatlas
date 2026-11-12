@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4ee-92d1-4e6a-adda-42bd431633ba",
+  "name": "Sportplatz Faulenborn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Faulenborn",
+    "plz": "54597",
+    "ort": "Schwirzheim"
+  },
+  "lage": {
+    "lon": 6.517623,
+    "lat": 50.230679
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ee-92d1-4e6a-adda-42bd431633ba",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

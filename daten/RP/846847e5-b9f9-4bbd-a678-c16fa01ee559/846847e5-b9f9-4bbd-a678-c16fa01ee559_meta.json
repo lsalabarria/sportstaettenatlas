@@ -1,0 +1,23 @@
+{
+  "id": "846847e5-b9f9-4bbd-a678-c16fa01ee559",
+  "name": "Faustballplatz Wolfstein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "plz": "67752",
+    "ort": "Wolfstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.619075,
+    "lat": 49.579528
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "846847e5-b9f9-4bbd-a678-c16fa01ee559",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

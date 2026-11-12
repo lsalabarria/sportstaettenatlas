@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d67-c588-400d-a5c7-8b51f111bfe0",
+  "name": "Sportplatz an der Salm",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Salmtalstraße",
+    "plz": "54518",
+    "ort": "Bruch"
+  },
+  "lage": {
+    "lon": 6.787661,
+    "lat": 49.953503
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d67-c588-400d-a5c7-8b51f111bfe0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

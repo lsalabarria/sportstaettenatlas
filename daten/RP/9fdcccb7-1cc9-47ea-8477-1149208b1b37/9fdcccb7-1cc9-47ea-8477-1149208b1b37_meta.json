@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccb7-1cc9-47ea-8477-1149208b1b37",
+  "name": "Sportplatz unter dem Rosenberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "56330",
+    "ort": "Kobern-Gondorf"
+  },
+  "lage": {
+    "lon": 7.4618,
+    "lat": 50.314971
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccb7-1cc9-47ea-8477-1149208b1b37",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

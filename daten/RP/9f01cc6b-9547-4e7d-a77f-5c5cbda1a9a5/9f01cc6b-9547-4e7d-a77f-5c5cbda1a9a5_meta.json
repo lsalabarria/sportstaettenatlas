@@ -1,0 +1,24 @@
+{
+  "id": "9f01cc6b-9547-4e7d-a77f-5c5cbda1a9a5",
+  "name": "Naturfreibad Simmern",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Hindenburgpark",
+    "plz": "55469",
+    "ort": "Simmern/ Hunsrück, Stadt"
+  },
+  "lage": {
+    "lon": 7.525129,
+    "lat": 49.928992
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6b-9547-4e7d-a77f-5c5cbda1a9a5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

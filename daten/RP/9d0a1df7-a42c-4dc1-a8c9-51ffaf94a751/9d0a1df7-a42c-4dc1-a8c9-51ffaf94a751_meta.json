@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1df7-a42c-4dc1-a8c9-51ffaf94a751",
+  "name": "Moorsberg-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Paul-Viehmann-Allee",
+    "plz": "56203",
+    "ort": "Höhr-Grenzhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.665249,
+    "lat": 50.447636
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df7-a42c-4dc1-a8c9-51ffaf94a751",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

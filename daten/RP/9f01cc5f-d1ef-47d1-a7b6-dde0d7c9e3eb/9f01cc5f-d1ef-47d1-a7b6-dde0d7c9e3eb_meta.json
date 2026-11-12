@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc5f-d1ef-47d1-a7b6-dde0d7c9e3eb",
+  "name": "Hallenbad Süd Ludwigshafen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Erich-Reimann-Straße",
+    "hausnummer": "5",
+    "plz": "67061",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.43744,
+    "lat": 49.46706
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc5f-d1ef-47d1-a7b6-dde0d7c9e3eb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

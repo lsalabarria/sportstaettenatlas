@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad2-0e63-4f24-90d0-b6e110eca0ea",
+  "name": "Sportplatz TuS 04 Germania Niederhövels",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "27",
+    "plz": "57537",
+    "ort": "Hövels"
+  },
+  "lage": {
+    "lon": 7.779424,
+    "lat": 50.786226
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad2-0e63-4f24-90d0-b6e110eca0ea",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

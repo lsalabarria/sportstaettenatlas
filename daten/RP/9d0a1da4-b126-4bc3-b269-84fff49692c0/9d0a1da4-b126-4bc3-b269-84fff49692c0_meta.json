@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da4-b126-4bc3-b269-84fff49692c0",
+  "name": "Bolzplatz Schwalbenhof",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Schwalbenhof",
+    "plz": "54578",
+    "ort": "Berndorf"
+  },
+  "lage": {
+    "lon": 6.708475,
+    "lat": 50.301084
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da4-b126-4bc3-b269-84fff49692c0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

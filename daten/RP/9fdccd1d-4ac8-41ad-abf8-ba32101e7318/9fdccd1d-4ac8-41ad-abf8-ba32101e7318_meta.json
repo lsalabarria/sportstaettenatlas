@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd1d-4ac8-41ad-abf8-ba32101e7318",
+  "name": "Mehrzweckhalle Linden",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Flürchenstraße",
+    "hausnummer": "17",
+    "plz": "66851",
+    "ort": "Linden"
+  },
+  "lage": {
+    "lon": 7.643738,
+    "lat": 49.351067
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd1d-4ac8-41ad-abf8-ba32101e7318",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

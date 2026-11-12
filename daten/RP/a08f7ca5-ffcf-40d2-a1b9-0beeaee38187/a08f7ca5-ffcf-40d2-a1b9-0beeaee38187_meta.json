@@ -1,0 +1,25 @@
+{
+  "id": "a08f7ca5-ffcf-40d2-a1b9-0beeaee38187",
+  "name": "Edelsteinklinik",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lindenstraße",
+    "hausnummer": "48",
+    "plz": "55758",
+    "ort": "Bruchweiler"
+  },
+  "lage": {
+    "lon": 7.211618,
+    "lat": 49.79849
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ca5-ffcf-40d2-a1b9-0beeaee38187",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

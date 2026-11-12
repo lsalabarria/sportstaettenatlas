@@ -1,0 +1,24 @@
+{
+  "id": "9d09face-de61-40ee-97be-f9fed143ab40",
+  "name": "Sporthalle Nisterberg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "1",
+    "plz": "56472",
+    "ort": "Nisterberg"
+  },
+  "lage": {
+    "lon": 7.978293,
+    "lat": 50.680013
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09face-de61-40ee-97be-f9fed143ab40",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

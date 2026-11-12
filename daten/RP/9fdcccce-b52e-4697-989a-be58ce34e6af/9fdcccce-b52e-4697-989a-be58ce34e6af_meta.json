@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccce-b52e-4697-989a-be58ce34e6af",
+  "name": "Erlenberghof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Erlenberghof",
+    "plz": "56753",
+    "ort": "Welling"
+  },
+  "lage": {
+    "lon": 7.32774,
+    "lat": 50.328221
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccce-b52e-4697-989a-be58ce34e6af",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

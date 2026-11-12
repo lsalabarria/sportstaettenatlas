@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4b-1f50-41fe-b387-f333638c9c68",
+  "name": "Bolzplatz Holzweiler Esch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Vettelhovener Straße",
+    "plz": "53501",
+    "ort": "Grafschaft"
+  },
+  "lage": {
+    "lon": 7.03707,
+    "lat": 50.55708
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4b-1f50-41fe-b387-f333638c9c68",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dab-e131-4e8b-8614-5e5771f82bc5",
+  "name": "Pferdefreunde Hüllenberg e.V.",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Windhäuser Weg",
+    "hausnummer": "45",
+    "plz": "56567",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.40561,
+    "lat": 50.451842
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dab-e131-4e8b-8614-5e5771f82bc5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

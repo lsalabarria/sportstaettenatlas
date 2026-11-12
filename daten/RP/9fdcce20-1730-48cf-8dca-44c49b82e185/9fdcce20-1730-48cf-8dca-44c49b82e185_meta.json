@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce20-1730-48cf-8dca-44c49b82e185",
+  "name": "Multifunktionsanlage",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Geibstraße",
+    "hausnummer": "3.0",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.4525,
+    "lat": 49.314155
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce20-1730-48cf-8dca-44c49b82e185",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

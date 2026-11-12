@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf4-fb8a-4cb0-8f94-5f86b2bc6d25",
+  "name": "Waldsportplatz Stockum-Püschen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56459",
+    "ort": "Stockum-Püschen"
+  },
+  "lage": {
+    "lon": 7.916171,
+    "lat": 50.608593
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf4-fb8a-4cb0-8f94-5f86b2bc6d25",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

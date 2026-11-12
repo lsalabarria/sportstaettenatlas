@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce32-27e6-4444-bd55-3a260803caa3",
+  "name": "Freibad Zweibrücken",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Landauer Straße",
+    "hausnummer": "111",
+    "plz": "66482",
+    "ort": "Zweibrücken, Stadt"
+  },
+  "lage": {
+    "lon": 7.377216,
+    "lat": 49.252107
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce32-27e6-4444-bd55-3a260803caa3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

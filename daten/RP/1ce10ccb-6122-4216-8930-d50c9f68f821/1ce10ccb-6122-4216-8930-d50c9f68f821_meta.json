@@ -1,0 +1,28 @@
+{
+  "id": "1ce10ccb-6122-4216-8930-d50c9f68f821",
+  "name": "Tennishalle Tennisverein Longuich",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Paesch",
+    "hausnummer": "8d",
+    "plz": "54340",
+    "ort": "Longuich"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Tennisverein Longuich",
+  "betreiber": "Tennisverein Longuich",
+  "website": "www.tv-longuich.de",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "1ce10ccb-6122-4216-8930-d50c9f68f821",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

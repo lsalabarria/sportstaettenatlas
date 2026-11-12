@@ -1,0 +1,23 @@
+{
+  "id": "9f3ccd54-725b-429c-8acf-1a7aa0c4f496",
+  "name": "Fechthalle Koblenz",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jupp-Gauchel-Straße",
+    "plz": "56075",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.584887,
+    "lat": 50.330586
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f3ccd54-725b-429c-8acf-1a7aa0c4f496",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

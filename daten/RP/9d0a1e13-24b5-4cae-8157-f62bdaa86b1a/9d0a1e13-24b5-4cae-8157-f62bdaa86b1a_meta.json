@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e13-24b5-4cae-8157-f62bdaa86b1a",
+  "name": "TechniSat Arena",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wehrbüschstraße",
+    "plz": "54550",
+    "ort": "Daun, Stadt"
+  },
+  "lage": {
+    "lon": 6.825349,
+    "lat": 50.192811
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e13-24b5-4cae-8157-f62bdaa86b1a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

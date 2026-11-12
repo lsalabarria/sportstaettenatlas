@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa5-9ee6-433f-ae63-5798bb97d896",
+  "name": "Beachvolleyballfeld Rhenania",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Moselstausee",
+    "hausnummer": "16",
+    "plz": "56073",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.566989,
+    "lat": 50.360827
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa5-9ee6-433f-ae63-5798bb97d896",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

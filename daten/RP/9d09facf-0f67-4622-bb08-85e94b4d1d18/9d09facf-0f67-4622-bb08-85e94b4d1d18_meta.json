@@ -1,0 +1,24 @@
+{
+  "id": "9d09facf-0f67-4622-bb08-85e94b4d1d18",
+  "name": "Schützenverein 1964 Weitefeld e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Hellweg",
+    "hausnummer": "29",
+    "plz": "57586",
+    "ort": "Weitefeld"
+  },
+  "lage": {
+    "lon": 7.927699,
+    "lat": 50.729336
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facf-0f67-4622-bb08-85e94b4d1d18",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

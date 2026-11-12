@@ -1,0 +1,24 @@
+{
+  "id": "a08f7ca4-d0a1-42ed-a82d-77d8bfe95444",
+  "name": "Waldstadion - Spvgg Hochwald 2003 e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf dem Bus",
+    "plz": "55758",
+    "ort": "Allenbach"
+  },
+  "lage": {
+    "lon": 7.176317,
+    "lat": 49.75216
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ca4-d0a1-42ed-a82d-77d8bfe95444",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

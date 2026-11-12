@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cc7-303a-484c-a52c-7867b2dcef61",
+  "name": "Tennisplatz Spabrücken",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Wald",
+    "hausnummer": "25",
+    "plz": "55595",
+    "ort": "Spabrücken"
+  },
+  "lage": {
+    "lon": 7.702098,
+    "lat": 49.904523
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cc7-303a-484c-a52c-7867b2dcef61",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae2-9eec-4c00-873b-13a76494c12d",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zur Heide",
+    "plz": "54413",
+    "ort": "Rascheid"
+  },
+  "lage": {
+    "lon": 6.931838,
+    "lat": 49.70919
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae2-9eec-4c00-873b-13a76494c12d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

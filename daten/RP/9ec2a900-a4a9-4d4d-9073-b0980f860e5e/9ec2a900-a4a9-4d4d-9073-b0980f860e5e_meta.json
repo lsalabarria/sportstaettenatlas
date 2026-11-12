@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a900-a4a9-4d4d-9073-b0980f860e5e",
+  "name": "Sportanlage Laumersheim",
+  "kategorie": "Klettersportstätte",
+  "adresse": {
+    "strasse": "Zum Bürgerhaus",
+    "hausnummer": "3",
+    "plz": "67229",
+    "ort": "Laumersheim"
+  },
+  "lage": {
+    "lon": 8.235918,
+    "lat": 49.550735
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a900-a4a9-4d4d-9073-b0980f860e5e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

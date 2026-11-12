@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e04-4499-4144-9707-fb892323ff6a",
+  "name": "Bolzplatz Westum",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Krechelheimer Straße",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.228253,
+    "lat": 50.534054
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e04-4499-4144-9707-fb892323ff6a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

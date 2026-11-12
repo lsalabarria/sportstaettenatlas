@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a930-e100-41fe-9577-96e31f49e125",
+  "name": "Schützenverein Schweisweiler",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Ortsstraße",
+    "plz": "67808",
+    "ort": "Schweisweiler"
+  },
+  "lage": {
+    "lon": 7.819205,
+    "lat": 49.586245
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a930-e100-41fe-9577-96e31f49e125",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

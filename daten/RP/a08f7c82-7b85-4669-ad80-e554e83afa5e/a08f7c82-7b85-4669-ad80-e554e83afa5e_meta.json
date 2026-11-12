@@ -1,0 +1,24 @@
+{
+  "id": "a08f7c82-7b85-4669-ad80-e554e83afa5e",
+  "name": "Sportanlage Nack Platz 2",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Ahrenberg",
+    "plz": "55234",
+    "ort": "Nack"
+  },
+  "lage": {
+    "lon": 8.000069,
+    "lat": 49.749104
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c82-7b85-4669-ad80-e554e83afa5e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

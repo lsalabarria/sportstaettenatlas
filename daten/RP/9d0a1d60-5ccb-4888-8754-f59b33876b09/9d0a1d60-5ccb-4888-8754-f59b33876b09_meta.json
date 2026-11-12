@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d60-5ccb-4888-8754-f59b33876b09",
+  "name": "Bolzplatz Weihergasse",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Weihergasse",
+    "plz": "55496",
+    "ort": "Argenthal"
+  },
+  "lage": {
+    "lon": 7.598553,
+    "lat": 49.97354
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d60-5ccb-4888-8754-f59b33876b09",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

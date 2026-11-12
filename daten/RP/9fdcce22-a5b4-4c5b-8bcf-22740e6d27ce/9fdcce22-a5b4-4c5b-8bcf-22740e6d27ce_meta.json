@@ -1,0 +1,24 @@
+{
+  "id": "9fdcce22-a5b4-4c5b-8bcf-22740e6d27ce",
+  "name": "Spielplatz an den Deichstücken",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "An den Deichstücken",
+    "plz": "67750",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.404016,
+    "lat": 49.719863
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce22-a5b4-4c5b-8bcf-22740e6d27ce",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

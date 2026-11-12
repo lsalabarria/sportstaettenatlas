@@ -1,0 +1,24 @@
+{
+  "id": "6cfa0420-2f3b-4082-9713-74ed3da9fdf5",
+  "name": "Dorfgemeinschaftshaus Glanbrücken",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hirsauer Str.",
+    "hausnummer": "6",
+    "plz": "66887",
+    "ort": "Glanbrücken"
+  },
+  "lage": {
+    "lon": 7.532969,
+    "lat": 49.611141
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "6cfa0420-2f3b-4082-9713-74ed3da9fdf5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdaf-7d86-4f08-83a0-30231dfa96d2",
+  "name": "Schul- und Sportzentrum Mendig",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Fallerstraße",
+    "hausnummer": "65",
+    "plz": "56743",
+    "ort": "Mendig, Stadt"
+  },
+  "lage": {
+    "lon": 7.266526,
+    "lat": 50.369795
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdaf-7d86-4f08-83a0-30231dfa96d2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

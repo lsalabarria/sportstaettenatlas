@@ -1,0 +1,23 @@
+{
+  "id": "9d09fadd-d7e5-49c7-9ba0-9e08f78f43b2",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Maximinstraße",
+    "plz": "54340",
+    "ort": "Longuich"
+  },
+  "lage": {
+    "lon": 6.771743,
+    "lat": 49.809812
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadd-d7e5-49c7-9ba0-9e08f78f43b2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

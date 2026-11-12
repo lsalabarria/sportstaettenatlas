@@ -1,0 +1,23 @@
+{
+  "id": "a00283d5-09bb-43db-8991-f296b4e27871",
+  "name": "Skatepark Boppard",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Rheinallee",
+    "plz": "56154",
+    "ort": "Boppard, Stadt"
+  },
+  "lage": {
+    "lon": 7.599569,
+    "lat": 50.232148
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a00283d5-09bb-43db-8991-f296b4e27871",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

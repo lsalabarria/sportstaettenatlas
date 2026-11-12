@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf0-cf7b-4714-ab58-f5f252e970e1",
+  "name": "Pumptrack Herschbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Sportallee",
+    "plz": "56414",
+    "ort": "Herschbach"
+  },
+  "lage": {
+    "lon": 7.92031,
+    "lat": 50.507985
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf0-cf7b-4714-ab58-f5f252e970e1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

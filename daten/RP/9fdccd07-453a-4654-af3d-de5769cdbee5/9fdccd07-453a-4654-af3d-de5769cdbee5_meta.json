@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd07-453a-4654-af3d-de5769cdbee5",
+  "name": "Skatepark Miehlen",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56357",
+    "ort": "Miehlen"
+  },
+  "lage": {
+    "lon": 7.83138,
+    "lat": 50.230728
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd07-453a-4654-af3d-de5769cdbee5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

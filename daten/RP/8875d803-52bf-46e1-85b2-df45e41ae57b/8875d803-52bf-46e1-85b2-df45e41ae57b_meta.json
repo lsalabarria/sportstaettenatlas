@@ -1,0 +1,28 @@
+{
+  "id": "8875d803-52bf-46e1-85b2-df45e41ae57b",
+  "name": "MSC Altrip im ADAC e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An der Rennbahn",
+    "hausnummer": "2",
+    "plz": "67122",
+    "ort": "Altrip"
+  },
+  "lage": {
+    "lon": 8.477529,
+    "lat": 49.430512
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Rhein-Pfalz-Kreis",
+  "betreiber": "Rhein-Pfalz-Kreis",
+  "website": "www.msc-altrip.de",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "8875d803-52bf-46e1-85b2-df45e41ae57b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

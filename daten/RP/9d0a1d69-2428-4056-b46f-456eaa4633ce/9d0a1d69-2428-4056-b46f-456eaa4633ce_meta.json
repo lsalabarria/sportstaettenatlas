@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d69-2428-4056-b46f-456eaa4633ce",
+  "name": "Turnhalle Maring-Noviand",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Serginer Platz",
+    "plz": "54484",
+    "ort": "Maring-Noviand"
+  },
+  "lage": {
+    "lon": 6.994602,
+    "lat": 49.929526
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d69-2428-4056-b46f-456eaa4633ce",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

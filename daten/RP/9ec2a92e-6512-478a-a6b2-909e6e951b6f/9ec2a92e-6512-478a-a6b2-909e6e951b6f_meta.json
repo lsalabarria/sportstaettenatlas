@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a92e-6512-478a-a6b2-909e6e951b6f",
+  "name": "Sporthalle Grundschule Oppenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Krämerstraße",
+    "hausnummer": "38",
+    "plz": "55276",
+    "ort": "Oppenheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.352957,
+    "lat": 49.851674
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92e-6512-478a-a6b2-909e6e951b6f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

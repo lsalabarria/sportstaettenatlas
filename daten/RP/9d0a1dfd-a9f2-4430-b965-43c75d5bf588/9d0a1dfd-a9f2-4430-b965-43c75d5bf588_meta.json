@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dfd-a9f2-4430-b965-43c75d5bf588",
+  "name": "Tennis-Center Bad Marienberg",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Zinhainer Weg",
+    "hausnummer": "15",
+    "plz": "56470",
+    "ort": "Bad Marienberg (Westerwald), Stadt"
+  },
+  "lage": {
+    "lon": 7.931128,
+    "lat": 50.641476
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfd-a9f2-4430-b965-43c75d5bf588",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

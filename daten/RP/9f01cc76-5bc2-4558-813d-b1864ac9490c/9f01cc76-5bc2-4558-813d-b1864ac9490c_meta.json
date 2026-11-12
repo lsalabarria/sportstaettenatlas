@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc76-5bc2-4558-813d-b1864ac9490c",
+  "name": "Freibad am Wartberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kaiserstraße",
+    "hausnummer": "29",
+    "plz": "55232",
+    "ort": "Alzey, Stadt"
+  },
+  "lage": {
+    "lon": 8.11461,
+    "lat": 49.73788
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc76-5bc2-4558-813d-b1864ac9490c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

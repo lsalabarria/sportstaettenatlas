@@ -1,0 +1,25 @@
+{
+  "id": "9fdccde0-650b-4af5-b81a-731823937993",
+  "name": "Tennisplatz Miesenbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Kiefernkopf",
+    "hausnummer": "20",
+    "plz": "66877",
+    "ort": "Ramstein-Miesenbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.550544,
+    "lat": 49.459707
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccde0-650b-4af5-b81a-731823937993",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

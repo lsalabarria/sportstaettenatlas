@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a912-1412-457a-b0fb-d2c2ca0f0b5c",
+  "name": "Grundschule am Gartenfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gartenfeldstraße",
+    "hausnummer": "17",
+    "plz": "55278",
+    "ort": "Dolgesheim"
+  },
+  "lage": {
+    "lon": 8.262018,
+    "lat": 49.793746
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a912-1412-457a-b0fb-d2c2ca0f0b5c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

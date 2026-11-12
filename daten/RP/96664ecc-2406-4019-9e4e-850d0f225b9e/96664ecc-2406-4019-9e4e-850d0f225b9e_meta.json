@@ -1,0 +1,26 @@
+{
+  "id": "96664ecc-2406-4019-9e4e-850d0f225b9e",
+  "name": "Schützenhaus Orfgen",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "plz": "57632",
+    "ort": "Orfgen"
+  },
+  "lage": {
+    "lon": 7.535964,
+    "lat": 50.66648
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "KK-Schützen Orfgen",
+  "betreiber": "KK-Schützen Orfgen",
+  "website": "www.kksv-orfgen.de",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "96664ecc-2406-4019-9e4e-850d0f225b9e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccc4-7420-44fb-81f0-076dd1ca9940",
+  "name": "fit+ Nickenich",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Auf d. Bölz",
+    "hausnummer": "2",
+    "plz": "56645",
+    "ort": "Nickenich"
+  },
+  "lage": {
+    "lon": 7.336226,
+    "lat": 50.414651
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccc4-7420-44fb-81f0-076dd1ca9940",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e08-dd71-4edb-8daa-b8ae2a288837",
+  "name": "Kanuverleih Campingpark Zell/Mosel e. K.",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Moselufer",
+    "plz": "56856",
+    "ort": "Zell (Mosel), Stadt"
+  },
+  "lage": {
+    "lon": 7.174812,
+    "lat": 50.033911
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e08-dd71-4edb-8daa-b8ae2a288837",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

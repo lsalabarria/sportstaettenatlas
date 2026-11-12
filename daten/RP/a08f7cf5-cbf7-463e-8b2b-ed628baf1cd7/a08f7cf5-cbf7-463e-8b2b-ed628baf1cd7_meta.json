@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cf5-cbf7-463e-8b2b-ed628baf1cd7",
+  "name": "Sportzentrum Sommerried",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Herrnsheimer Str.",
+    "plz": "67574",
+    "ort": "Osthofen, Stadt"
+  },
+  "lage": {
+    "lon": 8.329885,
+    "lat": 49.691634
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cf5-cbf7-463e-8b2b-ed628baf1cd7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

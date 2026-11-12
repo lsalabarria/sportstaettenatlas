@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a936-5ee0-4b93-a8e7-69b1f44920ba",
+  "name": "Töngeshalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulrat-Spang-Straße",
+    "hausnummer": "8",
+    "plz": "55129",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.244201,
+    "lat": 49.915771
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a936-5ee0-4b93-a8e7-69b1f44920ba",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

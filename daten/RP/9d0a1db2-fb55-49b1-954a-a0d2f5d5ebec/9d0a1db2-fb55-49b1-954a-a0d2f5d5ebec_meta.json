@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1db2-fb55-49b1-954a-a0d2f5d5ebec",
+  "name": "Schießplatz",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "L47",
+    "plz": "54338",
+    "ort": "Schweich, Stadt"
+  },
+  "lage": {
+    "lon": 6.744656,
+    "lat": 49.844082
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db2-fb55-49b1-954a-a0d2f5d5ebec",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

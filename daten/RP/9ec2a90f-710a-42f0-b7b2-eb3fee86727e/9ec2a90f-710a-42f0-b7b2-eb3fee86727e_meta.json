@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a90f-710a-42f0-b7b2-eb3fee86727e",
+  "name": "Hohberg-Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Raiffeisenstraße",
+    "hausnummer": "7",
+    "plz": "55296",
+    "ort": "Lörzweiler"
+  },
+  "lage": {
+    "lon": 8.30243,
+    "lat": 49.901652
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90f-710a-42f0-b7b2-eb3fee86727e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

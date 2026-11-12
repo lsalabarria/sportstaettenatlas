@@ -1,0 +1,24 @@
+{
+  "id": "449b2284-8f7e-447d-9deb-3e12ef0b96b7",
+  "name": "Gemeindehalle Odenbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "7",
+    "plz": "67748",
+    "ort": "Odenbach"
+  },
+  "lage": {
+    "lon": 7.65054,
+    "lat": 49.68526
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "449b2284-8f7e-447d-9deb-3e12ef0b96b7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

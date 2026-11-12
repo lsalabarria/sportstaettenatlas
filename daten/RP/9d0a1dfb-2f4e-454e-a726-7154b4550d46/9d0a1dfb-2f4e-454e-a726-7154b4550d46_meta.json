@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dfb-2f4e-454e-a726-7154b4550d46",
+  "name": "Oberwaldstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "plz": "56242",
+    "ort": "Selters (Westerwald), Stadt"
+  },
+  "lage": {
+    "lon": 7.763085,
+    "lat": 50.531855
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfb-2f4e-454e-a726-7154b4550d46",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

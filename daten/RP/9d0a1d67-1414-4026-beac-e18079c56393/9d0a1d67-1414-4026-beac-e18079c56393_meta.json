@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d67-1414-4026-beac-e18079c56393",
+  "name": "Sportplatz Burgen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "54472",
+    "ort": "Burgen"
+  },
+  "lage": {
+    "lon": 7.00057,
+    "lat": 49.87788
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d67-1414-4026-beac-e18079c56393",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d58-a130-450c-9246-393b5cf429da",
+  "name": "Bolzplatz Peterswald-Löffelscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulweg",
+    "plz": "56858",
+    "ort": "Peterswald-Löffelscheid"
+  },
+  "lage": {
+    "lon": 7.284952,
+    "lat": 50.004425
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d58-a130-450c-9246-393b5cf429da",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "a0028a7f-2360-4c22-9105-210266c9ae98",
+  "name": "Kinderspielplatz Vorderer Rinderberg",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Altweidelbacher Straße",
+    "hausnummer": "12",
+    "plz": "55469",
+    "ort": "Simmern/ Hunsrück, Stadt"
+  },
+  "lage": {
+    "lon": 7.53869,
+    "lat": 49.990047
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0028a7f-2360-4c22-9105-210266c9ae98",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d09facc-ff62-4159-84d9-089c0c8f08ae",
+  "name": "Schützenverein e.V. Elkenroth",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Im Linzer Bruch",
+    "plz": "57578",
+    "ort": "Elkenroth"
+  },
+  "lage": {
+    "lon": 7.865691,
+    "lat": 50.731177
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facc-ff62-4159-84d9-089c0c8f08ae",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9fdccdbd-a60d-4bcd-91ed-81540882ab5c",
+  "name": "Stadion Silberau",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Insel Silberau",
+    "plz": "56130",
+    "ort": "Bad Ems, Stadt"
+  },
+  "lage": {
+    "lon": 7.700942,
+    "lat": 50.334843
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdbd-a60d-4bcd-91ed-81540882ab5c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

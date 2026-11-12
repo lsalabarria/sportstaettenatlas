@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a930-ea29-4030-9da4-3d9089a3d6b7",
+  "name": "Reitanlage Degenbachtal",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Im Degenbachtal",
+    "hausnummer": "2",
+    "plz": "67806",
+    "ort": "Rockenhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.825268,
+    "lat": 49.610223
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a930-ea29-4030-9da4-3d9089a3d6b7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

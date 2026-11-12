@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dfa-2945-467f-835f-de9ca4c72ae9",
+  "name": "Sporthalle TV Ransbach 1887 e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Auf dem Haidchen",
+    "hausnummer": "2",
+    "plz": "56235",
+    "ort": "Ransbach-Baumbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.730341,
+    "lat": 50.47012
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfa-2945-467f-835f-de9ca4c72ae9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

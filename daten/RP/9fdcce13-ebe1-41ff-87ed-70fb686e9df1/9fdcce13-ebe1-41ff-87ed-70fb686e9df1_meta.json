@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce13-ebe1-41ff-87ed-70fb686e9df1",
+  "name": "Schießstand Pirmasens",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Am Waldfriedhof",
+    "hausnummer": "3",
+    "plz": "66953",
+    "ort": "Pirmasens, Stadt"
+  },
+  "lage": {
+    "lon": 7.64253,
+    "lat": 49.215679
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce13-ebe1-41ff-87ed-70fb686e9df1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

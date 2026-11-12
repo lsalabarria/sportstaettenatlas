@@ -1,0 +1,24 @@
+{
+  "id": "9f01cc57-fad9-4445-8dcf-8cb67519b887",
+  "name": "Freizeit-Hallenbad Saarburg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am City-Parkplatz",
+    "plz": "54439",
+    "ort": "Saarburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.54534,
+    "lat": 49.60598
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc57-fad9-4445-8dcf-8cb67519b887",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

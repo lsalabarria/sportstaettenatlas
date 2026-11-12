@@ -1,0 +1,24 @@
+{
+  "id": "9d09fae8-acd0-494b-bf4e-efc1d06b5a6a",
+  "name": "Skatepark",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Lindenstraße",
+    "hausnummer": "54",
+    "plz": "56204",
+    "ort": "Hillscheid"
+  },
+  "lage": {
+    "lon": 7.70271,
+    "lat": 50.401454
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae8-acd0-494b-bf4e-efc1d06b5a6a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

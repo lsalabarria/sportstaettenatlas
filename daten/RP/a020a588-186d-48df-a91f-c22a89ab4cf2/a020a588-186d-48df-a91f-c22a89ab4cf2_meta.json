@@ -1,0 +1,24 @@
+{
+  "id": "a020a588-186d-48df-a91f-c22a89ab4cf2",
+  "name": "Halle Carmen-Sylva-Schule Niederbieber",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "In der Lach",
+    "hausnummer": "4",
+    "plz": "56567",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.466786,
+    "lat": 50.464837
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a020a588-186d-48df-a91f-c22a89ab4cf2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d51-000b-4454-aa6a-4a4699b809e9",
+  "name": "Heubachstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Arweg",
+    "hausnummer": "23",
+    "plz": "56651",
+    "ort": "Niederzissen"
+  },
+  "lage": {
+    "lon": 7.213245,
+    "lat": 50.453903
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d51-000b-4454-aa6a-4a4699b809e9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

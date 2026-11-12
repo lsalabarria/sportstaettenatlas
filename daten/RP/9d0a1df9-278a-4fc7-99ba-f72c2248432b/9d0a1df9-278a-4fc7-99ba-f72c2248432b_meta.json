@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1df9-278a-4fc7-99ba-f72c2248432b",
+  "name": "LilSam46‘s Fußballclub",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Humboldtstraße",
+    "hausnummer": "15",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.814041,
+    "lat": 50.441027
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df9-278a-4fc7-99ba-f72c2248432b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

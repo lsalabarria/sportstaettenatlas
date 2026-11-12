@@ -1,0 +1,26 @@
+{
+  "id": "4d8cf5c2-22fb-418e-a4f7-736104fbee88",
+  "name": "Tanzclub Fantasy e.V.",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Schönbornstraße",
+    "hausnummer": "3",
+    "plz": "54293",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.65612,
+    "lat": 49.761507
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "website": "www.tcfantasy.eu",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "4d8cf5c2-22fb-418e-a4f7-736104fbee88",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d14-858e-4f39-8a11-4697eaa86b6c",
+  "name": "Flugplatz Idar-Oberstein/Göttschied",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "strasse": "Flugplatzstraße",
+    "hausnummer": "20",
+    "plz": "55743",
+    "ort": "Idar-Oberstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.338072,
+    "lat": 49.732207
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d14-858e-4f39-8a11-4697eaa86b6c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

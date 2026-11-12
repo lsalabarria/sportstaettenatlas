@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa6-a065-463c-a65e-e6f72b0ea7a3",
+  "name": "Sporthalle der Schule Am Bienhorntal",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Lehrhohl",
+    "hausnummer": "42-44",
+    "plz": "56077",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.616529,
+    "lat": 50.346364
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa6-a065-463c-a65e-e6f72b0ea7a3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

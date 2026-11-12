@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e08-f587-4e2f-a2a9-473920f9ec40",
+  "name": "Spielplatz Zell Barl",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Buchenstraße",
+    "plz": "56856",
+    "ort": "Zell (Mosel), Stadt"
+  },
+  "lage": {
+    "lon": 7.169043,
+    "lat": 50.028441
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e08-f587-4e2f-a2a9-473920f9ec40",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

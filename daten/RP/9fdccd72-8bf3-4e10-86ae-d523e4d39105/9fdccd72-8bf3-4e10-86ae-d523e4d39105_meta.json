@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd72-8bf3-4e10-86ae-d523e4d39105",
+  "name": "Golden Grape Ranch",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Landkommissärstraße",
+    "hausnummer": "8",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.164741,
+    "lat": 49.200504
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd72-8bf3-4e10-86ae-d523e4d39105",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

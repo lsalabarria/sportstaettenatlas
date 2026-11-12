@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cbc-bbdb-4bf1-917c-95efdb529eab",
+  "name": "Dinky Hill Ranch",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "5",
+    "plz": "55606",
+    "ort": "Horbach"
+  },
+  "lage": {
+    "lon": 7.514468,
+    "lat": 49.823477
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cbc-bbdb-4bf1-917c-95efdb529eab",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

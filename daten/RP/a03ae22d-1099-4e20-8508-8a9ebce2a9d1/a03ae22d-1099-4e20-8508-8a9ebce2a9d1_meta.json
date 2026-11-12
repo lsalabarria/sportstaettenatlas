@@ -1,0 +1,24 @@
+{
+  "id": "a03ae22d-1099-4e20-8508-8a9ebce2a9d1",
+  "name": "Rheinlandhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ringstr.",
+    "hausnummer": "45",
+    "plz": "56218",
+    "ort": "Mülheim-Kärlich, Stadt"
+  },
+  "lage": {
+    "lon": 7.502986,
+    "lat": 50.390423
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a03ae22d-1099-4e20-8508-8a9ebce2a9d1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

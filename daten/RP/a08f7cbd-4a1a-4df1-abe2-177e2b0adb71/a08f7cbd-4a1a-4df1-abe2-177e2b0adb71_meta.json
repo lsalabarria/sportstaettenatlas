@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cbd-4a1a-4df1-abe2-177e2b0adb71",
+  "name": "Tennisanlage Simmertal",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Flachsberg",
+    "hausnummer": "18",
+    "plz": "55618",
+    "ort": "Simmertal"
+  },
+  "lage": {
+    "lon": 7.534943,
+    "lat": 49.809047
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cbd-4a1a-4df1-abe2-177e2b0adb71",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

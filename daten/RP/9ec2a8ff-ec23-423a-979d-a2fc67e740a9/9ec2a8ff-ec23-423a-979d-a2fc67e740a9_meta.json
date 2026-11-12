@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a8ff-ec23-423a-979d-a2fc67e740a9",
+  "name": "Hans-Stein-Turnhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schloss-Straße",
+    "hausnummer": "38",
+    "plz": "67283",
+    "ort": "Obrigheim (Pfalz)"
+  },
+  "lage": {
+    "lon": 8.200215,
+    "lat": 49.586097
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a8ff-ec23-423a-979d-a2fc67e740a9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1da8-1ceb-486d-b090-e4620b7a93aa",
+  "name": "Bolzplatz Dauersberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mittelbuschstraße",
+    "hausnummer": "22",
+    "plz": "57518",
+    "ort": "Betzdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.83833,
+    "lat": 50.770092
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da8-1ceb-486d-b090-e4620b7a93aa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

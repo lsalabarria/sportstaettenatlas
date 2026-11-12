@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5e-ae36-4ac3-ab4a-15cd536c3cbe",
+  "name": "Sportplatz Kappel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "B327",
+    "plz": "55483",
+    "ort": "Kappel"
+  },
+  "lage": {
+    "lon": 7.371924,
+    "lat": 50.010616
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5e-ae36-4ac3-ab4a-15cd536c3cbe",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

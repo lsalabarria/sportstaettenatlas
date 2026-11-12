@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91f-3238-40b0-9c9b-1871f2fb4caa",
+  "name": "TC Kleine Kalmit Ilbesheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Brühl",
+    "hausnummer": "15",
+    "plz": "76831",
+    "ort": "Ilbesheim bei Landau in der Pfalz"
+  },
+  "lage": {
+    "lon": 8.060096,
+    "lat": 49.18093
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91f-3238-40b0-9c9b-1871f2fb4caa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

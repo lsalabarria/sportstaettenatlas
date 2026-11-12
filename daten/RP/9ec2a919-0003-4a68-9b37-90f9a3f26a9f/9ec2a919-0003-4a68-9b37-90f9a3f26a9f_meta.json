@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a919-0003-4a68-9b37-90f9a3f26a9f",
+  "name": "Bolzplatz Großfischlingen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Kirchgarten",
+    "hausnummer": "19",
+    "plz": "67483",
+    "ort": "Großfischlingen"
+  },
+  "lage": {
+    "lon": 8.17358,
+    "lat": 49.269199
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a919-0003-4a68-9b37-90f9a3f26a9f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

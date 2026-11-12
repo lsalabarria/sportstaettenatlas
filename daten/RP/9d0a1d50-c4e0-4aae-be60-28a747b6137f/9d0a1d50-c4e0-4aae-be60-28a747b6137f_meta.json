@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d50-c4e0-4aae-be60-28a747b6137f",
+  "name": "Bolzplatz Königsfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Burgstraße",
+    "plz": "53426",
+    "ort": "Königsfeld"
+  },
+  "lage": {
+    "lon": 7.175507,
+    "lat": 50.498109
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-c4e0-4aae-be60-28a747b6137f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1da4-bd27-4963-ac6a-83f6d95c9a4b",
+  "name": "Spielplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "29",
+    "plz": "54570",
+    "ort": "Hohenfels-Essingen"
+  },
+  "lage": {
+    "lon": 6.727178,
+    "lat": 50.253707
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da4-bd27-4963-ac6a-83f6d95c9a4b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad6-cb38-4b92-bfce-14c5d273dc30",
+  "name": "Sportplatz Kleinmaischeid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Eichenheck",
+    "plz": "56271",
+    "ort": "Kleinmaischeid"
+  },
+  "lage": {
+    "lon": 7.604687,
+    "lat": 50.517824
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad6-cb38-4b92-bfce-14c5d273dc30",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

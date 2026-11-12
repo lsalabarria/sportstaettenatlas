@@ -1,0 +1,23 @@
+{
+  "id": "9d09fadd-290c-4d31-a967-cc448e1bc0f9",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "plz": "54298",
+    "ort": "Orenhofen"
+  },
+  "lage": {
+    "lon": 6.661831,
+    "lat": 49.899769
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadd-290c-4d31-a967-cc448e1bc0f9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

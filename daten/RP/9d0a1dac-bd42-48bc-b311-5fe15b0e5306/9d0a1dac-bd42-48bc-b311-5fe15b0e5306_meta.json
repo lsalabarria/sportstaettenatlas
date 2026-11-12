@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dac-bd42-48bc-b311-5fe15b0e5306",
+  "name": "Halfepipe Niederbieber",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Augustenthaler Straße",
+    "hausnummer": "23",
+    "plz": "56567",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.467854,
+    "lat": 50.465099
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dac-bd42-48bc-b311-5fe15b0e5306",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

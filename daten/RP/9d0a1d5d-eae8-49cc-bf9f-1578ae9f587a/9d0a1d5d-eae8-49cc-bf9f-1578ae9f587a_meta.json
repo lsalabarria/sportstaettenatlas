@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d5d-eae8-49cc-bf9f-1578ae9f587a",
+  "name": "Tennisplätze am Schulzentrum",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Michael-Felke-Straße",
+    "hausnummer": "19",
+    "plz": "55487",
+    "ort": "Sohren"
+  },
+  "lage": {
+    "lon": 7.29214,
+    "lat": 49.922849
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5d-eae8-49cc-bf9f-1578ae9f587a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

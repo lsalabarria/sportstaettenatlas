@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dff-d1a6-4619-b4ce-28a9903d9c59",
+  "name": "Grundschule Bad Neuenahr",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Weststraße",
+    "hausnummer": "27",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.132568,
+    "lat": 50.543891
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dff-d1a6-4619-b4ce-28a9903d9c59",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

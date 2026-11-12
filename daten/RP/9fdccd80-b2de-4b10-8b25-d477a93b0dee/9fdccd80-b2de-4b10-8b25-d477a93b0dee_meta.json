@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd80-b2de-4b10-8b25-d477a93b0dee",
+  "name": "ACTIVITY FITNESS - Fitnessstudio Germersheim",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Münchener Str.",
+    "hausnummer": "14",
+    "plz": "76726",
+    "ort": "Germersheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.372656,
+    "lat": 49.227565
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd80-b2de-4b10-8b25-d477a93b0dee",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

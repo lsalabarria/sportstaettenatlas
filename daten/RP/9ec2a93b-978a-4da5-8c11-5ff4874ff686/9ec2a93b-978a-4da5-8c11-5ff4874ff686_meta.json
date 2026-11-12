@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a93b-978a-4da5-8c11-5ff4874ff686",
+  "name": "Bolzplatz Gymnasium Mainz-Morbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Lemmchen",
+    "hausnummer": "50",
+    "plz": "55120",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.215983,
+    "lat": 50.021948
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93b-978a-4da5-8c11-5ff4874ff686",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a92b-6dd6-48c6-8e74-f37ea33a88c5",
+  "name": "Sebastian-Münster Diddy Gymnasium Ingelheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Friedrich-Ebert-Straße",
+    "hausnummer": "13",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.051828,
+    "lat": 49.97355
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92b-6dd6-48c6-8e74-f37ea33a88c5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

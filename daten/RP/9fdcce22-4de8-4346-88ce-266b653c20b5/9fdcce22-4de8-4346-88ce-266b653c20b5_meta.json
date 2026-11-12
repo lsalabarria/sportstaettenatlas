@@ -1,0 +1,24 @@
+{
+  "id": "9fdcce22-4de8-4346-88ce-266b653c20b5",
+  "name": "Ballspielanlage Closweg",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Closweg",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.424817,
+    "lat": 49.303514
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce22-4de8-4346-88ce-266b653c20b5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

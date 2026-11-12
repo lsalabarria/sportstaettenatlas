@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae6-194b-434b-ae10-09abcb5c688e",
+  "name": "Bouleplatz in der Zehnt",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "In der Zehnt",
+    "plz": "54332",
+    "ort": "Wasserliesch"
+  },
+  "lage": {
+    "lon": 6.549188,
+    "lat": 49.700084
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae6-194b-434b-ae10-09abcb5c688e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

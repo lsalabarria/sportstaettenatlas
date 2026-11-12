@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf0-c307-4b26-8501-f1d74d978824",
+  "name": "Sportplatz Herschbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportallee",
+    "plz": "56414",
+    "ort": "Herschbach"
+  },
+  "lage": {
+    "lon": 7.920748,
+    "lat": 50.508547
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf0-c307-4b26-8501-f1d74d978824",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

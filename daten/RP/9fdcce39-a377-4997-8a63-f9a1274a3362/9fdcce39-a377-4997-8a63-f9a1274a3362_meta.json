@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce39-a377-4997-8a63-f9a1274a3362",
+  "name": "Minigolf Leimen",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Hinterfeldstraße",
+    "hausnummer": "12",
+    "plz": "66978",
+    "ort": "Leimen"
+  },
+  "lage": {
+    "lon": 7.769978,
+    "lat": 49.273113
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce39-a377-4997-8a63-f9a1274a3362",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

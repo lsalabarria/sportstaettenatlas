@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4d-abd7-4919-92d4-1cf7542d96b0",
+  "name": "Sporthalle Denntalschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kesselinger Straße",
+    "plz": "53506",
+    "ort": "Ahrbrück"
+  },
+  "lage": {
+    "lon": 6.981448,
+    "lat": 50.483877
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4d-abd7-4919-92d4-1cf7542d96b0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

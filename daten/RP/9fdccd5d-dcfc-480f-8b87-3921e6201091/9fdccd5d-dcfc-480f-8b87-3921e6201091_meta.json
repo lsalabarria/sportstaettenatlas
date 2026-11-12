@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd5d-dcfc-480f-8b87-3921e6201091",
+  "name": "Sportplatz Sägemühle",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sägmühler Weg",
+    "plz": "66989",
+    "ort": "Höheinöd"
+  },
+  "lage": {
+    "lon": 7.59535,
+    "lat": 49.2834
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd5d-dcfc-480f-8b87-3921e6201091",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

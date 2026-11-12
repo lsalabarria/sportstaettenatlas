@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a931-240e-440e-98cc-7b92c370ef86",
+  "name": "Sportplatz am Appelbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Riedweg",
+    "plz": "67822",
+    "ort": "Niederhausen an der Appel"
+  },
+  "lage": {
+    "lon": 7.887498,
+    "lat": 49.741796
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a931-240e-440e-98cc-7b92c370ef86",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

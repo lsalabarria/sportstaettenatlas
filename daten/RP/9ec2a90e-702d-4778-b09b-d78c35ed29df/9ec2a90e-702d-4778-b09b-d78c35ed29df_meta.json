@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a90e-702d-4778-b09b-d78c35ed29df",
+  "name": "Bischemer Hall",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Gartenstraße",
+    "plz": "55296",
+    "ort": "Gau-Bischofsheim"
+  },
+  "lage": {
+    "lon": 8.276376,
+    "lat": 49.912188
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90e-702d-4778-b09b-d78c35ed29df",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

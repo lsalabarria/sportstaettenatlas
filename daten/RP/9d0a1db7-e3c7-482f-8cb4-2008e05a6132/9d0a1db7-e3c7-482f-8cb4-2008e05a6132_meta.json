@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db7-e3c7-482f-8cb4-2008e05a6132",
+  "name": "Turnhalle Grundschule Reichertsberg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "32a",
+    "plz": "54294",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.611954,
+    "lat": 49.747149
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db7-e3c7-482f-8cb4-2008e05a6132",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

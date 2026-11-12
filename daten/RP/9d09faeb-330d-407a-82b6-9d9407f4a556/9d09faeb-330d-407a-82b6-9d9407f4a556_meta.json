@@ -1,0 +1,24 @@
+{
+  "id": "9d09faeb-330d-407a-82b6-9d9407f4a556",
+  "name": "Sportplatz Heiligenroth",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "26",
+    "plz": "56412",
+    "ort": "Heiligenroth"
+  },
+  "lage": {
+    "lon": 7.857153,
+    "lat": 50.446738
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faeb-330d-407a-82b6-9d9407f4a556",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

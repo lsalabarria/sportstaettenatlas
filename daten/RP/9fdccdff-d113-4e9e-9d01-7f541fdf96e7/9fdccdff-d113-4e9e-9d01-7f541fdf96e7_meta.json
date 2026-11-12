@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdff-d113-4e9e-9d01-7f541fdf96e7",
+  "name": "Tennisanlage",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Horlacher Straße",
+    "hausnummer": "8",
+    "plz": "67065",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.418251,
+    "lat": 49.442797
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdff-d113-4e9e-9d01-7f541fdf96e7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

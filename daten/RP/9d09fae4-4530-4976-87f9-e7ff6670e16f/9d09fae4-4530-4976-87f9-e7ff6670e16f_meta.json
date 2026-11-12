@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae4-4530-4976-87f9-e7ff6670e16f",
+  "name": "Grenderichhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Pfarrer-Hermes-Straße",
+    "plz": "54413",
+    "ort": "Gusenburg"
+  },
+  "lage": {
+    "lon": 6.902865,
+    "lat": 49.635949
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae4-4530-4976-87f9-e7ff6670e16f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

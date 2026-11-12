@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1df8-c217-4b73-aae5-e3c4197c0eb8",
+  "name": "Sporthalle der Waldschule Montabaur",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Buchenstraße",
+    "hausnummer": "52",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.792874,
+    "lat": 50.43661
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df8-c217-4b73-aae5-e3c4197c0eb8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

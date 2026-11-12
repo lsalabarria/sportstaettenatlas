@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a919-ed19-4a0e-8350-e8dd8e857190",
+  "name": "Tennisclub Modenbachtal",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Obere Hummelau",
+    "plz": "76835",
+    "ort": "Hainfeld"
+  },
+  "lage": {
+    "lon": 8.085094,
+    "lat": 49.257277
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a919-ed19-4a0e-8350-e8dd8e857190",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

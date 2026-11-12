@@ -1,0 +1,24 @@
+{
+  "id": "9d09fae5-f533-429c-936e-a8c11fc34a74",
+  "name": "Mehrzweckhalle Wasserliesch",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "In der Acht",
+    "hausnummer": "4",
+    "plz": "54332",
+    "ort": "Wasserliesch"
+  },
+  "lage": {
+    "lon": 6.54014,
+    "lat": 49.707044
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae5-f533-429c-936e-a8c11fc34a74",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

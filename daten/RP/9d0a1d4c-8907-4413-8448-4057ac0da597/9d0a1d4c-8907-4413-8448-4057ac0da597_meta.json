@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4c-8907-4413-8448-4057ac0da597",
+  "name": "Skilift Hohe Acht",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "plz": "53520",
+    "ort": "Kaltenborn"
+  },
+  "lage": {
+    "lon": 7.033389,
+    "lat": 50.389561
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4c-8907-4413-8448-4057ac0da597",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

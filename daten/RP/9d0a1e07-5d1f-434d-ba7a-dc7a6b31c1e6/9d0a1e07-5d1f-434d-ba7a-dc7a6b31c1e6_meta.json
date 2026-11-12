@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e07-5d1f-434d-ba7a-dc7a6b31c1e6",
+  "name": "Tennisplatz Senheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Zeller Straße",
+    "hausnummer": "14",
+    "plz": "56820",
+    "ort": "Senheim"
+  },
+  "lage": {
+    "lon": 7.209529,
+    "lat": 50.084175
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e07-5d1f-434d-ba7a-dc7a6b31c1e6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

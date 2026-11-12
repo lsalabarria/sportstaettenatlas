@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdfe-da74-4956-add7-c0ea9b728a1f",
+  "name": "Tennisanlage Maudach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Unterer Grasweg",
+    "hausnummer": "25",
+    "plz": "67065",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.374724,
+    "lat": 49.450755
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdfe-da74-4956-add7-c0ea9b728a1f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

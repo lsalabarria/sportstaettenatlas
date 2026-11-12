@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a940-48e1-4872-b2a5-5f3c061d494a",
+  "name": "Trifels – Kletterfelsen",
+  "kategorie": "Klettersportstätte",
+  "adresse": {
+    "strasse": "K2",
+    "plz": "76829",
+    "ort": "Annweiler am Trifels, Stadt"
+  },
+  "lage": {
+    "lon": 7.978492,
+    "lat": 49.195593
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a940-48e1-4872-b2a5-5f3c061d494a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

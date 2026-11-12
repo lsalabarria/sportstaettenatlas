@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a939-3471-43bb-828e-143f6fead6f2",
+  "name": "Sportgelände Süd",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dahlheimer Weg",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.240534,
+    "lat": 49.988673
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a939-3471-43bb-828e-143f6fead6f2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

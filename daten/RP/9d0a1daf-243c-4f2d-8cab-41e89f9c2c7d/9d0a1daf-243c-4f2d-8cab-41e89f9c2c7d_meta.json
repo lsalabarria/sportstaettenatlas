@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1daf-243c-4f2d-8cab-41e89f9c2c7d",
+  "name": "Tennisplatz Schlosspark Neuwied",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Schlossstraße",
+    "hausnummer": "1",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.455345,
+    "lat": 50.430396
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daf-243c-4f2d-8cab-41e89f9c2c7d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

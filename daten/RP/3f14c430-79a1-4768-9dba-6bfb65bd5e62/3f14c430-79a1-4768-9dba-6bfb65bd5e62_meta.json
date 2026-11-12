@@ -1,0 +1,32 @@
+{
+  "id": "3f14c430-79a1-4768-9dba-6bfb65bd5e62",
+  "name": "Schützengesellschaft zu Mainz 1862 e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Am Fort Gonsenheim",
+    "hausnummer": "90",
+    "plz": "55122",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.242074,
+    "lat": 50.00249
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Schützengesellschaft zu Mainz 1862",
+  "betreiber": "Schützengesellschaft zu Mainz 1862",
+  "website": "www.msg1862.de",
+  "sportarten": [
+    "Schießsport",
+    "Bogenschießen"
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "3f14c430-79a1-4768-9dba-6bfb65bd5e62",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

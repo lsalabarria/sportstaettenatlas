@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5b-4f44-4873-8c90-a658a5637de0",
+  "name": "Bolzplatz Thörlingen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "plz": "56291",
+    "ort": "Thörlingen"
+  },
+  "lage": {
+    "lon": 7.534573,
+    "lat": 50.134309
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5b-4f44-4873-8c90-a658a5637de0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd9d-2b47-47ed-88b0-36e5a200e765",
+  "name": "Sportplatz Schulzentrum Bendorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mühlenstraße",
+    "hausnummer": "35",
+    "plz": "56170",
+    "ort": "Bendorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.575668,
+    "lat": 50.428307
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd9d-2b47-47ed-88b0-36e5a200e765",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

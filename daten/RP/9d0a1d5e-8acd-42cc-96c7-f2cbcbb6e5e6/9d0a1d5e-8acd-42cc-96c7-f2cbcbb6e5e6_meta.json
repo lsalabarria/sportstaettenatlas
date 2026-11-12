@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5e-8acd-42cc-96c7-f2cbcbb6e5e6",
+  "name": "Sportplatz Hahn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L193",
+    "plz": "56850",
+    "ort": "Hahn"
+  },
+  "lage": {
+    "lon": 7.267047,
+    "lat": 49.95744
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5e-8acd-42cc-96c7-f2cbcbb6e5e6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

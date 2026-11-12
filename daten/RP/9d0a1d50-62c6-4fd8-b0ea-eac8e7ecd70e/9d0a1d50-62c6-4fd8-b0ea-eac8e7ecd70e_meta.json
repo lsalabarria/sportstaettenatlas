@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d50-62c6-4fd8-b0ea-eac8e7ecd70e",
+  "name": "Badestelle mit Liegewiese am Laacher See",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Laacher See",
+    "plz": "56653",
+    "ort": "Glees"
+  },
+  "lage": {
+    "lon": 7.269462,
+    "lat": 50.422824
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-62c6-4fd8-b0ea-eac8e7ecd70e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

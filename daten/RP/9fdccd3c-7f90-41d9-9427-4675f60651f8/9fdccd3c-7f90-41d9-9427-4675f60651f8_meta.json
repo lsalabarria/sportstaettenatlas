@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd3c-7f90-41d9-9427-4675f60651f8",
+  "name": "Stadion am Rheindamm",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ludwigsplatz",
+    "hausnummer": "5a",
+    "plz": "67122",
+    "ort": "Altrip"
+  },
+  "lage": {
+    "lon": 8.502951,
+    "lat": 49.430464
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd3c-7f90-41d9-9427-4675f60651f8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cc7-8915-48f9-b552-e27612f99880",
+  "name": "Sportplatz Argeschwang",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Heidestraße",
+    "plz": "55595",
+    "ort": "Argenschwang"
+  },
+  "lage": {
+    "lon": 7.708309,
+    "lat": 49.877972
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cc7-8915-48f9-b552-e27612f99880",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

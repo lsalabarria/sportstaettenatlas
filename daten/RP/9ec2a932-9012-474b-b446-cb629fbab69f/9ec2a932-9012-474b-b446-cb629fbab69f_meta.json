@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a932-9012-474b-b446-cb629fbab69f",
+  "name": "Sportanlage des Abenteurspielplatzes Neustadt an der Weinstraße",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Harthäuserweg",
+    "plz": "67433",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.162042,
+    "lat": 49.358102
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a932-9012-474b-b446-cb629fbab69f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

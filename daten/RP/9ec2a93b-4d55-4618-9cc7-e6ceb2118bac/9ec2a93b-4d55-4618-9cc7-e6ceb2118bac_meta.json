@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a93b-4d55-4618-9cc7-e6ceb2118bac",
+  "name": "Sporthalle „Am Großen Sand“",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Obere Kreuzstraße",
+    "hausnummer": "11-13",
+    "plz": "55120",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.219153,
+    "lat": 50.012048
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93b-4d55-4618-9cc7-e6ceb2118bac",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d58-b0b9-44fa-bf2c-d88fb61754bf",
+  "name": "Sportplatz Löffelswald",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zeller Straße",
+    "plz": "56858",
+    "ort": "Peterswald-Löffelscheid"
+  },
+  "lage": {
+    "lon": 7.306883,
+    "lat": 50.007436
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d58-b0b9-44fa-bf2c-d88fb61754bf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

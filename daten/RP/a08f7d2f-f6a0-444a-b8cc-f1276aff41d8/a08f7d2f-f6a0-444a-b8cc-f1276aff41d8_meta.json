@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d2f-f6a0-444a-b8cc-f1276aff41d8",
+  "name": "Turnhalle Dr. Martin-Luther-King Grundschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Richard-Wagner-Straße",
+    "hausnummer": "39",
+    "plz": "55543",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.883306,
+    "lat": 49.837085
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d2f-f6a0-444a-b8cc-f1276aff41d8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

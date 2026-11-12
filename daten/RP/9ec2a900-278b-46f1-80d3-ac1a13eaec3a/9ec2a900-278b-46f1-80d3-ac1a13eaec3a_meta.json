@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a900-278b-46f1-80d3-ac1a13eaec3a",
+  "name": "Bolzplatz Obersülzen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Neuweg",
+    "plz": "67271",
+    "ort": "Obersülzen"
+  },
+  "lage": {
+    "lon": 8.211662,
+    "lat": 49.56717
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a900-278b-46f1-80d3-ac1a13eaec3a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

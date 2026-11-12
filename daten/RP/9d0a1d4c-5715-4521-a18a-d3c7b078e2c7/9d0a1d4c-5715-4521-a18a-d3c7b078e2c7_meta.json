@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4c-5715-4521-a18a-d3c7b078e2c7",
+  "name": "Wald- und Wiesenfestplatz Hümmel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Münstereifeler Straße",
+    "plz": "53520",
+    "ort": "Hümmel"
+  },
+  "lage": {
+    "lon": 6.771714,
+    "lat": 50.464885
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4c-5715-4521-a18a-d3c7b078e2c7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

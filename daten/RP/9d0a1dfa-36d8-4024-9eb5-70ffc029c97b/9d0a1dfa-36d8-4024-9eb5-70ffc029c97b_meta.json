@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dfa-36d8-4024-9eb5-70ffc029c97b",
+  "name": "Tennisplätze Sporthotel Kannenbäckerland",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Zur Fuchshohl",
+    "hausnummer": "1",
+    "plz": "56235",
+    "ort": "Ransbach-Baumbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.73168,
+    "lat": 50.476943
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfa-36d8-4024-9eb5-70ffc029c97b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

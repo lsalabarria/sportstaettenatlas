@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d61-caf6-451d-bbbd-ce0b29a63dca",
+  "name": "Bikepark Pumptrack Schmiedel",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Schmiedel",
+    "plz": "55469",
+    "ort": "Nannhausen"
+  },
+  "lage": {
+    "lon": 7.504558,
+    "lat": 49.977889
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d61-caf6-451d-bbbd-ce0b29a63dca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

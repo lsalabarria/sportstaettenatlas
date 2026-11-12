@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a90e-7d5d-4ed1-86dc-342ed78f94d4",
+  "name": "Sportplatz Bodenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Laubenheimer Str.",
+    "hausnummer": "12",
+    "plz": "55294",
+    "ort": "Bodenheim"
+  },
+  "lage": {
+    "lon": 8.307845,
+    "lat": 49.931893
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90e-7d5d-4ed1-86dc-342ed78f94d4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

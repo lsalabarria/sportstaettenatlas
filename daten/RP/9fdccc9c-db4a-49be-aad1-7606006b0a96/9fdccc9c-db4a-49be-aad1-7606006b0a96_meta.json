@@ -1,0 +1,25 @@
+{
+  "id": "9fdccc9c-db4a-49be-aad1-7606006b0a96",
+  "name": "Sportanlage Leimersheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "St.Gertrudis-Straße",
+    "hausnummer": "7",
+    "plz": "76774",
+    "ort": "Leimersheim"
+  },
+  "lage": {
+    "lon": 8.351744,
+    "lat": 49.125145
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc9c-db4a-49be-aad1-7606006b0a96",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

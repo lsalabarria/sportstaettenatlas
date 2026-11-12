@@ -1,0 +1,24 @@
+{
+  "id": "9d09fae1-4611-487b-b24c-3d3e96a21def",
+  "name": "Sporthalle Pluwig",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kreuzgarten",
+    "hausnummer": "15",
+    "plz": "54316",
+    "ort": "Pluwig"
+  },
+  "lage": {
+    "lon": 6.722605,
+    "lat": 49.694531
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae1-4611-487b-b24c-3d3e96a21def",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

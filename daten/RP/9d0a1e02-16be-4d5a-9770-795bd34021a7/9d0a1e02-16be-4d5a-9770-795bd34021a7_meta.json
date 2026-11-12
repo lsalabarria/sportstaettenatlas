@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e02-16be-4d5a-9770-795bd34021a7",
+  "name": "Fitnessanlage RheinAhrCampus",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Von-Cramm-Straße",
+    "plz": "53424",
+    "ort": "Remagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.252843,
+    "lat": 50.572786
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e02-16be-4d5a-9770-795bd34021a7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

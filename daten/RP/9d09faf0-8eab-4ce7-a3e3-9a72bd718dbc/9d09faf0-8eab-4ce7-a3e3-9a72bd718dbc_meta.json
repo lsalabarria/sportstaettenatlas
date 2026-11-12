@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf0-8eab-4ce7-a3e3-9a72bd718dbc",
+  "name": "Tennisplätze Niederahr",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Mühlenweg",
+    "plz": "56414",
+    "ort": "Niederahr"
+  },
+  "lage": {
+    "lon": 7.863646,
+    "lat": 50.489108
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf0-8eab-4ce7-a3e3-9a72bd718dbc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

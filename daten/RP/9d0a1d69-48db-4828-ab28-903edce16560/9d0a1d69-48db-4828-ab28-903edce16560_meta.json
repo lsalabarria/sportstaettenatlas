@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d69-48db-4828-ab28-903edce16560",
+  "name": "Sportplatz Lötzbeuren",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Oberstraße",
+    "hausnummer": "42",
+    "plz": "56843",
+    "ort": "Lötzbeuren"
+  },
+  "lage": {
+    "lon": 7.222721,
+    "lat": 49.933688
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d69-48db-4828-ab28-903edce16560",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

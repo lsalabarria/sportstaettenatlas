@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4e6-5b16-49ca-826d-8edf77ee8c0b",
+  "name": "Reitanlage Philippshof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Philippshof",
+    "hausnummer": "4",
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.519332,
+    "lat": 49.949169
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e6-5b16-49ca-826d-8edf77ee8c0b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d67-b2c2-42a9-98a6-92110a1aa143",
+  "name": "Dreyshalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Talstraße",
+    "plz": "54518",
+    "ort": "Dreis"
+  },
+  "lage": {
+    "lon": 6.820882,
+    "lat": 49.937176
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d67-b2c2-42a9-98a6-92110a1aa143",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccf4-782f-4877-8c2b-02e097048b2b",
+  "name": "Schießsportverein 1973 Netzbach e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Heringer Str.",
+    "hausnummer": "3",
+    "plz": "65623",
+    "ort": "Netzbach"
+  },
+  "lage": {
+    "lon": 8.091203,
+    "lat": 50.320723
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccf4-782f-4877-8c2b-02e097048b2b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

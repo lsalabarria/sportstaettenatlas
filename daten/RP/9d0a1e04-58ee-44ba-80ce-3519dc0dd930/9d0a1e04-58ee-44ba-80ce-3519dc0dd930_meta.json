@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e04-58ee-44ba-80ce-3519dc0dd930",
+  "name": "Schützenhalle Westum",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Krechelheimer Straße",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.228996,
+    "lat": 50.531547
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e04-58ee-44ba-80ce-3519dc0dd930",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

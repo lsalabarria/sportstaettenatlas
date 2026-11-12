@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc60-00a1-40be-a360-159f777ba58f",
+  "name": "Hallenbad Aquafit",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Laubacher Straße",
+    "hausnummer": "42",
+    "plz": "56288",
+    "ort": "Kastellaun, Stadt"
+  },
+  "lage": {
+    "lon": 7.44685,
+    "lat": 50.071
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc60-00a1-40be-a360-159f777ba58f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

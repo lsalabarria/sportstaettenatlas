@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d55-b2a7-4e7a-b93f-92ec20408677",
+  "name": "Sportplatz Kail",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf Peschhelle",
+    "plz": "56829",
+    "ort": "Kail"
+  },
+  "lage": {
+    "lon": 7.249078,
+    "lat": 50.181092
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d55-b2a7-4e7a-b93f-92ec20408677",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

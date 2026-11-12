@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4f-494e-43a2-a263-dfed1b7d88c6",
+  "name": "Sportplatz Brohl-Lützing",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zeibstraße",
+    "plz": "56656",
+    "ort": "Brohl-Lützing"
+  },
+  "lage": {
+    "lon": 7.287098,
+    "lat": 50.476762
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4f-494e-43a2-a263-dfed1b7d88c6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

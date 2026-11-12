@@ -1,0 +1,24 @@
+{
+  "id": "9fdcce27-0e56-4c7f-88a6-b0d206e19871",
+  "name": "SV Normannia Pfiffligheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Adelheidstraße",
+    "plz": "67549",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.32316,
+    "lat": 49.637208
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce27-0e56-4c7f-88a6-b0d206e19871",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

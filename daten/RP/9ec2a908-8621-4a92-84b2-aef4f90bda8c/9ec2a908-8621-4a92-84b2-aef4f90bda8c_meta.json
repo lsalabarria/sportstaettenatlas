@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a908-8621-4a92-84b2-aef4f90bda8c",
+  "name": "Rhein-Nahe Halle Weiler",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Mannesmannstraße",
+    "hausnummer": "10",
+    "plz": "55413",
+    "ort": "Weiler bei Bingen"
+  },
+  "lage": {
+    "lon": 7.858328,
+    "lat": 49.956958
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a908-8621-4a92-84b2-aef4f90bda8c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

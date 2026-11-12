@@ -1,0 +1,24 @@
+{
+  "id": "9f01cc59-4209-4432-8e79-9b44030b7a30",
+  "name": "Naherholungsgebiet Johanneswiesen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Baggersee Johanneswiese",
+    "plz": "76751",
+    "ort": "Jockgrim"
+  },
+  "lage": {
+    "lon": 8.29029,
+    "lat": 49.08984
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc59-4209-4432-8e79-9b44030b7a30",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

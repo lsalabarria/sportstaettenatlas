@@ -1,0 +1,24 @@
+{
+  "id": "9d09facb-6349-4d96-9d3e-a6bbdfb27273",
+  "name": "Schützenhaus Adler Michelbach e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Frankfurter Straße",
+    "hausnummer": "64",
+    "plz": "57610",
+    "ort": "Michelbach (Westerwald)"
+  },
+  "lage": {
+    "lon": 7.666845,
+    "lat": 50.679627
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facb-6349-4d96-9d3e-a6bbdfb27273",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

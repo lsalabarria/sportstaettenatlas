@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad2-0208-40e7-8c2b-c96c07e54d46",
+  "name": "Spielplatz Blickhäuser Wald",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Martin-Schmidt-Straße",
+    "plz": "57537",
+    "ort": "Mittelhof"
+  },
+  "lage": {
+    "lon": 7.769972,
+    "lat": 50.775533
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad2-0208-40e7-8c2b-c96c07e54d46",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

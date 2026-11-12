@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1daa-096d-46c6-aac7-2c5a07b055b0",
+  "name": "TC Grün-Weiss Herdorf e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Burgstraße",
+    "plz": "57562",
+    "ort": "Herdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.95002,
+    "lat": 50.782356
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daa-096d-46c6-aac7-2c5a07b055b0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

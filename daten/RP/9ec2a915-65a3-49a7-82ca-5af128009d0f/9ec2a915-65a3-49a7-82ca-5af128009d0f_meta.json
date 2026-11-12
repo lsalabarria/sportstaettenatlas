@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a915-65a3-49a7-82ca-5af128009d0f",
+  "name": "Sportplatz Gehrweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "18",
+    "plz": "67724",
+    "ort": "Gehrweiler"
+  },
+  "lage": {
+    "lon": 7.779438,
+    "lat": 49.572082
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a915-65a3-49a7-82ca-5af128009d0f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

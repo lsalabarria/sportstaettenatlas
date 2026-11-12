@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e05-b1b1-444e-8fe8-59b88042e9d4",
+  "name": "Reiterhof Adenau",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hirzensteinstraße",
+    "plz": "53518",
+    "ort": "Adenau, Stadt"
+  },
+  "lage": {
+    "lon": 6.922153,
+    "lat": 50.376833
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e05-b1b1-444e-8fe8-59b88042e9d4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

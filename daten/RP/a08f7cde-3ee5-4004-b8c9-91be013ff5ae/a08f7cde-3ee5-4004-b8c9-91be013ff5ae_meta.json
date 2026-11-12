@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cde-3ee5-4004-b8c9-91be013ff5ae",
+  "name": "Sportfeld Gutenberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Sportfeld",
+    "plz": "55595",
+    "ort": "Gutenberg"
+  },
+  "lage": {
+    "lon": 7.797128,
+    "lat": 49.875625
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cde-3ee5-4004-b8c9-91be013ff5ae",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

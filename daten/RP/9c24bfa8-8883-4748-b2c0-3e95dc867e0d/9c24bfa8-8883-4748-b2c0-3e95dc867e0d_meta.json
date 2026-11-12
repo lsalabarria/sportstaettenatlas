@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa8-8883-4748-b2c0-3e95dc867e0d",
+  "name": "Sporthalle der Regenbogenschule/Grundschule Lützel",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Weinbergstr.",
+    "hausnummer": "5-6",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.586899,
+    "lat": 50.366656
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa8-8883-4748-b2c0-3e95dc867e0d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

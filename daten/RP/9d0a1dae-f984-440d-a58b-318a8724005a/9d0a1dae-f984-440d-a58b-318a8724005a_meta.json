@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dae-f984-440d-a58b-318a8724005a",
+  "name": "Johannes-Lohmann-Halle Leichtathletikhalle LG Rhein-WiedRhein-Wied-Stadion",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Andernacher Straße",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.45909,
+    "lat": 50.435177
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dae-f984-440d-a58b-318a8724005a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1daf-464e-4847-9822-a2e52ed9702a",
+  "name": "Landesschule für Gehörlose u. Schwerhörige",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Elisabethstraße",
+    "hausnummer": "46",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.471751,
+    "lat": 50.424191
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daf-464e-4847-9822-a2e52ed9702a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

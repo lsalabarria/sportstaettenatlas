@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a900-b6bf-4ae6-9aec-ce9c7c47632f",
+  "name": "Sportplatz Großkarlbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportpl.",
+    "hausnummer": "11",
+    "plz": "67229",
+    "ort": "Großkarlbach"
+  },
+  "lage": {
+    "lon": 8.231818,
+    "lat": 49.540744
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a900-b6bf-4ae6-9aec-ce9c7c47632f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

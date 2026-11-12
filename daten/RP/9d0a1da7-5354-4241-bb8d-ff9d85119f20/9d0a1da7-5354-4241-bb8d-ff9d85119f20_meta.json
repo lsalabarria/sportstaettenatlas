@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da7-5354-4241-bb8d-ff9d85119f20",
+  "name": "Sportplatz Uersfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "plz": "56767",
+    "ort": "Uersfeld"
+  },
+  "lage": {
+    "lon": 7.004523,
+    "lat": 50.257317
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da7-5354-4241-bb8d-ff9d85119f20",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

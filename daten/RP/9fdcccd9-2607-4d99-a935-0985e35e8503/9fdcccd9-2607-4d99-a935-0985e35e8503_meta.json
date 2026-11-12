@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccd9-2607-4d99-a935-0985e35e8503",
+  "name": "Schulsporthalle Rieden",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "hausnummer": "38 A",
+    "plz": "56745",
+    "ort": "Rieden"
+  },
+  "lage": {
+    "lon": 7.176847,
+    "lat": 50.392906
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccd9-2607-4d99-a935-0985e35e8503",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

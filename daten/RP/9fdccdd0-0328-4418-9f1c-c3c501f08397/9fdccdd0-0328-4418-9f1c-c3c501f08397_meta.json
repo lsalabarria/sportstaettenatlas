@@ -1,0 +1,23 @@
+{
+  "id": "9fdccdd0-0328-4418-9f1c-c3c501f08397",
+  "name": "Schützengesellschaft Braubach 1878 e. V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "plz": "56388",
+    "ort": "Braubach, Stadt"
+  },
+  "lage": {
+    "lon": 7.662006,
+    "lat": 50.274222
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdd0-0328-4418-9f1c-c3c501f08397",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

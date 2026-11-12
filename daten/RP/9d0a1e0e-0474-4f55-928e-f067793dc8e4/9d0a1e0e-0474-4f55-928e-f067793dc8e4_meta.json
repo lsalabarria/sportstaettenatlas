@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e0e-0474-4f55-928e-f067793dc8e4",
+  "name": "Grundschule Rheinböllen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Marktstraße",
+    "hausnummer": "47",
+    "plz": "55494",
+    "ort": "Rheinböllen, Stadt"
+  },
+  "lage": {
+    "lon": 7.671112,
+    "lat": 50.009644
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0e-0474-4f55-928e-f067793dc8e4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

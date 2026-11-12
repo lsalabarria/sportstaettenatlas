@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91d-0a9a-4b4a-bafd-2101e52d8eae",
+  "name": "Sportanlage SV Kapellen-Drusweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Raiffeisenstraße",
+    "hausnummer": "6",
+    "plz": "76889",
+    "ort": "Kapellen-Drusweiler"
+  },
+  "lage": {
+    "lon": 8.034216,
+    "lat": 49.104289
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91d-0a9a-4b4a-bafd-2101e52d8eae",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

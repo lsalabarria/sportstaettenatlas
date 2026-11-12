@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1da0-12ba-4845-894c-32b6e47a416c",
+  "name": "Sportplatz Gipperath",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54533",
+    "ort": "Gipperath"
+  },
+  "lage": {
+    "lon": 6.868378,
+    "lat": 50.040685
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da0-12ba-4845-894c-32b6e47a416c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

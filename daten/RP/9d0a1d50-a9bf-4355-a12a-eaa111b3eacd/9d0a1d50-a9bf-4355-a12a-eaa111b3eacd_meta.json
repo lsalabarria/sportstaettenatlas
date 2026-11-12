@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d50-a9bf-4355-a12a-eaa111b3eacd",
+  "name": "Pferdefreunde Leyerhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Leyerhof",
+    "hausnummer": "4",
+    "plz": "53426",
+    "ort": "Königsfeld"
+  },
+  "lage": {
+    "lon": 7.197907,
+    "lat": 50.492719
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-a9bf-4355-a12a-eaa111b3eacd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

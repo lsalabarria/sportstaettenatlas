@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db4-f5e7-4409-9c4e-f73b49fbabff",
+  "name": "Boulebahn Berendsborn",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Berendsborn",
+    "hausnummer": "12",
+    "plz": "54329",
+    "ort": "Konz, Stadt"
+  },
+  "lage": {
+    "lon": 6.572686,
+    "lat": 49.689451
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db4-f5e7-4409-9c4e-f73b49fbabff",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

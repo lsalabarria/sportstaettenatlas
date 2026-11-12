@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5f-7b8b-46d6-bed0-a104d05a4206",
+  "name": "Bolzplatz Schlierschied",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "In der Struth",
+    "plz": "55943",
+    "ort": "Schlierschied"
+  },
+  "lage": {
+    "lon": 7.446134,
+    "lat": 49.872063
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5f-7b8b-46d6-bed0-a104d05a4206",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

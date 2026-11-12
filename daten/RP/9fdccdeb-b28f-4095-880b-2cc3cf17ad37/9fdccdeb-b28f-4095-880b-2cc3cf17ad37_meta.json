@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdeb-b28f-4095-880b-2cc3cf17ad37",
+  "name": "Beachvolleyballfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hohenecker Straße",
+    "hausnummer": "25",
+    "plz": "67657",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.741106,
+    "lat": 49.430149
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdeb-b28f-4095-880b-2cc3cf17ad37",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

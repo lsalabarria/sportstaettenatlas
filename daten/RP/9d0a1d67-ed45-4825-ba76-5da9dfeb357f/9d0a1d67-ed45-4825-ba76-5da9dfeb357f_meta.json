@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d67-ed45-4825-ba76-5da9dfeb357f",
+  "name": "Sportplatz im Spanischen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Spanischen",
+    "plz": "54518",
+    "ort": "Niersbach"
+  },
+  "lage": {
+    "lon": 6.743008,
+    "lat": 49.945096
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d67-ed45-4825-ba76-5da9dfeb357f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

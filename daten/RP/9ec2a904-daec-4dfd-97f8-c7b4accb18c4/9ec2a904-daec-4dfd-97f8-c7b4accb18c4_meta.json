@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a904-daec-4dfd-97f8-c7b4accb18c4",
+  "name": "Doc O'Lena Ranch Meckenheim",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Mörschhof",
+    "hausnummer": "99",
+    "plz": "67149",
+    "ort": "Meckenheim"
+  },
+  "lage": {
+    "lon": 8.226112,
+    "lat": 49.403293
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a904-daec-4dfd-97f8-c7b4accb18c4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

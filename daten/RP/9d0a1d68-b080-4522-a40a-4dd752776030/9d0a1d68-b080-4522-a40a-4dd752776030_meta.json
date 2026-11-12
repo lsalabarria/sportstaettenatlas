@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d68-b080-4522-a40a-4dd752776030",
+  "name": "Sportplatz TuS 1919 Platten e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Bieberbach",
+    "hausnummer": "2",
+    "plz": "54518",
+    "ort": "Platten"
+  },
+  "lage": {
+    "lon": 6.955851,
+    "lat": 49.954521
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d68-b080-4522-a40a-4dd752776030",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

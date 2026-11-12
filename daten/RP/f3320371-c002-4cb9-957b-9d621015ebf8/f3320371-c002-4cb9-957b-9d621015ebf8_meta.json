@@ -1,0 +1,25 @@
+{
+  "id": "f3320371-c002-4cb9-957b-9d621015ebf8",
+  "name": "Anschubanlage Kufensport",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lohmühle",
+    "plz": "57627",
+    "ort": "Hachenburg, Stadt"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Stadt Hachenburg",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "f3320371-c002-4cb9-957b-9d621015ebf8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d55-5e74-451e-bc8c-6a49715f18c1",
+  "name": "Bolzplatz Hambuch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L108",
+    "plz": "56761",
+    "ort": "Hambuch"
+  },
+  "lage": {
+    "lon": 7.184798,
+    "lat": 50.235044
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d55-5e74-451e-bc8c-6a49715f18c1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

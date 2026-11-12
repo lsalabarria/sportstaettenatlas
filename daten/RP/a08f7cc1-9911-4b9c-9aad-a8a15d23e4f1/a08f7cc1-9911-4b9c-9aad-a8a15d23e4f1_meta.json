@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cc1-9911-4b9c-9aad-a8a15d23e4f1",
+  "name": "Schul- und Sportzentrum Disibodenberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Turnhallstraße",
+    "hausnummer": "6",
+    "plz": "55571",
+    "ort": "Odernheim am Glan"
+  },
+  "lage": {
+    "lon": 7.704816,
+    "lat": 49.770007
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cc1-9911-4b9c-9aad-a8a15d23e4f1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

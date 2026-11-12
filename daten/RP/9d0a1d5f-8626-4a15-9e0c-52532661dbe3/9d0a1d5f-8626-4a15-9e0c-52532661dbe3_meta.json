@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5f-8626-4a15-9e0c-52532661dbe3",
+  "name": "Bolzplatz Schwarzen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "55481",
+    "ort": "Schwarzen"
+  },
+  "lage": {
+    "lon": 7.332051,
+    "lat": 49.959697
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5f-8626-4a15-9e0c-52532661dbe3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4ec-8d1a-40fa-b089-521f5a1b8738",
+  "name": "Tennisplatz Dasburg",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Auf der Lehmkaul",
+    "plz": "54689",
+    "ort": "Dasburg"
+  },
+  "lage": {
+    "lon": 6.138163,
+    "lat": 50.04541
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ec-8d1a-40fa-b089-521f5a1b8738",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

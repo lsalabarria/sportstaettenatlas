@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1df9-af3a-40ef-8173-02200e591c0f",
+  "name": "Tennishalle Base-Tennis",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Moorsberg",
+    "hausnummer": "4",
+    "plz": "56203",
+    "ort": "Höhr-Grenzhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.665154,
+    "lat": 50.449011
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df9-af3a-40ef-8173-02200e591c0f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

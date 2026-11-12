@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da9-a55d-41a8-a22a-cf48de3f4a96",
+  "name": "Tennisclub TC Daaden e. V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Saynische Straße",
+    "plz": "57567",
+    "ort": "Daaden, Stadt"
+  },
+  "lage": {
+    "lon": 7.988519,
+    "lat": 50.733702
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da9-a55d-41a8-a22a-cf48de3f4a96",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

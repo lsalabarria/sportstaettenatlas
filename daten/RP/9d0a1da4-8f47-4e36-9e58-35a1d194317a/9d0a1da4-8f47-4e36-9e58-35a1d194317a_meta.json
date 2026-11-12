@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da4-8f47-4e36-9e58-35a1d194317a",
+  "name": "Reitplatz Flesten",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "K69",
+    "plz": "54579",
+    "ort": "Üxheim"
+  },
+  "lage": {
+    "lon": 6.72717,
+    "lat": 50.323111
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da4-8f47-4e36-9e58-35a1d194317a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

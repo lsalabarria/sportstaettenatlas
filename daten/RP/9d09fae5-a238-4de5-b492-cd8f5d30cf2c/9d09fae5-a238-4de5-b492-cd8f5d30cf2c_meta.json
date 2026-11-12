@@ -1,0 +1,22 @@
+{
+  "id": "9d09fae5-a238-4de5-b492-cd8f5d30cf2c",
+  "name": "Tennisanlage TC Metzdorf",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "plz": "54308",
+    "ort": "Langsur"
+  },
+  "lage": {
+    "lon": 6.503718,
+    "lat": 49.742401
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae5-a238-4de5-b492-cd8f5d30cf2c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dff-1b1a-4efe-90c4-d060b72a99fa",
+  "name": "Ahrstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "hausnummer": "3",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.100196,
+    "lat": 50.538448
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dff-1b1a-4efe-90c4-d060b72a99fa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

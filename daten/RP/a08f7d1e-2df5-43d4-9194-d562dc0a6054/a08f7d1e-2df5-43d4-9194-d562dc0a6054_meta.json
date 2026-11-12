@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d1e-2df5-43d4-9194-d562dc0a6054",
+  "name": "TC Kusel",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Blaubacher Straße",
+    "hausnummer": "16",
+    "plz": "66869",
+    "ort": "Kusel, Stadt"
+  },
+  "lage": {
+    "lon": 7.392985,
+    "lat": 49.547189
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d1e-2df5-43d4-9194-d562dc0a6054",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

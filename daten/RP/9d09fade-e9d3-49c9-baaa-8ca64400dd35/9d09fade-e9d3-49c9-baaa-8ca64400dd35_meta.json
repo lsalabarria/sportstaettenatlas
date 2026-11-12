@@ -1,0 +1,23 @@
+{
+  "id": "9d09fade-e9d3-49c9-baaa-8ca64400dd35",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "B53",
+    "plz": "54349",
+    "ort": "Trittenheim"
+  },
+  "lage": {
+    "lon": 6.899029,
+    "lat": 49.831314
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fade-e9d3-49c9-baaa-8ca64400dd35",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

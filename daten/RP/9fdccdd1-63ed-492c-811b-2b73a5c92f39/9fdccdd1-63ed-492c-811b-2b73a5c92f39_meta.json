@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdd1-63ed-492c-811b-2b73a5c92f39",
+  "name": "Bolzplatz Braubach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Herrngartenstraße",
+    "hausnummer": "3",
+    "plz": "56388",
+    "ort": "Braubach, Stadt"
+  },
+  "lage": {
+    "lon": 7.638173,
+    "lat": 50.276806
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdd1-63ed-492c-811b-2b73a5c92f39",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

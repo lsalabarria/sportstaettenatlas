@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa4-ee4c-4530-98fe-0698db4b3c6d",
+  "name": "Basketballfeld Grundschule Am Löwentor",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Finkenherd",
+    "hausnummer": "2",
+    "plz": "56075",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.578936,
+    "lat": 50.347002
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa4-ee4c-4530-98fe-0698db4b3c6d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

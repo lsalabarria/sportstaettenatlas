@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e0d-793f-48c9-b0b4-c9c433bccae3",
+  "name": "Bolzplatz Kirchberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jakob-Göhl-Straße",
+    "plz": "55481",
+    "ort": "Kirchberg (Hunsrück), Stadt"
+  },
+  "lage": {
+    "lon": 7.398281,
+    "lat": 49.949981
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0d-793f-48c9-b0b4-c9c433bccae3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdccc98-ca02-4b1c-81b1-c52708525e53",
+  "name": "Fitnessstudio Get-Fit",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Mittlere Ortsstraße",
+    "hausnummer": "12",
+    "plz": "76761",
+    "ort": "Rülzheim"
+  },
+  "lage": {
+    "lon": 8.298257,
+    "lat": 49.157567
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc98-ca02-4b1c-81b1-c52708525e53",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

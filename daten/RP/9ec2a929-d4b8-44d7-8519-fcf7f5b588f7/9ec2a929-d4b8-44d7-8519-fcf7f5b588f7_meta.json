@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a929-d4b8-44d7-8519-fcf7f5b588f7",
+  "name": "Sportplatz Blumengarten",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Blumengarten",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.059327,
+    "lat": 49.984384
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a929-d4b8-44d7-8519-fcf7f5b588f7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

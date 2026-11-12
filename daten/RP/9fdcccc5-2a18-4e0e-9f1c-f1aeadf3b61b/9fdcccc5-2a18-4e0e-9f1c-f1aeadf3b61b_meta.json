@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccc5-2a18-4e0e-9f1c-f1aeadf3b61b",
+  "name": "Tennisplatz Saffig",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Auf dem Dorn",
+    "plz": "56648",
+    "ort": "Saffig"
+  },
+  "lage": {
+    "lon": 7.405972,
+    "lat": 50.382799
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccc5-2a18-4e0e-9f1c-f1aeadf3b61b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

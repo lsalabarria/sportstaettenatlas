@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a901-3198-4a57-8adc-c6e1a652611d",
+  "name": "Sportplatz Ebertsheim Platz 2",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rodenbacher Str.",
+    "hausnummer": "11",
+    "plz": "67280",
+    "ort": "Ebertsheim"
+  },
+  "lage": {
+    "lon": 8.106476,
+    "lat": 49.570346
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a901-3198-4a57-8adc-c6e1a652611d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

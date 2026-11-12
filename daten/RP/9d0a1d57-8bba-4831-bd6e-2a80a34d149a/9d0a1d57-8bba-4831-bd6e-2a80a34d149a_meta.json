@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d57-8bba-4831-bd6e-2a80a34d149a",
+  "name": "Grundschule Lutzerath",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "2",
+    "plz": "56826",
+    "ort": "Lutzerath"
+  },
+  "lage": {
+    "lon": 7.014109,
+    "lat": 50.130269
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d57-8bba-4831-bd6e-2a80a34d149a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a92c-ebbb-4eed-b71f-c0613af5b2d0",
+  "name": "Sportplatz Schul- und Sportzentrum Nieder-Olm",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Maler-Metten-Straße",
+    "plz": "55268",
+    "ort": "Nieder-Olm, Stadt"
+  },
+  "lage": {
+    "lon": 8.194963,
+    "lat": 49.903795
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92c-ebbb-4eed-b71f-c0613af5b2d0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

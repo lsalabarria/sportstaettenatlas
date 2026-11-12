@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c75-2937-41e4-95e2-be5cb0b802ab",
+  "name": "Gemeindehalle Sulzheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Böhlweg",
+    "hausnummer": "3",
+    "plz": "55286",
+    "ort": "Sulzheim"
+  },
+  "lage": {
+    "lon": 8.091882,
+    "lat": 49.845939
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c75-2937-41e4-95e2-be5cb0b802ab",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

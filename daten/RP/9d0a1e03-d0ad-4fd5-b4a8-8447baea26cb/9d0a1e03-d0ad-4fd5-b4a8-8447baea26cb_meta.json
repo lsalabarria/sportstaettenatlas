@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e03-d0ad-4fd5-b4a8-8447baea26cb",
+  "name": "Sportplatz Löhndorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Weststraße",
+    "hausnummer": "1",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.199964,
+    "lat": 50.530967
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e03-d0ad-4fd5-b4a8-8447baea26cb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

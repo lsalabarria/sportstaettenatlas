@@ -1,0 +1,24 @@
+{
+  "id": "9d09fac8-fc88-4fd5-8a56-f244a7b7f252",
+  "name": "Soccer-Cage Pestalozzi Grundschule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ziegelweg",
+    "hausnummer": "4",
+    "plz": "57610",
+    "ort": "Altenkirchen"
+  },
+  "lage": {
+    "lon": 7.639259,
+    "lat": 50.687915
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac8-fc88-4fd5-8a56-f244a7b7f252",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

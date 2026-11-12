@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd22-622e-4bb9-864e-b2ee7f82e51b",
+  "name": "Sportplatz Waldstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "plz": "66892",
+    "ort": "Bruchmühlbach-Miesau"
+  },
+  "lage": {
+    "lon": 7.447012,
+    "lat": 49.382936
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd22-622e-4bb9-864e-b2ee7f82e51b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

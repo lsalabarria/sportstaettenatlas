@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a910-ec3d-417d-b0d2-8c5ec6fdfab5",
+  "name": "Königsberghalle Dexheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "25",
+    "plz": "55278",
+    "ort": "Dexheim"
+  },
+  "lage": {
+    "lon": 8.313964,
+    "lat": 49.841119
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a910-ec3d-417d-b0d2-8c5ec6fdfab5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

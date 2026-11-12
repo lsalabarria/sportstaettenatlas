@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d62-376c-4932-bc6d-c52f18f2310c",
+  "name": "KK Schützenverein 1932 Ohlweiler e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Schützenstraße",
+    "plz": "55469",
+    "ort": "Ohlweiler"
+  },
+  "lage": {
+    "lon": 7.504678,
+    "lat": 49.965478
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d62-376c-4932-bc6d-c52f18f2310c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

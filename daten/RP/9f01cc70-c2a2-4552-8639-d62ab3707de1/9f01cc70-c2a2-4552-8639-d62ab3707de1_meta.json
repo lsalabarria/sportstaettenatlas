@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc70-c2a2-4552-8639-d62ab3707de1",
+  "name": "Freibad Pellenz",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Rauscherstraße",
+    "hausnummer": "98",
+    "plz": "56626",
+    "ort": "Andernach, Stadt"
+  },
+  "lage": {
+    "lon": 7.40657,
+    "lat": 50.38915
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc70-c2a2-4552-8639-d62ab3707de1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a923-2aad-48ea-9b82-4f6a1729acee",
+  "name": "Schützengesellschaft Grünstadt und Umgebung",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Stadtpark",
+    "plz": "67269",
+    "ort": "Grünstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.152912,
+    "lat": 49.569845
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a923-2aad-48ea-9b82-4f6a1729acee",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

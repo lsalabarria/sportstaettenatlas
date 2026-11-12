@@ -1,0 +1,22 @@
+{
+  "id": "9c24f4ea-03a5-4813-bc51-1b544d6c5433",
+  "name": "Basketballplatz Kyllburg",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "54655",
+    "ort": "Kyllburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.587704,
+    "lat": 50.036908
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ea-03a5-4813-bc51-1b544d6c5433",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

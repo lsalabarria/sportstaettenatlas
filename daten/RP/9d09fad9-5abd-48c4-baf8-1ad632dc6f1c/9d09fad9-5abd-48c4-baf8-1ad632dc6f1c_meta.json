@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad9-5abd-48c4-baf8-1ad632dc6f1c",
+  "name": "Skateanlage Bonefeld",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Am Schwanenteich",
+    "hausnummer": "12",
+    "plz": "56579",
+    "ort": "Bonefeld"
+  },
+  "lage": {
+    "lon": 7.493083,
+    "lat": 50.529141
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad9-5abd-48c4-baf8-1ad632dc6f1c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

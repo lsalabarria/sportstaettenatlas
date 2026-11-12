@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d68-7700-4e4f-91ca-50a169e780e2",
+  "name": "Sportplatz Bergweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hupperather Straße",
+    "hausnummer": "31",
+    "plz": "54518",
+    "ort": "Bergweiler"
+  },
+  "lage": {
+    "lon": 6.819441,
+    "lat": 49.974021
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d68-7700-4e4f-91ca-50a169e780e2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

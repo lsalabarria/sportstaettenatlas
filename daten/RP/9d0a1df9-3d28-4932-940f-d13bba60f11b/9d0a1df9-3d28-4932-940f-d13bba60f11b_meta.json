@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1df9-3d28-4932-940f-d13bba60f11b",
+  "name": "Sporthalle des Landesmusikgymnasiums Rheinland-Pfalz",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Humboldtstraße",
+    "hausnummer": "6",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.8176,
+    "lat": 50.441225
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df9-3d28-4932-940f-d13bba60f11b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

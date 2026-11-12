@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a901-b8fa-441d-87b6-9de7c4a5dd07",
+  "name": "Sporthalle Hettenleidelheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Nackterstraße",
+    "hausnummer": "6",
+    "plz": "67310",
+    "ort": "Hettenleidelheim"
+  },
+  "lage": {
+    "lon": 8.081513,
+    "lat": 49.536377
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a901-b8fa-441d-87b6-9de7c4a5dd07",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

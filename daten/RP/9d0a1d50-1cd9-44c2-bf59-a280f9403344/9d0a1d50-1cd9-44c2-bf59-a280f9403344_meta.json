@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d50-1cd9-44c2-bf59-a280f9403344",
+  "name": "Fußball Cage Burgbrohl",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brohltalstraße",
+    "plz": "56659",
+    "ort": "Burgbrohl"
+  },
+  "lage": {
+    "lon": 7.278674,
+    "lat": 50.457237
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-1cd9-44c2-bf59-a280f9403344",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

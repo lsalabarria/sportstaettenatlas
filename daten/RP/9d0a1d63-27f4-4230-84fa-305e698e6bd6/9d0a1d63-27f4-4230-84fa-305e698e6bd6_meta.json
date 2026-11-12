@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d63-27f4-4230-84fa-305e698e6bd6",
+  "name": "Sportplatz Tiefenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L108",
+    "plz": "55471",
+    "ort": "Tiefenbach"
+  },
+  "lage": {
+    "lon": 7.546701,
+    "lat": 49.930879
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d63-27f4-4230-84fa-305e698e6bd6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "a0a36dde-1852-4216-a86b-8158a9ad6923",
+  "name": "Erbeskopf Skipisten",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Nationalpark-Tor Erbeskopf",
+    "plz": "54426",
+    "ort": "Hilscheid"
+  },
+  "lage": {
+    "lon": 7.084043,
+    "lat": 49.736049
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0a36dde-1852-4216-a86b-8158a9ad6923",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

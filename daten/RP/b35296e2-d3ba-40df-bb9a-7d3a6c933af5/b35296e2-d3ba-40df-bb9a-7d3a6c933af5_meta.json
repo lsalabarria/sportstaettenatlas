@@ -1,0 +1,25 @@
+{
+  "id": "b35296e2-d3ba-40df-bb9a-7d3a6c933af5",
+  "name": "Gemeinde- und Feuerwehrhaus Offenbach-Hundheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "59",
+    "plz": "67749",
+    "ort": "Offenbach-Hundheim"
+  },
+  "lage": {
+    "lon": 7.551728,
+    "lat": 49.623783
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "stillgelegt/geschlossen",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "b35296e2-d3ba-40df-bb9a-7d3a6c933af5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

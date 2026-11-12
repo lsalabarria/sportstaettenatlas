@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cf3-c1cd-4e40-bdf0-b59644ccaf47",
+  "name": "Sporthalle Grundschule Albert-Schweitzer-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Donnersbergstraße",
+    "hausnummer": "32",
+    "plz": "55232",
+    "ort": "Alzey, Stadt"
+  },
+  "lage": {
+    "lon": 8.111894,
+    "lat": 49.740555
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cf3-c1cd-4e40-bdf0-b59644ccaf47",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

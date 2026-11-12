@@ -1,0 +1,23 @@
+{
+  "id": "9d09faeb-178b-4c11-bfd3-45152e8c9700",
+  "name": "Modellflugplatz des Modell-Flug-Club Montabaur-Heiligenroth e.V.",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "strasse": "An der L318",
+    "plz": "56412",
+    "ort": "Heiligenroth"
+  },
+  "lage": {
+    "lon": 7.853365,
+    "lat": 50.439164
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faeb-178b-4c11-bfd3-45152e8c9700",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd34-4351-4dc8-ad34-2501966fb280",
+  "name": "Radrennbahn Dudenhofen",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Iggelheimer Straße",
+    "hausnummer": "40",
+    "plz": "67373",
+    "ort": "Dudenhofen"
+  },
+  "lage": {
+    "lon": 8.388952,
+    "lat": 49.321599
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd34-4351-4dc8-ad34-2501966fb280",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a90a-8da3-4bf8-a792-7dfa7ec4bd6d",
+  "name": "Turnhalle Nieder-Hilbersheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Außerhalb",
+    "hausnummer": "3",
+    "plz": "55437",
+    "ort": "Nieder-Hilbersheim"
+  },
+  "lage": {
+    "lon": 8.049365,
+    "lat": 49.91475
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90a-8da3-4bf8-a792-7dfa7ec4bd6d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

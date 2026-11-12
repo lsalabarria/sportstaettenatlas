@@ -1,0 +1,24 @@
+{
+  "id": "9d09faca-eaa5-4613-811f-505fa8250010",
+  "name": "IGS Integrierte Gesamtschule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Neue Schulstraße",
+    "hausnummer": "24",
+    "plz": "56593",
+    "ort": "Horhausen (Westerwald)"
+  },
+  "lage": {
+    "lon": 7.525663,
+    "lat": 50.59157
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faca-eaa5-4613-811f-505fa8250010",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

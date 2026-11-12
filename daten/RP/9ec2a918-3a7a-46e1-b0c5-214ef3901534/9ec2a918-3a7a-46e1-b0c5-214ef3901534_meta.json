@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a918-3a7a-46e1-b0c5-214ef3901534",
+  "name": "Dirtpark Kirrweiler",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Edenkobener Weg",
+    "hausnummer": "23",
+    "plz": "67489",
+    "ort": "Kirrweiler (Pfalz)"
+  },
+  "lage": {
+    "lon": 8.159307,
+    "lat": 49.298188
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a918-3a7a-46e1-b0c5-214ef3901534",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

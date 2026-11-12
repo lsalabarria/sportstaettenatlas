@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad6-b896-49e2-a788-21ce4337f8ea",
+  "name": "Reitanlage Gutscheiderhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Lindenstraße",
+    "hausnummer": "20",
+    "plz": "56276",
+    "ort": "Großmaischeid"
+  },
+  "lage": {
+    "lon": 7.638728,
+    "lat": 50.508415
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad6-b896-49e2-a788-21ce4337f8ea",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

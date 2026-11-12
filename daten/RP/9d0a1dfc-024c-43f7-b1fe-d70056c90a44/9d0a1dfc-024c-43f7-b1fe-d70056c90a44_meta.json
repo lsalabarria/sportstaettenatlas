@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dfc-024c-43f7-b1fe-d70056c90a44",
+  "name": "Sporthalle der BBS Westerburg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hofwiesenstraße",
+    "hausnummer": "1",
+    "plz": "56457",
+    "ort": "Westerburg, Stadt"
+  },
+  "lage": {
+    "lon": 7.974463,
+    "lat": 50.556914
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfc-024c-43f7-b1fe-d70056c90a44",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

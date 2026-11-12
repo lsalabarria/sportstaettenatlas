@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5c-7a66-400b-a9ce-e47d86332cd7",
+  "name": "Spielplatz Dorweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gartenstraße",
+    "plz": "56290",
+    "ort": "Dommershausen"
+  },
+  "lage": {
+    "lon": 7.420674,
+    "lat": 50.138761
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5c-7a66-400b-a9ce-e47d86332cd7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

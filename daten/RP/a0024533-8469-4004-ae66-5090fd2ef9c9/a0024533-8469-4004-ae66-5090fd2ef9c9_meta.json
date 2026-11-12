@@ -1,0 +1,24 @@
+{
+  "id": "a0024533-8469-4004-ae66-5090fd2ef9c9",
+  "name": "Turnhalle Grundschule St. Peter Ehrang",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Oberstraße",
+    "hausnummer": "8",
+    "plz": "54293",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.684059,
+    "lat": 49.809166
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0024533-8469-4004-ae66-5090fd2ef9c9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

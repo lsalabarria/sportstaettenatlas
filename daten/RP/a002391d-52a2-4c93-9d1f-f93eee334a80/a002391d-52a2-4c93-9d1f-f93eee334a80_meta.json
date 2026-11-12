@@ -1,0 +1,24 @@
+{
+  "id": "a002391d-52a2-4c93-9d1f-f93eee334a80",
+  "name": "Sporthalle Tawern",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Wawerner Straße",
+    "hausnummer": "99",
+    "plz": "54456",
+    "ort": "Tawern"
+  },
+  "lage": {
+    "lon": 6.524124,
+    "lat": 49.666508
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a002391d-52a2-4c93-9d1f-f93eee334a80",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

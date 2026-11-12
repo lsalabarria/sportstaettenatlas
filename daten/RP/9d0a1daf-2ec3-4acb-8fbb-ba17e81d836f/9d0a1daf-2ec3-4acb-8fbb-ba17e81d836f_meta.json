@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1daf-2ec3-4acb-8fbb-ba17e81d836f",
+  "name": "Sportplatz Werner-Heisenberg-Gymnasium",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Engerser Landstraße",
+    "hausnummer": "32",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.470142,
+    "lat": 50.425205
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daf-2ec3-4acb-8fbb-ba17e81d836f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

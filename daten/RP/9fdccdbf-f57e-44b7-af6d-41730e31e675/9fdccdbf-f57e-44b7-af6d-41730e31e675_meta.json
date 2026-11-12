@@ -1,0 +1,24 @@
+{
+  "id": "9fdccdbf-f57e-44b7-af6d-41730e31e675",
+  "name": "Pferdesportverein Bad Ems e.V.",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Grabenstraße",
+    "plz": "56130",
+    "ort": "Bad Ems, Stadt"
+  },
+  "lage": {
+    "lon": 7.747096,
+    "lat": 50.331347
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdbf-f57e-44b7-af6d-41730e31e675",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

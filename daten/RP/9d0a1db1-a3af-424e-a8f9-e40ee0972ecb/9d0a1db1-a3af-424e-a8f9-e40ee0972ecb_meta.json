@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db1-a3af-424e-a8f9-e40ee0972ecb",
+  "name": "Sportstudio Sülzen",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Junkerstraße",
+    "hausnummer": "39",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.470247,
+    "lat": 50.441152
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db1-a3af-424e-a8f9-e40ee0972ecb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e08-23f2-4a40-91f6-ffd56fa29429",
+  "name": "Burg Grundschule Ulmen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "37",
+    "plz": "56766",
+    "ort": "Ulmen, Stadt"
+  },
+  "lage": {
+    "lon": 6.976996,
+    "lat": 50.211958
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e08-23f2-4a40-91f6-ffd56fa29429",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

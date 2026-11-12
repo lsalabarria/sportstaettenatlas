@@ -1,0 +1,25 @@
+{
+  "id": "9fdccde4-8032-42da-9f6c-b55f631a3481",
+  "name": "Major Long & Captain Hard Memorial Basketball Court",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Vogelweh",
+    "hausnummer": "2944",
+    "plz": "67661",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.692947,
+    "lat": 49.432196
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccde4-8032-42da-9f6c-b55f631a3481",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

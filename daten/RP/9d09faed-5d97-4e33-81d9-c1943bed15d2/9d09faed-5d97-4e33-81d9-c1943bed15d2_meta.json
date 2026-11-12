@@ -1,0 +1,23 @@
+{
+  "id": "9d09faed-5d97-4e33-81d9-c1943bed15d2",
+  "name": "Eisenbahner Sportpark",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Tannenhain",
+    "plz": "56427",
+    "ort": "Siershahn"
+  },
+  "lage": {
+    "lon": 7.783741,
+    "lat": 50.489649
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faed-5d97-4e33-81d9-c1943bed15d2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db4-d6d4-488a-ae6b-991bac3b8789",
+  "name": "Saar-Mosel-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Herrmann-Reinholz-Straße",
+    "hausnummer": "2",
+    "plz": "54329",
+    "ort": "Konz, Stadt"
+  },
+  "lage": {
+    "lon": 6.585191,
+    "lat": 49.69341
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db4-d6d4-488a-ae6b-991bac3b8789",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

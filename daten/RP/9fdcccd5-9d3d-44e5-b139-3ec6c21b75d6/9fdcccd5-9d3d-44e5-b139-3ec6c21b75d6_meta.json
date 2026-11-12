@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccd5-9d3d-44e5-b139-3ec6c21b75d6",
+  "name": "Sportanlagen Kottenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "56736",
+    "ort": "Kottenheim"
+  },
+  "lage": {
+    "lon": 7.257999,
+    "lat": 50.348046
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccd5-9d3d-44e5-b139-3ec6c21b75d6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db6-b814-42fd-a257-533ce54e5753",
+  "name": "Friedrich-Spee-Gymnasium",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Mäusheckerweg",
+    "hausnummer": "1",
+    "plz": "54293",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.678903,
+    "lat": 49.787128
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db6-b814-42fd-a257-533ce54e5753",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

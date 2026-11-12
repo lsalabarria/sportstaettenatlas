@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd6f-2429-4b7b-acda-c44a385a6787",
+  "name": "Sportanlage am Langenberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lazarettstraße",
+    "plz": "66981",
+    "ort": "Münchweiler an der Rodalb"
+  },
+  "lage": {
+    "lon": 7.709594,
+    "lat": 49.212076
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd6f-2429-4b7b-acda-c44a385a6787",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4eb-acd4-4ea6-a8ac-e5f9b4b008e9",
+  "name": "Sportplatz Lambertsberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "20",
+    "plz": "54649",
+    "ort": "Lambertsberg"
+  },
+  "lage": {
+    "lon": 6.395636,
+    "lat": 50.093457
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4eb-acd4-4ea6-a8ac-e5f9b4b008e9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

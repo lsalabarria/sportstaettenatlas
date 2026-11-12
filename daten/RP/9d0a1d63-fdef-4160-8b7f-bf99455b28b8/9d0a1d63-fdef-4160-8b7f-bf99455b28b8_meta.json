@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1d63-fdef-4160-8b7f-bf99455b28b8",
+  "name": "Sportplatz Immert",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54426",
+    "ort": "Immert"
+  },
+  "lage": {
+    "lon": 7.018689,
+    "lat": 49.761253
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d63-fdef-4160-8b7f-bf99455b28b8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

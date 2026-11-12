@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf4-4517-4c95-9a44-2ffda2c35a12",
+  "name": "Beachvolleyball-Feld Erlebnisbad Herschbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Schwimmbadweg",
+    "plz": "56249",
+    "ort": "Herschbach"
+  },
+  "lage": {
+    "lon": 7.740133,
+    "lat": 50.583034
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf4-4517-4c95-9a44-2ffda2c35a12",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

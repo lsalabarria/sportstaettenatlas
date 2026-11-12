@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e13-0f07-4a32-96d8-bd0655ac2e90",
+  "name": "Wehrbüschstadion Daun",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "6",
+    "plz": "54550",
+    "ort": "Daun, Stadt"
+  },
+  "lage": {
+    "lon": 6.824652,
+    "lat": 50.193976
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e13-0f07-4a32-96d8-bd0655ac2e90",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

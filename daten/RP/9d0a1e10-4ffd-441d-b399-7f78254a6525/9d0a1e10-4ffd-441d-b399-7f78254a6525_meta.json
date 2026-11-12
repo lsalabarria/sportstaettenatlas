@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e10-4ffd-441d-b399-7f78254a6525",
+  "name": "Beachvolleyballfeld Dorf",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Burger Weg",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.936991,
+    "lat": 49.999127
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e10-4ffd-441d-b399-7f78254a6525",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

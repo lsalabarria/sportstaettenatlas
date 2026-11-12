@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a931-49f3-43bc-9245-cad0db2fe4d1",
+  "name": "Schützenverein Kirchheimbolanden",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Am Michelsacker",
+    "hausnummer": "1",
+    "plz": "67292",
+    "ort": "Kirchheimbolanden, Stadt"
+  },
+  "lage": {
+    "lon": 7.98816,
+    "lat": 49.660678
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a931-49f3-43bc-9245-cad0db2fe4d1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

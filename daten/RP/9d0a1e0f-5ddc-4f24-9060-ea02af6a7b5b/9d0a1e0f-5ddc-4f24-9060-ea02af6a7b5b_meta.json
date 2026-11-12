@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e0f-5ddc-4f24-9060-ea02af6a7b5b",
+  "name": "Minigolfplatz Wittlich",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Himmeroder Straße",
+    "hausnummer": "88",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.879397,
+    "lat": 49.989975
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0f-5ddc-4f24-9060-ea02af6a7b5b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

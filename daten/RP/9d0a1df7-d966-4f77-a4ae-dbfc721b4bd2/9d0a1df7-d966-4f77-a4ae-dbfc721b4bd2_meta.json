@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1df7-d966-4f77-a4ae-dbfc721b4bd2",
+  "name": "Tennisplatz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Rudolph-Diesel-Straße",
+    "hausnummer": "14",
+    "plz": "56203",
+    "ort": "Höhr-Grenzhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.676462,
+    "lat": 50.441019
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df7-d966-4f77-a4ae-dbfc721b4bd2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

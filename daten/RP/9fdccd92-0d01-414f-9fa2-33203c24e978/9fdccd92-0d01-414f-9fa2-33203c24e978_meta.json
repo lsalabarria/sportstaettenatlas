@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd92-0d01-414f-9fa2-33203c24e978",
+  "name": "Sportanlage Tullaschule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulweg",
+    "plz": "76744",
+    "ort": "Wörth am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.285724,
+    "lat": 49.033225
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd92-0d01-414f-9fa2-33203c24e978",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a928-47fa-44b1-8dd7-7c2a53c2fdeb",
+  "name": "Kleinspielfeld Eisweinhalle",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ernst-Müller-Straße",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.962273,
+    "lat": 49.923715
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a928-47fa-44b1-8dd7-7c2a53c2fdeb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

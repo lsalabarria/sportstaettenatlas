@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e05-1188-4e18-b2c3-eca7071118e9",
+  "name": "Janusz-Korczak-Schule Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Beethovenstraße",
+    "hausnummer": "3",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.255633,
+    "lat": 50.546961
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e05-1188-4e18-b2c3-eca7071118e9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

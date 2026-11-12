@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa9-5584-4df7-beb2-956b5b478021",
+  "name": "Sportplatz Falckenstein-Kaserne",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Von-Kuhl-Straße",
+    "hausnummer": "50",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.578921,
+    "lat": 50.373797
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa9-5584-4df7-beb2-956b5b478021",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

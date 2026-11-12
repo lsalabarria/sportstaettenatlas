@@ -1,0 +1,23 @@
+{
+  "id": "9fdcce1b-49f8-42c9-8c83-3eecc633acdd",
+  "name": "Bikepark Speyer",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.430388,
+    "lat": 49.342922
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce1b-49f8-42c9-8c83-3eecc633acdd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

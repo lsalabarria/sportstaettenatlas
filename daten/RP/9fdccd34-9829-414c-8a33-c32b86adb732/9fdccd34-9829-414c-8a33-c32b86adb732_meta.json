@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd34-9829-414c-8a33-c32b86adb732",
+  "name": "Schützengesellschaft Speyer",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Jakobsweg",
+    "plz": "67373",
+    "ort": "Dudenhofen"
+  },
+  "lage": {
+    "lon": 8.403724,
+    "lat": 49.322162
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd34-9829-414c-8a33-c32b86adb732",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

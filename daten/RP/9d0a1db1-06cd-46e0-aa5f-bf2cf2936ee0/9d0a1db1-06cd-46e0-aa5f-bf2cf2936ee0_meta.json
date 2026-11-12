@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1db1-06cd-46e0-aa5f-bf2cf2936ee0",
+  "name": "Bürgerpark",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Linzer Straße",
+    "plz": "53572",
+    "ort": "Unkel, Stadt"
+  },
+  "lage": {
+    "lon": 7.221912,
+    "lat": 50.596061
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db1-06cd-46e0-aa5f-bf2cf2936ee0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

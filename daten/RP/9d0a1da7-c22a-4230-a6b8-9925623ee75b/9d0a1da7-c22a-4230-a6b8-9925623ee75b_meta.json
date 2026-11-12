@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da7-c22a-4230-a6b8-9925623ee75b",
+  "name": "Sportplatz Welcherath",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Heiligen Weg",
+    "plz": "53539",
+    "ort": "Welcherath"
+  },
+  "lage": {
+    "lon": 6.960125,
+    "lat": 50.318546
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da7-c22a-4230-a6b8-9925623ee75b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

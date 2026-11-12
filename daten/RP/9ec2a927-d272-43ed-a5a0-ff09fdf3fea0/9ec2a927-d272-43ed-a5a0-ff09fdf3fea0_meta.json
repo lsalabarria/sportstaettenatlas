@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a927-d272-43ed-a5a0-ff09fdf3fea0",
+  "name": "Soccer Arena Bingen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hitchinstraße",
+    "hausnummer": "34",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.906552,
+    "lat": 49.949272
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a927-d272-43ed-a5a0-ff09fdf3fea0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

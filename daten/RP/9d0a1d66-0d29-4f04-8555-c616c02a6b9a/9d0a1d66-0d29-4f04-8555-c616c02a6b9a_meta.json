@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1d66-0d29-4f04-8555-c616c02a6b9a",
+  "name": "Schützenverein Neumagen-Dhron",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "plz": "54347",
+    "ort": "Neumagen-Dhron"
+  },
+  "lage": {
+    "lon": 6.8889,
+    "lat": 49.85889
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d66-0d29-4f04-8555-c616c02a6b9a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

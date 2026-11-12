@@ -1,0 +1,26 @@
+{
+  "id": "9ec2a91d-6f93-403d-9b6f-1c964cb5a10b",
+  "name": "Sportplatz Kapsweyer",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kapsweyer Weg",
+    "plz": "76889",
+    "ort": "Kapsweyer"
+  },
+  "lage": {
+    "lon": 8.027691,
+    "lat": 49.033907
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "sportarten": [
+    "Badminton"
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91d-6f93-403d-9b6f-1c964cb5a10b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

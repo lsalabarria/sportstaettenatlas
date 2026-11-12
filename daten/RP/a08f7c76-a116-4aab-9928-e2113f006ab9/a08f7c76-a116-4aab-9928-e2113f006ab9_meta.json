@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c76-a116-4aab-9928-e2113f006ab9",
+  "name": "Sportanlage Gau-Bickelheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Abel-Thivant-Straße",
+    "hausnummer": "48",
+    "plz": "55599",
+    "ort": "Gau-Bickelheim"
+  },
+  "lage": {
+    "lon": 8.012866,
+    "lat": 49.840514
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c76-a116-4aab-9928-e2113f006ab9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

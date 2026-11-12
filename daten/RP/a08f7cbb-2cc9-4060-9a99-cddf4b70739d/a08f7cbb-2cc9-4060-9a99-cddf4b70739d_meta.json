@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cbb-2cc9-4060-9a99-cddf4b70739d",
+  "name": "Lützelsoonhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "29b",
+    "plz": "55619",
+    "ort": "Hennweiler"
+  },
+  "lage": {
+    "lon": 7.431124,
+    "lat": 49.821562
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cbb-2cc9-4060-9a99-cddf4b70739d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

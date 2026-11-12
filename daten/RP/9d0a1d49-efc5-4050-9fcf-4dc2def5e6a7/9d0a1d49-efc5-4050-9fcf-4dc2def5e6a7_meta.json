@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d49-efc5-4050-9fcf-4dc2def5e6a7",
+  "name": "Tennisplätze TC Hattert e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Hütter Str.",
+    "hausnummer": "14",
+    "plz": "57644",
+    "ort": "Hattert"
+  },
+  "lage": {
+    "lon": 7.762822,
+    "lat": 50.65992
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d49-efc5-4050-9fcf-4dc2def5e6a7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

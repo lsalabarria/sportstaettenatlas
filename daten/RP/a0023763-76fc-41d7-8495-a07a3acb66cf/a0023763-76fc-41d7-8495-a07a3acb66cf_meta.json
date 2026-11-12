@@ -1,0 +1,24 @@
+{
+  "id": "a0023763-76fc-41d7-8495-a07a3acb66cf",
+  "name": "Sportplatz Tawern",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wawerner Straße",
+    "hausnummer": "101",
+    "plz": "54456",
+    "ort": "Tawern"
+  },
+  "lage": {
+    "lon": 6.524695,
+    "lat": 49.665537
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0023763-76fc-41d7-8495-a07a3acb66cf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1da7-13c9-49ed-a696-88d11ec5be21",
+  "name": "Sportplatz Schönbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "7",
+    "plz": "54552",
+    "ort": "Schönbach"
+  },
+  "lage": {
+    "lon": 6.953014,
+    "lat": 50.211942
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da7-13c9-49ed-a696-88d11ec5be21",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

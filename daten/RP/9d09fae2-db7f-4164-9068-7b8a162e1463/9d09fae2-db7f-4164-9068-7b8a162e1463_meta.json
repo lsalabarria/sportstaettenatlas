@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae2-db7f-4164-9068-7b8a162e1463",
+  "name": "Rösterkopfstadion Reinsfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Heiligkreuz",
+    "plz": "54421",
+    "ort": "Reinsfeld"
+  },
+  "lage": {
+    "lon": 6.860288,
+    "lat": 49.675434
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae2-db7f-4164-9068-7b8a162e1463",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

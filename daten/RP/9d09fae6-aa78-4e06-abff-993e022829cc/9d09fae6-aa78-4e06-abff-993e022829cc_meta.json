@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae6-aa78-4e06-abff-993e022829cc",
+  "name": "Tennisplatz Ayl",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Biebelhausener Straße",
+    "plz": "54441",
+    "ort": "Ayl"
+  },
+  "lage": {
+    "lon": 6.561199,
+    "lat": 49.632203
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae6-aa78-4e06-abff-993e022829cc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

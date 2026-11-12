@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd7b-9f5a-4ad1-8d9a-97e54bb8a052",
+  "name": "Bowlingcenter Landau",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Albert-Einstein-Straße",
+    "hausnummer": "4",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.132388,
+    "lat": 49.187825
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd7b-9f5a-4ad1-8d9a-97e54bb8a052",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

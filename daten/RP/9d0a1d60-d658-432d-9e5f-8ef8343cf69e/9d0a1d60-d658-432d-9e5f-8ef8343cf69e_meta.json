@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d60-d658-432d-9e5f-8ef8343cf69e",
+  "name": "Soonwaldhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "In der Schwelwies",
+    "plz": "55497",
+    "ort": "Ellern (Hunsrück)"
+  },
+  "lage": {
+    "lon": 7.645726,
+    "lat": 49.982762
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d60-d658-432d-9e5f-8ef8343cf69e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

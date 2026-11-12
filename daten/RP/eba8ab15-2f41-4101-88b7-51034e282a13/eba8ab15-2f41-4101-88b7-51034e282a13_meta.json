@@ -1,0 +1,27 @@
+{
+  "id": "eba8ab15-2f41-4101-88b7-51034e282a13",
+  "name": "Hugo-Ball-Gymnasium Pirmasens",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Lemberger Str.",
+    "hausnummer": "89",
+    "plz": "66955",
+    "ort": "Pirmasens, Stadt"
+  },
+  "lage": {
+    "lon": 7.621423,
+    "lat": 49.191705
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "eigentuemer": "Stadt Pirmasens",
+  "betreiber": "Stadt Pirmasens",
+  "website": "http://www.hbgps.de/",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "eba8ab15-2f41-4101-88b7-51034e282a13",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

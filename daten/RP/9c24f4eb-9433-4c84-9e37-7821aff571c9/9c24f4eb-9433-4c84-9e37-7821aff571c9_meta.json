@@ -1,0 +1,22 @@
+{
+  "id": "9c24f4eb-9433-4c84-9e37-7821aff571c9",
+  "name": "Spieplatz Feuerscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54597",
+    "ort": "Feuerscheid"
+  },
+  "lage": {
+    "lon": 6.456291,
+    "lat": 50.103272
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4eb-9433-4c84-9e37-7821aff571c9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

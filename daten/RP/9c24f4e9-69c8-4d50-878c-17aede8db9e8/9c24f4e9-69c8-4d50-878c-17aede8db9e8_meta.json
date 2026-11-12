@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4e9-69c8-4d50-878c-17aede8db9e8",
+  "name": "Bolzplatz Air Base",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Air Base",
+    "plz": "54529",
+    "ort": "Spangdahlem"
+  },
+  "lage": {
+    "lon": 6.709295,
+    "lat": 49.991984
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e9-69c8-4d50-878c-17aede8db9e8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

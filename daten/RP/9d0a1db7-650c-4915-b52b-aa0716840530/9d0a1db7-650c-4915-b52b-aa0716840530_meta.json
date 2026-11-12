@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db7-650c-4915-b52b-aa0716840530",
+  "name": "Sportplatz auf Dorheck",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Auf Dorheck",
+    "hausnummer": "33",
+    "plz": "54292",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.720288,
+    "lat": 49.789308
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db7-650c-4915-b52b-aa0716840530",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

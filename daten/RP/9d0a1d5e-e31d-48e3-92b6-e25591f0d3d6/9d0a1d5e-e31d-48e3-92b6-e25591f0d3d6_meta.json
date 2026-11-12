@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5e-e31d-48e3-92b6-e25591f0d3d6",
+  "name": "Bolzplatz Laufersweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Flakweg",
+    "plz": "55487",
+    "ort": "Laufersweiler"
+  },
+  "lage": {
+    "lon": 7.303329,
+    "lat": 49.899789
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5e-e31d-48e3-92b6-e25591f0d3d6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

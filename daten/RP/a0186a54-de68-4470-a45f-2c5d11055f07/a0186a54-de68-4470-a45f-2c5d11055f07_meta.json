@@ -1,0 +1,23 @@
+{
+  "id": "a0186a54-de68-4470-a45f-2c5d11055f07",
+  "name": "BBS Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Max-Planck-Str.",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.903873,
+    "lat": 49.983618
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0186a54-de68-4470-a45f-2c5d11055f07",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

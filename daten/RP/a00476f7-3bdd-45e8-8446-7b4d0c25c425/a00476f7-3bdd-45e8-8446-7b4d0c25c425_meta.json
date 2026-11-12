@@ -1,0 +1,23 @@
+{
+  "id": "a00476f7-3bdd-45e8-8446-7b4d0c25c425",
+  "name": "Sportplatz Pickließem",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Spangdahlemer Straße",
+    "plz": "54647",
+    "ort": "Pickließem"
+  },
+  "lage": {
+    "lon": 6.654225,
+    "lat": 49.988685
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a00476f7-3bdd-45e8-8446-7b4d0c25c425",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

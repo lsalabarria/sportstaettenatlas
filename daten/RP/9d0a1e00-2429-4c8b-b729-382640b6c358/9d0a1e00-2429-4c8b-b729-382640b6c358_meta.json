@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e00-2429-4c8b-b729-382640b6c358",
+  "name": "Ahrweiler Ballspiel-Club",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kreuzstraße",
+    "hausnummer": "108",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.148418,
+    "lat": 50.543902
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e00-2429-4c8b-b729-382640b6c358",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

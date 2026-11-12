@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4e7-478b-4961-a226-5034101bb8d7",
+  "name": "Multifunktionsfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Philipp-Reis-Straße",
+    "hausnummer": "19",
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.536433,
+    "lat": 49.976105
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e7-478b-4961-a226-5034101bb8d7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc52-20de-4ebb-9f5e-e8d8b70a2c73",
+  "name": "Panoramabad Emmelshausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Klöppchen",
+    "hausnummer": "21",
+    "plz": "56281",
+    "ort": "Emmelshausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.548495,
+    "lat": 50.105984
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc52-20de-4ebb-9f5e-e8d8b70a2c73",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

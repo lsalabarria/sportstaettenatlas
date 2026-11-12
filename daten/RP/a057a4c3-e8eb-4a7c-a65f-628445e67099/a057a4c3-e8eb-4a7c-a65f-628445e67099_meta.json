@@ -1,0 +1,23 @@
+{
+  "id": "a057a4c3-e8eb-4a7c-a65f-628445e67099",
+  "name": "Langenfeld Hartplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf der Heide",
+    "plz": "56729",
+    "ort": "Langenfeld"
+  },
+  "lage": {
+    "lon": 7.086804,
+    "lat": 50.38036
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a057a4c3-e8eb-4a7c-a65f-628445e67099",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

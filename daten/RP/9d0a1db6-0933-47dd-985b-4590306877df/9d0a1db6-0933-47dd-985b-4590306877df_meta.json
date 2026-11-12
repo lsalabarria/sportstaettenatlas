@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db6-0933-47dd-985b-4590306877df",
+  "name": "Turnhalle Gymnasium Saarburg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Heckingstraße",
+    "hausnummer": "10",
+    "plz": "54439",
+    "ort": "Saarburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.541736,
+    "lat": 49.605856
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db6-0933-47dd-985b-4590306877df",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

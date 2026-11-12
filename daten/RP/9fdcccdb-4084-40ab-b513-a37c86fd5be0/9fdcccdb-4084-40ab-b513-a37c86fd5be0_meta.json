@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccdb-4084-40ab-b513-a37c86fd5be0",
+  "name": "Sportanlage Herresbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "961",
+    "plz": "56729",
+    "ort": "Herresbach"
+  },
+  "lage": {
+    "lon": 7.016396,
+    "lat": 50.354104
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccdb-4084-40ab-b513-a37c86fd5be0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

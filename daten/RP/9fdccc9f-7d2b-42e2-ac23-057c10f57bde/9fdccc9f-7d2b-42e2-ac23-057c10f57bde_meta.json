@@ -1,0 +1,25 @@
+{
+  "id": "9fdccc9f-7d2b-42e2-ac23-057c10f57bde",
+  "name": "Sport- und Rückenzentrum Rheinzabern",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Mühlgasse",
+    "hausnummer": "19b",
+    "plz": "76764",
+    "ort": "Rheinzabern"
+  },
+  "lage": {
+    "lon": 8.275111,
+    "lat": 49.118635
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc9f-7d2b-42e2-ac23-057c10f57bde",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

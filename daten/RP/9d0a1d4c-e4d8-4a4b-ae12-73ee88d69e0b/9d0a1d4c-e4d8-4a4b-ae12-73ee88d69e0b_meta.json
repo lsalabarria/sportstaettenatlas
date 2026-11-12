@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d4c-e4d8-4a4b-ae12-73ee88d69e0b",
+  "name": "Offroad Park Müsch",
+  "kategorie": "Motorsportstätte",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "100",
+    "plz": "53533",
+    "ort": "Müsch"
+  },
+  "lage": {
+    "lon": 6.824308,
+    "lat": 50.384038
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4c-e4d8-4a4b-ae12-73ee88d69e0b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae4-8efb-4b12-8fb0-c739b01bfd06",
+  "name": "Reitanlage am Höthkopf",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Hothkopf",
+    "plz": "54331",
+    "ort": "Pellingen"
+  },
+  "lage": {
+    "lon": 6.665173,
+    "lat": 49.679048
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae4-8efb-4b12-8fb0-c739b01bfd06",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

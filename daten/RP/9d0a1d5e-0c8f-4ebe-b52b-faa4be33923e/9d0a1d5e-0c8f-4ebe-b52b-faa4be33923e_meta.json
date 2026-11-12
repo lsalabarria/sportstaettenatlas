@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5e-0c8f-4ebe-b52b-faa4be33923e",
+  "name": "Bolzplatz Büchenbeuren",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Grund",
+    "plz": "55491",
+    "ort": "Büchenbeuren"
+  },
+  "lage": {
+    "lon": 7.27524,
+    "lat": 49.919343
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5e-0c8f-4ebe-b52b-faa4be33923e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4e5-4e68-4682-87c8-eef2e09eaae3",
+  "name": "Schulsportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hangenbach",
+    "plz": "54675",
+    "ort": "Mettendorf"
+  },
+  "lage": {
+    "lon": 6.327044,
+    "lat": 49.948484
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e5-4e68-4682-87c8-eef2e09eaae3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

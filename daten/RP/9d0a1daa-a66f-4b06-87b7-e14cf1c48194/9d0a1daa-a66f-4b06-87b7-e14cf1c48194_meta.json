@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1daa-a66f-4b06-87b7-e14cf1c48194",
+  "name": "Sportplatz Katzenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dorfstraße",
+    "plz": "57548",
+    "ort": "Kirchen (Sieg), Stadt"
+  },
+  "lage": {
+    "lon": 7.910963,
+    "lat": 50.816747
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daa-a66f-4b06-87b7-e14cf1c48194",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

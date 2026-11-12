@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1db6-26eb-4710-9f31-dfedef791af9",
+  "name": "Bouleplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "54439",
+    "ort": "Saarburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.555318,
+    "lat": 49.607475
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db6-26eb-4710-9f31-dfedef791af9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

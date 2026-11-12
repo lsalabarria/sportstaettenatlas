@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccc5-5670-497d-acce-f4067d6735d3",
+  "name": "Reiterhof LiebLINGshof Kunterbunt",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Gottschalksmühlenweg",
+    "hausnummer": "24",
+    "plz": "56637",
+    "ort": "Plaidt"
+  },
+  "lage": {
+    "lon": 7.38384,
+    "lat": 50.382107
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccc5-5670-497d-acce-f4067d6735d3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

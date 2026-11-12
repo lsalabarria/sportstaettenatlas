@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dae-9434-42c1-bb30-558b04255460",
+  "name": "Sportplatz Kinzigschule Neuwied",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Beverwijker Ring",
+    "hausnummer": "5",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.47453,
+    "lat": 50.447684
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dae-9434-42c1-bb30-558b04255460",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

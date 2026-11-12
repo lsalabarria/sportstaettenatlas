@@ -1,0 +1,24 @@
+{
+  "id": "9fdcce03-6cb2-429e-b1fe-54c1c238fb98",
+  "name": "Bolzplatz Dürerstraße",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Dürerstraße",
+    "plz": "67061",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.445521,
+    "lat": 49.467505
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce03-6cb2-429e-b1fe-54c1c238fb98",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

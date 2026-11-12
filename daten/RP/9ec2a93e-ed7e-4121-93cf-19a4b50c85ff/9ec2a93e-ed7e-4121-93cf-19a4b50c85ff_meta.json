@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a93e-ed7e-4121-93cf-19a4b50c85ff",
+  "name": "Südpfalz Therme Bad Bergzabern",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kurtalstraße",
+    "hausnummer": "27",
+    "plz": "76887",
+    "ort": "Bad Bergzabern, Stadt"
+  },
+  "lage": {
+    "lon": 7.989017,
+    "lat": 49.09937
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93e-ed7e-4121-93cf-19a4b50c85ff",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

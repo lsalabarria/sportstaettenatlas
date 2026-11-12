@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a92f-7bbd-40fe-98a0-405b59c76b19",
+  "name": "Sportplatz Imsbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gienanthstraße",
+    "plz": "67817",
+    "ort": "Imsbach"
+  },
+  "lage": {
+    "lon": 7.878319,
+    "lat": 49.581672
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92f-7bbd-40fe-98a0-405b59c76b19",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

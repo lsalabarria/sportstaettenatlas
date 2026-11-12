@@ -1,0 +1,25 @@
+{
+  "id": "9fdccce6-df0d-455c-a158-907da995db6e",
+  "name": "Buchenhof Oppermann",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Buchenhof",
+    "hausnummer": "1",
+    "plz": "65558",
+    "ort": "Gückingen"
+  },
+  "lage": {
+    "lon": 7.994411,
+    "lat": 50.393504
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccce6-df0d-455c-a158-907da995db6e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

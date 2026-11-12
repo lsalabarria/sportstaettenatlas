@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cfd-c917-4978-a9a8-e6ac4ca4c8a2",
+  "name": "Großsporthalle am Berg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Stadion",
+    "plz": "55765",
+    "ort": "Birkenfeld, Stadt"
+  },
+  "lage": {
+    "lon": 7.17455,
+    "lat": 49.646879
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cfd-c917-4978-a9a8-e6ac4ca4c8a2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

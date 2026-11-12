@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a90e-d074-4408-9cc8-4b2c01639d64",
+  "name": "Tennisplätze RuFV Bodenheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Mittlerer Weidenweg",
+    "plz": "55294",
+    "ort": "Bodenheim"
+  },
+  "lage": {
+    "lon": 8.318658,
+    "lat": 49.931203
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90e-d074-4408-9cc8-4b2c01639d64",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

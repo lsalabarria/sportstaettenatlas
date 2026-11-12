@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1e03-a063-4a62-af32-824107db5d6b",
+  "name": "Insel Nonnenwerth",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "53424",
+    "ort": "Remagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.20945,
+    "lat": 50.642945
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e03-a063-4a62-af32-824107db5d6b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

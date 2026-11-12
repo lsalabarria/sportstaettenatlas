@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa4-0621-4bef-8622-c0b40adef720",
+  "name": "Sporthalle Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Zwickauer Straße",
+    "hausnummer": "22",
+    "plz": "56075",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.56892,
+    "lat": 50.33844
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa4-0621-4bef-8622-c0b40adef720",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

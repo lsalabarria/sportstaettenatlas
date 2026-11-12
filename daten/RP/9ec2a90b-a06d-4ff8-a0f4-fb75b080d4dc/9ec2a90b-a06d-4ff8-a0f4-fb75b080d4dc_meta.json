@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a90b-a06d-4ff8-a0f4-fb75b080d4dc",
+  "name": "Hallenbad Budenheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Römerstraße",
+    "hausnummer": "70",
+    "plz": "55257",
+    "ort": "Budenheim"
+  },
+  "lage": {
+    "lon": 8.157518,
+    "lat": 50.017659
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90b-a06d-4ff8-a0f4-fb75b080d4dc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

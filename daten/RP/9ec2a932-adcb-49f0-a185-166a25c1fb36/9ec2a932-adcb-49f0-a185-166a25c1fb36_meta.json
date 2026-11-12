@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a932-adcb-49f0-a185-166a25c1fb36",
+  "name": "Schulsportanlage Böbig",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Landwehrstraße",
+    "hausnummer": "22",
+    "plz": "67433",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.155931,
+    "lat": 49.356467
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a932-adcb-49f0-a185-166a25c1fb36",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

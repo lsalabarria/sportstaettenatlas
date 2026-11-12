@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a932-9a6b-45eb-a174-e2a8c0777069",
+  "name": "Post-Sportverein Neustadt an der Weinstraße",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Harthäuserweg",
+    "hausnummer": "40",
+    "plz": "67433",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.161023,
+    "lat": 49.357737
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a932-9a6b-45eb-a174-e2a8c0777069",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

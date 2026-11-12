@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4e-aa36-4f52-93fc-2d63670c5f5e",
+  "name": "SV Blau-Gelb Dernau",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ahrweg",
+    "plz": "53507",
+    "ort": "Dernau"
+  },
+  "lage": {
+    "lon": 7.049478,
+    "lat": 50.533202
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4e-aa36-4f52-93fc-2d63670c5f5e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

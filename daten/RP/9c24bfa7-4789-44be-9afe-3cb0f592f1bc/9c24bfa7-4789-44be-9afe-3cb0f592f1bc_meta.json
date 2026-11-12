@@ -1,0 +1,23 @@
+{
+  "id": "9c24bfa7-4789-44be-9afe-3cb0f592f1bc",
+  "name": "Sportplatz TuS Niederberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Arenberger Str.",
+    "plz": "56077",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.635097,
+    "lat": 50.3685
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa7-4789-44be-9afe-3cb0f592f1bc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

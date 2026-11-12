@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e08-afff-4eb4-aacd-3b94e59e0f85",
+  "name": "IGS Zell Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Schulzentrum",
+    "plz": "56856",
+    "ort": "Zell (Mosel), Stadt"
+  },
+  "lage": {
+    "lon": 7.174146,
+    "lat": 50.033055
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e08-afff-4eb4-aacd-3b94e59e0f85",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

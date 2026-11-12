@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d53-bda4-4601-a3b3-b011f99c0a39",
+  "name": "Bolzplatz Mesenich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mosel Ufer",
+    "plz": "56820",
+    "ort": "Mesenich"
+  },
+  "lage": {
+    "lon": 7.193143,
+    "lat": 50.106525
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d53-bda4-4601-a3b3-b011f99c0a39",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

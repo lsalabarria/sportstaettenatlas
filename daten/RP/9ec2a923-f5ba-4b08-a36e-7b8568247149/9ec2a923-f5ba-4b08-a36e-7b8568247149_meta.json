@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a923-f5ba-4b08-a36e-7b8568247149",
+  "name": "Turnhalle TV Leistadt",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "57",
+    "plz": "67098",
+    "ort": "Bad Dürkheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.154305,
+    "lat": 49.490797
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a923-f5ba-4b08-a36e-7b8568247149",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

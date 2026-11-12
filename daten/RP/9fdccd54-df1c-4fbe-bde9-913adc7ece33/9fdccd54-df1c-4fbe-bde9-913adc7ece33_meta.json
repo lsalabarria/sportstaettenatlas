@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd54-df1c-4fbe-bde9-913adc7ece33",
+  "name": "Kegelverein Dellfeld 1934 e.V.",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Weihersweg",
+    "plz": "66503",
+    "ort": "Dellfeld"
+  },
+  "lage": {
+    "lon": 7.474992,
+    "lat": 49.232011
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd54-df1c-4fbe-bde9-913adc7ece33",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

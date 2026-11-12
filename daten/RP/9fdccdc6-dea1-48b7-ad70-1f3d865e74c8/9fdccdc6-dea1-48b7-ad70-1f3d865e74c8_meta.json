@@ -1,0 +1,24 @@
+{
+  "id": "9fdccdc6-dea1-48b7-ad70-1f3d865e74c8",
+  "name": "Sportanlage auf dem Wirth",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "plz": "65582",
+    "ort": "Diez, Stadt"
+  },
+  "lage": {
+    "lon": 8.023071,
+    "lat": 50.366749
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdc6-dea1-48b7-ad70-1f3d865e74c8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

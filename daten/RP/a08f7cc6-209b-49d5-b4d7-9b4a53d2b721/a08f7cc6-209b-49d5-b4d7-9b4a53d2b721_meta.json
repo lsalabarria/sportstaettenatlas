@@ -1,0 +1,23 @@
+{
+  "id": "a08f7cc6-209b-49d5-b4d7-9b4a53d2b721",
+  "name": "Reitplatz Münchwald",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "plz": "55595",
+    "ort": "Münchwald"
+  },
+  "lage": {
+    "lon": 7.679114,
+    "lat": 49.896995
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cc6-209b-49d5-b4d7-9b4a53d2b721",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

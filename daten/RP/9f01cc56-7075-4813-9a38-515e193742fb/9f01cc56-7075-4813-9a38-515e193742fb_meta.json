@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc56-7075-4813-9a38-515e193742fb",
+  "name": "Beatusbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Lindenstraße",
+    "hausnummer": "36",
+    "plz": "56073",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.583392,
+    "lat": 50.305839
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc56-7075-4813-9a38-515e193742fb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a90b-51d9-4a15-9af2-2057970c7590",
+  "name": "Skatepark Schwabenheim",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Am Sportfeld",
+    "hausnummer": "90",
+    "plz": "55270",
+    "ort": "Schwabenheim an der Selz"
+  },
+  "lage": {
+    "lon": 8.095499,
+    "lat": 49.923629
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90b-51d9-4a15-9af2-2057970c7590",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

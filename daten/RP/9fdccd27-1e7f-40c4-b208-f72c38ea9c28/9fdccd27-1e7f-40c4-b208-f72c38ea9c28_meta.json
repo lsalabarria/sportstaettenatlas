@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd27-1e7f-40c4-b208-f72c38ea9c28",
+  "name": "Sporthalle Karl-Wendel-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Neustadter Straße",
+    "hausnummer": "23",
+    "plz": "67245",
+    "ort": "Lambsheim"
+  },
+  "lage": {
+    "lon": 8.282471,
+    "lat": 49.509731
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd27-1e7f-40c4-b208-f72c38ea9c28",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

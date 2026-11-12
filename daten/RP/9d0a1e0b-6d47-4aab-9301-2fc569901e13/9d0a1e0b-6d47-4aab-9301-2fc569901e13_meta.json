@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e0b-6d47-4aab-9301-2fc569901e13",
+  "name": "St. Hubertus Schützenbruderschaft Emmelshausen u. U. 1954 e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Bopparder Straße",
+    "hausnummer": "14",
+    "plz": "56281",
+    "ort": "Emmelshausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.562828,
+    "lat": 50.157543
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0b-6d47-4aab-9301-2fc569901e13",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

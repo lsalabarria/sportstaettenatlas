@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a915-c3e8-44fb-9b68-962fa7d968d7",
+  "name": "Reitanlage Bischoff",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Ortsstraße",
+    "hausnummer": "5",
+    "plz": "67806",
+    "ort": "Dörrmoschel"
+  },
+  "lage": {
+    "lon": 7.755455,
+    "lat": 49.618333
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a915-c3e8-44fb-9b68-962fa7d968d7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

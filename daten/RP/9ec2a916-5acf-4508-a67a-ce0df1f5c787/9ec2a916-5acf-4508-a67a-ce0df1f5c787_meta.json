@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a916-5acf-4508-a67a-ce0df1f5c787",
+  "name": "Sportplatz auf der Steige",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf der Steige",
+    "plz": "67821",
+    "ort": "Alsenz"
+  },
+  "lage": {
+    "lon": 7.817986,
+    "lat": 49.718672
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a916-5acf-4508-a67a-ce0df1f5c787",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

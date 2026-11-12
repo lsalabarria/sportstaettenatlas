@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd9a-b137-4ef3-a59d-a6b621516a55",
+  "name": "Schul- & Sportzentrum Mülheim-Kärlich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Judengäßchen",
+    "hausnummer": "1",
+    "plz": "56218",
+    "ort": "Mülheim-Kärlich, Stadt"
+  },
+  "lage": {
+    "lon": 7.500585,
+    "lat": 50.395624
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd9a-b137-4ef3-a59d-a6b621516a55",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

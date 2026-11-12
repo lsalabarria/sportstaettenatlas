@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a93a-bc3b-4b2e-900c-3808aeb1afa2",
+  "name": "Bolzplatz Elsa-Brändström-Straße",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Elsa-Brändström-Straße",
+    "plz": "55124",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.206992,
+    "lat": 50.009438
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93a-bc3b-4b2e-900c-3808aeb1afa2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

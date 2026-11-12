@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a932-5c4e-4335-8819-3da284f36ff7",
+  "name": "Turnverein Mußbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "An d. Bleiche",
+    "hausnummer": "34",
+    "plz": "67435",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.170238,
+    "lat": 49.36641
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a932-5c4e-4335-8819-3da284f36ff7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce16-e980-4dae-9dc8-ca9694534a73",
+  "name": "Kirchberghalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kirchbergstraße",
+    "hausnummer": "41",
+    "plz": "66955",
+    "ort": "Pirmasens, Stadt"
+  },
+  "lage": {
+    "lon": 7.607749,
+    "lat": 49.190679
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce16-e980-4dae-9dc8-ca9694534a73",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

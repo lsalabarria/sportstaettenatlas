@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5e-9675-418e-8e98-6a961b48c3ca",
+  "name": "Bolzplatz Hecken",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Backesweg",
+    "plz": "55481",
+    "ort": "Hecken"
+  },
+  "lage": {
+    "lon": 7.396549,
+    "lat": 49.916488
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5e-9675-418e-8e98-6a961b48c3ca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

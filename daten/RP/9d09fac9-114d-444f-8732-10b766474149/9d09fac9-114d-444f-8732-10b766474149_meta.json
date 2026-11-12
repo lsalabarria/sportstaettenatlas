@@ -1,0 +1,23 @@
+{
+  "id": "9d09fac9-114d-444f-8732-10b766474149",
+  "name": "Sportplatz Berod",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Altenkrichener Straße",
+    "plz": "57614",
+    "ort": "Berod bei Hachenburg"
+  },
+  "lage": {
+    "lon": 7.690608,
+    "lat": 50.656343
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac9-114d-444f-8732-10b766474149",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91b-8427-4b58-8e1a-e239ca290d15",
+  "name": "Schulsportanlage Grundschule Offenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "84",
+    "plz": "76877",
+    "ort": "Offenbach an der Queich"
+  },
+  "lage": {
+    "lon": 8.188555,
+    "lat": 49.188362
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91b-8427-4b58-8e1a-e239ca290d15",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

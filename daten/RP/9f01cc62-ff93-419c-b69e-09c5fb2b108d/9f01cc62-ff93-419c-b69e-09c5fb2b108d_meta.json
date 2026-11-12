@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc62-ff93-419c-b69e-09c5fb2b108d",
+  "name": "Moselbad Cochem",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Moritzburger Straße",
+    "hausnummer": "1",
+    "plz": "56812",
+    "ort": "Cochem, Stadt"
+  },
+  "lage": {
+    "lon": 7.178341,
+    "lat": 50.110629
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc62-ff93-419c-b69e-09c5fb2b108d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

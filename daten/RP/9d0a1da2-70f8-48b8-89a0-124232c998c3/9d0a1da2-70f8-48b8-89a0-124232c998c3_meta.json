@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da2-70f8-48b8-89a0-124232c998c3",
+  "name": "Bolzplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "54570",
+    "ort": "Kalenborn-Scheuern"
+  },
+  "lage": {
+    "lon": 6.599151,
+    "lat": 50.256933
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da2-70f8-48b8-89a0-124232c998c3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

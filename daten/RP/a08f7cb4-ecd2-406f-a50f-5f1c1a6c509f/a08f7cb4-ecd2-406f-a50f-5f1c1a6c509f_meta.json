@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cb4-ecd2-406f-a50f-5f1c1a6c509f",
+  "name": "Sportanlage Moorstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Moorstraße",
+    "plz": "66885",
+    "ort": "Altenglan"
+  },
+  "lage": {
+    "lon": 7.462233,
+    "lat": 49.539933
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb4-ecd2-406f-a50f-5f1c1a6c509f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

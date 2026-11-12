@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd1e-c538-4c0a-b9ec-b3d3722ce599",
+  "name": "Steinalbhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "7",
+    "plz": "66851",
+    "ort": "Bann"
+  },
+  "lage": {
+    "lon": 7.609056,
+    "lat": 49.392411
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd1e-c538-4c0a-b9ec-b3d3722ce599",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

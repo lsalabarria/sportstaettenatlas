@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdad-1c7d-44b9-9734-e9aacb5c4996",
+  "name": "Kleiner Sportplatz Kell",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Pöntertalstraße",
+    "hausnummer": "40",
+    "plz": "56626",
+    "ort": "Andernach, Stadt"
+  },
+  "lage": {
+    "lon": 7.313136,
+    "lat": 50.4473
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdad-1c7d-44b9-9734-e9aacb5c4996",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

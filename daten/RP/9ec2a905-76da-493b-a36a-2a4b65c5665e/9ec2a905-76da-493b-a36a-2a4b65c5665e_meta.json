@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a905-76da-493b-a36a-2a4b65c5665e",
+  "name": "Dreifeldsporthalle Haßloch",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Raiffeisenstraße",
+    "plz": "67454",
+    "ort": "Haßloch"
+  },
+  "lage": {
+    "lon": 8.262573,
+    "lat": 49.371651
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a905-76da-493b-a36a-2a4b65c5665e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

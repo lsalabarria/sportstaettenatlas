@@ -1,0 +1,24 @@
+{
+  "id": "fe606aee-0661-4c3a-9f37-782791a4e184",
+  "name": "Sporthalle (Musikantenlandhalle)",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Austraße",
+    "hausnummer": "27",
+    "plz": "66887",
+    "ort": "Jettenbach"
+  },
+  "lage": {
+    "lon": 7.566002,
+    "lat": 49.529231
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "fe606aee-0661-4c3a-9f37-782791a4e184",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

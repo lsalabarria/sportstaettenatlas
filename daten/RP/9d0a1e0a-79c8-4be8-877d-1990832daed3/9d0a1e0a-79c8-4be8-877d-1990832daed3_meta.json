@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e0a-79c8-4be8-877d-1990832daed3",
+  "name": "Golfplatz Jakobsberg",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Im Tal der Loreley",
+    "plz": "56154",
+    "ort": "Boppard, Stadt"
+  },
+  "lage": {
+    "lon": 7.595387,
+    "lat": 50.257499
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0a-79c8-4be8-877d-1990832daed3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

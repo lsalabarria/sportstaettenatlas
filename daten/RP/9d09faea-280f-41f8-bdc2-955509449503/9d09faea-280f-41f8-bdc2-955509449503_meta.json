@@ -1,0 +1,23 @@
+{
+  "id": "9d09faea-280f-41f8-bdc2-955509449503",
+  "name": "Turnhalle Horbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bienenstück",
+    "plz": "56412",
+    "ort": "Horbach"
+  },
+  "lage": {
+    "lon": 7.857426,
+    "lat": 50.371031
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faea-280f-41f8-bdc2-955509449503",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dfe-4fa2-4532-8642-43a4e467508b",
+  "name": "Außenbereich Löwenbad",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Lohmühle",
+    "plz": "57627",
+    "ort": "Hachenburg, Stadt"
+  },
+  "lage": {
+    "lon": 7.824369,
+    "lat": 50.658219
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfe-4fa2-4532-8642-43a4e467508b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

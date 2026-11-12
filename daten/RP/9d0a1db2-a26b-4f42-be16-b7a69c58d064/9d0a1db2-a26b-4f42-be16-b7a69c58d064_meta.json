@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1db2-a26b-4f42-be16-b7a69c58d064",
+  "name": "Minigolf Dierdorf",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Marktstraße",
+    "plz": "56269",
+    "ort": "Dierdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.655026,
+    "lat": 50.549768
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db2-a26b-4f42-be16-b7a69c58d064",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

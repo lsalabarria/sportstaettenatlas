@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dac-df97-4c5a-b616-e76ed4da41f6",
+  "name": "Tennisplatz TC Neuwied",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Hans-Böckler-Straße",
+    "hausnummer": "70",
+    "plz": "56567",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.471574,
+    "lat": 50.453752
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dac-df97-4c5a-b616-e76ed4da41f6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

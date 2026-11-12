@@ -1,0 +1,23 @@
+{
+  "id": "a057ae55-1f7f-4b76-947c-0ea9cbd8592d",
+  "name": "Bad Breisig Hartplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Frankenbachstraße",
+    "plz": "53498",
+    "ort": "Bad Breisig, Stadt"
+  },
+  "lage": {
+    "lon": 7.269149,
+    "lat": 50.503168
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a057ae55-1f7f-4b76-947c-0ea9cbd8592d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

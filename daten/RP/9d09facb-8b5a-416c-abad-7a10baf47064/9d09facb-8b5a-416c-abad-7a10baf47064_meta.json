@@ -1,0 +1,23 @@
+{
+  "id": "9d09facb-8b5a-416c-abad-7a10baf47064",
+  "name": "Fußballplatz Emma",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "In der Au",
+    "plz": "57638",
+    "ort": "Schöneberg"
+  },
+  "lage": {
+    "lon": 7.594098,
+    "lat": 50.664212
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facb-8b5a-416c-abad-7a10baf47064",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

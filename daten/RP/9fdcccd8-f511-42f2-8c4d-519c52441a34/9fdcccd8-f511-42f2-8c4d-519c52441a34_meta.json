@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccd8-f511-42f2-8c4d-519c52441a34",
+  "name": "Schützenhalle Rieden",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Am Schorenberg",
+    "plz": "56745",
+    "ort": "Rieden"
+  },
+  "lage": {
+    "lon": 7.182807,
+    "lat": 50.393072
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccd8-f511-42f2-8c4d-519c52441a34",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

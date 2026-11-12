@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e06-829f-495b-8af8-b43a2fe44641",
+  "name": "fit+ Cochem",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Nikolaus-August-Otto-Straße",
+    "hausnummer": "8",
+    "plz": "56812",
+    "ort": "Cochem, Stadt"
+  },
+  "lage": {
+    "lon": 7.145307,
+    "lat": 50.13056
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e06-829f-495b-8af8-b43a2fe44641",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

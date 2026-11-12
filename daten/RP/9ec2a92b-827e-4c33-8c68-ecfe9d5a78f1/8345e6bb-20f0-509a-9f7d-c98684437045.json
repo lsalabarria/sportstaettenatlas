@@ -1,0 +1,10 @@
+{
+  "id": "8345e6bb-20f0-509a-9f7d-c98684437045",
+  "sportstaette_id": "9ec2a92b-827e-4c33-8c68-ecfe9d5a78f1",
+  "typ": "Sport-/Turnhalle",
+  "quellen": {
+    "atlas_rlp": {
+      "bezeichnung": "Sport- Turnhalle"
+    }
+  }
+}

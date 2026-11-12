@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d55-a826-48c1-b2ee-82061d9ec63d",
+  "name": "Sportplatz Schutzhütte Kaifenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Elzstraße",
+    "plz": "56761",
+    "ort": "Kaifenheim"
+  },
+  "lage": {
+    "lon": 7.226607,
+    "lat": 50.256035
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d55-a826-48c1-b2ee-82061d9ec63d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

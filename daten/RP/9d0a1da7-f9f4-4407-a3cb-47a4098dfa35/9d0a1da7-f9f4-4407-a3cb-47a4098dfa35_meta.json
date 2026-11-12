@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da7-f9f4-4407-a3cb-47a4098dfa35",
+  "name": "Sportplatz Seelbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "57632",
+    "ort": "Selbach (Sieg)"
+  },
+  "lage": {
+    "lon": 7.569512,
+    "lat": 50.646735
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da7-f9f4-4407-a3cb-47a4098dfa35",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd4a-b959-40b6-bb98-0e4a7d46f8da",
+  "name": "Sportplatz Falkenburg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Tiergartenstraße",
+    "hausnummer": "15",
+    "plz": "76848",
+    "ort": "Wilgartswiesen"
+  },
+  "lage": {
+    "lon": 7.859683,
+    "lat": 49.208582
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd4a-b959-40b6-bb98-0e4a7d46f8da",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

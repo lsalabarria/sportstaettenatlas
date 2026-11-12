@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1df7-6983-4df0-b3ab-d4267bbce70b",
+  "name": "Bolzplatz Kürenz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "54295",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.663844,
+    "lat": 49.759937
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df7-6983-4df0-b3ab-d4267bbce70b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

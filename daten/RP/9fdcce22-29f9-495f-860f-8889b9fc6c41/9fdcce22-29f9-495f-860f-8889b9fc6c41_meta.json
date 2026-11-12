@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce22-29f9-495f-860f-8889b9fc6c41",
+  "name": "Kita Rulandstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rulandstraße",
+    "hausnummer": "26.0",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.433597,
+    "lat": 49.31043
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce22-29f9-495f-860f-8889b9fc6c41",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

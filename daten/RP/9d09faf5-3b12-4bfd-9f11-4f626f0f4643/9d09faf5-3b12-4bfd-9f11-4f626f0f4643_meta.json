@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf5-3b12-4bfd-9f11-4f626f0f4643",
+  "name": "TC Alpenrod 82 e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Alpenroder Str.",
+    "plz": "57642",
+    "ort": "Alpenrod"
+  },
+  "lage": {
+    "lon": 7.877475,
+    "lat": 50.634127
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf5-3b12-4bfd-9f11-4f626f0f4643",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

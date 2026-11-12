@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d4a-906c-428f-96d8-4a702cfc5b9b",
+  "name": "Schulbad der Wilhelm-Albrecht-Schule",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zehntgrafstraße",
+    "hausnummer": "14",
+    "plz": "56462",
+    "ort": "Höhn"
+  },
+  "lage": {
+    "lon": 7.98246,
+    "lat": 50.615603
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4a-906c-428f-96d8-4a702cfc5b9b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

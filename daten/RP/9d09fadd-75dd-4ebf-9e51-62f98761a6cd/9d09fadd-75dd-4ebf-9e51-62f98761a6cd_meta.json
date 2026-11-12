@@ -1,0 +1,23 @@
+{
+  "id": "9d09fadd-75dd-4ebf-9e51-62f98761a6cd",
+  "name": "Beachvolleyballplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "L43",
+    "plz": "54313",
+    "ort": "Zemmer"
+  },
+  "lage": {
+    "lon": 6.684531,
+    "lat": 49.886381
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadd-75dd-4ebf-9e51-62f98761a6cd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

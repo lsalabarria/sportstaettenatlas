@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a912-bbda-4b96-a993-f9b15dd0b60c",
+  "name": "TSG-Kerzenheim Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An der Haardt",
+    "plz": "67304",
+    "ort": "Kerzenheim"
+  },
+  "lage": {
+    "lon": 8.057667,
+    "lat": 49.577279
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a912-bbda-4b96-a993-f9b15dd0b60c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

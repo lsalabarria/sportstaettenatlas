@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e0b-9248-48bf-9114-53fb6b82186c",
+  "name": "Sportplatz Oberwesel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "B9",
+    "plz": "55430",
+    "ort": "Oberwesel, Stadt"
+  },
+  "lage": {
+    "lon": 7.734299,
+    "lat": 50.10399
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0b-9248-48bf-9114-53fb6b82186c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

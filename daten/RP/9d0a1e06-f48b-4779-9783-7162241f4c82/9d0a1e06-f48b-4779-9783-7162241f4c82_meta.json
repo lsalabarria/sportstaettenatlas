@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e06-f48b-4779-9783-7162241f4c82",
+  "name": "Spielplatz Moritzburgerstrasse",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Moritzburger Straße",
+    "plz": "56812",
+    "ort": "Cochem, Stadt"
+  },
+  "lage": {
+    "lon": 7.179239,
+    "lat": 50.158207
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e06-f48b-4779-9783-7162241f4c82",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

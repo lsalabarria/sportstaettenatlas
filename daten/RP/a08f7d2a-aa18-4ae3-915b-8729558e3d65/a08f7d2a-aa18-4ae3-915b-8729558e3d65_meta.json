@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d2a-aa18-4ae3-915b-8729558e3d65",
+  "name": "Basketballfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Rother Weg",
+    "hausnummer": "6",
+    "plz": "55442",
+    "ort": "Stromberg, Stadt"
+  },
+  "lage": {
+    "lon": 7.791826,
+    "lat": 49.945444
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d2a-aa18-4ae3-915b-8729558e3d65",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

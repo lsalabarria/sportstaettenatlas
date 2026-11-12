@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d50-04ef-41c9-bc41-5e6018e9e9dc",
+  "name": "Tennisanlage Burgbrohl",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Gleeser Straße",
+    "plz": "56659",
+    "ort": "Burgbrohl"
+  },
+  "lage": {
+    "lon": 7.270497,
+    "lat": 50.450424
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-04ef-41c9-bc41-5e6018e9e9dc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

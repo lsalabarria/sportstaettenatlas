@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d4d-8fd2-48d3-8f27-bfb959b93c6a",
+  "name": "Spielplatz Wimbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An der Acht",
+    "hausnummer": "5",
+    "plz": "53518",
+    "ort": "Wimbach"
+  },
+  "lage": {
+    "lon": 6.913318,
+    "lat": 50.365009
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4d-8fd2-48d3-8f27-bfb959b93c6a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

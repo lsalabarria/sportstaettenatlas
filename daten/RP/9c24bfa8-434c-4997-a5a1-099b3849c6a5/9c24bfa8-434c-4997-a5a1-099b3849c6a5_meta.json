@@ -1,0 +1,23 @@
+{
+  "id": "9c24bfa8-434c-4997-a5a1-099b3849c6a5",
+  "name": "Sportplatz TuS 1899 Immendorf e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf dem Dörn'chen",
+    "plz": "56077",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.662124,
+    "lat": 50.378363
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa8-434c-4997-a5a1-099b3849c6a5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf2-bf6e-4c1b-9a1c-2234c691d4c6",
+  "name": "Mehrzweckhalle Hof",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schul- u. Sportzentrum",
+    "plz": "56472",
+    "ort": "Hof"
+  },
+  "lage": {
+    "lon": 8.018067,
+    "lat": 50.673223
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf2-bf6e-4c1b-9a1c-2234c691d4c6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

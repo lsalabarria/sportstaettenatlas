@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc55-4a5e-4665-9338-a864b2ff9f83",
+  "name": "Salinarium",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kurbrunnenstraße",
+    "hausnummer": "28",
+    "plz": "67098",
+    "ort": "Bad Dürkheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.17231,
+    "lat": 49.46529
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc55-4a5e-4665-9338-a864b2ff9f83",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

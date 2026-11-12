@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da5-15cd-47d7-9459-efb93fde0956",
+  "name": "Tennisanlage Kirchweiler",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Leyenstraße",
+    "plz": "54570",
+    "ort": "Kirchweiler"
+  },
+  "lage": {
+    "lon": 6.748079,
+    "lat": 50.227273
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da5-15cd-47d7-9459-efb93fde0956",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

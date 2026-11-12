@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91a-dbf2-4ab9-8a24-171acc46a489",
+  "name": "Freizeitcenter Bornheim",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Hornbachstraße",
+    "hausnummer": "19",
+    "plz": "76879",
+    "ort": "Bornheim"
+  },
+  "lage": {
+    "lon": 8.168868,
+    "lat": 49.214599
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91a-dbf2-4ab9-8a24-171acc46a489",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

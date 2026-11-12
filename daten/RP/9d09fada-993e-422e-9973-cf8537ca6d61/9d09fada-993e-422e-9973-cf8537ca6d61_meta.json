@@ -1,0 +1,23 @@
+{
+  "id": "9d09fada-993e-422e-9973-cf8537ca6d61",
+  "name": "Schießanlage Kordel",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Ehranger Str.",
+    "plz": "54306",
+    "ort": "Kordel"
+  },
+  "lage": {
+    "lon": 6.64337,
+    "lat": 49.835329
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fada-993e-422e-9973-cf8537ca6d61",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

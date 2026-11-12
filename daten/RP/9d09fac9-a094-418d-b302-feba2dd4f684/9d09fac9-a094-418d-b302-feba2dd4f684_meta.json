@@ -1,0 +1,24 @@
+{
+  "id": "9d09fac9-a094-418d-b302-feba2dd4f684",
+  "name": "Bolzplatz Fiersbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Triesch",
+    "hausnummer": "6",
+    "plz": "57635",
+    "ort": "Fiersbach"
+  },
+  "lage": {
+    "lon": 7.493735,
+    "lat": 50.696783
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac9-a094-418d-b302-feba2dd4f684",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

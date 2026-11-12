@@ -1,0 +1,10 @@
+{
+  "id": "dda5675f-d459-5205-b329-d4de85978b79",
+  "sportstaette_id": "9fdccd1b-4885-4681-98bb-8ba53c05dc55",
+  "typ": "Großspielfeld",
+  "quellen": {
+    "atlas_rlp": {
+      "bezeichnung": "Großspielfeld (ab 5.000 m²)"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d32-70f7-4872-b7c0-abd7e3e0aeee",
+  "name": "Sportplatz Winzenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Unter den Gärten",
+    "hausnummer": "911",
+    "plz": "55545",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.872755,
+    "lat": 49.868914
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d32-70f7-4872-b7c0-abd7e3e0aeee",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

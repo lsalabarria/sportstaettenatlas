@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd3c-53dd-489f-96f3-e27b1fee8ee2",
+  "name": "Reitclub Altrip",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "In den Jägerwiesen",
+    "plz": "67122",
+    "ort": "Altrip"
+  },
+  "lage": {
+    "lon": 8.474685,
+    "lat": 49.42344
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd3c-53dd-489f-96f3-e27b1fee8ee2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

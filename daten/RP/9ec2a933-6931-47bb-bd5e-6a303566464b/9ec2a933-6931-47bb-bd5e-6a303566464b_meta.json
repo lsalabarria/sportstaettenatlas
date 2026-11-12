@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a933-6931-47bb-bd5e-6a303566464b",
+  "name": "Basketballplatz Pfalz-Jugendherberge Neustadt",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hans-Geiger-Straße",
+    "hausnummer": "27",
+    "plz": "67434",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.141137,
+    "lat": 49.34508
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a933-6931-47bb-bd5e-6a303566464b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

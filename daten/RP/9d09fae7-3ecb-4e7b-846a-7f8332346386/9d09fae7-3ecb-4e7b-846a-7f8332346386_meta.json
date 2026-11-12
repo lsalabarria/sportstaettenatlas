@@ -1,0 +1,22 @@
+{
+  "id": "9d09fae7-3ecb-4e7b-846a-7f8332346386",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54441",
+    "ort": "Temmels"
+  },
+  "lage": {
+    "lon": 6.473883,
+    "lat": 49.691134
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae7-3ecb-4e7b-846a-7f8332346386",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

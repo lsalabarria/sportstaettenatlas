@@ -1,0 +1,25 @@
+{
+  "id": "9fdccddc-3b09-4c20-a189-393b0002dc5b",
+  "name": "Sickingen-Gymnasium",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Philipp-Fauth-Straße",
+    "hausnummer": "3",
+    "plz": "66849",
+    "ort": "Landstuhl, Sickingenstadt, Stadt"
+  },
+  "lage": {
+    "lon": 7.565113,
+    "lat": 49.413994
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccddc-3b09-4c20-a189-393b0002dc5b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

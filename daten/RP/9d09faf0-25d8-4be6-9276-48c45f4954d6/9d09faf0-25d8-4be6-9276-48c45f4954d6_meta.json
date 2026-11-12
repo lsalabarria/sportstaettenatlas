@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf0-25d8-4be6-9276-48c45f4954d6",
+  "name": "Skatepark Wallmerod",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Sportpl",
+    "plz": "56414",
+    "ort": "Wallmerod"
+  },
+  "lage": {
+    "lon": 7.958576,
+    "lat": 50.482765
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf0-25d8-4be6-9276-48c45f4954d6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

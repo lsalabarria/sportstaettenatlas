@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae9-be3f-441a-8a9d-aae3a41e94b0",
+  "name": "Reitanlage-Welschneudorf",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Tiergartenstraße",
+    "plz": "56412",
+    "ort": "Welschneudorf"
+  },
+  "lage": {
+    "lon": 7.800634,
+    "lat": 50.369119
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae9-be3f-441a-8a9d-aae3a41e94b0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

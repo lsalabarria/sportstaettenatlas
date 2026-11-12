@@ -1,0 +1,25 @@
+{
+  "id": "9fdccc8d-8398-42a0-881b-a6431f02a000",
+  "name": "Sportanlage Turnverein Lustadt",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Turnplatz",
+    "hausnummer": "1",
+    "plz": "67363",
+    "ort": "Lustadt"
+  },
+  "lage": {
+    "lon": 8.269251,
+    "lat": 49.242159
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc8d-8398-42a0-881b-a6431f02a000",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

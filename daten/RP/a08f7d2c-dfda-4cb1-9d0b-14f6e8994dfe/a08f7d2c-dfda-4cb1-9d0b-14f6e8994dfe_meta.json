@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d2c-dfda-4cb1-9d0b-14f6e8994dfe",
+  "name": "Turnhalle Schule am Ellerbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ellerbachstraße",
+    "hausnummer": "17",
+    "plz": "55545",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.841879,
+    "lat": 49.846443
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d2c-dfda-4cb1-9d0b-14f6e8994dfe",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

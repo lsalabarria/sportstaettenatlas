@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d54-e694-4c70-b542-7403e9746284",
+  "name": "Sportplatz Brohl",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L110",
+    "plz": "56754",
+    "ort": "Brohl"
+  },
+  "lage": {
+    "lon": 7.282633,
+    "lat": 50.221484
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d54-e694-4c70-b542-7403e9746284",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

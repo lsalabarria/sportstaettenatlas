@@ -1,0 +1,22 @@
+{
+  "id": "9c24f4eb-fc8c-495f-b503-bcae0d25a492",
+  "name": "Bolzplatz Weidingen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54636",
+    "ort": "Weidingen"
+  },
+  "lage": {
+    "lon": 6.378318,
+    "lat": 50.012622
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4eb-fc8c-495f-b503-bcae0d25a492",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

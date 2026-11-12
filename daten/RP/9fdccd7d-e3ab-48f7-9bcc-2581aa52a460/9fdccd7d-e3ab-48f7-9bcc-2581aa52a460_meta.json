@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd7d-e3ab-48f7-9bcc-2581aa52a460",
+  "name": "Sporthalle Grundschule Wollmesheimer Höhe",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Barbarossastraße",
+    "hausnummer": "4",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.093029,
+    "lat": 49.190806
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd7d-e3ab-48f7-9bcc-2581aa52a460",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

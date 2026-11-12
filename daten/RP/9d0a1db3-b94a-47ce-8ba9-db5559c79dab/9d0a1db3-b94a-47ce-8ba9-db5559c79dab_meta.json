@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1db3-b94a-47ce-8ba9-db5559c79dab",
+  "name": "Waldstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Züscher Straße",
+    "plz": "54411",
+    "ort": "Hermeskeil, Stadt"
+  },
+  "lage": {
+    "lon": 6.961928,
+    "lat": 49.654752
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db3-b94a-47ce-8ba9-db5559c79dab",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

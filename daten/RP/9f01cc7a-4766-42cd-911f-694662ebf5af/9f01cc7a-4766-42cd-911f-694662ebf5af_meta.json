@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc7a-4766-42cd-911f-694662ebf5af",
+  "name": "Landgut Jungfleisch und Campingpark am Ohmbachsee",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Ohmbachsee",
+    "hausnummer": "1",
+    "plz": "66901",
+    "ort": "Schönenberg-Kübelberg"
+  },
+  "lage": {
+    "lon": 7.4066,
+    "lat": 49.41478
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc7a-4766-42cd-911f-694662ebf5af",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

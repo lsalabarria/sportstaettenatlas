@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a910-556a-4b37-b88e-3d231b9412de",
+  "name": "Radsporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "28",
+    "plz": "55278",
+    "ort": "Selzen"
+  },
+  "lage": {
+    "lon": 8.247767,
+    "lat": 49.865104
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a910-556a-4b37-b88e-3d231b9412de",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

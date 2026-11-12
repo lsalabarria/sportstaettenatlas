@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e04-62f9-4459-bbdd-b09eeba17091",
+  "name": "St. Sebastianus Schützenbruderschaft Sinzig",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Koisdorfer Straße",
+    "hausnummer": "39",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.243218,
+    "lat": 50.538428
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e04-62f9-4459-bbdd-b09eeba17091",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

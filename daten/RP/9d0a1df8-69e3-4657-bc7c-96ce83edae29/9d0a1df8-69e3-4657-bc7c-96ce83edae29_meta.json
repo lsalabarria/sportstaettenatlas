@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1df8-69e3-4657-bc7c-96ce83edae29",
+  "name": "Tennisplätze TC Schwarz-Weiß Montabaur",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Weserstraße",
+    "plz": "46410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.807438,
+    "lat": 50.424133
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df8-69e3-4657-bc7c-96ce83edae29",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

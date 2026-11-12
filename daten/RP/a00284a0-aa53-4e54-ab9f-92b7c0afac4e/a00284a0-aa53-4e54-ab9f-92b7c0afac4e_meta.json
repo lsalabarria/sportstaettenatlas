@@ -1,0 +1,23 @@
+{
+  "id": "a00284a0-aa53-4e54-ab9f-92b7c0afac4e",
+  "name": "Bouleplatz und Abenteuerspielplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Rheinallee",
+    "plz": "56154",
+    "ort": "Boppard, Stadt"
+  },
+  "lage": {
+    "lon": 7.600337,
+    "lat": 50.231894
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a00284a0-aa53-4e54-ab9f-92b7c0afac4e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

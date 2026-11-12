@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db7-52a4-4623-970e-68ea5cf58bb3",
+  "name": "Turnhalle Grundschule Ruwer",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Franz-Altenhofen-Straße",
+    "hausnummer": "1",
+    "plz": "54292",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.712065,
+    "lat": 49.785422
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db7-52a4-4623-970e-68ea5cf58bb3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

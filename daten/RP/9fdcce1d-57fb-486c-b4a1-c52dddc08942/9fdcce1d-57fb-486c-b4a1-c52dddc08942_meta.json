@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce1d-57fb-486c-b4a1-c52dddc08942",
+  "name": "Edith-Stein-Gymnasium Speyer",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Langensteinweg",
+    "hausnummer": "5.0",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.426554,
+    "lat": 49.320964
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce1d-57fb-486c-b4a1-c52dddc08942",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4ef-556a-46b6-a36f-c59794e68d9b",
+  "name": "Sportplatz Auw",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "54597",
+    "ort": "Auw bei Prüm"
+  },
+  "lage": {
+    "lon": 6.339813,
+    "lat": 50.303123
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ef-556a-46b6-a36f-c59794e68d9b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

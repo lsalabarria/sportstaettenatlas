@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db8-22d4-4f56-8324-63835cc23303",
+  "name": "Turnhalle Zewen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Fröbelstraße",
+    "hausnummer": "1",
+    "plz": "54924",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.579896,
+    "lat": 49.719873
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db8-22d4-4f56-8324-63835cc23303",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

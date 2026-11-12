@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a91a-6fe1-4da2-8365-8df03c287a19",
+  "name": "Sportanlage VfB Hochstadt",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Seppl-Herberger-Weg",
+    "plz": "76879",
+    "ort": "Hochstadt (Pfalz)"
+  },
+  "lage": {
+    "lon": 8.220433,
+    "lat": 49.225903
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91a-6fe1-4da2-8365-8df03c287a19",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

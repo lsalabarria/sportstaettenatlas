@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d69-d7cb-49d5-ae1d-ea0556c8c91f",
+  "name": "Bolzplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Moselweinstraße",
+    "hausnummer": "35",
+    "plz": "54536",
+    "ort": "Kröv"
+  },
+  "lage": {
+    "lon": 7.08057,
+    "lat": 49.970739
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d69-d7cb-49d5-ae1d-ea0556c8c91f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

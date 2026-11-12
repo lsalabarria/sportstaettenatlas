@@ -1,0 +1,24 @@
+{
+  "id": "9d09fadb-d923-4483-a4c6-f86cedb0face",
+  "name": "Sportplatz am Schulzentrum",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf Omesen",
+    "hausnummer": "3",
+    "plz": "54666",
+    "ort": "Irrel"
+  },
+  "lage": {
+    "lon": 6.460252,
+    "lat": 49.845222
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadb-d923-4483-a4c6-f86cedb0face",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad5-7d6e-431c-97a4-e71681063c32",
+  "name": "Sportzentrum Neustadt (Wied)",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "In der  Au",
+    "hausnummer": "16",
+    "plz": "53577",
+    "ort": "Neustadt (Wied)"
+  },
+  "lage": {
+    "lon": 7.425252,
+    "lat": 50.622912
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad5-7d6e-431c-97a4-e71681063c32",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

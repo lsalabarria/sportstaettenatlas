@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdf5-c320-4b30-afee-122a9a32ffe6",
+  "name": "Sportplatz an den Weihern",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ostring",
+    "hausnummer": "125",
+    "plz": "67069",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.398868,
+    "lat": 49.528654
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdf5-c320-4b30-afee-122a9a32ffe6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

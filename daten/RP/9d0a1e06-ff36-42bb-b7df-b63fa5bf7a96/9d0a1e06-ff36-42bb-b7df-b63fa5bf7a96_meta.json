@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e06-ff36-42bb-b7df-b63fa5bf7a96",
+  "name": "Grundschule Cochem",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "21",
+    "plz": "56812",
+    "ort": "Cochem, Stadt"
+  },
+  "lage": {
+    "lon": 7.162451,
+    "lat": 50.146186
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e06-ff36-42bb-b7df-b63fa5bf7a96",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4e4-84ec-4c87-9151-3dd92efc8686",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hunnenkopfstraße",
+    "plz": "54675",
+    "ort": "Kruchten"
+  },
+  "lage": {
+    "lon": 6.320951,
+    "lat": 49.892312
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e4-84ec-4c87-9151-3dd92efc8686",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

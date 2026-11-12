@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db9-2e2f-42a9-82f3-91d879e377fc",
+  "name": "AVG – alte Halle (LB1)",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Sichelstraße",
+    "hausnummer": "3",
+    "plz": "54290",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.646589,
+    "lat": 49.756377
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db9-2e2f-42a9-82f3-91d879e377fc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

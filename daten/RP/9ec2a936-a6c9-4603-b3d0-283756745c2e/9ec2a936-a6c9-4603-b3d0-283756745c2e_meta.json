@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a936-a6c9-4603-b3d0-283756745c2e",
+  "name": "Grundschule Laubenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Möhnstraße",
+    "hausnummer": "15",
+    "plz": "55130",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.311707,
+    "lat": 49.962669
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a936-a6c9-4603-b3d0-283756745c2e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

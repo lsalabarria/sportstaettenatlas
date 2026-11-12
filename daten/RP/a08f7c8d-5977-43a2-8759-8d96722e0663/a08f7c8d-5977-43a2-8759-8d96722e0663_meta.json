@@ -1,0 +1,24 @@
+{
+  "id": "a08f7c8d-5977-43a2-8759-8d96722e0663",
+  "name": "Tennisplätze am Umwelt-Campus",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Neubrücker Str.",
+    "plz": "55768",
+    "ort": "Hoppstädten-Weiersbach"
+  },
+  "lage": {
+    "lon": 7.165383,
+    "lat": 49.608125
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c8d-5977-43a2-8759-8d96722e0663",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

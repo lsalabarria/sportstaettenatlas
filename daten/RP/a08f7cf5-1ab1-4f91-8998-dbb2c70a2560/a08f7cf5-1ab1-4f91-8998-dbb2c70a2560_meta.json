@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cf5-1ab1-4f91-8998-dbb2c70a2560",
+  "name": "UnixX Sports GmbH",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Justus-von-Liebig-Straße",
+    "hausnummer": "13",
+    "plz": "55232",
+    "ort": "Alzey, Stadt"
+  },
+  "lage": {
+    "lon": 8.136122,
+    "lat": 49.751791
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cf5-1ab1-4f91-8998-dbb2c70a2560",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "5af6cd9f-1b8a-4792-9b3e-1c6329b5e7af",
+  "name": "Sporthalle GS Feldkirchen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schillerstraße",
+    "hausnummer": "41",
+    "plz": "56567",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.423474,
+    "lat": 50.44788
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "5af6cd9f-1b8a-4792-9b3e-1c6329b5e7af",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

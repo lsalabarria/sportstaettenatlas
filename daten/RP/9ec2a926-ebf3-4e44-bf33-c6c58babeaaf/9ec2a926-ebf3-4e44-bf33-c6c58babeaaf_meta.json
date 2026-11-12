@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a926-ebf3-4e44-bf33-c6c58babeaaf",
+  "name": "Bacharacher Ruderverein 1884 e.V.",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Strandbadweg",
+    "hausnummer": "6",
+    "plz": "55422",
+    "ort": "Bacharach, Stadt"
+  },
+  "lage": {
+    "lon": 7.771078,
+    "lat": 50.055673
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a926-ebf3-4e44-bf33-c6c58babeaaf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

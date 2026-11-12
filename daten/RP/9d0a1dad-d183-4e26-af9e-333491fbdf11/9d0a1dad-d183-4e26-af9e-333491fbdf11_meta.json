@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dad-d183-4e26-af9e-333491fbdf11",
+  "name": "Hauptschule Rommersdorf Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Flurstraße",
+    "hausnummer": "24",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.546813,
+    "lat": 50.449644
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dad-d183-4e26-af9e-333491fbdf11",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

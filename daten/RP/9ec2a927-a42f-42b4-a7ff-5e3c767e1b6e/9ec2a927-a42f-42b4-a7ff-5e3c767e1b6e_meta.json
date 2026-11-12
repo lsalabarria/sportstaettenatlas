@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a927-a42f-42b4-a7ff-5e3c767e1b6e",
+  "name": "Rundsporthalle Bingen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Nuits-Saint-Georges-Straße",
+    "hausnummer": "4A",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.906829,
+    "lat": 49.947615
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a927-a42f-42b4-a7ff-5e3c767e1b6e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a90c-4093-4a48-b35d-10921bd59cfb",
+  "name": "Grundschule Essenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Münchhofpforte",
+    "hausnummer": "20",
+    "plz": "55270",
+    "ort": "Essenheim"
+  },
+  "lage": {
+    "lon": 8.159566,
+    "lat": 49.928767
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90c-4093-4a48-b35d-10921bd59cfb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

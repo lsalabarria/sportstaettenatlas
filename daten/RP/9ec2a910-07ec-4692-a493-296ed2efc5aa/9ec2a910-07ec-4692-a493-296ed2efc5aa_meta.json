@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a910-07ec-4692-a493-296ed2efc5aa",
+  "name": "Tennishalle Hahnheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "76",
+    "plz": "55278",
+    "ort": "Hahnheim"
+  },
+  "lage": {
+    "lon": 8.247071,
+    "lat": 49.862483
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a910-07ec-4692-a493-296ed2efc5aa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

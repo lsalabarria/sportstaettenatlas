@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a91d-da31-4f5b-986a-89dddfed03b6",
+  "name": "Sportanlage Oberotterbach",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "In den Dierbachwiesen",
+    "plz": "76889",
+    "ort": "Oberotterbach"
+  },
+  "lage": {
+    "lon": 7.973157,
+    "lat": 49.076048
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91d-da31-4f5b-986a-89dddfed03b6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4eb-1ac5-4c32-ad26-4c5769986e3c",
+  "name": "Sportplatz Schleid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "hausnummer": "13",
+    "plz": "54636",
+    "ort": "Schleid"
+  },
+  "lage": {
+    "lon": 6.493494,
+    "lat": 50.062764
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4eb-1ac5-4c32-ad26-4c5769986e3c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

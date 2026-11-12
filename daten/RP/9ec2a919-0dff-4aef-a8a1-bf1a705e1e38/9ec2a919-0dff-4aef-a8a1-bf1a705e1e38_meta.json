@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a919-0dff-4aef-a8a1-bf1a705e1e38",
+  "name": "Reitanlage Großfischlingen",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Oberstraße",
+    "hausnummer": "51",
+    "plz": "67483",
+    "ort": "Großfischlingen"
+  },
+  "lage": {
+    "lon": 8.170268,
+    "lat": 49.270146
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a919-0dff-4aef-a8a1-bf1a705e1e38",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd35-f904-413f-854c-ea609f8a5474",
+  "name": "Skateanlage",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Haardtstraße",
+    "hausnummer": "75",
+    "plz": "67125",
+    "ort": "Dannstadt-Schauernheim"
+  },
+  "lage": {
+    "lon": 8.308998,
+    "lat": 49.425006
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd35-f904-413f-854c-ea609f8a5474",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

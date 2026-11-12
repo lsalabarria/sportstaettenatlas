@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf2-a416-4c40-ae9f-a99ebc2ace05",
+  "name": "Sportplatz Waldstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "plz": "56479",
+    "ort": "Liebenscheid"
+  },
+  "lage": {
+    "lon": 8.096455,
+    "lat": 50.693255
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf2-a416-4c40-ae9f-a99ebc2ace05",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

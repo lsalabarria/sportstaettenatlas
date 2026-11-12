@@ -1,0 +1,24 @@
+{
+  "id": "9d09facf-4106-4f04-8a26-c83b70d836dc",
+  "name": "TSG Sportschule",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Dreisbachtal",
+    "hausnummer": "6",
+    "plz": "57586",
+    "ort": "Weitefeld"
+  },
+  "lage": {
+    "lon": 7.93885,
+    "lat": 50.723071
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facf-4106-4f04-8a26-c83b70d836dc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

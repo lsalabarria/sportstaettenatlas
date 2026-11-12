@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a938-f1e2-4aac-93ff-83ad1f15fed0",
+  "name": "Sportplatz Ulrichstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ulrichstraße",
+    "hausnummer": "38",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.238032,
+    "lat": 49.983201
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a938-f1e2-4aac-93ff-83ad1f15fed0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

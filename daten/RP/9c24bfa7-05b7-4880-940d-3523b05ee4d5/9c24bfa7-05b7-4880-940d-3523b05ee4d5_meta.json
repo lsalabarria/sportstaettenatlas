@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa7-05b7-4880-940d-3523b05ee4d5",
+  "name": "Sporthalle zum Steinerkopf",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Forststraße",
+    "hausnummer": "32",
+    "plz": "56077",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.636669,
+    "lat": 50.352713
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa7-05b7-4880-940d-3523b05ee4d5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

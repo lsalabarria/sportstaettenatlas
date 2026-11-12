@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a939-deac-4e49-90be-ba7e0f79a9a0",
+  "name": "Sporthalle Feldbergschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Feldbergplatz",
+    "hausnummer": "4",
+    "plz": "55118",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.264554,
+    "lat": 50.011204
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a939-deac-4e49-90be-ba7e0f79a9a0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

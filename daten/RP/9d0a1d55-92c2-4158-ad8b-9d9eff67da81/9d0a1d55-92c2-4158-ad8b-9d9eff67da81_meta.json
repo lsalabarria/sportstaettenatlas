@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d55-92c2-4158-ad8b-9d9eff67da81",
+  "name": "Bachstadion Kaifenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lindenstraße",
+    "hausnummer": "2B",
+    "plz": "56761",
+    "ort": "Kaifenheim"
+  },
+  "lage": {
+    "lon": 7.227633,
+    "lat": 50.241606
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d55-92c2-4158-ad8b-9d9eff67da81",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

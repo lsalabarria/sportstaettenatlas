@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a90d-b61f-4ec3-8f85-ca184f85cf4d",
+  "name": "Mehrgenerationenplatz Sörgenloch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mühlenweg",
+    "hausnummer": "21",
+    "plz": "55270",
+    "ort": "Sörgenloch"
+  },
+  "lage": {
+    "lon": 8.196215,
+    "lat": 49.882367
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90d-b61f-4ec3-8f85-ca184f85cf4d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

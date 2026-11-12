@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d69-7049-4c87-9859-32a90a8640a3",
+  "name": "Schießstand Graach",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "E42",
+    "plz": "54470",
+    "ort": "Graach an der Mosel"
+  },
+  "lage": {
+    "lon": 7.061615,
+    "lat": 49.943358
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d69-7049-4c87-9859-32a90a8640a3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

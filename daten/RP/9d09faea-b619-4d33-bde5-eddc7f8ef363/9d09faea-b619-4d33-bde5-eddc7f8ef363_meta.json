@@ -1,0 +1,23 @@
+{
+  "id": "9d09faea-b619-4d33-bde5-eddc7f8ef363",
+  "name": "Outdoor Basketballcourt",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rheinstraße",
+    "plz": "46412",
+    "ort": "Holler"
+  },
+  "lage": {
+    "lon": 7.839095,
+    "lat": 50.406492
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faea-b619-4d33-bde5-eddc7f8ef363",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

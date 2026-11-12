@@ -1,0 +1,24 @@
+{
+  "id": "a002547a-2939-476e-8ae2-c0b7fdbbb704",
+  "name": "Tennis-Club-Blau-Grün Nistertal e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Kempenwiese",
+    "hausnummer": "1",
+    "plz": "57647",
+    "ort": "Nistertal"
+  },
+  "lage": {
+    "lon": 7.897127,
+    "lat": 50.633223
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a002547a-2939-476e-8ae2-c0b7fdbbb704",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

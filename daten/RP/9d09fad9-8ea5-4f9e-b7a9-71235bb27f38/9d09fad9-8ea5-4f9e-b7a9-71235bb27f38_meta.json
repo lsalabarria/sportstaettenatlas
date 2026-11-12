@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad9-8ea5-4f9e-b7a9-71235bb27f38",
+  "name": "Bolzplatz Kurtscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hochstraße",
+    "plz": "56581",
+    "ort": "Kurtscheid"
+  },
+  "lage": {
+    "lon": 7.463334,
+    "lat": 50.534958
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad9-8ea5-4f9e-b7a9-71235bb27f38",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

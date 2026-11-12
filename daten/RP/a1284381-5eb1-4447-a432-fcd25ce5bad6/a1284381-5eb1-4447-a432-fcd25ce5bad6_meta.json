@@ -1,0 +1,24 @@
+{
+  "id": "a1284381-5eb1-4447-a432-fcd25ce5bad6",
+  "name": "TuS Anlage Kirchstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "hausnummer": "80",
+    "plz": "67691",
+    "ort": "Hochspeyer"
+  },
+  "lage": {
+    "lon": 7.88482,
+    "lat": 49.439418
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a1284381-5eb1-4447-a432-fcd25ce5bad6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

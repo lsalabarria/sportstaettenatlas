@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4e6-0cca-4d82-955a-40bfc9ca476f",
+  "name": "Golfclub Südeifel",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Auf Kinnscheid",
+    "hausnummer": "1",
+    "plz": "54636",
+    "ort": "Baustert"
+  },
+  "lage": {
+    "lon": 6.377221,
+    "lat": 49.979564
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e6-0cca-4d82-955a-40bfc9ca476f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

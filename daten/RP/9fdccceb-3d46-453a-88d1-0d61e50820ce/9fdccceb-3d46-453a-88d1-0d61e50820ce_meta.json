@@ -1,0 +1,24 @@
+{
+  "id": "9fdccceb-3d46-453a-88d1-0d61e50820ce",
+  "name": "Sportplatz Balduinstein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Schwalbenstein",
+    "plz": "65626",
+    "ort": "Balduinstein"
+  },
+  "lage": {
+    "lon": 7.976843,
+    "lat": 50.347527
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccceb-3d46-453a-88d1-0d61e50820ce",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

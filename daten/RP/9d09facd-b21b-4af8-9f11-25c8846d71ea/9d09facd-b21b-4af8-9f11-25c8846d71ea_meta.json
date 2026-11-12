@@ -1,0 +1,23 @@
+{
+  "id": "9d09facd-b21b-4af8-9f11-25c8846d71ea",
+  "name": "Sportplatz Kausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportplatzweg",
+    "plz": "57520",
+    "ort": "Kausen"
+  },
+  "lage": {
+    "lon": 7.863138,
+    "lat": 50.737718
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facd-b21b-4af8-9f11-25c8846d71ea",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

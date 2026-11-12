@@ -1,0 +1,26 @@
+{
+  "id": "a0d96798-af90-4a0c-bcd6-a206e7171441",
+  "name": "Spielplatz Ulrichstraße",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Ulrichstraße",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.236459,
+    "lat": 49.983003
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "sportarten": [
+    "Basketball"
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0d96798-af90-4a0c-bcd6-a206e7171441",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

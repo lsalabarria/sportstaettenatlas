@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd5f-1bdf-4493-b59a-435b51f68a51",
+  "name": "Sportgelände Hanauer Ring",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hanauer Ring",
+    "hausnummer": "17a",
+    "plz": "66978",
+    "ort": "Clausen"
+  },
+  "lage": {
+    "lon": 7.680103,
+    "lat": 49.261479
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd5f-1bdf-4493-b59a-435b51f68a51",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

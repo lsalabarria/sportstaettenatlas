@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a92d-0da4-4021-b646-93fa2269634f",
+  "name": "Neue Gymnasiumhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Karl-Sieben-Straße",
+    "hausnummer": "39",
+    "plz": "55268",
+    "ort": "Nieder-Olm, Stadt"
+  },
+  "lage": {
+    "lon": 8.195954,
+    "lat": 49.901067
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92d-0da4-4021-b646-93fa2269634f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

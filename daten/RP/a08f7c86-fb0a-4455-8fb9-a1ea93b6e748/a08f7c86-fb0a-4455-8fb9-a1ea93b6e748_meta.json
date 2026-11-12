@@ -1,0 +1,24 @@
+{
+  "id": "a08f7c86-fb0a-4455-8fb9-a1ea93b6e748",
+  "name": "Altrheinsee",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "L437",
+    "plz": "67575",
+    "ort": "Eich"
+  },
+  "lage": {
+    "lon": 8.39696,
+    "lat": 49.757781
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c86-fb0a-4455-8fb9-a1ea93b6e748",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

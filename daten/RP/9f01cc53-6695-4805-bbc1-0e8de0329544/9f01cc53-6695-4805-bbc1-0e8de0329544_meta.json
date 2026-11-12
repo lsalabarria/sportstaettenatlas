@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc53-6695-4805-bbc1-0e8de0329544",
+  "name": "Deichwelle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Andernacher Straße",
+    "hausnummer": "55",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.46253,
+    "lat": 50.43553
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc53-6695-4805-bbc1-0e8de0329544",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

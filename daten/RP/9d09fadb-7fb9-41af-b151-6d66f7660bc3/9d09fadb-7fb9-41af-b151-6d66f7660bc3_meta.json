@@ -1,0 +1,24 @@
+{
+  "id": "9d09fadb-7fb9-41af-b151-6d66f7660bc3",
+  "name": "Skateplatz",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Feldstraße",
+    "hausnummer": "17b",
+    "plz": "54311",
+    "ort": "Trierweiler"
+  },
+  "lage": {
+    "lon": 6.597381,
+    "lat": 49.767861
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadb-7fb9-41af-b151-6d66f7660bc3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

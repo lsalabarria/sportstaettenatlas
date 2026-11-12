@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdb3-0500-448b-8b45-89a2a9de966e",
+  "name": "Kurbenhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Kurbenhof",
+    "hausnummer": "3",
+    "plz": "56751",
+    "ort": "Polch, Stadt"
+  },
+  "lage": {
+    "lon": 7.270265,
+    "lat": 50.30368
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdb3-0500-448b-8b45-89a2a9de966e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

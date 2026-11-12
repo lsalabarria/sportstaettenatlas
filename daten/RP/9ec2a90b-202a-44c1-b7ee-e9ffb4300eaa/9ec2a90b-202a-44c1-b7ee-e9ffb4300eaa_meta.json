@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a90b-202a-44c1-b7ee-e9ffb4300eaa",
+  "name": "Tennisclub Ockenheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Sporkenheimer Weg",
+    "plz": "55435",
+    "ort": "Ockenheim"
+  },
+  "lage": {
+    "lon": 7.975242,
+    "lat": 49.947834
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90b-202a-44c1-b7ee-e9ffb4300eaa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1da4-9d0c-4508-9da4-3074af9d6ad9",
+  "name": "Bolzplatz Berndorf",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "54578",
+    "ort": "Berndorf"
+  },
+  "lage": {
+    "lon": 6.701508,
+    "lat": 50.308988
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da4-9d0c-4508-9da4-3074af9d6ad9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

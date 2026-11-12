@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cde-6415-45ba-b3f6-5cdc679182c9",
+  "name": "Tennisplatz Gutenberg",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Zum Sportfeld",
+    "plz": "55595",
+    "ort": "Gutenberg"
+  },
+  "lage": {
+    "lon": 7.795926,
+    "lat": 49.875311
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cde-6415-45ba-b3f6-5cdc679182c9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a92d-19cf-4fab-bc82-5182b6f5aff9",
+  "name": "Gymnasium Nieder-Olm",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Karl-Sieben-Straße",
+    "hausnummer": "39",
+    "plz": "55268",
+    "ort": "Nieder-Olm, Stadt"
+  },
+  "lage": {
+    "lon": 8.194924,
+    "lat": 49.90099
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92d-19cf-4fab-bc82-5182b6f5aff9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

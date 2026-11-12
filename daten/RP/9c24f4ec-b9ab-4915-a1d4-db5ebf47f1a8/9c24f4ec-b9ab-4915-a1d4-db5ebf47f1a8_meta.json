@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4ec-b9ab-4915-a1d4-db5ebf47f1a8",
+  "name": "Sportplatz Daleiden",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "5",
+    "plz": "54689",
+    "ort": "Daleiden"
+  },
+  "lage": {
+    "lon": 6.189251,
+    "lat": 50.072789
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ec-b9ab-4915-a1d4-db5ebf47f1a8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

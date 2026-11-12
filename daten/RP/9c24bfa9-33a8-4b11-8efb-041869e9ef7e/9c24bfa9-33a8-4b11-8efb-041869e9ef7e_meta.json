@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa9-33a8-4b11-8efb-041869e9ef7e",
+  "name": "Hartplatz Feste Franz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Feste Franz",
+    "hausnummer": "2A",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.590033,
+    "lat": 50.370276
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa9-33a8-4b11-8efb-041869e9ef7e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

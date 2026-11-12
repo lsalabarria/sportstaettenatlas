@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e0f-1644-4439-b069-eb84ec31e3e4",
+  "name": "JVA Wittlich",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Trierer Landstraße",
+    "hausnummer": "64",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.880087,
+    "lat": 49.980641
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0f-1644-4439-b069-eb84ec31e3e4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a916-b25d-44e5-adfa-72ef849be8e6",
+  "name": "Sportanlage Gerbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "25",
+    "plz": "67813",
+    "ort": "Gerbach"
+  },
+  "lage": {
+    "lon": 7.877196,
+    "lat": 49.671575
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a916-b25d-44e5-adfa-72ef849be8e6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d58-69d9-4679-8d2f-02f79d26010c",
+  "name": "Bolzplatz Haserich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L203",
+    "plz": "56858",
+    "ort": "Haserich"
+  },
+  "lage": {
+    "lon": 7.319746,
+    "lat": 50.037189
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d58-69d9-4679-8d2f-02f79d26010c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

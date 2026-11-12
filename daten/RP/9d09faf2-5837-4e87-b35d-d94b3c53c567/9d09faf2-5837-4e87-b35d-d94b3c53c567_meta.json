@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf2-5837-4e87-b35d-d94b3c53c567",
+  "name": "Spielplatz Rehe",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Weiherstraße",
+    "plz": "56479",
+    "ort": "Rehe"
+  },
+  "lage": {
+    "lon": 8.121196,
+    "lat": 50.63685
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf2-5837-4e87-b35d-d94b3c53c567",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

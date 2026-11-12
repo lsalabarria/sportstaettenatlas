@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a917-130d-44ba-a728-456f1d489fb5",
+  "name": "Sportplatz Oberwiesen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirchheimbolanderstr.",
+    "plz": "67294",
+    "ort": "Oberwiesen"
+  },
+  "lage": {
+    "lon": 7.959702,
+    "lat": 49.692352
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a917-130d-44ba-a728-456f1d489fb5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

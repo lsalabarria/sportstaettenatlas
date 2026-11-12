@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d4b-7c70-4e6f-8a53-cd2d84d26538",
+  "name": "Sport/-Mehrzweckhalle Ringen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Kreuzerfeld",
+    "hausnummer": "10",
+    "plz": "53501",
+    "ort": "Grafschaft"
+  },
+  "lage": {
+    "lon": 7.088355,
+    "lat": 50.571586
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4b-7c70-4e6f-8a53-cd2d84d26538",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

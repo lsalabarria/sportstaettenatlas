@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a920-6d04-496c-8dac-eaae0a8910ca",
+  "name": "Pferdepension und Hufbeschlag Christ",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Wiesenstraße",
+    "plz": "76857",
+    "ort": "Wernersberg"
+  },
+  "lage": {
+    "lon": 7.932677,
+    "lat": 49.191002
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a920-6d04-496c-8dac-eaae0a8910ca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

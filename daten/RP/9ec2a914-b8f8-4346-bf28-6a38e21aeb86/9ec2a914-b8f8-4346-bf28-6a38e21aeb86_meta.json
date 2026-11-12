@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a914-b8f8-4346-bf28-6a38e21aeb86",
+  "name": "Sportplatz Weierhof",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zur Burg",
+    "plz": "67295",
+    "ort": "Bolanden"
+  },
+  "lage": {
+    "lon": 8.023927,
+    "lat": 49.638516
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a914-b8f8-4346-bf28-6a38e21aeb86",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e05-691c-43fc-9566-03e953a2926f",
+  "name": "Hocheifelschule Adenau Realschule Plus",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Alte Poststraße",
+    "hausnummer": "77",
+    "plz": "53518",
+    "ort": "Adenau, Stadt"
+  },
+  "lage": {
+    "lon": 6.930567,
+    "lat": 50.377739
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e05-691c-43fc-9566-03e953a2926f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce01-5aba-407a-bcc2-83af7f27b2cb",
+  "name": "VTV Mundenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Anebosstraße",
+    "hausnummer": "4",
+    "plz": "67065",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.424121,
+    "lat": 49.457524
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce01-5aba-407a-bcc2-83af7f27b2cb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

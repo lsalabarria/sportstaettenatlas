@@ -1,0 +1,22 @@
+{
+  "id": "9ec2a92d-8742-423a-b9bf-b5130fd3bcf8",
+  "name": "Reit- und Fahrverein Nierstein e.V.",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "plz": "55283",
+    "ort": "Nierstein, Stadt"
+  },
+  "lage": {
+    "lon": 8.324199,
+    "lat": 49.867862
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92d-8742-423a-b9bf-b5130fd3bcf8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

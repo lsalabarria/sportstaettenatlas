@@ -1,0 +1,24 @@
+{
+  "id": "a08f7d18-544b-445d-b8ea-6c803190af87",
+  "name": "Reitzentrum Abtei",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Niederwörresbacher Weg",
+    "plz": "55743",
+    "ort": "Idar-Oberstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.318227,
+    "lat": 49.745231
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d18-544b-445d-b8ea-6c803190af87",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

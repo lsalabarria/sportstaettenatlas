@@ -1,0 +1,24 @@
+{
+  "id": "a0d99d4e-0eee-4b5b-b9dc-650ec153d6cd",
+  "name": "Bouleanlage am Bürgerhaus",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Obstmarkt",
+    "hausnummer": "24",
+    "plz": "55126",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.17872,
+    "lat": 49.985138
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0d99d4e-0eee-4b5b-b9dc-650ec153d6cd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

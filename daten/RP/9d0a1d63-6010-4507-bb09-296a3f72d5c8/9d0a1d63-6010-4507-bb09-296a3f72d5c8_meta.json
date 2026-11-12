@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d63-6010-4507-bb09-296a3f72d5c8",
+  "name": "Sportplatz Malborn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "In der Träf",
+    "plz": "54426",
+    "ort": "Malborn"
+  },
+  "lage": {
+    "lon": 6.992558,
+    "lat": 49.710735
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d63-6010-4507-bb09-296a3f72d5c8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

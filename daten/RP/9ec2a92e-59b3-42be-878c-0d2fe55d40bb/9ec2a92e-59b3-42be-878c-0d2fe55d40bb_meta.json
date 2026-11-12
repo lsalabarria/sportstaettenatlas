@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a92e-59b3-42be-878c-0d2fe55d40bb",
+  "name": "Alte Sporthalle IGS an den Rheinauen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Stadtbad",
+    "hausnummer": "12",
+    "plz": "55276",
+    "ort": "Oppenheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.368482,
+    "lat": 49.853015
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92e-59b3-42be-878c-0d2fe55d40bb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

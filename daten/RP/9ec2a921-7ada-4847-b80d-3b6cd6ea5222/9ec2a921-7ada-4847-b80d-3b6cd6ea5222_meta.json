@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a921-7ada-4847-b80d-3b6cd6ea5222",
+  "name": "Sportplatz Frankweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dagobertstraße",
+    "plz": "76857",
+    "ort": "Frankweiler"
+  },
+  "lage": {
+    "lon": 8.054678,
+    "lat": 49.229495
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a921-7ada-4847-b80d-3b6cd6ea5222",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

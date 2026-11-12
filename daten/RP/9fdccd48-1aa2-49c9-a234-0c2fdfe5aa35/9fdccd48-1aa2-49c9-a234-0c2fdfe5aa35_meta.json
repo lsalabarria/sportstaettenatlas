@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd48-1aa2-49c9-a234-0c2fdfe5aa35",
+  "name": "Backelstein Kletterfels",
+  "kategorie": "Klettersportstätte",
+  "adresse": {
+    "strasse": "Backelsteinstraße",
+    "hausnummer": "38",
+    "plz": "76846",
+    "ort": "Hauenstein"
+  },
+  "lage": {
+    "lon": 7.853989,
+    "lat": 49.182303
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd48-1aa2-49c9-a234-0c2fdfe5aa35",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

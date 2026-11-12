@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da3-b585-4928-83ba-7d1af1f85cc4",
+  "name": "Tennisanlage Oberbettingen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Lissendorfer Straße",
+    "plz": "54578",
+    "ort": "Oberbettingen"
+  },
+  "lage": {
+    "lon": 6.628991,
+    "lat": 50.288911
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da3-b585-4928-83ba-7d1af1f85cc4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce09-d669-4a16-954f-75f3f164de59",
+  "name": "Reitstall Sandvik",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Im Hellwich",
+    "hausnummer": "5",
+    "plz": "67105",
+    "ort": "Schifferstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.368315,
+    "lat": 49.36856
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce09-d669-4a16-954f-75f3f164de59",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

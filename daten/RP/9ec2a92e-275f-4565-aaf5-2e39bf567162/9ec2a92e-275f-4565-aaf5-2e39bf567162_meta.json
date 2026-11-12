@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a92e-275f-4565-aaf5-2e39bf567162",
+  "name": "Sporthalle Gymnasium zu St. Katharinen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "An d. Festwiese",
+    "hausnummer": "2",
+    "plz": "55276",
+    "ort": "Oppenheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.363679,
+    "lat": 49.858045
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92e-275f-4565-aaf5-2e39bf567162",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

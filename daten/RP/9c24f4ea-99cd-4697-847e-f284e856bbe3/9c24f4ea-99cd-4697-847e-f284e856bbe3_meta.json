@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4ea-99cd-4697-847e-f284e856bbe3",
+  "name": "Sportplatz Koosbüsch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "plz": "54636",
+    "ort": "Wißmannsdorf"
+  },
+  "lage": {
+    "lon": 6.428998,
+    "lat": 50.006667
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ea-99cd-4697-847e-f284e856bbe3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

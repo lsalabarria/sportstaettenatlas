@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a92d-293f-4536-a332-f2703cf7c97b",
+  "name": "Heinz-Kerz-Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Maria-Montessori-Straße",
+    "hausnummer": "8",
+    "plz": "55268",
+    "ort": "Nieder-Olm, Stadt"
+  },
+  "lage": {
+    "lon": 8.19582,
+    "lat": 49.899981
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92d-293f-4536-a332-f2703cf7c97b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

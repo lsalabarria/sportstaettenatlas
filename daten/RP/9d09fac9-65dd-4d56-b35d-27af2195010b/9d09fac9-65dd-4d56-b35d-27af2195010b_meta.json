@@ -1,0 +1,23 @@
+{
+  "id": "9d09fac9-65dd-4d56-b35d-27af2195010b",
+  "name": "Kartbahn Westerwaldring",
+  "kategorie": "Motorsportstätte",
+  "adresse": {
+    "strasse": "Ehrlichseifen",
+    "plz": "57612",
+    "ort": "Eichelhardt"
+  },
+  "lage": {
+    "lon": 7.716489,
+    "lat": 50.715834
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac9-65dd-4d56-b35d-27af2195010b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

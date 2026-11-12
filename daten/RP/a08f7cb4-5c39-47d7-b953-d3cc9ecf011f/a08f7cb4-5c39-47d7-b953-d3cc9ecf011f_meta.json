@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cb4-5c39-47d7-b953-d3cc9ecf011f",
+  "name": "Sportplatz Langenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wiesenstraße",
+    "plz": "66909",
+    "ort": "Langenbach"
+  },
+  "lage": {
+    "lon": 7.324968,
+    "lat": 49.495226
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb4-5c39-47d7-b953-d3cc9ecf011f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

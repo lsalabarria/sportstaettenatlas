@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1df9-53e8-4086-86f0-432de18d29bf",
+  "name": "Turnhalle Anne-Frank-Realschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Mons-Tabor-Straße",
+    "hausnummer": "38",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.820386,
+    "lat": 50.439032
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df9-53e8-4086-86f0-432de18d29bf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

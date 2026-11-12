@@ -1,0 +1,23 @@
+{
+  "id": "9d09faed-6948-495e-9fe6-0d43ed55b29b",
+  "name": "Tennisplätze des TC Siershahn",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Tannenhain",
+    "plz": "56427",
+    "ort": "Siershahn"
+  },
+  "lage": {
+    "lon": 7.782574,
+    "lat": 50.488963
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faed-6948-495e-9fe6-0d43ed55b29b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

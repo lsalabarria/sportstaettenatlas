@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd86-2a61-482c-8d8f-3bda01ad9022",
+  "name": "Volleyballplatz Studentenwiese Germersheim-Sondernheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Konrad-Nolte-Straße",
+    "plz": "76726",
+    "ort": "Germersheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.370339,
+    "lat": 49.201268
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd86-2a61-482c-8d8f-3bda01ad9022",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

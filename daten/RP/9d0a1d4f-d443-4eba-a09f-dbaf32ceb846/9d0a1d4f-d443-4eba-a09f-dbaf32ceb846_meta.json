@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4f-d443-4eba-a09f-dbaf32ceb846",
+  "name": "Sportplatz Lützingen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Neuwiese",
+    "plz": "56659",
+    "ort": "Burgbrohl"
+  },
+  "lage": {
+    "lon": 7.279938,
+    "lat": 50.468229
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4f-d443-4eba-a09f-dbaf32ceb846",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4ed-c332-4b76-a215-5df14733b6c0",
+  "name": "Turnhalle Berufsbildende Schule Prüm",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kreuzerweg",
+    "hausnummer": "16",
+    "plz": "54595",
+    "ort": "Prüm, Stadt"
+  },
+  "lage": {
+    "lon": 6.415642,
+    "lat": 50.202792
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ed-c332-4b76-a215-5df14733b6c0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad8-ca92-4e4a-b40a-c9e899ad1b7b",
+  "name": "Sporthalle / Sportplatz Waldbreitbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "plz": "56588",
+    "ort": "Waldbreitbach"
+  },
+  "lage": {
+    "lon": 7.412385,
+    "lat": 50.547747
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad8-ca92-4e4a-b40a-c9e899ad1b7b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

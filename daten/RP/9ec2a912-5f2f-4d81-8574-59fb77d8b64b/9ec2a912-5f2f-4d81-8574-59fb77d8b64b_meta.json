@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a912-5f2f-4d81-8574-59fb77d8b64b",
+  "name": "Tennisplätze TC Blau-Weiß Zellertal",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Zeller Str.",
+    "plz": "67308",
+    "ort": "Zellertal"
+  },
+  "lage": {
+    "lon": 8.134748,
+    "lat": 49.645277
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a912-5f2f-4d81-8574-59fb77d8b64b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

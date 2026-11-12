@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdc9-a7eb-4d02-866c-cca3df3f9e00",
+  "name": "Sportplatz im Einrich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Gänsberg",
+    "hausnummer": "7",
+    "plz": "56368",
+    "ort": "Katzenelnbogen, Stadt"
+  },
+  "lage": {
+    "lon": 7.980824,
+    "lat": 50.271169
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdc9-a7eb-4d02-866c-cca3df3f9e00",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e07-45d8-4673-8288-34c6057956ca",
+  "name": "Spielplatz Müden",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Fährstraße",
+    "hausnummer": "12",
+    "plz": "56254",
+    "ort": "Müden (Mosel)"
+  },
+  "lage": {
+    "lon": 7.339353,
+    "lat": 50.184352
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e07-45d8-4673-8288-34c6057956ca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

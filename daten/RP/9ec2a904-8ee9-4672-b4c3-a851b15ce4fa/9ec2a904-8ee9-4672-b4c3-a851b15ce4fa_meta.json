@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a904-8ee9-4672-b4c3-a851b15ce4fa",
+  "name": "Turnhalle Meckenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Rödersheimer Str.",
+    "hausnummer": "29",
+    "plz": "67149",
+    "ort": "Meckenheim"
+  },
+  "lage": {
+    "lon": 8.2407,
+    "lat": 49.412208
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a904-8ee9-4672-b4c3-a851b15ce4fa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

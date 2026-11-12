@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a93c-a74a-49b6-a55b-b81e7c572ee9",
+  "name": "alla hopp!-Bewegungs- und Begegnungsanlage Edenkoben",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Unter dem Kloster",
+    "plz": "67480",
+    "ort": "Edenkoben, Stadt"
+  },
+  "lage": {
+    "lon": 8.115702,
+    "lat": 49.280959
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93c-a74a-49b6-a55b-b81e7c572ee9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

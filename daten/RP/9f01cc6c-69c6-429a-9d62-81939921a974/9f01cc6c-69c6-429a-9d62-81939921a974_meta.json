@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc6c-69c6-429a-9d62-81939921a974",
+  "name": "Freibad Oberwerth",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Haydnstraße",
+    "hausnummer": "2",
+    "plz": "56075",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.595913,
+    "lat": 50.295989
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6c-69c6-429a-9d62-81939921a974",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

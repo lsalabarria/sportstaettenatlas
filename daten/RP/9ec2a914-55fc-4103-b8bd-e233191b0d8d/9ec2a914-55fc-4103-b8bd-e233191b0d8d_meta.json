@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a914-55fc-4103-b8bd-e233191b0d8d",
+  "name": "Hallengemeinschaft Dreisen GbR",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Schillerstraße",
+    "hausnummer": "21",
+    "plz": "67816",
+    "ort": "Dreisen"
+  },
+  "lage": {
+    "lon": 8.013967,
+    "lat": 49.598364
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a914-55fc-4103-b8bd-e233191b0d8d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

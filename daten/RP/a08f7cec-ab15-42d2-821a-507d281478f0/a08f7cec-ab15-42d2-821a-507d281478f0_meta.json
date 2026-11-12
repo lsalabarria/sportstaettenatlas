@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cec-ab15-42d2-821a-507d281478f0",
+  "name": "Erich-Kästner-Realschule plus Sporthalle Wörrstadt",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Humboldtstraße",
+    "plz": "55286",
+    "ort": "Wörrstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.109328,
+    "lat": 49.842835
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cec-ab15-42d2-821a-507d281478f0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa8-adec-48e3-8077-a759ee853f97",
+  "name": "Sporthalle der Hans-Zulliger-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Brenderweg",
+    "hausnummer": "21-23",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.597513,
+    "lat": 50.368524
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa8-adec-48e3-8077-a759ee853f97",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

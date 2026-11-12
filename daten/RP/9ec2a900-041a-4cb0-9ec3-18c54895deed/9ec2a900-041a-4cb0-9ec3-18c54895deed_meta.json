@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a900-041a-4cb0-9ec3-18c54895deed",
+  "name": "Sportpark Sülzer Tor",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Grünstadter Str.",
+    "hausnummer": "25",
+    "plz": "67271",
+    "ort": "Obersülzen"
+  },
+  "lage": {
+    "lon": 8.199305,
+    "lat": 49.56748
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a900-041a-4cb0-9ec3-18c54895deed",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

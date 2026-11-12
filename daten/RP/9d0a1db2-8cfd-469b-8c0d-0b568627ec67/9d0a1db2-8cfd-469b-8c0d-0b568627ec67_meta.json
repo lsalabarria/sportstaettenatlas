@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1db2-8cfd-469b-8c0d-0b568627ec67",
+  "name": "Sportplatz SV Wienau",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Puderbacher Straße",
+    "plz": "56269",
+    "ort": "Dierdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.635413,
+    "lat": 50.56026
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db2-8cfd-469b-8c0d-0b568627ec67",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

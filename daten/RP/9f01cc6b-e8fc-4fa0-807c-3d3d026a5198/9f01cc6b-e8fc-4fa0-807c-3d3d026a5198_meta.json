@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc6b-e8fc-4fa0-807c-3d3d026a5198",
+  "name": "Hallenbad Wörth",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Mozartstraße",
+    "hausnummer": "8",
+    "plz": "76744",
+    "ort": "Wörth am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.2507,
+    "lat": 49.05371
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6b-e8fc-4fa0-807c-3d3d026a5198",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5b-b96f-4080-ac03-e9588c4cae53",
+  "name": "Bouleplatz Alterkülz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Brühlweg",
+    "plz": "56288",
+    "ort": "Alterkülz"
+  },
+  "lage": {
+    "lon": 7.464108,
+    "lat": 50.032678
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5b-b96f-4080-ac03-e9588c4cae53",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

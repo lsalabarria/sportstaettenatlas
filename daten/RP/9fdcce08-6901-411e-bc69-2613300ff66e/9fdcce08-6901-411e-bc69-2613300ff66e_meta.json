@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce08-6901-411e-bc69-2613300ff66e",
+  "name": "Minigolf",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Speyerer Straße",
+    "hausnummer": "145",
+    "plz": "67105",
+    "ort": "Schifferstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.383911,
+    "lat": 49.371585
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce08-6901-411e-bc69-2613300ff66e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

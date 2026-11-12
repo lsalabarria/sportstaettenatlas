@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d52-9840-418a-8c6a-9ad5a540d9da",
+  "name": "Sportplatz Bruttig-Fankel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Birkenweg",
+    "plz": "56814",
+    "ort": "Bruttig-Fankel"
+  },
+  "lage": {
+    "lon": 7.229879,
+    "lat": 50.130927
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d52-9840-418a-8c6a-9ad5a540d9da",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

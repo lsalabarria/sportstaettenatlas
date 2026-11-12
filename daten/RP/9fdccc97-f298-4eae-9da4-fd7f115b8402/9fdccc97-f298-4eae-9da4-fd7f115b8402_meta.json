@@ -1,0 +1,24 @@
+{
+  "id": "9fdccc97-f298-4eae-9da4-fd7f115b8402",
+  "name": "Bogensportverein Bärlauchjäger Hördt e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "plz": "76711",
+    "ort": "Hördt"
+  },
+  "lage": {
+    "lon": 8.331335,
+    "lat": 49.161883
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc97-f298-4eae-9da4-fd7f115b8402",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

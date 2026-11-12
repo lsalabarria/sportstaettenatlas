@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad5-9bd2-48d5-9ac3-4b31d9e2792a",
+  "name": "Sporthalle Gymnasium Neustadt (Wied)",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Friedenstraße",
+    "hausnummer": "11",
+    "plz": "53577",
+    "ort": "Neustadt (Wied)"
+  },
+  "lage": {
+    "lon": 7.429967,
+    "lat": 50.621428
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad5-9bd2-48d5-9ac3-4b31d9e2792a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

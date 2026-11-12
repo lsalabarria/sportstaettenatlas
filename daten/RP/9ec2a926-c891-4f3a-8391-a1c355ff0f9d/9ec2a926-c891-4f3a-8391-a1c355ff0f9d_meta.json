@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a926-c891-4f3a-8391-a1c355ff0f9d",
+  "name": "Tennisclub Lambrecht und Umgebung",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Beerentalstraße",
+    "hausnummer": "37",
+    "plz": "67466",
+    "ort": "Lambrecht (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.057314,
+    "lat": 49.368783
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a926-c891-4f3a-8391-a1c355ff0f9d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

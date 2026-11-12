@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc79-730f-450e-b2f0-a1e89da4ce25",
+  "name": "Freibad Camping Nimseck",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Nimseck",
+    "hausnummer": "2",
+    "plz": "54666",
+    "ort": "Irrel"
+  },
+  "lage": {
+    "lon": 6.46257,
+    "lat": 49.85344
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc79-730f-450e-b2f0-a1e89da4ce25",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

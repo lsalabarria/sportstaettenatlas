@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91f-a6d2-43da-a961-22bc4b6967f8",
+  "name": "Pfalz zu Pferd e.V.",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "88",
+    "plz": "76857",
+    "ort": "Silz"
+  },
+  "lage": {
+    "lon": 7.944997,
+    "lat": 49.146215
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91f-a6d2-43da-a961-22bc4b6967f8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

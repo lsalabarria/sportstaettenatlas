@@ -1,0 +1,24 @@
+{
+  "id": "9d09faeb-a69c-4952-bb50-e4af2a00feee",
+  "name": "redxgreen Fitnessstudio",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "In den Erlen",
+    "hausnummer": "32",
+    "plz": "56206",
+    "ort": "Hilgert"
+  },
+  "lage": {
+    "lon": 7.68478,
+    "lat": 50.450359
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faeb-a69c-4952-bb50-e4af2a00feee",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

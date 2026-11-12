@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db4-448b-4426-9d7d-7d604e4b6f9f",
+  "name": "Lorenz Kellner Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Römerstraße",
+    "hausnummer": "19",
+    "plz": "54329",
+    "ort": "Konz, Stadt"
+  },
+  "lage": {
+    "lon": 6.578777,
+    "lat": 49.70471
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db4-448b-4426-9d7d-7d604e4b6f9f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

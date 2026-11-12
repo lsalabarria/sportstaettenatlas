@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d48-a543-4377-8819-cd626b750e31",
+  "name": "Sportplatz Unnau",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schwimmbadstraße",
+    "plz": "57648",
+    "ort": "Unnau"
+  },
+  "lage": {
+    "lon": 7.913443,
+    "lat": 50.652806
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d48-a543-4377-8819-cd626b750e31",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

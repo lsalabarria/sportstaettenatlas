@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4e5-2dbe-4f7c-b265-06fb1c677363",
+  "name": "TC Bettingen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Prümtalstraße",
+    "hausnummer": "20",
+    "plz": "54646",
+    "ort": "Bettingen"
+  },
+  "lage": {
+    "lon": 6.402746,
+    "lat": 49.939558
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e5-2dbe-4f7c-b265-06fb1c677363",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

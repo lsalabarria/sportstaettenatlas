@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccbb-714e-4940-b99e-8e287b407ec3",
+  "name": "Schmitt Eichenhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Eichenhof",
+    "plz": "56220",
+    "ort": "Bassenheim"
+  },
+  "lage": {
+    "lon": 7.449566,
+    "lat": 50.358979
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccbb-714e-4940-b99e-8e287b407ec3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1db5-15e0-4fed-a6a9-23b12e1bda93",
+  "name": "Bogenschießplatz Wiltinger Kupp",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "plz": "54329",
+    "ort": "Konz, Stadt"
+  },
+  "lage": {
+    "lon": 6.580508,
+    "lat": 49.678523
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db5-15e0-4fed-a6a9-23b12e1bda93",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

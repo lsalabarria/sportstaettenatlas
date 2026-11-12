@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad5-4c12-4394-a386-8e17f2192bf7",
+  "name": "Skatepark Asbach",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Im Steinchen",
+    "hausnummer": "9",
+    "plz": "53567",
+    "ort": "Asbach"
+  },
+  "lage": {
+    "lon": 7.428633,
+    "lat": 50.659301
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad5-4c12-4394-a386-8e17f2192bf7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

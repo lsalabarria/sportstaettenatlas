@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e0c-f595-4449-bc43-5f871fd12951",
+  "name": "Spielplatz in der Beinde",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "In der Beinde",
+    "plz": "56288",
+    "ort": "Kastellaun, Stadt"
+  },
+  "lage": {
+    "lon": 7.440049,
+    "lat": 50.074865
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0c-f595-4449-bc43-5f871fd12951",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

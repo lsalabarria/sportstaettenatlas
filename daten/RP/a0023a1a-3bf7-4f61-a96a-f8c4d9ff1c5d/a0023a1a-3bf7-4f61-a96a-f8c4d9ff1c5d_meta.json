@@ -1,0 +1,24 @@
+{
+  "id": "a0023a1a-3bf7-4f61-a96a-f8c4d9ff1c5d",
+  "name": "Tennisanlage Tawern",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Wawerner Straße",
+    "hausnummer": "99",
+    "plz": "54456",
+    "ort": "Tawern"
+  },
+  "lage": {
+    "lon": 6.524076,
+    "lat": 49.667257
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0023a1a-3bf7-4f61-a96a-f8c4d9ff1c5d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

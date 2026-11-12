@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd61-3c28-45f0-b871-c2355ac095bf",
+  "name": "Sportanlage Daniel Theysohn IGS",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Karl-Stöß-Ring",
+    "hausnummer": "2",
+    "plz": "67714",
+    "ort": "Waldfischbach-Burgalben"
+  },
+  "lage": {
+    "lon": 7.64965,
+    "lat": 49.285469
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd61-3c28-45f0-b871-c2355ac095bf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a93c-2db9-4236-8aa0-86c9e0c8e8d4",
+  "name": "Sportanlagen am Modenbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "67482",
+    "ort": "Freimersheim (Pfalz)"
+  },
+  "lage": {
+    "lon": 8.231086,
+    "lat": 49.272998
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93c-2db9-4236-8aa0-86c9e0c8e8d4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

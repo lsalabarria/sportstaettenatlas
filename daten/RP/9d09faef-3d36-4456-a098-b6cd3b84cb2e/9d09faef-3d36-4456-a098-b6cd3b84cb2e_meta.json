@@ -1,0 +1,24 @@
+{
+  "id": "9d09faef-3d36-4456-a098-b6cd3b84cb2e",
+  "name": "Sportplatz Obererbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schieferweg",
+    "hausnummer": "1",
+    "plz": "56414",
+    "ort": "Obererbach"
+  },
+  "lage": {
+    "lon": 7.96212,
+    "lat": 50.440635
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faef-3d36-4456-a098-b6cd3b84cb2e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

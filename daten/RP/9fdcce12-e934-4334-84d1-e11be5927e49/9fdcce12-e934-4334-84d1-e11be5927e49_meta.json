@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce12-e934-4334-84d1-e11be5927e49",
+  "name": "Tirol-Arena",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hengsberger Straße",
+    "hausnummer": "75",
+    "plz": "66954",
+    "ort": "Pirmasens, Stadt"
+  },
+  "lage": {
+    "lon": 7.573699,
+    "lat": 49.223566
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce12-e934-4334-84d1-e11be5927e49",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

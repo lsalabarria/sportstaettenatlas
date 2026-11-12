@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a93d-cec2-4046-b667-09ef83c683e3",
+  "name": "Bouleplatz Herxheim",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Luitpoldstraße",
+    "hausnummer": "59",
+    "plz": "76863",
+    "ort": "Herxheim bei Landau/ Pfalz"
+  },
+  "lage": {
+    "lon": 8.214289,
+    "lat": 49.137979
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93d-cec2-4046-b667-09ef83c683e3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

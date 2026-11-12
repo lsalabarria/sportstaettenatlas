@@ -1,0 +1,24 @@
+{
+  "id": "9d09fae0-bb2b-49a2-8dea-a788d46dc0b7",
+  "name": "Tennisplatz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "hausnummer": "8",
+    "plz": "54317",
+    "ort": "Gutweiler"
+  },
+  "lage": {
+    "lon": 6.728719,
+    "lat": 49.721036
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae0-bb2b-49a2-8dea-a788d46dc0b7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

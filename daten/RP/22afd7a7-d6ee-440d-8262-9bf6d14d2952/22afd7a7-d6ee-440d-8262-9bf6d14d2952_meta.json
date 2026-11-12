@@ -1,0 +1,24 @@
+{
+  "id": "22afd7a7-d6ee-440d-8262-9bf6d14d2952",
+  "name": "Skilanglaufzentrum Rhein-Westerwald - SRC Heimbach-Weis 2000 e.V.",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Am Heidengraben",
+    "plz": "56584",
+    "ort": "Anhausen"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "22afd7a7-d6ee-440d-8262-9bf6d14d2952",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

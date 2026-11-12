@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad2-18e0-48c4-81c4-a70ce7cba1e6",
+  "name": "Bolzplatz Mittelhof",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Arzbergstraße",
+    "hausnummer": "3",
+    "plz": "57537",
+    "ort": "Mittelhof"
+  },
+  "lage": {
+    "lon": 7.803253,
+    "lat": 50.788083
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad2-18e0-48c4-81c4-a70ce7cba1e6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

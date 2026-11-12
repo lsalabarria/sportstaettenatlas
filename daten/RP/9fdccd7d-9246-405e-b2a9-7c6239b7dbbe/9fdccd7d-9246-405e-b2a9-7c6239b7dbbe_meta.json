@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd7d-9246-405e-b2a9-7c6239b7dbbe",
+  "name": "Bolzplatz Drachenfelsstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Drachenfelsstraße",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.099513,
+    "lat": 49.192719
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd7d-9246-405e-b2a9-7c6239b7dbbe",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

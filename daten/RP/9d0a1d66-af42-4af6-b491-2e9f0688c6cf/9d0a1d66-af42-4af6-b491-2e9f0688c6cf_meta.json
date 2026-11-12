@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d66-af42-4af6-b491-2e9f0688c6cf",
+  "name": "Moseltalhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bahnhofsstraße",
+    "hausnummer": "33a",
+    "plz": "54498",
+    "ort": "Piesport"
+  },
+  "lage": {
+    "lon": 6.922417,
+    "lat": 49.880356
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d66-af42-4af6-b491-2e9f0688c6cf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

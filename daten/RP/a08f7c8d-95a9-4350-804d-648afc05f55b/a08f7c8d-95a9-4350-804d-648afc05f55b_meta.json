@@ -1,0 +1,24 @@
+{
+  "id": "a08f7c8d-95a9-4350-804d-648afc05f55b",
+  "name": "Basketball am Umweld-Campus",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Neubrücker Str.",
+    "plz": "55768",
+    "ort": "Hoppstädten-Weiersbach"
+  },
+  "lage": {
+    "lon": 7.17056,
+    "lat": 49.608304
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c8d-95a9-4350-804d-648afc05f55b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

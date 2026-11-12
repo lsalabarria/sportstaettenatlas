@@ -1,0 +1,24 @@
+{
+  "id": "a101ea6d-e24a-4f7d-899d-6c6ed3059806",
+  "name": "Sporthalle Astrid-Lindgren-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kurt-Kreiselmaier-Platz",
+    "hausnummer": "1",
+    "plz": "67071",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.326715,
+    "lat": 49.472311
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a101ea6d-e24a-4f7d-899d-6c6ed3059806",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

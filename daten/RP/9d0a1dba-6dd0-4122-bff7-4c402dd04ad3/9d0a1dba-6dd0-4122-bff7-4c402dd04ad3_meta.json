@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dba-6dd0-4122-bff7-4c402dd04ad3",
+  "name": "TSC Trier",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Peter-Scholzen-Straße",
+    "hausnummer": "88",
+    "plz": "54296",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.627865,
+    "lat": 49.714119
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dba-6dd0-4122-bff7-4c402dd04ad3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

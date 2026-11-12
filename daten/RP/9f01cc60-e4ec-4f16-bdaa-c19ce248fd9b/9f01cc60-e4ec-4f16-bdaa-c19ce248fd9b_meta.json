@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc60-e4ec-4f16-bdaa-c19ce248fd9b",
+  "name": "Kalmitbad (Freibad Maikammer)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wiesenstraße",
+    "hausnummer": "18",
+    "plz": "67487",
+    "ort": "Maikammer"
+  },
+  "lage": {
+    "lon": 8.13264,
+    "lat": 49.30148
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc60-e4ec-4f16-bdaa-c19ce248fd9b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

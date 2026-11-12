@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d4d-c0b6-4322-af1e-f9b63f71ba2b",
+  "name": "Reitclub Kalenborner Höhe",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hilberather Straße",
+    "hausnummer": "4",
+    "plz": "53505",
+    "ort": "Kalenborn"
+  },
+  "lage": {
+    "lon": 7.000461,
+    "lat": 50.545718
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4d-c0b6-4322-af1e-f9b63f71ba2b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

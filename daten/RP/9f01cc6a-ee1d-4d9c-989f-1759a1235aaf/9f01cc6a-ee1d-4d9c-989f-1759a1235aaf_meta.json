@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc6a-ee1d-4d9c-989f-1759a1235aaf",
+  "name": "Hallenbad Lingenfeld",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Humboldstraße",
+    "hausnummer": "7",
+    "plz": "67360",
+    "ort": "Lingenfeld"
+  },
+  "lage": {
+    "lon": 8.34629,
+    "lat": 49.2455
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6a-ee1d-4d9c-989f-1759a1235aaf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

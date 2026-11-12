@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dfe-06a4-47c7-bcce-c2bd0dee9b1c",
+  "name": "Sportplatz Hasenwiese",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mühlentalstraße",
+    "hausnummer": "34",
+    "plz": "57629",
+    "ort": "Wied"
+  },
+  "lage": {
+    "lon": 7.76401,
+    "lat": 50.635677
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfe-06a4-47c7-bcce-c2bd0dee9b1c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

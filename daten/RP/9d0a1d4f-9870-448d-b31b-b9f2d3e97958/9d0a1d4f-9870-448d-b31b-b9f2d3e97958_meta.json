@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4f-9870-448d-b31b-b9f2d3e97958",
+  "name": "Schützenhaus Gönnersdorf",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Schützenweg",
+    "plz": "53498",
+    "ort": "Gönnersdorf"
+  },
+  "lage": {
+    "lon": 7.266322,
+    "lat": 50.478325
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4f-9870-448d-b31b-b9f2d3e97958",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

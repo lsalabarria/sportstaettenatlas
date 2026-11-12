@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e05-5277-4f15-b933-4c7dd4904147",
+  "name": "Großspielfeld am Eifelstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Lenzenkessel",
+    "plz": "53518",
+    "ort": "Adenau, Stadt"
+  },
+  "lage": {
+    "lon": 6.925415,
+    "lat": 50.375246
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e05-5277-4f15-b933-4c7dd4904147",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

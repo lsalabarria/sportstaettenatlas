@@ -1,0 +1,23 @@
+{
+  "id": "9d09faec-01f5-4d0d-a518-ab8362420b7c",
+  "name": "Tennisplätze am Sportplatz Nauort",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Rheinstraße",
+    "plz": "56237",
+    "ort": "Nauort"
+  },
+  "lage": {
+    "lon": 7.618311,
+    "lat": 50.466677
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faec-01f5-4d0d-a518-ab8362420b7c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

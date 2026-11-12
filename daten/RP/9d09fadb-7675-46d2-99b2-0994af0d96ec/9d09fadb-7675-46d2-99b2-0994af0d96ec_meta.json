@@ -1,0 +1,24 @@
+{
+  "id": "9d09fadb-7675-46d2-99b2-0994af0d96ec",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Feldstraße",
+    "hausnummer": "17b",
+    "plz": "54311",
+    "ort": "Trierweiler"
+  },
+  "lage": {
+    "lon": 6.597228,
+    "lat": 49.76927
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadb-7675-46d2-99b2-0994af0d96ec",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

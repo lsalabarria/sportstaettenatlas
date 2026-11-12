@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf3-f842-4021-b50e-eca2d13406b5",
+  "name": "Tennisplätze TC Schenkelberg – Hartenfels",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56244",
+    "ort": "Hartenfels"
+  },
+  "lage": {
+    "lon": 7.782632,
+    "lat": 50.576633
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf3-f842-4021-b50e-eca2d13406b5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

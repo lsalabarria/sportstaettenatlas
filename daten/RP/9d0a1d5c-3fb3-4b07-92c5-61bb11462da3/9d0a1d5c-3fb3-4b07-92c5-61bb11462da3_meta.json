@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5c-3fb3-4b07-92c5-61bb11462da3",
+  "name": "Sportplatz Braunshorn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L218",
+    "plz": "56288",
+    "ort": "Braunshorn"
+  },
+  "lage": {
+    "lon": 7.522226,
+    "lat": 50.096286
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5c-3fb3-4b07-92c5-61bb11462da3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

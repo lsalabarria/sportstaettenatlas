@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a91d-62f0-4d84-90c3-072bc2bc6ef1",
+  "name": "Tennisplätze Steinfeld",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Bahnhofstraße Am Tennisplatz",
+    "plz": "76889",
+    "ort": "Steinfeld"
+  },
+  "lage": {
+    "lon": 8.042184,
+    "lat": 49.038999
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91d-62f0-4d84-90c3-072bc2bc6ef1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

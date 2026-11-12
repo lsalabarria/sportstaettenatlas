@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce33-758f-4804-8028-c864fbb8f04e",
+  "name": "Sportgelände in der Pfaffendölle",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportplatzstraße",
+    "hausnummer": "34",
+    "plz": "66994",
+    "ort": "Dahn, Stadt"
+  },
+  "lage": {
+    "lon": 7.772015,
+    "lat": 49.147727
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce33-758f-4804-8028-c864fbb8f04e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

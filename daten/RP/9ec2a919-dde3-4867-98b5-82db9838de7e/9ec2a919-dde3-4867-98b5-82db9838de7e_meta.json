@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a919-dde3-4867-98b5-82db9838de7e",
+  "name": "Sportanlage am Hofstück",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Hofstück",
+    "hausnummer": "4",
+    "plz": "76835",
+    "ort": "Hainfeld"
+  },
+  "lage": {
+    "lon": 8.093753,
+    "lat": 49.256668
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a919-dde3-4867-98b5-82db9838de7e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

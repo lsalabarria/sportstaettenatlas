@@ -1,0 +1,10 @@
+{
+  "id": "1dae3a03-db7f-5a58-82f5-a7c2f1b140a5",
+  "sportstaette_id": "a22beb40-e8ba-4408-ad8d-9459b94042c0",
+  "typ": "Dreifachsporthalle",
+  "quellen": {
+    "atlas_rlp": {
+      "bezeichnung": "Dreifach-Sporthalle"
+    }
+  }
+}

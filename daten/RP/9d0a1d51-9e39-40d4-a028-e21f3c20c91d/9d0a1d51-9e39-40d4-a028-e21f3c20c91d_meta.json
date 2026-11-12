@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d51-9e39-40d4-a028-e21f3c20c91d",
+  "name": "Sportplatz Spessart",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Struth",
+    "plz": "56746",
+    "ort": "Spessart"
+  },
+  "lage": {
+    "lon": 7.110704,
+    "lat": 50.435752
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d51-9e39-40d4-a028-e21f3c20c91d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

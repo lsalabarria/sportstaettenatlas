@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a90e-e470-40df-a704-dcde44526ca4",
+  "name": "Neue Sporthalle Bodenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Uwe-Zeidler-Ring",
+    "plz": "55294",
+    "ort": "Bodenheim"
+  },
+  "lage": {
+    "lon": 8.326906,
+    "lat": 49.929556
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90e-e470-40df-a704-dcde44526ca4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4e-dfc0-4e96-a810-6af604e33e9f",
+  "name": "Bolzplatz Heckenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hannebacher Weg",
+    "plz": "53506",
+    "ort": "Heckenbach"
+  },
+  "lage": {
+    "lon": 7.104111,
+    "lat": 50.470354
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4e-dfc0-4e96-a810-6af604e33e9f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

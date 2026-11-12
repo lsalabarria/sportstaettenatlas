@@ -1,0 +1,24 @@
+{
+  "id": "9d09faed-eff1-48ea-a0d0-9c95a8d37840",
+  "name": "Mehrzweckhalle Marienrachdorf",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Theodor-Heuss-Ring",
+    "hausnummer": "23A",
+    "plz": "56242",
+    "ort": "Marienrachdorf"
+  },
+  "lage": {
+    "lon": 7.706483,
+    "lat": 50.549074
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faed-eff1-48ea-a0d0-9c95a8d37840",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dab-645b-4f23-aca2-a72e0b3d2576",
+  "name": "Tanz(t)raum BALÉ",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Hachenburger Straße",
+    "hausnummer": "129",
+    "plz": "57537",
+    "ort": "Wissen, Stadt"
+  },
+  "lage": {
+    "lon": 7.74573,
+    "lat": 50.765032
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dab-645b-4f23-aca2-a72e0b3d2576",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

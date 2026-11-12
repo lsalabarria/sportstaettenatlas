@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd12-84cf-4778-86fe-7ccbaf053e0f",
+  "name": "Waldstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Heidestraße",
+    "hausnummer": "33",
+    "plz": "67677",
+    "ort": "Enkenbach-Alsenborn"
+  },
+  "lage": {
+    "lon": 7.88311,
+    "lat": 49.484526
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd12-84cf-4778-86fe-7ccbaf053e0f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

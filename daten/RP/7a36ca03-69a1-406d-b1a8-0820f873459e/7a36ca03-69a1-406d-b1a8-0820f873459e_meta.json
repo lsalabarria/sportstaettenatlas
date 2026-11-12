@@ -1,0 +1,25 @@
+{
+  "id": "7a36ca03-69a1-406d-b1a8-0820f873459e",
+  "name": "Friedrich-Schiller-Realschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Mörscher Str.",
+    "hausnummer": "11",
+    "plz": "67227",
+    "ort": "Frankenthal (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.356326,
+    "lat": 49.539866
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "7a36ca03-69a1-406d-b1a8-0820f873459e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

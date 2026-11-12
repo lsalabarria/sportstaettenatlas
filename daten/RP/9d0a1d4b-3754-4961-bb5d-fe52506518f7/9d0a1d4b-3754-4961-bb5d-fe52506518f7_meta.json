@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4b-3754-4961-bb5d-fe52506518f7",
+  "name": "Mönchescher Hof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Mönchescher Hof",
+    "plz": "53501",
+    "ort": "Grafschaft"
+  },
+  "lage": {
+    "lon": 7.027133,
+    "lat": 50.549582
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4b-3754-4961-bb5d-fe52506518f7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

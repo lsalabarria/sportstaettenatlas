@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a928-5b93-40fb-a9e5-f2e3c946d41b",
+  "name": "TSV Sponsheim 1909 e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dromersheimer Straße",
+    "hausnummer": "9",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.924673,
+    "lat": 49.922792
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a928-5b93-40fb-a9e5-f2e3c946d41b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

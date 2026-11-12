@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d52-057d-4083-9a9b-42a0f10e8a1a",
+  "name": "Tennisanlage Weibern",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Pfarrer-Kost-Platz",
+    "plz": "56745",
+    "ort": "Weibern"
+  },
+  "lage": {
+    "lon": 7.141689,
+    "lat": 50.404366
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d52-057d-4083-9a9b-42a0f10e8a1a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

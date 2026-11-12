@@ -1,0 +1,26 @@
+{
+  "id": "f98e09c8-f962-4f29-9aa3-a33c49db6ee8",
+  "name": "Schüptzenhaus Ehrenbreitstein",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Mühlental",
+    "hausnummer": "16",
+    "plz": "56077",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.621379,
+    "lat": 50.362605
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "website": "www.schuetzen-ehrenbreitstein.de",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "f98e09c8-f962-4f29-9aa3-a33c49db6ee8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

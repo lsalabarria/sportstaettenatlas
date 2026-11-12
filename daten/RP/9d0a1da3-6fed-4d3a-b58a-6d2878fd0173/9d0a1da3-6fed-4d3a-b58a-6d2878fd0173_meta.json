@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1da3-6fed-4d3a-b58a-6d2878fd0173",
+  "name": "Sportplatz Birgel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An der Ley",
+    "hausnummer": "35",
+    "plz": "54587",
+    "ort": "Birgel"
+  },
+  "lage": {
+    "lon": 6.633669,
+    "lat": 50.318286
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da3-6fed-4d3a-b58a-6d2878fd0173",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

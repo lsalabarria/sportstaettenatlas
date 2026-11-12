@@ -1,0 +1,25 @@
+{
+  "id": "9fdccddd-ce04-4c94-8ff8-af0754246b21",
+  "name": "Reichswald-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schernauer Straße",
+    "hausnummer": "46",
+    "plz": "66877",
+    "ort": "Ramstein-Miesenbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.566616,
+    "lat": 49.447116
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccddd-ce04-4c94-8ff8-af0754246b21",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4ec-9a3f-4600-bd14-6085e7c1134c",
+  "name": "Sportplatz Olmscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "35",
+    "plz": "54689",
+    "ort": "Olmscheid"
+  },
+  "lage": {
+    "lon": 6.22355,
+    "lat": 50.064648
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ec-9a3f-4600-bd14-6085e7c1134c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

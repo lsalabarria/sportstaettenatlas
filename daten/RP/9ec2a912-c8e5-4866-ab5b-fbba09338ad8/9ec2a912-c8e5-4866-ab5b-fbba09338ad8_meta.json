@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a912-c8e5-4866-ab5b-fbba09338ad8",
+  "name": "Sportanlage Göllheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Carl-Diem-Weg",
+    "hausnummer": "5",
+    "plz": "67307",
+    "ort": "Göllheim"
+  },
+  "lage": {
+    "lon": 8.044026,
+    "lat": 49.587106
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a912-c8e5-4866-ab5b-fbba09338ad8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

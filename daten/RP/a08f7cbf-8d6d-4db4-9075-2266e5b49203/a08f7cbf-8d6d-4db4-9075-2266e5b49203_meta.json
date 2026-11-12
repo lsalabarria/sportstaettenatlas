@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cbf-8d6d-4db4-9075-2266e5b49203",
+  "name": "Sportplatz Immergrün",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Römerdenkmal",
+    "plz": "67744",
+    "ort": "Schweinschied"
+  },
+  "lage": {
+    "lon": 7.57707,
+    "lat": 49.696934
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cbf-8d6d-4db4-9075-2266e5b49203",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

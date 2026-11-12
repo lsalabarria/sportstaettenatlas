@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a923-cf19-44e1-a6a9-209672dd5a2c",
+  "name": "Schützenverein Weisenheim am Sand",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "An d. Bleiche",
+    "hausnummer": "4",
+    "plz": "67256",
+    "ort": "Weisenheim am Sand"
+  },
+  "lage": {
+    "lon": 8.245289,
+    "lat": 49.510161
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a923-cf19-44e1-a6a9-209672dd5a2c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

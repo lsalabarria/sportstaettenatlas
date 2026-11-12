@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4ea-7d83-4cd9-ba51-feeb97ada205",
+  "name": "Sportplatz Wißmannsdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportplatzstraße",
+    "hausnummer": "7",
+    "plz": "54636",
+    "ort": "Wißmannsdorf"
+  },
+  "lage": {
+    "lon": 6.439861,
+    "lat": 49.993625
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ea-7d83-4cd9-ba51-feeb97ada205",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

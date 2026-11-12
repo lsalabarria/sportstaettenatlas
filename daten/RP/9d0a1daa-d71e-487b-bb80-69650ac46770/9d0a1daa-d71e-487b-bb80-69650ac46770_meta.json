@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1daa-d71e-487b-bb80-69650ac46770",
+  "name": "Stadion Wissen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Stadionstraße",
+    "hausnummer": "39",
+    "plz": "57537",
+    "ort": "Wissen, Stadt"
+  },
+  "lage": {
+    "lon": 7.722982,
+    "lat": 50.783356
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daa-d71e-487b-bb80-69650ac46770",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e0f-6e77-4a56-9633-b1f8a6d84a67",
+  "name": "Stadion am Bürgerwehr Trainingsplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Himmeroder Straße",
+    "hausnummer": "88",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.878504,
+    "lat": 49.990948
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0f-6e77-4a56-9633-b1f8a6d84a67",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

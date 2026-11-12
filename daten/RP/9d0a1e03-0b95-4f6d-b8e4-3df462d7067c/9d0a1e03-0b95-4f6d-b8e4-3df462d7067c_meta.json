@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e03-0b95-4f6d-b8e4-3df462d7067c",
+  "name": "Sportplatz Unkelbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rheinstraße",
+    "plz": "53424",
+    "ort": "Remagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.198838,
+    "lat": 50.599385
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e03-0b95-4f6d-b8e4-3df462d7067c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

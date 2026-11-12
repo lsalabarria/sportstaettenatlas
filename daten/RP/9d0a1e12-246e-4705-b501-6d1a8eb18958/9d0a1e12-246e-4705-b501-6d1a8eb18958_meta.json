@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e12-246e-4705-b501-6d1a8eb18958",
+  "name": "Sporthalle Gerolstein",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "11",
+    "plz": "54568",
+    "ort": "Gerolstein, Stadt"
+  },
+  "lage": {
+    "lon": 6.662439,
+    "lat": 50.217737
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e12-246e-4705-b501-6d1a8eb18958",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

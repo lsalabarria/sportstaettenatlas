@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4f-27bf-410b-b9bd-67751976c517",
+  "name": "Bolzplatz Lind",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waldweg",
+    "plz": "53506",
+    "ort": "Lind"
+  },
+  "lage": {
+    "lon": 6.90839,
+    "lat": 50.497428
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4f-27bf-410b-b9bd-67751976c517",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

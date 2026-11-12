@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc6d-482e-4465-928d-04febb11f78a",
+  "name": "Rebmeerbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Friedrich-Ebert-Straße",
+    "hausnummer": "40",
+    "plz": "76887",
+    "ort": "Bad Bergzabern, Stadt"
+  },
+  "lage": {
+    "lon": 8.00015,
+    "lat": 49.09496
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6d-482e-4465-928d-04febb11f78a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

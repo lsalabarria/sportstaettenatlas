@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a939-ad9c-43b5-b81d-0498f2a22258",
+  "name": "Bolzplatz Münchfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Richard-Schirrmann-Straße",
+    "plz": "55122",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.222794,
+    "lat": 49.997495
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a939-ad9c-43b5-b81d-0498f2a22258",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9c24bfaa-5b25-411c-bf33-9aa4e62aff1d",
+  "name": "Mehrgenerationenspielfeld, Am Mühlenteich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Mühlenteich",
+    "plz": "56072",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.523453,
+    "lat": 50.368667
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfaa-5b25-411c-bf33-9aa4e62aff1d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

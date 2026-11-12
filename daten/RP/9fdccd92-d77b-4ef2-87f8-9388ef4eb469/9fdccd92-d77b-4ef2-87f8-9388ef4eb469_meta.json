@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd92-d77b-4ef2-87f8-9388ef4eb469",
+  "name": "Kartbahn am Yachthafen",
+  "kategorie": "Motorsportstätte",
+  "adresse": {
+    "strasse": "Rheinstr.",
+    "hausnummer": "19",
+    "plz": "76744",
+    "ort": "Wörth am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.296416,
+    "lat": 49.043384
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd92-d77b-4ef2-87f8-9388ef4eb469",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

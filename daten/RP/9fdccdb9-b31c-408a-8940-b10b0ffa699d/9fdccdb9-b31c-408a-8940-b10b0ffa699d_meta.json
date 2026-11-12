@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdb9-b31c-408a-8940-b10b0ffa699d",
+  "name": "Landesjagdverband Rheinland-Pfalz e.V. Schießstand",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Kuhtrift",
+    "hausnummer": "500",
+    "plz": "56727",
+    "ort": "Mayen, Stadt"
+  },
+  "lage": {
+    "lon": 7.199461,
+    "lat": 50.317023
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdb9-b31c-408a-8940-b10b0ffa699d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

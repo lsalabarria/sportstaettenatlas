@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccb5-c381-4bb9-9b21-c8a85376105d",
+  "name": "TC Oberfell",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Moselstraße",
+    "plz": "56332",
+    "ort": "Oberfell"
+  },
+  "lage": {
+    "lon": 7.454007,
+    "lat": 50.266803
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccb5-c381-4bb9-9b21-c8a85376105d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d52-83fe-47f1-b9ca-ec40c3f1572c",
+  "name": "Bouleplatz Bremm",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Moselstraße",
+    "plz": "56814",
+    "ort": "Bremm"
+  },
+  "lage": {
+    "lon": 7.119207,
+    "lat": 50.099953
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d52-83fe-47f1-b9ca-ec40c3f1572c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

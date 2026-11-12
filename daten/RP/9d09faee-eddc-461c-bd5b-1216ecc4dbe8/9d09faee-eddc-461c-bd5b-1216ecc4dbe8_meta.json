@@ -1,0 +1,23 @@
+{
+  "id": "9d09faee-eddc-461c-bd5b-1216ecc4dbe8",
+  "name": "Freiherr-vom-Stein-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Lahnstraße",
+    "plz": "56412",
+    "ort": "Nentershausen"
+  },
+  "lage": {
+    "lon": 7.940399,
+    "lat": 50.418782
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faee-eddc-461c-bd5b-1216ecc4dbe8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "a08f7c93-44c3-4ec3-8d18-1b9e6581f581",
+  "name": "Sportplatz Am Kühlenberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Kühlenberg",
+    "plz": "55767",
+    "ort": "Oberbrombach"
+  },
+  "lage": {
+    "lon": 7.264625,
+    "lat": 49.700316
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c93-44c3-4ec3-8d18-1b9e6581f581",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

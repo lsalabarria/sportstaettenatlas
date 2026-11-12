@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd59-8141-43b1-995e-bac19532c775",
+  "name": "Sportanlage An der dicken Eiche",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "66509",
+    "ort": "Rieschweiler-Mühlbach"
+  },
+  "lage": {
+    "lon": 7.524371,
+    "lat": 49.246434
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd59-8141-43b1-995e-bac19532c775",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

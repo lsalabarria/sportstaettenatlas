@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccdf-e178-44d5-aa7d-d05c7608cccf",
+  "name": "Sportplatz Seelbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Weiher",
+    "hausnummer": "8",
+    "plz": "56377",
+    "ort": "Seelbach"
+  },
+  "lage": {
+    "lon": 7.875372,
+    "lat": 50.309652
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccdf-e178-44d5-aa7d-d05c7608cccf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

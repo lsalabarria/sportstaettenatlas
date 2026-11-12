@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4d-d3ba-4db7-b1d7-e7210fd104f2",
+  "name": "Burtscheider Hof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Burtscheider Hof",
+    "plz": "53505",
+    "ort": "Altenahr"
+  },
+  "lage": {
+    "lon": 6.99569,
+    "lat": 50.536722
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4d-d3ba-4db7-b1d7-e7210fd104f2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

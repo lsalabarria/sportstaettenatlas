@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc5e-c5ae-4707-8cdc-371be1da9c6b",
+  "name": "Freizeit- und Erlebnisbad Wöllstein",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Eleonorenstaße",
+    "hausnummer": "76",
+    "plz": "55597",
+    "ort": "Wöllstein"
+  },
+  "lage": {
+    "lon": 7.95198,
+    "lat": 49.81003
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc5e-c5ae-4707-8cdc-371be1da9c6b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e06-a863-4f19-af7a-53ff26467870",
+  "name": "Moseltal-Jugendherberge Cochem",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Klottener Straße",
+    "hausnummer": "9",
+    "plz": "56812",
+    "ort": "Cochem, Stadt"
+  },
+  "lage": {
+    "lon": 7.17131,
+    "lat": 50.154664
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e06-a863-4f19-af7a-53ff26467870",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

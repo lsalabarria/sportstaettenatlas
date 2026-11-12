@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a926-d498-465b-bd25-a0987873e91b",
+  "name": "Schützenhaus Lambrecht",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Beerentalstraße",
+    "plz": "67466",
+    "ort": "Lambrecht (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.052676,
+    "lat": 49.363545
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a926-d498-465b-bd25-a0987873e91b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

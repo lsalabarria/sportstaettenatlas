@@ -1,0 +1,24 @@
+{
+  "id": "a1021ad8-f9ef-47b3-83b4-d3694bab8c70",
+  "name": "Unkensteinhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schladterweg",
+    "hausnummer": "7",
+    "plz": "54518",
+    "ort": "Plein"
+  },
+  "lage": {
+    "lon": 6.871011,
+    "lat": 50.026715
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a1021ad8-f9ef-47b3-83b4-d3694bab8c70",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

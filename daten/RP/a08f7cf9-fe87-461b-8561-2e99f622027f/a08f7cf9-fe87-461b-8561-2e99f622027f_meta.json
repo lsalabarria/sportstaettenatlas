@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cf9-fe87-461b-8561-2e99f622027f",
+  "name": "Brühl-Stadion Nebenplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Brühl",
+    "plz": "55774",
+    "ort": "Baumholder, Stadt"
+  },
+  "lage": {
+    "lon": 7.342891,
+    "lat": 49.61237
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cf9-fe87-461b-8561-2e99f622027f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d09faeb-d7c5-4ad3-9611-d5542af73e02",
+  "name": "Grundschule Nauort",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Hofacker",
+    "hausnummer": "6",
+    "plz": "56237",
+    "ort": "Nauort"
+  },
+  "lage": {
+    "lon": 7.625314,
+    "lat": 50.468136
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faeb-d7c5-4ad3-9611-d5542af73e02",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

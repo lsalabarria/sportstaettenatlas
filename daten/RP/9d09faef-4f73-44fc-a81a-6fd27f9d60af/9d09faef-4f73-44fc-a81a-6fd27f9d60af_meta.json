@@ -1,0 +1,23 @@
+{
+  "id": "9d09faef-4f73-44fc-a81a-6fd27f9d60af",
+  "name": "Tennisheim Dreikirchen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "plz": "56414",
+    "ort": "Dreikirchen"
+  },
+  "lage": {
+    "lon": 7.943784,
+    "lat": 50.445713
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faef-4f73-44fc-a81a-6fd27f9d60af",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

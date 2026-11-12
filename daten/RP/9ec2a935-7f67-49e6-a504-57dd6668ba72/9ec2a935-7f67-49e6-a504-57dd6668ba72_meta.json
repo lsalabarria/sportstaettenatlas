@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a935-7f67-49e6-a504-57dd6668ba72",
+  "name": "Mehrzweckhalle Drais",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hesslerweg",
+    "hausnummer": "30",
+    "plz": "55126",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.186935,
+    "lat": 49.974045
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a935-7f67-49e6-a504-57dd6668ba72",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

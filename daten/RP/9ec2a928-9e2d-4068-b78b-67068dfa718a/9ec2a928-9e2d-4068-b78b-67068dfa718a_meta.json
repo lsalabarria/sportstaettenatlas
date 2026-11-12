@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a928-9e2d-4068-b78b-67068dfa718a",
+  "name": "Bolzplatz Nostadtstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Nostadtstraße",
+    "plz": "55411",
+    "ort": "Bingen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.915888,
+    "lat": 49.951928
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a928-9e2d-4068-b78b-67068dfa718a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "1d2f75b9-c44b-5289-97d3-89974c2ebcab",
+  "sportstaette_id": "9fdccd79-cfe8-4737-8203-108cf9f21ba4",
+  "typ": "Bahnengolf",
+  "quellen": {
+    "atlas_rlp": {
+      "bezeichnung": "Bahnengolf (Minigolf)"
+    }
+  }
+}

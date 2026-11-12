@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dfe-1230-40d6-9939-24488046e948",
+  "name": "Otto Victor Pferdezucht",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Nistermühle",
+    "plz": "57627",
+    "ort": "Hachenburg, Stadt"
+  },
+  "lage": {
+    "lon": 7.817359,
+    "lat": 50.674813
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfe-1230-40d6-9939-24488046e948",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

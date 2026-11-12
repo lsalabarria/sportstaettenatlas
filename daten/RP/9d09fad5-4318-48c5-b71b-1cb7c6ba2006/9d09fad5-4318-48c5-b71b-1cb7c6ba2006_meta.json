@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad5-4318-48c5-b71b-1cb7c6ba2006",
+  "name": "Sportplatz Asbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Steinchen",
+    "hausnummer": "9",
+    "plz": "53567",
+    "ort": "Asbach"
+  },
+  "lage": {
+    "lon": 7.429827,
+    "lat": 50.659992
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad5-4318-48c5-b71b-1cb7c6ba2006",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

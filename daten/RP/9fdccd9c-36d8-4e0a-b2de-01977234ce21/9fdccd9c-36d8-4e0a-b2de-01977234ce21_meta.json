@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd9c-36d8-4e0a-b2de-01977234ce21",
+  "name": "Bendorfer Schützengesellschaft 1844 e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Brauereistraße",
+    "hausnummer": "62",
+    "plz": "56170",
+    "ort": "Bendorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.566057,
+    "lat": 50.425347
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd9c-36d8-4e0a-b2de-01977234ce21",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

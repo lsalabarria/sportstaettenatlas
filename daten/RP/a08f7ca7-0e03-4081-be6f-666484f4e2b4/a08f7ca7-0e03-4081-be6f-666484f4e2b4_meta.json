@@ -1,0 +1,25 @@
+{
+  "id": "a08f7ca7-0e03-4081-be6f-666484f4e2b4",
+  "name": "Pferderennbahn Veitsrodt",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Baumarkt",
+    "hausnummer": "1",
+    "plz": "55758",
+    "ort": "Veitsrodt"
+  },
+  "lage": {
+    "lon": 7.296584,
+    "lat": 49.761292
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ca7-0e03-4081-be6f-666484f4e2b4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

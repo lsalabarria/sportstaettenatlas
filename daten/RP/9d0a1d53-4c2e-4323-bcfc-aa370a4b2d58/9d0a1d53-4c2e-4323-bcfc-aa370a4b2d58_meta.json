@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d53-4c2e-4323-bcfc-aa370a4b2d58",
+  "name": "Mosel Kanutours",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Moselstraße",
+    "hausnummer": "45",
+    "plz": "56814",
+    "ort": "Ernst"
+  },
+  "lage": {
+    "lon": 7.224022,
+    "lat": 50.145489
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d53-4c2e-4323-bcfc-aa370a4b2d58",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

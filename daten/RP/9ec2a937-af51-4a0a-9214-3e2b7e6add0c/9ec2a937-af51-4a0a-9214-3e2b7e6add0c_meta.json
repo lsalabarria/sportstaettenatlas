@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a937-af51-4a0a-9214-3e2b7e6add0c",
+  "name": "Sporthalle Schillerschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Portlandstraße",
+    "hausnummer": "26",
+    "plz": "55130",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.29803,
+    "lat": 49.980316
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a937-af51-4a0a-9214-3e2b7e6add0c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

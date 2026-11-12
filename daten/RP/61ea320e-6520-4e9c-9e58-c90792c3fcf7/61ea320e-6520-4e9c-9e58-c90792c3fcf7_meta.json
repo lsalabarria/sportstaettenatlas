@@ -1,0 +1,25 @@
+{
+  "id": "61ea320e-6520-4e9c-9e58-c90792c3fcf7",
+  "name": "Gemeindehaus Hausweiler",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Oberdorf",
+    "hausnummer": "11",
+    "plz": "67742",
+    "ort": "Hausweiler"
+  },
+  "lage": {
+    "lon": 7.563256,
+    "lat": 49.647341
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "stillgelegt/geschlossen",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "61ea320e-6520-4e9c-9e58-c90792c3fcf7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

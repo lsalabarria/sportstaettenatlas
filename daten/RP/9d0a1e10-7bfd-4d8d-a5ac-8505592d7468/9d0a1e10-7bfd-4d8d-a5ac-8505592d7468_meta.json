@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e10-7bfd-4d8d-a5ac-8505592d7468",
+  "name": "Sportplatz Mülheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "2a",
+    "plz": "54486",
+    "ort": "Mülheim an der Mosel"
+  },
+  "lage": {
+    "lon": 7.003705,
+    "lat": 49.909867
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e10-7bfd-4d8d-a5ac-8505592d7468",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e08-8349-44f3-9ffb-95937fc00ac0",
+  "name": "Schützengesellschaft der Stadt Zell/Mosel e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Altlayer Bachtal",
+    "hausnummer": "17",
+    "plz": "56856",
+    "ort": "Zell (Mosel), Stadt"
+  },
+  "lage": {
+    "lon": 7.193072,
+    "lat": 50.008022
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e08-8349-44f3-9ffb-95937fc00ac0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

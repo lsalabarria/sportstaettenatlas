@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a903-283e-43cc-b319-3c32f464e01a",
+  "name": "Sportanlage ASV Weisenheim am Sand",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Ritter-von-Geißler-Straße",
+    "hausnummer": "79",
+    "plz": "67256",
+    "ort": "Weisenheim am Sand"
+  },
+  "lage": {
+    "lon": 8.237966,
+    "lat": 49.518921
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a903-283e-43cc-b319-3c32f464e01a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

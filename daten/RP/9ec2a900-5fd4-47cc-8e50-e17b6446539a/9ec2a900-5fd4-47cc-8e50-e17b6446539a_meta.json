@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a900-5fd4-47cc-8e50-e17b6446539a",
+  "name": "Sporthalle Dirmstein",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "7",
+    "plz": "67246",
+    "ort": "Dirmstein"
+  },
+  "lage": {
+    "lon": 8.248586,
+    "lat": 49.565574
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a900-5fd4-47cc-8e50-e17b6446539a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

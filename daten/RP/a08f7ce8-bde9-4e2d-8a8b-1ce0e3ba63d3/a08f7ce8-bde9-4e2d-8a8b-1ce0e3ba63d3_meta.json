@@ -1,0 +1,25 @@
+{
+  "id": "a08f7ce8-bde9-4e2d-8a8b-1ce0e3ba63d3",
+  "name": "Schützenhaus Langenlonsheim",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Auf dem Dürrfeld",
+    "hausnummer": "1",
+    "plz": "55450",
+    "ort": "Langenlonsheim"
+  },
+  "lage": {
+    "lon": 7.873583,
+    "lat": 49.907571
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ce8-bde9-4e2d-8a8b-1ce0e3ba63d3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

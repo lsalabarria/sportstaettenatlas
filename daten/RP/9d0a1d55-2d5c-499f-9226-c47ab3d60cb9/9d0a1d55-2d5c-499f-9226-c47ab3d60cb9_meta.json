@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d55-2d5c-499f-9226-c47ab3d60cb9",
+  "name": "Bolzplatz Eulgem",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "In den Hägen",
+    "plz": "56761",
+    "ort": "Eulgem"
+  },
+  "lage": {
+    "lon": 7.177527,
+    "lat": 50.238159
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d55-2d5c-499f-9226-c47ab3d60cb9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

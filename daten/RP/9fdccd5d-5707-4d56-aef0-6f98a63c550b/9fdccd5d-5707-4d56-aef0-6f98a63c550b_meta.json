@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd5d-5707-4d56-aef0-6f98a63c550b",
+  "name": "Buchenwaldhof Thaleischweiler-Fröschen",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Buchenwaldhof",
+    "hausnummer": "1",
+    "plz": "66987",
+    "ort": "Thaleischweiler-Fröschen"
+  },
+  "lage": {
+    "lon": 7.567803,
+    "lat": 49.266924
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd5d-5707-4d56-aef0-6f98a63c550b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

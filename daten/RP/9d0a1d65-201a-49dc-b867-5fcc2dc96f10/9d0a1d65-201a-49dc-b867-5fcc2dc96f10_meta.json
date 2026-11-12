@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d65-201a-49dc-b867-5fcc2dc96f10",
+  "name": "Alfons-Jakob Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportzentrum",
+    "plz": "54497",
+    "ort": "Morbach"
+  },
+  "lage": {
+    "lon": 7.126581,
+    "lat": 49.815347
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d65-201a-49dc-b867-5fcc2dc96f10",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

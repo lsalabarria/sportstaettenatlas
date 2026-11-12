@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae9-5a8e-425e-a1c3-ae7493dbe88d",
+  "name": "Tennisclub Eitelborn",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Udilopark",
+    "plz": "56337",
+    "ort": "Eitelborn"
+  },
+  "lage": {
+    "lon": 7.720147,
+    "lat": 50.373676
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae9-5a8e-425e-a1c3-ae7493dbe88d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dfc-50dd-4eaa-b9a8-f3a6884462fb",
+  "name": "Heispel-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Oberroderstraße",
+    "plz": "56479",
+    "ort": "Elsoff (Westerwald)"
+  },
+  "lage": {
+    "lon": 8.123616,
+    "lat": 50.57584
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfc-50dd-4eaa-b9a8-f3a6884462fb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

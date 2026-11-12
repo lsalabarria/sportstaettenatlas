@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd46-3db9-4d3b-872f-d2621a4e4450",
+  "name": "Sportanlage am Schlossberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Schlossberg",
+    "hausnummer": "1",
+    "plz": "66996",
+    "ort": "Erfweiler"
+  },
+  "lage": {
+    "lon": 7.806717,
+    "lat": 49.153668
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd46-3db9-4d3b-872f-d2621a4e4450",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

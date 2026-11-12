@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccde-fc4d-49d8-b881-6e8585bcad7c",
+  "name": "Turnhalle Arzbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "plz": "56337",
+    "ort": "Arzbach"
+  },
+  "lage": {
+    "lon": 7.745685,
+    "lat": 50.37694
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccde-fc4d-49d8-b881-6e8585bcad7c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

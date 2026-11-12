@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd9d-cf9d-4e9f-84aa-108ab4f78b78",
+  "name": "Sportanlage Grundschule Bodelschwingh",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Röttchenshammer",
+    "hausnummer": "16",
+    "plz": "56170",
+    "ort": "Bendorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.564639,
+    "lat": 50.433118
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd9d-cf9d-4e9f-84aa-108ab4f78b78",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

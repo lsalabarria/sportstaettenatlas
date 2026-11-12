@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad8-4798-46c8-8d65-a5643eccf33a",
+  "name": "Bocciabahn Wiedtalbad",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hönninger Straße",
+    "hausnummer": "1",
+    "plz": "53547",
+    "ort": "Hausen (Wied)"
+  },
+  "lage": {
+    "lon": 7.412234,
+    "lat": 50.541746
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad8-4798-46c8-8d65-a5643eccf33a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a93c-389e-4d55-b8f6-b9a88edd3dba",
+  "name": "Pferdeland Pfalz",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Altdorfer Str.",
+    "plz": "67482",
+    "ort": "Freimersheim (Pfalz)"
+  },
+  "lage": {
+    "lon": 8.223835,
+    "lat": 49.272686
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93c-389e-4d55-b8f6-b9a88edd3dba",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a92c-0403-4326-ae87-092b31e4e5fa",
+  "name": "TuS 1848 Ober-Ingelheim e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "An d. Burgkirche",
+    "hausnummer": "24",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.063453,
+    "lat": 49.962865
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92c-0403-4326-ae87-092b31e4e5fa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

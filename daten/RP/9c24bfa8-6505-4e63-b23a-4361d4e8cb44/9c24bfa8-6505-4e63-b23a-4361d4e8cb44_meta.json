@@ -1,0 +1,23 @@
+{
+  "id": "9c24bfa8-6505-4e63-b23a-4361d4e8cb44",
+  "name": "Tennisplatz der VSG Koblenz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Dickersweg",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.604334,
+    "lat": 50.367557
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa8-6505-4e63-b23a-4361d4e8cb44",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

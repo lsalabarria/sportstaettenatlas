@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd42-1462-4750-9dae-74a429c7ce01",
+  "name": "Sportanlage Bildungs- und Freizeitstätte Heilsbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An der Heilsbach",
+    "hausnummer": "1",
+    "plz": "66996",
+    "ort": "Schönau (Pfalz)"
+  },
+  "lage": {
+    "lon": 7.736043,
+    "lat": 49.07665
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd42-1462-4750-9dae-74a429c7ce01",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

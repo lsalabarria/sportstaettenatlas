@@ -1,0 +1,25 @@
+{
+  "id": "9c7c9d39-5dc6-4c71-bebb-17357eaf873f",
+  "name": "Dr. Darge Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Dr. Darge Straße",
+    "hausnummer": "2",
+    "plz": "55777",
+    "ort": "Berschweiler bei Baumholder"
+  },
+  "lage": {
+    "lon": 7.288055,
+    "lat": 49.58246
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c7c9d39-5dc6-4c71-bebb-17357eaf873f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

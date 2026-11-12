@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d2a-2a84-4b0a-bfb5-399e1be96228",
+  "name": "Grundschule Stromberg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "2",
+    "plz": "55442",
+    "ort": "Stromberg, Stadt"
+  },
+  "lage": {
+    "lon": 7.780827,
+    "lat": 49.944408
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d2a-2a84-4b0a-bfb5-399e1be96228",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

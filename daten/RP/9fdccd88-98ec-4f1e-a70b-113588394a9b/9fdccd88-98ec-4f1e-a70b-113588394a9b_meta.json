@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd88-98ec-4f1e-a70b-113588394a9b",
+  "name": "Bienwaldstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "plz": "76870",
+    "ort": "Kandel, Stadt"
+  },
+  "lage": {
+    "lon": 8.191605,
+    "lat": 49.074956
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd88-98ec-4f1e-a70b-113588394a9b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

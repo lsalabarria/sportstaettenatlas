@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccff-b823-4e4a-b85c-0e1f9cb23ba5",
+  "name": "Bolzplatz Kasdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sonnenfeld",
+    "hausnummer": "7",
+    "plz": "56357",
+    "ort": "Kasdorf"
+  },
+  "lage": {
+    "lon": 7.783564,
+    "lat": 50.20554
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccff-b823-4e4a-b85c-0e1f9cb23ba5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

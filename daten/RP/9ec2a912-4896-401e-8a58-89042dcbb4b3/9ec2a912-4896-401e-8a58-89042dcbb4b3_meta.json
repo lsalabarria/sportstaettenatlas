@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a912-4896-401e-8a58-89042dcbb4b3",
+  "name": "Bolzplatz Wintersheim",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Neugasse",
+    "plz": "67587",
+    "ort": "Wintersheim"
+  },
+  "lage": {
+    "lon": 8.280257,
+    "lat": 49.778733
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a912-4896-401e-8a58-89042dcbb4b3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d09faee-72f9-4d3e-8253-fe1dbed50eb2",
+  "name": "Fußballplatz Kastanienring",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Kastanienring",
+    "plz": "56244",
+    "ort": "Leuterod"
+  },
+  "lage": {
+    "lon": 7.812803,
+    "lat": 50.492216
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faee-72f9-4d3e-8253-fe1dbed50eb2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

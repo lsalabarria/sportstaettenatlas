@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccdd-23ed-4520-b216-70024bf5b9e4",
+  "name": "GM-Sports Kanu- und Kajakverleih",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Insel Oberau",
+    "hausnummer": "4",
+    "plz": "56133",
+    "ort": "Fachbach"
+  },
+  "lage": {
+    "lon": 7.673933,
+    "lat": 50.335402
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccdd-23ed-4520-b216-70024bf5b9e4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d63-df1d-4a09-92e4-7c311bfd65eb",
+  "name": "Kunstrasensportanlage SF Thalfang",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L154",
+    "plz": "54424",
+    "ort": "Thalfang"
+  },
+  "lage": {
+    "lon": 6.990204,
+    "lat": 49.761698
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d63-df1d-4a09-92e4-7c311bfd65eb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

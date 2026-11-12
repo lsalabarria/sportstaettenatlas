@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a911-b977-4b9c-a381-d6e2d75da029",
+  "name": "Tennisplätze Dalheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Haierweg",
+    "plz": "55278",
+    "ort": "Dalheim"
+  },
+  "lage": {
+    "lon": 8.292268,
+    "lat": 49.828988
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a911-b977-4b9c-a381-d6e2d75da029",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

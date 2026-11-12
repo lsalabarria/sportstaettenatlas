@@ -1,0 +1,23 @@
+{
+  "id": "9d09facf-2ac3-400b-92af-f4d08c03fb93",
+  "name": "Tennisplatz Weitefeld",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Turnhallenweg",
+    "plz": "57586",
+    "ort": "Weitefeld"
+  },
+  "lage": {
+    "lon": 7.932577,
+    "lat": 50.721656
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facf-2ac3-400b-92af-f4d08c03fb93",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

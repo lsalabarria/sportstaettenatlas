@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a930-20ef-4abe-9c6d-2583d707f857",
+  "name": "Sportplatz Würzeweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "In d. Rabenhol",
+    "plz": "67808",
+    "ort": "Würzweiler"
+  },
+  "lage": {
+    "lon": 7.860182,
+    "lat": 49.654602
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a930-20ef-4abe-9c6d-2583d707f857",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

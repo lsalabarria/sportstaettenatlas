@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a901-62d2-423a-a1d9-39239c5b8906",
+  "name": "Sportanlage Tiefenthal",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "4",
+    "plz": "67311",
+    "ort": "Tiefenthal"
+  },
+  "lage": {
+    "lon": 8.103272,
+    "lat": 49.537113
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a901-62d2-423a-a1d9-39239c5b8906",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

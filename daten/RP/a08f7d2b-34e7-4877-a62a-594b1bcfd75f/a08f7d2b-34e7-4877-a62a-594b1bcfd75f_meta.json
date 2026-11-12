@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d2b-34e7-4877-a62a-594b1bcfd75f",
+  "name": "Sporthalle Realschule plus am Rotenfels",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Götzenfelsstraße",
+    "hausnummer": "14",
+    "plz": "55583",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.831548,
+    "lat": 49.812009
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d2b-34e7-4877-a62a-594b1bcfd75f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

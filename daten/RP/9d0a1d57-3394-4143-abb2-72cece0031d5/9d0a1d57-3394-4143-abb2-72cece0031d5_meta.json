@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d57-3394-4143-abb2-72cece0031d5",
+  "name": "Sportplatz Büchel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "B259",
+    "plz": "56823",
+    "ort": "Büchel"
+  },
+  "lage": {
+    "lon": 7.094642,
+    "lat": 50.165718
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d57-3394-4143-abb2-72cece0031d5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

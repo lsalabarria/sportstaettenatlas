@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4c-0cee-4c2b-ad88-a16c24d1d18e",
+  "name": "Flugplatz Wershofen",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "strasse": "Karl-Brenner Weg",
+    "plz": "53520",
+    "ort": "Wershofen"
+  },
+  "lage": {
+    "lon": 6.787891,
+    "lat": 50.451306
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4c-0cee-4c2b-ad88-a16c24d1d18e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa8-54f0-451f-b0fd-ede2fd07cb1f",
+  "name": "Tennenplatz Schartwiesenweg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schartwiesenweg",
+    "hausnummer": "2",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.601675,
+    "lat": 50.366553
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa8-54f0-451f-b0fd-ede2fd07cb1f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

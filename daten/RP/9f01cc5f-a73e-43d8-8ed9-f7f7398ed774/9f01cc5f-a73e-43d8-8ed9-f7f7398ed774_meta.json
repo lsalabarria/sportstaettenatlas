@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc5f-a73e-43d8-8ed9-f7f7398ed774",
+  "name": "Naturfreibad Schalkenmehrener Maar",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Pitt-Kreuzberg-Weg",
+    "hausnummer": "8",
+    "plz": "54552",
+    "ort": "Schalkenmehren"
+  },
+  "lage": {
+    "lon": 6.85586,
+    "lat": 50.16736
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc5f-a73e-43d8-8ed9-f7f7398ed774",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "f2c98fa6-56c6-5718-80c6-20f5c1385b9b",
+  "sportstaette_id": "9fdccdfc-7a53-435c-904f-8c9e1475214c",
+  "typ": "Kleinspielfeld",
+  "quellen": {
+    "atlas_rlp": {
+      "bezeichnung": "Kleinspielfeld (< 5.000 m²)"
+    }
+  }
+}

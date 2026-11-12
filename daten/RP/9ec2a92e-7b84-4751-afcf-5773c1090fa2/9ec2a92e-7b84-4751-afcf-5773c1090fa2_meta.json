@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a92e-7b84-4751-afcf-5773c1090fa2",
+  "name": "AG Medical-Fitness Oppenheim",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Sant' Ambrogio-Ring",
+    "hausnummer": "7",
+    "plz": "55276",
+    "ort": "Oppenheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.354525,
+    "lat": 49.844492
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92e-7b84-4751-afcf-5773c1090fa2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

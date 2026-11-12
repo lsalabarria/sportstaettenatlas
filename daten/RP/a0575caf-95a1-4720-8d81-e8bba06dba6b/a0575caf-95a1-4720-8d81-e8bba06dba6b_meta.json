@@ -1,0 +1,23 @@
+{
+  "id": "a0575caf-95a1-4720-8d81-e8bba06dba6b",
+  "name": "Münstermaifeldx Hartplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "56294",
+    "ort": "Münstermaifeld, Stadt"
+  },
+  "lage": {
+    "lon": 7.354772,
+    "lat": 50.24606
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0575caf-95a1-4720-8d81-e8bba06dba6b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

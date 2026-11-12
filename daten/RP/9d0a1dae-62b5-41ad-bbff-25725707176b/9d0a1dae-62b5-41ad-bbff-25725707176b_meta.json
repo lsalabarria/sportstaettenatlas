@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dae-62b5-41ad-bbff-25725707176b",
+  "name": "Sportplatz Block",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Krasnaer Straße",
+    "hausnummer": "3",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.499541,
+    "lat": 50.433583
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dae-62b5-41ad-bbff-25725707176b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

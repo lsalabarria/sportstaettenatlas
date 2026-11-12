@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccb1-6c5b-428a-bcdd-3b4084ac1f48",
+  "name": "SSV- Arena Pfaffenheck",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "hausnummer": "3",
+    "plz": "56283",
+    "ort": "Nörtershausen"
+  },
+  "lage": {
+    "lon": 7.510765,
+    "lat": 50.236253
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccb1-6c5b-428a-bcdd-3b4084ac1f48",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d67-a08e-4e15-97f0-0469129c0631",
+  "name": "Tennisanlage Dreis",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Auf dem Eichelfeld",
+    "plz": "54518",
+    "ort": "Dreis"
+  },
+  "lage": {
+    "lon": 6.812307,
+    "lat": 49.937267
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d67-a08e-4e15-97f0-0469129c0631",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

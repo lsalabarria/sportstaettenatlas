@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cab-e3c9-4f73-b252-6beb4b057975",
+  "name": "Kleinspielfeld Oberreidenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Talstraße",
+    "plz": "55758",
+    "ort": "Oberreidenbach"
+  },
+  "lage": {
+    "lon": 7.455876,
+    "lat": 49.707789
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cab-e3c9-4f73-b252-6beb4b057975",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

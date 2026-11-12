@@ -1,0 +1,24 @@
+{
+  "id": "9d09fade-39df-4630-b260-8d14ea9f858a",
+  "name": "Beachvolleyballplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "6",
+    "plz": "54340",
+    "ort": "Bekond"
+  },
+  "lage": {
+    "lon": 6.804781,
+    "lat": 49.847972
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fade-39df-4630-b260-8d14ea9f858a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

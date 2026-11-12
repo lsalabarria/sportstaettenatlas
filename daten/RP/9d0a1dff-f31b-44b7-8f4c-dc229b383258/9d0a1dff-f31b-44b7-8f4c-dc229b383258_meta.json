@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dff-f31b-44b7-8f4c-dc229b383258",
+  "name": "Hockey- und Tennisclub Bad Neuenahr 1920 e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Gartenschwimmbad",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.148969,
+    "lat": 50.541734
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dff-f31b-44b7-8f4c-dc229b383258",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

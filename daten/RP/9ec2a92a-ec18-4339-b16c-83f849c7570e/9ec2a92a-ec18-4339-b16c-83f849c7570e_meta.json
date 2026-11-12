@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a92a-ec18-4339-b16c-83f849c7570e",
+  "name": "Sportplatz am Kiefernwald",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Kiefernwald",
+    "plz": "55262",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.142132,
+    "lat": 50.003139
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92a-ec18-4339-b16c-83f849c7570e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

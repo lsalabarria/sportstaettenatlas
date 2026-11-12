@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a909-efc2-4b5a-9387-f23aea708725",
+  "name": "Bolzplatz Welgesheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "plz": "55576",
+    "ort": "Welgesheim"
+  },
+  "lage": {
+    "lon": 7.959694,
+    "lat": 49.879856
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a909-efc2-4b5a-9387-f23aea708725",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

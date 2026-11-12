@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdbc-ee17-409d-be2a-6c8dab942272",
+  "name": "Schützenhalle St. Johann",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Hochsimmer Str.",
+    "hausnummer": "12",
+    "plz": "56727",
+    "ort": "Sankt Johann"
+  },
+  "lage": {
+    "lon": 7.194735,
+    "lat": 50.349806
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdbc-ee17-409d-be2a-6c8dab942272",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

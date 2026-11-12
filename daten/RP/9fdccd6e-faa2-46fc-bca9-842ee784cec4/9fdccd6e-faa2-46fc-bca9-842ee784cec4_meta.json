@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd6e-faa2-46fc-bca9-842ee784cec4",
+  "name": "Tennisplatz Münchweiler an der Rodalb",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Auf d. Kurzel",
+    "plz": "66981",
+    "ort": "Münchweiler an der Rodalb"
+  },
+  "lage": {
+    "lon": 7.706157,
+    "lat": 49.222238
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd6e-faa2-46fc-bca9-842ee784cec4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

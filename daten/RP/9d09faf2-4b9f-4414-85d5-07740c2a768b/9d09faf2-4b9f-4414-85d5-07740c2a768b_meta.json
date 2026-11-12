@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf2-4b9f-4414-85d5-07740c2a768b",
+  "name": "Bolzplatz Waldmühlen",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Mühlenstraße",
+    "plz": "56479",
+    "ort": "Waldmühlen"
+  },
+  "lage": {
+    "lon": 8.065626,
+    "lat": 50.587314
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf2-4b9f-4414-85d5-07740c2a768b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

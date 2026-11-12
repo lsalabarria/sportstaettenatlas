@@ -1,0 +1,24 @@
+{
+  "id": "bf270d50-0b86-43a0-a1dc-10a6ba9c495c",
+  "name": "Sporthalle Heinrich-Heine-Realschule plus",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Reckstraße",
+    "hausnummer": "24",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.475976,
+    "lat": 50.426206
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "bf270d50-0b86-43a0-a1dc-10a6ba9c495c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

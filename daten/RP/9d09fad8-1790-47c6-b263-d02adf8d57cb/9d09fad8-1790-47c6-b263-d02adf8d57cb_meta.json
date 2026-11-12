@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad8-1790-47c6-b263-d02adf8d57cb",
+  "name": "Sportplatz Linkenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L265",
+    "plz": "56317",
+    "ort": "Linkenbach"
+  },
+  "lage": {
+    "lon": 7.565581,
+    "lat": 50.574216
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad8-1790-47c6-b263-d02adf8d57cb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

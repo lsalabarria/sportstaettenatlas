@@ -1,0 +1,22 @@
+{
+  "id": "9ec2a92d-9899-4b9f-b4fa-54f8e0e3695d",
+  "name": "PumpTrack Nierstein",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "plz": "55283",
+    "ort": "Nierstein, Stadt"
+  },
+  "lage": {
+    "lon": 8.323554,
+    "lat": 49.862465
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92d-9899-4b9f-b4fa-54f8e0e3695d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdb2-38a0-481a-a27a-05cffb573d95",
+  "name": "Turnhalle der Grundschule St. Georg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Dechant-Riegel-Straße",
+    "hausnummer": "21",
+    "plz": "56751",
+    "ort": "Polch, Stadt"
+  },
+  "lage": {
+    "lon": 7.316158,
+    "lat": 50.302906
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdb2-38a0-481a-a27a-05cffb573d95",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

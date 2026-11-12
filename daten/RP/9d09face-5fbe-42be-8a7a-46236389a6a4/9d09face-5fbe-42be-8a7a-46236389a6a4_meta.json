@@ -1,0 +1,24 @@
+{
+  "id": "9d09face-5fbe-42be-8a7a-46236389a6a4",
+  "name": "Turnhalle Wallmenroth",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schladeweg",
+    "hausnummer": "31",
+    "plz": "57584",
+    "ort": "Wallmenroth"
+  },
+  "lage": {
+    "lon": 7.836381,
+    "lat": 50.799471
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09face-5fbe-42be-8a7a-46236389a6a4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

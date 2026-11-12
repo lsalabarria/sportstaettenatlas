@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dae-5748-47a1-bf67-7d65e9455459",
+  "name": "Fußballplatz Engers am Rhein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Elmsweg",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.526353,
+    "lat": 50.423583
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dae-5748-47a1-bf67-7d65e9455459",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

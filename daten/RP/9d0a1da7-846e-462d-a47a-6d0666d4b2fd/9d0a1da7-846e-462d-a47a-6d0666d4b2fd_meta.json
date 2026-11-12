@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da7-846e-462d-a47a-6d0666d4b2fd",
+  "name": "Erlebnisnad Aqua Mundo Park Eifel",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Kurberg",
+    "plz": "56767",
+    "ort": "Gunderath"
+  },
+  "lage": {
+    "lon": 6.976616,
+    "lat": 50.258031
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da7-846e-462d-a47a-6d0666d4b2fd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

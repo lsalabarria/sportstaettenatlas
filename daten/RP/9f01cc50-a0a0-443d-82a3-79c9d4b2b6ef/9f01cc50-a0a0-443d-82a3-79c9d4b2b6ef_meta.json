@@ -1,0 +1,24 @@
+{
+  "id": "9f01cc50-a0a0-443d-82a3-79c9d4b2b6ef",
+  "name": "Freibad Birlenbach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "65626",
+    "ort": "Birlenbach"
+  },
+  "lage": {
+    "lon": 7.99712,
+    "lat": 50.35882
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc50-a0a0-443d-82a3-79c9d4b2b6ef",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

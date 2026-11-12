@@ -1,0 +1,24 @@
+{
+  "id": "a101f74d-e341-4f86-a61b-2570d6f73537",
+  "name": "Sporthalle Hochfeldschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Leistadter Straße",
+    "hausnummer": "45",
+    "plz": "67067",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.407448,
+    "lat": 49.461239
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a101f74d-e341-4f86-a61b-2570d6f73537",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

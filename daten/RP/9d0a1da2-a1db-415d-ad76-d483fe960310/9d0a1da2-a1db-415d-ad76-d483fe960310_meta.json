@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1da2-a1db-415d-ad76-d483fe960310",
+  "name": "St. Hubertus Schützenverein",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "plz": "54611",
+    "ort": "Hallschlag"
+  },
+  "lage": {
+    "lon": 6.443666,
+    "lat": 50.356637
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da2-a1db-415d-ad76-d483fe960310",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

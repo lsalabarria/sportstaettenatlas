@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd67-9186-4cd9-b07e-ad82f5df9676",
+  "name": "Fußballplatz SV Obernheim-Kirchenarnbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "K20",
+    "plz": "66919",
+    "ort": "Obernheim-Kirchenarnbach"
+  },
+  "lage": {
+    "lon": 7.569765,
+    "lat": 49.350193
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd67-9186-4cd9-b07e-ad82f5df9676",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4f-791f-4074-8d55-fd98ee36b557",
+  "name": "Tennisanlage Niederlützing",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Lammertal",
+    "plz": "56656",
+    "ort": "Brohl-Lützing"
+  },
+  "lage": {
+    "lon": 7.310486,
+    "lat": 50.484128
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4f-791f-4074-8d55-fd98ee36b557",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

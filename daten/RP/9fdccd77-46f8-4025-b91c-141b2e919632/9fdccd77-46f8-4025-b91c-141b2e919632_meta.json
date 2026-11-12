@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd77-46f8-4025-b91c-141b2e919632",
+  "name": "Südpfalz-Stadion Landau",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Löhlstraße",
+    "hausnummer": "27",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.105792,
+    "lat": 49.198461
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd77-46f8-4025-b91c-141b2e919632",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

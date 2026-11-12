@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cb6-55f0-4771-943e-dcec468130ee",
+  "name": "Selberghalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hintersehen",
+    "hausnummer": "5",
+    "plz": "67753",
+    "ort": "Rothselberg"
+  },
+  "lage": {
+    "lon": 7.589679,
+    "lat": 49.547538
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb6-55f0-4771-943e-dcec468130ee",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

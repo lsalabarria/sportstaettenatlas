@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da0-f449-4b1d-8648-1da1db0e1b39",
+  "name": "Waldsportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L60",
+    "plz": "54533",
+    "ort": "Laufeld"
+  },
+  "lage": {
+    "lon": 6.86408,
+    "lat": 50.07396
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da0-f449-4b1d-8648-1da1db0e1b39",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

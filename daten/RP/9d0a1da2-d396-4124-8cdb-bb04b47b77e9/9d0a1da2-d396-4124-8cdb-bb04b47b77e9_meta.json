@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da2-d396-4124-8cdb-bb04b47b77e9",
+  "name": "Tennisanlage Stadtkyll",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Wirftstraße",
+    "plz": "54589",
+    "ort": "Stadtkyll"
+  },
+  "lage": {
+    "lon": 6.537589,
+    "lat": 50.342753
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da2-d396-4124-8cdb-bb04b47b77e9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

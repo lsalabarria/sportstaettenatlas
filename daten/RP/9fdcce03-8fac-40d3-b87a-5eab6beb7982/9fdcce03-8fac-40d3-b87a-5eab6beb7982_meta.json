@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce03-8fac-40d3-b87a-5eab6beb7982",
+  "name": "Hockeyfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Parkstraße",
+    "hausnummer": "43",
+    "plz": "67061",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.460482,
+    "lat": 49.468674
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce03-8fac-40d3-b87a-5eab6beb7982",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

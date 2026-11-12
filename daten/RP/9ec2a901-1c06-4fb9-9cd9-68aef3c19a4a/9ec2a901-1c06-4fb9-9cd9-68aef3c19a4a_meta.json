@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a901-1c06-4fb9-9cd9-68aef3c19a4a",
+  "name": "Sportanlage Ebertsheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Leberstein",
+    "plz": "67280",
+    "ort": "Ebertsheim"
+  },
+  "lage": {
+    "lon": 8.104045,
+    "lat": 49.570151
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a901-1c06-4fb9-9cd9-68aef3c19a4a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

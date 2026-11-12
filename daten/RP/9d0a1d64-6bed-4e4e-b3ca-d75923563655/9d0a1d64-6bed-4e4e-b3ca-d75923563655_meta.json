@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d64-6bed-4e4e-b3ca-d75923563655",
+  "name": "Sportplatz Heidenburg",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Bucherweg",
+    "hausnummer": "1",
+    "plz": "54426",
+    "ort": "Heidenburg"
+  },
+  "lage": {
+    "lon": 6.924069,
+    "lat": 49.799607
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d64-6bed-4e4e-b3ca-d75923563655",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

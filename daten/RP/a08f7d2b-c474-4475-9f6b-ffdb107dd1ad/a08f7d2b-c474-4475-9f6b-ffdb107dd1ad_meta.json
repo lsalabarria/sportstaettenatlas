@@ -1,0 +1,24 @@
+{
+  "id": "a08f7d2b-c474-4475-9f6b-ffdb107dd1ad",
+  "name": "Sportanlage Blick auf den Rotenfels",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Königsgartenstraße",
+    "plz": "55583",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.831634,
+    "lat": 49.814928
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d2b-c474-4475-9f6b-ffdb107dd1ad",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

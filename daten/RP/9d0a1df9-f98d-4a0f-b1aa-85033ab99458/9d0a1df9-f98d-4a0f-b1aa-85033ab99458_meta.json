@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1df9-f98d-4a0f-b1aa-85033ab99458",
+  "name": "Oberer Kunstrasenplatz Ransbach-Baumbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Haselstraße",
+    "hausnummer": "43",
+    "plz": "56235",
+    "ort": "Ransbach-Baumbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.717663,
+    "lat": 50.464711
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df9-f98d-4a0f-b1aa-85033ab99458",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

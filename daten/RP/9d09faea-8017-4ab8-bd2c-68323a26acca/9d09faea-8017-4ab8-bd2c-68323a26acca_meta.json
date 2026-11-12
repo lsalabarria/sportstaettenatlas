@@ -1,0 +1,24 @@
+{
+  "id": "9d09faea-8017-4ab8-bd2c-68323a26acca",
+  "name": "Bolzplatz Unterhausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Buchenstraße",
+    "hausnummer": "12",
+    "plz": "56412",
+    "ort": "Untershausen"
+  },
+  "lage": {
+    "lon": 7.843262,
+    "lat": 50.39951
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faea-8017-4ab8-bd2c-68323a26acca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

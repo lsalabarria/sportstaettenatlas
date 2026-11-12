@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd8f-dcd9-47cf-bcc5-2993eb063f70",
+  "name": "Reiterhof Bienwald",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Hochufer",
+    "hausnummer": "1",
+    "plz": "76767",
+    "ort": "Hagenbach, Stadt"
+  },
+  "lage": {
+    "lon": 8.23577,
+    "lat": 49.019223
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd8f-dcd9-47cf-bcc5-2993eb063f70",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a912-6e11-458b-8fae-1914093572f9",
+  "name": "Sporthalle Grundschule Zellertal",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Zeller Str.",
+    "hausnummer": "3",
+    "plz": "67308",
+    "ort": "Zellertal"
+  },
+  "lage": {
+    "lon": 8.135023,
+    "lat": 49.645553
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a912-6e11-458b-8fae-1914093572f9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

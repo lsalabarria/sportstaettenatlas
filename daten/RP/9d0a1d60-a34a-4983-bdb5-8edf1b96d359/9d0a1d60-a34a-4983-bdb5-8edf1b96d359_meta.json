@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d60-a34a-4983-bdb5-8edf1b96d359",
+  "name": "Sportplatz Biebern",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Raiffeisenstraße",
+    "hausnummer": "35",
+    "plz": "55471",
+    "ort": "Biebern"
+  },
+  "lage": {
+    "lon": 7.434723,
+    "lat": 49.992016
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d60-a34a-4983-bdb5-8edf1b96d359",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

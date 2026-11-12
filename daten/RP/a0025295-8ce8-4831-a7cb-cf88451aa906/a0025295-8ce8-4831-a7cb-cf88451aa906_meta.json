@@ -1,0 +1,24 @@
+{
+  "id": "a0025295-8ce8-4831-a7cb-cf88451aa906",
+  "name": "Schützenhalle des Schützenvereins Punkt 12 Kleinholbach",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Mittelstraße",
+    "hausnummer": "3A",
+    "plz": "56412",
+    "ort": "Girod"
+  },
+  "lage": {
+    "lon": 7.906071,
+    "lat": 50.44681
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0025295-8ce8-4831-a7cb-cf88451aa906",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

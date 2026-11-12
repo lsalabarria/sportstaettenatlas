@@ -1,0 +1,23 @@
+{
+  "id": "9d09faca-054b-4302-9f4d-037b62b8e7bf",
+  "name": "Spielplatz Fluterschen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Talstraße",
+    "plz": "57614",
+    "ort": "Fluterschen"
+  },
+  "lage": {
+    "lon": 7.625493,
+    "lat": 50.665306
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faca-054b-4302-9f4d-037b62b8e7bf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdccde9-7b1d-4cee-8005-cb0caba782b2",
+  "name": "Sportplatz Grundschule auf dem Fischerrück",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Stettiner Straße",
+    "hausnummer": "35",
+    "plz": "67659",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.736121,
+    "lat": 49.447572
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccde9-7b1d-4cee-8005-cb0caba782b2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

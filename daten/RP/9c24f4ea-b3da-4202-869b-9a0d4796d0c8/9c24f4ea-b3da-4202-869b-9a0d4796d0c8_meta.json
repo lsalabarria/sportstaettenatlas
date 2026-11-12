@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4ea-b3da-4202-869b-9a0d4796d0c8",
+  "name": "Sportplatz Biersdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Biersdorfer Straße",
+    "plz": "54636",
+    "ort": "Biersdorf am See"
+  },
+  "lage": {
+    "lon": 6.452213,
+    "lat": 50.011969
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ea-b3da-4202-869b-9a0d4796d0c8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

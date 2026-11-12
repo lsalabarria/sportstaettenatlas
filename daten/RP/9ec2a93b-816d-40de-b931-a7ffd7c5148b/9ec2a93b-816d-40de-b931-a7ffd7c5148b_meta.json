@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a93b-816d-40de-b931-a7ffd7c5148b",
+  "name": "Boccia-Bahn",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Müllerwald",
+    "plz": "55120",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.226429,
+    "lat": 50.018311
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93b-816d-40de-b931-a7ffd7c5148b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d56-eb53-4b2f-be49-0b3aea3a8286",
+  "name": "Waldstadion Auderath",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Seitert",
+    "plz": "56766",
+    "ort": "Auderath"
+  },
+  "lage": {
+    "lon": 7.014475,
+    "lat": 50.190028
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d56-eb53-4b2f-be49-0b3aea3a8286",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

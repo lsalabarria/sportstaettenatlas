@@ -1,0 +1,24 @@
+{
+  "id": "9f01cc61-1422-4686-8984-785f213ec282",
+  "name": "Mons-Tabor-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Eifelstraße",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.81071,
+    "lat": 50.42745
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc61-1422-4686-8984-785f213ec282",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

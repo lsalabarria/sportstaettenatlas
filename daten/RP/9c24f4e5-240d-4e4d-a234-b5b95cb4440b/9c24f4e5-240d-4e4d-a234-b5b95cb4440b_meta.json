@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4e5-240d-4e4d-a234-b5b95cb4440b",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Prümtalstraße",
+    "plz": "54646",
+    "ort": "Bettingen"
+  },
+  "lage": {
+    "lon": 6.40428,
+    "lat": 49.937314
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e5-240d-4e4d-a234-b5b95cb4440b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

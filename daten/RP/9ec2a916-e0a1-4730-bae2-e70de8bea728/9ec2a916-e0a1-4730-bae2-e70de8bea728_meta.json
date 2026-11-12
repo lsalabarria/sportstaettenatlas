@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a916-e0a1-4730-bae2-e70de8bea728",
+  "name": "Sportfeld Mörsfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Neugasse",
+    "plz": "67808",
+    "ort": "Mörsfeld"
+  },
+  "lage": {
+    "lon": 7.931721,
+    "lat": 49.745962
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a916-e0a1-4730-bae2-e70de8bea728",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

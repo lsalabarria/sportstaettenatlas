@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccfc-983f-432c-bdc2-b10a90d43cf4",
+  "name": "Reitanlage Magdalenenhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Magdalenenhof",
+    "plz": "56348",
+    "ort": "Weisel"
+  },
+  "lage": {
+    "lon": 7.794265,
+    "lat": 50.111716
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccfc-983f-432c-bdc2-b10a90d43cf4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d4b-d5cf-4f05-9688-c8204698f2cc",
+  "name": "Reiterhof Ahrtal",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Gut Stahlhütte",
+    "hausnummer": "1",
+    "plz": "53533",
+    "ort": "Dorsel"
+  },
+  "lage": {
+    "lon": 6.803423,
+    "lat": 50.380264
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4b-d5cf-4f05-9688-c8204698f2cc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

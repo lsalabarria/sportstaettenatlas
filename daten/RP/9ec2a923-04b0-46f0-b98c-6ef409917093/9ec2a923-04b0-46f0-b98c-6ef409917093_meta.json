@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a923-04b0-46f0-b98c-6ef409917093",
+  "name": "Fitnessstudio Venice Beach Grünstadt",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Industriestraße",
+    "hausnummer": "25",
+    "plz": "67269",
+    "ort": "Grünstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.178046,
+    "lat": 49.555717
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a923-04b0-46f0-b98c-6ef409917093",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d61-faf3-4c81-9133-c8b663771d0e",
+  "name": "Bolzplatz Buchenweg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Buchenweg",
+    "plz": "55471",
+    "ort": "Neuerkirch"
+  },
+  "lage": {
+    "lon": 7.492897,
+    "lat": 50.01628
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d61-faf3-4c81-9133-c8b663771d0e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

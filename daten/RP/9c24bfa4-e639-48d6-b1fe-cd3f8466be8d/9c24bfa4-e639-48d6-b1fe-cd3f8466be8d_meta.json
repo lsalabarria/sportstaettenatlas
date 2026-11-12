@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa4-e639-48d6-b1fe-cd3f8466be8d",
+  "name": "Gymnastikhalle der Grundschule Am Löwentor",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Finkenherd",
+    "hausnummer": "2",
+    "plz": "56075",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.578926,
+    "lat": 50.347442
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa4-e639-48d6-b1fe-cd3f8466be8d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

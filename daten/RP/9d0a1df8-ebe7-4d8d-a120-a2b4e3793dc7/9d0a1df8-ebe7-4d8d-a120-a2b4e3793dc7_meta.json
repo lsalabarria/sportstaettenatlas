@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1df8-ebe7-4d8d-a120-a2b4e3793dc7",
+  "name": "Mons-Tabor-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Von-Bodelschwingh-Straße",
+    "hausnummer": "25",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.812957,
+    "lat": 50.438219
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df8-ebe7-4d8d-a120-a2b4e3793dc7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1daf-52fb-4226-96b3-029edc0469e1",
+  "name": "Sportplatz Sandkauler Weg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sandkauler Weg",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.469051,
+    "lat": 50.421925
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daf-52fb-4226-96b3-029edc0469e1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

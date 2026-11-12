@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d61-319f-4c07-b664-d71a2100a95e",
+  "name": "Sportplatz Klosterkumbd",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "55469",
+    "ort": "Klosterkumbd"
+  },
+  "lage": {
+    "lon": 7.535063,
+    "lat": 50.026516
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d61-319f-4c07-b664-d71a2100a95e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

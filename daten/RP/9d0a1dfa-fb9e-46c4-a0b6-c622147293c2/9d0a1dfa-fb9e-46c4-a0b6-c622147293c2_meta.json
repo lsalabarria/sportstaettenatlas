@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dfa-fb9e-46c4-a0b6-c622147293c2",
+  "name": "Bogenschießanlage BSC Wirges e.V",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Nordstraße",
+    "plz": "56422",
+    "ort": "Wirges, Stadt"
+  },
+  "lage": {
+    "lon": 7.792077,
+    "lat": 50.480095
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfa-fb9e-46c4-a0b6-c622147293c2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

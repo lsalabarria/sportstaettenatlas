@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a918-be07-46cf-9a11-fef773c405c0",
+  "name": "Sportanlage Gäuschule Böbingen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "In den Feldern",
+    "hausnummer": "1",
+    "plz": "67482",
+    "ort": "Böbingen"
+  },
+  "lage": {
+    "lon": 8.225573,
+    "lat": 49.279072
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a918-be07-46cf-9a11-fef773c405c0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

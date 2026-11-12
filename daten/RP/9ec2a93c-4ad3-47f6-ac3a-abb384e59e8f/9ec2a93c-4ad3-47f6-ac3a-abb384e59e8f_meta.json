@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a93c-4ad3-47f6-ac3a-abb384e59e8f",
+  "name": "Bella Vitalis Fitnessstudio & Gesundheitszentrum",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Venninger Str.",
+    "hausnummer": "3",
+    "plz": "67480",
+    "ort": "Edenkoben, Stadt"
+  },
+  "lage": {
+    "lon": 8.146341,
+    "lat": 49.287679
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93c-4ad3-47f6-ac3a-abb384e59e8f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdf9-c314-4c4c-82d8-760fc0f63584",
+  "name": "BASF Tennisclub",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Weiherstraße",
+    "hausnummer": "39",
+    "plz": "67063",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.399748,
+    "lat": 49.497356
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdf9-c314-4c4c-82d8-760fc0f63584",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

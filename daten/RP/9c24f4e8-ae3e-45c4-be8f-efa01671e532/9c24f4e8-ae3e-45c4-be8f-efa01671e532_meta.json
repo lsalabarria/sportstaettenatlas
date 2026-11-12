@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4e8-ae3e-45c4-be8f-efa01671e532",
+  "name": "Waldstadion an den Tannen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Tannenweg",
+    "hausnummer": "4",
+    "plz": "54634",
+    "ort": "Metterich"
+  },
+  "lage": {
+    "lon": 6.591098,
+    "lat": 49.984304
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e8-ae3e-45c4-be8f-efa01671e532",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

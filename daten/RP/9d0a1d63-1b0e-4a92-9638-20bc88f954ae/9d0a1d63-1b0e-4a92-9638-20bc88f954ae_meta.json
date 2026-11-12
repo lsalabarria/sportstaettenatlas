@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d63-1b0e-4a92-9638-20bc88f954ae",
+  "name": "Bolzplatz Steinbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dorfstraße",
+    "plz": "56291",
+    "ort": "Steinbach"
+  },
+  "lage": {
+    "lon": 7.591229,
+    "lat": 50.044247
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d63-1b0e-4a92-9638-20bc88f954ae",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

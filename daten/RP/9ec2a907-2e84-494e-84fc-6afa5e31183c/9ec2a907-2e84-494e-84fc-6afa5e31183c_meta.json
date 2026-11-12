@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a907-2e84-494e-84fc-6afa5e31183c",
+  "name": "Waldsportplatz Esthal",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "1",
+    "plz": "67472",
+    "ort": "Esthal"
+  },
+  "lage": {
+    "lon": 7.990431,
+    "lat": 49.384165
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a907-2e84-494e-84fc-6afa5e31183c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

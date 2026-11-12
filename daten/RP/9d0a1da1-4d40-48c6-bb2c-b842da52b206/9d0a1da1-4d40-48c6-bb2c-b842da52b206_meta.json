@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1da1-4d40-48c6-bb2c-b842da52b206",
+  "name": "Sonnenhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "plz": "54538",
+    "ort": "Hontheim"
+  },
+  "lage": {
+    "lon": 7.031779,
+    "lat": 50.065169
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da1-4d40-48c6-bb2c-b842da52b206",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

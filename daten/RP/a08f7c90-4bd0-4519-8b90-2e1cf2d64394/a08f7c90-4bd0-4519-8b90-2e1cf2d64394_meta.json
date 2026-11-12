@@ -1,0 +1,24 @@
+{
+  "id": "a08f7c90-4bd0-4519-8b90-2e1cf2d64394",
+  "name": "Sportplatz Ellweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lindenallee",
+    "plz": "55765",
+    "ort": "Ellweiler"
+  },
+  "lage": {
+    "lon": 7.14306,
+    "lat": 49.615513
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c90-4bd0-4519-8b90-2e1cf2d64394",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

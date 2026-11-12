@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc77-ea52-4c64-b103-c21c4813d5f2",
+  "name": "Waldfreibad Herxheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "St.-Christophorus-Straße",
+    "hausnummer": "8",
+    "plz": "76863",
+    "ort": "Herxheim bei Landau/ Pfalz"
+  },
+  "lage": {
+    "lon": 8.215446,
+    "lat": 49.089258
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc77-ea52-4c64-b103-c21c4813d5f2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

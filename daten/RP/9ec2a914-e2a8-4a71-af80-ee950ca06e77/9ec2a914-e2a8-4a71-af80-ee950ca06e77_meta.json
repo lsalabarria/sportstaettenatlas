@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a914-e2a8-4a71-af80-ee950ca06e77",
+  "name": "Sporthalle Werner-von-Bolanden-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Kirschberg",
+    "plz": "67295",
+    "ort": "Bolanden"
+  },
+  "lage": {
+    "lon": 8.015373,
+    "lat": 49.645362
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a914-e2a8-4a71-af80-ee950ca06e77",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

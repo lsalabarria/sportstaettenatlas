@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da3-fdf3-4d0e-843c-582144ef15d9",
+  "name": "Sportplatz Dohm",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L29",
+    "plz": "54576",
+    "ort": "Dohm-Lammersdorf"
+  },
+  "lage": {
+    "lon": 6.66006,
+    "lat": 50.263465
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da3-fdf3-4d0e-843c-582144ef15d9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

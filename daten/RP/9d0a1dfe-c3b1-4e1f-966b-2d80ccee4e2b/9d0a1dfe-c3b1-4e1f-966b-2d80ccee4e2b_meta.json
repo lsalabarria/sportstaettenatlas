@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dfe-c3b1-4e1f-966b-2d80ccee4e2b",
+  "name": "Klinikbad im Brüderkrankenhaus Montabaur",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Koblenzer Straße",
+    "hausnummer": "11-13",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.831472,
+    "lat": 50.431481
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfe-c3b1-4e1f-966b-2d80ccee4e2b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

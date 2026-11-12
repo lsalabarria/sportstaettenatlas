@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5f-2671-4bfc-ae65-8cfa03e26107",
+  "name": "Bolzplatz Nieder Kostenz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "55481",
+    "ort": "Nieder Kostenz"
+  },
+  "lage": {
+    "lon": 7.367734,
+    "lat": 49.946416
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5f-2671-4bfc-ae65-8cfa03e26107",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

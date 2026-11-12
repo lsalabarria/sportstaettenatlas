@@ -1,0 +1,24 @@
+{
+  "id": "a08f7ca4-639e-4b5a-af5b-658df5f0dc79",
+  "name": "Sportanlage auf der Festung",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hofstraße",
+    "plz": "55743",
+    "ort": "Kirschweiler"
+  },
+  "lage": {
+    "lon": 7.233504,
+    "lat": 49.756095
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ca4-639e-4b5a-af5b-658df5f0dc79",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

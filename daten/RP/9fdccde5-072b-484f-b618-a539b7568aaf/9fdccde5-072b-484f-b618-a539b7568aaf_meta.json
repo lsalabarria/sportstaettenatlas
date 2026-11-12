@@ -1,0 +1,25 @@
+{
+  "id": "9fdccde5-072b-484f-b618-a539b7568aaf",
+  "name": "Baseballfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Vogelweh",
+    "hausnummer": "2010",
+    "plz": "67661",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.707438,
+    "lat": 49.43656
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccde5-072b-484f-b618-a539b7568aaf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

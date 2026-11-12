@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd8c-1c16-4d79-a0b3-12f205e0a0ee",
+  "name": "Schützenverein Schaidt",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "K23",
+    "plz": "76744",
+    "ort": "Wörth am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.086317,
+    "lat": 49.05205
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd8c-1c16-4d79-a0b3-12f205e0a0ee",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

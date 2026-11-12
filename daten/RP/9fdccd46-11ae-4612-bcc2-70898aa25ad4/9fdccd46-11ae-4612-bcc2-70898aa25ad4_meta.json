@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd46-11ae-4612-bcc2-70898aa25ad4",
+  "name": "TC Schloßberg e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Schlossberg",
+    "plz": "66996",
+    "ort": "Erfweiler"
+  },
+  "lage": {
+    "lon": 7.807066,
+    "lat": 49.152853
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd46-11ae-4612-bcc2-70898aa25ad4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

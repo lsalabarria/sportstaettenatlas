@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad2-316e-4d97-8afd-5e33d79d2829",
+  "name": "Sportplatz Kunstrasen Melsbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Friedrich-Ebert-Straße",
+    "plz": "56581",
+    "ort": "Melsbach"
+  },
+  "lage": {
+    "lon": 7.481397,
+    "lat": 50.480017
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad2-316e-4d97-8afd-5e33d79d2829",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

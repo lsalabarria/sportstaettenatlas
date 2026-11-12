@@ -1,0 +1,24 @@
+{
+  "id": "9d09faf1-275f-4533-8e7e-61317c382d1f",
+  "name": "Sportplatz Im Hahnstück",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Hahnstück",
+    "hausnummer": "27",
+    "plz": "56459",
+    "ort": "Girkenroth"
+  },
+  "lage": {
+    "lon": 7.964599,
+    "lat": 50.521923
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf1-275f-4533-8e7e-61317c382d1f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

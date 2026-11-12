@@ -1,0 +1,28 @@
+{
+  "id": "5d39706b-98ff-4ff4-9f2f-40982cbcd4b0",
+  "name": "Bootshaus Bernkasteler Ruderverein",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Peter-Kremer-Weg",
+    "hausnummer": "8",
+    "plz": "54470",
+    "ort": "Bernkastel-Kues, Stadt"
+  },
+  "lage": {
+    "lon": 7.066057,
+    "lat": 49.924786
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Bernkasteler Ruderverein 1874 e.V.",
+  "betreiber": "Bernkasteler Ruderverein 1874 e.V.",
+  "website": "www.bernkasteler-ruderverein.de",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "5d39706b-98ff-4ff4-9f2f-40982cbcd4b0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

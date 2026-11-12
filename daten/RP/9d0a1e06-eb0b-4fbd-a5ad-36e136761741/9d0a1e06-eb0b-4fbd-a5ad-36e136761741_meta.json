@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e06-eb0b-4fbd-a5ad-36e136761741",
+  "name": "Bolzplatz Cochem",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Stadionstraße",
+    "plz": "56812",
+    "ort": "Cochem, Stadt"
+  },
+  "lage": {
+    "lon": 7.178238,
+    "lat": 50.159864
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e06-eb0b-4fbd-a5ad-36e136761741",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

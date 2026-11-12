@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a931-98f9-436c-afc4-fef170e9f611",
+  "name": "Massa Fitness Kibo",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Woogmorgen",
+    "hausnummer": "3",
+    "plz": "67292",
+    "ort": "Kirchheimbolanden, Stadt"
+  },
+  "lage": {
+    "lon": 8.021313,
+    "lat": 49.658949
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a931-98f9-436c-afc4-fef170e9f611",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

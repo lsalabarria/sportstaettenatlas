@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa4-9e44-44f5-8094-d6ae1f5d67b3",
+  "name": "Leichtathletik- und Fußballtrainingsgelände",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jupp-Gauchel-Straße",
+    "hausnummer": "10",
+    "plz": "56075",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.585037,
+    "lat": 50.329636
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa4-9e44-44f5-8094-d6ae1f5d67b3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d62-1929-4618-8fa6-9a5cf289b976",
+  "name": "Sportplatz Ohlweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "In der Hohl",
+    "plz": "55469",
+    "ort": "Ohlweiler"
+  },
+  "lage": {
+    "lon": 7.493234,
+    "lat": 49.96846
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d62-1929-4618-8fa6-9a5cf289b976",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

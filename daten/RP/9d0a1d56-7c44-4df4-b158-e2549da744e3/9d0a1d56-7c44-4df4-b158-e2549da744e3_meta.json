@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d56-7c44-4df4-b158-e2549da744e3",
+  "name": "Bolzplatz Müllenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brunnenstraße",
+    "plz": "56761",
+    "ort": "Müllenbach"
+  },
+  "lage": {
+    "lon": 7.068237,
+    "lat": 50.221489
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d56-7c44-4df4-b158-e2549da744e3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

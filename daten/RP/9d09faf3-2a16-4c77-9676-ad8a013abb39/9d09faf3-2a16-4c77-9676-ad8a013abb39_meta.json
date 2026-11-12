@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf3-2a16-4c77-9676-ad8a013abb39",
+  "name": "Hüttenbergstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Hüttenberg",
+    "plz": "56459",
+    "ort": "Pottum"
+  },
+  "lage": {
+    "lon": 7.985312,
+    "lat": 50.596688
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf3-2a16-4c77-9676-ad8a013abb39",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

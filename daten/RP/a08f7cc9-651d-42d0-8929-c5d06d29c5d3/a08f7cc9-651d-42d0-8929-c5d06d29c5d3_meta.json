@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cc9-651d-42d0-8929-c5d06d29c5d3",
+  "name": "Gräfenbachtalhalle",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "7",
+    "plz": "55595",
+    "ort": "Wallhausen"
+  },
+  "lage": {
+    "lon": 7.770998,
+    "lat": 49.887765
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cc9-651d-42d0-8929-c5d06d29c5d3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

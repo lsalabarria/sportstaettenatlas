@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccf5-b0b7-4321-ac97-a57808061d79",
+  "name": "Aartalhalle Flacht",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "17",
+    "plz": "65558",
+    "ort": "Flacht"
+  },
+  "lage": {
+    "lon": 8.052135,
+    "lat": 50.344127
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccf5-b0b7-4321-ac97-a57808061d79",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

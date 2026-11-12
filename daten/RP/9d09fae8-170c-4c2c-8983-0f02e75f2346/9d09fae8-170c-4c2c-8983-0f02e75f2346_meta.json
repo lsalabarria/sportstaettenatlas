@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae8-170c-4c2c-8983-0f02e75f2346",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf der Steinkaul",
+    "plz": "54441",
+    "ort": "Kirf"
+  },
+  "lage": {
+    "lon": 6.483285,
+    "lat": 49.546592
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae8-170c-4c2c-8983-0f02e75f2346",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

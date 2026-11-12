@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d56-d297-4ca2-9b54-c087274fcba8",
+  "name": "Bolzplatz Alflen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gartenstraße",
+    "plz": "56828",
+    "ort": "Alflen"
+  },
+  "lage": {
+    "lon": 7.040812,
+    "lat": 50.179475
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d56-d297-4ca2-9b54-c087274fcba8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

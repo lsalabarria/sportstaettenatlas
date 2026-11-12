@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdc1-4e41-4451-bc7e-6b160abdf485",
+  "name": "Freiherr-vom-Stein-Parkanlage",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brühlweg",
+    "hausnummer": "4",
+    "plz": "56377",
+    "ort": "Nassau, Stadt"
+  },
+  "lage": {
+    "lon": 7.791634,
+    "lat": 50.315971
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdc1-4e41-4451-bc7e-6b160abdf485",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

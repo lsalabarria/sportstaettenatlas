@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cdd-cc25-416a-b582-271afe674cc4",
+  "name": "Tennisplätze Guldental",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Naheweinstraße",
+    "hausnummer": "2",
+    "plz": "55452",
+    "ort": "Guldental"
+  },
+  "lage": {
+    "lon": 7.852645,
+    "lat": 49.890467
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cdd-cc25-416a-b582-271afe674cc4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

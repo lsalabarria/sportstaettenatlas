@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdda-50cf-4980-9125-7e42931efbc5",
+  "name": "Reitanlage",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Messerschwanderhof",
+    "hausnummer": "1",
+    "plz": "67697",
+    "ort": "Otterberg, Stadt"
+  },
+  "lage": {
+    "lon": 7.7954,
+    "lat": 49.533299
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdda-50cf-4980-9125-7e42931efbc5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

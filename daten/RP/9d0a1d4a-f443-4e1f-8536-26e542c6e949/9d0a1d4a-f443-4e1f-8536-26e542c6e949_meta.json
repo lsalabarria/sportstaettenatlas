@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d4a-f443-4e1f-8536-26e542c6e949",
+  "name": "Spielplatz Eckendorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lappsgasse",
+    "hausnummer": "19",
+    "plz": "53501",
+    "ort": "Grafschaft"
+  },
+  "lage": {
+    "lon": 7.06163,
+    "lat": 50.592326
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4a-f443-4e1f-8536-26e542c6e949",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

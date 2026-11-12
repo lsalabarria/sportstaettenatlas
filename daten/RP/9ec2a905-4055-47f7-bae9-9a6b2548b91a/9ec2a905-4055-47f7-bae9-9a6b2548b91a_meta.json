@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a905-4055-47f7-bae9-9a6b2548b91a",
+  "name": "VeniceBeach Fitness Haßloch",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Anilinstraße",
+    "hausnummer": "75",
+    "plz": "67454",
+    "ort": "Haßloch"
+  },
+  "lage": {
+    "lon": 8.256873,
+    "lat": 49.371406
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a905-4055-47f7-bae9-9a6b2548b91a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

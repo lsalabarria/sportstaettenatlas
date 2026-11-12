@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a906-f3da-4cb2-b827-80477d42f5e0",
+  "name": "Klettergarten Weidenthal",
+  "kategorie": "Klettersportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "259",
+    "plz": "67475",
+    "ort": "Weidenthal"
+  },
+  "lage": {
+    "lon": 8.010106,
+    "lat": 49.406528
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a906-f3da-4cb2-b827-80477d42f5e0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

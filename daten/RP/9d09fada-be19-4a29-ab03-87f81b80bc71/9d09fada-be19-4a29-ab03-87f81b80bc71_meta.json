@@ -1,0 +1,24 @@
+{
+  "id": "9d09fada-be19-4a29-ab03-87f81b80bc71",
+  "name": "Bouleanlage",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Trierer Straße",
+    "hausnummer": "26",
+    "plz": "54309",
+    "ort": "Newel"
+  },
+  "lage": {
+    "lon": 6.61712,
+    "lat": 49.812231
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fada-be19-4a29-ab03-87f81b80bc71",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

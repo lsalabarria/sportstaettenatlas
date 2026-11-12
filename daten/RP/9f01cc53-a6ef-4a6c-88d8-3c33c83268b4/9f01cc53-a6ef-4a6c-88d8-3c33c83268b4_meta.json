@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc53-a6ef-4a6c-88d8-3c33c83268b4",
+  "name": "Kreisbad Römerberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Viehtriftstraße",
+    "hausnummer": "106",
+    "plz": "67354",
+    "ort": "Römerberg"
+  },
+  "lage": {
+    "lon": 8.40498,
+    "lat": 49.27941
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc53-a6ef-4a6c-88d8-3c33c83268b4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

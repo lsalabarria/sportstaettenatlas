@@ -1,0 +1,24 @@
+{
+  "id": "a08f7c75-b46d-46e6-bc30-78173cef9ce2",
+  "name": "TC Schornsheim e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "plz": "55288",
+    "ort": "Schornsheim"
+  },
+  "lage": {
+    "lon": 8.168513,
+    "lat": 49.847807
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c75-b46d-46e6-bc30-78173cef9ce2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

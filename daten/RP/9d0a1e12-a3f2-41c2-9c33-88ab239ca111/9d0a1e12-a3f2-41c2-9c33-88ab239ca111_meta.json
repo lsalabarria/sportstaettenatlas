@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1e12-a3f2-41c2-9c33-88ab239ca111",
+  "name": "Tennisanlage Kerpen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "plz": "54578",
+    "ort": "Kerpen (Eifel)"
+  },
+  "lage": {
+    "lon": 6.7304,
+    "lat": 50.316347
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e12-a3f2-41c2-9c33-88ab239ca111",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

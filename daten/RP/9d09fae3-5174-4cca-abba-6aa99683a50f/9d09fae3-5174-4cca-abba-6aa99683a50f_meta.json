@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae3-5174-4cca-abba-6aa99683a50f",
+  "name": "Sportplatz Kell",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Herrenmarkt",
+    "plz": "54427",
+    "ort": "Kell am See"
+  },
+  "lage": {
+    "lon": 6.817635,
+    "lat": 49.630523
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae3-5174-4cca-abba-6aa99683a50f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

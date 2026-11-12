@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4e6-23d8-4561-a328-6b86b9861ab0",
+  "name": "Prümtal-Freibad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "In der Klaus",
+    "plz": "54636",
+    "ort": "Oberweis"
+  },
+  "lage": {
+    "lon": 6.42483,
+    "lat": 49.958401
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e6-23d8-4561-a328-6b86b9861ab0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

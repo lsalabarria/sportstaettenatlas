@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91e-dbd3-45ba-9e01-f65d579aa1eb",
+  "name": "Freizeitgelände Klingbachaue",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Steinstraße",
+    "hausnummer": "9",
+    "plz": "76889",
+    "ort": "Klingenmünster"
+  },
+  "lage": {
+    "lon": 8.01559,
+    "lat": 49.140032
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91e-dbd3-45ba-9e01-f65d579aa1eb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

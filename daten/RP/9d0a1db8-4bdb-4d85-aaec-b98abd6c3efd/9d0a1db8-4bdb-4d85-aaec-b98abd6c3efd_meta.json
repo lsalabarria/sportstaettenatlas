@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1db8-4bdb-4d85-aaec-b98abd6c3efd",
+  "name": "Sportplatz Oberkirch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Oberkirch",
+    "plz": "54294",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.581667,
+    "lat": 49.711589
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db8-4bdb-4d85-aaec-b98abd6c3efd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

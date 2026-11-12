@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e0a-4761-4685-9949-b1e33c75ca0e",
+  "name": "Niederkirchspielhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Pastor-Wiegand-Straße",
+    "hausnummer": "1",
+    "plz": "56154",
+    "ort": "Boppard, Stadt"
+  },
+  "lage": {
+    "lon": 7.490039,
+    "lat": 50.203417
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0a-4761-4685-9949-b1e33c75ca0e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

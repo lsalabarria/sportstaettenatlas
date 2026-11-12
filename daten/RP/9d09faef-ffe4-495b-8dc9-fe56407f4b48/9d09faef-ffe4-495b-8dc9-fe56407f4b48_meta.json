@@ -1,0 +1,23 @@
+{
+  "id": "9d09faef-ffe4-495b-8dc9-fe56407f4b48",
+  "name": "Bezirkssportanlage Wallmerod",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportpl",
+    "plz": "56414",
+    "ort": "Wallmerod"
+  },
+  "lage": {
+    "lon": 7.959833,
+    "lat": 50.482003
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faef-ffe4-495b-8dc9-fe56407f4b48",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc58-f062-4058-98d7-b033aef409c7",
+  "name": "Bad Sayn",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Im Sayntal",
+    "hausnummer": "2",
+    "plz": "56170",
+    "ort": "Bendorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.57783,
+    "lat": 50.44394
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc58-f062-4058-98d7-b033aef409c7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

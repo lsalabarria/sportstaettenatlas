@@ -1,0 +1,23 @@
+{
+  "id": "9d09fadd-fa68-4c62-9e62-ba5948f96972",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Langgarten",
+    "plz": "54341",
+    "ort": "Fell"
+  },
+  "lage": {
+    "lon": 6.774732,
+    "lat": 49.79285
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadd-fa68-4c62-9e62-ba5948f96972",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

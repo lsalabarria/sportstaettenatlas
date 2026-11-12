@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d31-fc51-41b1-b8ea-988fe3dbcd13",
+  "name": "Reitanlage RS Neumaier",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Güterbahnhofstraße",
+    "hausnummer": "21",
+    "plz": "55543",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.87325,
+    "lat": 49.856282
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d31-fc51-41b1-b8ea-988fe3dbcd13",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

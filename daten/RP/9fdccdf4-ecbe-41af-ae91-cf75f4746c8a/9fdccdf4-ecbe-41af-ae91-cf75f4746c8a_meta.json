@@ -1,0 +1,24 @@
+{
+  "id": "9fdccdf4-ecbe-41af-ae91-cf75f4746c8a",
+  "name": "Sportplatz an der B9",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Muldenweg",
+    "plz": "67069",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.394383,
+    "lat": 49.541547
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdf4-ecbe-41af-ae91-cf75f4746c8a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

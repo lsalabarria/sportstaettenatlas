@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a924-1c3a-4b6e-805c-c004ccd8acf3",
+  "name": "Sportanlage am Campingpark Bad Dürkheim",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "In den Almen",
+    "hausnummer": "1",
+    "plz": "67098",
+    "ort": "Bad Dürkheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.192685,
+    "lat": 49.473104
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a924-1c3a-4b6e-805c-c004ccd8acf3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

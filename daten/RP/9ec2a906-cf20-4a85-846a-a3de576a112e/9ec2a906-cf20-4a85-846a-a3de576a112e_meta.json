@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a906-cf20-4a85-846a-a3de576a112e",
+  "name": "Karl-Heintz-Sportplatz Weidenthal",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Weiher",
+    "hausnummer": "46",
+    "plz": "67475",
+    "ort": "Weidenthal"
+  },
+  "lage": {
+    "lon": 7.974664,
+    "lat": 49.413815
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a906-cf20-4a85-846a-a3de576a112e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

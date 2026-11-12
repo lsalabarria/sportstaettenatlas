@@ -1,0 +1,23 @@
+{
+  "id": "9d09faee-6639-475e-a0cc-20bfbc3e17a5",
+  "name": "Sportplatz am Malberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Malbergstraße",
+    "plz": "56244",
+    "ort": "Leuterod"
+  },
+  "lage": {
+    "lon": 7.82455,
+    "lat": 50.48809
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faee-6639-475e-a0cc-20bfbc3e17a5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

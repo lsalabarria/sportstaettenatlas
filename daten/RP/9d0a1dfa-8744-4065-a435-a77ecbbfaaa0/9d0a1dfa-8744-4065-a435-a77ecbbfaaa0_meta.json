@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dfa-8744-4065-a435-a77ecbbfaaa0",
+  "name": "Sportplatz Eschelbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Nelkenstraße",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.816435,
+    "lat": 50.450639
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfa-8744-4065-a435-a77ecbbfaaa0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a91d-449a-40df-8350-33013a301e85",
+  "name": "Sportanlage Steinfeld – Wiesentalstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "plz": "76889",
+    "ort": "Steinfeld"
+  },
+  "lage": {
+    "lon": 8.040962,
+    "lat": 49.044711
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91d-449a-40df-8350-33013a301e85",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

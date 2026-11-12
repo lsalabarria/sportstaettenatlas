@@ -1,0 +1,23 @@
+{
+  "id": "9d09faec-df60-47a0-a59d-c24f3092d58a",
+  "name": "Cage-Soccer Erbsengarten",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "plz": "56424",
+    "ort": "Staudt"
+  },
+  "lage": {
+    "lon": 7.829032,
+    "lat": 50.463052
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faec-df60-47a0-a59d-c24f3092d58a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

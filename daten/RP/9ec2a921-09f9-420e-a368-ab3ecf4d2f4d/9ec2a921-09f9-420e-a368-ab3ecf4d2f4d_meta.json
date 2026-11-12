@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a921-09f9-420e-a368-ab3ecf4d2f4d",
+  "name": "Tennis und Kegel Treff Siebeldingen",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "In den Ackerwiesen",
+    "hausnummer": "20",
+    "plz": "76833",
+    "ort": "Siebeldingen"
+  },
+  "lage": {
+    "lon": 8.058821,
+    "lat": 49.210359
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a921-09f9-420e-a368-ab3ecf4d2f4d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

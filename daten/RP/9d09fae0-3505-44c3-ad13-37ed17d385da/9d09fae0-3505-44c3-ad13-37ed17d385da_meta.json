@@ -1,0 +1,24 @@
+{
+  "id": "9d09fae0-3505-44c3-ad13-37ed17d385da",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "8",
+    "plz": "54317",
+    "ort": "Kasel"
+  },
+  "lage": {
+    "lon": 6.741404,
+    "lat": 49.7652
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae0-3505-44c3-ad13-37ed17d385da",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

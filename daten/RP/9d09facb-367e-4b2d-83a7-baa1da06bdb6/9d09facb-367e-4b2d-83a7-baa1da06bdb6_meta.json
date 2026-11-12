@@ -1,0 +1,24 @@
+{
+  "id": "9d09facb-367e-4b2d-83a7-baa1da06bdb6",
+  "name": "Mehrzweckhalle Krunkel",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Auf der Burg",
+    "hausnummer": "2",
+    "plz": "56593",
+    "ort": "Krunkel"
+  },
+  "lage": {
+    "lon": 7.498059,
+    "lat": 50.583482
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facb-367e-4b2d-83a7-baa1da06bdb6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

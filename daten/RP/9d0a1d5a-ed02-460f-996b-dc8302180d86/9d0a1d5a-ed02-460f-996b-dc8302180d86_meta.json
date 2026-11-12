@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5a-ed02-460f-996b-dc8302180d86",
+  "name": "Sportplatz Niederburg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "K93",
+    "plz": "55432",
+    "ort": "Niederburg"
+  },
+  "lage": {
+    "lon": 7.688693,
+    "lat": 50.121518
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5a-ed02-460f-996b-dc8302180d86",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "a018678d-27ca-48bb-8ebd-996afbd0c6c7",
+  "name": "Kleinspielfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Schulstr.",
+    "plz": "54538",
+    "ort": "Kinderbeuern"
+  },
+  "lage": {
+    "lon": 7.016191,
+    "lat": 50.009584
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a018678d-27ca-48bb-8ebd-996afbd0c6c7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

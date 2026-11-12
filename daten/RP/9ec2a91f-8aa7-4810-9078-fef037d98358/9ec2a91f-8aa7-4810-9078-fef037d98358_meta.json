@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91f-8aa7-4810-9078-fef037d98358",
+  "name": "Bolzplatz Kinderdorf Maria Regina",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Marienstraße",
+    "hausnummer": "8",
+    "plz": "76857",
+    "ort": "Silz"
+  },
+  "lage": {
+    "lon": 7.956812,
+    "lat": 49.147749
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91f-8aa7-4810-9078-fef037d98358",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

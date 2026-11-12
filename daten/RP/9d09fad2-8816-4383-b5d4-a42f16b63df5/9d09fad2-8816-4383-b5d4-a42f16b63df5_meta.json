@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad2-8816-4383-b5d4-a42f16b63df5",
+  "name": "Beachvolleyballfeld Freibad Rengsdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gebückstraße",
+    "plz": "56579",
+    "ort": "Rengsdorf"
+  },
+  "lage": {
+    "lon": 7.502348,
+    "lat": 50.504815
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad2-8816-4383-b5d4-a42f16b63df5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

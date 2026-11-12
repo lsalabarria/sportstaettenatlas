@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a915-11ac-47f2-8c34-8793213617ed",
+  "name": "Flzgplatz Imsweiler",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "strasse": "Am Flugplatz",
+    "hausnummer": "1",
+    "plz": "67808",
+    "ort": "Imsweiler"
+  },
+  "lage": {
+    "lon": 7.792453,
+    "lat": 49.605169
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a915-11ac-47f2-8c34-8793213617ed",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

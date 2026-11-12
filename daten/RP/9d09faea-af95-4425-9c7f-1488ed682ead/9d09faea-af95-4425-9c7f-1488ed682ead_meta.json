@@ -1,0 +1,23 @@
+{
+  "id": "9d09faea-af95-4425-9c7f-1488ed682ead",
+  "name": "Sport- und Kulturhalle Holler",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Rheinstraße",
+    "plz": "46412",
+    "ort": "Holler"
+  },
+  "lage": {
+    "lon": 7.838347,
+    "lat": 50.406575
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faea-af95-4425-9c7f-1488ed682ead",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

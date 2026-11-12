@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dac-c3cc-47e4-bf45-fa6b48eda78c",
+  "name": "Sporthalle Niederbieber",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Augustenthaler Straße",
+    "hausnummer": "23",
+    "plz": "56567",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.467546,
+    "lat": 50.465472
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dac-c3cc-47e4-bf45-fa6b48eda78c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

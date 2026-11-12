@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa5-eb21-493a-94c7-86e7b659eb98",
+  "name": "Sporthalle des Hilda-Gymnasiums",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kurfürstenstraße",
+    "hausnummer": "40",
+    "plz": "56068",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.595307,
+    "lat": 50.35158
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa5-eb21-493a-94c7-86e7b659eb98",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

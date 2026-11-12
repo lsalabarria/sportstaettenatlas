@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d62-baab-48c4-96d1-c8ae3ff5f9c0",
+  "name": "Sportplatz TSV Riesweiler 04",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Soonwaldstraße",
+    "plz": "55499",
+    "ort": "Riesweiler"
+  },
+  "lage": {
+    "lon": 7.572739,
+    "lat": 49.956073
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d62-baab-48c4-96d1-c8ae3ff5f9c0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

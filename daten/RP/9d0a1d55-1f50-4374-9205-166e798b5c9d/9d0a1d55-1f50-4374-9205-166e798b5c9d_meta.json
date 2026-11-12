@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d55-1f50-4374-9205-166e798b5c9d",
+  "name": "Zungerhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Zum Zungerhof",
+    "hausnummer": "1",
+    "plz": "56759",
+    "ort": "Eppenberg"
+  },
+  "lage": {
+    "lon": 7.06381,
+    "lat": 50.253266
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d55-1f50-4374-9205-166e798b5c9d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

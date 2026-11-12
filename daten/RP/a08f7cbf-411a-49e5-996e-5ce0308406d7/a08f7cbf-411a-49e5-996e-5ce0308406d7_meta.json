@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cbf-411a-49e5-996e-5ce0308406d7",
+  "name": "Dieler Wald Kampfbahn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Rotherech",
+    "plz": "55606",
+    "ort": "Limbach"
+  },
+  "lage": {
+    "lon": 7.54606,
+    "lat": 49.732184
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cbf-411a-49e5-996e-5ce0308406d7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad9-4571-4e8c-87fd-0f5cdcb51064",
+  "name": "Sportplatz Bonefeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L257",
+    "plz": "56579",
+    "ort": "Bonefeld"
+  },
+  "lage": {
+    "lon": 7.489141,
+    "lat": 50.531527
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad9-4571-4e8c-87fd-0f5cdcb51064",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

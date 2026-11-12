@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4d-fa1c-4a1c-a259-e640e8b4730e",
+  "name": "Martinshütte, Altenahr",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf der Hage",
+    "plz": "53505",
+    "ort": "Altenahr"
+  },
+  "lage": {
+    "lon": 6.990181,
+    "lat": 50.520914
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4d-fa1c-4a1c-a259-e640e8b4730e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

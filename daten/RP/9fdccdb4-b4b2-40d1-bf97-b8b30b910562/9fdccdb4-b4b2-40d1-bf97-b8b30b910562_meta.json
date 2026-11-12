@@ -1,0 +1,24 @@
+{
+  "id": "9fdccdb4-b4b2-40d1-bf97-b8b30b910562",
+  "name": "Tennisplätze Mayen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Alter Andernacher Weg",
+    "plz": "56727",
+    "ort": "Mayen, Stadt"
+  },
+  "lage": {
+    "lon": 7.246644,
+    "lat": 50.33003
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdb4-b4b2-40d1-bf97-b8b30b910562",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

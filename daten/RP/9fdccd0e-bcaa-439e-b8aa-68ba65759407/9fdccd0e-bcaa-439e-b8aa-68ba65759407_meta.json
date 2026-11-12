@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd0e-bcaa-439e-b8aa-68ba65759407",
+  "name": "Bolzplatz Dienethal",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Talstraße",
+    "hausnummer": "73",
+    "plz": "56379",
+    "ort": "Dienethal"
+  },
+  "lage": {
+    "lon": 7.782392,
+    "lat": 50.304965
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd0e-bcaa-439e-b8aa-68ba65759407",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

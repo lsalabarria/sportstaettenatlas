@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d4e-6775-48ab-9432-c692f0561248",
+  "name": "Sportplatz Ober-Krälingen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportplatzweg",
+    "hausnummer": "17",
+    "plz": "53505",
+    "ort": "Berg"
+  },
+  "lage": {
+    "lon": 6.940691,
+    "lat": 50.520868
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4e-6775-48ab-9432-c692f0561248",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

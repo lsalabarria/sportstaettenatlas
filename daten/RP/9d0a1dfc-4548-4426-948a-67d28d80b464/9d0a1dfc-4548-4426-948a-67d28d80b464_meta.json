@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dfc-4548-4426-948a-67d28d80b464",
+  "name": "Außensportbereich der Grundschule Elsoff Lasterbachschule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dörner Str.",
+    "hausnummer": "19",
+    "plz": "56479",
+    "ort": "Elsoff (Westerwald)"
+  },
+  "lage": {
+    "lon": 8.107758,
+    "lat": 50.573507
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfc-4548-4426-948a-67d28d80b464",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

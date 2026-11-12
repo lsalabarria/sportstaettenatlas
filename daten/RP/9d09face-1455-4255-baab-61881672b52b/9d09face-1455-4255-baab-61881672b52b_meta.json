@@ -1,0 +1,23 @@
+{
+  "id": "9d09face-1455-4255-baab-61881672b52b",
+  "name": "Sportplatz Rosenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hachenburgerstraße",
+    "plz": "57520",
+    "ort": "Rosenheim (Landkreis Altenkirchen)"
+  },
+  "lage": {
+    "lon": 7.841693,
+    "lat": 50.707946
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09face-1455-4255-baab-61881672b52b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

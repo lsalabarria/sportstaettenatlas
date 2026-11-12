@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d49-c357-461f-9db6-867e699ac1fc",
+  "name": "Sporthalle Priv. Gymn. Marienstatt",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "K21",
+    "plz": "57629",
+    "ort": "Streithausen"
+  },
+  "lage": {
+    "lon": 7.799005,
+    "lat": 50.683582
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d49-c357-461f-9db6-867e699ac1fc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

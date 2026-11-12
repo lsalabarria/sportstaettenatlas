@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e04-3a61-4532-b830-0b727c0ccc45",
+  "name": "Sportplatz Koisdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ahrentaler Straße",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.235078,
+    "lat": 50.525488
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e04-3a61-4532-b830-0b727c0ccc45",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

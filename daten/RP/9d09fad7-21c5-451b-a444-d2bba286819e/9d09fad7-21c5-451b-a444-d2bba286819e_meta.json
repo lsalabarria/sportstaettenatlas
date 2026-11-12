@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad7-21c5-451b-a444-d2bba286819e",
+  "name": "Sportanlage Puderbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wiesenstraße",
+    "hausnummer": "20",
+    "plz": "56305",
+    "ort": "Puderbach"
+  },
+  "lage": {
+    "lon": 7.615966,
+    "lat": 50.59561
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad7-21c5-451b-a444-d2bba286819e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

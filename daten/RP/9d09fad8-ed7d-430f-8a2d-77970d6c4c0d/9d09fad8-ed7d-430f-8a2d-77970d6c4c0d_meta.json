@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad8-ed7d-430f-8a2d-77970d6c4c0d",
+  "name": "Tennisplatz Roßbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "In der Au",
+    "plz": "53547",
+    "ort": "Roßbach"
+  },
+  "lage": {
+    "lon": 7.418805,
+    "lat": 50.567243
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad8-ed7d-430f-8a2d-77970d6c4c0d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

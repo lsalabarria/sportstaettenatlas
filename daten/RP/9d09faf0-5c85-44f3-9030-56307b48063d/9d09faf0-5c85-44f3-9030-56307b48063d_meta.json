@@ -1,0 +1,24 @@
+{
+  "id": "9d09faf0-5c85-44f3-9030-56307b48063d",
+  "name": "Gangolfushalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Grabenstraße",
+    "hausnummer": "9",
+    "plz": "56414",
+    "ort": "Meudt"
+  },
+  "lage": {
+    "lon": 7.900189,
+    "lat": 50.493821
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf0-5c85-44f3-9030-56307b48063d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

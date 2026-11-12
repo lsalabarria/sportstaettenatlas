@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da0-899e-4a55-aa73-2339a53daa3d",
+  "name": "Sportplatz Manderscheid",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportplatzweg",
+    "plz": "54531",
+    "ort": "Manderscheid"
+  },
+  "lage": {
+    "lon": 6.811744,
+    "lat": 50.087314
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da0-899e-4a55-aa73-2339a53daa3d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

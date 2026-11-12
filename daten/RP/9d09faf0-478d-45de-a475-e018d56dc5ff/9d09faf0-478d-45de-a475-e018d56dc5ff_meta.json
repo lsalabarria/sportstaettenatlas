@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf0-478d-45de-a475-e018d56dc5ff",
+  "name": "Bolzplatz Dahlen",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Hunsrückstraße",
+    "plz": "56414",
+    "ort": "Meudt"
+  },
+  "lage": {
+    "lon": 7.896432,
+    "lat": 50.479593
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf0-478d-45de-a475-e018d56dc5ff",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

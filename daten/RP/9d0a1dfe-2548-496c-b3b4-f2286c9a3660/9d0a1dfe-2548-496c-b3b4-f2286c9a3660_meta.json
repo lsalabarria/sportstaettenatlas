@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dfe-2548-496c-b3b4-f2286c9a3660",
+  "name": "Tennisplätze am Sportplatz Lochmühle",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Lohmühle",
+    "plz": "57627",
+    "ort": "Hachenburg, Stadt"
+  },
+  "lage": {
+    "lon": 7.817533,
+    "lat": 50.657187
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfe-2548-496c-b3b4-f2286c9a3660",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

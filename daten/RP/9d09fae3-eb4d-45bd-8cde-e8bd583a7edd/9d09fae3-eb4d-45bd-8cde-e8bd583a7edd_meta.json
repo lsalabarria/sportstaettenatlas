@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae3-eb4d-45bd-8cde-e8bd583a7edd",
+  "name": "Sportplatz Mandern",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Weißkirchener Straße",
+    "plz": "54429",
+    "ort": "Mandern"
+  },
+  "lage": {
+    "lon": 6.765344,
+    "lat": 49.596843
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae3-eb4d-45bd-8cde-e8bd583a7edd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

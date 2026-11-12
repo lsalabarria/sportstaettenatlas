@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dad-4016-4e20-9eec-331eaf7b7a7a",
+  "name": "Sportplatz Paul-Schneider-Schule Neuwied",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Heimstraße",
+    "hausnummer": "41",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.50697,
+    "lat": 50.473621
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dad-4016-4e20-9eec-331eaf7b7a7a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

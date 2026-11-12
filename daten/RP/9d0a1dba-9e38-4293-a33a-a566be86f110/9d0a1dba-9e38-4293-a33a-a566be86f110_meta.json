@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dba-9e38-4293-a33a-a566be86f110",
+  "name": "Wolfsberghalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Montessoriweg",
+    "hausnummer": "1",
+    "plz": "54296",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.649889,
+    "lat": 49.728899
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dba-9e38-4293-a33a-a566be86f110",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

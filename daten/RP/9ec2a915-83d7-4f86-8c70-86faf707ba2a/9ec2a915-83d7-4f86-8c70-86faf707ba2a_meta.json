@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a915-83d7-4f86-8c70-86faf707ba2a",
+  "name": "Boule Anlage SV Dielkirchen",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Bürgermeisteramt",
+    "plz": "67811",
+    "ort": "Dielkirchen"
+  },
+  "lage": {
+    "lon": 7.815854,
+    "lat": 49.665307
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a915-83d7-4f86-8c70-86faf707ba2a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

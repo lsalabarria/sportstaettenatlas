@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e0c-d6bf-4de1-ad90-8845413ec781",
+  "name": "CrossFit Hunsrueck",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Industriestraße",
+    "hausnummer": "15",
+    "plz": "56288",
+    "ort": "Kastellaun, Stadt"
+  },
+  "lage": {
+    "lon": 7.451095,
+    "lat": 50.074266
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0c-d6bf-4de1-ad90-8845413ec781",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce0e-0c57-4ab3-8403-d37bc484c236",
+  "name": "Bolzplatz PIH",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Meergartenweg",
+    "hausnummer": "24.0",
+    "plz": "67227",
+    "ort": "Frankenthal (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.363982,
+    "lat": 49.531265
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce0e-0c57-4ab3-8403-d37bc484c236",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

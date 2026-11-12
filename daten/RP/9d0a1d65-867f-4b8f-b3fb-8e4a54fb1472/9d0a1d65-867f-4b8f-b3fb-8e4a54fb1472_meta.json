@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1d65-867f-4b8f-b3fb-8e4a54fb1472",
+  "name": "Sportplatz Hinzerath",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54497",
+    "ort": "Morbach"
+  },
+  "lage": {
+    "lon": 7.190445,
+    "lat": 49.847368
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d65-867f-4b8f-b3fb-8e4a54fb1472",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

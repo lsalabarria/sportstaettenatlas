@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da5-5004-44af-87b5-14020717674a",
+  "name": "Sportplatz am Wasserhaus",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "K25",
+    "plz": "54558",
+    "ort": "Strohn"
+  },
+  "lage": {
+    "lon": 6.917967,
+    "lat": 50.109893
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da5-5004-44af-87b5-14020717674a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dfc-fba4-4d12-acc2-fadcbd4afb84",
+  "name": "Alsberg-Kaserne",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Alsberg",
+    "hausnummer": "2",
+    "plz": "56477",
+    "ort": "Rennerod, Stadt"
+  },
+  "lage": {
+    "lon": 8.085605,
+    "lat": 50.622097
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfc-fba4-4d12-acc2-fadcbd4afb84",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

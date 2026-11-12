@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccb6-f1fc-431e-adc5-fdce2186ff25",
+  "name": "Geheime Welt - Freizeit- und Abenteuerpark",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Kalkofen",
+    "hausnummer": "2",
+    "plz": "56330",
+    "ort": "Kobern-Gondorf"
+  },
+  "lage": {
+    "lon": 7.460999,
+    "lat": 50.302369
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccb6-f1fc-431e-adc5-fdce2186ff25",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

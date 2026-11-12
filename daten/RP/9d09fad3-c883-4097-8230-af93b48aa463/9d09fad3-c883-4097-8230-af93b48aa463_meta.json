@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad3-c883-4097-8230-af93b48aa463",
+  "name": "Mehrzweckhalle Erpel",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Winzerstraße",
+    "hausnummer": "8",
+    "plz": "53579",
+    "ort": "Erpel"
+  },
+  "lage": {
+    "lon": 7.23848,
+    "lat": 50.586798
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad3-c883-4097-8230-af93b48aa463",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

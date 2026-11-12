@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae4-28e7-4c55-9dca-8cabf048b05f",
+  "name": "Sportplatz Gusenburg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "54413",
+    "ort": "Gusenburg"
+  },
+  "lage": {
+    "lon": 6.900854,
+    "lat": 49.640194
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae4-28e7-4c55-9dca-8cabf048b05f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

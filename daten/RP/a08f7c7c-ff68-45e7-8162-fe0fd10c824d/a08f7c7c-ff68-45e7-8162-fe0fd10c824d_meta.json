@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c7c-ff68-45e7-8162-fe0fd10c824d",
+  "name": "Sporthalle Realschule Plus Flonheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "5",
+    "plz": "55237",
+    "ort": "Flonheim"
+  },
+  "lage": {
+    "lon": 8.03875,
+    "lat": 49.783914
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c7c-ff68-45e7-8162-fe0fd10c824d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

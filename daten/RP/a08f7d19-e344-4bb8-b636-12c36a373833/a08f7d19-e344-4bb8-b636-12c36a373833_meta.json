@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d19-e344-4bb8-b636-12c36a373833",
+  "name": "Bewegungsbad Peter-Caesar-Schule",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Weissborr",
+    "hausnummer": "15",
+    "plz": "55743",
+    "ort": "Idar-Oberstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.320752,
+    "lat": 49.720306
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d19-e344-4bb8-b636-12c36a373833",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

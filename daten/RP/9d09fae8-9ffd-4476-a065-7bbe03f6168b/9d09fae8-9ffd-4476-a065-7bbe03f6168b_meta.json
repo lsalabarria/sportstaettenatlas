@@ -1,0 +1,24 @@
+{
+  "id": "9d09fae8-9ffd-4476-a065-7bbe03f6168b",
+  "name": "Waldsportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lindenstraße",
+    "hausnummer": "54",
+    "plz": "56204",
+    "ort": "Hillscheid"
+  },
+  "lage": {
+    "lon": 7.701905,
+    "lat": 50.401049
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae8-9ffd-4476-a065-7bbe03f6168b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

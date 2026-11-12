@@ -1,0 +1,25 @@
+{
+  "id": "a08f7ce2-0101-4793-93f1-b783af394346",
+  "name": "Birkenhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Birkenweg",
+    "hausnummer": "5",
+    "plz": "55585",
+    "ort": "Duchroth"
+  },
+  "lage": {
+    "lon": 7.734166,
+    "lat": 49.780762
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ce2-0101-4793-93f1-b783af394346",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

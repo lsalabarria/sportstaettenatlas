@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e04-2fe3-46bf-9645-665c5c2a5ccd",
+  "name": "Pistolenclub Sinzig e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Schießstand",
+    "plz": "53489",
+    "ort": "Sinzig, Stadt"
+  },
+  "lage": {
+    "lon": 7.2408,
+    "lat": 50.521482
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e04-2fe3-46bf-9645-665c5c2a5ccd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

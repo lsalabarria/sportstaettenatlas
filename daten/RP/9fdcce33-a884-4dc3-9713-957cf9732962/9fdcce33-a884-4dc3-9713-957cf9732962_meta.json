@@ -1,0 +1,24 @@
+{
+  "id": "9fdcce33-a884-4dc3-9713-957cf9732962",
+  "name": "Reiterverein Dahnertal",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Jünglingsplatz",
+    "plz": "66994",
+    "ort": "Dahn, Stadt"
+  },
+  "lage": {
+    "lon": 7.769095,
+    "lat": 49.150484
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce33-a884-4dc3-9713-957cf9732962",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

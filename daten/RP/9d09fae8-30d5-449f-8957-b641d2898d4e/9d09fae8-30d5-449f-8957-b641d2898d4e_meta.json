@@ -1,0 +1,24 @@
+{
+  "id": "9d09fae8-30d5-449f-8957-b641d2898d4e",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Leukstraße",
+    "hausnummer": "20",
+    "plz": "54450",
+    "ort": "Freudenburg"
+  },
+  "lage": {
+    "lon": 6.528489,
+    "lat": 49.544526
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae8-30d5-449f-8957-b641d2898d4e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad2-5b8e-49fa-99fd-655137748087",
+  "name": "Sportplatz Astrid-Lindgren-Schule Rengsdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Westerwaldstraße",
+    "plz": "56579",
+    "ort": "Rengsdorf"
+  },
+  "lage": {
+    "lon": 7.497321,
+    "lat": 50.499237
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad2-5b8e-49fa-99fd-655137748087",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1df9-a7ca-432f-b7a4-a534453354c8",
+  "name": "Rossbergerhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Roßberger Hof",
+    "hausnummer": "4",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.848113,
+    "lat": 50.432727
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df9-a7ca-432f-b7a4-a534453354c8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

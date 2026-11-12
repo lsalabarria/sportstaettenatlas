@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a911-0546-4898-a86d-0967317a0e1a",
+  "name": "Sportplatz Dienheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportpl.",
+    "hausnummer": "11",
+    "plz": "55276",
+    "ort": "Dienheim"
+  },
+  "lage": {
+    "lon": 8.355921,
+    "lat": 49.841488
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a911-0546-4898-a86d-0967317a0e1a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

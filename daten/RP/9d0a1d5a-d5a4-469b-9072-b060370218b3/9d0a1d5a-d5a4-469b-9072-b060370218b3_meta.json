@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5a-d5a4-469b-9072-b060370218b3",
+  "name": "Bolzplatz Mühlpfad",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mühlenweg",
+    "plz": "56291",
+    "ort": "Mühlpfad"
+  },
+  "lage": {
+    "lon": 7.556576,
+    "lat": 50.121102
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5a-d5a4-469b-9072-b060370218b3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

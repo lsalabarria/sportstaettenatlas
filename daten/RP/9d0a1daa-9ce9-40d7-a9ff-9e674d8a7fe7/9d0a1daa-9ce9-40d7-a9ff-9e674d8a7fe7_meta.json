@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1daa-9ce9-40d7-a9ff-9e674d8a7fe7",
+  "name": "Sportschützen Grindel e.V. 1952",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Koblenz-Olper-Straße",
+    "plz": "57548",
+    "ort": "Kirchen (Sieg), Stadt"
+  },
+  "lage": {
+    "lon": 7.861275,
+    "lat": 50.815086
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daa-9ce9-40d7-a9ff-9e674d8a7fe7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9f01cc63-5d46-467b-8c04-e2c4d553aea9",
+  "name": "Freibad Ingelheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Im Blumengarten",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.061035,
+    "lat": 49.934661
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc63-5d46-467b-8c04-e2c4d553aea9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

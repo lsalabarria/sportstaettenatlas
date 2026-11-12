@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd45-14ee-4b62-8cc1-3e41d047d7fd",
+  "name": "Sportplatz SV Ludwigswinkel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "plz": "66996",
+    "ort": "Ludwigswinkel"
+  },
+  "lage": {
+    "lon": 7.653094,
+    "lat": 49.081991
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd45-14ee-4b62-8cc1-3e41d047d7fd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

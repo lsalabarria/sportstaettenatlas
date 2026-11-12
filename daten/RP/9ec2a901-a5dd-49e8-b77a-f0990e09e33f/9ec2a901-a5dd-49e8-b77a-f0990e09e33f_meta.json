@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a901-a5dd-49e8-b77a-f0990e09e33f",
+  "name": "Freibad Hettenleidelheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "hausnummer": "25",
+    "plz": "67310",
+    "ort": "Hettenleidelheim"
+  },
+  "lage": {
+    "lon": 8.063379,
+    "lat": 49.531805
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a901-a5dd-49e8-b77a-f0990e09e33f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

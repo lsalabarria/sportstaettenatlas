@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d5b-ce70-4e10-88aa-5f1ef15c3f82",
+  "name": "Spielplatz Bell",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Quellenweg",
+    "hausnummer": "6",
+    "plz": "56288",
+    "ort": "Bell"
+  },
+  "lage": {
+    "lon": 7.419806,
+    "lat": 50.061864
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5b-ce70-4e10-88aa-5f1ef15c3f82",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

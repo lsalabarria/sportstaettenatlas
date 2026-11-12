@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd86-7176-4f02-abde-9ea346b29ca5",
+  "name": "Bouleplatz Germersheim",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "An Fronte Diez",
+    "hausnummer": "2",
+    "plz": "76726",
+    "ort": "Germersheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.375044,
+    "lat": 49.21897
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd86-7176-4f02-abde-9ea346b29ca5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

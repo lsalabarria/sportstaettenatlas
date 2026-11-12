@@ -1,0 +1,25 @@
+{
+  "id": "cbaac974-d8ba-49e9-baaf-0861d6a2e736",
+  "name": "Bürgerhaus Hoppstädten",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "45",
+    "plz": "67744",
+    "ort": "Hoppstädten"
+  },
+  "lage": {
+    "lon": 7.534131,
+    "lat": 49.688637
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "stillgelegt/geschlossen",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "cbaac974-d8ba-49e9-baaf-0861d6a2e736",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

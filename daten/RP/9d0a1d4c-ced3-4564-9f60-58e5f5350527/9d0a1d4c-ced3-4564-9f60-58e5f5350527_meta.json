@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d4c-ced3-4564-9f60-58e5f5350527",
+  "name": "Elsberghalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Elsbergstraße",
+    "hausnummer": "2",
+    "plz": "53520",
+    "ort": "Müllenbach"
+  },
+  "lage": {
+    "lon": 6.916199,
+    "lat": 50.319134
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4c-ced3-4564-9f60-58e5f5350527",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

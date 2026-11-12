@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae6-000b-4b37-9409-4b91f1bc34fd",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Albach",
+    "plz": "54332",
+    "ort": "Wasserliesch"
+  },
+  "lage": {
+    "lon": 6.531968,
+    "lat": 49.712555
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae6-000b-4b37-9409-4b91f1bc34fd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

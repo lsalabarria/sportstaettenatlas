@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db4-081a-41a3-9ab8-238c02db8e2e",
+  "name": "Sportplatz Gymnasium Hermeskeil",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Borwiesenstraße",
+    "hausnummer": "23a",
+    "plz": "54411",
+    "ort": "Hermeskeil, Stadt"
+  },
+  "lage": {
+    "lon": 6.944929,
+    "lat": 49.659309
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db4-081a-41a3-9ab8-238c02db8e2e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

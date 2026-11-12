@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a934-2270-42b9-a778-c53445372bbf",
+  "name": "Bowling-Center Neustadt an der Weinstraße",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Nachtweide",
+    "hausnummer": "43",
+    "plz": "67433",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.176798,
+    "lat": 49.343187
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a934-2270-42b9-a778-c53445372bbf",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

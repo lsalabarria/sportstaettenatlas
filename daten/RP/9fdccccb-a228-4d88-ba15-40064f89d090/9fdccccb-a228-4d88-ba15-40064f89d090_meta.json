@@ -1,0 +1,25 @@
+{
+  "id": "9fdccccb-a228-4d88-ba15-40064f89d090",
+  "name": "Pferdepark Maifeld",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Dreckenacher Weg",
+    "hausnummer": "11",
+    "plz": "56295",
+    "ort": "Lonnig"
+  },
+  "lage": {
+    "lon": 7.403094,
+    "lat": 50.298799
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccccb-a228-4d88-ba15-40064f89d090",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

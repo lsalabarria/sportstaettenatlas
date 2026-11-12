@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a93e-7942-461d-8131-e17e984e71be",
+  "name": "Tennis Club Blau Weiß Bad Bergzabern",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Friedrich-Ebert-Straße",
+    "hausnummer": "42",
+    "plz": "76887",
+    "ort": "Bad Bergzabern, Stadt"
+  },
+  "lage": {
+    "lon": 7.998016,
+    "lat": 49.093758
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93e-7942-461d-8131-e17e984e71be",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

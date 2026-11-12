@@ -1,0 +1,24 @@
+{
+  "id": "9f01cc69-0bf6-41bf-9a65-bdc3e815de8f",
+  "name": "Rheingoldbad Werlau",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Aussiedlung Rheingoldbad",
+    "plz": "56329",
+    "ort": "Sankt Goar, Stadt"
+  },
+  "lage": {
+    "lon": 7.69506,
+    "lat": 50.15388
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc69-0bf6-41bf-9a65-bdc3e815de8f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

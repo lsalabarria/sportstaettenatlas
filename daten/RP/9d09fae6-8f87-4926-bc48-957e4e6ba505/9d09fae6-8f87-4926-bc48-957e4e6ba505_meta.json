@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae6-8f87-4926-bc48-957e4e6ba505",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf der Schell",
+    "plz": "54441",
+    "ort": "Wawern"
+  },
+  "lage": {
+    "lon": 6.545494,
+    "lat": 49.646777
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae6-8f87-4926-bc48-957e4e6ba505",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

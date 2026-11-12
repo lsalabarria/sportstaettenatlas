@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa6-71c1-4164-b226-061f0a139997",
+  "name": "Schulhof Albert-Schweitzer-Realschule",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Lehrhohl",
+    "hausnummer": "46",
+    "plz": "56077",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.619025,
+    "lat": 50.345763
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa6-71c1-4164-b226-061f0a139997",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

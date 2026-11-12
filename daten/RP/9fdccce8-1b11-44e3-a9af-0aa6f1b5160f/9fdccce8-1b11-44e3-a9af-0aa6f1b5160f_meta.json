@@ -1,0 +1,25 @@
+{
+  "id": "9fdccce8-1b11-44e3-a9af-0aa6f1b5160f",
+  "name": "Sportklause TuS Heistenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "hausnummer": "9A",
+    "plz": "65558",
+    "ort": "Heistenbach"
+  },
+  "lage": {
+    "lon": 7.989654,
+    "lat": 50.381024
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccce8-1b11-44e3-a9af-0aa6f1b5160f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

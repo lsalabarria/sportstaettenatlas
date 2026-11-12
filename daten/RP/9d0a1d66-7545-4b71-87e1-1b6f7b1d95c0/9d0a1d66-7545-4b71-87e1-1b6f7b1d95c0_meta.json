@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d66-7545-4b71-87e1-1b6f7b1d95c0",
+  "name": "Sportzentrum Esch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L47",
+    "plz": "54518",
+    "ort": "Sehlem"
+  },
+  "lage": {
+    "lon": 6.842157,
+    "lat": 49.900199
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d66-7545-4b71-87e1-1b6f7b1d95c0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

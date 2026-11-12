@@ -1,0 +1,23 @@
+{
+  "id": "9d09fac8-dfb7-46d5-b6f6-1b8266262adb",
+  "name": "Spielplatz am Finkenweg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Finkenweg",
+    "plz": "57610",
+    "ort": "Altenkirchen"
+  },
+  "lage": {
+    "lon": 7.64157,
+    "lat": 50.690236
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac8-dfb7-46d5-b6f6-1b8266262adb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

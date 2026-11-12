@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a92f-c753-4a87-80a7-b73a80ebf6fa",
+  "name": "Sportanlage TUS 07 Steinbach e. V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Marienthaler Str.",
+    "hausnummer": "20",
+    "plz": "67808",
+    "ort": "Steinbach am Donnersberg"
+  },
+  "lage": {
+    "lon": 7.953042,
+    "lat": 49.601492
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92f-c753-4a87-80a7-b73a80ebf6fa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

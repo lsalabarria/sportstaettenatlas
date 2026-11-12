@@ -1,0 +1,28 @@
+{
+  "id": "9fdcce0d-d97d-45e7-91b1-6cb7eca3c262",
+  "name": "Tennisanlage am Strandbad",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Strandbad",
+    "hausnummer": "100.0",
+    "plz": "67227",
+    "ort": "Frankenthal (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.369379,
+    "lat": 49.528587
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "sportarten": [
+    "Tennis"
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce0d-d97d-45e7-91b1-6cb7eca3c262",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

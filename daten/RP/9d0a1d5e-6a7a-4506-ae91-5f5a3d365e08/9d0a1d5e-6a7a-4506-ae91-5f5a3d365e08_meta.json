@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5e-6a7a-4506-ae91-5f5a3d365e08",
+  "name": "Bolzplatz Gemünden",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Werner-Zwiebelberg-Straße",
+    "plz": "55490",
+    "ort": "Gemünden"
+  },
+  "lage": {
+    "lon": 7.489937,
+    "lat": 49.899086
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5e-6a7a-4506-ae91-5f5a3d365e08",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

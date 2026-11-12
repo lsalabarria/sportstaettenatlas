@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a937-8a7f-4b3c-9390-4d7e5541856b",
+  "name": "SBW Mainz Abteilung Tennis",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Jakob-Anstatt-Straße",
+    "hausnummer": "15",
+    "plz": "55130",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.292197,
+    "lat": 49.975356
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a937-8a7f-4b3c-9390-4d7e5541856b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

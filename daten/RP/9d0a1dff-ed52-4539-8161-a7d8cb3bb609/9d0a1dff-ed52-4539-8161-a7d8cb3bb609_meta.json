@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dff-ed52-4539-8161-a7d8cb3bb609",
+  "name": "Beachvolleyballfeld TWIN Schwimmbad",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Gartenschwimmbad",
+    "hausnummer": "21",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.147195,
+    "lat": 50.540545
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dff-ed52-4539-8161-a7d8cb3bb609",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

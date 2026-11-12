@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d15-828d-47fa-b724-aa263b883997",
+  "name": "Sporthalle des Göttenbach-Gymnasiums",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bein",
+    "hausnummer": "3",
+    "plz": "55743",
+    "ort": "Idar-Oberstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.390115,
+    "lat": 49.718348
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d15-828d-47fa-b724-aa263b883997",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

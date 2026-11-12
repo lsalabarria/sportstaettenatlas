@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1da9-718c-4d2b-9d7f-5ecb5a0a2d83",
+  "name": "Sportplatz Hermann-Gmeiner-Schule Daaden",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Goethestraße",
+    "hausnummer": "39",
+    "plz": "57567",
+    "ort": "Daaden, Stadt"
+  },
+  "lage": {
+    "lon": 7.971666,
+    "lat": 50.742296
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da9-718c-4d2b-9d7f-5ecb5a0a2d83",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

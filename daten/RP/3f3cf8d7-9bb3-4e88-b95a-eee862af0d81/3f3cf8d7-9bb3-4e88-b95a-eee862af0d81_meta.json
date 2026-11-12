@@ -1,0 +1,28 @@
+{
+  "id": "3f3cf8d7-9bb3-4e88-b95a-eee862af0d81",
+  "name": "Sportanlage am Matzenberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Matzenberg",
+    "hausnummer": "7a",
+    "plz": "67659",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.776538,
+    "lat": 49.480865
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Fußball-Club eV 1931 Kaiserslautern-Erlenbach",
+  "betreiber": "Fußball-Club eV 1931 Kaiserslautern-Erlenbach",
+  "website": "www.fcerlenbach.de",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "3f3cf8d7-9bb3-4e88-b95a-eee862af0d81",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

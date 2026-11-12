@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dfa-ef98-4621-9b4d-69e1f14c3852",
+  "name": "Hallenbad Wirges",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Nordstraße",
+    "hausnummer": "49",
+    "plz": "56422",
+    "ort": "Wirges, Stadt"
+  },
+  "lage": {
+    "lon": 7.793002,
+    "lat": 50.479187
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfa-ef98-4621-9b4d-69e1f14c3852",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

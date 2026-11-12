@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a924-631e-4d36-8b71-ea4081aee187",
+  "name": "Fitnessstudio clever fit Bad Dürkheim",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Gustav-Kirchhoff-Straße",
+    "hausnummer": "3",
+    "plz": "67098",
+    "ort": "Bad Dürkheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.203293,
+    "lat": 49.472167
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a924-631e-4d36-8b71-ea4081aee187",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

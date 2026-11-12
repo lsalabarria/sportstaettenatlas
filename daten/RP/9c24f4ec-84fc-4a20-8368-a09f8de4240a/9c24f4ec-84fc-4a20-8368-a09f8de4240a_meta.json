@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4ec-84fc-4a20-8368-a09f8de4240a",
+  "name": "Sportplatz auf der Lehmkaul",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf der Lehmkaul",
+    "plz": "54689",
+    "ort": "Dasburg"
+  },
+  "lage": {
+    "lon": 6.135637,
+    "lat": 50.044902
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ec-84fc-4a20-8368-a09f8de4240a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

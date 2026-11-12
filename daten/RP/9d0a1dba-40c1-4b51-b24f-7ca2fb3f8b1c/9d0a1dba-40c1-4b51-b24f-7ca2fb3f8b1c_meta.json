@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dba-40c1-4b51-b24f-7ca2fb3f8b1c",
+  "name": "Alfons-Steinbach-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Clara-Viebig-Straße",
+    "plz": "54294",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.630646,
+    "lat": 49.729937
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dba-40c1-4b51-b24f-7ca2fb3f8b1c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

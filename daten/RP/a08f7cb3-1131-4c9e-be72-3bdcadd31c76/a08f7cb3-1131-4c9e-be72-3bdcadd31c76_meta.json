@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cb3-1131-4c9e-be72-3bdcadd31c76",
+  "name": "Sportplatz Wahnwegen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "66909",
+    "ort": "Wahnwegen"
+  },
+  "lage": {
+    "lon": 7.380319,
+    "lat": 49.481144
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb3-1131-4c9e-be72-3bdcadd31c76",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cab-1bcb-4974-ad91-86b3d41e2c4d",
+  "name": "Kleinspielfeld Königstein",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Königssteinstraße",
+    "plz": "55624",
+    "ort": "Rhaunen"
+  },
+  "lage": {
+    "lon": 7.320769,
+    "lat": 49.865414
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cab-1bcb-4974-ad91-86b3d41e2c4d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

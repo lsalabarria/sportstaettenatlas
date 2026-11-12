@@ -1,0 +1,23 @@
+{
+  "id": "9d09faeb-6182-437f-aedd-2fd8765b8b17",
+  "name": "Bolzplatz Großholbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Friedhofsweg",
+    "plz": "56412",
+    "ort": "Großholbach"
+  },
+  "lage": {
+    "lon": 7.890343,
+    "lat": 50.445908
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faeb-6182-437f-aedd-2fd8765b8b17",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

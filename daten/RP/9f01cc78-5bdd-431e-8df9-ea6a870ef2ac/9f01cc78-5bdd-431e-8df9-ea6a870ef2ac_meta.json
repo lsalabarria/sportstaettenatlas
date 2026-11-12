@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc78-5bdd-431e-8df9-ea6a870ef2ac",
+  "name": "Südbad Trier",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "An der Härenwies",
+    "hausnummer": "10",
+    "plz": "54294",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.645109,
+    "lat": 49.682231
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc78-5bdd-431e-8df9-ea6a870ef2ac",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

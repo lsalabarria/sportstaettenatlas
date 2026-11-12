@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1da9-e395-4035-8fca-c92bc3fd7bc7",
+  "name": "Turnhalle TV Daaden",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "22",
+    "plz": "57567",
+    "ort": "Daaden, Stadt"
+  },
+  "lage": {
+    "lon": 7.972924,
+    "lat": 50.739231
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da9-e395-4035-8fca-c92bc3fd7bc7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

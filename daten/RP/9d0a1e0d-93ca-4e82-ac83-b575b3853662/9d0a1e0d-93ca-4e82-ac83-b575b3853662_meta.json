@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e0d-93ca-4e82-ac83-b575b3853662",
+  "name": "Sportplatz Mörschbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Metzenbach",
+    "plz": "55494",
+    "ort": "Mörschied"
+  },
+  "lage": {
+    "lon": 7.632596,
+    "lat": 50.012902
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0d-93ca-4e82-ac83-b575b3853662",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

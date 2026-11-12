@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da5-09d6-47ed-a044-18fc2064d33a",
+  "name": "Sportplatz Dockweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Steiner Weg",
+    "plz": "54552",
+    "ort": "Dockweiler"
+  },
+  "lage": {
+    "lon": 6.789426,
+    "lat": 50.25068
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da5-09d6-47ed-a044-18fc2064d33a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

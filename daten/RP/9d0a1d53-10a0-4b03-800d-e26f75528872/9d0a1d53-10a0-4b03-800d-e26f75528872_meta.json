@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d53-10a0-4b03-800d-e26f75528872",
+  "name": "Sportplatz Ellenz-Poltersdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Niesbach",
+    "hausnummer": "5",
+    "plz": "56821",
+    "ort": "Ellenz-Poltersdorf"
+  },
+  "lage": {
+    "lon": 7.22735,
+    "lat": 50.109984
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d53-10a0-4b03-800d-e26f75528872",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

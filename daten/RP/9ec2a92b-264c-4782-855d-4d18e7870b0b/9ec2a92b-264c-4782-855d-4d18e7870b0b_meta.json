@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a92b-264c-4782-855d-4d18e7870b0b",
+  "name": "Tennisplatz Ober-Olmer-Straße",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Ober-Olmer-Straße",
+    "plz": "55262",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.118242,
+    "lat": 49.96693
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92b-264c-4782-855d-4d18e7870b0b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

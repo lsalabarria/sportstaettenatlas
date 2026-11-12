@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4e8-4a0e-41f8-85cf-f8a30112a850",
+  "name": "Hundeplatz Lucky Dogs",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "1",
+    "plz": "54662",
+    "ort": "Speicher, Stadt"
+  },
+  "lage": {
+    "lon": 6.642159,
+    "lat": 49.93984
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e8-4a0e-41f8-85cf-f8a30112a850",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

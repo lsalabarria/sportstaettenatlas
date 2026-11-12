@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a93e-052a-481b-ba24-68b70c32f3b0",
+  "name": "Sporthalle PAMINA-Schulzentrum Herxheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Südring",
+    "hausnummer": "11",
+    "plz": "76863",
+    "ort": "Herxheim bei Landau/ Pfalz"
+  },
+  "lage": {
+    "lon": 8.208742,
+    "lat": 49.142395
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93e-052a-481b-ba24-68b70c32f3b0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a916-9e9b-4659-9369-a1926a16c105",
+  "name": "Sporthalle Gerbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "26",
+    "plz": "67813",
+    "ort": "Gerbach"
+  },
+  "lage": {
+    "lon": 7.874118,
+    "lat": 49.672395
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a916-9e9b-4659-9369-a1926a16c105",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

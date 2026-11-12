@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e09-b04c-4598-a0fb-e4fe939f3137",
+  "name": "Kant-Gymnasium Boppard Tennislinien",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Mainzer Straße",
+    "hausnummer": "24",
+    "plz": "56154",
+    "ort": "Boppard, Stadt"
+  },
+  "lage": {
+    "lon": 7.601166,
+    "lat": 50.231189
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e09-b04c-4598-a0fb-e4fe939f3137",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

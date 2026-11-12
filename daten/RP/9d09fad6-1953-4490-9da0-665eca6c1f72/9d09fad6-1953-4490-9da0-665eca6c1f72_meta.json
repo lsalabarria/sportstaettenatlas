@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad6-1953-4490-9da0-665eca6c1f72",
+  "name": "Halfpipe Spielplatz Rahms",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Schützenstraße",
+    "plz": "53577",
+    "ort": "Neustadt (Wied)"
+  },
+  "lage": {
+    "lon": 7.409257,
+    "lat": 50.591198
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad6-1953-4490-9da0-665eca6c1f72",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

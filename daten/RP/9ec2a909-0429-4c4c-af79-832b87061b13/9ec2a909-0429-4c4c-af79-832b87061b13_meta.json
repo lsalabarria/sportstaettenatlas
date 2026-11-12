@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a909-0429-4c4c-af79-832b87061b13",
+  "name": "Sportpark Rheinhessen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Hallenbad",
+    "plz": "55457",
+    "ort": "Gensingen"
+  },
+  "lage": {
+    "lon": 7.925051,
+    "lat": 49.893266
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a909-0429-4c4c-af79-832b87061b13",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

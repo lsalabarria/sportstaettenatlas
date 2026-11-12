@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cc8-513a-4474-ae30-f3d15f0d17b3",
+  "name": "Wolfgang-Staub-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L239",
+    "plz": "55595",
+    "ort": "Wallhausen"
+  },
+  "lage": {
+    "lon": 7.758394,
+    "lat": 49.890168
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cc8-513a-4474-ae30-f3d15f0d17b3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

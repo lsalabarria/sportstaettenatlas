@@ -1,0 +1,23 @@
+{
+  "id": "9d09faec-5bcf-45f4-8bf1-6370438c5e0e",
+  "name": "Tennisplätze am Sportplatz Ebernhahn",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Massenberg",
+    "plz": "56424",
+    "ort": "Ebernhahn"
+  },
+  "lage": {
+    "lon": 7.768796,
+    "lat": 50.466936
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faec-5bcf-45f4-8bf1-6370438c5e0e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

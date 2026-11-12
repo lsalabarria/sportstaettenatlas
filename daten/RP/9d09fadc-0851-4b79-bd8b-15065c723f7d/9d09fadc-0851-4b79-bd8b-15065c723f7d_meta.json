@@ -1,0 +1,23 @@
+{
+  "id": "9d09fadc-0851-4b79-bd8b-15065c723f7d",
+  "name": "Tennisplatz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Hohlweg",
+    "plz": "54668",
+    "ort": "Ernzen"
+  },
+  "lage": {
+    "lon": 6.42987,
+    "lat": 49.84233
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadc-0851-4b79-bd8b-15065c723f7d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

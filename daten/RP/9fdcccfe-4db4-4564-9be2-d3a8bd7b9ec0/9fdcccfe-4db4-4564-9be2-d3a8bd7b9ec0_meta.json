@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccfe-4db4-4564-9be2-d3a8bd7b9ec0",
+  "name": "Sportplatz des Sportverein Patersberg 1967 e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "K88",
+    "plz": "56348",
+    "ort": "Patersberg"
+  },
+  "lage": {
+    "lon": 7.737591,
+    "lat": 50.15801
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccfe-4db4-4564-9be2-d3a8bd7b9ec0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

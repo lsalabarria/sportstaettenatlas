@@ -1,0 +1,23 @@
+{
+  "id": "9d09fac8-4112-461c-8af4-994c0312880f",
+  "name": "Stadion Altenkirchen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hochstraße",
+    "plz": "57610",
+    "ort": "Altenkirchen"
+  },
+  "lage": {
+    "lon": 7.65927,
+    "lat": 50.693633
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac8-4112-461c-8af4-994c0312880f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

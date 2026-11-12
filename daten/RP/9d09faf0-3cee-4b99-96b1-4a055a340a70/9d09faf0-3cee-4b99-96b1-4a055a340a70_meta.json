@@ -1,0 +1,24 @@
+{
+  "id": "9d09faf0-3cee-4b99-96b1-4a055a340a70",
+  "name": "Sportplatz auf dem Berg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Berg",
+    "hausnummer": "6",
+    "plz": "56414",
+    "ort": "Berod bei Wallmerod"
+  },
+  "lage": {
+    "lon": 7.938189,
+    "lat": 50.479226
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf0-3cee-4b99-96b1-4a055a340a70",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

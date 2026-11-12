@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd80-0381-4252-888b-8098fb3eafa3",
+  "name": "Sportplatz Westheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Holzmühlstraße",
+    "plz": "67368",
+    "ort": "Westheim (Pfalz)"
+  },
+  "lage": {
+    "lon": 8.326503,
+    "lat": 49.236975
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd80-0381-4252-888b-8098fb3eafa3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdae-aeba-4cdd-bf25-51e4234a0888",
+  "name": "Junglas Baumaschinen Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brauerstraße",
+    "hausnummer": "1a",
+    "plz": "56743",
+    "ort": "Mendig, Stadt"
+  },
+  "lage": {
+    "lon": 7.282935,
+    "lat": 50.376865
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdae-aeba-4cdd-bf25-51e4234a0888",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

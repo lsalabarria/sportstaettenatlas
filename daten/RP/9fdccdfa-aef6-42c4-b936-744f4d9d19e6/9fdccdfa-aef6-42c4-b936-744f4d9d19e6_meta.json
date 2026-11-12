@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdfa-aef6-42c4-b936-744f4d9d19e6",
+  "name": "Kooperative Realschule plus",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Adolf-Diesterweg-Straße",
+    "hausnummer": "65",
+    "plz": "67071",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.363612,
+    "lat": 49.49057
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdfa-aef6-42c4-b936-744f4d9d19e6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

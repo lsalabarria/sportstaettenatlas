@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e00-6724-4b1a-9d20-00719440db99",
+  "name": "Waldkletterpark Bad Neuenahr",
+  "kategorie": "Klettersportstätte",
+  "adresse": {
+    "strasse": "Deutschland, Königsfelder Straße",
+    "hausnummer": "100",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.132974,
+    "lat": 50.530407
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e00-6724-4b1a-9d20-00719440db99",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

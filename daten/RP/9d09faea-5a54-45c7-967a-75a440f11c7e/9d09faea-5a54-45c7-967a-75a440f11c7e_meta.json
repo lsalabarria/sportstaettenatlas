@@ -1,0 +1,24 @@
+{
+  "id": "9d09faea-5a54-45c7-967a-75a440f11c7e",
+  "name": "Reitsportstätten Reiterhof Montabaur",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Ringstraße",
+    "hausnummer": "4",
+    "plz": "56412",
+    "ort": "Stahlhofen"
+  },
+  "lage": {
+    "lon": 7.848455,
+    "lat": 50.398905
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faea-5a54-45c7-967a-75a440f11c7e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

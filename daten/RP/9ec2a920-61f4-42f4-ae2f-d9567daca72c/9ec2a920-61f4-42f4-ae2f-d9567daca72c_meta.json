@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a920-61f4-42f4-ae2f-d9567daca72c",
+  "name": "Wald & Wasser Natursport Wernersberg",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Am Löhl",
+    "hausnummer": "14",
+    "plz": "76857",
+    "ort": "Wernersberg"
+  },
+  "lage": {
+    "lon": 7.930547,
+    "lat": 49.188568
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a920-61f4-42f4-ae2f-d9567daca72c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

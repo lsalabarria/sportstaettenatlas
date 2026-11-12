@@ -1,0 +1,24 @@
+{
+  "id": "9d09facd-6564-41d3-bf85-1498ff0a0d51",
+  "name": "Tennisanlage Gebhardshain",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Steinweg",
+    "hausnummer": "10",
+    "plz": "57580",
+    "ort": "Gebhardshain"
+  },
+  "lage": {
+    "lon": 7.821247,
+    "lat": 50.742176
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facd-6564-41d3-bf85-1498ff0a0d51",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf4-11ab-44ff-a9be-bf247bdb9e18",
+  "name": "Neu-Hubenhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Neu-Hubenhof",
+    "plz": "56244",
+    "ort": "Schenkelberg"
+  },
+  "lage": {
+    "lon": 7.790402,
+    "lat": 50.581525
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf4-11ab-44ff-a9be-bf247bdb9e18",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

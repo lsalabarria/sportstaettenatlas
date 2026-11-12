@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e02-2f05-4296-a325-a8a2e7fc9639",
+  "name": "Sportplatz Remagen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Goethestraße",
+    "hausnummer": "51",
+    "plz": "53424",
+    "ort": "Remagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.250034,
+    "lat": 50.575415
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e02-2f05-4296-a325-a8a2e7fc9639",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

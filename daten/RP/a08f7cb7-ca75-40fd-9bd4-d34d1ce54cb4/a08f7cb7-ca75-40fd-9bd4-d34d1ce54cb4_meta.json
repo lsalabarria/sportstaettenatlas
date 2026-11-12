@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cb7-ca75-40fd-9bd4-d34d1ce54cb4",
+  "name": "Sportplatz Glanbrücken",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Friedhofstraße",
+    "hausnummer": "14",
+    "plz": "66887",
+    "ort": "Glanbrücken"
+  },
+  "lage": {
+    "lon": 7.521353,
+    "lat": 49.616334
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb7-ca75-40fd-9bd4-d34d1ce54cb4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9fdccce4-42ac-4f06-baa1-cdaf9795cd9d",
+  "name": "Schützenhaus Eppenrod",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "65558",
+    "ort": "Eppenrod"
+  },
+  "lage": {
+    "lon": 7.926266,
+    "lat": 50.408858
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccce4-42ac-4f06-baa1-cdaf9795cd9d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

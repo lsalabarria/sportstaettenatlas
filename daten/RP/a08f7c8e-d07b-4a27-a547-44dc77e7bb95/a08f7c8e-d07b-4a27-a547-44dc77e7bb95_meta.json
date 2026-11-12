@@ -1,0 +1,24 @@
+{
+  "id": "a08f7c8e-d07b-4a27-a547-44dc77e7bb95",
+  "name": "Tennisplatz Rückweiler",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "55776",
+    "ort": "Rückweiler"
+  },
+  "lage": {
+    "lon": 7.240464,
+    "lat": 49.581927
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c8e-d07b-4a27-a547-44dc77e7bb95",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

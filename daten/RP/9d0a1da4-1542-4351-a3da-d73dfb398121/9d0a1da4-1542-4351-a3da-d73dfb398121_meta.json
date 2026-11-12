@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da4-1542-4351-a3da-d73dfb398121",
+  "name": "Tennisanlage Berlingen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Berlinger Str.",
+    "plz": "54570",
+    "ort": "Berlingen"
+  },
+  "lage": {
+    "lon": 6.717465,
+    "lat": 50.235895
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da4-1542-4351-a3da-d73dfb398121",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

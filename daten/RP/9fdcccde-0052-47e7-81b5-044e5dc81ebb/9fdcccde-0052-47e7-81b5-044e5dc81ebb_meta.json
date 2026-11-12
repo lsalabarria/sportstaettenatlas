@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccde-0052-47e7-81b5-044e5dc81ebb",
+  "name": "Tennisclub TV Kemmenau",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Kirchengarten",
+    "plz": "56132",
+    "ort": "Kemmenau"
+  },
+  "lage": {
+    "lon": 7.755125,
+    "lat": 50.346723
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccde-0052-47e7-81b5-044e5dc81ebb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1df9-1522-4454-93cd-d102dd8e148c",
+  "name": "Kreissporthalle 2 Montabaur",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Von-Bodelschwingh-Straße",
+    "hausnummer": "29",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.815691,
+    "lat": 50.439263
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df9-1522-4454-93cd-d102dd8e148c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

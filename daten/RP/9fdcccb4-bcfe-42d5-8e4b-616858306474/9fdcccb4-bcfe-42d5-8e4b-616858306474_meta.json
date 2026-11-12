@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccb4-bcfe-42d5-8e4b-616858306474",
+  "name": "Bolzplatz Moselsürsch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf den Gärten",
+    "plz": "56332",
+    "ort": "Lehmen"
+  },
+  "lage": {
+    "lon": 7.42285,
+    "lat": 50.261887
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccb4-bcfe-42d5-8e4b-616858306474",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

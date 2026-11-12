@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a901-d11e-4a71-b886-6a25bd84a2c9",
+  "name": "Stadion am Wasserturm",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hochgerichtstraße",
+    "hausnummer": "20B",
+    "plz": "67319",
+    "ort": "Wattenheim"
+  },
+  "lage": {
+    "lon": 8.059241,
+    "lat": 49.519717
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a901-d11e-4a71-b886-6a25bd84a2c9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

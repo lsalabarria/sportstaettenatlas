@@ -1,0 +1,23 @@
+{
+  "id": "a08f7c84-2b59-4f5f-af07-00b84e77d09e",
+  "name": "Sportplatz Esselborn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "55234",
+    "ort": "Esselborn"
+  },
+  "lage": {
+    "lon": 8.123883,
+    "lat": 49.713982
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c84-2b59-4f5f-af07-00b84e77d09e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

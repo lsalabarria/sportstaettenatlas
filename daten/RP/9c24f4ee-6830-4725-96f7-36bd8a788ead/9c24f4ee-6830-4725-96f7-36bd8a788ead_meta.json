@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4ee-6830-4725-96f7-36bd8a788ead",
+  "name": "Sportplatz Hersdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "54597",
+    "ort": "Hersdorf"
+  },
+  "lage": {
+    "lon": 6.50727,
+    "lat": 50.168897
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ee-6830-4725-96f7-36bd8a788ead",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

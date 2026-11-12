@@ -1,0 +1,27 @@
+{
+  "id": "49f20b34-39d9-4a85-b349-89331830a0f8",
+  "name": "Sportplatz Klauserloch Fischbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Frontalstr.",
+    "plz": "67693",
+    "ort": "Fischbach"
+  },
+  "lage": {
+    "lon": 7.901099,
+    "lat": 49.452782
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Sportverein Fischbach 1959 eV",
+  "betreiber": "Sportverein Fischbach 1959 eV",
+  "website": "www.svfischbach.net",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "49f20b34-39d9-4a85-b349-89331830a0f8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "a0025d94-9fb9-4722-8f42-2e5ae5b13cb5",
+  "name": "Elztaler Alm - Sportplatz des SV Gering-Kollig",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Elztalstraße",
+    "plz": "56751",
+    "ort": "Gering"
+  },
+  "lage": {
+    "lon": 7.269151,
+    "lat": 50.271217
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0025d94-9fb9-4722-8f42-2e5ae5b13cb5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

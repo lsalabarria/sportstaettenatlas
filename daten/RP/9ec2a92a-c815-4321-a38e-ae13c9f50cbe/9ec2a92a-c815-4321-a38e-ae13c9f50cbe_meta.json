@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a92a-c815-4321-a38e-ae13c9f50cbe",
+  "name": "Grund- und Hauptschule an der Sandmühle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kreuzstraße",
+    "hausnummer": "47",
+    "plz": "55262",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.123053,
+    "lat": 49.993801
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92a-c815-4321-a38e-ae13c9f50cbe",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91b-6428-43f1-8c49-d6084d7dec71",
+  "name": "Outdoorfitnessplatz Offenbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Jakobstraße",
+    "hausnummer": "27a",
+    "plz": "76877",
+    "ort": "Offenbach an der Queich"
+  },
+  "lage": {
+    "lon": 8.192164,
+    "lat": 49.199264
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91b-6428-43f1-8c49-d6084d7dec71",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

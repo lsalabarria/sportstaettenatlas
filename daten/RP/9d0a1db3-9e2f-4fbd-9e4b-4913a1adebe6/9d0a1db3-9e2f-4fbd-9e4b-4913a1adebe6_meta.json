@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db3-9e2f-4fbd-9e4b-4913a1adebe6",
+  "name": "Erlebnisfreibad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Schwimmbad",
+    "hausnummer": "1",
+    "plz": "54338",
+    "ort": "Schweich, Stadt"
+  },
+  "lage": {
+    "lon": 6.749289,
+    "lat": 49.81652
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db3-9e2f-4fbd-9e4b-4913a1adebe6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

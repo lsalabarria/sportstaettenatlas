@@ -1,0 +1,25 @@
+{
+  "id": "9fdccc8b-1fe6-4d5f-84c4-bf2d5adaf44e",
+  "name": "Tennisclub Lingenfeld",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Oberwald",
+    "hausnummer": "1",
+    "plz": "67360",
+    "ort": "Lingenfeld"
+  },
+  "lage": {
+    "lon": 8.336415,
+    "lat": 49.240496
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccc8b-1fe6-4d5f-84c4-bf2d5adaf44e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

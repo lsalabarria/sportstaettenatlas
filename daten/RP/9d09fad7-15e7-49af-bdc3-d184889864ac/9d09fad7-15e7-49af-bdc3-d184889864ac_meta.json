@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad7-15e7-49af-bdc3-d184889864ac",
+  "name": "Turnhalle \"Alter Kindergarten\" Raubach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "hausnummer": "11",
+    "plz": "56316",
+    "ort": "Raubach"
+  },
+  "lage": {
+    "lon": 7.624798,
+    "lat": 50.576675
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad7-15e7-49af-bdc3-d184889864ac",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

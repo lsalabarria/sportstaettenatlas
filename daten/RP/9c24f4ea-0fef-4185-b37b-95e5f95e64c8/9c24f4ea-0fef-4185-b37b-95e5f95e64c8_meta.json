@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4ea-0fef-4185-b37b-95e5f95e64c8",
+  "name": "Sportplatz Fließem",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "54636",
+    "ort": "Fließem"
+  },
+  "lage": {
+    "lon": 6.547159,
+    "lat": 50.017867
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ea-0fef-4185-b37b-95e5f95e64c8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

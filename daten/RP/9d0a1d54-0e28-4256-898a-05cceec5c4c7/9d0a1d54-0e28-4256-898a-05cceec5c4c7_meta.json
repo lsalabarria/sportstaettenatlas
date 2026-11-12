@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d54-0e28-4256-898a-05cceec5c4c7",
+  "name": "Tennis-Club Treis Halle",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Laach",
+    "hausnummer": "19",
+    "plz": "56253",
+    "ort": "Treis-Karden"
+  },
+  "lage": {
+    "lon": 7.291293,
+    "lat": 50.168212
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d54-0e28-4256-898a-05cceec5c4c7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

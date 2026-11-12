@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd09-9b55-4b6c-bcbc-eafdddfbffd2",
+  "name": "Schützenverein Ergeshausen 1927 e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Im Blumenberg",
+    "plz": "56368",
+    "ort": "Ergeshausen"
+  },
+  "lage": {
+    "lon": 7.937928,
+    "lat": 50.268536
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd09-9b55-4b6c-bcbc-eafdddfbffd2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

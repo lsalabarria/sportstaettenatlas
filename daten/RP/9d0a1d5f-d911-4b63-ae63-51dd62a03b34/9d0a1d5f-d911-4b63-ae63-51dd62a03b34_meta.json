@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5f-d911-4b63-ae63-51dd62a03b34",
+  "name": "Sportplatz Unzenberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Tombacher Straße",
+    "plz": "55483",
+    "ort": "Unzenberg"
+  },
+  "lage": {
+    "lon": 7.444768,
+    "lat": 49.970411
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5f-d911-4b63-ae63-51dd62a03b34",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

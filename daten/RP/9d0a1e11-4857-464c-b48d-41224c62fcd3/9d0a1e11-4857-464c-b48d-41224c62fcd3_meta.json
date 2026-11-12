@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e11-4857-464c-b48d-41224c62fcd3",
+  "name": "Loreattahalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Neue Rathausstraße",
+    "hausnummer": "16",
+    "plz": "56841",
+    "ort": "Traben-Trarbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.116253,
+    "lat": 49.950861
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e11-4857-464c-b48d-41224c62fcd3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

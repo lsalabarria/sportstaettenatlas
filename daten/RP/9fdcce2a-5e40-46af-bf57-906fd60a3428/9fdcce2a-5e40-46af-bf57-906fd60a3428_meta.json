@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce2a-5e40-46af-bf57-906fd60a3428",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lerchenweg",
+    "hausnummer": "20",
+    "plz": "67547",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.35283,
+    "lat": 49.611814
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce2a-5e40-46af-bf57-906fd60a3428",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

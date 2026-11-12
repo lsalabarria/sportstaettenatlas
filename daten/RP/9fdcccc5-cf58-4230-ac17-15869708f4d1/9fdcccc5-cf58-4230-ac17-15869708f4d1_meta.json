@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccc5-cf58-4230-ac17-15869708f4d1",
+  "name": "DFB-Mini-Spielfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "10",
+    "plz": "55637",
+    "ort": "Plaidt"
+  },
+  "lage": {
+    "lon": 7.391131,
+    "lat": 50.387371
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccc5-cf58-4230-ac17-15869708f4d1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

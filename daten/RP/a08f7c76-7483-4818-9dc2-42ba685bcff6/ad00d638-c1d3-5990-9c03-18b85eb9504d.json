@@ -1,0 +1,10 @@
+{
+  "id": "ad00d638-c1d3-5990-9c03-18b85eb9504d",
+  "sportstaette_id": "a08f7c76-7483-4818-9dc2-42ba685bcff6",
+  "typ": "Einfachsporthalle",
+  "quellen": {
+    "atlas_rlp": {
+      "bezeichnung": "Einfach-Sporthalle ohne Trennvorhang (Größe III)"
+    }
+  }
+}

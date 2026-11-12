@@ -1,0 +1,23 @@
+{
+  "id": "9d09faea-3f37-4224-9489-cf2dca487795",
+  "name": "Beachvolleyballfeld Daubach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56412",
+    "ort": "Daubach"
+  },
+  "lage": {
+    "lon": 7.848235,
+    "lat": 50.390547
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faea-3f37-4224-9489-cf2dca487795",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

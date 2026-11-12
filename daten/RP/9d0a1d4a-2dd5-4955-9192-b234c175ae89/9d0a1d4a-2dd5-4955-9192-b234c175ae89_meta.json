@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4a-2dd5-4955-9192-b234c175ae89",
+  "name": "Sportplatz an der Schule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "57629",
+    "ort": "Atzelgift"
+  },
+  "lage": {
+    "lon": 7.818193,
+    "lat": 50.695713
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4a-2dd5-4955-9192-b234c175ae89",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

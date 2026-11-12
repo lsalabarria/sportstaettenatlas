@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cff-46f5-4e93-84e6-18ac96278ca2",
+  "name": "Grundschule Birkenfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An den Gerbhäusern",
+    "hausnummer": "3",
+    "plz": "55765",
+    "ort": "Birkenfeld, Stadt"
+  },
+  "lage": {
+    "lon": 7.161517,
+    "lat": 49.647305
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cff-46f5-4e93-84e6-18ac96278ca2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

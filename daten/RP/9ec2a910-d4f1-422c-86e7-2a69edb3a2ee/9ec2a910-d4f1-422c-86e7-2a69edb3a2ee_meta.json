@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a910-d4f1-422c-86e7-2a69edb3a2ee",
+  "name": "Sportplatz an der Selz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mühlenstraße",
+    "plz": "55278",
+    "ort": "Friesenheim"
+  },
+  "lage": {
+    "lon": 8.249794,
+    "lat": 49.836397
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a910-d4f1-422c-86e7-2a69edb3a2ee",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

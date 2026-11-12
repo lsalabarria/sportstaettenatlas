@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd34-c52a-44e7-92cf-3390e830df38",
+  "name": "Sportanlage Angelstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Angelstraße",
+    "hausnummer": "30",
+    "plz": "67125",
+    "ort": "Dannstadt-Schauernheim"
+  },
+  "lage": {
+    "lon": 8.32603,
+    "lat": 49.424873
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd34-c52a-44e7-92cf-3390e830df38",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

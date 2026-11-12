@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d49-01e2-4797-86f3-a6effbc2b2fc",
+  "name": "Sportanlage Neunkhausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "plz": "57520",
+    "ort": "Neunkhausen"
+  },
+  "lage": {
+    "lon": 7.911153,
+    "lat": 50.698606
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d49-01e2-4797-86f3-a6effbc2b2fc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

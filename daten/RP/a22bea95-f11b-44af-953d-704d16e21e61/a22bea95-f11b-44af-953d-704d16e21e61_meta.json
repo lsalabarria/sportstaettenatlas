@@ -1,0 +1,25 @@
+{
+  "id": "a22bea95-f11b-44af-953d-704d16e21e61",
+  "name": "Bundesstützpunkt Trampolin Bad Kreuznach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hannah-Arendt-Straße",
+    "hausnummer": "7",
+    "plz": "55543",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.876596,
+    "lat": 49.84069
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a22bea95-f11b-44af-953d-704d16e21e61",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

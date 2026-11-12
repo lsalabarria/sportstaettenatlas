@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c85-7ac7-4773-8582-0be0257f2f25",
+  "name": "Sportplatz Alsheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dresdener Straße",
+    "hausnummer": "24",
+    "plz": "67577",
+    "ort": "Alsheim"
+  },
+  "lage": {
+    "lon": 8.342771,
+    "lat": 49.762259
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c85-7ac7-4773-8582-0be0257f2f25",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

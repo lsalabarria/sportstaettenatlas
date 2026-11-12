@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a93b-5f78-49b3-83c0-ad1999ac6973",
+  "name": "DJK Tennisverein Mainzer Sand e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Obere Kreuzstraße",
+    "hausnummer": "34",
+    "plz": "55120",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.214843,
+    "lat": 50.012003
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93b-5f78-49b3-83c0-ad1999ac6973",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "a08f7d26-5963-43ee-bbdf-43a9e3368251",
+  "name": "Tennisanlage Meisenheim",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Obertor",
+    "plz": "55590",
+    "ort": "Meisenheim, Stadt"
+  },
+  "lage": {
+    "lon": 7.666916,
+    "lat": 49.704106
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d26-5963-43ee-bbdf-43a9e3368251",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

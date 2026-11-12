@@ -1,0 +1,23 @@
+{
+  "id": "a08f7d29-960f-4b3e-b1ed-9ce3a5d01543",
+  "name": "Flowtrail Stromberg Übungsparcour",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "plz": "55442",
+    "ort": "Stromberg, Stadt"
+  },
+  "lage": {
+    "lon": 7.76164,
+    "lat": 49.929057
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d29-960f-4b3e-b1ed-9ce3a5d01543",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

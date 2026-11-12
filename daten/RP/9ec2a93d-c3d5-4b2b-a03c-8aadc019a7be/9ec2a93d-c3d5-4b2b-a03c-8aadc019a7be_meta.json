@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a93d-c3d5-4b2b-a03c-8aadc019a7be",
+  "name": "Stadion Am Krönungsbusch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "St.-Christophorus-Straße",
+    "hausnummer": "1",
+    "plz": "76863",
+    "ort": "Herxheim bei Landau/ Pfalz"
+  },
+  "lage": {
+    "lon": 8.215688,
+    "lat": 49.137513
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93d-c3d5-4b2b-a03c-8aadc019a7be",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

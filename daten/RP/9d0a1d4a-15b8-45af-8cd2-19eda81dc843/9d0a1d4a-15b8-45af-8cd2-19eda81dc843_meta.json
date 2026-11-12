@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4a-15b8-45af-8cd2-19eda81dc843",
+  "name": "Sportplatz Auf dem Röffel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf dem Röffel",
+    "plz": "57629",
+    "ort": "Merkelbach"
+  },
+  "lage": {
+    "lon": 7.775672,
+    "lat": 50.644038
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4a-15b8-45af-8cd2-19eda81dc843",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4ee-a846-41f3-8ae7-a9a6c48afacb",
+  "name": "Sportplatz Weinsheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Industriestraße",
+    "hausnummer": "2",
+    "plz": "54595",
+    "ort": "Weinsheim"
+  },
+  "lage": {
+    "lon": 6.479423,
+    "lat": 50.226051
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ee-a846-41f3-8ae7-a9a6c48afacb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

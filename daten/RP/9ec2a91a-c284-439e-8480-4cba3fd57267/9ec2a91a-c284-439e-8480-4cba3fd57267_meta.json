@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91a-c284-439e-8480-4cba3fd57267",
+  "name": "Sporthalle Bornheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Dammgasse",
+    "hausnummer": "1",
+    "plz": "76879",
+    "ort": "Bornheim"
+  },
+  "lage": {
+    "lon": 8.170622,
+    "lat": 49.215708
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91a-c284-439e-8480-4cba3fd57267",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cb8-e259-42a7-a8a2-4fd97eba341b",
+  "name": "Sportplatz Am Wingertsbusch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Wingertsbusch",
+    "plz": "67744",
+    "ort": "Hohenöllen"
+  },
+  "lage": {
+    "lon": 7.622901,
+    "lat": 49.625038
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cb8-e259-42a7-a8a2-4fd97eba341b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a911-362e-4141-bb0a-1fa837df3099",
+  "name": "Kampfsportschule Kandemir",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Philipp-Kreißler-Straße",
+    "hausnummer": "4",
+    "plz": "67583",
+    "ort": "Guntersblum"
+  },
+  "lage": {
+    "lon": 8.348354,
+    "lat": 49.801666
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a911-362e-4141-bb0a-1fa837df3099",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

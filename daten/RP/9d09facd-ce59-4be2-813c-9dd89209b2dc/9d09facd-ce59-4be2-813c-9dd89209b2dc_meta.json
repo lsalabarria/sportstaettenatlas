@@ -1,0 +1,23 @@
+{
+  "id": "9d09facd-ce59-4be2-813c-9dd89209b2dc",
+  "name": "Spielplatz am Gemeindezentrum",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportheim",
+    "plz": "57629",
+    "ort": "Malberg"
+  },
+  "lage": {
+    "lon": 7.82053,
+    "lat": 50.715423
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facd-ce59-4be2-813c-9dd89209b2dc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

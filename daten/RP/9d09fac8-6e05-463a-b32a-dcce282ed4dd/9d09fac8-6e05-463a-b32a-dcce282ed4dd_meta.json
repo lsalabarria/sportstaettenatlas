@@ -1,0 +1,24 @@
+{
+  "id": "9d09fac8-6e05-463a-b32a-dcce282ed4dd",
+  "name": "SRS Sportpark",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Sportzentrum",
+    "hausnummer": "8",
+    "plz": "57610",
+    "ort": "Altenkirchen"
+  },
+  "lage": {
+    "lon": 7.659078,
+    "lat": 50.692399
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac8-6e05-463a-b32a-dcce282ed4dd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

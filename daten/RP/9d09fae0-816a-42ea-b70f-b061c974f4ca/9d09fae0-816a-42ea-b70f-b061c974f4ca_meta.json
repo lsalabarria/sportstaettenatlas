@@ -1,0 +1,24 @@
+{
+  "id": "9d09fae0-816a-42ea-b70f-b061c974f4ca",
+  "name": "Ruwertalschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "8",
+    "plz": "54320",
+    "ort": "Waldrach"
+  },
+  "lage": {
+    "lon": 6.746137,
+    "lat": 49.744594
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae0-816a-42ea-b70f-b061c974f4ca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

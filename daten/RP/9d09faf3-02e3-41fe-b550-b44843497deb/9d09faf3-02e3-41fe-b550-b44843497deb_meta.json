@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf3-02e3-41fe-b550-b44843497deb",
+  "name": "Sportplatz Koblenzer Straße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Koblenzer Straße",
+    "plz": "56479",
+    "ort": "Hellenhahn-Schellenberg"
+  },
+  "lage": {
+    "lon": 8.029925,
+    "lat": 50.610117
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf3-02e3-41fe-b550-b44843497deb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

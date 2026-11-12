@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d55-dec7-47db-a571-dc2b517dba52",
+  "name": "Sportplatz Landkern",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L98",
+    "plz": "56814",
+    "ort": "Landkern"
+  },
+  "lage": {
+    "lon": 7.14321,
+    "lat": 50.198795
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d55-dec7-47db-a571-dc2b517dba52",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

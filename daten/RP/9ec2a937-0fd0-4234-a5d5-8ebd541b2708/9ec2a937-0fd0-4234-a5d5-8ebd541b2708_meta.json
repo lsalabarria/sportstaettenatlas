@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a937-0fd0-4234-a5d5-8ebd541b2708",
+  "name": "Sportpferdezentrum Rhein-Main",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Rheinhessenstraße",
+    "hausnummer": "200",
+    "plz": "55129",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.265441,
+    "lat": 49.945411
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a937-0fd0-4234-a5d5-8ebd541b2708",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc60-2f3c-4ba7-bc95-45501c7dfce7",
+  "name": "Trifelsbad Annweiler",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zweibrückerstraße",
+    "hausnummer": "47",
+    "plz": "76855",
+    "ort": "Annweiler am Trifels, Stadt"
+  },
+  "lage": {
+    "lon": 7.95302,
+    "lat": 49.20349
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc60-2f3c-4ba7-bc95-45501c7dfce7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

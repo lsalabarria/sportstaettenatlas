@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa3-bff3-485d-9b1e-7839ed4c59d3",
+  "name": "Tennisplatz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Konrad-Zuße-Straße",
+    "hausnummer": "6",
+    "plz": "56075",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.565799,
+    "lat": 50.332482
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa3-bff3-485d-9b1e-7839ed4c59d3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

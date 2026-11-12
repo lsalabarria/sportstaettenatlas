@@ -1,0 +1,23 @@
+{
+  "id": "9d09facc-d431-4108-9755-aebebee89adb",
+  "name": "Sportplatz Alsdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Austraße",
+    "plz": "57518",
+    "ort": "Alsdorf"
+  },
+  "lage": {
+    "lon": 7.887796,
+    "lat": 50.781447
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facc-d431-4108-9755-aebebee89adb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

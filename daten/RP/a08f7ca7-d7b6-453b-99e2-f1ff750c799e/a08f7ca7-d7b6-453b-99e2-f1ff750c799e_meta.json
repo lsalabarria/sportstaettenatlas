@@ -1,0 +1,24 @@
+{
+  "id": "a08f7ca7-d7b6-453b-99e2-f1ff750c799e",
+  "name": "Sportzentrum Mühlenweg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mühlenweg",
+    "plz": "55758",
+    "ort": "Niederwörresbach"
+  },
+  "lage": {
+    "lon": 7.340253,
+    "lat": 49.768989
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ca7-d7b6-453b-99e2-f1ff750c799e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

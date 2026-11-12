@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a8ff-879e-4aff-90a2-dbd3c4088cf9",
+  "name": "Sportanlage Bockenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jakob-Böshenz-Straße",
+    "hausnummer": "15",
+    "plz": "67278",
+    "ort": "Bockenheim an der Weinstraße"
+  },
+  "lage": {
+    "lon": 8.184212,
+    "lat": 49.60859
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a8ff-879e-4aff-90a2-dbd3c4088cf9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

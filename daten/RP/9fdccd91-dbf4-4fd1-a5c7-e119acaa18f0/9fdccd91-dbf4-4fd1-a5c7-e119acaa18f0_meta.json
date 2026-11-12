@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd91-dbf4-4fd1-a5c7-e119acaa18f0",
+  "name": "Rheinhalle Maximiliansau",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hermann-Quack-Straße",
+    "hausnummer": "3",
+    "plz": "76744",
+    "ort": "Wörth am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.284812,
+    "lat": 49.033885
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd91-dbf4-4fd1-a5c7-e119acaa18f0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

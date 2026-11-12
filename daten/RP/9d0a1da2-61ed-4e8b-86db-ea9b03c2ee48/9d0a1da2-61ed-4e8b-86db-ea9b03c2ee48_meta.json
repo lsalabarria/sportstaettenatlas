@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1da2-61ed-4e8b-86db-ea9b03c2ee48",
+  "name": "Turnhalle Neroth",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "7",
+    "plz": "54570",
+    "ort": "Neroth"
+  },
+  "lage": {
+    "lon": 6.744748,
+    "lat": 50.197426
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da2-61ed-4e8b-86db-ea9b03c2ee48",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

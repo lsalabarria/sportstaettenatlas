@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d54-2517-4205-bdc3-94172bd820e0",
+  "name": "Sportplatz Treis",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Schafsberg",
+    "hausnummer": "12",
+    "plz": "56253",
+    "ort": "Treis-Karden"
+  },
+  "lage": {
+    "lon": 7.301577,
+    "lat": 50.167256
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d54-2517-4205-bdc3-94172bd820e0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

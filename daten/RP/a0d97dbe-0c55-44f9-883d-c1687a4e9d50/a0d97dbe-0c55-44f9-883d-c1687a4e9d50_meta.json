@@ -1,0 +1,25 @@
+{
+  "id": "a0d97dbe-0c55-44f9-883d-c1687a4e9d50",
+  "name": "Spielplatz Zagrebplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "55129",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.273726,
+    "lat": 49.959828
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "sportarten": [
+    "Basketball"
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0d97dbe-0c55-44f9-883d-c1687a4e9d50",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

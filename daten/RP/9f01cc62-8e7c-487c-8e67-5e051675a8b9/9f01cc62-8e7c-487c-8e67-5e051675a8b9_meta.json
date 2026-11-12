@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc62-8e7c-487c-8e67-5e051675a8b9",
+  "name": "Cascade",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Talweg",
+    "hausnummer": "4",
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.53068,
+    "lat": 49.97395
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc62-8e7c-487c-8e67-5e051675a8b9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

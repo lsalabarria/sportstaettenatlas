@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a939-ffc4-43b1-9f60-bd447cb0ed4e",
+  "name": "Basketballplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Goethestraße",
+    "hausnummer": "20",
+    "plz": "55118",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.25365,
+    "lat": 50.009784
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a939-ffc4-43b1-9f60-bd447cb0ed4e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

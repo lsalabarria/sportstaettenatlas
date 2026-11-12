@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dfd-9571-40e1-b6eb-cfebec92a0be",
+  "name": "Schul- und Sportzentrum Bad Marienberg Platz 2",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirburger Str.",
+    "plz": "56470",
+    "ort": "Bad Marienberg (Westerwald), Stadt"
+  },
+  "lage": {
+    "lon": 7.949521,
+    "lat": 50.660188
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfd-9571-40e1-b6eb-cfebec92a0be",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

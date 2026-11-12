@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1daf-8322-4751-9c22-70e7e0769397",
+  "name": "Sporthallen Raiffeisenschule Neuwied",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Raiffeisenring",
+    "hausnummer": "1",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.47757,
+    "lat": 50.4381
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daf-8322-4751-9c22-70e7e0769397",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

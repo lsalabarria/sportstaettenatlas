@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da4-219a-4516-bd79-bbc81a806946",
+  "name": "Sportplatz Esch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "54585",
+    "ort": "Esch"
+  },
+  "lage": {
+    "lon": 6.608737,
+    "lat": 50.361284
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da4-219a-4516-bd79-bbc81a806946",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

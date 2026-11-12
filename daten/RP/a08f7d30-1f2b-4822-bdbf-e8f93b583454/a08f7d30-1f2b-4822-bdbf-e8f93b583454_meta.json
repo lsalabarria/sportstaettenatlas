@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d30-1f2b-4822-bdbf-e8f93b583454",
+  "name": "Basketballfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Richard-Wagner-Straße",
+    "hausnummer": "39",
+    "plz": "55543",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.884178,
+    "lat": 49.837495
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d30-1f2b-4822-bdbf-e8f93b583454",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

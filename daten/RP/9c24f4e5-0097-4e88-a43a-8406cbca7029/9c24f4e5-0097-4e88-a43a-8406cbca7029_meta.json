@@ -1,0 +1,22 @@
+{
+  "id": "9c24f4e5-0097-4e88-a43a-8406cbca7029",
+  "name": "Reitplatz Dockendorf",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "plz": "54636",
+    "ort": "Dockendorf"
+  },
+  "lage": {
+    "lon": 6.459259,
+    "lat": 49.925126
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e5-0097-4e88-a43a-8406cbca7029",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1daf-f322-42e0-98a8-907d32da079d",
+  "name": "Eishalle Neuwied",
+  "kategorie": "Eissportstätte",
+  "adresse": {
+    "strasse": "Andernacher Straße",
+    "hausnummer": "111",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.465255,
+    "lat": 50.438739
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daf-f322-42e0-98a8-907d32da079d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

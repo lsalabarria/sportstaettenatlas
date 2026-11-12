@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1db3-5702-4ea9-8b03-2b9506fe1cc6",
+  "name": "Sportplatz am Winzerkeller",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mathenstraße",
+    "plz": "54338",
+    "ort": "Schweich, Stadt"
+  },
+  "lage": {
+    "lon": 6.756621,
+    "lat": 49.81821
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db3-5702-4ea9-8b03-2b9506fe1cc6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

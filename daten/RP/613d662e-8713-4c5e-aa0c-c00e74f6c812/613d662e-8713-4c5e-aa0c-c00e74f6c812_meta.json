@@ -1,0 +1,25 @@
+{
+  "id": "613d662e-8713-4c5e-aa0c-c00e74f6c812",
+  "name": "Bürgerhaus Oberweiler-Tiefenbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "7",
+    "plz": "67752",
+    "ort": "Oberweiler-Tiefenbach"
+  },
+  "lage": {
+    "lon": 7.616392,
+    "lat": 49.602201
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "613d662e-8713-4c5e-aa0c-c00e74f6c812",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

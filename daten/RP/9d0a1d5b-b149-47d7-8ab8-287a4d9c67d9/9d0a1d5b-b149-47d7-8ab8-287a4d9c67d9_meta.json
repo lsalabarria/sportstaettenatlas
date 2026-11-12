@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5b-b149-47d7-8ab8-287a4d9c67d9",
+  "name": "Kleinspielfeld Alterkülz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brühlweg",
+    "plz": "56288",
+    "ort": "Alterkülz"
+  },
+  "lage": {
+    "lon": 7.463655,
+    "lat": 50.032852
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5b-b149-47d7-8ab8-287a4d9c67d9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

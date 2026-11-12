@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1daa-5e06-41d4-be3b-ca9056bf42a2",
+  "name": "Schützenverein \"TELL\" Kirchen Wehbach e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Auf dem Hardtkopf",
+    "plz": "57548",
+    "ort": "Kirchen (Sieg), Stadt"
+  },
+  "lage": {
+    "lon": 7.890866,
+    "lat": 50.813554
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daa-5e06-41d4-be3b-ca9056bf42a2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

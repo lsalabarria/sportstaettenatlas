@@ -1,0 +1,23 @@
+{
+  "id": "9d09facc-69c5-48c3-b72e-f0de79954627",
+  "name": "Kleinspielfeld Weyerbusch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "57635",
+    "ort": "Weyerbusch"
+  },
+  "lage": {
+    "lon": 7.550231,
+    "lat": 50.710648
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facc-69c5-48c3-b72e-f0de79954627",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

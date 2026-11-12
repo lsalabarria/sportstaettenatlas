@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd0b-4e32-4dc6-ab50-b1184b179cba",
+  "name": "Reitverein Singhofen",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Reitanlage",
+    "hausnummer": "1",
+    "plz": "56379",
+    "ort": "Singhofen"
+  },
+  "lage": {
+    "lon": 7.838997,
+    "lat": 50.286594
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd0b-4e32-4dc6-ab50-b1184b179cba",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

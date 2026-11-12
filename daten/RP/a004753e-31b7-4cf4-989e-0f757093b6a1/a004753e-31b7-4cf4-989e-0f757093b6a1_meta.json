@@ -1,0 +1,24 @@
+{
+  "id": "a004753e-31b7-4cf4-989e-0f757093b6a1",
+  "name": "Turnhalle Grundschule Bettingen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Maximinstraße",
+    "hausnummer": "3",
+    "plz": "54646",
+    "ort": "Bettingen"
+  },
+  "lage": {
+    "lon": 6.400315,
+    "lat": 49.942314
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a004753e-31b7-4cf4-989e-0f757093b6a1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

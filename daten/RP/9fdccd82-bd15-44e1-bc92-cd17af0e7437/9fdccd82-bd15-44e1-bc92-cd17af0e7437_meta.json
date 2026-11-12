@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd82-bd15-44e1-bc92-cd17af0e7437",
+  "name": "Sportanlage im Roth",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Blumenstraße",
+    "plz": "76726",
+    "ort": "Germersheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.373707,
+    "lat": 49.209616
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd82-bd15-44e1-bc92-cd17af0e7437",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

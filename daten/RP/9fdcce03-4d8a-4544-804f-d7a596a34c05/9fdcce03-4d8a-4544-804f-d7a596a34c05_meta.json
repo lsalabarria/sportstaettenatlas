@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce03-4d8a-4544-804f-d7a596a34c05",
+  "name": "Tennisclub Giulini",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Erich-Reimann-Straße",
+    "hausnummer": "1",
+    "plz": "67061",
+    "ort": "Ludwigshafen am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.434265,
+    "lat": 49.465697
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce03-4d8a-4544-804f-d7a596a34c05",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

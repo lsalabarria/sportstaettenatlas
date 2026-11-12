@@ -1,0 +1,23 @@
+{
+  "id": "a0a378e0-5f84-4cc9-8a12-6d43f2ac1eff",
+  "name": "Skipiste Wissen",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Kolpingstraße",
+    "plz": "57537",
+    "ort": "Wissen, Stadt"
+  },
+  "lage": {
+    "lon": 7.746758,
+    "lat": 50.769346
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0a378e0-5f84-4cc9-8a12-6d43f2ac1eff",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

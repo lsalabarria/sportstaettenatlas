@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a92a-2dc8-449a-bc95-a700aba60047",
+  "name": "Georg-Sauer Sportanlage",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L419",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.10637,
+    "lat": 49.977486
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92a-2dc8-449a-bc95-a700aba60047",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

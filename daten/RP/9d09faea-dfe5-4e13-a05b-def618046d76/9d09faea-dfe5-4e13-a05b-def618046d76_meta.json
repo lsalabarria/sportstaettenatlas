@@ -1,0 +1,23 @@
+{
+  "id": "9d09faea-dfe5-4e13-a05b-def618046d76",
+  "name": "Sportplatz Niederelbert",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "plz": "46412",
+    "ort": "Niederelbert"
+  },
+  "lage": {
+    "lon": 7.800806,
+    "lat": 50.409692
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faea-dfe5-4e13-a05b-def618046d76",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

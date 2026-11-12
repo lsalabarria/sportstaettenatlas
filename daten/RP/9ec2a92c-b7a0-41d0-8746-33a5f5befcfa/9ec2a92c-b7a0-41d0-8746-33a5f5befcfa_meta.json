@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a92c-b7a0-41d0-8746-33a5f5befcfa",
+  "name": "Sportanlage Am Engelborn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Pariser Str.",
+    "hausnummer": "161",
+    "plz": "55268",
+    "ort": "Nieder-Olm, Stadt"
+  },
+  "lage": {
+    "lon": 8.195649,
+    "lat": 49.907417
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92c-b7a0-41d0-8746-33a5f5befcfa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

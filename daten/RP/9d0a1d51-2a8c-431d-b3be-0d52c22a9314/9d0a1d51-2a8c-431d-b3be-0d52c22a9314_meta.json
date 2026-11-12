@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d51-2a8c-431d-b3be-0d52c22a9314",
+  "name": "Realschule Plus Niederzissen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Arweg",
+    "hausnummer": "19",
+    "plz": "56651",
+    "ort": "Niederzissen"
+  },
+  "lage": {
+    "lon": 7.213593,
+    "lat": 50.455141
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d51-2a8c-431d-b3be-0d52c22a9314",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

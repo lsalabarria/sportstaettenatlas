@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a917-cf6a-490e-b0d2-9719934353f6",
+  "name": "Sportzentrum Albisheim",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "An d. Pfrimmhalle",
+    "plz": "67308",
+    "ort": "Albisheim (Pfrimm)"
+  },
+  "lage": {
+    "lon": 8.102052,
+    "lat": 49.646553
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a917-cf6a-490e-b0d2-9719934353f6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

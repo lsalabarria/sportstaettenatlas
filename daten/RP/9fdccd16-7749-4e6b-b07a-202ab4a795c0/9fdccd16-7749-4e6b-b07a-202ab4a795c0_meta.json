@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd16-7749-4e6b-b07a-202ab4a795c0",
+  "name": "Sportplatz Scheckersgraben",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Scheckersgraben",
+    "plz": "67735",
+    "ort": "Mehlbach"
+  },
+  "lage": {
+    "lon": 7.727782,
+    "lat": 49.526666
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd16-7749-4e6b-b07a-202ab4a795c0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

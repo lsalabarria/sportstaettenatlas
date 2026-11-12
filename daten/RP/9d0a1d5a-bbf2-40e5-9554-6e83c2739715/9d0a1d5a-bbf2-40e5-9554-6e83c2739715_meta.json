@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5a-bbf2-40e5-9554-6e83c2739715",
+  "name": "Bolzplatz Mermuth",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ulmenweg",
+    "plz": "56283",
+    "ort": "Mermuth"
+  },
+  "lage": {
+    "lon": 7.48084,
+    "lat": 50.167842
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5a-bbf2-40e5-9554-6e83c2739715",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d57-ed04-4ca5-9a18-817871193b28",
+  "name": "Bolzplatz Altstrimmig",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Spielplatz",
+    "plz": "56858",
+    "ort": "Altstrimmig"
+  },
+  "lage": {
+    "lon": 7.290549,
+    "lat": 50.092466
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d57-ed04-4ca5-9a18-817871193b28",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

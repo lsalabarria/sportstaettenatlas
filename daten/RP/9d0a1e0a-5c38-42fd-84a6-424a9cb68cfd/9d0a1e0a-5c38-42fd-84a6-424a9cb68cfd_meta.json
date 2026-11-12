@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e0a-5c38-42fd-84a6-424a9cb68cfd",
+  "name": "Sportplatz Udenhausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An den Kreuzen",
+    "plz": "56154",
+    "ort": "Boppard, Stadt"
+  },
+  "lage": {
+    "lon": 7.515258,
+    "lat": 50.227964
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0a-5c38-42fd-84a6-424a9cb68cfd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

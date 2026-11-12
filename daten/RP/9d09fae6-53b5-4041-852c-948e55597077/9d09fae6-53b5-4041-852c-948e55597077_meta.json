@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae6-53b5-4041-852c-948e55597077",
+  "name": "Tennisplatz",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Saarstraße",
+    "plz": "54441",
+    "ort": "Kanzem"
+  },
+  "lage": {
+    "lon": 6.572354,
+    "lat": 49.666046
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae6-53b5-4041-852c-948e55597077",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

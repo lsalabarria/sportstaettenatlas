@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd7e-56c8-4ed4-b002-efb99e1df44b",
+  "name": "Sportplatz TuS Wollmesheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wollmesheimer Hauptstraße",
+    "hausnummer": "115",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.073277,
+    "lat": 49.177704
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd7e-56c8-4ed4-b002-efb99e1df44b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

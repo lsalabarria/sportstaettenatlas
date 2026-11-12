@@ -1,0 +1,24 @@
+{
+  "id": "9d09faec-96b5-4c12-9d9e-6b7487b03d9f",
+  "name": "Tennisplätze Dernbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Burgweg",
+    "hausnummer": "3",
+    "plz": "56428",
+    "ort": "Dernbach"
+  },
+  "lage": {
+    "lon": 7.794787,
+    "lat": 50.455561
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faec-96b5-4c12-9d9e-6b7487b03d9f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

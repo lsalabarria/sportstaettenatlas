@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc5e-2ef0-4714-adfd-73297616d7e6",
+  "name": "Freibad Wachmühle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Waschmühle",
+    "hausnummer": "1",
+    "plz": "67659",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.76184,
+    "lat": 49.46088
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc5e-2ef0-4714-adfd-73297616d7e6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

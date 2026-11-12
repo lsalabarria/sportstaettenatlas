@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c73-90ae-41f0-bfdd-3d1ade30e243",
+  "name": "Ritter Hundt Halle",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Westring",
+    "hausnummer": "2",
+    "plz": "55291",
+    "ort": "Saulheim"
+  },
+  "lage": {
+    "lon": 8.145197,
+    "lat": 49.871795
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c73-90ae-41f0-bfdd-3d1ade30e243",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

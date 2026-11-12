@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a90a-2f1f-40a2-b4a2-b03adb729e5d",
+  "name": "Sportplatz Appenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "55437",
+    "ort": "Appenheim"
+  },
+  "lage": {
+    "lon": 8.028198,
+    "lat": 49.926289
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90a-2f1f-40a2-b4a2-b03adb729e5d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

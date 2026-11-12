@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdeb-7d5e-4c55-964c-94e2d3b7e08e",
+  "name": "Streetballfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Parkstraße",
+    "hausnummer": "69",
+    "plz": "67655",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.76069,
+    "lat": 49.437269
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdeb-7d5e-4c55-964c-94e2d3b7e08e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

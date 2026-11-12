@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db0-13e7-4fb9-898a-e7a605df6580",
+  "name": "Sprudelhalle Bad Hönningen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Rudolf-Buse-Straße",
+    "hausnummer": "4",
+    "plz": "53557",
+    "ort": "Bad Hönningen, Stadt"
+  },
+  "lage": {
+    "lon": 7.312289,
+    "lat": 50.516614
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db0-13e7-4fb9-898a-e7a605df6580",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

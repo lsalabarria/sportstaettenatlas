@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc6d-8cb3-48c2-8c15-133824601e2f",
+  "name": "Freibad Hambach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Diedesfelder Weg",
+    "hausnummer": "88",
+    "plz": "67434",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.13461,
+    "lat": 49.33182
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6d-8cb3-48c2-8c15-133824601e2f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1da9-3599-42b4-ab0c-165687269888",
+  "name": "Minigolfplatz Imhäusertal",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Am Forellenteich",
+    "hausnummer": "1",
+    "plz": "57548",
+    "ort": "Kirchen (Sieg), Stadt"
+  },
+  "lage": {
+    "lon": 7.893991,
+    "lat": 50.788214
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da9-3599-42b4-ab0c-165687269888",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91a-fa5f-496e-a2b7-2fabb433c4c7",
+  "name": "Skateanlage Offenbach",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Hochstadter Str.",
+    "hausnummer": "22",
+    "plz": "76877",
+    "ort": "Offenbach an der Queich"
+  },
+  "lage": {
+    "lon": 8.212538,
+    "lat": 49.200295
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91a-fa5f-496e-a2b7-2fabb433c4c7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

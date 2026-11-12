@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4f-64de-4fe5-9bf9-89060bbcbe50",
+  "name": "Fußballplatz Brohl",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Koblenzer Straße",
+    "plz": "56656",
+    "ort": "Brohl-Lützing"
+  },
+  "lage": {
+    "lon": 7.331028,
+    "lat": 50.484838
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4f-64de-4fe5-9bf9-89060bbcbe50",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

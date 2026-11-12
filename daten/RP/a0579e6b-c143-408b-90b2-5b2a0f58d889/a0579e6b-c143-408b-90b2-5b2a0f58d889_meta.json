@@ -1,0 +1,23 @@
+{
+  "id": "a0579e6b-c143-408b-90b2-5b2a0f58d889",
+  "name": "Thür Hartplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mendiger Straße",
+    "plz": "56743",
+    "ort": "Thür"
+  },
+  "lage": {
+    "lon": 7.274069,
+    "lat": 50.360901
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0579e6b-c143-408b-90b2-5b2a0f58d889",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

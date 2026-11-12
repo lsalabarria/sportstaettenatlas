@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1df7-3a5d-4a68-9714-0c3e6f94c6f7",
+  "name": "Keune-Grundschule Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Weidengraben",
+    "hausnummer": "33",
+    "plz": "54296",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.688273,
+    "lat": 49.751702
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df7-3a5d-4a68-9714-0c3e6f94c6f7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

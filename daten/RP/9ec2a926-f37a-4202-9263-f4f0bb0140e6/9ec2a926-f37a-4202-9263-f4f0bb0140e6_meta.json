@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a926-f37a-4202-9263-f4f0bb0140e6",
+  "name": "Sportplatz Bacharach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Strandbadweg",
+    "hausnummer": "6",
+    "plz": "55422",
+    "ort": "Bacharach, Stadt"
+  },
+  "lage": {
+    "lon": 7.771564,
+    "lat": 50.055383
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a926-f37a-4202-9263-f4f0bb0140e6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

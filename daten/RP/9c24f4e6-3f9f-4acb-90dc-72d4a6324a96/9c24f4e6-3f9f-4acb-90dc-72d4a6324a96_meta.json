@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4e6-3f9f-4acb-90dc-72d4a6324a96",
+  "name": "Tennisplätze Stahl",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Steinbrückerberg",
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.501915,
+    "lat": 49.974405
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e6-3f9f-4acb-90dc-72d4a6324a96",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

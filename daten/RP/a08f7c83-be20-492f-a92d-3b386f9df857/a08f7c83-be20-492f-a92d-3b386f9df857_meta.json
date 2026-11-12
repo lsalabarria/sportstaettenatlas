@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c83-be20-492f-a92d-3b386f9df857",
+  "name": "Sportplatz Gau-Heppenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "8",
+    "plz": "55234",
+    "ort": "Gau-Heppenheim"
+  },
+  "lage": {
+    "lon": 8.173695,
+    "lat": 49.745129
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c83-be20-492f-a92d-3b386f9df857",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

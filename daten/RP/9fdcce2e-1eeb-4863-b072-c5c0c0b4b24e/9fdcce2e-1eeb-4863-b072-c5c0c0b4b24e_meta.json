@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce2e-1eeb-4863-b072-c5c0c0b4b24e",
+  "name": "Grundschule Sechsmorgen Bolzplatz",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Otterstein",
+    "hausnummer": "14",
+    "plz": "66482",
+    "ort": "Zweibrücken, Stadt"
+  },
+  "lage": {
+    "lon": 7.397581,
+    "lat": 49.255099
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce2e-1eeb-4863-b072-c5c0c0b4b24e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

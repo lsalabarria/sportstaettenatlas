@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdcc-b53c-41b9-a83d-52bbc7ba874b",
+  "name": "clever fit Nastätten",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Industriestraße",
+    "hausnummer": "4",
+    "plz": "56355",
+    "ort": "Nastätten, Stadt"
+  },
+  "lage": {
+    "lon": 7.850188,
+    "lat": 50.197863
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdcc-b53c-41b9-a83d-52bbc7ba874b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

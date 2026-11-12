@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a916-c54d-4664-8f9c-c6a2d6bdea6a",
+  "name": "Sportplatz Münsterappel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L400",
+    "plz": "67822",
+    "ort": "Münsterappel"
+  },
+  "lage": {
+    "lon": 7.879686,
+    "lat": 49.741738
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a916-c54d-4664-8f9c-c6a2d6bdea6a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d09fac9-bffa-4686-9161-077859bf2d1b",
+  "name": "Reiffeisen Grundschule Flammersfeld",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Südstraße",
+    "hausnummer": "2",
+    "plz": "57632",
+    "ort": "Flammersfeld"
+  },
+  "lage": {
+    "lon": 7.524983,
+    "lat": 50.644498
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac9-bffa-4686-9161-077859bf2d1b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

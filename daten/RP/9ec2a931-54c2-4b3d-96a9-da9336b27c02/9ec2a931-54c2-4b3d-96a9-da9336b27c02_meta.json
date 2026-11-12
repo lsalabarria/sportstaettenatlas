@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a931-54c2-4b3d-96a9-da9336b27c02",
+  "name": "Stadion Schillerhain",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jakob-Enders-Stadion",
+    "plz": "67292",
+    "ort": "Kirchheimbolanden, Stadt"
+  },
+  "lage": {
+    "lon": 7.998157,
+    "lat": 49.661685
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a931-54c2-4b3d-96a9-da9336b27c02",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

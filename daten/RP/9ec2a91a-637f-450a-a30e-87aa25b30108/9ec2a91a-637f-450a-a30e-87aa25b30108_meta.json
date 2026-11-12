@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a91a-637f-450a-a30e-87aa25b30108",
+  "name": "Sporthalle der Hainbachschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "76879",
+    "ort": "Hochstadt (Pfalz)"
+  },
+  "lage": {
+    "lon": 8.210503,
+    "lat": 49.238953
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91a-637f-450a-a30e-87aa25b30108",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

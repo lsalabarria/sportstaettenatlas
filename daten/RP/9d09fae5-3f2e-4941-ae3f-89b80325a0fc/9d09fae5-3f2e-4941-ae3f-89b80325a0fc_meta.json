@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae5-3f2e-4941-ae3f-89b80325a0fc",
+  "name": "Reitanlage Oberzerf",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "54313",
+    "ort": "Zerf"
+  },
+  "lage": {
+    "lon": 6.678485,
+    "lat": 49.593064
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae5-3f2e-4941-ae3f-89b80325a0fc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

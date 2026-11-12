@@ -1,0 +1,23 @@
+{
+  "id": "9d09facb-9921-4409-b491-31f4c1a65645",
+  "name": "Tennisanlage Neitersen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "In der Au",
+    "plz": "57638",
+    "ort": "Schöneberg"
+  },
+  "lage": {
+    "lon": 7.592298,
+    "lat": 50.664298
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facb-9921-4409-b491-31f4c1a65645",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

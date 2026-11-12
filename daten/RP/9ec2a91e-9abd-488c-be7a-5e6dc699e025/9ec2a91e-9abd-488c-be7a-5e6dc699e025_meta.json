@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91e-9abd-488c-be7a-5e6dc699e025",
+  "name": "Waldsportplatz Gleiszellen-Gleishorbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "11",
+    "plz": "76889",
+    "ort": "Gleiszellen-Gleishorbach"
+  },
+  "lage": {
+    "lon": 7.996314,
+    "lat": 49.128068
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91e-9abd-488c-be7a-5e6dc699e025",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d09faf0-9f7b-4de2-8639-fbc75b749756",
+  "name": "Sport- und Freizeitzentrum Niederahr",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Oststraße",
+    "plz": "56414",
+    "ort": "Niederahr"
+  },
+  "lage": {
+    "lon": 7.864052,
+    "lat": 50.490964
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf0-9f7b-4de2-8639-fbc75b749756",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

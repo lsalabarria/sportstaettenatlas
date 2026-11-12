@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa8-b8b6-4bad-99d2-141ba26bfa51",
+  "name": "Außenbereich der Hans-Zulliger-Schule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brenderweg",
+    "hausnummer": "21-23",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.596984,
+    "lat": 50.368373
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa8-b8b6-4bad-99d2-141ba26bfa51",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

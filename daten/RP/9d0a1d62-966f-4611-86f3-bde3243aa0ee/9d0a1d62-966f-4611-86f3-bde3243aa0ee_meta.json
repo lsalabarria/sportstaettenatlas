@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d62-966f-4611-86f3-bde3243aa0ee",
+  "name": "Sportplatz Rayerschied",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L223",
+    "plz": "55469",
+    "ort": "Rayerschied"
+  },
+  "lage": {
+    "lon": 7.588817,
+    "lat": 50.016947
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d62-966f-4611-86f3-bde3243aa0ee",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

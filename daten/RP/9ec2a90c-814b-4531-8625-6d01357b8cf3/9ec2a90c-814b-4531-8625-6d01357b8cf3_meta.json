@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a90c-814b-4531-8625-6d01357b8cf3",
+  "name": "Bouleplatz am F.-J.-Helferich-Haus",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "45",
+    "plz": "55270",
+    "ort": "Jugenheim in Rheinhessen"
+  },
+  "lage": {
+    "lon": 8.083603,
+    "lat": 49.890658
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a90c-814b-4531-8625-6d01357b8cf3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

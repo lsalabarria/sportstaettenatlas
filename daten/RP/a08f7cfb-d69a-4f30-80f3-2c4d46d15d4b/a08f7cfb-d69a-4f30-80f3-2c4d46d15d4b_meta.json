@@ -1,0 +1,24 @@
+{
+  "id": "a08f7cfb-d69a-4f30-80f3-2c4d46d15d4b",
+  "name": "Basketballplatz Baumholder",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Vermont Street",
+    "plz": "55774",
+    "ort": "Baumholder, Stadt"
+  },
+  "lage": {
+    "lon": 7.324191,
+    "lat": 49.622653
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cfb-d69a-4f30-80f3-2c4d46d15d4b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91b-a9db-4d43-9473-c6cfe44f8f0c",
+  "name": "Sportplatz Spvgg 1921 Rohrbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Bellensee",
+    "hausnummer": "3",
+    "plz": "76865",
+    "ort": "Rohrbach"
+  },
+  "lage": {
+    "lon": 8.136527,
+    "lat": 49.133776
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91b-a9db-4d43-9473-c6cfe44f8f0c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d09fae0-63dc-4e21-8caa-2fa0359bc9b7",
+  "name": "Sportplatz Waldrach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Stadion",
+    "hausnummer": "2-6",
+    "plz": "54320",
+    "ort": "Waldrach"
+  },
+  "lage": {
+    "lon": 6.75103,
+    "lat": 49.745957
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae0-63dc-4e21-8caa-2fa0359bc9b7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

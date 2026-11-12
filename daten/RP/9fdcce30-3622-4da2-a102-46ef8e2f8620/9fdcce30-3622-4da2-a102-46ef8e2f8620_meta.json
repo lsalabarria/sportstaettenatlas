@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce30-3622-4da2-a102-46ef8e2f8620",
+  "name": "TSC Sportanlage",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wattweilerstraße",
+    "hausnummer": "36",
+    "plz": "66482",
+    "ort": "Zweibrücken, Stadt"
+  },
+  "lage": {
+    "lon": 7.347868,
+    "lat": 49.244125
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce30-3622-4da2-a102-46ef8e2f8620",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

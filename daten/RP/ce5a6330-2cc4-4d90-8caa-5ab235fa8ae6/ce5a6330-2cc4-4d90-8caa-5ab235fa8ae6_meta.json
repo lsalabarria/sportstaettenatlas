@@ -1,0 +1,24 @@
+{
+  "id": "ce5a6330-2cc4-4d90-8caa-5ab235fa8ae6",
+  "name": "Tennisplätze Wißmanndorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Unter den Birken",
+    "hausnummer": "1",
+    "plz": "54636",
+    "ort": "Wißmannsdorf"
+  },
+  "lage": {
+    "lon": 6.455135,
+    "lat": 49.995315
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "ce5a6330-2cc4-4d90-8caa-5ab235fa8ae6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

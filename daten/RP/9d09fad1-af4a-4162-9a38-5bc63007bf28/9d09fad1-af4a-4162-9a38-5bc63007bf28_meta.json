@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad1-af4a-4162-9a38-5bc63007bf28",
+  "name": "W.E. Ketteler Grundschule Niederfischbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Rothenbergstraße",
+    "hausnummer": "15",
+    "plz": "57572",
+    "ort": "Niederfischbach"
+  },
+  "lage": {
+    "lon": 7.879692,
+    "lat": 50.854016
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad1-af4a-4162-9a38-5bc63007bf28",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

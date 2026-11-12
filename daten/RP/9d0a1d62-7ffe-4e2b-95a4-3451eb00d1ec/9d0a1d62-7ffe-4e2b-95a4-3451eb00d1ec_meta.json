@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d62-7ffe-4e2b-95a4-3451eb00d1ec",
+  "name": "Sportplatz Ravengiersburg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "55471",
+    "ort": "Ravengiersburg"
+  },
+  "lage": {
+    "lon": 7.47638,
+    "lat": 49.943091
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d62-7ffe-4e2b-95a4-3451eb00d1ec",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

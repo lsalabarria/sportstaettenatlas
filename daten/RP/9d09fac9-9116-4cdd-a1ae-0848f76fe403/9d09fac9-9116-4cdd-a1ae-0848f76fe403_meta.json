@@ -1,0 +1,24 @@
+{
+  "id": "9d09fac9-9116-4cdd-a1ae-0848f76fe403",
+  "name": "Gestüt Kriegershof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Kriegershofer Straße",
+    "hausnummer": "46",
+    "plz": "57635",
+    "ort": "Fiersbach"
+  },
+  "lage": {
+    "lon": 7.489715,
+    "lat": 50.699393
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac9-9116-4cdd-a1ae-0848f76fe403",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

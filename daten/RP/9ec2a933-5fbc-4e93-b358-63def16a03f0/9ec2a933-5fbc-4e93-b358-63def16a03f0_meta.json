@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a933-5fbc-4e93-b358-63def16a03f0",
+  "name": "Hambacher Bolzplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dr.-Wirth-Straße",
+    "hausnummer": "37",
+    "plz": "67434",
+    "ort": "Neustadt an der Weinstraße, Stadt"
+  },
+  "lage": {
+    "lon": 8.130251,
+    "lat": 49.344996
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a933-5fbc-4e93-b358-63def16a03f0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

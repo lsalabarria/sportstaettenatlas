@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4b-ec34-4b2c-95a0-5ef4ef1338d6",
+  "name": "Spielplatz Dorsel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "B258",
+    "plz": "53533",
+    "ort": "Dorsel"
+  },
+  "lage": {
+    "lon": 6.79973,
+    "lat": 50.376767
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4b-ec34-4b2c-95a0-5ef4ef1338d6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

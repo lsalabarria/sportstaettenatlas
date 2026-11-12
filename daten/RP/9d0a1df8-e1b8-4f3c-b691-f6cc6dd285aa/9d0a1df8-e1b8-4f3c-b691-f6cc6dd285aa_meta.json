@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1df8-e1b8-4f3c-b691-f6cc6dd285aa",
+  "name": "Bolzplatz Spielplatz Fuldastraße",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Fuldastraße",
+    "plz": "56410",
+    "ort": "Montabaur, Stadt"
+  },
+  "lage": {
+    "lon": 7.809789,
+    "lat": 50.43369
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df8-e1b8-4f3c-b691-f6cc6dd285aa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

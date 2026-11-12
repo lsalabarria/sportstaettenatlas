@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae6-a019-4c2b-9446-0db1db93e247",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Biebelhausener Straße",
+    "plz": "54441",
+    "ort": "Ayl"
+  },
+  "lage": {
+    "lon": 6.560344,
+    "lat": 49.632671
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae6-a019-4c2b-9446-0db1db93e247",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

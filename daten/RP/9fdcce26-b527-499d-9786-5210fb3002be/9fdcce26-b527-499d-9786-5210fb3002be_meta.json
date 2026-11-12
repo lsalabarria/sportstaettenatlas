@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce26-b527-499d-9786-5210fb3002be",
+  "name": "Tennis-Club Rot-Weiß Worms eV",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Buschgasse",
+    "hausnummer": "8",
+    "plz": "67549",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.334709,
+    "lat": 49.637328
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce26-b527-499d-9786-5210fb3002be",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

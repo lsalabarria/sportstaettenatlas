@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad6-6c07-40e7-b925-3f52ade57cb4",
+  "name": "TCK Anhausen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "In der Wolfskaul",
+    "plz": "56584",
+    "ort": "Meinborn"
+  },
+  "lage": {
+    "lon": 7.553177,
+    "lat": 50.492696
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad6-6c07-40e7-b925-3f52ade57cb4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

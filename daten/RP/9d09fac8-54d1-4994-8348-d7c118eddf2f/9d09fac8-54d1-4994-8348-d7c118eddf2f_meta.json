@@ -1,0 +1,23 @@
+{
+  "id": "9d09fac8-54d1-4994-8348-d7c118eddf2f",
+  "name": "Kunstrasenplatz Altenkrichen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hochstraße",
+    "plz": "57610",
+    "ort": "Altenkirchen"
+  },
+  "lage": {
+    "lon": 7.660347,
+    "lat": 50.692602
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fac8-54d1-4994-8348-d7c118eddf2f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

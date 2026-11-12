@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad8-90b0-487d-b358-55d01bf83f93",
+  "name": "Sportplatz Oberraden",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Aubachstraße",
+    "hausnummer": "1",
+    "plz": "56587",
+    "ort": "Oberraden"
+  },
+  "lage": {
+    "lon": 7.53686,
+    "lat": 50.550763
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad8-90b0-487d-b358-55d01bf83f93",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

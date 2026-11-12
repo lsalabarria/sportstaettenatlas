@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a940-60dd-47fa-8210-1ba5871bb4b6",
+  "name": "Tennisclub Rot-Weiß Annweiler",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Kurhausstraße",
+    "hausnummer": "20",
+    "plz": "76855",
+    "ort": "Annweiler am Trifels, Stadt"
+  },
+  "lage": {
+    "lon": 7.973513,
+    "lat": 49.191388
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a940-60dd-47fa-8210-1ba5871bb4b6",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

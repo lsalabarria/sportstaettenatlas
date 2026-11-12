@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c87-4785-42df-9527-15bd98f5ee5c",
+  "name": "Sportplatz F.C. Germania 07 Eich e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Wäldchen",
+    "hausnummer": "1",
+    "plz": "67575",
+    "ort": "Eich"
+  },
+  "lage": {
+    "lon": 8.410456,
+    "lat": 49.748425
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c87-4785-42df-9527-15bd98f5ee5c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

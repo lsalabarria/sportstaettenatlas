@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c8f-8773-43f8-9870-b3f34c4f7e2b",
+  "name": "Sportplatz Kreuzhügel",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Heckweg",
+    "hausnummer": "9",
+    "plz": "55776",
+    "ort": "Ruschberg"
+  },
+  "lage": {
+    "lon": 7.284151,
+    "lat": 49.61756
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c8f-8773-43f8-9870-b3f34c4f7e2b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

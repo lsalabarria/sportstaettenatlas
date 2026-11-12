@@ -1,0 +1,24 @@
+{
+  "id": "9d09faee-09f9-4030-84a4-53e0ba7530c9",
+  "name": "Gestüt Buchengrund",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "2A",
+    "plz": "56244",
+    "ort": "Rückeroth"
+  },
+  "lage": {
+    "lon": 7.741362,
+    "lat": 50.558639
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faee-09f9-4030-84a4-53e0ba7530c9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

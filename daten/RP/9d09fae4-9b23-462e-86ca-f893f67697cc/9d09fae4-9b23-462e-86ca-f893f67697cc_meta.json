@@ -1,0 +1,22 @@
+{
+  "id": "9d09fae4-9b23-462e-86ca-f893f67697cc",
+  "name": "Bolzplatz Lampaden",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54316",
+    "ort": "Lampaden"
+  },
+  "lage": {
+    "lon": 6.703994,
+    "lat": 49.647764
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae4-9b23-462e-86ca-f893f67697cc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

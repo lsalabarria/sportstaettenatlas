@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a930-03a4-4b52-9125-f19b7cc14e8b",
+  "name": "Sportplatz Weitersweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Marnheimer Weg",
+    "plz": "67808",
+    "ort": "Weitersweiler"
+  },
+  "lage": {
+    "lon": 8.000346,
+    "lat": 49.616084
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a930-03a4-4b52-9125-f19b7cc14e8b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

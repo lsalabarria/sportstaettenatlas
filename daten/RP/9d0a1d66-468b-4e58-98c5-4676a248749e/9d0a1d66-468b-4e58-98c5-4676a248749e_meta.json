@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d66-468b-4e58-98c5-4676a248749e",
+  "name": "Reitstall Marienhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Marienhof",
+    "hausnummer": "1",
+    "plz": "54523",
+    "ort": "Hetzerath"
+  },
+  "lage": {
+    "lon": 6.820717,
+    "lat": 49.875951
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d66-468b-4e58-98c5-4676a248749e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

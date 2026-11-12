@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dad-94fc-4d80-872e-e7e0f39a6dd0",
+  "name": "Tennisanlage TuS Gladbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Pablo-Picasso-Straße",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.521584,
+    "lat": 50.454668
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dad-94fc-4d80-872e-e7e0f39a6dd0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

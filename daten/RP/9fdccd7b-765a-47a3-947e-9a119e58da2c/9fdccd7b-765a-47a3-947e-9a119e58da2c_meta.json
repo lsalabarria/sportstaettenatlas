@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd7b-765a-47a3-947e-9a119e58da2c",
+  "name": "Sportpark Landau",
+  "kategorie": "Klettersportstätte",
+  "adresse": {
+    "strasse": "Eutzinger Str.",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.128573,
+    "lat": 49.187058
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd7b-765a-47a3-947e-9a119e58da2c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

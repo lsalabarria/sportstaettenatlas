@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc6e-7cdd-40d3-8c35-3d555fe00e4f",
+  "name": "Erlebnisbad Herschbach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schwimmbadweg",
+    "hausnummer": "1",
+    "plz": "56249",
+    "ort": "Herschbach"
+  },
+  "lage": {
+    "lon": 7.739303,
+    "lat": 50.58239
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc6e-7cdd-40d3-8c35-3d555fe00e4f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

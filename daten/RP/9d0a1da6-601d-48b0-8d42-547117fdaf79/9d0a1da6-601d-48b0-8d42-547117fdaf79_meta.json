@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da6-601d-48b0-8d42-547117fdaf79",
+  "name": "Sportplatz Sarmersbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "plz": "54552",
+    "ort": "Sarmersbach"
+  },
+  "lage": {
+    "lon": 6.875766,
+    "lat": 50.242892
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da6-601d-48b0-8d42-547117fdaf79",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

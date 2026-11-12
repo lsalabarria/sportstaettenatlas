@@ -1,0 +1,22 @@
+{
+  "id": "9d09fae3-ff40-4364-af07-8584b12ca6ca",
+  "name": "Teufelskopfhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "plz": "54429",
+    "ort": "Waldweiler"
+  },
+  "lage": {
+    "lon": 6.799266,
+    "lat": 49.611581
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae3-ff40-4364-af07-8584b12ca6ca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

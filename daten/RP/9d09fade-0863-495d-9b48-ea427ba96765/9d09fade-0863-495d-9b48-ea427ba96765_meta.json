@@ -1,0 +1,23 @@
+{
+  "id": "9d09fade-0863-495d-9b48-ea427ba96765",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Martinstraße",
+    "plz": "54340",
+    "ort": "Riol"
+  },
+  "lage": {
+    "lon": 6.786101,
+    "lat": 49.790648
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fade-0863-495d-9b48-ea427ba96765",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

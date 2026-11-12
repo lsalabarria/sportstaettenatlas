@@ -1,0 +1,25 @@
+{
+  "id": "a08f7ce0-709c-4859-9fca-126cabb7e363",
+  "name": "Palmsteinhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Palmstein",
+    "hausnummer": "2",
+    "plz": "55595",
+    "ort": "Weinsheim"
+  },
+  "lage": {
+    "lon": 7.769404,
+    "lat": 49.834608
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ce0-709c-4859-9fca-126cabb7e363",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

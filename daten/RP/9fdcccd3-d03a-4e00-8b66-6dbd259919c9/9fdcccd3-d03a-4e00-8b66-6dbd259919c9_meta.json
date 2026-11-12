@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccd3-d03a-4e00-8b66-6dbd259919c9",
+  "name": "Sportanlage Weiler",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Rothstraße",
+    "plz": "56729",
+    "ort": "Weiler"
+  },
+  "lage": {
+    "lon": 7.114304,
+    "lat": 50.307479
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccd3-d03a-4e00-8b66-6dbd259919c9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

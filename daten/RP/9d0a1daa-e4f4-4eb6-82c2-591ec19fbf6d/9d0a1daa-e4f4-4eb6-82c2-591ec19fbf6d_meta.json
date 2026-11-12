@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1daa-e4f4-4eb6-82c2-591ec19fbf6d",
+  "name": "Skateanlage Wissen",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Stadionstraße",
+    "hausnummer": "37",
+    "plz": "57537",
+    "ort": "Wissen, Stadt"
+  },
+  "lage": {
+    "lon": 7.723812,
+    "lat": 50.782582
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1daa-e4f4-4eb6-82c2-591ec19fbf6d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

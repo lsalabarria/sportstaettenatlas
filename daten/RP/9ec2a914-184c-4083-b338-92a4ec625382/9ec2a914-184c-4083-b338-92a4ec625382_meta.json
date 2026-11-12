@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a914-184c-4083-b338-92a4ec625382",
+  "name": "Sportanlage Mobotix AG",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Kaiserstraße",
+    "plz": "67722",
+    "ort": "Winnweiler"
+  },
+  "lage": {
+    "lon": 7.894898,
+    "lat": 49.57314
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a914-184c-4083-b338-92a4ec625382",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a917-74de-4765-baf1-8b9a410a3f23",
+  "name": "Turnhalle Bischheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "65",
+    "plz": "67294",
+    "ort": "Bischheim"
+  },
+  "lage": {
+    "lon": 8.0369,
+    "lat": 49.671027
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a917-74de-4765-baf1-8b9a410a3f23",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

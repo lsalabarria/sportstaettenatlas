@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4ea-e9a3-4530-b0f1-bc96b67b9aeb",
+  "name": "Sportplatz Malbergweich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Sportplatzstraße",
+    "plz": "54655",
+    "ort": "Malbergweich"
+  },
+  "lage": {
+    "lon": 6.553835,
+    "lat": 50.058808
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ea-e9a3-4530-b0f1-bc96b67b9aeb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "9d09fae7-57a4-4f21-92ce-73e6cc9226e2",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54441",
+    "ort": "Wellen"
+  },
+  "lage": {
+    "lon": 6.436999,
+    "lat": 49.668957
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae7-57a4-4f21-92ce-73e6cc9226e2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

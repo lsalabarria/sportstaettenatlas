@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa4-2224-4cd6-8f57-32851541c676",
+  "name": "Sportanlage des Schulzentrums Karthause",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Zwickauer Straße",
+    "hausnummer": "22",
+    "plz": "56075",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.569849,
+    "lat": 50.339126
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa4-2224-4cd6-8f57-32851541c676",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

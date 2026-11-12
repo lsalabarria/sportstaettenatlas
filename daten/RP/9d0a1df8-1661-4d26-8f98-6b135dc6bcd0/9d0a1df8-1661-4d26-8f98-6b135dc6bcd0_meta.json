@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1df8-1661-4d26-8f98-6b135dc6bcd0",
+  "name": "Naturbad Linderhohl",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Linderhohl",
+    "plz": "56203",
+    "ort": "Höhr-Grenzhausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.678931,
+    "lat": 50.445912
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df8-1661-4d26-8f98-6b135dc6bcd0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

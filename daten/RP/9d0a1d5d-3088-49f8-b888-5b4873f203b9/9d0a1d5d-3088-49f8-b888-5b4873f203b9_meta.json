@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d5d-3088-49f8-b888-5b4873f203b9",
+  "name": "Sporthalle Mastershausen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "hausnummer": "8A",
+    "plz": "56869",
+    "ort": "Mastershausen"
+  },
+  "lage": {
+    "lon": 7.354481,
+    "lat": 50.066083
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5d-3088-49f8-b888-5b4873f203b9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

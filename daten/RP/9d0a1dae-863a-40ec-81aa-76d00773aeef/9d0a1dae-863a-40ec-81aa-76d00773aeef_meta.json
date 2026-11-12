@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dae-863a-40ec-81aa-76d00773aeef",
+  "name": "Sporthalle Ludwig-Erhard-Schule Neuwied",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Beverwijker Ring",
+    "hausnummer": "3",
+    "plz": "56564",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.470954,
+    "lat": 50.448069
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dae-863a-40ec-81aa-76d00773aeef",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

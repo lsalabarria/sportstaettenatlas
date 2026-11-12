@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d61-ee90-44c4-9b60-de51bf62e0b0",
+  "name": "Sporthalle Neuerkirch",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Külzbachstraße",
+    "hausnummer": "10",
+    "plz": "55471",
+    "ort": "Neuerkirch"
+  },
+  "lage": {
+    "lon": 7.493596,
+    "lat": 50.011351
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d61-ee90-44c4-9b60-de51bf62e0b0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

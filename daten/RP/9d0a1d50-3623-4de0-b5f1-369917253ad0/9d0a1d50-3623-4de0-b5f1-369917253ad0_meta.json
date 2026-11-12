@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d50-3623-4de0-b5f1-369917253ad0",
+  "name": "Weitsprunganlage Auf dem Strauben",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Nückental",
+    "plz": "56659",
+    "ort": "Burgbrohl"
+  },
+  "lage": {
+    "lon": 7.263321,
+    "lat": 50.459842
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-3623-4de0-b5f1-369917253ad0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

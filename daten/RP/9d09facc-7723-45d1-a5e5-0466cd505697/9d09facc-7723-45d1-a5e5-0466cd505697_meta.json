@@ -1,0 +1,23 @@
+{
+  "id": "9d09facc-7723-45d1-a5e5-0466cd505697",
+  "name": "Tennisanlage Weyerbusch",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "August-Schneider-Straße",
+    "plz": "57635",
+    "ort": "Weyerbusch"
+  },
+  "lage": {
+    "lon": 7.547464,
+    "lat": 50.71171
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facc-7723-45d1-a5e5-0466cd505697",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

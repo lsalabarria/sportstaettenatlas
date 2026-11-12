@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4f-0351-4ad6-b858-4880fc5ba564",
+  "name": "Sportplatz Kalenborn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Viescheler Straße",
+    "plz": "53505",
+    "ort": "Kalenborn"
+  },
+  "lage": {
+    "lon": 6.98769,
+    "lat": 50.54431
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4f-0351-4ad6-b858-4880fc5ba564",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

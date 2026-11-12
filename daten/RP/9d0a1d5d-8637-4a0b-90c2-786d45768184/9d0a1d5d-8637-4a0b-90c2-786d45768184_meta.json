@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d5d-8637-4a0b-90c2-786d45768184",
+  "name": "Sportplatz SV Würrich-Belg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L193",
+    "plz": "56858",
+    "ort": "Belg"
+  },
+  "lage": {
+    "lon": 7.311096,
+    "lat": 49.977995
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5d-8637-4a0b-90c2-786d45768184",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

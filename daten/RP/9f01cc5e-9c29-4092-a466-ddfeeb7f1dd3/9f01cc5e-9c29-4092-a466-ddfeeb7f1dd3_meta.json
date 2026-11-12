@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc5e-9c29-4092-a466-ddfeeb7f1dd3",
+  "name": "Schwimmbad Hundsangen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "K",
+    "hausnummer": "154",
+    "plz": "56414",
+    "ort": "Hundsangen"
+  },
+  "lage": {
+    "lon": 7.9935,
+    "lat": 50.45388
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc5e-9c29-4092-a466-ddfeeb7f1dd3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

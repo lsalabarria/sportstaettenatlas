@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad7-91e4-4b9a-b171-d60cd6269206",
+  "name": "Marienhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Marienhof",
+    "hausnummer": "1",
+    "plz": "56269",
+    "ort": "Marienhausen"
+  },
+  "lage": {
+    "lon": 7.693742,
+    "lat": 50.574429
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad7-91e4-4b9a-b171-d60cd6269206",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

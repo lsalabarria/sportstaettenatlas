@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a929-e1aa-4b3d-b529-2a6365380a36",
+  "name": "Bolzplatz am Ika-See",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Blumengarten",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 8.058466,
+    "lat": 49.984722
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a929-e1aa-4b3d-b529-2a6365380a36",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

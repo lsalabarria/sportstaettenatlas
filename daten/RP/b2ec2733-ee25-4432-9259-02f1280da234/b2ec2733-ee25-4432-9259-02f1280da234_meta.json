@@ -1,0 +1,23 @@
+{
+  "id": "b2ec2733-ee25-4432-9259-02f1280da234",
+  "name": "Basketballplatz an der Benderstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Benderstraße",
+    "plz": "67227",
+    "ort": "Frankenthal (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.360205,
+    "lat": 49.530152
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "b2ec2733-ee25-4432-9259-02f1280da234",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

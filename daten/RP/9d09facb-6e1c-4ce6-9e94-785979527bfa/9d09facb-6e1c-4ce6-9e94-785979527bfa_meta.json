@@ -1,0 +1,23 @@
+{
+  "id": "9d09facb-6e1c-4ce6-9e94-785979527bfa",
+  "name": "Bolzplatz Neitersen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ringstraße",
+    "plz": "57638",
+    "ort": "Neitersen"
+  },
+  "lage": {
+    "lon": 7.595885,
+    "lat": 50.673542
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facb-6e1c-4ce6-9e94-785979527bfa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

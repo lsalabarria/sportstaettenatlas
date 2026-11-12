@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd06-3e3c-41c7-8ef2-f29fb0af01fb",
+  "name": "TC Miehlen 1980 e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Industriestr.",
+    "hausnummer": "2a",
+    "plz": "56357",
+    "ort": "Miehlen"
+  },
+  "lage": {
+    "lon": 7.835909,
+    "lat": 50.21748
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd06-3e3c-41c7-8ef2-f29fb0af01fb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

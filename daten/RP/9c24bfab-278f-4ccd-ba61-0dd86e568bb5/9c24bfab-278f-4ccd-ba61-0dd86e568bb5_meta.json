@@ -1,0 +1,23 @@
+{
+  "id": "9c24bfab-278f-4ccd-ba61-0dd86e568bb5",
+  "name": "Schießsportanlage",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Engerser Weg",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.568973,
+    "lat": 50.403002
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfab-278f-4ccd-ba61-0dd86e568bb5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

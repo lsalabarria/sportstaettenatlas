@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd47-9b4d-4618-aa20-d3b9289b15f9",
+  "name": "Sportanlage ASV Lug - Dimbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L495",
+    "plz": "76848",
+    "ort": "Lug"
+  },
+  "lage": {
+    "lon": 7.880887,
+    "lat": 49.181613
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd47-9b4d-4618-aa20-d3b9289b15f9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

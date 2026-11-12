@@ -1,0 +1,24 @@
+{
+  "id": "9fdcce37-30af-410b-ae78-37259aa05e40",
+  "name": "Tennis Club Rodalben e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Geißbühl",
+    "plz": "66976",
+    "ort": "Rodalben, Stadt"
+  },
+  "lage": {
+    "lon": 7.641629,
+    "lat": 49.235521
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce37-30af-410b-ae78-37259aa05e40",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

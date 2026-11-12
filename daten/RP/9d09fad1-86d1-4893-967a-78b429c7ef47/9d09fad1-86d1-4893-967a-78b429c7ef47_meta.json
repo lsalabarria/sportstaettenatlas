@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad1-86d1-4893-967a-78b429c7ef47",
+  "name": "Großspielfeld Niederfischbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Raffenberg",
+    "plz": "57572",
+    "ort": "Niederfischbach"
+  },
+  "lage": {
+    "lon": 7.886534,
+    "lat": 50.850052
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad1-86d1-4893-967a-78b429c7ef47",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

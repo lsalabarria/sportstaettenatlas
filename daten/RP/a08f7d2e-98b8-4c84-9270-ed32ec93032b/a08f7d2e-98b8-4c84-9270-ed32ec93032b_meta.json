@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d2e-98b8-4c84-9270-ed32ec93032b",
+  "name": "Salinenbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Saline Theodorshalle",
+    "hausnummer": "17",
+    "plz": "55543",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.85174,
+    "lat": 49.825501
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d2e-98b8-4c84-9270-ed32ec93032b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

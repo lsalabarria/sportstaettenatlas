@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4e7-7f48-44c6-9b00-eb9410d492ab",
+  "name": "Spielplatz im Leuchensang",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Leuchensang",
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.537852,
+    "lat": 49.979464
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e7-7f48-44c6-9b00-eb9410d492ab",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

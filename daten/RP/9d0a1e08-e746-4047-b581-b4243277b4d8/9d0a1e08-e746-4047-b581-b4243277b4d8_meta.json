@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e08-e746-4047-b581-b4243277b4d8",
+  "name": "HILL Fitness Zell",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Fliehburgstraße",
+    "hausnummer": "11",
+    "plz": "56856",
+    "ort": "Zell (Mosel), Stadt"
+  },
+  "lage": {
+    "lon": 7.161524,
+    "lat": 50.027171
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e08-e746-4047-b581-b4243277b4d8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

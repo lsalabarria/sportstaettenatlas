@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dab-38a7-4c4b-ab0b-0ce1faa2764a",
+  "name": "Sportfreunde Schönstein 1919 e. V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schlossstraße",
+    "hausnummer": "62",
+    "plz": "57537",
+    "ort": "Wissen, Stadt"
+  },
+  "lage": {
+    "lon": 7.753011,
+    "lat": 50.773842
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dab-38a7-4c4b-ab0b-0ce1faa2764a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

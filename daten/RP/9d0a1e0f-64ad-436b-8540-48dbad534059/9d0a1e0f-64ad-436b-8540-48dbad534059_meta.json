@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e0f-64ad-436b-8540-48dbad534059",
+  "name": "Bouleclub Säubrenner Wittlich e.V.",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Himmeroder Straße",
+    "hausnummer": "88",
+    "plz": "54516",
+    "ort": "Wittlich, Stadt"
+  },
+  "lage": {
+    "lon": 6.878828,
+    "lat": 49.98991
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0f-64ad-436b-8540-48dbad534059",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

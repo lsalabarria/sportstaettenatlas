@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e08-7769-41cc-9b33-30bc4f9b00ef",
+  "name": "Bouleplatz St. Aldegund",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Moselstausee",
+    "plz": "56858",
+    "ort": "Sankt Aldegund"
+  },
+  "lage": {
+    "lon": 7.131035,
+    "lat": 50.081336
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e08-7769-41cc-9b33-30bc4f9b00ef",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

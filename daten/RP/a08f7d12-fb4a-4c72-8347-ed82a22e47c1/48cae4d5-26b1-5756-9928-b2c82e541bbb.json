@@ -1,0 +1,10 @@
+{
+  "id": "48cae4d5-26b1-5756-9928-b2c82e541bbb",
+  "sportstaette_id": "a08f7d12-fb4a-4c72-8347-ed82a22e47c1",
+  "typ": "Kurs-/Übungsraum",
+  "quellen": {
+    "atlas_rlp": {
+      "bezeichnung": "Kurs- / Übungsraum"
+    }
+  }
+}

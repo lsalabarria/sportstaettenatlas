@@ -1,0 +1,24 @@
+{
+  "id": "9d09fad0-0df8-408b-add0-e882e7140084",
+  "name": "Kleinspielfeld Fürthen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "2",
+    "plz": "57539",
+    "ort": "Fürthen"
+  },
+  "lage": {
+    "lon": 7.679698,
+    "lat": 50.77791
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad0-0df8-408b-add0-e882e7140084",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

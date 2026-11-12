@@ -1,0 +1,23 @@
+{
+  "id": "a00226f2-ce66-491f-9fc1-f3c4e7acb254",
+  "name": "Bolzplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Feldweg bei Schulstraße",
+    "plz": "54311",
+    "ort": "Trierweiler"
+  },
+  "lage": {
+    "lon": 6.559519,
+    "lat": 49.759856
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a00226f2-ce66-491f-9fc1-f3c4e7acb254",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

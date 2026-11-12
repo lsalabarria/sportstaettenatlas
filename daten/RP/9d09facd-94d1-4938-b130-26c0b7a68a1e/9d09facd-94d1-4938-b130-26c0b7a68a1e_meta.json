@@ -1,0 +1,23 @@
+{
+  "id": "9d09facd-94d1-4938-b130-26c0b7a68a1e",
+  "name": "Basketballplatz Steinebacher Straße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Steinebacher Straße",
+    "plz": "57580",
+    "ort": "Gebhardshain"
+  },
+  "lage": {
+    "lon": 7.82112,
+    "lat": 50.744405
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facd-94d1-4938-b130-26c0b7a68a1e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

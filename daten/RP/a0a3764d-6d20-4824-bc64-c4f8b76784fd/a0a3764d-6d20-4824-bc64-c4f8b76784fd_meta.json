@@ -1,0 +1,22 @@
+{
+  "id": "a0a3764d-6d20-4824-bc64-c4f8b76784fd",
+  "name": "Skipiste Salzburgerkopf",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "plz": "56479",
+    "ort": "Stein-Neukirch"
+  },
+  "lage": {
+    "lon": 8.058848,
+    "lat": 50.672629
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0a3764d-6d20-4824-bc64-c4f8b76784fd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

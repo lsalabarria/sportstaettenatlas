@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad2-5089-4d6c-820e-c0174b938f89",
+  "name": "Bouleplatz Melsbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Mittelstraße",
+    "plz": "56581",
+    "ort": "Melsbach"
+  },
+  "lage": {
+    "lon": 7.4826,
+    "lat": 50.491734
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad2-5089-4d6c-820e-c0174b938f89",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

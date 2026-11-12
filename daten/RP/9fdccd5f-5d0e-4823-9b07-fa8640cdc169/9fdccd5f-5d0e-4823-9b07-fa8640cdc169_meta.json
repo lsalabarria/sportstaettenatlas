@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd5f-5d0e-4823-9b07-fa8640cdc169",
+  "name": "Schillerhalle Donsieders",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schillerstraße",
+    "plz": "66978",
+    "ort": "Donsieders"
+  },
+  "lage": {
+    "lon": 7.636202,
+    "lat": 49.265494
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd5f-5d0e-4823-9b07-fa8640cdc169",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

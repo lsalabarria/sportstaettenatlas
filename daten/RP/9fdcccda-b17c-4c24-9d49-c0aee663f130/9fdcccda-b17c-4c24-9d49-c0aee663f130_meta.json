@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccda-b17c-4c24-9d49-c0aee663f130",
+  "name": "Sportpark Baar",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "K11",
+    "plz": "56729",
+    "ort": "Baar"
+  },
+  "lage": {
+    "lon": 7.048241,
+    "lat": 50.346512
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccda-b17c-4c24-9d49-c0aee663f130",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

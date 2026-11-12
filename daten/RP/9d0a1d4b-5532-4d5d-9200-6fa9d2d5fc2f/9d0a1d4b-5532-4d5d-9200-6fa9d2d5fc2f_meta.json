@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d4b-5532-4d5d-9200-6fa9d2d5fc2f",
+  "name": "Sportplatz Leimersdorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Franz-Ellerbrock-Straße",
+    "hausnummer": "41",
+    "plz": "53501",
+    "ort": "Grafschaft"
+  },
+  "lage": {
+    "lon": 7.143476,
+    "lat": 50.582048
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4b-5532-4d5d-9200-6fa9d2d5fc2f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

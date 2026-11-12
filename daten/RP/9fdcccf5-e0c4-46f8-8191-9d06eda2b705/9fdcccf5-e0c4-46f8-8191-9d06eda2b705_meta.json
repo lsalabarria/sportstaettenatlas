@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccf5-e0c4-46f8-8191-9d06eda2b705",
+  "name": "Pferdepension Kuh",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Steinkauter Hof",
+    "plz": "65558",
+    "ort": "Flacht"
+  },
+  "lage": {
+    "lon": 8.044043,
+    "lat": 50.349601
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccf5-e0c4-46f8-8191-9d06eda2b705",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "a22beb41-8f63-4769-861c-6770826cb3f9",
+  "name": "Bootshaus Reffenthal",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Reffenthaler Weg",
+    "hausnummer": "2",
+    "plz": "67166",
+    "ort": "Otterstadt"
+  },
+  "lage": {
+    "lon": 8.470349,
+    "lat": 49.363504
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a22beb41-8f63-4769-861c-6770826cb3f9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

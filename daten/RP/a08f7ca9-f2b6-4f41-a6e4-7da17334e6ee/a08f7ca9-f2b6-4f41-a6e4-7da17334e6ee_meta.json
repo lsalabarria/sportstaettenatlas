@@ -1,0 +1,24 @@
+{
+  "id": "a08f7ca9-f2b6-4f41-a6e4-7da17334e6ee",
+  "name": "Sportplatz Bundenbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L182",
+    "plz": "55626",
+    "ort": "Bundenbach"
+  },
+  "lage": {
+    "lon": 7.375386,
+    "lat": 49.853965
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ca9-f2b6-4f41-a6e4-7da17334e6ee",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

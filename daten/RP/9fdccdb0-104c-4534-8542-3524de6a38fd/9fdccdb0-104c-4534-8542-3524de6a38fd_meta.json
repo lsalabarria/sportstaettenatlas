@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdb0-104c-4534-8542-3524de6a38fd",
+  "name": "Airfield Art Kart - Mendig City",
+  "kategorie": "Motorsportstätte",
+  "adresse": {
+    "strasse": "Am alten Fort",
+    "hausnummer": "110",
+    "plz": "56743",
+    "ort": "Mendig, Stadt"
+  },
+  "lage": {
+    "lon": 7.307113,
+    "lat": 50.35907
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdb0-104c-4534-8542-3524de6a38fd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

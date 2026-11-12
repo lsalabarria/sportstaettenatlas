@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d50-e176-419c-b9d3-798c92934f12",
+  "name": "Ohlbrückhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "56651",
+    "ort": "Niederdürenbach"
+  },
+  "lage": {
+    "lon": 7.182015,
+    "lat": 50.455659
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d50-e176-419c-b9d3-798c92934f12",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

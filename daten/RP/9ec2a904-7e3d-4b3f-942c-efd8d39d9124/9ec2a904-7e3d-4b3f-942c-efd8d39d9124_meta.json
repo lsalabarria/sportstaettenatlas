@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a904-7e3d-4b3f-942c-efd8d39d9124",
+  "name": "Mehrzweckhalle Niederkirchen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "19",
+    "plz": "67150",
+    "ort": "Niederkirchen bei Deidesheim"
+  },
+  "lage": {
+    "lon": 8.21463,
+    "lat": 49.409211
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a904-7e3d-4b3f-942c-efd8d39d9124",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

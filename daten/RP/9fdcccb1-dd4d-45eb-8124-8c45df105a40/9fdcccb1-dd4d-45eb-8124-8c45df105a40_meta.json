@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccb1-dd4d-45eb-8124-8c45df105a40",
+  "name": "Tennisplätze Pfaffenheck",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Bornwäldchen",
+    "plz": "56283",
+    "ort": "Nörtershausen"
+  },
+  "lage": {
+    "lon": 7.504987,
+    "lat": 50.235378
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccb1-dd4d-45eb-8124-8c45df105a40",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

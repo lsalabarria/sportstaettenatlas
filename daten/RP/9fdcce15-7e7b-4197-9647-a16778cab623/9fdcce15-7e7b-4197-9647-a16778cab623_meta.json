@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce15-7e7b-4197-9647-a16778cab623",
+  "name": "Sportplatz Immanuel-Kant-Gymnasium",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wörthstraße",
+    "hausnummer": "30",
+    "plz": "66953",
+    "ort": "Pirmasens, Stadt"
+  },
+  "lage": {
+    "lon": 7.610887,
+    "lat": 49.201638
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce15-7e7b-4197-9647-a16778cab623",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

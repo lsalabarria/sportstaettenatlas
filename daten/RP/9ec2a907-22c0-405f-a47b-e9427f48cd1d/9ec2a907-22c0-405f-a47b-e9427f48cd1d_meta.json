@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a907-22c0-405f-a47b-e9427f48cd1d",
+  "name": "Sportplatz im Buchental",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Neufelder Str.",
+    "plz": "67468",
+    "ort": "Frankeneck"
+  },
+  "lage": {
+    "lon": 8.041997,
+    "lat": 49.374273
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a907-22c0-405f-a47b-e9427f48cd1d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

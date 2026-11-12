@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a937-bbd4-4d5f-877c-529224b99b17",
+  "name": "Sporthalle Friedrich-Ebert-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Friedrich-Ebert-Straße",
+    "hausnummer": "57a",
+    "plz": "55130",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.29469,
+    "lat": 49.978922
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a937-bbd4-4d5f-877c-529224b99b17",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

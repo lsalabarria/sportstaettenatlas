@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a938-61a8-4789-abc1-b143294c9c38",
+  "name": "Bolzplatz Rodelberg",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Rodelberg",
+    "hausnummer": "2",
+    "plz": "55131",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.264178,
+    "lat": 49.982529
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a938-61a8-4789-abc1-b143294c9c38",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

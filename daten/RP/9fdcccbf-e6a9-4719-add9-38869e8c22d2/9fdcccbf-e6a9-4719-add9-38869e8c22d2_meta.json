@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccbf-e6a9-4719-add9-38869e8c22d2",
+  "name": "Weiherstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Peter-Friedhofen-Straße",
+    "hausnummer": "12",
+    "plz": "56191",
+    "ort": "Weitersburg"
+  },
+  "lage": {
+    "lon": 7.603528,
+    "lat": 50.410747
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccbf-e6a9-4719-add9-38869e8c22d2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

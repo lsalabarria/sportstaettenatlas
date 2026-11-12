@@ -1,0 +1,23 @@
+{
+  "id": "9d09facf-ccd7-4c53-b1f7-1264d1e3ccba",
+  "name": "Bolzplatz Bruchertseifen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hümerichsweg",
+    "plz": "57539",
+    "ort": "Bruchertseifen"
+  },
+  "lage": {
+    "lon": 7.708096,
+    "lat": 50.742353
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facf-ccd7-4c53-b1f7-1264d1e3ccba",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

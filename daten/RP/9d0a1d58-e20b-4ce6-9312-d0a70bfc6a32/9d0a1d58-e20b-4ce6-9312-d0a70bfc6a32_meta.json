@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d58-e20b-4ce6-9312-d0a70bfc6a32",
+  "name": "Sportplatz Schauren",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Brühlgasse",
+    "plz": "56865",
+    "ort": "Schauren"
+  },
+  "lage": {
+    "lon": 7.269947,
+    "lat": 50.024728
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d58-e20b-4ce6-9312-d0a70bfc6a32",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

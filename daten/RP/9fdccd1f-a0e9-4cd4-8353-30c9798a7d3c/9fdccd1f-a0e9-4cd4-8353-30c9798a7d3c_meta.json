@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd1f-a0e9-4cd4-8353-30c9798a7d3c",
+  "name": "1. Tenniclub Weilerbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "In der Nasserde",
+    "hausnummer": "30",
+    "plz": "67685",
+    "ort": "Weilerbach"
+  },
+  "lage": {
+    "lon": 7.64675,
+    "lat": 49.480554
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd1f-a0e9-4cd4-8353-30c9798a7d3c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd23-ab10-452d-9f17-11022a4eb536",
+  "name": "Minigolf",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Am Binnendamm",
+    "hausnummer": "8",
+    "plz": "67240",
+    "ort": "Bobenheim-Roxheim"
+  },
+  "lage": {
+    "lon": 8.371179,
+    "lat": 49.581063
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd23-ab10-452d-9f17-11022a4eb536",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

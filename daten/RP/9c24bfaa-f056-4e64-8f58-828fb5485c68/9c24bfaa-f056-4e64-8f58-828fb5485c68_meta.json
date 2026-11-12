@@ -1,0 +1,23 @@
+{
+  "id": "9c24bfaa-f056-4e64-8f58-828fb5485c68",
+  "name": "Kleinspielfeld, Kurfürst-Schönborn-Straße (an der Turnhalle)",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kurfürst-Schönborn-Straße",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.581899,
+    "lat": 50.396469
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfaa-f056-4e64-8f58-828fb5485c68",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

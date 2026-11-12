@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d51-8941-4221-bd7e-75e322265efa",
+  "name": "Spielplatz Unter dem Suhr",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Unter dem Suhr",
+    "plz": "56651",
+    "ort": "Oberzissen"
+  },
+  "lage": {
+    "lon": 7.200049,
+    "lat": 50.456389
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d51-8941-4221-bd7e-75e322265efa",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

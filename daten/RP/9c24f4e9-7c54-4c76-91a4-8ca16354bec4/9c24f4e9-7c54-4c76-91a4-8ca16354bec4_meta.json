@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4e9-7c54-4c76-91a4-8ca16354bec4",
+  "name": "Falcon Field",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Air Base",
+    "plz": "54529",
+    "ort": "Spangdahlem"
+  },
+  "lage": {
+    "lon": 6.706396,
+    "lat": 49.994777
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e9-7c54-4c76-91a4-8ca16354bec4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a919-5bd7-401f-9e99-703538767842",
+  "name": "Großsporthalle Edenkoben",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Weinstraße",
+    "hausnummer": "133",
+    "plz": "67487",
+    "ort": "Maikammer"
+  },
+  "lage": {
+    "lon": 8.130752,
+    "lat": 49.287027
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a919-5bd7-401f-9e99-703538767842",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

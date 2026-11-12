@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1da7-3580-4e1a-a80f-963fe0c7a71c",
+  "name": "Westernreitanlage Lope-In",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Auf der Eich",
+    "hausnummer": "6",
+    "plz": "56767",
+    "ort": "Höchstberg"
+  },
+  "lage": {
+    "lon": 7.012572,
+    "lat": 50.234177
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da7-3580-4e1a-a80f-963fe0c7a71c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

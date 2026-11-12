@@ -1,0 +1,26 @@
+{
+  "id": "a08f7c8a-aa72-4961-8110-49bbf912247f",
+  "name": "Sportplatz TSV Flörsheim-Dalsheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rödlerstraße",
+    "hausnummer": "1",
+    "plz": "67592",
+    "ort": "Flörsheim-Dalsheim"
+  },
+  "lage": {
+    "lon": 8.208204,
+    "lat": 49.657319
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "website": "www.floersheimdalsheim.de",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c8a-aa72-4961-8110-49bbf912247f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

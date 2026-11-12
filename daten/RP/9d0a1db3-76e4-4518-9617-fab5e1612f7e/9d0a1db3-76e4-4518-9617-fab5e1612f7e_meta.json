@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db3-76e4-4518-9617-fab5e1612f7e",
+  "name": "Stefan-Andres-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Dietrich-Bonhoeffer-Straße",
+    "hausnummer": "3",
+    "plz": "54338",
+    "ort": "Schweich, Stadt"
+  },
+  "lage": {
+    "lon": 6.749179,
+    "lat": 49.817679
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db3-76e4-4518-9617-fab5e1612f7e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

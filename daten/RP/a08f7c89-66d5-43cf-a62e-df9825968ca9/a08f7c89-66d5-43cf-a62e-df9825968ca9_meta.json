@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c89-66d5-43cf-a62e-df9825968ca9",
+  "name": "Sporthalle Grundschule Flomborn",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "14",
+    "plz": "55234",
+    "ort": "Flomborn"
+  },
+  "lage": {
+    "lon": 8.15643,
+    "lat": 49.690357
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c89-66d5-43cf-a62e-df9825968ca9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

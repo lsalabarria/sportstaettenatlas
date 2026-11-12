@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d33-e5ff-4f73-939e-520eacb144c5",
+  "name": "Schwimmbad Bosenheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Sportfeld",
+    "hausnummer": "5",
+    "plz": "55545",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.911875,
+    "lat": 49.843298
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d33-e5ff-4f73-939e-520eacb144c5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

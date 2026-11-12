@@ -1,0 +1,25 @@
+{
+  "id": "9fdccdea-3105-47f9-9bc0-c668ab7db6a1",
+  "name": "Bolzplatz St. Kita Rappelkiste",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Julius-Küchler-Straße",
+    "hausnummer": "40a",
+    "plz": "67659",
+    "ort": "Kaiserslautern, Stadt"
+  },
+  "lage": {
+    "lon": 7.744985,
+    "lat": 49.447858
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdea-3105-47f9-9bc0-c668ab7db6a1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "d5d929d1-83a5-481f-aa33-515541590902",
+  "name": "Tennishalle Park-Tennisclub Grünstadt e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Seckenhäuserstr.",
+    "hausnummer": "5",
+    "plz": "67316",
+    "ort": "Carlsberg"
+  },
+  "lage": {
+    "lon": 8.037615,
+    "lat": 49.505728
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "d5d929d1-83a5-481f-aa33-515541590902",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

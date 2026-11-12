@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd8a-8af1-4ade-9ada-6c35fcd79209",
+  "name": "Sportplatz Minderslachen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Steinweilerstraße",
+    "plz": "76870",
+    "ort": "Kandel, Stadt"
+  },
+  "lage": {
+    "lon": 8.186704,
+    "lat": 49.098346
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd8a-8af1-4ade-9ada-6c35fcd79209",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

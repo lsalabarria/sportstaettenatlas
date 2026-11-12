@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc54-1bda-48fd-b591-830a48496085",
+  "name": "Freibad Rodenbach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Sportstraße",
+    "hausnummer": "6",
+    "plz": "67688",
+    "ort": "Rodenbach"
+  },
+  "lage": {
+    "lon": 7.6425,
+    "lat": 49.47008
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc54-1bda-48fd-b591-830a48496085",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

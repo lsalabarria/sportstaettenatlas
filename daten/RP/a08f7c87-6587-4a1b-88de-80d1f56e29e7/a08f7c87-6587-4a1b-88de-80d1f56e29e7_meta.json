@@ -1,0 +1,24 @@
+{
+  "id": "a08f7c87-6587-4a1b-88de-80d1f56e29e7",
+  "name": "Sportplatz Rote Erde Eich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hammer Str.",
+    "plz": "67575",
+    "ort": "Eich"
+  },
+  "lage": {
+    "lon": 8.41226,
+    "lat": 49.74769
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c87-6587-4a1b-88de-80d1f56e29e7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

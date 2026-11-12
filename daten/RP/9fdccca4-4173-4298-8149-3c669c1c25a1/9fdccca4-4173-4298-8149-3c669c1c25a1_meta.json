@@ -1,0 +1,25 @@
+{
+  "id": "9fdccca4-4173-4298-8149-3c669c1c25a1",
+  "name": "Tennishalle Hatzenbühl",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Gereut",
+    "hausnummer": "31",
+    "plz": "76770",
+    "ort": "Hatzenbühl"
+  },
+  "lage": {
+    "lon": 8.230264,
+    "lat": 49.110977
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccca4-4173-4298-8149-3c669c1c25a1",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

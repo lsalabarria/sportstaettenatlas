@@ -1,0 +1,23 @@
+{
+  "id": "9d09fadd-b105-4e56-bf43-110fc2ecc202",
+  "name": "Turnhalle Föhren",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Brühl",
+    "plz": "54343",
+    "ort": "Föhren"
+  },
+  "lage": {
+    "lon": 6.762653,
+    "lat": 49.856503
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fadd-b105-4e56-bf43-110fc2ecc202",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

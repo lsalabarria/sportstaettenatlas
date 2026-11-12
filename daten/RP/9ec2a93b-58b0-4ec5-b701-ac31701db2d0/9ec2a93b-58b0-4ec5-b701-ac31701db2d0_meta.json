@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a93b-58b0-4ec5-b701-ac31701db2d0",
+  "name": "Sportpark Mainz-Mombach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Obere Kreuzstraße",
+    "hausnummer": "30",
+    "plz": "55120",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.216091,
+    "lat": 50.012427
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a93b-58b0-4ec5-b701-ac31701db2d0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

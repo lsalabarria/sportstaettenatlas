@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd05-1409-43ee-bd46-238da6768000",
+  "name": "TC 1983 Dachsenhausen e. V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Winterwerber Straße",
+    "hausnummer": "20",
+    "plz": "56340",
+    "ort": "Dachsenhausen"
+  },
+  "lage": {
+    "lon": 7.727682,
+    "lat": 50.251701
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd05-1409-43ee-bd46-238da6768000",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

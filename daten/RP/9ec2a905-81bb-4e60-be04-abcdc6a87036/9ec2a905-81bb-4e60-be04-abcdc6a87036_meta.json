@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a905-81bb-4e60-be04-abcdc6a87036",
+  "name": "Sporthalle Siebenpfeiffer-Realschule plus Haßloch",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Böhler Str.",
+    "plz": "67454",
+    "ort": "Haßloch"
+  },
+  "lage": {
+    "lon": 8.264558,
+    "lat": 49.370174
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a905-81bb-4e60-be04-abcdc6a87036",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

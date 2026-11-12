@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e01-c96c-442f-960a-b777fb4f4d23",
+  "name": "St.Seb.Schützenbruderschaft Heppingen",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Im Weitgarten",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.166591,
+    "lat": 50.551726
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e01-c96c-442f-960a-b777fb4f4d23",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

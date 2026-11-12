@@ -1,0 +1,24 @@
+{
+  "id": "9fdccccc-f21e-40e7-bd73-6ddbe86453d5",
+  "name": "Bolzplatz Rüberer Weg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rüberer Weg",
+    "plz": "56330",
+    "ort": "Kobern-Gondorf"
+  },
+  "lage": {
+    "lon": 7.417203,
+    "lat": 50.288748
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccccc-f21e-40e7-bd73-6ddbe86453d5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

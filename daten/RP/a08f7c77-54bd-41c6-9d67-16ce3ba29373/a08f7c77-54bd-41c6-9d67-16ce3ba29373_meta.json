@@ -1,0 +1,25 @@
+{
+  "id": "a08f7c77-54bd-41c6-9d67-16ce3ba29373",
+  "name": "Tennisplätze TC Wöllstein",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Hinkelstein",
+    "hausnummer": "900",
+    "plz": "55597",
+    "ort": "Wöllstein"
+  },
+  "lage": {
+    "lon": 7.974294,
+    "lat": 49.815891
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7c77-54bd-41c6-9d67-16ce3ba29373",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

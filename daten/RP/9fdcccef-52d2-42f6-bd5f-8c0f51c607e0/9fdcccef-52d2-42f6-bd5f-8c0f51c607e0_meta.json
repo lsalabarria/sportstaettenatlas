@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccef-52d2-42f6-bd5f-8c0f51c607e0",
+  "name": "Hof Hohlenfels",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hof Hohlenfels",
+    "plz": "65623",
+    "ort": "Mudershausen"
+  },
+  "lage": {
+    "lon": 8.036345,
+    "lat": 50.297257
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccef-52d2-42f6-bd5f-8c0f51c607e0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd73-6604-4717-a7b3-1eb1e7e8060c",
+  "name": "Sportanlage Paul-Moor-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Münchener Str.",
+    "hausnummer": "11",
+    "plz": "76829",
+    "ort": "Landau in der Pfalz, Stadt"
+  },
+  "lage": {
+    "lon": 8.142586,
+    "lat": 49.205244
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd73-6604-4717-a7b3-1eb1e7e8060c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

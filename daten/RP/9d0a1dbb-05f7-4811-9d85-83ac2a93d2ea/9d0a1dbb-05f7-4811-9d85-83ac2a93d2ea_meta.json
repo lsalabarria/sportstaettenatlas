@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dbb-05f7-4811-9d85-83ac2a93d2ea",
+  "name": "Tennisplatz SV Olewig",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Unter Kleeburg",
+    "plz": "54293",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.67427,
+    "lat": 49.738234
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dbb-05f7-4811-9d85-83ac2a93d2ea",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

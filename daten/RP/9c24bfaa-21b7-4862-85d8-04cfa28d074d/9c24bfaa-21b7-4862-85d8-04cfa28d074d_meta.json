@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfaa-21b7-4862-85d8-04cfa28d074d",
+  "name": "DANY Fitness Koblenz",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Im Metternicher Feld",
+    "hausnummer": "11",
+    "plz": "56072",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.553833,
+    "lat": 50.37365
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfaa-21b7-4862-85d8-04cfa28d074d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

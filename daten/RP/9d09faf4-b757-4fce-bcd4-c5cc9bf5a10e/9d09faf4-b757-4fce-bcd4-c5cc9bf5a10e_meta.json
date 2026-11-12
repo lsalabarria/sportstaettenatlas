@@ -1,0 +1,24 @@
+{
+  "id": "9d09faf4-b757-4fce-bcd4-c5cc9bf5a10e",
+  "name": "Gestüt Weitblick",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Neuer Weg",
+    "hausnummer": "15",
+    "plz": "56459",
+    "ort": "Langenhahn"
+  },
+  "lage": {
+    "lon": 7.917929,
+    "lat": 50.595434
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faf4-b757-4fce-bcd4-c5cc9bf5a10e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e07-673f-4aec-8bc6-e387e51d78d3",
+  "name": "Bolzplatz Senheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zeller Straße",
+    "hausnummer": "14",
+    "plz": "56820",
+    "ort": "Senheim"
+  },
+  "lage": {
+    "lon": 7.209397,
+    "lat": 50.084704
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e07-673f-4aec-8bc6-e387e51d78d3",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

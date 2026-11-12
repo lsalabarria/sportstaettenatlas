@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfaa-caf0-4f6e-95a5-fc9ceb412c88",
+  "name": "Koblenz School of Ballet",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "August-Borsig-Straße",
+    "hausnummer": "1",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.601947,
+    "lat": 50.385501
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfaa-caf0-4f6e-95a5-fc9ceb412c88",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

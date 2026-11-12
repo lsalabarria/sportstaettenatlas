@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da4-d643-4089-a4a9-a65662547e3d",
+  "name": "Reitplatz",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Kahlenberg Hof",
+    "plz": "54570",
+    "ort": "Bettendorf"
+  },
+  "lage": {
+    "lon": 6.74641,
+    "lat": 50.261196
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da4-d643-4089-a4a9-a65662547e3d",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

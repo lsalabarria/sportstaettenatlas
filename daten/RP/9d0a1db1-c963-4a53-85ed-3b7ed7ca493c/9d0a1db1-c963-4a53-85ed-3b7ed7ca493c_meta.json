@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1db1-c963-4a53-85ed-3b7ed7ca493c",
+  "name": "Medicon Sport- und Gesundheitscenter Dierdorf",
+  "kategorie": "Fitnessstudio",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "21",
+    "plz": "56269",
+    "ort": "Dierdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.657799,
+    "lat": 50.547588
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db1-c963-4a53-85ed-3b7ed7ca493c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dfd-1cb2-4b17-8aff-b9d6603d75b2",
+  "name": "Lindner Hotel Wiesensee",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Am Wiesensee",
+    "plz": "56457",
+    "ort": "Westerburg, Stadt"
+  },
+  "lage": {
+    "lon": 8.002403,
+    "lat": 50.58223
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfd-1cb2-4b17-8aff-b9d6603d75b2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

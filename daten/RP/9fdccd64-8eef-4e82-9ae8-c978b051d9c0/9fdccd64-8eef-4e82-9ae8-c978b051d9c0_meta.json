@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd64-8eef-4e82-9ae8-c978b051d9c0",
+  "name": "Sportanlage Geiselberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "74",
+    "plz": "67715",
+    "ort": "Geiselberg"
+  },
+  "lage": {
+    "lon": 7.70935,
+    "lat": 49.323141
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd64-8eef-4e82-9ae8-c978b051d9c0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

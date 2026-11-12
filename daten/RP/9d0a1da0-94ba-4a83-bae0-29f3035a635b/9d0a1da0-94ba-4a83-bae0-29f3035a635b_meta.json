@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da0-94ba-4a83-bae0-29f3035a635b",
+  "name": "Tennisclub Rot-Gold Manderscheid",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Cusanusstraße",
+    "plz": "54531",
+    "ort": "Manderscheid"
+  },
+  "lage": {
+    "lon": 6.813889,
+    "lat": 50.088424
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da0-94ba-4a83-bae0-29f3035a635b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

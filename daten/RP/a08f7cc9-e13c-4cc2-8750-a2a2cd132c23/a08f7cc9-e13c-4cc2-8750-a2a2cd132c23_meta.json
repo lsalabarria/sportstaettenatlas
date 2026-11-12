@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cc9-e13c-4cc2-8750-a2a2cd132c23",
+  "name": "Gestüt St. Georg",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Georgshof",
+    "hausnummer": "1-2",
+    "plz": "55452",
+    "ort": "Hergenfeld"
+  },
+  "lage": {
+    "lon": 7.744863,
+    "lat": 49.913767
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cc9-e13c-4cc2-8750-a2a2cd132c23",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1da1-43ed-417c-a159-ab2d1fcada88",
+  "name": "Sportplatz Zur Hohley",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zur Hohley",
+    "plz": "54538",
+    "ort": "Hontheim"
+  },
+  "lage": {
+    "lon": 6.987371,
+    "lat": 50.074517
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1da1-43ed-417c-a159-ab2d1fcada88",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

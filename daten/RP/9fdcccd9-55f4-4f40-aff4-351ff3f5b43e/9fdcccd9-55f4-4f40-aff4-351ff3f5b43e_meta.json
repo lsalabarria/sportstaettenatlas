@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccd9-55f4-4f40-aff4-351ff3f5b43e",
+  "name": "Sportplatz im Wald",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Oberdorfstraße",
+    "plz": "56745",
+    "ort": "Volkesfeld"
+  },
+  "lage": {
+    "lon": 7.146499,
+    "lat": 50.387849
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccd9-55f4-4f40-aff4-351ff3f5b43e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9fdccdbd-0eac-47ef-a55e-942b455b9077",
+  "name": "Reitplatz Schloss Bürresheim",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Schloss Bürresheim",
+    "plz": "56727",
+    "ort": "Sankt Johann"
+  },
+  "lage": {
+    "lon": 7.177554,
+    "lat": 50.353558
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccdbd-0eac-47ef-a55e-942b455b9077",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd16-fb58-4c2e-aae9-074aebf767b2",
+  "name": "Tennisfreunde Schneckenhausen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Sonnenhof",
+    "plz": "67699",
+    "ort": "Schneckenhausen"
+  },
+  "lage": {
+    "lon": 7.74352,
+    "lat": 49.533728
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd16-fb58-4c2e-aae9-074aebf767b2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

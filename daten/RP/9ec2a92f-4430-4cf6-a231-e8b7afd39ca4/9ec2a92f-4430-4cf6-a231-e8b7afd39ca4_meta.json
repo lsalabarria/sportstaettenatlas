@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a92f-4430-4cf6-a231-e8b7afd39ca4",
+  "name": "Bolzplatz von Steinborn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Uhlandstraße",
+    "plz": "67304",
+    "ort": "Eisenberg (Pfalz), Stadt"
+  },
+  "lage": {
+    "lon": 8.045111,
+    "lat": 49.551919
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92f-4430-4cf6-a231-e8b7afd39ca4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

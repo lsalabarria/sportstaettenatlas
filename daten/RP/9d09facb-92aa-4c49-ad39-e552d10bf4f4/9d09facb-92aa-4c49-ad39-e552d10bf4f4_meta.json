@@ -1,0 +1,23 @@
+{
+  "id": "9d09facb-92aa-4c49-ad39-e552d10bf4f4",
+  "name": "Wiedhalle Neitersen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "In der Au",
+    "plz": "57638",
+    "ort": "Schöneberg"
+  },
+  "lage": {
+    "lon": 7.592883,
+    "lat": 50.664611
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09facb-92aa-4c49-ad39-e552d10bf4f4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

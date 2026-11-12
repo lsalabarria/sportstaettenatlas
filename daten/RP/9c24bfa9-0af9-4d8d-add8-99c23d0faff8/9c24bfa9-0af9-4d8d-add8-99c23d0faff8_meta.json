@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfa9-0af9-4d8d-add8-99c23d0faff8",
+  "name": "Rheinkaserne",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Andernacher Str.",
+    "hausnummer": "100",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.595508,
+    "lat": 50.375956
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa9-0af9-4d8d-add8-99c23d0faff8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

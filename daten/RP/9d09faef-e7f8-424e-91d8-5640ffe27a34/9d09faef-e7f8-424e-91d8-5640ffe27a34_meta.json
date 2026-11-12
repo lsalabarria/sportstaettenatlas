@@ -1,0 +1,23 @@
+{
+  "id": "9d09faef-e7f8-424e-91d8-5640ffe27a34",
+  "name": "Freibad Hundsangen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Freibad",
+    "plz": "56414",
+    "ort": "Hundsangen"
+  },
+  "lage": {
+    "lon": 7.993845,
+    "lat": 50.454134
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faef-e7f8-424e-91d8-5640ffe27a34",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

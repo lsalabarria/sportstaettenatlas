@@ -1,0 +1,28 @@
+{
+  "id": "07499c19-142a-41fa-ae32-89a9eb53e2f5",
+  "name": "Eisbach-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Postweg",
+    "hausnummer": "60",
+    "plz": "67551",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.324879,
+    "lat": 49.607768
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Turnverein 1879 Worms-Horchheim e.V.",
+  "betreiber": "Turnverein 1879 Worms-Horchheim e.V.",
+  "website": "www.tvhorchheim.de",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "07499c19-142a-41fa-ae32-89a9eb53e2f5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

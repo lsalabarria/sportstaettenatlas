@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4a-20ab-42d7-bc8e-e9ce13c1883a",
+  "name": "Sportplatz vor der Struth",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "57644",
+    "ort": "Hattert"
+  },
+  "lage": {
+    "lon": 7.783146,
+    "lat": 50.667347
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4a-20ab-42d7-bc8e-e9ce13c1883a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e0a-d12c-4795-a83e-0fac531c63ed",
+  "name": "Sportplatz Liesenfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L206",
+    "plz": "56281",
+    "ort": "Emmelshausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.527104,
+    "lat": 50.155603
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0a-d12c-4795-a83e-0fac531c63ed",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

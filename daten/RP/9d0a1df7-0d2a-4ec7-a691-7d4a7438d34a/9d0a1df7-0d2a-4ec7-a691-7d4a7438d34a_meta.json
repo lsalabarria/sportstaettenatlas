@@ -1,0 +1,22 @@
+{
+  "id": "9d0a1df7-0d2a-4ec7-a691-7d4a7438d34a",
+  "name": "Tennisplätze Uni Trier",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "plz": "54296",
+    "ort": "Trier, Stadt"
+  },
+  "lage": {
+    "lon": 6.691004,
+    "lat": 49.742716
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1df7-0d2a-4ec7-a691-7d4a7438d34a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

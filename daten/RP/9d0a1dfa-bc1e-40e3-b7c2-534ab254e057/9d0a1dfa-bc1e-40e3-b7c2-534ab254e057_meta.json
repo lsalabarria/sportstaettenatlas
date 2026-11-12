@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1dfa-bc1e-40e3-b7c2-534ab254e057",
+  "name": "Stadion an der Theodor-Heuss-Schule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Theodor-Heuss-Ring",
+    "hausnummer": "1b",
+    "plz": "56422",
+    "ort": "Wirges, Stadt"
+  },
+  "lage": {
+    "lon": 7.800087,
+    "lat": 50.467119
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfa-bc1e-40e3-b7c2-534ab254e057",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

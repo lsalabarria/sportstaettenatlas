@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4a-38ef-46f0-b90b-356a54dd21dc",
+  "name": "Sporthalle der Grundschule Atzelgift-Streithausen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "57629",
+    "ort": "Atzelgift"
+  },
+  "lage": {
+    "lon": 7.818926,
+    "lat": 50.694695
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4a-38ef-46f0-b90b-356a54dd21dc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

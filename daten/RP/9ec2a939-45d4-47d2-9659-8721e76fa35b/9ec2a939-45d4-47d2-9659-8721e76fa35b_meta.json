@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a939-45d4-47d2-9659-8721e76fa35b",
+  "name": "Kleinspielfeld",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Dahlheimer Weg",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.241839,
+    "lat": 49.988602
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a939-45d4-47d2-9659-8721e76fa35b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

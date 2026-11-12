@@ -1,0 +1,24 @@
+{
+  "id": "9d09faed-fa9a-4a68-b17f-2974524e88ca",
+  "name": "Pferdepension Weiherhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Weiherhof",
+    "hausnummer": "2",
+    "plz": "56242",
+    "ort": "Marienrachdorf"
+  },
+  "lage": {
+    "lon": 7.704862,
+    "lat": 50.548993
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faed-fa9a-4a68-b17f-2974524e88ca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

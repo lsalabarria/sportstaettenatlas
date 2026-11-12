@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a903-185a-442a-b3f3-ae9aa20391d7",
+  "name": "Bolzplatz Dackenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirchheimer Str.",
+    "hausnummer": "16",
+    "plz": "67273",
+    "ort": "Dackenheim"
+  },
+  "lage": {
+    "lon": 8.185422,
+    "lat": 49.522526
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a903-185a-442a-b3f3-ae9aa20391d7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

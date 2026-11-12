@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a908-d77b-4e2c-ab90-c92f75f9bdc5",
+  "name": "Kunstrasenplatz Gensingen Am Matzgraben",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Binger Straße",
+    "plz": "55457",
+    "ort": "Gensingen"
+  },
+  "lage": {
+    "lon": 7.92101,
+    "lat": 49.900133
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a908-d77b-4e2c-ab90-c92f75f9bdc5",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

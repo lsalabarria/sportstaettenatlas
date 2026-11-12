@@ -1,0 +1,24 @@
+{
+  "id": "9c24f4ef-26c2-44bd-9d15-8859e2f8cfe9",
+  "name": "Weißenhof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Weißenhof",
+    "hausnummer": "7",
+    "plz": "54616",
+    "ort": "Winterspelt"
+  },
+  "lage": {
+    "lon": 6.235102,
+    "lat": 50.198044
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4ef-26c2-44bd-9d15-8859e2f8cfe9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

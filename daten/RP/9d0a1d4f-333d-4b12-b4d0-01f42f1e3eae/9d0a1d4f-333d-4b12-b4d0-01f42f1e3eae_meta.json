@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4f-333d-4b12-b4d0-01f42f1e3eae",
+  "name": "Sportplatz Mayschoß",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ahr-Rotweinstraße",
+    "plz": "53508",
+    "ort": "Mayschoß"
+  },
+  "lage": {
+    "lon": 7.02097,
+    "lat": 50.521109
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4f-333d-4b12-b4d0-01f42f1e3eae",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

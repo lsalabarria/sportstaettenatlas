@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a914-21f1-4c80-8a73-a51a84a4e6ef",
+  "name": "Sportanlage an der K39 Winnweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Weinbergstraße",
+    "plz": "67722",
+    "ort": "Winnweiler"
+  },
+  "lage": {
+    "lon": 7.888553,
+    "lat": 49.568954
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a914-21f1-4c80-8a73-a51a84a4e6ef",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

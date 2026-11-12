@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae6-828e-4912-b3a0-846da89ca914",
+  "name": "Turnhalle Wiltingen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Rosenbergstraße",
+    "plz": "54459",
+    "ort": "Wiltingen"
+  },
+  "lage": {
+    "lon": 6.59663,
+    "lat": 49.661677
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae6-828e-4912-b3a0-846da89ca914",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

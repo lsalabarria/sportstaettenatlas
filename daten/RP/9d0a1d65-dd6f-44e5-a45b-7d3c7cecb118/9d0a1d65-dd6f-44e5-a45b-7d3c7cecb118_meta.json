@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d65-dd6f-44e5-a45b-7d3c7cecb118",
+  "name": "Turnhalle Friedrich-Spee-Realschule plus",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Balduinstraße",
+    "hausnummer": "15",
+    "plz": "54347",
+    "ort": "Neumagen-Dhron"
+  },
+  "lage": {
+    "lon": 6.898871,
+    "lat": 49.858046
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d65-dd6f-44e5-a45b-7d3c7cecb118",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

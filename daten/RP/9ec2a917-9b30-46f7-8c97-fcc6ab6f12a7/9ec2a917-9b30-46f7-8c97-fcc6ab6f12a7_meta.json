@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a917-9b30-46f7-8c97-fcc6ab6f12a7",
+  "name": "Sportplatz Gauersheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ober dem Rittersheimer Weg",
+    "plz": "67294",
+    "ort": "Gauersheim"
+  },
+  "lage": {
+    "lon": 8.0681,
+    "lat": 49.660479
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a917-9b30-46f7-8c97-fcc6ab6f12a7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

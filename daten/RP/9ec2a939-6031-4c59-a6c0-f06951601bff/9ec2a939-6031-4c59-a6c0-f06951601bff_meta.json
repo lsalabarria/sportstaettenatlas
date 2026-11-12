@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a939-6031-4c59-a6c0-f06951601bff",
+  "name": "Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Augustusstraße",
+    "hausnummer": "29A",
+    "plz": "55131",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.260386,
+    "lat": 49.997438
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a939-6031-4c59-a6c0-f06951601bff",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

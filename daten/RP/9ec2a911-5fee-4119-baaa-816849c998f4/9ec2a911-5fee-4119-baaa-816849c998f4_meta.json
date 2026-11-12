@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a911-5fee-4119-baaa-816849c998f4",
+  "name": "Sportplatz Guntersblum",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Alsheimer Straße",
+    "hausnummer": "67",
+    "plz": "67583",
+    "ort": "Guntersblum"
+  },
+  "lage": {
+    "lon": 8.343525,
+    "lat": 49.791847
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a911-5fee-4119-baaa-816849c998f4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

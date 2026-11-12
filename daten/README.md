@@ -1,10 +1,21 @@
 # Datenbestand
 
-Eine JSON-Datei je Sportstätte, nach Land sortiert (`RP/RP-12345.json`). Diese Dateien sind
-die Quelle der Daten: Änderungen werden hier vorgenommen (direkt auf GitHub oder per Pull
-Request) und landen beim nächsten Erzeugen der Webseite auf der Karte.
+Ein Ordner je Sportstätte, nach Land sortiert. Darin beschreibt `<id>_meta.json` die
+Sportstätte (Standort, Name, Betreiber …) und je Sportanlage eine weitere Datei
+`<anlage-id>.json` (z. B. ein Großspielfeld, eine Rundlaufbahn):
 
-- Format und Felder: siehe `src/sportstaettenatlas/bestand.py`
+    RP/333d6875-…/333d6875-…_meta.json
+    RP/333d6875-…/8f0c41d2-….json
+
+Jede Sportanlage gehört zu genau einer Sportstätte: Sie liegt in deren Ordner und nennt sie
+in `sportstaette_id`. Diese Dateien sind die Quelle der Daten: Änderungen werden hier
+vorgenommen (direkt auf GitHub oder per Pull Request) und landen beim nächsten Erzeugen der
+Webseite auf der Karte.
+
+- Format und Felder: siehe `src/sportstaettenatlas/bestand.py`, Typen der Anlagen:
+  `src/sportstaettenatlas/anlagen.py`
+- Neue Sportanlage: Datei mit neuer UUID als Namen in den Ordner der Sportstätte legen
+  (`id`, `sportstaette_id`, `typ`)
 - Neue Quelldateien einlesen: `uv run sportstaettenatlas bestand <datei>`
   (legt nur fehlende Sportstätten an; `--modus aktualisieren` überschreibt vorhandene)
 - Kontaktdaten (E-Mail-Adressen, Telefonnummern) gehören nicht hierher.

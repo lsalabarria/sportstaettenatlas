@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a91f-c52a-48cd-a64b-a934e76b449a",
+  "name": "Tennis Club Gossersweiler-Stein",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Eichelberg",
+    "hausnummer": "15",
+    "plz": "76857",
+    "ort": "Gossersweiler-Stein"
+  },
+  "lage": {
+    "lon": 7.932707,
+    "lat": 49.152856
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a91f-c52a-48cd-a64b-a934e76b449a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

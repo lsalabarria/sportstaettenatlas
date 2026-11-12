@@ -1,0 +1,24 @@
+{
+  "id": "a22beae3-f926-44b1-9448-7ccaa639d938",
+  "name": "Kanusportverein Bad Kreuznach",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Saline Karlshalle",
+    "plz": "55543",
+    "ort": "Bad Kreuznach, Stadt"
+  },
+  "lage": {
+    "lon": 7.851732,
+    "lat": 49.827202
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a22beae3-f926-44b1-9448-7ccaa639d938",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

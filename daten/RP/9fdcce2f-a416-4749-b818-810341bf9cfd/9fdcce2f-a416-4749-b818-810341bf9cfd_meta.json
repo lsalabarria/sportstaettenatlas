@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce2f-a416-4749-b818-810341bf9cfd",
+  "name": "Westpfalzhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bleicherstraße",
+    "hausnummer": "3",
+    "plz": "66482",
+    "ort": "Zweibrücken, Stadt"
+  },
+  "lage": {
+    "lon": 7.367594,
+    "lat": 49.248849
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce2f-a416-4749-b818-810341bf9cfd",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

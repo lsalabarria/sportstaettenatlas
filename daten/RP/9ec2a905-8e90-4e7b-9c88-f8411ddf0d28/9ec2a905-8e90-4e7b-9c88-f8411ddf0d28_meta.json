@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a905-8e90-4e7b-9c88-f8411ddf0d28",
+  "name": "Outdoor Basketballplatz Haßloch",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Röntgenstraße",
+    "plz": "67454",
+    "ort": "Haßloch"
+  },
+  "lage": {
+    "lon": 8.260101,
+    "lat": 49.370134
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a905-8e90-4e7b-9c88-f8411ddf0d28",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

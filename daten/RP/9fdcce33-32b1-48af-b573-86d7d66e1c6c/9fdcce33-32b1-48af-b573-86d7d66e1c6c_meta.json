@@ -1,0 +1,25 @@
+{
+  "id": "9fdcce33-32b1-48af-b573-86d7d66e1c6c",
+  "name": "Sportanlage Campingplatz „Büttelwoog“",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Am Campingplatz",
+    "hausnummer": "1",
+    "plz": "66994",
+    "ort": "Dahn, Stadt"
+  },
+  "lage": {
+    "lon": 7.766256,
+    "lat": 49.143842
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce33-32b1-48af-b573-86d7d66e1c6c",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

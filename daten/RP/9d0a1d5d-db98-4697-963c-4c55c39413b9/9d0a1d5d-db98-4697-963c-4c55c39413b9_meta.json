@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d5d-db98-4697-963c-4c55c39413b9",
+  "name": "Großsporthalle Sohren",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "In den Fichten",
+    "hausnummer": "2",
+    "plz": "55491",
+    "ort": "Büchenbeuren"
+  },
+  "lage": {
+    "lon": 7.288866,
+    "lat": 49.922468
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d5d-db98-4697-963c-4c55c39413b9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "df44878c-b78a-51d8-ac49-5ba337341554",
+  "sportstaette_id": "9fdcccea-cce6-440f-b85d-c06e781a56c0",
+  "typ": "Nicht normiertes Spielfeld",
+  "quellen": {
+    "atlas_rlp": {
+      "bezeichnung": "Nichtnormiertes Spielfeld"
+    }
+  }
+}

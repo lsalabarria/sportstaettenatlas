@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e01-5752-4f48-b4b4-6a393ef062ad",
+  "name": "Grundschule an der Landskrone Heimersheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Vehner Weg",
+    "hausnummer": "31",
+    "plz": "53474",
+    "ort": "Bad Neuenahr-Ahrweiler, Stadt"
+  },
+  "lage": {
+    "lon": 7.180993,
+    "lat": 50.539909
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e01-5752-4f48-b4b4-6a393ef062ad",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

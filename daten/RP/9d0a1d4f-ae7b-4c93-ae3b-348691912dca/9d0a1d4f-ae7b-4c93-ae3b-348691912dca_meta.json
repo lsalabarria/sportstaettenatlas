@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d4f-ae7b-4c93-ae3b-348691912dca",
+  "name": "Kleinspielfeld Waldorf",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Bach",
+    "plz": "53498",
+    "ort": "Waldorf"
+  },
+  "lage": {
+    "lon": 7.234001,
+    "lat": 50.485547
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4f-ae7b-4c93-ae3b-348691912dca",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

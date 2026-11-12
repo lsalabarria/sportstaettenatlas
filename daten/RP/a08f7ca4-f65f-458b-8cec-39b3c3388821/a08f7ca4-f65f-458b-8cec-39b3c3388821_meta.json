@@ -1,0 +1,23 @@
+{
+  "id": "a08f7ca4-f65f-458b-8cec-39b3c3388821",
+  "name": "Sportplatz Langweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "55758",
+    "ort": "Langweiler"
+  },
+  "lage": {
+    "lon": 7.182634,
+    "lat": 49.776111
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ca4-f65f-458b-8cec-39b3c3388821",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

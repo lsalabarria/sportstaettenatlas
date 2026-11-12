@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a902-7d1c-4dda-8602-808a73e7f70b",
+  "name": "Reiterverein Leiningerland",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Gartenhof",
+    "plz": "67317",
+    "ort": "Altleiningen"
+  },
+  "lage": {
+    "lon": 8.079539,
+    "lat": 49.513552
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a902-7d1c-4dda-8602-808a73e7f70b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

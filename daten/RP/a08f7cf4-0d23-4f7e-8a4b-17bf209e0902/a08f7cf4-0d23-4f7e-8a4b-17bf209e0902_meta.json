@@ -1,0 +1,25 @@
+{
+  "id": "a08f7cf4-0d23-4f7e-8a4b-17bf209e0902",
+  "name": "Sporthalle Staatliches Aufbaugymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ernst-Ludwig-Straße",
+    "hausnummer": "47",
+    "plz": "55232",
+    "ort": "Alzey, Stadt"
+  },
+  "lage": {
+    "lon": 8.109066,
+    "lat": 49.741446
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cf4-0d23-4f7e-8a4b-17bf209e0902",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

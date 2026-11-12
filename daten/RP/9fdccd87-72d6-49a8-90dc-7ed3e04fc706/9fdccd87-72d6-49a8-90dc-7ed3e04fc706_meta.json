@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd87-72d6-49a8-90dc-7ed3e04fc706",
+  "name": "Bolzplatz Germersheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Speckstraße",
+    "hausnummer": "13",
+    "plz": "76726",
+    "ort": "Germersheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.361703,
+    "lat": 49.186423
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd87-72d6-49a8-90dc-7ed3e04fc706",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

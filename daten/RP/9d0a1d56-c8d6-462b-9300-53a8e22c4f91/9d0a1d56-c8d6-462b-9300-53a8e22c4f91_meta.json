@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d56-c8d6-462b-9300-53a8e22c4f91",
+  "name": "Basketballplatz Militärstützpunkt",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "L52",
+    "plz": "56828",
+    "ort": "Alflen"
+  },
+  "lage": {
+    "lon": 7.058187,
+    "lat": 50.184507
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d56-c8d6-462b-9300-53a8e22c4f91",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

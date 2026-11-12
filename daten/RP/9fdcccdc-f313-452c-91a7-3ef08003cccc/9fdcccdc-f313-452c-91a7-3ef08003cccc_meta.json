@@ -1,0 +1,25 @@
+{
+  "id": "9fdcccdc-f313-452c-91a7-3ef08003cccc",
+  "name": "Schützenhaus Nievern",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "hausnummer": "15",
+    "plz": "56132",
+    "ort": "Nievern"
+  },
+  "lage": {
+    "lon": 7.685144,
+    "lat": 50.33346
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccdc-f313-452c-91a7-3ef08003cccc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

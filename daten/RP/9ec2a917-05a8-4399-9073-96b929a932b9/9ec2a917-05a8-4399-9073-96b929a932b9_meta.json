@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a917-05a8-4399-9073-96b929a932b9",
+  "name": "Alter Sportplatz Kriegsfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Eichenfahtweg",
+    "plz": "67819",
+    "ort": "Kriegsfeld"
+  },
+  "lage": {
+    "lon": 7.910508,
+    "lat": 49.706052
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a917-05a8-4399-9073-96b929a932b9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

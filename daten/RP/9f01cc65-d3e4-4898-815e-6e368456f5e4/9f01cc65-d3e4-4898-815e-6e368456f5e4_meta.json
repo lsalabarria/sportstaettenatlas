@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc65-d3e4-4898-815e-6e368456f5e4",
+  "name": "Freizeitbad Tauris",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Judengässchen",
+    "hausnummer": "2",
+    "plz": "56218",
+    "ort": "Weißenthurm, Stadt"
+  },
+  "lage": {
+    "lon": 7.49857,
+    "lat": 50.39867
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc65-d3e4-4898-815e-6e368456f5e4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

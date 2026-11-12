@@ -1,0 +1,23 @@
+{
+  "id": "9d09fae7-df79-45bf-a29c-876b23a4b064",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Gründchen",
+    "plz": "54439",
+    "ort": "Merzkirchen"
+  },
+  "lage": {
+    "lon": 6.475971,
+    "lat": 49.581437
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae7-df79-45bf-a29c-876b23a4b064",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

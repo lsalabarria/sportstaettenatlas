@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e0d-2874-48b2-a4c1-613abb7ae663",
+  "name": "Hallenbad und Freibad Kirchberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gartenstraße",
+    "plz": "55481",
+    "ort": "Kirchberg (Hunsrück), Stadt"
+  },
+  "lage": {
+    "lon": 7.404142,
+    "lat": 49.947696
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0d-2874-48b2-a4c1-613abb7ae663",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

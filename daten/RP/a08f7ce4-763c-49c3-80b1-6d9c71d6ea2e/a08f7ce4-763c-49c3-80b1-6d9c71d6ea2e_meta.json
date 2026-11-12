@@ -1,0 +1,24 @@
+{
+  "id": "a08f7ce4-763c-49c3-80b1-6d9c71d6ea2e",
+  "name": "Sportplatz Hochstätten",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "55585",
+    "ort": "Hochstätten"
+  },
+  "lage": {
+    "lon": 7.834783,
+    "lat": 49.767615
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7ce4-763c-49c3-80b1-6d9c71d6ea2e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

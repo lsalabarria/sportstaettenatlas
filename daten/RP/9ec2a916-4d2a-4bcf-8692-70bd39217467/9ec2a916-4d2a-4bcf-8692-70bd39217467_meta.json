@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a916-4d2a-4bcf-8692-70bd39217467",
+  "name": "Nordpfalzhalle Alsenz",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "25",
+    "plz": "67821",
+    "ort": "Alsenz"
+  },
+  "lage": {
+    "lon": 7.811131,
+    "lat": 49.725932
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a916-4d2a-4bcf-8692-70bd39217467",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

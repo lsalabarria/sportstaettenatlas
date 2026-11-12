@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1e13-692d-485e-9bb7-40cf634b7cd2",
+  "name": "Tennisanlage Daun",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Heinrich-Hertz-Straße",
+    "hausnummer": "6",
+    "plz": "54550",
+    "ort": "Daun, Stadt"
+  },
+  "lage": {
+    "lon": 6.821862,
+    "lat": 50.213092
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e13-692d-485e-9bb7-40cf634b7cd2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

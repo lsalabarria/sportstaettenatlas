@@ -1,0 +1,24 @@
+{
+  "id": "9d0a1d4b-6992-4362-b599-1f6c326b72ad",
+  "name": "TC \"Gelb-Weiß\" Obere Grafschaft e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Im Kreuzerfeld",
+    "hausnummer": "63A",
+    "plz": "53501",
+    "ort": "Grafschaft"
+  },
+  "lage": {
+    "lon": 7.086286,
+    "lat": 50.571777
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d4b-6992-4362-b599-1f6c326b72ad",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

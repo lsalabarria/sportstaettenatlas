@@ -1,0 +1,25 @@
+{
+  "id": "e5074a50-4a17-48dc-ab30-3ae806d0d53e",
+  "name": "Bogensportgelände",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Im Grund",
+    "plz": "66885",
+    "ort": "Altenglan"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "website": "svpatersbach1964.hpage.com",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "e5074a50-4a17-48dc-ab30-3ae806d0d53e",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

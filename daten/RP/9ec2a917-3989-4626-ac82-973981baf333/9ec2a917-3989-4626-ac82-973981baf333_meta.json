@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a917-3989-4626-ac82-973981baf333",
+  "name": "Sportzentrum Morschheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Sportpl.",
+    "hausnummer": "1",
+    "plz": "67294",
+    "ort": "Morschheim"
+  },
+  "lage": {
+    "lon": 8.03033,
+    "lat": 49.699866
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a917-3989-4626-ac82-973981baf333",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

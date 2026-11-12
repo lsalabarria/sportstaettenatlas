@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1dfe-854d-4b4b-b135-0bdbc09c62c8",
+  "name": "Tennisplätze TC Hachenburg",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Alte Frankfurter Straße",
+    "plz": "57627",
+    "ort": "Hachenburg, Stadt"
+  },
+  "lage": {
+    "lon": 7.836456,
+    "lat": 50.658016
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1dfe-854d-4b4b-b135-0bdbc09c62c8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

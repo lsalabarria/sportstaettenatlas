@@ -20,110 +20,236 @@ function artVon(p, rolle = "betreiber") { return p[rolle + "_art"] || "ohne Anga
 function katFarbe(k) { return KATEGORIE_FARBEN[k] || WEITERE; }
 function schluesselName(s) { return String(s || "").trim().replace(/\s+/g, " ").toLowerCase(); }
 
+// Gruppen der Sportanlagen (aus anlagen.py, stehen in bestand.geojson)
+let ANLAGEN_GRUPPEN = [], ANLAGEN_TYPEN = {};
+function anlagenGruppe(t) { return ANLAGEN_TYPEN[t] || "weitere"; }
+function gruppenText(g) { const x = ANLAGEN_GRUPPEN.find(y => y[0] === g); return x ? x[1] : g; }
+// Weitere Angaben einer Sportanlage als kurzer Text
+function anlageDetails(a) {
+  return [a.sportarten && a.sportarten.length ? a.sportarten.join(", ") : "",
+    a.baujahr ? `Baujahr ${a.baujahr}` : "",
+    a.baukosten_eur ? `Baukosten ${zahl(a.baukosten_eur)} €` : "",
+    a.ausstattung && a.ausstattung.length ? a.ausstattung.join(", ") : ""].filter(Boolean).join(" · ");
+}
+// Anlagen einer Sportstätte nach Gruppe: [[Gruppe, [[Text, Anzahl, Typ, Angaben], …]], …]
+function anlagenNachGruppe(liste) {
+  // liste: Typen oder Anlagen {typ, name}; gleiche Typen ohne Namen werden gezählt
+  const z = new Map();
+  for (const a of liste || []) {
+    const t = typeof a === "string" ? a : a.typ, name = typeof a === "string" ? "" : a.name;
+    const details = typeof a === "string" ? "" : anlageDetails(a);
+    // Anlagen mit eigenen Angaben einzeln, sonst gleiche Typen zusammengefasst
+    const k = (name ? `${t} (${name})` : t) + (details ? `\u0000${a.id}` : "");
+    const x = z.get(k) || { typ: t, n: 0, text: name ? `${t} (${name})` : t, details };
+    x.n++; z.set(k, x);
+  }
+  const g = new Map();
+  for (const { typ, n, text, details } of z.values()) {
+    const k = anlagenGruppe(typ);
+    if (!g.has(k)) g.set(k, []);
+    g.get(k).push([text, n, typ, details]);
+  }
+  const reihe = ANLAGEN_GRUPPEN.map(x => x[0]);
+  return [...g].sort((a, b) => reihe.indexOf(a[0]) - reihe.indexOf(b[0]));
+}
+
 function ansichtBestand(fc) {
+  ANLAGEN_GRUPPEN = fc.anlagengruppen || [["weitere", "Weitere"]];
+  ANLAGEN_TYPEN = fc.anlagentypen || {};
   const ebene = L.layerGroup();
   const eintraege = [];
-  const katZahl = {}, artZahl = {}, spZahl = {};
+  const katAlle = {}, spAlle = {}, anAlle = {};
   for (const f of fc.features) {
     const p = f.properties, [lon, lat] = f.geometry.coordinates;
+    // Anlagen: [Typ, Kurz-ID, Name?, {Angaben}?] → Objekte; p.anlagen bleibt die Liste der Typen
+    const anlagenListe = (p.anlagen || []).map(a => Array.isArray(a)
+      ? { typ: a[0], id: a[1] || "", name: a[2] || "", ...(a[3] || {}) } : { typ: a, id: "", name: "" });
+    p.anlagen = anlagenListe.map(a => a.typ);
+    // Sportarten: die der Sportstätte und die ihrer Anlagen
+    const sportarten = [...new Set([...(p.sportarten || []), ...anlagenListe.flatMap(a => a.sportarten || [])])];
     const kat = p.kategorie || "ohne Kategorie";
-    katZahl[kat] = (katZahl[kat] || 0) + 1;
-    const art = artVon(p);
-    artZahl[art] = (artZahl[art] || 0) + 1;
-    for (const s of p.sportarten || []) spZahl[s] = (spZahl[s] || 0) + 1;
-    const e = { p, lat, lon, kat, art, an: false,
-      sp: new Set(p.sportarten || []), betreiber: schluesselName(p.betreiber),
+    katAlle[kat] = (katAlle[kat] || 0) + 1;
+    for (const s of sportarten) spAlle[s] = (spAlle[s] || 0) + 1;
+    const typen = new Set(p.anlagen || []);
+    for (const t of typen) anAlle[t] = (anAlle[t] || 0) + 1;
+    const e = { p, lat, lon, kat, art: artVon(p), an: false, typen, anlagen: anlagenListe,
+      sp: new Set(sportarten), betreiber: schluesselName(p.betreiber),
       eigentuemer: schluesselName(p.eigentuemer) };
     e.layer = info(L.circleMarker([lat, lon], { radius: 4, weight: 1, color: "#fff",
       fillColor: katFarbe(kat), fillOpacity: 0.95 }), () => tipBestand(e));
     eintraege.push(e);
   }
   const katAn = {}, artAn = {};
-  for (const k of Object.keys(katZahl)) katAn[k] = true;
+  for (const k of Object.keys(katAlle)) katAn[k] = true;
   for (const a of ARTEN) artAn[a] = true;
-  const sportWahl = new Set();
+  const sportWahl = new Set(), anlagenWahl = new Set();
   let betreiberWahl = null;  // { rolle, schluessel, name }
 
+  const mitEinem = (wahl, menge) => { for (const x of wahl) if (menge.has(x)) return true; return false; };
   function passt(e) {
     if (!katAn[e.kat] || !artAn[e.art] || !imGebiet(e.p.ars)) return false;
     if (betreiberWahl && e[betreiberWahl.rolle] !== betreiberWahl.schluessel) return false;
-    if (sportWahl.size) {
-      let ok = false;
-      for (const s of sportWahl) if (e.sp.has(s)) { ok = true; break; }
-      if (!ok) return false;
-    }
+    if (sportWahl.size && !mitEinem(sportWahl, e.sp)) return false;
+    if (anlagenWahl.size && !mitEinem(anlagenWahl, e.typen)) return false;
     return true;
   }
   let zahlEl = null;
   function aktualisiere() {
-    let n = 0;
+    let n = 0, gebiet = 0;
     for (const e of eintraege) {
       const soll = passt(e);
       if (soll) n++;
+      if (imGebiet(e.p.ars)) gebiet++;
       if (soll !== e.an) { e.an = soll; if (soll) ebene.addLayer(e.layer); else ebene.removeLayer(e.layer); }
     }
-    if (zahlEl) zahlEl.textContent = n === eintraege.length ? `${zahl(n)} Sportstätten`
-      : `${zahl(n)} von ${zahl(eintraege.length)} Sportstätten`;
+    if (zahlEl) zahlEl.textContent = n === gebiet ? `${zahl(n)} Sportstätten`
+      : `${zahl(n)} von ${zahl(gebiet)} Sportstätten`;
     return n;
+  }
+  // Zahlen im Filter: Sportstätten im gewählten Gebiet
+  function zaehleGebiet() {
+    if (!panelEl) return;
+    const z = {};
+    const plus = k => { z[k] = (z[k] || 0) + 1; };
+    for (const e of eintraege) {
+      if (!imGebiet(e.p.ars)) continue;
+      plus("k:" + e.kat); plus("a:" + e.art);
+      for (const s of e.sp) plus("s:" + s);
+      const gruppen = new Set();
+      for (const t of e.typen) { plus("t:" + t); gruppen.add(anlagenGruppe(t)); }
+      for (const g of gruppen) plus("g:" + g);
+    }
+    panelEl.querySelectorAll("[data-n]").forEach(el => {
+      const w = z[el.dataset.n] || 0;
+      el.textContent = zahl(w);
+      el.closest("label").classList.toggle("null", !w);
+    });
   }
 
   // Filter-Panel
   const panel = L.control({ position: "topright" });
   let panelEl = null;
+  const nSpan = k => `<span class="n" data-n="${esc(k)}"></span>`;
+  function anlagenFilterHtml() {
+    const typenJe = {};
+    for (const t of Object.keys(anAlle)) (typenJe[anlagenGruppe(t)] ??= []).push(t);
+    const gruppen = ANLAGEN_GRUPPEN.filter(([g]) => typenJe[g]);
+    if (!gruppen.length) return "";
+    return `<details open class="anlagen-filter"><summary>Sportanlagen darin <span id="b-an-n"></span></summary>`
+      + `<div class="hinweis">Eine Sportstätte enthält eine oder mehrere Sportanlagen. Auswahl: `
+      + `Sportstätten mit mindestens einer davon. Zahl = Sportstätten.</div>`
+      + `<input type="search" placeholder="Sportanlage suchen, z. B. Rundlaufbahn" aria-label="Sportanlage suchen">`
+      + `<div class="an-liste">` + gruppen.map(([g, text]) => {
+        const typen = typenJe[g].sort((a, b) => anAlle[b] - anAlle[a]);
+        return `<div class="an-gruppe" data-gruppe="${esc(g)}"><div class="an-kopf">`
+          + `<button type="button" class="auf" aria-expanded="false" title="Typen zeigen">▸</button>`
+          + `<label><input type="checkbox" data-ag="${esc(g)}"><b>${esc(text)}</b>${nSpan("g:" + g)}</label></div>`
+          + `<div class="an-typen" hidden>` + typen.map(t => `<label data-text="${esc(t.toLowerCase())}">`
+            + `<input type="checkbox" data-t="${esc(t)}">${esc(t)}${nSpan("t:" + t)}</label>`).join("")
+          + `</div></div>`;
+      }).join("") + `</div><div class="knoepfe"><button type="button" data-keine="an">Auswahl aufheben</button></div></details>`;
+  }
   panel.onAdd = () => {
     const div = panelEl = L.DomUtil.create("div", "panel filter");
     L.DomEvent.disableClickPropagation(div);
     L.DomEvent.disableScrollPropagation(div);
-    const kats = Object.keys(katZahl).sort((a, b) => katZahl[b] - katZahl[a]);
-    const sps = Object.keys(spZahl).sort((a, b) => a.localeCompare(b, "de"));
+    const kats = Object.keys(katAlle).sort((a, b) => katAlle[b] - katAlle[a]);
+    const sps = Object.keys(spAlle).sort((a, b) => a.localeCompare(b, "de"));
     div.innerHTML = `<h1 id="b-zahl"></h1><div id="b-chip"></div>`
-      + `<details open><summary>Kategorie</summary><div class="knoepfe">`
+      + `<details><summary>Sportstätten nach Kategorie <span id="b-kat-n"></span></summary><div class="knoepfe">`
       + `<button type="button" data-alle="kat">alle</button><button type="button" data-keine="kat">keine</button></div>`
       + kats.map(k => `<label><input type="checkbox" data-k="${esc(k)}" checked>`
-        + `<span class="swatch" style="background:${katFarbe(k)}"></span>${esc(k)}`
-        + `<span class="n">${zahl(katZahl[k])}</span></label>`).join("") + `</details>`
+        + `<span class="swatch" style="background:${katFarbe(k)}"></span>${esc(k)}${nSpan("k:" + k)}</label>`).join("")
+      + `</details>`
+      + anlagenFilterHtml()
       + `<details open><summary>Betreiber</summary>`
-      + ARTEN.filter(a => artZahl[a]).map(a => `<label><input type="checkbox" data-a="${a}" checked>`
-        + `${a === "Verein" ? "Vereine" : a === "Kommune" ? "Kommunen" : a}`
-        + `<span class="n">${zahl(artZahl[a])}</span></label>`).join("")
+      + ARTEN.filter(a => eintraege.some(e => e.art === a)).map(a => `<label><input type="checkbox" data-a="${a}" checked>`
+        + `${a === "Verein" ? "Vereine" : a === "Kommune" ? "Kommunen" : a}${nSpan("a:" + a)}</label>`).join("")
       + `<div class="hinweis">Art aus dem Namen geschätzt (z. B. „e.V.“, „Ortsgemeinde“)</div></details>`
       + (sps.length ? `<details><summary>Sportarten <span id="b-sp-n"></span></summary>`
         + `<input type="search" placeholder="Sportart suchen" aria-label="Sportart suchen">`
         + `<div class="sp-liste">` + sps.map(s => `<label data-text="${esc(s.toLowerCase())}">`
-          + `<input type="checkbox" data-s="${esc(s)}">${esc(s)}<span class="n">${zahl(spZahl[s])}</span></label>`).join("")
+          + `<input type="checkbox" data-s="${esc(s)}">${esc(s)}${nSpan("s:" + s)}</label>`).join("")
         + `</div><div class="knoepfe"><button type="button" data-keine="sp">Auswahl aufheben</button></div>`
         + `<div class="hinweis">Ohne Auswahl: alle. Mit Auswahl: Sportstätten mit mindestens einer davon.</div></details>`
         : "")
       + `<div class="hinweis">Klick auf einen Punkt: Angaben bleiben stehen · Rechtsklick: Koordinaten</div>`;
     zahlEl = div.querySelector("#b-zahl");
     div.querySelectorAll("input[data-k]").forEach(cb => cb.addEventListener("change", () => {
-      katAn[cb.dataset.k] = cb.checked; aktualisiere(); }));
+      katAn[cb.dataset.k] = cb.checked; zeigeWahl(); aktualisiere(); }));
     div.querySelectorAll("input[data-a]").forEach(cb => cb.addEventListener("change", () => {
       artAn[cb.dataset.a] = cb.checked; aktualisiere(); }));
-    const spN = div.querySelector("#b-sp-n");
-    const spZeige = () => { if (spN) spN.textContent = sportWahl.size ? `(${sportWahl.size})` : ""; };
     div.querySelectorAll("input[data-s]").forEach(cb => cb.addEventListener("change", () => {
       if (cb.checked) sportWahl.add(cb.dataset.s); else sportWahl.delete(cb.dataset.s);
-      spZeige(); aktualisiere(); }));
+      zeigeWahl(); aktualisiere(); }));
+    // Sportanlagen: Gruppe wählt alle ihre Typen, einzelne Typen nach Aufklappen
+    div.querySelectorAll("input[data-t]").forEach(cb => cb.addEventListener("change", () => {
+      if (cb.checked) anlagenWahl.add(cb.dataset.t); else anlagenWahl.delete(cb.dataset.t);
+      zeigeWahl(); aktualisiere(); }));
+    div.querySelectorAll("input[data-ag]").forEach(cb => cb.addEventListener("change", () => {
+      cb.closest(".an-gruppe").querySelectorAll("input[data-t]").forEach(t => {
+        if (cb.checked) anlagenWahl.add(t.dataset.t); else anlagenWahl.delete(t.dataset.t);
+      });
+      zeigeWahl(); aktualisiere(); }));
+    const klappe = (gruppe, auf) => {
+      gruppe.querySelector(".an-typen").hidden = !auf;
+      const b = gruppe.querySelector(".auf");
+      b.textContent = auf ? "▾" : "▸"; b.setAttribute("aria-expanded", auf);
+    };
+    div.querySelectorAll(".an-gruppe .auf").forEach(b => b.addEventListener("click", () => {
+      const g = b.closest(".an-gruppe"); klappe(g, g.querySelector(".an-typen").hidden); }));
     div.querySelectorAll("[data-alle],[data-keine]").forEach(b => b.addEventListener("click", () => {
       const an = !!b.dataset.alle, was = b.dataset.alle || b.dataset.keine;
       if (was === "kat") {
         div.querySelectorAll("input[data-k]").forEach(cb => { cb.checked = an; katAn[cb.dataset.k] = an; });
+      } else if (was === "an") {
+        anlagenWahl.clear();
       } else {
-        div.querySelectorAll("input[data-s]").forEach(cb => { cb.checked = false; });
-        sportWahl.clear(); spZeige();
+        sportWahl.clear();
       }
-      aktualisiere();
+      zeigeWahl(); aktualisiere();
     }));
-    const suchSp = div.querySelector(".sp-liste") && div.querySelector("details input[type=search]");
+    const suchSp = div.querySelector(".sp-liste") && div.querySelector(".sp-liste").previousElementSibling;
     if (suchSp) suchSp.addEventListener("input", () => {
       const q = suchSp.value.trim().toLowerCase();
       div.querySelectorAll(".sp-liste label").forEach(l => { l.hidden = q && !l.dataset.text.includes(q); });
     });
+    const suchAn = div.querySelector(".anlagen-filter input[type=search]");
+    if (suchAn) suchAn.addEventListener("input", () => {
+      const q = suchAn.value.trim().toLowerCase();
+      div.querySelectorAll(".an-gruppe").forEach(g => {
+        let treffer = 0;
+        g.querySelectorAll(".an-typen label").forEach(l => {
+          const ok = !q || l.dataset.text.includes(q);
+          l.hidden = !ok; if (ok) treffer++;
+        });
+        g.hidden = q && !treffer;
+        klappe(g, !!q && treffer > 0);
+      });
+    });
     zeigeChip();
+    zeigeWahl();
+    zaehleGebiet();
     aktualisiere();
     return div;
   };
+  // Häkchen und Zähler passend zur Auswahl (auch nach Klick im Popup)
+  function zeigeWahl() {
+    if (!panelEl) return;
+    panelEl.querySelectorAll("input[data-s]").forEach(c => { c.checked = sportWahl.has(c.dataset.s); });
+    panelEl.querySelectorAll("input[data-t]").forEach(c => { c.checked = anlagenWahl.has(c.dataset.t); });
+    panelEl.querySelectorAll("input[data-ag]").forEach(cb => {
+      const typen = [...cb.closest(".an-gruppe").querySelectorAll("input[data-t]")];
+      const n = typen.filter(t => t.checked).length;
+      cb.checked = n > 0 && n === typen.length;
+      cb.indeterminate = n > 0 && n < typen.length;
+    });
+    const spN = panelEl.querySelector("#b-sp-n"), anN = panelEl.querySelector("#b-an-n");
+    const katN = panelEl.querySelector("#b-kat-n"), aus = Object.values(katAn).filter(v => !v).length;
+    if (katN) katN.textContent = aus ? `(${zahl(aus)} ausgeblendet)` : "(alle)";
+    if (spN) spN.textContent = sportWahl.size ? `(${sportWahl.size} gewählt)` : "";
+    if (anN) anN.textContent = anlagenWahl.size ? `(${anlagenWahl.size} gewählt)` : "";
+  }
   function zeigeChip() {
     const el = panelEl && panelEl.querySelector("#b-chip");
     if (!el) return;
@@ -136,16 +262,11 @@ function ansichtBestand(fc) {
 
   // Ein gesuchter Eintrag soll sichtbar werden, auch wenn Filter ihn gerade ausblenden
   function filterZurueck() {
-    betreiberWahl = null; sportWahl.clear();
+    betreiberWahl = null; sportWahl.clear(); anlagenWahl.clear();
     for (const k in katAn) katAn[k] = true;
     for (const a in artAn) artAn[a] = true;
-    if (panelEl) {
-      panelEl.querySelectorAll("input[data-k],input[data-a]").forEach(c => { c.checked = true; });
-      panelEl.querySelectorAll("input[data-s]").forEach(c => { c.checked = false; });
-      const spN = panelEl.querySelector("#b-sp-n");
-      if (spN) spN.textContent = "";
-    }
-    zeigeChip();
+    if (panelEl) panelEl.querySelectorAll("input[data-k],input[data-a]").forEach(c => { c.checked = true; });
+    zeigeChip(); zeigeWahl();
   }
   function oeffne(e) {
     if (!imGebiet(e.p.ars)) setzeGebiet(null, false);
@@ -153,6 +274,18 @@ function ansichtBestand(fc) {
     aktualisiere();
     if (e.an) e.layer.openPopup();
   }
+  // Klick auf eine Anlage im Popup: alle Sportstätten mit dieser Anlage zeigen
+  function nurAnlage(typ) {
+    karte.closePopup();
+    anlagenWahl.clear(); anlagenWahl.add(typ);
+    zeigeWahl(); aktualisiere();
+  }
+  document.addEventListener("click", ev => {
+    const a = ev.target.closest("[data-nur-anlage]");
+    if (!a || AKTIV !== "bestand") return;
+    ev.preventDefault();
+    nurAnlage(a.dataset.nurAnlage);
+  });
 
   function tipBestand(e) {
     const p = e.p, z = [];
@@ -162,14 +295,9 @@ function ansichtBestand(fc) {
       + `background:${katFarbe(e.kat)};vertical-align:-1px"></span> ${esc(p.kategorie)}`);
     zeile("Adresse", leer(p.adresse) ? "" : esc(p.adresse));
     zeile("Gebiet", esc(gemeindeName(p.ars)));
-    zeile("Sportarten", leer(p.sportarten) ? "" : esc(p.sportarten.join(", ")));
-    if (!leer(p.anlagen)) {
-      const n = {};
-      for (const a of p.anlagen) n[a] = (n[a] || 0) + 1;
-      zeile("Anlagen", Object.entries(n).map(([a, k]) => (k > 1 ? `${k}× ` : "") + esc(a)).join("<br>"));
-    }
     zeile("Betreiber", leer(p.betreiber) ? "" : esc(p.betreiber) + art(p.betreiber_art));
     zeile("Eigentümer", leer(p.eigentuemer) ? "" : esc(p.eigentuemer) + art(p.eigentuemer_art));
+    zeile("Sportarten", leer(p.sportarten) ? "" : esc(p.sportarten.join(", ")));
     zeile("Öffentlich", esc(p.oeffentlicher_zugang || ""));
     zeile("Schulsport", esc(p.schulsport || ""));
     zeile("Zuschauer", leer(p.zuschauerplaetze) ? "" : zahl(p.zuschauerplaetze));
@@ -177,14 +305,21 @@ function ansichtBestand(fc) {
     zeile("Website", leer(p.website) ? "" : `<a href="${esc(url(p.website))}" target="_blank" `
       + `rel="noopener">${esc(p.website)}</a>`);
     zeile("ID", leer(p.id) ? "" : `<span class="koord">${esc(p.id)}</span>`);
-    return `<div class="tip"><h3>${esc(p.name || p.kategorie || "Sportstätte")}</h3>`
+    const n = (p.anlagen || []).length;
+    const anlagen = n ? `<div class="anlagen-tip"><h4>${n === 1 ? "1 Sportanlage" : `${n} Sportanlagen`}</h4>`
+      + anlagenNachGruppe(e.anlagen).map(([g, typen]) => `<div><span class="gr">${esc(gruppenText(g))}</span> `
+        + typen.map(([text, k, t, d]) => `<a href="#" data-nur-anlage="${esc(t)}" title="Alle Sportstätten mit `
+          + `${esc(t)} zeigen">${k > 1 ? `${k}× ` : ""}${esc(text)}</a>`
+          + (d ? ` <span class="details">(${esc(d)})</span>` : "")).join(", ") + `</div>`).join("")
+      + `</div>` : `<div class="anlagen-tip leer">Keine Sportanlagen eingetragen</div>`;
+    return `<div class="tip"><h3>${esc(p.name || p.kategorie || "Sportstätte")}</h3>${anlagen}`
       + `<table class="meta">${z.join("")}${koord(e.lat, e.lon)}${aendernLink(p.id)}</table></div>`;
   }
 
   const such = eintraege.map(e => ({
     titel: e.p.name || e.kat, sub: [e.p.kategorie, e.p.adresse, e.p.betreiber].filter(v => !leer(v)).join(" · "),
     text: [e.p.name, e.p.adresse, e.p.kategorie, e.p.betreiber, e.p.eigentuemer, e.p.id,
-      ...(e.p.sportarten || [])].filter(v => !leer(v)).join(" ").toLowerCase(),
+      ...(e.p.sportarten || []), ...e.typen].filter(v => !leer(v)).join(" ").toLowerCase(),
     grenzen: () => L.latLngBounds([[e.lat, e.lon], [e.lat, e.lon]]),
     oeffne: () => oeffne(e),
     ars: e.p.ars,
@@ -202,7 +337,7 @@ function ansichtBestand(fc) {
       erstmals = false;
     },
     verbergen() { karte.removeLayer(ebene); panel.remove(); },
-    gebietGeaendert() { aktualisiere(); },
+    gebietGeaendert() { zaehleGebiet(); aktualisiere(); },
     suchindex: () => such,
     zeigeBetreiber(rolle, schluessel, name) {
       betreiberWahl = { rolle, schluessel, name };
@@ -320,13 +455,14 @@ function ansichtListe(bestand) {
 }
 
 // ---------- Ansicht „Übersicht“: kleines Dashboard über den Datenbestand ----------------
+// Befüllung der Angaben, getrennt für Sportstätten und ihre Sportanlagen
 const FELDER = [
   ["Name", p => !leer(p.name)],
   ["Kategorie", p => !leer(p.kategorie)],
   ["Straße", p => !leer(p.strasse)],
   ["PLZ und Ort", p => !leer(p.plz) && !leer(p.ort)],
+  ["Sportanlagen eingetragen", p => !leer(p.anlagen)],
   ["Sportarten", p => !leer(p.sportarten)],
-  ["Anlagen", p => !leer(p.anlagen)],
   ["Betreiber", p => !leer(p.betreiber)],
   ["Eigentümer", p => !leer(p.eigentuemer)],
   ["Öffentlicher Zugang", p => !leer(p.oeffentlicher_zugang)],
@@ -335,19 +471,27 @@ const FELDER = [
   ["Zuschauerplätze", p => !leer(p.zuschauerplaetze)],
   ["Website", p => !leer(p.website)],
 ];
-function befuellung(liste) {
+const ANLAGE_FELDER = [
+  ["Name", a => !leer(a.name)],
+  ["Sportarten", a => !leer(a.sportarten)],
+  ["Baujahr", a => !leer(a.baujahr)],
+  ["Baukosten", a => !leer(a.baukosten_eur)],
+  ["Ausstattung", a => !leer(a.ausstattung)],
+];
+function anteil(liste, felder) {
   if (!liste.length) return 0;
   let summe = 0;
-  for (const e of liste) for (const [, test] of FELDER) if (test(e.p)) summe++;
-  return summe / (liste.length * FELDER.length);
+  for (const x of liste) for (const [, test] of felder) if (test(x)) summe++;
+  return summe / (liste.length * felder.length);
 }
-function balken(zeilen, gesamt, prozentual) {
+function befuellung(liste) { return anteil(liste.map(e => e.p), FELDER); }
+function balken(zeilen, gesamt, prozentual, einheit = "Sportstätten") {
   // zeilen: [label, wert]; Breite relativ zu gesamt (Anteil) bzw. zum größten Wert
   const max = prozentual ? gesamt : Math.max(1, ...zeilen.map(z => z[1]));
   return `<table class="balken">` + zeilen.map(([l, w]) => {
     const breite = Math.max(0, Math.min(100, 100 * w / (max || 1)));
     const text = prozentual ? `${prozent(w, gesamt)} %` : zahl(w);
-    const titel = prozentual ? `${zahl(w)} von ${zahl(gesamt)}` : `${zahl(w)} Sportstätten`;
+    const titel = prozentual ? `${zahl(w)} von ${zahl(gesamt)}` : `${zahl(w)} ${einheit}`;
     return `<tr title="${esc(l)}: ${titel}"><td class="l">${esc(l)}</td>`
       + `<td><div class="spur"><div class="fuell" style="width:${breite.toFixed(1)}%"></div></div></td>`
       + `<td class="w">${text}</td></tr>`;
@@ -357,50 +501,62 @@ function ansichtUebersicht(bestand) {
   const el = document.getElementById("seite-uebersicht");
   function zeichne() {
     const liste = bestand.eintraege.filter(e => imGebiet(e.p.ars));
-    const n = liste.length;
-    const anlagen = liste.reduce((s, e) => s + (e.p.anlagen ? e.p.anlagen.length : 0), 0);
-    const sportarten = new Set(liste.flatMap(e => e.p.sportarten || []));
+    const anlagen = liste.flatMap(e => e.anlagen);
+    const n = liste.length, na = anlagen.length;
+    const sportarten = new Set(liste.flatMap(e => [...e.sp]));
     const betr = { Verein: new Set(), Kommune: new Set() };
     for (const e of liste) if (betr[e.art] && e.betreiber) betr[e.art].add(e.betreiber);
-    const zaehl = f => { const z = {}; for (const e of liste) { const k = f(e); z[k] = (z[k] || 0) + 1; } return z; };
+    const zaehl = (werte) => { const z = {}; for (const k of werte) z[k] = (z[k] || 0) + 1; return z; };
     const sortiert = z => Object.entries(z).sort((a, b) => b[1] - a[1]);
     const kachel = (label, wert, zusatz = "") => `<div class="kachel"><div class="label">${label}</div>`
       + `<div class="wert">${wert}</div><div class="zusatz">${zusatz}</div></div>`;
+    const ohneAnlagen = liste.filter(e => !e.anlagen.length).length;
     let h = `<div class="inhalt"><h2>Übersicht: ${esc(gebietName())}</h2>`
-      + `<p class="unter">Datenbestand der Karte (Ordner <code>daten/</code>)</p><div class="kacheln">`
-      + kachel("Sportstätten", zahl(n))
-      + kachel("Sportanlagen", zahl(anlagen), n ? `Ø ${(anlagen / n).toLocaleString("de-DE",
+      + `<p class="unter">Datenbestand der Karte (Ordner <code>daten/</code>): Sportstätten und die `
+      + `Sportanlagen darin</p><div class="kacheln">`
+      + kachel("Sportstätten", zahl(n), ohneAnlagen ? `${zahl(ohneAnlagen)} ohne eingetragene Sportanlage` : "alle mit Sportanlagen")
+      + kachel("Sportanlagen", zahl(na), n ? `Ø ${(na / n).toLocaleString("de-DE",
         { maximumFractionDigits: 1 })} je Sportstätte` : "")
-      + kachel("Felder befüllt", `${Math.round(100 * befuellung(liste))} %`, `Durchschnitt über ${FELDER.length} Felder`)
+      + kachel("Angaben Sportstätten", `${Math.round(100 * befuellung(liste))} %`, `befüllt, Durchschnitt über ${FELDER.length} Felder`)
+      + kachel("Angaben Sportanlagen", `${Math.round(100 * anteil(anlagen, ANLAGE_FELDER))} %`, `befüllt, Durchschnitt über ${ANLAGE_FELDER.length} Felder`)
       + kachel("Sportarten", zahl(sportarten.size), "verschiedene")
       + kachel("Vereine", zahl(betr.Verein.size), "als Betreiber (aus dem Namen geschätzt)")
       + kachel("Kommunen", zahl(betr.Kommune.size), "als Betreiber (aus dem Namen geschätzt)")
       + `</div>`;
-    h += `<div class="spalten"><div><h3>Wie gut sind die Felder befüllt?</h3>`
-      + balken(FELDER.map(([l, t]) => [l, liste.filter(e => t(e.p)).length]), n, true) + `</div>`
-      + `<div><h3>Sportstätten nach Kategorie</h3>` + balken(sortiert(zaehl(e => e.kat)), n, false)
-      + `<h3>Betreiber</h3>` + balken(ARTEN.map(a => [a === "Verein" ? "Vereine" : a === "Kommune"
-        ? "Kommunen" : a, liste.filter(e => e.art === a).length]).filter(z => z[1]), n, true);
-    h += `</div></div>`;
+    h += `<div class="spalten"><div><h3>Sportstätten</h3><h4>Wie gut sind die Angaben befüllt?</h4>`
+      + balken(FELDER.map(([l, t]) => [l, liste.filter(e => t(e.p)).length]), n, true)
+      + `<h4>Nach Kategorie</h4>` + balken(sortiert(zaehl(liste.map(e => e.kat))), n, false)
+      + `<h4>Betreiber</h4>` + balken(ARTEN.map(a => [a === "Verein" ? "Vereine" : a === "Kommune"
+        ? "Kommunen" : a, liste.filter(e => e.art === a).length]).filter(z => z[1]), n, true)
+      + `</div><div><h3>Sportanlagen</h3><h4>Wie gut sind die Angaben befüllt?</h4>`
+      + balken(ANLAGE_FELDER.map(([l, t]) => [l, anlagen.filter(t).length]), na, true, "Sportanlagen")
+      + `<h4>Nach Gruppe</h4>` + balken(ANLAGEN_GRUPPEN.map(([g, text]) =>
+        [text, anlagen.filter(a => anlagenGruppe(a.typ) === g).length]).filter(z => z[1])
+        .sort((a, b) => b[1] - a[1]), 0, false, "Sportanlagen")
+      + `<h4>Häufigste Typen</h4>` + balken(sortiert(zaehl(anlagen.map(a => a.typ))).slice(0, 12), 0, false, "Sportanlagen")
+      + `<h4>Sportanlagen je Sportstätte</h4>` + balken(sortiert(zaehl(liste.map(e =>
+        e.anlagen.length >= 5 ? "5 und mehr" : String(e.anlagen.length)))).sort((a, b) => a[0].localeCompare(b[0])), 0, false)
+      + `</div></div>`;
     // Teilgebiete: Befüllung je Kreis bzw. je Verbandsgemeinde/Gemeinde
     const ebene = !GEBIET ? "kreis" : GEBIET.e === "kreis" ? "vg" : GEBIET.e === "vg" ? "gemeinde" : null;
     const teile = ebene ? GEBIETE.filter(g => g.e === ebene && (!GEBIET || g.s.startsWith(GEBIET.s))) : [];
     if (teile.length > 1) {
+      const spur = b => `<table class="balken"><tr><td><div class="spur"><div class="fuell" `
+        + `style="width:${(100 * b).toFixed(1)}%"></div></div></td><td class="w">${Math.round(100 * b)} %</td></tr></table>`;
       const zeilen = teile.map(g => {
-        const l = liste.filter(e => e.p.ars && e.p.ars.startsWith(g.s));
-        return { g, n: l.length, b: befuellung(l) };
+        const l = liste.filter(e => e.p.ars && e.p.ars.startsWith(g.s)), a = l.flatMap(e => e.anlagen);
+        return { g, n: l.length, na: a.length, b: befuellung(l), ba: anteil(a, ANLAGE_FELDER) };
       }).sort((a, b) => b.n - a.n);
       h += `<h3>Nach ${ebene === "kreis" ? "Kreisen" : ebene === "vg" ? "Verbandsgemeinden" : "Gemeinden"}</h3>`
         + `<table class="tabelle"><thead><tr><th>Gebiet</th><th class="zahl">Sportstätten</th>`
-        + `<th style="width:40%">Felder befüllt</th></tr></thead><tbody>` + zeilen.map(z =>
+        + `<th class="zahl">Sportanlagen</th><th style="width:24%">Angaben Sportstätten</th>`
+        + `<th style="width:24%">Angaben Sportanlagen</th></tr></thead><tbody>` + zeilen.map(z =>
           `<tr class="zeile" data-g="${z.g.s}" title="Gebiet auswählen"><td>${esc(gebietTitel(z.g))}</td>`
-          + `<td class="zahl">${zahl(z.n)}</td><td><table class="balken"><tr><td><div class="spur">`
-          + `<div class="fuell" style="width:${(100 * z.b).toFixed(1)}%"></div></div></td>`
-          + `<td class="w">${z.n ? Math.round(100 * z.b) + " %" : "–"}</td></tr></table></td></tr>`).join("")
+          + `<td class="zahl">${zahl(z.n)}</td><td class="zahl">${zahl(z.na)}</td>`
+          + `<td>${z.n ? spur(z.b) : "–"}</td><td>${z.na ? spur(z.ba) : "–"}</td></tr>`).join("")
         + `</tbody></table>`;
     }
-    h += `<p class="hinweis">Sportkomplexe (mehrere Sportstätten an einem Ort) führt der Datenbestand `
-      + `bisher nicht; gezählt werden Sportstätten und ihre Anlagen.</p></div>`;
+    h += `</div>`;
     el.innerHTML = h;
     el.querySelectorAll("[data-g]").forEach(z => z.addEventListener("click", () => setzeGebiet(NACH_S[z.dataset.g])));
   }

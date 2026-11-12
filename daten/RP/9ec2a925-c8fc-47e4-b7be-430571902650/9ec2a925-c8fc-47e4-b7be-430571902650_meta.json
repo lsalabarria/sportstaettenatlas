@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a925-c8fc-47e4-b7be-430571902650",
+  "name": "Sportplatz an der Grundschule Grethen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bürgermeister-Gropp-Straße",
+    "hausnummer": "69",
+    "plz": "67098",
+    "ort": "Bad Dürkheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.144908,
+    "lat": 49.459315
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a925-c8fc-47e4-b7be-430571902650",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

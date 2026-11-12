@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd1c-11ed-4145-8805-46e02099fa66",
+  "name": "Schützenverein Schopp",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Kobertal",
+    "plz": "67707",
+    "ort": "Schopp"
+  },
+  "lage": {
+    "lon": 7.689617,
+    "lat": 49.359377
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd1c-11ed-4145-8805-46e02099fa66",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

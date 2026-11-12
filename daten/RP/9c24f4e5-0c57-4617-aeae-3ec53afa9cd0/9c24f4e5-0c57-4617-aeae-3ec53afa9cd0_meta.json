@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4e5-0c57-4617-aeae-3ec53afa9cd0",
+  "name": "Fußballplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "54636",
+    "ort": "Dockendorf"
+  },
+  "lage": {
+    "lon": 6.45381,
+    "lat": 49.927792
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e5-0c57-4617-aeae-3ec53afa9cd0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

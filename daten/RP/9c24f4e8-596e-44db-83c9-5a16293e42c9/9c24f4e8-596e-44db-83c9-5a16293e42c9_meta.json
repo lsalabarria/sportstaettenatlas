@@ -1,0 +1,23 @@
+{
+  "id": "9c24f4e8-596e-44db-83c9-5a16293e42c9",
+  "name": "Sportplatz Hubertushof",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Speicherer Straße",
+    "plz": "54662",
+    "ort": "Beilingen"
+  },
+  "lage": {
+    "lon": 6.65483,
+    "lat": 49.951263
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e8-596e-44db-83c9-5a16293e42c9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

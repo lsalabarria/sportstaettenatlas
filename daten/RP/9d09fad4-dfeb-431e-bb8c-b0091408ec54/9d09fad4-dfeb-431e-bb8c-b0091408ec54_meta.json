@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad4-dfeb-431e-bb8c-b0091408ec54",
+  "name": "Badminton am Sportpark",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Sportpark",
+    "plz": "53578",
+    "ort": "Windhagen"
+  },
+  "lage": {
+    "lon": 7.350028,
+    "lat": 50.636117
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad4-dfeb-431e-bb8c-b0091408ec54",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

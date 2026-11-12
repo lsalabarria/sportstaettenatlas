@@ -1,0 +1,24 @@
+{
+  "id": "9c24bfaa-7e0f-447c-a600-8184dfa069d9",
+  "name": "TVR-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Grabenstraße",
+    "hausnummer": "33",
+    "plz": "56072",
+    "ort": "Koblenz, Stadt"
+  },
+  "lage": {
+    "lon": 7.518479,
+    "lat": 50.368259
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfaa-7e0f-447c-a600-8184dfa069d9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "38484aa1-5221-4901-ba5f-b376c6c82050",
+  "name": "Sporthalle Orff-Straße (Stadt Neuwied)",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Orffstraße",
+    "hausnummer": "24",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  },
+  "lage": {
+    "lon": 7.545196,
+    "lat": 50.42993
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "38484aa1-5221-4901-ba5f-b376c6c82050",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

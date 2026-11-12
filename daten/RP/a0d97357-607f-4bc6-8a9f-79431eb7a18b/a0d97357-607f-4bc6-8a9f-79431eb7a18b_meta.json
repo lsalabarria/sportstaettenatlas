@@ -1,0 +1,26 @@
+{
+  "id": "a0d97357-607f-4bc6-8a9f-79431eb7a18b",
+  "name": "Spielplatz an der Maria-Sibylla-Merian-Straße",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Maria-Sibylla-Merian-Straße",
+    "plz": "55122",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.221919,
+    "lat": 50.011255
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "sportarten": [
+    "Basketball"
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a0d97357-607f-4bc6-8a9f-79431eb7a18b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

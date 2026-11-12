@@ -1,0 +1,24 @@
+{
+  "id": "9d09fae1-d269-43d6-816b-aac688f2e9dc",
+  "name": "Grundschule Osburg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "20",
+    "plz": "54317",
+    "ort": "Osburg"
+  },
+  "lage": {
+    "lon": 6.793742,
+    "lat": 49.716653
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fae1-d269-43d6-816b-aac688f2e9dc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

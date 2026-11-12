@@ -1,0 +1,22 @@
+{
+  "id": "9c24f4e6-9cf7-4253-a4b5-68e6853f10c4",
+  "name": "Reit-, Zucht- und Fahrverein Bitburg",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.556724,
+    "lat": 49.961514
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24f4e6-9cf7-4253-a4b5-68e6853f10c4",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

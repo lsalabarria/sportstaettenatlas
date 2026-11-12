@@ -1,0 +1,23 @@
+{
+  "id": "a08f7cc2-d6d0-4afc-a738-e1d29d791574",
+  "name": "Sportanlage Werthwies",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "55566",
+    "ort": "Meddersheim"
+  },
+  "lage": {
+    "lon": 7.610126,
+    "lat": 49.78615
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7cc2-d6d0-4afc-a738-e1d29d791574",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

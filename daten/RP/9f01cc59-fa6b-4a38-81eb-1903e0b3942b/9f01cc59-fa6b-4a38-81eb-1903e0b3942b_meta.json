@@ -1,0 +1,25 @@
+{
+  "id": "9f01cc59-fa6b-4a38-81eb-1903e0b3942b",
+  "name": "Badeparadies Zweibrücken",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hofenfelsstraße",
+    "hausnummer": "120",
+    "plz": "66482",
+    "ort": "Zweibrücken, Stadt"
+  },
+  "lage": {
+    "lon": 7.37644,
+    "lat": 49.25643
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9f01cc59-fa6b-4a38-81eb-1903e0b3942b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

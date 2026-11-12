@@ -1,0 +1,25 @@
+{
+  "id": "a08f7d13-5286-4ec5-92dc-0382acd684ec",
+  "name": "Mikadohalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Vollmersbachstraße",
+    "hausnummer": "59",
+    "plz": "55743",
+    "ort": "Idar-Oberstein, Stadt"
+  },
+  "lage": {
+    "lon": 7.316865,
+    "lat": 49.721595
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "a08f7d13-5286-4ec5-92dc-0382acd684ec",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

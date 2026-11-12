@@ -1,0 +1,24 @@
+{
+  "id": "9fdccd4f-2597-4ab4-a661-985cead43c53",
+  "name": "Sportplatz Schweix",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Flurstraße",
+    "plz": "66957",
+    "ort": "Schweix"
+  },
+  "lage": {
+    "lon": 7.510689,
+    "lat": 49.131113
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd4f-2597-4ab4-a661-985cead43c53",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

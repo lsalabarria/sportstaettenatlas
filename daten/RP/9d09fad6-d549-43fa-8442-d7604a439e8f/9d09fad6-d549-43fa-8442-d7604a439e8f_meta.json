@@ -1,0 +1,23 @@
+{
+  "id": "9d09fad6-d549-43fa-8442-d7604a439e8f",
+  "name": "Sportplatz Kleinmaischeid",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "strasse": "Eichenheck",
+    "plz": "56271",
+    "ort": "Kleinmaischeid"
+  },
+  "lage": {
+    "lon": 7.604547,
+    "lat": 50.517291
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09fad6-d549-43fa-8442-d7604a439e8f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9fdccca7-f50e-40f1-bfb9-1acc035d2111",
+  "name": "Bouleplatz Erlenbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Kandeler Straße",
+    "plz": "76872",
+    "ort": "Erlenbach bei Kandel"
+  },
+  "lage": {
+    "lon": 8.184415,
+    "lat": 49.105121
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccca7-f50e-40f1-bfb9-1acc035d2111",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

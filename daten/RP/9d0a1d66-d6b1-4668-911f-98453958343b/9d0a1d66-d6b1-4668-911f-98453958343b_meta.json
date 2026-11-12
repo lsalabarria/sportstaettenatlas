@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d66-d6b1-4668-911f-98453958343b",
+  "name": "Bolzplatz Minheim",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Am Moselufer",
+    "plz": "54518",
+    "ort": "Minheim"
+  },
+  "lage": {
+    "lon": 6.942681,
+    "lat": 49.865695
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d66-d6b1-4668-911f-98453958343b",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

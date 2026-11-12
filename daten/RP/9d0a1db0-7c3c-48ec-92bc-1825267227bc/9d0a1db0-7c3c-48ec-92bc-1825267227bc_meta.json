@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1db0-7c3c-48ec-92bc-1825267227bc",
+  "name": "Sportplatz Miesgesweg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Miesgeweg",
+    "plz": "53545",
+    "ort": "Linz am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 7.295108,
+    "lat": 50.571766
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1db0-7c3c-48ec-92bc-1825267227bc",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

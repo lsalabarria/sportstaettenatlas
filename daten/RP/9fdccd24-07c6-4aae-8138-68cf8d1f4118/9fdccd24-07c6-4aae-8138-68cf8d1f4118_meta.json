@@ -1,0 +1,25 @@
+{
+  "id": "9fdccd24-07c6-4aae-8138-68cf8d1f4118",
+  "name": "Kreissporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Grünstädter Straße",
+    "hausnummer": "6a",
+    "plz": "67240",
+    "ort": "Bobenheim-Roxheim"
+  },
+  "lage": {
+    "lon": 8.352792,
+    "lat": 49.589606
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdccd24-07c6-4aae-8138-68cf8d1f4118",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

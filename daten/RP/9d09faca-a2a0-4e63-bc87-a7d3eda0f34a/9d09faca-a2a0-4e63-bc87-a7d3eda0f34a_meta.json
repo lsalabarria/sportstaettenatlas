@@ -1,0 +1,23 @@
+{
+  "id": "9d09faca-a2a0-4e63-bc87-a7d3eda0f34a",
+  "name": "Sportplatz Helmeroth",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Höhenstraße",
+    "plz": "57612",
+    "ort": "Helmeroth"
+  },
+  "lage": {
+    "lon": 7.723975,
+    "lat": 50.736943
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d09faca-a2a0-4e63-bc87-a7d3eda0f34a",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

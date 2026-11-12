@@ -1,0 +1,23 @@
+{
+  "id": "52ccce38-b268-4a42-a07b-3415f631e6d2",
+  "name": "Schwarzer Mann",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Schneifelhöhenweg",
+    "plz": "54595",
+    "ort": "Prüm, Stadt"
+  },
+  "lage": {
+    "lon": 6.373961,
+    "lat": 50.264475
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "52ccce38-b268-4a42-a07b-3415f631e6d2",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

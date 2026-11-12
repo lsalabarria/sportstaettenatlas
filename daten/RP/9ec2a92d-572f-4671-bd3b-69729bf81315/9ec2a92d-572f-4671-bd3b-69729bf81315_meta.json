@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a92d-572f-4671-bd3b-69729bf81315",
+  "name": "Kinderspielplatz Ludwig-Schwamb-Straße",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Ludwig-Schwamb-Straße",
+    "plz": "55268",
+    "ort": "Nieder-Olm, Stadt"
+  },
+  "lage": {
+    "lon": 8.202529,
+    "lat": 49.90021
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a92d-572f-4671-bd3b-69729bf81315",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

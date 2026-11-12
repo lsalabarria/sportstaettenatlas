@@ -1,0 +1,23 @@
+{
+  "id": "9ec2a931-060d-45ff-9573-8b01b0c536b8",
+  "name": "Sportanlage an der Moschellandsburg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Moschellandsberg",
+    "plz": "67823",
+    "ort": "Obermoschel, Stadt"
+  },
+  "lage": {
+    "lon": 7.784764,
+    "lat": 49.725404
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a931-060d-45ff-9573-8b01b0c536b8",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

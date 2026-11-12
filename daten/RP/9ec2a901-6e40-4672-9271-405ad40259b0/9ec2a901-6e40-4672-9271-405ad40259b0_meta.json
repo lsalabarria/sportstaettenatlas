@@ -1,0 +1,24 @@
+{
+  "id": "9ec2a901-6e40-4672-9271-405ad40259b0",
+  "name": "Sportanlage VfR Hettenleidelheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gaswerkstraße",
+    "hausnummer": "13",
+    "plz": "67310",
+    "ort": "Hettenleidelheim"
+  },
+  "lage": {
+    "lon": 8.075638,
+    "lat": 49.542876
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a901-6e40-4672-9271-405ad40259b0",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

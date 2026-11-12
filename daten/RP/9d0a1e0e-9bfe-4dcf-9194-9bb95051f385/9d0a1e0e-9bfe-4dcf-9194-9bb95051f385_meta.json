@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1e0e-9bfe-4dcf-9194-9bb95051f385",
+  "name": "Beachvolleyballfeld",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Flachsberg",
+    "plz": "55469",
+    "ort": "Simmern/ Hunsrück, Stadt"
+  },
+  "lage": {
+    "lon": 7.514132,
+    "lat": 49.985847
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1e0e-9bfe-4dcf-9194-9bb95051f385",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

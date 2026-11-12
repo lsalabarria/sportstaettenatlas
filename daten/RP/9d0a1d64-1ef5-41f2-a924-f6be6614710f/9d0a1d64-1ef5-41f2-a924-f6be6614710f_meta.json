@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d64-1ef5-41f2-a924-f6be6614710f",
+  "name": "Bolzplatz Deuselbach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Erbeskopfstraße",
+    "plz": "54411",
+    "ort": "Deuselbach"
+  },
+  "lage": {
+    "lon": 7.053237,
+    "lat": 49.754679
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d64-1ef5-41f2-a924-f6be6614710f",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

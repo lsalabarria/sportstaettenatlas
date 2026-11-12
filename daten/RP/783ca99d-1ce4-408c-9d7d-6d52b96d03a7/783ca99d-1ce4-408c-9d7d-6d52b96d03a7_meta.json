@@ -1,0 +1,25 @@
+{
+  "id": "783ca99d-1ce4-408c-9d7d-6d52b96d03a7",
+  "name": "Schwimmhalle Alzey (Lehrschwimmbecken Albert-Schweitzer-Schule)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Donnersbergstraße",
+    "hausnummer": "30",
+    "plz": "55232",
+    "ort": "Alzey, Stadt"
+  },
+  "lage": {
+    "lon": 8.111589,
+    "lat": 49.741029
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "stillgelegt/geschlossen",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "783ca99d-1ce4-408c-9d7d-6d52b96d03a7",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

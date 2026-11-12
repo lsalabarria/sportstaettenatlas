@@ -1,0 +1,27 @@
+{
+  "id": "9ec2a935-bf04-4863-b5af-1ebfd76c1416",
+  "name": "Boulodrom",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "An den Platzäckern",
+    "hausnummer": "1",
+    "plz": "55127",
+    "ort": "Mainz, Stadt"
+  },
+  "lage": {
+    "lon": 8.195322,
+    "lat": 49.974478
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "sportarten": [
+    "Basketball"
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9ec2a935-bf04-4863-b5af-1ebfd76c1416",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

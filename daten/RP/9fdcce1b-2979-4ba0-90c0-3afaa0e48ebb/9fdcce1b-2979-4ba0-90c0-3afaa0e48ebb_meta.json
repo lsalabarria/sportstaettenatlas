@@ -1,0 +1,24 @@
+{
+  "id": "9fdcce1b-2979-4ba0-90c0-3afaa0e48ebb",
+  "name": "Bolzplatz Lange Gewann",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "strasse": "Lange Gewann",
+    "plz": "67346",
+    "ort": "Speyer, Stadt"
+  },
+  "lage": {
+    "lon": 8.438799,
+    "lat": 49.348963
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcce1b-2979-4ba0-90c0-3afaa0e48ebb",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "9fdcccba-83d8-41f7-9aa3-4f1defccd9c9",
+  "name": "Sportanlage Bassenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Roter Weg",
+    "plz": "56220",
+    "ort": "Bassenheim"
+  },
+  "lage": {
+    "lon": 7.452694,
+    "lat": 50.351852
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9fdcccba-83d8-41f7-9aa3-4f1defccd9c9",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}

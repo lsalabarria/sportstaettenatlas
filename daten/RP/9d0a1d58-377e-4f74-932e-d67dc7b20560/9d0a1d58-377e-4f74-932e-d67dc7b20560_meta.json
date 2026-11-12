@@ -1,0 +1,23 @@
+{
+  "id": "9d0a1d58-377e-4f74-932e-d67dc7b20560",
+  "name": "Sportplatz Bullay",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Moselufer",
+    "plz": "56859",
+    "ort": "Bullay"
+  },
+  "lage": {
+    "lon": 7.130472,
+    "lat": 50.054847
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9d0a1d58-377e-4f74-932e-d67dc7b20560",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
+}
