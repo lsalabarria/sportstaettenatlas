@@ -1,6 +1,6 @@
 """Altbestand (synthetische Daten im Import- bzw. Export-Format des bisherigen Atlas)."""
 
-from sportstaettenatlas.anreicherung.altbestand import dateien, lade_tabelle
+from sportstaettenatlas.atlas import dateien, lade_tabelle
 
 KOPF = (
     "sportkomplex_id;sportkomplex_bezeichnung;sportkomplex_strasse;sportkomplex_hn;"
@@ -54,7 +54,7 @@ def test_lade_tabelle(tmp_path):
 
 
 def test_export_format(tmp_path):
-    from sportstaettenatlas.anreicherung import altbestand
+    from sportstaettenatlas import atlas as altbestand
 
     kopf = (
         "ID,Name,Straße,Hausnummer,PLZ,Stadt,Sportstättenkategorie,Schulsport,"

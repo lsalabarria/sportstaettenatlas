@@ -139,7 +139,7 @@ def lade(land: str, cache: Path, quelle: str | Path | None = None) -> dict[str, 
     else:
         import requests
 
-        from .anreicherung.http import USER_AGENT
+        from .http import USER_AGENT
 
         s = requests.Session()
         s.headers["User-Agent"] = USER_AGENT

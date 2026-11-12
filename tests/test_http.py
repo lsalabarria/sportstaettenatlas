@@ -6,7 +6,7 @@ from http.server import HTTPServer, SimpleHTTPRequestHandler
 
 import pytest
 
-from sportstaettenatlas.anreicherung.http import RobotsVerbot, Sitzung
+from sportstaettenatlas.http import RobotsVerbot, Sitzung
 
 
 @pytest.fixture

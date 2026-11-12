@@ -1,4 +1,9 @@
-"""Kommandozeile: sportstaettenatlas laden | bauen | werte | anreichern | karte | bestand | seite | lauf."""
+"""Kommandozeile.
+
+sportstaettenatlas bestand QUELLE   Atlas-Export in den Datenbestand daten/ überführen
+sportstaettenatlas seite            Webseite für GitHub Pages (docs/) bauen
+sportstaettenatlas alkis …          Analyse ALKIS-Abgleich (laden, bauen, abgleich …)
+"""
 
 from __future__ import annotations
 
@@ -7,233 +12,8 @@ import datetime as dt
 import logging
 from pathlib import Path
 
-from .quellen import GEBIETE, QUELLEN
-
-DATEN = Path("data")
-
-
-def _bbox(args) -> tuple[float, float, float, float]:
-    if args.bbox:
-        teile = [float(x) for x in args.bbox.split(",")]
-        if len(teile) != 4:
-            raise SystemExit("--bbox erwartet xmin,ymin,xmax,ymax (EPSG:25832)")
-        return tuple(teile)  # type: ignore[return-value]
-    return GEBIETE[args.gebiet]
-
-
-def _cache(args, typ: str) -> Path:
-    return DATEN / "raw" / f"{args.land}_{args.gebiet if not args.bbox else 'bbox'}_{typ}.gpkg"
-
-
-def cmd_laden(args):
-    from . import wfs
-    from .klassifikation import Regelwerk
-
-    quelle = QUELLEN[args.land]
-    bbox = _bbox(args)
-    regeln = Regelwerk.laden(args.regeln)
-    filter_an = not args.ohne_filter
-    auftraege = [
-        ("nutzung", quelle.typ_nutzung, "nutzart", [regeln.nutzart]),
-        ("gebaeude", quelle.typ_gebaeude, "funktion", regeln.stichwoerter_gebaeude()),
-    ]
-    for typ, typename, feld, muster in auftraege:
-        wfs.lade(
-            quelle,
-            typename,
-            bbox,
-            ziel=_cache(args, typ),
-            feld=feld if filter_an else None,
-            muster=muster if filter_an else (),
-            kachel_m=args.kachel_km * 1000,
-            neu=args.neu,
-        )
-
-
-def _lies_roh(args):
-    import geopandas as gpd
-
-    pfade = {t: _cache(args, t) for t in ("nutzung", "gebaeude")}
-    for p in pfade.values():
-        if not p.exists():
-            raise SystemExit(f"{p} fehlt – zuerst `sportstaettenatlas laden` ausführen.")
-    return gpd.read_file(pfade["nutzung"]), gpd.read_file(pfade["gebaeude"])
-
-
-def cmd_bauen(args):
-    from .klassifikation import Regelwerk
-    from .pipeline import baue, schreibe
-
-    nutzung, gebaeude = _lies_roh(args)
-    regeln = Regelwerk.laden(args.regeln)
-    ergebnis = baue(nutzung, gebaeude, regeln)
-    dateien = schreibe(ergebnis, Path(args.ziel), QUELLEN[args.land], _bbox(args))
-
-    st, an = ergebnis.sportstaetten, ergebnis.sportanlagen
-    print(f"Sportstätten:  {len(st)}")
-    print(f"Sportanlagen:  {len(an)}")
-    if len(an):
-        print(an.groupby(["rolle", "typgruppe"]).size().to_string())
-        print(f"davon zu prüfen: {int(an['pruefen'].fillna(True).astype(bool).sum())}")
-    print("\nGeschrieben: " + "\n             ".join(str(d) for d in dateien))
-
-
-def _lies_ergebnis(ziel: Path):
-    """Sportstätten und Sportanlagen lesen – angereicherte Fassung bevorzugt."""
-    import geopandas as gpd
-    import pyogrio
-
-    gpkg = ziel / "sportstaetten.gpkg"
-    if not gpkg.exists():
-        raise SystemExit(f"{gpkg} fehlt – zuerst `sportstaettenatlas bauen` ausführen.")
-    layer = {n for n, _ in pyogrio.list_layers(gpkg)}
-    if "sportanlagen" not in layer:
-        raise SystemExit(
-            f"{gpkg} stammt aus einer älteren Version – bitte `sportstaettenatlas bauen` "
-            "erneut ausführen (die ALKIS-Daten kommen aus dem Cache)."
-        )
-
-    def lies(name):
-        return gpd.read_file(
-            gpkg, layer=f"{name}_angereichert" if f"{name}_angereichert" in layer else name
-        )
-
-    return gpkg, lies("sportstaetten"), lies("sportanlagen")
-
-
-def cmd_werte(args):
-    """Alle vorkommenden Werte auflisten, um regeln.toml zu verfeinern."""
-    from .klassifikation import Regelwerk
-
-    nutzung, gebaeude = _lies_roh(args)
-    regeln = Regelwerk.laden(args.regeln)
-    print("== Nutzung: Bezeichnungen der Sport-, Freizeit- und Erholungsflächen ==")
-    if "nutzart" in nutzung.columns:
-        sfe = nutzung[nutzung["nutzart"].map(regeln.ist_sportflaeche)]
-        spalte = "bez" if "bez" in sfe.columns else "funktion"
-        for wert, n in sfe[spalte].fillna("(leer)").value_counts().items():
-            t = regeln.nutzung(wert)
-            print(f"{n:6d}  {wert:<50} -> {t.typ if t else '–'}")
-    print("\n== Gebäude/Bauwerke: Funktionen ==")
-    if "funktion" in gebaeude.columns:
-        for wert, n in gebaeude["funktion"].fillna("(leer)").value_counts().items():
-            t = regeln.gebaeude(wert)
-            if t or args.alle:
-                print(f"{n:6d}  {wert:<50} -> {t.typ if t else '–'}")
-        if not args.alle:
-            print("(nur zugeordnete Funktionen; --alle zeigt sämtliche Werte)")
-
-
-def cmd_anreichern(args):
-    """Abgleich mit dem bisherigen Sportstättenatlas – mit Herkunft und Verifikation."""
-    import datetime as dt
-
-    import geopandas as gpd
-
-    from .anreicherung.abgleich import anreichern
-    from .anreicherung.http import Sitzung
-    from .karte import schreibe_karte
-
-    ziel = Path(args.ziel)
-    gpkg, _, _ = _lies_ergebnis(ziel)  # prüft Version des GeoPackages
-    # immer von den unangereicherten ALKIS-Daten ausgehen
-    staetten = gpd.read_file(gpkg, layer="sportstaetten")
-    anlagen = gpd.read_file(gpkg, layer="sportanlagen")
-
-    sitzung = Sitzung(DATEN / "cache" / "http", pause_s=args.pause)
-    st, an, bericht = anreichern(
-        staetten,
-        anlagen,
-        sitzung,
-        altbestand=Path(args.altbestand),
-        alkis_quelle=None if args.ohne_alkis_vor_ort else QUELLEN[args.land],
-    )
-
-    st.to_file(gpkg, layer="sportstaetten_angereichert", driver="GPKG")
-    an.to_file(gpkg, layer="sportanlagen_angereichert", driver="GPKG")
-    csv_st = ziel / "sportstaetten_angereichert.csv"
-    csv_an = ziel / "sportanlagen_angereichert.csv"
-    st.drop(columns="geometry").to_csv(csv_st, index=False, encoding="utf-8")
-    an.drop(columns="geometry").to_csv(csv_an, index=False, encoding="utf-8")
-    quelle = QUELLEN[args.land]
-    vermerk = quelle.quellenvermerk.format(jahr=dt.datetime.now(dt.UTC).year)
-    alle = [vermerk, *bericht.lizenzen]
-    (ziel / "QUELLENVERMERK.txt").write_text("\n".join(alle) + "\n", encoding="utf-8")
-    abgleich_csv = ziel / "abgleich_altbestand.csv"
-    if bericht.abgleich_altbestand is not None:
-        bericht.abgleich_altbestand.to_csv(abgleich_csv, index=False, encoding="utf-8")
-        bericht(f"Abgleich Altbestand ↔ ALKIS: {abgleich_csv}")
-    else:
-        abgleich_csv.unlink(missing_ok=True)  # kein veralteter Bericht neben neuen Daten
-    (ziel / "osm_ohne_alkis.csv").unlink(missing_ok=True)  # Datei früherer Versionen
-    karte = schreibe_karte(
-        an,
-        st,
-        ziel / "karte.html",
-        quellenvermerk=" | ".join(alle),
-        abgleich_altbestand=bericht.abgleich_altbestand,
-    )
-
-    print("\n".join(bericht.zeilen))
-    print(
-        f"\nGeschrieben: {csv_st}\n             {csv_an}"
-        f"\n             {gpkg} (Layer *_angereichert)\n             {karte}"
-    )
-
-
-def cmd_karte(args):
-    """Karte aus einem vorhandenen Ergebnis (sportstaetten.gpkg) neu erzeugen."""
-    from .karte import schreibe_karte
-
-    ziel = Path(args.ziel)
-    _, staetten, anlagen = _lies_ergebnis(ziel)
-    pfad = schreibe_karte(
-        anlagen,
-        staetten,
-        ziel / "karte.html",
-        quellenvermerk=_vermerk(ziel, args.land),
-        abgleich_altbestand=_abgleich(ziel),
-    )
-    print(f"Karte: {pfad}")
-    if args.oeffnen:
-        import webbrowser
-
-        webbrowser.open(pfad.resolve().as_uri())
-
-
-def _vermerk(ziel: Path, land: str) -> str:
-    """Quellenvermerk für Karte und Webseite (ohne die Lizenz-Zeile)."""
-    import datetime as dt
-
-    vermerk_datei = ziel / "QUELLENVERMERK.txt"
-    vermerk = (
-        " | ".join(
-            vermerk_datei.read_text("utf-8").splitlines()[:1]
-            + [
-                z
-                for z in vermerk_datei.read_text("utf-8").splitlines()[1:]
-                if not z.startswith("Lizenz:")
-            ]
-        )
-        if vermerk_datei.exists()
-        else QUELLEN[land].quellenvermerk.format(jahr=dt.datetime.now(dt.UTC).year)
-    )
-    # Vermerk früherer Läufe: der Atlas-Bestand war damals nur intern
-    return vermerk.replace(" (nur intern)", "")
-
-
-def _abgleich(ziel: Path):
-    abgleich = None
-    if (ziel / "abgleich_altbestand.csv").exists():
-        import pandas as pd
-
-        abgleich = pd.read_csv(ziel / "abgleich_altbestand.csv")
-        if not {"lon", "lat"} <= set(abgleich.columns):
-            print(
-                "Hinweis: abgleich_altbestand.csv stammt aus einer älteren Version (ohne "
-                "Koordinaten). Für die Atlas-Punkte `anreichern --altbestand …` neu ausführen."
-            )
-    return abgleich
+from .analysen.alkis import cli as alkis_cli
+from .hilfen import DATEN
 
 
 def cmd_bestand(args):
@@ -276,18 +56,8 @@ def cmd_seite(args):
     from .bestand import lies_bestand
     from .seite import schreibe_webseite
 
-    ziel, ausgabe = Path(args.ziel), Path(args.ausgabe)
-    anlagen = staetten = None
-    verifikation = (ziel / "sportstaetten.gpkg").exists()
-    if verifikation:
-        _, staetten, anlagen = _lies_ergebnis(ziel)
-        vermerk = _vermerk(ziel, args.land)
-    else:
-        print(
-            f"Hinweis: {ziel}/sportstaetten.gpkg fehlt – die Ansicht „Verifikation“ behält "
-            "ihren bisherigen Stand (neu mit `bauen` und `anreichern`)."
-        )
-        vermerk = QUELLEN[args.land].quellenvermerk.format(jahr=dt.datetime.now(dt.UTC).year)
+    ausgabe = Path(args.ausgabe)
+    vermerke = []
 
     bestand = None
     if Path(args.bestand).is_dir():
@@ -295,37 +65,42 @@ def cmd_seite(args):
     else:
         print(f"Hinweis: kein Datenbestand unter {args.bestand}/ – zuerst `bestand` ausführen.")
 
-    gebiete = None
+    gebiete = ars_von = None
     if args.gebiete != "aus":
         quelle = None if args.gebiete == "auto" else Path(args.gebiete)
-        cache = (
-            DATEN
-            / "cache"
-            / f"gebiete_{args.land}{'' if quelle is None else '_' + quelle.stem}.json"
-        )
+        name = f"gebiete_{args.land}{'' if quelle is None else '_' + quelle.stem}.json"
         try:
-            gebiete = gb.lade(args.land, cache, quelle)
-            bkg = gb.QUELLENVERMERK.format(jahr=dt.datetime.now(dt.UTC).year)
-            vermerk = f"{vermerk} | {bkg}" if vermerk else bkg
+            gebiete = gb.lade(args.land, DATEN / "cache" / name, quelle)
+            ars_von = gb.Zuordnung(gebiete["gemeinde"]).ars
+            vermerke.append(gb.QUELLENVERMERK.format(jahr=dt.datetime.now(dt.UTC).year))
         except Exception as exc:  # noqa: BLE001 – Netz, Dienst geändert …: Seite trotzdem bauen
             print(f"Hinweis: Verwaltungsgebiete nicht verfügbar ({exc}) – ohne Gebietsauswahl.")
 
+    analysen = {}
+    alkis = alkis_cli.fuer_webseite(Path(args.alkis), args.land, ars_von)
+    if alkis is None:
+        print(
+            f"Hinweis: {args.alkis}/sportstaetten.gpkg fehlt – der ALKIS-Abgleich behält seinen "
+            "bisherigen Stand (neu mit `alkis bauen` und `alkis abgleich`)."
+        )
+    else:
+        titel, dateien, texte, vermerk = alkis
+        analysen["alkis"] = (titel, dateien, texte)
+        vermerke.insert(0, vermerk)
+
     info = schreibe_webseite(
-        anlagen,
-        staetten,
         ausgabe,
-        quellenvermerk=vermerk,
-        abgleich_altbestand=_abgleich(ziel),
-        titel=args.titel,
         bestand=bestand,
         gebiete=gebiete,
-        verifikation=verifikation,
+        analysen=analysen,
+        ars_von=ars_von,
+        quellenvermerk=" | ".join(vermerke),
+        titel=args.titel,
     )
     print(f"Webseite: {ausgabe}/  ({info['gesamt'] / 1e6:.1f} MB)")
     for name, _, anzahl, groesse in info["dateien"]:
-        print(f"  daten/{name}: {anzahl} Objekte, {groesse / 1e6:.1f} MB")
-    for name, n in info["zugeordnet"].items():
-        print(f"  Gebiet zugeordnet: {name}: {n}")
+        objekte = "" if anzahl is None else f"{anzahl} Objekte, "
+        print(f"  daten/{name}: {objekte}{groesse / 1e6:.1f} MB")
     if info["entfernt"]:
         print(
             "Nicht veröffentlicht (Kontaktdaten): "
@@ -341,7 +116,7 @@ def cmd_seite(args):
             + ", ".join(f"{ausgabe}/{n}" for n in info["neu_angelegt"])
         )
         print("  → gelb markierte Stellen in impressum.html und datenschutz.html ergänzen,")
-        print("    in konfig.js den Link zum Meldeformular eintragen.")
+        print("    in konfig.js die Links zur Umfrage und zu „Bug melden“ eintragen.")
     if args.vorschau:
         _vorschau(ausgabe, args.port)
 
@@ -363,72 +138,13 @@ def _vorschau(ordner: Path, port: int) -> None:
             pass
 
 
-def cmd_lauf(args):
-    cmd_laden(args)
-    cmd_bauen(args)
-
-
 def main(argv: list[str] | None = None) -> None:
     p = argparse.ArgumentParser(
         prog="sportstaettenatlas",
-        description="Sportstätten und Sportanlagen aus offenen ALKIS-Daten ableiten und anreichern.",
+        description="Offener Sportstättenatlas: Datenbestand, Webseite und Analysen.",
     )
     p.add_argument("-v", "--verbose", action="store_true")
     sub = p.add_subparsers(dest="befehl", required=True)
-
-    def gemeinsam(sp):
-        sp.add_argument("--land", default="rp", choices=sorted(QUELLEN))
-        sp.add_argument("--gebiet", default="koblenz-innenstadt", choices=sorted(GEBIETE))
-        sp.add_argument("--bbox", help="eigener Ausschnitt xmin,ymin,xmax,ymax in EPSG:25832")
-        sp.add_argument("--regeln", type=Path, help="eigene regeln.toml")
-
-    def laden_optionen(sp):
-        sp.add_argument("--neu", action="store_true", help="Cache ignorieren, alles neu laden")
-        sp.add_argument("--kachel-km", type=float, default=10.0, help="Kachelgröße (Standard 10)")
-        sp.add_argument(
-            "--ohne-filter",
-            action="store_true",
-            help="keinen serverseitigen Vorfilter senden (lädt alle Gebäude – sehr viel)",
-        )
-
-    sp = sub.add_parser("laden", help="ALKIS-Daten per WFS laden (Cache in data/raw)")
-    gemeinsam(sp)
-    laden_optionen(sp)
-    sp.set_defaults(func=cmd_laden)
-
-    sp = sub.add_parser("bauen", help="Tabellen Sportstätten und Sportanlagen bauen")
-    gemeinsam(sp)
-    sp.add_argument("--ziel", default=str(DATEN / "out"))
-    sp.set_defaults(func=cmd_bauen)
-
-    sp = sub.add_parser("werte", help="Vorkommende ALKIS-Werte und ihre Zuordnung zeigen")
-    gemeinsam(sp)
-    sp.add_argument("--alle", action="store_true")
-    sp.set_defaults(func=cmd_werte)
-
-    sp = sub.add_parser(
-        "anreichern", help="Mit dem bisherigen Sportstättenatlas abgleichen und verifizieren"
-    )
-    sp.add_argument("--land", default="rp", choices=sorted(QUELLEN))
-    sp.add_argument("--ziel", default=str(DATEN / "out"))
-    sp.add_argument(
-        "--altbestand",
-        required=True,
-        help="Export des bisherigen Sportstättenatlas RLP (CSV) oder Ordner mit CSV-Dateien",
-    )
-    sp.add_argument(
-        "--ohne-alkis-vor-ort",
-        action="store_true",
-        help="für 'nur Atlas' nicht nachschlagen, welche Nutzung/Gebäude ALKIS dort führt",
-    )
-    sp.add_argument("--pause", type=float, default=1.0, help="Sekunden zwischen Anfragen je Host")
-    sp.set_defaults(func=cmd_anreichern)
-
-    sp = sub.add_parser("karte", help="Karte (karte.html) aus vorhandenem Ergebnis erzeugen")
-    sp.add_argument("--land", default="rp", choices=sorted(QUELLEN))
-    sp.add_argument("--ziel", default=str(DATEN / "out"))
-    sp.add_argument("--oeffnen", action="store_true", help="Karte im Browser öffnen")
-    sp.set_defaults(func=cmd_karte)
 
     sp = sub.add_parser(
         "bestand", help="Quelldatei (z. B. Atlas-Export) in den Datenbestand daten/ überführen"
@@ -446,11 +162,17 @@ def main(argv: list[str] | None = None) -> None:
     sp.set_defaults(func=cmd_bestand)
 
     sp = sub.add_parser("seite", help="Webseite für GitHub Pages (Ordner docs/) erzeugen")
-    sp.add_argument("--land", default="rp", choices=sorted(QUELLEN))
-    sp.add_argument("--ziel", default=str(DATEN / "out"), help="Ergebnis von bauen/anreichern")
+    sp.add_argument("--land", default="rp")
+    sp.add_argument("--bestand", default="daten", help="Ordner des Datenbestands (Standard: daten)")
+    sp.add_argument(
+        "--alkis",
+        "--ziel",
+        dest="alkis",
+        default=str(alkis_cli.ZIEL),
+        help="Ergebnis des ALKIS-Abgleichs (Standard: data/out)",
+    )
     sp.add_argument("--ausgabe", default="docs", help="Ordner der Webseite (Standard: docs)")
     sp.add_argument("--titel", default="Sportstättenatlas Rheinland-Pfalz")
-    sp.add_argument("--bestand", default="daten", help="Ordner des Datenbestands (Standard: daten)")
     sp.add_argument(
         "--gebiete",
         default="auto",
@@ -461,11 +183,7 @@ def main(argv: list[str] | None = None) -> None:
     sp.add_argument("--port", type=int, default=8000)
     sp.set_defaults(func=cmd_seite)
 
-    sp = sub.add_parser("lauf", help="laden + bauen")
-    gemeinsam(sp)
-    laden_optionen(sp)
-    sp.add_argument("--ziel", default=str(DATEN / "out"))
-    sp.set_defaults(func=cmd_lauf)
+    alkis_cli.befehle(sub)
 
     args = p.parse_args(argv)
     logging.basicConfig(

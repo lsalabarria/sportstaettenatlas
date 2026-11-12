@@ -5,7 +5,7 @@ import pytest
 gpd = pytest.importorskip("geopandas")
 from shapely.geometry import box
 
-from sportstaettenatlas.pipeline import baue
+from sportstaettenatlas.analysen.alkis.pipeline import baue
 
 CRS = "EPSG:25832"
 X, Y = 399_000, 5_578_000
@@ -84,7 +84,7 @@ def test_karte_mit_datumsspalte(tmp_path):
 
     import pandas as pd
 
-    from sportstaettenatlas.karte import geojson, schreibe_karte
+    from sportstaettenatlas.analysen.alkis.karte import geojson, schreibe_karte
 
     erg = baue(_nutzung(), _gebaeude())
     an = erg.sportanlagen.copy()

@@ -1,4 +1,4 @@
-# Rohdaten, Zwischenstände und Ergebnisse der Pipeline (ALKIS, Atlas-Export) – nur lokal.
+# Rohdaten, Zwischenstände und Ergebnisse der Analysen (ALKIS, Atlas-Export) – nur lokal.
 # Ins Git gehören nur daten/ (Bestand) und docs/ (Webseite).
 data/
 _transfer/

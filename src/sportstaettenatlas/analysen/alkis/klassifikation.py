@@ -39,7 +39,11 @@ class Regelwerk:
     @classmethod
     def laden(cls, pfad: Path | None = None) -> Regelwerk:
         if pfad is None:
-            text = resources.files("sportstaettenatlas").joinpath("regeln.toml").read_text("utf-8")
+            text = (
+                resources.files("sportstaettenatlas.analysen.alkis")
+                .joinpath("regeln.toml")
+                .read_text("utf-8")
+            )
         else:
             text = Path(pfad).read_text("utf-8")
         daten = tomllib.loads(text)

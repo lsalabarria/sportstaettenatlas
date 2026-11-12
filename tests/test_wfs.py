@@ -1,8 +1,8 @@
 import xml.etree.ElementTree as ET
 
-from sportstaettenatlas.klassifikation import Regelwerk
-from sportstaettenatlas.quellen import GEBIETE, QUELLEN
-from sportstaettenatlas.wfs import fes_filter, getfeature_params, kacheln
+from sportstaettenatlas.analysen.alkis.klassifikation import Regelwerk
+from sportstaettenatlas.analysen.alkis.quellen import GEBIETE, QUELLEN
+from sportstaettenatlas.analysen.alkis.wfs import fes_filter, getfeature_params, kacheln
 
 
 def test_getfeature_params_bbox():

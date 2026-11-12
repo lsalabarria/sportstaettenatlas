@@ -1,4 +1,4 @@
-from sportstaettenatlas.klassifikation import Regelwerk
+from sportstaettenatlas.analysen.alkis.klassifikation import Regelwerk
 
 R = Regelwerk.laden()
 

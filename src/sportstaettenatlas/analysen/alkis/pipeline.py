@@ -19,7 +19,7 @@ import geopandas as gpd
 import pandas as pd
 import pyogrio
 
-from .hilfen import datum_text as _datum_text
+from ...hilfen import datum_text as _datum_text
 from .klassifikation import Regelwerk
 from .quellen import WfsQuelle
 
@@ -320,8 +320,6 @@ def schreibe(
     csv_an = ziel / "sportanlagen.csv"
     ergebnis.sportstaetten.drop(columns="geometry").to_csv(csv_st, index=False, encoding="utf-8")
     ergebnis.sportanlagen.drop(columns="geometry").to_csv(csv_an, index=False, encoding="utf-8")
-    # Altlast aus früheren Versionen entfernen, damit nichts Veraltetes herumliegt
-    (ziel / "sportstaetten_kandidaten.csv").unlink(missing_ok=True)
 
     karte = schreibe_karte(
         ergebnis.sportanlagen, ergebnis.sportstaetten, ziel / "karte.html", quellenvermerk=vermerk

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITEL__</title>
+<link rel="stylesheet" href="__LEAFLET__/leaflet.css">
+__STIL__
+</head>
+<body>
+<header id="kopf">
+  <div class="zeile"><h1>__TITEL__</h1><span id="links"></span></div>
+  <div class="zeile">
+    <nav id="ansichten" role="tablist" aria-label="Ansicht"></nav>
+    <span id="analysewahl" class="reiter" hidden></span>
+    <span id="gebietwahl" hidden>
+      <label for="g-kreis">Gebiet</label>
+      <select id="g-kreis" aria-label="Landkreis oder kreisfreie Stadt"></select>
+      <select id="g-kommune" aria-label="Verbandsgemeinde oder Gemeinde" hidden></select>
+      <button id="g-weg" type="button" title="Auswahl aufheben" hidden>×</button>
+    </span>
+  </div>
+</header>
+<div id="bereich">
+  <div id="karte"></div>
+  <div id="seite-liste" class="seite" hidden></div>
+  <div id="seite-uebersicht" class="seite" hidden></div>
+  <div id="seite-vorschlag" class="seite" hidden></div>
+  __LADEN__
+</div>
+<script src="__LEAFLET__/leaflet.js"></script>
+__KONFIG__
+<script>
+const QUELLE = __QUELLE__;
+const EINGEBETTET = __EINGEBETTET__;
+</script>
+__SKRIPTE__
+</body>
+</html>

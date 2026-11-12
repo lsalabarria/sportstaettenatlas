@@ -69,9 +69,7 @@ def _hat(df: pd.DataFrame, spalte: str) -> pd.Series:
     return _gefuellt(df[spalte]) if spalte in df.columns else pd.Series(False, index=df.index)
 
 
-def verifiziere(
-    staetten: pd.DataFrame, anlagen: pd.DataFrame
-) -> tuple[pd.DataFrame, pd.DataFrame]:
+def verifiziere(staetten: pd.DataFrame, anlagen: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Verifikationsspalten für Sportstätten und Sportanlagen."""
     staetten = staetten.copy()
     anlagen = anlagen.copy()
@@ -91,9 +89,9 @@ def verifiziere(
         nur_unbestimmt = eigen.groupby("sportstaette_id")["typ"].agg(
             lambda t: bool(len(t)) and (t == TYP_UNBESTIMMT).all()
         )
-        u_st = (staetten["verifikation_stufe"] == STUFE_NUR_ALKIS) & ids.map(
-            nur_unbestimmt
-        ).fillna(False).astype(bool)
+        u_st = (staetten["verifikation_stufe"] == STUFE_NUR_ALKIS) & ids.map(nur_unbestimmt).fillna(
+            False
+        ).astype(bool)
         staetten.loc[u_st, "verifikation_stufe"] = STUFE_UNBESTIMMT
 
     # Sportanlagen übernehmen die Verifikation ihrer Sportstätte

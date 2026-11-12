@@ -205,7 +205,7 @@ def lade(
     muster = list(muster)
     teile = []
 
-    from .hilfen import Fortschritt
+    from ...hilfen import Fortschritt
 
     fb = Fortschritt(len(liste), f"ALKIS {typename}", "Kachel")
     with requests.Session() as s, fb:

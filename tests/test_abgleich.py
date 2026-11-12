@@ -5,7 +5,7 @@ import pytest
 gpd = pytest.importorskip("geopandas")
 from shapely.geometry import Point, box
 
-from sportstaettenatlas.anreicherung.abgleich import je_objekt
+from sportstaettenatlas.analysen.alkis.abgleich import je_objekt
 
 CRS = "EPSG:25832"
 X, Y = 399_000, 5_578_000
@@ -32,7 +32,7 @@ def test_je_objekt_punkt_geht_an_einen_kandidaten():
 
 def test_anreichern_mit_atlas(tmp_path):
     """Atlas-Export (CSV) → Abgleich, Gebietsfilter, Herkunft und Verifikation."""
-    from sportstaettenatlas.anreicherung import abgleich
+    from sportstaettenatlas.analysen.alkis import abgleich
 
     st = _kandidaten().rename(columns={"kandidat_id": "sportstaette_id"})
     st["name"] = [None, None]
@@ -74,9 +74,10 @@ def test_anreichern_mit_atlas(tmp_path):
     assert erg_an.loc[1, "verifikation_stufe"] == "nur ALKIS – unbestimmt"
     assert not any(c.startswith(("osm_", "wd_", "web_")) for c in erg_st.columns)
 
-def test_altbestand_abgleich(tmp_path):
-    from sportstaettenatlas.anreicherung import altbestand
-    from sportstaettenatlas.anreicherung.abgleich import je_objekt
+
+def test_atlas_bericht(tmp_path):
+    from sportstaettenatlas.analysen.alkis import abgleich
+    from sportstaettenatlas.analysen.alkis.abgleich import je_objekt
 
     st = _kandidaten().rename(columns={"kandidat_id": "sportstaette_id"})
     an = gpd.GeoDataFrame(
@@ -98,7 +99,7 @@ def test_altbestand_abgleich(tmp_path):
         crs=CRS,
     )
     z = je_objekt(st, alt, ["alt_id", "alt_name", "alt_typgruppe"], "alt_", max_m=100)
-    b = altbestand.abgleich(alt, st, an, z).set_index("alt_id")
+    b = abgleich.atlas_bericht(alt, st, an, z).set_index("alt_id")
     assert b.loc["ALT1", "status"] == "zugeordnet" and b.loc["ALT1", "typ_passt"]
     assert b.loc["ALT2", "status"] == "nah"  # ~160 m neben SK2 (Grenze 200 m)
     assert not b.loc["ALT2", "typ_passt"]  # dort steht eine Halle, kein Spielfeld
@@ -108,7 +109,7 @@ def test_altbestand_abgleich(tmp_path):
 
 
 def test_alkis_vor_ort_beschreibung():
-    from sportstaettenatlas.anreicherung.vor_ort import beschreibe
+    from sportstaettenatlas.analysen.alkis.vor_ort import beschreibe
 
     nutzung = gpd.GeoDataFrame(
         {"nutzart": ["Landwirtschaft", "Wald"], "bez": ["Grünland", None], "name": [None, None]},
@@ -134,7 +135,7 @@ def test_alkis_vor_ort_beschreibung():
 
 
 def test_nachbarflaechen_werden_mitbestaetigt():
-    from sportstaettenatlas.anreicherung.abgleich import nachbarn_mitbestaetigen
+    from sportstaettenatlas.analysen.alkis.abgleich import nachbarn_mitbestaetigen
 
     st = gpd.GeoDataFrame(
         {"sportstaette_id": ["ST1", "ST2", "ST3", "ST4"]},
@@ -163,8 +164,8 @@ def test_nachbarflaechen_werden_mitbestaetigt():
 def test_alkis_vor_ort_zwischenspeicher(tmp_path, monkeypatch):
     import pandas as pd
 
-    from sportstaettenatlas.anreicherung import vor_ort
-    from sportstaettenatlas.quellen import QUELLEN
+    from sportstaettenatlas.analysen.alkis import vor_ort
+    from sportstaettenatlas.analysen.alkis.quellen import QUELLEN
 
     aufrufe = []
 

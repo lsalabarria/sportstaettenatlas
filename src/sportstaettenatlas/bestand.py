@@ -39,7 +39,7 @@ from collections.abc import Callable, Iterator
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from .anreicherung.altbestand import EXPORT_PFLICHT, _datum, _text, _utm, _zahl, _zeilen
+from .atlas import EXPORT_PFLICHT, _datum, _text, _utm, _zahl, _zeilen
 
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+(\.[\w-]+)+")
 Umrechnen = Callable[[float, float], tuple[float, float]]  # (x, y) EPSG:25832 → (lon, lat)
@@ -265,18 +265,6 @@ def betreiber_art(name: str | None) -> str | None:
     return "sonstige"
 
 
-ALKIS_STATUS = {  # Status im Abgleich → Text auf der Webseite
-    "zugeordnet": "in ALKIS",
-    "nah": "ALKIS in der Nähe",
-    "nicht in ALKIS": "nicht in ALKIS",
-}
-
-
-def _quell_id(v) -> str:
-    s = str(v).strip()
-    return s.removesuffix(".0")
-
-
 def _adresse_text(a: dict) -> str:
     strasse = " ".join(x for x in (a.get("strasse"), a.get("hausnummer")) if x)
     ort = " ".join(x for x in (a.get("plz"), a.get("ort")) if x)
@@ -292,24 +280,14 @@ def lies_bestand(ordner: Path) -> Iterator[dict]:
             raise ValueError(f"{datei}: kein gültiges JSON ({exc})") from exc
 
 
-def bestand_geojson(datensaetze, abgleich=None, praezision: int = 5) -> dict:
-    """Datensätze → GeoJSON-Punkte für die Karte (flache Eigenschaften).
-
-    `abgleich`: DataFrame des ALKIS-Abgleichs (Spalten alt_atlas_id, status) – ergänzt,
-    ob ALKIS die Sportstätte kennt.
-    """
-    status = {}
-    if abgleich is not None and len(abgleich) and {"alt_atlas_id", "status"} <= set(abgleich):
-        for aid, st in zip(abgleich["alt_atlas_id"], abgleich["status"], strict=True):
-            if aid is not None and str(aid) not in ("", "nan") and st in ALKIS_STATUS:
-                status[_quell_id(aid)] = ALKIS_STATUS[st]
+def bestand_geojson(datensaetze, praezision: int = 5) -> dict:
+    """Datensätze → GeoJSON-Punkte für die Karte (flache Eigenschaften)."""
     features = []
     for d in datensaetze:
         lage = d.get("lage") or {}
         if lage.get("lon") is None or lage.get("lat") is None:
             continue
         a = d.get("adresse") or {}
-        atlas_id = ((d.get("quellen") or {}).get("atlas_rlp") or {}).get("id")
         p = {
             "id": d.get("id"),
             "name": d.get("name"),
@@ -333,8 +311,6 @@ def bestand_geojson(datensaetze, abgleich=None, praezision: int = 5) -> dict:
             "eigentuemer_art": betreiber_art(d.get("eigentuemer")),
             "website": d.get("website"),
         }
-        if atlas_id is not None and status:
-            p["alkis"] = status.get(_quell_id(atlas_id), "ohne Abgleich")
         p = {k: v for k, v in p.items() if v not in (None, "", [])}
         features.append(
             {

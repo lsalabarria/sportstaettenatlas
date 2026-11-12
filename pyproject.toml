@@ -1,7 +1,7 @@
 [project]
 name = "sportstaettenatlas"
 version = "0.1.0"
-description = "Leitet aus offenen ALKIS-Daten eine erste Tabelle von Sportstätten-Kandidaten ab."
+description = "Offener Sportstättenatlas: Datenbestand im Git, statische Webseite und Analysen (ALKIS-Abgleich)."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

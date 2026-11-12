@@ -1,4 +1,4 @@
-"""Altbestand: Daten des bisherigen Sportstättenatlas RLP.
+"""Daten des bisherigen Sportstättenatlas RLP lesen (CSV-Export und älteres Import-Format).
 
 Zwei CSV-Formate werden gelesen:
 
@@ -250,79 +250,3 @@ def lade(pfad: Path, crs: str = "EPSG:25832", land_ags: str = "07"):
     return gpd.GeoDataFrame(
         df.drop(columns=["x", "y"]), geometry=gpd.points_from_xy(df["x"], df["y"]), crs=crs
     )
-
-
-def abgleich(alt, staetten, anlagen, zuordnung, max_nah_m: float = 200) -> pd.DataFrame:
-    """Bericht aus Sicht des Altbestands: Wo liegt jede Altsystem-Sportstätte in ALKIS?
-
-    `zuordnung` ist das Ergebnis von je_objekt (welche unserer Sportstätten welches
-    Altsystem-Objekt bekommen hat). Status:
-    - zugeordnet           – einer ALKIS-Sportstätte zugeordnet
-    - nah                  – nächste ALKIS-Sportstätte 100–200 m entfernt (Koordinate prüfen)
-    - nicht in ALKIS       – im Umkreis von 200 m keine ALKIS-Sportstätte
-    `typ_passt` vergleicht den Altsystem-Typ mit den Typgruppen der Anlagen vor Ort.
-    """
-    import geopandas as gpd
-
-    bericht = alt.drop(columns="geometry").copy()
-    punkte = alt.geometry.to_crs("EPSG:4326")
-    bericht["lon"], bericht["lat"] = punkte.x.round(6).values, punkte.y.round(6).values
-    # wer hat welches Objekt bekommen?
-    hat = {}
-    if "alt_id" in zuordnung:
-        for sid, ids in zip(staetten["sportstaette_id"], zuordnung["alt_id"]):
-            for i in str(ids).split(" | ") if isinstance(ids, str) else []:
-                hat[i] = sid
-    bericht["sportstaette_id"] = bericht["alt_id"].map(hat)
-
-    naechste = (
-        gpd.sjoin_nearest(
-            alt[["alt_id", "geometry"]],
-            staetten[["sportstaette_id", "geometry"]],
-            how="left",
-            max_distance=max_nah_m,
-            distance_col="abstand_m",
-        )
-        .drop_duplicates("alt_id")
-        .set_index("alt_id")
-    )
-    bericht["naechste_sportstaette_id"] = bericht["alt_id"].map(naechste["sportstaette_id"])
-    bericht["abstand_m"] = bericht["alt_id"].map(naechste["abstand_m"]).round(1)
-    bericht["status"] = "nicht in ALKIS"
-    bericht.loc[bericht["naechste_sportstaette_id"].notna(), "status"] = "nah"
-    bericht.loc[bericht["sportstaette_id"].notna(), "status"] = "zugeordnet"
-
-    gruppen = anlagen.groupby("sportstaette_id")["typgruppe"].agg(lambda s: set(s.dropna()))
-    ort = bericht["sportstaette_id"].fillna(bericht["naechste_sportstaette_id"])
-    bericht["alkis_typgruppen"] = ort.map(
-        lambda s: "; ".join(sorted(gruppen.get(s, set()))) if isinstance(s, str) else None
-    )
-
-    def passt(o, g):
-        vor_ort = gruppen.get(o, set()) - {"unbestimmt"}  # Sammelbegriff sagt nichts
-        if not isinstance(o, str) or not g or not vor_ort:
-            return None
-        return g in vor_ort
-
-    bericht["typ_passt"] = [passt(o, g) for o, g in zip(ort, bericht["alt_typgruppe"])]
-    spalten = [
-        "alt_id",
-        "status",
-        "sportstaette_id",
-        "naechste_sportstaette_id",
-        "abstand_m",
-        "typ_passt",
-        "alt_typ",
-        "alt_typgruppe",
-        "alkis_typgruppen",
-        "alt_name",
-        "alt_komplex",
-        "alt_adresse",
-        "alt_anlagentypen",
-        "alt_betriebsstatus",
-        "alt_atlas_id",
-        "alt_datei",
-        "lon",
-        "lat",
-    ]
-    return bericht[[c for c in spalten if c in bericht.columns]]

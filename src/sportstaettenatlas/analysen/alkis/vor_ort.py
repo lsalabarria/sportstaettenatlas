@@ -19,14 +19,14 @@ import time
 from pathlib import Path
 from typing import TYPE_CHECKING
 
-from ..quellen import WfsQuelle
-from ..wfs import getfeature_params
-from .http import Profil
+from ...http import Profil
+from .quellen import WfsQuelle
+from .wfs import getfeature_params
 
 if TYPE_CHECKING:
     import geopandas as gpd
 
-    from .http import Sitzung
+    from ...http import Sitzung
 
 log = logging.getLogger(__name__)
 
@@ -45,7 +45,7 @@ def ABFRAGE_PROFIL() -> Profil:
 
 def _lies(sitzung: Sitzung, quelle: WfsQuelle, typename: str, bbox) -> gpd.GeoDataFrame | None:
     """Objekte im Ausschnitt; None = Dienst hat geantwortet, aber nichts gefunden."""
-    from ..wfs import _lese_gml
+    from .wfs import _lese_gml
 
     params = getfeature_params(typename, bbox, quelle.crs, 200, 0)
     # kleine Ausschnitte: knappes Zeitlimit, damit ein hängender Server den Lauf
@@ -152,7 +152,7 @@ def ergaenze(
     `speicher_pfad`: JSON mit fertigen Ergebnissen je Ort (Standard: neben dem
     HTTP-Cache der Sitzung, data/cache/alkis_vor_ort.json).
     """
-    from ..hilfen import Fortschritt
+    from ...hilfen import Fortschritt
 
     if speicher_pfad is None and getattr(sitzung, "cache", None) is not None:
         speicher_pfad = Path(sitzung.cache).parent / "alkis_vor_ort.json"

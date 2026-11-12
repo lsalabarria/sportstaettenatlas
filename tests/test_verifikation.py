@@ -1,6 +1,6 @@
 import pandas as pd
 
-from sportstaettenatlas.anreicherung.verifikation import (
+from sportstaettenatlas.analysen.alkis.verifikation import (
     FELDER_ANLAGE,
     FELDER_STAETTE,
     verifiziere,
