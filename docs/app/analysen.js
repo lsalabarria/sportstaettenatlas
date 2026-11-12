@@ -65,7 +65,7 @@ const LEGENDE_STUFEN = ["nur ALKIS – unbestimmt", "nur ALKIS", "bestätigt"];
 
 function analyseAlkis() {
   const ebene = L.layerGroup();
-  let legende = null, aktualisiere = () => {}, zeigeZusammenfassung = () => {}, startGrenzen = null;
+  let legende = null, aktualisiere = () => {}, zeigeZahlen = () => {}, startGrenzen = null;
   const such = [];
   async function starte() {
     if (!EINGEBETTET) zeigeLaden("ALKIS-Daten werden geladen (einige MB) …");
@@ -181,6 +181,7 @@ function analyseAlkis() {
     const gruppen = {};
     const stufeAn = { "nur ALKIS – unbestimmt": true, "nur ALKIS": true, "bestätigt": true, "": true };
     const gruppe = name => gruppen[name] ??= { punkte: [], flaechen: [], n: 0, an: true };
+    const anlagenZahl = [];  // { g, stufe, ars } je Anlage, für die Zahlen der Legende
     function stufeVon(p) {
       const s = STAETTE[p.sportstaette_id];
       return (s && s.verifikation_stufe) || p.verifikation_stufe || "";
@@ -193,6 +194,7 @@ function analyseAlkis() {
                      dashArray: p.pruefen ? "3 3" : null };
       const tip = () => tipAnlage(p);  // erst beim Anzeigen bauen
       const stufe = stufeVon(p);
+      anlagenZahl.push({ g: p.typgruppe || "unbekannt", stufe, ars: p.ars });
       if (p.lat != null && p.lon != null) {
         g.punkte.push({ stufe, ars: p.ars, layer: info(L.circleMarker([p.lat, p.lon], { ...stil,
           weight: 1, radius: p.rolle === "zubehoer" ? 2 : 3.5, fillOpacity: 0.85 }), tip) });
@@ -300,25 +302,25 @@ function analyseAlkis() {
       const div = L.DomUtil.create("div", "panel filter");
       L.DomEvent.disableClickPropagation(div);
       L.DomEvent.disableScrollPropagation(div);
+      // Reihenfolge und Auswahl der Zeilen nach den Zahlen für das ganze Land;
+      // die Zahlen selbst gelten für das gewählte Gebiet (zeigeZahlen)
       const namen = Object.keys(gruppen).sort((a, b) => gruppen[b].n - gruppen[a].n);
       const zaehl = {};
-      for (const f of ANLAGEN.features) {
-        const s = stufeVon(f.properties);
-        if (s) zaehl[s] = (zaehl[s] || 0) + 1;
-      }
-      let h = `<h1>ALKIS-Abgleich</h1><div class="zusammenfassung"></div>`
-        + `<h2>ALKIS: ${zahl(STAETTEN.features.length)} Sportstätten · ${zahl(ANLAGEN.features.length)} Anlagen</h2>`
-        + namen.map(n => `<label><input type="checkbox" data-g="${esc(n)}" checked>`
-          + `<span class="swatch" style="border-radius:3px;background:${FARBEN[n] || "#D85A30"}"></span>`
-          + `${esc(n)}<span class="n">${zahl(gruppen[n].n)}</span></label>`).join("");
+      for (const e of anlagenZahl) if (e.stufe) zaehl[e.stufe] = (zaehl[e.stufe] || 0) + 1;
       const za = {};
       for (const e of atlasPunkte) za[e.status] = (za[e.status] || 0) + 1;
+      const n = schluessel => `<span class="n" data-n="${esc(schluessel)}"></span>`;
+      let h = `<h1>ALKIS-Abgleich</h1><div class="zusammenfassung"></div>`
+        + `<h2 class="alkis-zahlen"></h2>`
+        + namen.map(g => `<label><input type="checkbox" data-g="${esc(g)}" checked>`
+          + `<span class="swatch" style="border-radius:3px;background:${FARBEN[g] || "#D85A30"}"></span>`
+          + `${esc(g)}${n("g:" + g)}</label>`).join("");
       if (Object.keys(zaehl).length || atlasPunkte.length) {
         h += `<h2>Verifikation</h2>` + LEGENDE_STUFEN.filter(s => zaehl[s]).map(s =>
           `<label><input type="checkbox" data-s="${esc(s)}" checked>`
           + `<span class="schraffur" style="${schraffurCss(s)}"></span>`
           + `<span class="verif stufe-${STUFEN.indexOf(s)}">${esc(s)}</span>`
-          + `<span class="n">${zahl(zaehl[s])}</span></label>`).join("")
+          + `${n("s:" + s)}</label>`).join("")
           + Object.keys(ATLAS_STIL).filter(k => za[k]).map(k =>
             `<label title="${esc(ATLAS_STIL[k].label)}"><input type="checkbox" data-a="${esc(k)}" checked>`
             + `<span class="swatch" style="background-color:${ATLAS_STIL[k].fillColor};`
@@ -326,7 +328,7 @@ function analyseAlkis() {
             + `box-sizing:border-box"></span>`
             + `<span class="verif" style="background:${ATLAS_STIL[k].fillColor};`
             + `color:${ATLAS_STIL[k].color}">${esc(ATLAS_STIL[k].kurz)}</span>`
-            + `<span class="n">${zahl(za[k])}</span></label>`).join("");
+            + `${n("a:" + k)}</label>`).join("");
       }
       h += `<hr><span style="color:#666">Füllfarbe = Klasse, Schraffur = Verifikation `
         + `(ab Zoom ${ZOOM_FLAECHEN})<br>gestrichelt = zu prüfen`
@@ -364,10 +366,31 @@ function analyseAlkis() {
     }
     if (STAETTEN.features.length) startGrenzen = staetten.getBounds();
 
-    // Zusammenfassung: Wie viele Atlas-Einträge findet das Kataster? (für das gewählte Gebiet)
-    zeigeZusammenfassung = () => {
-      const el = legende && legende.getContainer && legende.getContainer()
-        && legende.getContainer().querySelector(".zusammenfassung");
+    // Zahlen der Legende und Zusammenfassung für das gewählte Gebiet
+    zeigeZahlen = () => {
+      const div = legende && legende.getContainer && legende.getContainer();
+      if (!div) return;
+      const zaehler = {};
+      const plus = k => { zaehler[k] = (zaehler[k] || 0) + 1; };
+      let anlagen = 0;
+      for (const e of anlagenZahl) {
+        if (!imGebiet(e.ars)) continue;
+        anlagen++; plus("g:" + e.g);
+        if (e.stufe) plus("s:" + e.stufe);
+      }
+      for (const e of atlasPunkte) if (imGebiet(e.ars)) plus("a:" + e.status);
+      const staettenN = STAETTEN.features.filter(f => imGebiet(f.properties.ars)).length;
+      div.querySelector(".alkis-zahlen").textContent = `ALKIS${GEBIET ? " · " + gebietName() : ""}: `
+        + `${zahl(staettenN)} Sportstätten · ${zahl(anlagen)} Anlagen`;
+      div.querySelectorAll("[data-n]").forEach(el => {
+        const w = zaehler[el.dataset.n] || 0;
+        el.textContent = zahl(w);
+        el.closest("label").classList.toggle("null", !w);
+      });
+      zeigeZusammenfassung(div.querySelector(".zusammenfassung"));
+    };
+    // Wie viele Atlas-Einträge findet das Kataster? (für das gewählte Gebiet)
+    function zeigeZusammenfassung(el) {
       if (!el || !ZUSAMMEN) return;
       const summe = ZUSAMMEN.status.map(() => 0);
       for (const [ars, werte] of Object.entries(ZUSAMMEN.je_gemeinde)) {
@@ -379,7 +402,7 @@ function analyseAlkis() {
         + balken(ZUSAMMEN.status.map((s, i) => [s, summe[i]]), n, true)
         + `<div class="hinweis">${zahl(n)} Einträge des Atlas; „in der Nähe“ = nächste `
         + `ALKIS-Sportstätte 100–200 m entfernt</div>`;
-    };
+    }
   }
   let erstmals = true;
   return {
@@ -391,11 +414,11 @@ function analyseAlkis() {
       }
       erstmals = false;
       aktualisiere();
-      zeigeZusammenfassung();
+      zeigeZahlen();
     },
     verbergen() { karte.removeLayer(ebene); legende.remove(); },
     aktualisiere: () => aktualisiere(),
-    gebietGeaendert: () => { aktualisiere(); zeigeZusammenfassung(); },
+    gebietGeaendert: () => { aktualisiere(); zeigeZahlen(); },
     suchindex: () => such,
   };
 }
