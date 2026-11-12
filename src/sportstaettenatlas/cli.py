@@ -3,7 +3,7 @@
 sportstaettenatlas bestand QUELLE   Atlas-Export in den Datenbestand daten/ überführen
 sportstaettenatlas umstellen        daten/ ins aktuelle Format bringen (Kreis/Sportstätte/…)
 sportstaettenatlas seite            Webseite für GitHub Pages (docs/) bauen
-sportstaettenatlas alkis …          Analyse ALKIS-Abgleich (laden, bauen, abgleich …)
+sportstaettenatlas alkis            Analyse ALKIS-Abgleich gegen daten/ (vollständig)
 """
 
 from __future__ import annotations
@@ -137,7 +137,7 @@ def cmd_seite(args):
     if alkis is None:
         print(
             f"Hinweis: {args.alkis}/sportstaetten.gpkg fehlt – der ALKIS-Abgleich behält seinen "
-            "bisherigen Stand (neu mit `alkis bauen` und `alkis abgleich`)."
+            "bisherigen Stand (neu mit `sportstaettenatlas alkis`)."
         )
     else:
         titel, dateien, texte, vermerk = alkis

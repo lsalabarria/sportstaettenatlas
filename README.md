@@ -276,7 +276,7 @@ Eine neue Analyse braucht:
 2. in `web/analysen.js` einen Eintrag in `ANALYSEN` mit Titel und einer Funktion, die die
    Darstellung auf der Karte baut (siehe `analyseAlkis`).
 
-## Analyse: ALKIS-Abgleich (`sportstaettenatlas alkis …`)
+## Analyse: ALKIS-Abgleich (`sportstaettenatlas alkis`)
 
 Leitet aus offenen ALKIS-Daten (Liegenschaftskataster) zwei Tabellen ab, **Sportstätten**
 und **Sportanlagen**, und gleicht sie mit dem Atlas ab. So zeigt sich, was der Atlas kennt,
@@ -301,35 +301,24 @@ lizenziert unter Datenlizenz Deutschland – Namensnennung 2.0. Weitere Länder 
 `src/sportstaettenatlas/analysen/alkis/quellen.py` ergänzt.
 
 ```bash
-# Ausschnitt Koblenz-Innenstadt laden und Tabellen bauen
-uv run sportstaettenatlas -v alkis lauf
-
-# ganzes Stadtgebiet Koblenz (grob) bzw. ganz Rheinland-Pfalz (kachelweise, fortsetzbar)
-uv run sportstaettenatlas -v alkis lauf --gebiet koblenz
-uv run sportstaettenatlas -v alkis lauf --gebiet rlp
-
-# eigener Ausschnitt in EPSG:25832 (xmin,ymin,xmax,ymax)
-uv run sportstaettenatlas alkis lauf --bbox 397500,5576500,401500,5580500
-
-# mit dem Datenbestand (daten/) abgleichen
-uv run sportstaettenatlas -v alkis abgleich
-
-# Karte (results/out/karte.html) aus dem vorhandenen Ergebnis erzeugen und öffnen
-uv run sportstaettenatlas alkis karte --oeffnen
-
-# welche ALKIS-Werte kommen vor und wie werden sie zugeordnet?
-uv run sportstaettenatlas alkis werte --gebiet koblenz --alle
-
-# Ergebnis auf die Webseite bringen
-uv run sportstaettenatlas seite
+uv run sportstaettenatlas -v alkis   # ALKIS laden, Sportstätten bauen, mit daten/ abgleichen
+uv run sportstaettenatlas seite      # Ergebnis auf die Webseite bringen
 ```
 
-`lauf` besteht aus `laden` (lädt die Daten in den Cache unter `results/raw/`) und `bauen`
-(erzeugt daraus die Tabellen); beide lassen sich auch einzeln ausführen.
+Ein Befehl erledigt den ganzen Abgleich für Rheinland-Pfalz:
+
+1. **ALKIS laden** über den WFS des LVermGeo, kachelweise und fortsetzbar. Die Daten landen
+   im Cache unter `results/raw/`; ein zweiter Lauf lädt nichts neu (`--neu` erzwingt es).
+2. **Sportstätten und Sportanlagen bauen** nach den Regeln in `regeln.toml`.
+3. **Mit dem Datenbestand abgleichen**, also mit dem aktuellen Stand in `daten/`.
+
+Das Ergebnis steht in `results/out/`, darunter auch `karte.html` zum Ansehen ohne Webseite.
+Zum Ausprobieren auf einem kleinen Ausschnitt: `--gebiet koblenz-innenstadt` oder
+`--bbox xmin,ymin,xmax,ymax` (EPSG:25832).
 
 ### Ganz Rheinland-Pfalz
 
-`--gebiet rlp` umfasst das ganze Land, ca. 185 × 230 km in 437 Kacheln zu je 10 km.
+Das ganze Land (Standard, `--gebiet rlp`) umfasst ca. 185 × 230 km in 437 Kacheln zu je 10 km.
 Damit das machbar bleibt, gilt Folgendes:
 
 - **Serverseitiger Vorfilter:** Bei der Nutzung werden nur Sport-, Freizeit- und
@@ -350,10 +339,10 @@ Namen als Sportstätte erkennbar wären, fehlen dadurch landesweit. Wenn man die
 
 ### Ergebnis (`results/out/`)
 
-- `sportstaetten.csv` und `sportanlagen.csv`: die beiden Tabellen; nach `abgleich`
-  zusätzlich `*_angereichert.csv`
+- `sportstaetten.csv` und `sportanlagen.csv`: die beiden Tabellen aus ALKIS allein,
+  `*_angereichert.csv` dieselben nach dem Abgleich
 - `sportstaetten.gpkg`: dieselben Tabellen mit Geometrie (Layer `sportstaetten` und
-  `sportanlagen`, nach `abgleich` zusätzlich `*_angereichert`) sowie der Layer `metadaten`.
+  `sportanlagen`, nach dem Abgleich `*_angereichert`) sowie der Layer `metadaten`.
   Öffnen z. B. in QGIS.
 - `abgleich_altbestand.csv`: der Abgleich aus Sicht des Atlas (siehe unten)
 - `karte.html`: dieselbe Darstellung wie im Reiter „Analysen“, als eine Datei mit allen Daten
@@ -376,9 +365,9 @@ Wichtige Spalten:
 | `gemeindeschluessel` | AGS (8-stellig) |
 | `flaeche_m2`, `lon`, `lat` | Fläche, Lagepunkt (WGS84) |
 
-### Abgleich mit dem Datenbestand (`alkis abgleich`)
+### Abgleich mit dem Datenbestand
 
-Der Befehl liest `results/out/sportstaetten.gpkg` und gleicht die Sportstätten mit dem
+Der dritte Schritt gleicht die ALKIS-Sportstätten mit dem
 **aktuellen Datenbestand in `daten/`** ab (`--bestand` für einen anderen Ordner). Was dort
 korrigiert oder neu eingetragen wurde, fließt also beim nächsten Abgleich ein. Die Angaben
 des Bestands werden mit Herkunft übernommen; ihre Spalten heißen `alt_*`, und als Quelle
@@ -402,7 +391,7 @@ Sportarten umfassen die der Sportstätte und die ihrer Anlagen.
   - `typ_passt`: Passt der Atlas-Typ zu den Anlagen, die ALKIS dort kennt?
   - ALKIS-Sportstätten ohne Gegenstück im Atlas findet man in
     `sportstaetten_angereichert.csv` an `verifikation` ohne „Sportstättenatlas RLP“.
-- **ALKIS vor Ort:** Bei „nicht in ALKIS“ fragt `abgleich` den Katasterdienst an genau
+- **ALKIS vor Ort:** Bei „nicht in ALKIS“ fragt der Abgleich den Katasterdienst an genau
   dieser Stelle ohne Vorfilter ab. Das Ergebnis landet in `alkis_nutzung_vor_ort` (z. B.
   „Landwirtschaft (Grünland)“) und `alkis_gebaeude_vor_ort` (Gebäude im Umkreis von 25 m
   mit Funktion und Abstand). Ein zweiter Lauf fragt bekannte Orte nicht mehr an; der
@@ -474,7 +463,7 @@ Zum Neuladen einfach die jeweilige Datei bzw. den Ordner löschen.
 
 Die Zuordnung steht in `src/sportstaettenatlas/analysen/alkis/regeln.toml`. Die Regeln
 vergleichen Stichwörter ohne Groß-/Kleinschreibung; die erste passende Regel gewinnt. Am
-einfachsten geht man so vor: `alkis werte --alle` zeigt alle tatsächlich vorkommenden
+einfachsten geht man so vor: `sportstaettenatlas alkis-werte --alle` zeigt alle tatsächlich vorkommenden
 ALKIS-Texte, danach ergänzt man Regeln in einer eigenen Kopie und übergibt sie mit
 `--regeln meine_regeln.toml`.
 

@@ -283,12 +283,8 @@ def baue(
     )
 
 
-def schreibe(
-    ergebnis: Ergebnis, ziel: Path, quelle: WfsQuelle, bbox
-) -> tuple[Path, Path, Path, Path]:
-    """GeoPackage, zwei CSV-Tabellen und die Karte schreiben."""
-    from .karte import schreibe_karte
-
+def schreibe(ergebnis: Ergebnis, ziel: Path, quelle: WfsQuelle, bbox) -> tuple[Path, Path, Path]:
+    """GeoPackage (Layer sportstaetten, sportanlagen, metadaten) und zwei CSV-Tabellen."""
     ziel.mkdir(parents=True, exist_ok=True)
     gpkg = ziel / "sportstaetten.gpkg"
     if gpkg.exists():
@@ -321,7 +317,4 @@ def schreibe(
     ergebnis.sportstaetten.drop(columns="geometry").to_csv(csv_st, index=False, encoding="utf-8")
     ergebnis.sportanlagen.drop(columns="geometry").to_csv(csv_an, index=False, encoding="utf-8")
 
-    karte = schreibe_karte(
-        ergebnis.sportanlagen, ergebnis.sportstaetten, ziel / "karte.html", quellenvermerk=vermerk
-    )
-    return gpkg, csv_st, csv_an, karte
+    return gpkg, csv_st, csv_an
