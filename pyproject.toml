@@ -6,7 +6,6 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "geopandas>=1.0",
-    "openpyxl>=3.1",
     "pyogrio>=0.10",
     "pyproj>=3.6",
     "requests>=2.31",

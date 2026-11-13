@@ -90,7 +90,7 @@ def anlagen_aus(bezeichnungen: list[str]) -> list[dict]:
     """Bezeichnungen des Atlas → Sportanlagen mit einheitlichem Typ; eine abweichende
     Schreibweise ("Großspielfeld (ab 5.000 m²)") bleibt unter quellen.atlas_rlp."""
     out = []
-    for b in anlagen_typen.zusammenfuegen(bezeichnungen):
+    for b in bezeichnungen:
         t = anlagen_typen.typ(b)
         out.append({"typ": t, **({"quellen": {"atlas_rlp": {"bezeichnung": b}}} if b != t else {})})
     return out

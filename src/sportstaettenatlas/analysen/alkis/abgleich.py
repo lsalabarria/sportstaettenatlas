@@ -1,4 +1,4 @@
-"""Abgleich der ALKIS-Sportstätten mit dem Datenbestand (daten/) und Gesamtablauf.
+"""Abgleich der ALKIS-Sportstätten mit dem Datenbestand (daten/).
 
 `aus_bestand` macht aus dem Datenbestand eine Tabelle mit den Spalten alt_* (eine Zeile je
 Sportstätte), `anreichern` ordnet diese Punkte den ALKIS-Flächen zu und übernimmt ihre
@@ -269,7 +269,7 @@ def anreichern(
     rand = 500
     im_gebiet = ab.geometry.within(box(x0 - rand, y0 - rand, x1 + rand, y1 + rand))
     if not im_gebiet.all():
-        _status(f"Datenbestand: {int(im_gebiet.sum())} von {len(ab)} Sportstätten im Gebiet")
+        print(f"Datenbestand: {int(im_gebiet.sum())} von {len(ab)} Sportstätten im Gebiet")
         ab = ab[im_gebiet.to_numpy()].copy()
 
     spalten = [c for c in ab.columns if c.startswith("alt_")]
@@ -368,16 +368,6 @@ def atlas_bericht(alt, staetten, anlagen, zuordnung, max_nah_m: float = 200) -> 
         "lat",
     ]
     return bericht[[c for c in spalten if c in bericht.columns]]
-
-
-def _status(text: str) -> None:
-    """Statuszeile, die laufende Fortschrittsbalken nicht zerreißt."""
-    try:
-        from tqdm.auto import tqdm
-
-        tqdm.write(text)
-    except ImportError:  # pragma: no cover
-        print(text, flush=True)
 
 
 def gpd_aus(df, crs):

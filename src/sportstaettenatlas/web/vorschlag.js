@@ -100,8 +100,7 @@ function ansichtVorschlag(bestand) {
     .sort((a, b) => a.localeCompare(b, "de"));
   // Typen der Sportanlagen: nach Gruppe, darin nach Häufigkeit
   const ANLAGEN = (() => {
-    const z = {};
-    for (const e of bestand.eintraege) for (const t of e.p.anlagen || []) z[t] = (z[t] || 0) + 1;
+    const z = zaehle(bestand.eintraege.flatMap(e => e.p.anlagen));
     const reihe = ANLAGEN_GRUPPEN.map(g => g[0]);
     return Object.keys(z).sort((a, b) => reihe.indexOf(anlagenGruppe(a)) - reihe.indexOf(anlagenGruppe(b))
       || z[b] - z[a]);
@@ -227,7 +226,7 @@ function ansichtVorschlag(bestand) {
         if (t.length >= 8) break;
       }
       treffer.innerHTML = t.map(e => `<li data-id="${esc(e.p.id)}">${esc(e.p.name || e.kat)}`
-        + `<small>${esc([e.p.kategorie, e.p.adresse].filter(v => !leer(v)).join(" · "))}</small></li>`).join("")
+        + `<small>${esc(verbinde([e.p.kategorie, e.p.adresse]))}</small></li>`).join("")
         || `<li class="gruppe">Keine Sportstätte gefunden</li>`;
     });
     treffer.addEventListener("click", ev => {
@@ -428,13 +427,12 @@ function ansichtVorschlag(bestand) {
     };
   }
   function fuelle(v) {
-    for (const n of ["name", "betriebsstatus", "strasse", "hausnummer", "adresszusatz", "plz", "ort",
+    for (const n of ["name", "strasse", "hausnummer", "adresszusatz", "plz", "ort",
       "zuschauerplaetze", "eigentuemer", "betreiber", "website", "anmerkung"]) F(n).value = v[n] ?? "";
-    const k = F("kategorie");
-    if (v.kategorie && ![...k.options].some(o => o.value === v.kategorie)) k.add(new Option(v.kategorie));
-    k.value = v.kategorie || "";
-    if (v.betriebsstatus && ![...F("betriebsstatus").options].some(o => o.value === v.betriebsstatus)) {
-      F("betriebsstatus").add(new Option(v.betriebsstatus)); F("betriebsstatus").value = v.betriebsstatus;
+    for (const n of ["kategorie", "betriebsstatus"]) {  // Wert, den die Auswahl nicht kennt: ergänzen
+      const s = F(n);
+      if (v[n] && ![...s.options].some(o => o.value === v[n])) s.add(new Option(v[n]));
+      s.value = v[n] || "";
     }
     for (const r of ["oeffentlicher_zugang", "schulsport"]) {
       const w = v[r] === "ja" || v[r] === "nein" ? v[r] : "";
@@ -442,7 +440,7 @@ function ansichtVorschlag(bestand) {
     }
     sportarten.clear(); (v.sportarten || []).forEach(s => sportarten.add(s)); zeigeSportarten();
     el.querySelector("#v-anlagen").innerHTML = "";
-    for (const a of v.anlagen || []) anlageZeile(typeof a === "string" ? { typ: a, name: "", id: "" } : a);
+    for (const a of v.anlagen || []) anlageZeile(a);
     setzeLage(v.lat, v.lon, true);
     zeigeArten();
   }
@@ -458,35 +456,30 @@ function ansichtVorschlag(bestand) {
     const g = el.querySelector("#v-gewaehlt");
     const was = F("art").value === "anlagen" ? "die Sportanlagen von" : "die Angaben von";
     g.innerHTML = original ? `<div class="chip">Sie ändern ${was}: <b>${esc(original.p.name || original.kat)}</b> `
-      + `<span class="q">${esc([original.p.kategorie, original.p.adresse].filter(v => !leer(v)).join(" · "))}</span>`
+      + `<span class="q">${esc(verbinde([original.p.kategorie, original.p.adresse]))}</span>`
       + ` <button type="button">andere wählen</button></div>` : "";
     const b = g.querySelector("button");
     if (b) b.addEventListener("click", () => { original = null; zeigeGewaehlt();
       el.querySelector("#v-auswahl").hidden = false; el.querySelector("#v-suche").focus(); planePruefung(); });
     el.querySelector("#v-auswahl").hidden = !(F("art").value !== "neu" && !original);
   }
-  function neu(vorgabe = {}, herkunft = "") {
-    original = null; quelle = herkunft;
+  // Formular neu füllen: für eine neue Sportstätte (eintrag = null) oder eine vorhandene
+  function beginne(art, eintrag, vorgabe, herkunft = "") {
+    original = eintrag; quelle = herkunft;
     form.reset();
-    F("art").value = "neu";
+    F("art").value = art;
     fuelle(vorgabe);
     zeigeTeile();
     zeigeGewaehlt();
     el.querySelector("#v-ausgabe").innerHTML = "";
     el.querySelector("#v-fehler").hidden = true;
   }
+  function neu(vorgabe = {}, herkunft = "") { beginne("neu", null, vorgabe, herkunft); }
   function bearbeite(id, art = "aenderung") {
     const e = NACH_ID.get(id);
     if (!e) return;
-    original = e; quelle = "";
     if (vkarte) vkarte.closePopup();
-    form.reset();
-    F("art").value = art === "anlagen" ? "anlagen" : "aenderung";
-    fuelle(ausEintrag(e));
-    zeigeTeile();
-    zeigeGewaehlt();
-    el.querySelector("#v-ausgabe").innerHTML = "";
-    el.querySelector("#v-fehler").hidden = true;
+    beginne(art === "anlagen" ? "anlagen" : "aenderung", e, ausEintrag(e));
   }
 
   // --- Prüfungen ---
@@ -629,7 +622,6 @@ function ansichtVorschlag(bestand) {
   let gebaut = false;
   return {
     titel: "Vorschlag",
-    starte() {},
     zeigen() {
       el.hidden = false;
       if (!gebaut) { baue(); gebaut = true; neu(); }
@@ -638,7 +630,6 @@ function ansichtVorschlag(bestand) {
       pruefe();
     },
     verbergen() { el.hidden = true; },
-    gebietGeaendert() {},
     hat: id => NACH_ID.has(id),
     neu(vorgabe, herkunft) { zeige("vorschlag").then(() => { neu(vorgabe, herkunft); pruefe(); el.scrollTop = 0; }); },
     bearbeite(id, art) { zeige("vorschlag").then(() => { bearbeite(id, art); pruefe(); el.scrollTop = 0; }); },

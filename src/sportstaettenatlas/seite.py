@@ -216,6 +216,39 @@ def _anzahl(obj) -> int | None:
     return None
 
 
+def _analysen(ordner: Path, analysen: dict) -> tuple[dict, list[tuple[str, str, dict]]]:
+    """Verzeichnis der Analysen (für index.json) und ihre Dateien (Pfad, Beschreibung, Inhalt).
+
+    Analysen aus früheren Läufen bleiben im Verzeichnis, solange ihr Ordner existiert;
+    der Ordner einer neu gerechneten Analyse wird vorher geleert.
+    """
+    index = ordner / "index.json"
+    frueher = json.loads(index.read_text("utf-8"))["analysen"] if index.exists() else []
+    verzeichnis = {a["name"]: a for a in frueher if (ordner / a["name"]).is_dir()}
+    dateien = []
+    for name, (titel, inhalte, texte) in analysen.items():
+        if (ordner / name).exists():
+            shutil.rmtree(ordner / name)  # keine Reste früherer Läufe
+        verzeichnis[name] = {"name": name, "titel": titel, "dateien": texte}
+        for datei, inhalt in inhalte.items():
+            dateien.append((f"analysen/{name}/{datei}", texte.get(datei, ""), inhalt))
+    return verzeichnis, dateien
+
+
+def _fruehere_analysen(ordner: Path, verzeichnis: dict, neu: set[str]) -> list[tuple]:
+    """Zeilen der Download-Liste für Dateien von Analysen, die diesmal nicht neu gerechnet
+    wurden."""
+    zeilen = []
+    for name, eintrag in verzeichnis.items():
+        for datei in sorted((ordner / name).glob("*.*json")):
+            pfad = f"analysen/{name}/{datei.name}"
+            if pfad not in neu:
+                obj = json.loads(datei.read_text("utf-8"))
+                text = eintrag.get("dateien", {}).get(datei.name, "")
+                zeilen.append((pfad, text, _anzahl(obj), datei.stat().st_size))
+    return zeilen
+
+
 def schreibe_webseite(
     ausgabe: Path,
     bestand: list[dict] | None = None,
@@ -269,21 +302,8 @@ def schreibe_webseite(
     elif (daten / "gebiete.json").exists():
         (daten / "gebiete.json").unlink()  # sonst zeigt die Karte eine veraltete Auswahl
 
-    index_pfad = daten / "analysen" / "index.json"
-    verzeichnis = {
-        a["name"]: a
-        for a in (
-            json.loads(index_pfad.read_text("utf-8"))["analysen"] if index_pfad.exists() else []
-        )
-        if (daten / "analysen" / a["name"]).is_dir()
-    }
-    for name, (titel_a, dateien, texte) in (analysen or {}).items():
-        ordner = daten / "analysen" / name
-        if ordner.exists():
-            shutil.rmtree(ordner)  # keine Reste früherer Läufe
-        verzeichnis[name] = {"name": name, "titel": titel_a, "dateien": texte}
-        for datei, inhalt in dateien.items():
-            schreiben.append((f"analysen/{name}/{datei}", texte.get(datei, ""), inhalt))
+    verzeichnis, analyse_dateien = _analysen(daten / "analysen", analysen or {})
+    schreiben += analyse_dateien
 
     entfernt: Counter = Counter()
     liste = []
@@ -294,17 +314,9 @@ def schreibe_webseite(
         (daten / pfad).parent.mkdir(parents=True, exist_ok=True)
         liste.append((pfad, text, _anzahl(obj), _schreibe_json(daten / pfad, obj)))
     if verzeichnis:
-        index_pfad.parent.mkdir(parents=True, exist_ok=True)
-        _schreibe_json(index_pfad, {"analysen": list(verzeichnis.values())})
-    # Download-Liste: auch Dateien von Analysen, die diesmal nicht neu gerechnet wurden
-    neu = {p for p, *_ in liste}
-    for name, eintrag in verzeichnis.items():
-        for datei in sorted((daten / "analysen" / name).glob("*.*json")):
-            pfad = f"analysen/{name}/{datei.name}"
-            if pfad not in neu:
-                obj = json.loads(datei.read_text("utf-8"))
-                text = eintrag.get("dateien", {}).get(datei.name, "")
-                liste.append((pfad, text, _anzahl(obj), datei.stat().st_size))
+        (daten / "analysen").mkdir(exist_ok=True)
+        _schreibe_json(daten / "analysen" / "index.json", {"analysen": list(verzeichnis.values())})
+    liste += _fruehere_analysen(daten / "analysen", verzeichnis, {p for p, *_ in liste})
 
     lokal = leaflet_laden and leaflet_lokal(ausgabe / "vendor" / "leaflet")
     web.kopiere_app(ausgabe / "app")

@@ -178,9 +178,9 @@ def main(argv: list[str] | None = None) -> None:
         level=logging.INFO if args.verbose else logging.WARNING,
         format="%(levelname)s %(message)s",
     )
-    from .hilfen import logging_mit_balken
+    from tqdm.contrib.logging import logging_redirect_tqdm
 
-    with logging_mit_balken():  # Log-Zeilen erscheinen über den Fortschrittsbalken
+    with logging_redirect_tqdm():  # Log-Zeilen erscheinen über dem Fortschrittsbalken
         args.func(args)
 
 

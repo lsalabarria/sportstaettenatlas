@@ -10,9 +10,6 @@
 #   zubehoer       – Nebengebäude/Bauwerk ohne eigene Sportnutzung (Tribüne, Umkleide)
 # Nebengebäude (zubehoer) außerhalb einer Sportstätten-Fläche werden verworfen.
 # pruefen = true markiert unsichere Zuordnungen für die manuelle Kontrolle.
-#
-# Mit `sportstaettenatlas werte` lassen sich alle im Ausschnitt vorkommenden
-# Werte auflisten, um diese Datei zu verfeinern.
 
 # --- Tatsächliche Nutzung (ave:Nutzung) – Flächen = Sportstätten ---
 # Es werden nur Flächen der Nutzungsart unten berücksichtigt.

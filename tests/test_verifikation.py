@@ -64,16 +64,6 @@ def test_datum_text_gemischt():
     assert list(_datum_text(s)) == ["2025-03-26", None, "2024-01-02", "2022-04-19", "unklar"]
 
 
-def test_fortschritt_ohne_fehler():
-    from sportstaettenatlas.hilfen import Fortschritt, logging_mit_balken
-
-    with logging_mit_balken(), Fortschritt(3, "Test", "Schritt") as fb:
-        for _ in range(3):
-            fb.info(ok=1, fehler=0)
-            fb.text("Test: läuft")
-            fb.weiter()
-
-
 def test_nur_alkis_unbestimmt():
     st = pd.DataFrame(
         {"sportstaette_id": ["S1", "S2", "S3", "S4"], "alt_id": [None, None, "A1", None]}

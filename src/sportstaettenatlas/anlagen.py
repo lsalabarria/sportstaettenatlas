@@ -1,8 +1,7 @@
 """Sportanlagen einer Sportstätte: einheitliche Typen und Gruppen für Karte und Filter.
 
 Eine Sportstätte (ein Punkt auf der Karte) enthält eine oder mehrere Sportanlagen, z. B.
-ein Sportplatz mit Großspielfeld, Rundlaufbahn und Weitsprunganlage. Im Datenbestand
-steht je Anlage eine Bezeichnung ("anlagen": [{"bezeichnung": "…"}]); der Atlas schreibt
+ein Sportplatz mit Großspielfeld, Rundlaufbahn und Weitsprunganlage. Der Atlas schreibt
 dieselbe Anlage oft verschieden ("Großspielfeld (ab 5.000 m²)", "Nichtnormiertes
 Spielfeld"). `typ` macht daraus einen einheitlichen Typ, `GRUPPEN` ordnet die Typen für
 den Filter der Karte. Unbekannte Bezeichnungen bleiben, wie sie sind, und landen über
@@ -131,6 +130,11 @@ GRUPPEN: dict[str, tuple[str, tuple[str, ...]]] = {
 }
 GRUPPE_VON = {t: g for g, (_, typen) in GRUPPEN.items() for t in typen}
 
+
+def _schluessel(text: str) -> str:
+    return re.sub(r"\s+", "", text.lower())
+
+
 # Schreibweisen des Atlas → Typ (Schlüssel: klein, ohne Leerzeichen, siehe _schluessel)
 _VARIANTEN = {
     "großspielfeld(ab5.000m²)": "Großspielfeld",
@@ -159,7 +163,7 @@ _VARIANTEN = {
     "golfsportstätte": "Golfplatz",
 }
 # Typen ohne eigene Variante, aber in anderer Groß-/Kleinschreibung
-_VARIANTEN.update({re.sub(r"\s+", "", t.lower()): t for t in GRUPPE_VON})
+_VARIANTEN.update({_schluessel(t): t for t in GRUPPE_VON})
 
 # Für Bezeichnungen, die keiner kennt: Gruppe über Stichwörter
 _STICHWOERTER = (
@@ -172,10 +176,6 @@ _STICHWOERTER = (
     (r"spielfeld|platz|court", "spielfeld"),
     (r"eis|ski|rodel", "winter"),
 )
-
-
-def _schluessel(text: str) -> str:
-    return re.sub(r"\s+", "", text.lower())
 
 
 def typ(bezeichnung: str) -> str:
@@ -196,10 +196,7 @@ def gruppe(anlagentyp: str) -> str:
 
 
 def zusammenfuegen(bezeichnungen: list[str]) -> list[str]:
-    """Teile mit Bindestrich am Ende gehören zum nächsten ("Weit-", "Dreisprunganlage").
-
-    Ältere Dateien des Datenbestands enthalten solche getrennten Teile noch.
-    """
+    """Teile mit Bindestrich am Ende gehören zum nächsten ("Weit-", "Dreisprunganlage")."""
     out: list[str] = []
     for b in bezeichnungen:
         b = (b or "").strip()
@@ -210,8 +207,3 @@ def zusammenfuegen(bezeichnungen: list[str]) -> list[str]:
         else:
             out.append(b)
     return out
-
-
-def typen(anlagen: list[dict]) -> list[str]:
-    """Anlagen eines Datensatzes → Liste ihrer Typen (eine Anlage = ein Eintrag)."""
-    return [typ(b) for b in zusammenfuegen([a.get("bezeichnung") for a in anlagen or []])]

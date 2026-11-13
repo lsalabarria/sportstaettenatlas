@@ -227,7 +227,6 @@ def baue(
     aus_flaeche = staetten[
         (staetten["quelle"] == "alkis_nutzung") & ~staetten["sportstaette_id"].isin(belegt)
     ].copy()
-    aus_flaeche["quelle"] = "alkis_nutzung"
     aus_flaeche["rolle"] = "sportanlage"
     aus_flaeche["pruefen"] = True  # typgruppe/typ stammen aus der Flächenregel
 

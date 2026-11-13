@@ -44,14 +44,10 @@ def _version(text: str) -> str:
     return hashlib.sha1(text.encode("utf-8")).hexdigest()[:10]
 
 
-def html_seite(
-    titel: str, quellenvermerk: str = "", leaflet: str = LEAFLET, app: str = "app"
-) -> str:
+def html_seite(titel: str, quellenvermerk: str = "", leaflet: str = LEAFLET) -> str:
     """index.html der Webseite; Stil und Skripte liegen unter `app/` (siehe kopiere_app)."""
-    stil = f'<link rel="stylesheet" href="{app}/{STIL}?v={_version(datei(STIL))}">'
-    skripte = "\n".join(
-        f'<script src="{app}/{n}?v={_version(datei(n))}"></script>' for n in SKRIPTE
-    )
+    stil = f'<link rel="stylesheet" href="app/{STIL}?v={_version(datei(STIL))}">'
+    skripte = "\n".join(f'<script src="app/{n}?v={_version(datei(n))}"></script>' for n in SKRIPTE)
     return (
         datei("index.html")
         .replace("__TITEL__", html.escape(titel))
@@ -62,7 +58,7 @@ def html_seite(
     )
 
 
-def kopiere_app(ziel: Path) -> list[str]:
+def kopiere_app(ziel: Path) -> None:
     """Stil und Skripte nach `ziel` (docs/app/) kopieren; veraltete Dateien entfernen."""
     ziel.mkdir(parents=True, exist_ok=True)
     namen = [STIL, *SKRIPTE]
@@ -71,7 +67,6 @@ def kopiere_app(ziel: Path) -> list[str]:
     for alt in ziel.iterdir():
         if alt.is_file() and alt.name not in namen:
             alt.unlink()
-    return namen
 
 
 def vorlage(name: str, titel: str) -> str:

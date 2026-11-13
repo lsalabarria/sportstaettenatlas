@@ -184,7 +184,7 @@ src/sportstaettenatlas/
   anlagen.py      Typen und Gruppen der Sportanlagen
   gebiete.py      Verwaltungsgebiete (VG250) und Zuordnung zur Gemeinde
   seite.py        Webseite nach docs/ schreiben
-  hilfen.py       Arbeitsordner, User-Agent, Fortschrittsbalken
+  hilfen.py       Arbeitsordner, User-Agent
   web/            die Webseite: index.html, stil.css, Skripte, Vorlagen (konfig.js …)
   analysen/alkis/ ALKIS-Abgleich (Aufbau im Kopf von __init__.py)
 ```

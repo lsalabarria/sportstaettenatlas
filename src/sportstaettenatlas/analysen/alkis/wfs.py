@@ -193,6 +193,9 @@ def lade(
     """
     import geopandas as gpd
     import pandas as pd
+    from tqdm.auto import tqdm
+
+    from ...hilfen import USER_AGENT
 
     if ziel.exists() and not neu:
         log.info("Nutze Cache %s", ziel)
@@ -203,14 +206,10 @@ def lade(
     liste = kacheln(bbox, kachel_m)
     muster = list(muster)
     teile = []
-
-    from ...hilfen import USER_AGENT, Fortschritt
-
-    fb = Fortschritt(len(liste), f"ALKIS {typename}", "Kachel")
-    with requests.Session() as s, fb:
+    balken = tqdm(liste, desc=f"ALKIS {typename}", unit="Kachel", dynamic_ncols=True)
+    with requests.Session() as s:
         s.headers["User-Agent"] = USER_AGENT
-        for nr, k in enumerate(liste, 1):
-            fb.weiter()
+        for nr, k in enumerate(balken, 1):
             datei = ordner / f"{int(k[0])}_{int(k[1])}.gpkg"
             leer = datei.with_suffix(".leer")
             if not neu and leer.exists():

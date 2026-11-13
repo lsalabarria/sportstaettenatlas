@@ -16,9 +16,19 @@ function leer(v) {
 function zahl(n) { return ZAHL.format(n); }
 function prozent(a, b) { return b ? Math.round(100 * a / b) : 0; }
 function url(u) { return /^https?:\/\//i.test(u) ? u : "https://" + u; }
+function wertText(v) { return typeof v === "boolean" ? (v ? "ja" : "nein") : esc(v); }
+// Werte zählen: ["a", "b", "a"] → { a: 2, b: 1 }
+function zaehle(werte) {
+  const z = {};
+  for (const w of werte) z[w] = (z[w] || 0) + 1;
+  return z;
+}
+// Gefüllte Teile verbinden (Untertitel, Suchtext)
+function verbinde(teile, trenner = " · ") { return teile.filter(v => !leer(v)).join(trenner); }
+function suchtext(teile) { return verbinde(teile, " ").toLowerCase(); }
 
-// Kopfzeile: Links aus konfig.js (nur Webseite). „Sportstätte vorschlagen“ öffnet das
-// Formular, „Bug melden“ ein neues Ticket auf GitHub (konfig.js: fehler_url).
+// Kopfzeile: Links aus konfig.js. „Sportstätte vorschlagen“ öffnet das Formular,
+// „Bug melden“ ein neues Ticket auf GitHub (konfig.js: fehler_url).
 function kopfzeile() {
   const k = KONFIG, el = document.getElementById("links");
   const link = (u, text, extra = "") => u ? `<a href="${esc(u)}"${extra}`
@@ -41,13 +51,11 @@ function kopfzeile() {
 
 const ladenEl = document.getElementById("laden");
 function zeigeLaden(text) {
-  if (!ladenEl) return;
   ladenEl.className = ""; ladenEl.hidden = false;
   ladenEl.innerHTML = `<span class="kreisel"></span><span>${esc(text)}</span>`;
 }
-function fertig() { if (ladenEl) ladenEl.hidden = true; }
+function fertig() { ladenEl.hidden = true; }
 function zeigeFehler(text) {
-  if (!ladenEl) { alert(text); return; }
   ladenEl.hidden = false; ladenEl.className = "fehler"; ladenEl.textContent = text;
 }
 function ladeFehler(fehler) {
@@ -56,7 +64,7 @@ function ladeFehler(fehler) {
     : `Die Daten konnten nicht geladen werden (${fehler.message}).`);
 }
 
-// Daten: eingebettet (Karte als eine Datei) oder aus daten/ nachladen; fehlt → null
+// Datei aus daten/ laden; fehlt sie → null
 async function holeJson(name) {
   const r = await fetch("daten/" + name);
   if (r.status === 404) return null;
@@ -116,7 +124,25 @@ function bboxVon(geom) {
   if (geom && geom.coordinates) lauf(geom.coordinates);
   return [w, s, o, n];
 }
+function punktGrenzen(lat, lon) { return L.latLngBounds([[lat, lon], [lat, lon]]); }
 const svgRenderer = L.svg({ padding: 0.3 });
+
+// Panel rechts oben (Filter, Legende): Klicks und Scrollen gehen nicht an die Karte.
+// Zahlen stehen in <span class="n" data-n="schlüssel"> und werden je Gebiet neu gesetzt.
+function panelDiv(klasse) {
+  const div = L.DomUtil.create("div", "panel " + klasse);
+  L.DomEvent.disableClickPropagation(div);
+  L.DomEvent.disableScrollPropagation(div);
+  return div;
+}
+function nSpan(k) { return `<span class="n" data-n="${esc(k)}"></span>`; }
+function setzeZahlen(div, zaehler) {
+  div.querySelectorAll("[data-n]").forEach(el => {
+    const w = zaehler[el.dataset.n] || 0;
+    el.textContent = zahl(w);
+    el.closest("label").classList.toggle("null", !w);
+  });
+}
 
 // ---------- Gebiete (Kreis, Verbandsgemeinde, Gemeinde) ---------------------------------
 // Jedes Objekt trägt den Regionalschlüssel (ars) seiner Gemeinde; ein Gebiet passt, wenn
@@ -208,8 +234,8 @@ function starteGebietswahl(index) {
 }
 
 // ---------- Ansichten -------------------------------------------------------------------
-// Jede Ansicht ist ein Objekt mit titel, starte() (einmal, darf Daten laden), zeigen(),
-// verbergen() und optional aktualisiere() (Karte verschoben), gebietGeaendert(),
+// Jede Ansicht ist ein Objekt mit titel, zeigen(), verbergen() und optional starte()
+// (einmal, darf Daten laden), aktualisiere() (Karte verschoben), gebietGeaendert(),
 // suchindex() und zustand() (Zusatz für die Adresse, z. B. "analyse=alkis").
 const ANSICHTEN = {};
 let AKTIV = null, STANDARD = "bestand";
@@ -228,7 +254,7 @@ async function zeige(name) {
   if (!a || name === AKTIV) return;
   if (!a.gestartet) {
     try {
-      await a.starte();
+      if (a.starte) await a.starte();
     } catch (fehler) {
       ladeFehler(fehler);
       throw fehler;
