@@ -11,7 +11,6 @@ const ANALYSEN = {
 let ALKIS_STAETTEN = {};
 
 function ansichtAnalysen(namen, gewuenscht) {
-  namen = namen.filter(n => ANALYSEN[n]);
   const inst = {};
   let aktiv = null, aktivName = null;
   const wahl = document.getElementById("analysewahl");
@@ -52,12 +51,54 @@ const FARBEN = {
 // Felder der Atlas-Einträge im Popup (Spalten aus analysen/alkis/webdaten.py: ATLAS_SPALTEN)
 const ATLAS_FELDER = {
   alt_name: "Name", alt_typ: "Typ", alt_anlagentypen: "Anlagen", alt_adresse: "Adresse",
+  alkis_nutzung_vor_ort: "ALKIS-Nutzung hier", alkis_gebaeude_vor_ort: "ALKIS-Gebäude hier",
   naechste_sportstaette_id: "nächste ALKIS-Sportstätte",
   abstand_m: "Abstand m", alkis_typgruppen: "ALKIS dort", typ_passt: "Typ passt",
   alt_betriebsstatus: "Betriebsstatus", alt_datei: "Ordner in daten/", alt_atlas_id: "ID",
   alt_id: "Abgleich-ID",
 };
 const ZOOM_FLAECHEN = 15;
+// Schraffur je Verifikationsstufe: Die Füllfarbe zeigt die Klasse (Typgruppe), die
+// Schraffur darüber in Grautönen die Verifikation – dunkel = auch im bisherigen Atlas.
+// Einträge, die nur im Sportstättenatlas RLP stehen, sind gegenläufig schraffiert (−45°).
+const SCHRAFFUR = {
+  "nur ALKIS – unbestimmt": { grau: "#F1EFE8", abstand: 6, breite: 1.2, winkel: 0 },
+  "nur ALKIS":          { grau: "#F1EFE8", abstand: 10, breite: 1.5, winkel: 45 },
+  "bestätigt":          { grau: "#5F5E5A", abstand: 7,  breite: 1.6, winkel: 45 },
+  "nicht in ALKIS":     { grau: "#F1EFE8", abstand: 3,  breite: 1.1, winkel: -45 },
+  "nah":                { grau: "#5F5E5A", abstand: 3,  breite: 1.1, winkel: -45 },
+};
+// SVG-Muster für die Flächen anlegen; liefert { Stufe: id des Musters }
+function schraffurMuster() {
+  const ns = "http://www.w3.org/2000/svg", ids = {};
+  const svg = document.createElementNS(ns, "svg");
+  svg.setAttribute("width", "0"); svg.setAttribute("height", "0");
+  svg.style.position = "absolute";
+  const defs = document.createElementNS(ns, "defs");
+  Object.entries(SCHRAFFUR).forEach(([stufe, m], i) => {
+    const id = ids[stufe] = "schraffur-" + i;
+    const pat = document.createElementNS(ns, "pattern");
+    pat.setAttribute("id", id);
+    pat.setAttribute("patternUnits", "userSpaceOnUse");
+    pat.setAttribute("width", m.abstand); pat.setAttribute("height", m.abstand);
+    pat.setAttribute("patternTransform", `rotate(${m.winkel})`);
+    const linie = document.createElementNS(ns, "line");
+    linie.setAttribute("x1", 0); linie.setAttribute("y1", 0);
+    linie.setAttribute("x2", 0); linie.setAttribute("y2", m.abstand);
+    linie.setAttribute("stroke", m.grau); linie.setAttribute("stroke-width", m.breite);
+    pat.appendChild(linie); defs.appendChild(pat);
+  });
+  svg.appendChild(defs);
+  document.body.appendChild(svg);
+  return ids;
+}
+// dieselbe Schraffur als CSS für die Legende
+function schraffurCss(stufe) {
+  const m = SCHRAFFUR[stufe];
+  if (!m) return "";
+  return `background-image: repeating-linear-gradient(${m.winkel}deg, ${m.grau} 0 ${m.breite}px, `
+    + `transparent ${m.breite}px ${m.abstand * 0.7}px)`;
+}
 // Reihenfolge = CSS-Klasse stufe-<i>; LEGENDE = Reihenfolge in der Legende
 const STUFEN = ["nur ALKIS", "bestätigt", "nur ALKIS – unbestimmt"];
 const LEGENDE_STUFEN = ["nur ALKIS – unbestimmt", "nur ALKIS", "bestätigt"];
@@ -76,7 +117,7 @@ function analyseAlkis() {
     baue(ANLAGEN, STAETTEN, ATLAS || { type: "FeatureCollection", features: [] }, ZUSAMMEN);
   }
   function baue(ANLAGEN, STAETTEN, ATLAS, ZUSAMMEN) {
-    function farbe(p) { return FARBEN[p.typgruppe] || "#D85A30"; }
+    const farbe = gruppe => FARBEN[gruppe] || "#D85A30";
     // Rohspalten des Atlas (alt_*) erscheinen nicht im Tooltip; ihre Werte
     // stecken in den zusammengeführten Feldern, deren Herkunft in Klammern steht.
     const ROH = /^alt_|_quelle$|^verifikation|^(lon|lat|geometry|ars)$/;
@@ -93,7 +134,7 @@ function analyseAlkis() {
       });
       return keys.map(k => {
         const q = p[k + "_quelle"];
-        let v = typeof p[k] === "boolean" ? (p[k] ? "ja" : "nein") : esc(p[k]);
+        let v = wertText(p[k]);
         if (k === "website") v = `<a href="${esc(url(p[k]))}" target="_blank" rel="noopener">${v}</a>`;
         return `<tr><td>${esc(LABEL[k] || k)}</td><td>${v}`
           + (q ? ` <span class="q">(${esc(q)})</span>` : "") + "</td></tr>";
@@ -135,46 +176,7 @@ function analyseAlkis() {
         `<div class="tip"><h3>Sportstätte</h3>${tipStaette(f.properties)}</div>`)
     });
 
-    // Schraffur je Verifikationsstufe: Die Füllfarbe zeigt die Klasse (Typgruppe), die
-    // Schraffur darüber in Grautönen die Verifikation – dunkel = auch im bisherigen Atlas.
-    // Einträge, die nur im Sportstättenatlas RLP stehen, sind gegenläufig schraffiert (−45°).
-    const SCHRAFFUR = {
-      "nur ALKIS – unbestimmt": { grau: "#F1EFE8", abstand: 6, breite: 1.2, winkel: 0 },
-      "nur ALKIS":          { grau: "#F1EFE8", abstand: 10, breite: 1.5, winkel: 45 },
-      "bestätigt":          { grau: "#5F5E5A", abstand: 7,  breite: 1.6, winkel: 45 },
-      "nicht in ALKIS":     { grau: "#F1EFE8", abstand: 3,  breite: 1.1, winkel: -45 },
-      "nah":                { grau: "#5F5E5A", abstand: 3,  breite: 1.1, winkel: -45 },
-    };
-    const SCHRAFFUR_ID = {};
-    (function muster() {
-      const ns = "http://www.w3.org/2000/svg";
-      const svg = document.createElementNS(ns, "svg");
-      svg.setAttribute("width", "0"); svg.setAttribute("height", "0");
-      svg.style.position = "absolute";
-      const defs = document.createElementNS(ns, "defs");
-      Object.entries(SCHRAFFUR).forEach(([stufe, m], i) => {
-        const id = "schraffur-" + i;
-        SCHRAFFUR_ID[stufe] = id;
-        const pat = document.createElementNS(ns, "pattern");
-        pat.setAttribute("id", id);
-        pat.setAttribute("patternUnits", "userSpaceOnUse");
-        pat.setAttribute("width", m.abstand); pat.setAttribute("height", m.abstand);
-        pat.setAttribute("patternTransform", `rotate(${m.winkel})`);
-        const linie = document.createElementNS(ns, "line");
-        linie.setAttribute("x1", 0); linie.setAttribute("y1", 0);
-        linie.setAttribute("x2", 0); linie.setAttribute("y2", m.abstand);
-        linie.setAttribute("stroke", m.grau); linie.setAttribute("stroke-width", m.breite);
-        pat.appendChild(linie); defs.appendChild(pat);
-      });
-      svg.appendChild(defs);
-      document.body.appendChild(svg);
-    })();
-    function schraffurCss(stufe) {
-      const m = SCHRAFFUR[stufe];
-      if (!m) return "";
-      return `background-image: repeating-linear-gradient(${m.winkel}deg, ${m.grau} 0 ${m.breite}px, `
-        + `transparent ${m.breite}px ${m.abstand * 0.7}px)`;
-    }
+    const SCHRAFFUR_ID = schraffurMuster();
 
     // Sportanlagen: je Typgruppe zwei Ebenen – Punkt (weit) und Umriss (nah)
     const gruppen = {};
@@ -187,13 +189,13 @@ function analyseAlkis() {
     }
     for (const f of ANLAGEN.features) {
       const p = f.properties;
-      const g = gruppe(p.typgruppe || "unbekannt");
+      const name = p.typgruppe || "unbekannt", g = gruppe(name);
       g.n++;
-      const stil = { color: farbe(p), weight: 1.5, fillColor: farbe(p), fillOpacity: 0.45,
-                     dashArray: p.pruefen ? "3 3" : null };
+      const stil = { color: farbe(p.typgruppe), weight: 1.5, fillColor: farbe(p.typgruppe),
+                     fillOpacity: 0.45, dashArray: p.pruefen ? "3 3" : null };
       const tip = () => tipAnlage(p);  // erst beim Anzeigen bauen
       const stufe = stufeVon(p);
-      anlagenZahl.push({ g: p.typgruppe || "unbekannt", stufe, ars: p.ars });
+      anlagenZahl.push({ g: name, stufe, ars: p.ars });
       if (p.lat != null && p.lon != null) {
         g.punkte.push({ stufe, ars: p.ars, layer: info(L.circleMarker([p.lat, p.lon], { ...stil,
           weight: 1, radius: p.rolle === "zubehoer" ? 2 : 3.5, fillOpacity: 0.85 }), tip) });
@@ -215,7 +217,7 @@ function analyseAlkis() {
     // Was nur im bisherigen Sportstättenatlas RLP steht (aus dem Abgleich mit ALKIS)
     const ATLAS_STIL = {
       "nicht in ALKIS": { color: "#A32D2D", fillColor: "#F09595", kurz: "nur Atlas",
-        label: "nur im Sportstättenatlas RLP – kein ALKIS-Objekt im Umkreis von 200 m" },
+        label: "nur im Sportstättenatlas RLP – keine ALKIS-Sportstätte im Umkreis von 200 m" },
       "nah": { color: "#854F0B", fillColor: "#FAC775", kurz: "nur Atlas, ALKIS in der Nähe",
         label: "im Sportstättenatlas RLP – nächste ALKIS-Sportstätte 100–200 m entfernt" },
     };
@@ -251,8 +253,7 @@ function analyseAlkis() {
       const p = f.properties, st = ATLAS_STIL[p.status] || ATLAS_STIL["nicht in ALKIS"];
       const [lon, lat] = f.geometry.coordinates;
       const zeilenA = Object.entries(ATLAS_FELDER).filter(([k]) => !leer(p[k])).map(([k, l]) =>
-        `<tr><td>${esc(l)}</td><td>${typeof p[k] === "boolean" ? (p[k] ? "ja" : "nein")
-          : esc(p[k])}</td></tr>`).join("");
+        `<tr><td>${esc(l)}</td><td>${wertText(p[k])}</td></tr>`).join("");
       const tip = `<div class="tip"><h3>Sportstättenatlas RLP: ${esc(p.alt_name || "")}</h3>`
         + `<table class="meta"><tr><td>Verifikation</td><td><span class="verif" `
         + `style="background:${st.fillColor};color:${st.color}">${esc(st.kurz)}</span> `
@@ -260,11 +261,15 @@ function analyseAlkis() {
         + `${leer(p.alt_atlas_id) ? "" : aendernLink(String(p.alt_atlas_id).toLowerCase())}</table></div>`;
       const kreis = { radius: 5, renderer: svgRenderer };
       const ziel = STAETTE[p.naechste_sportstaette_id];
+      // ALKIS führt hier eine Sportfläche, für deren Bezeichnung es keine Regel gibt
+      const ohneRegel = String(p.alkis_nutzung_vor_ort || "").startsWith("Sport-, Freizeit- und Erholungsfläche")
+        ? `<div class="hinweis">Für diese Bezeichnung der Sport-, Freizeit- und Erholungsfläche gibt `
+          + `es keine Regel (regeln.toml), deshalb zählt sie nicht als Sportstätte.</div>` : "";
       const pfeilHinweis = p.status === "nah" && ziel
         ? `<div class="hinweis">Klicken zeigt einen Pfeil zur nächsten ALKIS-Sportstätte</div>` : "";
       const basis = info(L.circleMarker([lat, lon], { ...kreis, color: st.color, weight: 1.5,
         fillColor: st.fillColor, fillOpacity: 0.85, dashArray: p.status === "nah" ? "2 2" : null }),
-        tip.replace(/<\/div>$/, pfeilHinweis + "</div>"));
+        tip.replace(/<\/div>$/, ohneRegel + pfeilHinweis + "</div>"));
       if (p.status === "nah" && ziel) basis.on("click", () => zeigePfeil([lat, lon], ziel));
       const muster = L.circleMarker([lat, lon], { ...kreis, stroke: false, fill: true,
         fillColor: `url(#${SCHRAFFUR_ID[p.status] || SCHRAFFUR_ID["nicht in ALKIS"]})`,
@@ -298,70 +303,61 @@ function analyseAlkis() {
     // Legende: Typgruppen und – falls angereichert – Verifikationsstufen
     legende = L.control({ position: "topright" });
     legende.onAdd = () => {
-      const div = L.DomUtil.create("div", "panel filter");
-      L.DomEvent.disableClickPropagation(div);
-      L.DomEvent.disableScrollPropagation(div);
+      const div = panelDiv("filter");
       // Reihenfolge und Auswahl der Zeilen nach den Zahlen für das ganze Land;
       // die Zahlen selbst gelten für das gewählte Gebiet (zeigeZahlen)
       const namen = Object.keys(gruppen).sort((a, b) => gruppen[b].n - gruppen[a].n);
-      const zaehl = {};
-      for (const e of anlagenZahl) if (e.stufe) zaehl[e.stufe] = (zaehl[e.stufe] || 0) + 1;
-      const za = {};
-      for (const e of atlasPunkte) za[e.status] = (za[e.status] || 0) + 1;
-      const n = schluessel => `<span class="n" data-n="${esc(schluessel)}"></span>`;
+      const zaehl = zaehle(anlagenZahl.map(e => e.stufe).filter(Boolean));
+      const za = zaehle(atlasPunkte.map(e => e.status));
       let h = `<h1>ALKIS-Abgleich</h1><div class="zusammenfassung"></div>`
         + `<h2 class="alkis-zahlen"></h2>`
         + namen.map(g => `<label><input type="checkbox" data-g="${esc(g)}" checked>`
-          + `<span class="swatch" style="border-radius:3px;background:${FARBEN[g] || "#D85A30"}"></span>`
-          + `${esc(g)}${n("g:" + g)}</label>`).join("");
+          + `<span class="swatch" style="border-radius:3px;background:${farbe(g)}"></span>`
+          + `${esc(g)}${nSpan("g:" + g)}</label>`).join("");
       if (Object.keys(zaehl).length || atlasPunkte.length) {
         h += `<h2>Verifikation</h2>` + LEGENDE_STUFEN.filter(s => zaehl[s]).map(s =>
           `<label><input type="checkbox" data-s="${esc(s)}" checked>`
           + `<span class="schraffur" style="${schraffurCss(s)}"></span>`
           + `<span class="verif stufe-${STUFEN.indexOf(s)}">${esc(s)}</span>`
-          + `${n("s:" + s)}</label>`).join("")
-          + Object.keys(ATLAS_STIL).filter(k => za[k]).map(k =>
-            `<label title="${esc(ATLAS_STIL[k].label)}"><input type="checkbox" data-a="${esc(k)}" checked>`
-            + `<span class="swatch" style="background-color:${ATLAS_STIL[k].fillColor};`
-            + `${schraffurCss(k)};width:14px;height:14px;border:2px solid ${ATLAS_STIL[k].color};`
+          + `${nSpan("s:" + s)}</label>`).join("")
+          + Object.entries(ATLAS_STIL).filter(([k]) => za[k]).map(([k, st]) =>
+            `<label title="${esc(st.label)}"><input type="checkbox" data-a="${esc(k)}" checked>`
+            + `<span class="swatch" style="background-color:${st.fillColor};`
+            + `${schraffurCss(k)};width:14px;height:14px;border:2px solid ${st.color};`
             + `box-sizing:border-box"></span>`
-            + `<span class="verif" style="background:${ATLAS_STIL[k].fillColor};`
-            + `color:${ATLAS_STIL[k].color}">${esc(ATLAS_STIL[k].kurz)}</span>`
-            + `${n("a:" + k)}</label>`).join("");
+            + `<span class="verif" style="background:${st.fillColor};`
+            + `color:${st.color}">${esc(st.kurz)}</span>`
+            + `${nSpan("a:" + k)}</label>`).join("");
       }
       h += `<hr><span style="color:#666">Füllfarbe = Klasse, Schraffur = Verifikation `
         + `(ab Zoom ${ZOOM_FLAECHEN})<br>gestrichelt = zu prüfen`
         + (atlasPunkte.length ? `<br>rote/orange Kreise = nur im Sportstättenatlas RLP` : "")
         + `<br>ab Zoom ${ZOOM_FLAECHEN}: Umrisse und Sportstätten-Flächen</span>`;
       div.innerHTML = h;
-      div.querySelectorAll("input[data-g]").forEach(cb => cb.addEventListener("change", () => {
-        gruppen[cb.dataset.g].an = cb.checked; aktualisiere();
-      }));
-      div.querySelectorAll("input[data-s]").forEach(cb => cb.addEventListener("change", () => {
-        stufeAn[cb.dataset.s] = cb.checked; aktualisiere();
-      }));
-      div.querySelectorAll("input[data-a]").forEach(cb => cb.addEventListener("change", () => {
-        atlasAn[cb.dataset.a] = cb.checked; aktualisiere();
-      }));
+      div.addEventListener("change", ev => {
+        const d = ev.target.dataset;
+        if (d.g) gruppen[d.g].an = ev.target.checked;
+        if (d.s) stufeAn[d.s] = ev.target.checked;
+        if (d.a) atlasAn[d.a] = ev.target.checked;
+        aktualisiere();
+      });
       return div;
     };
 
     for (const f of STAETTEN.features) {
       const p = f.properties;
       const titel = !leer(p.name) ? p.name : (p.typ || "Sportstätte");
-      such.push({ titel, sub: [p.sportstaette_id, p.typ, leer(p.adresse) ? "" : p.adresse]
-        .filter(Boolean).join(" · "), text: [p.name, p.adresse, p.sportstaette_id, p.typ,
-        p.anlagentypen, p.betreiber, p.alt_name, p.alt_adresse, p.alt_typ, p.alt_atlas_id]
-        .filter(v => !leer(v)).join(" ").toLowerCase(), ars: p.ars,
+      such.push({ titel, sub: verbinde([p.sportstaette_id, p.typ, p.adresse]), ars: p.ars,
+        text: suchtext([p.name, p.adresse, p.sportstaette_id, p.typ, p.anlagentypen, p.betreiber,
+          p.alt_name, p.alt_adresse, p.alt_typ, p.alt_atlas_id]),
         grenzen: () => L.geoJSON(f).getBounds() });
     }
     for (const f of ATLAS.features) {
       const p = f.properties, [lon, lat] = f.geometry.coordinates;
-      such.push({ titel: p.alt_name || "Atlas-Eintrag", sub: ["Sportstättenatlas RLP",
-        p.alt_typ, p.alt_adresse].filter(v => !leer(v)).join(" · "), ars: p.ars,
-        text: [p.alt_name, p.alt_adresse, p.alt_typ, p.alt_atlas_id, p.alt_id]
-          .filter(v => !leer(v)).join(" ").toLowerCase(),
-        grenzen: () => L.latLngBounds([[lat, lon], [lat, lon]]) });
+      such.push({ titel: p.alt_name || "Atlas-Eintrag", ars: p.ars,
+        sub: verbinde(["Sportstättenatlas RLP", p.alt_typ, p.alt_adresse]),
+        text: suchtext([p.alt_name, p.alt_adresse, p.alt_typ, p.alt_atlas_id, p.alt_id]),
+        grenzen: () => punktGrenzen(lat, lon) });
     }
     if (STAETTEN.features.length) startGrenzen = staetten.getBounds();
 
@@ -381,11 +377,7 @@ function analyseAlkis() {
       const staettenN = STAETTEN.features.filter(f => imGebiet(f.properties.ars)).length;
       div.querySelector(".alkis-zahlen").textContent = `ALKIS${GEBIET ? " · " + gebietName() : ""}: `
         + `${zahl(staettenN)} Sportstätten · ${zahl(anlagen)} Anlagen`;
-      div.querySelectorAll("[data-n]").forEach(el => {
-        const w = zaehler[el.dataset.n] || 0;
-        el.textContent = zahl(w);
-        el.closest("label").classList.toggle("null", !w);
-      });
+      setzeZahlen(div, zaehler);
       zeigeZusammenfassung(div.querySelector(".zusammenfassung"));
     };
     // Wie viele Atlas-Einträge findet das Kataster? (für das gewählte Gebiet)
