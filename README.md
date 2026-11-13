@@ -165,10 +165,15 @@ dl-de/by-2-0) eigene Sportstätten und Sportanlagen ab und vergleicht sie mit `d
    im Bestand sind Kandidaten für neue Sportstätten.
 
 Nicht jede Sport-, Freizeit- und Erholungsfläche wird zur Sportstätte: Bezeichnungen ohne
-Regel („Freizeitanlage“, „Grünanlage“, „Campingplatz“ …) bleiben außen vor. Liegt eine
-Sportstätte des Bestands in so einer Fläche, gilt sie als „nicht in ALKIS“; die Spalte
-`alkis_vor_ort` und das Popup auf der Karte („ALKIS an dieser Stelle“) nennen dann die
-Bezeichnung. Daran lässt sich ablesen, welche Regel fehlt.
+Regel („Grünanlage“, „Campingplatz“ …) bleiben außen vor. Eine „Freizeitanlage“ zählt nur,
+wenn eine Sportstätte des Bestands darin liegt (`nur_mit_bestand` in `regeln.toml`).
+
+Für Sportstätten des Bestands ohne ALKIS-Sportstätte fragt der Abgleich ALKIS an genau
+dieser Stelle ab: Nutzung der Fläche und Gebäude im Umkreis von 25 m (Spalten
+`alkis_nutzung_vor_ort` und `alkis_gebaeude_vor_ort`, auf der Karte „ALKIS-Nutzung hier“
+und „ALKIS-Gebäude hier“). Daran sieht man, ob eine Regel fehlt oder die Lage falsch ist.
+Die Antworten liegen in `results/cache/alkis_vor_ort.json`; ein neuer Lauf fragt nur neue
+Orte ab.
 
 Das Ergebnis steht in `results/out/` (`sportstaetten.gpkg` zum Öffnen in QGIS,
 `abgleich_altbestand.csv` mit einer Zeile je Sportstätte des Bestands). Auf der Webseite

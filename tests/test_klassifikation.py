@@ -38,6 +38,8 @@ def test_nutzung():
     assert R.nutzung("Golfplatz").typ == "golfplatz"
     assert R.nutzung("Schwimmbad, Freibad").typ == "freibad"
     assert R.nutzung("Grünanlage") is None
+    assert R.nutzung("Freizeitanlage").nur_mit_bestand
+    assert not R.nutzung("Sportplatz").nur_mit_bestand
     assert R.nutzung("Kleingarten") is None
 
 

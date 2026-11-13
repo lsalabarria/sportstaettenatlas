@@ -127,46 +127,53 @@ def test_atlas_bericht(tmp_path):
     assert b.loc["ALT3", "status"] == "nicht in ALKIS"
     # Koordinaten für die Karte (WGS84) müssen im Bericht stehen
     assert b["lon"].between(7, 8.5).all() and b["lat"].between(49, 51.5).all()
-    assert "alkis_vor_ort" not in b  # nur mit den ALKIS-Flächen
 
 
-def test_atlas_bericht_nennt_alkis_flaeche_vor_ort():
-    """Ein Eintrag ohne ALKIS-Sportstätte kann trotzdem in einer ALKIS-Fläche liegen, für
-    deren Bezeichnung es keine Regel gibt (z. B. Boule-Platz in einer "Freizeitanlage")."""
-    from sportstaettenatlas.analysen.alkis import abgleich
+def test_alkis_vor_ort_beschreibung():
+    from sportstaettenatlas.analysen.alkis.vor_ort import beschreibe
 
-    st = _kandidaten().rename(columns={"kandidat_id": "sportstaette_id"})
-    an = gpd.GeoDataFrame(
-        {"anlage_id": ["A1"], "sportstaette_id": ["SK1"], "typgruppe": ["spielfeld"]},
-        geometry=[box(X + 10, Y + 10, X + 50, Y + 40)],
-        crs=CRS,
-    )
-    alt = gpd.GeoDataFrame(
-        {"alt_id": ["ALT1", "ALT2", "ALT3", "ALT4"], "alt_typgruppe": [None] * 4},
-        geometry=[
-            Point(X + 100, Y + 75),  # in der Sportstätte SK1
-            Point(X + 2050, Y + 50),  # in einer Freizeitanlage, keine Sportstätte in der Nähe
-            Point(X + 5000, Y),  # in keiner Fläche
-            Point(X + 3050, Y + 50),  # in einer Fläche ohne Bezeichnung
-        ],
-        crs=CRS,
-    )
+    p = Point(X + 50, Y + 50)
     nutzung = gpd.GeoDataFrame(
-        {"bez": ["Sportplatz", "Freizeitanlage", None]},
-        geometry=[
-            box(X, Y, X + 200, Y + 150),
-            box(X + 2000, Y, X + 2100, Y + 100),
-            box(X + 3000, Y, X + 3100, Y + 100),
-        ],
+        {"nutzart": ["Landwirtschaft", "Wohnbaufläche"], "bez": ["Grünland", None]},
+        geometry=[box(X, Y, X + 100, Y + 100), box(X + 100, Y, X + 200, Y + 100)],
         crs=CRS,
     )
-    z = abgleich.je_objekt(st, alt, ["alt_id"], "alt_", max_m=100)
-    b = abgleich.atlas_bericht(alt, st, an, z, nutzung=nutzung).set_index("alt_id")
-    assert b.loc["ALT1", "status"] == "zugeordnet" and b["alkis_vor_ort"].isna()["ALT1"]
-    assert b.loc["ALT2", "status"] == "nicht in ALKIS"
-    assert b.loc["ALT2", "alkis_vor_ort"] == "Freizeitanlage"
-    assert b.loc["ALT3", "alkis_vor_ort"] == abgleich.KEINE_FLAECHE
-    assert b.loc["ALT4", "alkis_vor_ort"] == "ohne Bezeichnung"
+    gebaeude = gpd.GeoDataFrame(
+        {"funktion": ["Scheune", "Wohnhaus"], "name": ["Reithalle Hof", None]},
+        geometry=[box(X + 55, Y + 45, X + 70, Y + 60), box(X + 150, Y, X + 160, Y + 10)],
+        crs=CRS,
+    )
+    e = beschreibe(p, nutzung, gebaeude)
+    assert e["alkis_nutzung_vor_ort"] == "Landwirtschaft (Grünland)"
+    assert e["alkis_gebaeude_vor_ort"] == "Scheune „Reithalle Hof“ (5 m)"  # Wohnhaus > 25 m
+    leer = beschreibe(p, nutzung, None)
+    assert leer["alkis_gebaeude_vor_ort"] == "kein Gebäude im Umkreis von 25 m"
+
+
+def test_alkis_vor_ort_zwischenspeicher(tmp_path, monkeypatch):
+    import pandas as pd
+
+    from sportstaettenatlas.analysen.alkis import vor_ort
+    from sportstaettenatlas.analysen.alkis.quellen import RP
+
+    anfragen = []
+
+    def falsch_lies(session, quelle, typename, bbox):
+        anfragen.append(typename)
+
+    monkeypatch.setattr(vor_ort, "_lies", falsch_lies)
+    alt = gpd.GeoDataFrame(
+        {"alt_id": ["A1", "A2"]}, geometry=[Point(X, Y), Point(X + 900, Y)], crs=CRS
+    )
+    bericht = pd.DataFrame({"alt_id": ["A1", "A2"], "status": ["nicht in ALKIS", "zugeordnet"]})
+    speicher = tmp_path / "vor_ort.json"
+    e1 = vor_ort.ergaenze(bericht, alt, RP, speicher_pfad=speicher)
+    assert len(anfragen) == 2  # Nutzung und Gebäude, nur für A1
+    e2 = vor_ort.ergaenze(bericht, alt, RP, speicher_pfad=speicher)
+    assert len(anfragen) == 2  # zweiter Lauf aus dem Zwischenspeicher
+    assert e1.equals(e2)
+    assert e2.at[0, "alkis_gebaeude_vor_ort"].startswith("kein Gebäude")
+    assert e2.at[1, "alkis_nutzung_vor_ort"] is None
 
 
 def test_nachbarflaechen_werden_mitbestaetigt():

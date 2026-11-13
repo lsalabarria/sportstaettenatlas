@@ -17,7 +17,7 @@ ZIEL = ERGEBNISSE / "out"
 def cmd_alkis(args):
     """ALKIS laden (Cache in results/raw) → Sportstätten bauen → mit daten/ abgleichen."""
     from ...bestand import lies_bestand
-    from . import wfs
+    from . import vor_ort, wfs
     from .abgleich import anreichern, aus_bestand
     from .klassifikation import Regelwerk
     from .pipeline import baue, schreibe
@@ -42,13 +42,14 @@ def cmd_alkis(args):
         roh[typ] = wfs.lade(RP, typename, bbox, cache, feld=feld, muster=muster, neu=args.neu)
 
     print("2/3 Sportstätten und Sportanlagen bauen …")
-    ergebnis = baue(roh["nutzung"], roh["gebaeude"], regeln)
+    atlas = aus_bestand(bestand)
+    ergebnis = baue(roh["nutzung"], roh["gebaeude"], regeln, atlas)
     print(f"    {len(ergebnis.sportstaetten)} Sportstätten, {len(ergebnis.sportanlagen)} Anlagen")
 
     print(f"3/3 mit dem Datenbestand abgleichen ({len(bestand)} Sportstätten) …")
-    st, an, bericht = anreichern(
-        ergebnis.sportstaetten, ergebnis.sportanlagen, aus_bestand(bestand), roh["nutzung"]
-    )
+    st, an, bericht = anreichern(ergebnis.sportstaetten, ergebnis.sportanlagen, atlas)
+    # was ALKIS dort führt, wo es keine Sportstätte gibt (Abfrage je Ort, mit Zwischenspeicher)
+    bericht.abgleich_altbestand = vor_ort.ergaenze(bericht.abgleich_altbestand, atlas, RP)
     schreibe(st, an, bericht, ZIEL, RP, bbox)
     print("\n".join(bericht.zeilen))
     print(f"\nErgebnis in {ZIEL}/. Auf die Webseite bringen: uv run sportstaettenatlas seite")

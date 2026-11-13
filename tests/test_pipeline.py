@@ -79,6 +79,34 @@ def test_baue():
     assert an["lon"].between(7, 8.5).all() and an["lat"].between(49, 51.5).all()
 
 
+def test_freizeitanlage_nur_mit_bestand():
+    """Eine "Freizeitanlage" zählt nur, wenn eine Sportstätte aus daten/ darin liegt."""
+    from shapely.geometry import Point
+
+    from sportstaettenatlas.analysen.alkis.klassifikation import Regelwerk
+    from sportstaettenatlas.analysen.alkis.pipeline import sportflaechen
+
+    nutzung = gpd.GeoDataFrame(
+        {
+            "oid": ["F1", "F2"],
+            "nutzart": ["Sport-, Freizeit- und Erholungsfläche"] * 2,
+            "bez": ["Freizeitanlage", "Freizeitanlage"],
+        },
+        geometry=[box(X, Y, X + 50, Y + 50), box(X + 500, Y, X + 550, Y + 50)],
+        crs=CRS,
+    )
+    bestand = gpd.GeoDataFrame(
+        {"alt_id": ["Boule"]}, geometry=[Point(X + 20, Y + 20)], crs=CRS
+    ).to_crs("EPSG:4326")
+    regeln = Regelwerk.laden()
+    assert list(sportflaechen(nutzung, regeln, bestand)["alkis_oid"]) == ["F1"]
+    assert sportflaechen(nutzung, regeln, bestand)["typ"].iat[0] == "freizeitanlage"
+    assert sportflaechen(nutzung, regeln).empty  # ohne Bestand keine
+    # Ende zu Ende: die Freizeitanlage wird zur Sportstätte
+    oids = set(baue(nutzung, _gebaeude(), regeln, bestand).sportstaetten["alkis_oid"])
+    assert "F1" in oids and "F2" not in oids
+
+
 def test_webdaten_mit_datumsspalte():
     import json
 

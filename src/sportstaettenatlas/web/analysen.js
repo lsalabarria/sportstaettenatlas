@@ -51,7 +51,8 @@ const FARBEN = {
 // Felder der Atlas-Einträge im Popup (Spalten aus analysen/alkis/webdaten.py: ATLAS_SPALTEN)
 const ATLAS_FELDER = {
   alt_name: "Name", alt_typ: "Typ", alt_anlagentypen: "Anlagen", alt_adresse: "Adresse",
-  alkis_vor_ort: "ALKIS an dieser Stelle", naechste_sportstaette_id: "nächste ALKIS-Sportstätte",
+  alkis_nutzung_vor_ort: "ALKIS-Nutzung hier", alkis_gebaeude_vor_ort: "ALKIS-Gebäude hier",
+  naechste_sportstaette_id: "nächste ALKIS-Sportstätte",
   abstand_m: "Abstand m", alkis_typgruppen: "ALKIS dort", typ_passt: "Typ passt",
   alt_betriebsstatus: "Betriebsstatus", alt_datei: "Ordner in daten/", alt_atlas_id: "ID",
   alt_id: "Abgleich-ID",
@@ -260,11 +261,10 @@ function analyseAlkis() {
         + `${leer(p.alt_atlas_id) ? "" : aendernLink(String(p.alt_atlas_id).toLowerCase())}</table></div>`;
       const kreis = { radius: 5, renderer: svgRenderer };
       const ziel = STAETTE[p.naechste_sportstaette_id];
-      // ALKIS führt hier eine Fläche, für deren Bezeichnung es keine Regel gibt (regeln.toml)
-      const ohneRegel = !leer(p.alkis_vor_ort) && !p.alkis_vor_ort.startsWith("keine ")
-        ? `<div class="hinweis">ALKIS führt hier eine Sport-, Freizeit- und Erholungsfläche `
-          + `„${esc(p.alkis_vor_ort)}“. Für diese Bezeichnung gibt es keine Regel, deshalb zählt `
-          + `sie nicht als Sportstätte.</div>` : "";
+      // ALKIS führt hier eine Sportfläche, für deren Bezeichnung es keine Regel gibt
+      const ohneRegel = String(p.alkis_nutzung_vor_ort || "").startsWith("Sport-, Freizeit- und Erholungsfläche")
+        ? `<div class="hinweis">Für diese Bezeichnung der Sport-, Freizeit- und Erholungsfläche gibt `
+          + `es keine Regel (regeln.toml), deshalb zählt sie nicht als Sportstätte.</div>` : "";
       const pfeilHinweis = p.status === "nah" && ziel
         ? `<div class="hinweis">Klicken zeigt einen Pfeil zur nächsten ALKIS-Sportstätte</div>` : "";
       const basis = info(L.circleMarker([lat, lon], { ...kreis, color: st.color, weight: 1.5,

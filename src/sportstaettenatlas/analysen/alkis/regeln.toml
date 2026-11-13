@@ -10,6 +10,7 @@
 #   zubehoer       – Nebengebäude/Bauwerk ohne eigene Sportnutzung (Tribüne, Umkleide)
 # Nebengebäude (zubehoer) außerhalb einer Sportstätten-Fläche werden verworfen.
 # pruefen = true markiert unsichere Zuordnungen für die manuelle Kontrolle.
+# nur_mit_bestand = true: Die Fläche zählt nur, wenn eine Sportstätte aus daten/ darin liegt.
 
 # --- Tatsächliche Nutzung (ave:Nutzung) – Flächen = Sportstätten ---
 # Es werden nur Flächen der Nutzungsart unten berücksichtigt.
@@ -83,6 +84,14 @@ enthaelt = ["sport"]
 typgruppe = "unbestimmt"
 typ = "sportanlage_unbestimmt"
 pruefen = true
+
+# "Freizeitanlage" ist meist kein Sport (Grillplatz, Minigolf, Festplatz). Liegt aber eine
+# Sportstätte des Bestands darin (Boule-Platz, Skatepark, Reitplatz …), gilt sie als bestätigt.
+[[nutzung.regel]]
+enthaelt = ["freizeitanlage"]
+typgruppe = "sportgelegenheit"
+typ = "freizeitanlage"
+nur_mit_bestand = true
 
 # --- Gebäude und Bauwerke (ave:GebaeudeBauwerk), Feld "funktion" ---
 # Nebengebäude zuerst, sonst greift z. B. "sportplatz" bei "Gebäude zum Sportplatz".

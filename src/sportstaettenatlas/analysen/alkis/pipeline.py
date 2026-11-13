@@ -84,8 +84,13 @@ def _ags(wert: object) -> str | None:
     return s.zfill(8) if s.isdigit() else s
 
 
-def sportflaechen(nutzung: gpd.GeoDataFrame, regeln: Regelwerk) -> gpd.GeoDataFrame:
-    """Nutzungsflächen mit Sportbezug – die Flächen der Sportstätten."""
+def sportflaechen(
+    nutzung: gpd.GeoDataFrame, regeln: Regelwerk, bestand: gpd.GeoDataFrame | None = None
+) -> gpd.GeoDataFrame:
+    """Nutzungsflächen mit Sportbezug – die Flächen der Sportstätten.
+
+    Flächen einer Regel mit nur_mit_bestand zählen nur, wenn ein Punkt aus `bestand`
+    (Sportstätten aus daten/, siehe abgleich.aus_bestand) darin liegt."""
     spalten = ["alkis_oid", "alkis_text", "name", "typgruppe", "typ", "pruefen", "alkis_stand"]
     if nutzung.empty or "nutzart" not in nutzung.columns:
         return gpd.GeoDataFrame(
@@ -99,6 +104,17 @@ def sportflaechen(nutzung: gpd.GeoDataFrame, regeln: Regelwerk) -> gpd.GeoDataFr
     df["typgruppe"] = [t.typgruppe if t else None for t in treffer]
     df["typ"] = [t.typ if t else None for t in treffer]
     df["pruefen"] = [t.pruefen if t else True for t in treffer]
+    nur_mit_bestand = pd.Series([bool(t and t.nur_mit_bestand) for t in treffer], index=df.index)
+    if nur_mit_bestand.any():
+        belegt = pd.Series(False, index=df.index)
+        if bestand is not None and not bestand.empty:
+            treffer_df = gpd.sjoin(
+                df.loc[nur_mit_bestand, ["geometry"]],
+                bestand[["geometry"]].to_crs(df.crs),
+                predicate="contains",
+            )
+            belegt[treffer_df.index.unique()] = True
+        df.loc[nur_mit_bestand & ~belegt, "typ"] = None
     df = df[df["typ"].notna()].copy()  # Parks, Kleingärten, Camping fallen raus
     df["alkis_oid"] = _spalte(df, "oid")
     df["alkis_text"] = _spalte(df, "bez", "funktion")
@@ -168,13 +184,15 @@ def baue(
     nutzung: gpd.GeoDataFrame,
     gebaeude: gpd.GeoDataFrame,
     regeln: Regelwerk | None = None,
+    bestand: gpd.GeoDataFrame | None = None,
 ) -> Ergebnis:
+    """Sportstätten und Sportanlagen aus ALKIS; `bestand` siehe sportflaechen."""
     regeln = regeln or Regelwerk.laden()
     crs = nutzung.crs or gebaeude.crs
     if gebaeude.crs and crs and gebaeude.crs != crs:
         gebaeude = gebaeude.to_crs(crs)
 
-    flaechen = sportflaechen(nutzung, regeln)
+    flaechen = sportflaechen(nutzung, regeln, bestand)
     geb = sport_gebaeude(gebaeude, regeln)
     geb["_f"] = ordne_flaechen_zu(geb, flaechen)
     # Nebengebäude zählen nur innerhalb einer Sportstätten-Fläche

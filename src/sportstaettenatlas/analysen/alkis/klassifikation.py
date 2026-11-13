@@ -15,6 +15,7 @@ class Regel:
     typ: str
     rolle: str = "sportanlage"
     pruefen: bool = False
+    nur_mit_bestand: bool = False
 
     def passt(self, text: str) -> bool:
         t = text.casefold()
@@ -28,6 +29,7 @@ class Treffer:
     rolle: str
     pruefen: bool
     stichwort_regel: str
+    nur_mit_bestand: bool = False
 
 
 @dataclass(frozen=True)
@@ -56,6 +58,7 @@ class Regelwerk:
                     typ=e["typ"],
                     rolle=e.get("rolle", "sportanlage"),
                     pruefen=bool(e.get("pruefen", False)),
+                    nur_mit_bestand=bool(e.get("nur_mit_bestand", False)),
                 )
                 for e in eintraege
             )
@@ -74,7 +77,12 @@ class Regelwerk:
         for regel in regeln:
             if regel.passt(text):
                 return Treffer(
-                    regel.typgruppe, regel.typ, regel.rolle, regel.pruefen, ",".join(regel.enthaelt)
+                    regel.typgruppe,
+                    regel.typ,
+                    regel.rolle,
+                    regel.pruefen,
+                    ",".join(regel.enthaelt),
+                    regel.nur_mit_bestand,
                 )
         return None
 

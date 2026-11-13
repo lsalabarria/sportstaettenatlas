@@ -6,6 +6,7 @@ regeln.toml,        Zuordnung von ALKIS-Nutzungen und Gebäudefunktionen zu Type
 klassifikation.py
 pipeline.py         Sportstätten (Flächen) und Sportanlagen (Gebäude, Plätze) bauen
 abgleich.py         Sportstätten aus daten/ den ALKIS-Flächen zuordnen, Bericht
+vor_ort.py          was ALKIS dort führt, wo nur daten/ eine Sportstätte kennt
 verifikation.py     Verifikationsstufe und zusammengeführte Felder mit Herkunft
 webdaten.py         Dateien für die Webseite
 cli.py              Befehl `sportstaettenatlas alkis`

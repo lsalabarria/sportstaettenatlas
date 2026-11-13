@@ -24,7 +24,7 @@ def _bericht():
             "alt_id": ["A1", "A2", "A3", "A4"],
             "status": ["zugeordnet", "nicht in ALKIS", "nah", "nah"],
             "alt_name": ["Platz", "Reitanlage Hof", None, "Bad"],
-            "alkis_vor_ort": [None, "Freizeitanlage", None, None],
+            "alkis_nutzung_vor_ort": [None, "Landwirtschaft (Grünland)", None, None],
             "abstand_m": [0.0, None, 230.5, 80.0],
             "typ_passt": [True, None, False, True],
             "lon": [7.6, 7.7, 7.8, None],
@@ -38,8 +38,8 @@ def test_atlas_punkte():
     # nur „nicht in ALKIS“ und „nah“ mit Koordinate
     assert [f["properties"]["alt_id"] for f in fc["features"]] == ["A2", "A3"]
     assert "abstand_m" not in fc["features"][0]["properties"]  # leer → weggelassen
-    assert fc["features"][0]["properties"]["alkis_vor_ort"] == "Freizeitanlage"
-    assert "alkis_vor_ort" not in fc["features"][1]["properties"]
+    assert fc["features"][0]["properties"]["alkis_nutzung_vor_ort"] == "Landwirtschaft (Grünland)"
+    assert "alkis_nutzung_vor_ort" not in fc["features"][1]["properties"]
     assert fc["features"][1]["properties"]["typ_passt"] is False
     assert atlas_geojson(None)["features"] == []
 
