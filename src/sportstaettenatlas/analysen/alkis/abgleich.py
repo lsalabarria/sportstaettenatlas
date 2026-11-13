@@ -183,6 +183,26 @@ class Bericht:
         self.zeilen.append(text)
 
 
+KEINE_FLAECHE = "keine Sport-, Freizeit- oder Erholungsfläche"
+
+
+def vor_ort(punkte: gpd.GeoDataFrame, nutzung: gpd.GeoDataFrame) -> pd.Series:
+    """ALKIS-Bezeichnung der Sport-, Freizeit- oder Erholungsfläche, in der ein Punkt liegt
+    (Index: alt_id). Punkte außerhalb solcher Flächen fehlen im Ergebnis.
+
+    `nutzung` sind alle geladenen Flächen, auch die ohne Regel in regeln.toml
+    ("Freizeitanlage", "Grünanlage" …). So zeigt sich, warum ein Eintrag des Atlas keine
+    ALKIS-Sportstätte gefunden hat, obwohl das Kataster dort eine Fläche führt.
+    """
+    import geopandas as gpd
+
+    flaechen = nutzung[["geometry"]].copy()
+    flaechen["bez"] = nutzung.get("bez")
+    flaechen = flaechen.to_crs(punkte.crs)
+    paare = gpd.sjoin(punkte[["alt_id", "geometry"]], flaechen, predicate="within")
+    return paare.drop_duplicates("alt_id").set_index("alt_id")["bez"].fillna("ohne Bezeichnung")
+
+
 def aus_bestand(datensaetze, crs: str = "EPSG:25832") -> gpd.GeoDataFrame:
     """Datenbestand (bestand.lies_bestand) → Punkte mit den Spalten alt_* für den Abgleich.
 
@@ -246,10 +266,16 @@ def aus_bestand(datensaetze, crs: str = "EPSG:25832") -> gpd.GeoDataFrame:
 
 
 def anreichern(
-    staetten: gpd.GeoDataFrame, anlagen: gpd.GeoDataFrame, atlas: gpd.GeoDataFrame
+    staetten: gpd.GeoDataFrame,
+    anlagen: gpd.GeoDataFrame,
+    atlas: gpd.GeoDataFrame,
+    nutzung: gpd.GeoDataFrame | None = None,
 ) -> tuple[gpd.GeoDataFrame, gpd.GeoDataFrame, Bericht]:
     """Gleicht die ALKIS-Sportstätten mit dem Datenbestand ab (`atlas`, aus aus_bestand),
-    übernimmt dessen Angaben und setzt Herkunft + Verifikation."""
+    übernimmt dessen Angaben und setzt Herkunft + Verifikation.
+
+    Mit `nutzung` (alle geladenen ALKIS-Flächen) nennt der Bericht für Einträge ohne
+    ALKIS-Sportstätte die Fläche an ihrer Stelle (Spalte alkis_vor_ort)."""
     from shapely.geometry import box
 
     from .verifikation import (
@@ -277,7 +303,7 @@ def anreichern(
     direkt = zuordnung.copy()  # Bericht: nur echte Treffer, keine Nachbarflächen
     zuordnung = nachbarn_mitbestaetigen(st, ab, zuordnung, spalten, "alt_")
     st = st.join(zuordnung)
-    bericht.abgleich_altbestand = atlas_bericht(ab, st, an, direkt)
+    bericht.abgleich_altbestand = atlas_bericht(ab, st, an, direkt, nutzung=nutzung)
     z = bericht.abgleich_altbestand["status"].value_counts().to_dict()
     bericht(
         f"Datenbestand: {len(ab)} Sportstätten im Gebiet; "
@@ -295,7 +321,9 @@ def anreichern(
     return gpd_aus(st, staetten.crs), gpd_aus(an, anlagen.crs), bericht
 
 
-def atlas_bericht(alt, staetten, anlagen, zuordnung, max_nah_m: float = 200) -> pd.DataFrame:
+def atlas_bericht(
+    alt, staetten, anlagen, zuordnung, max_nah_m: float = 200, nutzung=None
+) -> pd.DataFrame:
     """Bericht aus Sicht des Altbestands: Wo liegt jede Altsystem-Sportstätte in ALKIS?
 
     `zuordnung` ist das Ergebnis von je_objekt (welche unserer Sportstätten welches
@@ -304,6 +332,9 @@ def atlas_bericht(alt, staetten, anlagen, zuordnung, max_nah_m: float = 200) -> 
     - nah                  – nächste ALKIS-Sportstätte 100–200 m entfernt (Koordinate prüfen)
     - nicht in ALKIS       – im Umkreis von 200 m keine ALKIS-Sportstätte
     `typ_passt` vergleicht den Altsystem-Typ mit den Typgruppen der Anlagen vor Ort.
+    `alkis_vor_ort` (nur mit `nutzung`, nur für nah / nicht in ALKIS): Bezeichnung der
+    ALKIS-Fläche an der Stelle, z. B. "Freizeitanlage" – eine Fläche ohne Regel in
+    regeln.toml – oder KEINE_FLAECHE.
     """
     import geopandas as gpd
 
@@ -348,6 +379,9 @@ def atlas_bericht(alt, staetten, anlagen, zuordnung, max_nah_m: float = 200) -> 
         return g in vor_ort
 
     bericht["typ_passt"] = [passt(o, g) for o, g in zip(ort, bericht["alt_typgruppe"])]
+    if nutzung is not None:
+        flaeche = bericht["alt_id"].map(vor_ort(alt, nutzung)).fillna(KEINE_FLAECHE)
+        bericht["alkis_vor_ort"] = flaeche.where(bericht["status"] != "zugeordnet")
     spalten = [
         "alt_id",
         "status",
@@ -358,6 +392,7 @@ def atlas_bericht(alt, staetten, anlagen, zuordnung, max_nah_m: float = 200) -> 
         "alt_typ",
         "alt_typgruppe",
         "alkis_typgruppen",
+        "alkis_vor_ort",
         "alt_name",
         "alt_adresse",
         "alt_anlagentypen",

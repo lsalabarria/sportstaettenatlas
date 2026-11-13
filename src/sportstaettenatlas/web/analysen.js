@@ -51,7 +51,7 @@ const FARBEN = {
 // Felder der Atlas-Einträge im Popup (Spalten aus analysen/alkis/webdaten.py: ATLAS_SPALTEN)
 const ATLAS_FELDER = {
   alt_name: "Name", alt_typ: "Typ", alt_anlagentypen: "Anlagen", alt_adresse: "Adresse",
-  naechste_sportstaette_id: "nächste ALKIS-Sportstätte",
+  alkis_vor_ort: "ALKIS an dieser Stelle", naechste_sportstaette_id: "nächste ALKIS-Sportstätte",
   abstand_m: "Abstand m", alkis_typgruppen: "ALKIS dort", typ_passt: "Typ passt",
   alt_betriebsstatus: "Betriebsstatus", alt_datei: "Ordner in daten/", alt_atlas_id: "ID",
   alt_id: "Abgleich-ID",
@@ -216,7 +216,7 @@ function analyseAlkis() {
     // Was nur im bisherigen Sportstättenatlas RLP steht (aus dem Abgleich mit ALKIS)
     const ATLAS_STIL = {
       "nicht in ALKIS": { color: "#A32D2D", fillColor: "#F09595", kurz: "nur Atlas",
-        label: "nur im Sportstättenatlas RLP – kein ALKIS-Objekt im Umkreis von 200 m" },
+        label: "nur im Sportstättenatlas RLP – keine ALKIS-Sportstätte im Umkreis von 200 m" },
       "nah": { color: "#854F0B", fillColor: "#FAC775", kurz: "nur Atlas, ALKIS in der Nähe",
         label: "im Sportstättenatlas RLP – nächste ALKIS-Sportstätte 100–200 m entfernt" },
     };
@@ -260,11 +260,16 @@ function analyseAlkis() {
         + `${leer(p.alt_atlas_id) ? "" : aendernLink(String(p.alt_atlas_id).toLowerCase())}</table></div>`;
       const kreis = { radius: 5, renderer: svgRenderer };
       const ziel = STAETTE[p.naechste_sportstaette_id];
+      // ALKIS führt hier eine Fläche, für deren Bezeichnung es keine Regel gibt (regeln.toml)
+      const ohneRegel = !leer(p.alkis_vor_ort) && !p.alkis_vor_ort.startsWith("keine ")
+        ? `<div class="hinweis">ALKIS führt hier eine Sport-, Freizeit- und Erholungsfläche `
+          + `„${esc(p.alkis_vor_ort)}“. Für diese Bezeichnung gibt es keine Regel, deshalb zählt `
+          + `sie nicht als Sportstätte.</div>` : "";
       const pfeilHinweis = p.status === "nah" && ziel
         ? `<div class="hinweis">Klicken zeigt einen Pfeil zur nächsten ALKIS-Sportstätte</div>` : "";
       const basis = info(L.circleMarker([lat, lon], { ...kreis, color: st.color, weight: 1.5,
         fillColor: st.fillColor, fillOpacity: 0.85, dashArray: p.status === "nah" ? "2 2" : null }),
-        tip.replace(/<\/div>$/, pfeilHinweis + "</div>"));
+        tip.replace(/<\/div>$/, ohneRegel + pfeilHinweis + "</div>"));
       if (p.status === "nah" && ziel) basis.on("click", () => zeigePfeil([lat, lon], ziel));
       const muster = L.circleMarker([lat, lon], { ...kreis, stroke: false, fill: true,
         fillColor: `url(#${SCHRAFFUR_ID[p.status] || SCHRAFFUR_ID["nicht in ALKIS"]})`,

@@ -47,7 +47,7 @@ def cmd_alkis(args):
 
     print(f"3/3 mit dem Datenbestand abgleichen ({len(bestand)} Sportstätten) …")
     st, an, bericht = anreichern(
-        ergebnis.sportstaetten, ergebnis.sportanlagen, aus_bestand(bestand)
+        ergebnis.sportstaetten, ergebnis.sportanlagen, aus_bestand(bestand), roh["nutzung"]
     )
     schreibe(st, an, bericht, ZIEL, RP, bbox)
     print("\n".join(bericht.zeilen))

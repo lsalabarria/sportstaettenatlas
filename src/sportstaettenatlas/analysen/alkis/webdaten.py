@@ -33,6 +33,7 @@ ATLAS_SPALTEN = (
     "alt_typ",
     "alt_anlagentypen",
     "alt_adresse",
+    "alkis_vor_ort",
     "naechste_sportstaette_id",
     "abstand_m",
     "alkis_typgruppen",
