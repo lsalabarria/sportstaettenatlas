@@ -260,12 +260,12 @@ class Lage(Basis):
     )
 
 
-# Welche Felder der alte Atlas je Anlagentyp abfragt – aus
+# Welche Felder der alte Atlas je Anlagentyp abfragt (MERKMALE, aus
 # 03_Fachliche_Quellen/2024-10-01_Merkmale_je_Sportanlagentyp.xlsx, in den Typen von
-# anlagen.py. Ein Feld, das dort bei keinem Typ steht, gilt für alle (MERKMALE_ALLE nennt die,
-# die die Datei ausdrücklich für alle Typen vorsieht). Daraus folgt die Angabe „fuer“ im
-# Schema (fuer_von): das Formular zeigt ein Feld nur bei diesen Typen, die Übersicht zählt es
-# nur unter ihnen. `legacy` nennt das Feld im alten Atlas (Tabelle sportanlage).
+# anlagen.py), dazu MERKMALE_ERGAENZT für Felder, die die Datei bei keinem Typ nennt.
+# MERKMALE_ALLE gilt für alle Typen, ebenso jedes Feld, das nirgends steht. Daraus folgt die
+# Angabe „fuer“ im Schema (fuer_von): das Formular zeigt ein Feld nur bei diesen Typen, die
+# Übersicht zählt es nur unter ihnen. `legacy` nennt das Feld im alten Atlas.
 MERKMALE_ALLE = (
     "bezeichnung",
     "betriebsstatus",
@@ -279,6 +279,7 @@ MERKMALE_ALLE = (
     "flutlicht",
     "leuchtmittel",
     "lux",
+    "barrierefrei_erreichbar",  # in der Datei nur bei „Bühne“; für alle festgelegt (16.11.2026)
 )
 MERKMALE: tuple[tuple[tuple[str, ...], tuple[str, ...]], ...] = (
     (
@@ -401,11 +402,30 @@ MERKMALE: tuple[tuple[tuple[str, ...], tuple[str, ...]], ...] = (
 )
 
 
+# Ergänzt, weil die Datei diese Felder bei keinem Typ nennt (festgelegt am 16.11.2026)
+MERKMALE_ERGAENZT: tuple[tuple[tuple[str, ...], tuple[str, ...]], ...] = (
+    (
+        anlagen.GRUPPEN["bad"][1],
+        (
+            "bahnlaenge",
+            "wasserflaeche_relevant",
+            "becken_tiefer_3m",
+            "sprungturm",
+            "sprungtuerme_3m",
+            "sprungtuerme_5m",
+            "sprungtuerme_10m",
+            "baederleben_id",
+        ),
+    ),
+)
+
+
 def fuer_von(feld: str) -> list[str] | None:
-    """Anlagentypen, für die ein Feld gedacht ist (MERKMALE); None: für alle."""
+    """Anlagentypen, für die ein Feld gedacht ist (MERKMALE, MERKMALE_ERGAENZT); None: für alle."""
     if feld in MERKMALE_ALLE:
         return None
-    typen = [t for typen_, felder in MERKMALE if feld in felder for t in typen_]
+    gruppen = (*MERKMALE, *MERKMALE_ERGAENZT)
+    typen = [t for typen_, felder in gruppen if feld in felder for t in typen_]
     return list(dict.fromkeys(typen)) or None
 
 
