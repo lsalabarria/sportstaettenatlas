@@ -13,13 +13,11 @@ Angaben je Feld (json_schema_extra, landen im Schema):
   uebersicht  False: zählt nicht zur Vollständigkeit in der Übersicht
   einheit     wird hinter Zahlen angezeigt (z. B. m²); einheit_aus: aus einem anderen Feld
               (Baukosten → Währung)
-  fuer        nur für diese Gruppen (anlagen.GRUPPEN) oder Typen von Sportanlagen gedacht
+  (fuer       steht nicht am Feld: folgt aus MERKMALE, siehe fuer_von)
   legacy      Name des Feldes im alten Sportstättenatlas (für Übernahmen)
 Regeln zwischen Feldern (prüft Basis, das Formular ebenso):
   braucht     dieses Feld braucht das genannte (Baukosten → Währung)
   teil_von    Werte müssen auch im genannten Feld stehen (Wettkampfeignung → Sportarten)
-Zusätzlich als Hinweis (kein Fehler): passt der Typ einer Sportanlage zur Kategorie der
-Sportstätte (KATEGORIE_ANLAGEN)?
 """
 
 from __future__ import annotations
@@ -122,64 +120,6 @@ Betriebsstatus = Literal[BETRIEBSSTATUS]
 Organisationstyp = Literal[tuple(ORGANISATIONSTYPEN)]
 JaNein = Literal["ja", "nein"]
 Anzahl = Annotated[int, Field(ge=0, le=10_000)]
-
-# Welche Sportanlagen zu welcher Kategorie passen (Legacy: sst_san_rel, dort leer).
-# Einträge: Gruppen aus anlagen.GRUPPEN oder einzelne Typen. Dazu passen immer
-# IMMER_PASSEND. Kategorien ohne Eintrag: alles passt. Verstöße sind Hinweise, keine Fehler.
-IMMER_PASSEND = ("neben", "sonstige Sportanlage")
-KATEGORIE_ANLAGEN: dict[str, tuple[str, ...]] = {
-    "Sportplatz": (
-        "spielfeld",
-        "leichtathletik",
-        "Bouleanlage",
-        "Calisthenicsanlage",
-        "Bewegungsparcours",
-    ),
-    "Sporthalle": ("halle", "Kegelbahn", "Klettersporthalle", "Skatehalle"),
-    "Tennissportstätte": ("tennis", "Squashhalle"),
-    "Öffentlicher Sport- und Bewegungsraum": (
-        "spielfeld",
-        "freizeit",
-        "Weit- und Dreisprunganlage",
-        "Kurzstreckenbahn",
-        "Mountainbikestrecke",
-        "BMX-Strecke",
-    ),
-    "Reitsportstätte": ("reiten", "Rennbahn"),
-    "Schwimmsportstätte": ("bad", "Volleyballfeld", "Beachvolleyballfeld"),
-    "Schießsportstätte": ("schiessen",),
-    "Fitnessstudio": (
-        "Übungsraum",
-        "Kurs-/Übungsraum",
-        "Kraftraum",
-        "Squashhalle",
-        "Klettersporthalle",
-    ),
-    "Golfsportstätte": ("Golfplatz", "Bahnengolf"),
-    "Roll- und Skatesportstätte": ("Skateplatz", "Skatehalle", "Rollsportplatz", "BMX-Strecke"),
-    "Sportgelegenheiten in sonstigen Gebäuden": ("halle", "Kegelbahn", "Bowlingbahn"),
-    "Radsportstätte": (
-        "Mountainbikestrecke",
-        "BMX-Strecke",
-        "Radrennbahn",
-        "Fahrparcours",
-        "Rennbahn",
-    ),
-    "Flugsportstätte": ("luft",),
-    "Wintersportstätte": ("winter",),
-    "Wassersportstätte": ("wasser",),
-    "Segelsportstätte": ("wasser", "luft"),
-    "Klettersportstätte": ("Klettersportanlage Outdoor", "Klettersporthalle"),
-    "Motorsportstätte": (
-        "Motocross-Strecke",
-        "Kartbahn",
-        "Motorsport-Rennstrecke",
-        "Rennbahn",
-        "Fahrparcours",
-        "Rundrennstrecke (Motorboot)",
-    ),
-    "Eissportstätte": ("Eissporthalle", "Eissportanlage ungedeckt"),
-}
 
 # Kategorie → Typgruppen der ALKIS-Regeln (analysen/alkis/regeln.toml). Die erste Gruppe nutzt
 # der ALKIS-Abgleich für den Typvergleich; umgekehrt bekommt eine aus ALKIS übernommene
@@ -320,22 +260,153 @@ class Lage(Basis):
     )
 
 
-# Angaben je Feld der Sportanlage zusätzlich:
-#   fuer    Gruppen aus anlagen.GRUPPEN oder Typen, für die das Feld gedacht ist (sonst alle);
-#           das Formular zeigt nur diese, die Übersicht zählt die Befüllung nur unter ihnen
-#   legacy  Name des Feldes im alten Sportstättenatlas (Laravel, Tabelle sportanlage)
-_HALLEN = (
-    "halle",
-    "Tennishalle",
-    "Reithalle",
-    "Führ- und Longierhalle",
-    "Eissporthalle",
-    "Klettersporthalle",
-    "Skatehalle",
+# Welche Felder der alte Atlas je Anlagentyp abfragt – aus
+# 03_Fachliche_Quellen/2024-10-01_Merkmale_je_Sportanlagentyp.xlsx, in den Typen von
+# anlagen.py. Ein Feld, das dort bei keinem Typ steht, gilt für alle (MERKMALE_ALLE nennt die,
+# die die Datei ausdrücklich für alle Typen vorsieht). Daraus folgt die Angabe „fuer“ im
+# Schema (fuer_von): das Formular zeigt ein Feld nur bei diesen Typen, die Übersicht zählt es
+# nur unter ihnen. `legacy` nennt das Feld im alten Atlas (Tabelle sportanlage).
+MERKMALE_ALLE = (
+    "bezeichnung",
+    "betriebsstatus",
+    "baujahr",
+    "letzte_sanierung",
+    "baukosten",
+    "waehrung",
+    "oeffnungsstunden",
+    "oeffnungsstunden_schule",
+    "oeffnungsstunden_verein",
+    "flutlicht",
+    "leuchtmittel",
+    "lux",
 )
-_KLETTERN = ("halle", "Klettersportanlage Outdoor", "Klettersporthalle")
-_FLAECHEN = ("spielfeld", "tennis", "halle", "leichtathletik", "reiten", "freizeit")
-_DRAUSSEN = ("spielfeld", "tennis", "leichtathletik", "reiten", "freizeit", "rad_motor", "winter")
+MERKMALE: tuple[tuple[tuple[str, ...], tuple[str, ...]], ...] = (
+    (
+        (
+            "Sport-/Turnhalle untermaßig",
+            "Einfachsporthalle",
+            "Zweifachsporthalle",
+            "Dreifachsporthalle",
+            "Großsporthalle",
+            "Freilufthalle",
+            "Sporthalle Sondermaße",
+            "Sporthalle (Größe unbekannt)",
+        ),
+        ("laenge", "breite", "hoehe", "bodenbelag", "felder_je_sportart"),
+    ),
+    (("Bühne",), ("laenge", "breite", "hoehe", "barrierefrei_erreichbar", "trennvorhang")),
+    (("Squashhalle", "Paddleplatz"), ("laenge", "breite", "hoehe", "bodenbelag", "spielfelder")),
+    (
+        ("Kurs-/Übungsraum", "Gerätebereich", "Skateplatz", "Rollsportplatz"),
+        ("bodenbelag", "flaeche"),
+    ),
+    (
+        ("Großspielfeld",),
+        (
+            "laenge",
+            "breite",
+            "bodenbelag",
+            "bewaesserung",
+            "felder_je_sportart",
+            "kleinfelder_je_sportart",
+        ),
+    ),
+    (
+        ("Kleinspielfeld", "Nicht normiertes Spielfeld"),
+        ("laenge", "breite", "bodenbelag", "bewaesserung", "felder_je_sportart"),
+    ),
+    (("Rundlaufbahn", "Kurzstreckenbahn", "Radrennbahn"), ("bodenbelag", "laenge", "bahnen")),
+    (("Tennishalle",), ("laenge", "breite", "hoehe", "felder_je_belag")),
+    (("Tennisplatz",), ("bewaesserung", "felder_je_belag")),
+    (
+        ("Bogenschießanlage", "Schießstand", "Wurfscheibenanlage"),
+        ("schiessstaende_gedeckt", "schiessstaende_offen", "schiessstaende_teilgedeckt"),
+    ),
+    (("Führ- und Longierplatz", "Sportkindergarten"), ("flaeche",)),
+    (
+        ("Führ- und Longierhalle", "Stall", "Eissporthalle", "Bootshaus/-halle"),
+        ("laenge", "breite", "hoehe"),
+    ),
+    (("Rennbahn", "Eisschnelllaufbahn"), ("laenge", "bahnen")),
+    (
+        (
+            "Fahrparcours",
+            "Bob-/Rodelbahn",
+            "Mountainbikestrecke",
+            "BMX-Strecke",
+            "Enduro-Strecke",
+            "Kartbahn",
+            "Motocross-Strecke",
+            "Motorsport-Rennstrecke",
+            "SuperMoto-Strecke",
+        ),
+        ("laenge",),
+    ),
+    (("Reitplatz",), ("bodenbelag", "flaeche", "bewaesserung", "dressurplatz")),
+    (
+        ("Reithalle", "Radsporthalle", "Rollsporthalle", "Skatehalle"),
+        ("laenge", "breite", "hoehe", "bodenbelag"),
+    ),
+    (
+        ("Hallenbad", "Freibad", "Cabriobad", "Kombibad"),
+        (
+            "becken_bis_25m",
+            "becken_25_bis_50m",
+            "becken_ueber_50m",
+            "nichtschwimmerbecken",
+            "kinderbecken",
+            "erholungsbecken",
+            "lehrbecken",
+            "wasserflaeche",
+            "wasserflaeche_lehrbecken",
+        ),
+    ),
+    (("Naturbad",), ("wasserflaeche", "nichtschwimmerbecken")),
+    (("Golfplatz",), ("loecher",)),
+    (("Bahnengolf", "Bowlingbahn", "Kegelbahn"), ("bahnen",)),
+    (
+        ("Eissportanlage ungedeckt", "Segelfluggelände", "Sonderlandeplatz", "Sportflugplatz"),
+        ("laenge", "breite"),
+    ),
+    (("Alpine Skianlage",), ("laenge", "lifte")),
+    (("Skisprungschanze",), ("laenge", "hoehe")),
+    (("Klettersporthalle",), ("laenge", "breite", "hoehe", "boulderwand", "kletterwand")),
+    (("Klettersportanlage Outdoor",), ("boulderwand", "kletterwand")),
+    (("Sporthafen",), ("wasserflaeche", "flaeche")),
+    (("Regattastrecke",), ("wasserflaeche", "flaeche", "bahnen")),
+    (("Wildwasseranlage",), ("laenge", "breite", "wasserflaeche")),
+    (("Rundrennstrecke (Motorboot)",), ("laenge", "wasserflaeche")),
+    (("Bouleanlage",), ("bodenbelag", "bahnen")),
+    (("Volleyballfeld",), ("bodenbelag", "bewaesserung", "hoehenverstellbares_netz")),
+    (
+        (
+            "Weit- und Dreisprunganlage",
+            "Kugelstoßanlage",
+            "Hindernislauf mit Wassergraben",
+            "Hochsprunganlage",
+            "Stabhochsprunganlage",
+            "Diskus- und Hammerwurfanlage",
+            "Speerwurfanlage",
+            "Ballwand",
+            "Polofeld",
+            "Springparcours",
+            "Geländeparcours",
+            "Freestyleanlage",
+            "Skilanglauf- und Biathlonanlage",
+            "Bewegungsparcours",
+            "Calisthenicsanlage",
+        ),
+        (),
+    ),
+)
+
+
+def fuer_von(feld: str) -> list[str] | None:
+    """Anlagentypen, für die ein Feld gedacht ist (MERKMALE); None: für alle."""
+    if feld in MERKMALE_ALLE:
+        return None
+    typen = [t for typen_, felder in MERKMALE if feld in felder for t in typen_]
+    return list(dict.fromkeys(typen)) or None
 
 
 def _a(titel, beschreibung=None, gruppe="Allgemein", **angaben):
@@ -392,8 +463,7 @@ class Sportanlage(Basis):
     # Sportanlage
     typ: str = _a(
         "Typ",
-        "einheitlicher Typ aus src/sportstaettenatlas/anlagen.py, z. B. „Großspielfeld“; "
-        "soll zur Kategorie der Sportstätte passen (KATEGORIE_ANLAGEN)",
+        "einheitlicher Typ aus src/sportstaettenatlas/anlagen.py, z. B. „Großspielfeld“",
         pflicht=True,
         min_length=1,
         max_length=100,
@@ -423,45 +493,22 @@ class Sportanlage(Basis):
         legacy="sportanlagesportart.wettkampfeignung",
     )
     # Maße
-    laenge: float | None = _n(
-        "Länge", "der Sportfläche", einheit="m", fuer=_FLAECHEN + ("bad",), legacy="laenge"
-    )
-    breite: float | None = _n(
-        "Breite", "der Sportfläche", einheit="m", fuer=_FLAECHEN + ("bad",), legacy="breite"
-    )
-    hoehe: float | None = _n(
-        "Höhe", "lichte Höhe der Halle", einheit="m", fuer=_HALLEN, legacy="hoehe"
-    )
+    laenge: float | None = _n("Länge", "der Sportfläche", einheit="m", legacy="laenge")
+    breite: float | None = _n("Breite", "der Sportfläche", einheit="m", legacy="breite")
+    hoehe: float | None = _n("Höhe", "lichte Höhe der Halle", einheit="m", legacy="hoehe")
     flaeche: float | None = _n(
         "Fläche",
         "nutzbare Sportfläche, wenn nicht Länge × Breite (z. B. Reitplatz)",
         einheit="m²",
         legacy="groesse",
     )
-    bahnlaenge: float | None = _n(
-        "Bahnlänge",
-        einheit="m",
-        fuer=(
-            "leichtathletik",
-            "bad",
-            "rad_motor",
-            "winter",
-            "wasser",
-            "schiessen",
-            "Kegelbahn",
-            "Bowlingbahn",
-        ),
-        legacy="bahnlaenge",
-    )
+    bahnlaenge: float | None = _n("Bahnlänge", einheit="m", legacy="bahnlaenge")
     bahnen: int | None = _n(
-        "Bahnen",
-        "Zahl der Lauf-, Schwimm-, Kegel- oder Schießbahnen",
-        fuer=("leichtathletik", "bad", "schiessen", "Kegelbahn", "Bowlingbahn"),
-        legacy="anzbahnen",
+        "Bahnen", "Zahl der Lauf-, Schwimm-, Kegel- oder Schießbahnen", legacy="anzbahnen"
     )
     # Belag und Felder
     bodenbelag: Literal[BODENBELAEGE] | None = _a(
-        "Bodenbelag", gruppe="Belag und Felder", fuer=_FLAECHEN, legacy="bodenbelagtypid"
+        "Bodenbelag", gruppe="Belag und Felder", legacy="bodenbelagtypid"
     )
     felder_je_belag: dict[Literal[BODENBELAEGE], Anzahl] = _a(
         "Felder je Belag",
@@ -469,14 +516,12 @@ class Sportanlage(Basis):
         gruppe="Belag und Felder",
         default_factory=dict,
         widget="zaehler",
-        fuer=("tennis", "spielfeld"),
         legacy="bodenbelag_anz_*",
     )
     spielfelder: int | None = _n(
         "Spielfelder",
         "Zahl, wenn nicht nach Sportart bekannt",
         gruppe="Belag und Felder",
-        fuer=("spielfeld", "halle", "tennis"),
         legacy="anzspielfelder",
     )
     felder_je_sportart: dict[Literal[SPIELFELDER], Anzahl] = _a(
@@ -485,7 +530,6 @@ class Sportanlage(Basis):
         gruppe="Belag und Felder",
         default_factory=dict,
         widget="zaehler",
-        fuer=("spielfeld", "halle"),
         legacy="anz_feld_*",
     )
     kleinfelder_je_sportart: dict[Literal[KLEINFELDER], Anzahl] = _a(
@@ -493,122 +537,82 @@ class Sportanlage(Basis):
         gruppe="Belag und Felder",
         default_factory=dict,
         widget="zaehler",
-        fuer=("spielfeld", "halle"),
         legacy="anz_kleinfeld_*",
     )
     loecher: int | None = _n(
-        "Löcher",
-        "Golf, Bahnengolf",
-        gruppe="Belag und Felder",
-        fuer=("Golfplatz", "Bahnengolf"),
-        legacy="anzloecher",
+        "Löcher", "Golf, Bahnengolf", gruppe="Belag und Felder", legacy="anzloecher"
     )
     # Becken
     wasserflaeche: float | None = _n(
-        "Wasserfläche",
-        "gesamt",
-        gruppe="Becken",
-        einheit="m²",
-        fuer=("bad",),
-        legacy="wasserflaeche",
+        "Wasserfläche", "gesamt", gruppe="Becken", einheit="m²", legacy="wasserflaeche"
     )
     wasserflaeche_relevant: float | None = _n(
         "Relevante Wasserfläche",
         "ohne Kaltwassertret-, Warmsprudelbecken usw.",
         gruppe="Becken",
         einheit="m²",
-        fuer=("bad",),
         legacy="relevante_wasserflaeche",
     )
     wasserflaeche_lehrbecken: float | None = _n(
         "Wasserfläche Lern- und Kursbecken",
         gruppe="Becken",
         einheit="m²",
-        fuer=("bad",),
         legacy="wasserflaechelernundkursbecken",
     )
-    becken_bis_25m: int | None = _n(
-        "Becken bis 25 m", gruppe="Becken", fuer=("bad",), legacy="anzbeckenbis25"
-    )
+    becken_bis_25m: int | None = _n("Becken bis 25 m", gruppe="Becken", legacy="anzbeckenbis25")
     becken_25_bis_50m: int | None = _n(
-        "Becken 25 bis 50 m", gruppe="Becken", fuer=("bad",), legacy="anzbeckenbis25bis50"
+        "Becken 25 bis 50 m", gruppe="Becken", legacy="anzbeckenbis25bis50"
     )
     becken_ueber_50m: int | None = _n(
-        "Becken über 50 m", gruppe="Becken", fuer=("bad",), legacy="anzbeckenueber50"
+        "Becken über 50 m", gruppe="Becken", legacy="anzbeckenueber50"
     )
     becken_tiefer_3m: int | None = _n(
-        "Becken tiefer als 3 m", gruppe="Becken", fuer=("bad",), legacy="anzbeckenue3m"
+        "Becken tiefer als 3 m", gruppe="Becken", legacy="anzbeckenue3m"
     )
     nichtschwimmerbecken: int | None = _n(
-        "Nichtschwimmerbecken", gruppe="Becken", fuer=("bad",), legacy="anznichtschwimmer"
+        "Nichtschwimmerbecken", gruppe="Becken", legacy="anznichtschwimmer"
     )
-    lehrbecken: int | None = _n(
-        "Lehrbecken", gruppe="Becken", fuer=("bad",), legacy="anzlehrbecken"
-    )
-    kinderbecken: int | None = _n(
-        "Kinderbecken", gruppe="Becken", fuer=("bad",), legacy="anzkinderbecken"
-    )
+    lehrbecken: int | None = _n("Lehrbecken", gruppe="Becken", legacy="anzlehrbecken")
+    kinderbecken: int | None = _n("Kinderbecken", gruppe="Becken", legacy="anzkinderbecken")
     erholungsbecken: int | None = _n(
-        "Erholungsbecken", gruppe="Becken", fuer=("bad",), legacy="anzerholungsbecken"
+        "Erholungsbecken", gruppe="Becken", legacy="anzerholungsbecken"
     )
     sprungturm: JaNein | None = _jn(
-        "Sprungturm", "mindestens einer", gruppe="Becken", fuer=("bad",), legacy="sprungturm"
+        "Sprungturm", "mindestens einer", gruppe="Becken", legacy="sprungturm"
     )
-    sprungtuerme_3m: int | None = _n(
-        "Sprungtürme 3 m", gruppe="Becken", fuer=("bad",), legacy="anzturm3m"
-    )
-    sprungtuerme_5m: int | None = _n(
-        "Sprungtürme 5 m", gruppe="Becken", fuer=("bad",), legacy="anztur5m"
-    )
-    sprungtuerme_10m: int | None = _n(
-        "Sprungtürme 10 m", gruppe="Becken", fuer=("bad",), legacy="anztur10m"
-    )
+    sprungtuerme_3m: int | None = _n("Sprungtürme 3 m", gruppe="Becken", legacy="anzturm3m")
+    sprungtuerme_5m: int | None = _n("Sprungtürme 5 m", gruppe="Becken", legacy="anztur5m")
+    sprungtuerme_10m: int | None = _n("Sprungtürme 10 m", gruppe="Becken", legacy="anztur10m")
     baederleben_id: str | None = _a(
         "ID bei baederleben.de",
         gruppe="Becken",
         max_length=50,
-        fuer=("bad",),
         uebersicht=False,
         legacy="baederlebenid",
     )
     # Ausstattung
     trennvorhang: JaNein | None = _jn(
-        "Trennvorhang",
-        "zur Hallenteilung oder für eine Bühne",
-        fuer=("halle", "neben"),
-        legacy="vorhangvorhanden",
+        "Trennvorhang", "zur Hallenteilung oder für eine Bühne", legacy="vorhangvorhanden"
     )
-    bewaesserung: JaNein | None = _jn(
-        "Bewässerung", fuer=("spielfeld", "tennis", "reiten", "Golfplatz"), legacy="bewaesserung"
-    )
+    bewaesserung: JaNein | None = _jn("Bewässerung", legacy="bewaesserung")
     hoehenverstellbares_netz: JaNein | None = _jn(
-        "Höhenverstellbares Netz",
-        fuer=("Volleyballfeld", "Beachvolleyballfeld"),
-        legacy="hoehenverstellnetz",
+        "Höhenverstellbares Netz", legacy="hoehenverstellnetz"
     )
-    kletterwand: JaNein | None = _jn("Kletterwand", fuer=_KLETTERN, legacy="kletterwand")
-    boulderwand: JaNein | None = _jn("Boulderwand", fuer=_KLETTERN, legacy="boulderwand")
-    dressurplatz: JaNein | None = _jn("Dressurplatz", fuer=("reiten",), legacy="dressurplatz")
-    springplatz: JaNein | None = _jn("Springplatz", fuer=("reiten",), legacy="springplatz")
+    kletterwand: JaNein | None = _jn("Kletterwand", legacy="kletterwand")
+    boulderwand: JaNein | None = _jn("Boulderwand", legacy="boulderwand")
+    dressurplatz: JaNein | None = _jn("Dressurplatz", legacy="dressurplatz")
+    springplatz: JaNein | None = _jn("Springplatz", legacy="springplatz")
     schiessstaende_gedeckt: int | None = _n(
-        "Schießstände gedeckt",
-        gruppe="Ausstattung",
-        fuer=("schiessen",),
-        legacy="anzschiesstubgedeckt",
+        "Schießstände gedeckt", gruppe="Ausstattung", legacy="anzschiesstubgedeckt"
     )
     schiessstaende_teilgedeckt: int | None = _n(
-        "Schießstände teilgedeckt",
-        gruppe="Ausstattung",
-        fuer=("schiessen",),
-        legacy="anzschiesstuboteilgedeckt",
+        "Schießstände teilgedeckt", gruppe="Ausstattung", legacy="anzschiesstuboteilgedeckt"
     )
     schiessstaende_offen: int | None = _n(
-        "Schießstände offen", gruppe="Ausstattung", fuer=("schiessen",), legacy="anzschiesstuboffen"
+        "Schießstände offen", gruppe="Ausstattung", legacy="anzschiesstuboffen"
     )
-    lifte: int | None = _n("Lifte", gruppe="Ausstattung", fuer=("winter",), legacy="anzlift")
-    spielgeraete: int | None = _n(
-        "Spielgeräte", gruppe="Ausstattung", fuer=("freizeit",), legacy="anz_spielgeraete"
-    )
+    lifte: int | None = _n("Lifte", gruppe="Ausstattung", legacy="anzlift")
+    spielgeraete: int | None = _n("Spielgeräte", gruppe="Ausstattung", legacy="anz_spielgeraete")
     ausstattung: list[str] = _a(
         "Weitere Ausstattung",
         "z. B. Umkleiden, Anzeigetafel",
@@ -616,7 +620,7 @@ class Sportanlage(Basis):
         default_factory=list,
     )
     # Licht
-    flutlicht: JaNein | None = _jn("Flutlicht", gruppe="Licht", fuer=_DRAUSSEN, legacy="flutlicht")
+    flutlicht: JaNein | None = _jn("Flutlicht", gruppe="Licht", legacy="flutlicht")
     leuchtmittel: Literal[LEUCHTMITTEL] | None = _a(
         "Leuchtmittel", gruppe="Licht", legacy="leuchtmitteltypid"
     )
@@ -653,7 +657,6 @@ class Sportanlage(Basis):
         "z. B. 6–12 Jahre",
         gruppe="Nutzung",
         max_length=50,
-        fuer=("freizeit",),
         legacy="altersempfehlung",
     )
     # Barrierefreiheit
@@ -976,6 +979,8 @@ MODELLE = (Sportstaette, Sportanlage, Adresse, Lage, Organisation, Vorschlag)
 
 def angabe(modell: type[BaseModel], feld: str, schluessel: str, vorgabe=None):
     """Angabe für die Webseite (gruppe, widget, formular …) eines Feldes."""
+    if schluessel == "fuer" and modell is Sportanlage:
+        return fuer_von(feld) or vorgabe
     extra = modell.model_fields[feld].json_schema_extra or {}
     return extra.get(schluessel, vorgabe)
 
@@ -983,29 +988,6 @@ def angabe(modell: type[BaseModel], feld: str, schluessel: str, vorgabe=None):
 def datei_felder(modell: type[BaseModel]) -> list[str]:
     """Felder in der Reihenfolge der JSON-Dateien (ohne die, die nicht in der Datei stehen)."""
     return [f for f in modell.model_fields if angabe(modell, f, "datei", True)]
-
-
-def passende_typen(kategorie: str | None) -> list[str] | None:
-    """Anlagentypen, die zur Kategorie passen (KATEGORIE_ANLAGEN); None: alle passen."""
-    eintraege = KATEGORIE_ANLAGEN.get(kategorie or "")
-    if not eintraege:
-        return None
-    out = []
-    for e in (*eintraege, *IMMER_PASSEND):
-        out += list(anlagen.GRUPPEN[e][1]) if e in anlagen.GRUPPEN else [e]
-    return list(dict.fromkeys(out))
-
-
-def zuordnung_hinweise(kategorie: str | None, typen) -> list[str]:
-    """Hinweise zu Sportanlagen, deren Typ nicht zur Kategorie der Sportstätte passt."""
-    passend = passende_typen(kategorie)
-    if passend is None:
-        return []
-    return [
-        f"typ: „{t}“ passt nicht zur Kategorie „{kategorie}“"
-        for t in dict.fromkeys(typen)
-        if t not in passend
-    ]
 
 
 # Umbenannte Felder: alter Name → neuer Name (für `sportstaettenatlas modell --migrieren`)
@@ -1089,11 +1071,11 @@ def schema() -> dict:
     for m in MODELLE:
         for name, feld in m.model_fields.items():
             s["$defs"][m.__name__]["properties"][name].setdefault("title", feld.title)
+    for name, p in s["$defs"]["Sportanlage"]["properties"].items():
+        if fuer := fuer_von(name):
+            p["fuer"] = fuer
     # Zuordnungen und Regeln, die nicht an einem Feld hängen (für die Webseite)
     s["atlas"] = {
-        "anlagen_je_kategorie": {
-            k: passende_typen(k) for k in KATEGORIEN if passende_typen(k) is not None
-        },
         "organisationstypen": ORGANISATIONSTYPEN,
         "alkis_kategorie": alkis_kategorie(),
         "email": EMAIL_MUSTER,
@@ -1168,12 +1150,26 @@ def _regeln_text(p: dict) -> str:
         if p.get(k):
             out.append(text.format(p[k]))
     if p.get("fuer"):
-        out.append("nur für " + ", ".join(p["fuer"]))
+        out.append("nur für " + fuer_text(p["fuer"]))
     return "; ".join(out)
+
+
+def fuer_text(typen: list[str]) -> str:
+    """Typen kurz: ganze Gruppen aus anlagen.GRUPPEN mit ihrem Namen, der Rest einzeln."""
+    rest, teile = list(typen), []
+    for text, gruppe in anlagen.GRUPPEN.values():
+        if len(gruppe) > 1 and all(t in rest for t in gruppe):
+            teile.append(text)
+            rest = [t for t in rest if t not in gruppe]
+    return ", ".join(teile + rest)
 
 
 def felder_tabelle(modell: type[BaseModel]) -> str:
     s = modell.model_json_schema()
+    if modell is Sportanlage:
+        for name, p in s["properties"].items():
+            if fuer := fuer_von(name):
+                p["fuer"] = fuer
     pflicht = set(s.get("required", []))
     zeilen = [
         "| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung | Legacy |",

@@ -95,8 +95,7 @@ function ansichtListe(bestand) {
         + `<td class="zahl">${e.anlagen.length}</td><td class="zahl">${balkenKlein(SPALTEN.staetten[5][2](e))}</td>`
         + `<td><a data-karte="${esc(e.p.id)}" title="Auf der Karte zeigen">Karte</a></td></tr>`
       : x => `<tr class="zeile${x.e.p.id === z.id && x.a.id === z.anlage ? " offen" : ""}" data-id="${esc(x.e.p.id)}" data-anlage="${esc(x.a.id)}">`
-        + `<td>${esc(x.a.typ)}${x.a.bezeichnung ? ` <span class="klein">(${esc(x.a.bezeichnung)})</span>` : ""}`
-        + `${typPasst(x.e.p.kategorie, x.a.typ) ? "" : ` <span class="warn" title="Typ passt nicht zur Kategorie „${esc(x.e.kat)}“">!</span>`}</td>`
+        + `<td>${esc(x.a.typ)}${x.a.bezeichnung ? ` <span class="klein">(${esc(x.a.bezeichnung)})</span>` : ""}</td>`
         + `<td class="klein">${esc(x.e.p.name || x.e.kat)}</td><td class="klein">${esc(x.e.p.ort || "")}</td>`
         + `<td class="klein">${sportText(x.sp, x.geerbt)}</td><td class="zahl">${balkenKlein(SPALTEN.anlagen[4][2](x))}</td>`
         + `<td><a data-karte="${esc(x.e.p.id)}" title="Sportstätte auf der Karte zeigen">Karte</a></td></tr>`;
@@ -142,11 +141,9 @@ function ansichtListe(bestand) {
         + ` <a class="knopf2" href="#" data-bearbeiten="${esc(p.id)}" data-teil="anlagen">Sportanlagen ändern</a>` : "";
     const anlagen = e.anlagen.map(a => {
       const za = feldZeilen("Sportanlage", a, f => f.gruppe || "Allgemein", leere, a.typ);
-      const passt = typPasst(p.kategorie, a.typ);
       return `<details class="anlage-details" data-anlage="${esc(a.id)}"${a.id === z.anlage ? " open" : ""}>`
         + `<summary><b>${esc(a.typ)}</b>${a.bezeichnung ? ` (${esc(a.bezeichnung)})` : ""} <span class="q">${esc(a.id)}</span>`
         + `<span class="w">${Math.round(100 * anteilVon(a, FELDER_ANLAGE()))} %</span></summary>`
-        + (passt ? "" : `<div class="warnung klein">Typ passt nicht zur Kategorie „${esc(e.kat)}“.</div>`)
         + (za.size ? gruppenTabellen(SCHEMA.$defs.Sportanlage.gruppen || [], za) : `<div class="hinweis">Keine weiteren Angaben.</div>`)
         + `</details>`;
     }).join("");

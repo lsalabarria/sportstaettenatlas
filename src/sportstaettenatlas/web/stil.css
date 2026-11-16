@@ -191,7 +191,6 @@ details.befuellung summary .w { float: right; color: #555; font-variant-numeric:
 .anlage-felder .zaehler input { width: 56px; flex: 0 0 56px; }
 .anlage-mehr [hidden] { display: none !important; }
 .anlage-mehr .alle { display: block; cursor: pointer; }
-.typ-hinweis { color: #9a5b00; margin-top: 2px; }
 /* Filter: Sportanlagen nach Gruppen */
 .an-liste { max-height: 260px; overflow: auto; margin-top: 4px; }
 .an-kopf { display: flex; align-items: center; gap: 2px; }
@@ -245,8 +244,6 @@ details.befuellung summary .w { float: right; color: #555; font-variant-numeric:
   vertical-align: middle; margin-right: 4px; overflow: hidden; }
 .mini span { display: block; height: 6px; background: #2a78d6; }
 .geerbt { font-style: italic; color: #888; }
-.warn { display: inline-block; width: 15px; height: 15px; line-height: 15px; text-align: center;
-  border-radius: 50%; background: #E8B64C; color: #fff; font-size: 11px; font-weight: 700; }
 aside.details { position: sticky; top: 8px; max-height: calc(100vh - 140px); overflow: auto;
   border: 1px solid #e3e3e3; border-radius: 8px; padding: 10px 14px; }
 aside.details[hidden] { display: none; }
@@ -264,4 +261,3 @@ aside.details tr.leer td { color: #aaa; }
 .anlage-details { border-top: 1px solid #ececec; padding: 4px 0; }
 .anlage-details summary { cursor: pointer; padding: 3px 0; }
 .anlage-details[open] summary { margin-bottom: 2px; }
-.anlage-details .warnung.klein { padding: 4px 8px; font-size: 12px; margin: 4px 0; }

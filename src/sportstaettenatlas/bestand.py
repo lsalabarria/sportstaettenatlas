@@ -27,7 +27,6 @@ from .modell import (
     migriere,
     ordne,
     pruefe,
-    zuordnung_hinweise,
 )
 
 EMAIL = re.compile(EMAIL_MUSTER)
@@ -322,8 +321,8 @@ def lies_bestand(ordner: Path, verstoesse: list | None = None) -> Iterator[dict]
     Prüft den Aufbau: Jeder Ordner hat seine <id>_meta.json, jede Anlage nennt in
     `sportstaette_id` die Sportstätte ihres Ordners, Dateiname = id, typ ist gesetzt.
     Ein Fehler im Aufbau bricht ab (ValueError). Verstöße gegen die Regeln des Modells
-    (modell.py, z. B. PLZ mit sechs Ziffern) und Anlagen, deren Typ nicht zur Kategorie
-    passt, brechen nicht ab, sondern landen als (Datei, Meldung) in `verstoesse`. Im Ergebnis steht zusätzlich "_ordner" (Kreis-Ordner).
+    (modell.py, z. B. PLZ mit sechs Ziffern) brechen nicht ab, sondern landen als
+    (Datei, Meldung) in `verstoesse`. Im Ergebnis steht zusätzlich "_ordner" (Kreis-Ordner).
     """
     for st_ordner in sorted(p for p in Path(ordner).glob("*/*/*") if p.is_dir()):
         sid = st_ordner.name
@@ -347,8 +346,6 @@ def lies_bestand(ordner: Path, verstoesse: list | None = None) -> Iterator[dict]
                 raise ValueError(f"{pfad}: typ fehlt")
             if verstoesse is not None:
                 verstoesse += [(str(pfad), m) for m in pruefe(Sportanlage, a)]
-                hinweise = zuordnung_hinweise(meta.get("kategorie"), [a["typ"]])
-                verstoesse += [(str(pfad), m) for m in hinweise]
             anlagen.append(a)
         if verstoesse is not None:
             verstoesse += [(str(meta_pfad), m) for m in pruefe(Sportstaette, meta)]

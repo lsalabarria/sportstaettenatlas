@@ -435,9 +435,6 @@ function ansichtUebersicht(bestand) {
     const kachel = (label, wert, zusatz = "") => `<div class="kachel"><div class="label">${label}</div>`
       + `<div class="wert">${wert}</div><div class="zusatz">${zusatz}</div></div>`;
     const ohneAnlagen = liste.filter(e => !e.anlagen.length).length;
-    // Sportanlagen, deren Typ nicht zur Kategorie passt (modell.py: KATEGORIE_ANLAGEN)
-    const unpassend = liste.flatMap(e => e.anlagen.filter(a => !typPasst(e.p.kategorie, a.typ))
-      .map(a => `${e.kat} → ${a.typ}`));
     const angegeben = rolle => liste.map(e => e.p[rolle + "_typ"]).filter(v => !leer(v));
     let h = `<div class="inhalt"><h2>Übersicht: ${esc(gebietName())}</h2>`
       + `<p class="unter">Datenbestand der Karte (Ordner <code>daten/</code>): Sportstätten und die `
@@ -448,7 +445,6 @@ function ansichtUebersicht(bestand) {
       + kachel("Angaben Sportstätten", `${Math.round(100 * befuellung(liste))} %`, `befüllt, Durchschnitt über ${FELDER_STAETTE().length} Felder`)
       + kachel("Angaben Sportanlagen", `${Math.round(100 * anteil(anlagen, FELDER_ANLAGE()))} %`,
         `befüllt, Durchschnitt über die Felder, die zum Typ passen (bis ${FELDER_ANLAGE().length})`)
-      + kachel("Typ passt nicht", zahl(unpassend.length), `Sportanlagen, deren Typ nicht zur Kategorie der Sportstätte passt`)
       + kachel("Sportarten", zahl(sportarten.size), "verschiedene")
       + kachel("Vereine", zahl(betr.Verein.size), "als Betreiber (mit angegebener Art)")
       + kachel("Kommunen", zahl(betr.Kommune.size), "als Betreiber (mit angegebener Art)")
@@ -469,10 +465,7 @@ function ansichtUebersicht(bestand) {
       + `<div class="hinweis">Felder, die nur für bestimmte Sportanlagen gedacht sind (z. B. Becken für Bäder), `
       + `zählen nur unter diesen; die Zahl dahinter nennt, wie viele es sind.</div>`
       + befuellungNachGruppe("Sportanlage", anlagen, FELDER_ANLAGE(), "Sportanlagen")
-      + (unpassend.length ? `<h4>Typ passt nicht zur Kategorie</h4>`
-        + balken(sortiert(zaehle(unpassend)).slice(0, 10), 0, false, "Sportanlagen")
-        + `<div class="hinweis">Kategorie der Sportstätte → Typ der Sportanlage. Regel in `
-        + `<code>modell.py</code> (KATEGORIE_ANLAGEN); Liste aller Fälle: <code>results/regelverstoesse.csv</code></div>` : "")
+
       + `<h4>Nach Gruppe</h4>` + balken(ANLAGEN_GRUPPEN.map(([g, text]) =>
         [text, anlagen.filter(a => anlagenGruppe(a.typ) === g).length]).filter(z => z[1])
         .sort((a, b) => b[1] - a[1]), 0, false, "Sportanlagen")

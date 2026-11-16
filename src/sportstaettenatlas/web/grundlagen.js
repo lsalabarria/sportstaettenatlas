@@ -22,8 +22,8 @@ function wertText(v) { return typeof v === "boolean" ? (v ? "ja" : "nein") : esc
 // Felder, Beschriftungen (title), Auswahllisten (enum), Regeln (minimum, pattern …) und
 // Angaben für die Webseite (gruppe, widget, formular, uebersicht, einheit) stehen nur dort.
 let SCHEMA = { $defs: {} };
-// Zuordnungen und Regeln ohne eigenes Feld (modell.schema: "atlas"): Anlagentypen je Kategorie,
-// Organisationstypen, ALKIS-Typgruppe → Kategorie, Muster für E-Mail-Adressen
+// Zuordnungen und Regeln ohne eigenes Feld (modell.schema: "atlas"): Organisationstypen,
+// ALKIS-Typgruppe → Kategorie, Muster für E-Mail-Adressen
 const ATLAS = () => SCHEMA.atlas || {};
 const enthaeltEmail = x => !!ATLAS().email && new RegExp(ATLAS().email).test(JSON.stringify(x));
 // Felder eines Modells: [[Name, Eigenschaft, Pflicht, Typ]] – Typ ohne „oder leer“, Verweise
@@ -50,9 +50,10 @@ function feldText(p, t, v, x = {}) {
   }
   return String(v);
 }
-// Ist ein Feld für diese Sportanlage gedacht? (Angabe fuer: Gruppen oder Typen)
+// Ist ein Feld für diese Sportanlage gedacht? (Angabe fuer: Typen aus modell.MERKMALE). Bei
+// einem Typ, den die Liste nicht kennt, gelten alle Felder.
 function passtFuer(p, typ) {
-  return !p.fuer || !typ || p.fuer.includes(typ) || p.fuer.includes(anlagenGruppe(typ));
+  return !p.fuer || !typ || !(typ in ANLAGEN_TYPEN) || p.fuer.includes(typ);
 }
 // Felder, deren Wert nur als Einheit eines anderen Feldes erscheint (Währung der Baukosten)
 function nurEinheit(modell) {
@@ -92,15 +93,6 @@ function orgArt(name) {
 }
 function schluesselName(s) { return String(s || "").trim().replace(/\s+/g, " ").toLowerCase(); }
 
-// Typen von Sportanlagen, die zur Kategorie passen (modell.py: KATEGORIE_ANLAGEN); null: alle
-function passendeTypen(kategorie) {
-  const z = ATLAS().anlagen_je_kategorie || {};
-  return z[kategorie] || null;
-}
-function typPasst(kategorie, typ) {
-  const p = passendeTypen(kategorie);
-  return !p || !typ || p.includes(typ);
-}
 // Werte zählen: ["a", "b", "a"] → { a: 2, b: 1 }
 function zaehle(werte) {
   const z = {};

@@ -37,6 +37,7 @@ GRUPPEN: dict[str, tuple[str, tuple[str, ...]]] = {
             "Dreifachsporthalle",
             "Großsporthalle",
             "Sporthalle Sondermaße",
+            "Freilufthalle",
             "Übungsraum",
             "Kurs-/Übungsraum",
             "Kraftraum",
@@ -67,9 +68,10 @@ GRUPPEN: dict[str, tuple[str, tuple[str, ...]]] = {
             "Geländeparcours",
             "Führ- und Longierplatz",
             "Führ- und Longierhalle",
+            "Polofeld",
         ),
     ),
-    "schiessen": ("Schießen", ("Schießstand", "Bogenschießanlage")),
+    "schiessen": ("Schießen", ("Schießstand", "Bogenschießanlage", "Wurfscheibenanlage")),
     "freizeit": (
         "Freizeit und Bewegung",
         (
@@ -81,6 +83,8 @@ GRUPPEN: dict[str, tuple[str, tuple[str, ...]]] = {
             "Bewegungsparcours",
             "Klettersportanlage Outdoor",
             "Klettersporthalle",
+            "Freestyleanlage",
+            "Rollsporthalle",
             "Tischtennistisch",
             "Spielplatz",
         ),
@@ -95,6 +99,9 @@ GRUPPEN: dict[str, tuple[str, tuple[str, ...]]] = {
             "Motocross-Strecke",
             "Kartbahn",
             "Motorsport-Rennstrecke",
+            "Enduro-Strecke",
+            "SuperMoto-Strecke",
+            "Radsporthalle",
             "Fahrparcours",
         ),
     ),
@@ -115,6 +122,8 @@ GRUPPEN: dict[str, tuple[str, tuple[str, ...]]] = {
             "Eissportanlage ungedeckt",
             "Skilanglauf- und Biathlonanlage",
             "Alpine Skianlage",
+            "Skisprungschanze",
+            "Eisschnelllaufbahn",
             "Bob-/Rodelbahn",
         ),
     ),
@@ -125,7 +134,7 @@ GRUPPEN: dict[str, tuple[str, tuple[str, ...]]] = {
     ),
     "weitere": (
         "Weitere",
-        ("Golfplatz", "Kegelbahn", "Bowlingbahn", "sonstige Sportanlage"),
+        ("Golfplatz", "Kegelbahn", "Bowlingbahn", "Sportkindergarten", "sonstige Sportanlage"),
     ),
 }
 GRUPPE_VON = {t: g for g, (_, typen) in GRUPPEN.items() for t in typen}
@@ -161,6 +170,11 @@ _VARIANTEN = {
     "führ-undlogierhalle": "Führ- und Longierhalle",
     "bahnengolf(minigolf)": "Bahnengolf",
     "golfsportstätte": "Golfplatz",
+    "eissportanlage(ungedeckt)": "Eissportanlage ungedeckt",
+    "sporthalle(sondermaßenichtdin-gerecht)": "Sporthalle Sondermaße",
+    "squaschhalle": "Squashhalle",
+    "freilufthalle(kalthalle)": "Freilufthalle",
+    "spielfeld(polo)": "Polofeld",
 }
 # Typen ohne eigene Variante, aber in anderer Groß-/Kleinschreibung
 _VARIANTEN.update({_schluessel(t): t for t in GRUPPE_VON})

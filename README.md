@@ -68,8 +68,8 @@ Danach: `git add -A daten docs && git commit -m "…" && git push`.
 ## Datenmodell im Code
 
 Das Modell steht an **einer** Stelle: `src/sportstaettenatlas/modell.py` (Pydantic) – Felder,
-Auswahllisten, Regeln und die Zuordnungen ohne eigenes Feld (Anlagentypen je Kategorie,
-Organisationstypen, Kategorie ↔ ALKIS, Muster für Kontaktdaten). Daraus folgt:
+Auswahllisten, Regeln, die Felder je Anlagentyp (`MERKMALE`) und die Zuordnungen ohne eigenes
+Feld (Organisationstypen, Kategorie ↔ ALKIS, Muster für Kontaktdaten). Daraus folgt:
 
 - `bestand`, `seite` und `alkis` prüfen `daten/` beim Lesen. Ein Fehler im Aufbau bricht ab,
   ein Wert gegen die Regeln nicht; er steht in `results/regelverstoesse.csv`.
@@ -93,7 +93,7 @@ umbenannt, kommt der alte Name in `UMBENANNT`, danach `modell --migrieren`.
 |---|---|
 | **Karte** | ein Punkt je Sportstätte; Filter nach Sportanlagen (nach Gruppen), Kategorie, Art des Betreibers und Sportarten; das Fenster einer Sportstätte listet ihre Anlagen |
 | **Liste** | alle Sportstätten, Sportanlagen bzw. Organisationen (als Eigentümer, Betreiber oder Nutzer), filterbar nach Sportart, Kategorie, Typ und Text, sortierbar (auch nach Befüllung); ein Klick zeigt alle Angaben, „Karte“ springt zum Punkt |
-| **Übersicht** | Zahlen, Befüllung der Angaben nach Abschnitten (Felder nur unter den Anlagen, für die sie gedacht sind), Typen, die nicht zur Kategorie passen, je Kreis |
+| **Übersicht** | Zahlen, Befüllung der Angaben nach Abschnitten (Felder nur unter den Anlagen, für die sie gedacht sind), Kategorien und Typen, je Kreis |
 | **Vorschlag** | Formular für neue Sportstätten, Änderungen und Organisationen, weiter zu LimeSurvey |
 | **Analysen** | der ALKIS-Abgleich; lädt erst beim Öffnen |
 

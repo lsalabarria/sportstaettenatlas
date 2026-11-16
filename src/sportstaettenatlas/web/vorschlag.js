@@ -153,7 +153,7 @@ function ansichtVorschlag(bestand) {
   const SPORTARTEN = haeufig(bestand.eintraege.flatMap(e => [...e.sp])).map(x => x[0])
     .sort((a, b) => a.localeCompare(b, "de"));
   // Typen der Sportanlagen (alle bekannten und die im Bestand): nach Gruppe, darin nach Häufigkeit;
-  // zur gewählten Kategorie passende zuerst (typListe)
+  // bei gewählter Kategorie zuerst die Typen, die im Bestand bei ihr vorkommen (typListe)
   const ANLAGEN = (() => {
     const z = zaehle(bestand.eintraege.flatMap(e => e.p.anlagen));
     const reihe = ANLAGEN_GRUPPEN.map(g => g[0]);
@@ -162,13 +162,23 @@ function ansichtVorschlag(bestand) {
   })();
   const kategorie = () => F("art").value === "anlagen" ? (original && original.p.kategorie) : F("kategorie").value;
   let typListeFuer;
+  let typenJeKategorie = null;  // Kategorie → { Typ: Zahl der Sportstätten }
   function typListe() {
-    const k = kategorie(), passend = passendeTypen(k);
+    const k = kategorie();
     if (k === typListeFuer) return;
     typListeFuer = k;
-    const liste = passend ? [...ANLAGEN.filter(t => passend.includes(t)), ...ANLAGEN.filter(t => !passend.includes(t))] : ANLAGEN;
+    if (!typenJeKategorie) {
+      typenJeKategorie = {};
+      for (const e of bestand.eintraege) for (const t of e.typen) {
+        const z = typenJeKategorie[e.kat] ??= {};
+        z[t] = (z[t] || 0) + 1;
+      }
+    }
+    const z = (k && typenJeKategorie[k]) || {};
+    const haeufig = Object.keys(z).sort((a, b) => z[b] - z[a]);
+    const liste = [...haeufig, ...ANLAGEN.filter(t => !(t in z))];
     el.querySelector("#v-anlagen-liste").innerHTML = liste.map(t => `<option value="${esc(t)}">`
-      + `${esc(gruppenText(anlagenGruppe(t)))}${passend && !passend.includes(t) ? ` – passt nicht zu „${esc(k)}“` : ""}</option>`).join("");
+      + esc(gruppenText(anlagenGruppe(t))) + (z[t] ? ` – bei ${zahl(z[t])} ${esc(k)}` : "") + `</option>`).join("");
   }
   function organisationen() {
     const verzeichnis = ORGANISATIONEN.map(o => o.name);
@@ -276,7 +286,7 @@ function ansichtVorschlag(bestand) {
       </form>
       <aside><div id="v-karte" aria-label="Karte zur Lage"></div>
         <div class="hinweis">Klick in die Karte setzt die Lage, die Markierung lässt sich verschieben. Graue Punkte: vorhandene Sportstätten.</div>
-        <div id="v-aenderungen"></div><div id="v-hinweise"></div><div id="v-dubletten"></div></aside></div>
+        <div id="v-aenderungen"></div><div id="v-dubletten"></div></aside></div>
       <datalist id="v-orte">${optionen(ORTE())}</datalist>
       <datalist id="v-orgs">${optionen(organisationen())}</datalist>
       <datalist id="v-sportarten-liste">${optionen(SPORTARTEN)}</datalist>
@@ -404,7 +414,7 @@ function ansichtVorschlag(bestand) {
     tr.className = "anlage"; mehr.className = "anlage-mehr"; mehr.hidden = true;
     tr.dataset.id = a.id || ""; tr.dataset.alt = JSON.stringify(alt);
     tr.innerHTML = `<td><input data-f="typ" list="v-anlagen-liste" value="${esc(alt.typ)}" aria-label="Typ"`
-      + ` placeholder="z. B. Großspielfeld"><div class="typ-hinweis hinweis" hidden></div></td>`
+      + ` placeholder="z. B. Großspielfeld"></td>`
       + `<td><input data-f="bezeichnung" value="${esc(alt.bezeichnung)}" aria-label="Name" placeholder="optional"></td>`
       + `<td>${vorhanden ? `<span class="q" title="Kennung der Anlage">${esc(a.id)}</span>`
         : `<input data-f="anzahl" type="number" min="1" step="1" value="${anzahl}" aria-label="Anzahl">`}</td>`
@@ -771,20 +781,6 @@ function ansichtVorschlag(bestand) {
         if (vkarte && e) vkarte.setView([e.lat, e.lon], 18); }));
     }
     zeigeAenderungen(v);
-    zeigeHinweise(v);
-  }
-  // Hinweise, die das Abschicken nicht verhindern: Typ einer Sportanlage passt nicht zur Kategorie
-  function zeigeHinweise(v) {
-    const k = kategorie(), box = el.querySelector("#v-hinweise"), liste = [];
-    for (const tr of el.querySelectorAll("#v-anlagen tr.anlage")) {
-      const typ = tr.querySelector('[data-f="typ"]').value.trim(), h = tr.querySelector(".typ-hinweis");
-      const passt = v.art === "aenderung" || tr.classList.contains("entfernt") || typPasst(k, typ);
-      h.hidden = passt; h.textContent = passt ? "" : `passt nicht zu „${k}“`;
-      if (!passt) liste.push(typ);
-    }
-    box.innerHTML = liste.length ? `<div class="warnung"><b>Bitte prüfen</b> – diese Sportanlagen passen nicht `
-      + `zur Kategorie „${esc(k)}“: ${[...new Set(liste)].map(esc).join(", ")}. Gehören sie zu einer anderen `
-      + `Sportstätte, oder stimmt die Kategorie nicht? Abschicken geht trotzdem.</div>` : "";
     typListe();
   }
   function sucheDubletten(v) {

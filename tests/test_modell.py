@@ -186,31 +186,31 @@ def test_anzahl_je_wert():
     ]
 
 
-def test_kategorie_und_anlagentyp():
-    assert modell.zuordnung_hinweise("Sportplatz", ["Großspielfeld", "Geräteraum"]) == []
-    assert modell.zuordnung_hinweise("Sportplatz", ["Tennisplatz"]) == [
-        "typ: „Tennisplatz“ passt nicht zur Kategorie „Sportplatz“"
-    ]
-    assert modell.zuordnung_hinweise("Leistungsstützpunkt", ["Tennisplatz"]) == []
-    # jeder Eintrag ist eine Gruppe oder ein bekannter Typ
+def test_merkmale_je_anlagentyp():
     from sportstaettenatlas import anlagen
 
-    for kat, eintraege in modell.KATEGORIE_ANLAGEN.items():
-        assert kat in modell.KATEGORIEN
-        for e in (*eintraege, *modell.IMMER_PASSEND):
-            assert e in anlagen.GRUPPEN or e in anlagen.GRUPPE_VON, e
+    felder = set(modell.Sportanlage.model_fields)
+    assert set(modell.MERKMALE_ALLE) <= felder
+    for typen, fs in modell.MERKMALE:
+        assert set(fs) <= felder, set(fs) - felder
+        for t in typen:
+            assert t in anlagen.GRUPPE_VON, t
+    assert "Tennisplatz" in modell.fuer_von("felder_je_belag")
+    assert "Großspielfeld" not in modell.fuer_von("felder_je_belag")
+    assert modell.fuer_von("flutlicht") is None  # für alle Typen
+    # im Schema für die Webseite
+    p = modell.schema()["$defs"]["Sportanlage"]["properties"]
+    assert p["hoehe"]["fuer"] == modell.fuer_von("hoehe") and "fuer" not in p["baujahr"]
 
 
 def test_angaben_der_anlagenfelder():
-    from sportstaettenatlas import anlagen
 
     for name, feld in modell.Sportanlage.model_fields.items():
         extra = feld.json_schema_extra or {}
         if extra.get("formular") is False:
             continue
         assert extra.get("gruppe") in modell.ANLAGE_GRUPPEN, name
-        for f in extra.get("fuer", ()):
-            assert f in anlagen.GRUPPEN or f in anlagen.GRUPPE_VON, (name, f)
+        assert "fuer" not in extra, name  # folgt aus MERKMALE
 
 
 def test_migrieren(tmp_path):
@@ -228,14 +228,6 @@ def test_migrieren(tmp_path):
     verstoesse = []
     list(lies_bestand(tmp_path, verstoesse))
     assert verstoesse == []
-
-
-def test_lies_bestand_meldet_unpassende_anlagen(tmp_path):
-    d = {**STAETTE, "anlagen": [{"typ": "Großspielfeld"}, {"typ": "Freibad"}]}
-    schreibe_bestand([d], tmp_path, "rp", lambda lon, lat: "07111-koblenz")
-    verstoesse = []
-    list(lies_bestand(tmp_path, verstoesse))
-    assert [m for _, m in verstoesse] == ["typ: „Freibad“ passt nicht zur Kategorie „Sportplatz“"]
 
 
 def test_art_von_eigentuemer_und_betreiber():
