@@ -266,3 +266,15 @@ def test_kontaktdaten_an_einer_stelle():
     for m in modell.MODELLE:  # kein Feld des Modells sieht wie Kontaktdaten aus
         for name, f in m.model_fields.items():
             assert not k.search(name) and not k.search(f.title or ""), name
+
+
+def test_auswahllisten_einmal():
+    """Im Modell sind Auswahllisten Enums (einmal benannt), im Schema stehen sie am Feld."""
+    s = modell.schema()
+    assert not any("enum" in d for d in s["$defs"].values())  # keine eigene Definition
+    p = s["$defs"]["Sportanlage"]["properties"]
+    assert p["felder_je_belag"]["propertyNames"]["enum"][0] == "Sportparkett"
+    assert p["lux"]["anyOf"][0]["enum"][0] == 100
+    b = modell.readme_block()
+    assert b.count("„Sportparkett“") == 1  # die Liste steht einmal, unter „Auswahllisten“
+    assert "Auswahl [Bodenbelag](#auswahllisten)" in b

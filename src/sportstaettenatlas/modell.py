@@ -23,6 +23,7 @@ Regeln zwischen Feldern (prüft Basis, das Formular ebenso):
 from __future__ import annotations
 
 import json
+from enum import Enum
 from pathlib import Path
 from typing import Annotated, Any, Literal, get_args
 
@@ -115,10 +116,35 @@ KLEINFELDER = ("Fußball", "Hockey", "Basketball", "Streetball", "Sonstige")
 LEUCHTMITTEL = ("LED", "Leuchtröhren", "Sonstige")
 LUXWERTE = (100, 150, 200, 300, 500, 750, 1000)
 
-Kategorie = Literal[KATEGORIEN]
-Betriebsstatus = Literal[BETRIEBSSTATUS]
-Organisationstyp = Literal[tuple(ORGANISATIONSTYPEN)]
-JaNein = Literal["ja", "nein"]
+
+def _auswahl(name: str, werte, typ=str) -> type[Enum]:
+    """Auswahlliste als Enum: im Diagramm und im Modell einmal benannt statt bei jedem Feld
+    ausgeschrieben. Die Werte bleiben Text bzw. Zahlen (schema löst sie im Schema wieder auf)."""
+    return Enum(name, [(f"w{i}", w) for i, w in enumerate(werte)], type=typ)
+
+
+Kategorie = _auswahl("Kategorie", KATEGORIEN)
+Betriebsstatus = _auswahl("Betriebsstatus", BETRIEBSSTATUS)
+Organisationstyp = _auswahl("Organisationstyp", ORGANISATIONSTYPEN)
+JaNein = _auswahl("JaNein", ("ja", "nein"))
+Waehrung = _auswahl("Waehrung", WAEHRUNGEN)
+Bodenbelag = _auswahl("Bodenbelag", BODENBELAEGE)
+Spielfeldart = _auswahl("Spielfeldart", SPIELFELDER)
+Kleinfeldart = _auswahl("Kleinfeldart", KLEINFELDER)
+Leuchtmittel = _auswahl("Leuchtmittel", LEUCHTMITTEL)
+Luxwert = _auswahl("Luxwert", LUXWERTE, int)
+AUSWAHL = (
+    Kategorie,
+    Betriebsstatus,
+    Organisationstyp,
+    JaNein,
+    Waehrung,
+    Bodenbelag,
+    Spielfeldart,
+    Kleinfeldart,
+    Leuchtmittel,
+    Luxwert,
+)
 Anzahl = Annotated[int, Field(ge=0, le=10_000)]
 
 # Kategorie → Typgruppen der ALKIS-Regeln (analysen/alkis/regeln.toml). Die erste Gruppe nutzt
@@ -203,7 +229,7 @@ def _f(titel: str, beschreibung: str | None = None, pflicht: bool = False, **ang
 class Basis(BaseModel):
     """Gemeinsame Einstellungen und die Regeln zwischen Feldern (Angaben braucht, teil_von)."""
 
-    model_config = ConfigDict(extra="forbid", str_strip_whitespace=True)
+    model_config = ConfigDict(extra="forbid", str_strip_whitespace=True, use_enum_values=True)
 
     @model_validator(mode="after")
     def _regeln_zwischen_feldern(self):
@@ -292,7 +318,7 @@ MERKMALE: tuple[tuple[tuple[str, ...], tuple[str, ...]], ...] = (
         ),
         ("laenge", "breite", "hoehe", "bodenbelag", "felder_je_sportart"),
     ),
-    (("Bühne",), ("laenge", "breite", "hoehe", "barrierefrei_erreichbar", "trennvorhang")),
+    (("Bühne",), ("laenge", "breite", "hoehe", "trennvorhang")),
     (("Squashhalle", "Paddleplatz"), ("laenge", "breite", "hoehe", "bodenbelag", "spielfelder")),
     (
         ("Kurs-/Übungsraum", "Gerätebereich", "Skateplatz", "Rollsportplatz"),
@@ -527,10 +553,10 @@ class Sportanlage(Basis):
         "Bahnen", "Zahl der Lauf-, Schwimm-, Kegel- oder Schießbahnen", spalte="anzbahnen"
     )
     # Belag und Felder
-    bodenbelag: Literal[BODENBELAEGE] | None = _a(
+    bodenbelag: Bodenbelag | None = _a(
         "Bodenbelag", gruppe="Belag und Felder", spalte="bodenbelagtypid"
     )
-    felder_je_belag: dict[Literal[BODENBELAEGE], Anzahl] = _a(
+    felder_je_belag: dict[Bodenbelag, Anzahl] = _a(
         "Felder je Belag",
         "z. B. Tennisplätze: 3 Sand, 1 Kunstrasen",
         gruppe="Belag und Felder",
@@ -544,7 +570,7 @@ class Sportanlage(Basis):
         gruppe="Belag und Felder",
         spalte="anzspielfelder",
     )
-    felder_je_sportart: dict[Literal[SPIELFELDER], Anzahl] = _a(
+    felder_je_sportart: dict[Spielfeldart, Anzahl] = _a(
         "Spielfelder je Sportart",
         "markierte Felder, z. B. 3 Badminton, 1 Handball",
         gruppe="Belag und Felder",
@@ -552,7 +578,7 @@ class Sportanlage(Basis):
         widget="zaehler",
         spalte="anz_feld_*",
     )
-    kleinfelder_je_sportart: dict[Literal[KLEINFELDER], Anzahl] = _a(
+    kleinfelder_je_sportart: dict[Kleinfeldart, Anzahl] = _a(
         "Kleinfelder je Sportart",
         gruppe="Belag und Felder",
         default_factory=dict,
@@ -641,10 +667,10 @@ class Sportanlage(Basis):
     )
     # Licht
     flutlicht: JaNein | None = _jn("Flutlicht", gruppe="Licht", spalte="flutlicht")
-    leuchtmittel: Literal[LEUCHTMITTEL] | None = _a(
+    leuchtmittel: Leuchtmittel | None = _a(
         "Leuchtmittel", gruppe="Licht", spalte="leuchtmitteltypid"
     )
-    lux: Literal[LUXWERTE] | None = _a(
+    lux: Luxwert | None = _a(
         "Beleuchtungsstärke", gruppe="Licht", einheit="lx", spalte="luxwerttypid"
     )
     # Nutzung
@@ -708,7 +734,7 @@ class Sportanlage(Basis):
         einheit_aus="waehrung",
         spalte="baukosten",
     )
-    waehrung: Literal[WAEHRUNGEN] | None = _a(
+    waehrung: Waehrung | None = _a(
         "Währung", "der Baukosten", gruppe="Kosten", uebersicht=False, spalte="waehrung"
     )
     quellen: dict[str, dict[str, Any]] = _f(
@@ -1031,7 +1057,7 @@ def ordne(d: dict, modell: type[BaseModel]) -> dict:
             out[feld] = ordne(out[feld], unter)
     for feld, info in modell.model_fields.items():  # Anzahl je Wert: Reihenfolge der Auswahl
         if angabe(modell, feld, "widget") == "zaehler" and isinstance(out.get(feld), dict):
-            reihe = get_args(get_args(info.annotation)[0])
+            reihe = [w.value for w in get_args(info.annotation)[0]]
             out[feld] = dict(
                 sorted(
                     out[feld].items(),
@@ -1045,6 +1071,7 @@ _MELDUNG = {
     "missing": "fehlt",
     "string_pattern_mismatch": "Format passt nicht",
     "literal_error": "nicht in der Auswahl",
+    "enum": "nicht in der Auswahl",
     "extra_forbidden": "unbekanntes Feld",
     "int_type": "keine ganze Zahl",
     "int_parsing": "keine ganze Zahl",
@@ -1084,9 +1111,28 @@ def pruefe(modell: type[BaseModel], daten: dict) -> list[str]:
     return []
 
 
+def _auswahl_einsetzen(knoten, auswahl: dict):
+    """Verweise auf Auswahllisten ($ref auf ein Enum) durch die Liste selbst ersetzen."""
+    if isinstance(knoten, list):
+        return [_auswahl_einsetzen(x, auswahl) for x in knoten]
+    if not isinstance(knoten, dict):
+        return knoten
+    out = {k: _auswahl_einsetzen(v, auswahl) for k, v in knoten.items()}
+    ziel = out.get("$ref", "").rsplit("/", 1)[-1]
+    if ziel in auswahl:
+        del out["$ref"]
+        out = {**{k: v for k, v in auswahl[ziel].items() if k != "title"}, **out}
+    return out
+
+
 def schema() -> dict:
-    """JSON Schema aller Modelle (unter $defs) – für die Webseite (docs/daten/schema.json)."""
+    """JSON Schema aller Modelle (unter $defs) – für die Webseite (docs/daten/schema.json).
+    Auswahllisten stehen dort direkt am Feld (enum), nicht als eigene Definition."""
     _, s = models_json_schema([(m, "validation") for m in MODELLE], title="Sportstättenatlas")
+    auswahl = {k: v for k, v in s["$defs"].items() if "enum" in v}
+    s["$defs"] = {
+        k: _auswahl_einsetzen(v, auswahl) for k, v in s["$defs"].items() if k not in auswahl
+    }
     # Pydantic lässt den Titel bei Verweisen weg (z. B. lage → Lage); die Webseite braucht ihn
     for m in MODELLE:
         for name, feld in m.model_fields.items():
@@ -1112,14 +1158,24 @@ ANFANG = (
 ENDE = "<!-- modell:ende -->"
 
 
+def _ref(t: dict) -> str:
+    return t.get("$ref", "").rsplit("/", 1)[-1]
+
+
+def _auswahl_namen() -> set[str]:
+    return {a.__name__ for a in AUSWAHL}
+
+
 def _typ_text(p: dict) -> str:
     teile = p.get("anyOf") or [p]
     texte = []
     for t in teile:
         if t.get("type") == "null":
             continue
-        if "$ref" in t:
-            texte.append(t["$ref"].rsplit("/", 1)[-1])
+        if _ref(t) in _auswahl_namen():
+            texte.append(f"Auswahl [{_ref(t)}](#auswahllisten)")
+        elif "$ref" in t:
+            texte.append(_ref(t))
         elif "enum" in t or "const" in t:
             texte.append("Auswahl")
         elif t.get("type") == "array":
@@ -1160,7 +1216,7 @@ def _regeln_text(p: dict) -> str:
         if t.get("minLength") == 1:
             out.append("nicht leer")
         if "propertyNames" in t:
-            out.append("Anzahl je " + ", ".join(f"„{w}“" for w in t["propertyNames"]["enum"]))
+            out.append(f"Anzahl je [{_ref(t['propertyNames'])}](#auswahllisten)")
     for k, text in (
         ("braucht", "braucht `{}`"),
         ("teil_von", "Teil von `{}`"),
@@ -1170,7 +1226,7 @@ def _regeln_text(p: dict) -> str:
         if p.get(k):
             out.append(text.format(p[k]))
     if p.get("fuer"):
-        out.append("nur für " + fuer_text(p["fuer"]))
+        out.append("nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp))")
     return "; ".join(out)
 
 
@@ -1224,6 +1280,20 @@ def readme_block() -> str:
         beispiele = (modell.model_config.get("json_schema_extra") or {}).get("examples")
         if beispiele:
             teile += ["```json", json.dumps(beispiele[0], ensure_ascii=False, indent=2), "```", ""]
+    titel = {k: f.title for k, f in Sportanlage.model_fields.items()}
+    teile += [
+        "### Felder je Anlagentyp",
+        "",
+        "Felder, die nicht hier stehen, gelten für alle Typen.",
+        "",
+    ]
+    teile += ["| Anlagentypen | Felder |", "|---|---|"]
+    for typen, felder in MERKMALE:
+        teile.append(f"| {fuer_text(list(typen))} | {', '.join(titel[f] for f in felder)} |")
+    teile += ["", "### Auswahllisten", "", "| Liste | Werte |", "|---|---|"]
+    for a in AUSWAHL:
+        teile.append(f"| {a.__name__} | " + ", ".join(f"„{w.value}“" for w in a) + " |")
+    teile += [""]
     teile.append(ENDE)
     return "\n".join(teile)
 
