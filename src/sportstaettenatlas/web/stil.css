@@ -233,3 +233,33 @@ details.befuellung summary .w { float: right; color: #555; font-variant-numeric:
 #analysewahl { margin: 0 0 4px; }
 #analysewahl[hidden] { display: none; }
 .vorschlag pre.umbruch { white-space: pre-wrap; max-height: 320px; overflow: auto; background: #f6f6f4; padding: 8px; }
+/* Liste: Sportstätten und Sportanlagen, rechts alle Angaben */
+.liste-inhalt { max-width: 1500px; }
+.liste-raster { display: grid; grid-template-columns: 1fr; gap: 18px; align-items: start; }
+.liste-raster.mit-details { grid-template-columns: minmax(0, 1fr) 440px; }
+.liste td .swatch { display: inline-block; vertical-align: -1px; margin-right: 5px; }
+.liste td.zahl .w { display: inline-block; width: 38px; color: #555; }
+.mini { display: inline-block; width: 48px; height: 6px; background: #eceae4; border-radius: 3px;
+  vertical-align: middle; margin-right: 4px; overflow: hidden; }
+.mini span { display: block; height: 6px; background: #2a78d6; }
+.geerbt { font-style: italic; color: #888; }
+.warn { display: inline-block; width: 15px; height: 15px; line-height: 15px; text-align: center;
+  border-radius: 50%; background: #E8B64C; color: #fff; font-size: 11px; font-weight: 700; }
+aside.details { position: sticky; top: 8px; max-height: calc(100vh - 140px); overflow: auto;
+  border: 1px solid #e3e3e3; border-radius: 8px; padding: 10px 14px; }
+aside.details[hidden] { display: none; }
+.details-kopf { display: flex; justify-content: space-between; align-items: start; gap: 8px; }
+.details-kopf h3 { margin: 4px 0; }
+.details-kopf .zu { border: 0; background: none; font-size: 20px; cursor: pointer; color: #666; }
+aside.details .knoepfe { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0; }
+aside.details h4 { margin: 14px 0 4px; font-size: 14px; }
+aside.details h4 .w, .anlage-details summary .w { float: right; color: #666; font-weight: 400; font-size: 12px; }
+aside.details h5 { margin: 8px 0 2px; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: #777; }
+aside.details table.meta { width: 100%; table-layout: fixed; }
+aside.details table.meta td:first-child { width: 52%; color: #555; }
+.liste td.zahl { white-space: nowrap; }
+aside.details tr.leer td { color: #aaa; }
+.anlage-details { border-top: 1px solid #ececec; padding: 4px 0; }
+.anlage-details summary { cursor: pointer; padding: 3px 0; }
+.anlage-details[open] summary { margin-bottom: 2px; }
+.anlage-details .warnung.klein { padding: 4px 8px; font-size: 12px; margin: 4px 0; }

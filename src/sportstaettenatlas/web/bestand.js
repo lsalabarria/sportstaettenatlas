@@ -1,4 +1,4 @@
-// Ansichten zum Datenbestand des Atlas (daten/): Karte, Liste, Übersicht.
+// Ansichten zum Datenbestand des Atlas (daten/): Karte, Übersicht (Liste: liste.js).
 
 // Kategorien des Atlas: feste Farben, damit eine Kategorie immer dieselbe Farbe behält;
 // die seltenen teilen sich Grau („weitere“).
@@ -306,8 +306,9 @@ function ansichtBestand(fc) {
           + `${esc(t)} zeigen">${k > 1 ? `${k}× ` : ""}${esc(text)}</a>`
           + (d ? ` <span class="details">(${esc(d)})</span>` : "")).join(", ") + `</div>`).join("")
       + `</div>` : `<div class="anlagen-tip leer">Keine Sportanlagen eingetragen</div>`;
+    const alle = `<tr><td>Angaben</td><td><a href="#" data-details="${esc(p.id)}">alle Angaben ansehen</a></td></tr>`;
     return `<div class="tip"><h3>${esc(p.name || p.kategorie || "Sportstätte")}</h3>${anlagen}`
-      + `<table class="meta">${z.join("")}${koord(e.lat, e.lon)}${aendernLink(p.id)}</table></div>`;
+      + `<table class="meta">${z.join("")}${koord(e.lat, e.lon)}${alle}${aendernLink(p.id)}</table></div>`;
   }
 
   const such = eintraege.map(e => ({
@@ -347,102 +348,6 @@ function ansichtBestand(fc) {
         oeffne(e);
       });
     },
-  };
-}
-
-// ---------- Ansicht „Liste“: Vereine und Kommunen als Betreiber -------------------------
-function ansichtListe(bestand) {
-  const el = document.getElementById("seite-liste");
-  let art = "Verein", rolle = "betreiber", filterText = "", sortierung = { feld: "n", ab: true };
-  const offen = new Set();
-  function gruppen() {
-    const g = new Map();
-    for (const e of bestand.eintraege) {
-      if (!imGebiet(e.p.ars) || artVon(e.p, rolle) !== art) continue;
-      const s = e[rolle];
-      if (!s) continue;
-      let x = g.get(s);
-      if (!x) g.set(s, x = { s, namen: {}, liste: [], orte: {}, kats: {} });
-      const name = e.p[rolle].trim().replace(/\s+/g, " ");
-      x.namen[name] = (x.namen[name] || 0) + 1;
-      x.liste.push(e);
-      if (e.p.ort) x.orte[e.p.ort] = (x.orte[e.p.ort] || 0) + 1;
-      x.kats[e.kat] = (x.kats[e.kat] || 0) + 1;
-    }
-    const top = (o, n) => Object.entries(o).sort((a, b) => b[1] - a[1]).slice(0, n).map(x => x[0]);
-    return [...g.values()].map(x => ({ ...x, name: top(x.namen, 1)[0], n: x.liste.length,
-      ort: top(x.orte, 3).join(", ") + (Object.keys(x.orte).length > 3 ? " …" : ""),
-      kat: top(x.kats, 3).join(", ") + (Object.keys(x.kats).length > 3 ? " …" : "") }));
-  }
-  function zaehle() {
-    const z = {};
-    for (const e of bestand.eintraege) if (imGebiet(e.p.ars)) {
-      const a = artVon(e.p, rolle); if (e[rolle]) (z[a] ??= new Set()).add(e[rolle]);
-    }
-    return z;
-  }
-  function zeichne() {
-    const z = zaehle();
-    let liste = gruppen();
-    if (filterText) liste = liste.filter(x => x.s.includes(filterText) || x.ort.toLowerCase().includes(filterText));
-    const { feld, ab } = sortierung;
-    liste.sort((a, b) => (feld === "n" ? a.n - b.n : String(a[feld]).localeCompare(String(b[feld]), "de"))
-      * (ab ? -1 : 1) || a.name.localeCompare(b.name, "de"));
-    const reiter = ["Verein", "Kommune", "sonstige"].map(a => `<button type="button" data-art="${a}" `
-      + `aria-pressed="${a === art}">${artText(a)}`
-      + ` (${zahl(z[a] ? z[a].size : 0)})</button>`).join("");
-    const pfeil = f => sortierung.feld === f ? (sortierung.ab ? " ▼" : " ▲") : "";
-    const zeilen = liste.map(x => {
-      const auf = offen.has(x.s);
-      let h = `<tr class="zeile${auf ? " offen" : ""}" data-s="${esc(x.s)}"><td>${auf ? "▾" : "▸"} ${esc(x.name)}</td>`
-        + `<td class="zahl">${zahl(x.n)}</td><td class="klein">${esc(x.ort)}</td><td class="klein">${esc(x.kat)}</td></tr>`;
-      if (auf) {
-        h += `<tr class="details"><td colspan="4"><button type="button" class="knopf2" data-karte="${esc(x.s)}">`
-          + `Alle ${zahl(x.n)} auf der Karte zeigen</button><table class="tabelle">`
-          + x.liste.slice().sort((a, b) => (a.p.ort || "").localeCompare(b.p.ort || "", "de")).map(e =>
-            `<tr><td><a data-i="${bestand.eintraege.indexOf(e)}">${esc(e.p.name || e.kat)}</a></td>`
-            + `<td class="klein">${esc(e.p.kategorie || "")}</td><td class="klein">${esc(e.p.adresse || "")}</td></tr>`).join("")
-          + `</table></td></tr>`;
-      }
-      return h;
-    }).join("");
-    el.innerHTML = `<div class="inhalt"><h2>Betreiber und Eigentümer</h2>`
-      + `<p class="unter">${esc(gebietName())} · Art wie angegeben, sonst aus dem Namen geschätzt („e.V.“, „TuS“, „Ortsgemeinde“, „Stadt“ …)</p>`
-      + `<div class="reiter">${reiter}<select aria-label="Rolle"><option value="betreiber"${rolle === "betreiber" ? " selected" : ""}>als Betreiber</option>`
-      + `<option value="eigentuemer"${rolle === "eigentuemer" ? " selected" : ""}>als Eigentümer</option></select>`
-      + `<input type="search" placeholder="Name oder Ort filtern" value="${esc(filterText)}" aria-label="Filter"></div>`
-      + `<table class="tabelle"><thead><tr><th data-sort="name">Name${pfeil("name")}</th>`
-      + `<th class="zahl" data-sort="n">Sportstätten${pfeil("n")}</th><th data-sort="ort">Orte${pfeil("ort")}</th>`
-      + `<th data-sort="kat">Kategorien${pfeil("kat")}</th></tr></thead><tbody>${zeilen
-        || `<tr><td colspan="4" class="klein">Keine Einträge.</td></tr>`}</tbody></table></div>`;
-    el.querySelectorAll("[data-art]").forEach(b => b.addEventListener("click", () => {
-      art = b.dataset.art; offen.clear(); zeichne(); }));
-    el.querySelector("select").addEventListener("change", ev => { rolle = ev.target.value; offen.clear(); zeichne(); });
-    const feldEl = el.querySelector("input[type=search]");
-    feldEl.addEventListener("input", () => {
-      filterText = feldEl.value.trim().toLowerCase().replace(/\s+/g, " ");
-      const pos = feldEl.selectionStart; zeichne();
-      const neu = el.querySelector("input[type=search]"); neu.focus(); neu.setSelectionRange(pos, pos);
-    });
-    el.querySelectorAll("th[data-sort]").forEach(th => th.addEventListener("click", () => {
-      const f = th.dataset.sort;
-      sortierung = { feld: f, ab: sortierung.feld === f ? !sortierung.ab : f === "n" };
-      zeichne();
-    }));
-    el.querySelectorAll("tr.zeile").forEach(tr => tr.addEventListener("click", () => {
-      const s = tr.dataset.s; if (offen.has(s)) offen.delete(s); else offen.add(s); zeichne(); }));
-    el.querySelectorAll("[data-karte]").forEach(b => b.addEventListener("click", () => {
-      const x = liste.find(y => y.s === b.dataset.karte);
-      bestand.zeigeBetreiber(rolle, x.s, x.name);
-    }));
-    el.querySelectorAll("a[data-i]").forEach(a => a.addEventListener("click", () =>
-      bestand.zeigeEintrag(bestand.eintraege[+a.dataset.i])));
-  }
-  return {
-    titel: "Liste",
-    zeigen() { el.hidden = false; zeichne(); },
-    verbergen() { el.hidden = true; },
-    gebietGeaendert() { if (!el.hidden) zeichne(); },
   };
 }
 

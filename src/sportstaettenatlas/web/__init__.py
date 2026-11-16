@@ -3,7 +3,8 @@
     index.html      Gerüst mit Platzhaltern (__TITEL__, __SKRIPTE__ …)
     stil.css        Aussehen
     grundlagen.js   Hilfen, Karte, Gebietsauswahl, Umschalten der Ansichten
-    bestand.js      Ansichten Karte, Liste, Übersicht (Datenbestand des Atlas)
+    bestand.js      Ansichten Karte und Übersicht (Datenbestand des Atlas)
+    liste.js        Ansicht Liste: Sportstätten, Sportanlagen, Betreiber; alle Angaben je Eintrag
     vorschlag.js    Ansicht Vorschlag (Formular mit Doppelungsprüfung → LimeSurvey)
     analysen.js     Ansicht Analysen, darin der ALKIS-Abgleich
     start.js        Suche, Rechtsklick-Menü, Start
@@ -26,7 +27,7 @@ from pathlib import Path
 
 LEAFLET = "https://unpkg.com/leaflet@1.9.4/dist"
 STIL = "stil.css"
-SKRIPTE = ("grundlagen.js", "bestand.js", "vorschlag.js", "analysen.js", "start.js")
+SKRIPTE = ("grundlagen.js", "bestand.js", "liste.js", "vorschlag.js", "analysen.js", "start.js")
 
 
 def datei(name: str) -> str:

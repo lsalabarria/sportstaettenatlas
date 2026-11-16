@@ -151,7 +151,7 @@ git add -A daten docs && git commit -m "Daten aktualisiert" && git push
 | Reiter | Inhalt |
 |---|---|
 | **Karte** | ein Punkt je Sportstätte; Filter nach den Sportanlagen darin (nach Gruppen), Kategorie, Betreiber-Art und Sportarten; das Fenster einer Sportstätte listet ihre Anlagen |
-| **Liste** | Vereine und Kommunen als Betreiber bzw. Eigentümer; ein Klick zeigt ihre Sportstätten |
+| **Liste** | alle Sportstätten bzw. Sportanlagen, filterbar nach Sportart, Kategorie, Typ und Text, sortierbar (auch nach Befüllung); ein Klick zeigt rechts alle Angaben der Sportstätte und ihrer Anlagen (auf Wunsch auch die leeren), „Karte“ springt zum Punkt. Dazu Betreiber und Eigentümer. Auswahl steht in der Adresse, z. B. `#ansicht=liste&teil=anlagen&sportart=Fußball` |
 | **Übersicht** | Sportstätten und Sportanlagen: Zahlen, Befüllung der Angaben nach Abschnitten (Felder nur unter den Anlagen, für die sie gedacht sind), Typen, die nicht zur Kategorie passen, je Kreis |
 | **Vorschlag** | Formular für neue Sportstätten und Änderungen, weiter zu LimeSurvey |
 | **Analysen** | der ALKIS-Abgleich; lädt erst beim Öffnen |
