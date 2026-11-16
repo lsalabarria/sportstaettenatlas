@@ -130,14 +130,81 @@ class Ergebnis:
     unveraendert: int = 0
     behalten: int = 0  # vorhanden, im Modus "neu" nicht angefasst
     ohne_lage: int = 0
+    ohne_sportstaette: int = 0  # Sportanlagen zu einer Sportstätte, die es nicht gibt
     doppelt: int = 0
     nicht_mehr_in_quelle: int = 0
+    anlagen_neu: int = 0
+    anlagen_geaendert: int = 0
     entfernt: Counter = field(default_factory=Counter)
     regelverstoesse: Counter = field(default_factory=Counter)  # Feld → Anzahl (modell.py)
 
 
+MODI = ("neu", "ergaenzen", "aktualisieren")
+NUR_ANLAGEN = "_nur_anlagen"  # Datensatz trägt nur Sportanlagen zu einer vorhandenen Sportstätte
+
+
 def _staetten_ordner(land_ordner: Path) -> dict[str, Path]:
     return {p.name: p for p in sorted(land_ordner.glob("*/*")) if p.is_dir()}
+
+
+def _lies_ordner(st_ordner: Path) -> dict:
+    """Sportstätte aus ihrem Ordner, mit Liste "anlagen"."""
+    meta_pfad = st_ordner / f"{st_ordner.name}_meta.json"
+    d = _lies_json(meta_pfad) if meta_pfad.exists() else {"id": st_ordner.name}
+    d["anlagen"] = [_lies_json(p) for p in sorted(st_ordner.glob("*.json")) if p != meta_pfad]
+    return d
+
+
+def _leer(v) -> bool:
+    return v in (None, "", [], {})
+
+
+def _uebernimm(alt: dict, neu: dict, modus: str) -> dict:
+    """Felder aus `neu` in `alt`: "aktualisieren" überschreibt, "ergaenzen" füllt nur leere.
+    Leere Werte in `neu` heißen „keine Angabe“ und ändern nichts. Die Adresse wird feldweise
+    zusammengeführt; unter quellen ersetzt jede Quelle ihren eigenen Eintrag."""
+    out = dict(alt)
+    for k, v in neu.items():
+        if _leer(v) or k in ("anlagen", NUR_ANLAGEN):
+            continue
+        if k == "quellen" and isinstance(v, dict):
+            out[k] = {**(out.get(k) or {}), **v}
+        elif k == "adresse" and isinstance(v, dict) and isinstance(out.get(k), dict):
+            out[k] = _uebernimm(out[k], v, modus)
+        elif modus == "aktualisieren" or _leer(out.get(k)):
+            out[k] = v
+    return out
+
+
+def _anlagen_zusammen(sid: str, alt: list[dict], neu: list[dict], modus: str, e: Ergebnis):
+    """Sportanlagen der Quelle den vorhandenen zuordnen: über die ID (auch die Kurz-ID, den
+    Anfang der UUID); ohne ID ist die n-te Anlage eines Typs in der Quelle die mit der ID
+    anlage_id(Sportstätte, Typ, n) – so finden sich die Anlagen eines erneut eingelesenen
+    Exports wieder. Vorhandene, die in der Quelle fehlen, bleiben."""
+    nach_id = {a["id"]: a for a in alt}
+    out = {a["id"]: a for a in alt}
+    nr: Counter = Counter()
+    for a in neu:
+        nr[a.get("typ")] += 1
+        roh = str(a.get("id") or "")
+        treffer = [
+            i for i in nach_id if roh and (i == roh or (len(roh) >= 8 and i.startswith(roh)))
+        ]
+        if len(treffer) == 1:
+            aid = treffer[0]
+        elif roh and len(roh) >= 32:  # vollständige, neue UUID
+            aid = roh
+        else:
+            aid = anlage_id(sid, a.get("typ", ""), nr[a.get("typ")])
+        a = {**a, "id": aid, "sportstaette_id": sid}
+        if aid not in out:
+            out[aid] = a
+            e.anlagen_neu += 1
+        elif modus != "neu":
+            vorher = out[aid]
+            out[aid] = _uebernimm(vorher, a, modus)
+            e.anlagen_geaendert += out[aid] != vorher
+    return list(out.values())
 
 
 def schreibe_bestand(
@@ -147,39 +214,56 @@ def schreibe_bestand(
 
     modus="neu":           nur fehlende Sportstätten anlegen, vorhandene nie verändern
                            (sie können inzwischen von Hand gepflegt sein)
-    modus="aktualisieren": Dateien vorhandener Sportstätten mit dem Stand der Quelle
-                           überschreiben; zusätzlich angelegte Anlagen bleiben
-    Sportstätten, die in der Quelle fehlen, werden nur gezählt, nie gelöscht.
+    modus="ergaenzen":     zusätzlich bei vorhandenen leere Felder füllen und fehlende
+                           Sportanlagen anlegen; vorhandene Werte bleiben
+    modus="aktualisieren": zusätzlich vorhandene Werte mit denen der Quelle überschreiben;
+                           Felder, die die Quelle nicht hat oder leer lässt, bleiben
+    Datensätze mit NUR_ANLAGEN (aus einer Tabelle von Sportanlagen) ergänzen die Anlagen
+    einer vorhandenen Sportstätte; im Modus "neu" kommen nur neue Anlagen dazu.
+    Gelöscht wird nie etwas: Sportstätten und Anlagen, die in der Quelle fehlen, bleiben.
     """
-    if modus not in ("neu", "aktualisieren"):
-        raise ValueError(f"Unbekannter Modus: {modus}")
+    if modus not in MODI:
+        raise ValueError(f"Unbekannter Modus: {modus} (erlaubt: {', '.join(MODI)})")
     ordner = ziel / land.upper()
     ordner.mkdir(parents=True, exist_ok=True)
     vorhanden = _staetten_ordner(ordner)
     e = Ergebnis()
     gesehen: set[str] = set()
+    ganze = False  # stehen ganze Sportstätten in der Quelle (nicht nur Anlagen)?
     for roh in datensaetze:
         d = bereinigen(roh, e.entfernt)
-        if not d.get("id") or not d.get("lage"):
+        nur_anlagen = bool(roh.get(NUR_ANLAGEN))
+        ganze |= not nur_anlagen
+        st_ordner = vorhanden.get(d.get("id", ""))
+        if nur_anlagen and st_ordner is None:
+            e.ohne_sportstaette += len(d.get("anlagen") or [])
+            continue
+        if not nur_anlagen and (not d.get("id") or (st_ordner is None and not d.get("lage"))):
             e.ohne_lage += 1
             continue
-        if d["id"] in gesehen:
+        if d["id"] in gesehen and not nur_anlagen:
             e.doppelt += 1
             continue
         gesehen.add(d["id"])
-        for meldung in pruefe(Sportstaette, d):
-            e.regelverstoesse[meldung.split(":")[0]] += 1
-        st_ordner = vorhanden.get(d["id"])
-        if st_ordner is not None and modus == "neu":
-            e.behalten += 1
-            continue
         neu = st_ordner is None
         if neu:
             st_ordner = ordner / _kreis(d, kreis_von) / d["id"]
             st_ordner.mkdir(parents=True)
             e.neu += 1
+            ergebnis = {k: v for k, v in d.items() if k != NUR_ANLAGEN}
+        elif modus == "neu" and not nur_anlagen:
+            e.behalten += 1
+            continue
+        else:
+            alt = _lies_ordner(st_ordner)
+            ergebnis = alt if nur_anlagen else _uebernimm(alt, d, modus)
+            ergebnis["anlagen"] = _anlagen_zusammen(
+                d["id"], alt["anlagen"], d.get("anlagen") or [], modus, e
+            )
+        for meldung in pruefe(Sportstaette, {k: v for k, v in ergebnis.items() if k != "anlagen"}):
+            e.regelverstoesse[meldung.split(":")[0]] += 1
         geaendert = False
-        for name, text in aufteilen(d).items():
+        for name, text in aufteilen(ergebnis).items():
             pfad = st_ordner / name
             if not pfad.exists() or pfad.read_text(encoding="utf-8") != text:
                 pfad.write_text(text, encoding="utf-8")
@@ -189,7 +273,8 @@ def schreibe_bestand(
                 e.aktualisiert += 1
             else:
                 e.unveraendert += 1
-    e.nicht_mehr_in_quelle = len(set(vorhanden) - gesehen)
+    if ganze:
+        e.nicht_mehr_in_quelle = len(set(vorhanden) - gesehen)
     return e
 
 

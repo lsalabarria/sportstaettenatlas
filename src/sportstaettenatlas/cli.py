@@ -1,6 +1,8 @@
 """Kommandozeile.
 
-sportstaettenatlas bestand EXPORT   Atlas-Export in den Datenbestand daten/ übernehmen
+sportstaettenatlas bestand CSV …    CSV-Dateien in den Datenbestand daten/ übernehmen
+                                    (Atlas-Export, Sportstätten, Sportanlagen; einlesen.py)
+sportstaettenatlas vorlage          Vorlagen für eigene CSV-Dateien
 sportstaettenatlas einordnen        Sportstätten in den Ordner ihres Kreises verschieben
 sportstaettenatlas seite            Webseite für GitHub Pages (docs/) bauen
 sportstaettenatlas modell           Datenmodell in daten/README.md und daten/datenmodell.svg
@@ -65,36 +67,79 @@ def _lies_bestand():
 
 
 def cmd_bestand(args):
-    """Atlas-Export in daten/<LAND>/<Kreis>/ übernehmen."""
-    from .atlas import lies_export
+    """CSV-Dateien (Atlas-Export, Sportstätten oder Sportanlagen) in daten/ übernehmen."""
     from .bestand import kreis_ordner, schreibe_bestand
+    from .einlesen import lies_csv
 
-    quelle = Path(args.export)
-    if not quelle.is_file():
-        raise SystemExit(f"{quelle} nicht gefunden.")
-    try:
-        e = schreibe_bestand(lies_export(quelle), DATEN, LAND, kreis_ordner(_gebiete()), args.modus)
-    except ValueError as exc:
-        raise SystemExit(str(exc)) from None
-    print(f"{quelle.name} → {DATEN}/{LAND.upper()}/")
-    print(f"  neu angelegt:        {e.neu} Sportstätten")
-    if args.modus == "aktualisieren":
-        print(f"  aktualisiert:        {e.aktualisiert}")
-        print(f"  unverändert:         {e.unveraendert}")
-    else:
-        print(f"  schon vorhanden:     {e.behalten} (nicht verändert; --modus aktualisieren)")
-    if e.ohne_lage:
-        print(f"  ohne Koordinate:     {e.ohne_lage} (übersprungen)")
-    if e.doppelt:
-        print(f"  doppelte ID:         {e.doppelt} (nur der erste Eintrag übernommen)")
-    if e.nicht_mehr_in_quelle:
-        print(f"  nicht in der Quelle: {e.nicht_mehr_in_quelle} Sportstätten (bleiben)")
-    if e.entfernt:
-        weg = ", ".join(f"{k} {v}×" for k, v in sorted(e.entfernt.items()))
-        print(f"  entfernt (enthielt E-Mail-Adresse): {weg}")
-    if e.regelverstoesse:
-        felder = ", ".join(f"{k} {v}×" for k, v in e.regelverstoesse.most_common())
-        print(f"  passen nicht zu den Regeln des Datenmodells: {felder} (übernommen)")
+    gelesen = []
+    for datei in map(Path, args.dateien):
+        if not datei.is_file():
+            raise SystemExit(f"{datei} nicht gefunden.")
+        try:
+            datensaetze, b = lies_csv(datei)
+        except ValueError as exc:
+            raise SystemExit(str(exc)) from None
+        art = {
+            "atlas": "Export des bisherigen Atlas",
+            "sportstaetten": "Sportstätten",
+            "sportanlagen": "Sportanlagen",
+        }[b.art]
+        print(f"{datei.name}: {art}, {b.zeilen} Zeilen")
+        if b.spalten:
+            breite = max(map(len, b.spalten))
+            for spalte, feld in b.spalten.items():
+                print(f"  {spalte:<{breite}}  → {feld}")
+        if b.ignoriert:
+            print(f"  ohne passendes Feld (ignoriert): {', '.join(b.ignoriert)}")
+        if b.kontakt:
+            print(f"  Kontaktdaten (nie gelesen): {', '.join(b.kontakt)}")
+        if b.nicht_lesbar:
+            fehler = ", ".join(f"{k} {v}×" for k, v in b.nicht_lesbar.most_common())
+            print(f"  Werte, die nicht zum Feld passen (übernommen, wie sie sind): {fehler}")
+        gelesen.append((datei, datensaetze))
+    if args.probe:
+        print("Probelauf: nichts geschrieben.")
+        return
+    kreis_von = kreis_ordner(_gebiete())
+    for datei, datensaetze in gelesen:
+        try:
+            e = schreibe_bestand(datensaetze, DATEN, LAND, kreis_von, args.modus)
+        except ValueError as exc:
+            raise SystemExit(str(exc)) from None
+        print(f"{datei.name} → {DATEN}/{LAND.upper()}/ (Modus {args.modus})")
+        zeilen = [
+            ("neu angelegt", e.neu, "Sportstätten"),
+            ("geändert", e.aktualisiert, "Sportstätten"),
+            ("unverändert", e.unveraendert, "Sportstätten"),
+            ("schon vorhanden", e.behalten, "(nicht verändert; --modus ergaenzen/aktualisieren)"),
+            ("Sportanlagen neu", e.anlagen_neu, "zu vorhandenen Sportstätten"),
+            ("Sportanlagen geändert", e.anlagen_geaendert, ""),
+            ("ohne Koordinate", e.ohne_lage, "(übersprungen)"),
+            (
+                "ohne Sportstätte",
+                e.ohne_sportstaette,
+                "Sportanlagen (ID nicht in daten/, übersprungen)",
+            ),
+            ("doppelte ID", e.doppelt, "(nur der erste Eintrag übernommen)"),
+            ("nicht in der Quelle", e.nicht_mehr_in_quelle, "Sportstätten (bleiben)"),
+        ]
+        for text, n, zusatz in zeilen:
+            if n:
+                print(f"  {text + ':':<23}{n} {zusatz}".rstrip())
+        if e.entfernt:
+            weg = ", ".join(f"{k} {v}×" for k, v in sorted(e.entfernt.items()))
+            print(f"  entfernt (enthielt E-Mail-Adresse): {weg}")
+        if e.regelverstoesse:
+            felder = ", ".join(f"{k} {v}×" for k, v in e.regelverstoesse.most_common())
+            print(f"  passen nicht zu den Regeln des Datenmodells: {felder} (übernommen)")
+
+
+def cmd_vorlage(args):
+    """Vorlagen für eigene CSV-Dateien (alle Spalten aus dem Modell, eine Beispielzeile)."""
+    from .einlesen import schreibe_vorlage
+
+    for pfad in schreibe_vorlage(Path(args.ordner)):
+        print(pfad)
 
 
 def cmd_einordnen(args):
@@ -196,15 +241,25 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("-v", "--verbose", action="store_true")
     sub = p.add_subparsers(dest="befehl", required=True)
 
-    sp = sub.add_parser("bestand", help="Atlas-Export in den Datenbestand daten/ übernehmen")
-    sp.add_argument("export", help="CSV-Export des bisherigen Atlas")
+    sp = sub.add_parser(
+        "bestand", help="CSV-Dateien in den Datenbestand daten/ übernehmen (siehe einlesen.py)"
+    )
+    sp.add_argument(
+        "dateien", nargs="+", help="Atlas-Export, Tabelle der Sportstätten oder der Sportanlagen"
+    )
     sp.add_argument(
         "--modus",
         default="neu",
-        choices=["neu", "aktualisieren"],
-        help="neu: nur fehlende anlegen (Standard); aktualisieren: vorhandene überschreiben",
+        choices=["neu", "ergaenzen", "aktualisieren"],
+        help="neu: nur Neues anlegen (Standard); ergaenzen: auch leere Felder füllen; "
+        "aktualisieren: auch vorhandene Werte überschreiben",
     )
+    sp.add_argument("--probe", action="store_true", help="nur zeigen, welche Spalte wohin geht")
     sp.set_defaults(func=cmd_bestand)
+
+    sp = sub.add_parser("vorlage", help="Vorlagen für CSV-Dateien zum Einlesen schreiben")
+    sp.add_argument("ordner", nargs="?", default="results/vorlagen")
+    sp.set_defaults(func=cmd_vorlage)
 
     sp = sub.add_parser("einordnen", help="Sportstätten in den Ordner ihres Kreises verschieben")
     sp.set_defaults(func=cmd_einordnen)

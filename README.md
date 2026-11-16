@@ -31,7 +31,7 @@ src/        Code (siehe Abschnitt „Code“)
 ```
 
 ```
-Atlas-Export ──bestand──▶ daten/ ──────────────────────────────┐
+CSV-Dateien ──bestand──▶ daten/ ───────────────────────────────┐
                             │                                   ├──seite──▶ docs/ ──▶ GitHub Pages
 ALKIS (WFS) ──alkis──▶ results/out/ (Abgleich mit daten/) ──────┘
 ```
@@ -96,14 +96,41 @@ Die Dateien in `daten/` sind die Quelle. Änderungen werden dort gemacht – dir
 oder per Pull Request – und erscheinen beim nächsten `seite` auf der Karte.
 
 ```bash
-uv run sportstaettenatlas bestand pfad/zum/atlas-export.csv   # Atlas-Export übernehmen
+uv run sportstaettenatlas bestand sportstaetten.csv --probe   # zeigen, welche Spalte wohin geht
+uv run sportstaettenatlas bestand sportstaetten.csv           # übernehmen (nur Neues)
+uv run sportstaettenatlas bestand anlagen.csv --modus ergaenzen
+uv run sportstaettenatlas vorlage                             # Vorlagen nach results/vorlagen/
 uv run sportstaettenatlas einordnen                           # Sportstätten in ihren Kreis verschieben
 ```
 
-- `bestand` legt nur fehlende Sportstätten an; vorhandene bleiben unverändert, weil sie
-  inzwischen gepflegt sein können. `--modus aktualisieren` überschreibt sie mit dem Export.
-- Die E-Mail-Spalte des Exports wird nie gelesen, und jeder Wert mit einer E-Mail-Adresse
-  entfällt. Der Export selbst gehört nicht ins Repository.
+**CSV einlesen.** `bestand` nimmt eine oder mehrere CSV-Dateien und schreibt sie direkt in die
+JSON-Dateien unter `daten/`. Es erkennt drei Arten:
+
+- den **Export des bisherigen Atlas** (`sportstaetten.csv`, Spalten ID, Name, …, Latitude,
+  Longitude),
+- eine Tabelle der **Sportstätten** (eine Zeile je Sportstätte; Spalte `anlagen` darf die
+  Typen der Sportanlagen nennen),
+- eine Tabelle der **Sportanlagen** (eine Zeile je Anlage, mit `sportstaette_id`; `id` für
+  vorhandene Anlagen, auch die Kurz-ID von der Webseite).
+
+Die Spalten werden über das Datenmodell erkannt: Feldname (`plz`), Beschriftung („PLZ“) oder
+Name im alten Atlas („postleitzahl“, „bodenbelag_anz_sand“), Groß-/Kleinschreibung egal.
+`--probe` zeigt die Zuordnung, ohne etwas zu schreiben. Werte werden nach dem Feld gelesen
+(„X“ → ja, „1.200“ → 1200, „Sand: 3; Rasen: 1“, Listen mit `;`); Lage in Grad oder UTM. Eigenes
+Format: `vorlage` schreibt beide Tabellen mit allen Spalten und einer Beispielzeile (die vor dem
+Einlesen löschen). Die Regeln stehen im Kopf von `src/sportstaettenatlas/einlesen.py`.
+
+| `--modus` | neue Sportstätten/Anlagen | vorhandene: leere Felder | vorhandene: gefüllte Felder |
+|---|---|---|---|
+| `neu` (Standard) | anlegen | – | – |
+| `ergaenzen` | anlegen | füllen | bleiben |
+| `aktualisieren` | anlegen | füllen | überschreiben |
+
+- Gelöscht wird nie etwas; leere Zellen ändern nichts. Eine Tabelle von Sportanlagen legt auch
+  im Modus `neu` Anlagen bei vorhandenen Sportstätten an.
+- Sportstätten ohne `id` bekommen eine feste ID aus Name und Lage (gleiche Zeile, gleiche ID).
+- Spalten mit Kontaktdaten (E-Mail, Telefon, Ansprechpartner) werden nie gelesen, und jeder
+  Wert mit einer E-Mail-Adresse entfällt. Die CSV-Dateien selbst gehören nicht ins Repository.
 - Der Kreis-Ordner ergibt sich aus der Lage (Verwaltungsgebiete VG250 des BKG, beim ersten
   Lauf geladen und unter `results/cache/` abgelegt). Liegt eine Sportstätte nach einer
   Änderung ihrer Lage in einem anderen Kreis, weist `seite` darauf hin; `einordnen`
@@ -224,7 +251,8 @@ Ein Bad besteht dort oft aus mehreren Gebäudeteilen, und auch private Becken he
 ```
 src/sportstaettenatlas/
   modell.py       Datenmodell (Pydantic): Felder, Regeln, Schema, Doku – die einzige Stelle
-  cli.py          Befehle bestand, einordnen, seite, modell, alkis
+  cli.py          Befehle bestand, vorlage, einordnen, seite, modell, alkis
+  einlesen.py     CSV-Dateien lesen (Spalten über das Modell), Vorlagen
   atlas.py        Atlas-Export lesen
   bestand.py      daten/ lesen und schreiben, Kreis-Ordner
   anlagen.py      Typen und Gruppen der Sportanlagen
