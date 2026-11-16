@@ -524,27 +524,46 @@ function ansichtVorschlag(bestand) {
   }
 
   // --- Organisationen ---
-  // Verzeichnis und Namen aus dem Bestand, die (noch) nicht darin stehen
+  // Wer nennt welche Organisation? Einmal aufgebaut: Name (schluesselName) → Rolle → Sportstätten
+  let nutzungsIndex = null, orgListeCache = null;
+  function index() {
+    if (nutzungsIndex) return nutzungsIndex;
+    nutzungsIndex = new Map();
+    const dazu = (name, rolle, e) => {
+      const k = schluesselName(name);
+      if (!k) return;
+      if (!nutzungsIndex.has(k)) nutzungsIndex.set(k, { eigentuemer: new Set(), betreiber: new Set(), nutzer: new Set() });
+      nutzungsIndex.get(k)[rolle].add(e);
+    };
+    for (const e of bestand.eintraege) {
+      dazu(e.p.eigentuemer, "eigentuemer", e);
+      dazu(e.p.betreiber, "betreiber", e);
+      for (const n of e.p.nutzer || []) dazu(n, "nutzer", e);
+    }
+    return nutzungsIndex;
+  }
+  // Verzeichnis und Namen aus dem Bestand, die (noch) nicht darin stehen (einmal berechnet)
   function orgListe() {
+    if (orgListeCache) return orgListeCache;
     const out = ORGANISATIONEN.map(o => ({ name: o.name, o,
       such: [o.name, ...(o.weitere_namen || [])].map(schluesselName).join(" ") }));
-    const da = new Set(ORG_NACH_NAME.keys());
-    for (const n of organisationen()) if (!da.has(schluesselName(n)) && nutzung(n).n) {
-      da.add(schluesselName(n)); out.push({ name: n, o: null, such: schluesselName(n) });
+    const da = new Set(ORG_NACH_NAME.keys()), ix = index();
+    for (const n of organisationen()) {
+      const k = schluesselName(n);
+      if (!da.has(k) && ix.has(k)) { da.add(k); out.push({ name: n, o: null, such: k }); }
     }
-    return out;
+    return orgListeCache = out;
   }
   // Wie oft nennen Sportstätten diese Organisation (alle Schreibweisen)?
   function nutzung(name) {
-    const o = orgVon(name), namen = new Set([name, ...(o ? [o.name, ...(o.weitere_namen || [])] : [])].map(schluesselName));
-    const z = { eigentuemer: 0, betreiber: 0, nutzer: 0, n: 0 };
-    for (const e of bestand.eintraege) {
-      let ja = false;
-      for (const r of ["eigentuemer", "betreiber"]) if (namen.has(schluesselName(e.p[r]))) { z[r]++; ja = true; }
-      if ((e.p.nutzer || []).some(x => namen.has(schluesselName(x)))) { z.nutzer++; ja = true; }
-      if (ja) z.n++;
+    const o = orgVon(name), ix = index();
+    const namen = new Set([name, ...(o ? [o.name, ...(o.weitere_namen || [])] : [])].map(schluesselName));
+    const je = { eigentuemer: new Set(), betreiber: new Set(), nutzer: new Set() }, alle = new Set();
+    for (const k of namen) {
+      const x = ix.get(k);
+      if (x) for (const r in je) for (const e of x[r]) { je[r].add(e); alle.add(e); }
     }
-    return z;
+    return { eigentuemer: je.eigentuemer.size, betreiber: je.betreiber.size, nutzer: je.nutzer.size, n: alle.size };
   }
   function nutzungText(name) {
     const z = nutzung(name);
