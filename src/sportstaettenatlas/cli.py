@@ -4,6 +4,7 @@ sportstaettenatlas bestand EXPORT   Atlas-Export in den Datenbestand daten/ übe
 sportstaettenatlas einordnen        Sportstätten in den Ordner ihres Kreises verschieben
 sportstaettenatlas seite            Webseite für GitHub Pages (docs/) bauen
 sportstaettenatlas modell           Datenmodell in daten/README.md und daten/datenmodell.svg
+                                    (--migrieren: Dateien in daten/ anpassen)
 sportstaettenatlas alkis            ALKIS-Abgleich gegen daten/ (Ergebnis in results/out)
 """
 
@@ -165,6 +166,10 @@ def cmd_modell(args):
     """Datenmodell (modell.py) in daten/README.md und als Diagramm daten/datenmodell.svg."""
     from .modell import schreibe_doku
 
+    if args.migrieren:
+        from .bestand import migriere_bestand
+
+        print(f"{migriere_bestand(DATEN)} Dateien in {DATEN}/ auf den Stand des Modells gebracht")
     for hinweis in schreibe_doku(DATEN):
         print(hinweis)
 
@@ -210,6 +215,11 @@ def main(argv: list[str] | None = None) -> None:
 
     sp = sub.add_parser(
         "modell", help="Datenmodell in daten/README.md und daten/datenmodell.svg schreiben"
+    )
+    sp.add_argument(
+        "--migrieren",
+        action="store_true",
+        help="vorher die Dateien in daten/ anpassen (umbenannte Felder, z. B. baukosten_eur)",
     )
     sp.set_defaults(func=cmd_modell)
 

@@ -160,3 +160,87 @@ def test_readme_im_repository_ist_aktuell():
     assert modell.readme_block() in pfad.read_text("utf-8"), (
         "daten/README.md passt nicht zum Modell – `uv run sportstaettenatlas modell` ausführen"
     )
+
+
+def test_regeln_zwischen_feldern():
+    anlage = {"typ": "Großspielfeld", "baukosten": 1_200_000, "sportarten": ["Fußball"]}
+    assert modell.pruefe(modell.Sportanlage, {**anlage, "waehrung": "DM"}) == []
+    assert modell.pruefe(modell.Sportanlage, anlage) == [
+        "waehrung: nötig, wenn Baukosten angegeben ist"
+    ]
+    assert modell.pruefe(
+        modell.Sportanlage, {**anlage, "waehrung": "€", "wettkampf": ["Rugby"]}
+    ) == ["wettkampf: Rugby fehlt unter Sportarten"]
+    assert modell.pruefe(modell.Sportstaette, {**STAETTE, "betreiber_typ": "Zweckverband"}) == [
+        "betreiber: nötig, wenn Art des Betreibers angegeben ist"
+    ]
+
+
+def test_anzahl_je_wert():
+    a = {"typ": "Tennisplatz", "felder_je_belag": {"Sand": 3, "Rasen": 1}}
+    assert modell.pruefe(modell.Sportanlage, a) == []
+    assert list(modell.ordne(a, modell.Sportanlage)["felder_je_belag"]) == ["Rasen", "Sand"]
+    assert modell.pruefe(modell.Sportanlage, {**a, "felder_je_belag": {"Holz": 1}}) == [
+        "felder_je_belag.Holz: nicht in der Auswahl: Holz"
+    ]
+
+
+def test_kategorie_und_anlagentyp():
+    assert modell.zuordnung_hinweise("Sportplatz", ["Großspielfeld", "Geräteraum"]) == []
+    assert modell.zuordnung_hinweise("Sportplatz", ["Tennisplatz"]) == [
+        "typ: „Tennisplatz“ passt nicht zur Kategorie „Sportplatz“"
+    ]
+    assert modell.zuordnung_hinweise("Leistungsstützpunkt", ["Tennisplatz"]) == []
+    # jeder Eintrag ist eine Gruppe oder ein bekannter Typ
+    from sportstaettenatlas import anlagen
+
+    for kat, eintraege in modell.KATEGORIE_ANLAGEN.items():
+        assert kat in modell.KATEGORIEN
+        for e in (*eintraege, *modell.IMMER_PASSEND):
+            assert e in anlagen.GRUPPEN or e in anlagen.GRUPPE_VON, e
+
+
+def test_angaben_der_anlagenfelder():
+    from sportstaettenatlas import anlagen
+
+    for name, feld in modell.Sportanlage.model_fields.items():
+        extra = feld.json_schema_extra or {}
+        if extra.get("formular") is False:
+            continue
+        assert extra.get("gruppe") in modell.ANLAGE_GRUPPEN, name
+        for f in extra.get("fuer", ()):
+            assert f in anlagen.GRUPPEN or f in anlagen.GRUPPE_VON, (name, f)
+
+
+def test_migrieren(tmp_path):
+    from sportstaettenatlas.bestand import migriere_bestand
+
+    ordner = tmp_path / "RP" / "07111-koblenz" / STAETTE["id"]
+    ordner.mkdir(parents=True)
+    (ordner / f"{STAETTE['id']}_meta.json").write_text(json.dumps(STAETTE), "utf-8")
+    alt = {"id": "a1", "sportstaette_id": STAETTE["id"], "typ": "Großspielfeld", "baukosten_eur": 5}
+    (ordner / "a1.json").write_text(json.dumps(alt), "utf-8")
+    assert migriere_bestand(tmp_path) == 2  # Anlage umbenannt, Sportstätte neu formatiert
+    a = json.loads((ordner / "a1.json").read_text("utf-8"))
+    assert (a["baukosten"], a["waehrung"]) == (5, "€") and "baukosten_eur" not in a
+    assert migriere_bestand(tmp_path) == 0
+    verstoesse = []
+    list(lies_bestand(tmp_path, verstoesse))
+    assert verstoesse == []
+
+
+def test_lies_bestand_meldet_unpassende_anlagen(tmp_path):
+    d = {**STAETTE, "anlagen": [{"typ": "Großspielfeld"}, {"typ": "Freibad"}]}
+    schreibe_bestand([d], tmp_path, "rp", lambda lon, lat: "07111-koblenz")
+    verstoesse = []
+    list(lies_bestand(tmp_path, verstoesse))
+    assert [m for _, m in verstoesse] == ["typ: „Freibad“ passt nicht zur Kategorie „Sportplatz“"]
+
+
+def test_art_von_eigentuemer_und_betreiber():
+    from sportstaettenatlas.seite import betreiber_art
+
+    assert betreiber_art("Stadtwerke X GmbH", "Kommunales Unternehmen") == "Kommune"
+    assert betreiber_art("TuS Musterdorf e.V.") == "Verein"  # ohne Art: geschätzt
+    assert betreiber_art("Stadt X", "Privatwirtschaftlich/kommerziell") == "sonstige"
+    assert set(modell.ORGANISATIONSTYPEN.values()) == {"Verein", "Kommune", "sonstige"}

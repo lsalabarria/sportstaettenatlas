@@ -33,14 +33,48 @@ function feldTyp(p) {
   const ref = (t.$ref || "").split("/").pop();
   return ref ? { ...SCHEMA.$defs[ref], ref } : t;
 }
-// Wert eines Feldes als Text (ohne HTML): Listen mit Komma, Zahlen mit Tausenderpunkt und Einheit
-function feldText(p, t, v) {
-  if (leer(v)) return "";
+// Wert eines Feldes als Text (ohne HTML): Listen mit Komma, Zahlen mit Tausenderpunkt und
+// Einheit (einheit, oder einheit_aus: aus einem anderen Feld des Datensatzes x), Anzahl je
+// Wert als „3× Sand, 1× Rasen“
+function feldText(p, t, v, x = {}) {
+  if (leer(v) || (typeof v === "object" && !Array.isArray(v) && !Object.keys(v).length)) return "";
   if (Array.isArray(v)) return v.join(", ");
+  if (typeof v === "object") return Object.entries(v).map(([k, n]) => `${zahl(n)}× ${k}`).join(", ");
   if ((t.type === "integer" || t.type === "number") && p.widget !== "jahr") {
-    return zahl(v) + (p.einheit ? " " + p.einheit : "");
+    const einheit = p.einheit_aus ? x[p.einheit_aus] : p.einheit;
+    return zahl(v) + (einheit ? " " + einheit : "");
   }
   return String(v);
+}
+// Ist ein Feld für diese Sportanlage gedacht? (Angabe fuer: Gruppen oder Typen)
+function passtFuer(p, typ) {
+  return !p.fuer || !typ || p.fuer.includes(typ) || p.fuer.includes(anlagenGruppe(typ));
+}
+// Felder, deren Wert nur als Einheit eines anderen Feldes erscheint (Währung der Baukosten)
+function nurEinheit(modell) {
+  return new Set(modellFelder(modell).map(([, p]) => p.einheit_aus).filter(Boolean));
+}
+// Regeln zwischen Feldern (braucht, teil_von) für ein Objekt nach dem Modell → Meldungen
+function regelnZwischen(modell, o, praefix = "") {
+  const out = [], titel = k => (SCHEMA.$defs[modell].properties[k] || {}).title || k;
+  for (const [k, p] of modellFelder(modell)) {
+    const w = o[k];
+    if (p.braucht && !leer(w) && leer(o[p.braucht])) out.push(`${praefix}${titel(p.braucht)}: nötig, wenn ${p.title} angegeben ist`);
+    if (p.teil_von && Array.isArray(w)) {
+      const fehlt = w.filter(x => !(o[p.teil_von] || []).includes(x));
+      if (fehlt.length) out.push(`${praefix}${p.title}: ${fehlt.join(", ")} fehlt unter ${titel(p.teil_von)}`);
+    }
+  }
+  return out;
+}
+// Typen von Sportanlagen, die zur Kategorie passen (modell.py: KATEGORIE_ANLAGEN); null: alle
+function passendeTypen(kategorie) {
+  const z = (SCHEMA.$defs.Sportstaette || {}).anlagen_je_kategorie || {};
+  return z[kategorie] || null;
+}
+function typPasst(kategorie, typ) {
+  const p = passendeTypen(kategorie);
+  return !p || !typ || p.includes(typ);
 }
 // Werte zählen: ["a", "b", "a"] → { a: 2, b: 1 }
 function zaehle(werte) {

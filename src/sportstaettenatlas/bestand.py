@@ -20,7 +20,7 @@ from collections.abc import Callable, Iterator
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from .modell import Sportanlage, Sportstaette, ordne, pruefe
+from .modell import Sportanlage, Sportstaette, migriere, ordne, pruefe, zuordnung_hinweise
 
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+(\.[\w-]+)+")
 OHNE_KREIS = "ohne-kreis"
@@ -229,8 +229,8 @@ def lies_bestand(ordner: Path, verstoesse: list | None = None) -> Iterator[dict]
     Prüft den Aufbau: Jeder Ordner hat seine <id>_meta.json, jede Anlage nennt in
     `sportstaette_id` die Sportstätte ihres Ordners, Dateiname = id, typ ist gesetzt.
     Ein Fehler im Aufbau bricht ab (ValueError). Verstöße gegen die Regeln des Modells
-    (modell.py, z. B. PLZ mit sechs Ziffern) brechen nicht ab, sondern landen als
-    (Datei, Meldung) in `verstoesse`. Im Ergebnis steht zusätzlich "_ordner" (Kreis-Ordner).
+    (modell.py, z. B. PLZ mit sechs Ziffern) und Anlagen, deren Typ nicht zur Kategorie
+    passt, brechen nicht ab, sondern landen als (Datei, Meldung) in `verstoesse`. Im Ergebnis steht zusätzlich "_ordner" (Kreis-Ordner).
     """
     for st_ordner in sorted(p for p in Path(ordner).glob("*/*/*") if p.is_dir()):
         sid = st_ordner.name
@@ -254,10 +254,26 @@ def lies_bestand(ordner: Path, verstoesse: list | None = None) -> Iterator[dict]
                 raise ValueError(f"{pfad}: typ fehlt")
             if verstoesse is not None:
                 verstoesse += [(str(pfad), m) for m in pruefe(Sportanlage, a)]
+                hinweise = zuordnung_hinweise(meta.get("kategorie"), [a["typ"]])
+                verstoesse += [(str(pfad), m) for m in hinweise]
             anlagen.append(a)
         if verstoesse is not None:
             verstoesse += [(str(meta_pfad), m) for m in pruefe(Sportstaette, meta)]
         yield {**meta, "anlagen": anlagen, "_ordner": st_ordner.parent.name}
+
+
+def migriere_bestand(ordner: Path) -> int:
+    """Dateien auf den Stand des Modells bringen (modell.migriere, z. B. umbenannte Felder).
+    Liefert die Zahl der geänderten Dateien."""
+    n = 0
+    for pfad in sorted(Path(ordner).glob("*/*/*/*.json")):
+        alt = pfad.read_text(encoding="utf-8")
+        modell = Sportstaette if pfad.name.endswith("_meta.json") else Sportanlage
+        neu = als_json(migriere(json.loads(alt), modell))
+        if neu != alt:
+            pfad.write_text(neu, encoding="utf-8")
+            n += 1
+    return n
 
 
 def falsch_einsortiert(datensaetze, kreis_von: KreisVon) -> list[tuple[str, str, str]]:

@@ -60,10 +60,15 @@ daten/RP/07111-koblenz/          Kreis – nur Ordnung im Git, ergibt sich aus d
 ```
 
 - Eine **Sportstätte** ist der Standort (Sportpark, Schulsportzentrum, Freibad …) mit Name,
-  Kategorie, Adresse, Lage, Betreiber und Eigentümer.
+  Kategorie, Adresse, Lage (immer WGS84), Eigentümer und Betreiber samt ihrer Art (Stadt/Gemeinde,
+  Sportverein im LSB RLP …).
 - Eine **Sportanlage** ist eine Einheit darin (Großspielfeld, Rundlaufbahn, Halle, Becken …)
-  mit Typ, Sportarten, Baujahr, Baukosten und Ausstattung.
-- Jede Sportanlage gehört zu genau einer Sportstätte.
+  mit Typ, Betriebsstatus, Sportarten und Wettkampfeignung, Maßen, Belag, Feldern je Sportart,
+  Becken, Ausstattung, Licht, Öffnungsstunden, Barrierefreiheit und Baukosten mit Währung.
+  Die Felder stammen aus dem bisherigen Atlas (Spalte „Legacy“ in `daten/README.md`); viele
+  sind nur für bestimmte Anlagen gedacht (Becken für Bäder), das Formular zeigt nur diese.
+- Jede Sportanlage gehört zu genau einer Sportstätte. Ihr Typ soll zur Kategorie der
+  Sportstätte passen (`KATEGORIE_ANLAGEN` in `modell.py`); sonst gibt es einen Hinweis.
 
 Das Modell steht an **einer** Stelle: `src/sportstaettenatlas/modell.py` (Pydantic). Dort
 stehen alle Felder mit Beschriftung, Auswahllisten (Kategorien, Betriebsstatus) und Regeln
@@ -79,6 +84,9 @@ stehen alle Felder mit Beschriftung, Auswahllisten (Kategorien, Betriebsstatus) 
   `daten/README.md` nicht mehr zum Modell passt.
 
 Ein neues Feld ist also eine Zeile in `modell.py`, danach `seite` und `modell` ausführen.
+Wird ein Feld umbenannt, kommt der alte Name in `UMBENANNT`; `uv run sportstaettenatlas modell
+--migrieren` passt dann die Dateien in `daten/` an (und bringt ihre Felder in die Reihenfolge
+des Modells).
 
 Felder, Beispiele, Typen der Anlagen und Regeln zum Ändern: **[daten/README.md](daten/README.md)**.
 
@@ -117,7 +125,7 @@ git add -A daten docs && git commit -m "Daten aktualisiert" && git push
 |---|---|
 | **Karte** | ein Punkt je Sportstätte; Filter nach den Sportanlagen darin (nach Gruppen), Kategorie, Betreiber-Art und Sportarten; das Fenster einer Sportstätte listet ihre Anlagen |
 | **Liste** | Vereine und Kommunen als Betreiber bzw. Eigentümer; ein Klick zeigt ihre Sportstätten |
-| **Übersicht** | Sportstätten und Sportanlagen: Zahlen, Befüllung der Angaben, Kategorien, Typen, je Kreis |
+| **Übersicht** | Sportstätten und Sportanlagen: Zahlen, Befüllung der Angaben nach Abschnitten (Felder nur unter den Anlagen, für die sie gedacht sind), Typen, die nicht zur Kategorie passen, je Kreis |
 | **Vorschlag** | Formular für neue Sportstätten und Änderungen, weiter zu LimeSurvey |
 | **Analysen** | der ALKIS-Abgleich; lädt erst beim Öffnen |
 

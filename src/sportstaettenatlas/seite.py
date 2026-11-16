@@ -49,7 +49,8 @@ VON_HAND = ("konfig.js", "impressum.html", "datenschutz.html")  # nie überschre
 
 # --- Datenbestand für die Karte ---------------------------------------------------------
 
-# Art des Betreibers bzw. Eigentümers, geschätzt aus dem Namen. Verein zuerst prüfen:
+# Art des Betreibers bzw. Eigentümers: aus *_typ, sonst geschätzt aus dem Namen. Verein
+# zuerst prüfen:
 # "Turnverein Ortsgemeinde X e.V." ist ein Verein.
 _VEREIN = re.compile(
     r"e\.\s?v\b|\be\s?v\.?$|\bev\b|verein|sportgemeinde|sportgemeinschaft|sportfreunde|"
@@ -73,11 +74,14 @@ ANLAGE_FELDER = tuple(
 )
 
 
-def betreiber_art(name: str | None) -> str | None:
-    """'Verein', 'Kommune' oder 'sonstige' – Schätzung aus dem Namen; None ohne Namen."""
+def betreiber_art(name: str | None, typ: str | None = None) -> str | None:
+    """'Verein', 'Kommune' oder 'sonstige' – aus der angegebenen Art (modell.ORGANISATIONSTYPEN),
+    sonst geschätzt aus dem Namen; None ohne Namen."""
     name = (name or "").strip()
     if not name:
         return None
+    if typ in modell.ORGANISATIONSTYPEN:
+        return modell.ORGANISATIONSTYPEN[typ]
     if _VEREIN.search(name):
         return "Verein"
     return "Kommune" if _KOMMUNE.search(name) else "sonstige"
@@ -86,7 +90,7 @@ def betreiber_art(name: str | None) -> str | None:
 def _anlage_kurz(a: dict) -> list:
     """Sportanlage für die Karte: [Typ, Kurz-ID, Name, {Angaben}]; leere Teile am Ende
     entfallen. Die Kurz-ID (Anfang der UUID) genügt, um die Datei zu finden."""
-    extra = {k: a[k] for k in ANLAGE_FELDER if a.get(k) not in (None, "", [])}
+    extra = {k: a[k] for k in ANLAGE_FELDER if a.get(k) not in (None, "", [], {})}
     out = [a["typ"], str(a.get("id", ""))[:8], a.get("bezeichnung") or "", extra]
     while len(out) > 2 and not out[-1]:
         out.pop()
@@ -120,8 +124,8 @@ def bestand_geojson(datensaetze, praezision: int = 5) -> dict:
                 p["anlagen"] = anlagen
             elif feld not in ("lage", "quellen"):
                 p[feld] = d.get(feld)
-        p["betreiber_art"] = betreiber_art(d.get("betreiber"))
-        p["eigentuemer_art"] = betreiber_art(d.get("eigentuemer"))
+        for rolle in ("betreiber", "eigentuemer"):
+            p[f"{rolle}_art"] = betreiber_art(d.get(rolle), d.get(f"{rolle}_typ"))
         punkt = [round(float(lage["lon"]), praezision), round(float(lage["lat"]), praezision)]
         features.append(
             {
@@ -134,7 +138,10 @@ def bestand_geojson(datensaetze, praezision: int = 5) -> dict:
         "type": "FeatureCollection",
         "features": features,
         "anlagengruppen": [[g, text] for g, (text, _) in anlagen_typen.GRUPPEN.items()],
-        "anlagentypen": {t: anlagen_typen.gruppe(t) for t in sorted(typen)},
+        # alle bekannten Typen (für Formular und Prüfungen) und die im Bestand
+        "anlagentypen": {
+            t: anlagen_typen.gruppe(t) for t in sorted(typen | set(anlagen_typen.GRUPPE_VON))
+        },
     }
 
 

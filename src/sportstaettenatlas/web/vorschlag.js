@@ -96,7 +96,7 @@ function regelFehler(f, w, label) {
   }
   const werte = Array.isArray(w) ? w : [w];
   for (const x of werte) {
-    if (t.enum && !t.enum.includes(x)) out.push(`${label}: bitte aus der Liste wählen`);
+    if (t.enum && !t.enum.includes(x) && !t.enum.includes(Number(x))) out.push(`${label}: bitte aus der Liste wählen`);
     if (t.minimum !== undefined && x < t.minimum) out.push(`${label}: mindestens ${t.minimum}`);
     if (t.maximum !== undefined && x > t.maximum) out.push(`${label}: höchstens ${t.maximum}`);
     if (t.pattern && typeof x === "string" && !new RegExp(t.pattern).test(x)) {
@@ -128,10 +128,15 @@ function ansichtVorschlag(bestand) {
   const TITEL = Object.fromEntries(FELDER.map(f => [f.pfad, f.p.title || f.pfad]));
   TITEL.anlagen = "Sportanlagen";
   const FELD_LAGE = FELDER.find(f => f.p.widget === "karte");
-  // Angaben einer Sportanlage neben Typ und Name (Baujahr, Ausstattung …)
+  // Angaben einer Sportanlage neben Typ und Name (Baujahr, Maße, Belag …), nach Abschnitten
   const ANLAGE_DETAILS = modellFelder("Sportanlage")
     .filter(([k, p]) => p.formular !== false && k !== "typ" && k !== "bezeichnung")
-    .map(([k, p, pflicht, t]) => ({ pfad: k, p, pflicht, t }));
+    .map(([k, p, pflicht, t], i) => ({ pfad: k, p, pflicht, t, i }));
+  const ANLAGE_ABSCHNITTE = SCHEMA.$defs.Sportanlage.gruppen || ["Allgemein"];
+  // Einzelne Eingaben: ein Feld, bei „Anzahl je Wert“ (zaehler) eine je Wert ("pfad|Wert")
+  const ANLAGE_EINGABEN = ANLAGE_DETAILS.flatMap(d => d.p.widget === "zaehler"
+    ? d.t.propertyNames.enum.map(w => ({ k: `${d.pfad}|${w}`, d, wert: w, titel: `${d.p.title}: ${w}` }))
+    : [{ k: d.pfad, d, titel: d.p.title }]);
   const FELD_TYP = (() => { const x = modellFelder("Sportanlage").find(([k]) => k === "typ");
     return { pfad: "typ", p: x[1], pflicht: true, t: x[3] }; })();
 
@@ -146,13 +151,24 @@ function ansichtVorschlag(bestand) {
   }
   const SPORTARTEN = haeufig(bestand.eintraege.flatMap(e => [...e.sp])).map(x => x[0])
     .sort((a, b) => a.localeCompare(b, "de"));
-  // Typen der Sportanlagen: nach Gruppe, darin nach Häufigkeit
+  // Typen der Sportanlagen (alle bekannten und die im Bestand): nach Gruppe, darin nach Häufigkeit;
+  // zur gewählten Kategorie passende zuerst (typListe)
   const ANLAGEN = (() => {
     const z = zaehle(bestand.eintraege.flatMap(e => e.p.anlagen));
     const reihe = ANLAGEN_GRUPPEN.map(g => g[0]);
-    return Object.keys(z).sort((a, b) => reihe.indexOf(anlagenGruppe(a)) - reihe.indexOf(anlagenGruppe(b))
-      || z[b] - z[a]);
+    return [...new Set([...Object.keys(ANLAGEN_TYPEN), ...Object.keys(z)])].sort((a, b) =>
+      reihe.indexOf(anlagenGruppe(a)) - reihe.indexOf(anlagenGruppe(b)) || (z[b] || 0) - (z[a] || 0));
   })();
+  const kategorie = () => F("art").value === "anlagen" ? (original && original.p.kategorie) : F("kategorie").value;
+  let typListeFuer;
+  function typListe() {
+    const k = kategorie(), passend = passendeTypen(k);
+    if (k === typListeFuer) return;
+    typListeFuer = k;
+    const liste = passend ? [...ANLAGEN.filter(t => passend.includes(t)), ...ANLAGEN.filter(t => !passend.includes(t))] : ANLAGEN;
+    el.querySelector("#v-anlagen-liste").innerHTML = liste.map(t => `<option value="${esc(t)}">`
+      + `${esc(gruppenText(anlagenGruppe(t)))}${passend && !passend.includes(t) ? ` – passt nicht zu „${esc(k)}“` : ""}</option>`).join("");
+  }
   function organisationen() {
     const bisher = haeufig(bestand.eintraege.flatMap(e => [e.p.betreiber, e.p.eigentuemer]))
       .sort((a, b) => b[1] - a[1]).map(x => x[0]);
@@ -242,12 +258,11 @@ function ansichtVorschlag(bestand) {
       </form>
       <aside><div id="v-karte" aria-label="Karte zur Lage"></div>
         <div class="hinweis">Klick in die Karte setzt die Lage, die Markierung lässt sich verschieben. Graue Punkte: vorhandene Sportstätten.</div>
-        <div id="v-aenderungen"></div><div id="v-dubletten"></div></aside></div>
+        <div id="v-aenderungen"></div><div id="v-hinweise"></div><div id="v-dubletten"></div></aside></div>
       <datalist id="v-orte">${optionen(ORTE())}</datalist>
       <datalist id="v-orgs">${optionen(organisationen())}</datalist>
       <datalist id="v-sportarten-liste">${optionen(SPORTARTEN)}</datalist>
-      <datalist id="v-anlagen-liste">${ANLAGEN.map(t => `<option value="${esc(t)}">`
-        + `${esc(gruppenText(anlagenGruppe(t)))}</option>`).join("")}</datalist></div>`;
+      <datalist id="v-anlagen-liste"></datalist></div>`;
     form = el.querySelector("#v-form");
     form.addEventListener("input", () => { zeigeArten(); planePruefung(); });
     form.addEventListener("change", ev => {
@@ -304,23 +319,51 @@ function ansichtVorschlag(bestand) {
     c.querySelectorAll("[data-weg]").forEach(b => b.addEventListener("click", () => {
       chips[pfad].delete(b.dataset.weg); zeigeChips(pfad); planePruefung(); }));
   }
-  // Eine Zeile je Sportanlage, darunter aufklappbar ihre weiteren Angaben (aus dem Modell).
+  // Eine Zeile je Sportanlage, darunter aufklappbar ihre weiteren Angaben (aus dem Modell, nach
+  // Abschnitten). Gezeigt werden die Felder, die zum Typ passen (Angabe fuer), und alle mit Wert.
   // Vorhandene Anlagen (mit Kurz-ID) lassen sich ändern oder zum Entfernen markieren; neue
   // lassen sich mit Anzahl eintragen (z. B. 3× Tennisplatz).
+  const alsText = w => leer(w) ? "" : Array.isArray(w) ? w.join(", ") : String(w);
   const angaben = a => {
     const o = { typ: a.typ || "", bezeichnung: a.bezeichnung || "" };
-    for (const d of ANLAGE_DETAILS) o[d.pfad] = leer(a[d.pfad]) ? "" : Array.isArray(a[d.pfad]) ? a[d.pfad].join(", ") : String(a[d.pfad]);
+    for (const e of ANLAGE_EINGABEN) o[e.k] = alsText(e.wert ? (a[e.d.pfad] || {})[e.wert] : a[e.k]);
     return o;
   };
-  function detailEingabe(d, wert) {
-    const { pfad, p, t } = d, label = esc(p.title || pfad) + (p.einheit ? ` (${esc(p.einheit)})` : "");
-    const attr = istZahl(t) ? ` type="number" step="1"` + (t.minimum !== undefined ? ` min="${t.minimum}"` : "")
-      + (t.maximum !== undefined ? ` max="${t.maximum}"` : "")
+  const zahlAttr = t => ` type="number" step="${t.type === "integer" ? 1 : "any"}"`
+    + (t.minimum !== undefined ? ` min="${t.minimum}"` : "") + (t.maximum !== undefined ? ` max="${t.maximum}"` : "");
+  function detailEingabe(d, alt) {
+    const { pfad, p, t } = d, n = esc(pfad);
+    const label = esc(p.title || pfad) + (p.einheit ? ` (${esc(p.einheit)})` : "");
+    const hilfe = p.description ? ` title="${esc(p.description)}"` : "";
+    const huelle = (inhalt, klasse = "") => `<label class="${klasse}" data-d="${d.i}"${hilfe}>${label}${inhalt}</label>`;
+    const auswahl = (werte, w) => `<select data-f="${n}"><option value="">–</option>` + werte.map(x =>
+      `<option${String(x) === w ? " selected" : ""}>${esc(x)}</option>`).join("") + `</select>`;
+    if (p.widget === "zaehler") {
+      return `<div class="zaehler" data-d="${d.i}"${hilfe}><span>${label}</span><div>` + t.propertyNames.enum.map(w =>
+        `<label>${esc(w)}<input data-f="${n}|${esc(w)}" value="${esc(alt[`${pfad}|${w}`])}"${zahlAttr(t.additionalProperties || {})}></label>`).join("")
+        + `</div></div>`;
+    }
+    if (p.widget === "ja_nein") return huelle(auswahl(["ja", "nein"], alt[pfad]));
+    if (t.enum) return huelle(auswahl(t.enum, alt[pfad]));
+    const attr = istZahl(t) ? zahlAttr(t)
       : t.type === "array" ? ` placeholder="${esc(p.description || "mehrere mit Komma trennen")}"`
-        + (pfad === "sportarten" ? ` list="v-sportarten-liste"` : "")
+        + (pfad === "sportarten" || pfad === "wettkampf" ? ` list="v-sportarten-liste"` : "")
       : (p.description ? ` placeholder="${esc(p.description)}"` : "");
-    return `<label${t.type === "array" && pfad !== "sportarten" ? ` class="breit"` : ""}>${label}`
-      + `<input data-f="${esc(pfad)}" value="${esc(wert)}"${attr}></label>`;
+    return huelle(`<input data-f="${n}" value="${esc(alt[pfad])}"${attr}>`, t.type === "array" && p.widget !== "jahr" ? "breit" : "");
+  }
+  // Felder zeigen, die zum Typ passen; mit Häkchen „alle Felder“ auch die übrigen
+  function zeigePassend(tr, mehr) {
+    const typ = tr.querySelector('[data-f="typ"]').value.trim(), alle = mehr.querySelector(".alle input").checked;
+    let verborgen = 0;
+    mehr.querySelectorAll("[data-d]").forEach(x => {
+      const d = ANLAGE_DETAILS[+x.dataset.d], hatWert = [...x.querySelectorAll("[data-f]")].some(i => i.value);
+      x.hidden = !(alle || hatWert || passtFuer(d.p, typ));
+      if (x.hidden) verborgen++;
+    });
+    mehr.querySelectorAll(".anlage-abschnitt").forEach(g => { g.hidden = ![...g.querySelectorAll("[data-d]")].some(x => !x.hidden); });
+    const hin = mehr.querySelector(".alle span");
+    hin.textContent = alle ? "alle Felder zeigen" : `auch ${zahl(verborgen)} Felder zeigen, die nicht zu diesem Typ passen`;
+    mehr.querySelector(".alle").hidden = !alle && !verborgen;
   }
   function anlageZeile(a, anzahl = 1) {
     const tr = document.createElement("tr"), mehr = document.createElement("tr");
@@ -328,26 +371,31 @@ function ansichtVorschlag(bestand) {
     tr.className = "anlage"; mehr.className = "anlage-mehr"; mehr.hidden = true;
     tr.dataset.id = a.id || ""; tr.dataset.alt = JSON.stringify(alt);
     tr.innerHTML = `<td><input data-f="typ" list="v-anlagen-liste" value="${esc(alt.typ)}" aria-label="Typ"`
-      + ` placeholder="z. B. Großspielfeld"></td>`
+      + ` placeholder="z. B. Großspielfeld"><div class="typ-hinweis hinweis" hidden></div></td>`
       + `<td><input data-f="bezeichnung" value="${esc(alt.bezeichnung)}" aria-label="Name" placeholder="optional"></td>`
       + `<td>${vorhanden ? `<span class="q" title="Kennung der Anlage">${esc(a.id)}</span>`
         : `<input data-f="anzahl" type="number" min="1" step="1" value="${anzahl}" aria-label="Anzahl">`}</td>`
       + `<td class="aktionen"><button type="button" class="mehr" aria-expanded="false" title="weitere Angaben">Angaben ▸</button>`
       + `<button type="button" class="weg" aria-label="${vorhanden ? "Anlage entfernen" : "Zeile löschen"}"`
       + ` title="${vorhanden ? "Diese Anlage gibt es nicht mehr" : "Zeile löschen"}">×</button></td>`;
-    mehr.innerHTML = `<td colspan="4"><div class="anlage-felder">`
-      + ANLAGE_DETAILS.map(d => detailEingabe(d, alt[d.pfad])).join("") + `</div></td>`;
+    mehr.innerHTML = `<td colspan="4">` + ANLAGE_ABSCHNITTE.map(g => {
+      const ds = ANLAGE_DETAILS.filter(d => (d.p.gruppe || "Allgemein") === g);
+      return ds.length ? `<div class="anlage-abschnitt"><h5>${esc(g)}</h5>`
+        + `<div class="anlage-felder">${ds.map(d => detailEingabe(d, alt)).join("")}</div></div>` : "";
+    }).join("") + `<label class="alle hinweis"><input type="checkbox"> <span></span></label></td>`;
     const knopf = tr.querySelector(".mehr");
     const klappe = auf => { mehr.hidden = !auf; knopf.textContent = auf ? "Angaben ▾" : "Angaben ▸";
       knopf.setAttribute("aria-expanded", auf); };
     knopf.addEventListener("click", () => klappe(mehr.hidden));
-    if (ANLAGE_DETAILS.some(d => alt[d.pfad])) knopf.classList.add("hat");
+    if (ANLAGE_EINGABEN.some(e => alt[e.k])) knopf.classList.add("hat");
+    tr.querySelector('[data-f="typ"]').addEventListener("input", () => zeigePassend(tr, mehr));
+    mehr.querySelector(".alle input").addEventListener("change", () => zeigePassend(tr, mehr));
     tr.querySelector(".weg").addEventListener("click", () => {
       if (!vorhanden) { tr.remove(); mehr.remove(); }
       else {
         const weg = !tr.classList.contains("entfernt");
         tr.classList.toggle("entfernt", weg);
-        [tr, mehr].forEach(z => z.querySelectorAll("input").forEach(i => { i.disabled = weg; }));
+        [tr, mehr].forEach(z => z.querySelectorAll("input, select").forEach(i => { i.disabled = weg; }));
         if (weg) klappe(false);
         const b = tr.querySelector(".weg");
         b.textContent = weg ? "↺" : "×"; b.title = weg ? "doch behalten" : "Diese Anlage gibt es nicht mehr";
@@ -356,8 +404,9 @@ function ansichtVorschlag(bestand) {
     });
     const ziel = el.querySelector("#v-anlagen");
     ziel.appendChild(tr); ziel.appendChild(mehr);
+    zeigePassend(tr, mehr);
   }
-  // [{ id, typ, bezeichnung, …Angaben als Text, n, entfernt, alt }]
+  // [{ id, typ, bezeichnung, …Angaben als Text (Schlüssel wie ANLAGE_EINGABEN), n, entfernt, alt }]
   function anlagenListe() {
     const out = [];
     for (const tr of el.querySelectorAll("#v-anlagen tr.anlage")) {
@@ -371,31 +420,44 @@ function ansichtVorschlag(bestand) {
     return out;
   }
   // Angabe einer Anlage (Text aus dem Formular) → Wert nach dem Modell
-  const detailWert = (d, x) => leer(x) ? null : istZahl(d.t) ? Number(String(x).replace(",", "."))
-    : d.t.type === "array" ? listeAus(x) : x;
-  // Sportanlage als Objekt nach dem Modell (für den Vorschlag); id = Kurz-ID vorhandener Anlagen
+  const zahlAus = x => Number(String(x).replace(",", "."));
+  function detailWert(d, a) {
+    if (d.p.widget === "zaehler") {
+      const o = {};
+      for (const w of d.t.propertyNames.enum) { const x = a[`${d.pfad}|${w}`]; if (!leer(x)) o[w] = zahlAus(x); }
+      return Object.keys(o).length ? o : null;
+    }
+    const x = a[d.pfad];
+    if (leer(x)) return null;
+    if (istZahl(d.t) || (d.t.enum && typeof d.t.enum[0] === "number")) return zahlAus(x);
+    return d.t.type === "array" ? listeAus(x) : x;
+  }
+  // Sportanlage als Objekt nach dem Modell (für den Vorschlag); id = Kurz-ID vorhandener Anlagen.
+  // Sportarten mit Wettkampfeignung kommen auch unter die Sportarten (Regel teil_von).
   function anlageModell(a) {
     const o = { typ: a.typ };
     if (a.id) o.id = a.id;
     if (a.bezeichnung) o.bezeichnung = a.bezeichnung;
-    for (const d of ANLAGE_DETAILS) { const w = detailWert(d, a[d.pfad]); if (!leer(w)) o[d.pfad] = w; }
+    for (const d of ANLAGE_DETAILS) { const w = detailWert(d, a); if (!leer(w)) o[d.pfad] = w; }
+    for (const d of ANLAGE_DETAILS) if (d.p.teil_von && o[d.pfad]) {
+      o[d.p.teil_von] = [...new Set([...(o[d.p.teil_von] || []), ...o[d.pfad]])];
+    }
     return o;
   }
   const anlageKurz = a => (a.n > 1 ? `${a.n}× ` : "") + a.typ + (a.bezeichnung ? ` (${a.bezeichnung})` : "");
-  const anlageDetailText = a => ANLAGE_DETAILS.filter(d => a[d.pfad])
-    .map(d => `${d.p.title}: ${a[d.pfad]}`).join("; ");
+  const anlageDetailText = a => ANLAGE_EINGABEN.filter(e => a[e.k]).map(e => `${e.titel}: ${a[e.k]}`).join("; ");
   const anlageText = a => anlageKurz(a) + (anlageDetailText(a) ? ` – ${anlageDetailText(a)}` : "");
   // Was sich an den Anlagen ändert (für die Anzeige „Ihre Änderungen“)
   function anlagenAenderung(liste) {
     const out = [];
+    const titel = k => k === "typ" ? FELD_TYP.p.title : k === "bezeichnung" ? "Name"
+      : ANLAGE_EINGABEN.find(e => e.k === k).titel;
     for (const a of liste) {
       if (!a.id) { out.push(`neu: ${anlageText(a)}`); continue; }
       const alt = { ...a.alt, n: 1 };
       if (a.entfernt) { out.push(`entfernen [${a.id}]: ${anlageKurz(alt)}`); continue; }
-      const felder = ["typ", "bezeichnung", ...ANLAGE_DETAILS.map(d => d.pfad)].filter(k => (a[k] || "") !== (alt[k] || ""));
+      const felder = ["typ", "bezeichnung", ...ANLAGE_EINGABEN.map(e => e.k)].filter(k => (a[k] || "") !== (alt[k] || ""));
       if (felder.length) {
-        const titel = k => k === "typ" ? FELD_TYP.p.title : k === "bezeichnung" ? "Name"
-          : ANLAGE_DETAILS.find(d => d.pfad === k).p.title;
         out.push(`ändern [${a.id}] ${anlageKurz(alt)}: ` + felder.map(k =>
           `${titel(k)} ${alt[k] || "(leer)"} → ${a[k] || "(leer)"}`).join("; "));
       }
@@ -411,7 +473,8 @@ function ansichtVorschlag(bestand) {
   function zeigeArten() {
     for (const f of FELDER.filter(x => x.p.widget === "organisation")) {
       const a = betreiberArt(F(f.pfad).value), s = el.querySelector(`[data-art="${f.pfad}"]`);
-      s.textContent = a || ""; s.hidden = !a;
+      const typ = F(f.pfad + "_typ");  // Art angegeben: keine Schätzung zeigen
+      s.textContent = a ? `geschätzt: ${a}` : ""; s.hidden = !a || !!(typ && typ.value);
     }
   }
   // dieselbe Schätzung wie in seite.py (betreiber_art), vereinfacht
@@ -581,6 +644,21 @@ function ansichtVorschlag(bestand) {
         if (vkarte && e) vkarte.setView([e.lat, e.lon], 18); }));
     }
     zeigeAenderungen(v);
+    zeigeHinweise(v);
+  }
+  // Hinweise, die das Abschicken nicht verhindern: Typ einer Sportanlage passt nicht zur Kategorie
+  function zeigeHinweise(v) {
+    const k = kategorie(), box = el.querySelector("#v-hinweise"), liste = [];
+    for (const tr of el.querySelectorAll("#v-anlagen tr.anlage")) {
+      const typ = tr.querySelector('[data-f="typ"]').value.trim(), h = tr.querySelector(".typ-hinweis");
+      const passt = v.art === "aenderung" || tr.classList.contains("entfernt") || typPasst(k, typ);
+      h.hidden = passt; h.textContent = passt ? "" : `passt nicht zu „${k}“`;
+      if (!passt) liste.push(typ);
+    }
+    box.innerHTML = liste.length ? `<div class="warnung"><b>Bitte prüfen</b> – diese Sportanlagen passen nicht `
+      + `zur Kategorie „${esc(k)}“: ${[...new Set(liste)].map(esc).join(", ")}. Gehören sie zu einer anderen `
+      + `Sportstätte, oder stimmt die Kategorie nicht? Abschicken geht trotzdem.</div>` : "";
+    typListe();
   }
   function sucheDubletten(v) {
     const out = [];
@@ -654,12 +732,21 @@ function ansichtVorschlag(bestand) {
         }
         fehler.push(...regelFehler(f, w, f.p.title));
       }
+      fehler.push(...regelnZwischen("Sportstaette", v.sportstaette));
     }
     if (v.art !== "aenderung") {
       for (const a of v.anlagenliste.filter(x => !x.entfernt)) {
         const name = `Sportanlage „${a.typ || "?"}“`;
         fehler.push(...regelFehler(FELD_TYP, a.typ, `${name}: ${FELD_TYP.p.title}`));
-        for (const d of ANLAGE_DETAILS) fehler.push(...regelFehler(d, detailWert(d, a[d.pfad]), `${name}: ${d.p.title}`));
+        for (const d of ANLAGE_DETAILS) {
+          const w = detailWert(d, a);
+          if (d.p.widget === "zaehler") {
+            for (const [k, n] of Object.entries(w || {})) {
+              fehler.push(...regelFehler({ p: d.p, t: d.t.additionalProperties || {} }, n, `${name}: ${d.p.title} (${k})`));
+            }
+          } else fehler.push(...regelFehler(d, w, `${name}: ${d.p.title}`));
+        }
+        fehler.push(...regelnZwischen("Sportanlage", anlageModell(a), `${name}: `));
       }
     }
     return [...new Set(fehler)];
