@@ -4,8 +4,9 @@
     daten/RP/07111-koblenz/<id>/<anlage-id>.json   je Sportanlage eine Datei
 
 Der Kreis-Ordner ergibt sich aus der Lage (`kreis_ordner`). Jede Sportanlage nennt in
-`sportstaette_id` die Sportstätte ihres Ordners; `lies_bestand` prüft das. Werte mit einer
-E-Mail-Adresse werden beim Schreiben entfernt.
+`sportstaette_id` die Sportstätte ihres Ordners; `lies_bestand` prüft das. Felder, ihre
+Reihenfolge in den Dateien und die Regeln für die Werte kommen aus modell.py. Werte mit
+einer E-Mail-Adresse werden beim Schreiben entfernt.
 """
 
 from __future__ import annotations
@@ -18,6 +19,8 @@ from collections import Counter
 from collections.abc import Callable, Iterator
 from dataclasses import dataclass, field
 from pathlib import Path
+
+from .modell import Sportanlage, Sportstaette, ordne, pruefe
 
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+(\.[\w-]+)+")
 OHNE_KREIS = "ohne-kreis"
@@ -109,14 +112,13 @@ def aufteilen(d: dict) -> dict[str, str]:
     """Sportstätte mit Liste "anlagen" → {Dateiname: Inhalt} für ihren Ordner."""
     sid = d["id"]
     meta = {k: v for k, v in d.items() if k not in ("anlagen", "_ordner")}
-    dateien = {f"{sid}_meta.json": als_json(meta)}
+    dateien = {f"{sid}_meta.json": als_json(ordne(meta, Sportstaette))}
     nr: Counter = Counter()
     for a in d.get("anlagen") or []:
         nr[a["typ"]] += 1
         aid = a.get("id") or anlage_id(sid, a["typ"], nr[a["typ"]])
-        rest = {k: v for k, v in a.items() if k not in ("id", "sportstaette_id", "typ")}
         dateien[f"{aid}.json"] = als_json(
-            {"id": aid, "sportstaette_id": sid, "typ": a["typ"], **rest}
+            ordne({**a, "id": aid, "sportstaette_id": sid}, Sportanlage)
         )
     return dateien
 
@@ -131,6 +133,7 @@ class Ergebnis:
     doppelt: int = 0
     nicht_mehr_in_quelle: int = 0
     entfernt: Counter = field(default_factory=Counter)
+    regelverstoesse: Counter = field(default_factory=Counter)  # Feld → Anzahl (modell.py)
 
 
 def _staetten_ordner(land_ordner: Path) -> dict[str, Path]:
@@ -164,6 +167,8 @@ def schreibe_bestand(
             e.doppelt += 1
             continue
         gesehen.add(d["id"])
+        for meldung in pruefe(Sportstaette, d):
+            e.regelverstoesse[meldung.split(":")[0]] += 1
         st_ordner = vorhanden.get(d["id"])
         if st_ordner is not None and modus == "neu":
             e.behalten += 1
@@ -218,12 +223,14 @@ def _lies_json(datei: Path) -> dict:
         raise ValueError(f"{datei}: kein gültiges JSON ({exc})") from exc
 
 
-def lies_bestand(ordner: Path) -> Iterator[dict]:
+def lies_bestand(ordner: Path, verstoesse: list | None = None) -> Iterator[dict]:
     """Alle Sportstätten unter daten/<LAND>/<Kreis>/<id>/, jeweils mit ihren Anlagen.
 
     Prüft den Aufbau: Jeder Ordner hat seine <id>_meta.json, jede Anlage nennt in
     `sportstaette_id` die Sportstätte ihres Ordners, Dateiname = id, typ ist gesetzt.
-    Im Ergebnis steht zusätzlich "_ordner" (Kreis-Ordner).
+    Ein Fehler im Aufbau bricht ab (ValueError). Verstöße gegen die Regeln des Modells
+    (modell.py, z. B. PLZ mit sechs Ziffern) brechen nicht ab, sondern landen als
+    (Datei, Meldung) in `verstoesse`. Im Ergebnis steht zusätzlich "_ordner" (Kreis-Ordner).
     """
     for st_ordner in sorted(p for p in Path(ordner).glob("*/*/*") if p.is_dir()):
         sid = st_ordner.name
@@ -245,7 +252,11 @@ def lies_bestand(ordner: Path) -> Iterator[dict]:
                 raise ValueError(f"{pfad}: id {a.get('id')!r} passt nicht zum Dateinamen")
             if not a.get("typ"):
                 raise ValueError(f"{pfad}: typ fehlt")
+            if verstoesse is not None:
+                verstoesse += [(str(pfad), m) for m in pruefe(Sportanlage, a)]
             anlagen.append(a)
+        if verstoesse is not None:
+            verstoesse += [(str(meta_pfad), m) for m in pruefe(Sportstaette, meta)]
         yield {**meta, "anlagen": anlagen, "_ordner": st_ordner.parent.name}
 
 

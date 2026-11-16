@@ -4,20 +4,15 @@
 window.KONFIG = {
   titel: "Sportstättenatlas Rheinland-Pfalz",
 
-  // Link zur LimeSurvey-Umfrage. Der Reiter „Vorschlag“ übergibt die Werte seines Formulars
-  // als URL-Parameter (Fragecodes, siehe vorschlag_felder). Leer = Knopf „Weiter zu
-  // LimeSurvey“ zeigt nur an, was übertragen würde.
+  // Link zur LimeSurvey-Umfrage (sportstaette_vorschlagen.lss). „Weiter zu LimeSurvey“ im
+  // Reiter „Vorschlag“ öffnet sie und schreibt den ganzen Vorschlag als JSON in die Frage
+  // „data“, die Anmerkung in die Frage „kommentar“. Aufbau des JSON: Modell „Vorschlag“ in
+  // daten/README.md. Ändert sich das Datenmodell, bleibt die Umfrage, wie sie ist.
+  // Leer = der Knopf zeigt nur an, was übertragen würde.
   // Beispiel: "https://limesurvey.hs-koblenz.de/index.php/123456?lang=de"
   vorschlag_url: "",
-  // Welche Felder des Formulars in welche Frage der Umfrage gehen: Feld: "Fragecode".
-  // Nur die hier genannten werden übertragen. Leer = alle Felder, Fragecode = Feldname.
-  // Felder: art (neu | aenderung | anlagen) id quelle name kategorie betriebsstatus strasse
-  // hausnummer adresszusatz plz ort adresse ars gemeinde lat lon lage ("Breite, Länge")
-  // oeffentlicher_zugang schulsport zuschauerplaetze sportarten eigentuemer betreiber website
-  // anmerkung geaendert dubletten
-  // anlagen: die Sportanlagen nach dem Vorschlag, je Zeile eine ("[Kennung] Typ (Name) – …"
-  //   bzw. "neu: …"); anlagen_aenderung: was sich an ihnen ändert (neu, ändern, entfernen)
-  vorschlag_felder: {},
+  // Nur nötig, wenn die Fragen in der Umfrage anders heißen: { data: "…", kommentar: "…" }
+  vorschlag_felder: { data: "data", kommentar: "kommentar" },
 
   // Knopf „Bug melden“: neues Ticket im GitHub-Repository mit der Vorlage
   // .github/ISSUE_TEMPLATE/fehler.yml. Leer = kein Knopf.

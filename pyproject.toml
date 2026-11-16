@@ -6,12 +6,18 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "geopandas>=1.0",
+    "pydantic>=2.6",
     "pyogrio>=0.10",
     "pyproj>=3.6",
     "requests>=2.31",
     "shapely>=2.0",
     "tqdm>=4.66",
 ]
+
+[project.optional-dependencies]
+# Diagramm des Datenmodells (daten/datenmodell.svg); braucht Graphviz:
+# sudo apt install graphviz graphviz-dev && uv sync --extra doku
+doku = ["erdantic>=1.0"]
 
 [project.scripts]
 sportstaettenatlas = "sportstaettenatlas.cli:main"

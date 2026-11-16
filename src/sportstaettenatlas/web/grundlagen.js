@@ -17,6 +17,31 @@ function zahl(n) { return ZAHL.format(n); }
 function prozent(a, b) { return b ? Math.round(100 * a / b) : 0; }
 function url(u) { return /^https?:\/\//i.test(u) ? u : "https://" + u; }
 function wertText(v) { return typeof v === "boolean" ? (v ? "ja" : "nein") : esc(v); }
+
+// ---------- Datenmodell (daten/schema.json, erzeugt aus src/sportstaettenatlas/modell.py) ----
+// Felder, Beschriftungen (title), Auswahllisten (enum), Regeln (minimum, pattern …) und
+// Angaben für die Webseite (gruppe, widget, formular, uebersicht, einheit) stehen nur dort.
+let SCHEMA = { $defs: {} };
+// Felder eines Modells: [[Name, Eigenschaft, Pflicht, Typ]] – Typ ohne „oder leer“, Verweise
+// aufgelöst (z. B. adresse → Adresse mit ref: "Adresse")
+function modellFelder(modell) {
+  const m = SCHEMA.$defs[modell] || { properties: {} };
+  return Object.entries(m.properties).map(([k, p]) => [k, p, (m.required || []).includes(k), feldTyp(p)]);
+}
+function feldTyp(p) {
+  const t = p.anyOf ? p.anyOf.find(x => x.type !== "null") || {} : p;
+  const ref = (t.$ref || "").split("/").pop();
+  return ref ? { ...SCHEMA.$defs[ref], ref } : t;
+}
+// Wert eines Feldes als Text (ohne HTML): Listen mit Komma, Zahlen mit Tausenderpunkt und Einheit
+function feldText(p, t, v) {
+  if (leer(v)) return "";
+  if (Array.isArray(v)) return v.join(", ");
+  if ((t.type === "integer" || t.type === "number") && p.widget !== "jahr") {
+    return zahl(v) + (p.einheit ? " " + p.einheit : "");
+  }
+  return String(v);
+}
 // Werte zählen: ["a", "b", "a"] → { a: 2, b: 1 }
 function zaehle(werte) {
   const z = {};

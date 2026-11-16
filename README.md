@@ -42,6 +42,13 @@ ALKIS (WFS) ──alkis──▶ results/out/ (Abgleich mit daten/) ────
 uv sync
 ```
 
+Für das Diagramm des Datenmodells (`daten/datenmodell.svg`) zusätzlich Graphviz und erdantic:
+
+```bash
+sudo apt install graphviz graphviz-dev
+uv sync --extra doku
+```
+
 ## Datenmodell
 
 Der Atlas kennt zwei Arten von Objekten: **Sportstätten** und ihre **Sportanlagen**.
@@ -57,6 +64,21 @@ daten/RP/07111-koblenz/          Kreis – nur Ordnung im Git, ergibt sich aus d
 - Eine **Sportanlage** ist eine Einheit darin (Großspielfeld, Rundlaufbahn, Halle, Becken …)
   mit Typ, Sportarten, Baujahr, Baukosten und Ausstattung.
 - Jede Sportanlage gehört zu genau einer Sportstätte.
+
+Das Modell steht an **einer** Stelle: `src/sportstaettenatlas/modell.py` (Pydantic). Dort
+stehen alle Felder mit Beschriftung, Auswahllisten (Kategorien, Betriebsstatus) und Regeln
+(PLZ mit fünf Ziffern, Baujahr 1800–2100 …). Alles andere richtet sich danach:
+
+- `bestand`, `seite` und `alkis` prüfen `daten/` beim Lesen. Ein Fehler im Aufbau bricht ab,
+  ein Wert gegen die Regeln nicht: Er steht dann in `results/regelverstoesse.csv`.
+- Die Webseite liest `docs/daten/schema.json` (JSON Schema aus dem Modell): Formular, Popup
+  und Übersicht nehmen Felder, Beschriftungen und Regeln von dort.
+- Was das Formular an LimeSurvey übergibt, ist das Modell `Vorschlag`.
+- `uv run sportstaettenatlas modell` schreibt die Feldtabellen in `daten/README.md` und das
+  Diagramm `daten/datenmodell.svg` (läuft auch bei `seite` mit). Ein Test meldet, wenn
+  `daten/README.md` nicht mehr zum Modell passt.
+
+Ein neues Feld ist also eine Zeile in `modell.py`, danach `seite` und `modell` ausführen.
 
 Felder, Beispiele, Typen der Anlagen und Regeln zum Ändern: **[daten/README.md](daten/README.md)**.
 
@@ -111,10 +133,13 @@ Das Formular kennt drei Arten: eine **neue Sportstätte** mit ihren Sportanlagen
 **Angaben einer Sportstätte ändern** oder ihre **Sportanlagen ändern** (hinzufügen, ändern,
 entfernen). Es meldet mögliche Doppelungen (höchstens 60 m entfernt, gleiche Kategorie in
 250 m, sehr ähnlicher Name oder gleiche Adresse). „Weiter zu LimeSurvey“ öffnet die Umfrage
-aus `konfig.js` und überträgt die Werte als URL-Parameter; welches Feld in welche Frage geht,
-steht in `vorschlag_felder`. Die Sportanlagen gehen mit einer Zeile je Anlage: `anlagen` ist
-der Stand nach dem Vorschlag, `anlagen_aenderung` beschreibt die Änderung. Die Kennung in
-eckigen Klammern (`[17abb3c4]`) ist der Anfang des Dateinamens der Anlage.
+aus `konfig.js`. Sie hat nur zwei Fragen: `data` (versteckt) bekommt den ganzen Vorschlag als
+JSON nach dem Modell `Vorschlag`, `kommentar` die Anmerkung. Ändert sich das Datenmodell,
+bleibt die Umfrage, wie sie ist. Vorher prüft das Formular die Regeln des Modells (Pflichtfelder,
+Auswahl, Wertebereiche, Formate). Bei Sportanlagen steht `anlagen` für den Stand nach dem
+Vorschlag; vorhandene tragen ihre Kurz-ID (Anfang des Dateinamens, z. B. `17abb3c4`), entfernte
+stehen in `entfernte_anlagen`. Die Umfrage zum Importieren in LimeSurvey:
+`sportstaette_vorschlagen.lss` (nicht im Repository, enthält die Adresse der Verwaltung).
 
 „Bug melden“ oben öffnet ein Ticket auf GitHub (Vorlage `.github/ISSUE_TEMPLATE/fehler.yml`).
 Tickets sind öffentlich.
@@ -124,7 +149,8 @@ Tickets sind öffentlich.
 `docs/konfig.js` wird beim ersten `seite` angelegt und danach nie überschrieben; am
 einfachsten auf GitHub bearbeiten. Die Seite lädt sie immer frisch.
 
-- `vorschlag_url`, `vorschlag_felder`: Umfrage für Vorschläge
+- `vorschlag_url`: Umfrage für Vorschläge; `vorschlag_felder` nur, wenn die Fragen dort nicht
+  `data` und `kommentar` heißen
 - `fehler_url`: Link für „Bug melden“; leer = kein Link
 - `impressum_url`, `datenschutz_url`: Pflicht für eine öffentliche Seite. `seite` legt einmalig
   Entwürfe an (`impressum.html`, `datenschutz.html`, Platzhalter gelb markiert).
@@ -189,7 +215,8 @@ Ein Bad besteht dort oft aus mehreren Gebäudeteilen, und auch private Becken he
 
 ```
 src/sportstaettenatlas/
-  cli.py          Befehle bestand, einordnen, seite, alkis
+  modell.py       Datenmodell (Pydantic): Felder, Regeln, Schema, Doku – die einzige Stelle
+  cli.py          Befehle bestand, einordnen, seite, modell, alkis
   atlas.py        Atlas-Export lesen
   bestand.py      daten/ lesen und schreiben, Kreis-Ordner
   anlagen.py      Typen und Gruppen der Sportanlagen

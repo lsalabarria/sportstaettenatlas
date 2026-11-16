@@ -3,6 +3,7 @@
 sportstaettenatlas bestand EXPORT   Atlas-Export in den Datenbestand daten/ übernehmen
 sportstaettenatlas einordnen        Sportstätten in den Ordner ihres Kreises verschieben
 sportstaettenatlas seite            Webseite für GitHub Pages (docs/) bauen
+sportstaettenatlas modell           Datenmodell in daten/README.md und daten/datenmodell.svg
 sportstaettenatlas alkis            ALKIS-Abgleich gegen daten/ (Ergebnis in results/out)
 """
 
@@ -11,6 +12,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import logging
+from collections import Counter
 from pathlib import Path
 
 from .analysen.alkis import cli as alkis_cli
@@ -32,12 +34,33 @@ def _gebiete():
 
 
 def _lies_bestand():
-    from .bestand import lies_bestand
+    """Datenbestand lesen; Verstöße gegen die Regeln des Modells nach
+    results/regelverstoesse.csv (brechen nicht ab)."""
+    import csv
 
+    from .bestand import lies_bestand
+    from .hilfen import ERGEBNISSE
+
+    verstoesse: list = []
     try:
-        return list(lies_bestand(DATEN))
+        bestand = list(lies_bestand(DATEN, verstoesse))
     except ValueError as exc:
         raise SystemExit(f"Datenbestand: {exc}") from None
+    datei = ERGEBNISSE / "regelverstoesse.csv"
+    if verstoesse:
+        datei.parent.mkdir(parents=True, exist_ok=True)
+        with datei.open("w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f)
+            w.writerow(["datei", "meldung"])
+            w.writerows(verstoesse)
+        felder = Counter(m.split(":")[0] for _, m in verstoesse)
+        print(
+            f"Hinweis: {len(verstoesse)} Werte passen nicht zu den Regeln des Datenmodells "
+            f"({', '.join(f'{k} {v}×' for k, v in felder.most_common(5))}) – Liste: {datei}"
+        )
+    elif datei.exists():
+        datei.unlink()
+    return bestand
 
 
 def cmd_bestand(args):
@@ -68,6 +91,9 @@ def cmd_bestand(args):
     if e.entfernt:
         weg = ", ".join(f"{k} {v}×" for k, v in sorted(e.entfernt.items()))
         print(f"  entfernt (enthielt E-Mail-Adresse): {weg}")
+    if e.regelverstoesse:
+        felder = ", ".join(f"{k} {v}×" for k, v in e.regelverstoesse.most_common())
+        print(f"  passen nicht zu den Regeln des Datenmodells: {felder} (übernommen)")
 
 
 def cmd_einordnen(args):
@@ -85,9 +111,12 @@ def cmd_seite(args):
     """Statische Webseite für GitHub Pages (Ordner docs/) erzeugen."""
     from . import gebiete as gb
     from .bestand import falsch_einsortiert, kreis_ordner
+    from .modell import schreibe_doku
     from .seite import schreibe_webseite
 
     bestand = _lies_bestand()
+    for hinweis in schreibe_doku(DATEN):
+        print(hinweis)
     gebiete = _gebiete()
     ars_von = gb.Zuordnung(gebiete["gemeinde"]).ars
     if falsch := falsch_einsortiert(bestand, kreis_ordner(gebiete)):
@@ -132,6 +161,14 @@ def cmd_seite(args):
         _vorschau(DOCS)
 
 
+def cmd_modell(args):
+    """Datenmodell (modell.py) in daten/README.md und als Diagramm daten/datenmodell.svg."""
+    from .modell import schreibe_doku
+
+    for hinweis in schreibe_doku(DATEN):
+        print(hinweis)
+
+
 def _vorschau(ordner: Path, port: int = 8000) -> None:
     """Seite lokal über einen kleinen Webserver zeigen (wie später auf GitHub Pages)."""
     import functools
@@ -170,6 +207,11 @@ def main(argv: list[str] | None = None) -> None:
     sp = sub.add_parser("seite", help="Webseite für GitHub Pages (docs/) erzeugen")
     sp.add_argument("--vorschau", action="store_true", help="danach lokal im Browser zeigen")
     sp.set_defaults(func=cmd_seite)
+
+    sp = sub.add_parser(
+        "modell", help="Datenmodell in daten/README.md und daten/datenmodell.svg schreiben"
+    )
+    sp.set_defaults(func=cmd_modell)
 
     alkis_cli.befehle(sub)
 

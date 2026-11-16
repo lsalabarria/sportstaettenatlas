@@ -223,7 +223,11 @@ def test_ohne_neue_analyse_bleibt_der_alte_stand(tmp_path):
     info = schreibe_webseite(docs, bestand=[_datensatz(1, 7.2, 50.5)], leaflet_laden=False)
     daten = docs / "daten"
     assert _lies(daten / "analysen/index.json")["analysen"][0]["name"] == "alkis"
-    assert [n for n, *_ in info["dateien"]] == ["bestand.geojson", "analysen/alkis/alt.json"]
+    assert [n for n, *_ in info["dateien"]] == [
+        "bestand.geojson",
+        "schema.json",
+        "analysen/alkis/alt.json",
+    ]
     # eine neue Rechnung ersetzt den ganzen Ordner der Analyse
     schreibe_webseite(
         docs, analysen={"alkis": ("ALKIS-Abgleich", {"neu.json": {}}, {})}, leaflet_laden=False

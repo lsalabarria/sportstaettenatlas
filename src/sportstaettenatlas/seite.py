@@ -30,7 +30,7 @@ from collections.abc import Callable
 from pathlib import Path
 
 from . import anlagen as anlagen_typen
-from . import web
+from . import modell, web
 from .bestand import EMAIL, adresse_text
 
 KONTAKT_FELDER = {"email", "email_quelle", "alt_email", "telefon", "telefon_quelle", "alt_telefon"}
@@ -64,8 +64,13 @@ _KOMMUNE = re.compile(
     r"zweckverband|eigenbetrieb|^stadt|^gemeinde",
     re.IGNORECASE,
 )
-# Angaben einer Sportanlage, die die Karte zeigt (neben Typ, Kennung und Name)
-ANLAGE_FELDER = ("sportarten", "baujahr", "baukosten_eur", "ausstattung")
+# Angaben einer Sportanlage, die die Karte zeigt (neben Typ, Kennung und Name): alle Felder
+# des Modells außer IDs und Herkunft
+ANLAGE_FELDER = tuple(
+    f
+    for f in modell.Sportanlage.model_fields
+    if f not in ("id", "sportstaette_id", "typ", "bezeichnung", "quellen")
+)
 
 
 def betreiber_art(name: str | None) -> str | None:
@@ -104,27 +109,19 @@ def bestand_geojson(datensaetze, praezision: int = 5) -> dict:
             key=lambda x: (reihe.get(x[0], len(reihe)), x[0], x[1]),
         )
         typen.update(x[0] for x in anlagen)
-        p = {
-            "id": d.get("id"),
-            "name": d.get("name"),
-            "kategorie": d.get("kategorie"),
-            "adresse": adresse_text(a),
-            "plz": a.get("plz"),
-            "ort": a.get("ort"),
-            "strasse": a.get("strasse"),
-            "hausnummer": a.get("hausnummer"),
-            "sportarten": d.get("sportarten") or [],
-            "anlagen": anlagen,
-            "oeffentlicher_zugang": d.get("oeffentlicher_zugang"),
-            "schulsport": d.get("schulsport"),
-            "zuschauerplaetze": d.get("zuschauerplaetze"),
-            "betriebsstatus": d.get("betriebsstatus"),
-            "betreiber": d.get("betreiber"),
-            "betreiber_art": betreiber_art(d.get("betreiber")),
-            "eigentuemer": d.get("eigentuemer"),
-            "eigentuemer_art": betreiber_art(d.get("eigentuemer")),
-            "website": d.get("website"),
-        }
+        # alle Felder des Modells, flach: die Teile der Adresse stehen einzeln daneben,
+        # "adresse" ist der Text; Lage steckt in der Geometrie, Herkunft bleibt weg
+        p = {}
+        for feld in modell.Sportstaette.model_fields:
+            if feld == "adresse":
+                p["adresse"] = adresse_text(a)
+                p.update({k: a.get(k) for k in modell.Adresse.model_fields})
+            elif feld == "anlagen":
+                p["anlagen"] = anlagen
+            elif feld not in ("lage", "quellen"):
+                p[feld] = d.get(feld)
+        p["betreiber_art"] = betreiber_art(d.get("betreiber"))
+        p["eigentuemer_art"] = betreiber_art(d.get("eigentuemer"))
         punkt = [round(float(lage["lon"]), praezision), round(float(lage["lat"]), praezision)]
         features.append(
             {
@@ -283,6 +280,8 @@ def schreibe_webseite(
                 if ars := ars_von(*f["geometry"]["coordinates"]):
                     f["properties"]["ars"] = ars
         schreiben.append(("bestand.geojson", "Sportstätten (Datenbestand des Atlas)", fc))
+    # Datenmodell: Felder, Regeln und Beschriftungen für Formular, Popup und Übersicht
+    schreiben.append(("schema.json", "Datenmodell (JSON Schema)", modell.schema()))
     if gebiete:
         schreiben.append(
             (
