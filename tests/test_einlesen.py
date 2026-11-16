@@ -200,7 +200,7 @@ def test_organisationen(tmp_path):
 
 
 def test_trennzeichen_aus_der_kopfzeile():
-    from sportstaettenatlas.atlas import _trenner
+    from sportstaettenatlas.werte import trenner as _trenner
 
     assert _trenner('id;name;"Art, Typ"\n1;"a, b; c";x\n') == ";"
     assert _trenner('ID,Name,"Öffentlicher Zugang"\n1,"x; y",z\n') == ","

@@ -2,12 +2,10 @@
 
     daten/RP/07111-koblenz/<id>/<id>_meta.json     die Sportstätte
     daten/RP/07111-koblenz/<id>/<anlage-id>.json   je Sportanlage eine Datei
-    daten/organisationen/<id>.json                 Verzeichnis der Organisationen (Eigentümer, Betreiber, Nutzer)
+    daten/organisationen/<id>.json                 je Organisation eine Datei
 
-Der Kreis-Ordner ergibt sich aus der Lage (`kreis_ordner`). Jede Sportanlage nennt in
-`sportstaette_id` die Sportstätte ihres Ordners; `lies_bestand` prüft das. Felder, ihre
-Reihenfolge in den Dateien und die Regeln für die Werte kommen aus modell.py. Werte mit
-einer E-Mail-Adresse werden beim Schreiben entfernt.
+Felder, ihre Reihenfolge in den Dateien und die Regeln kommen aus modell.py. Werte mit einer
+E-Mail-Adresse entfallen beim Schreiben (`bereinigen`).
 """
 
 from __future__ import annotations
@@ -22,6 +20,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from .modell import (
+    EMAIL_MUSTER,
     Organisation,
     Sportanlage,
     Sportstaette,
@@ -31,7 +30,7 @@ from .modell import (
     zuordnung_hinweise,
 )
 
-EMAIL = re.compile(r"[\w.+-]+@[\w-]+(\.[\w-]+)+")
+EMAIL = re.compile(EMAIL_MUSTER)
 OHNE_KREIS = "ohne-kreis"
 KreisVon = Callable[[float, float], str]  # (lon, lat) → Name des Kreis-Ordners
 

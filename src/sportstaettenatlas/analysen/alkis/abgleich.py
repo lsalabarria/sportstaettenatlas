@@ -12,34 +12,13 @@ import logging
 from dataclasses import dataclass, field
 from typing import TYPE_CHECKING
 
+from ... import modell
+
 if TYPE_CHECKING:
     import geopandas as gpd
     import pandas as pd
 
 log = logging.getLogger(__name__)
-
-# Kategorie einer Sportstätte im Atlas → Typgruppe in ALKIS (für den Typvergleich typ_passt)
-KATEGORIE_ZU_GRUPPE = {
-    "sportplatz": "spielfeld",
-    "sporthalle": "halle",
-    "schwimmsportstätte": "becken",
-    "tennissportstätte": "spielfeld",
-    "reitsportstätte": "spezial",
-    "schießsportstätte": "spezial",
-    "roll- und skatesportstätte": "spezial",
-    "öffentlicher sport- und bewegungsraum": "sportgelegenheit",
-    "golfsportstätte": "spezial",
-    "eissportstätte": "eis",
-    "leichtathletiksportstätte": "leichtathletik",
-    "flugsportstätte": "spezial",
-    "radsportstätte": "spezial",
-    "wassersportstätte": "spezial",
-    "sportgelegenheiten in sonstigen gebäuden": "sportgelegenheit",
-    "wintersportstätte": "spezial",
-    "klettersportstätte": "spezial",
-    "motorsportstätte": "spezial",
-    "segelsportstätte": "spezial",
-}
 
 
 def _paare(kandidaten: gpd.GeoDataFrame, objekte: gpd.GeoDataFrame, max_m: float):
@@ -237,7 +216,7 @@ def aus_bestand(datensaetze, crs: str = "EPSG:25832") -> gpd.GeoDataFrame:
         )
     df = pd.DataFrame(zeilen, columns=list(zeilen[0]) if zeilen else ["alt_id", "lon", "lat"])
     df["alt_typgruppe"] = df.get("alt_typ", pd.Series(dtype=object)).map(
-        lambda t: KATEGORIE_ZU_GRUPPE.get(str(t).strip().lower()) if t else None
+        lambda t: modell.alkis_gruppe(t) if t else None
     )
     punkte = gpd.points_from_xy(df["lon"], df["lat"])
     return gpd.GeoDataFrame(

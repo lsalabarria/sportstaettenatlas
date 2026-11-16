@@ -1,22 +1,22 @@
 # Sportstättenatlas Rheinland-Pfalz
 
 Ein offener Sportstättenatlas. Der **Datenbestand** liegt im Git: nach Kreisen geordnet, ein
-Ordner je Sportstätte mit einer Datei je Sportanlage. Eine **statische Webseite** auf GitHub
-Pages zeigt ihn als Karte, Liste und Übersicht und nimmt Vorschläge über LimeSurvey entgegen.
-Der **ALKIS-Abgleich** prüft den Bestand gegen das Liegenschaftskataster.
+Ordner je Sportstätte mit einer Datei je Sportanlage, dazu ein Verzeichnis der Organisationen.
+Eine **statische Webseite** auf GitHub Pages zeigt ihn als Karte, Liste und Übersicht und nimmt
+Vorschläge über LimeSurvey entgegen. Der **ALKIS-Abgleich** prüft den Bestand gegen das
+Liegenschaftskataster.
+
+Was im Datenbestand steht, alle Felder und wie man Daten ändert oder einliest:
+**[daten/README.md](daten/README.md)**.
 
 ## Inhalt
 
 - [Aufbau](#aufbau)
 - [Installation](#installation)
-- [Datenmodell](#datenmodell)
-- [Datenbestand pflegen](#datenbestand-pflegen)
+- [Befehle](#befehle)
+- [Datenmodell im Code](#datenmodell-im-code)
 - [Webseite](#webseite)
-  - [Reiter](#reiter)
-  - [Vorschläge](#vorschläge)
-  - [Einstellungen (konfig.js)](#einstellungen-konfigjs)
-  - [Auf GitHub einrichten](#auf-github-einrichten)
-  - [Was nicht veröffentlicht wird](#was-nicht-veröffentlicht-wird)
+- [Kontaktdaten](#kontaktdaten)
 - [ALKIS-Abgleich](#alkis-abgleich)
 - [Code](#code)
 - [Tests](#tests)
@@ -24,10 +24,10 @@ Der **ALKIS-Abgleich** prüft den Bestand gegen das Liegenschaftskataster.
 ## Aufbau
 
 ```
-daten/      Datenbestand: Kreis / Sportstätte / Sportanlagen (im Git, von Hand gepflegt)
+daten/      Datenbestand (im Git, von Hand gepflegt) – siehe daten/README.md
 docs/       Webseite für GitHub Pages (von `seite` erzeugt, im Git)
 results/    Arbeitsordner: Downloads, Zwischenspeicher, Ergebnis des ALKIS-Abgleichs (nicht im Git)
-src/        Code (siehe Abschnitt „Code“)
+src/        Code (siehe „Code“)
 ```
 
 ```
@@ -49,106 +49,40 @@ sudo apt install graphviz graphviz-dev
 uv sync --extra doku
 ```
 
-## Datenmodell
+## Befehle
 
-Der Atlas kennt zwei Arten von Objekten: **Sportstätten** und ihre **Sportanlagen**.
+Alle mit `uv run sportstaettenatlas …`; `--help` zeigt die Optionen.
 
-```
-daten/RP/07111-koblenz/          Kreis – nur Ordnung im Git, ergibt sich aus der Lage
-  <id>/<id>_meta.json            Sportstätte: der Standort, ein Punkt auf der Karte
-  <id>/<anlage-id>.json          Sportanlage (0 … n): eine Einheit darin, z. B. ein Spielfeld
-```
+| Befehl | macht |
+|---|---|
+| `bestand DATEI.csv …` | CSV-Dateien in `daten/` übernehmen (`--probe`, `--modus`; Regeln: [CSV einlesen](daten/README.md#csv-einlesen)) |
+| `vorlage` | Vorlagen für eigene CSV-Dateien nach `results/vorlagen/` |
+| `organisationen` | Stand des Verzeichnisses; `--aus-bestand` legt fehlende Organisationen an |
+| `einordnen` | Sportstätten in den Ordner ihres Kreises verschieben |
+| `modell` | Feldtabellen in `daten/README.md` und Diagramm schreiben (`--migrieren`: Dateien an umbenannte Felder anpassen) |
+| `seite` | Webseite nach `docs/` (`--vorschau`: lokal ansehen) |
+| `-v alkis` | ALKIS-Abgleich (siehe unten) |
 
-- Eine **Sportstätte** ist der Standort (Sportpark, Schulsportzentrum, Freibad …) mit Name,
-  Kategorie, Adresse, Lage (immer WGS84), Eigentümer und Betreiber samt ihrer Art (Stadt/Gemeinde,
-  Sportverein im LSB RLP …).
-- Eine **Sportanlage** ist eine Einheit darin (Großspielfeld, Rundlaufbahn, Halle, Becken …)
-  mit Typ, Betriebsstatus, Sportarten und Wettkampfeignung, Maßen, Belag, Feldern je Sportart,
-  Becken, Ausstattung, Licht, Öffnungsstunden, Barrierefreiheit und Baukosten mit Währung.
-  Die Felder stammen aus dem bisherigen Atlas (Spalte „Legacy“ in `daten/README.md`); viele
-  sind nur für bestimmte Anlagen gedacht (Becken für Bäder), das Formular zeigt nur diese.
-- **Organisationen** (Vereine, Kommunen, Verbände, Unternehmen) stehen einmal im Verzeichnis
-  `daten/organisationen/` mit Name, Art, Webseite und weiteren Schreibweisen. Sportstätten
-  nennen sie beim Namen als Eigentümer, Betreiber oder Nutzer (`nutzer`: Vereine, die dort
-  Sport treiben). `uv run sportstaettenatlas organisationen` zeigt, wie viele Namen aus dem
-  Bestand im Verzeichnis stehen; `--aus-bestand` legt die fehlenden an (`--mit-art` übernimmt
-  dabei eine einheitlich angegebene Art).
-- Jede Sportanlage gehört zu genau einer Sportstätte. Ihr Typ soll zur Kategorie der
-  Sportstätte passen (`KATEGORIE_ANLAGEN` in `modell.py`); sonst gibt es einen Hinweis.
+Danach: `git add -A daten docs && git commit -m "…" && git push`.
 
-Das Modell steht an **einer** Stelle: `src/sportstaettenatlas/modell.py` (Pydantic). Dort
-stehen alle Felder mit Beschriftung, Auswahllisten (Kategorien, Betriebsstatus) und Regeln
-(PLZ mit fünf Ziffern, Baujahr 1800–2100 …). Alles andere richtet sich danach:
+## Datenmodell im Code
+
+Das Modell steht an **einer** Stelle: `src/sportstaettenatlas/modell.py` (Pydantic) – Felder,
+Auswahllisten, Regeln und die Zuordnungen ohne eigenes Feld (Anlagentypen je Kategorie,
+Organisationstypen, Kategorie ↔ ALKIS, Muster für Kontaktdaten). Daraus folgt:
 
 - `bestand`, `seite` und `alkis` prüfen `daten/` beim Lesen. Ein Fehler im Aufbau bricht ab,
-  ein Wert gegen die Regeln nicht: Er steht dann in `results/regelverstoesse.csv`.
-- Die Webseite liest `docs/daten/schema.json` (JSON Schema aus dem Modell): Formular, Popup
-  und Übersicht nehmen Felder, Beschriftungen und Regeln von dort.
-- Was das Formular an LimeSurvey übergibt, ist das Modell `Vorschlag`.
-- `uv run sportstaettenatlas modell` schreibt die Feldtabellen in `daten/README.md` und das
-  Diagramm `daten/datenmodell.svg` (läuft auch bei `seite` mit). Ein Test meldet, wenn
-  `daten/README.md` nicht mehr zum Modell passt.
+  ein Wert gegen die Regeln nicht; er steht in `results/regelverstoesse.csv`.
+- `seite` schreibt `docs/daten/schema.json`. Formular, Popup, Liste und Übersicht der Webseite
+  nehmen Felder, Beschriftungen, Regeln und Zuordnungen von dort.
+- `modell` erzeugt den Teil „Datenmodell“ in `daten/README.md`; ein Test meldet, wenn er nicht
+  mehr passt. Die Tabellen hängen von der Pydantic-Version ab – also mit der aus `uv.lock`
+  erzeugen.
 
-Ein neues Feld ist also eine Zeile in `modell.py`, danach `seite` und `modell` ausführen.
-Wird ein Feld umbenannt, kommt der alte Name in `UMBENANNT`; `uv run sportstaettenatlas modell
---migrieren` passt dann die Dateien in `daten/` an (und bringt ihre Felder in die Reihenfolge
-des Modells).
-
-Felder, Beispiele, Typen der Anlagen und Regeln zum Ändern: **[daten/README.md](daten/README.md)**.
-
-## Datenbestand pflegen
-
-Die Dateien in `daten/` sind die Quelle. Änderungen werden dort gemacht – direkt auf GitHub
-oder per Pull Request – und erscheinen beim nächsten `seite` auf der Karte.
-
-```bash
-uv run sportstaettenatlas bestand sportstaetten.csv --probe   # zeigen, welche Spalte wohin geht
-uv run sportstaettenatlas bestand sportstaetten.csv           # übernehmen (nur Neues)
-uv run sportstaettenatlas bestand anlagen.csv --modus ergaenzen
-uv run sportstaettenatlas vorlage                             # Vorlagen nach results/vorlagen/
-uv run sportstaettenatlas einordnen                           # Sportstätten in ihren Kreis verschieben
-```
-
-**CSV einlesen.** `bestand` nimmt eine oder mehrere CSV-Dateien und schreibt sie direkt in die
-JSON-Dateien unter `daten/`. Es erkennt drei Arten:
-
-- den **Export des bisherigen Atlas** (`sportstaetten.csv`, Spalten ID, Name, …, Latitude,
-  Longitude),
-- eine Tabelle der **Sportstätten** (eine Zeile je Sportstätte; Spalte `anlagen` darf die
-  Typen der Sportanlagen nennen),
-- eine Tabelle der **Sportanlagen** (eine Zeile je Anlage, mit `sportstaette_id`; `id` für
-  vorhandene Anlagen, auch die Kurz-ID von der Webseite),
-- eine Tabelle der **Organisationen** (`name` und `typ` bzw. „Art“; vorhandene findet der Name).
-
-Die Spalten werden über das Datenmodell erkannt: Feldname (`plz`), Beschriftung („PLZ“) oder
-Name im alten Atlas („postleitzahl“, „bodenbelag_anz_sand“), Groß-/Kleinschreibung egal.
-`--probe` zeigt die Zuordnung, ohne etwas zu schreiben. Werte werden nach dem Feld gelesen
-(„X“ → ja, „1.200“ → 1200, „Sand: 3; Rasen: 1“, Listen mit `;`); Lage in Grad oder UTM. Eigenes
-Format: `vorlage` schreibt beide Tabellen mit allen Spalten und einer Beispielzeile (die vor dem
-Einlesen löschen). Die Regeln stehen im Kopf von `src/sportstaettenatlas/einlesen.py`.
-
-| `--modus` | neue Sportstätten/Anlagen | vorhandene: leere Felder | vorhandene: gefüllte Felder |
-|---|---|---|---|
-| `neu` (Standard) | anlegen | – | – |
-| `ergaenzen` | anlegen | füllen | bleiben |
-| `aktualisieren` | anlegen | füllen | überschreiben |
-
-- Gelöscht wird nie etwas; leere Zellen ändern nichts. Eine Tabelle von Sportanlagen legt auch
-  im Modus `neu` Anlagen bei vorhandenen Sportstätten an.
-- Sportstätten ohne `id` bekommen eine feste ID aus Name und Lage (gleiche Zeile, gleiche ID).
-- Spalten mit Kontaktdaten (E-Mail, Telefon, Ansprechpartner) werden nie gelesen, und jeder
-  Wert mit einer E-Mail-Adresse entfällt. Die CSV-Dateien selbst gehören nicht ins Repository.
-- Der Kreis-Ordner ergibt sich aus der Lage (Verwaltungsgebiete VG250 des BKG, beim ersten
-  Lauf geladen und unter `results/cache/` abgelegt). Liegt eine Sportstätte nach einer
-  Änderung ihrer Lage in einem anderen Kreis, weist `seite` darauf hin; `einordnen`
-  verschiebt sie.
+Ein neues Feld ist eine Zeile in `modell.py`, danach `modell` und `seite`. Wird ein Feld
+umbenannt, kommt der alte Name in `UMBENANNT`, danach `modell --migrieren`.
 
 ## Webseite
-
-```bash
-uv run sportstaettenatlas seite --vorschau   # docs/ erzeugen und lokal ansehen
-git add -A daten docs && git commit -m "Daten aktualisiert" && git push
-```
 
 `seite` liest `daten/` und das Ergebnis des ALKIS-Abgleichs und schreibt die Webseite nach
 `docs/`. GitHub Pages liefert den Ordner aus, ohne Server und Datenbank.
@@ -157,36 +91,33 @@ git add -A daten docs && git commit -m "Daten aktualisiert" && git push
 
 | Reiter | Inhalt |
 |---|---|
-| **Karte** | ein Punkt je Sportstätte; Filter nach den Sportanlagen darin (nach Gruppen), Kategorie, Betreiber-Art und Sportarten; das Fenster einer Sportstätte listet ihre Anlagen |
-| **Liste** | alle Sportstätten, Sportanlagen bzw. Organisationen (als Eigentümer, Betreiber oder Nutzer), filterbar nach Sportart, Kategorie, Typ und Text, sortierbar (auch nach Befüllung); ein Klick zeigt rechts alle Angaben der Sportstätte und ihrer Anlagen (auf Wunsch auch die leeren), „Karte“ springt zum Punkt. Auswahl steht in der Adresse, z. B. `#ansicht=liste&teil=anlagen&sportart=Fußball` |
-| **Übersicht** | Sportstätten und Sportanlagen: Zahlen, Befüllung der Angaben nach Abschnitten (Felder nur unter den Anlagen, für die sie gedacht sind), Typen, die nicht zur Kategorie passen, je Kreis |
-| **Vorschlag** | Formular für neue Sportstätten und Änderungen, weiter zu LimeSurvey |
+| **Karte** | ein Punkt je Sportstätte; Filter nach Sportanlagen (nach Gruppen), Kategorie, Art des Betreibers und Sportarten; das Fenster einer Sportstätte listet ihre Anlagen |
+| **Liste** | alle Sportstätten, Sportanlagen bzw. Organisationen (als Eigentümer, Betreiber oder Nutzer), filterbar nach Sportart, Kategorie, Typ und Text, sortierbar (auch nach Befüllung); ein Klick zeigt alle Angaben, „Karte“ springt zum Punkt |
+| **Übersicht** | Zahlen, Befüllung der Angaben nach Abschnitten (Felder nur unter den Anlagen, für die sie gedacht sind), Typen, die nicht zur Kategorie passen, je Kreis |
+| **Vorschlag** | Formular für neue Sportstätten, Änderungen und Organisationen, weiter zu LimeSurvey |
 | **Analysen** | der ALKIS-Abgleich; lädt erst beim Öffnen |
 
-In allen Reitern lässt sich oben ein Kreis, eine Verbandsgemeinde oder Gemeinde wählen.
-Reiter und Gebiet stehen in der Adresse (`…/#ansicht=uebersicht&gebiet=07137`). Die Suche
-oben links findet Sportstätten, Anlagentypen und Gebiete; mit Enter auch Orte über
-OpenStreetMap. Ob ein Betreiber Verein, Kommune oder sonstige ist, folgt aus der angegebenen
-Art (bei der Sportstätte oder im Verzeichnis der Organisationen); ohne Angabe bleibt sie
-unbekannt – aus dem Namen wird nichts geschätzt.
+Oben lässt sich ein Kreis, eine Verbandsgemeinde oder Gemeinde wählen. Reiter, Gebiet und
+Auswahl stehen in der Adresse (`…/#ansicht=liste&teil=anlagen&sportart=Fußball&gebiet=07137`).
+Die Suche oben links findet Sportstätten, Anlagentypen und Gebiete; mit Enter auch Orte über
+OpenStreetMap.
 
 ### Vorschläge
 
-Das Formular kennt vier Arten: eine **neue Sportstätte** mit ihren Sportanlagen, die
-**Angaben einer Sportstätte ändern**, ihre **Sportanlagen ändern** (hinzufügen, ändern,
-entfernen) oder eine **Organisation** eintragen, ändern oder löschen (`organisation_id`,
-`organisation`, `loeschen`; ein Name darf nur bei einer Organisation stehen). Es meldet mögliche Doppelungen (höchstens 60 m entfernt, gleiche Kategorie in
-250 m, sehr ähnlicher Name oder gleiche Adresse). „Weiter zu LimeSurvey“ öffnet die Umfrage
-aus `konfig.js`. Sie hat nur zwei Fragen: `data` (versteckt) bekommt den ganzen Vorschlag als
-JSON nach dem Modell `Vorschlag`, `kommentar` die Anmerkung. Ändert sich das Datenmodell,
-bleibt die Umfrage, wie sie ist. Vorher prüft das Formular die Regeln des Modells (Pflichtfelder,
-Auswahl, Wertebereiche, Formate). Bei Sportanlagen steht `anlagen` für den Stand nach dem
-Vorschlag; vorhandene tragen ihre Kurz-ID (Anfang des Dateinamens, z. B. `17abb3c4`), entfernte
-stehen in `entfernte_anlagen`. Die Umfrage zum Importieren in LimeSurvey:
+Das Formular kennt vier Arten: **neue Sportstätte** mit ihren Sportanlagen, **Angaben einer
+Sportstätte ändern**, ihre **Sportanlagen ändern** (hinzufügen, ändern, entfernen) und
+**Organisation** eintragen, ändern oder löschen. Es prüft die Regeln des Modells und meldet
+mögliche Doppelungen (höchstens 60 m entfernt, gleiche Kategorie in 250 m, sehr ähnlicher
+Name oder gleiche Adresse; bei Organisationen: Name schon im Verzeichnis).
+
+„Weiter zu LimeSurvey“ öffnet die Umfrage aus `konfig.js`. Sie hat zwei Fragen: `data`
+(versteckt) bekommt den ganzen Vorschlag als JSON nach dem Modell `Vorschlag` (Felder in
+[daten/README.md](daten/README.md#datenmodell)), `kommentar` die Anmerkung. Ändert sich das
+Datenmodell, bleibt die Umfrage, wie sie ist. Die Umfrage zum Importieren:
 `sportstaette_vorschlagen.lss` (nicht im Repository, enthält die Adresse der Verwaltung).
 
-„Bug melden“ oben öffnet ein Ticket auf GitHub (Vorlage `.github/ISSUE_TEMPLATE/fehler.yml`).
-Tickets sind öffentlich.
+„Bug melden“ oben öffnet ein öffentliches Ticket auf GitHub (Vorlage
+`.github/ISSUE_TEMPLATE/fehler.yml`).
 
 ### Einstellungen (konfig.js)
 
@@ -207,10 +138,13 @@ Repository → *Settings* → *Pages*: Source „Deploy from a branch“, Branch
 `/docs`. Nach ein bis zwei Minuten ist die Seite unter
 `https://<benutzer>.github.io/<repository>/` erreichbar.
 
-### Was nicht veröffentlicht wird
+## Kontaktdaten
 
-E-Mail-Adressen und Telefonnummern sowie jeder Wert, der eine E-Mail-Adresse enthält – im
-Bestand wie im ALKIS-Abgleich.
+E-Mail-Adressen und Telefonnummern werden weder gespeichert noch veröffentlicht – im Bestand,
+im Verzeichnis der Organisationen, in Vorschlägen und im ALKIS-Abgleich. Felder und Spalten,
+die so heißen, werden nie gelesen, und jeder Wert mit einer E-Mail-Adresse entfällt (Muster
+`EMAIL_MUSTER` und `KONTAKT_NAME` in `modell.py`). Exporte und andere CSV-Dateien mit solchen
+Angaben gehören nicht ins Repository.
 
 ## ALKIS-Abgleich
 
@@ -220,7 +154,9 @@ uv run sportstaettenatlas seite      # Ergebnis auf die Webseite bringen
 ```
 
 Der Abgleich leitet aus dem Liegenschaftskataster (ALKIS, WFS des LVermGeo RLP,
-dl-de/by-2-0) eigene Sportstätten und Sportanlagen ab und vergleicht sie mit `daten/`:
+dl-de/by-2-0) eigene Sportstätten und Sportanlagen ab und vergleicht sie mit `daten/`. Er
+schreibt nur nach `results/`, nie nach `daten/`; was er findet, kommt über einen Vorschlag
+in den Bestand.
 
 1. **Laden:** Sport-, Freizeit- und Erholungsflächen sowie Gebäude und Bauwerke mit
    Sportfunktion, kachelweise für ganz Rheinland-Pfalz. Der erste Lauf dauert lange; danach
@@ -259,21 +195,19 @@ Ein Bad besteht dort oft aus mehreren Gebäudeteilen, und auch private Becken he
 
 ```
 src/sportstaettenatlas/
-  modell.py       Datenmodell (Pydantic): Felder, Regeln, Schema, Doku – die einzige Stelle
-  cli.py          Befehle bestand, vorlage, einordnen, seite, modell, alkis
+  modell.py       Datenmodell (Pydantic): Felder, Regeln, Zuordnungen, Schema, Doku
+  cli.py          Befehle (siehe „Befehle“)
+  bestand.py      daten/ lesen, schreiben und zusammenführen; Kreis-Ordner; Organisationen
   einlesen.py     CSV-Dateien lesen (Spalten über das Modell), Vorlagen
-  atlas.py        Atlas-Export lesen
-  bestand.py      daten/ lesen und schreiben, Kreis-Ordner
+  atlas.py        Export des bisherigen Atlas lesen
+  werte.py        Werte aus Text lesen (Zahlen, ja/nein, Listen), CSV-Dateien öffnen
   anlagen.py      Typen und Gruppen der Sportanlagen
   gebiete.py      Verwaltungsgebiete (VG250) und Zuordnung zur Gemeinde
   seite.py        Webseite nach docs/ schreiben
   hilfen.py       Arbeitsordner, User-Agent
-  web/            die Webseite: index.html, stil.css, Skripte, Vorlagen (konfig.js …)
+  web/            die Webseite (Dateien im Kopf von web/__init__.py)
   analysen/alkis/ ALKIS-Abgleich (Aufbau im Kopf von __init__.py)
 ```
-
-Die Skripte der Webseite sind normale Browser-Skripte ohne Build-Schritt (Übersicht im Kopf
-von `web/__init__.py`).
 
 ## Tests
 

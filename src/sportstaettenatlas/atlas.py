@@ -1,61 +1,20 @@
 """Export des bisherigen Sportstättenatlas RLP lesen (CSV, eine Zeile je Sportstätte).
 
-Spalten ID, Name, Sportstättenkategorie, …, Sportanlagen, Latitude, Longitude. Achtung:
-Unter "Latitude"/"Longitude" stehen UTM-Werte (Hochwert/Rechtswert, EPSG:25832); echte
-Grad-Werte werden erkannt. Die E-Mail-Spalte wird nie gelesen. Der Export enthält
-Kontaktdaten und gehört nicht ins Repository.
+Achtung: Unter "Latitude"/"Longitude" stehen UTM-Werte (Hochwert/Rechtswert, EPSG:25832);
+echte Grad-Werte werden erkannt. Spalten mit Kontaktdaten liest `lies_export` nicht.
 """
 
 from __future__ import annotations
 
-import csv
 import functools
-import io
 import re
 from collections.abc import Iterator
 from pathlib import Path
 
 from . import anlagen as anlagen_typen
+from . import werte
 
 PFLICHT = {"ID", "Name", "Sportstättenkategorie", "Latitude", "Longitude"}
-
-
-def _text(roh: bytes) -> str:
-    for enc in ("utf-8-sig", "cp1252"):
-        try:
-            return roh.decode(enc)
-        except UnicodeDecodeError:
-            continue
-    return roh.decode("utf-8", errors="replace")
-
-
-def _trenner(text: str) -> str:
-    """Trennzeichen aus der Kopfzeile: das häufigste von ; , und Tab (außerhalb von
-    Anführungszeichen). Fester als csv.Sniffer, dessen Ergebnis je nach Python-Version und
-    Inhalt der ersten Zeilen schwankt."""
-    kopf = re.sub(r'"[^"]*"', "", text.split("\n", 1)[0])
-    zahl = {t: kopf.count(t) for t in (";", ",", "\t")}
-    return max(zahl, key=zahl.get) if any(zahl.values()) else ","
-
-
-def _zeilen(text: str) -> list[dict]:
-    return list(csv.DictReader(io.StringIO(text), delimiter=_trenner(text)))
-
-
-def _zahl(v: str | None) -> float | None:
-    try:
-        return float(str(v).strip().replace(",", ".")) if v and str(v).strip() else None
-    except ValueError:
-        return None
-
-
-def _datum(name: str) -> str:
-    """Stand aus dem Dateinamen: 2026-11-04 oder 04112026."""
-    if m := re.search(r"(\d{4}-\d{2}-\d{2})", name):
-        return m.group(1)
-    if m := re.search(r"(?<!\d)(\d{2})(\d{2})(20\d{2})(?!\d)", name):
-        return f"{m.group(3)}-{m.group(2)}-{m.group(1)}"
-    return ""
 
 
 @functools.cache
@@ -75,22 +34,6 @@ def lage(a: float, b: float) -> dict:
     return {"lon": round(lon, 6), "lat": round(lat, 6)}
 
 
-def _ja_nein(wert: str) -> str | None:
-    w = wert.lower()
-    return w if w in ("ja", "nein") else None
-
-
-def _ganzzahl(wert: str) -> int | None:
-    z = _zahl(wert)
-    return int(z) if z is not None and z == int(z) and z >= 0 else None
-
-
-def _liste(wert: str) -> list[str]:
-    """ "A, B (x, y), C" → ["A", "B (x, y)", "C"]; Kommas in Klammern trennen nicht,
-    "Weit-, Dreisprunganlage" bleibt eine Anlage."""
-    return anlagen_typen.zusammenfuegen(re.split(r",\s*(?![^()]*\))", wert or ""))
-
-
 def anlagen_aus(bezeichnungen: list[str]) -> list[dict]:
     """Bezeichnungen des Atlas → Sportanlagen mit einheitlichem Typ; eine abweichende
     Schreibweise ("Großspielfeld (ab 5.000 m²)") bleibt unter quellen.atlas_rlp."""
@@ -104,16 +47,19 @@ def anlagen_aus(bezeichnungen: list[str]) -> list[dict]:
 def lies_export(pfad: Path, lage_aus=lage) -> Iterator[dict]:
     """Atlas-Export → Sportstätten im Format des Datenbestands (mit Liste "anlagen")."""
     pfad = Path(pfad)
-    zeilen = _zeilen(_text(pfad.read_bytes()))
+    zeilen = werte.zeilen(werte.text(pfad.read_bytes()))
     if not zeilen or not PFLICHT <= set(zeilen[0]):
         raise ValueError(f"{pfad.name}: Spalten {sorted(PFLICHT)} fehlen – kein Atlas-Export?")
-    stand = _datum(pfad.name)
+    stand = werte.datum_aus_name(pfad.name)
     for z in zeilen:
 
         def g(k: str, z: dict = z) -> str:
             return (z.get(k) or "").strip()
 
-        a, b = _zahl(g("Latitude")), _zahl(g("Longitude"))
+        a, b = (
+            werte.oder_none(werte.zahl, g("Latitude")),
+            werte.oder_none(werte.zahl, g("Longitude")),
+        )
         yield {
             "id": re.sub(r"[^A-Za-z0-9_-]+", "-", g("ID")).strip("-").lower(),
             "name": g("Name"),
@@ -125,14 +71,14 @@ def lies_export(pfad: Path, lage_aus=lage) -> Iterator[dict]:
                 "ort": g("Stadt"),
             },
             "lage": lage_aus(a, b) if a is not None and b is not None else None,
-            "oeffentlicher_zugang": _ja_nein(g("Öffentlicher Zugang")),
-            "schulsport": _ja_nein(g("Schulsport")),
-            "zuschauerplaetze": _ganzzahl(g("Zuschauerplätze Gesamt")),
+            "oeffentlicher_zugang": werte.oder_none(werte.ja_nein, g("Öffentlicher Zugang")),
+            "schulsport": werte.oder_none(werte.ja_nein, g("Schulsport")),
+            "zuschauerplaetze": werte.oder_none(werte.ganzzahl, g("Zuschauerplätze Gesamt")),
             "betriebsstatus": g("Betriebsstatus"),
             "eigentuemer": g("Name des Eigentümers"),
             "betreiber": g("Name des Betreibers"),
             "website": g("Webseite"),
-            "sportarten": _liste(g("Sportarten")),
-            "anlagen": anlagen_aus(_liste(g("Sportanlagen"))),
+            "sportarten": werte.liste(g("Sportarten")),
+            "anlagen": anlagen_aus(werte.liste(g("Sportanlagen"))),
             "quellen": {"atlas_rlp": {"id": g("ID"), "datei": pfad.name, "stand": stand}},
         }

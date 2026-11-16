@@ -8,9 +8,6 @@
 const VORSCHLAG_FRAGEN = { data: "data", kommentar: "kommentar",
   ...(KONFIG.vorschlag_felder && KONFIG.vorschlag_felder.data ? KONFIG.vorschlag_felder : {}) };
 const URL_HOECHSTENS = 8000;  // längere Adressen lehnen manche Webserver ab
-// ALKIS-Typgruppe → Kategorie des Atlas (nur Vorbelegung, im Formular änderbar)
-const GRUPPE_KATEGORIE = { halle: "Sporthalle", spielfeld: "Sportplatz",
-  becken: "Schwimmsportstätte", leichtathletik: "Sportplatz" };
 
 function normName(s) {
   return String(s || "").toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe")
@@ -906,7 +903,7 @@ function ansichtVorschlag(bestand) {
     if (v.art === "organisation") return weiterOrg(v);
     if (v.art !== "neu" && !original) fehler.push("Welche Sportstätte soll geändert werden? (oben auswählen)");
     fehler.push(...regelVerstoesse(v));
-    if (/[\w.+-]+@[\w-]+\.[\w.]+/.test(JSON.stringify(v))) fehler.push("Bitte keine E-Mail-Adressen eintragen");
+    if (enthaeltEmail(v)) fehler.push("Bitte keine E-Mail-Adressen eintragen");
     const geaendert = aenderungen(v).map(([k]) => k);
     if (original && !geaendert.length && !v.anmerkung) {
       fehler.push(v.art === "anlagen" ? "Änderung: mindestens eine Sportanlage hinzufügen, ändern oder entfernen"
@@ -951,7 +948,7 @@ function ansichtVorschlag(bestand) {
     if (orgOriginal && orgOriginal.imVerzeichnis && !v.loeschen && !geaendert.length && !v.anmerkung) {
       fehler.push("Änderung: mindestens ein Feld ändern, löschen wählen oder eine Anmerkung schreiben");
     }
-    if (/[\w.+-]+@[\w-]+\.[\w.]+/.test(JSON.stringify(v.organisation))) fehler.push("Bitte keine E-Mail-Adressen eintragen");
+    if (enthaeltEmail(v.organisation)) fehler.push("Bitte keine E-Mail-Adressen eintragen");
     const daten = { version: 1, art: "organisation" };
     if (orgOriginal && orgOriginal.imVerzeichnis) daten.organisation_id = orgOriginal.o.id;
     if (v.loeschen) daten.loeschen = true;
@@ -1006,7 +1003,7 @@ document.addEventListener("click", ev => {
   } else {
     const s = ALKIS_STAETTEN[a.dataset.vorschlagAlkis];
     if (!s) return;
-    v.neu({ name: s.name, kategorie: GRUPPE_KATEGORIE[s.typgruppe] || "", adresse: zerlegeAdresse(s.adresse),
+    v.neu({ name: s.name, kategorie: (ATLAS().alkis_kategorie || {})[s.typgruppe] || "", adresse: zerlegeAdresse(s.adresse),
       betreiber: s.betreiber, eigentuemer: s.eigentuemer, website: s.website, lage: { lat: s.lat, lon: s.lon },
       anmerkung: `Aus ALKIS übernommen (${s.typ || s.typgruppe || "Sportstätte"}).` },
       "ALKIS " + (s.alkis_oid || s.sportstaette_id));

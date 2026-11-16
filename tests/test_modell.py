@@ -1,6 +1,7 @@
 """Datenmodell (modell.py): Regeln, Reihenfolge in den Dateien, Schema, Doku."""
 
 import json
+import re
 from pathlib import Path
 
 import pytest
@@ -244,3 +245,30 @@ def test_art_von_eigentuemer_und_betreiber():
     assert betreiber_art("TuS Musterdorf e.V.") is None  # ohne Art: unbekannt
     assert betreiber_art("Stadt X", "Privatwirtschaftlich/kommerziell") == "sonstige"
     assert set(modell.ORGANISATIONSTYPEN.values()) == {"Verein", "Kommune", "sonstige"}
+
+
+def test_kategorie_und_alkis():
+    regeln = Path(modell.__file__).parent / "analysen" / "alkis" / "regeln.toml"
+    gruppen = set(re.findall(r'typgruppe = "([a-z_]+)"', regeln.read_text("utf-8")))
+    assert set(modell.KATEGORIE_ALKIS) == set(modell.KATEGORIEN)  # jede Kategorie genau einmal
+    for g in (g for v in modell.KATEGORIE_ALKIS.values() for g in v):
+        assert g in gruppen, g
+    assert modell.alkis_gruppe("sportplatz") == "spielfeld"
+    assert modell.alkis_gruppe("Fitnessstudio") is None
+    k = modell.alkis_kategorie()
+    assert k["leichtathletik"] == "Sportplatz" and k["halle"] == "Sporthalle"
+    assert "spezial" not in k
+
+
+def test_kontaktdaten_an_einer_stelle():
+    from sportstaettenatlas import bestand, einlesen, seite
+
+    assert bestand.EMAIL.pattern == modell.EMAIL_MUSTER
+    assert einlesen.KONTAKT.pattern == seite.KONTAKT.pattern == modell.KONTAKT_NAME
+    assert modell.schema()["atlas"]["email"] == modell.EMAIL_MUSTER
+    k = re.compile(modell.KONTAKT_NAME, re.IGNORECASE)
+    for name in ("E-Mail", "alt_email", "Telefon", "Fax", "Ansprechpartner"):
+        assert k.search(name), name
+    for m in modell.MODELLE:  # kein Feld des Modells sieht wie Kontaktdaten aus
+        for name, f in m.model_fields.items():
+            assert not k.search(name) and not k.search(f.title or ""), name

@@ -1,14 +1,5 @@
-"""Kommandozeile.
-
-sportstaettenatlas bestand CSV …    CSV-Dateien in den Datenbestand daten/ übernehmen
-                                    (Atlas-Export, Sportstätten, Sportanlagen; einlesen.py)
-sportstaettenatlas vorlage          Vorlagen für eigene CSV-Dateien
-sportstaettenatlas organisationen   Verzeichnis der Organisationen (Eigentümer, Betreiber, Nutzer) (--aus-bestand)
-sportstaettenatlas einordnen        Sportstätten in den Ordner ihres Kreises verschieben
-sportstaettenatlas seite            Webseite für GitHub Pages (docs/) bauen
-sportstaettenatlas modell           Datenmodell in daten/README.md und daten/datenmodell.svg
-                                    (--migrieren: Dateien in daten/ anpassen)
-sportstaettenatlas alkis            ALKIS-Abgleich gegen daten/ (Ergebnis in results/out)
+"""Kommandozeile `sportstaettenatlas` – die Befehle stehen in README.md („Befehle“) und
+unter `sportstaettenatlas --help`.
 """
 
 from __future__ import annotations

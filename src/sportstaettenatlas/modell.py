@@ -1,15 +1,7 @@
 """Datenmodell des Sportstättenatlas – die einzige Stelle, an der Felder und Regeln stehen.
 
-Ein neues Feld, eine neue Auswahl oder eine neue Regel wird nur hier eingetragen. Daraus
-leiten sich ab:
-
-- Prüfen beim Lesen und Schreiben von daten/ (bestand.py) und Reihenfolge der Felder
-  in den JSON-Dateien
-- Eigenschaften der Sportstätten auf der Karte (seite.bestand_geojson)
-- docs/daten/schema.json (JSON Schema): Formular „Vorschlag“, Popup und Übersicht der Webseite
-- `Vorschlag`: der JSON-Text, den das Formular an LimeSurvey übergibt (Frage „data“)
-- daten/README.md (Feldtabellen und Beispiele) und daten/datenmodell.svg (Diagramm)
-  – `sportstaettenatlas modell`, läuft auch bei `seite` mit
+Was daraus abgeleitet wird: README.md („Datenmodell im Code“); was die Felder bedeuten:
+daten/README.md (zum Teil aus diesem Modul erzeugt).
 
 Angaben je Feld (json_schema_extra, landen im Schema):
   gruppe      Abschnitt im Formular und in der Übersicht (Reihenfolge: GRUPPEN bzw.
@@ -188,6 +180,55 @@ KATEGORIE_ANLAGEN: dict[str, tuple[str, ...]] = {
     ),
     "Eissportstätte": ("Eissporthalle", "Eissportanlage ungedeckt"),
 }
+
+# Kategorie → Typgruppen der ALKIS-Regeln (analysen/alkis/regeln.toml). Die erste Gruppe nutzt
+# der ALKIS-Abgleich für den Typvergleich; umgekehrt bekommt eine aus ALKIS übernommene
+# Sportstätte die erste Kategorie, die die Gruppe nennt (alkis_kategorie). Leer: keine Gruppe.
+KATEGORIE_ALKIS: dict[str, tuple[str, ...]] = {
+    "Sportplatz": ("spielfeld", "leichtathletik"),
+    "Sporthalle": ("halle",),
+    "Tennissportstätte": ("spielfeld",),
+    "Öffentlicher Sport- und Bewegungsraum": ("sportgelegenheit",),
+    "Reitsportstätte": ("spezial",),
+    "Schwimmsportstätte": ("becken",),
+    "Schießsportstätte": ("spezial",),
+    "Fitnessstudio": (),
+    "Golfsportstätte": ("spezial",),
+    "Roll- und Skatesportstätte": ("spezial",),
+    "Sportgelegenheiten in sonstigen Gebäuden": ("sportgelegenheit",),
+    "Radsportstätte": ("spezial",),
+    "Flugsportstätte": ("spezial",),
+    "Wintersportstätte": ("spezial",),
+    "Wassersportstätte": ("spezial",),
+    "Klettersportstätte": ("spezial",),
+    "Motorsportstätte": ("spezial",),
+    "Eissportstätte": ("eis",),
+    "Leistungsstützpunkt": (),
+    "Segelsportstätte": ("spezial",),
+}
+
+
+def alkis_gruppe(kategorie: str | None) -> str | None:
+    """Typgruppe in ALKIS für eine Kategorie (Groß-/Kleinschreibung egal); None ohne."""
+    k = (kategorie or "").strip().lower()
+    gruppen = next((v for kat, v in KATEGORIE_ALKIS.items() if kat.lower() == k), ())
+    return gruppen[0] if gruppen else None
+
+
+def alkis_kategorie() -> dict[str, str]:
+    """Typgruppe in ALKIS → Kategorie für eine übernommene Sportstätte ("spezial" sagt nichts)."""
+    out: dict[str, str] = {}
+    for kat, gruppen in KATEGORIE_ALKIS.items():
+        for g in gruppen:
+            if g != "spezial":
+                out.setdefault(g, kat)
+    return out
+
+
+# Kontaktdaten werden nie gespeichert oder veröffentlicht: Werte mit einer E-Mail-Adresse
+# (EMAIL_MUSTER, auch im Formular) und Felder bzw. Spalten, deren Name so aussieht (KONTAKT_NAME)
+EMAIL_MUSTER = r"[\w.+-]+@[\w-]+(\.[\w-]+)+"
+KONTAKT_NAME = r"e-?mail|telefon|telefax|(^|[^a-z])fax([^a-z]|$)|handy|mobilnummer|mobiltelefon|kontakt|ansprechpartner"
 
 # Abschnitte des Formulars in dieser Reihenfolge
 GRUPPEN = ("Sportstätte", "Adresse und Lage", "Nutzung", "Sportarten", "Organisationen")
@@ -1048,10 +1089,15 @@ def schema() -> dict:
     for m in MODELLE:
         for name, feld in m.model_fields.items():
             s["$defs"][m.__name__]["properties"][name].setdefault("title", feld.title)
-    s["$defs"]["Sportstaette"]["anlagen_je_kategorie"] = {
-        k: passende_typen(k) for k in KATEGORIEN if passende_typen(k) is not None
+    # Zuordnungen und Regeln, die nicht an einem Feld hängen (für die Webseite)
+    s["atlas"] = {
+        "anlagen_je_kategorie": {
+            k: passende_typen(k) for k in KATEGORIEN if passende_typen(k) is not None
+        },
+        "organisationstypen": ORGANISATIONSTYPEN,
+        "alkis_kategorie": alkis_kategorie(),
+        "email": EMAIL_MUSTER,
     }
-    s["$defs"]["Sportstaette"]["organisationstypen"] = ORGANISATIONSTYPEN
     s["description"] = "Datenmodell des Sportstättenatlas (aus src/sportstaettenatlas/modell.py)"
     return s
 

@@ -1,31 +1,10 @@
-"""CSV-Dateien in den Datenbestand daten/ übernehmen.
+"""CSV-Dateien in den Datenbestand daten/ übernehmen (Befehl `bestand`).
 
-Erkannt werden drei Arten von Tabellen:
-
-- **Export des bisherigen Atlas** (Spalten ID, Name, Sportstättenkategorie, …, Latitude,
-  Longitude): liest atlas.lies_export.
-- **Sportstätten**, eine Zeile je Sportstätte: Spalten wie die Felder von `Sportstaette`.
-  Eine Spalte `anlagen` darf die Typen der Sportanlagen als Liste nennen.
-- **Sportanlagen**, eine Zeile je Anlage: Spalten wie die Felder von `Sportanlage`, dazu
-  `sportstaette_id` (Pflicht) und `id` (die UUID oder ihre ersten 8 Zeichen, für vorhandene
-  Anlagen; neue ohne).
-- **Organisationen** (Vereine, Kommunen, Verbände …), eine Zeile je Organisation: Spalten
-  wie die Felder von `Organisation` – erkannt an `name` und `typ` bzw. „Art“ ohne Kategorie
-  und Lage. Vorhandene findet die ID oder der Name.
-
-Spaltennamen werden über das Modell erkannt, ohne Rücksicht auf Groß-/Kleinschreibung,
-Umlaute und Satzzeichen: der Feldname (`plz` oder `adresse.plz`), die Beschriftung („PLZ“)
-oder der Name im alten Atlas („postleitzahl“, „bodenbelag_anz_sand“). Werte:
-
-    Listen               mit ; getrennt (ohne ; auch mit Komma): Fußball; Leichtathletik
-    Anzahl je Wert       Sand: 3; Rasen: 1
-    ja/nein              ja, nein (auch 1/0, x, true/false, wahr/falsch)
-    Zahlen               12,5 oder 12.5; 1.200.000 oder 1200000
-    Auswahl              wie im Modell, Groß-/Kleinschreibung egal
-    Lage                 lat/lon in Grad (WGS84); UTM-Werte (EPSG:25832) werden umgerechnet
-
-Spalten mit Kontaktdaten (E-Mail, Telefon, Ansprechpartner) werden nie gelesen. Die Vorlage
-(`sportstaettenatlas vorlage`) schreibt beide Tabellen mit allen Spalten und einem Beispiel.
+`lies_csv` erkennt die Art der Tabelle (Atlas-Export, Sportstätten, Sportanlagen,
+Organisationen), ordnet die Spalten über das Modell zu (`spalten_namen`) und liest die
+Werte nach dem Typ des Feldes (`wert`, mit werte.py). Geschrieben wird in bestand.py
+(`schreibe_bestand`, `schreibe_organisationen`). Die Regeln für Spalten, Werte und Modi
+beschreibt daten/README.md („CSV einlesen“); `schreibe_vorlage` schreibt die Vorlagen.
 """
 
 from __future__ import annotations
@@ -38,10 +17,10 @@ from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from . import atlas, modell
+from . import atlas, modell, werte
 from .bestand import NUR_ANLAGEN
 
-KONTAKT = re.compile(r"e-?mail|telefon|fax|mobil|handy|kontakt|ansprechpartner", re.IGNORECASE)
+KONTAKT = re.compile(modell.KONTAKT_NAME, re.IGNORECASE)
 _STAETTEN_NAMENSRAUM = uuid.UUID("0b6a1f63-3f7e-4f1a-9b55-6c2d9e8a4c21")
 # weitere übliche Namen für Spalten der Lage
 _LAGE = {
@@ -130,52 +109,31 @@ def _zaehler_spalte(modellname: str, spalte: str) -> tuple[str, str] | None:
 
 # --- Werte -------------------------------------------------------------------------------
 
-_JA = {"ja", "j", "1", "x", "true", "wahr", "yes", "y"}
-_NEIN = {"nein", "n", "0", "false", "falsch", "no"}
-
-
-def _zahl(text: str) -> float:
-    t = text.replace(" ", "").replace(" ", "")
-    if "," in t and "." in t:  # 1.234,5 → 1234.5
-        t = t.replace(".", "").replace(",", ".")
-    elif "," in t:
-        t = t.replace(",", ".")
-    elif t.count(".") > 1:  # 1.200.000
-        t = t.replace(".", "")
-    return float(t)
-
 
 def _liste(text: str) -> list[str]:
-    teile = text.split(";") if ";" in text else atlas._liste(text)
-    return [x.strip() for x in teile if x.strip()]
+    return [x.strip() for x in werte.liste(text) if x.strip()]
 
 
 def wert(text: str, p: dict):
-    """Text einer Zelle → Wert nach dem Feld des Modells. ValueError, wenn er nicht passt."""
+    """Text einer Zelle → Wert nach dem Feld des Modells (Regeln in werte.py). ValueError,
+    wenn er nicht passt."""
     text = (text or "").strip()
     if not text:
         return None
     t = _art(p)
     if "enum" in t:
-        werte = t["enum"]
-        if set(werte) == {"ja", "nein"}:
-            if text.lower() in _JA:
-                return "ja"
-            if text.lower() in _NEIN:
-                return "nein"
-        for w in werte:
-            if _norm(w) == _norm(text) or (isinstance(w, (int, float)) and _zahl_oder(text) == w):
+        if set(t["enum"]) == {"ja", "nein"}:
+            return werte.ja_nein(text)
+        for w in t["enum"]:
+            if _norm(w) == _norm(text) or (
+                isinstance(w, (int, float)) and werte.oder_none(werte.zahl, text) == w
+            ):
                 return w
         raise ValueError(text)
-    if t.get("type") in ("integer", "number"):
-        if t["type"] == "integer" and re.fullmatch(r"\d{1,3}(\.\d{3})+", text):
-            text = text.replace(".", "")  # 1.200 Plätze
-        z = _zahl(text)
-        if t["type"] == "integer":
-            if z != int(z):
-                raise ValueError(text)
-            return int(z)
-        return z
+    if t.get("type") == "integer":
+        return werte.ganzzahl(text)
+    if t.get("type") == "number":
+        return werte.zahl(text)
     if t.get("type") == "array":
         return _liste(text)
     if t.get("type") == "object":  # Anzahl je Wert: "Sand: 3; Rasen: 1" oder "3× Sand"
@@ -192,13 +150,6 @@ def wert(text: str, p: dict):
             out[schluessel] = int(n)
         return out
     return text
-
-
-def _zahl_oder(text: str):
-    try:
-        return _zahl(text)
-    except ValueError:
-        return None
 
 
 def _setze(d: dict, pfad: str, w) -> None:
@@ -218,9 +169,9 @@ def _staette_id(name: str, lage: dict | None) -> str:
 
 
 def _stand(pfad: Path) -> str:
-    """Datum aus dem Dateinamen (atlas._datum), sonst der Tag der letzten Änderung der Datei."""
+    """Datum aus dem Dateinamen (werte.datum_aus_name), sonst der Tag der letzten Änderung."""
     zeit = dt.datetime.fromtimestamp(pfad.stat().st_mtime, dt.UTC)
-    return atlas._datum(pfad.name) or zeit.date().isoformat()
+    return werte.datum_aus_name(pfad.name) or zeit.date().isoformat()
 
 
 def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
@@ -230,7 +181,7 @@ def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
     Sportstätte als {"id", "anlagen", NUR_ANLAGEN: True}."""
     pfad = Path(pfad)
     b = Bericht(pfad.name)
-    zeilen = atlas._zeilen(atlas._text(pfad.read_bytes()))
+    zeilen = werte.zeilen(werte.text(pfad.read_bytes()))
     kopf = [k for k in (zeilen[0] if zeilen else {}) if k]  # ohne Überzählige (Schlüssel None)
     b.zeilen = len(zeilen)
     if atlas.PFLICHT <= set(kopf):
@@ -297,9 +248,9 @@ def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
             p = eigenschaft(pfad_)
             try:
                 if schluessel:  # eine Spalte je Wert (alter Atlas): Zahl
-                    d.setdefault(pfad_, {})[schluessel] = int(_zahl(text))
+                    d.setdefault(pfad_, {})[schluessel] = werte.ganzzahl(text)
                 elif pfad_.startswith("lage."):
-                    _setze(d, pfad_, _zahl(text))
+                    _setze(d, pfad_, werte.zahl(text))
                 else:
                     _setze(d, pfad_, wert(text, p))
             except ValueError:

@@ -1,0 +1,106 @@
+"""Werte aus Text lesen – gemeinsam für den Atlas-Export (atlas.py) und andere CSV (einlesen.py).
+
+Die Regeln für Zellen (Zahlen, ja/nein, Listen) beschreibt daten/README.md („CSV einlesen“).
+Jede Funktion wirft ValueError, wenn der Text nicht passt; `oder_none` macht daraus None.
+"""
+
+from __future__ import annotations
+
+import csv
+import io
+import re
+
+from . import anlagen as anlagen_typen
+
+JA = {"ja", "j", "1", "x", "true", "wahr", "yes", "y"}
+NEIN = {"nein", "n", "0", "false", "falsch", "no"}
+
+
+# --- Dateien -----------------------------------------------------------------------------
+
+
+def text(roh: bytes) -> str:
+    """Inhalt einer CSV: UTF-8 (mit oder ohne BOM), sonst Windows-1252 (Excel)."""
+    for enc in ("utf-8-sig", "cp1252"):
+        try:
+            return roh.decode(enc)
+        except UnicodeDecodeError:
+            continue
+    return roh.decode("utf-8", errors="replace")
+
+
+def trenner(inhalt: str) -> str:
+    """Trennzeichen aus der Kopfzeile: das häufigste von ; , und Tab (außerhalb von
+    Anführungszeichen). Fester als csv.Sniffer, dessen Ergebnis je nach Python-Version und
+    Inhalt der ersten Zeilen schwankt."""
+    kopf = re.sub(r'"[^"]*"', "", inhalt.split("\n", 1)[0])
+    zahl_je = {t: kopf.count(t) for t in (";", ",", "\t")}
+    return max(zahl_je, key=zahl_je.get) if any(zahl_je.values()) else ","
+
+
+def zeilen(inhalt: str) -> list[dict]:
+    """CSV-Text → Zeilen als {Spalte: Text}."""
+    return list(csv.DictReader(io.StringIO(inhalt), delimiter=trenner(inhalt)))
+
+
+def datum_aus_name(name: str) -> str:
+    """Stand aus einem Dateinamen: 2026-11-04 oder 04112026 → "2026-11-04"; sonst ""."""
+    if m := re.search(r"(\d{4}-\d{2}-\d{2})", name):
+        return m.group(1)
+    if m := re.search(r"(?<!\d)(\d{2})(\d{2})(20\d{2})(?!\d)", name):
+        return f"{m.group(3)}-{m.group(2)}-{m.group(1)}"
+    return ""
+
+
+# --- Zellen ------------------------------------------------------------------------------
+
+
+def zahl(t: str) -> float:
+    """12,5 · 12.5 · 1.234,5 · 1.200.000 → Zahl."""
+    t = str(t).replace(" ", "").replace(" ", "")
+    if "," in t and "." in t:  # 1.234,5
+        t = t.replace(".", "").replace(",", ".")
+    elif "," in t:
+        t = t.replace(",", ".")
+    elif t.count(".") > 1:  # 1.200.000
+        t = t.replace(".", "")
+    return float(t)
+
+
+def ganzzahl(t: str) -> int:
+    """Wie zahl, aber ganz; „1.200“ ist hier 1200 (Tausenderpunkt)."""
+    t = str(t).strip()
+    if re.fullmatch(r"\d{1,3}(\.\d{3})+", t):
+        t = t.replace(".", "")
+    z = zahl(t)
+    if z != int(z):
+        raise ValueError(t)
+    return int(z)
+
+
+def ja_nein(t: str) -> str:
+    """ja, X, 1, wahr … → "ja"; nein, 0, falsch … → "nein"."""
+    w = str(t).strip().lower()
+    if w in JA:
+        return "ja"
+    if w in NEIN:
+        return "nein"
+    raise ValueError(t)
+
+
+def liste(t: str) -> list[str]:
+    """Mit ; getrennt; ohne ; mit Komma, aber nicht in Klammern („Großspielfeld (ab 5.000 m²,
+    Rasen)“ bleibt eins) und nicht nach Bindestrich („Weit-, Dreisprunganlage“)."""
+    t = t or ""
+    teile = t.split(";") if ";" in t else re.split(r",\s*(?![^()]*\))", t)
+    return [x for x in anlagen_typen.zusammenfuegen(teile) if x]
+
+
+def oder_none(lesen, t: str | None):
+    """lesen(t), aber None statt ValueError und für leeren Text."""
+    if t is None or not str(t).strip():
+        return None
+    try:
+        return lesen(str(t).strip())
+    except ValueError:
+        return None

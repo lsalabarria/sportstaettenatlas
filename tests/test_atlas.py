@@ -4,7 +4,8 @@ import json
 
 import pytest
 
-from sportstaettenatlas.atlas import _liste, lage, lies_export
+from sportstaettenatlas.atlas import lage, lies_export
+from sportstaettenatlas.werte import liste as _liste
 
 KOPF = (
     "ID,Name,Straße,Hausnummer,PLZ,Stadt,Sportstättenkategorie,Schulsport,"

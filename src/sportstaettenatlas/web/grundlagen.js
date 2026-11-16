@@ -22,6 +22,10 @@ function wertText(v) { return typeof v === "boolean" ? (v ? "ja" : "nein") : esc
 // Felder, Beschriftungen (title), Auswahllisten (enum), Regeln (minimum, pattern …) und
 // Angaben für die Webseite (gruppe, widget, formular, uebersicht, einheit) stehen nur dort.
 let SCHEMA = { $defs: {} };
+// Zuordnungen und Regeln ohne eigenes Feld (modell.schema: "atlas"): Anlagentypen je Kategorie,
+// Organisationstypen, ALKIS-Typgruppe → Kategorie, Muster für E-Mail-Adressen
+const ATLAS = () => SCHEMA.atlas || {};
+const enthaeltEmail = x => !!ATLAS().email && new RegExp(ATLAS().email).test(JSON.stringify(x));
 // Felder eines Modells: [[Name, Eigenschaft, Pflicht, Typ]] – Typ ohne „oder leer“, Verweise
 // aufgelöst (z. B. adresse → Adresse mit ref: "Adresse")
 function modellFelder(modell) {
@@ -83,14 +87,14 @@ function orgVon(name) { return ORG_NACH_NAME.get(schluesselName(name)) || null; 
 // Art auf der Karte (Verein, Kommune, sonstige) aus der Art im Verzeichnis; sonst "" (unbekannt,
 // es wird nicht geschätzt)
 function orgArt(name) {
-  const o = orgVon(name), typen = (SCHEMA.$defs.Sportstaette || {}).organisationstypen || {};
+  const o = orgVon(name), typen = ATLAS().organisationstypen || {};
   return o && o.typ && typen[o.typ] ? typen[o.typ] : "";
 }
 function schluesselName(s) { return String(s || "").trim().replace(/\s+/g, " ").toLowerCase(); }
 
 // Typen von Sportanlagen, die zur Kategorie passen (modell.py: KATEGORIE_ANLAGEN); null: alle
 function passendeTypen(kategorie) {
-  const z = (SCHEMA.$defs.Sportstaette || {}).anlagen_je_kategorie || {};
+  const z = ATLAS().anlagen_je_kategorie || {};
   return z[kategorie] || null;
 }
 function typPasst(kategorie, typ) {

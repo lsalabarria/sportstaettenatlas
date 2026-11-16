@@ -11,10 +11,10 @@
     docs/daten/analysen/index.json      Verzeichnis der Analysen (Reiter „Analysen“)
     docs/daten/analysen/<name>/         Dateien einer Analyse, z. B. alkis/ (lädt erst beim Öffnen)
     docs/vendor/leaflet/                Kartenbibliothek, lokal (keine Anfragen an Dritt-CDNs)
-    docs/.nojekyll                      GitHub Pages soll die Dateien unverändert ausliefern
+    docs/.nojekyll                      GitHub Pages soll die Dateien unverändert ausliefern    docs/daten/organisationen.json      Verzeichnis der Organisationen
+    docs/daten/schema.json              Datenmodell (modell.schema) für Formular, Popup, Liste
 
-Kontaktdaten (E-Mail, Telefon) werden nicht veröffentlicht. Zusätzlich wird jeder Wert,
-der eine E-Mail-Adresse enthält, entfernt.
+Kontaktdaten werden nicht veröffentlicht (`oeffentlich`, Regeln: README „Kontaktdaten“).
 """
 
 from __future__ import annotations
@@ -22,6 +22,7 @@ from __future__ import annotations
 import datetime as dt
 import html
 import json
+import re
 import shutil
 import urllib.request
 from collections import Counter
@@ -32,7 +33,7 @@ from . import anlagen as anlagen_typen
 from . import modell, web
 from .bestand import EMAIL, adresse_text
 
-KONTAKT_FELDER = {"email", "email_quelle", "alt_email", "telefon", "telefon_quelle", "alt_telefon"}
+KONTAKT = re.compile(modell.KONTAKT_NAME, re.IGNORECASE)  # Felder mit Kontaktdaten
 
 LEAFLET_DATEIEN = (
     "leaflet.js",
@@ -141,7 +142,7 @@ def oeffentlich(fc: dict) -> tuple[dict, Counter]:
         p = f.get("properties") or {}
         neu = {}
         for k, v in p.items():
-            if k in KONTAKT_FELDER:
+            if KONTAKT.search(k):
                 if v not in (None, ""):
                     entfernt[k] += 1
                 continue
