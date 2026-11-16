@@ -199,9 +199,7 @@ def test_merkmale_je_anlagentyp():
     assert "Großspielfeld" not in modell.fuer_von("felder_je_belag")
     assert modell.fuer_von("flutlicht") is None  # für alle Typen
     assert modell.fuer_von("barrierefrei_erreichbar") is None
-    assert modell.fuer_von("sprungturm") == list(anlagen.GRUPPEN["bad"][1])
-    for typen, fs in modell.MERKMALE_ERGAENZT:
-        assert set(fs) <= felder
+    assert set(modell.fuer_von("sprungturm")) == set(anlagen.GRUPPEN["bad"][1])
     # im Schema für die Webseite
     p = modell.schema()["$defs"]["Sportanlage"]["properties"]
     assert p["hoehe"]["fuer"] == modell.fuer_von("hoehe") and "fuer" not in p["baujahr"]

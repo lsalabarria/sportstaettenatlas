@@ -63,7 +63,7 @@ def _art(p: dict) -> dict:
 
 def spalten_namen(modellname: str) -> dict[str, str]:
     """Erkannte Spaltennamen (normalisiert) → Pfad des Feldes ("adresse.plz") für ein Modell.
-    Reihenfolge: Feldnamen vor Beschriftungen vor Namen im alten Atlas."""
+    Reihenfolge: Feldnamen vor Beschriftungen vor weiteren Spaltennamen (Angabe spalte)."""
     felder: list[tuple[str, dict]] = []
     for k, p in _eigenschaften(modellname).items():
         if k in ("quellen", "anlagen"):
@@ -74,15 +74,15 @@ def spalten_namen(modellname: str) -> dict[str, str]:
         else:
             felder.append((k, p))
     namen: dict[str, str] = {}
-    for stufe in ("feld", "titel", "legacy"):
+    for stufe in ("feld", "titel", "spalte"):
         for pfad, p in felder:
             if stufe == "feld":
                 kandidaten = [pfad, pfad.split(".")[-1]] + list(_LAGE.get(pfad.split(".")[-1], ()))
             elif stufe == "titel":
                 kandidaten = [p.get("title") or ""]
             else:
-                legacy = re.sub(r"\s*\(.*\)", "", p.get("legacy") or "")
-                kandidaten = [] if "*" in legacy else [legacy, legacy.split(".")[-1]]
+                spalte = re.sub(r"\s*\(.*\)", "", p.get("spalte") or "")
+                kandidaten = [] if "*" in spalte else [spalte, spalte.split(".")[-1]]
             for k in kandidaten:
                 if _norm(k):
                     namen.setdefault(_norm(k), pfad)
@@ -93,12 +93,12 @@ def spalten_namen(modellname: str) -> dict[str, str]:
 
 
 def _zaehler_spalte(modellname: str, spalte: str) -> tuple[str, str] | None:
-    """Spalte des alten Atlas wie „bodenbelag_anz_sand“ → ("felder_je_belag", "Sand")."""
+    """Eine Spalte je Wert wie „bodenbelag_anz_sand“ → ("felder_je_belag", "Sand")."""
     for k, p in _eigenschaften(modellname).items():
-        legacy = p.get("legacy") or ""
-        if p.get("widget") != "zaehler" or not legacy.endswith("*"):
+        muster = p.get("spalte") or ""
+        if p.get("widget") != "zaehler" or not muster.endswith("*"):
             continue
-        praefix = _norm(legacy[:-1])
+        praefix = _norm(muster[:-1])
         if _norm(spalte).startswith(praefix):
             rest = _norm(spalte)[len(praefix) :]
             for w in p["propertyNames"]["enum"]:
