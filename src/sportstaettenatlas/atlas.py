@@ -29,12 +29,17 @@ def _text(roh: bytes) -> str:
     return roh.decode("utf-8", errors="replace")
 
 
+def _trenner(text: str) -> str:
+    """Trennzeichen aus der Kopfzeile: das häufigste von ; , und Tab (außerhalb von
+    Anführungszeichen). Fester als csv.Sniffer, dessen Ergebnis je nach Python-Version und
+    Inhalt der ersten Zeilen schwankt."""
+    kopf = re.sub(r'"[^"]*"', "", text.split("\n", 1)[0])
+    zahl = {t: kopf.count(t) for t in (";", ",", "\t")}
+    return max(zahl, key=zahl.get) if any(zahl.values()) else ","
+
+
 def _zeilen(text: str) -> list[dict]:
-    try:
-        dialekt = csv.Sniffer().sniff(text[:5000], delimiters=";,")
-    except csv.Error:
-        dialekt = csv.excel
-    return list(csv.DictReader(io.StringIO(text), dialect=dialekt))
+    return list(csv.DictReader(io.StringIO(text), delimiter=_trenner(text)))
 
 
 def _zahl(v: str | None) -> float | None:
