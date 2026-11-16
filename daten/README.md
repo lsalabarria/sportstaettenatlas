@@ -37,36 +37,111 @@ RP/                                       Land
 - Kontaktdaten (E-Mail-Adressen, Telefonnummern von Personen) gehören nicht hierher.
 
 `seite` und `alkis` prüfen den Aufbau beim Lesen und nennen die betroffene Datei, wenn etwas
-nicht passt.
+nicht passt. Werte, die nicht zu den Regeln des [Datenmodells](#datenmodell) passen (z. B. eine
+PLZ mit sechs Ziffern), brechen nichts ab und stehen in `results/regelverstoesse.csv`.
 
-## Sportstätte (`<id>_meta.json`)
+## Datenmodell
+
+Felder, Auswahllisten und Regeln stehen an einer Stelle: `src/sportstaettenatlas/modell.py`.
+Der folgende Teil bis zur nächsten Überschrift „Typen und Gruppen“ wird daraus erzeugt
+(`uv run sportstaettenatlas modell`, läuft auch bei `seite` mit) – bitte nicht hier ändern,
+sondern im Modell.
+
+- **Pflicht** heißt: ohne den Wert ist der Datensatz unvollständig. In den Dateien sind
+  außerdem `id` (Sportstätte und Anlage) und `sportstaette_id` (Anlage) Pflicht.
+- **Regeln** prüfen `seite`, `alkis` und das Formular. Werte, die nicht passen, brechen nichts
+  ab; sie stehen nach `seite` in `results/regelverstoesse.csv`.
+- Leere Angaben werden weggelassen. Unbekannte Felder melden die Regeln als Fehler – ein
+  neues Feld also zuerst im Modell eintragen.
+
+<!-- modell:anfang – erzeugt aus src/sportstaettenatlas/modell.py, nicht von Hand ändern -->
+
+![Datenmodell](datenmodell.svg)
+
+### Sportstätte (`<id>_meta.json`)
+
+Der Standort, z. B. ein Sportpark, ein Schulsportzentrum oder ein Freibad.
+
+| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
+|---|---|---|---|---|---|
+| `id` | ID | Text |  |  | UUID, zugleich Name des Ordners (in der Datei Pflicht) |
+| `name` | Name | Text | ja | höchstens 200 Zeichen; nicht leer |  |
+| `kategorie` | Sportstättenkategorie | Auswahl | ja | „Sportplatz“, „Sporthalle“, „Tennissportstätte“, „Öffentlicher Sport- und Bewegungsraum“, „Reitsportstätte“, „Schwimmsportstätte“, „Schießsportstätte“, „Fitnessstudio“, „Golfsportstätte“, „Roll- und Skatesportstätte“, „Sportgelegenheiten in sonstigen Gebäuden“, „Radsportstätte“, „Flugsportstätte“, „Wintersportstätte“, „Wassersportstätte“, „Klettersportstätte“, „Motorsportstätte“, „Eissportstätte“, „Leistungsstützpunkt“, „Segelsportstätte“ |  |
+| `adresse` | Adresse | Adresse |  |  |  |
+| `lage` | Lage | Lage | ja |  | bestimmt Kreis und Gemeinde |
+| `oeffentlicher_zugang` | Öffentlicher Zugang | Auswahl |  | „ja“, „nein“ |  |
+| `schulsport` | Schulsport | Auswahl |  | „ja“, „nein“ |  |
+| `zuschauerplaetze` | Zuschauerplätze | ganze Zahl |  | ≥ 0; ≤ 100000 |  |
+| `betriebsstatus` | Betriebsstatus | Auswahl |  | „in Betrieb“, „vorübergehend geschlossen“, „stillgelegt/geschlossen“, „im Bau“, „in Planung“ |  |
+| `eigentuemer` | Eigentümer | Text |  | höchstens 200 Zeichen | Name einer Organisation, keine Personen |
+| `betreiber` | Betreiber | Text |  | höchstens 200 Zeichen | Name einer Organisation, keine Personen |
+| `website` | Webseite | Text |  | Muster `^https?://\S+\.\S+$` | vollständige Adresse mit https:// |
+| `sportarten` | Sportarten | Liste von Text |  |  |  |
+| `quellen` | Herkunft | Objekt |  |  | je Quelle, z. B. ID, Datei und Stand im Atlas |
+| `anlagen` | Sportanlagen | Liste von Sportanlage |  |  | stehen als eigene Dateien im Ordner der Sportstätte, nicht in `<id>_meta.json` |
 
 ```json
 {
   "id": "9c24bfa6-71c1-4164-b226-061f0a139997",
   "name": "Sportplatz Musterdorf",
   "kategorie": "Sportplatz",
-  "adresse": {"strasse": "Am Weg", "hausnummer": "1", "plz": "56068", "ort": "Koblenz"},
-  "lage": {"lon": 7.59, "lat": 50.35},
+  "adresse": {
+    "strasse": "Am Weg",
+    "hausnummer": "1",
+    "plz": "56068",
+    "ort": "Koblenz"
+  },
+  "lage": {
+    "lon": 7.59,
+    "lat": 50.35
+  },
   "betreiber": "TuS Musterdorf e.V.",
-  "sportarten": ["Fußball", "Leichtathletik"],
-  "quellen": {"atlas_rlp": {"id": "9c24bfa6-…", "datei": "sportstaetten_04112026.csv", "stand": "2026-11-04"}}
+  "sportarten": [
+    "Fußball",
+    "Leichtathletik"
+  ],
+  "quellen": {
+    "atlas_rlp": {
+      "id": "9c24bfa6-…",
+      "datei": "sportstaetten_04112026.csv",
+      "stand": "2026-11-04"
+    }
+  }
 }
 ```
 
-| Feld | Inhalt |
-|---|---|
-| `id` | UUID, zugleich Name des Ordners; aus dem Atlas übernommen |
-| `name`, `kategorie` | Name und Kategorie des Atlas (Sportplatz, Sporthalle, Tennissportstätte …) |
-| `adresse` | `strasse`, `hausnummer`, `plz`, `ort` |
-| `lage` | **Pflicht:** `lon`, `lat` in WGS84; bestimmt Kreis und Gemeinde |
-| `oeffentlicher_zugang`, `schulsport` | `ja` oder `nein` |
-| `zuschauerplaetze`, `betriebsstatus` | Zahl; z. B. „in Betrieb“ |
-| `eigentuemer`, `betreiber`, `website` | Namen (keine Personen) und Webseite |
-| `sportarten` | Sportarten der Sportstätte, wie der Atlas sie führt |
-| `quellen` | Herkunft je Quelle, z. B. ID, Datei und Stand im Atlas |
+### Adresse
 
-## Sportanlage (`<anlage-id>.json`)
+| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
+|---|---|---|---|---|---|
+| `strasse` | Straße | Text |  | höchstens 150 Zeichen |  |
+| `hausnummer` | Hausnummer | Text |  | Muster `^\d+\s?[a-zA-Z]?(\s?[-/]\s?\d+\s?[a-zA-Z]?)?$`; höchstens 12 Zeichen | z. B. 12, 12a oder 2-4 |
+| `adresszusatz` | Adresszusatz | Text |  | höchstens 150 Zeichen | z. B. Eingang Schulhof |
+| `plz` | PLZ | Text |  | Muster `^\d{5}$` | fünf Ziffern |
+| `ort` | Ort | Text |  | höchstens 100 Zeichen |  |
+
+### Lage
+
+| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
+|---|---|---|---|---|---|
+| `lon` | Längengrad | Zahl | ja | ≥ 5.8; ≤ 9 | WGS84 |
+| `lat` | Breitengrad | Zahl | ja | ≥ 48.8; ≤ 51.1 | WGS84 |
+
+### Sportanlage (`<anlage-id>.json`)
+
+Eine Einheit einer Sportstätte, z. B. ein Großspielfeld, eine Halle oder ein Becken.
+
+| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
+|---|---|---|---|---|---|
+| `id` | ID | Text |  |  | UUID, zugleich der Dateiname (in der Datei Pflicht) |
+| `sportstaette_id` | Sportstätte | Text |  |  | ID der Sportstätte, zu der die Anlage gehört, = Name des Ordners (in der Datei Pflicht) |
+| `typ` | Typ | Text | ja | höchstens 100 Zeichen; nicht leer | einheitlicher Typ aus src/sportstaettenatlas/anlagen.py, z. B. „Großspielfeld“ |
+| `bezeichnung` | Name | Text |  | höchstens 100 Zeichen | eigener Name der Anlage, z. B. „Halle 1“, „Kunstrasen B“ |
+| `sportarten` | Sportarten | Liste von Text |  |  |  |
+| `baujahr` | Baujahr | ganze Zahl |  | ≥ 1800; ≤ 2100 |  |
+| `baukosten_eur` | Baukosten | ganze Zahl |  | ≥ 0 | in Euro |
+| `ausstattung` | Ausstattung | Liste von Text |  |  | z. B. Flutlicht, Beregnung, Umkleiden |
+| `quellen` | Herkunft | Objekt |  |  | je Quelle, z. B. die Schreibweise im Atlas |
 
 ```json
 {
@@ -74,27 +149,57 @@ nicht passt.
   "sportstaette_id": "9c24bfa6-71c1-4164-b226-061f0a139997",
   "typ": "Großspielfeld",
   "bezeichnung": "Kunstrasen B",
-  "sportarten": ["Fußball"],
+  "sportarten": [
+    "Fußball"
+  ],
   "baujahr": 1998,
   "baukosten_eur": 1200000,
-  "ausstattung": ["Flutlicht", "Beregnung"],
-  "quellen": {"atlas_rlp": {"bezeichnung": "Großspielfeld (ab 5.000 m²)"}}
+  "ausstattung": [
+    "Flutlicht",
+    "Beregnung"
+  ]
 }
 ```
 
-| Feld | Inhalt |
-|---|---|
-| `id` | UUID, zugleich der Dateiname |
-| `sportstaette_id` | **Pflicht:** die Sportstätte, zu der die Anlage gehört (= Name des Ordners) |
-| `typ` | **Pflicht:** einheitlicher Typ, z. B. „Großspielfeld“, „Rundlaufbahn“ (siehe unten) |
-| `bezeichnung` | eigener Name der Anlage, z. B. „Halle 1“, „Kunstrasen B“ |
-| `sportarten` | was auf dieser Anlage betrieben wird |
-| `baujahr`, `baukosten_eur` | Baujahr; Baukosten in Euro |
-| `ausstattung` | z. B. „Flutlicht“, „Beregnung“, „Umkleiden“ |
-| `quellen` | Herkunft, z. B. die Schreibweise im Atlas |
+### Vorschlag (Formular → LimeSurvey, Frage `data`)
 
-Sportarten gibt es auf beiden Ebenen: Der Atlas kennt sie nur je Sportstätte, gepflegt werden
-sie künftig je Anlage. Karte und Abgleich nehmen beide zusammen.
+Was das Formular „Vorschlag“ als JSON in die LimeSurvey-Frage „data“ schreibt.
+
+| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
+|---|---|---|---|---|---|
+| `version` | Version des Formats | Auswahl |  | „1“ |  |
+| `art` | Art | Auswahl | ja | „neu“, „aenderung“, „anlagen“ | neu: neue Sportstätte mit Anlagen; aenderung: Angaben einer Sportstätte; anlagen: Sportanlagen einer Sportstätte |
+| `sportstaette_id` | Sportstätte | Text |  |  | ID der geänderten Sportstätte |
+| `sportstaette` | Angaben der Sportstätte | Sportstaette |  |  | vollständig, nach der Änderung (bei neu und aenderung) |
+| `anlagen` | Sportanlagen | Liste von Sportanlage |  |  | alle Anlagen nach der Änderung (bei neu und anlagen); vorhandene mit ihrer Kurz-ID (Anfang der UUID), neue ohne |
+| `entfernte_anlagen` | Entfernte Sportanlagen | Liste von Text |  |  | Kurz-IDs |
+| `geaendert` | Geänderte Felder | Liste von Text |  |  |  |
+| `gemeinde` | Gemeinde | Text |  |  | Regionalschlüssel der Gemeinde an der Lage |
+| `quelle` | Quelle | Text |  |  | z. B. „ALKIS ST000123“, wenn vorbelegt |
+| `dubletten_geprueft` | Geprüfte Doppelungen | Liste von Text |  |  | IDs ähnlicher Sportstätten, die als verschieden bestätigt wurden |
+
+```json
+{
+  "version": 1,
+  "art": "anlagen",
+  "sportstaette_id": "9c24bfa6-71c1-4164-b226-061f0a139997",
+  "anlagen": [
+    {
+      "id": "17abb3c4",
+      "typ": "Großspielfeld",
+      "baujahr": 1998
+    },
+    {
+      "typ": "Kleinspielfeld"
+    }
+  ],
+  "entfernte_anlagen": [
+    "1fb06acd"
+  ]
+}
+```
+
+<!-- modell:ende -->
 
 ## Typen und Gruppen der Sportanlagen
 

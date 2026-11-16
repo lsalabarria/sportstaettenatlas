@@ -6,7 +6,7 @@ window.KONFIG = {
 
   // LimeSurvey-Umfrage für Vorschläge. „Weiter zu LimeSurvey“ im Reiter „Vorschlag“ öffnet
   // sie und füllt die Fragen mit den Werten des Formulars (newtest=Y hängt die Seite an).
-  vorschlag_url: "https://limesurvey.hs-koblenz.de/index.php/718524?lang=de",
+  vorschlag_url: "https://limesurvey.hs-koblenz.de/index.php/868266?lang=de",
   // Welches Feld des Formulars in welche Frage geht: Feld: "Fragecode". Nur diese Felder
   // werden übertragen (passend zur Umfrage sportstaette_vorschlagen.lss).
   vorschlag_felder: {

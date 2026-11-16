@@ -216,3 +216,4 @@ table.balken { border-collapse: collapse; width: 100%; }
 .umbruch { word-break: break-all; font-size: 12px; }
 #analysewahl { margin: 0 0 4px; }
 #analysewahl[hidden] { display: none; }
+.vorschlag pre.umbruch { white-space: pre-wrap; max-height: 320px; overflow: auto; background: #f6f6f4; padding: 8px; }

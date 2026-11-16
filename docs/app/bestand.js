@@ -26,18 +26,19 @@ function schluesselName(s) { return String(s || "").trim().replace(/\s+/g, " ").
 let ANLAGEN_GRUPPEN = [], ANLAGEN_TYPEN = {};
 function anlagenGruppe(t) { return ANLAGEN_TYPEN[t] || "weitere"; }
 function gruppenText(g) { const x = ANLAGEN_GRUPPEN.find(y => y[0] === g); return x ? x[1] : g; }
-// Weitere Angaben einer Sportanlage als kurzer Text
+// Weitere Angaben einer Sportanlage als kurzer Text: alle Felder des Modells außer Typ, Name,
+// IDs und Herkunft; Listen ohne, Einzelwerte mit Beschriftung („Baujahr 1998“)
 function anlageDetails(a) {
-  return [a.sportarten && a.sportarten.length ? a.sportarten.join(", ") : "",
-    a.baujahr ? `Baujahr ${a.baujahr}` : "",
-    a.baukosten_eur ? `Baukosten ${zahl(a.baukosten_eur)} €` : "",
-    a.ausstattung && a.ausstattung.length ? a.ausstattung.join(", ") : ""].filter(Boolean).join(" · ");
+  return modellFelder("Sportanlage")
+    .filter(([k, p]) => p.formular !== false && k !== "typ" && k !== "bezeichnung" && !leer(a[k]))
+    .map(([k, p, , t]) => (t.type === "array" ? "" : p.title + " ") + feldText(p, t, a[k]))
+    .join(" · ");
 }
 // Anlagen einer Sportstätte nach Gruppe: [[Gruppe, [[Text, Anzahl, Typ, Angaben], …]], …]
 function anlagenNachGruppe(liste) {
   const z = new Map();
   for (const a of liste) {
-    const text = a.name ? `${a.typ} (${a.name})` : a.typ, details = anlageDetails(a);
+    const text = a.bezeichnung ? `${a.typ} (${a.bezeichnung})` : a.typ, details = anlageDetails(a);
     // Anlagen mit eigenen Angaben einzeln, sonst gleiche Typen zusammengefasst
     const k = text + (details ? `\u0000${a.id}` : "");
     const x = z.get(k) || { typ: a.typ, n: 0, text, details };
@@ -61,7 +62,7 @@ function ansichtBestand(fc) {
   for (const f of fc.features) {
     const p = f.properties, [lon, lat] = f.geometry.coordinates;
     // Anlagen: [Typ, Kurz-ID, Name?, {Angaben}?] → Objekte; p.anlagen bleibt die Liste der Typen
-    const anlagen = (p.anlagen || []).map(a => ({ typ: a[0], id: a[1] || "", name: a[2] || "", ...a[3] }));
+    const anlagen = (p.anlagen || []).map(a => ({ typ: a[0], id: a[1] || "", bezeichnung: a[2] || "", ...a[3] }));
     p.anlagen = anlagen.map(a => a.typ);
     const kat = p.kategorie || "ohne Kategorie";
     const e = { p, lat, lon, kat, art: artVon(p), an: false, typen: new Set(p.anlagen), anlagen,
@@ -274,21 +275,25 @@ function ansichtBestand(fc) {
 
   function tipBestand(e) {
     const p = e.p, z = [];
-    const zeile = (l, v) => { if (!leer(v)) z.push(`<tr><td>${l}</td><td>${v}</td></tr>`); };
+    const zeile = (l, v) => { if (!leer(v)) z.push(`<tr><td>${esc(l)}</td><td>${v}</td></tr>`); };
     const art = a => a ? `<span class="art">${esc(a)}</span>` : "";
-    zeile("Kategorie", leer(p.kategorie) ? "" : `<span class="swatch" style="display:inline-block;`
-      + `background:${katFarbe(e.kat)};vertical-align:-1px"></span> ${esc(p.kategorie)}`);
-    zeile("Adresse", leer(p.adresse) ? "" : esc(p.adresse));
-    zeile("Gebiet", esc(gemeindeName(p.ars)));
-    zeile("Betreiber", leer(p.betreiber) ? "" : esc(p.betreiber) + art(p.betreiber_art));
-    zeile("Eigentümer", leer(p.eigentuemer) ? "" : esc(p.eigentuemer) + art(p.eigentuemer_art));
-    zeile("Sportarten", leer(p.sportarten) ? "" : esc(p.sportarten.join(", ")));
-    zeile("Öffentlich", esc(p.oeffentlicher_zugang || ""));
-    zeile("Schulsport", esc(p.schulsport || ""));
-    zeile("Zuschauer", leer(p.zuschauerplaetze) ? "" : zahl(p.zuschauerplaetze));
-    zeile("Betrieb", esc(p.betriebsstatus || ""));
-    zeile("Website", leer(p.website) ? "" : `<a href="${esc(url(p.website))}" target="_blank" `
-      + `rel="noopener">${esc(p.website)}</a>`);
+    // Zeilen in der Reihenfolge des Datenmodells; der Name steht in der Überschrift
+    for (const [k, f, , t] of modellFelder("Sportstaette")) {
+      if (k === "name" || k === "id" || f.formular === false || t.ref === "Lage") continue;
+      if (k === "kategorie") {
+        zeile(f.title, leer(p.kategorie) ? "" : `<span class="swatch" style="display:inline-block;`
+          + `background:${katFarbe(e.kat)};vertical-align:-1px"></span> ${esc(p.kategorie)}`);
+      } else if (t.ref) {  // Adresse: als ein Text, dazu das Gebiet
+        zeile(f.title, leer(p[k]) ? "" : esc(p[k]));
+        zeile("Gebiet", esc(gemeindeName(p.ars)));
+      } else if (f.widget === "url") {
+        zeile(f.title, leer(p[k]) ? "" : `<a href="${esc(url(p[k]))}" target="_blank" `
+          + `rel="noopener">${esc(p[k])}</a>`);
+      } else {
+        const text = esc(feldText(f, t, p[k]));
+        zeile(f.title, text && f.widget === "organisation" ? text + art(p[k + "_art"]) : text);
+      }
+    }
     zeile("ID", leer(p.id) ? "" : `<span class="koord">${esc(p.id)}</span>`);
     const n = (p.anlagen || []).length;
     const anlagen = n ? `<div class="anlagen-tip"><h4>${n === 1 ? "1 Sportanlage" : `${n} Sportanlagen`}</h4>`
@@ -439,26 +444,27 @@ function ansichtListe(bestand) {
 
 // ---------- Ansicht „Übersicht“: kleines Dashboard über den Datenbestand ----------------
 // Befüllung der Angaben, getrennt für Sportstätten und ihre Sportanlagen
-// { Beschriftung: Feld oder [Felder] } → [[Beschriftung, Test "ist befüllt"], …]
-function feldTests(namen) {
-  return Object.entries(namen).map(([text, f]) => [text, x => [].concat(f).every(k => !leer(x[k]))]);
+// Felder aus dem Datenmodell (ohne uebersicht: false) → [[Beschriftung, Test "ist befüllt"], …];
+// die Teile der Adresse einzeln (sie stehen flach in den Eigenschaften der Karte)
+function feldTests(modell) {
+  const out = [];
+  for (const [k, p, , t] of modellFelder(modell)) {
+    if (p.uebersicht === false) continue;
+    if (t.ref) out.push(...feldTests(t.ref));
+    else out.push([p.title || k, x => !leer(x[k])]);
+  }
+  return out;
 }
-const FELDER = feldTests({
-  "Name": "name", "Kategorie": "kategorie", "Straße": "strasse", "PLZ und Ort": ["plz", "ort"],
-  "Sportanlagen eingetragen": "anlagen", "Sportarten": "sportarten", "Betreiber": "betreiber",
-  "Eigentümer": "eigentuemer", "Öffentlicher Zugang": "oeffentlicher_zugang",
-  "Schulsport": "schulsport", "Betriebsstatus": "betriebsstatus",
-  "Zuschauerplätze": "zuschauerplaetze", "Website": "website",
-});
-const ANLAGE_FELDER = feldTests({ "Name": "name", "Sportarten": "sportarten", "Baujahr": "baujahr",
-  "Baukosten": "baukosten_eur", "Ausstattung": "ausstattung" });
+let _felder, _anlageFelder;
+const FELDER_STAETTE = () => _felder ??= feldTests("Sportstaette");
+const FELDER_ANLAGE = () => _anlageFelder ??= feldTests("Sportanlage");
 function anteil(liste, felder) {
   if (!liste.length) return 0;
   let summe = 0;
   for (const x of liste) for (const [, test] of felder) if (test(x)) summe++;
   return summe / (liste.length * felder.length);
 }
-function befuellung(liste) { return anteil(liste.map(e => e.p), FELDER); }
+function befuellung(liste) { return anteil(liste.map(e => e.p), FELDER_STAETTE()); }
 function balken(zeilen, gesamt, prozentual, einheit = "Sportstätten") {
   // zeilen: [label, wert]; Breite relativ zu gesamt (Anteil) bzw. zum größten Wert
   const max = prozentual ? gesamt : Math.max(1, ...zeilen.map(z => z[1]));
@@ -490,19 +496,19 @@ function ansichtUebersicht(bestand) {
       + kachel("Sportstätten", zahl(n), ohneAnlagen ? `${zahl(ohneAnlagen)} ohne eingetragene Sportanlage` : "alle mit Sportanlagen")
       + kachel("Sportanlagen", zahl(na), n ? `Ø ${(na / n).toLocaleString("de-DE",
         { maximumFractionDigits: 1 })} je Sportstätte` : "")
-      + kachel("Angaben Sportstätten", `${Math.round(100 * befuellung(liste))} %`, `befüllt, Durchschnitt über ${FELDER.length} Felder`)
-      + kachel("Angaben Sportanlagen", `${Math.round(100 * anteil(anlagen, ANLAGE_FELDER))} %`, `befüllt, Durchschnitt über ${ANLAGE_FELDER.length} Felder`)
+      + kachel("Angaben Sportstätten", `${Math.round(100 * befuellung(liste))} %`, `befüllt, Durchschnitt über ${FELDER_STAETTE().length} Felder`)
+      + kachel("Angaben Sportanlagen", `${Math.round(100 * anteil(anlagen, FELDER_ANLAGE()))} %`, `befüllt, Durchschnitt über ${FELDER_ANLAGE().length} Felder`)
       + kachel("Sportarten", zahl(sportarten.size), "verschiedene")
       + kachel("Vereine", zahl(betr.Verein.size), "als Betreiber (aus dem Namen geschätzt)")
       + kachel("Kommunen", zahl(betr.Kommune.size), "als Betreiber (aus dem Namen geschätzt)")
       + `</div>`;
     h += `<div class="spalten"><div><h3>Sportstätten</h3><h4>Wie gut sind die Angaben befüllt?</h4>`
-      + balken(FELDER.map(([l, t]) => [l, liste.filter(e => t(e.p)).length]), n, true)
+      + balken(FELDER_STAETTE().map(([l, t]) => [l, liste.filter(e => t(e.p)).length]), n, true)
       + `<h4>Nach Kategorie</h4>` + balken(sortiert(zaehle(liste.map(e => e.kat))), n, false)
       + `<h4>Betreiber</h4>` + balken(ARTEN.map(a => [artText(a), liste.filter(e => e.art === a).length])
         .filter(z => z[1]), n, true)
       + `</div><div><h3>Sportanlagen</h3><h4>Wie gut sind die Angaben befüllt?</h4>`
-      + balken(ANLAGE_FELDER.map(([l, t]) => [l, anlagen.filter(t).length]), na, true, "Sportanlagen")
+      + balken(FELDER_ANLAGE().map(([l, t]) => [l, anlagen.filter(t).length]), na, true, "Sportanlagen")
       + `<h4>Nach Gruppe</h4>` + balken(ANLAGEN_GRUPPEN.map(([g, text]) =>
         [text, anlagen.filter(a => anlagenGruppe(a.typ) === g).length]).filter(z => z[1])
         .sort((a, b) => b[1] - a[1]), 0, false, "Sportanlagen")
@@ -518,7 +524,7 @@ function ansichtUebersicht(bestand) {
         + `style="width:${(100 * b).toFixed(1)}%"></div></div></td><td class="w">${Math.round(100 * b)} %</td></tr></table>`;
       const zeilen = teile.map(g => {
         const l = liste.filter(e => e.p.ars && e.p.ars.startsWith(g.s)), a = l.flatMap(e => e.anlagen);
-        return { g, n: l.length, na: a.length, b: befuellung(l), ba: anteil(a, ANLAGE_FELDER) };
+        return { g, n: l.length, na: a.length, b: befuellung(l), ba: anteil(a, FELDER_ANLAGE()) };
       }).sort((a, b) => b.n - a.n);
       h += `<h3>Nach ${ebene === "kreis" ? "Kreisen" : ebene === "vg" ? "Verbandsgemeinden" : "Gemeinden"}</h3>`
         + `<table class="tabelle"><thead><tr><th>Gebiet</th><th class="zahl">Sportstätten</th>`
