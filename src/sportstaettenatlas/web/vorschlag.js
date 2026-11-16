@@ -510,7 +510,7 @@ function ansichtVorschlag(bestand) {
     el.querySelector("#v-org-weg").hidden = !(orgOriginal && orgOriginal.imVerzeichnis);
   }
   // Eigentümer/Betreiber: steht die Organisation im Verzeichnis, ihre Art übernehmen (wenn
-  // noch keine gewählt ist) und das zeigen; sonst die Schätzung aus dem Namen
+  // noch keine gewählt ist); dahinter steht, ob sie im Verzeichnis ist (geschätzt wird nicht)
   function zeigeArten() {
     for (const f of FELDER.filter(x => x.p.widget === "organisation")) {
       const name = F(f.pfad).value, o = orgVon(name), s = el.querySelector(`[data-art="${f.pfad}"]`);
@@ -518,8 +518,8 @@ function ansichtVorschlag(bestand) {
       if (o && o.typ && typ && !typ.value && typ.dataset.vonOrg !== name) {
         typ.value = o.typ; typ.dataset.vonOrg = name;
       }
-      const a = o ? "im Verzeichnis" + (o.typ ? "" : ", ohne Art") : schaetzeArt(name) ? `geschätzt: ${schaetzeArt(name)}` : "";
-      s.textContent = a; s.hidden = !a || (!o && !!(typ && typ.value));
+      const a = !name.trim() ? "" : o ? "im Verzeichnis" + (o.typ ? "" : ", ohne Art") : "nicht im Verzeichnis";
+      s.textContent = a; s.hidden = !a;
     }
   }
 

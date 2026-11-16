@@ -15,10 +15,14 @@ const KATEGORIE_FARBEN = {
 const WEITERE = "#8a8984";
 
 // ---------- Ansicht „Karte“: der Datenbestand -------------------------------------------
-const ARTEN = ["Verein", "Kommune", "sonstige", "ohne Angabe"];
-const ART_MEHRZAHL = { Verein: "Vereine", Kommune: "Kommunen" };
+// Art von Betreiber bzw. Eigentümer: aus der Angabe bei der Sportstätte oder dem Verzeichnis der
+// Organisationen (seite.py, betreiber_art); ohne Art "unbekannt", ohne Namen "ohne Angabe"
+const ARTEN = ["Verein", "Kommune", "sonstige", "unbekannt", "ohne Angabe"];
+const ART_MEHRZAHL = { Verein: "Vereine", Kommune: "Kommunen", unbekannt: "Art unbekannt" };
 function artText(a) { return ART_MEHRZAHL[a] || a; }
-function artVon(p, rolle = "betreiber") { return p[rolle + "_art"] || "ohne Angabe"; }
+function artVon(p, rolle = "betreiber") {
+  return p[rolle + "_art"] || (leer(p[rolle]) ? "ohne Angabe" : "unbekannt");
+}
 function katFarbe(k) { return KATEGORIE_FARBEN[k] || WEITERE; }
 
 // Gruppen der Sportanlagen (aus anlagen.py, stehen in bestand.geojson)
@@ -159,7 +163,7 @@ function ansichtBestand(fc) {
       + `<details open><summary>Betreiber</summary>`
       + ARTEN.filter(a => eintraege.some(e => e.art === a)).map(a => `<label><input type="checkbox" data-a="${a}" checked>`
         + `${artText(a)}${nSpan("a:" + a)}</label>`).join("")
-      + `<div class="hinweis">Art wie angegeben, sonst aus dem Namen geschätzt (z. B. „e.V.“, „Ortsgemeinde“)</div></details>`
+      + `<div class="hinweis">Art bei der Sportstätte oder im Verzeichnis der Organisationen angegeben; sonst unbekannt</div></details>`
       + (sps.length ? `<details><summary>Sportarten <span id="b-sp-n"></span></summary>`
         + `<input type="search" placeholder="Sportart suchen" aria-label="Sportart suchen">`
         + `<div class="sp-liste">` + sps.map(s => `<label data-text="${esc(s.toLowerCase())}">`
@@ -279,7 +283,6 @@ function ansichtBestand(fc) {
   function tipBestand(e) {
     const p = e.p, z = [];
     const zeile = (l, v) => { if (!leer(v)) z.push(`<tr><td>${esc(l)}</td><td>${v}</td></tr>`); };
-    const art = a => a ? `<span class="art" title="aus dem Namen geschätzt">${esc(a)}</span>` : "";
     // Zeilen in der Reihenfolge des Datenmodells; der Name steht in der Überschrift
     for (const [k, f, , t] of modellFelder("Sportstaette")) {
       if (k === "name" || k === "id" || f.formular === false || t.ref === "Lage") continue;
@@ -294,8 +297,7 @@ function ansichtBestand(fc) {
           + `rel="noopener">${esc(p[k])}</a>`);
       } else {
         const text = esc(feldText(f, t, p[k]));
-        zeile(f.title, text && f.widget === "organisation" && leer(p[k + "_typ"])
-          ? text + art(p[k + "_art"]) : text);
+        zeile(f.title, text);
       }
     }
     zeile("ID", leer(p.id) ? "" : `<span class="koord">${esc(p.id)}</span>`);
@@ -448,8 +450,8 @@ function ansichtUebersicht(bestand) {
         `befüllt, Durchschnitt über die Felder, die zum Typ passen (bis ${FELDER_ANLAGE().length})`)
       + kachel("Typ passt nicht", zahl(unpassend.length), `Sportanlagen, deren Typ nicht zur Kategorie der Sportstätte passt`)
       + kachel("Sportarten", zahl(sportarten.size), "verschiedene")
-      + kachel("Vereine", zahl(betr.Verein.size), "als Betreiber (Art angegeben oder aus dem Namen geschätzt)")
-      + kachel("Kommunen", zahl(betr.Kommune.size), "als Betreiber (Art angegeben oder aus dem Namen geschätzt)")
+      + kachel("Vereine", zahl(betr.Verein.size), "als Betreiber (mit angegebener Art)")
+      + kachel("Kommunen", zahl(betr.Kommune.size), "als Betreiber (mit angegebener Art)")
       + `</div>`;
     const artBalken = rolle => {
       const z = angegeben(rolle);
@@ -461,7 +463,7 @@ function ansichtUebersicht(bestand) {
       + `<h4>Nach Kategorie</h4>` + balken(sortiert(zaehle(liste.map(e => e.kat))), n, false)
       + `<h4>Betreiber</h4>` + balken(ARTEN.map(a => [artText(a), liste.filter(e => e.art === a).length])
         .filter(z => z[1]), n, true)
-      + `<div class="hinweis">Art angegeben (${zahl(angegeben("betreiber").length)}) oder aus dem Namen geschätzt</div>`
+      + `<div class="hinweis">Art angegeben bei ${zahl(angegeben("betreiber").length)} Sportstätten (bei der Sportstätte oder im Verzeichnis der Organisationen)</div>`
       + artBalken("betreiber") + artBalken("eigentuemer")
       + `</div><div><h3>Sportanlagen</h3><h4>Wie gut sind die Angaben befüllt?</h4>`
       + `<div class="hinweis">Felder, die nur für bestimmte Sportanlagen gedacht sind (z. B. Becken für Bäder), `

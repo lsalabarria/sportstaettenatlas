@@ -274,7 +274,7 @@ function teilBetreiber(bestand, el) {
     return roh.map(n => {
       const o = orgVon(n);
       return [o ? "org:" + o.id : schluesselName(n), o ? o.name : n.trim().replace(/\s+/g, " "),
-        (r === "nutzer" ? orgArt(n) : artVon(e.p, r)) || "ohne Angabe"];
+        (r === "nutzer" ? orgArt(n) : artVon(e.p, r)) || "unbekannt"];
     });
   }
   function gruppen() {
@@ -302,16 +302,21 @@ function teilBetreiber(bestand, el) {
   }
   const artZelle = x => {
     const o = x.s.startsWith("org:") ? orgVon(x.name) : null;
-    return o ? esc(o.typ || "im Verzeichnis, ohne Art") : `<span class="geerbt" title="nicht im Verzeichnis">geschätzt</span>`;
+    return o ? esc(o.typ || "unbekannt") : `<span class="geerbt">unbekannt, nicht im Verzeichnis</span>`;
   };
+  let erstmals = true;
   function zeichne() {
     const z = zaehle();
+    if (erstmals) {  // zu Beginn den ersten Reiter mit Einträgen zeigen
+      erstmals = false;
+      if (!(z[art] && z[art].size)) art = ["Verein", "Kommune", "sonstige", "unbekannt"].find(a => z[a] && z[a].size) || art;
+    }
     let liste = gruppen();
     if (filterText) liste = liste.filter(x => x.name.toLowerCase().includes(filterText) || x.ort.toLowerCase().includes(filterText));
     const { feld, ab } = sortierung;
     liste.sort((a, b) => (feld === "n" ? a.n - b.n : String(a[feld]).localeCompare(String(b[feld]), "de"))
       * (ab ? -1 : 1) || a.name.localeCompare(b.name, "de"));
-    const reiter = ["Verein", "Kommune", "sonstige"].map(a => `<button type="button" data-art="${a}" `
+    const reiter = ["Verein", "Kommune", "sonstige", "unbekannt"].map(a => `<button type="button" data-art="${a}" `
       + `aria-pressed="${a === art}">${artText(a)}`
       + ` (${zahl(z[a] ? z[a].size : 0)})</button>`).join("");
     const pfeil = f => sortierung.feld === f ? (sortierung.ab ? " ▼" : " ▲") : "";
@@ -336,8 +341,8 @@ function teilBetreiber(bestand, el) {
     }).join("");
     const im = ORGANISATIONEN.length;
     el.innerHTML = `<p class="unter">${esc(gebietName())} · Vereine, Kommunen und andere Organisationen als Eigentümer, `
-      + `Betreiber oder Nutzer von Sportstätten. Art aus dem Verzeichnis der Organisationen (${zahl(im)} Einträge), `
-      + `sonst aus dem Namen geschätzt („e.V.“, „TuS“, „Ortsgemeinde“ …)`
+      + `Betreiber oder Nutzer von Sportstätten. Art bei der Sportstätte oder im Verzeichnis der Organisationen `
+      + `(${zahl(im)} Einträge) angegeben, sonst unbekannt`
       + (ANSICHTEN.vorschlag ? ` · <a href="#" data-org-aendern="">neue Organisation eintragen</a>` : "") + `</p>`
       + `<div class="reiter">${reiter}<select aria-label="Rolle">`
       + [["betreiber", "als Betreiber"], ["eigentuemer", "als Eigentümer"], ["nutzer", "als Nutzer"]].map(([k, t]) =>

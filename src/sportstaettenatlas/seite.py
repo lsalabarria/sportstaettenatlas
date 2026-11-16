@@ -22,7 +22,6 @@ from __future__ import annotations
 import datetime as dt
 import html
 import json
-import re
 import shutil
 import urllib.request
 from collections import Counter
@@ -49,22 +48,6 @@ VON_HAND = ("konfig.js", "impressum.html", "datenschutz.html")  # nie überschre
 
 # --- Datenbestand für die Karte ---------------------------------------------------------
 
-# Art des Betreibers bzw. Eigentümers: aus *_typ, sonst geschätzt aus dem Namen. Verein
-# zuerst prüfen:
-# "Turnverein Ortsgemeinde X e.V." ist ein Verein.
-_VEREIN = re.compile(
-    r"e\.\s?v\b|\be\s?v\.?$|\bev\b|verein|sportgemeinde|sportgemeinschaft|sportfreunde|"
-    r"\b(tus|tsv|sv|fc|sc|sg|vfl|vfb|vfr|tv|tc|tsg|jsg|spvgg|fsv|ssv|djk|tura|dlrg|dav|"
-    r"rv|rfv|lc|ltv|asv|esv|psv|bsv|hsv|msv|svg|tg|ttc|ttv|vsg|ksv|sgm)\b|"
-    r"club|klub|schützen|gilde|alpenverein|kanu|ruder|turnerschaft|sportbund|sportkreis",
-    re.IGNORECASE,
-)
-_KOMMUNE = re.compile(
-    r"\b(orts|verbands|stadt)?gemeinde|\bstadt\b|städtisch|stadtverwaltung|"
-    r"landkreis|kreisverwaltung|\bkreis\b|kommun|bürgermeister|\b(og|vg|vgv)\b|stadtwerk|"
-    r"zweckverband|eigenbetrieb|^stadt|^gemeinde",
-    re.IGNORECASE,
-)
 # Angaben einer Sportanlage, die die Karte zeigt (neben Typ, Kennung und Name): alle Felder
 # des Modells außer IDs und Herkunft
 ANLAGE_FELDER = tuple(
@@ -75,16 +58,11 @@ ANLAGE_FELDER = tuple(
 
 
 def betreiber_art(name: str | None, typ: str | None = None) -> str | None:
-    """'Verein', 'Kommune' oder 'sonstige' – aus der angegebenen Art (modell.ORGANISATIONSTYPEN),
-    sonst geschätzt aus dem Namen; None ohne Namen."""
-    name = (name or "").strip()
-    if not name:
+    """'Verein', 'Kommune' oder 'sonstige' aus der angegebenen Art (modell.ORGANISATIONSTYPEN).
+    Ohne Art bleibt sie unbekannt (None) – geschätzt wird nicht; None auch ohne Namen."""
+    if not (name or "").strip():
         return None
-    if typ in modell.ORGANISATIONSTYPEN:
-        return modell.ORGANISATIONSTYPEN[typ]
-    if _VEREIN.search(name):
-        return "Verein"
-    return "Kommune" if _KOMMUNE.search(name) else "sonstige"
+    return modell.ORGANISATIONSTYPEN.get(typ or "")
 
 
 def _anlage_kurz(a: dict) -> list:

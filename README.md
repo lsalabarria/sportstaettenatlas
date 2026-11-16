@@ -166,8 +166,9 @@ git add -A daten docs && git commit -m "Daten aktualisiert" && git push
 In allen Reitern lässt sich oben ein Kreis, eine Verbandsgemeinde oder Gemeinde wählen.
 Reiter und Gebiet stehen in der Adresse (`…/#ansicht=uebersicht&gebiet=07137`). Die Suche
 oben links findet Sportstätten, Anlagentypen und Gebiete; mit Enter auch Orte über
-OpenStreetMap. Verein oder Kommune wird aus dem Namen des Betreibers geschätzt
-(`betreiber_art` in `seite.py`).
+OpenStreetMap. Ob ein Betreiber Verein, Kommune oder sonstige ist, folgt aus der angegebenen
+Art (bei der Sportstätte oder im Verzeichnis der Organisationen); ohne Angabe bleibt sie
+unbekannt – aus dem Namen wird nichts geschätzt.
 
 ### Vorschläge
 

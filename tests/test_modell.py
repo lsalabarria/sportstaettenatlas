@@ -241,6 +241,6 @@ def test_art_von_eigentuemer_und_betreiber():
     from sportstaettenatlas.seite import betreiber_art
 
     assert betreiber_art("Stadtwerke X GmbH", "Kommunales Unternehmen") == "Kommune"
-    assert betreiber_art("TuS Musterdorf e.V.") == "Verein"  # ohne Art: geschätzt
+    assert betreiber_art("TuS Musterdorf e.V.") is None  # ohne Art: unbekannt
     assert betreiber_art("Stadt X", "Privatwirtschaftlich/kommerziell") == "sonstige"
     assert set(modell.ORGANISATIONSTYPEN.values()) == {"Verein", "Kommune", "sonstige"}

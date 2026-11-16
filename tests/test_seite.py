@@ -167,7 +167,14 @@ def test_webseite_mit_bestand_gebieten_und_analyse(tmp_path):
     gebiete = _gebiete()
     ars_von = gb.Zuordnung(gebiete["gemeinde"]).ars
     bestand = [
-        _datensatz(1, 7.2, 50.5, betreiber="TuS Ort A e.V.", sportarten=["Fußball"]),
+        _datensatz(
+            1,
+            7.2,
+            50.5,
+            betreiber="TuS Ort A e.V.",
+            betreiber_typ="Sonstiger Sportverein",
+            sportarten=["Fußball"],
+        ),
         _datensatz(2, 7.7, 50.5, betreiber="Ortsgemeinde Ort B", eigentuemer="kontakt@x.example"),
         _datensatz(3, 9.0, 50.5),
     ]
@@ -192,7 +199,8 @@ def test_webseite_mit_bestand_gebieten_und_analyse(tmp_path):
     }
     assert b["RP-1"]["ars"] == "071375001001" and b["RP-2"]["ars"] == "071375001002"
     assert "ars" not in b["RP-3"]  # außerhalb aller Gemeinden
-    assert b["RP-1"]["betreiber_art"] == "Verein" and b["RP-2"]["betreiber_art"] == "Kommune"
+    assert b["RP-1"]["betreiber_art"] == "Verein"  # aus der angegebenen Art
+    assert "betreiber_art" not in b["RP-2"]  # ohne Art: unbekannt, nicht geschätzt
     assert "eigentuemer" not in b["RP-2"]  # E-Mail-Adresse entfernt
     assert info["entfernt"] == {"E-Mail-Adresse in „eigentuemer“": 1, "email": 1}
     index = {e["s"]: e for e in _lies(daten / "gebiete.json")["eintraege"]}
@@ -238,13 +246,11 @@ def test_ohne_neue_analyse_bleibt_der_alte_stand(tmp_path):
 def test_betreiber_art():
     from sportstaettenatlas.seite import betreiber_art
 
-    assert betreiber_art("TuS Koblenz 1911 e.V.") == "Verein"
-    assert betreiber_art("Turnverein Ortsgemeinde X") == "Verein"
-    assert betreiber_art("Ortsgemeinde Musterdorf") == "Kommune"
-    assert betreiber_art("Stadt Mainz") == "Kommune"
-    assert betreiber_art("Kreisverwaltung Mayen-Koblenz") == "Kommune"
-    assert betreiber_art("Fitness GmbH") == "sonstige"
-    assert betreiber_art("  ") is None and betreiber_art(None) is None
+    assert betreiber_art("TuS Koblenz 1911 e.V.", "Sportverein im LSB RLP") == "Verein"
+    assert betreiber_art("Ortsgemeinde Musterdorf", "Stadt/Gemeinde") == "Kommune"
+    assert betreiber_art("Fitness GmbH", "Privatwirtschaftlich/kommerziell") == "sonstige"
+    assert betreiber_art("TuS Koblenz 1911 e.V.") is None  # ohne Art: unbekannt
+    assert betreiber_art("  ", "Stadt/Gemeinde") is None and betreiber_art(None) is None
 
 
 def test_bestand_geojson_mit_anlagen():
