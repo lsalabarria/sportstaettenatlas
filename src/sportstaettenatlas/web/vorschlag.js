@@ -137,6 +137,10 @@ function ansichtVorschlag(bestand) {
   const ANLAGE_EINGABEN = ANLAGE_DETAILS.flatMap(d => d.p.widget === "zaehler"
     ? d.t.propertyNames.enum.map(w => ({ k: `${d.pfad}|${w}`, d, wert: w, titel: `${d.p.title}: ${w}` }))
     : [{ k: d.pfad, d, titel: d.p.title }]);
+  // Felder einer Organisation; Namen mit "org." davor, damit sie nicht mit der Sportstätte kollidieren
+  const ORG_FELDER = modellFelder("Organisation").filter(([, p]) => p.formular !== false)
+    .map(([k, p, pflicht, t]) => ({ pfad: "org." + k, k, p, pflicht, t }));
+  let orgOriginal = null;  // { o: Eintrag im Verzeichnis oder { name } aus dem Bestand, imVerzeichnis }
   const FELD_TYP = (() => { const x = modellFelder("Sportanlage").find(([k]) => k === "typ");
     return { pfad: "typ", p: x[1], pflicht: true, t: x[3] }; })();
 
@@ -170,10 +174,14 @@ function ansichtVorschlag(bestand) {
       + `${esc(gruppenText(anlagenGruppe(t)))}${passend && !passend.includes(t) ? ` – passt nicht zu „${esc(k)}“` : ""}</option>`).join("");
   }
   function organisationen() {
-    const bisher = haeufig(bestand.eintraege.flatMap(e => [e.p.betreiber, e.p.eigentuemer]))
+    const verzeichnis = ORGANISATIONEN.map(o => o.name);
+    const bisher = haeufig(bestand.eintraege.flatMap(e => [e.p.betreiber, e.p.eigentuemer, ...(e.p.nutzer || [])]))
       .sort((a, b) => b[1] - a[1]).map(x => x[0]);
     const kommunen = GEBIETE.map(kommunenName);
-    return [...new Map([...bisher, ...kommunen].map(n => [schluesselName(n), n])).values()];
+    // erste Schreibweise gewinnt: Verzeichnis vor Bestand vor Kommunen
+    const m = new Map();
+    for (const n of [...verzeichnis, ...bisher, ...kommunen]) if (!m.has(schluesselName(n))) m.set(schluesselName(n), n);
+    return [...m.values()];
   }
   const ORTE = () => [...new Set([...GEBIETE.filter(g => g.e === "gemeinde").map(g => g.n),
     ...bestand.eintraege.map(e => e.p.ort).filter(v => !leer(v))])].sort((a, b) => a.localeCompare(b, "de"));
@@ -195,9 +203,10 @@ function ansichtVorschlag(bestand) {
         <button type="button" class="knopf2" id="v-geocode">Lage aus der Adresse suchen</button>
         <div id="v-gemeinde" class="hinweis"></div></div>`;
     }
-    if (p.widget === "chips") {
-      return `<div class="chips-feld" data-chips="${n}"><div class="chips"></div>
-        <div class="hinzu"><input list="v-sportarten-liste" placeholder="${label} eingeben oder auswählen"
+    if (p.widget === "chips" || p.widget === "organisationen") {
+      const liste = p.widget === "organisationen" ? "v-orgs" : "v-sportarten-liste";
+      return `<div class="chips-feld" data-chips="${n}"><span class="chips-titel">${label}</span><div class="chips"></div>
+        <div class="hinzu"><input list="${liste}" placeholder="${label} eingeben oder auswählen"
         aria-label="${label}"><button type="button" class="knopf2">Hinzufügen</button></div></div>`;
     }
     if (p.widget === "ja_nein") return `<div class="zeile-feld"><span>${label}</span>${jaNein(pfad)}</div>`;
@@ -226,14 +235,16 @@ function ansichtVorschlag(bestand) {
   function baue() {
     el.innerHTML = `<div class="inhalt vorschlag"><h2>Vorschlag machen</h2>
       <p class="unter">Neue Sportstätte mit ihren Sportanlagen eintragen, die Angaben einer Sportstätte
-      ändern oder ihre Sportanlagen hinzufügen, ändern und entfernen. Im nächsten Schritt
+      ändern, ihre Sportanlagen hinzufügen, ändern und entfernen oder eine Organisation (Verein, Eigentümer,
+      Betreiber) eintragen, ändern und löschen. Im nächsten Schritt
       werden die Angaben an die Umfrage übergeben und dort abgeschickt; nach einer Prüfung erscheinen
       sie auf der Karte. Bitte keine personenbezogenen Daten (Namen, private Telefonnummern) eintragen.</p>
       <div class="raster"><form id="v-form" novalidate autocomplete="off">
       <fieldset><legend>Was möchten Sie tun?</legend>
         <span class="radios gross"><label><input type="radio" name="art" value="neu" checked> Neue Sportstätte mit ihren Sportanlagen eintragen</label>
         <label><input type="radio" name="art" value="aenderung"> Angaben einer Sportstätte ändern (Name, Adresse, Betreiber …)</label>
-        <label><input type="radio" name="art" value="anlagen"> Sportanlagen einer Sportstätte ändern (hinzufügen, ändern, entfernen)</label></span>
+        <label><input type="radio" name="art" value="anlagen"> Sportanlagen einer Sportstätte ändern (hinzufügen, ändern, entfernen)</label>
+        <label><input type="radio" name="art" value="organisation"> Organisation (Verein, Eigentümer, Betreiber …) eintragen, ändern oder löschen</label></span>
         <div id="v-auswahl" hidden><input type="search" id="v-suche" placeholder="Name, Ort oder ID der Sportstätte suchen"
           aria-label="Sportstätte suchen"><ul id="v-treffer" class="treffer"></ul></div>
         <div id="v-gewaehlt"></div>
@@ -247,6 +258,16 @@ function ansichtVorschlag(bestand) {
           .find(([k]) => k === "bezeichnung")[1].title)}</th><th>Anzahl</th><th>weitere Angaben</th></tr></thead>
           <tbody id="v-anlagen"></tbody></table>
         <button type="button" class="knopf2" id="v-anlage-dazu">+ Sportanlage hinzufügen</button>
+      </fieldset>
+      <fieldset id="v-teil-org" hidden><legend>Organisation</legend>
+        <p class="hinweis">Vereine, Kommunen, Verbände, Unternehmen, die Sportstätten besitzen, betreiben oder
+        nutzen. Sportstätten nennen sie beim Namen. Keine Personen und keine Kontaktdaten.</p>
+        <input type="search" id="v-org-suche" placeholder="vorhandene Organisation suchen (leer lassen für eine neue)"
+          aria-label="Organisation suchen"><ul id="v-org-treffer" class="treffer"></ul>
+        <div id="v-org-gewaehlt"></div>
+        <div id="v-org-felder">${ORG_FELDER.map(eingabe).join("")}</div>
+        <label class="bestaetigen" id="v-org-weg" hidden><input type="checkbox" name="org-loeschen">
+          Diese Organisation aus dem Verzeichnis löschen (z. B. aufgelöst oder doppelt)</label>
       </fieldset>
       <fieldset><legend>Anmerkung</legend>
         <textarea name="anmerkung" rows="3" maxlength="1000" placeholder="Was soll geändert werden, Quelle der Angaben …"></textarea>
@@ -268,6 +289,7 @@ function ansichtVorschlag(bestand) {
     form.addEventListener("change", ev => {
       if (ev.target.name === "art") {
         const art = F("art").value;
+        if (art === "organisation") { waehleOrg(null); zeigeTeile(); zeigeGewaehlt(); planePruefung(); return; }
         if (art === "neu") neu();
         else if (original && original.art !== art) { original.art = art; fuelle(ausEintrag(original)); }
         zeigeTeile(); zeigeGewaehlt();
@@ -306,11 +328,25 @@ function ansichtVorschlag(bestand) {
       const li = ev.target.closest("li[data-id]");
       if (li) bearbeite(li.dataset.id, F("art").value);
     });
+    const orgSuche = el.querySelector("#v-org-suche"), orgTreffer = el.querySelector("#v-org-treffer");
+    orgSuche.addEventListener("input", () => {
+      const q = schluesselName(orgSuche.value);
+      orgTreffer.innerHTML = q ? orgListe().filter(x => x.such.includes(q)).slice(0, 8).map(x =>
+        `<li data-org="${esc(x.name)}">${esc(x.name)}<small>${esc(verbinde([x.o ? x.o.typ || "im Verzeichnis, ohne Art"
+          : "noch nicht im Verzeichnis", nutzungText(x.name)]))}</small></li>`).join("")
+        || `<li class="gruppe">Nichts gefunden – unten als neue Organisation eintragen</li>` : "";
+    });
+    orgTreffer.addEventListener("click", ev => {
+      const li = ev.target.closest("li[data-org]");
+      if (!li) return;
+      orgSuche.value = ""; orgTreffer.innerHTML = "";
+      waehleOrg(li.dataset.org); zeigeTeile(); planePruefung();
+    });
   }
 
   // Felder mit widget "chips" (Sportarten): Liste zum Hinzufügen und Entfernen
   const chips = {};
-  for (const f of FELDER) if (f.p.widget === "chips") chips[f.pfad] = new Set();
+  for (const f of FELDER) if (f.p.widget === "chips" || f.p.widget === "organisationen") chips[f.pfad] = new Set();
   function zeigeChips(pfad) {
     const c = el.querySelector(`[data-chips="${pfad}"] .chips`);
     c.innerHTML = [...chips[pfad]].map(s => `<span class="chip-s">${esc(s)}<button type="button" `
@@ -467,23 +503,96 @@ function ansichtVorschlag(bestand) {
   // Teile des Formulars je nach Art des Vorschlags
   function zeigeTeile() {
     const art = F("art").value;
-    el.querySelector("#v-teil-staette").hidden = art === "anlagen";
-    el.querySelector("#v-teil-anlagen").hidden = art === "aenderung";
+    el.querySelector("#v-teil-staette").hidden = art === "anlagen" || art === "organisation";
+    el.querySelector("#v-teil-anlagen").hidden = art === "aenderung" || art === "organisation";
+    el.querySelector("#v-teil-org").hidden = art !== "organisation";
+    el.querySelector(".vorschlag aside").hidden = art === "organisation";
+    el.querySelector("#v-org-weg").hidden = !(orgOriginal && orgOriginal.imVerzeichnis);
   }
+  // Eigentümer/Betreiber: steht die Organisation im Verzeichnis, ihre Art übernehmen (wenn
+  // noch keine gewählt ist) und das zeigen; sonst die Schätzung aus dem Namen
   function zeigeArten() {
     for (const f of FELDER.filter(x => x.p.widget === "organisation")) {
-      const a = betreiberArt(F(f.pfad).value), s = el.querySelector(`[data-art="${f.pfad}"]`);
-      const typ = F(f.pfad + "_typ");  // Art angegeben: keine Schätzung zeigen
-      s.textContent = a ? `geschätzt: ${a}` : ""; s.hidden = !a || !!(typ && typ.value);
+      const name = F(f.pfad).value, o = orgVon(name), s = el.querySelector(`[data-art="${f.pfad}"]`);
+      const typ = F(f.pfad + "_typ");
+      if (o && o.typ && typ && !typ.value && typ.dataset.vonOrg !== name) {
+        typ.value = o.typ; typ.dataset.vonOrg = name;
+      }
+      const a = o ? "im Verzeichnis" + (o.typ ? "" : ", ohne Art") : schaetzeArt(name) ? `geschätzt: ${schaetzeArt(name)}` : "";
+      s.textContent = a; s.hidden = !a || (!o && !!(typ && typ.value));
     }
   }
-  // dieselbe Schätzung wie in seite.py (betreiber_art), vereinfacht
-  function betreiberArt(n) {
-    n = (n || "").trim();
-    if (!n) return "";
-    if (/e\.\s?v\b|\bev\b|verein|sport(gemeinde|gemeinschaft|freunde)|\b(tus|tsv|sv|fc|sc|sg|vfl|vfb|vfr|tv|tc|tsg|jsg|spvgg|fsv|ssv|djk|dlrg)\b|club|klub|schützen|gilde/i.test(n)) return "Verein";
-    if (/gemeinde|\bstadt\b|städtisch|landkreis|kreisverwaltung|\bkreis\b|kommun|stadtwerk|zweckverband/i.test(n)) return "Kommune";
-    return "sonstige";
+
+  // --- Organisationen ---
+  // Verzeichnis und Namen aus dem Bestand, die (noch) nicht darin stehen
+  function orgListe() {
+    const out = ORGANISATIONEN.map(o => ({ name: o.name, o,
+      such: [o.name, ...(o.weitere_namen || [])].map(schluesselName).join(" ") }));
+    const da = new Set(ORG_NACH_NAME.keys());
+    for (const n of organisationen()) if (!da.has(schluesselName(n)) && nutzung(n).n) {
+      da.add(schluesselName(n)); out.push({ name: n, o: null, such: schluesselName(n) });
+    }
+    return out;
+  }
+  // Wie oft nennen Sportstätten diese Organisation (alle Schreibweisen)?
+  function nutzung(name) {
+    const o = orgVon(name), namen = new Set([name, ...(o ? [o.name, ...(o.weitere_namen || [])] : [])].map(schluesselName));
+    const z = { eigentuemer: 0, betreiber: 0, nutzer: 0, n: 0 };
+    for (const e of bestand.eintraege) {
+      let ja = false;
+      for (const r of ["eigentuemer", "betreiber"]) if (namen.has(schluesselName(e.p[r]))) { z[r]++; ja = true; }
+      if ((e.p.nutzer || []).some(x => namen.has(schluesselName(x)))) { z.nutzer++; ja = true; }
+      if (ja) z.n++;
+    }
+    return z;
+  }
+  function nutzungText(name) {
+    const z = nutzung(name);
+    return z.n ? `${zahl(z.n)} Sportstätten (` + [["eigentuemer", "Eigentümer"], ["betreiber", "Betreiber"], ["nutzer", "Nutzer"]]
+      .filter(([k]) => z[k]).map(([k, t]) => `${t} ${zahl(z[k])}`).join(", ") + ")" : "keine Sportstätte nennt sie";
+  }
+  // Organisation zum Ändern wählen (Name aus der Liste) oder null für eine neue
+  function waehleOrg(name) {
+    const o = name ? orgVon(name) : null;
+    orgOriginal = name ? { o: o || { name }, imVerzeichnis: !!o } : null;
+    const werte = orgOriginal ? orgOriginal.o : {};
+    for (const f of ORG_FELDER) {
+      const e = F(f.pfad), w = werte[f.k];
+      e.value = leer(w) ? "" : Array.isArray(w) ? w.join(", ") : w;
+    }
+    if (F("org-loeschen")) F("org-loeschen").checked = false;
+    const g = el.querySelector("#v-org-gewaehlt");
+    g.innerHTML = orgOriginal ? `<div class="chip">${orgOriginal.imVerzeichnis ? "Sie ändern" : "Noch nicht im Verzeichnis, Sie tragen ein"}: `
+      + `<b>${esc(orgOriginal.o.name)}</b> <span class="q">${esc(nutzungText(orgOriginal.o.name))}</span>`
+      + ` <button type="button">stattdessen eine neue</button></div>` : "";
+    const b = g.querySelector("button");
+    if (b) b.addEventListener("click", () => { waehleOrg(null); zeigeTeile(); planePruefung(); });
+  }
+  function orgWerte() {
+    const o = {};
+    for (const f of ORG_FELDER) {
+      const x = String(F(f.pfad).value || "").trim();
+      if (x) o[f.k] = f.t.type === "array" ? listeAus(x) : x;
+    }
+    return o;
+  }
+  function orgFehler(o, loeschen) {
+    if (loeschen) return [];
+    const fehler = [];
+    for (const f of ORG_FELDER) fehler.push(...regelFehler(f, o[f.k], f.p.title));
+    fehler.push(...regelnZwischen("Organisation", o));
+    // Name oder Schreibweise schon bei einer anderen Organisation im Verzeichnis?
+    const eigene = orgOriginal && orgOriginal.imVerzeichnis ? orgOriginal.o.id : null;
+    for (const n of [o.name, ...(o.weitere_namen || [])]) {
+      const andere = orgVon(n);
+      if (n && andere && andere.id !== eigene) fehler.push(`„${n}“ steht schon im Verzeichnis (${andere.name}) – bitte oben suchen und ändern`);
+    }
+    return fehler;
+  }
+  function orgAenderungen(o) {
+    if (!orgOriginal) return Object.keys(o);
+    const alt = orgOriginal.o, text = x => Array.isArray(x) ? x.join(", ") : (x || "");
+    return ORG_FELDER.map(f => f.k).filter(k => text(alt[k]) !== text(o[k]));
   }
 
   // --- Karte im Formular ---
@@ -549,7 +658,7 @@ function ansichtVorschlag(bestand) {
   // --- Werte lesen und setzen (Sportstätte verschachtelt wie im Modell) ---
   function leseFeld(f) {
     if (f.p.widget === "karte") return lage ? { lon: +lage[1].toFixed(6), lat: +lage[0].toFixed(6) } : null;
-    if (f.p.widget === "chips") return [...chips[f.pfad]];
+    if (f.p.widget === "chips" || f.p.widget === "organisationen") return [...chips[f.pfad]];
     const x = String(F(f.pfad).value || "").trim();
     if (x === "") return f.t.type === "array" ? [] : null;
     if (istZahl(f.t)) return Number(x.replace(",", "."));
@@ -558,14 +667,15 @@ function ansichtVorschlag(bestand) {
   function werte() {
     const s = {};
     for (const f of FELDER) setze(s, f.pfad, leseFeld(f));
-    return { art: F("art").value, sportstaette: s, anlagenliste: anlagenListe(),
+    return { art: F("art").value, sportstaette: s, anlagenliste: anlagenListe(), organisation: orgWerte(),
+      loeschen: !!(F("org-loeschen") && F("org-loeschen").checked),
       anmerkung: (F("anmerkung").value || "").trim() };
   }
   function fuelle(v) {
     for (const f of FELDER) {
       const w = hole(v, f.pfad);
       if (f.p.widget === "karte") continue;
-      if (f.p.widget === "chips") { chips[f.pfad] = new Set(w || []); zeigeChips(f.pfad); continue; }
+      if (f.p.widget === "chips" || f.p.widget === "organisationen") { chips[f.pfad] = new Set(w || []); zeigeChips(f.pfad); continue; }
       if (f.p.widget === "ja_nein") {
         const x = w === "ja" || w === "nein" ? w : "";
         form.querySelectorAll(`input[name="${f.pfad}"]`).forEach(i => { i.checked = i.value === x; });
@@ -592,13 +702,13 @@ function ansichtVorschlag(bestand) {
   function zeigeGewaehlt() {
     const g = el.querySelector("#v-gewaehlt");
     const was = F("art").value === "anlagen" ? "die Sportanlagen von" : "die Angaben von";
-    g.innerHTML = original ? `<div class="chip">Sie ändern ${was}: <b>${esc(original.p.name || original.kat)}</b> `
+    g.innerHTML = original && F("art").value !== "organisation" ? `<div class="chip">Sie ändern ${was}: <b>${esc(original.p.name || original.kat)}</b> `
       + `<span class="q">${esc(verbinde([original.p.kategorie, original.p.adresse]))}</span>`
       + ` <button type="button">andere wählen</button></div>` : "";
     const b = g.querySelector("button");
     if (b) b.addEventListener("click", () => { original = null; zeigeGewaehlt();
       el.querySelector("#v-auswahl").hidden = false; el.querySelector("#v-suche").focus(); planePruefung(); });
-    el.querySelector("#v-auswahl").hidden = !(F("art").value !== "neu" && !original);
+    el.querySelector("#v-auswahl").hidden = !(["aenderung", "anlagen"].includes(F("art").value) && !original);
   }
   // Formular neu füllen: für eine neue Sportstätte (eintrag = null) oder eine vorhandene
   function beginne(art, eintrag, vorgabe, herkunft = "") {
@@ -624,6 +734,7 @@ function ansichtVorschlag(bestand) {
   function pruefe() {
     if (!form) return;
     const v = werte();
+    if (v.art === "organisation") return;
     dubletten = sucheDubletten(v);
     const box = el.querySelector("#v-dubletten");
     if (!dubletten.length) {
@@ -773,6 +884,7 @@ function ansichtVorschlag(bestand) {
   function weiter() {
     pruefe();
     const v = werte(), fehler = [];
+    if (v.art === "organisation") return weiterOrg(v);
     if (v.art !== "neu" && !original) fehler.push("Welche Sportstätte soll geändert werden? (oben auswählen)");
     fehler.push(...regelVerstoesse(v));
     if (/[\w.+-]+@[\w-]+\.[\w.]+/.test(JSON.stringify(v))) fehler.push("Bitte keine E-Mail-Adressen eintragen");
@@ -786,6 +898,10 @@ function ansichtVorschlag(bestand) {
       fehler.push("Mögliche Doppelung prüfen (rechts) und bestätigen, dass es eine andere Sportstätte ist");
     }
     const daten = vorschlagDaten(v, geaendert, v.art === "neu" && cb && cb.checked ? dubletten.map(d => d.e.p.id) : []);
+    sende(daten, v, fehler);
+  }
+  // Vorschlag als JSON an LimeSurvey (Frage data), Anmerkung in kommentar
+  function sende(daten, v, fehler) {
     const params = new URLSearchParams();
     params.set(VORSCHLAG_FRAGEN.data, JSON.stringify(daten));
     if (v.anmerkung && VORSCHLAG_FRAGEN.kommentar) params.set(VORSCHLAG_FRAGEN.kommentar, v.anmerkung);
@@ -810,7 +926,20 @@ function ansichtVorschlag(bestand) {
       ausgabe.scrollIntoView({ behavior: "smooth", block: "nearest" });
     }
   }
-
+  function weiterOrg(v) {
+    const fehler = orgFehler(v.organisation, v.loeschen);
+    const geaendert = orgAenderungen(v.organisation);
+    if (orgOriginal && orgOriginal.imVerzeichnis && !v.loeschen && !geaendert.length && !v.anmerkung) {
+      fehler.push("Änderung: mindestens ein Feld ändern, löschen wählen oder eine Anmerkung schreiben");
+    }
+    if (/[\w.+-]+@[\w-]+\.[\w.]+/.test(JSON.stringify(v.organisation))) fehler.push("Bitte keine E-Mail-Adressen eintragen");
+    const daten = { version: 1, art: "organisation" };
+    if (orgOriginal && orgOriginal.imVerzeichnis) daten.organisation_id = orgOriginal.o.id;
+    if (v.loeschen) daten.loeschen = true;
+    else daten.organisation = v.organisation;
+    if (!v.loeschen && geaendert.length && orgOriginal) daten.geaendert = geaendert;
+    sende(daten, v, fehler);
+  }
   let gebaut = false;
   return {
     titel: "Vorschlag",
@@ -825,8 +954,24 @@ function ansichtVorschlag(bestand) {
     hat: id => NACH_ID.has(id),
     neu(vorgabe, herkunft) { zeige("vorschlag").then(() => { neu(vorgabe, herkunft); pruefe(); el.scrollTop = 0; }); },
     bearbeite(id, art) { zeige("vorschlag").then(() => { bearbeite(id, art); pruefe(); el.scrollTop = 0; }); },
+    // Organisation ändern oder löschen (Name wie bei den Sportstätten); ohne Namen: neue
+    organisation(name) {
+      zeige("vorschlag").then(() => {
+        F("art").value = "organisation"; waehleOrg(name || null);
+        zeigeTeile(); zeigeGewaehlt(); el.querySelector("#v-ausgabe").innerHTML = "";
+        el.querySelector("#v-fehler").hidden = true; el.scrollTop = 0;
+      });
+    },
   };
 }
+// Links „Organisation ändern“ (Liste, Popups)
+document.addEventListener("click", ev => {
+  const a = ev.target.closest("[data-org-aendern]");
+  if (!a || !ANSICHTEN.vorschlag) return;
+  ev.preventDefault();
+  karte.closePopup();
+  ANSICHTEN.vorschlag.organisation(a.dataset.orgAendern);
+});
 // Links in Popups: „ändern“, „als Vorschlag übernehmen“, „hier vorschlagen“
 document.addEventListener("click", ev => {
   const a = ev.target.closest("[data-bearbeiten],[data-vorschlag-alkis],[data-vorschlag-hier],[data-vorschlag-neu]");

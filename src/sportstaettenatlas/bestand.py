@@ -2,6 +2,7 @@
 
     daten/RP/07111-koblenz/<id>/<id>_meta.json     die Sportstätte
     daten/RP/07111-koblenz/<id>/<anlage-id>.json   je Sportanlage eine Datei
+    daten/organisationen/<id>.json                 Verzeichnis der Organisationen (Eigentümer, Betreiber, Nutzer)
 
 Der Kreis-Ordner ergibt sich aus der Lage (`kreis_ordner`). Jede Sportanlage nennt in
 `sportstaette_id` die Sportstätte ihres Ordners; `lies_bestand` prüft das. Felder, ihre
@@ -20,7 +21,15 @@ from collections.abc import Callable, Iterator
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from .modell import Sportanlage, Sportstaette, migriere, ordne, pruefe, zuordnung_hinweise
+from .modell import (
+    Organisation,
+    Sportanlage,
+    Sportstaette,
+    migriere,
+    ordne,
+    pruefe,
+    zuordnung_hinweise,
+)
 
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+(\.[\w-]+)+")
 OHNE_KREIS = "ohne-kreis"
@@ -369,3 +378,131 @@ def falsch_einsortiert(datensaetze, kreis_von: KreisVon) -> list[tuple[str, str,
         if d.get("_ordner") and d["_ordner"] != soll:
             out.append((d["id"], d["_ordner"], soll))
     return out
+
+
+# --- Verzeichnis der Organisationen (daten/organisationen/) -----------------------------
+
+ORGANISATIONEN = "organisationen"
+_ORG_NAMENSRAUM = uuid.UUID("a7d4c2e1-9f3b-4b8a-8c6d-1e5f0a2b3c4d")
+
+
+def org_schluessel(name: str | None) -> str:
+    """Name zum Vergleichen: klein, Leerzeichen vereinheitlicht (wie schluesselName im Web)."""
+    return re.sub(r"\s+", " ", (name or "").strip()).lower()
+
+
+def organisation_id(name: str) -> str:
+    """Feste ID aus dem Namen – für Organisationen, die aus dem Bestand angelegt werden."""
+    return str(uuid.uuid5(_ORG_NAMENSRAUM, org_schluessel(name)))
+
+
+def lies_organisationen(daten: Path, verstoesse: list | None = None) -> list[dict]:
+    """Alle Organisationen aus daten/organisationen/<id>.json. Dateiname = id; ein Name
+    (auch eine weitere Schreibweise) darf nur bei einer Organisation stehen."""
+    out, namen = [], {}
+    for pfad in sorted((Path(daten) / ORGANISATIONEN).glob("*.json")):
+        o = _lies_json(pfad)
+        if o.get("id") != pfad.stem:
+            raise ValueError(f"{pfad}: id {o.get('id')!r} passt nicht zum Dateinamen")
+        if verstoesse is not None:
+            verstoesse += [(str(pfad), m) for m in pruefe(Organisation, o)]
+            for n in [o.get("name"), *(o.get("weitere_namen") or [])]:
+                k = org_schluessel(n)
+                if k in namen and namen[k] != o["id"]:
+                    verstoesse.append((str(pfad), f"name: „{n}“ steht auch bei {namen[k]}"))
+                namen.setdefault(k, o["id"])
+        out.append(o)
+    return out
+
+
+def org_verzeichnis(organisationen: list[dict]) -> dict[str, dict]:
+    """Name und weitere Schreibweisen (org_schluessel) → Organisation."""
+    out = {}
+    for o in organisationen:
+        for n in [o.get("name"), *(o.get("weitere_namen") or [])]:
+            if n:
+                out.setdefault(org_schluessel(n), o)
+    return out
+
+
+def schreibe_organisation(daten: Path, o: dict) -> Path:
+    """Eine Organisation als daten/organisationen/<id>.json (neue ID, wenn sie fehlt)."""
+    o = {**o, "id": o.get("id") or str(uuid.uuid4())}
+    pfad = Path(daten) / ORGANISATIONEN / f"{o['id']}.json"
+    pfad.parent.mkdir(parents=True, exist_ok=True)
+    pfad.write_text(als_json(ordne(bereinigen(o, Counter()), Organisation)), encoding="utf-8")
+    return pfad
+
+
+ROLLEN = ("eigentuemer", "betreiber", "nutzer")
+
+
+def organisationen_von(d: dict) -> list[tuple[str, str]]:
+    """Organisationen einer Sportstätte: [(Rolle, Name)] – Eigentümer, Betreiber, Nutzer."""
+    out = []
+    for rolle in ROLLEN:
+        werte = d.get(rolle) or []
+        for name in [werte] if isinstance(werte, str) else werte:
+            if (name or "").strip():
+                out.append((rolle, name.strip()))
+    return out
+
+
+def organisationen_aus_bestand(bestand, daten: Path, typen: bool = False) -> int:
+    """Für jeden Eigentümer, Betreiber und Nutzer im Bestand, der noch nicht im Verzeichnis steht,
+    eine Organisation anlegen (Name in der häufigsten Schreibweise). typen=True übernimmt
+    eine bei den Sportstätten angegebene Art, wenn sie dort einheitlich ist. Liefert die
+    Zahl der neuen."""
+    verzeichnis = org_verzeichnis(lies_organisationen(daten))
+    gefunden: dict[str, Counter] = {}
+    arten: dict[str, set] = {}
+    for d in bestand:
+        for rolle, name in organisationen_von(d):
+            k = org_schluessel(name)
+            if k in verzeichnis:
+                continue
+            gefunden.setdefault(k, Counter())[re.sub(r"\s+", " ", name)] += 1
+            if d.get(f"{rolle}_typ"):
+                arten.setdefault(k, set()).add(d[f"{rolle}_typ"])
+    for k, schreibweisen in gefunden.items():
+        name = schreibweisen.most_common(1)[0][0]
+        o = {"id": organisation_id(name), "name": name}
+        if typen and len(arten.get(k, ())) == 1:
+            o["typ"] = next(iter(arten[k]))
+        schreibe_organisation(daten, o)
+    return len(gefunden)
+
+
+def schreibe_organisationen(datensaetze, daten: Path, modus: str = "neu") -> Ergebnis:
+    """Organisationen (z. B. aus einer CSV) ins Verzeichnis übernehmen. Vorhandene findet
+    die ID oder der Name (auch eine weitere Schreibweise); Modi wie bei schreibe_bestand."""
+    if modus not in MODI:
+        raise ValueError(f"Unbekannter Modus: {modus} (erlaubt: {', '.join(MODI)})")
+    vorhanden = lies_organisationen(daten)
+    nach_id = {o["id"]: o for o in vorhanden}
+    verzeichnis = org_verzeichnis(vorhanden)
+    e = Ergebnis()
+    for roh in datensaetze:
+        o = bereinigen(roh, e.entfernt)
+        if not o.get("name") and not o.get("id"):
+            continue
+        alt = nach_id.get(o.get("id", "")) or verzeichnis.get(org_schluessel(o.get("name")))
+        if alt is None:
+            o.setdefault("id", organisation_id(o["name"]))
+            neu = o
+            e.neu += 1
+        elif modus == "neu":
+            e.behalten += 1
+            continue
+        else:
+            neu = _uebernimm(alt, {**o, "id": alt["id"]}, modus)
+            if neu == alt:
+                e.unveraendert += 1
+                continue
+            e.aktualisiert += 1
+        for meldung in pruefe(Organisation, neu):
+            e.regelverstoesse[meldung.split(":")[0]] += 1
+        schreibe_organisation(daten, neu)
+        nach_id[neu["id"]] = neu
+        verzeichnis.update(org_verzeichnis([neu]))
+    return e

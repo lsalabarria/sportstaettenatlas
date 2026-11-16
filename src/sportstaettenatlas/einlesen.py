@@ -9,6 +9,9 @@ Erkannt werden drei Arten von Tabellen:
 - **Sportanlagen**, eine Zeile je Anlage: Spalten wie die Felder von `Sportanlage`, dazu
   `sportstaette_id` (Pflicht) und `id` (die UUID oder ihre ersten 8 Zeichen, für vorhandene
   Anlagen; neue ohne).
+- **Organisationen** (Vereine, Kommunen, Verbände …), eine Zeile je Organisation: Spalten
+  wie die Felder von `Organisation` – erkannt an `name` und `typ` bzw. „Art“ ohne Kategorie
+  und Lage. Vorhandene findet die ID oder der Name.
 
 Spaltennamen werden über das Modell erkannt, ohne Rücksicht auf Groß-/Kleinschreibung,
 Umlaute und Satzzeichen: der Feldname (`plz` oder `adresse.plz`), die Beschriftung („PLZ“)
@@ -59,7 +62,7 @@ class Bericht:
     """Was beim Einlesen einer Datei passiert ist (für die Ausgabe der Kommandozeile)."""
 
     datei: str
-    art: str = ""  # "atlas", "sportstaetten" oder "sportanlagen"
+    art: str = ""  # "atlas", "sportstaetten", "sportanlagen" oder "organisationen"
     zeilen: int = 0
     spalten: dict[str, str] = field(default_factory=dict)  # Spalte → Feld
     ignoriert: list[str] = field(default_factory=list)  # Spalten ohne passendes Feld
@@ -239,13 +242,20 @@ def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
             d["quellen"]["atlas_rlp"]["stand"] = d["quellen"]["atlas_rlp"]["stand"] or stand
         return datensaetze, b
 
-    anlagen_namen, staetten_namen = spalten_namen("Sportanlage"), spalten_namen("Sportstaette")
-    ist_anlagen = {"sportstaetteid", "typ"} <= {_norm(k) for k in kopf} or (
-        "sportstaetteid" in {_norm(k) for k in kopf} and "name" not in {_norm(k) for k in kopf}
+    staetten_namen = spalten_namen("Sportstaette")
+    normiert = {_norm(k) for k in kopf}
+    ist_anlagen = {"sportstaetteid", "typ"} <= normiert or (
+        "sportstaetteid" in normiert and "name" not in normiert
     )
-    b.art = "sportanlagen" if ist_anlagen else "sportstaetten"
-    modellname = "Sportanlage" if ist_anlagen else "Sportstaette"
-    namen = anlagen_namen if ist_anlagen else staetten_namen
+    hat_staette = {staetten_namen.get(k) for k in normiert} & {"kategorie", "lage.lat", "lage.lon"}
+    ist_org = (
+        not ist_anlagen and not hat_staette and normiert & {"typ", "art"} and "name" in normiert
+    )
+    b.art = "sportanlagen" if ist_anlagen else "organisationen" if ist_org else "sportstaetten"
+    modellname = {"sportanlagen": "Sportanlage", "organisationen": "Organisation"}.get(
+        b.art, "Sportstaette"
+    )
+    namen = spalten_namen(modellname)
     zuordnung: dict[
         str, tuple[str, str | None]
     ] = {}  # Spalte → (Pfad, Schlüssel bei Anzahl je Wert)
@@ -297,6 +307,9 @@ def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
                 _setze(d, pfad_, text)  # bleibt, wie er ist; die Regeln melden ihn
         if not d:
             continue
+        if ist_org:
+            datensaetze.append(d)
+            continue
         if ist_anlagen:
             sid = str(d.pop("sportstaette_id", "") or "")
             if sid and d.get("typ"):
@@ -341,7 +354,7 @@ def _zelle(v) -> str:
 
 
 def schreibe_vorlage(ordner: Path) -> list[Path]:
-    """vorlage_sportstaetten.csv und vorlage_sportanlagen.csv: alle Spalten aus dem Modell
+    """vorlage_sportstaetten.csv, _sportanlagen.csv, _organisationen.csv: alle Spalten aus dem Modell
     und eine Beispielzeile. Mit ; getrennt und mit BOM, damit Excel sie richtig öffnet."""
     ordner = Path(ordner)
     ordner.mkdir(parents=True, exist_ok=True)
@@ -353,7 +366,12 @@ def schreibe_vorlage(ordner: Path) -> list[Path]:
         "Sportanlage": modell.Sportanlage.model_config["json_schema_extra"]["examples"][0],
     }
     pfade = []
-    for modellname, datei in (("Sportstaette", "sportstaetten"), ("Sportanlage", "sportanlagen")):
+    beispiele["Organisation"] = modell.Organisation.model_config["json_schema_extra"]["examples"][0]
+    for modellname, datei in (
+        ("Sportstaette", "sportstaetten"),
+        ("Sportanlage", "sportanlagen"),
+        ("Organisation", "organisationen"),
+    ):
         spalten = _vorlage_spalten(modellname)
         b = beispiele[modellname]
         flach = {**b, **(b.get("adresse") or {}), **(b.get("lage") or {})}

@@ -67,6 +67,12 @@ daten/RP/07111-koblenz/          Kreis – nur Ordnung im Git, ergibt sich aus d
   Becken, Ausstattung, Licht, Öffnungsstunden, Barrierefreiheit und Baukosten mit Währung.
   Die Felder stammen aus dem bisherigen Atlas (Spalte „Legacy“ in `daten/README.md`); viele
   sind nur für bestimmte Anlagen gedacht (Becken für Bäder), das Formular zeigt nur diese.
+- **Organisationen** (Vereine, Kommunen, Verbände, Unternehmen) stehen einmal im Verzeichnis
+  `daten/organisationen/` mit Name, Art, Webseite und weiteren Schreibweisen. Sportstätten
+  nennen sie beim Namen als Eigentümer, Betreiber oder Nutzer (`nutzer`: Vereine, die dort
+  Sport treiben). `uv run sportstaettenatlas organisationen` zeigt, wie viele Namen aus dem
+  Bestand im Verzeichnis stehen; `--aus-bestand` legt die fehlenden an (`--mit-art` übernimmt
+  dabei eine einheitlich angegebene Art).
 - Jede Sportanlage gehört zu genau einer Sportstätte. Ihr Typ soll zur Kategorie der
   Sportstätte passen (`KATEGORIE_ANLAGEN` in `modell.py`); sonst gibt es einen Hinweis.
 
@@ -111,7 +117,8 @@ JSON-Dateien unter `daten/`. Es erkennt drei Arten:
 - eine Tabelle der **Sportstätten** (eine Zeile je Sportstätte; Spalte `anlagen` darf die
   Typen der Sportanlagen nennen),
 - eine Tabelle der **Sportanlagen** (eine Zeile je Anlage, mit `sportstaette_id`; `id` für
-  vorhandene Anlagen, auch die Kurz-ID von der Webseite).
+  vorhandene Anlagen, auch die Kurz-ID von der Webseite),
+- eine Tabelle der **Organisationen** (`name` und `typ` bzw. „Art“; vorhandene findet der Name).
 
 Die Spalten werden über das Datenmodell erkannt: Feldname (`plz`), Beschriftung („PLZ“) oder
 Name im alten Atlas („postleitzahl“, „bodenbelag_anz_sand“), Groß-/Kleinschreibung egal.
@@ -151,7 +158,7 @@ git add -A daten docs && git commit -m "Daten aktualisiert" && git push
 | Reiter | Inhalt |
 |---|---|
 | **Karte** | ein Punkt je Sportstätte; Filter nach den Sportanlagen darin (nach Gruppen), Kategorie, Betreiber-Art und Sportarten; das Fenster einer Sportstätte listet ihre Anlagen |
-| **Liste** | alle Sportstätten bzw. Sportanlagen, filterbar nach Sportart, Kategorie, Typ und Text, sortierbar (auch nach Befüllung); ein Klick zeigt rechts alle Angaben der Sportstätte und ihrer Anlagen (auf Wunsch auch die leeren), „Karte“ springt zum Punkt. Dazu Betreiber und Eigentümer. Auswahl steht in der Adresse, z. B. `#ansicht=liste&teil=anlagen&sportart=Fußball` |
+| **Liste** | alle Sportstätten, Sportanlagen bzw. Organisationen (als Eigentümer, Betreiber oder Nutzer), filterbar nach Sportart, Kategorie, Typ und Text, sortierbar (auch nach Befüllung); ein Klick zeigt rechts alle Angaben der Sportstätte und ihrer Anlagen (auf Wunsch auch die leeren), „Karte“ springt zum Punkt. Auswahl steht in der Adresse, z. B. `#ansicht=liste&teil=anlagen&sportart=Fußball` |
 | **Übersicht** | Sportstätten und Sportanlagen: Zahlen, Befüllung der Angaben nach Abschnitten (Felder nur unter den Anlagen, für die sie gedacht sind), Typen, die nicht zur Kategorie passen, je Kreis |
 | **Vorschlag** | Formular für neue Sportstätten und Änderungen, weiter zu LimeSurvey |
 | **Analysen** | der ALKIS-Abgleich; lädt erst beim Öffnen |
@@ -164,9 +171,10 @@ OpenStreetMap. Verein oder Kommune wird aus dem Namen des Betreibers geschätzt
 
 ### Vorschläge
 
-Das Formular kennt drei Arten: eine **neue Sportstätte** mit ihren Sportanlagen, die
-**Angaben einer Sportstätte ändern** oder ihre **Sportanlagen ändern** (hinzufügen, ändern,
-entfernen). Es meldet mögliche Doppelungen (höchstens 60 m entfernt, gleiche Kategorie in
+Das Formular kennt vier Arten: eine **neue Sportstätte** mit ihren Sportanlagen, die
+**Angaben einer Sportstätte ändern**, ihre **Sportanlagen ändern** (hinzufügen, ändern,
+entfernen) oder eine **Organisation** eintragen, ändern oder löschen (`organisation_id`,
+`organisation`, `loeschen`; ein Name darf nur bei einer Organisation stehen). Es meldet mögliche Doppelungen (höchstens 60 m entfernt, gleiche Kategorie in
 250 m, sehr ähnlicher Name oder gleiche Adresse). „Weiter zu LimeSurvey“ öffnet die Umfrage
 aus `konfig.js`. Sie hat nur zwei Fragen: `data` (versteckt) bekommt den ganzen Vorschlag als
 JSON nach dem Modell `Vorschlag`, `kommentar` die Anmerkung. Ändert sich das Datenmodell,

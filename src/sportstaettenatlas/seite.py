@@ -97,9 +97,14 @@ def _anlage_kurz(a: dict) -> list:
     return out
 
 
-def bestand_geojson(datensaetze, praezision: int = 5) -> dict:
+def bestand_geojson(datensaetze, praezision: int = 5, organisationen=None) -> dict:
     """Sportstätten → GeoJSON-Punkte (flache Eigenschaften, Anlagen als Liste) und die
-    Gruppen der Anlagentypen für den Filter (`anlagengruppen`, `anlagentypen`)."""
+    Gruppen der Anlagentypen für den Filter (`anlagengruppen`, `anlagentypen`).
+    Steht ein Eigentümer oder Betreiber im Verzeichnis der Organisationen, gilt dessen Art,
+    wenn bei der Sportstätte keine angegeben ist."""
+    from .bestand import org_schluessel, org_verzeichnis
+
+    verzeichnis = org_verzeichnis(organisationen or [])
     features = []
     typen: set[str] = set()
     reihe = {t: i for i, t in enumerate(anlagen_typen.GRUPPE_VON)}
@@ -125,7 +130,10 @@ def bestand_geojson(datensaetze, praezision: int = 5) -> dict:
             elif feld not in ("lage", "quellen"):
                 p[feld] = d.get(feld)
         for rolle in ("betreiber", "eigentuemer"):
-            p[f"{rolle}_art"] = betreiber_art(d.get(rolle), d.get(f"{rolle}_typ"))
+            org = verzeichnis.get(org_schluessel(d.get(rolle)))
+            if org and org.get("typ") and not p.get(f"{rolle}_typ"):
+                p[f"{rolle}_typ"] = org["typ"]
+            p[f"{rolle}_art"] = betreiber_art(d.get(rolle), p.get(f"{rolle}_typ"))
         punkt = [round(float(lage["lon"]), praezision), round(float(lage["lat"]), praezision)]
         features.append(
             {
@@ -262,6 +270,7 @@ def schreibe_webseite(
     quellenvermerk: str = "",
     titel: str = "Sportstättenatlas Rheinland-Pfalz",
     leaflet_laden: bool = True,
+    organisationen: list[dict] | None = None,
 ) -> dict:
     """Webseite nach `ausgabe` (z. B. docs/) schreiben. Liefert eine kleine Statistik.
 
@@ -271,6 +280,7 @@ def schreibe_webseite(
               analysen.alkis.webdaten. Fehlt eine Analyse, bleiben ihre Dateien aus
               einem früheren Lauf unverändert.
     ars_von:  (lon, lat) → Regionalschlüssel der Gemeinde, für Datensätze aus `bestand`
+    organisationen: Verzeichnis der Organisationen (Eigentümer, Betreiber, Nutzer) (bestand.lies_organisationen)
     """
     from . import gebiete as gb
 
@@ -281,12 +291,24 @@ def schreibe_webseite(
     # (Pfad unter daten/, Beschreibung, Inhalt)
     schreiben: list[tuple[str, str, dict]] = []
     if bestand is not None:
-        fc = bestand_geojson(bestand)
+        fc = bestand_geojson(bestand, organisationen=organisationen)
         if ars_von:
             for f in fc["features"]:
                 if ars := ars_von(*f["geometry"]["coordinates"]):
                     f["properties"]["ars"] = ars
         schreiben.append(("bestand.geojson", "Sportstätten (Datenbestand des Atlas)", fc))
+    if organisationen is not None:
+        felder = modell.datei_felder(modell.Organisation)
+        eintraege = [
+            {k: o[k] for k in felder if o.get(k) not in (None, "", [])} for o in organisationen
+        ]
+        schreiben.append(
+            (
+                "organisationen.json",
+                "Organisationen: Eigentümer, Betreiber, Nutzer",
+                {"eintraege": eintraege},
+            )
+        )
     # Datenmodell: Felder, Regeln und Beschriftungen für Formular, Popup und Übersicht
     schreiben.append(("schema.json", "Datenmodell (JSON Schema)", modell.schema()))
     if gebiete:

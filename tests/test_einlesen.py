@@ -133,7 +133,7 @@ def test_modi(tmp_path):
 
 
 def test_vorlage_laesst_sich_einlesen(tmp_path):
-    staetten, anlagen = einlesen.schreibe_vorlage(tmp_path)
+    staetten, anlagen, orgs = einlesen.schreibe_vorlage(tmp_path)
     kopf = staetten.read_text("utf-8-sig").splitlines()[0].split(";")
     assert {"name", "kategorie", "lat", "lon", "betreiber_typ", "anlagen"} <= set(kopf)
     d, b = einlesen.lies_csv(staetten)
@@ -144,3 +144,56 @@ def test_vorlage_laesst_sich_einlesen(tmp_path):
     d, b = einlesen.lies_csv(anlagen)
     assert b.art == "sportanlagen" and b.ignoriert == [] and not b.nicht_lesbar
     assert modell.pruefe(modell.Sportanlage, d[0]["anlagen"][0]) == []
+    d, b = einlesen.lies_csv(orgs)
+    assert b.art == "organisationen" and b.ignoriert == [] and not b.nicht_lesbar
+    assert modell.pruefe(modell.Organisation, d[0]) == []
+
+
+def test_organisationen(tmp_path):
+    from sportstaettenatlas.bestand import (
+        lies_organisationen,
+        organisationen_aus_bestand,
+        schreibe_organisationen,
+    )
+    from sportstaettenatlas.seite import bestand_geojson
+
+    ziel = tmp_path / "daten"
+    platz = {
+        "id": "s1",
+        "name": "Sportplatz",
+        "kategorie": "Sportplatz",
+        "lage": {"lon": 7.5, "lat": 50.0},
+        "eigentuemer": "Ortsgemeinde Musterdorf",
+        "betreiber": "TuS  Musterdorf",
+        "nutzer": ["SV Nachbarort", "TuS Musterdorf"],
+    }
+    schreibe_bestand([platz], ziel, "RP", _kreis)
+    bestand = list(lies_bestand(ziel))
+    assert organisationen_aus_bestand(bestand, ziel) == 3  # TuS nur einmal
+    assert organisationen_aus_bestand(bestand, ziel) == 0
+    namen = sorted(o["name"] for o in lies_organisationen(ziel))
+    assert namen == ["Ortsgemeinde Musterdorf", "SV Nachbarort", "TuS Musterdorf"]
+
+    p = _csv(
+        tmp_path,
+        "vereine.csv",
+        "Name;Art;Webseite;Weitere Schreibweisen\n"
+        "tus musterdorf;Sportverein im LSB RLP;https://tus.example;TuS Musterdorf e.V.\n"
+        "Neuer Verein;sonstiger sportverein;;\n",
+    )
+    d, b = einlesen.lies_csv(p)
+    assert b.art == "organisationen"
+    e = schreibe_organisationen(d, ziel, "ergaenzen")
+    assert (e.neu, e.aktualisiert) == (1, 1)
+    orgs = {o["name"]: o for o in lies_organisationen(ziel)}
+    tus = orgs["TuS Musterdorf"]  # über den Namen gefunden, Name bleibt
+    assert tus["typ"] == "Sportverein im LSB RLP" and tus["weitere_namen"] == [
+        "TuS Musterdorf e.V."
+    ]
+    assert orgs["Neuer Verein"]["typ"] == "Sonstiger Sportverein"
+
+    # Art aus dem Verzeichnis, wenn die Sportstätte keine nennt
+    fc = bestand_geojson(bestand, organisationen=list(orgs.values()))
+    p0 = fc["features"][0]["properties"]
+    assert p0["betreiber_typ"] == "Sportverein im LSB RLP" and p0["betreiber_art"] == "Verein"
+    assert p0["nutzer"] == ["SV Nachbarort", "TuS Musterdorf"]

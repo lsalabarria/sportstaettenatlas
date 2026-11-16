@@ -15,7 +15,8 @@ Angaben je Feld (json_schema_extra, landen im Schema):
   gruppe      Abschnitt im Formular und in der Übersicht (Reihenfolge: GRUPPEN bzw.
               ANLAGE_GRUPPEN)
   widget      besondere Eingabe/Anzeige: ja_nein, karte, chips, organisation, ort, url,
-              anlagentyp, jahr, zaehler (Anzahl je Wert, z. B. Felder je Belag)
+              anlagentyp, jahr, zaehler (Anzahl je Wert, z. B. Felder je Belag),
+              organisationen (Liste von Namen aus dem Verzeichnis der Organisationen)
   formular    False: nicht im Formular (IDs, Herkunft)
   uebersicht  False: zählt nicht zur Vollständigkeit in der Übersicht
   einheit     wird hinter Zahlen angezeigt (z. B. m²); einheit_aus: aus einem anderen Feld
@@ -71,7 +72,7 @@ BETRIEBSSTATUS = (
     "im Bau",
     "in Planung",
 )
-# Art von Eigentümer und Betreiber (Legacy: organisation.typid) → Art auf der Karte
+# Art einer Organisation (Legacy: organisation.typid) → Art auf der Karte
 ORGANISATIONSTYPEN = {
     "Bund": "sonstige",
     "Land Rheinland-Pfalz": "sonstige",
@@ -189,7 +190,7 @@ KATEGORIE_ANLAGEN: dict[str, tuple[str, ...]] = {
 }
 
 # Abschnitte des Formulars in dieser Reihenfolge
-GRUPPEN = ("Sportstätte", "Adresse und Lage", "Nutzung", "Sportarten", "Eigentümer und Betreiber")
+GRUPPEN = ("Sportstätte", "Adresse und Lage", "Nutzung", "Sportarten", "Organisationen")
 ANLAGE_GRUPPEN = (
     "Allgemein",
     "Sportarten",
@@ -731,29 +732,29 @@ class Sportstaette(Basis):
     )
     eigentuemer: str | None = _f(
         "Eigentümer",
-        "Name einer Organisation, keine Personen",
+        "Name einer Organisation (Verzeichnis daten/organisationen/), keine Personen",
         max_length=200,
-        gruppe="Eigentümer und Betreiber",
+        gruppe="Organisationen",
         widget="organisation",
         legacy="eignerbezeichnung",
     )
     eigentuemer_typ: Organisationstyp | None = _f(
         "Art des Eigentümers",
-        gruppe="Eigentümer und Betreiber",
+        gruppe="Organisationen",
         braucht="eigentuemer",
         legacy="eignertyp",
     )
     betreiber: str | None = _f(
         "Betreiber",
-        "Name einer Organisation, keine Personen",
+        "Name einer Organisation (Verzeichnis daten/organisationen/), keine Personen",
         max_length=200,
-        gruppe="Eigentümer und Betreiber",
+        gruppe="Organisationen",
         widget="organisation",
         legacy="betreiberbezeichnung",
     )
     betreiber_typ: Organisationstyp | None = _f(
         "Art des Betreibers",
-        gruppe="Eigentümer und Betreiber",
+        gruppe="Organisationen",
         braucht="betreiber",
         legacy="betreibertyp",
     )
@@ -761,9 +762,18 @@ class Sportstaette(Basis):
         "Webseite",
         "vollständige Adresse mit https://",
         pattern=r"^https?://\S+\.\S+$",
-        gruppe="Eigentümer und Betreiber",
+        gruppe="Organisationen",
         widget="url",
         legacy="url",
+    )
+    nutzer: list[str] = _f(
+        "Nutzer",
+        "Vereine und andere Organisationen, die die Sportstätte nutzen (Verzeichnis "
+        "daten/organisationen/)",
+        default_factory=list,
+        gruppe="Organisationen",
+        widget="organisationen",
+        legacy="sportstaettenutzer.nutzername",
     )
     sportarten: list[str] = _f(
         "Sportarten", default_factory=list, gruppe="Sportarten", widget="chips"
@@ -782,6 +792,62 @@ class Sportstaette(Basis):
         formular=False,
         datei=False,
         gruppe="Sportstätte",
+    )
+
+
+class Organisation(Basis):
+    """Verein, Kommune, Verband, Unternehmen … als Eigentümer, Betreiber oder Nutzer von
+    Sportstätten (Verzeichnis in daten/organisationen/). Sportstätten nennen sie in
+    `eigentuemer`, `betreiber` und `nutzer` beim Namen; auch die weiteren Schreibweisen
+    gelten. Keine Personen, keine Kontaktdaten."""
+
+    model_config = ConfigDict(
+        json_schema_extra={
+            "examples": [
+                {
+                    "id": "3f0c2a8e-5b1d-4e57-9a0c-6d2e1b7f4a90",
+                    "name": "TuS Musterdorf e.V.",
+                    "typ": "Sportverein im LSB RLP",
+                    "website": "https://tus-musterdorf.example",
+                    "weitere_namen": ["TuS Musterdorf", "Turn- und Sportverein Musterdorf"],
+                }
+            ]
+        }
+    )
+
+    id: str | None = _f(
+        "ID",
+        "UUID, zugleich der Dateiname (in der Datei Pflicht)",
+        formular=False,
+        uebersicht=False,
+    )
+    name: str = _f(
+        "Name",
+        "wie er bei den Sportstätten steht",
+        pflicht=True,
+        min_length=1,
+        max_length=200,
+        legacy="organisation.bezeichnung",
+    )
+    typ: Organisationstyp | None = _f("Art", legacy="organisation.typid")
+    website: str | None = _f(
+        "Webseite",
+        "vollständige Adresse mit https://",
+        pattern=r"^https?://\S+\.\S+$",
+        widget="url",
+        legacy="organisation.webseite",
+    )
+    uebergeordnet: str | None = _f(
+        "Übergeordnet",
+        "Name der übergeordneten Organisation, z. B. des Verbands",
+        max_length=200,
+        widget="organisation",
+        legacy="organisation.parentid",
+    )
+    weitere_namen: list[str] = _f(
+        "Weitere Schreibweisen",
+        "andere Namen, unter denen Sportstätten sie nennen",
+        default_factory=list,
     )
 
 
@@ -809,10 +875,11 @@ class Vorschlag(Basis):
     )
 
     version: Literal[1] = _f("Version des Formats", default=1)
-    art: Literal["neu", "aenderung", "anlagen"] = _f(
+    art: Literal["neu", "aenderung", "anlagen", "organisation"] = _f(
         "Art",
         "neu: neue Sportstätte mit Anlagen; aenderung: Angaben einer Sportstätte; "
-        "anlagen: Sportanlagen einer Sportstätte",
+        "anlagen: Sportanlagen einer Sportstätte; organisation: Organisation anlegen, "
+        "ändern oder löschen",
         pflicht=True,
     )
     sportstaette_id: str | None = _f("Sportstätte", "ID der geänderten Sportstätte")
@@ -825,6 +892,13 @@ class Vorschlag(Basis):
         "Kurz-ID (Anfang der UUID), neue ohne",
     )
     entfernte_anlagen: list[str] = _f("Entfernte Sportanlagen", "Kurz-IDs", default_factory=list)
+    organisation_id: str | None = _f(
+        "Organisation", "ID der geänderten oder gelöschten Organisation (fehlt bei einer neuen)"
+    )
+    organisation: Organisation | None = _f(
+        "Angaben der Organisation", "vollständig, nach der Änderung (nicht beim Löschen)"
+    )
+    loeschen: bool = _f("Löschen", "die Organisation aus dem Verzeichnis entfernen", default=False)
     geaendert: list[str] = _f("Geänderte Felder", default_factory=list)
     gemeinde: str | None = _f("Gemeinde", "Regionalschlüssel der Gemeinde an der Lage")
     quelle: str | None = _f("Quelle", "z. B. „ALKIS ST000123“, wenn vorbelegt")
@@ -838,6 +912,12 @@ class Vorschlag(Basis):
     def _passt_zur_art(self):
         if self.art == "neu" and (self.sportstaette is None or self.anlagen is None):
             raise ValueError("neu: sportstaette und anlagen nötig")
+        if self.art == "organisation":
+            if self.loeschen and not self.organisation_id:
+                raise ValueError("organisation: zum Löschen organisation_id nötig")
+            if not self.loeschen and self.organisation is None:
+                raise ValueError("organisation: organisation nötig")
+            return self
         if self.art != "neu" and not self.sportstaette_id:
             raise ValueError(f"{self.art}: sportstaette_id nötig")
         if self.art == "aenderung" and self.sportstaette is None:
@@ -847,7 +927,7 @@ class Vorschlag(Basis):
         return self
 
 
-MODELLE = (Sportstaette, Sportanlage, Adresse, Lage, Vorschlag)
+MODELLE = (Sportstaette, Sportanlage, Adresse, Lage, Organisation, Vorschlag)
 
 
 # --- Hilfen für den Code --------------------------------------------------------------
@@ -1072,6 +1152,7 @@ def readme_block() -> str:
         (Adresse, "Adresse"),
         (Lage, "Lage"),
         (Sportanlage, "Sportanlage (`<anlage-id>.json`)"),
+        (Organisation, "Organisation (`organisationen/<id>.json`)"),
         (Vorschlag, "Vorschlag (Formular → LimeSurvey, Frage `data`)"),
     ):
         teile += [f"### {ueberschrift}", ""]

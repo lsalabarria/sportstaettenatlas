@@ -134,6 +134,8 @@ details.befuellung summary .w { float: right; color: #555; font-variant-numeric:
                      align-items: start; }
 @media (max-width: 900px) { .vorschlag .raster { grid-template-columns: 1fr; } }
 .vorschlag aside { position: sticky; top: 10px; }
+.vorschlag .raster:has(> aside[hidden]) { grid-template-columns: minmax(0, 1fr); }
+.chips-titel { display: block; font-size: 13px; color: #555; margin-bottom: 2px; }
 .vorschlag fieldset { border: 1px solid #e3e3e3; border-radius: 8px; margin: 0 0 14px;
                       padding: 10px 14px 12px; }
 .vorschlag legend { font-weight: 600; padding: 0 6px; color: #871D33; }

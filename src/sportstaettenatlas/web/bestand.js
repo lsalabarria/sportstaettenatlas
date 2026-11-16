@@ -20,7 +20,6 @@ const ART_MEHRZAHL = { Verein: "Vereine", Kommune: "Kommunen" };
 function artText(a) { return ART_MEHRZAHL[a] || a; }
 function artVon(p, rolle = "betreiber") { return p[rolle + "_art"] || "ohne Angabe"; }
 function katFarbe(k) { return KATEGORIE_FARBEN[k] || WEITERE; }
-function schluesselName(s) { return String(s || "").trim().replace(/\s+/g, " ").toLowerCase(); }
 
 // Gruppen der Sportanlagen (aus anlagen.py, stehen in bestand.geojson)
 let ANLAGEN_GRUPPEN = [], ANLAGEN_TYPEN = {};
@@ -89,7 +88,8 @@ function ansichtBestand(fc) {
   const mitEinem = (wahl, menge) => { for (const x of wahl) if (menge.has(x)) return true; return false; };
   function passt(e) {
     if (!katAn[e.kat] || !artAn[e.art] || !imGebiet(e.p.ars)) return false;
-    if (betreiberWahl && e[betreiberWahl.rolle] !== betreiberWahl.schluessel) return false;
+    if (betreiberWahl && !(betreiberWahl.ids ? betreiberWahl.ids.has(e.p.id)
+      : e[betreiberWahl.rolle] === betreiberWahl.schluessel)) return false;
     if (sportWahl.size && !mitEinem(sportWahl, e.sp)) return false;
     if (anlagenWahl.size && !mitEinem(anlagenWahl, e.typen)) return false;
     return true;
@@ -242,8 +242,8 @@ function ansichtBestand(fc) {
   function zeigeChip() {
     const el = panelEl && panelEl.querySelector("#b-chip");
     if (!el) return;
-    el.innerHTML = betreiberWahl ? `<div class="chip">${betreiberWahl.rolle === "betreiber"
-      ? "Betreiber" : "Eigentümer"}: <b>${esc(betreiberWahl.name)}</b> `
+    el.innerHTML = betreiberWahl ? `<div class="chip">${{ betreiber: "Betreiber", eigentuemer: "Eigentümer",
+      nutzer: "Nutzer" }[betreiberWahl.rolle]}: <b>${esc(betreiberWahl.name)}</b> `
       + `<button type="button" title="Filter aufheben">× aufheben</button></div>` : "";
     const b = el.querySelector("button");
     if (b) b.addEventListener("click", () => { betreiberWahl = null; zeigeChip(); aktualisiere(); });
@@ -314,6 +314,7 @@ function ansichtBestand(fc) {
   const such = eintraege.map(e => ({
     titel: e.p.name || e.kat, sub: verbinde([e.p.kategorie, e.p.adresse, e.p.betreiber]),
     text: suchtext([e.p.name, e.p.adresse, e.p.kategorie, e.p.betreiber, e.p.eigentuemer, e.p.id,
+      ...(e.p.nutzer || []),
       ...(e.p.sportarten || []), ...e.typen]),
     grenzen: () => punktGrenzen(e.lat, e.lon),
     oeffne: () => oeffne(e),
@@ -333,8 +334,9 @@ function ansichtBestand(fc) {
     verbergen() { karte.removeLayer(ebene); panel.remove(); },
     gebietGeaendert() { zaehleGebiet(); aktualisiere(); },
     suchindex: () => such,
-    zeigeBetreiber(rolle, schluessel, name) {
-      betreiberWahl = { rolle, schluessel, name };
+    // Sportstätten einer Organisation zeigen; ids: die Sportstätten (sonst über den Namen)
+    zeigeBetreiber(rolle, schluessel, name, ids = null) {
+      betreiberWahl = { rolle, schluessel, name, ids };
       zeige("bestand").then(() => {
         zeigeChip();
         aktualisiere();

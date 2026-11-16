@@ -3,6 +3,7 @@
 sportstaettenatlas bestand CSV …    CSV-Dateien in den Datenbestand daten/ übernehmen
                                     (Atlas-Export, Sportstätten, Sportanlagen; einlesen.py)
 sportstaettenatlas vorlage          Vorlagen für eigene CSV-Dateien
+sportstaettenatlas organisationen   Verzeichnis der Organisationen (Eigentümer, Betreiber, Nutzer) (--aus-bestand)
 sportstaettenatlas einordnen        Sportstätten in den Ordner ihres Kreises verschieben
 sportstaettenatlas seite            Webseite für GitHub Pages (docs/) bauen
 sportstaettenatlas modell           Datenmodell in daten/README.md und daten/datenmodell.svg
@@ -37,16 +38,17 @@ def _gebiete():
 
 
 def _lies_bestand():
-    """Datenbestand lesen; Verstöße gegen die Regeln des Modells nach
-    results/regelverstoesse.csv (brechen nicht ab)."""
+    """Datenbestand und Verzeichnis der Organisationen lesen; Verstöße gegen die Regeln des
+    Modells nach results/regelverstoesse.csv (brechen nicht ab)."""
     import csv
 
-    from .bestand import lies_bestand
+    from .bestand import lies_bestand, lies_organisationen
     from .hilfen import ERGEBNISSE
 
     verstoesse: list = []
     try:
         bestand = list(lies_bestand(DATEN, verstoesse))
+        organisationen = lies_organisationen(DATEN, verstoesse)
     except ValueError as exc:
         raise SystemExit(f"Datenbestand: {exc}") from None
     datei = ERGEBNISSE / "regelverstoesse.csv"
@@ -63,12 +65,12 @@ def _lies_bestand():
         )
     elif datei.exists():
         datei.unlink()
-    return bestand
+    return bestand, organisationen
 
 
 def cmd_bestand(args):
     """CSV-Dateien (Atlas-Export, Sportstätten oder Sportanlagen) in daten/ übernehmen."""
-    from .bestand import kreis_ordner, schreibe_bestand
+    from .bestand import kreis_ordner, schreibe_bestand, schreibe_organisationen
     from .einlesen import lies_csv
 
     gelesen = []
@@ -83,6 +85,7 @@ def cmd_bestand(args):
             "atlas": "Export des bisherigen Atlas",
             "sportstaetten": "Sportstätten",
             "sportanlagen": "Sportanlagen",
+            "organisationen": "Organisationen",
         }[b.art]
         print(f"{datei.name}: {art}, {b.zeilen} Zeilen")
         if b.spalten:
@@ -96,21 +99,28 @@ def cmd_bestand(args):
         if b.nicht_lesbar:
             fehler = ", ".join(f"{k} {v}×" for k, v in b.nicht_lesbar.most_common())
             print(f"  Werte, die nicht zum Feld passen (übernommen, wie sie sind): {fehler}")
-        gelesen.append((datei, datensaetze))
+        gelesen.append((datei, datensaetze, b.art))
     if args.probe:
         print("Probelauf: nichts geschrieben.")
         return
-    kreis_von = kreis_ordner(_gebiete())
-    for datei, datensaetze in gelesen:
+    kreis_von = None
+    for datei, datensaetze, art in gelesen:
         try:
-            e = schreibe_bestand(datensaetze, DATEN, LAND, kreis_von, args.modus)
+            if art == "organisationen":
+                e = schreibe_organisationen(datensaetze, DATEN, args.modus)
+            else:
+                kreis_von = kreis_von or kreis_ordner(_gebiete())
+                e = schreibe_bestand(datensaetze, DATEN, LAND, kreis_von, args.modus)
         except ValueError as exc:
             raise SystemExit(str(exc)) from None
-        print(f"{datei.name} → {DATEN}/{LAND.upper()}/ (Modus {args.modus})")
+        orgs = art == "organisationen"
+        ziel = f"{DATEN}/organisationen/" if orgs else f"{DATEN}/{LAND.upper()}/"
+        print(f"{datei.name} → {ziel} (Modus {args.modus})")
+        was = "Organisationen" if orgs else "Sportstätten"
         zeilen = [
-            ("neu angelegt", e.neu, "Sportstätten"),
-            ("geändert", e.aktualisiert, "Sportstätten"),
-            ("unverändert", e.unveraendert, "Sportstätten"),
+            ("neu angelegt", e.neu, was),
+            ("geändert", e.aktualisiert, was),
+            ("unverändert", e.unveraendert, was),
             ("schon vorhanden", e.behalten, "(nicht verändert; --modus ergaenzen/aktualisieren)"),
             ("Sportanlagen neu", e.anlagen_neu, "zu vorhandenen Sportstätten"),
             ("Sportanlagen geändert", e.anlagen_geaendert, ""),
@@ -132,6 +142,34 @@ def cmd_bestand(args):
         if e.regelverstoesse:
             felder = ", ".join(f"{k} {v}×" for k, v in e.regelverstoesse.most_common())
             print(f"  passen nicht zu den Regeln des Datenmodells: {felder} (übernommen)")
+
+
+def cmd_organisationen(args):
+    """Verzeichnis der Organisationen (daten/organisationen/): Stand zeigen, aus dem Bestand
+    anlegen."""
+    from .bestand import (
+        lies_bestand,
+        lies_organisationen,
+        org_schluessel,
+        org_verzeichnis,
+        organisationen_aus_bestand,
+        organisationen_von,
+    )
+
+    bestand = list(lies_bestand(DATEN))
+    if args.aus_bestand:
+        n = organisationen_aus_bestand(bestand, DATEN, typen=args.mit_art)
+        print(f"{n} Organisationen in {DATEN}/organisationen/ angelegt")
+    orgs = lies_organisationen(DATEN)
+    verzeichnis = org_verzeichnis(orgs)
+    namen = {org_schluessel(n) for d in bestand for _, n in organisationen_von(d)}
+    fehlen = namen - set(verzeichnis)
+    print(
+        f"{len(orgs)} Organisationen im Verzeichnis, {sum(1 for o in orgs if o.get('typ'))} mit Art"
+    )
+    print(f"{len(namen) - len(fehlen)} von {len(namen)} Namen im Bestand sind im Verzeichnis")
+    if fehlen:
+        print("  fehlen, z. B.: " + "; ".join(sorted(fehlen)[:5]) + " (--aus-bestand legt sie an)")
 
 
 def cmd_vorlage(args):
@@ -160,7 +198,7 @@ def cmd_seite(args):
     from .modell import schreibe_doku
     from .seite import schreibe_webseite
 
-    bestand = _lies_bestand()
+    bestand, organisationen = _lies_bestand()
     for hinweis in schreibe_doku(DATEN):
         print(hinweis)
     gebiete = _gebiete()
@@ -190,6 +228,7 @@ def cmd_seite(args):
         ars_von=ars_von,
         quellenvermerk=" | ".join(vermerke),
         titel=TITEL,
+        organisationen=organisationen,
     )
     print(f"Webseite: {DOCS}/  ({info['gesamt'] / 1e6:.1f} MB)")
     for name, _, anzahl, groesse in info["dateien"]:
@@ -256,6 +295,22 @@ def main(argv: list[str] | None = None) -> None:
     )
     sp.add_argument("--probe", action="store_true", help="nur zeigen, welche Spalte wohin geht")
     sp.set_defaults(func=cmd_bestand)
+
+    sp = sub.add_parser(
+        "organisationen",
+        help="Verzeichnis der Organisationen (Eigentümer, Betreiber, Nutzer) zeigen bzw. anlegen",
+    )
+    sp.add_argument(
+        "--aus-bestand",
+        action="store_true",
+        help="für jeden Eigentümer, Betreiber und Nutzer im Bestand ohne Eintrag eine Organisation anlegen",
+    )
+    sp.add_argument(
+        "--mit-art",
+        action="store_true",
+        help="dabei die Art übernehmen, wenn sie bei den Sportstätten einheitlich angegeben ist",
+    )
+    sp.set_defaults(func=cmd_organisationen)
 
     sp = sub.add_parser("vorlage", help="Vorlagen für CSV-Dateien zum Einlesen schreiben")
     sp.add_argument("ordner", nargs="?", default="results/vorlagen")

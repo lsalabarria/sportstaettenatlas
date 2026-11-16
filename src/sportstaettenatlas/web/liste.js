@@ -1,5 +1,5 @@
 // Ansicht „Liste“: alle Sportstätten, alle Sportanlagen (beide nach Sportart, Kategorie bzw.
-// Typ filterbar), Betreiber und Eigentümer. Klick auf eine Zeile öffnet rechts alle bisher
+// Typ filterbar), Organisationen (Eigentümer, Betreiber, Nutzer). Klick auf eine Zeile öffnet rechts alle bisher
 // befüllten Angaben der Sportstätte und ihrer Anlagen; von dort geht es zur Karte oder zum
 // Vorschlag. Die Auswahl steht in der Adresse der Seite (#ansicht=liste&teil=anlagen&sportart=…).
 
@@ -40,7 +40,7 @@ function ansichtListe(bestand) {
   const sportText = (liste, geerbt) => liste.length
     ? `<span${geerbt ? ` class="geerbt" title="Sportarten der Sportstätte (die Anlage hat keine eigenen)"` : ""}>`
       + esc(liste.join(", ")) + `</span>` : "";
-  const suchtextE = e => (e._such ??= suchtext([e.p.name, e.p.adresse, e.p.kategorie, e.p.id, e.p.betreiber, e.p.eigentuemer]));
+  const suchtextE = e => (e._such ??= suchtext([e.p.name, e.p.adresse, e.p.kategorie, e.p.id, e.p.betreiber, e.p.eigentuemer, ...(e.p.nutzer || [])]));
   const worte = () => z.q.toLowerCase().split(/\s+/).filter(Boolean);
 
   // --- Zeilen der beiden Listen ---
@@ -165,7 +165,7 @@ function ansichtListe(bestand) {
   function zeichne() {
     gezeichnet = true;
     const zaehlen = { staetten: staettenZeilen, anlagen: anlagenZeilen };
-    const reiter = [["staetten", "Sportstätten"], ["anlagen", "Sportanlagen"], ["betreiber", "Betreiber und Eigentümer"]]
+    const reiter = [["staetten", "Sportstätten"], ["anlagen", "Sportanlagen"], ["betreiber", "Organisationen"]]
       .map(([k, t]) => `<button type="button" data-teil="${k}" aria-pressed="${z.teil === k}">${t}</button>`).join("");
     let h = `<div class="inhalt liste-inhalt"><h2>Liste: ${esc(gebietName())}</h2><div class="reiter teile">${reiter}</div>`;
     if (z.teil === "betreiber") {
@@ -262,20 +262,27 @@ document.addEventListener("click", ev => {
   ANSICHTEN.liste.details(a.dataset.details, a.dataset.anlage || "");
 });
 
-// ---------- Teil „Betreiber und Eigentümer“: Vereine, Kommunen … mit ihren Sportstätten ----
+// ---------- Teil „Organisationen“: Vereine, Kommunen … als Eigentümer, Betreiber, Nutzer ----
 function teilBetreiber(bestand, el) {
   el.className = "betreiber";
   let art = "Verein", rolle = "betreiber", filterText = "", sortierung = { feld: "n", ab: true };
   const offen = new Set();
+  // Organisationen einer Sportstätte in der gewählten Rolle: [[Schlüssel, Name, Art]]; was im
+  // Verzeichnis steht, fasst alle Schreibweisen unter einem Schlüssel zusammen
+  function namenVon(e, r) {
+    const roh = r === "nutzer" ? e.p.nutzer || [] : leer(e.p[r]) ? [] : [e.p[r]];
+    return roh.map(n => {
+      const o = orgVon(n);
+      return [o ? "org:" + o.id : schluesselName(n), o ? o.name : n.trim().replace(/\s+/g, " "),
+        (r === "nutzer" ? orgArt(n) : artVon(e.p, r)) || "ohne Angabe"];
+    });
+  }
   function gruppen() {
     const g = new Map();
-    for (const e of bestand.eintraege) {
-      if (!imGebiet(e.p.ars) || artVon(e.p, rolle) !== art) continue;
-      const s = e[rolle];
-      if (!s) continue;
+    for (const e of bestand.eintraege) for (const [s, name, a] of imGebiet(e.p.ars) ? namenVon(e, rolle) : []) {
+      if (a !== art) continue;
       let x = g.get(s);
       if (!x) g.set(s, x = { s, namen: {}, liste: [], orte: {}, kats: {} });
-      const name = e.p[rolle].trim().replace(/\s+/g, " ");
       x.namen[name] = (x.namen[name] || 0) + 1;
       x.liste.push(e);
       if (e.p.ort) x.orte[e.p.ort] = (x.orte[e.p.ort] || 0) + 1;
@@ -289,14 +296,18 @@ function teilBetreiber(bestand, el) {
   function zaehle() {
     const z = {};
     for (const e of bestand.eintraege) if (imGebiet(e.p.ars)) {
-      const a = artVon(e.p, rolle); if (e[rolle]) (z[a] ??= new Set()).add(e[rolle]);
+      for (const [s, , a] of namenVon(e, rolle)) (z[a] ??= new Set()).add(s);
     }
     return z;
   }
+  const artZelle = x => {
+    const o = x.s.startsWith("org:") ? orgVon(x.name) : null;
+    return o ? esc(o.typ || "im Verzeichnis, ohne Art") : `<span class="geerbt" title="nicht im Verzeichnis">geschätzt</span>`;
+  };
   function zeichne() {
     const z = zaehle();
     let liste = gruppen();
-    if (filterText) liste = liste.filter(x => x.s.includes(filterText) || x.ort.toLowerCase().includes(filterText));
+    if (filterText) liste = liste.filter(x => x.name.toLowerCase().includes(filterText) || x.ort.toLowerCase().includes(filterText));
     const { feld, ab } = sortierung;
     liste.sort((a, b) => (feld === "n" ? a.n - b.n : String(a[feld]).localeCompare(String(b[feld]), "de"))
       * (ab ? -1 : 1) || a.name.localeCompare(b.name, "de"));
@@ -307,10 +318,15 @@ function teilBetreiber(bestand, el) {
     const zeilen = liste.map(x => {
       const auf = offen.has(x.s);
       let h = `<tr class="zeile${auf ? " offen" : ""}" data-s="${esc(x.s)}"><td>${auf ? "▾" : "▸"} ${esc(x.name)}</td>`
+        + `<td class="klein">${artZelle(x)}</td>`
         + `<td class="zahl">${zahl(x.n)}</td><td class="klein">${esc(x.ort)}</td><td class="klein">${esc(x.kat)}</td></tr>`;
       if (auf) {
-        h += `<tr class="details"><td colspan="4"><button type="button" class="knopf2" data-karte="${esc(x.s)}">`
-          + `Alle ${zahl(x.n)} auf der Karte zeigen</button><table class="tabelle">`
+        const imVerzeichnis = x.s.startsWith("org:");
+        h += `<tr class="details"><td colspan="5"><button type="button" class="knopf2" data-karte="${esc(x.s)}">`
+          + `Alle ${zahl(x.n)} auf der Karte zeigen</button> `
+          + (ANSICHTEN.vorschlag ? `<button type="button" class="knopf2" data-org-aendern="${esc(x.name)}">`
+            + (imVerzeichnis ? "Organisation ändern oder löschen" : "ins Verzeichnis eintragen") + `</button>` : "")
+          + `<table class="tabelle">`
           + x.liste.slice().sort((a, b) => (a.p.ort || "").localeCompare(b.p.ort || "", "de")).map(e =>
             `<tr><td><a data-i="${bestand.eintraege.indexOf(e)}">${esc(e.p.name || e.kat)}</a></td>`
             + `<td class="klein">${esc(e.p.kategorie || "")}</td><td class="klein">${esc(e.p.adresse || "")}</td></tr>`).join("")
@@ -318,14 +334,19 @@ function teilBetreiber(bestand, el) {
       }
       return h;
     }).join("");
-    el.innerHTML = `<p class="unter">${esc(gebietName())} · Art wie angegeben, sonst aus dem Namen geschätzt („e.V.“, „TuS“, „Ortsgemeinde“, „Stadt“ …)</p>`
-      + `<div class="reiter">${reiter}<select aria-label="Rolle"><option value="betreiber"${rolle === "betreiber" ? " selected" : ""}>als Betreiber</option>`
-      + `<option value="eigentuemer"${rolle === "eigentuemer" ? " selected" : ""}>als Eigentümer</option></select>`
+    const im = ORGANISATIONEN.length;
+    el.innerHTML = `<p class="unter">${esc(gebietName())} · Vereine, Kommunen und andere Organisationen als Eigentümer, `
+      + `Betreiber oder Nutzer von Sportstätten. Art aus dem Verzeichnis der Organisationen (${zahl(im)} Einträge), `
+      + `sonst aus dem Namen geschätzt („e.V.“, „TuS“, „Ortsgemeinde“ …)`
+      + (ANSICHTEN.vorschlag ? ` · <a href="#" data-org-aendern="">neue Organisation eintragen</a>` : "") + `</p>`
+      + `<div class="reiter">${reiter}<select aria-label="Rolle">`
+      + [["betreiber", "als Betreiber"], ["eigentuemer", "als Eigentümer"], ["nutzer", "als Nutzer"]].map(([k, t]) =>
+        `<option value="${k}"${rolle === k ? " selected" : ""}>${t}</option>`).join("") + `</select>`
       + `<input type="search" placeholder="Name oder Ort filtern" value="${esc(filterText)}" aria-label="Filter"></div>`
-      + `<table class="tabelle"><thead><tr><th data-sort="name">Name${pfeil("name")}</th>`
+      + `<table class="tabelle"><thead><tr><th data-sort="name">Name${pfeil("name")}</th><th>Art</th>`
       + `<th class="zahl" data-sort="n">Sportstätten${pfeil("n")}</th><th data-sort="ort">Orte${pfeil("ort")}</th>`
       + `<th data-sort="kat">Kategorien${pfeil("kat")}</th></tr></thead><tbody>${zeilen
-        || `<tr><td colspan="4" class="klein">Keine Einträge.</td></tr>`}</tbody></table>`;
+        || `<tr><td colspan="5" class="klein">Keine Einträge.</td></tr>`}</tbody></table>`;
     el.querySelectorAll("[data-art]").forEach(b => b.addEventListener("click", () => {
       art = b.dataset.art; offen.clear(); zeichne(); }));
     el.querySelector("select").addEventListener("change", ev => { rolle = ev.target.value; offen.clear(); zeichne(); });
@@ -344,7 +365,7 @@ function teilBetreiber(bestand, el) {
       const s = tr.dataset.s; if (offen.has(s)) offen.delete(s); else offen.add(s); zeichne(); }));
     el.querySelectorAll("[data-karte]").forEach(b => b.addEventListener("click", () => {
       const x = liste.find(y => y.s === b.dataset.karte);
-      bestand.zeigeBetreiber(rolle, x.s, x.name);
+      bestand.zeigeBetreiber(rolle, x.s, x.name, new Set(x.liste.map(e => e.p.id)));
     }));
     el.querySelectorAll("a[data-i]").forEach(a => a.addEventListener("click", () =>
       ANSICHTEN.liste.details(bestand.eintraege[+a.dataset.i].p.id)));
