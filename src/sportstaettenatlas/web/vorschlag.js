@@ -999,7 +999,7 @@ document.addEventListener("click", ev => {
   } else {
     const s = ALKIS_STAETTEN[a.dataset.vorschlagAlkis];
     if (!s) return;
-    v.neu({ name: s.name, kategorie: (ATLAS().alkis_kategorie || {})[s.typgruppe] || "", adresse: zerlegeAdresse(s.adresse),
+    v.neu({ name: s.name, kategorie: s.kategorie || "", adresse: zerlegeAdresse(s.adresse),
       betreiber: s.betreiber, eigentuemer: s.eigentuemer, website: s.website, lage: { lat: s.lat, lon: s.lon },
       anmerkung: `Aus ALKIS übernommen (${s.typ || s.typgruppe || "Sportstätte"}).` },
       "ALKIS " + (s.alkis_oid || s.sportstaette_id));

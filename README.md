@@ -69,7 +69,7 @@ Danach: `git add -A daten docs && git commit -m "…" && git push`.
 
 Das Modell steht an **einer** Stelle: `src/sportstaettenatlas/modell.py` (Pydantic) – Felder,
 Auswahllisten, Regeln, die Felder je Anlagentyp (`MERKMALE`) und die Zuordnungen ohne eigenes
-Feld (Organisationstypen, Kategorie ↔ ALKIS, Muster für Kontaktdaten). Daraus folgt:
+Feld (Organisationstypen, Muster für Kontaktdaten). Daraus folgt:
 
 - `bestand`, `seite` und `alkis` prüfen `daten/` beim Lesen. Ein Fehler im Aufbau bricht ab,
   ein Wert gegen die Regeln nicht; er steht in `results/regelverstoesse.csv`.
@@ -164,7 +164,8 @@ in den Bestand.
    `--gebiet koblenz-innenstadt`.
 2. **Bauen:** Eine Sportfläche wird zur Sportstätte, die Gebäude und Plätze darauf zu ihren
    Sportanlagen. Welche ALKIS-Werte als was gelten, steht in
-   `src/sportstaettenatlas/analysen/alkis/regeln.toml`.
+   `src/sportstaettenatlas/analysen/alkis/regeln.toml`, welche Typgruppe zu welcher Kategorie
+   des Atlas passt in `kategorien.py`.
 3. **Abgleichen:** Jede Sportstätte aus `daten/` wird der ALKIS-Fläche zugeordnet, in der sie
    liegt oder die ihr am nächsten ist (bis 100 m). Ergebnis je Sportstätte: „in ALKIS“, „in
    der Nähe“ (100–200 m, Lage prüfen) oder „nicht in ALKIS“. ALKIS-Flächen ohne Gegenstück

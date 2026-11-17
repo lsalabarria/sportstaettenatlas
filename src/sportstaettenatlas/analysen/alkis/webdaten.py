@@ -8,6 +8,8 @@ from __future__ import annotations
 import json
 from typing import TYPE_CHECKING
 
+from .kategorien import kategorie
+
 if TYPE_CHECKING:
     from collections.abc import Callable
 
@@ -144,6 +146,14 @@ def _ars_setzen(fc: dict, ars_von: Callable, erben: dict | None = None) -> None:
             p["ars"] = ars
 
 
+def _kategorie_setzen(fc: dict) -> None:
+    """Jeder Sportstätte die Kategorie geben, die zu ihrer Typgruppe passt (fürs Formular)."""
+    for f in fc["features"]:
+        p = f["properties"]
+        if "kategorie" not in p and (k := kategorie(p.get("typgruppe"))):
+            p["kategorie"] = k
+
+
 def webdaten(staetten, anlagen, bericht, ars_von: Callable | None = None) -> dict[str, dict]:
     """Die Dateien für die Webseite: {Dateiname: Inhalt} (siehe DATEIEN).
 
@@ -154,6 +164,7 @@ def webdaten(staetten, anlagen, bericht, ars_von: Callable | None = None) -> dic
     st = geojson(staetten, praezision=1e-5, vereinfachen_m=1.0)
     an = geojson(anlagen, praezision=1e-5, vereinfachen_m=1.0)
     atlas = atlas_geojson(bericht)
+    _kategorie_setzen(st)
     if ars_von:
         _ars_setzen(st, ars_von)
         erben = {

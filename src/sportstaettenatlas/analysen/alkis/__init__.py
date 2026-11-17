@@ -4,6 +4,7 @@ quellen.py          ALKIS-Dienst (WFS) und Ausschnitte
 wfs.py              Laden, gekachelt und mit Zwischenspeicher in results/raw
 regeln.toml,        Zuordnung von ALKIS-Nutzungen und Gebäudefunktionen zu Typen
 klassifikation.py
+kategorien.py       Kategorie des Atlas ↔ Typgruppe
 pipeline.py         Sportstätten (Flächen) und Sportanlagen (Gebäude, Plätze) bauen
 abgleich.py         Sportstätten aus daten/ den ALKIS-Flächen zuordnen, Bericht
 vor_ort.py          was ALKIS dort führt, wo nur daten/ eine Sportstätte kennt

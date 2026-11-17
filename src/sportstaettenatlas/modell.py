@@ -147,50 +147,6 @@ AUSWAHL = (
 )
 Anzahl = Annotated[int, Field(ge=0, le=10_000)]
 
-# Kategorie → Typgruppen der ALKIS-Regeln (analysen/alkis/regeln.toml). Die erste Gruppe nutzt
-# der ALKIS-Abgleich für den Typvergleich; umgekehrt bekommt eine aus ALKIS übernommene
-# Sportstätte die erste Kategorie, die die Gruppe nennt (alkis_kategorie). Leer: keine Gruppe.
-KATEGORIE_ALKIS: dict[str, tuple[str, ...]] = {
-    "Sportplatz": ("spielfeld", "leichtathletik"),
-    "Sporthalle": ("halle",),
-    "Tennissportstätte": ("spielfeld",),
-    "Öffentlicher Sport- und Bewegungsraum": ("sportgelegenheit",),
-    "Reitsportstätte": ("spezial",),
-    "Schwimmsportstätte": ("becken",),
-    "Schießsportstätte": ("spezial",),
-    "Fitnessstudio": (),
-    "Golfsportstätte": ("spezial",),
-    "Roll- und Skatesportstätte": ("spezial",),
-    "Sportgelegenheiten in sonstigen Gebäuden": ("sportgelegenheit",),
-    "Radsportstätte": ("spezial",),
-    "Flugsportstätte": ("spezial",),
-    "Wintersportstätte": ("spezial",),
-    "Wassersportstätte": ("spezial",),
-    "Klettersportstätte": ("spezial",),
-    "Motorsportstätte": ("spezial",),
-    "Eissportstätte": ("eis",),
-    "Leistungsstützpunkt": (),
-    "Segelsportstätte": ("spezial",),
-}
-
-
-def alkis_gruppe(kategorie: str | None) -> str | None:
-    """Typgruppe in ALKIS für eine Kategorie (Groß-/Kleinschreibung egal); None ohne."""
-    k = (kategorie or "").strip().lower()
-    gruppen = next((v for kat, v in KATEGORIE_ALKIS.items() if kat.lower() == k), ())
-    return gruppen[0] if gruppen else None
-
-
-def alkis_kategorie() -> dict[str, str]:
-    """Typgruppe in ALKIS → Kategorie für eine übernommene Sportstätte ("spezial" sagt nichts)."""
-    out: dict[str, str] = {}
-    for kat, gruppen in KATEGORIE_ALKIS.items():
-        for g in gruppen:
-            if g != "spezial":
-                out.setdefault(g, kat)
-    return out
-
-
 # Kontaktdaten werden nie gespeichert oder veröffentlicht: Werte mit einer E-Mail-Adresse
 # (EMAIL_MUSTER, auch im Formular) und Felder bzw. Spalten, deren Name so aussieht (KONTAKT_NAME)
 EMAIL_MUSTER = r"[\w.+-]+@[\w-]+(\.[\w-]+)+"
@@ -278,12 +234,8 @@ class Adresse(Basis):
 class Lage(Basis):
     """Immer WGS84 (EPSG:4326), Grad mit Dezimalstellen."""
 
-    lon: float = _f(
-        "Längengrad", "WGS84", pflicht=True, ge=5.8, le=9.0, spalte="utm32nrechts (umgerechnet)"
-    )
-    lat: float = _f(
-        "Breitengrad", "WGS84", pflicht=True, ge=48.8, le=51.1, spalte="utm32nhoch (umgerechnet)"
-    )
+    lon: float = _f("Längengrad", "WGS84", pflicht=True, ge=5.8, le=9.0)
+    lat: float = _f("Breitengrad", "WGS84", pflicht=True, ge=48.8, le=51.1)
 
 
 # Welche Felder es je Anlagentyp gibt (MERKMALE); MERKMALE_ALLE und jedes Feld, das dort
@@ -1143,7 +1095,6 @@ def schema() -> dict:
     # Zuordnungen und Regeln, die nicht an einem Feld hängen (für die Webseite)
     s["atlas"] = {
         "organisationstypen": ORGANISATIONSTYPEN,
-        "alkis_kategorie": alkis_kategorie(),
         "email": EMAIL_MUSTER,
     }
     s["description"] = "Datenmodell des Sportstättenatlas (aus src/sportstaettenatlas/modell.py)"

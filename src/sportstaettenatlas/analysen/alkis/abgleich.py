@@ -12,7 +12,7 @@ import logging
 from dataclasses import dataclass, field
 from typing import TYPE_CHECKING
 
-from ... import modell
+from .kategorien import gruppe
 
 if TYPE_CHECKING:
     import geopandas as gpd
@@ -216,7 +216,7 @@ def aus_bestand(datensaetze, crs: str = "EPSG:25832") -> gpd.GeoDataFrame:
         )
     df = pd.DataFrame(zeilen, columns=list(zeilen[0]) if zeilen else ["alt_id", "lon", "lat"])
     df["alt_typgruppe"] = df.get("alt_typ", pd.Series(dtype=object)).map(
-        lambda t: modell.alkis_gruppe(t) if t else None
+        lambda t: gruppe(t) if t else None
     )
     punkte = gpd.points_from_xy(df["lon"], df["lat"])
     return gpd.GeoDataFrame(
