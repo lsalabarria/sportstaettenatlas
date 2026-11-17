@@ -175,15 +175,6 @@ function ansichtVorschlag(bestand) {
     el.querySelector("#v-anlagen-liste").innerHTML = liste.map(t => `<option value="${esc(t)}">`
       + esc(gruppenText(anlagenGruppe(t))) + (z[t] ? ` – bei ${zahl(z[t])} ${esc(k)}` : "") + `</option>`).join("");
   }
-  function organisationen() {
-    const verzeichnis = ORGANISATIONEN.map(o => o.name);
-    const bisher = haeufig(bestand.eintraege.flatMap(e => [e.p.betreiber, e.p.eigentuemer, ...(e.p.nutzer || [])]))
-      .sort((a, b) => b[1] - a[1]).map(x => x[0]);
-    // erste Schreibweise gewinnt: Verzeichnis (mit allen Kommunen) vor Bestand
-    const m = new Map();
-    for (const n of [...verzeichnis, ...bisher]) if (!m.has(schluesselName(n))) m.set(schluesselName(n), n);
-    return [...m.values()];
-  }
   const ORTE = () => [...new Set([...GEBIETE.filter(g => g.e === "gemeinde").map(g => g.n),
     ...bestand.eintraege.map(e => e.p.ort).filter(v => !leer(v))])].sort((a, b) => a.localeCompare(b, "de"));
   const optionen = liste => liste.map(v => `<option value="${esc(v)}"></option>`).join("");
@@ -581,13 +572,11 @@ function ansichtVorschlag(bestand) {
       const alle = [name, ...(o ? o.weitere_namen || [] : [])];
       return { name, o, alle, namen: alle.map(schluesselName), n: nutzung(name).n };
     };
-    const out = ORGANISATIONEN.map(o => eintrag(o.name, o));
-    const da = new Set(ORG_NACH_NAME.keys()), ix = index();
-    for (const n of organisationen()) {
-      const k = schluesselName(n);
-      if (!da.has(k) && ix.has(k)) { da.add(k); out.push(eintrag(n, null)); }
-    }
-    return orgListeCache = out;
+    // dazu Namen, die Sportstätten nennen, die aber nicht im Verzeichnis stehen (häufigste
+    // Schreibweise)
+    const bestandNamen = haeufig(bestand.eintraege.flatMap(e => [e.p.betreiber, e.p.eigentuemer, ...(e.p.nutzer || [])]));
+    return orgListeCache = [...ORGANISATIONEN.map(o => eintrag(o.name, o)),
+      ...bestandNamen.filter(([n]) => !orgVon(n)).map(([n]) => eintrag(n, null))];
   }
   // Organisationen zu einem Suchtext, für alle Eingaben gleich: genauer Name vor Anfang des
   // Namens vor Wortanfängen vor Teilen davon; weitere Schreibweisen zählen etwas weniger. Bei
@@ -638,11 +627,10 @@ function ansichtVorschlag(bestand) {
   }
   function waehleOrgVorschlag(eing, name) {
     eing.value = name;
-    orgListeVon(eing).hidden = true;
     const box = eing.closest("[data-chips]");
     if (box) box.querySelector("button").click();  // Nutzer: gleich als Chip übernehmen
     else eing.dispatchEvent(new Event("input", { bubbles: true }));
-    orgListeVon(eing).hidden = true;
+    orgListeVon(eing).hidden = true;  // auch wenn das input-Ereignis sie wieder geöffnet hat
   }
   // Wie oft nennen Sportstätten diese Organisation (alle Schreibweisen)?
   function nutzung(name) {
