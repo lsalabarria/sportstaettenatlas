@@ -56,6 +56,7 @@ Alle mit `uv run sportstaettenatlas …`; `--help` zeigt die Optionen.
 | Befehl | macht |
 |---|---|
 | `bestand DATEI.csv …` | CSV-Dateien in `daten/` übernehmen (`--probe`, `--modus`; Regeln: [CSV einlesen](daten/README.md#csv-einlesen)) |
+| `vorschlaege EXPORT.csv` | Vorschläge aus einem LimeSurvey-Export in `daten/` übernehmen (`--probe`, `--alle`; siehe [Vorschläge](#vorschläge)) |
 | `vorlage` | Vorlagen für eigene CSV-Dateien nach `results/vorlagen/` |
 | `organisationen` | Stand des Verzeichnisses; `--aus-bestand` legt fehlende Organisationen an |
 | `einordnen` | Sportstätten in den Ordner ihres Kreises verschieben |
@@ -117,6 +118,15 @@ Name oder gleiche Adresse; bei Organisationen: Name schon im Verzeichnis).
 [daten/README.md](daten/README.md#datenmodell)), `kommentar` die Anmerkung. Ändert sich das
 Datenmodell, bleibt die Umfrage, wie sie ist. Die Umfrage zum Importieren:
 `sportstaette_vorschlagen.lss` (nicht im Repository, enthält die Adresse der Verwaltung).
+
+**Übernehmen:** In LimeSurvey die Antworten als CSV exportieren, dann
+`uv run sportstaettenatlas vorschlaege EXPORT.csv --probe` (zeigt nur) und ohne `--probe`
+(schreibt). Eine Änderung überschreibt den Wert in `daten/`. Setzen zwei Vorschläge dasselbe
+Feld verschieden, steht dort „a|b“ mit einer Warnung – von Hand auflösen; `seite` meldet solche
+Werte als Regelverstoß, bis sie aufgelöst sind. Übernommene Antwort-IDs stehen in
+`daten/vorschlaege_uebernommen.txt` und werden beim nächsten Export übersprungen. Kommentare
+zeigt der Befehl nur an, gespeichert werden sie nicht. Liegt eine geänderte Lage danach in
+einem anderen Kreis, verschiebt `einordnen` die Sportstätte.
 
 „Bug melden“ oben öffnet ein öffentliches Ticket auf GitHub (Vorlage
 `.github/ISSUE_TEMPLATE/fehler.yml`).

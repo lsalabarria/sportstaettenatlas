@@ -171,6 +171,37 @@ def cmd_vorlage(args):
         print(pfad)
 
 
+def cmd_vorschlaege(args):
+    """Vorschläge aus einem LimeSurvey-Export in daten/ übernehmen (vorschlaege.py)."""
+    from .bestand import kreis_ordner
+    from .vorschlaege import UEBERNOMMEN, lies_export, uebernimm
+
+    kreis: list = []
+
+    def kreis_von(lon, lat):  # Gebiete erst laden, wenn eine neue Sportstätte kommt
+        if not kreis:
+            kreis.append(kreis_ordner(_gebiete()))
+        return kreis[0](lon, lat)
+
+    try:
+        antworten = lies_export(Path(args.export))
+    except ValueError as exc:
+        raise SystemExit(str(exc)) from None
+    e = uebernimm(antworten, DATEN, kreis_von, probe=args.probe, alle=args.alle)
+    arten = ", ".join(f"{n}× {art}" for art, n in e.uebernommen.items()) or "keine"
+    print(f"{len(antworten)} Antworten im Export; übernommen: {arten}")
+    if e.uebersprungen:
+        print(f"  {e.uebersprungen} schon früher übernommen (siehe {DATEN}/{UEBERNOMMEN}; --alle)")
+    for sid in e.neue_ids:
+        print(f"  neue Sportstätte: {sid}")
+    for antwort, text in e.kommentare:
+        print(f"  Kommentar zu Antwort {antwort}: {text}")
+    for w in e.warnungen:
+        print(f"WARNUNG: {w}")
+    if args.probe:
+        print("(--probe: nichts geschrieben)")
+
+
 def cmd_einordnen(args):
     """Sportstätten, deren Lage in einem anderen Kreis liegt, dorthin verschieben."""
     from .bestand import einordnen, kreis_ordner
@@ -321,6 +352,14 @@ def main(argv: list[str] | None = None) -> None:
         help="dabei die Art übernehmen, wenn sie bei den Sportstätten einheitlich angegeben ist",
     )
     sp.set_defaults(func=cmd_organisationen)
+
+    sp = sub.add_parser(
+        "vorschlaege", help="Vorschläge aus einem LimeSurvey-Export in daten/ übernehmen"
+    )
+    sp.add_argument("export", help="CSV-Export der Umfrage")
+    sp.add_argument("--probe", action="store_true", help="nur zeigen, nichts schreiben")
+    sp.add_argument("--alle", action="store_true", help="auch schon übernommene Antworten")
+    sp.set_defaults(func=cmd_vorschlaege)
 
     sp = sub.add_parser("vorlage", help="Vorlagen für CSV-Dateien zum Einlesen schreiben")
     sp.add_argument("ordner", nargs="?", default="results/vorlagen")
