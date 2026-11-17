@@ -28,6 +28,21 @@ def _gebiete():
         raise SystemExit(f"Verwaltungsgebiete nicht verfügbar ({exc}).") from None
 
 
+def _kreis_von_bei_bedarf():
+    """(lon, lat) → Kreis-Ordner; die Verwaltungsgebiete werden erst beim ersten Aufruf geladen
+    (gebraucht nur, wenn eine neue Sportstätte angelegt wird)."""
+    from .bestand import kreis_ordner
+
+    geladen: list = []
+
+    def kreis_von(lon, lat):
+        if not geladen:
+            geladen.append(kreis_ordner(_gebiete()))
+        return geladen[0](lon, lat)
+
+    return kreis_von
+
+
 def _lies_bestand():
     """Datenbestand und Verzeichnis der Organisationen lesen; Verstöße gegen die Regeln des
     Modells nach results/regelverstoesse.csv (brechen nicht ab)."""
@@ -61,7 +76,7 @@ def _lies_bestand():
 
 def cmd_bestand(args):
     """CSV-Dateien (Atlas-Export, Sportstätten oder Sportanlagen) in daten/ übernehmen."""
-    from .bestand import kreis_ordner, schreibe_bestand, schreibe_organisationen
+    from .bestand import schreibe_bestand, schreibe_organisationen
     from .einlesen import lies_csv
 
     gelesen = []
@@ -94,13 +109,12 @@ def cmd_bestand(args):
     if args.probe:
         print("Probelauf: nichts geschrieben.")
         return
-    kreis_von = None
+    kreis_von = _kreis_von_bei_bedarf()
     for datei, datensaetze, art in gelesen:
         try:
             if art == "organisationen":
                 e = schreibe_organisationen(datensaetze, DATEN, args.modus)
             else:
-                kreis_von = kreis_von or kreis_ordner(_gebiete())
                 e = schreibe_bestand(datensaetze, DATEN, LAND, kreis_von, args.modus)
         except ValueError as exc:
             raise SystemExit(str(exc)) from None
@@ -184,21 +198,13 @@ def cmd_vorlage(args):
 
 def cmd_vorschlaege(args):
     """Vorschläge aus einem LimeSurvey-Export in daten/ übernehmen (vorschlaege.py)."""
-    from .bestand import kreis_ordner
     from .vorschlaege import UEBERNOMMEN, lies_export, uebernimm
-
-    kreis: list = []
-
-    def kreis_von(lon, lat):  # Gebiete erst laden, wenn eine neue Sportstätte kommt
-        if not kreis:
-            kreis.append(kreis_ordner(_gebiete()))
-        return kreis[0](lon, lat)
 
     try:
         antworten = lies_export(Path(args.export))
     except ValueError as exc:
         raise SystemExit(str(exc)) from None
-    e = uebernimm(antworten, DATEN, kreis_von, probe=args.probe, alle=args.alle)
+    e = uebernimm(antworten, DATEN, _kreis_von_bei_bedarf(), probe=args.probe, alle=args.alle)
     arten = ", ".join(f"{n}× {art}" for art, n in e.uebernommen.items()) or "keine"
     print(f"{len(antworten)} Antworten im Export; übernommen: {arten}")
     if e.uebersprungen:

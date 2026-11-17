@@ -10,6 +10,7 @@ beschreibt daten/README.md („CSV einlesen“); `schreibe_vorlage` schreibt die
 from __future__ import annotations
 
 import csv
+import functools
 import re
 import uuid
 from collections import Counter
@@ -17,9 +18,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from . import atlas, modell, werte
-from .bestand import NUR_ANLAGEN
+from .bestand import KONTAKT, NUR_ANLAGEN
 
-KONTAKT = re.compile(modell.KONTAKT_NAME, re.IGNORECASE)
 _STAETTEN_NAMENSRAUM = uuid.UUID("0b6a1f63-3f7e-4f1a-9b55-6c2d9e8a4c21")
 # weitere übliche Namen für Spalten der Lage
 _LAGE = {
@@ -51,8 +51,13 @@ class Bericht:
 # --- Spalten erkennen --------------------------------------------------------------------
 
 
+@functools.cache
+def _schema() -> dict:  # einmal je Lauf; nur gelesen
+    return modell.schema()
+
+
 def _eigenschaften(name: str) -> dict:
-    return modell.schema()["$defs"][name]["properties"]
+    return _schema()["$defs"][name]["properties"]
 
 
 def _art(p: dict) -> dict:
@@ -147,13 +152,6 @@ def wert(text: str, p: dict):
     return text
 
 
-def _setze(d: dict, pfad: str, w) -> None:
-    *vorne, letzt = pfad.split(".")
-    for k in vorne:
-        d = d.setdefault(k, {})
-    d[letzt] = w
-
-
 # --- Lesen -------------------------------------------------------------------------------
 
 
@@ -234,12 +232,12 @@ def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
                 if schluessel:  # eine Spalte je Wert (alter Atlas): Zahl
                     d.setdefault(pfad_, {})[schluessel] = werte.ganzzahl(text)
                 elif pfad_.startswith("lage."):
-                    _setze(d, pfad_, werte.zahl(text))
+                    werte.setze(d, pfad_, werte.zahl(text))
                 else:
-                    _setze(d, pfad_, wert(text, p))
+                    werte.setze(d, pfad_, wert(text, p))
             except ValueError:
                 b.nicht_lesbar[pfad_] += 1
-                _setze(d, pfad_, text)  # bleibt, wie er ist; die Regeln melden ihn
+                werte.setze(d, pfad_, text)  # bleibt, wie er ist; die Regeln melden ihn
         if not d:
             continue
         if ist_org:

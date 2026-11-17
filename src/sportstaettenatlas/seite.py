@@ -11,7 +11,8 @@
     docs/daten/analysen/index.json      Verzeichnis der Analysen (Reiter „Analysen“)
     docs/daten/analysen/<name>/         Dateien einer Analyse, z. B. alkis/ (lädt erst beim Öffnen)
     docs/vendor/leaflet/                Kartenbibliothek, lokal (keine Anfragen an Dritt-CDNs)
-    docs/.nojekyll                      GitHub Pages soll die Dateien unverändert ausliefern    docs/daten/organisationen.json      Verzeichnis der Organisationen
+    docs/daten/organisationen.json      Verzeichnis der Organisationen
+    docs/.nojekyll                      GitHub Pages soll die Dateien unverändert ausliefern
     docs/daten/schema.json              Datenmodell (modell.schema) für Formular, Popup, Liste
 
 Kontaktdaten werden nicht veröffentlicht (`oeffentlich`, Regeln: README „Kontaktdaten“).
@@ -22,7 +23,6 @@ from __future__ import annotations
 import datetime as dt
 import html
 import json
-import re
 import shutil
 import urllib.request
 from collections import Counter
@@ -31,9 +31,7 @@ from pathlib import Path
 
 from . import anlagen as anlagen_typen
 from . import modell, web
-from .bestand import EMAIL, adresse_text
-
-KONTAKT = re.compile(modell.KONTAKT_NAME, re.IGNORECASE)  # Felder mit Kontaktdaten
+from .bestand import EMAIL, KONTAKT, adresse_text
 
 LEAFLET_DATEIEN = (
     "leaflet.js",

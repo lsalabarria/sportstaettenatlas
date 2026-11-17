@@ -98,24 +98,6 @@ def _text(w) -> str:
     return str(w)
 
 
-def _hole(d: dict, pfad: str):
-    for teil in pfad.split("."):
-        if not isinstance(d, dict):
-            return None
-        d = d.get(teil)
-    return d
-
-
-def _setze_pfad(d: dict, pfad: str, w) -> None:
-    *vorne, letzter = pfad.split(".")
-    for teil in vorne:
-        d = d.setdefault(teil, {})
-    if w in (None, "", [], {}):
-        d.pop(letzter, None)
-    else:
-        d[letzter] = w
-
-
 class _Uebernahme:
     """Hält die berührten Sportstätten und Organisationen und merkt sich je Feld, welche
     Vorschläge es gesetzt haben – für die Kennzeichnung „a|b“."""
@@ -136,9 +118,9 @@ class _Uebernahme:
             return
         werte_.append((antwort, w))
         if len(werte_) == 1:
-            _setze_pfad(obj, pfad, w)
+            werte.setze(obj, pfad, w)
             return
-        _setze_pfad(obj, pfad, "|".join(_text(x) for _, x in werte_))
+        werte.setze(obj, pfad, "|".join(_text(x) for _, x in werte_))
         quellen = ", ".join(a for a, _ in werte_)
         self.e.warnungen.append(
             f"Antworten {quellen}: {name}, {pfad} widersprüchlich – „"
@@ -184,7 +166,7 @@ class _Uebernahme:
                     geaendert.append(k)
         name = f"Sportstätte {st.get('name') or st['id']}"
         for pfad in geaendert:
-            self.setze(st["id"], st, pfad, _hole(neu, pfad), a.id, name)
+            self.setze(st["id"], st, pfad, werte.hole(neu, pfad), a.id, name)
 
     def anlagen(self, a: Antwort, v: dict) -> None:
         sid = v["sportstaette_id"]

@@ -22,6 +22,7 @@ from pathlib import Path
 from . import werte
 from .modell import (
     EMAIL_MUSTER,
+    KONTAKT_NAME,
     Organisation,
     Sportanlage,
     Sportstaette,
@@ -29,7 +30,8 @@ from .modell import (
     pruefe,
 )
 
-EMAIL = re.compile(EMAIL_MUSTER)
+EMAIL = re.compile(EMAIL_MUSTER)  # Werte mit E-Mail-Adresse
+KONTAKT = re.compile(KONTAKT_NAME, re.IGNORECASE)  # Felder bzw. Spalten mit Kontaktdaten
 OHNE_KREIS = "ohne-kreis"
 KreisVon = Callable[[float, float], str]  # (lon, lat) → Name des Kreis-Ordners
 
@@ -85,12 +87,12 @@ def bereinigen(wert, entfernt: Counter, pfad: str = ""):
         out = {}
         for k, v in wert.items():
             v = bereinigen(v, entfernt, f"{pfad}.{k}" if pfad else k)
-            if v not in (None, "", [], {}):
+            if not _leer(v):
                 out[k] = v
         return out
     if isinstance(wert, list):
         liste = (bereinigen(v, entfernt, pfad) for v in wert)
-        return [v for v in liste if v not in (None, "", [], {})]
+        return [v for v in liste if not _leer(v)]
     if isinstance(wert, str):
         if EMAIL.search(wert):
             entfernt[re.sub(r"\.\d+$", "", pfad)] += 1
@@ -534,6 +536,7 @@ def organisationen_aus_bestand(bestand, daten: Path, typen: bool = False) -> int
     eine bei den Sportstätten angegebene Art, wenn sie dort einheitlich ist. Liefert die
     Zahl der neuen."""
     verzeichnis = org_verzeichnis(lies_organisationen(daten))
+    dateien = {p.stem: p for p in org_dateien(daten)}
     gefunden: dict[str, Counter] = {}
     arten: dict[str, set] = {}
     for d in bestand:
@@ -549,7 +552,7 @@ def organisationen_aus_bestand(bestand, daten: Path, typen: bool = False) -> int
         o = {"id": organisation_id(name), "name": name}
         if typen and len(arten.get(k, ())) == 1:
             o["typ"] = next(iter(arten[k]))
-        schreibe_organisation(daten, o)
+        schreibe_organisation(daten, o, dateien)
     return len(gefunden)
 
 
@@ -561,6 +564,7 @@ def schreibe_organisationen(datensaetze, daten: Path, modus: str = "neu") -> Erg
     vorhanden = lies_organisationen(daten)
     nach_id = {o["id"]: o for o in vorhanden}
     verzeichnis = org_verzeichnis(vorhanden)
+    dateien = {p.stem: p for p in org_dateien(daten)}
     e = Ergebnis()
     for roh in datensaetze:
         o = bereinigen(roh, e.entfernt)
@@ -582,7 +586,7 @@ def schreibe_organisationen(datensaetze, daten: Path, modus: str = "neu") -> Erg
             e.aktualisiert += 1
         for meldung in pruefe(Organisation, neu):
             e.regelverstoesse[meldung.split(":")[0]] += 1
-        schreibe_organisation(daten, neu)
+        schreibe_organisation(daten, neu, dateien)
         nach_id[neu["id"]] = neu
         verzeichnis.update(org_verzeichnis([neu]))
     return e

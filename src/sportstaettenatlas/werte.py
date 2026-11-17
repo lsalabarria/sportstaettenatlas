@@ -103,3 +103,26 @@ def slug(text: str) -> str:
     for a, b in (("ä", "ae"), ("ö", "oe"), ("ü", "ue"), ("ß", "ss")):
         t = t.replace(a, b)
     return re.sub(r"[^a-z0-9]+", "-", t).strip("-")
+
+
+# --- Pfade in verschachtelten Angaben („adresse.plz“) -------------------------------------
+
+
+def hole(d: dict, pfad: str):
+    """Wert unter einem Pfad wie "adresse.plz"; None, wenn er fehlt."""
+    for teil in pfad.split("."):
+        if not isinstance(d, dict):
+            return None
+        d = d.get(teil)
+    return d
+
+
+def setze(d: dict, pfad: str, w) -> None:
+    """Wert unter einem Pfad setzen (fehlende Ebenen entstehen); ein leerer Wert entfernt ihn."""
+    *vorne, letzter = pfad.split(".")
+    for teil in vorne:
+        d = d.setdefault(teil, {})
+    if w in (None, "", [], {}):
+        d.pop(letzter, None)
+    else:
+        d[letzter] = w
