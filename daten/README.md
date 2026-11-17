@@ -60,9 +60,10 @@ JSON-Dateien. `--probe` zeigt vorher, welche Spalte in welches Feld geht. Erkann
   vorhandene, auch die Kurz-ID von der Webseite),
 - eine Tabelle der **Organisationen** (`name` und `typ` bzw. „Art“, ohne Kategorie und Lage).
 
-**Spalten** heißen wie das Feld (`plz` oder `adresse.plz`), wie seine Beschriftung („PLZ“)
-oder wie unter „Weitere Spalte“ („postleitzahl“, „bodenbelag_anz_sand“); Groß-/Kleinschreibung,
-Umlaute und Satzzeichen sind egal. Das Trennzeichen (`;`, `,` oder Tab) und die Kodierung
+**Spalten** heißen wie das Feld (`plz` oder `adresse.plz`) oder wie seine Beschriftung („PLZ“);
+Groß-/Kleinschreibung, Umlaute und Satzzeichen sind egal. Eine Anzahl je Wert steht in einer
+Spalte (`felder_je_belag`: `Sand: 3; Rasen: 1`) oder in einer Spalte je Wert
+(`felder_je_belag_sand`: `3`). Das Trennzeichen (`;`, `,` oder Tab) und die Kodierung
 (UTF-8 oder Windows-1252) werden erkannt. `uv run sportstaettenatlas vorlage` schreibt je
 Tabelle eine Vorlage mit allen Spalten und einer Beispielzeile (vor dem Einlesen löschen).
 
@@ -106,8 +107,6 @@ Der folgende Teil bis zur Überschrift „Typen und Gruppen“ wird aus
   (`MERKMALE` in `modell.py`). Das Formular zeigt das Feld nur dort, die Übersicht zählt es nur
   unter ihnen; erlaubt ist es überall.
 - **Auswahl:** die Werte stehen einmal unter [Auswahllisten](#auswahllisten).
-- **Weitere Spalte:** unter diesem Namen erkennt `bestand` das Feld in einer CSV zusätzlich
-  zu Feldname und Beschriftung.
 
 <!-- modell:anfang – erzeugt aus src/sportstaettenatlas/modell.py, nicht von Hand ändern -->
 
@@ -117,25 +116,25 @@ Der folgende Teil bis zur Überschrift „Typen und Gruppen“ wird aus
 
 Der Standort, z. B. ein Sportpark, ein Schulsportzentrum oder ein Freibad.
 
-| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung | Weitere Spalte |
-|---|---|---|---|---|---|---|
-| `id` | ID | Text |  |  | UUID, zugleich Name des Ordners (in der Datei Pflicht) |  |
-| `name` | Name | Text | ja | höchstens 200 Zeichen; nicht leer |  | `bezeichnung` |
-| `kategorie` | Sportstättenkategorie | Auswahl [Kategorie](#auswahllisten) | ja |  |  | `typid` |
-| `adresse` | Adresse | Adresse |  |  |  |  |
-| `lage` | Lage | Lage | ja |  | bestimmt Kreis und Gemeinde |  |
-| `oeffentlicher_zugang` | Öffentlicher Zugang | Auswahl [JaNein](#auswahllisten) |  |  |  | `oeffentlich` |
-| `schulsport` | Schulsport | Auswahl [JaNein](#auswahllisten) |  |  |  | `schulsport` |
-| `zuschauerplaetze` | Zuschauerplätze | ganze Zahl |  | ≥ 0; ≤ 100000 |  | `zuschauerplatzgesamt` |
-| `betriebsstatus` | Betriebsstatus | Auswahl [Betriebsstatus](#auswahllisten) |  |  |  | `betriebsstatustypid` |
-| `eigentuemer` | Eigentümer | Text |  | höchstens 200 Zeichen | Name einer Organisation (Verzeichnis daten/organisationen/), keine Personen | `eignerbezeichnung` |
-| `eigentuemer_typ` | Art des Eigentümers | Auswahl [Organisationstyp](#auswahllisten) |  | braucht `eigentuemer` |  | `eignertyp` |
-| `betreiber` | Betreiber | Text |  | höchstens 200 Zeichen | Name einer Organisation (Verzeichnis daten/organisationen/), keine Personen | `betreiberbezeichnung` |
-| `betreiber_typ` | Art des Betreibers | Auswahl [Organisationstyp](#auswahllisten) |  | braucht `betreiber` |  | `betreibertyp` |
-| `website` | Webseite | Text |  | Muster `^https?://\S+\.\S+$` | vollständige Adresse mit https:// | `url` |
-| `nutzer` | Nutzer | Liste von Text |  |  | Vereine und andere Organisationen, die die Sportstätte nutzen (Verzeichnis daten/organisationen/) | `sportstaettenutzer.nutzername` |
-| `sportarten` | Sportarten | Liste von Text |  |  |  |  |
-| `anlagen` | Sportanlagen | Liste von Sportanlage |  |  | stehen als eigene Dateien im Ordner der Sportstätte, nicht in `<id>_meta.json` |  |
+| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
+|---|---|---|---|---|---|
+| `id` | ID | Text |  |  | UUID, zugleich Name des Ordners (in der Datei Pflicht) |
+| `name` | Name | Text | ja | höchstens 200 Zeichen; nicht leer |  |
+| `kategorie` | Sportstättenkategorie | Auswahl [Kategorie](#auswahllisten) | ja |  |  |
+| `adresse` | Adresse | Adresse |  |  |  |
+| `lage` | Lage | Lage | ja |  | bestimmt Kreis und Gemeinde |
+| `oeffentlicher_zugang` | Öffentlicher Zugang | Auswahl [JaNein](#auswahllisten) |  |  |  |
+| `schulsport` | Schulsport | Auswahl [JaNein](#auswahllisten) |  |  |  |
+| `zuschauerplaetze` | Zuschauerplätze | ganze Zahl |  | ≥ 0; ≤ 100000 |  |
+| `betriebsstatus` | Betriebsstatus | Auswahl [Betriebsstatus](#auswahllisten) |  |  |  |
+| `eigentuemer` | Eigentümer | Text |  | höchstens 200 Zeichen | Name einer Organisation (Verzeichnis daten/organisationen/), keine Personen |
+| `eigentuemer_typ` | Art des Eigentümers | Auswahl [Organisationstyp](#auswahllisten) |  | braucht `eigentuemer` |  |
+| `betreiber` | Betreiber | Text |  | höchstens 200 Zeichen | Name einer Organisation (Verzeichnis daten/organisationen/), keine Personen |
+| `betreiber_typ` | Art des Betreibers | Auswahl [Organisationstyp](#auswahllisten) |  | braucht `betreiber` |  |
+| `website` | Webseite | Text |  | Muster `^https?://\S+\.\S+$` | vollständige Adresse mit https:// |
+| `nutzer` | Nutzer | Liste von Text |  |  | Vereine und andere Organisationen, die die Sportstätte nutzen (Verzeichnis daten/organisationen/) |
+| `sportarten` | Sportarten | Liste von Text |  |  |  |
+| `anlagen` | Sportanlagen | Liste von Sportanlage |  |  | stehen als eigene Dateien im Ordner der Sportstätte, nicht in `<id>_meta.json` |
 
 ```json
 {
@@ -163,93 +162,93 @@ Der Standort, z. B. ein Sportpark, ein Schulsportzentrum oder ein Freibad.
 
 ### Adresse
 
-| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung | Weitere Spalte |
-|---|---|---|---|---|---|---|
-| `strasse` | Straße | Text |  | höchstens 150 Zeichen |  | `adresse.strasse` |
-| `hausnummer` | Hausnummer | Text |  | Muster `^\d+\s?[a-zA-Z]?(\s?[-/]\s?\d+\s?[a-zA-Z]?)?$`; höchstens 12 Zeichen | z. B. 12, 12a oder 2-4 | `adresse.hausnummer` |
-| `adresszusatz` | Adresszusatz | Text |  | höchstens 150 Zeichen | z. B. Eingang Schulhof | `adresse.adresszusatz` |
-| `plz` | PLZ | Text |  | Muster `^\d{5}$` | fünf Ziffern | `adresse.postleitzahl` |
-| `ort` | Ort | Text |  | höchstens 100 Zeichen |  | `adresse.ort` |
+| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
+|---|---|---|---|---|---|
+| `strasse` | Straße | Text |  | höchstens 150 Zeichen |  |
+| `hausnummer` | Hausnummer | Text |  | Muster `^\d+\s?[a-zA-Z]?(\s?[-/]\s?\d+\s?[a-zA-Z]?)?$`; höchstens 12 Zeichen | z. B. 12, 12a oder 2-4 |
+| `adresszusatz` | Adresszusatz | Text |  | höchstens 150 Zeichen | z. B. Eingang Schulhof |
+| `plz` | PLZ | Text |  | Muster `^\d{5}$` | fünf Ziffern |
+| `ort` | Ort | Text |  | höchstens 100 Zeichen |  |
 
 ### Lage
 
 Immer WGS84 (EPSG:4326), Grad mit Dezimalstellen.
 
-| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung | Weitere Spalte |
-|---|---|---|---|---|---|---|
-| `lon` | Längengrad | Zahl | ja | ≥ 5.8; ≤ 9 | WGS84 |  |
-| `lat` | Breitengrad | Zahl | ja | ≥ 48.8; ≤ 51.1 | WGS84 |  |
+| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
+|---|---|---|---|---|---|
+| `lon` | Längengrad | Zahl | ja | ≥ 5.8; ≤ 9 | WGS84 |
+| `lat` | Breitengrad | Zahl | ja | ≥ 48.8; ≤ 51.1 | WGS84 |
 
 ### Sportanlage (`<anlage-id>.json`)
 
 Eine Einheit einer Sportstätte, z. B. ein Großspielfeld, eine Halle oder ein Becken.
 
-| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung | Weitere Spalte |
-|---|---|---|---|---|---|---|
-| `id` | ID | Text |  |  | UUID, zugleich der Dateiname (in der Datei Pflicht) |  |
-| `sportstaette_id` | Sportstätte | Text |  |  | ID der Sportstätte, zu der die Anlage gehört, = Name des Ordners (in der Datei Pflicht) |  |
-| `typ` | Typ | Text | ja | höchstens 100 Zeichen; nicht leer | einheitlicher Typ aus src/sportstaettenatlas/anlagen.py, z. B. „Großspielfeld“ | `typid` |
-| `bezeichnung` | Name | Text |  | höchstens 100 Zeichen | eigener Name der Anlage, z. B. „Halle 1“, „Kunstrasen B“ | `bezeichnung` |
-| `betriebsstatus` | Betriebsstatus | Auswahl [Betriebsstatus](#auswahllisten) |  |  |  | `betriebsstatustypid` |
-| `baujahr` | Baujahr | ganze Zahl |  | ≥ 1800; ≤ 2100 |  | `baujahr` |
-| `letzte_sanierung` | Letzte Sanierung | ganze Zahl |  | ≥ 1800; ≤ 2100 | Jahr | `letzteSanierung` |
-| `sportarten` | Sportarten | Liste von Text |  |  |  |  |
-| `wettkampf` | Wettkampfeignung | Liste von Text |  | Teil von `sportarten` | Sportarten, für die die Anlage wettkampfgeeignet ist (müssen unter Sportarten stehen) | `sportanlagesportart.wettkampfeignung` |
-| `laenge` | Länge | Zahl |  | ≥ 0; in m; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | der Sportfläche | `laenge` |
-| `breite` | Breite | Zahl |  | ≥ 0; in m; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | der Sportfläche | `breite` |
-| `hoehe` | Höhe | Zahl |  | ≥ 0; in m; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | lichte Höhe der Halle | `hoehe` |
-| `flaeche` | Fläche | Zahl |  | ≥ 0; in m²; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | nutzbare Sportfläche, wenn nicht Länge × Breite (z. B. Reitplatz) | `groesse` |
-| `bahnlaenge` | Bahnlänge | Zahl |  | ≥ 0; in m; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `bahnlaenge` |
-| `bahnen` | Bahnen | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | Zahl der Lauf-, Schwimm-, Kegel- oder Schießbahnen | `anzbahnen` |
-| `bodenbelag` | Bodenbelag | Auswahl [Bodenbelag](#auswahllisten) |  | nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `bodenbelagtypid` |
-| `felder_je_belag` | Felder je Belag | Anzahl je Wert |  | Anzahl je [Bodenbelag](#auswahllisten); nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | z. B. Tennisplätze: 3 Sand, 1 Kunstrasen | `bodenbelag_anz_*` |
-| `spielfelder` | Spielfelder | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | Zahl, wenn nicht nach Sportart bekannt | `anzspielfelder` |
-| `felder_je_sportart` | Spielfelder je Sportart | Anzahl je Wert |  | Anzahl je [Spielfeldart](#auswahllisten); nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | markierte Felder, z. B. 3 Badminton, 1 Handball | `anz_feld_*` |
-| `kleinfelder_je_sportart` | Kleinfelder je Sportart | Anzahl je Wert |  | Anzahl je [Kleinfeldart](#auswahllisten); nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `anz_kleinfeld_*` |
-| `loecher` | Löcher | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | Golf, Bahnengolf | `anzloecher` |
-| `wasserflaeche` | Wasserfläche | Zahl |  | ≥ 0; in m²; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | gesamt | `wasserflaeche` |
-| `wasserflaeche_relevant` | Relevante Wasserfläche | Zahl |  | ≥ 0; in m²; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | ohne Kaltwassertret-, Warmsprudelbecken usw. | `relevante_wasserflaeche` |
-| `wasserflaeche_lehrbecken` | Wasserfläche Lern- und Kursbecken | Zahl |  | ≥ 0; in m²; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `wasserflaechelernundkursbecken` |
-| `becken_bis_25m` | Becken bis 25 m | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `anzbeckenbis25` |
-| `becken_25_bis_50m` | Becken 25 bis 50 m | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `anzbeckenbis25bis50` |
-| `becken_ueber_50m` | Becken über 50 m | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `anzbeckenueber50` |
-| `becken_tiefer_3m` | Becken tiefer als 3 m | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `anzbeckenue3m` |
-| `nichtschwimmerbecken` | Nichtschwimmerbecken | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `anznichtschwimmer` |
-| `lehrbecken` | Lehrbecken | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `anzlehrbecken` |
-| `kinderbecken` | Kinderbecken | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `anzkinderbecken` |
-| `erholungsbecken` | Erholungsbecken | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `anzerholungsbecken` |
-| `sprungturm` | Sprungturm | Auswahl [JaNein](#auswahllisten) |  | nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | mindestens einer | `sprungturm` |
-| `sprungtuerme_3m` | Sprungtürme 3 m | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `anzturm3m` |
-| `sprungtuerme_5m` | Sprungtürme 5 m | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `anztur5m` |
-| `sprungtuerme_10m` | Sprungtürme 10 m | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `anztur10m` |
-| `baederleben_id` | ID bei baederleben.de | Text |  | höchstens 50 Zeichen; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `baederlebenid` |
-| `trennvorhang` | Trennvorhang | Auswahl [JaNein](#auswahllisten) |  | nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | zur Hallenteilung oder für eine Bühne | `vorhangvorhanden` |
-| `bewaesserung` | Bewässerung | Auswahl [JaNein](#auswahllisten) |  | nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `bewaesserung` |
-| `hoehenverstellbares_netz` | Höhenverstellbares Netz | Auswahl [JaNein](#auswahllisten) |  | nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `hoehenverstellnetz` |
-| `kletterwand` | Kletterwand | Auswahl [JaNein](#auswahllisten) |  | nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `kletterwand` |
-| `boulderwand` | Boulderwand | Auswahl [JaNein](#auswahllisten) |  | nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `boulderwand` |
-| `dressurplatz` | Dressurplatz | Auswahl [JaNein](#auswahllisten) |  | nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `dressurplatz` |
-| `springplatz` | Springplatz | Auswahl [JaNein](#auswahllisten) |  |  |  | `springplatz` |
-| `schiessstaende_gedeckt` | Schießstände gedeckt | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `anzschiesstubgedeckt` |
-| `schiessstaende_teilgedeckt` | Schießstände teilgedeckt | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `anzschiesstuboteilgedeckt` |
-| `schiessstaende_offen` | Schießstände offen | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `anzschiesstuboffen` |
-| `lifte` | Lifte | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  | `anzlift` |
-| `spielgeraete` | Spielgeräte | ganze Zahl |  | ≥ 0 |  | `anz_spielgeraete` |
-| `ausstattung` | Weitere Ausstattung | Liste von Text |  |  | z. B. Umkleiden, Anzeigetafel |  |
-| `flutlicht` | Flutlicht | Auswahl [JaNein](#auswahllisten) |  |  |  | `flutlicht` |
-| `leuchtmittel` | Leuchtmittel | Auswahl [Leuchtmittel](#auswahllisten) |  |  |  | `leuchtmitteltypid` |
-| `lux` | Beleuchtungsstärke | Auswahl [Luxwert](#auswahllisten) |  | in lx |  | `luxwerttypid` |
-| `oeffnungsstunden` | Öffnungsstunden | ganze Zahl |  | ≥ 0; ≤ 8784; in h | im Jahr, insgesamt | `oeffnungsstunden` |
-| `oeffnungsstunden_schule` | davon Schulsport | ganze Zahl |  | ≥ 0; ≤ 8784; in h | Stunden im Jahr | `oeffnungsstundenschule` |
-| `oeffnungsstunden_verein` | davon Vereine | ganze Zahl |  | ≥ 0; ≤ 8784; in h | Stunden im Jahr | `oeffnungsstundenverein` |
-| `altersempfehlung` | Altersempfehlung | Text |  | höchstens 50 Zeichen | z. B. 6–12 Jahre | `altersempfehlung` |
-| `barrierefrei_erreichbar` | Barrierefrei erreichbar | Auswahl [JaNein](#auswahllisten) |  |  |  | `barrierefreierreichbar` |
-| `geeignet_mobilitaet` | Geeignet bei eingeschränkter Mobilität | Auswahl [JaNein](#auswahllisten) |  |  |  | `eignungparasport1` |
-| `geeignet_sehen` | Geeignet bei Sehbeeinträchtigung | Auswahl [JaNein](#auswahllisten) |  |  |  | `eignungparasport2` |
-| `geeignet_kleinwuchs` | Geeignet für Kleinwüchsige | Auswahl [JaNein](#auswahllisten) |  |  |  | `eignungparasport3` |
-| `geeignet_mental` | Geeignet bei geistiger Beeinträchtigung | Auswahl [JaNein](#auswahllisten) |  |  |  | `eignungparasport4` |
-| `baukosten` | Baukosten | Zahl |  | ≥ 0; braucht `waehrung`; Einheit aus `waehrung` | damalige Kosten | `baukosten` |
-| `waehrung` | Währung | Auswahl [Waehrung](#auswahllisten) |  |  | der Baukosten | `waehrung` |
+| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
+|---|---|---|---|---|---|
+| `id` | ID | Text |  |  | UUID, zugleich der Dateiname (in der Datei Pflicht) |
+| `sportstaette_id` | Sportstätte | Text |  |  | ID der Sportstätte, zu der die Anlage gehört, = Name des Ordners (in der Datei Pflicht) |
+| `typ` | Typ | Text | ja | höchstens 100 Zeichen; nicht leer | einheitlicher Typ aus src/sportstaettenatlas/anlagen.py, z. B. „Großspielfeld“ |
+| `bezeichnung` | Name | Text |  | höchstens 100 Zeichen | eigener Name der Anlage, z. B. „Halle 1“, „Kunstrasen B“ |
+| `betriebsstatus` | Betriebsstatus | Auswahl [Betriebsstatus](#auswahllisten) |  |  |  |
+| `baujahr` | Baujahr | ganze Zahl |  | ≥ 1800; ≤ 2100 |  |
+| `letzte_sanierung` | Letzte Sanierung | ganze Zahl |  | ≥ 1800; ≤ 2100 | Jahr |
+| `sportarten` | Sportarten | Liste von Text |  |  |  |
+| `wettkampf` | Wettkampfeignung | Liste von Text |  | Teil von `sportarten` | Sportarten, für die die Anlage wettkampfgeeignet ist (müssen unter Sportarten stehen) |
+| `laenge` | Länge | Zahl |  | ≥ 0; in m; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | der Sportfläche |
+| `breite` | Breite | Zahl |  | ≥ 0; in m; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | der Sportfläche |
+| `hoehe` | Höhe | Zahl |  | ≥ 0; in m; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | lichte Höhe der Halle |
+| `flaeche` | Fläche | Zahl |  | ≥ 0; in m²; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | nutzbare Sportfläche, wenn nicht Länge × Breite (z. B. Reitplatz) |
+| `bahnlaenge` | Bahnlänge | Zahl |  | ≥ 0; in m; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `bahnen` | Bahnen | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | Zahl der Lauf-, Schwimm-, Kegel- oder Schießbahnen |
+| `bodenbelag` | Bodenbelag | Auswahl [Bodenbelag](#auswahllisten) |  | nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `felder_je_belag` | Felder je Belag | Anzahl je Wert |  | Anzahl je [Bodenbelag](#auswahllisten); nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | z. B. Tennisplätze: 3 Sand, 1 Kunstrasen |
+| `spielfelder` | Spielfelder | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | Zahl, wenn nicht nach Sportart bekannt |
+| `felder_je_sportart` | Spielfelder je Sportart | Anzahl je Wert |  | Anzahl je [Spielfeldart](#auswahllisten); nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | markierte Felder, z. B. 3 Badminton, 1 Handball |
+| `kleinfelder_je_sportart` | Kleinfelder je Sportart | Anzahl je Wert |  | Anzahl je [Kleinfeldart](#auswahllisten); nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `loecher` | Löcher | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | Golf, Bahnengolf |
+| `wasserflaeche` | Wasserfläche | Zahl |  | ≥ 0; in m²; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | gesamt |
+| `wasserflaeche_relevant` | Relevante Wasserfläche | Zahl |  | ≥ 0; in m²; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | ohne Kaltwassertret-, Warmsprudelbecken usw. |
+| `wasserflaeche_lehrbecken` | Wasserfläche Lern- und Kursbecken | Zahl |  | ≥ 0; in m²; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `becken_bis_25m` | Becken bis 25 m | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `becken_25_bis_50m` | Becken 25 bis 50 m | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `becken_ueber_50m` | Becken über 50 m | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `becken_tiefer_3m` | Becken tiefer als 3 m | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `nichtschwimmerbecken` | Nichtschwimmerbecken | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `lehrbecken` | Lehrbecken | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `kinderbecken` | Kinderbecken | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `erholungsbecken` | Erholungsbecken | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `sprungturm` | Sprungturm | Auswahl [JaNein](#auswahllisten) |  | nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | mindestens einer |
+| `sprungtuerme_3m` | Sprungtürme 3 m | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `sprungtuerme_5m` | Sprungtürme 5 m | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `sprungtuerme_10m` | Sprungtürme 10 m | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `baederleben_id` | ID bei baederleben.de | Text |  | höchstens 50 Zeichen; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `trennvorhang` | Trennvorhang | Auswahl [JaNein](#auswahllisten) |  | nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) | zur Hallenteilung oder für eine Bühne |
+| `bewaesserung` | Bewässerung | Auswahl [JaNein](#auswahllisten) |  | nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `hoehenverstellbares_netz` | Höhenverstellbares Netz | Auswahl [JaNein](#auswahllisten) |  | nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `kletterwand` | Kletterwand | Auswahl [JaNein](#auswahllisten) |  | nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `boulderwand` | Boulderwand | Auswahl [JaNein](#auswahllisten) |  | nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `dressurplatz` | Dressurplatz | Auswahl [JaNein](#auswahllisten) |  | nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `springplatz` | Springplatz | Auswahl [JaNein](#auswahllisten) |  |  |  |
+| `schiessstaende_gedeckt` | Schießstände gedeckt | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `schiessstaende_teilgedeckt` | Schießstände teilgedeckt | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `schiessstaende_offen` | Schießstände offen | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `lifte` | Lifte | ganze Zahl |  | ≥ 0; nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp)) |  |
+| `spielgeraete` | Spielgeräte | ganze Zahl |  | ≥ 0 |  |
+| `ausstattung` | Weitere Ausstattung | Liste von Text |  |  | z. B. Umkleiden, Anzeigetafel |
+| `flutlicht` | Flutlicht | Auswahl [JaNein](#auswahllisten) |  |  |  |
+| `leuchtmittel` | Leuchtmittel | Auswahl [Leuchtmittel](#auswahllisten) |  |  |  |
+| `lux` | Beleuchtungsstärke | Auswahl [Luxwert](#auswahllisten) |  | in lx |  |
+| `oeffnungsstunden` | Öffnungsstunden | ganze Zahl |  | ≥ 0; ≤ 8784; in h | im Jahr, insgesamt |
+| `oeffnungsstunden_schule` | davon Schulsport | ganze Zahl |  | ≥ 0; ≤ 8784; in h | Stunden im Jahr |
+| `oeffnungsstunden_verein` | davon Vereine | ganze Zahl |  | ≥ 0; ≤ 8784; in h | Stunden im Jahr |
+| `altersempfehlung` | Altersempfehlung | Text |  | höchstens 50 Zeichen | z. B. 6–12 Jahre |
+| `barrierefrei_erreichbar` | Barrierefrei erreichbar | Auswahl [JaNein](#auswahllisten) |  |  |  |
+| `geeignet_mobilitaet` | Geeignet bei eingeschränkter Mobilität | Auswahl [JaNein](#auswahllisten) |  |  |  |
+| `geeignet_sehen` | Geeignet bei Sehbeeinträchtigung | Auswahl [JaNein](#auswahllisten) |  |  |  |
+| `geeignet_kleinwuchs` | Geeignet für Kleinwüchsige | Auswahl [JaNein](#auswahllisten) |  |  |  |
+| `geeignet_mental` | Geeignet bei geistiger Beeinträchtigung | Auswahl [JaNein](#auswahllisten) |  |  |  |
+| `baukosten` | Baukosten | Zahl |  | ≥ 0; braucht `waehrung`; Einheit aus `waehrung` | damalige Kosten |
+| `waehrung` | Währung | Auswahl [Waehrung](#auswahllisten) |  |  | der Baukosten |
 
 ```json
 {
@@ -281,14 +280,14 @@ Verein, Kommune, Verband, Unternehmen … als Eigentümer, Betreiber oder Nutzer
     `eigentuemer`, `betreiber` und `nutzer` beim Namen; auch die weiteren Schreibweisen
     gelten. Keine Personen, keine Kontaktdaten.
 
-| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung | Weitere Spalte |
-|---|---|---|---|---|---|---|
-| `id` | ID | Text |  |  | UUID, zugleich der Dateiname (in der Datei Pflicht) |  |
-| `name` | Name | Text | ja | höchstens 200 Zeichen; nicht leer | wie er bei den Sportstätten steht | `organisation.bezeichnung` |
-| `typ` | Art | Auswahl [Organisationstyp](#auswahllisten) |  |  |  | `organisation.typid` |
-| `website` | Webseite | Text |  | Muster `^https?://\S+\.\S+$` | vollständige Adresse mit https:// | `organisation.webseite` |
-| `uebergeordnet` | Übergeordnet | Text |  | höchstens 200 Zeichen | Name der übergeordneten Organisation, z. B. des Verbands | `organisation.parentid` |
-| `weitere_namen` | Weitere Schreibweisen | Liste von Text |  |  | andere Namen, unter denen Sportstätten sie nennen |  |
+| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
+|---|---|---|---|---|---|
+| `id` | ID | Text |  |  | UUID, zugleich der Dateiname (in der Datei Pflicht) |
+| `name` | Name | Text | ja | höchstens 200 Zeichen; nicht leer | wie er bei den Sportstätten steht |
+| `typ` | Art | Auswahl [Organisationstyp](#auswahllisten) |  |  |  |
+| `website` | Webseite | Text |  | Muster `^https?://\S+\.\S+$` | vollständige Adresse mit https:// |
+| `uebergeordnet` | Übergeordnet | Text |  | höchstens 200 Zeichen | Name der übergeordneten Organisation, z. B. des Verbands |
+| `weitere_namen` | Weitere Schreibweisen | Liste von Text |  |  | andere Namen, unter denen Sportstätten sie nennen |
 
 ```json
 {
@@ -307,20 +306,20 @@ Verein, Kommune, Verband, Unternehmen … als Eigentümer, Betreiber oder Nutzer
 
 Was das Formular „Vorschlag“ als JSON in die LimeSurvey-Frage „data“ schreibt.
 
-| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung | Weitere Spalte |
-|---|---|---|---|---|---|---|
-| `version` | Version des Formats | Auswahl |  | „1“ |  |  |
-| `art` | Art | Auswahl | ja | „neu“, „aenderung“, „anlagen“, „organisation“ | neu: neue Sportstätte mit Anlagen; aenderung: Angaben einer Sportstätte; anlagen: Sportanlagen einer Sportstätte; organisation: Organisation anlegen, ändern oder löschen |  |
-| `sportstaette_id` | Sportstätte | Text |  |  | ID der geänderten Sportstätte |  |
-| `sportstaette` | Angaben der Sportstätte | Sportstaette |  |  | vollständig, nach der Änderung (bei neu und aenderung) |  |
-| `anlagen` | Sportanlagen | Liste von Sportanlage |  |  | alle Anlagen nach der Änderung (bei neu und anlagen); vorhandene mit ihrer Kurz-ID (Anfang der UUID), neue ohne |  |
-| `entfernte_anlagen` | Entfernte Sportanlagen | Liste von Text |  |  | Kurz-IDs |  |
-| `organisation_id` | Organisation | Text |  |  | ID der geänderten oder gelöschten Organisation (fehlt bei einer neuen) |  |
-| `organisation` | Angaben der Organisation | Organisation |  |  | vollständig, nach der Änderung (nicht beim Löschen) |  |
-| `loeschen` | Löschen | boolean |  |  | die Organisation aus dem Verzeichnis entfernen |  |
-| `geaendert` | Geänderte Felder | Liste von Text |  |  |  |  |
-| `gemeinde` | Gemeinde | Text |  |  | Regionalschlüssel der Gemeinde an der Lage |  |
-| `dubletten_geprueft` | Geprüfte Doppelungen | Liste von Text |  |  | IDs ähnlicher Sportstätten, die als verschieden bestätigt wurden |  |
+| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
+|---|---|---|---|---|---|
+| `version` | Version des Formats | Auswahl |  | „1“ |  |
+| `art` | Art | Auswahl | ja | „neu“, „aenderung“, „anlagen“, „organisation“ | neu: neue Sportstätte mit Anlagen; aenderung: Angaben einer Sportstätte; anlagen: Sportanlagen einer Sportstätte; organisation: Organisation anlegen, ändern oder löschen |
+| `sportstaette_id` | Sportstätte | Text |  |  | ID der geänderten Sportstätte |
+| `sportstaette` | Angaben der Sportstätte | Sportstaette |  |  | vollständig, nach der Änderung (bei neu und aenderung) |
+| `anlagen` | Sportanlagen | Liste von Sportanlage |  |  | alle Anlagen nach der Änderung (bei neu und anlagen); vorhandene mit ihrer Kurz-ID (Anfang der UUID), neue ohne |
+| `entfernte_anlagen` | Entfernte Sportanlagen | Liste von Text |  |  | Kurz-IDs |
+| `organisation_id` | Organisation | Text |  |  | ID der geänderten oder gelöschten Organisation (fehlt bei einer neuen) |
+| `organisation` | Angaben der Organisation | Organisation |  |  | vollständig, nach der Änderung (nicht beim Löschen) |
+| `loeschen` | Löschen | boolean |  |  | die Organisation aus dem Verzeichnis entfernen |
+| `geaendert` | Geänderte Felder | Liste von Text |  |  |  |
+| `gemeinde` | Gemeinde | Text |  |  | Regionalschlüssel der Gemeinde an der Lage |
+| `dubletten_geprueft` | Geprüfte Doppelungen | Liste von Text |  |  | IDs ähnlicher Sportstätten, die als verschieden bestätigt wurden |
 
 ```json
 {
