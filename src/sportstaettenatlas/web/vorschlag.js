@@ -107,7 +107,7 @@ function regelFehler(f, w, label) {
 function ansichtVorschlag(bestand) {
   const el = document.getElementById("seite-vorschlag");
   const NACH_ID = new Map(bestand.eintraege.map(e => [e.p.id, e]));
-  let form, vkarte = null, marke = null, nachbarn = null, original = null, quelle = "";
+  let form, vkarte = null, marke = null, nachbarn = null, original = null;
   let lage = null, ars = "", pruefen = 0, dubletten = [];
   const F = n => form.elements.namedItem(n);
 
@@ -737,8 +737,8 @@ function ansichtVorschlag(bestand) {
     el.querySelector("#v-auswahl").hidden = !(["aenderung", "anlagen"].includes(F("art").value) && !original);
   }
   // Formular neu füllen: für eine neue Sportstätte (eintrag = null) oder eine vorhandene
-  function beginne(art, eintrag, vorgabe, herkunft = "") {
-    original = eintrag; quelle = herkunft;
+  function beginne(art, eintrag, vorgabe) {
+    original = eintrag;
     form.reset();
     F("art").value = art;
     fuelle(vorgabe);
@@ -747,7 +747,7 @@ function ansichtVorschlag(bestand) {
     el.querySelector("#v-ausgabe").innerHTML = "";
     el.querySelector("#v-fehler").hidden = true;
   }
-  function neu(vorgabe = {}, herkunft = "") { beginne("neu", null, vorgabe, herkunft); }
+  function neu(vorgabe = {}) { beginne("neu", null, vorgabe); }
   function bearbeite(id, art = "aenderung") {
     const e = NACH_ID.get(id);
     if (!e) return;
@@ -887,7 +887,6 @@ function ansichtVorschlag(bestand) {
     }
     if (geaendert.length) d.geaendert = geaendert;
     if (ars) d.gemeinde = ars;
-    if (quelle) d.quelle = quelle;
     if (geprueft.length) d.dubletten_geprueft = geprueft;
     return d;
   }
@@ -964,7 +963,7 @@ function ansichtVorschlag(bestand) {
     },
     verbergen() { el.hidden = true; },
     hat: id => NACH_ID.has(id),
-    neu(vorgabe, herkunft) { zeige("vorschlag").then(() => { neu(vorgabe, herkunft); pruefe(); el.scrollTop = 0; }); },
+    neu(vorgabe) { zeige("vorschlag").then(() => { neu(vorgabe); pruefe(); el.scrollTop = 0; }); },
     bearbeite(id, art) { zeige("vorschlag").then(() => { bearbeite(id, art); pruefe(); el.scrollTop = 0; }); },
     // Organisation ändern oder löschen (Name wie bei den Sportstätten); ohne Namen: neue
     organisation(name) {
@@ -1001,8 +1000,7 @@ document.addEventListener("click", ev => {
     if (!s) return;
     v.neu({ name: s.name, kategorie: s.kategorie || "", adresse: zerlegeAdresse(s.adresse),
       betreiber: s.betreiber, eigentuemer: s.eigentuemer, website: s.website, lage: { lat: s.lat, lon: s.lon },
-      anmerkung: `Aus ALKIS übernommen (${s.typ || s.typgruppe || "Sportstätte"}).` },
-      "ALKIS " + (s.alkis_oid || s.sportstaette_id));
+      anmerkung: `Aus ALKIS übernommen (${s.typ || s.typgruppe || "Sportstätte"}).` });
   }
 });
 // Zeile „Angaben ändern · Sportanlagen ändern“ für Popups (Karte und ALKIS-Abgleich), nur

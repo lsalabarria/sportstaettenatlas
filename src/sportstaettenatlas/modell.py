@@ -943,7 +943,6 @@ class Vorschlag(Basis):
     loeschen: bool = _f("Löschen", "die Organisation aus dem Verzeichnis entfernen", default=False)
     geaendert: list[str] = _f("Geänderte Felder", default_factory=list)
     gemeinde: str | None = _f("Gemeinde", "Regionalschlüssel der Gemeinde an der Lage")
-    quelle: str | None = _f("Quelle", "z. B. „ALKIS ST000123“, wenn vorbelegt")
     dubletten_geprueft: list[str] = _f(
         "Geprüfte Doppelungen",
         "IDs ähnlicher Sportstätten, die als verschieden bestätigt wurden",
