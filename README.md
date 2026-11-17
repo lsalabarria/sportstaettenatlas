@@ -15,6 +15,7 @@ Was im Datenbestand steht, alle Felder und wie man Daten ändert oder einliest:
 - [Installation](#installation)
 - [Befehle](#befehle)
 - [Datenmodell im Code](#datenmodell-im-code)
+- [Prüfungen](#prüfungen)
 - [Webseite](#webseite)
 - [Kontaktdaten](#kontaktdaten)
 - [ALKIS-Abgleich](#alkis-abgleich)
@@ -62,7 +63,8 @@ Alle mit `uv run sportstaettenatlas …`; `--help` zeigt die Optionen.
 | `einordnen` | Sportstätten in den Ordner ihres Kreises, Organisationen in den ihrer Art verschieben |
 | `modell` | Feldtabellen in `daten/README.md` und Diagramm schreiben |
 | `migrieren` | Felder in allen Dateien von `daten/` umbenennen oder entfernen (`--umbenennen ALT=NEU`, `--entfernen FELD`, `--probe`) |
-| `seite` | Webseite nach `docs/` (`--vorschau`: lokal ansehen) |
+| `pruefen` | Bestand prüfen, ohne die Webseite zu bauen (Liste in `results/regelverstoesse.csv`) |
+| `seite` | Webseite nach `docs/` (`--vorschau`: lokal ansehen); prüft dabei mit |
 | `-v alkis` | ALKIS-Abgleich (siehe unten) |
 
 Danach: `git add -A daten docs && git commit -m "…" && git push`.
@@ -84,6 +86,20 @@ Feld (Organisationstypen, Muster für Kontaktdaten). Daraus folgt:
 Ein neues Feld ist eine Zeile in `modell.py`, danach `modell` und `seite`. Wird ein Feld
 umbenannt oder gestrichen, passt `migrieren` die Dateien an, z. B.
 `migrieren --umbenennen baukosten_eur=baukosten` oder `migrieren --entfernen quellen`.
+
+## Prüfungen
+
+`seite` und `pruefen` schreiben alle Auffälligkeiten nach `results/regelverstoesse.csv` (Datei,
+Meldung); sie brechen nicht ab. Zu den Regeln des Datenmodells (Pflichtfelder, Formate,
+Auswahllisten, `braucht`, `teil_von`) prüft `src/sportstaettenatlas/validate.py`:
+
+- **Organisation:** Betreiber und Eigentümer stehen im Verzeichnis der Organisationen.
+- **Ort:** Die Gemeinde an der Koordinate (VG250) passt zu `adresse.ort`.
+- **Rheinland-Pfalz:** Die Koordinate liegt in einer Gemeinde des Landes.
+- **Doppelung:** Keine zwei Sportstätten mit ähnlichem Namen näher als 60 m (Regel wie im Formular).
+- **Sanierung:** Die letzte Sanierung liegt nicht vor dem Baujahr.
+- **Anlagentyp:** Kein Feld ist befüllt, das nicht zum Typ der Sportanlage passt (`MERKMALE`).
+- **Sportarten:** Die Sportarten einer Anlage stehen auch bei ihrer Sportstätte.
 
 ## Webseite
 

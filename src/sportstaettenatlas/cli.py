@@ -44,12 +44,9 @@ def _kreis_von_bei_bedarf():
 
 
 def _lies_bestand():
-    """Datenbestand und Verzeichnis der Organisationen lesen; Verstöße gegen die Regeln des
-    Modells nach results/regelverstoesse.csv (brechen nicht ab)."""
-    import csv
-
+    """Datenbestand und Verzeichnis der Organisationen lesen; Fehler im Aufbau brechen ab,
+    Verstöße gegen die Regeln des Modells kommen als Liste (Datei, Meldung) mit."""
     from .bestand import lies_bestand, lies_organisationen
-    from .hilfen import ERGEBNISSE
 
     verstoesse: list = []
     try:
@@ -57,6 +54,17 @@ def _lies_bestand():
         organisationen = lies_organisationen(DATEN, verstoesse)
     except ValueError as exc:
         raise SystemExit(f"Datenbestand: {exc}") from None
+    return bestand, organisationen, verstoesse
+
+
+def _pruefe_und_melde(bestand, organisationen, verstoesse, gebiete) -> None:
+    """Regeln des Modells und Prüfungen aus validate.py nach results/regelverstoesse.csv."""
+    import csv
+
+    from .hilfen import ERGEBNISSE
+    from .validate import pruefe
+
+    verstoesse = verstoesse + pruefe(bestand, organisationen, gebiete.get("gemeinde"), DATEN)
     datei = ERGEBNISSE / "regelverstoesse.csv"
     if verstoesse:
         datei.parent.mkdir(parents=True, exist_ok=True)
@@ -66,12 +74,19 @@ def _lies_bestand():
             w.writerows(verstoesse)
         felder = Counter(m.split(":")[0] for _, m in verstoesse)
         print(
-            f"Hinweis: {len(verstoesse)} Werte passen nicht zu den Regeln des Datenmodells "
-            f"({', '.join(f'{k} {v}×' for k, v in felder.most_common(5))}) – Liste: {datei}"
+            f"Hinweis: {len(verstoesse)} Auffälligkeiten (Regeln des Datenmodells und Prüfungen "
+            f"aus validate.py: {', '.join(f'{k} {v}×' for k, v in felder.most_common(6))}) – "
+            f"Liste: {datei}"
         )
     elif datei.exists():
         datei.unlink()
-    return bestand, organisationen
+
+
+def cmd_pruefen(args):
+    """Nur prüfen: Regeln des Datenmodells und validate.py, Liste nach results/."""
+    bestand, organisationen, verstoesse = _lies_bestand()
+    _pruefe_und_melde(bestand, organisationen, verstoesse, _gebiete())
+    print(f"{len(bestand)} Sportstätten, {len(organisationen)} Organisationen geprüft.")
 
 
 def cmd_bestand(args):
@@ -240,10 +255,11 @@ def cmd_seite(args):
     from .modell import schreibe_doku
     from .seite import schreibe_webseite
 
-    bestand, organisationen = _lies_bestand()
+    bestand, organisationen, verstoesse = _lies_bestand()
     for hinweis in schreibe_doku(DATEN):
         print(hinweis)
     gebiete = _gebiete()
+    _pruefe_und_melde(bestand, organisationen, verstoesse, gebiete)
     ars_von = gb.Zuordnung(gebiete["gemeinde"]).ars
     if falsch := falsch_einsortiert(bestand, kreis_ordner(gebiete)):
         print(
@@ -395,6 +411,13 @@ def main(argv: list[str] | None = None) -> None:
         help="Sportstätten in den Ordner ihres Kreises, Organisationen in den ihrer Art verschieben",
     )
     sp.set_defaults(func=cmd_einordnen)
+
+    sp = sub.add_parser(
+        "pruefen",
+        help="Datenbestand prüfen (Datenmodell und validate.py) – Liste in "
+        "results/regelverstoesse.csv, ohne die Webseite zu bauen",
+    )
+    sp.set_defaults(func=cmd_pruefen)
 
     sp = sub.add_parser("seite", help="Webseite für GitHub Pages (docs/) erzeugen")
     sp.add_argument("--vorschau", action="store_true", help="danach lokal im Browser zeigen")
