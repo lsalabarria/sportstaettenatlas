@@ -215,22 +215,41 @@ def test_angaben_der_anlagenfelder():
 
 
 def test_migrieren(tmp_path):
+    import pytest
+
     from sportstaettenatlas.bestand import migriere_bestand
 
     ordner = tmp_path / "RP" / "07111-koblenz" / STAETTE["id"]
     ordner.mkdir(parents=True)
     staette = {**STAETTE, "quellen": {"atlas_rlp": {"stand": "2026-11-04"}}}
     (ordner / f"{STAETTE['id']}_meta.json").write_text(json.dumps(staette), "utf-8")
-    alt = {"id": "a1", "sportstaette_id": STAETTE["id"], "typ": "Großspielfeld", "baukosten_eur": 5}
+    alt = {"id": "a1", "sportstaette_id": STAETTE["id"], "typ": "Großspielfeld", "kosten": 5}
+    alt["waehrung"] = "€"
     alt["quellen"] = {"atlas_rlp": {"bezeichnung": "Großspielfeld (Rasen)"}}
     (ordner / "a1.json").write_text(json.dumps(alt), "utf-8")
-    assert migriere_bestand(tmp_path) == 2  # Feld umbenannt, quellen entfernt
+    beide = {"id": "a2", "sportstaette_id": STAETTE["id"], "typ": "Halle", "kosten": 1}
+    (ordner / "a2.json").write_text(json.dumps({**beide, "baukosten": 2}), "utf-8")
+    org = tmp_path / "organisationen" / "o1.json"
+    org.parent.mkdir()
+    org.write_text(json.dumps({"name": "TuS", "id": "o1", "quellen": {}}), "utf-8")
+
+    with pytest.raises(ValueError, match="nicht im Modell"):
+        migriere_bestand(tmp_path, {"kosten": "gibtsnicht"})
+    vorher = (ordner / "a1.json").read_text("utf-8")
+    probe = migriere_bestand(tmp_path, {"kosten": "baukosten"}, {"quellen"}, probe=True)
+    assert probe.dateien == 4 and (ordner / "a1.json").read_text("utf-8") == vorher
+
+    e = migriere_bestand(tmp_path, {"kosten": "baukosten"}, {"quellen"})
+    assert e.dateien == 4 and e.entfernt["quellen"] == 3
+    assert e.umbenannt["kosten → baukosten"] == 1
+    assert [(a, n) for _, a, n in e.konflikte] == [("kosten", "baukosten")]  # a2 hat schon beides
     a = json.loads((ordner / "a1.json").read_text("utf-8"))
-    assert (a["baukosten"], a["waehrung"]) == (5, "€") and "baukosten_eur" not in a
-    assert "quellen" not in a
+    assert a["baukosten"] == 5 and "kosten" not in a and "quellen" not in a
     s = json.loads((ordner / f"{STAETTE['id']}_meta.json").read_text("utf-8"))
     assert "quellen" not in s and s["name"] == STAETTE["name"]
-    assert migriere_bestand(tmp_path) == 0
+    assert list(json.loads(org.read_text("utf-8"))) == ["id", "name"]  # Reihenfolge des Modells
+    assert migriere_bestand(tmp_path, {"kosten": "baukosten"}, {"quellen"}).dateien == 0
+    (ordner / "a2.json").unlink()
     verstoesse = []
     list(lies_bestand(tmp_path, verstoesse))
     assert verstoesse == []

@@ -888,21 +888,6 @@ def datei_felder(modell: type[BaseModel]) -> list[str]:
     return [f for f in modell.model_fields if angabe(modell, f, "datei", True)]
 
 
-# Umbenannte Felder: alter Name → neuer Name; entfernte Felder fallen weg
-# (für `sportstaettenatlas modell --migrieren`)
-UMBENANNT = {Sportanlage: {"baukosten_eur": "baukosten"}}
-ENTFERNT = {Sportstaette: {"quellen"}, Sportanlage: {"quellen"}}
-
-
-def migriere(d: dict, modell: type[BaseModel]) -> dict:
-    """Datensatz auf den Stand des Modells bringen (umbenannte und entfernte Felder)."""
-    weg = ENTFERNT.get(modell, set())
-    out = {UMBENANNT.get(modell, {}).get(k, k): v for k, v in d.items() if k not in weg}
-    if modell is Sportanlage and "baukosten_eur" in d and not d.get("waehrung"):
-        out["waehrung"] = "€"
-    return ordne(out, modell)
-
-
 def ordne(d: dict, modell: type[BaseModel]) -> dict:
     """Schlüssel in der Reihenfolge des Modells; unbekannte bleiben, hinten angehängt."""
     out = {k: d[k] for k in modell.model_fields if k in d}

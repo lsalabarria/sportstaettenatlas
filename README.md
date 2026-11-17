@@ -59,7 +59,8 @@ Alle mit `uv run sportstaettenatlas …`; `--help` zeigt die Optionen.
 | `vorlage` | Vorlagen für eigene CSV-Dateien nach `results/vorlagen/` |
 | `organisationen` | Stand des Verzeichnisses; `--aus-bestand` legt fehlende Organisationen an |
 | `einordnen` | Sportstätten in den Ordner ihres Kreises verschieben |
-| `modell` | Feldtabellen in `daten/README.md` und Diagramm schreiben (`--migrieren`: Dateien an umbenannte und entfernte Felder anpassen) |
+| `modell` | Feldtabellen in `daten/README.md` und Diagramm schreiben |
+| `migrieren` | Felder in allen Dateien von `daten/` umbenennen oder entfernen (`--umbenennen ALT=NEU`, `--entfernen FELD`, `--probe`) |
 | `seite` | Webseite nach `docs/` (`--vorschau`: lokal ansehen) |
 | `-v alkis` | ALKIS-Abgleich (siehe unten) |
 
@@ -80,7 +81,8 @@ Feld (Organisationstypen, Muster für Kontaktdaten). Daraus folgt:
   erzeugen.
 
 Ein neues Feld ist eine Zeile in `modell.py`, danach `modell` und `seite`. Wird ein Feld
-umbenannt, kommt der alte Name in `UMBENANNT`, danach `modell --migrieren`.
+umbenannt oder gestrichen, passt `migrieren` die Dateien an, z. B.
+`migrieren --umbenennen baukosten_eur=baukosten` oder `migrieren --entfernen quellen`.
 
 ## Webseite
 

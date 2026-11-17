@@ -241,12 +241,31 @@ def cmd_modell(args):
     """Datenmodell (modell.py) in daten/README.md und als Diagramm daten/datenmodell.svg."""
     from .modell import schreibe_doku
 
-    if args.migrieren:
-        from .bestand import migriere_bestand
-
-        print(f"{migriere_bestand(DATEN)} Dateien in {DATEN}/ auf den Stand des Modells gebracht")
     for hinweis in schreibe_doku(DATEN):
         print(hinweis)
+
+
+def _umbenennung(text: str) -> tuple[str, str]:
+    alt, gleich, neu = text.partition("=")
+    if not (gleich and alt.strip() and neu.strip()):
+        raise argparse.ArgumentTypeError(f"{text!r}: erwartet ALT=NEU")
+    return alt.strip(), neu.strip()
+
+
+def cmd_migrieren(args):
+    """Felder in allen Dateien von daten/ umbenennen oder entfernen (bestand.migriere_bestand)."""
+    from .bestand import migriere_bestand
+
+    try:
+        e = migriere_bestand(DATEN, dict(args.umbenennen), set(args.entfernen), args.probe)
+    except ValueError as exc:
+        raise SystemExit(str(exc)) from None
+    for was, zaehler in (("umbenannt", e.umbenannt), ("entfernt", e.entfernt)):
+        for feld, n in zaehler.items():
+            print(f"  {was}: {feld} in {n} Dateien")
+    for pfad, alt, neu in e.konflikte:
+        print(f"  nicht umbenannt, {neu} steht schon da: {pfad} ({alt})")
+    print(f"{e.dateien} Dateien in {DATEN}/ {'würden geändert' if args.probe else 'geändert'}")
 
 
 def _vorschau(ordner: Path, port: int = 8000) -> None:
@@ -317,12 +336,30 @@ def main(argv: list[str] | None = None) -> None:
     sp = sub.add_parser(
         "modell", help="Datenmodell in daten/README.md und daten/datenmodell.svg schreiben"
     )
-    sp.add_argument(
-        "--migrieren",
-        action="store_true",
-        help="vorher die Dateien in daten/ an das Modell anpassen (umbenannte und entfernte Felder)",
-    )
     sp.set_defaults(func=cmd_modell)
+
+    sp = sub.add_parser(
+        "migrieren",
+        help="Felder in allen Dateien von daten/ umbenennen oder entfernen; "
+        "ordnet die Schlüssel wie im Modell",
+    )
+    sp.add_argument(
+        "--umbenennen",
+        metavar="ALT=NEU",
+        type=_umbenennung,
+        action="append",
+        default=[],
+        help="Feld umbenennen, z. B. baukosten_eur=baukosten (mehrfach möglich)",
+    )
+    sp.add_argument(
+        "--entfernen",
+        metavar="FELD",
+        action="append",
+        default=[],
+        help="Feld aus allen Dateien löschen, z. B. quellen (mehrfach möglich)",
+    )
+    sp.add_argument("--probe", action="store_true", help="nur zählen, nichts schreiben")
+    sp.set_defaults(func=cmd_migrieren)
 
     alkis_cli.befehle(sub)
 

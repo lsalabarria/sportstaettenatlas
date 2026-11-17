@@ -24,7 +24,6 @@ from .modell import (
     Organisation,
     Sportanlage,
     Sportstaette,
-    migriere,
     ordne,
     pruefe,
 )
@@ -350,18 +349,57 @@ def lies_bestand(ordner: Path, verstoesse: list | None = None) -> Iterator[dict]
         yield {**meta, "anlagen": anlagen, "_ordner": st_ordner.parent.name}
 
 
-def migriere_bestand(ordner: Path) -> int:
-    """Dateien auf den Stand des Modells bringen (modell.migriere, z. B. umbenannte Felder).
-    Liefert die Zahl der geänderten Dateien."""
-    n = 0
-    for pfad in sorted(Path(ordner).glob("*/*/*/*.json")):
+@dataclass
+class Migration:
+    dateien: int = 0  # geändert (oder mit probe: würden geändert)
+    umbenannt: Counter = field(default_factory=Counter)
+    entfernt: Counter = field(default_factory=Counter)
+    konflikte: list = field(default_factory=list)  # (Datei, alt, neu): beide Namen belegt
+
+
+def migriere_bestand(
+    daten: Path,
+    umbenennen: dict[str, str] | None = None,
+    entfernen: set[str] | frozenset[str] = frozenset(),
+    probe: bool = False,
+) -> Migration:
+    """Felder in allen Dateien von daten/ umbenennen ({alt: neu}) oder entfernen und die
+    Schlüssel in die Reihenfolge des Modells bringen. Sportstätten, Sportanlagen und
+    Organisationen; nur oberste Ebene. Steht der neue Name schon in einer Datei, bleibt sie
+    für dieses Feld, wie sie ist (konflikte). Mit probe wird nichts geschrieben."""
+    umbenennen = umbenennen or {}
+    felder = {*Sportstaette.model_fields, *Sportanlage.model_fields, *Organisation.model_fields}
+    if fremd := sorted(set(umbenennen.values()) - felder):
+        raise ValueError(f"nicht im Modell: {', '.join(fremd)}")
+    e = Migration()
+    daten = Path(daten)
+    dateien = [
+        *((p, Organisation) for p in sorted((daten / ORGANISATIONEN).glob("*.json"))),
+        *(
+            (p, Sportstaette if p.name.endswith("_meta.json") else Sportanlage)
+            for p in sorted(daten.glob("*/*/*/*.json"))
+        ),
+    ]
+    for pfad, modell in dateien:
         alt = pfad.read_text(encoding="utf-8")
-        modell = Sportstaette if pfad.name.endswith("_meta.json") else Sportanlage
-        neu = als_json(migriere(json.loads(alt), modell))
+        d = json.loads(alt)
+        for k in entfernen & d.keys():
+            del d[k]
+            e.entfernt[k] += 1
+        for a, n in umbenennen.items():
+            if a not in d:
+                continue
+            if n in d:
+                e.konflikte.append((str(pfad), a, n))
+                continue
+            d = {n if k == a else k: v for k, v in d.items()}
+            e.umbenannt[f"{a} → {n}"] += 1
+        neu = als_json(ordne(d, modell))
         if neu != alt:
-            pfad.write_text(neu, encoding="utf-8")
-            n += 1
-    return n
+            e.dateien += 1
+            if not probe:
+                pfad.write_text(neu, encoding="utf-8")
+    return e
 
 
 def falsch_einsortiert(datensaetze, kreis_von: KreisVon) -> list[tuple[str, str, str]]:
