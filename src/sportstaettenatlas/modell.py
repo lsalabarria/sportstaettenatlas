@@ -62,11 +62,17 @@ BETRIEBSSTATUS = (
     "im Bau",
     "in Planung",
 )
-# Art einer Organisation → Art auf der Karte
+# Art einer Organisation → Art auf der Karte; die Art bestimmt auch den Ordner in
+# daten/organisationen/<LAND>/ (bestand.org_pfad)
 ORGANISATIONSTYPEN = {
     "Bund": "sonstige",
     "Land Rheinland-Pfalz": "sonstige",
     "Landkreis": "Kommune",
+    "Kreisfreie Stadt": "Kommune",
+    "Verbandsgemeinde": "Kommune",
+    "Verbandsfreie Gemeinde": "Kommune",
+    "Verbandsangehörige Stadt": "Kommune",
+    "Ortsgemeinde": "Kommune",
     "Stadt/Gemeinde": "Kommune",
     "Kommunales Unternehmen": "Kommune",
     "Zweckverband": "Kommune",
@@ -472,7 +478,9 @@ class Sportanlage(Basis):
     )
     betriebsstatus: Betriebsstatus | None = _general("Betriebsstatus")
     baujahr: int | None = _general("Baujahr", ge=1800, le=2100, widget="jahr")
-    letzte_sanierung: int | None = _general("Letzte Sanierung", "Jahr", ge=1800, le=2100, widget="jahr")
+    letzte_sanierung: int | None = _general(
+        "Letzte Sanierung", "Jahr", ge=1800, le=2100, widget="jahr"
+    )
     # Sportarten
     sportarten: list[str] = _general("Sportarten", gruppe="Sportarten", default_factory=list)
     wettkampf: list[str] = _general(
@@ -561,7 +569,9 @@ class Sportanlage(Basis):
     dressurplatz: JaNein | None = _yesno("Dressurplatz")
     springplatz: JaNein | None = _yesno("Springplatz")
     schiessstaende_gedeckt: int | None = _numeric("Schießstände gedeckt", gruppe="Ausstattung")
-    schiessstaende_teilgedeckt: int | None = _numeric("Schießstände teilgedeckt", gruppe="Ausstattung")
+    schiessstaende_teilgedeckt: int | None = _numeric(
+        "Schießstände teilgedeckt", gruppe="Ausstattung"
+    )
     schiessstaende_offen: int | None = _numeric("Schießstände offen", gruppe="Ausstattung")
     lifte: int | None = _numeric("Lifte", gruppe="Ausstattung")
     spielgeraete: int | None = _numeric("Spielgeräte", gruppe="Ausstattung")
@@ -629,7 +639,9 @@ class Sportanlage(Basis):
         braucht="waehrung",
         einheit_aus="waehrung",
     )
-    waehrung: Waehrung | None = _general("Währung", "der Baukosten", gruppe="Kosten", uebersicht=False)
+    waehrung: Waehrung | None = _general(
+        "Währung", "der Baukosten", gruppe="Kosten", uebersicht=False
+    )
 
 
 class Sportstaette(Basis):
@@ -743,7 +755,7 @@ class Sportstaette(Basis):
 
 class Organisation(Basis):
     """Verein, Kommune, Verband, Unternehmen … als Eigentümer, Betreiber oder Nutzer von
-    Sportstätten (Verzeichnis in daten/organisationen/). Sportstätten nennen sie in
+    Sportstätten (daten/organisationen/<LAND>/<Ordner der Art>/<id>.json). Sportstätten nennen sie in
     `eigentuemer`, `betreiber` und `nutzer` beim Namen; auch die weiteren Schreibweisen
     gelten. Keine Personen, keine Kontaktdaten."""
 
@@ -774,7 +786,16 @@ class Organisation(Basis):
         min_length=1,
         max_length=200,
     )
-    typ: Organisationstyp | None = _field("Art")
+    typ: Organisationstyp | None = _field(
+        "Art", "bestimmt auch den Ordner in daten/organisationen/"
+    )
+    ars: str | None = _field(
+        "Regionalschlüssel",
+        "amtlicher Schlüssel einer Gebietskörperschaft: Kreis 5, Verbandsgemeinde 9, "
+        "Gemeinde 12 Stellen",
+        pattern=r"^\d{5}(\d{4}(\d{3})?)?$",
+        formular=False,
+    )
     website: str | None = _field(
         "Webseite",
         "vollständige Adresse mit https://",
@@ -834,14 +855,18 @@ class Vorschlag(Basis):
         "alle Anlagen nach der Änderung (bei neu und anlagen); vorhandene mit ihrer "
         "Kurz-ID (Anfang der UUID), neue ohne",
     )
-    entfernte_anlagen: list[str] = _field("Entfernte Sportanlagen", "Kurz-IDs", default_factory=list)
+    entfernte_anlagen: list[str] = _field(
+        "Entfernte Sportanlagen", "Kurz-IDs", default_factory=list
+    )
     organisation_id: str | None = _field(
         "Organisation", "ID der geänderten oder gelöschten Organisation (fehlt bei einer neuen)"
     )
     organisation: Organisation | None = _field(
         "Angaben der Organisation", "vollständig, nach der Änderung (nicht beim Löschen)"
     )
-    loeschen: bool = _field("Löschen", "die Organisation aus dem Verzeichnis entfernen", default=False)
+    loeschen: bool = _field(
+        "Löschen", "die Organisation aus dem Verzeichnis entfernen", default=False
+    )
     geaendert: list[str] = _field("Geänderte Felder", default_factory=list)
     gemeinde: str | None = _field("Gemeinde", "Regionalschlüssel der Gemeinde an der Lage")
     dubletten_geprueft: list[str] = _field(

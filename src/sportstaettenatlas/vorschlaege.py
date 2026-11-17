@@ -28,17 +28,16 @@ from pathlib import Path
 
 from . import werte
 from .bestand import (
-    ORGANISATIONEN,
     _lies_ordner,
     _staetten_ordner,
-    als_json,
     aufteilen,
     bereinigen,
+    finde_organisation,
     organisation_id,
     schreibe_bestand,
     schreibe_organisation,
 )
-from .modell import Organisation, Vorschlag, ordne, pruefe
+from .modell import Vorschlag, pruefe
 
 UEBERNOMMEN = "vorschlaege_uebernommen.txt"
 _NAMENSRAUM = uuid.UUID("5d0c7a52-6b8e-4c1f-9a3e-2f4b8c6d1e07")
@@ -228,8 +227,8 @@ class _Uebernahme:
     def organisation(self, a: Antwort, v: dict) -> None:
         oid = v.get("organisation_id") or organisation_id(v["organisation"]["name"])
         if oid not in self.orgs:
-            pfad = self.daten / ORGANISATIONEN / f"{oid}.json"
-            self.orgs[oid] = json.loads(pfad.read_text("utf-8")) if pfad.exists() else None
+            pfad = finde_organisation(self.daten, oid)
+            self.orgs[oid] = json.loads(pfad.read_text("utf-8")) if pfad else None
         if v.get("loeschen"):
             if any(z == oid for z, _ in self.gesetzt):
                 self.e.warnungen.append(
@@ -265,13 +264,10 @@ class _Uebernahme:
                 if not pfad.exists() or pfad.read_text(encoding="utf-8") != text:
                     pfad.write_text(text, encoding="utf-8")
         for oid, o in self.orgs.items():
-            pfad = self.daten / ORGANISATIONEN / f"{oid}.json"
-            if o is None:
-                pfad.unlink(missing_ok=True)
-            elif pfad.exists():
-                pfad.write_text(als_json(ordne(o, Organisation)), encoding="utf-8")
-            else:
+            if o is not None:
                 schreibe_organisation(self.daten, o)
+            elif pfad := finde_organisation(self.daten, oid):
+                pfad.unlink()
 
 
 def uebernimm(

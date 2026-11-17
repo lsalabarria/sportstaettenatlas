@@ -58,8 +58,8 @@ Alle mit `uv run sportstaettenatlas …`; `--help` zeigt die Optionen.
 | `bestand DATEI.csv …` | CSV-Dateien in `daten/` übernehmen (`--probe`, `--modus`; Regeln: [CSV einlesen](daten/README.md#csv-einlesen)) |
 | `vorschlaege EXPORT.csv` | Vorschläge aus einem LimeSurvey-Export in `daten/` übernehmen (`--probe`, `--alle`; siehe [Vorschläge](#vorschläge)) |
 | `vorlage` | Vorlagen für eigene CSV-Dateien nach `results/vorlagen/` |
-| `organisationen` | Stand des Verzeichnisses; `--aus-bestand` legt fehlende Organisationen an |
-| `einordnen` | Sportstätten in den Ordner ihres Kreises verschieben |
+| `organisationen` | Stand des Verzeichnisses; `--gebiete` legt alle Landkreise, Städte, Verbands- und Ortsgemeinden an, `--aus-bestand` fehlende Eigentümer, Betreiber und Nutzer |
+| `einordnen` | Sportstätten in den Ordner ihres Kreises, Organisationen in den ihrer Art verschieben |
 | `modell` | Feldtabellen in `daten/README.md` und Diagramm schreiben |
 | `migrieren` | Felder in allen Dateien von `daten/` umbenennen oder entfernen (`--umbenennen ALT=NEU`, `--entfernen FELD`, `--probe`) |
 | `seite` | Webseite nach `docs/` (`--vorschau`: lokal ansehen) |

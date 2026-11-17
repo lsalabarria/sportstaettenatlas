@@ -136,8 +136,8 @@ def cmd_bestand(args):
 
 
 def cmd_organisationen(args):
-    """Verzeichnis der Organisationen (daten/organisationen/): Stand zeigen, aus dem Bestand
-    anlegen."""
+    """Verzeichnis der Organisationen (daten/organisationen/): Stand zeigen; aus den
+    Verwaltungsgebieten bzw. dem Bestand anlegen."""
     from .bestand import (
         lies_bestand,
         lies_organisationen,
@@ -147,6 +147,17 @@ def cmd_organisationen(args):
         organisationen_von,
     )
 
+    if args.gebiete:
+        from .kommunen import lege_an
+
+        b = lege_an(DATEN, _gebiete())
+        arten = ", ".join(f"{n} {art}" for art, n in b.je_art.items())
+        print(f"Gebietskörperschaften: {arten}")
+        print(f"  {b.neu} neu, {b.ergaenzt} ergänzt, {b.unveraendert} schon aktuell")
+        for alt, neu in b.umbenannt:
+            print(f"  umbenannt: {alt} → {neu} (alter Name bleibt als weitere Schreibweise)")
+        for name, passend in b.mehrdeutig:
+            print(f"WARNUNG: „{name}“ nicht eindeutig ({'; '.join(passend)}) – bitte von Hand")
     bestand = list(lies_bestand(DATEN))
     if args.aus_bestand:
         n = organisationen_aus_bestand(bestand, DATEN, typen=args.mit_art)
@@ -203,9 +214,12 @@ def cmd_vorschlaege(args):
 
 
 def cmd_einordnen(args):
-    """Sportstätten, deren Lage in einem anderen Kreis liegt, dorthin verschieben."""
-    from .bestand import einordnen, kreis_ordner
+    """Organisationen in den Ordner ihrer Art und Sportstätten, deren Lage in einem anderen
+    Kreis liegt, dorthin verschieben."""
+    from .bestand import einordnen, kreis_ordner, organisationen_einordnen
 
+    if n := organisationen_einordnen(DATEN):
+        print(f"{n} Organisationen in den Ordner ihrer Art verschoben.")
     try:
         n = einordnen(DATEN, kreis_ordner(_gebiete()))
     except ValueError as exc:
@@ -342,6 +356,11 @@ def main(argv: list[str] | None = None) -> None:
         help="Verzeichnis der Organisationen (Eigentümer, Betreiber, Nutzer) zeigen bzw. anlegen",
     )
     sp.add_argument(
+        "--gebiete",
+        action="store_true",
+        help="alle Landkreise, Städte, Verbands- und Ortsgemeinden anlegen bzw. ergänzen",
+    )
+    sp.add_argument(
         "--aus-bestand",
         action="store_true",
         help="für jeden Eigentümer, Betreiber und Nutzer im Bestand ohne Eintrag eine Organisation anlegen",
@@ -365,7 +384,10 @@ def main(argv: list[str] | None = None) -> None:
     sp.add_argument("ordner", nargs="?", default="results/vorlagen")
     sp.set_defaults(func=cmd_vorlage)
 
-    sp = sub.add_parser("einordnen", help="Sportstätten in den Ordner ihres Kreises verschieben")
+    sp = sub.add_parser(
+        "einordnen",
+        help="Sportstätten in den Ordner ihres Kreises, Organisationen in den ihrer Art verschieben",
+    )
     sp.set_defaults(func=cmd_einordnen)
 
     sp = sub.add_parser("seite", help="Webseite für GitHub Pages (docs/) erzeugen")

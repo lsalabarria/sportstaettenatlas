@@ -95,3 +95,11 @@ def oder_none(lesen, t: str | None):
         return lesen(str(t).strip())
     except ValueError:
         return None
+
+
+def slug(text: str) -> str:
+    """Text → Ordnername: klein, Umlaute ausgeschrieben, sonst nur a-z, 0-9 und -."""
+    t = text.lower()
+    for a, b in (("ä", "ae"), ("ö", "oe"), ("ü", "ue"), ("ß", "ss")):
+        t = t.replace(a, b)
+    return re.sub(r"[^a-z0-9]+", "-", t).strip("-")

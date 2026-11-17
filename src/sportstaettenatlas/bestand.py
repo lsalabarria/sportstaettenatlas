@@ -2,7 +2,7 @@
 
     daten/RP/07111-koblenz/<id>/<id>_meta.json     die Sportstätte
     daten/RP/07111-koblenz/<id>/<anlage-id>.json   je Sportanlage eine Datei
-    daten/organisationen/<id>.json                 je Organisation eine Datei
+    daten/organisationen/RP/<art>/<id>.json        je Organisation eine Datei, Ordner = Art
 
 Felder, ihre Reihenfolge in den Dateien und die Regeln kommen aus modell.py. Werte mit einer
 E-Mail-Adresse entfallen beim Schreiben (`bereinigen`).
@@ -19,6 +19,7 @@ from collections.abc import Callable, Iterator
 from dataclasses import dataclass, field
 from pathlib import Path
 
+from . import werte
 from .modell import (
     EMAIL_MUSTER,
     Organisation,
@@ -45,13 +46,6 @@ def adresse_text(a: dict) -> str:
 # --- Kreis-Ordner -----------------------------------------------------------------------
 
 
-def _slug(text: str) -> str:
-    t = text.lower()
-    for a, b in (("ä", "ae"), ("ö", "oe"), ("ü", "ue"), ("ß", "ss")):
-        t = t.replace(a, b)
-    return re.sub(r"[^a-z0-9]+", "-", t).strip("-")
-
-
 def kreis_ordner(gebiete: dict) -> KreisVon:
     """Aus den Verwaltungsgebieten (gebiete.lade): (lon, lat) → "07111-koblenz".
 
@@ -65,7 +59,7 @@ def kreis_ordner(gebiete: dict) -> KreisVon:
     ordner = {}
     for k in kreise:
         stadt = namen[k["name"]] > 1 and k.get("bez") == "Kreisfreie Stadt"
-        ordner[str(k["ars"])[:5]] = f"{str(k['ars'])[:5]}-{_slug(k['name'])}" + (
+        ordner[str(k["ars"])[:5]] = f"{str(k['ars'])[:5]}-{werte.slug(k['name'])}" + (
             "-stadt" if stadt else ""
         )
     zuordnung = Zuordnung(gebiete["gemeinde"])
@@ -95,8 +89,8 @@ def bereinigen(wert, entfernt: Counter, pfad: str = ""):
                 out[k] = v
         return out
     if isinstance(wert, list):
-        werte = (bereinigen(v, entfernt, pfad) for v in wert)
-        return [v for v in werte if v not in (None, "", [], {})]
+        liste = (bereinigen(v, entfernt, pfad) for v in wert)
+        return [v for v in liste if v not in (None, "", [], {})]
     if isinstance(wert, str):
         if EMAIL.search(wert):
             entfernt[re.sub(r"\.\d+$", "", pfad)] += 1
@@ -147,6 +141,11 @@ class Ergebnis:
 
 MODI = ("neu", "ergaenzen", "aktualisieren")
 NUR_ANLAGEN = "_nur_anlagen"  # Datensatz trägt nur Sportanlagen zu einer vorhandenen Sportstätte
+
+
+def _laender(daten: Path) -> list[Path]:
+    """Ordner der Länder in daten/ (RP …), ohne das Verzeichnis der Organisationen."""
+    return [p for p in sorted(Path(daten).glob("*")) if p.is_dir() and p.name != ORGANISATIONEN]
 
 
 def _staetten_ordner(land_ordner: Path) -> dict[str, Path]:
@@ -286,7 +285,7 @@ def einordnen(ziel: Path, kreis_von: KreisVon) -> int:
     """Ordner von Sportstätten, die nicht im Ordner ihres Kreises liegen (z. B. nach einer
     Änderung der Lage), dorthin verschieben. Liefert die Zahl der verschobenen."""
     n = 0
-    for meta in sorted(Path(ziel).glob("*/*/*/*_meta.json")):
+    for meta in sorted(m for o in _laender(ziel) for m in o.glob("*/*/*_meta.json")):
         st_ordner = meta.parent
         soll = st_ordner.parent.parent / _kreis(_lies_json(meta), kreis_von) / st_ordner.name
         if soll == st_ordner:
@@ -296,7 +295,7 @@ def einordnen(ziel: Path, kreis_von: KreisVon) -> int:
         soll.parent.mkdir(parents=True, exist_ok=True)
         shutil.move(st_ordner, soll)
         n += 1
-    for leer in Path(ziel).glob("*/*"):  # leer gewordene Kreis-Ordner
+    for leer in (k for o in _laender(ziel) for k in o.glob("*")):  # leer gewordene Kreise
         if leer.is_dir() and not any(leer.iterdir()):
             leer.rmdir()
     return n
@@ -321,7 +320,7 @@ def lies_bestand(ordner: Path, verstoesse: list | None = None) -> Iterator[dict]
     (modell.py, z. B. PLZ mit sechs Ziffern) brechen nicht ab, sondern landen als
     (Datei, Meldung) in `verstoesse`. Im Ergebnis steht zusätzlich "_ordner" (Kreis-Ordner).
     """
-    for st_ordner in sorted(p for p in Path(ordner).glob("*/*/*") if p.is_dir()):
+    for st_ordner in sorted(p for o in _laender(ordner) for p in o.glob("*/*") if p.is_dir()):
         sid = st_ordner.name
         meta_pfad = st_ordner / f"{sid}_meta.json"
         if not meta_pfad.exists():
@@ -374,10 +373,10 @@ def migriere_bestand(
     e = Migration()
     daten = Path(daten)
     dateien = [
-        *((p, Organisation) for p in sorted((daten / ORGANISATIONEN).glob("*.json"))),
+        *((p, Organisation) for p in org_dateien(daten)),
         *(
             (p, Sportstaette if p.name.endswith("_meta.json") else Sportanlage)
-            for p in sorted(daten.glob("*/*/*/*.json"))
+            for p in sorted(x for o in _laender(daten) for x in o.glob("*/*/*.json"))
         ),
     ]
     for pfad, modell in dateien:
@@ -412,9 +411,27 @@ def falsch_einsortiert(datensaetze, kreis_von: KreisVon) -> list[tuple[str, str,
     return out
 
 
-# --- Verzeichnis der Organisationen (daten/organisationen/) -----------------------------
+# --- Verzeichnis der Organisationen (daten/organisationen/<LAND>/<Ordner der Art>/) -------
 
 ORGANISATIONEN = "organisationen"
+ORG_LAND = "RP"
+
+
+OHNE_ART = "ohne-art"
+
+
+def org_pfad(daten: Path, o: dict) -> Path:
+    """Wo eine Organisation hingehört: daten/organisationen/RP/<Art>/<id>.json. Der Ordner
+    heißt wie die Art (z. B. „sportverein-im-lsb-rlp“, „ortsgemeinde“), ohne Art „ohne-art“."""
+    art = werte.slug(o["typ"]) if o.get("typ") else OHNE_ART
+    return Path(daten) / ORGANISATIONEN / ORG_LAND / art / f"{o['id']}.json"
+
+
+def org_dateien(daten: Path) -> list[Path]:
+    """Alle Dateien des Verzeichnisses (in jeder Tiefe, auch noch nicht einsortierte)."""
+    return sorted((Path(daten) / ORGANISATIONEN).rglob("*.json"))
+
+
 _ORG_NAMENSRAUM = uuid.UUID("a7d4c2e1-9f3b-4b8a-8c6d-1e5f0a2b3c4d")
 
 
@@ -429,15 +446,18 @@ def organisation_id(name: str) -> str:
 
 
 def lies_organisationen(daten: Path, verstoesse: list | None = None) -> list[dict]:
-    """Alle Organisationen aus daten/organisationen/<id>.json. Dateiname = id; ein Name
-    (auch eine weitere Schreibweise) darf nur bei einer Organisation stehen."""
+    """Alle Organisationen aus daten/organisationen/. Dateiname = id; ein Name (auch eine
+    weitere Schreibweise) darf nur bei einer Organisation stehen; der Ordner folgt aus der Art
+    (sonst Verstoß; `einordnen` verschiebt)."""
     out, namen = [], {}
-    for pfad in sorted((Path(daten) / ORGANISATIONEN).glob("*.json")):
+    for pfad in org_dateien(daten):
         o = _lies_json(pfad)
         if o.get("id") != pfad.stem:
             raise ValueError(f"{pfad}: id {o.get('id')!r} passt nicht zum Dateinamen")
         if verstoesse is not None:
             verstoesse += [(str(pfad), m) for m in pruefe(Organisation, o)]
+            if pfad != org_pfad(daten, o):
+                verstoesse.append((str(pfad), "Ordner passt nicht zur Art (einordnen)"))
             for n in [o.get("name"), *(o.get("weitere_namen") or [])]:
                 k = org_schluessel(n)
                 if k in namen and namen[k] != o["id"]:
@@ -457,13 +477,41 @@ def org_verzeichnis(organisationen: list[dict]) -> dict[str, dict]:
     return out
 
 
-def schreibe_organisation(daten: Path, o: dict) -> Path:
-    """Eine Organisation als daten/organisationen/<id>.json (neue ID, wenn sie fehlt)."""
+def schreibe_organisation(daten: Path, o: dict, dateien: dict[str, Path] | None = None) -> Path:
+    """Eine Organisation in den Ordner ihrer Art schreiben (neue ID, wenn sie fehlt); liegt
+    sie noch anderswo (Art geändert), wird die alte Datei entfernt. `dateien` (id → Pfad,
+    wird mitgeführt) spart bei vielen Organisationen das Suchen."""
     o = {**o, "id": o.get("id") or str(uuid.uuid4())}
-    pfad = Path(daten) / ORGANISATIONEN / f"{o['id']}.json"
+    pfad = org_pfad(daten, o)
+    if dateien is None:
+        dateien = {p.stem: p for p in org_dateien(daten)}
+    if (alt := dateien.get(o["id"])) and alt != pfad:
+        alt.unlink()
+    dateien[o["id"]] = pfad
     pfad.parent.mkdir(parents=True, exist_ok=True)
-    pfad.write_text(als_json(ordne(bereinigen(o, Counter()), Organisation)), encoding="utf-8")
+    text = als_json(ordne(bereinigen(o, Counter()), Organisation))
+    if not pfad.exists() or pfad.read_text(encoding="utf-8") != text:
+        pfad.write_text(text, encoding="utf-8")
     return pfad
+
+
+def finde_organisation(daten: Path, oid: str) -> Path | None:
+    return next((p for p in org_dateien(daten) if p.stem == oid), None)
+
+
+def organisationen_einordnen(daten: Path) -> int:
+    """Organisationen in den Ordner ihrer Art verschieben; leere Ordner entfernen."""
+    n = 0
+    dateien = {p.stem: p for p in org_dateien(daten)}
+    for pfad in list(dateien.values()):
+        o = _lies_json(pfad)
+        if pfad != org_pfad(daten, o):
+            schreibe_organisation(daten, o, dateien)
+            n += 1
+    for ordner in sorted((Path(daten) / ORGANISATIONEN).rglob("*"), reverse=True):
+        if ordner.is_dir() and not any(ordner.iterdir()):
+            ordner.rmdir()
+    return n
 
 
 ROLLEN = ("eigentuemer", "betreiber", "nutzer")
@@ -473,8 +521,8 @@ def organisationen_von(d: dict) -> list[tuple[str, str]]:
     """Organisationen einer Sportstätte: [(Rolle, Name)] – Eigentümer, Betreiber, Nutzer."""
     out = []
     for rolle in ROLLEN:
-        werte = d.get(rolle) or []
-        for name in [werte] if isinstance(werte, str) else werte:
+        namen = d.get(rolle) or []
+        for name in [namen] if isinstance(namen, str) else namen:
             if (name or "").strip():
                 out.append((rolle, name.strip()))
     return out
