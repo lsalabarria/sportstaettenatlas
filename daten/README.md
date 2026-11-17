@@ -148,8 +148,8 @@ Der Standort, z. B. ein Sportpark, ein Schulsportzentrum oder ein Freibad.
     "ort": "Koblenz"
   },
   "lage": {
-    "lon": 7.59,
-    "lat": 50.35
+    "lon": 7.5938,
+    "lat": 50.3512
   },
   "betreiber": "TuS Musterdorf e.V.",
   "betreiber_typ": "Sportverein im LSB RLP",
@@ -176,8 +176,8 @@ Immer WGS84 (EPSG:4326), Grad mit Dezimalstellen.
 
 | Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
 |---|---|---|---|---|---|
-| `lon` | Längengrad | Zahl | ja | ≥ 5.8; ≤ 9 | WGS84 |
-| `lat` | Breitengrad | Zahl | ja | ≥ 48.8; ≤ 51.1 | WGS84 |
+| `lon` | Längengrad | Zahl | ja | ≥ 5.8; ≤ 9; mindestens 4 Nachkommastellen | WGS84 |
+| `lat` | Breitengrad | Zahl | ja | ≥ 48.8; ≤ 51.1; mindestens 4 Nachkommastellen | WGS84 |
 
 ### Sportanlage (`<anlage-id>.json`)
 
