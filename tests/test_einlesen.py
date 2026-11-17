@@ -78,13 +78,13 @@ def test_sportanlagen_zusammenfuehren(tmp_path):
     p = _csv(
         tmp_path,
         "anlagen.csv",
-        "sportstaette_id,id,typ,Länge,bodenbelag_anz_sand,bodenbelag_anz_rasen,Flutlicht\n"
+        "sportstaette_id,id,typ,Länge,felder_je_belag_sand,felder_je_belag_rasen,Flutlicht\n"
         f's1,{gross["id"][:8]},Großspielfeld,"105,5",,1,ja\n'
         "s1,,Kleinspielfeld,40,2,,\n"
         "s9,,Tennisplatz,,,,\n",
     )
     d, b = einlesen.lies_csv(p)
-    assert b.art == "sportanlagen" and b.spalten["bodenbelag_anz_sand"] == "felder_je_belag[Sand]"
+    assert b.art == "sportanlagen" and b.spalten["felder_je_belag_sand"] == "felder_je_belag[Sand]"
     e = schreibe_bestand(d, ziel, "RP", _kreis, modus="neu")
     assert (e.anlagen_neu, e.anlagen_geaendert, e.ohne_sportstaette) == (1, 0, 1)
     assert e.nicht_mehr_in_quelle == 0  # nur Anlagen eingelesen: zählt nicht

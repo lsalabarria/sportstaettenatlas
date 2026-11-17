@@ -62,7 +62,7 @@ def _art(p: dict) -> dict:
 
 def spalten_namen(modellname: str) -> dict[str, str]:
     """Erkannte Spaltennamen (normalisiert) → Pfad des Feldes ("adresse.plz") für ein Modell.
-    Reihenfolge: Feldnamen vor Beschriftungen vor weiteren Spaltennamen (Angabe spalte)."""
+    Feldnamen gehen vor Beschriftungen."""
     felder: list[tuple[str, dict]] = []
     for k, p in _eigenschaften(modellname).items():
         if k == "anlagen":
@@ -73,15 +73,12 @@ def spalten_namen(modellname: str) -> dict[str, str]:
         else:
             felder.append((k, p))
     namen: dict[str, str] = {}
-    for stufe in ("feld", "titel", "spalte"):
+    for stufe in ("feld", "titel"):
         for pfad, p in felder:
             if stufe == "feld":
                 kandidaten = [pfad, pfad.split(".")[-1]] + list(_LAGE.get(pfad.split(".")[-1], ()))
-            elif stufe == "titel":
-                kandidaten = [p.get("title") or ""]
             else:
-                spalte = re.sub(r"\s*\(.*\)", "", p.get("spalte") or "")
-                kandidaten = [] if "*" in spalte else [spalte, spalte.split(".")[-1]]
+                kandidaten = [p.get("title") or ""]
             for k in kandidaten:
                 if _norm(k):
                     namen.setdefault(_norm(k), pfad)
@@ -92,12 +89,11 @@ def spalten_namen(modellname: str) -> dict[str, str]:
 
 
 def _zaehler_spalte(modellname: str, spalte: str) -> tuple[str, str] | None:
-    """Eine Spalte je Wert wie „bodenbelag_anz_sand“ → ("felder_je_belag", "Sand")."""
+    """Eine Spalte je Wert wie „felder_je_belag_sand“ → ("felder_je_belag", "Sand")."""
     for k, p in _eigenschaften(modellname).items():
-        muster = p.get("spalte") or ""
-        if p.get("widget") != "zaehler" or not muster.endswith("*"):
+        if p.get("widget") != "zaehler":
             continue
-        praefix = _norm(muster[:-1])
+        praefix = _norm(k)
         if _norm(spalte).startswith(praefix):
             rest = _norm(spalte)[len(praefix) :]
             for w in p["propertyNames"]["enum"]:
