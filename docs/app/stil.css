@@ -125,11 +125,17 @@ table.balken { border-collapse: collapse; width: 100%; }
 .balken .spur { height: 12px; }
 .balken .fuell { height: 12px; background: #2a78d6; border-radius: 0 4px 4px 0; min-width: 2px; }
 .balken tr:hover td { background: #f6f8fb; }
+.balken .q { color: #888; font-size: 12px; }
+details.befuellung { border-top: 1px solid #ececec; padding: 2px 0; }
+details.befuellung summary { cursor: pointer; padding: 4px 0; }
+details.befuellung summary .w { float: right; color: #555; font-variant-numeric: tabular-nums; }
 /* Vorschlag */
 .vorschlag .raster { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 24px;
                      align-items: start; }
 @media (max-width: 900px) { .vorschlag .raster { grid-template-columns: 1fr; } }
 .vorschlag aside { position: sticky; top: 10px; }
+.vorschlag .raster:has(> aside[hidden]) { grid-template-columns: minmax(0, 1fr); }
+.chips-titel { display: block; font-size: 13px; color: #555; margin-bottom: 2px; }
 .vorschlag fieldset { border: 1px solid #e3e3e3; border-radius: 8px; margin: 0 0 14px;
                       padding: 10px 14px 12px; }
 .vorschlag legend { font-weight: 600; padding: 0 6px; color: #871D33; }
@@ -170,10 +176,21 @@ table.balken { border-collapse: collapse; width: 100%; }
 .anlagen .mehr.hat { font-weight: 600; }
 .anlagen tr.entfernt input { text-decoration: line-through; color: #999; }
 .anlagen tr.anlage-mehr td { padding: 2px 0 8px 12px; }
-.anlage-felder { display: grid; grid-template-columns: 1fr 90px 120px; gap: 6px 10px;
-  background: #f7f7f7; border-radius: 6px; padding: 8px; }
+.anlage-felder { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 6px 10px; background: #f7f7f7; border-radius: 6px; padding: 8px; }
 .anlage-felder label { display: flex; flex-direction: column; font-size: 12px; color: #555; gap: 2px; }
 .anlage-felder label.breit { grid-column: 1 / -1; }
+.anlage-felder select, .anlage-felder input { width: 100%; box-sizing: border-box; }
+.anlage-abschnitt { margin: 6px 0 10px; }
+.anlage-abschnitt h5 { margin: 0 0 4px; font-size: 12px; text-transform: uppercase; letter-spacing: .04em;
+  color: #666; }
+.anlage-felder .zaehler { grid-column: 1 / -1; font-size: 12px; color: #555; }
+.anlage-felder .zaehler > div { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 4px 8px; margin-top: 2px; }
+.anlage-felder .zaehler label { flex-direction: row; align-items: center; justify-content: space-between; gap: 4px; }
+.anlage-felder .zaehler input { width: 56px; flex: 0 0 56px; }
+.anlage-mehr [hidden] { display: none !important; }
+.anlage-mehr .alle { display: block; cursor: pointer; }
 /* Filter: Sportanlagen nach Gruppen */
 .an-liste { max-height: 260px; overflow: auto; margin-top: 4px; }
 .an-kopf { display: flex; align-items: center; gap: 2px; }
@@ -217,3 +234,30 @@ table.balken { border-collapse: collapse; width: 100%; }
 #analysewahl { margin: 0 0 4px; }
 #analysewahl[hidden] { display: none; }
 .vorschlag pre.umbruch { white-space: pre-wrap; max-height: 320px; overflow: auto; background: #f6f6f4; padding: 8px; }
+/* Liste: Sportstätten und Sportanlagen, rechts alle Angaben */
+.liste-inhalt { max-width: 1500px; }
+.liste-raster { display: grid; grid-template-columns: 1fr; gap: 18px; align-items: start; }
+.liste-raster.mit-details { grid-template-columns: minmax(0, 1fr) 440px; }
+.liste td .swatch { display: inline-block; vertical-align: -1px; margin-right: 5px; }
+.liste td.zahl .w { display: inline-block; width: 38px; color: #555; }
+.mini { display: inline-block; width: 48px; height: 6px; background: #eceae4; border-radius: 3px;
+  vertical-align: middle; margin-right: 4px; overflow: hidden; }
+.mini span { display: block; height: 6px; background: #2a78d6; }
+.geerbt { font-style: italic; color: #888; }
+aside.details { position: sticky; top: 8px; max-height: calc(100vh - 140px); overflow: auto;
+  border: 1px solid #e3e3e3; border-radius: 8px; padding: 10px 14px; }
+aside.details[hidden] { display: none; }
+.details-kopf { display: flex; justify-content: space-between; align-items: start; gap: 8px; }
+.details-kopf h3 { margin: 4px 0; }
+.details-kopf .zu { border: 0; background: none; font-size: 20px; cursor: pointer; color: #666; }
+aside.details .knoepfe { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0; }
+aside.details h4 { margin: 14px 0 4px; font-size: 14px; }
+aside.details h4 .w, .anlage-details summary .w { float: right; color: #666; font-weight: 400; font-size: 12px; }
+aside.details h5 { margin: 8px 0 2px; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: #777; }
+aside.details table.meta { width: 100%; table-layout: fixed; }
+aside.details table.meta td:first-child { width: 52%; color: #555; }
+.liste td.zahl { white-space: nowrap; }
+aside.details tr.leer td { color: #aaa; }
+.anlage-details { border-top: 1px solid #ececec; padding: 4px 0; }
+.anlage-details summary { cursor: pointer; padding: 3px 0; }
+.anlage-details[open] summary { margin-bottom: 2px; }

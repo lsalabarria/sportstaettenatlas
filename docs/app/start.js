@@ -128,15 +128,16 @@ karte.on("moveend", () => { const a = ANSICHTEN[AKTIV]; if (a && a.aktualisiere)
 
 // ---------- Start -----------------------------------------------------------------------
 (async function start() {
-  let bestand, gebiete, analysen, schema;
+  let bestand, gebiete, analysen, schema, organisationen;
   try {
-    [bestand, gebiete, analysen, schema] = await Promise.all(["bestand.geojson", "gebiete.json",
-      "analysen/index.json", "schema.json"].map(holeJson));
+    [bestand, gebiete, analysen, schema, organisationen] = await Promise.all(["bestand.geojson",
+      "gebiete.json", "analysen/index.json", "schema.json", "organisationen.json"].map(holeJson));
   } catch (fehler) {
     ladeFehler(fehler);
     throw fehler;
   }
   if (schema) SCHEMA = schema;
+  setzeOrganisationen(organisationen && organisationen.eintraege);
   const hash = new URLSearchParams(location.hash.slice(1));
   starteGebietswahl(gebiete);
   if (bestand && bestand.features.length) {

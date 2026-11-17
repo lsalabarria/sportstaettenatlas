@@ -1,0 +1,23 @@
+{
+  "id": "ac64d7a8-85a8-4385-95ce-ca0e01c872cb",
+  "name": "Schulsporthalle Westend-Realschule Plus",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Röderstraße",
+    "hausnummer": "2",
+    "plz": "67549",
+    "ort": "Worms, Stadt"
+  },
+  "lage": {
+    "lon": 8.342603,
+    "lat": 49.634774
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "quellen": {
+    "atlas_rlp": {
+      "id": "ac64d7a8-85a8-4385-95ce-ca0e01c872cb",
+      "datei": "sportstaetten.csv"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-// Ansichten zum Datenbestand des Atlas (daten/): Karte, Liste, Übersicht.
+// Ansichten zum Datenbestand des Atlas (daten/): Karte, Übersicht (Liste: liste.js).
 
 // Kategorien des Atlas: feste Farben, damit eine Kategorie immer dieselbe Farbe behält;
 // die seltenen teilen sich Grau („weitere“).
@@ -15,12 +15,15 @@ const KATEGORIE_FARBEN = {
 const WEITERE = "#8a8984";
 
 // ---------- Ansicht „Karte“: der Datenbestand -------------------------------------------
-const ARTEN = ["Verein", "Kommune", "sonstige", "ohne Angabe"];
-const ART_MEHRZAHL = { Verein: "Vereine", Kommune: "Kommunen" };
+// Art von Betreiber bzw. Eigentümer: aus der Angabe bei der Sportstätte oder dem Verzeichnis der
+// Organisationen (seite.py, betreiber_art); ohne Art "unbekannt", ohne Namen "ohne Angabe"
+const ARTEN = ["Verein", "Kommune", "sonstige", "unbekannt", "ohne Angabe"];
+const ART_MEHRZAHL = { Verein: "Vereine", Kommune: "Kommunen", unbekannt: "Art unbekannt" };
 function artText(a) { return ART_MEHRZAHL[a] || a; }
-function artVon(p, rolle = "betreiber") { return p[rolle + "_art"] || "ohne Angabe"; }
+function artVon(p, rolle = "betreiber") {
+  return p[rolle + "_art"] || (leer(p[rolle]) ? "ohne Angabe" : "unbekannt");
+}
 function katFarbe(k) { return KATEGORIE_FARBEN[k] || WEITERE; }
-function schluesselName(s) { return String(s || "").trim().replace(/\s+/g, " ").toLowerCase(); }
 
 // Gruppen der Sportanlagen (aus anlagen.py, stehen in bestand.geojson)
 let ANLAGEN_GRUPPEN = [], ANLAGEN_TYPEN = {};
@@ -29,9 +32,12 @@ function gruppenText(g) { const x = ANLAGEN_GRUPPEN.find(y => y[0] === g); retur
 // Weitere Angaben einer Sportanlage als kurzer Text: alle Felder des Modells außer Typ, Name,
 // IDs und Herkunft; Listen ohne, Einzelwerte mit Beschriftung („Baujahr 1998“)
 function anlageDetails(a) {
+  const einheiten = nurEinheit("Sportanlage");
   return modellFelder("Sportanlage")
-    .filter(([k, p]) => p.formular !== false && k !== "typ" && k !== "bezeichnung" && !leer(a[k]))
-    .map(([k, p, , t]) => (t.type === "array" ? "" : p.title + " ") + feldText(p, t, a[k]))
+    .filter(([k, p, , t]) => p.formular !== false && k !== "typ" && k !== "bezeichnung"
+      && !einheiten.has(k) && feldText(p, t, a[k]))
+    .map(([k, p, , t]) => (t.type === "array" && k !== "wettkampf" ? "" : p.title + " ")
+      + feldText(p, t, a[k], a))
     .join(" · ");
 }
 // Anlagen einer Sportstätte nach Gruppe: [[Gruppe, [[Text, Anzahl, Typ, Angaben], …]], …]
@@ -86,7 +92,8 @@ function ansichtBestand(fc) {
   const mitEinem = (wahl, menge) => { for (const x of wahl) if (menge.has(x)) return true; return false; };
   function passt(e) {
     if (!katAn[e.kat] || !artAn[e.art] || !imGebiet(e.p.ars)) return false;
-    if (betreiberWahl && e[betreiberWahl.rolle] !== betreiberWahl.schluessel) return false;
+    if (betreiberWahl && !(betreiberWahl.ids ? betreiberWahl.ids.has(e.p.id)
+      : e[betreiberWahl.rolle] === betreiberWahl.schluessel)) return false;
     if (sportWahl.size && !mitEinem(sportWahl, e.sp)) return false;
     if (anlagenWahl.size && !mitEinem(anlagenWahl, e.typen)) return false;
     return true;
@@ -156,7 +163,7 @@ function ansichtBestand(fc) {
       + `<details open><summary>Betreiber</summary>`
       + ARTEN.filter(a => eintraege.some(e => e.art === a)).map(a => `<label><input type="checkbox" data-a="${a}" checked>`
         + `${artText(a)}${nSpan("a:" + a)}</label>`).join("")
-      + `<div class="hinweis">Art aus dem Namen geschätzt (z. B. „e.V.“, „Ortsgemeinde“)</div></details>`
+      + `<div class="hinweis">Art bei der Sportstätte oder im Verzeichnis der Organisationen angegeben; sonst unbekannt</div></details>`
       + (sps.length ? `<details><summary>Sportarten <span id="b-sp-n"></span></summary>`
         + `<input type="search" placeholder="Sportart suchen" aria-label="Sportart suchen">`
         + `<div class="sp-liste">` + sps.map(s => `<label data-text="${esc(s.toLowerCase())}">`
@@ -239,8 +246,8 @@ function ansichtBestand(fc) {
   function zeigeChip() {
     const el = panelEl && panelEl.querySelector("#b-chip");
     if (!el) return;
-    el.innerHTML = betreiberWahl ? `<div class="chip">${betreiberWahl.rolle === "betreiber"
-      ? "Betreiber" : "Eigentümer"}: <b>${esc(betreiberWahl.name)}</b> `
+    el.innerHTML = betreiberWahl ? `<div class="chip">${{ betreiber: "Betreiber", eigentuemer: "Eigentümer",
+      nutzer: "Nutzer" }[betreiberWahl.rolle]}: <b>${esc(betreiberWahl.name)}</b> `
       + `<button type="button" title="Filter aufheben">× aufheben</button></div>` : "";
     const b = el.querySelector("button");
     if (b) b.addEventListener("click", () => { betreiberWahl = null; zeigeChip(); aktualisiere(); });
@@ -276,7 +283,6 @@ function ansichtBestand(fc) {
   function tipBestand(e) {
     const p = e.p, z = [];
     const zeile = (l, v) => { if (!leer(v)) z.push(`<tr><td>${esc(l)}</td><td>${v}</td></tr>`); };
-    const art = a => a ? `<span class="art">${esc(a)}</span>` : "";
     // Zeilen in der Reihenfolge des Datenmodells; der Name steht in der Überschrift
     for (const [k, f, , t] of modellFelder("Sportstaette")) {
       if (k === "name" || k === "id" || f.formular === false || t.ref === "Lage") continue;
@@ -291,7 +297,7 @@ function ansichtBestand(fc) {
           + `rel="noopener">${esc(p[k])}</a>`);
       } else {
         const text = esc(feldText(f, t, p[k]));
-        zeile(f.title, text && f.widget === "organisation" ? text + art(p[k + "_art"]) : text);
+        zeile(f.title, text);
       }
     }
     zeile("ID", leer(p.id) ? "" : `<span class="koord">${esc(p.id)}</span>`);
@@ -302,13 +308,15 @@ function ansichtBestand(fc) {
           + `${esc(t)} zeigen">${k > 1 ? `${k}× ` : ""}${esc(text)}</a>`
           + (d ? ` <span class="details">(${esc(d)})</span>` : "")).join(", ") + `</div>`).join("")
       + `</div>` : `<div class="anlagen-tip leer">Keine Sportanlagen eingetragen</div>`;
+    const alle = `<tr><td>Angaben</td><td><a href="#" data-details="${esc(p.id)}">alle Angaben ansehen</a></td></tr>`;
     return `<div class="tip"><h3>${esc(p.name || p.kategorie || "Sportstätte")}</h3>${anlagen}`
-      + `<table class="meta">${z.join("")}${koord(e.lat, e.lon)}${aendernLink(p.id)}</table></div>`;
+      + `<table class="meta">${z.join("")}${koord(e.lat, e.lon)}${alle}${aendernLink(p.id)}</table></div>`;
   }
 
   const such = eintraege.map(e => ({
     titel: e.p.name || e.kat, sub: verbinde([e.p.kategorie, e.p.adresse, e.p.betreiber]),
     text: suchtext([e.p.name, e.p.adresse, e.p.kategorie, e.p.betreiber, e.p.eigentuemer, e.p.id,
+      ...(e.p.nutzer || []),
       ...(e.p.sportarten || []), ...e.typen]),
     grenzen: () => punktGrenzen(e.lat, e.lon),
     oeffne: () => oeffne(e),
@@ -328,8 +336,9 @@ function ansichtBestand(fc) {
     verbergen() { karte.removeLayer(ebene); panel.remove(); },
     gebietGeaendert() { zaehleGebiet(); aktualisiere(); },
     suchindex: () => such,
-    zeigeBetreiber(rolle, schluessel, name) {
-      betreiberWahl = { rolle, schluessel, name };
+    // Sportstätten einer Organisation zeigen; ids: die Sportstätten (sonst über den Namen)
+    zeigeBetreiber(rolle, schluessel, name, ids = null) {
+      betreiberWahl = { rolle, schluessel, name, ids };
       zeige("bestand").then(() => {
         zeigeChip();
         aktualisiere();
@@ -346,125 +355,61 @@ function ansichtBestand(fc) {
   };
 }
 
-// ---------- Ansicht „Liste“: Vereine und Kommunen als Betreiber -------------------------
-function ansichtListe(bestand) {
-  const el = document.getElementById("seite-liste");
-  let art = "Verein", rolle = "betreiber", filterText = "", sortierung = { feld: "n", ab: true };
-  const offen = new Set();
-  function gruppen() {
-    const g = new Map();
-    for (const e of bestand.eintraege) {
-      if (!imGebiet(e.p.ars) || artVon(e.p, rolle) !== art) continue;
-      const s = e[rolle];
-      if (!s) continue;
-      let x = g.get(s);
-      if (!x) g.set(s, x = { s, namen: {}, liste: [], orte: {}, kats: {} });
-      const name = e.p[rolle].trim().replace(/\s+/g, " ");
-      x.namen[name] = (x.namen[name] || 0) + 1;
-      x.liste.push(e);
-      if (e.p.ort) x.orte[e.p.ort] = (x.orte[e.p.ort] || 0) + 1;
-      x.kats[e.kat] = (x.kats[e.kat] || 0) + 1;
-    }
-    const top = (o, n) => Object.entries(o).sort((a, b) => b[1] - a[1]).slice(0, n).map(x => x[0]);
-    return [...g.values()].map(x => ({ ...x, name: top(x.namen, 1)[0], n: x.liste.length,
-      ort: top(x.orte, 3).join(", ") + (Object.keys(x.orte).length > 3 ? " …" : ""),
-      kat: top(x.kats, 3).join(", ") + (Object.keys(x.kats).length > 3 ? " …" : "") }));
-  }
-  function zaehle() {
-    const z = {};
-    for (const e of bestand.eintraege) if (imGebiet(e.p.ars)) {
-      const a = artVon(e.p, rolle); if (e[rolle]) (z[a] ??= new Set()).add(e[rolle]);
-    }
-    return z;
-  }
-  function zeichne() {
-    const z = zaehle();
-    let liste = gruppen();
-    if (filterText) liste = liste.filter(x => x.s.includes(filterText) || x.ort.toLowerCase().includes(filterText));
-    const { feld, ab } = sortierung;
-    liste.sort((a, b) => (feld === "n" ? a.n - b.n : String(a[feld]).localeCompare(String(b[feld]), "de"))
-      * (ab ? -1 : 1) || a.name.localeCompare(b.name, "de"));
-    const reiter = ["Verein", "Kommune", "sonstige"].map(a => `<button type="button" data-art="${a}" `
-      + `aria-pressed="${a === art}">${artText(a)}`
-      + ` (${zahl(z[a] ? z[a].size : 0)})</button>`).join("");
-    const pfeil = f => sortierung.feld === f ? (sortierung.ab ? " ▼" : " ▲") : "";
-    const zeilen = liste.map(x => {
-      const auf = offen.has(x.s);
-      let h = `<tr class="zeile${auf ? " offen" : ""}" data-s="${esc(x.s)}"><td>${auf ? "▾" : "▸"} ${esc(x.name)}</td>`
-        + `<td class="zahl">${zahl(x.n)}</td><td class="klein">${esc(x.ort)}</td><td class="klein">${esc(x.kat)}</td></tr>`;
-      if (auf) {
-        h += `<tr class="details"><td colspan="4"><button type="button" class="knopf2" data-karte="${esc(x.s)}">`
-          + `Alle ${zahl(x.n)} auf der Karte zeigen</button><table class="tabelle">`
-          + x.liste.slice().sort((a, b) => (a.p.ort || "").localeCompare(b.p.ort || "", "de")).map(e =>
-            `<tr><td><a data-i="${bestand.eintraege.indexOf(e)}">${esc(e.p.name || e.kat)}</a></td>`
-            + `<td class="klein">${esc(e.p.kategorie || "")}</td><td class="klein">${esc(e.p.adresse || "")}</td></tr>`).join("")
-          + `</table></td></tr>`;
-      }
-      return h;
-    }).join("");
-    el.innerHTML = `<div class="inhalt"><h2>Betreiber und Eigentümer</h2>`
-      + `<p class="unter">${esc(gebietName())} · Art aus dem Namen geschätzt („e.V.“, „TuS“, „Ortsgemeinde“, „Stadt“ …)</p>`
-      + `<div class="reiter">${reiter}<select aria-label="Rolle"><option value="betreiber"${rolle === "betreiber" ? " selected" : ""}>als Betreiber</option>`
-      + `<option value="eigentuemer"${rolle === "eigentuemer" ? " selected" : ""}>als Eigentümer</option></select>`
-      + `<input type="search" placeholder="Name oder Ort filtern" value="${esc(filterText)}" aria-label="Filter"></div>`
-      + `<table class="tabelle"><thead><tr><th data-sort="name">Name${pfeil("name")}</th>`
-      + `<th class="zahl" data-sort="n">Sportstätten${pfeil("n")}</th><th data-sort="ort">Orte${pfeil("ort")}</th>`
-      + `<th data-sort="kat">Kategorien${pfeil("kat")}</th></tr></thead><tbody>${zeilen
-        || `<tr><td colspan="4" class="klein">Keine Einträge.</td></tr>`}</tbody></table></div>`;
-    el.querySelectorAll("[data-art]").forEach(b => b.addEventListener("click", () => {
-      art = b.dataset.art; offen.clear(); zeichne(); }));
-    el.querySelector("select").addEventListener("change", ev => { rolle = ev.target.value; offen.clear(); zeichne(); });
-    const feldEl = el.querySelector("input[type=search]");
-    feldEl.addEventListener("input", () => {
-      filterText = feldEl.value.trim().toLowerCase().replace(/\s+/g, " ");
-      const pos = feldEl.selectionStart; zeichne();
-      const neu = el.querySelector("input[type=search]"); neu.focus(); neu.setSelectionRange(pos, pos);
-    });
-    el.querySelectorAll("th[data-sort]").forEach(th => th.addEventListener("click", () => {
-      const f = th.dataset.sort;
-      sortierung = { feld: f, ab: sortierung.feld === f ? !sortierung.ab : f === "n" };
-      zeichne();
-    }));
-    el.querySelectorAll("tr.zeile").forEach(tr => tr.addEventListener("click", () => {
-      const s = tr.dataset.s; if (offen.has(s)) offen.delete(s); else offen.add(s); zeichne(); }));
-    el.querySelectorAll("[data-karte]").forEach(b => b.addEventListener("click", () => {
-      const x = liste.find(y => y.s === b.dataset.karte);
-      bestand.zeigeBetreiber(rolle, x.s, x.name);
-    }));
-    el.querySelectorAll("a[data-i]").forEach(a => a.addEventListener("click", () =>
-      bestand.zeigeEintrag(bestand.eintraege[+a.dataset.i])));
-  }
-  return {
-    titel: "Liste",
-    zeigen() { el.hidden = false; zeichne(); },
-    verbergen() { el.hidden = true; },
-    gebietGeaendert() { if (!el.hidden) zeichne(); },
-  };
-}
-
 // ---------- Ansicht „Übersicht“: kleines Dashboard über den Datenbestand ----------------
 // Befüllung der Angaben, getrennt für Sportstätten und ihre Sportanlagen
-// Felder aus dem Datenmodell (ohne uebersicht: false) → [[Beschriftung, Test "ist befüllt"], …];
-// die Teile der Adresse einzeln (sie stehen flach in den Eigenschaften der Karte)
-function feldTests(modell) {
+// Felder aus dem Datenmodell (ohne uebersicht: false) → [{ titel, test, gruppe, fuer }];
+// die Teile der Adresse einzeln (sie stehen flach in den Eigenschaften der Karte) in der
+// Gruppe der Adresse. fuer: Feld ist nur für diese Sportanlagen gedacht (passtFuer).
+function feldTests(modell, gruppe) {
   const out = [];
   for (const [k, p, , t] of modellFelder(modell)) {
     if (p.uebersicht === false) continue;
-    if (t.ref) out.push(...feldTests(t.ref));
-    else out.push([p.title || k, x => !leer(x[k])]);
+    if (t.ref) out.push(...feldTests(t.ref, p.gruppe));
+    else out.push({ titel: p.title || k, gruppe: gruppe || p.gruppe || "Weitere Angaben",
+      fuer: p.fuer ? x => passtFuer(p, x.typ) : null,
+      test: x => !leer(x[k]) && !(typeof x[k] === "object" && !Array.isArray(x[k]) && !Object.keys(x[k]).length) });
   }
   return out;
 }
 let _felder, _anlageFelder;
 const FELDER_STAETTE = () => _felder ??= feldTests("Sportstaette");
 const FELDER_ANLAGE = () => _anlageFelder ??= feldTests("Sportanlage");
+// Befüllung eines Feldes: [befüllt, gedacht für] – nur unter den Einträgen, für die es gedacht ist
+function befuellt(liste, f) {
+  let ja = 0, n = 0;
+  for (const x of liste) if (!f.fuer || f.fuer(x)) { n++; if (f.test(x)) ja++; }
+  return [ja, n];
+}
+// Anteil befüllter Angaben über alle Felder (je Eintrag nur die Felder, die zu ihm passen)
 function anteil(liste, felder) {
-  if (!liste.length) return 0;
-  let summe = 0;
-  for (const x of liste) for (const [, test] of felder) if (test(x)) summe++;
-  return summe / (liste.length * felder.length);
+  let ja = 0, n = 0;
+  for (const f of felder) { const [a, b] = befuellt(liste, f); ja += a; n += b; }
+  return n ? ja / n : 0;
 }
 function befuellung(liste) { return anteil(liste.map(e => e.p), FELDER_STAETTE()); }
+// Befüllung nach Abschnitten des Modells (gruppen): aufklappbar, je Feld ein Balken
+function befuellungNachGruppe(modell, liste, felder, einheit) {
+  const reihe = [...(SCHEMA.$defs[modell].gruppen || [])];
+  for (const f of felder) if (!reihe.includes(f.gruppe)) reihe.push(f.gruppe);
+  return reihe.map((g, i) => {
+    const fs = felder.filter(f => f.gruppe === g);
+    if (!fs.length) return "";
+    const zeilen = fs.map(f => { const [ja, n] = befuellt(liste, f); return [f.titel, ja, n]; })
+      .filter(z => z[2]);
+    if (!zeilen.length) return "";
+    const b = anteil(liste, fs);
+    return `<details class="befuellung"${i === 0 ? " open" : ""}><summary><b>${esc(g)}</b>`
+      + `<span class="w">${Math.round(100 * b)} %</span></summary>`
+      + `<table class="balken">` + zeilen.map(([l, ja, n]) => {
+        const breite = n ? 100 * ja / n : 0;
+        const nur = n < liste.length ? ` (nur ${zahl(n)} ${einheit}, für die das Feld gedacht ist)` : "";
+        return `<tr title="${esc(l)}: ${zahl(ja)} von ${zahl(n)}${esc(nur)}"><td class="l">${esc(l)}`
+          + `${nur ? ` <span class="q">· ${zahl(n)}</span>` : ""}</td>`
+          + `<td><div class="spur"><div class="fuell" style="width:${breite.toFixed(1)}%"></div></div></td>`
+          + `<td class="w">${prozent(ja, n)} %</td></tr>`;
+      }).join("") + `</table></details>`;
+  }).join("");
+}
 function balken(zeilen, gesamt, prozentual, einheit = "Sportstätten") {
   // zeilen: [label, wert]; Breite relativ zu gesamt (Anteil) bzw. zum größten Wert
   const max = prozentual ? gesamt : Math.max(1, ...zeilen.map(z => z[1]));
@@ -490,6 +435,7 @@ function ansichtUebersicht(bestand) {
     const kachel = (label, wert, zusatz = "") => `<div class="kachel"><div class="label">${label}</div>`
       + `<div class="wert">${wert}</div><div class="zusatz">${zusatz}</div></div>`;
     const ohneAnlagen = liste.filter(e => !e.anlagen.length).length;
+    const angegeben = rolle => liste.map(e => e.p[rolle + "_typ"]).filter(v => !leer(v));
     let h = `<div class="inhalt"><h2>Übersicht: ${esc(gebietName())}</h2>`
       + `<p class="unter">Datenbestand der Karte (Ordner <code>daten/</code>): Sportstätten und die `
       + `Sportanlagen darin</p><div class="kacheln">`
@@ -497,18 +443,29 @@ function ansichtUebersicht(bestand) {
       + kachel("Sportanlagen", zahl(na), n ? `Ø ${(na / n).toLocaleString("de-DE",
         { maximumFractionDigits: 1 })} je Sportstätte` : "")
       + kachel("Angaben Sportstätten", `${Math.round(100 * befuellung(liste))} %`, `befüllt, Durchschnitt über ${FELDER_STAETTE().length} Felder`)
-      + kachel("Angaben Sportanlagen", `${Math.round(100 * anteil(anlagen, FELDER_ANLAGE()))} %`, `befüllt, Durchschnitt über ${FELDER_ANLAGE().length} Felder`)
+      + kachel("Angaben Sportanlagen", `${Math.round(100 * anteil(anlagen, FELDER_ANLAGE()))} %`,
+        `befüllt, Durchschnitt über die Felder, die zum Typ passen (bis ${FELDER_ANLAGE().length})`)
       + kachel("Sportarten", zahl(sportarten.size), "verschiedene")
-      + kachel("Vereine", zahl(betr.Verein.size), "als Betreiber (aus dem Namen geschätzt)")
-      + kachel("Kommunen", zahl(betr.Kommune.size), "als Betreiber (aus dem Namen geschätzt)")
+      + kachel("Vereine", zahl(betr.Verein.size), "als Betreiber (mit angegebener Art)")
+      + kachel("Kommunen", zahl(betr.Kommune.size), "als Betreiber (mit angegebener Art)")
       + `</div>`;
+    const artBalken = rolle => {
+      const z = angegeben(rolle);
+      return z.length ? `<h4>Art des ${rolle === "betreiber" ? "Betreibers" : "Eigentümers"} (angegeben)</h4>`
+        + balken(sortiert(zaehle(z)), z.length, false) : "";
+    };
     h += `<div class="spalten"><div><h3>Sportstätten</h3><h4>Wie gut sind die Angaben befüllt?</h4>`
-      + balken(FELDER_STAETTE().map(([l, t]) => [l, liste.filter(e => t(e.p)).length]), n, true)
+      + befuellungNachGruppe("Sportstaette", liste.map(e => e.p), FELDER_STAETTE(), "Sportstätten")
       + `<h4>Nach Kategorie</h4>` + balken(sortiert(zaehle(liste.map(e => e.kat))), n, false)
       + `<h4>Betreiber</h4>` + balken(ARTEN.map(a => [artText(a), liste.filter(e => e.art === a).length])
         .filter(z => z[1]), n, true)
+      + `<div class="hinweis">Art angegeben bei ${zahl(angegeben("betreiber").length)} Sportstätten (bei der Sportstätte oder im Verzeichnis der Organisationen)</div>`
+      + artBalken("betreiber") + artBalken("eigentuemer")
       + `</div><div><h3>Sportanlagen</h3><h4>Wie gut sind die Angaben befüllt?</h4>`
-      + balken(FELDER_ANLAGE().map(([l, t]) => [l, anlagen.filter(t).length]), na, true, "Sportanlagen")
+      + `<div class="hinweis">Felder, die nur für bestimmte Sportanlagen gedacht sind (z. B. Becken für Bäder), `
+      + `zählen nur unter diesen; die Zahl dahinter nennt, wie viele es sind.</div>`
+      + befuellungNachGruppe("Sportanlage", anlagen, FELDER_ANLAGE(), "Sportanlagen")
+
       + `<h4>Nach Gruppe</h4>` + balken(ANLAGEN_GRUPPEN.map(([g, text]) =>
         [text, anlagen.filter(a => anlagenGruppe(a.typ) === g).length]).filter(z => z[1])
         .sort((a, b) => b[1] - a[1]), 0, false, "Sportanlagen")

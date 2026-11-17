@@ -22,6 +22,10 @@ function wertText(v) { return typeof v === "boolean" ? (v ? "ja" : "nein") : esc
 // Felder, Beschriftungen (title), Auswahllisten (enum), Regeln (minimum, pattern …) und
 // Angaben für die Webseite (gruppe, widget, formular, uebersicht, einheit) stehen nur dort.
 let SCHEMA = { $defs: {} };
+// Zuordnungen und Regeln ohne eigenes Feld (modell.schema: "atlas"): Organisationstypen,
+// ALKIS-Typgruppe → Kategorie, Muster für E-Mail-Adressen
+const ATLAS = () => SCHEMA.atlas || {};
+const enthaeltEmail = x => !!ATLAS().email && new RegExp(ATLAS().email).test(JSON.stringify(x));
 // Felder eines Modells: [[Name, Eigenschaft, Pflicht, Typ]] – Typ ohne „oder leer“, Verweise
 // aufgelöst (z. B. adresse → Adresse mit ref: "Adresse")
 function modellFelder(modell) {
@@ -33,15 +37,62 @@ function feldTyp(p) {
   const ref = (t.$ref || "").split("/").pop();
   return ref ? { ...SCHEMA.$defs[ref], ref } : t;
 }
-// Wert eines Feldes als Text (ohne HTML): Listen mit Komma, Zahlen mit Tausenderpunkt und Einheit
-function feldText(p, t, v) {
-  if (leer(v)) return "";
+// Wert eines Feldes als Text (ohne HTML): Listen mit Komma, Zahlen mit Tausenderpunkt und
+// Einheit (einheit, oder einheit_aus: aus einem anderen Feld des Datensatzes x), Anzahl je
+// Wert als „3× Sand, 1× Rasen“
+function feldText(p, t, v, x = {}) {
+  if (leer(v) || (typeof v === "object" && !Array.isArray(v) && !Object.keys(v).length)) return "";
   if (Array.isArray(v)) return v.join(", ");
+  if (typeof v === "object") return Object.entries(v).map(([k, n]) => `${zahl(n)}× ${k}`).join(", ");
   if ((t.type === "integer" || t.type === "number") && p.widget !== "jahr") {
-    return zahl(v) + (p.einheit ? " " + p.einheit : "");
+    const einheit = p.einheit_aus ? x[p.einheit_aus] : p.einheit;
+    return zahl(v) + (einheit ? " " + einheit : "");
   }
   return String(v);
 }
+// Ist ein Feld für diese Sportanlage gedacht? (Angabe fuer: Typen aus modell.MERKMALE). Bei
+// einem Typ, den die Liste nicht kennt, gelten alle Felder.
+function passtFuer(p, typ) {
+  return !p.fuer || !typ || !(typ in ANLAGEN_TYPEN) || p.fuer.includes(typ);
+}
+// Felder, deren Wert nur als Einheit eines anderen Feldes erscheint (Währung der Baukosten)
+function nurEinheit(modell) {
+  return new Set(modellFelder(modell).map(([, p]) => p.einheit_aus).filter(Boolean));
+}
+// Regeln zwischen Feldern (braucht, teil_von) für ein Objekt nach dem Modell → Meldungen
+function regelnZwischen(modell, o, praefix = "") {
+  const out = [], titel = k => (SCHEMA.$defs[modell].properties[k] || {}).title || k;
+  for (const [k, p] of modellFelder(modell)) {
+    const w = o[k];
+    if (p.braucht && !leer(w) && leer(o[p.braucht])) out.push(`${praefix}${titel(p.braucht)}: nötig, wenn ${p.title} angegeben ist`);
+    if (p.teil_von && Array.isArray(w)) {
+      const fehlt = w.filter(x => !(o[p.teil_von] || []).includes(x));
+      if (fehlt.length) out.push(`${praefix}${p.title}: ${fehlt.join(", ")} fehlt unter ${titel(p.teil_von)}`);
+    }
+  }
+  return out;
+}
+// ---------- Organisationen (daten/organisationen.json): Vereine, Kommunen, Verbände … ----------
+// Sportstätten nennen sie in eigentuemer, betreiber und nutzer beim Namen (auch weitere_namen).
+let ORGANISATIONEN = [];
+const ORG_NACH_NAME = new Map();
+function setzeOrganisationen(liste) {
+  ORGANISATIONEN = liste || [];
+  ORG_NACH_NAME.clear();
+  for (const o of ORGANISATIONEN) for (const n of [o.name, ...(o.weitere_namen || [])]) {
+    const k = schluesselName(n);
+    if (k && !ORG_NACH_NAME.has(k)) ORG_NACH_NAME.set(k, o);
+  }
+}
+function orgVon(name) { return ORG_NACH_NAME.get(schluesselName(name)) || null; }
+// Art auf der Karte (Verein, Kommune, sonstige) aus der Art im Verzeichnis; sonst "" (unbekannt,
+// es wird nicht geschätzt)
+function orgArt(name) {
+  const o = orgVon(name), typen = ATLAS().organisationstypen || {};
+  return o && o.typ && typen[o.typ] ? typen[o.typ] : "";
+}
+function schluesselName(s) { return String(s || "").trim().replace(/\s+/g, " ").toLowerCase(); }
+
 // Werte zählen: ["a", "b", "a"] → { a: 2, b: 1 }
 function zaehle(werte) {
   const z = {};
