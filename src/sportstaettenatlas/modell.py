@@ -167,7 +167,7 @@ ANLAGE_GRUPPEN = (
 )
 
 
-def _f(titel: str, beschreibung: str | None = None, pflicht: bool = False, **angaben):
+def _field(titel: str, beschreibung: str | None = None, pflicht: bool = False, **angaben):
     """Feld mit Beschriftung; Regeln (ge, le, pattern …), Vorgabe und Angaben für die Webseite."""
     regeln = {
         k: angaben.pop(k)
@@ -211,28 +211,28 @@ class Basis(BaseModel):
 
 
 class Adresse(Basis):
-    strasse: str | None = _f("Straße", max_length=150)
-    hausnummer: str | None = _f(
+    strasse: str | None = _field("Straße", max_length=150)
+    hausnummer: str | None = _field(
         "Hausnummer",
         "z. B. 12, 12a oder 2-4",
         max_length=12,
         pattern=r"^\d+\s?[a-zA-Z]?(\s?[-/]\s?\d+\s?[a-zA-Z]?)?$",
     )
-    adresszusatz: str | None = _f(
+    adresszusatz: str | None = _field(
         "Adresszusatz",
         "z. B. Eingang Schulhof",
         max_length=150,
         uebersicht=False,
     )
-    plz: str | None = _f("PLZ", "fünf Ziffern", pattern=r"^\d{5}$")
-    ort: str | None = _f("Ort", max_length=100, widget="ort")
+    plz: str | None = _field("PLZ", "fünf Ziffern", pattern=r"^\d{5}$")
+    ort: str | None = _field("Ort", max_length=100, widget="ort")
 
 
 class Lage(Basis):
     """Immer WGS84 (EPSG:4326), Grad mit Dezimalstellen."""
 
-    lon: float = _f("Längengrad", "WGS84", pflicht=True, ge=5.8, le=9.0)
-    lat: float = _f("Breitengrad", "WGS84", pflicht=True, ge=48.8, le=51.1)
+    lon: float = _field("Längengrad", "WGS84", pflicht=True, ge=5.8, le=9.0)
+    lat: float = _field("Breitengrad", "WGS84", pflicht=True, ge=48.8, le=51.1)
 
 
 # Welche Felder es je Anlagentyp gibt (MERKMALE); MERKMALE_ALLE und jedes Feld, das dort
@@ -404,16 +404,16 @@ def fuer_von(feld: str) -> list[str] | None:
     return list(dict.fromkeys(typen)) or None
 
 
-def _a(titel, beschreibung=None, gruppe="Allgemein", **angaben):
-    return _f(titel, beschreibung, gruppe=gruppe, **angaben)
+def _general(titel, beschreibung=None, gruppe="Allgemein", **angaben):
+    return _field(titel, beschreibung, gruppe=gruppe, **angaben)
 
 
-def _jn(titel, beschreibung=None, gruppe="Ausstattung", **angaben):
-    return _a(titel, beschreibung, gruppe, widget="ja_nein", **angaben)
+def _yesno(titel, beschreibung=None, gruppe="Ausstattung", **angaben):
+    return _general(titel, beschreibung, gruppe, widget="ja_nein", **angaben)
 
 
-def _n(titel, beschreibung=None, gruppe="Maße", **angaben):
-    return _a(titel, beschreibung, gruppe, ge=0, **angaben)
+def _numeric(titel, beschreibung=None, gruppe="Maße", **angaben):
+    return _general(titel, beschreibung, gruppe, ge=0, **angaben)
 
 
 class Sportanlage(Basis):
@@ -443,20 +443,20 @@ class Sportanlage(Basis):
         }
     )
 
-    id: str | None = _f(
+    id: str | None = _field(
         "ID",
         "UUID, zugleich der Dateiname (in der Datei Pflicht)",
         formular=False,
         uebersicht=False,
     )
-    sportstaette_id: str | None = _f(
+    sportstaette_id: str | None = _field(
         "Sportstätte",
         "ID der Sportstätte, zu der die Anlage gehört, = Name des Ordners (in der Datei Pflicht)",
         formular=False,
         uebersicht=False,
     )
     # Sportanlage
-    typ: str = _a(
+    typ: str = _general(
         "Typ",
         "einheitlicher Typ aus src/sportstaettenatlas/anlagen.py, z. B. „Großspielfeld“",
         pflicht=True,
@@ -465,17 +465,17 @@ class Sportanlage(Basis):
         widget="anlagentyp",
         uebersicht=False,
     )
-    bezeichnung: str | None = _a(
+    bezeichnung: str | None = _general(
         "Name",
         "eigener Name der Anlage, z. B. „Halle 1“, „Kunstrasen B“",
         max_length=100,
     )
-    betriebsstatus: Betriebsstatus | None = _a("Betriebsstatus")
-    baujahr: int | None = _a("Baujahr", ge=1800, le=2100, widget="jahr")
-    letzte_sanierung: int | None = _a("Letzte Sanierung", "Jahr", ge=1800, le=2100, widget="jahr")
+    betriebsstatus: Betriebsstatus | None = _general("Betriebsstatus")
+    baujahr: int | None = _general("Baujahr", ge=1800, le=2100, widget="jahr")
+    letzte_sanierung: int | None = _general("Letzte Sanierung", "Jahr", ge=1800, le=2100, widget="jahr")
     # Sportarten
-    sportarten: list[str] = _a("Sportarten", gruppe="Sportarten", default_factory=list)
-    wettkampf: list[str] = _a(
+    sportarten: list[str] = _general("Sportarten", gruppe="Sportarten", default_factory=list)
+    wettkampf: list[str] = _general(
         "Wettkampfeignung",
         "Sportarten, für die die Anlage wettkampfgeeignet ist (müssen unter Sportarten stehen)",
         gruppe="Sportarten",
@@ -483,153 +483,153 @@ class Sportanlage(Basis):
         teil_von="sportarten",
     )
     # Maße
-    laenge: float | None = _n("Länge", "der Sportfläche", einheit="m")
-    breite: float | None = _n("Breite", "der Sportfläche", einheit="m")
-    hoehe: float | None = _n("Höhe", "lichte Höhe der Halle", einheit="m")
-    flaeche: float | None = _n(
+    laenge: float | None = _numeric("Länge", "der Sportfläche", einheit="m")
+    breite: float | None = _numeric("Breite", "der Sportfläche", einheit="m")
+    hoehe: float | None = _numeric("Höhe", "lichte Höhe der Halle", einheit="m")
+    flaeche: float | None = _numeric(
         "Fläche",
         "nutzbare Sportfläche, wenn nicht Länge × Breite (z. B. Reitplatz)",
         einheit="m²",
     )
-    bahnlaenge: float | None = _n("Bahnlänge", einheit="m")
-    bahnen: int | None = _n("Bahnen", "Zahl der Lauf-, Schwimm-, Kegel- oder Schießbahnen")
+    bahnlaenge: float | None = _numeric("Bahnlänge", einheit="m")
+    bahnen: int | None = _numeric("Bahnen", "Zahl der Lauf-, Schwimm-, Kegel- oder Schießbahnen")
     # Belag und Felder
-    bodenbelag: Bodenbelag | None = _a("Bodenbelag", gruppe="Belag und Felder")
-    felder_je_belag: dict[Bodenbelag, Anzahl] = _a(
+    bodenbelag: Bodenbelag | None = _general("Bodenbelag", gruppe="Belag und Felder")
+    felder_je_belag: dict[Bodenbelag, Anzahl] = _general(
         "Felder je Belag",
         "z. B. Tennisplätze: 3 Sand, 1 Kunstrasen",
         gruppe="Belag und Felder",
         default_factory=dict,
         widget="zaehler",
     )
-    spielfelder: int | None = _n(
+    spielfelder: int | None = _numeric(
         "Spielfelder",
         "Zahl, wenn nicht nach Sportart bekannt",
         gruppe="Belag und Felder",
     )
-    felder_je_sportart: dict[Spielfeldart, Anzahl] = _a(
+    felder_je_sportart: dict[Spielfeldart, Anzahl] = _general(
         "Spielfelder je Sportart",
         "markierte Felder, z. B. 3 Badminton, 1 Handball",
         gruppe="Belag und Felder",
         default_factory=dict,
         widget="zaehler",
     )
-    kleinfelder_je_sportart: dict[Kleinfeldart, Anzahl] = _a(
+    kleinfelder_je_sportart: dict[Kleinfeldart, Anzahl] = _general(
         "Kleinfelder je Sportart",
         gruppe="Belag und Felder",
         default_factory=dict,
         widget="zaehler",
     )
-    loecher: int | None = _n("Löcher", "Golf, Bahnengolf", gruppe="Belag und Felder")
+    loecher: int | None = _numeric("Löcher", "Golf, Bahnengolf", gruppe="Belag und Felder")
     # Becken
-    wasserflaeche: float | None = _n("Wasserfläche", "gesamt", gruppe="Becken", einheit="m²")
-    wasserflaeche_relevant: float | None = _n(
+    wasserflaeche: float | None = _numeric("Wasserfläche", "gesamt", gruppe="Becken", einheit="m²")
+    wasserflaeche_relevant: float | None = _numeric(
         "Relevante Wasserfläche",
         "ohne Kaltwassertret-, Warmsprudelbecken usw.",
         gruppe="Becken",
         einheit="m²",
     )
-    wasserflaeche_lehrbecken: float | None = _n(
+    wasserflaeche_lehrbecken: float | None = _numeric(
         "Wasserfläche Lern- und Kursbecken",
         gruppe="Becken",
         einheit="m²",
     )
-    becken_bis_25m: int | None = _n("Becken bis 25 m", gruppe="Becken")
-    becken_25_bis_50m: int | None = _n("Becken 25 bis 50 m", gruppe="Becken")
-    becken_ueber_50m: int | None = _n("Becken über 50 m", gruppe="Becken")
-    becken_tiefer_3m: int | None = _n("Becken tiefer als 3 m", gruppe="Becken")
-    nichtschwimmerbecken: int | None = _n("Nichtschwimmerbecken", gruppe="Becken")
-    lehrbecken: int | None = _n("Lehrbecken", gruppe="Becken")
-    kinderbecken: int | None = _n("Kinderbecken", gruppe="Becken")
-    erholungsbecken: int | None = _n("Erholungsbecken", gruppe="Becken")
-    sprungturm: JaNein | None = _jn("Sprungturm", "mindestens einer", gruppe="Becken")
-    sprungtuerme_3m: int | None = _n("Sprungtürme 3 m", gruppe="Becken")
-    sprungtuerme_5m: int | None = _n("Sprungtürme 5 m", gruppe="Becken")
-    sprungtuerme_10m: int | None = _n("Sprungtürme 10 m", gruppe="Becken")
-    baederleben_id: str | None = _a(
+    becken_bis_25m: int | None = _numeric("Becken bis 25 m", gruppe="Becken")
+    becken_25_bis_50m: int | None = _numeric("Becken 25 bis 50 m", gruppe="Becken")
+    becken_ueber_50m: int | None = _numeric("Becken über 50 m", gruppe="Becken")
+    becken_tiefer_3m: int | None = _numeric("Becken tiefer als 3 m", gruppe="Becken")
+    nichtschwimmerbecken: int | None = _numeric("Nichtschwimmerbecken", gruppe="Becken")
+    lehrbecken: int | None = _numeric("Lehrbecken", gruppe="Becken")
+    kinderbecken: int | None = _numeric("Kinderbecken", gruppe="Becken")
+    erholungsbecken: int | None = _numeric("Erholungsbecken", gruppe="Becken")
+    sprungturm: JaNein | None = _yesno("Sprungturm", "mindestens einer", gruppe="Becken")
+    sprungtuerme_3m: int | None = _numeric("Sprungtürme 3 m", gruppe="Becken")
+    sprungtuerme_5m: int | None = _numeric("Sprungtürme 5 m", gruppe="Becken")
+    sprungtuerme_10m: int | None = _numeric("Sprungtürme 10 m", gruppe="Becken")
+    baederleben_id: str | None = _general(
         "ID bei baederleben.de",
         gruppe="Becken",
         max_length=50,
         uebersicht=False,
     )
     # Ausstattung
-    trennvorhang: JaNein | None = _jn("Trennvorhang", "zur Hallenteilung oder für eine Bühne")
-    bewaesserung: JaNein | None = _jn("Bewässerung")
-    hoehenverstellbares_netz: JaNein | None = _jn("Höhenverstellbares Netz")
-    kletterwand: JaNein | None = _jn("Kletterwand")
-    boulderwand: JaNein | None = _jn("Boulderwand")
-    dressurplatz: JaNein | None = _jn("Dressurplatz")
-    springplatz: JaNein | None = _jn("Springplatz")
-    schiessstaende_gedeckt: int | None = _n("Schießstände gedeckt", gruppe="Ausstattung")
-    schiessstaende_teilgedeckt: int | None = _n("Schießstände teilgedeckt", gruppe="Ausstattung")
-    schiessstaende_offen: int | None = _n("Schießstände offen", gruppe="Ausstattung")
-    lifte: int | None = _n("Lifte", gruppe="Ausstattung")
-    spielgeraete: int | None = _n("Spielgeräte", gruppe="Ausstattung")
-    ausstattung: list[str] = _a(
+    trennvorhang: JaNein | None = _yesno("Trennvorhang", "zur Hallenteilung oder für eine Bühne")
+    bewaesserung: JaNein | None = _yesno("Bewässerung")
+    hoehenverstellbares_netz: JaNein | None = _yesno("Höhenverstellbares Netz")
+    kletterwand: JaNein | None = _yesno("Kletterwand")
+    boulderwand: JaNein | None = _yesno("Boulderwand")
+    dressurplatz: JaNein | None = _yesno("Dressurplatz")
+    springplatz: JaNein | None = _yesno("Springplatz")
+    schiessstaende_gedeckt: int | None = _numeric("Schießstände gedeckt", gruppe="Ausstattung")
+    schiessstaende_teilgedeckt: int | None = _numeric("Schießstände teilgedeckt", gruppe="Ausstattung")
+    schiessstaende_offen: int | None = _numeric("Schießstände offen", gruppe="Ausstattung")
+    lifte: int | None = _numeric("Lifte", gruppe="Ausstattung")
+    spielgeraete: int | None = _numeric("Spielgeräte", gruppe="Ausstattung")
+    ausstattung: list[str] = _general(
         "Weitere Ausstattung",
         "z. B. Umkleiden, Anzeigetafel",
         gruppe="Ausstattung",
         default_factory=list,
     )
     # Licht
-    flutlicht: JaNein | None = _jn("Flutlicht", gruppe="Licht")
-    leuchtmittel: Leuchtmittel | None = _a("Leuchtmittel", gruppe="Licht")
-    lux: Luxwert | None = _a("Beleuchtungsstärke", gruppe="Licht", einheit="lx")
+    flutlicht: JaNein | None = _yesno("Flutlicht", gruppe="Licht")
+    leuchtmittel: Leuchtmittel | None = _general("Leuchtmittel", gruppe="Licht")
+    lux: Luxwert | None = _general("Beleuchtungsstärke", gruppe="Licht", einheit="lx")
     # Nutzung
-    oeffnungsstunden: int | None = _n(
+    oeffnungsstunden: int | None = _numeric(
         "Öffnungsstunden",
         "im Jahr, insgesamt",
         gruppe="Nutzung",
         le=8784,
         einheit="h",
     )
-    oeffnungsstunden_schule: int | None = _n(
+    oeffnungsstunden_schule: int | None = _numeric(
         "davon Schulsport",
         "Stunden im Jahr",
         gruppe="Nutzung",
         le=8784,
         einheit="h",
     )
-    oeffnungsstunden_verein: int | None = _n(
+    oeffnungsstunden_verein: int | None = _numeric(
         "davon Vereine",
         "Stunden im Jahr",
         gruppe="Nutzung",
         le=8784,
         einheit="h",
     )
-    altersempfehlung: str | None = _a(
+    altersempfehlung: str | None = _general(
         "Altersempfehlung",
         "z. B. 6–12 Jahre",
         gruppe="Nutzung",
         max_length=50,
     )
     # Barrierefreiheit
-    barrierefrei_erreichbar: JaNein | None = _jn(
+    barrierefrei_erreichbar: JaNein | None = _yesno(
         "Barrierefrei erreichbar", gruppe="Barrierefreiheit"
     )
-    geeignet_mobilitaet: JaNein | None = _jn(
+    geeignet_mobilitaet: JaNein | None = _yesno(
         "Geeignet bei eingeschränkter Mobilität",
         gruppe="Barrierefreiheit",
     )
-    geeignet_sehen: JaNein | None = _jn(
+    geeignet_sehen: JaNein | None = _yesno(
         "Geeignet bei Sehbeeinträchtigung", gruppe="Barrierefreiheit"
     )
-    geeignet_kleinwuchs: JaNein | None = _jn(
+    geeignet_kleinwuchs: JaNein | None = _yesno(
         "Geeignet für Kleinwüchsige", gruppe="Barrierefreiheit"
     )
-    geeignet_mental: JaNein | None = _jn(
+    geeignet_mental: JaNein | None = _yesno(
         "Geeignet bei geistiger Beeinträchtigung",
         gruppe="Barrierefreiheit",
     )
     # Kosten
-    baukosten: float | None = _n(
+    baukosten: float | None = _numeric(
         "Baukosten",
         "damalige Kosten",
         gruppe="Kosten",
         braucht="waehrung",
         einheit_aus="waehrung",
     )
-    waehrung: Waehrung | None = _a("Währung", "der Baukosten", gruppe="Kosten", uebersicht=False)
+    waehrung: Waehrung | None = _general("Währung", "der Baukosten", gruppe="Kosten", uebersicht=False)
 
 
 class Sportstaette(Basis):
@@ -658,22 +658,22 @@ class Sportstaette(Basis):
         }
     )
 
-    id: str | None = _f(
+    id: str | None = _field(
         "ID",
         "UUID, zugleich Name des Ordners (in der Datei Pflicht)",
         formular=False,
         uebersicht=False,
     )
-    name: str = _f(
+    name: str = _field(
         "Name",
         pflicht=True,
         min_length=1,
         max_length=200,
         gruppe="Sportstätte",
     )
-    kategorie: Kategorie = _f("Sportstättenkategorie", pflicht=True, gruppe="Sportstätte")
-    adresse: Adresse = _f("Adresse", default_factory=Adresse, gruppe="Adresse und Lage")
-    lage: Lage = _f(
+    kategorie: Kategorie = _field("Sportstättenkategorie", pflicht=True, gruppe="Sportstätte")
+    adresse: Adresse = _field("Adresse", default_factory=Adresse, gruppe="Adresse und Lage")
+    lage: Lage = _field(
         "Lage",
         "bestimmt Kreis und Gemeinde",
         pflicht=True,
@@ -681,46 +681,46 @@ class Sportstaette(Basis):
         widget="karte",
         uebersicht=False,
     )
-    oeffentlicher_zugang: JaNein | None = _f(
+    oeffentlicher_zugang: JaNein | None = _field(
         "Öffentlicher Zugang",
         gruppe="Nutzung",
         widget="ja_nein",
     )
-    schulsport: JaNein | None = _f("Schulsport", gruppe="Nutzung", widget="ja_nein")
-    zuschauerplaetze: int | None = _f("Zuschauerplätze", ge=0, le=100_000, gruppe="Nutzung")
-    betriebsstatus: Betriebsstatus | None = _f("Betriebsstatus", gruppe="Sportstätte")
-    eigentuemer: str | None = _f(
+    schulsport: JaNein | None = _field("Schulsport", gruppe="Nutzung", widget="ja_nein")
+    zuschauerplaetze: int | None = _field("Zuschauerplätze", ge=0, le=100_000, gruppe="Nutzung")
+    betriebsstatus: Betriebsstatus | None = _field("Betriebsstatus", gruppe="Sportstätte")
+    eigentuemer: str | None = _field(
         "Eigentümer",
         "Name einer Organisation (Verzeichnis daten/organisationen/), keine Personen",
         max_length=200,
         gruppe="Organisationen",
         widget="organisation",
     )
-    eigentuemer_typ: Organisationstyp | None = _f(
+    eigentuemer_typ: Organisationstyp | None = _field(
         "Art des Eigentümers",
         gruppe="Organisationen",
         braucht="eigentuemer",
     )
-    betreiber: str | None = _f(
+    betreiber: str | None = _field(
         "Betreiber",
         "Name einer Organisation (Verzeichnis daten/organisationen/), keine Personen",
         max_length=200,
         gruppe="Organisationen",
         widget="organisation",
     )
-    betreiber_typ: Organisationstyp | None = _f(
+    betreiber_typ: Organisationstyp | None = _field(
         "Art des Betreibers",
         gruppe="Organisationen",
         braucht="betreiber",
     )
-    website: str | None = _f(
+    website: str | None = _field(
         "Webseite",
         "vollständige Adresse mit https://",
         pattern=r"^https?://\S+\.\S+$",
         gruppe="Organisationen",
         widget="url",
     )
-    nutzer: list[str] = _f(
+    nutzer: list[str] = _field(
         "Nutzer",
         "Vereine und andere Organisationen, die die Sportstätte nutzen (Verzeichnis "
         "daten/organisationen/)",
@@ -728,10 +728,10 @@ class Sportstaette(Basis):
         gruppe="Organisationen",
         widget="organisationen",
     )
-    sportarten: list[str] = _f(
+    sportarten: list[str] = _field(
         "Sportarten", default_factory=list, gruppe="Sportarten", widget="chips"
     )
-    anlagen: list[Sportanlage] = _f(
+    anlagen: list[Sportanlage] = _field(
         "Sportanlagen",
         "stehen als eigene Dateien im Ordner der Sportstätte, nicht in `<id>_meta.json`",
         default_factory=list,
@@ -761,33 +761,33 @@ class Organisation(Basis):
         }
     )
 
-    id: str | None = _f(
+    id: str | None = _field(
         "ID",
         "UUID, zugleich der Dateiname (in der Datei Pflicht)",
         formular=False,
         uebersicht=False,
     )
-    name: str = _f(
+    name: str = _field(
         "Name",
         "wie er bei den Sportstätten steht",
         pflicht=True,
         min_length=1,
         max_length=200,
     )
-    typ: Organisationstyp | None = _f("Art")
-    website: str | None = _f(
+    typ: Organisationstyp | None = _field("Art")
+    website: str | None = _field(
         "Webseite",
         "vollständige Adresse mit https://",
         pattern=r"^https?://\S+\.\S+$",
         widget="url",
     )
-    uebergeordnet: str | None = _f(
+    uebergeordnet: str | None = _field(
         "Übergeordnet",
         "Name der übergeordneten Organisation, z. B. des Verbands",
         max_length=200,
         widget="organisation",
     )
-    weitere_namen: list[str] = _f(
+    weitere_namen: list[str] = _field(
         "Weitere Schreibweisen",
         "andere Namen, unter denen Sportstätten sie nennen",
         default_factory=list,
@@ -817,34 +817,34 @@ class Vorschlag(Basis):
         }
     )
 
-    version: Literal[1] = _f("Version des Formats", default=1)
-    art: Literal["neu", "aenderung", "anlagen", "organisation"] = _f(
+    version: Literal[1] = _field("Version des Formats", default=1)
+    art: Literal["neu", "aenderung", "anlagen", "organisation"] = _field(
         "Art",
         "neu: neue Sportstätte mit Anlagen; aenderung: Angaben einer Sportstätte; "
         "anlagen: Sportanlagen einer Sportstätte; organisation: Organisation anlegen, "
         "ändern oder löschen",
         pflicht=True,
     )
-    sportstaette_id: str | None = _f("Sportstätte", "ID der geänderten Sportstätte")
-    sportstaette: Sportstaette | None = _f(
+    sportstaette_id: str | None = _field("Sportstätte", "ID der geänderten Sportstätte")
+    sportstaette: Sportstaette | None = _field(
         "Angaben der Sportstätte", "vollständig, nach der Änderung (bei neu und aenderung)"
     )
-    anlagen: list[Sportanlage] | None = _f(
+    anlagen: list[Sportanlage] | None = _field(
         "Sportanlagen",
         "alle Anlagen nach der Änderung (bei neu und anlagen); vorhandene mit ihrer "
         "Kurz-ID (Anfang der UUID), neue ohne",
     )
-    entfernte_anlagen: list[str] = _f("Entfernte Sportanlagen", "Kurz-IDs", default_factory=list)
-    organisation_id: str | None = _f(
+    entfernte_anlagen: list[str] = _field("Entfernte Sportanlagen", "Kurz-IDs", default_factory=list)
+    organisation_id: str | None = _field(
         "Organisation", "ID der geänderten oder gelöschten Organisation (fehlt bei einer neuen)"
     )
-    organisation: Organisation | None = _f(
+    organisation: Organisation | None = _field(
         "Angaben der Organisation", "vollständig, nach der Änderung (nicht beim Löschen)"
     )
-    loeschen: bool = _f("Löschen", "die Organisation aus dem Verzeichnis entfernen", default=False)
-    geaendert: list[str] = _f("Geänderte Felder", default_factory=list)
-    gemeinde: str | None = _f("Gemeinde", "Regionalschlüssel der Gemeinde an der Lage")
-    dubletten_geprueft: list[str] = _f(
+    loeschen: bool = _field("Löschen", "die Organisation aus dem Verzeichnis entfernen", default=False)
+    geaendert: list[str] = _field("Geänderte Felder", default_factory=list)
+    gemeinde: str | None = _field("Gemeinde", "Regionalschlüssel der Gemeinde an der Lage")
+    dubletten_geprueft: list[str] = _field(
         "Geprüfte Doppelungen",
         "IDs ähnlicher Sportstätten, die als verschieden bestätigt wurden",
         default_factory=list,
