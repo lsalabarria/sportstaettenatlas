@@ -27,7 +27,7 @@ def _bestand(tmp_path):
         "name": "Sportplatz Musterdorf",
         "kategorie": "Sportplatz",
         "adresse": {"strasse": "Am Weg", "plz": "56068", "ort": "Musterdorf"},
-        "lage": {"lon": 7.59, "lat": 50.35},
+        "lage": {"lon": 7.5938, "lat": 50.3512},
         "betreiber": "TuS Musterdorf",
         "anlagen": [
             {"id": A1, "typ": "Großspielfeld", "baujahr": 1990},
@@ -77,7 +77,7 @@ def test_vorschlaege_uebernehmen(tmp_path):
     staette = {
         "name": "Sportplatz Musterdorf",
         "kategorie": "Sportplatz",
-        "lage": {"lon": 7.59, "lat": 50.35},
+        "lage": {"lon": 7.5938, "lat": 50.3512},
     }
     p = _export(
         tmp_path,

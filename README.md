@@ -91,15 +91,28 @@ umbenannt oder gestrichen, passt `migrieren` die Dateien an, z. B.
 
 `seite` und `pruefen` schreiben alle Auffälligkeiten nach `results/regelverstoesse.csv` (Datei,
 Meldung); sie brechen nicht ab. Zu den Regeln des Datenmodells (Pflichtfelder, Formate,
-Auswahllisten, `braucht`, `teil_von`) prüft `src/sportstaettenatlas/validate.py`:
+Auswahllisten, mindestens 4 Nachkommastellen bei Koordinaten, `braucht`, `teil_von`) prüft
+`src/sportstaettenatlas/validate.py`:
 
-- **Organisation:** Betreiber und Eigentümer stehen im Verzeichnis der Organisationen.
+- **Organisation:** Betreiber, Eigentümer und Nutzer stehen im Verzeichnis der Organisationen.
+- **Art der Organisation:** `betreiber_typ`/`eigentuemer_typ` widerspricht nicht der Art im Verzeichnis.
+- **Eigentum der Kommune:** Eine Kommune als Eigentümer – die Sportstätte liegt in ihrem Gebiet (höchstens 250 m davor).
 - **Ort:** Die Koordinate liegt in der Gemeinde aus `adresse.ort` oder höchstens 250 m davor (VG250 ist vereinfacht).
 - **Rheinland-Pfalz:** Die Koordinate liegt in einer Gemeinde des Landes.
+- **Kreis-Ordner:** Die Sportstätte liegt im Ordner ihres Kreises (`einordnen` verschiebt).
+- **Gleiche Koordinate:** Höchstens zwei Sportstätten auf genau derselben Koordinate (sonst wohl ein Ersatzwert).
 - **Doppelung:** Keine zwei Sportstätten mit ähnlichem Namen näher als 60 m (Regel wie im Formular).
+- **PLZ:** Die Postleitzahl beginnt wie eine in Rheinland-Pfalz.
+- **Straße und Hausnummer:** Keine Hausnummer in der Straße, keine Hausnummer ohne Straße.
 - **Sanierung:** Die letzte Sanierung liegt nicht vor dem Baujahr.
 - **Anlagentyp:** Kein Feld ist befüllt, das nicht zum Typ der Sportanlage passt (`MERKMALE`).
 - **Sportarten:** Die Sportarten einer Anlage stehen auch bei ihrer Sportstätte.
+- **Schreibweise der Sportarten:** Keine Varianten wie „Fussball“ neben „Fußball“.
+- **Licht:** Kein Lux-Wert oder Leuchtmittel, wenn Flutlicht „nein“ ist.
+- **Fläche:** Weicht höchstens 25 % von Länge × Breite ab.
+- **Betriebsstatus:** Keine Öffnungsstunden, wenn die Anlage stillgelegt ist.
+- **Organisation ohne Art:** Jede Organisation im Verzeichnis hat eine Art.
+- **Fast gleiche Organisationen:** Keine zwei Einträge mit fast gleichem Namen (ohne Rechtsform wie „e.V.“).
 
 ## Webseite
 

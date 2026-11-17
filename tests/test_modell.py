@@ -15,7 +15,7 @@ STAETTE = {
     "name": "Sportplatz Musterdorf",
     "kategorie": "Sportplatz",
     "adresse": {"strasse": "Am Weg", "hausnummer": "1", "plz": "56068", "ort": "Musterdorf"},
-    "lage": {"lon": 7.59, "lat": 50.35},
+    "lage": {"lon": 7.5938, "lat": 50.3512},
     "oeffentlicher_zugang": "ja",
     "schulsport": "nein",
     "betriebsstatus": "in Betrieb",

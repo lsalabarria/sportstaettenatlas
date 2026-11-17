@@ -64,7 +64,7 @@ def _pruefe_und_melde(bestand, organisationen, verstoesse, gebiete) -> None:
     from .hilfen import ERGEBNISSE
     from .validate import pruefe
 
-    verstoesse = verstoesse + pruefe(bestand, organisationen, gebiete.get("gemeinde"), DATEN)
+    verstoesse = verstoesse + pruefe(bestand, organisationen, gebiete, DATEN)
     datei = ERGEBNISSE / "regelverstoesse.csv"
     if verstoesse:
         datei.parent.mkdir(parents=True, exist_ok=True)
@@ -251,7 +251,6 @@ def cmd_einordnen(args):
 def cmd_seite(args):
     """Statische Webseite für GitHub Pages (Ordner docs/) erzeugen."""
     from . import gebiete as gb
-    from .bestand import falsch_einsortiert, kreis_ordner
     from .modell import schreibe_doku
     from .seite import schreibe_webseite
 
@@ -261,12 +260,6 @@ def cmd_seite(args):
     gebiete = _gebiete()
     _pruefe_und_melde(bestand, organisationen, verstoesse, gebiete)
     ars_von = gb.Zuordnung(gebiete["gemeinde"]).ars
-    if falsch := falsch_einsortiert(bestand, kreis_ordner(gebiete)):
-        print(
-            f"Hinweis: {len(falsch)} Sportstätten liegen nicht im Ordner ihres Kreises "
-            f"(z. B. {falsch[0][0]}: {falsch[0][1]} statt {falsch[0][2]}) – "
-            "`sportstaettenatlas einordnen` verschiebt sie."
-        )
     vermerke = [gb.QUELLENVERMERK.format(jahr=dt.datetime.now(dt.UTC).year)]
     analysen = {}
     if alkis := alkis_cli.fuer_webseite(ars_von):

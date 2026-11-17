@@ -1,18 +1,11 @@
 """Prüfungen über das Datenmodell hinaus – Auffälligkeiten für results/regelverstoesse.csv.
 
 Das Datenmodell (modell.py) prüft jeden Datensatz für sich: Pflichtfelder, Formate,
-Auswahllisten, `braucht` und `teil_von`. Hier stehen Prüfungen, die mehr brauchen – das
-Verzeichnis der Organisationen, die Verwaltungsgebiete, andere Sportstätten oder die Felder je
-Anlagentyp. Alle laufen offline über den ganzen Bestand (wenige Sekunden) und melden nur; sie
-ändern nichts an den Daten.
-
-- Organisation: Betreiber und Eigentümer stehen im Verzeichnis der Organisationen
-- Ort: die Koordinate liegt in der Gemeinde aus `adresse.ort` oder höchstens 250 m davor (VG250)
-- Rheinland-Pfalz: die Koordinate liegt in einer Gemeinde des Landes
-- Doppelung: keine zwei Sportstätten mit ähnlichem Namen näher als 60 m (Regel wie im Formular)
-- Sanierung: die letzte Sanierung liegt nicht vor dem Baujahr
-- Anlagentyp: kein Feld befüllt, das nicht zum Typ der Sportanlage passt (modell.MERKMALE)
-- Sportarten: die Sportarten einer Anlage stehen auch bei ihrer Sportstätte
+Auswahllisten, Nachkommastellen, `braucht` und `teil_von`. Hier stehen Prüfungen, die mehr
+brauchen – das Verzeichnis der Organisationen, die Verwaltungsgebiete, andere Sportstätten oder
+die Felder je Anlagentyp. Alle laufen offline über den ganzen Bestand (wenige Sekunden) und
+melden nur; sie ändern nichts an den Daten. Die Liste der Prüfungen steht in README.md
+(„Prüfungen“).
 
 Ergebnis: Liste (Datei, Meldung); die Meldung beginnt wie die des Modells mit dem Feld.
 """
@@ -27,13 +20,62 @@ from collections.abc import Iterable
 from pathlib import Path
 
 from . import modell
-from .bestand import _laender, _staetten_ordner, org_schluessel, org_verzeichnis
-from .gebiete import Zuordnung, _ringe
+from .bestand import (
+    _laender,
+    _staetten_ordner,
+    falsch_einsortiert,
+    kreis_ordner,
+    org_dateien,
+    org_schluessel,
+    org_verzeichnis,
+)
+from .gebiete import EBENEN, Zuordnung, _ringe, schluessel
 
 NAH_M = 60  # Doppelung: höchstens so weit auseinander …
 ORT_TOLERANZ_M = 250  # Ort: VG250 ist generalisiert (1:250 000) – Grenzen weichen so weit ab
 AEHNLICH = 0.8  # … und mindestens so ähnliche Namen (wie im Formular, vorschlag.js)
 ROLLEN = ("betreiber", "eigentuemer")
+GLEICHE_LAGE_AB = 3  # so viele Sportstätten auf exakt einer Koordinate: wohl ein Ersatzwert
+FLAECHE_ABWEICHUNG = 0.25  # Fläche gegenüber Länge × Breite: höchstens 25 % mehr oder weniger
+GESCHLOSSEN = ("stillgelegt/geschlossen",)  # Betriebsstatus ohne Öffnungszeiten
+# Postleitzahlen in Rheinland-Pfalz beginnen so (Ränder zu NRW, Hessen, Saarland, Baden)
+PLZ_RLP = (
+    "515",
+    "534",
+    "535",
+    "536",
+    "54",
+    "55",
+    "56",
+    "575",
+    "576",
+    "655",
+    "656",
+    "664",
+    "665",
+    "668",
+    "669",
+    "67",
+    "767",
+    "768",
+)
+# eine Zahl am Ende der Straße, die keine Hausnummer ist („Bundesstraße 412“, „K 85“)
+STRASSENNUMMER = re.compile(
+    r"(bundes|landes|kreis|staats)stra(ss|ß)e\s*\d+$|\b[blk]\s*\d+$|geb(ä|ae)ude\s*\d+$",
+    re.IGNORECASE,
+)
+# Arten, die mit „Stadt/Gemeinde“ (Ebene unbekannt) zusammenpassen
+GEMEINDE_EBENEN = {
+    "Stadt/Gemeinde",
+    "Kreisfreie Stadt",
+    "Verbandsgemeinde",
+    "Verbandsfreie Gemeinde",
+    "Verbandsangehörige Stadt",
+    "Ortsgemeinde",
+}
+RECHTSFORM = re.compile(
+    r"\b(e\s*v|g?gmbh|mbh|ggmbh|ag|kg|gbr)\b\.?", re.IGNORECASE
+)  # zählt beim Vergleich nicht
 
 
 # --- Hilfen ---------------------------------------------------------------------------------
@@ -102,11 +144,31 @@ def _liste(v) -> list:
 # --- die Prüfungen --------------------------------------------------------------------------
 
 
-def organisationen_bekannt(st: dict, verzeichnis: dict) -> Iterable[str]:
-    for rolle in ROLLEN:
-        name = st.get(rolle)
-        if isinstance(name, str) and name.strip() and org_schluessel(name) not in verzeichnis:
-            yield f"{rolle}: „{name}“ steht nicht im Verzeichnis der Organisationen"
+def organisationen_der_staette(st: dict, verzeichnis: dict) -> Iterable[str]:
+    """Betreiber, Eigentümer und Nutzer stehen im Verzeichnis; ihre Art an der Sportstätte
+    widerspricht der im Verzeichnis nicht."""
+    for rolle in (*ROLLEN, "nutzer"):
+        for name in _liste(st.get(rolle)):
+            if not isinstance(name, str) or not name.strip():
+                continue
+            o = verzeichnis.get(org_schluessel(name))
+            if o is None:
+                yield f"{rolle}: „{name}“ steht nicht im Verzeichnis der Organisationen"
+                continue
+            typ, im_verzeichnis = st.get(f"{rolle}_typ"), o.get("typ")
+            if (
+                typ
+                and im_verzeichnis
+                and typ != im_verzeichnis
+                and not (
+                    "Stadt/Gemeinde" in (typ, im_verzeichnis)
+                    and {typ, im_verzeichnis} <= GEMEINDE_EBENEN
+                )
+            ):
+                yield (
+                    f"{rolle}_typ: „{typ}“, im Verzeichnis ist „{o['name']}“ aber "
+                    f"„{im_verzeichnis}“"
+                )
 
 
 def abstand_zum_rand_m(lon: float, lat: float, geom: dict) -> float:
@@ -124,17 +186,21 @@ def abstand_zum_rand_m(lon: float, lat: float, geom: dict) -> float:
     return best * 111_320
 
 
-class Gemeinden:
-    """Gemeinden aus VG250: welche an einem Punkt liegt, Namen und Flächen."""
+class Gebiete:
+    """Verwaltungsgebiete aus VG250: Gemeinde an einem Punkt, Namen und Flächen je Schlüssel."""
 
-    def __init__(self, gemeinden: dict):
-        self.von = Zuordnung(gemeinden).ars
-        self.name, self.flaeche = {}, {}
-        for f in gemeinden.get("features", []):
-            p = f.get("properties") or {}
-            if p.get("ars"):
-                self.name[str(p["ars"])] = p.get("name", "")
-                self.flaeche[str(p["ars"])] = f.get("geometry")
+    def __init__(self, gebiete: dict):
+        self.von = Zuordnung(gebiete.get("gemeinde") or {}).ars
+        self.name: dict[str, str] = {}  # Gemeinde-ARS → Name
+        self.flaeche: dict[str, dict] = {}  # Schlüssel jeder Ebene (5, 9, 12 Stellen) → Fläche
+        for ebene in EBENEN:
+            for f in (gebiete.get(ebene) or {}).get("features", []):
+                p = f.get("properties") or {}
+                if p.get("ars"):
+                    k = schluessel(ebene, p["ars"])
+                    self.flaeche.setdefault(k, f.get("geometry"))
+                    if ebene == "gemeinde":
+                        self.name[k] = p.get("name", "")
 
     def abstand_zu(self, ort: str, lon: float, lat: float) -> float | None:
         """Abstand zur nächsten Gemeinde, deren Name zu `ort` passt; None, wenn keine passt."""
@@ -146,7 +212,7 @@ def _entfernung(m: float) -> str:
     return f"{m / 1000:.1f} km".replace(".", ",") if m >= 1000 else f"{m:.0f} m"
 
 
-def ort_und_land(st: dict, gemeinden: Gemeinden) -> Iterable[str]:
+def ort_und_land(st: dict, gemeinden: Gebiete) -> Iterable[str]:
     lage = _lage(st)
     if lage is None:
         return
@@ -194,6 +260,108 @@ def sportarten_der_anlage(a: dict, st: dict) -> Iterable[str]:
         yield f"sportarten: {', '.join(fehlen)} fehlt bei der Sportstätte"
 
 
+def adresse(st: dict) -> Iterable[str]:
+    a = st.get("adresse") or {}
+    plz, strasse = str(a.get("plz") or ""), str(a.get("strasse") or "").strip()
+    if plz and not plz.startswith(PLZ_RLP):
+        yield f"adresse.plz: {plz} ist keine Postleitzahl in Rheinland-Pfalz"
+    if a.get("hausnummer") and not strasse:
+        yield "adresse.hausnummer: angegeben, aber keine Straße"
+    if re.search(r"\s\d+\s*[a-z]?$", strasse, re.IGNORECASE) and not STRASSENNUMMER.search(strasse):
+        yield f"adresse.strasse: „{strasse}“ – steht die Hausnummer in der Straße?"
+
+
+def eigentum_der_kommune(st: dict, verzeichnis: dict, gebiete: Gebiete) -> Iterable[str]:
+    """Eine Kommune als Eigentümer: die Sportstätte liegt in ihrem Gebiet (Verbandsgemeinde und
+    Landkreis: im ganzen Gebiet) oder höchstens ORT_TOLERANZ_M davor."""
+    o = (
+        verzeichnis.get(org_schluessel(st.get("eigentuemer") or ""))
+        if st.get("eigentuemer")
+        else None
+    )
+    lage = _lage(st)
+    if not o or not o.get("ars") or lage is None:
+        return
+    ars = gebiete.von(lage[1], lage[0])
+    if ars is None or ars.startswith(o["ars"]):
+        return
+    flaeche = gebiete.flaeche.get(o["ars"])
+    d = abstand_zum_rand_m(lage[1], lage[0], flaeche) if flaeche else None
+    if d is None or d > ORT_TOLERANZ_M:
+        wo = gebiete.name.get(ars, ars)
+        weit = f", {_entfernung(d)} außerhalb" if d is not None else ""
+        yield f"eigentuemer: „{o['name']}“, die Sportstätte liegt aber in {wo}{weit}"
+
+
+def licht(a: dict) -> Iterable[str]:
+    if a.get("flutlicht") == "nein":
+        for feld in ("lux", "leuchtmittel"):
+            if a.get(feld) not in (None, ""):
+                yield f"{feld}: angegeben, aber Flutlicht „nein“"
+
+
+def flaeche(a: dict) -> Iterable[str]:
+    l, b, f = a.get("laenge"), a.get("breite"), a.get("flaeche")
+    if all(isinstance(x, int | float) and x > 0 for x in (l, b, f)):
+        soll = l * b
+        if abs(f - soll) > FLAECHE_ABWEICHUNG * soll:
+            yield f"flaeche: {f:g} m², Länge × Breite ergibt aber {soll:g} m²"
+
+
+def geschlossen_mit_oeffnungszeiten(a: dict, st: dict) -> Iterable[str]:
+    status = a.get("betriebsstatus") or st.get("betriebsstatus")
+    if status in GESCHLOSSEN:
+        for feld in ("oeffnungsstunden", "oeffnungsstunden_schule", "oeffnungsstunden_verein"):
+            if a.get(feld):
+                yield f"{feld}: angegeben, aber Betriebsstatus „{status}“"
+
+
+def gleiche_lage(bestand: list[dict]) -> dict[str, int]:
+    """Sportstätte → Zahl der Sportstätten auf genau ihrer Koordinate (ab GLEICHE_LAGE_AB)."""
+    zahl = Counter(_lage(st) for st in bestand if _lage(st))
+    return {
+        st["id"]: zahl[_lage(st)] for st in bestand if zahl.get(_lage(st), 0) >= GLEICHE_LAGE_AB
+    }
+
+
+def _sportart_kern(s) -> str:
+    return norm_name(s).replace(" ", "")  # „Beach-Volleyball“ = „Beachvolleyball“
+
+
+def sportarten_schreibweisen(bestand: list[dict]) -> dict[str, tuple[str, int]]:
+    """Seltenere Schreibweise einer Sportart → (häufigste Schreibweise, wie oft)."""
+    zahl = Counter(
+        s
+        for st in bestand
+        for x in [st, *(st.get("anlagen") or [])]
+        for s in _liste(x.get("sportarten"))
+        if isinstance(s, str)
+    )
+    gruppen: dict[str, list[str]] = defaultdict(list)
+    for s in zahl:
+        gruppen[_sportart_kern(s)].append(s)
+    out = {}
+    for namen in gruppen.values():
+        if len(namen) > 1:
+            haeufig = max(namen, key=lambda n: (zahl[n], n))
+            out |= {n: (haeufig, zahl[haeufig]) for n in namen if n != haeufig}
+    return out
+
+
+def _org_kern(name) -> str:
+    return norm_name(RECHTSFORM.sub(" ", str(name or "")))
+
+
+def fast_gleiche_organisationen(organisationen: list[dict]) -> Iterable[tuple[dict, dict]]:
+    """Paare mit sehr ähnlichem Namen (ohne Rechtsform wie „e.V.“). Gebietskörperschaften
+    (mit Regionalschlüssel) werden nicht untereinander verglichen – ihre Namen sind amtlich."""
+    ohne_ars = [o for o in organisationen if not o.get("ars")]
+    for i, a in enumerate(ohne_ars):
+        for b in [*ohne_ars[i + 1 :], *(o for o in organisationen if o.get("ars"))]:
+            if aehnlich(_org_kern(a.get("name")), _org_kern(b.get("name"))) >= AEHNLICH:
+                yield a, b
+
+
 def doppelungen(bestand: list[dict]) -> Iterable[tuple[dict, dict, float]]:
     """Paare von Sportstätten mit ähnlichem Namen, die höchstens NAH_M auseinander liegen."""
     zelle = 0.001  # Grad, etwa 70–110 m: Nachbarn liegen in derselben oder einer Nachbarzelle
@@ -218,12 +386,13 @@ def doppelungen(bestand: list[dict]) -> Iterable[tuple[dict, dict, float]]:
 def pruefe(
     bestand: list[dict],
     organisationen: list[dict],
-    gemeinden: dict | None,
+    gebiete: dict | None,
     daten: Path,
 ) -> list[tuple[str, str]]:
-    """Alle Prüfungen über den Bestand. `gemeinden`: GeoJSON der Gemeinden (gebiete.lade(…)
-    ["gemeinde"]); ohne entfallen Ort und Rheinland-Pfalz."""
+    """Alle Prüfungen über den Bestand. `gebiete`: Verwaltungsgebiete (gebiete.lade);
+    ohne entfallen die Prüfungen, die sie brauchen (Ort, Land, Kreis-Ordner, Eigentum)."""
     ordner = {k: v for land in _laender(daten) for k, v in _staetten_ordner(land).items()}
+    org_datei = {p.stem: str(p) for p in org_dateien(daten)}
 
     def datei(st: dict, anlage: dict | None = None) -> str:
         o = ordner.get(st.get("id"), Path(daten) / "?" / str(st.get("id")))
@@ -231,19 +400,43 @@ def pruefe(
 
     verzeichnis = org_verzeichnis(organisationen)
     bekannte_typen = {t for typen, _ in modell.MERKMALE for t in typen}
-    if gemeinden:
-        gemeinden_ = Gemeinden(gemeinden)
+    gebiete_ = Gebiete(gebiete) if gebiete else None
+    gleich = gleiche_lage(bestand)
+    schreibweise = sportarten_schreibweisen(bestand)
+
+    def sportarten(x: dict) -> Iterable[str]:
+        for s in _liste(x.get("sportarten")):
+            if s in schreibweise:
+                haeufig, n = schreibweise[s]
+                yield f"sportarten: „{s}“ – sonst meist „{haeufig}“ ({n}×)"
+
     out: list[tuple[str, str]] = []
     for st in bestand:
-        meldungen = [*organisationen_bekannt(st, verzeichnis), *sanierung(st)]
-        if gemeinden:
-            meldungen += ort_und_land(st, gemeinden_)
+        meldungen = [
+            *organisationen_der_staette(st, verzeichnis),
+            *adresse(st),
+            *sanierung(st),
+            *sportarten(st),
+        ]
+        if st["id"] in gleich:
+            meldungen.append(
+                f"lage: Koordinate teilen sich {gleich[st['id']]} Sportstätten – Ersatzwert?"
+            )
+        if gebiete_:
+            meldungen += [
+                *ort_und_land(st, gebiete_),
+                *eigentum_der_kommune(st, verzeichnis, gebiete_),
+            ]
         out += [(datei(st), m) for m in meldungen]
         for a in st.get("anlagen") or []:
             meldungen = [
                 *sanierung(a),
                 *felder_zum_typ(a, bekannte_typen),
                 *sportarten_der_anlage(a, st),
+                *sportarten(a),
+                *licht(a),
+                *flaeche(a),
+                *geschlossen_mit_oeffnungszeiten(a, st),
             ]
             out += [(datei(st, a), m) for m in meldungen]
     for a, b, d in doppelungen(bestand):
@@ -251,4 +444,23 @@ def pruefe(
             kat = y.get("kategorie") or "ohne Kategorie"
             text = f"„{y.get('name')}“ ({kat}, {y.get('id')}), {d:.0f} m entfernt"
             out.append((datei(x), f"name: ähnlich wie {text} – Doppelung?"))
+    if gebiete and gebiete.get("kreis"):
+        for sid, ist, soll in falsch_einsortiert(bestand, kreis_ordner(gebiete)):
+            out.append(
+                (
+                    str(ordner.get(sid, sid)),
+                    f"lage: liegt im Kreis {soll}, die Datei aber unter {ist} (einordnen)",
+                )
+            )
+    for o in organisationen:
+        if not o.get("typ"):
+            out.append((org_datei.get(o["id"], o["id"]), "typ: Art der Organisation fehlt"))
+    for a, b in fast_gleiche_organisationen(organisationen):
+        for x, y in ((a, b), (b, a)):
+            out.append(
+                (
+                    org_datei.get(x["id"], x["id"]),
+                    f"name: fast gleich wie „{y['name']}“ ({y['id']}) – doppelt?",
+                )
+            )
     return out

@@ -65,6 +65,9 @@ function regelnZwischen(modell, o, praefix = "") {
   for (const [k, p] of modellFelder(modell)) {
     const w = o[k];
     if (p.braucht && !leer(w) && leer(o[p.braucht])) out.push(`${praefix}${titel(p.braucht)}: nötig, wenn ${p.title} angegeben ist`);
+    if (p.nachkommastellen && typeof w === "number" && (String(w).split(".")[1] || "").length < p.nachkommastellen) {
+      out.push(`${praefix}${p.title}: mindestens ${p.nachkommastellen} Nachkommastellen (${w} ist zu ungenau)`);
+    }
     if (p.teil_von && Array.isArray(w)) {
       const fehlt = w.filter(x => !(o[p.teil_von] || []).includes(x));
       if (fehlt.length) out.push(`${praefix}${p.title}: ${fehlt.join(", ")} fehlt unter ${titel(p.teil_von)}`);

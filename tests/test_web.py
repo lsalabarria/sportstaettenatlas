@@ -41,7 +41,7 @@ BESTAND = [
         "name": "Sportplatz Berg",
         "kategorie": "Sportplatz",
         "adresse": {"strasse": "Am Weg", "hausnummer": "1", "plz": "56068", "ort": "Berg"},
-        "lage": {"lon": 7.59, "lat": 50.35},
+        "lage": {"lon": 7.5938, "lat": 50.3512},
         "betreiber": "TuS Berg",
         "sportarten": ["Fußball"],
         "anlagen": [
@@ -57,7 +57,7 @@ BESTAND = [
         "id": "22222222-2222-4222-8222-222222222222",
         "name": "Tennisanlage Bergen",
         "kategorie": "Tennissportstätte",
-        "lage": {"lon": 7.70, "lat": 50.40},
+        "lage": {"lon": 7.7012, "lat": 50.4034},
         "sportarten": ["Tennis"],
         "anlagen": [{"id": "cccccccc-3333-4333-8333-333333333333", "typ": "Tennisplatz"}],
     },
@@ -189,7 +189,7 @@ def test_liste_filtert_nach_sportart(oeffne):
 
 def test_neue_sportstaette(oeffne):
     page = oeffne("#ansicht=vorschlag")
-    page.evaluate("ANSICHTEN.vorschlag.neu({ lage: { lat: 50.0, lon: 7.0 } })")
+    page.evaluate("ANSICHTEN.vorschlag.neu({ lage: { lat: 50.0012, lon: 7.0034 } })")
     page.wait_for_timeout(200)
     page.fill("input[name=name]", "Neue Halle")
     page.select_option("select[name=kategorie]", "Sporthalle")
@@ -250,7 +250,7 @@ def test_organisation_aendern(oeffne):
 )
 def test_formular_lehnt_ab_was_das_modell_ablehnt(oeffne, feld, wert):
     page = oeffne("#ansicht=vorschlag")
-    page.evaluate("ANSICHTEN.vorschlag.neu({ lage: { lat: 50.0, lon: 7.0 } })")
+    page.evaluate("ANSICHTEN.vorschlag.neu({ lage: { lat: 50.0012, lon: 7.0034 } })")
     page.wait_for_timeout(200)
     page.fill("input[name=name]", "Neue Halle")
     page.select_option("select[name=kategorie]", "Sporthalle")
@@ -265,7 +265,7 @@ def test_formular_lehnt_ab_was_das_modell_ablehnt(oeffne, feld, wert):
 
 def test_organisationssuche_rangfolge_und_auswahl(oeffne):
     page = oeffne("#ansicht=vorschlag")
-    page.evaluate("ANSICHTEN.vorschlag.neu({ lage: { lat: 50.0, lon: 7.0 } })")
+    page.evaluate("ANSICHTEN.vorschlag.neu({ lage: { lat: 50.0012, lon: 7.0034 } })")
     page.wait_for_timeout(200)
     liste = page.locator("input[name=betreiber] + ul.org-vorschlaege li")
 

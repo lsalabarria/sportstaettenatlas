@@ -17,6 +17,7 @@ Angaben je Feld (json_schema_extra, landen im Schema):
 Regeln zwischen Feldern (prüft Basis, das Formular ebenso):
   braucht     dieses Feld braucht das genannte (Baukosten → Währung)
   teil_von    Werte müssen auch im genannten Feld stehen (Wettkampfeignung → Sportarten)
+  nachkommastellen  Zahl braucht mindestens so viele (Koordinaten: 4, etwa 10 m)
 """
 
 from __future__ import annotations
@@ -202,6 +203,12 @@ class Basis(BaseModel):
                 anderes = extra["braucht"]
                 if getattr(self, anderes) in (None, "", [], {}):
                     fehler.append(f"{anderes}: nötig, wenn {feld.title} angegeben ist")
+            if extra.get("nachkommastellen") and isinstance(wert, float):
+                n = extra["nachkommastellen"]
+                if len(repr(wert).partition(".")[2]) < n:  # 50.35: nur auf ~1 km genau
+                    fehler.append(
+                        f"{name}: mindestens {n} Nachkommastellen ({wert} ist zu ungenau)"
+                    )
             if extra.get("teil_von") and wert:
                 alle = getattr(self, extra["teil_von"]) or []
                 fehlt = [w for w in wert if w not in alle]
@@ -237,8 +244,8 @@ class Adresse(Basis):
 class Lage(Basis):
     """Immer WGS84 (EPSG:4326), Grad mit Dezimalstellen."""
 
-    lon: float = _field("Längengrad", "WGS84", pflicht=True, ge=5.8, le=9.0)
-    lat: float = _field("Breitengrad", "WGS84", pflicht=True, ge=48.8, le=51.1)
+    lon: float = _field("Längengrad", "WGS84", pflicht=True, ge=5.8, le=9.0, nachkommastellen=4)
+    lat: float = _field("Breitengrad", "WGS84", pflicht=True, ge=48.8, le=51.1, nachkommastellen=4)
 
 
 # Welche Felder es je Anlagentyp gibt (MERKMALE); MERKMALE_ALLE und jedes Feld, das dort
@@ -661,7 +668,7 @@ class Sportstaette(Basis):
                         "plz": "56068",
                         "ort": "Koblenz",
                     },
-                    "lage": {"lon": 7.59, "lat": 50.35},
+                    "lage": {"lon": 7.5938, "lat": 50.3512},
                     "betreiber": "TuS Musterdorf e.V.",
                     "betreiber_typ": "Sportverein im LSB RLP",
                     "sportarten": ["Fußball", "Leichtathletik"],
@@ -1086,6 +1093,7 @@ def _regeln_text(p: dict) -> str:
         ("teil_von", "Teil von `{}`"),
         ("einheit", "in {}"),
         ("einheit_aus", "Einheit aus `{}`"),
+        ("nachkommastellen", "mindestens {} Nachkommastellen"),
     ):
         if p.get(k):
             out.append(text.format(p[k]))
