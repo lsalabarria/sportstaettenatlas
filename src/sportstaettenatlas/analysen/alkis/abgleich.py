@@ -188,7 +188,6 @@ def aus_bestand(datensaetze, crs: str = "EPSG:25832") -> gpd.GeoDataFrame:
         sportarten = dict.fromkeys(
             [*(d.get("sportarten") or []), *(s for a in anlagen for s in a.get("sportarten") or [])]
         )
-        quelle = (d.get("quellen") or {}).get("atlas_rlp") or {}
         zeilen.append(
             {
                 "alt_id": d["id"],
@@ -197,7 +196,6 @@ def aus_bestand(datensaetze, crs: str = "EPSG:25832") -> gpd.GeoDataFrame:
                 "alt_typ": text(d.get("kategorie")),
                 "alt_adresse": text(adresse_text(d.get("adresse") or {})),
                 "alt_datei": "/".join(x for x in (d.get("_ordner"), d["id"]) if x),
-                "alt_stand": quelle.get("stand", ""),
                 "alt_schulsport": text(d.get("schulsport")),
                 "alt_oeffentlich": text(d.get("oeffentlicher_zugang")),
                 "alt_zuschauer": text(d.get("zuschauerplaetze")),

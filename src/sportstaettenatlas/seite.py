@@ -50,11 +50,11 @@ VON_HAND = ("konfig.js", "impressum.html", "datenschutz.html")  # nie überschre
 # --- Datenbestand für die Karte ---------------------------------------------------------
 
 # Angaben einer Sportanlage, die die Karte zeigt (neben Typ, Kennung und Name): alle Felder
-# des Modells außer IDs und Herkunft
+# des Modells außer IDs
 ANLAGE_FELDER = tuple(
     f
     for f in modell.Sportanlage.model_fields
-    if f not in ("id", "sportstaette_id", "typ", "bezeichnung", "quellen")
+    if f not in ("id", "sportstaette_id", "typ", "bezeichnung")
 )
 
 
@@ -98,7 +98,7 @@ def bestand_geojson(datensaetze, praezision: int = 5, organisationen=None) -> di
         )
         typen.update(x[0] for x in anlagen)
         # alle Felder des Modells, flach: die Teile der Adresse stehen einzeln daneben,
-        # "adresse" ist der Text; Lage steckt in der Geometrie, Herkunft bleibt weg
+        # "adresse" ist der Text; die Lage steckt in der Geometrie
         p = {}
         for feld in modell.Sportstaette.model_fields:
             if feld == "adresse":
@@ -106,7 +106,7 @@ def bestand_geojson(datensaetze, praezision: int = 5, organisationen=None) -> di
                 p.update({k: a.get(k) for k in modell.Adresse.model_fields})
             elif feld == "anlagen":
                 p["anlagen"] = anlagen
-            elif feld not in ("lage", "quellen"):
+            elif feld != "lage":
                 p[feld] = d.get(feld)
         for rolle in ("betreiber", "eigentuemer"):
             org = verzeichnis.get(org_schluessel(d.get(rolle)))

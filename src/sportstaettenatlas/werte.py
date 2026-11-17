@@ -43,15 +43,6 @@ def zeilen(inhalt: str) -> list[dict]:
     return list(csv.DictReader(io.StringIO(inhalt), delimiter=trenner(inhalt)))
 
 
-def datum_aus_name(name: str) -> str:
-    """Stand aus einem Dateinamen: 2026-11-04 oder 04112026 → "2026-11-04"; sonst ""."""
-    if m := re.search(r"(\d{4}-\d{2}-\d{2})", name):
-        return m.group(1)
-    if m := re.search(r"(?<!\d)(\d{2})(\d{2})(20\d{2})(?!\d)", name):
-        return f"{m.group(3)}-{m.group(2)}-{m.group(1)}"
-    return ""
-
-
 # --- Zellen ------------------------------------------------------------------------------
 
 

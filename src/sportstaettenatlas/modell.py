@@ -9,7 +9,7 @@ Angaben je Feld (json_schema_extra, landen im Schema):
   widget      besondere Eingabe/Anzeige: ja_nein, karte, chips, organisation, ort, url,
               anlagentyp, jahr, zaehler (Anzahl je Wert, z. B. Felder je Belag),
               organisationen (Liste von Namen aus dem Verzeichnis der Organisationen)
-  formular    False: nicht im Formular (IDs, Herkunft)
+  formular    False: nicht im Formular (IDs)
   uebersicht  False: zählt nicht zur Vollständigkeit in der Übersicht
   einheit     wird hinter Zahlen angezeigt (z. B. m²); einheit_aus: aus einem anderen Feld
               (Baukosten → Währung)
@@ -25,7 +25,7 @@ from __future__ import annotations
 import json
 from enum import Enum
 from pathlib import Path
-from typing import Annotated, Any, Literal, get_args
+from typing import Annotated, Literal, get_args
 
 from pydantic import BaseModel, ConfigDict, Field, ValidationError, model_validator
 from pydantic.json_schema import models_json_schema
@@ -689,13 +689,6 @@ class Sportanlage(Basis):
     waehrung: Waehrung | None = _a(
         "Währung", "der Baukosten", gruppe="Kosten", uebersicht=False, spalte="waehrung"
     )
-    quellen: dict[str, dict[str, Any]] = _f(
-        "Herkunft",
-        "je Quelle, z. B. die Schreibweise im Atlas",
-        default_factory=dict,
-        formular=False,
-        uebersicht=False,
-    )
 
 
 class Sportstaette(Basis):
@@ -719,13 +712,6 @@ class Sportstaette(Basis):
                     "betreiber": "TuS Musterdorf e.V.",
                     "betreiber_typ": "Sportverein im LSB RLP",
                     "sportarten": ["Fußball", "Leichtathletik"],
-                    "quellen": {
-                        "atlas_rlp": {
-                            "id": "9c24bfa6-…",
-                            "datei": "sportstaetten_04112026.csv",
-                            "stand": "2026-11-04",
-                        }
-                    },
                 }
             ],
         }
@@ -819,13 +805,6 @@ class Sportstaette(Basis):
     )
     sportarten: list[str] = _f(
         "Sportarten", default_factory=list, gruppe="Sportarten", widget="chips"
-    )
-    quellen: dict[str, dict[str, Any]] = _f(
-        "Herkunft",
-        "je Quelle, z. B. ID, Datei und Stand im Atlas",
-        default_factory=dict,
-        formular=False,
-        uebersicht=False,
     )
     anlagen: list[Sportanlage] = _f(
         "Sportanlagen",
@@ -987,13 +966,16 @@ def datei_felder(modell: type[BaseModel]) -> list[str]:
     return [f for f in modell.model_fields if angabe(modell, f, "datei", True)]
 
 
-# Umbenannte Felder: alter Name → neuer Name (für `sportstaettenatlas modell --migrieren`)
+# Umbenannte Felder: alter Name → neuer Name; entfernte Felder fallen weg
+# (für `sportstaettenatlas modell --migrieren`)
 UMBENANNT = {Sportanlage: {"baukosten_eur": "baukosten"}}
+ENTFERNT = {Sportstaette: {"quellen"}, Sportanlage: {"quellen"}}
 
 
 def migriere(d: dict, modell: type[BaseModel]) -> dict:
-    """Datensatz auf den Stand des Modells bringen (umbenannte Felder)."""
-    out = {UMBENANNT.get(modell, {}).get(k, k): v for k, v in d.items()}
+    """Datensatz auf den Stand des Modells bringen (umbenannte und entfernte Felder)."""
+    weg = ENTFERNT.get(modell, set())
+    out = {UMBENANNT.get(modell, {}).get(k, k): v for k, v in d.items() if k not in weg}
     if modell is Sportanlage and "baukosten_eur" in d and not d.get("waehrung"):
         out["waehrung"] = "€"
     return ordne(out, modell)

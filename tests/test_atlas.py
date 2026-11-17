@@ -43,7 +43,7 @@ def test_export_lesen(export):
     assert d["zuschauerplaetze"] == 250
     assert d["sportarten"] == ["Fußball", "Leichtathletik"]
     assert d["anlagen"] == [{"typ": "Großspielfeld (ab 5.000 m², Rasen)"}, {"typ": "Rundlaufbahn"}]
-    assert d["quellen"]["atlas_rlp"] == {"id": "101", "datei": export.name, "stand": "2026-11-04"}
+    assert "quellen" not in d
     assert "vorstand@tus.example" not in json.dumps(d)  # E-Mail-Spalte wird nie gelesen
     halle = list(lies_export(export, lage_aus=_fake))[1]
     assert halle["lage"] is None

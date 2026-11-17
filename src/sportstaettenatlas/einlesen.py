@@ -10,7 +10,6 @@ beschreibt daten/README.md („CSV einlesen“); `schreibe_vorlage` schreibt die
 from __future__ import annotations
 
 import csv
-import datetime as dt
 import re
 import uuid
 from collections import Counter
@@ -66,7 +65,7 @@ def spalten_namen(modellname: str) -> dict[str, str]:
     Reihenfolge: Feldnamen vor Beschriftungen vor weiteren Spaltennamen (Angabe spalte)."""
     felder: list[tuple[str, dict]] = []
     for k, p in _eigenschaften(modellname).items():
-        if k in ("quellen", "anlagen"):
+        if k == "anlagen":
             continue
         ref = _art(p).get("$ref", "").rsplit("/", 1)[-1]
         if ref:
@@ -168,12 +167,6 @@ def _staette_id(name: str, lage: dict | None) -> str:
     return str(uuid.uuid5(_STAETTEN_NAMENSRAUM, schluessel))
 
 
-def _stand(pfad: Path) -> str:
-    """Datum aus dem Dateinamen (werte.datum_aus_name), sonst der Tag der letzten Änderung."""
-    zeit = dt.datetime.fromtimestamp(pfad.stat().st_mtime, dt.UTC)
-    return werte.datum_aus_name(pfad.name) or zeit.date().isoformat()
-
-
 def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
     """CSV → Datensätze für bestand.schreibe_bestand, dazu ein Bericht.
 
@@ -187,11 +180,7 @@ def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
     if atlas.PFLICHT <= set(kopf):
         b.art = "atlas"
         b.kontakt = [k for k in kopf if KONTAKT.search(k)]
-        datensaetze = list(atlas.lies_export(pfad, lage_aus))
-        stand = _stand(pfad)
-        for d in datensaetze:  # ohne Datum im Dateinamen: Stand der Datei
-            d["quellen"]["atlas_rlp"]["stand"] = d["quellen"]["atlas_rlp"]["stand"] or stand
-        return datensaetze, b
+        return list(atlas.lies_export(pfad, lage_aus)), b
 
     staetten_namen = spalten_namen("Sportstaette")
     normiert = {_norm(k) for k in kopf}
@@ -233,7 +222,6 @@ def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
             p = _eigenschaften(_art(p)["$ref"].rsplit("/", 1)[-1])[teile[1]]
         return p
 
-    stand = _stand(pfad)
     datensaetze: list[dict] = []
     je_staette: dict[str, list[dict]] = {}
     for z in zeilen:
@@ -275,7 +263,6 @@ def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
             b.nicht_lesbar["lage"] += 1
             d.pop("lage")
         d.setdefault("id", _staette_id(d.get("name", ""), d.get("lage")))
-        d["quellen"] = {"csv": {"datei": pfad.name, "stand": stand}}
         datensaetze.append(d)
     datensaetze += [{"id": sid, "anlagen": a, NUR_ANLAGEN: True} for sid, a in je_staette.items()]
     return datensaetze, b
@@ -287,9 +274,7 @@ def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
 def _vorlage_spalten(modellname: str) -> list[str]:
     out = []
     for k, p in _eigenschaften(modellname).items():
-        if k in ("quellen", "anlagen") or (
-            p.get("formular") is False and k not in ("id", "sportstaette_id")
-        ):
+        if k == "anlagen" or (p.get("formular") is False and k not in ("id", "sportstaette_id")):
             continue
         ref = _art(p).get("$ref", "").rsplit("/", 1)[-1]
         out += list(_eigenschaften(ref)) if ref else [k]

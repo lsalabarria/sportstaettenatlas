@@ -59,7 +59,7 @@ Alle mit `uv run sportstaettenatlas …`; `--help` zeigt die Optionen.
 | `vorlage` | Vorlagen für eigene CSV-Dateien nach `results/vorlagen/` |
 | `organisationen` | Stand des Verzeichnisses; `--aus-bestand` legt fehlende Organisationen an |
 | `einordnen` | Sportstätten in den Ordner ihres Kreises verschieben |
-| `modell` | Feldtabellen in `daten/README.md` und Diagramm schreiben (`--migrieren`: Dateien an umbenannte Felder anpassen) |
+| `modell` | Feldtabellen in `daten/README.md` und Diagramm schreiben (`--migrieren`: Dateien an umbenannte und entfernte Felder anpassen) |
 | `seite` | Webseite nach `docs/` (`--vorschau`: lokal ansehen) |
 | `-v alkis` | ALKIS-Abgleich (siehe unten) |
 

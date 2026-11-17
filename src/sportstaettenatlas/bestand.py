@@ -169,14 +169,12 @@ def _leer(v) -> bool:
 def _uebernimm(alt: dict, neu: dict, modus: str) -> dict:
     """Felder aus `neu` in `alt`: "aktualisieren" überschreibt, "ergaenzen" füllt nur leere.
     Leere Werte in `neu` heißen „keine Angabe“ und ändern nichts. Die Adresse wird feldweise
-    zusammengeführt; unter quellen ersetzt jede Quelle ihren eigenen Eintrag."""
+    zusammengeführt."""
     out = dict(alt)
     for k, v in neu.items():
         if _leer(v) or k in ("anlagen", NUR_ANLAGEN):
             continue
-        if k == "quellen" and isinstance(v, dict):
-            out[k] = {**(out.get(k) or {}), **v}
-        elif k == "adresse" and isinstance(v, dict) and isinstance(out.get(k), dict):
+        if k == "adresse" and isinstance(v, dict) and isinstance(out.get(k), dict):
             out[k] = _uebernimm(out[k], v, modus)
         elif modus == "aktualisieren" or _leer(out.get(k)):
             out[k] = v

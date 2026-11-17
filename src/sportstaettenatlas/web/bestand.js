@@ -30,7 +30,7 @@ let ANLAGEN_GRUPPEN = [], ANLAGEN_TYPEN = {};
 function anlagenGruppe(t) { return ANLAGEN_TYPEN[t] || "weitere"; }
 function gruppenText(g) { const x = ANLAGEN_GRUPPEN.find(y => y[0] === g); return x ? x[1] : g; }
 // Weitere Angaben einer Sportanlage als kurzer Text: alle Felder des Modells außer Typ, Name,
-// IDs und Herkunft; Listen ohne, Einzelwerte mit Beschriftung („Baujahr 1998“)
+// IDs; Listen ohne, Einzelwerte mit Beschriftung („Baujahr 1998“)
 function anlageDetails(a) {
   const einheiten = nurEinheit("Sportanlage");
   return modellFelder("Sportanlage")

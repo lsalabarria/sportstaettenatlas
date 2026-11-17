@@ -20,7 +20,6 @@ STAETTE = {
     "schulsport": "nein",
     "betriebsstatus": "in Betrieb",
     "sportarten": ["Fußball"],
-    "quellen": {"atlas_rlp": {"id": "x", "stand": "2026-11-04"}},
 }
 
 
@@ -112,7 +111,7 @@ def test_schema_fuer_die_webseite():
     assert st["required"] == ["name", "kategorie", "lage"]
     assert st["gruppen"][0] == "Sportstätte"
     assert st["properties"]["sportarten"]["widget"] == "chips"
-    assert st["properties"]["quellen"]["formular"] is False
+    assert "quellen" not in st["properties"]
     assert "Sportplatz" in st["properties"]["kategorie"]["enum"]
     # jedes Feld im Formular hat eine Beschriftung und eine bekannte Gruppe
     for p in st["properties"].values():
@@ -220,12 +219,17 @@ def test_migrieren(tmp_path):
 
     ordner = tmp_path / "RP" / "07111-koblenz" / STAETTE["id"]
     ordner.mkdir(parents=True)
-    (ordner / f"{STAETTE['id']}_meta.json").write_text(json.dumps(STAETTE), "utf-8")
+    staette = {**STAETTE, "quellen": {"atlas_rlp": {"stand": "2026-11-04"}}}
+    (ordner / f"{STAETTE['id']}_meta.json").write_text(json.dumps(staette), "utf-8")
     alt = {"id": "a1", "sportstaette_id": STAETTE["id"], "typ": "Großspielfeld", "baukosten_eur": 5}
+    alt["quellen"] = {"atlas_rlp": {"bezeichnung": "Großspielfeld (Rasen)"}}
     (ordner / "a1.json").write_text(json.dumps(alt), "utf-8")
-    assert migriere_bestand(tmp_path) == 2  # Anlage umbenannt, Sportstätte neu formatiert
+    assert migriere_bestand(tmp_path) == 2  # Feld umbenannt, quellen entfernt
     a = json.loads((ordner / "a1.json").read_text("utf-8"))
     assert (a["baukosten"], a["waehrung"]) == (5, "€") and "baukosten_eur" not in a
+    assert "quellen" not in a
+    s = json.loads((ordner / f"{STAETTE['id']}_meta.json").read_text("utf-8"))
+    assert "quellen" not in s and s["name"] == STAETTE["name"]
     assert migriere_bestand(tmp_path) == 0
     verstoesse = []
     list(lies_bestand(tmp_path, verstoesse))

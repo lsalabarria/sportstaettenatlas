@@ -39,7 +39,7 @@ def test_kontaktdaten_werden_entfernt():
                 "telefon": "0261 123456",
                 "betreiber": "TuS Test (kontakt: vorstand@tus.example)",
                 "alt_name": "Sportpark alt",
-                "alt_stand": "2024",
+                "alt_typ": "Sportplatz",
                 "verifikation": "ALKIS",
                 "verifikation_sportstaette": "ALKIS",
             }
@@ -49,7 +49,7 @@ def test_kontaktdaten_werden_entfernt():
     assert p == {
         "name": "Sportpark",
         "alt_name": "Sportpark alt",
-        "alt_stand": "2024",
+        "alt_typ": "Sportplatz",
         "verifikation": "ALKIS",
         "verifikation_sportstaette": "ALKIS",
     }
@@ -156,7 +156,6 @@ def _datensatz(i, lon, lat, **mehr):
         "name": f"Platz {i}",
         "kategorie": "Sportplatz",
         "lage": {"lon": lon, "lat": lat},
-        "quellen": {"atlas_rlp": {"id": str(i)}},
         **mehr,
     }
 

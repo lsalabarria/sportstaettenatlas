@@ -35,13 +35,8 @@ def lage(a: float, b: float) -> dict:
 
 
 def anlagen_aus(bezeichnungen: list[str]) -> list[dict]:
-    """Bezeichnungen des Atlas → Sportanlagen mit einheitlichem Typ; eine abweichende
-    Schreibweise ("Großspielfeld (ab 5.000 m²)") bleibt unter quellen.atlas_rlp."""
-    out = []
-    for b in bezeichnungen:
-        t = anlagen_typen.typ(b)
-        out.append({"typ": t, **({"quellen": {"atlas_rlp": {"bezeichnung": b}}} if b != t else {})})
-    return out
+    """Bezeichnungen des Atlas → Sportanlagen mit einheitlichem Typ."""
+    return [{"typ": anlagen_typen.typ(b)} for b in bezeichnungen]
 
 
 def lies_export(pfad: Path, lage_aus=lage) -> Iterator[dict]:
@@ -50,7 +45,6 @@ def lies_export(pfad: Path, lage_aus=lage) -> Iterator[dict]:
     zeilen = werte.zeilen(werte.text(pfad.read_bytes()))
     if not zeilen or not PFLICHT <= set(zeilen[0]):
         raise ValueError(f"{pfad.name}: Spalten {sorted(PFLICHT)} fehlen – kein Atlas-Export?")
-    stand = werte.datum_aus_name(pfad.name)
     for z in zeilen:
 
         def g(k: str, z: dict = z) -> str:
@@ -80,5 +74,4 @@ def lies_export(pfad: Path, lage_aus=lage) -> Iterator[dict]:
             "website": g("Webseite"),
             "sportarten": werte.liste(g("Sportarten")),
             "anlagen": anlagen_aus(werte.liste(g("Sportanlagen"))),
-            "quellen": {"atlas_rlp": {"id": g("ID"), "datei": pfad.name, "stand": stand}},
         }
