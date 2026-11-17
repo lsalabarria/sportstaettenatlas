@@ -276,7 +276,7 @@ Eine Einheit einer Sportstätte, z. B. ein Großspielfeld, eine Halle oder ein B
 ### Organisation (`organisationen/<id>.json`)
 
 Verein, Kommune, Verband, Unternehmen … als Eigentümer, Betreiber oder Nutzer von
-    Sportstätten (Verzeichnis in daten/organisationen/). Sportstätten nennen sie in
+    Sportstätten (daten/organisationen/<LAND>/<Ordner der Art>/<id>.json). Sportstätten nennen sie in
     `eigentuemer`, `betreiber` und `nutzer` beim Namen; auch die weiteren Schreibweisen
     gelten. Keine Personen, keine Kontaktdaten.
 
@@ -284,7 +284,8 @@ Verein, Kommune, Verband, Unternehmen … als Eigentümer, Betreiber oder Nutzer
 |---|---|---|---|---|---|
 | `id` | ID | Text |  |  | UUID, zugleich der Dateiname (in der Datei Pflicht) |
 | `name` | Name | Text | ja | höchstens 200 Zeichen; nicht leer | wie er bei den Sportstätten steht |
-| `typ` | Art | Auswahl [Organisationstyp](#auswahllisten) |  |  |  |
+| `typ` | Art | Auswahl [Organisationstyp](#auswahllisten) |  |  | bestimmt auch den Ordner in daten/organisationen/ |
+| `ars` | Regionalschlüssel | Text |  | Muster `^\d{5}(\d{4}(\d{3})?)?$` | amtlicher Schlüssel einer Gebietskörperschaft: Kreis 5, Verbandsgemeinde 9, Gemeinde 12 Stellen |
 | `website` | Webseite | Text |  | Muster `^https?://\S+\.\S+$` | vollständige Adresse mit https:// |
 | `uebergeordnet` | Übergeordnet | Text |  | höchstens 200 Zeichen | Name der übergeordneten Organisation, z. B. des Verbands |
 | `weitere_namen` | Weitere Schreibweisen | Liste von Text |  |  | andere Namen, unter denen Sportstätten sie nennen |
@@ -387,7 +388,7 @@ Felder, die nicht hier stehen, gelten für alle Typen.
 |---|---|
 | Kategorie | „Sportplatz“, „Sporthalle“, „Tennissportstätte“, „Öffentlicher Sport- und Bewegungsraum“, „Reitsportstätte“, „Schwimmsportstätte“, „Schießsportstätte“, „Fitnessstudio“, „Golfsportstätte“, „Roll- und Skatesportstätte“, „Sportgelegenheiten in sonstigen Gebäuden“, „Radsportstätte“, „Flugsportstätte“, „Wintersportstätte“, „Wassersportstätte“, „Klettersportstätte“, „Motorsportstätte“, „Eissportstätte“, „Leistungsstützpunkt“, „Segelsportstätte“ |
 | Betriebsstatus | „in Betrieb“, „vorübergehend geschlossen“, „stillgelegt/geschlossen“, „im Bau“, „in Planung“ |
-| Organisationstyp | „Bund“, „Land Rheinland-Pfalz“, „Landkreis“, „Stadt/Gemeinde“, „Kommunales Unternehmen“, „Zweckverband“, „Sportverein im LSB RLP“, „Sonstiger Sportverein“, „Sportverband im LSB RLP“, „Sonstiger Sportverband“, „Privatwirtschaftlich/kommerziell“, „Sonstige“ |
+| Organisationstyp | „Bund“, „Land Rheinland-Pfalz“, „Landkreis“, „Kreisfreie Stadt“, „Verbandsgemeinde“, „Verbandsfreie Gemeinde“, „Verbandsangehörige Stadt“, „Ortsgemeinde“, „Stadt/Gemeinde“, „Kommunales Unternehmen“, „Zweckverband“, „Sportverein im LSB RLP“, „Sonstiger Sportverein“, „Sportverband im LSB RLP“, „Sonstiger Sportverband“, „Privatwirtschaftlich/kommerziell“, „Sonstige“ |
 | JaNein | „ja“, „nein“ |
 | Waehrung | „€“, „DM“, „RM“ |
 | Bodenbelag | „Sportparkett“, „Rasen“, „Kunstrasen“, „Hartplatz/Tenne“, „Beton“, „Sand“, „Kunststoff“, „Teppich“, „Granulat“, „Linoleum“, „Sonstiges“ |
