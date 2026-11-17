@@ -24,12 +24,5 @@
     "Wurfscheibe",
     "Schwimmsport",
     "Parkour"
-  ],
-  "quellen": {
-    "atlas_rlp": {
-      "id": "9d508b36-5938-44f3-b9ef-29fdb626f45e",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  ]
 }

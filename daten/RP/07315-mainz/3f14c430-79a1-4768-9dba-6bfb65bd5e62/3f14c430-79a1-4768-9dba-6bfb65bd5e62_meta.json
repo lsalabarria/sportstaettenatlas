@@ -21,12 +21,5 @@
   "sportarten": [
     "Schießsport",
     "Bogenschießen"
-  ],
-  "quellen": {
-    "atlas_rlp": {
-      "id": "3f14c430-79a1-4768-9dba-6bfb65bd5e62",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  ]
 }

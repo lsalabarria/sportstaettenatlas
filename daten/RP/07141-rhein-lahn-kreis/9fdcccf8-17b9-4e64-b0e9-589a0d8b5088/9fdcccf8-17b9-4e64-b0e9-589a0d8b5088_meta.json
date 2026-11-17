@@ -14,12 +14,5 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
-  "betriebsstatus": "in Betrieb",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "9fdcccf8-17b9-4e64-b0e9-589a0d8b5088",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "betriebsstatus": "in Betrieb"
 }

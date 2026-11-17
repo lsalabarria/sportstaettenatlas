@@ -12,12 +12,5 @@
     "lat": 50.376833
   },
   "oeffentlicher_zugang": "nein",
-  "schulsport": "nein",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "9d0a1e05-b1b1-444e-8fe8-59b88042e9d4",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "schulsport": "nein"
 }

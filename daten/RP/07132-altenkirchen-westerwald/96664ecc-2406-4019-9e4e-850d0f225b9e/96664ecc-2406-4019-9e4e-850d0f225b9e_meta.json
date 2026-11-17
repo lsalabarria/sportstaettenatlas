@@ -15,12 +15,5 @@
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "KK-Schützen Orfgen",
   "betreiber": "KK-Schützen Orfgen",
-  "website": "www.kksv-orfgen.de",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "96664ecc-2406-4019-9e4e-850d0f225b9e",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "website": "www.kksv-orfgen.de"
 }

@@ -20,12 +20,5 @@
   "website": "www.djk-bretzenheim.de",
   "sportarten": [
     "Tennis"
-  ],
-  "quellen": {
-    "atlas_rlp": {
-      "id": "50fdd2a8-aedf-47f0-99f7-95442b2a2454",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  ]
 }

@@ -16,12 +16,5 @@
   "schulsport": "nein",
   "eigentuemer": "Stadt Pirmasens",
   "betreiber": "Stadt Pirmasens",
-  "website": "http://www.hbgps.de/",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "eba8ab15-2f41-4101-88b7-51034e282a13",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "website": "http://www.hbgps.de/"
 }

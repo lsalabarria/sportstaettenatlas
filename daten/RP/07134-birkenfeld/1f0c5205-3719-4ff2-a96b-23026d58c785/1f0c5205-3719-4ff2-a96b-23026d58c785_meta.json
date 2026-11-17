@@ -17,12 +17,5 @@
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Idarer Turnverein 1873 e.V.",
   "betreiber": "Idarer Turnverein 1873 e.V.",
-  "website": "www.idarer-tv.de",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "1f0c5205-3719-4ff2-a96b-23026d58c785",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "website": "www.idarer-tv.de"
 }

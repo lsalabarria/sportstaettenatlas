@@ -17,12 +17,5 @@
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Turnverein Arzheim 1889 e. V.",
   "betreiber": "Turnverein Arzheim 1889 e. V.",
-  "website": "www.tv-arzheim.de",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "72fc6709-9cb0-4bd6-9c45-81ee618a0c2c",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "website": "www.tv-arzheim.de"
 }

@@ -16,12 +16,5 @@
   "schulsport": "ja",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "TuS Haardt 1886 e.V. und Pfalzbiker e.V.",
-  "betreiber": "TuS Haardt 1886 e.V. und Pfalzbiker e.V.",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "9ec2a932-108b-45c1-9842-392c98314774",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "betreiber": "TuS Haardt 1886 e.V. und Pfalzbiker e.V."
 }

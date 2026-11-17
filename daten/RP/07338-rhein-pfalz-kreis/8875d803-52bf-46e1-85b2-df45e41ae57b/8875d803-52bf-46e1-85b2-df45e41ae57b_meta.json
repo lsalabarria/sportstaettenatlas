@@ -17,12 +17,5 @@
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Rhein-Pfalz-Kreis",
   "betreiber": "Rhein-Pfalz-Kreis",
-  "website": "www.msc-altrip.de",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "8875d803-52bf-46e1-85b2-df45e41ae57b",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "website": "www.msc-altrip.de"
 }

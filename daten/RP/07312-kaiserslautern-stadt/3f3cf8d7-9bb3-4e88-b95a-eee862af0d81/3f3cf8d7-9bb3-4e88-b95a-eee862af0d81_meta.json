@@ -17,12 +17,5 @@
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Fußball-Club eV 1931 Kaiserslautern-Erlenbach",
   "betreiber": "Fußball-Club eV 1931 Kaiserslautern-Erlenbach",
-  "website": "www.fcerlenbach.de",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "3f3cf8d7-9bb3-4e88-b95a-eee862af0d81",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "website": "www.fcerlenbach.de"
 }

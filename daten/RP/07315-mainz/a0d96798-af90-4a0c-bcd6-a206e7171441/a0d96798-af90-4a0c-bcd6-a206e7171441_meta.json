@@ -15,12 +15,5 @@
   "schulsport": "nein",
   "sportarten": [
     "Basketball"
-  ],
-  "quellen": {
-    "atlas_rlp": {
-      "id": "a0d96798-af90-4a0c-bcd6-a206e7171441",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  ]
 }

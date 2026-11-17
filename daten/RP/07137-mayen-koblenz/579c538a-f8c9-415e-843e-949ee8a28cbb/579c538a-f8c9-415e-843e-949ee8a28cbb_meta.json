@@ -17,12 +17,5 @@
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "TV Vallendar e.V.",
   "betreiber": "TV Vallendar e.V.",
-  "website": "tv-vallendar.de",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "579c538a-f8c9-415e-843e-949ee8a28cbb",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "website": "tv-vallendar.de"
 }

@@ -16,12 +16,5 @@
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Zweckverband Wintersportplatz Erbeskopf",
   "betreiber": "Zweckverband Wintersportplatz Erbeskopf",
-  "website": "erbeskopf.de",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "f92ad959-1ca8-4871-9e39-fdc4fa41fd87",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "website": "erbeskopf.de"
 }

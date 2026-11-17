@@ -16,12 +16,5 @@
   "schulsport": "ja",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Worms",
-  "betreiber": "Worms",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "7a0d2771-0538-426c-94e6-1c735cadf077",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "betreiber": "Worms"
 }

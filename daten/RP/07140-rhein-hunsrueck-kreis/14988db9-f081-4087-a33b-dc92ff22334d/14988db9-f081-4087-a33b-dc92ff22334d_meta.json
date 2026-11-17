@@ -26,12 +26,5 @@
     "Pilates",
     "Yoga",
     "Gymnastik"
-  ],
-  "quellen": {
-    "atlas_rlp": {
-      "id": "14988db9-f081-4087-a33b-dc92ff22334d",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  ]
 }

@@ -135,7 +135,6 @@ Der Standort, z. B. ein Sportpark, ein Schulsportzentrum oder ein Freibad.
 | `website` | Webseite | Text |  | Muster `^https?://\S+\.\S+$` | vollständige Adresse mit https:// | `url` |
 | `nutzer` | Nutzer | Liste von Text |  |  | Vereine und andere Organisationen, die die Sportstätte nutzen (Verzeichnis daten/organisationen/) | `sportstaettenutzer.nutzername` |
 | `sportarten` | Sportarten | Liste von Text |  |  |  |  |
-| `quellen` | Herkunft | Objekt |  |  | je Quelle, z. B. ID, Datei und Stand im Atlas |  |
 | `anlagen` | Sportanlagen | Liste von Sportanlage |  |  | stehen als eigene Dateien im Ordner der Sportstätte, nicht in `<id>_meta.json` |  |
 
 ```json
@@ -158,14 +157,7 @@ Der Standort, z. B. ein Sportpark, ein Schulsportzentrum oder ein Freibad.
   "sportarten": [
     "Fußball",
     "Leichtathletik"
-  ],
-  "quellen": {
-    "atlas_rlp": {
-      "id": "9c24bfa6-…",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  ]
 }
 ```
 
@@ -258,7 +250,6 @@ Eine Einheit einer Sportstätte, z. B. ein Großspielfeld, eine Halle oder ein B
 | `geeignet_mental` | Geeignet bei geistiger Beeinträchtigung | Auswahl [JaNein](#auswahllisten) |  |  |  | `eignungparasport4` |
 | `baukosten` | Baukosten | Zahl |  | ≥ 0; braucht `waehrung`; Einheit aus `waehrung` | damalige Kosten | `baukosten` |
 | `waehrung` | Währung | Auswahl [Waehrung](#auswahllisten) |  |  | der Baukosten | `waehrung` |
-| `quellen` | Herkunft | Objekt |  |  | je Quelle, z. B. die Schreibweise im Atlas |  |
 
 ```json
 {
@@ -413,7 +404,7 @@ Felder, die nicht hier stehen, gelten für alle Typen.
 `typ` kommt aus einer festen Liste in `src/sportstaettenatlas/anlagen.py` (Typen in Gruppen,
 nach denen Karte, Formular und Übersicht ordnen). Exporte schreiben dieselbe Anlage oft
 verschieden („Nichtnormiertes Spielfeld“, „Großspielfeld (ab 5.000 m²)“); beim Einlesen wird
-daraus ein Typ, die ursprüngliche Schreibweise bleibt unter `quellen`. Ein unbekannter Typ ist
+daraus ein Typ. Ein unbekannter Typ ist
 erlaubt und landet über Stichwörter in einer Gruppe oder unter „Weitere“. Neue Typen kommen in
 `anlagen.py`.
 
@@ -422,7 +413,7 @@ ohne Regel, welcher Typ zu welcher Kategorie gehört: Ein „Sportplatz“ kann 
 eine Rundlaufbahn und auch Tennisplätze enthalten. Das Formular schlägt zuerst die Typen vor, die im Bestand
 bei der gewählten Kategorie vorkommen.
 
-## IDs und Herkunft
+## IDs
 
 - **Sportstätte:** die UUID aus der Quelle, stabil über Änderungen hinweg. Neue bekommen
   eine neue UUID; aus einer CSV ohne `id` eine feste aus Name und Lage.
@@ -430,5 +421,5 @@ bei der gewählten Kategorie vorkommen.
   zweites Einlesen ergibt dieselben IDs); von Hand angelegte bekommen eine neue UUID. Webseite
   und Vorschläge nennen kurz den Anfang der UUID (z. B. `17abb3c4`).
 - **Organisation:** aus dem Namen abgeleitet, wenn sie aus dem Bestand oder einer CSV entsteht.
-- **`quellen`:** woher eine Angabe stammt (Datei, Stand). Verlauf und Urheber jeder Änderung
-  stehen in der Git-Historie.
+
+Woher eine Angabe stammt, wer sie geändert hat und wann, steht in der Git-Historie.

@@ -16,12 +16,5 @@
   "schulsport": "ja",
   "betriebsstatus": "in Betrieb",
   "betreiber": "Keep GmbH",
-  "website": "https://www.vg-eisenberg.de/freizeit-tourismus/die-top-9-erlebnisse/waldschwimmbad/",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "3b3df852-b891-4f64-bb78-64f1c96afeaf",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "website": "https://www.vg-eisenberg.de/freizeit-tourismus/die-top-9-erlebnisse/waldschwimmbad/"
 }

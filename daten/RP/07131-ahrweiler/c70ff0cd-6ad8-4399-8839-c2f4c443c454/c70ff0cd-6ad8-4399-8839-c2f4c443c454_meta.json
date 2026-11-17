@@ -14,12 +14,5 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
-  "betriebsstatus": "stillgelegt/geschlossen",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "c70ff0cd-6ad8-4399-8839-c2f4c443c454",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "betriebsstatus": "stillgelegt/geschlossen"
 }

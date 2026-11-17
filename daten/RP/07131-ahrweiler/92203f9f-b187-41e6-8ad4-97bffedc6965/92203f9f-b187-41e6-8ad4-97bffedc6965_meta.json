@@ -16,12 +16,5 @@
   "schulsport": "nein",
   "betriebsstatus": "stillgelegt/geschlossen",
   "eigentuemer": "Korian Deutschland AG",
-  "betreiber": "Korian Deutschland AG",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "92203f9f-b187-41e6-8ad4-97bffedc6965",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "betreiber": "Korian Deutschland AG"
 }

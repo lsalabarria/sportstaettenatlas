@@ -16,12 +16,5 @@
   "schulsport": "ja",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Verbandsgemeinde Rhein-Nahe",
-  "betreiber": "Verbandsgemeinde Rhein-Nahe",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "9ec2a908-a287-4b84-b67d-e8103c2b6810",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "betreiber": "Verbandsgemeinde Rhein-Nahe"
 }

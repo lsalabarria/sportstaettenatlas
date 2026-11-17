@@ -17,12 +17,5 @@
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Turngemeinde 1861 e.V. Mainz-Gonsenheim",
   "betreiber": "Turngemeinde 1861 e.V. Mainz-Gonsenheim",
-  "website": "www.tgm-gonsenheim.de",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "85103f12-89c1-4973-8cb6-a1738fcc198d",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "website": "www.tgm-gonsenheim.de"
 }

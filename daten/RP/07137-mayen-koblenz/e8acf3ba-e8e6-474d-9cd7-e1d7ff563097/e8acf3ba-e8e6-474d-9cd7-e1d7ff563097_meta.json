@@ -16,12 +16,5 @@
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "FeG City Church Andernach",
-  "website": "www.csv-andernach.de",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "e8acf3ba-e8e6-474d-9cd7-e1d7ff563097",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "website": "www.csv-andernach.de"
 }

@@ -23,12 +23,5 @@
     "Eishockey",
     "Eiskunstlauf",
     "Eislauf"
-  ],
-  "quellen": {
-    "atlas_rlp": {
-      "id": "4275c1d4-0797-451c-9ba3-20641b6f6de8",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  ]
 }

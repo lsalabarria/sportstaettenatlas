@@ -16,12 +16,5 @@
   "schulsport": "nein",
   "sportarten": [
     "Tennis"
-  ],
-  "quellen": {
-    "atlas_rlp": {
-      "id": "9ec2a92d-2336-4c24-a1c7-393fa67a6bb7",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  ]
 }

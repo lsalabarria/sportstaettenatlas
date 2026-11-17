@@ -17,12 +17,5 @@
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Dominikanerinnenkloster St. Magdalena",
   "betreiber": "Dominikanerinnenkloster St. Magdalena",
-  "website": "http://www.kloster-st-magdalena-speyer.de/",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "14d408aa-49c3-48b0-8142-0e8c03f76564",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "website": "http://www.kloster-st-magdalena-speyer.de/"
 }

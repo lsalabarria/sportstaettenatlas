@@ -19,12 +19,5 @@
     "Pistole",
     "Gewehr",
     "Schießsport"
-  ],
-  "quellen": {
-    "atlas_rlp": {
-      "id": "0ed744bf-a85d-4522-838e-33391a7badbe",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  ]
 }

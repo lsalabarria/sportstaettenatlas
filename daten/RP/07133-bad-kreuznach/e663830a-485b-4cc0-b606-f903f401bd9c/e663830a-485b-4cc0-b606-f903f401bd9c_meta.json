@@ -17,12 +17,5 @@
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "TV 1994 Langenlonsheim e.V.",
   "betreiber": "TV 1994 Langenlonsheim e.V.",
-  "website": "www.tv-lalo.de",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "e663830a-485b-4cc0-b606-f903f401bd9c",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "website": "www.tv-lalo.de"
 }

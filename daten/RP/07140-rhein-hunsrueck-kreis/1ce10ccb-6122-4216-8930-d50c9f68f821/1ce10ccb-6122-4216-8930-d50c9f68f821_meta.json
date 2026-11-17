@@ -17,12 +17,5 @@
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Tennisverein Longuich",
   "betreiber": "Tennisverein Longuich",
-  "website": "www.tv-longuich.de",
-  "quellen": {
-    "atlas_rlp": {
-      "id": "1ce10ccb-6122-4216-8930-d50c9f68f821",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  "website": "www.tv-longuich.de"
 }

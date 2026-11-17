@@ -17,12 +17,5 @@
   "betriebsstatus": "in Betrieb",
   "sportarten": [
     "Tennis"
-  ],
-  "quellen": {
-    "atlas_rlp": {
-      "id": "5932e35b-9670-49ff-9ac4-297e92380f13",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  ]
 }

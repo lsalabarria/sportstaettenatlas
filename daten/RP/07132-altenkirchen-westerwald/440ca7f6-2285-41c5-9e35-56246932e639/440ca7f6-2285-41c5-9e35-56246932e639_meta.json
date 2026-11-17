@@ -19,12 +19,5 @@
   "website": "www.sg-altenkirchen.de",
   "sportarten": [
     "Schießsport"
-  ],
-  "quellen": {
-    "atlas_rlp": {
-      "id": "440ca7f6-2285-41c5-9e35-56246932e639",
-      "datei": "sportstaetten_04112026.csv",
-      "stand": "2026-11-04"
-    }
-  }
+  ]
 }
