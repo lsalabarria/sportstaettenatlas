@@ -329,7 +329,6 @@ Was das Formular „Vorschlag“ als JSON in die LimeSurvey-Frage „data“ sch
 | `loeschen` | Löschen | boolean |  |  | die Organisation aus dem Verzeichnis entfernen |  |
 | `geaendert` | Geänderte Felder | Liste von Text |  |  |  |  |
 | `gemeinde` | Gemeinde | Text |  |  | Regionalschlüssel der Gemeinde an der Lage |  |
-| `quelle` | Quelle | Text |  |  | z. B. „ALKIS ST000123“, wenn vorbelegt |  |
 | `dubletten_geprueft` | Geprüfte Doppelungen | Liste von Text |  |  | IDs ähnlicher Sportstätten, die als verschieden bestätigt wurden |  |
 
 ```json

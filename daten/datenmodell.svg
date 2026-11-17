@@ -476,81 +476,77 @@
 <g id="node6" class="node">
 <title>sportstaettenatlas.modell.Vorschlag</title>
 <g id="a_node6"><a xlink:title="sportstaettenatlas.modell.Vorschlag&#10;&#10;Was das Formular „Vorschlag“ als JSON in die LimeSurvey&#45;Frage „data“ schreibt.&#10;">
-<polygon fill="none" stroke="black" points="0,-1560 0,-1582.5 384,-1582.5 384,-1560 0,-1560"/>
-<text xml:space="preserve" text-anchor="start" x="163.5" y="-1567.2" font-family="Times New Roman,Times,Liberation Serif,serif" font-weight="bold" font-size="14.00">Vorschlag</text>
-<polygon fill="none" stroke="black" points="0,-1537.5 0,-1560 108,-1560 108,-1537.5 0,-1537.5"/>
-<text xml:space="preserve" text-anchor="start" x="34.12" y="-1544.25" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">version</text>
-<polygon fill="none" stroke="black" points="108,-1537.5 108,-1560 384,-1560 384,-1537.5 108,-1537.5"/>
-<text xml:space="preserve" text-anchor="start" x="220.12" y="-1544.25" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">Literal[1]</text>
-<polygon fill="none" stroke="black" points="0,-1515 0,-1537.5 108,-1537.5 108,-1515 0,-1515"/>
-<text xml:space="preserve" text-anchor="start" x="46.88" y="-1521.75" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">art</text>
-<polygon fill="none" stroke="black" points="108,-1515 108,-1537.5 384,-1537.5 384,-1515 108,-1515"/>
-<text xml:space="preserve" text-anchor="start" x="111" y="-1521.75" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">Literal[&#39;neu&#39;, &#39;aenderung&#39;, &#39;anlagen&#39;, &#39;organisation&#39;]</text>
-<polygon fill="none" stroke="black" points="0,-1492.5 0,-1515 108,-1515 108,-1492.5 0,-1492.5"/>
-<text xml:space="preserve" text-anchor="start" x="14.62" y="-1499.25" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">sportstaette_id</text>
-<polygon fill="none" stroke="black" points="108,-1492.5 108,-1515 384,-1515 384,-1492.5 108,-1492.5"/>
-<text xml:space="preserve" text-anchor="start" x="219.38" y="-1499.25" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">str | None</text>
-<polygon fill="none" stroke="black" points="0,-1470 0,-1492.5 108,-1492.5 108,-1470 0,-1470"/>
-<text xml:space="preserve" text-anchor="start" x="23.25" y="-1476.75" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">sportstaette</text>
-<polygon fill="none" stroke="black" points="108,-1470 108,-1492.5 384,-1492.5 384,-1470 108,-1470"/>
-<text xml:space="preserve" text-anchor="start" x="194.25" y="-1476.75" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">Sportstaette | None</text>
-<polygon fill="none" stroke="black" points="0,-1447.5 0,-1470 108,-1470 108,-1447.5 0,-1447.5"/>
-<text xml:space="preserve" text-anchor="start" x="33" y="-1454.25" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">anlagen</text>
-<polygon fill="none" stroke="black" points="108,-1447.5 108,-1470 384,-1470 384,-1447.5 108,-1447.5"/>
-<text xml:space="preserve" text-anchor="start" x="181.12" y="-1454.25" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">list[Sportanlage] | None</text>
-<polygon fill="none" stroke="black" points="0,-1425 0,-1447.5 108,-1447.5 108,-1425 0,-1425"/>
-<text xml:space="preserve" text-anchor="start" x="5.62" y="-1431.75" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">entfernte_anlagen</text>
-<polygon fill="none" stroke="black" points="108,-1425 108,-1447.5 384,-1447.5 384,-1425 108,-1425"/>
-<text xml:space="preserve" text-anchor="start" x="226.5" y="-1431.75" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">list[str]</text>
-<polygon fill="none" stroke="black" points="0,-1402.5 0,-1425 108,-1425 108,-1402.5 0,-1402.5"/>
-<text xml:space="preserve" text-anchor="start" x="12" y="-1409.25" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">organisation_id</text>
-<polygon fill="none" stroke="black" points="108,-1402.5 108,-1425 384,-1425 384,-1402.5 108,-1402.5"/>
-<text xml:space="preserve" text-anchor="start" x="219.38" y="-1409.25" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">str | None</text>
-<polygon fill="none" stroke="black" points="0,-1380 0,-1402.5 108,-1402.5 108,-1380 0,-1380"/>
-<text xml:space="preserve" text-anchor="start" x="20.62" y="-1386.75" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">organisation</text>
-<polygon fill="none" stroke="black" points="108,-1380 108,-1402.5 384,-1402.5 384,-1380 108,-1380"/>
-<text xml:space="preserve" text-anchor="start" x="191.25" y="-1386.75" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">Organisation | None</text>
-<polygon fill="none" stroke="black" points="0,-1357.5 0,-1380 108,-1380 108,-1357.5 0,-1357.5"/>
-<text xml:space="preserve" text-anchor="start" x="30.38" y="-1364.25" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">loeschen</text>
-<polygon fill="none" stroke="black" points="108,-1357.5 108,-1380 384,-1380 384,-1357.5 108,-1357.5"/>
-<text xml:space="preserve" text-anchor="start" x="234" y="-1364.25" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">bool</text>
-<polygon fill="none" stroke="black" points="0,-1335 0,-1357.5 108,-1357.5 108,-1335 0,-1335"/>
-<text xml:space="preserve" text-anchor="start" x="27.75" y="-1341.75" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">geaendert</text>
-<polygon fill="none" stroke="black" points="108,-1335 108,-1357.5 384,-1357.5 384,-1335 108,-1335"/>
-<text xml:space="preserve" text-anchor="start" x="226.5" y="-1341.75" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">list[str]</text>
-<polygon fill="none" stroke="black" points="0,-1312.5 0,-1335 108,-1335 108,-1312.5 0,-1312.5"/>
-<text xml:space="preserve" text-anchor="start" x="27.38" y="-1319.25" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">gemeinde</text>
-<polygon fill="none" stroke="black" points="108,-1312.5 108,-1335 384,-1335 384,-1312.5 108,-1312.5"/>
-<text xml:space="preserve" text-anchor="start" x="219.38" y="-1319.25" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">str | None</text>
-<polygon fill="none" stroke="black" points="0,-1290 0,-1312.5 108,-1312.5 108,-1290 0,-1290"/>
-<text xml:space="preserve" text-anchor="start" x="37.5" y="-1296.75" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">quelle</text>
-<polygon fill="none" stroke="black" points="108,-1290 108,-1312.5 384,-1312.5 384,-1290 108,-1290"/>
-<text xml:space="preserve" text-anchor="start" x="219.38" y="-1296.75" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">str | None</text>
-<polygon fill="none" stroke="black" points="0,-1267.5 0,-1290 108,-1290 108,-1267.5 0,-1267.5"/>
-<text xml:space="preserve" text-anchor="start" x="3" y="-1274.25" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">dubletten_geprueft</text>
-<polygon fill="none" stroke="black" points="108,-1267.5 108,-1290 384,-1290 384,-1267.5 108,-1267.5"/>
-<text xml:space="preserve" text-anchor="start" x="226.5" y="-1274.25" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">list[str]</text>
+<polygon fill="none" stroke="black" points="0,-1559.75 0,-1582.25 384,-1582.25 384,-1559.75 0,-1559.75"/>
+<text xml:space="preserve" text-anchor="start" x="163.5" y="-1566.95" font-family="Times New Roman,Times,Liberation Serif,serif" font-weight="bold" font-size="14.00">Vorschlag</text>
+<polygon fill="none" stroke="black" points="0,-1537.25 0,-1559.75 108,-1559.75 108,-1537.25 0,-1537.25"/>
+<text xml:space="preserve" text-anchor="start" x="34.12" y="-1544" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">version</text>
+<polygon fill="none" stroke="black" points="108,-1537.25 108,-1559.75 384,-1559.75 384,-1537.25 108,-1537.25"/>
+<text xml:space="preserve" text-anchor="start" x="220.12" y="-1544" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">Literal[1]</text>
+<polygon fill="none" stroke="black" points="0,-1514.75 0,-1537.25 108,-1537.25 108,-1514.75 0,-1514.75"/>
+<text xml:space="preserve" text-anchor="start" x="46.88" y="-1521.5" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">art</text>
+<polygon fill="none" stroke="black" points="108,-1514.75 108,-1537.25 384,-1537.25 384,-1514.75 108,-1514.75"/>
+<text xml:space="preserve" text-anchor="start" x="111" y="-1521.5" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">Literal[&#39;neu&#39;, &#39;aenderung&#39;, &#39;anlagen&#39;, &#39;organisation&#39;]</text>
+<polygon fill="none" stroke="black" points="0,-1492.25 0,-1514.75 108,-1514.75 108,-1492.25 0,-1492.25"/>
+<text xml:space="preserve" text-anchor="start" x="14.62" y="-1499" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">sportstaette_id</text>
+<polygon fill="none" stroke="black" points="108,-1492.25 108,-1514.75 384,-1514.75 384,-1492.25 108,-1492.25"/>
+<text xml:space="preserve" text-anchor="start" x="219.38" y="-1499" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">str | None</text>
+<polygon fill="none" stroke="black" points="0,-1469.75 0,-1492.25 108,-1492.25 108,-1469.75 0,-1469.75"/>
+<text xml:space="preserve" text-anchor="start" x="23.25" y="-1476.5" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">sportstaette</text>
+<polygon fill="none" stroke="black" points="108,-1469.75 108,-1492.25 384,-1492.25 384,-1469.75 108,-1469.75"/>
+<text xml:space="preserve" text-anchor="start" x="194.25" y="-1476.5" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">Sportstaette | None</text>
+<polygon fill="none" stroke="black" points="0,-1447.25 0,-1469.75 108,-1469.75 108,-1447.25 0,-1447.25"/>
+<text xml:space="preserve" text-anchor="start" x="33" y="-1454" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">anlagen</text>
+<polygon fill="none" stroke="black" points="108,-1447.25 108,-1469.75 384,-1469.75 384,-1447.25 108,-1447.25"/>
+<text xml:space="preserve" text-anchor="start" x="181.12" y="-1454" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">list[Sportanlage] | None</text>
+<polygon fill="none" stroke="black" points="0,-1424.75 0,-1447.25 108,-1447.25 108,-1424.75 0,-1424.75"/>
+<text xml:space="preserve" text-anchor="start" x="5.62" y="-1431.5" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">entfernte_anlagen</text>
+<polygon fill="none" stroke="black" points="108,-1424.75 108,-1447.25 384,-1447.25 384,-1424.75 108,-1424.75"/>
+<text xml:space="preserve" text-anchor="start" x="226.5" y="-1431.5" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">list[str]</text>
+<polygon fill="none" stroke="black" points="0,-1402.25 0,-1424.75 108,-1424.75 108,-1402.25 0,-1402.25"/>
+<text xml:space="preserve" text-anchor="start" x="12" y="-1409" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">organisation_id</text>
+<polygon fill="none" stroke="black" points="108,-1402.25 108,-1424.75 384,-1424.75 384,-1402.25 108,-1402.25"/>
+<text xml:space="preserve" text-anchor="start" x="219.38" y="-1409" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">str | None</text>
+<polygon fill="none" stroke="black" points="0,-1379.75 0,-1402.25 108,-1402.25 108,-1379.75 0,-1379.75"/>
+<text xml:space="preserve" text-anchor="start" x="20.62" y="-1386.5" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">organisation</text>
+<polygon fill="none" stroke="black" points="108,-1379.75 108,-1402.25 384,-1402.25 384,-1379.75 108,-1379.75"/>
+<text xml:space="preserve" text-anchor="start" x="191.25" y="-1386.5" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">Organisation | None</text>
+<polygon fill="none" stroke="black" points="0,-1357.25 0,-1379.75 108,-1379.75 108,-1357.25 0,-1357.25"/>
+<text xml:space="preserve" text-anchor="start" x="30.38" y="-1364" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">loeschen</text>
+<polygon fill="none" stroke="black" points="108,-1357.25 108,-1379.75 384,-1379.75 384,-1357.25 108,-1357.25"/>
+<text xml:space="preserve" text-anchor="start" x="234" y="-1364" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">bool</text>
+<polygon fill="none" stroke="black" points="0,-1334.75 0,-1357.25 108,-1357.25 108,-1334.75 0,-1334.75"/>
+<text xml:space="preserve" text-anchor="start" x="27.75" y="-1341.5" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">geaendert</text>
+<polygon fill="none" stroke="black" points="108,-1334.75 108,-1357.25 384,-1357.25 384,-1334.75 108,-1334.75"/>
+<text xml:space="preserve" text-anchor="start" x="226.5" y="-1341.5" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">list[str]</text>
+<polygon fill="none" stroke="black" points="0,-1312.25 0,-1334.75 108,-1334.75 108,-1312.25 0,-1312.25"/>
+<text xml:space="preserve" text-anchor="start" x="27.38" y="-1319" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">gemeinde</text>
+<polygon fill="none" stroke="black" points="108,-1312.25 108,-1334.75 384,-1334.75 384,-1312.25 108,-1312.25"/>
+<text xml:space="preserve" text-anchor="start" x="219.38" y="-1319" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">str | None</text>
+<polygon fill="none" stroke="black" points="0,-1289.75 0,-1312.25 108,-1312.25 108,-1289.75 0,-1289.75"/>
+<text xml:space="preserve" text-anchor="start" x="3" y="-1296.5" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">dubletten_geprueft</text>
+<polygon fill="none" stroke="black" points="108,-1289.75 108,-1312.25 384,-1312.25 384,-1289.75 108,-1289.75"/>
+<text xml:space="preserve" text-anchor="start" x="226.5" y="-1296.5" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="14.00">list[str]</text>
 </a>
 </g>
 </g>
 <!-- sportstaettenatlas.modell.Vorschlag&#45;&gt;sportstaettenatlas.modell.Organisation -->
 <g id="edge5" class="edge">
 <title>sportstaettenatlas.modell.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.Organisation:w</title>
-<path fill="none" stroke="black" d="M393.77,-1391.25C435.59,-1391.28 452.12,-1391.46 491.95,-1391.49"/>
-<polyline fill="none" stroke="black" points="384,-1391.25 389,-1391.25"/>
-<polyline fill="none" stroke="black" points="389,-1391.25 394,-1391.25"/>
+<path fill="none" stroke="black" d="M393.77,-1391.01C435.59,-1391.05 452.12,-1391.41 491.95,-1391.49"/>
+<polyline fill="none" stroke="black" points="384,-1391 389,-1391"/>
+<polyline fill="none" stroke="black" points="389,-1391 394,-1391.01"/>
 <polyline fill="none" stroke="black" points="506.75,-1391.5 501.75,-1391.5"/>
-<polygon fill="black" stroke="black" points="500.75,-1386.5 500.75,-1396.5 498.75,-1396.5 498.75,-1386.5 500.75,-1386.5"/>
-<polyline fill="none" stroke="black" points="501.75,-1391.5 496.75,-1391.5"/>
-<polygon fill="black" stroke="black" points="495.75,-1386.5 495.75,-1396.5 493.75,-1396.49 493.75,-1386.49 495.75,-1386.5"/>
-<polyline fill="none" stroke="black" points="496.75,-1391.5 491.75,-1391.49"/>
+<polygon fill="black" stroke="black" points="500.75,-1386.49 500.75,-1396.49 498.75,-1396.49 498.75,-1386.49 500.75,-1386.49"/>
+<polyline fill="none" stroke="black" points="501.75,-1391.5 496.75,-1391.49"/>
+<polygon fill="black" stroke="black" points="495.75,-1386.49 495.75,-1396.49 493.75,-1396.49 493.75,-1386.49 495.75,-1386.49"/>
+<polyline fill="none" stroke="black" points="496.75,-1391.49 491.75,-1391.49"/>
 </g>
 <!-- sportstaettenatlas.modell.Vorschlag&#45;&gt;sportstaettenatlas.modell.Sportanlage -->
 <g id="edge4" class="edge">
 <title>sportstaettenatlas.modell.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.Sportanlage:w</title>
-<path fill="none" stroke="black" d="M393.8,-1458.77C592.21,-1459.76 647.84,-1490.68 843.77,-1492.19"/>
-<polyline fill="none" stroke="black" points="384,-1458.75 389,-1458.76"/>
-<polyline fill="none" stroke="black" points="389,-1458.76 394,-1458.77"/>
+<path fill="none" stroke="black" d="M393.8,-1458.52C592.22,-1459.52 647.83,-1490.67 843.77,-1492.19"/>
+<polyline fill="none" stroke="black" points="384,-1458.5 389,-1458.51"/>
+<polyline fill="none" stroke="black" points="389,-1458.51 394,-1458.53"/>
 <polyline fill="none" stroke="black" points="858.75,-1492.25 853.75,-1492.23"/>
 <polygon fill="black" stroke="black" points="852.77,-1487.23 852.73,-1497.23 850.73,-1497.22 850.77,-1487.22 852.77,-1487.23"/>
 <polyline fill="none" stroke="black" points="853.75,-1492.23 848.75,-1492.21"/>
@@ -560,9 +556,9 @@
 <!-- sportstaettenatlas.modell.Vorschlag&#45;&gt;sportstaettenatlas.modell.Sportstaette -->
 <g id="edge6" class="edge">
 <title>sportstaettenatlas.modell.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.Sportstaette:w</title>
-<path fill="none" stroke="black" d="M393.79,-1481.62C574.16,-1495.63 305.37,-1906.93 477.06,-1928.61"/>
-<polyline fill="none" stroke="black" points="384,-1481.25 389,-1481.44"/>
-<polyline fill="none" stroke="black" points="389,-1481.44 393.99,-1481.62"/>
+<path fill="none" stroke="black" d="M393.8,-1481.37C574.25,-1495.39 305.27,-1906.92 477.06,-1928.61"/>
+<polyline fill="none" stroke="black" points="384,-1481 389,-1481.19"/>
+<polyline fill="none" stroke="black" points="389,-1481.19 393.99,-1481.37"/>
 <polyline fill="none" stroke="black" points="492,-1929.5 487.01,-1929.2"/>
 <polygon fill="black" stroke="black" points="486.31,-1924.15 485.71,-1934.13 483.72,-1934.02 484.31,-1924.03 486.31,-1924.15"/>
 <polyline fill="none" stroke="black" points="487.01,-1929.2 482.02,-1928.91"/>
