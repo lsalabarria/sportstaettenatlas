@@ -436,42 +436,49 @@ function ansichtUebersicht(bestand) {
       + `<div class="wert">${wert}</div><div class="zusatz">${zusatz}</div></div>`;
     const ohneAnlagen = liste.filter(e => !e.anlagen.length).length;
     const angegeben = rolle => liste.map(e => e.p[rolle + "_typ"]).filter(v => !leer(v));
-    let h = `<div class="inhalt"><h2>Übersicht: ${esc(gebietName())}</h2>`
-      + `<p class="unter">Datenbestand der Karte (Ordner <code>daten/</code>): Sportstätten und die `
-      + `Sportanlagen darin</p><div class="kacheln">`
-      + kachel("Sportstätten", zahl(n), ohneAnlagen ? `${zahl(ohneAnlagen)} ohne eingetragene Sportanlage` : "alle mit Sportanlagen")
-      + kachel("Sportanlagen", zahl(na), n ? `Ø ${(na / n).toLocaleString("de-DE",
-        { maximumFractionDigits: 1 })} je Sportstätte` : "")
-      + kachel("Angaben Sportstätten", `${Math.round(100 * befuellung(liste))} %`, `befüllt, Durchschnitt über ${FELDER_STAETTE().length} Felder`)
-      + kachel("Angaben Sportanlagen", `${Math.round(100 * anteil(anlagen, FELDER_ANLAGE()))} %`,
-        `befüllt, Durchschnitt über die Felder, die zum Typ passen (bis ${FELDER_ANLAGE().length})`)
-      + kachel("Sportarten", zahl(sportarten.size), "verschiedene")
-      + kachel("Vereine", zahl(betr.Verein.size), "als Betreiber (mit angegebener Art)")
-      + kachel("Kommunen", zahl(betr.Kommune.size), "als Betreiber (mit angegebener Art)")
-      + `</div>`;
     const artBalken = rolle => {
       const z = angegeben(rolle);
       return z.length ? `<h4>Art des ${rolle === "betreiber" ? "Betreibers" : "Eigentümers"} (angegeben)</h4>`
         + balken(sortiert(zaehle(z)), z.length, false) : "";
     };
-    h += `<div class="spalten"><div><h3>Sportstätten</h3><h4>Wie gut sind die Angaben befüllt?</h4>`
-      + befuellungNachGruppe("Sportstaette", liste.map(e => e.p), FELDER_STAETTE(), "Sportstätten")
+    // Teil 1: was im Bestand steht
+    let h = `<div class="inhalt"><h2>Übersicht: ${esc(gebietName())}</h2>`
+      + `<section class="teil"><h2 class="teil-titel">Bestand</h2>`
+      + `<p class="unter">Was der Datenbestand (Ordner <code>daten/</code>) enthält: Sportstätten, `
+      + `die Sportanlagen darin und wer sie betreibt</p><div class="kacheln">`
+      + kachel("Sportstätten", zahl(n), ohneAnlagen ? `${zahl(ohneAnlagen)} ohne eingetragene Sportanlage` : "alle mit Sportanlagen")
+      + kachel("Sportanlagen", zahl(na), n ? `Ø ${(na / n).toLocaleString("de-DE",
+        { maximumFractionDigits: 1 })} je Sportstätte` : "")
+      + kachel("Sportarten", zahl(sportarten.size), "verschiedene")
+      + kachel("Vereine", zahl(betr.Verein.size), "als Betreiber (mit angegebener Art)")
+      + kachel("Kommunen", zahl(betr.Kommune.size), "als Betreiber (mit angegebener Art)")
+      + `</div><div class="spalten"><div><h3>Sportstätten</h3>`
       + `<h4>Nach Kategorie</h4>` + balken(sortiert(zaehle(liste.map(e => e.kat))), n, false)
       + `<h4>Betreiber</h4>` + balken(ARTEN.map(a => [artText(a), liste.filter(e => e.art === a).length])
         .filter(z => z[1]), n, true)
       + `<div class="hinweis">Art angegeben bei ${zahl(angegeben("betreiber").length)} Sportstätten (bei der Sportstätte oder im Verzeichnis der Organisationen)</div>`
       + artBalken("betreiber") + artBalken("eigentuemer")
-      + `</div><div><h3>Sportanlagen</h3><h4>Wie gut sind die Angaben befüllt?</h4>`
-      + `<div class="hinweis">Felder, die nur für bestimmte Sportanlagen gedacht sind (z. B. Becken für Bäder), `
-      + `zählen nur unter diesen; die Zahl dahinter nennt, wie viele es sind.</div>`
-      + befuellungNachGruppe("Sportanlage", anlagen, FELDER_ANLAGE(), "Sportanlagen")
-
+      + `</div><div><h3>Sportanlagen</h3>`
       + `<h4>Nach Gruppe</h4>` + balken(ANLAGEN_GRUPPEN.map(([g, text]) =>
         [text, anlagen.filter(a => anlagenGruppe(a.typ) === g).length]).filter(z => z[1])
         .sort((a, b) => b[1] - a[1]), 0, false, "Sportanlagen")
       + `<h4>Häufigste Typen</h4>` + balken(sortiert(zaehle(anlagen.map(a => a.typ))).slice(0, 12), 0, false, "Sportanlagen")
       + `<h4>Sportanlagen je Sportstätte</h4>` + balken(sortiert(zaehle(liste.map(e =>
         e.anlagen.length >= 5 ? "5 und mehr" : String(e.anlagen.length)))).sort((a, b) => a[0].localeCompare(b[0])), 0, false)
+      + `</div></div></section>`;
+    // Teil 2: wie vollständig die Angaben sind
+    h += `<section class="teil"><h2 class="teil-titel">Befüllung</h2>`
+      + `<p class="unter">Wie vollständig die Angaben im Bestand sind: Anteil der befüllten Felder `
+      + `des Datenmodells</p><div class="kacheln">`
+      + kachel("Angaben Sportstätten", `${Math.round(100 * befuellung(liste))} %`, `befüllt, Durchschnitt über ${FELDER_STAETTE().length} Felder`)
+      + kachel("Angaben Sportanlagen", `${Math.round(100 * anteil(anlagen, FELDER_ANLAGE()))} %`,
+        `befüllt, Durchschnitt über die Felder, die zum Typ passen (bis ${FELDER_ANLAGE().length})`)
+      + `</div><div class="spalten"><div><h3>Sportstätten</h3>`
+      + befuellungNachGruppe("Sportstaette", liste.map(e => e.p), FELDER_STAETTE(), "Sportstätten")
+      + `</div><div><h3>Sportanlagen</h3>`
+      + `<div class="hinweis">Felder, die nur für bestimmte Sportanlagen gedacht sind (z. B. Becken für Bäder), `
+      + `zählen nur unter diesen; die Zahl dahinter nennt, wie viele es sind.</div>`
+      + befuellungNachGruppe("Sportanlage", anlagen, FELDER_ANLAGE(), "Sportanlagen")
       + `</div></div>`;
     // Teilgebiete: Befüllung je Kreis bzw. je Verbandsgemeinde/Gemeinde
     const ebene = !GEBIET ? "kreis" : GEBIET.e === "kreis" ? "vg" : GEBIET.e === "vg" ? "gemeinde" : null;
@@ -483,7 +490,7 @@ function ansichtUebersicht(bestand) {
         const l = liste.filter(e => e.p.ars && e.p.ars.startsWith(g.s)), a = l.flatMap(e => e.anlagen);
         return { g, n: l.length, na: a.length, b: befuellung(l), ba: anteil(a, FELDER_ANLAGE()) };
       }).sort((a, b) => b.n - a.n);
-      h += `<h3>Nach ${ebene === "kreis" ? "Kreisen" : ebene === "vg" ? "Verbandsgemeinden" : "Gemeinden"}</h3>`
+      h += `<h3>Befüllung nach ${ebene === "kreis" ? "Kreisen" : ebene === "vg" ? "Verbandsgemeinden" : "Gemeinden"}</h3>`
         + `<table class="tabelle"><thead><tr><th>Gebiet</th><th class="zahl">Sportstätten</th>`
         + `<th class="zahl">Sportanlagen</th><th style="width:24%">Angaben Sportstätten</th>`
         + `<th style="width:24%">Angaben Sportanlagen</th></tr></thead><tbody>` + zeilen.map(z =>
@@ -492,7 +499,7 @@ function ansichtUebersicht(bestand) {
           + `<td>${z.n ? spur(z.b) : "–"}</td><td>${z.na ? spur(z.ba) : "–"}</td></tr>`).join("")
         + `</tbody></table>`;
     }
-    h += `</div>`;
+    h += `</section></div>`;
     el.innerHTML = h;
     el.querySelectorAll("[data-g]").forEach(z => z.addEventListener("click", () => setzeGebiet(NACH_S[z.dataset.g])));
   }

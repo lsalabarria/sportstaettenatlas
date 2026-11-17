@@ -267,3 +267,7 @@ aside.details tr.leer td { color: #aaa; }
   border: 1px solid #C9CED6; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,.12); margin: 2px 0 0; }
 .org-vorschlaege[hidden] { display: none; }
 .org-vorschlaege li.aktiv { background: #EEF2F7; }
+/* Übersicht: Teil „Bestand“ und Teil „Befüllung“ */
+.teil { border-top: 3px solid #D8DDE4; margin-top: 28px; padding-top: 6px; }
+.teil:first-of-type { margin-top: 12px; }
+.teil-titel { font-size: 20px; margin: 10px 0 2px; }
