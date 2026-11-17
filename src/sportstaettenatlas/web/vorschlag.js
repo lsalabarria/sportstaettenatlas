@@ -47,11 +47,6 @@ function punktIn(lon, lat, g) {
   return polys.some(p => p.length && imRing(lon, lat, p[0]) && !p.slice(1).some(l => imRing(lon, lat, l)));
 }
 // Name, unter dem eine Kommune als Eigentümer/Betreiber erscheint: "Ortsgemeinde X", "Stadt Y"
-function kommunenName(g) {
-  const bez = g.b === "Kreisfreie Stadt" ? "Stadt" : g.b === "Verbandsfreie Gemeinde" ? "Gemeinde" : g.b;
-  if (!bez) return g.n;
-  return g.n.toLowerCase().startsWith(bez.toLowerCase()) ? g.n : `${bez} ${g.n}`;
-}
 function zerlegeAdresse(text) {
   // "Musterstraße 12a, 56068 Koblenz" → Teile; sonst alles als Straße
   const m = /^\s*(.*?)(?:\s+(\d+\s?[a-zA-Z]?(?:\s?[-–]\s?\d+[a-zA-Z]?)?))?\s*,\s*(\d{5})\s+(.+?)\s*$/.exec(text || "");
@@ -184,10 +179,9 @@ function ansichtVorschlag(bestand) {
     const verzeichnis = ORGANISATIONEN.map(o => o.name);
     const bisher = haeufig(bestand.eintraege.flatMap(e => [e.p.betreiber, e.p.eigentuemer, ...(e.p.nutzer || [])]))
       .sort((a, b) => b[1] - a[1]).map(x => x[0]);
-    const kommunen = GEBIETE.map(kommunenName);
-    // erste Schreibweise gewinnt: Verzeichnis vor Bestand vor Kommunen
+    // erste Schreibweise gewinnt: Verzeichnis (mit allen Kommunen) vor Bestand
     const m = new Map();
-    for (const n of [...verzeichnis, ...bisher, ...kommunen]) if (!m.has(schluesselName(n))) m.set(schluesselName(n), n);
+    for (const n of [...verzeichnis, ...bisher]) if (!m.has(schluesselName(n))) m.set(schluesselName(n), n);
     return [...m.values()];
   }
   const ORTE = () => [...new Set([...GEBIETE.filter(g => g.e === "gemeinde").map(g => g.n),
@@ -211,9 +205,9 @@ function ansichtVorschlag(bestand) {
         <div id="v-gemeinde" class="hinweis"></div></div>`;
     }
     if (p.widget === "chips" || p.widget === "organisationen") {
-      const liste = p.widget === "organisationen" ? "v-orgs" : "v-sportarten-liste";
+      const liste = p.widget === "organisationen" ? `data-orgs autocomplete="off"` : `list="v-sportarten-liste"`;
       return `<div class="chips-feld" data-chips="${n}"><span class="chips-titel">${label}</span><div class="chips"></div>
-        <div class="hinzu"><input list="${liste}" placeholder="${label} eingeben oder auswählen"
+        <div class="hinzu"><input ${liste} placeholder="${label} eingeben oder auswählen"
         aria-label="${label}"><button type="button" class="knopf2">Hinzufügen</button></div></div>`;
     }
     if (p.widget === "ja_nein") return `<div class="zeile-feld"><span>${label}</span>${jaNein(pfad)}</div>`;
@@ -224,7 +218,7 @@ function ansichtVorschlag(bestand) {
         + `>`, " klein");
     }
     if (t.type === "array") return feld(label, `<input name="${n}" placeholder="mehrere mit Komma trennen">`);
-    const liste = p.widget === "organisation" ? ` list="v-orgs"` : p.widget === "ort" ? ` list="v-orte"` : "";
+    const liste = p.widget === "organisation" ? ` data-orgs autocomplete="off"` : p.widget === "ort" ? ` list="v-orte"` : "";
     const art = p.widget === "organisation" ? `<span class="art" data-art="${n}" hidden></span>` : "";
     return feld(label, `<input name="${n}"${p.widget === "url" ? ` type="url"` : ""}${liste}`
       + (t.maxLength ? ` maxlength="${t.maxLength}"` : "") + `${hilfe}>${art}`);
@@ -288,7 +282,6 @@ function ansichtVorschlag(bestand) {
         <div class="hinweis">Klick in die Karte setzt die Lage, die Markierung lässt sich verschieben. Graue Punkte: vorhandene Sportstätten.</div>
         <div id="v-aenderungen"></div><div id="v-dubletten"></div></aside></div>
       <datalist id="v-orte">${optionen(ORTE())}</datalist>
-      <datalist id="v-orgs">${optionen(organisationen())}</datalist>
       <datalist id="v-sportarten-liste">${optionen(SPORTARTEN)}</datalist>
       <datalist id="v-anlagen-liste"></datalist></div>`;
     form = el.querySelector("#v-form");
@@ -338,11 +331,39 @@ function ansichtVorschlag(bestand) {
     const orgSuche = el.querySelector("#v-org-suche"), orgTreffer = el.querySelector("#v-org-treffer");
     orgSuche.addEventListener("input", () => {
       const q = schluesselName(orgSuche.value);
-      orgTreffer.innerHTML = q ? orgListe().filter(x => x.such.includes(q)).slice(0, 8).map(x =>
-        `<li data-org="${esc(x.name)}">${esc(x.name)}<small>${esc(verbinde([x.o ? x.o.typ || "im Verzeichnis, ohne Art"
-          : "noch nicht im Verzeichnis", nutzungText(x.name)]))}</small></li>`).join("")
+      orgTreffer.innerHTML = q ? sucheOrg(q).map(x =>
+        `<li data-org="${esc(x.name)}">${esc(x.name)}<small>${esc(orgZusatz(x))}</small></li>`).join("")
         || `<li class="gruppe">Nichts gefunden – unten als neue Organisation eintragen</li>` : "";
     });
+    el.addEventListener("input", ev => {
+      if (ev.target.matches("input[data-orgs]")) zeigeOrgVorschlaege(ev.target);
+    });
+    el.addEventListener("focusout", ev => {
+      if (ev.target.matches("input[data-orgs]")) orgListeVon(ev.target).hidden = true;
+    });
+    el.addEventListener("mousedown", ev => {
+      const li = ev.target.closest("ul.org-vorschlaege li[data-name]");
+      if (!li) return;
+      ev.preventDefault();  // Eingabe behält den Fokus
+      waehleOrgVorschlag(li.parentElement.previousElementSibling, li.dataset.name);
+    });
+    el.addEventListener("keydown", ev => {  // vor den eigenen Tasten der Eingabe (capture)
+      const eing = ev.target;
+      if (!eing.matches || !eing.matches("input[data-orgs]")) return;
+      const ul = orgListeVon(eing), lis = [...ul.querySelectorAll("li")];
+      if (ul.hidden || !lis.length) return;
+      const i = lis.findIndex(li => li.classList.contains("aktiv"));
+      if (ev.key === "ArrowDown" || ev.key === "ArrowUp") {
+        ev.preventDefault();
+        const j = (i + (ev.key === "ArrowDown" ? 1 : lis.length - 1 + (i < 0 ? 1 : 0))) % lis.length;
+        lis.forEach((li, k) => li.classList.toggle("aktiv", k === j));
+      } else if (ev.key === "Enter" && i >= 0) {
+        ev.preventDefault(); ev.stopPropagation();
+        waehleOrgVorschlag(eing, lis[i].dataset.name);
+      } else if (ev.key === "Escape") {
+        ul.hidden = true;
+      }
+    }, true);
     orgTreffer.addEventListener("click", ev => {
       const li = ev.target.closest("li[data-org]");
       if (!li) return;
@@ -522,8 +543,12 @@ function ansichtVorschlag(bestand) {
     for (const f of FELDER.filter(x => x.p.widget === "organisation")) {
       const name = F(f.pfad).value, o = orgVon(name), s = el.querySelector(`[data-art="${f.pfad}"]`);
       const typ = F(f.pfad + "_typ");
-      if (o && o.typ && typ && !typ.value && typ.dataset.vonOrg !== name) {
-        typ.value = o.typ; typ.dataset.vonOrg = name;
+      // die Art aus dem Verzeichnis folgt dem Namen, solange niemand sie selbst gewählt hat
+      const vonVerzeichnis = typ && typ.dataset.vonOrg && typ.value === typ.dataset.vonTyp;
+      if (typ && (vonVerzeichnis || !typ.value) && typ.dataset.vonOrg !== name) {
+        typ.value = o && o.typ ? o.typ : vonVerzeichnis ? "" : typ.value;
+        typ.dataset.vonOrg = o && o.typ ? name : "";
+        typ.dataset.vonTyp = typ.value;
       }
       const a = !name.trim() ? "" : o ? "im Verzeichnis" + (o.typ ? "" : ", ohne Art") : "nicht im Verzeichnis";
       s.textContent = a; s.hidden = !a;
@@ -552,14 +577,72 @@ function ansichtVorschlag(bestand) {
   // Verzeichnis und Namen aus dem Bestand, die (noch) nicht darin stehen (einmal berechnet)
   function orgListe() {
     if (orgListeCache) return orgListeCache;
-    const out = ORGANISATIONEN.map(o => ({ name: o.name, o,
-      such: [o.name, ...(o.weitere_namen || [])].map(schluesselName).join(" ") }));
+    const eintrag = (name, o) => {
+      const alle = [name, ...(o ? o.weitere_namen || [] : [])];
+      return { name, o, alle, namen: alle.map(schluesselName), n: nutzung(name).n };
+    };
+    const out = ORGANISATIONEN.map(o => eintrag(o.name, o));
     const da = new Set(ORG_NACH_NAME.keys()), ix = index();
     for (const n of organisationen()) {
       const k = schluesselName(n);
-      if (!da.has(k) && ix.has(k)) { da.add(k); out.push({ name: n, o: null, such: k }); }
+      if (!da.has(k) && ix.has(k)) { da.add(k); out.push(eintrag(n, null)); }
     }
     return orgListeCache = out;
+  }
+  // Organisationen zu einem Suchtext, für alle Eingaben gleich: genauer Name vor Anfang des
+  // Namens vor Wortanfängen vor Teilen davon; weitere Schreibweisen zählen etwas weniger. Bei
+  // gleichem Rang zuerst, was Sportstätten schon nennen, dann der kürzere Name.
+  function sucheOrg(text, n = 8) {
+    const q = schluesselName(text), worte = q.split(/[^\p{L}\p{N}]+/u).filter(Boolean);
+    if (!worte.length) return [];
+    // „Ortsgemeinde Berg (VG Altenahr)“ zählt für „berg“ wie ein genauer Name
+    const kern = k => k.replace(/^(ortsgemeinde|verbandsgemeinde|gemeinde|stadt|landkreis|kreis) /, "");
+    const ganz = (k, w) => k === w || (k.startsWith(w) && /[^\p{L}\p{N}]/u.test(k[w.length]));
+    const rang = k => {
+      if (k === q) return 0;
+      if (ganz(kern(k), q)) return 1;
+      if (k.startsWith(q) || kern(k).startsWith(q)) return 2;
+      const teile = k.split(/[^\p{L}\p{N}]+/u);
+      if (worte.every(w => teile.includes(w))) return 3;
+      if (worte.every(w => teile.some(t => t.startsWith(w)))) return 4;
+      return worte.every(w => k.includes(w)) ? 5 : 9;
+    };
+    const out = [];
+    for (const x of orgListe()) {
+      let best = 9, alias = "";
+      x.namen.forEach((k, i) => {
+        const r = rang(k) + (i ? 0.5 : 0);
+        if (r < best) { best = r; alias = i ? x.alle[i] : ""; }
+      });
+      if (best < 9) out.push({ ...x, rang: Math.floor(best), alias });
+    }
+    return out.sort((a, b) => a.rang - b.rang || b.n - a.n || a.name.length - b.name.length
+      || a.name.localeCompare(b.name, "de")).slice(0, n);
+  }
+  const orgZusatz = x => verbinde([x.alias && `auch „${x.alias}“`,
+    x.o ? x.o.typ || "im Verzeichnis, ohne Art" : "noch nicht im Verzeichnis", nutzungText(x.name)]);
+  // Vorschlagsliste unter jeder Eingabe für eine Organisation (data-orgs): Pfeiltasten, Enter,
+  // Klick; Esc oder Verlassen schließt sie
+  function orgListeVon(eing) {
+    let ul = eing.parentElement.querySelector(":scope > ul.org-vorschlaege");
+    if (!ul) {
+      ul = document.createElement("ul"); ul.className = "treffer org-vorschlaege"; ul.hidden = true;
+      eing.insertAdjacentElement("afterend", ul);
+    }
+    return ul;
+  }
+  function zeigeOrgVorschlaege(eing) {
+    const ul = orgListeVon(eing), t = sucheOrg(eing.value);
+    ul.innerHTML = t.map(x => `<li data-name="${esc(x.name)}">${esc(x.name)}<small>${esc(orgZusatz(x))}</small></li>`).join("");
+    ul.hidden = !t.length;
+  }
+  function waehleOrgVorschlag(eing, name) {
+    eing.value = name;
+    orgListeVon(eing).hidden = true;
+    const box = eing.closest("[data-chips]");
+    if (box) box.querySelector("button").click();  // Nutzer: gleich als Chip übernehmen
+    else eing.dispatchEvent(new Event("input", { bubbles: true }));
+    orgListeVon(eing).hidden = true;
   }
   // Wie oft nennen Sportstätten diese Organisation (alle Schreibweisen)?
   function nutzung(name) {

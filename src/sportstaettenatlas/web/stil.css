@@ -261,3 +261,9 @@ aside.details tr.leer td { color: #aaa; }
 .anlage-details { border-top: 1px solid #ececec; padding: 4px 0; }
 .anlage-details summary { cursor: pointer; padding: 3px 0; }
 .anlage-details[open] summary { margin-bottom: 2px; }
+/* Vorschläge für Organisationen unter der Eingabe */
+.vorschlag .feld, .vorschlag .hinzu { position: relative; }
+.org-vorschlaege { position: absolute; left: 0; right: 0; top: 100%; z-index: 1000; background: #fff;
+  border: 1px solid #C9CED6; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,.12); margin: 2px 0 0; }
+.org-vorschlaege[hidden] { display: none; }
+.org-vorschlaege li.aktiv { background: #EEF2F7; }
