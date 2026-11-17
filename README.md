@@ -230,3 +230,15 @@ uv run pytest
 
 Die Tests nutzen nur ausgedachte Daten. Die Skripte der Webseite werden mit `node --check`
 geprüft, wenn Node.js installiert ist.
+
+`tests/test_web.py` öffnet die Webseite in einem unsichtbaren Browser (Playwright): Jede
+Ansicht lädt ohne JavaScript-Fehler, jede Art von Vorschlag ergibt JSON, das das Modell
+`Vorschlag` annimmt, das Formular lehnt ab, was das Modell ablehnt, dazu Organisationssuche,
+Liste und Übersicht. Einmalig den Browser installieren, sonst werden diese Tests übersprungen:
+
+```bash
+uv run playwright install chromium        # unter Linux ggf. mit --with-deps
+uv run pytest tests/test_web.py           # nur die Browser-Tests (gut 30 Sekunden)
+```
+
+Leaflet kommt dabei aus `docs/vendor/leaflet` oder wird einmal nach `results/cache/` geladen.

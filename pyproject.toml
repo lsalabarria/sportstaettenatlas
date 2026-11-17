@@ -24,6 +24,7 @@ sportstaettenatlas = "sportstaettenatlas.cli:main"
 
 [dependency-groups]
 dev = [
+    "playwright>=1.40",  # Browser-Tests (tests/test_web.py); danach: playwright install chromium
     "pytest>=8",
     "ruff>=0.6",
 ]
