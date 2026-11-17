@@ -94,7 +94,7 @@ Meldung); sie brechen nicht ab. Zu den Regeln des Datenmodells (Pflichtfelder, F
 Auswahllisten, `braucht`, `teil_von`) prüft `src/sportstaettenatlas/validate.py`:
 
 - **Organisation:** Betreiber und Eigentümer stehen im Verzeichnis der Organisationen.
-- **Ort:** Die Gemeinde an der Koordinate (VG250) passt zu `adresse.ort`.
+- **Ort:** Die Koordinate liegt in der Gemeinde aus `adresse.ort` oder höchstens 250 m davor (VG250 ist vereinfacht).
 - **Rheinland-Pfalz:** Die Koordinate liegt in einer Gemeinde des Landes.
 - **Doppelung:** Keine zwei Sportstätten mit ähnlichem Namen näher als 60 m (Regel wie im Formular).
 - **Sanierung:** Die letzte Sanierung liegt nicht vor dem Baujahr.

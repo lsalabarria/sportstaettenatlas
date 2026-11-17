@@ -18,10 +18,13 @@ GEMEINDEN = {
     "features": [
         _quadrat("071110000000", "Koblenz", 7.5, 50.3, 7.7, 50.4),
         _quadrat("071415001001", "Berg (Pfalz)", 7.7, 50.3, 7.9, 50.4),
+        _quadrat("073150000000", "Mainz", 8.2, 49.95, 8.3, 50.05),
     ],
 }
 ORGS = [{"id": "o1", "name": "TuS Berg", "weitere_namen": ["TuS Berg e.V."]}]
-S1, S2, S3, S4 = (f"{i}{i}{i}{i}{i}{i}{i}{i}-1111-4111-8111-111111111111" for i in range(1, 5))
+S1, S2, S3, S4, S5, S6 = (
+    f"{i}{i}{i}{i}{i}{i}{i}{i}-1111-4111-8111-111111111111" for i in range(1, 7)
+)
 
 
 def _st(sid, name, lon, lat, **mehr):
@@ -72,6 +75,9 @@ def test_pruefe(tmp_path):
         _st(S2, "Sportplatz Koblenz ", 7.6003, 50.3502, adresse={"ort": "Mainz"}),  # 31 m
         _st(S3, "Sportplatz Koblenz", 7.6, 50.36),  # 1,1 km: keine Doppelung
         _st(S4, "Sportplatz Draußen", 6.0, 49.0),  # außerhalb
+        # in Koblenz, 0,0014° ≈ 100 m vor Berg: innerhalb der Toleranz (VG250 ist generalisiert)
+        _st(S5, "Halle am Rand", 7.6986, 50.32, adresse={"ort": "Berg"}),
+        _st(S6, "Halle im Ortsteil", 7.6, 50.32, adresse={"ort": "Niederberg"}),  # keine Gemeinde
     ]
     schreibe_bestand(bestand, daten, "RP", lambda lon, lat: "07111-koblenz")
     meldungen = pruefe(bestand, ORGS, GEMEINDEN, daten)
@@ -89,13 +95,17 @@ def test_pruefe(tmp_path):
     ]
     assert nach["a2.json"] == ["bahnlaenge: ist befüllt, gehört aber nicht zum Typ „Tennisplatz“"]
     assert "a3.json" not in nach and "a4.json" not in nach
-    assert (
-        nach[f"{S2}_meta.json"][0] == "adresse.ort: „Mainz“, die Koordinate liegt aber in Koblenz"
+    assert nach[f"{S2}_meta.json"][0] == (
+        "adresse.ort: „Mainz“, die Koordinate liegt aber in Koblenz, 54,1 km außerhalb von Mainz"
     )
+    assert f"{S5}_meta.json" not in nach
+    assert nach[f"{S6}_meta.json"] == [
+        "adresse.ort: „Niederberg“ ist keine Gemeinde, die Koordinate liegt in Koblenz"
+    ]
     assert nach[f"{S4}_meta.json"] == ["lage: liegt in keiner Gemeinde von Rheinland-Pfalz"]
     assert f"{S3}_meta.json" not in nach
 
     # ohne Gemeinden entfallen Ort und Rheinland-Pfalz, der Rest bleibt
     ohne = pruefe(bestand, ORGS, None, daten)
     assert not any(m.startswith(("adresse.ort", "lage")) for _, m in ohne)
-    assert len(ohne) == len(meldungen) - 2
+    assert len(ohne) == len(meldungen) - 3

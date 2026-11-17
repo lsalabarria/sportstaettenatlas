@@ -7,7 +7,7 @@ Anlagentyp. Alle laufen offline über den ganzen Bestand (wenige Sekunden) und m
 ändern nichts an den Daten.
 
 - Organisation: Betreiber und Eigentümer stehen im Verzeichnis der Organisationen
-- Ort: die Gemeinde an der Koordinate (VG250) passt zu `adresse.ort`
+- Ort: die Koordinate liegt in der Gemeinde aus `adresse.ort` oder höchstens 250 m davor (VG250)
 - Rheinland-Pfalz: die Koordinate liegt in einer Gemeinde des Landes
 - Doppelung: keine zwei Sportstätten mit ähnlichem Namen näher als 60 m (Regel wie im Formular)
 - Sanierung: die letzte Sanierung liegt nicht vor dem Baujahr
@@ -19,6 +19,7 @@ Ergebnis: Liste (Datei, Meldung); die Meldung beginnt wie die des Modells mit de
 
 from __future__ import annotations
 
+import itertools
 import math
 import re
 from collections import Counter, defaultdict
@@ -27,9 +28,10 @@ from pathlib import Path
 
 from . import modell
 from .bestand import _laender, _staetten_ordner, org_schluessel, org_verzeichnis
-from .gebiete import Zuordnung
+from .gebiete import Zuordnung, _ringe
 
 NAH_M = 60  # Doppelung: höchstens so weit auseinander …
+ORT_TOLERANZ_M = 250  # Ort: VG250 ist generalisiert (1:250 000) – Grenzen weichen so weit ab
 AEHNLICH = 0.8  # … und mindestens so ähnliche Namen (wie im Formular, vorschlag.js)
 ROLLEN = ("betreiber", "eigentuemer")
 
@@ -107,18 +109,64 @@ def organisationen_bekannt(st: dict, verzeichnis: dict) -> Iterable[str]:
             yield f"{rolle}: „{name}“ steht nicht im Verzeichnis der Organisationen"
 
 
-def ort_und_land(st: dict, gemeinde_von, gemeinde_name: dict) -> Iterable[str]:
+def abstand_zum_rand_m(lon: float, lat: float, geom: dict) -> float:
+    """Kürzester Abstand eines Punkts zur Grenze einer Fläche, in Metern (genähert)."""
+    k = math.cos(math.radians(lat))
+    best = math.inf
+    for polygon in _ringe(geom):
+        for ring in polygon:
+            for (ax, ay), (bx, by) in itertools.pairwise(ring):
+                ax, bx, px = ax * k, bx * k, lon * k
+                dx, dy = bx - ax, by - ay
+                t = ((px - ax) * dx + (lat - ay) * dy) / (dx * dx + dy * dy or 1)
+                t = min(1.0, max(0.0, t))
+                best = min(best, math.hypot(px - ax - t * dx, lat - ay - t * dy))
+    return best * 111_320
+
+
+class Gemeinden:
+    """Gemeinden aus VG250: welche an einem Punkt liegt, Namen und Flächen."""
+
+    def __init__(self, gemeinden: dict):
+        self.von = Zuordnung(gemeinden).ars
+        self.name, self.flaeche = {}, {}
+        for f in gemeinden.get("features", []):
+            p = f.get("properties") or {}
+            if p.get("ars"):
+                self.name[str(p["ars"])] = p.get("name", "")
+                self.flaeche[str(p["ars"])] = f.get("geometry")
+
+    def abstand_zu(self, ort: str, lon: float, lat: float) -> float | None:
+        """Abstand zur nächsten Gemeinde, deren Name zu `ort` passt; None, wenn keine passt."""
+        ars = [a for a, n in self.name.items() if ort_passt(ort, n)]
+        return min((abstand_zum_rand_m(lon, lat, self.flaeche[a]) for a in ars), default=None)
+
+
+def _entfernung(m: float) -> str:
+    return f"{m / 1000:.1f} km".replace(".", ",") if m >= 1000 else f"{m:.0f} m"
+
+
+def ort_und_land(st: dict, gemeinden: Gemeinden) -> Iterable[str]:
     lage = _lage(st)
     if lage is None:
         return
-    ars = gemeinde_von(lage[1], lage[0])
+    lat, lon = lage
+    ars = gemeinden.von(lon, lat)
     if ars is None:
         yield "lage: liegt in keiner Gemeinde von Rheinland-Pfalz"
         return
     ort = (st.get("adresse") or {}).get("ort")
-    gemeinde = gemeinde_name.get(ars, "")
-    if ort and gemeinde and not ort_passt(ort, gemeinde):
-        yield f"adresse.ort: „{ort}“, die Koordinate liegt aber in {gemeinde}"
+    gemeinde = gemeinden.name.get(ars, "")
+    if not ort or not gemeinde or ort_passt(ort, gemeinde):
+        return
+    d = gemeinden.abstand_zu(ort, lon, lat)
+    if d is None:
+        yield f"adresse.ort: „{ort}“ ist keine Gemeinde, die Koordinate liegt in {gemeinde}"
+    elif d > ORT_TOLERANZ_M:
+        yield (
+            f"adresse.ort: „{ort}“, die Koordinate liegt aber in {gemeinde}, "
+            f"{_entfernung(d)} außerhalb von {re.sub(r',.*$', '', ort).strip()}"
+        )
 
 
 def sanierung(d: dict) -> Iterable[str]:
@@ -184,17 +232,12 @@ def pruefe(
     verzeichnis = org_verzeichnis(organisationen)
     bekannte_typen = {t for typen, _ in modell.MERKMALE for t in typen}
     if gemeinden:
-        gemeinde_von = Zuordnung(gemeinden).ars
-        gemeinde_name = {
-            str(f["properties"]["ars"]): f["properties"].get("name", "")
-            for f in gemeinden.get("features", [])
-            if (f.get("properties") or {}).get("ars")
-        }
+        gemeinden_ = Gemeinden(gemeinden)
     out: list[tuple[str, str]] = []
     for st in bestand:
         meldungen = [*organisationen_bekannt(st, verzeichnis), *sanierung(st)]
         if gemeinden:
-            meldungen += ort_und_land(st, gemeinde_von, gemeinde_name)
+            meldungen += ort_und_land(st, gemeinden_)
         out += [(datei(st), m) for m in meldungen]
         for a in st.get("anlagen") or []:
             meldungen = [
