@@ -185,8 +185,8 @@ Immer WGS84 (EPSG:4326), Grad mit Dezimalstellen.
 
 | Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung | Weitere Spalte |
 |---|---|---|---|---|---|---|
-| `lon` | Längengrad | Zahl | ja | ≥ 5.8; ≤ 9 | WGS84 | `utm32nrechts (umgerechnet)` |
-| `lat` | Breitengrad | Zahl | ja | ≥ 48.8; ≤ 51.1 | WGS84 | `utm32nhoch (umgerechnet)` |
+| `lon` | Längengrad | Zahl | ja | ≥ 5.8; ≤ 9 | WGS84 |  |
+| `lat` | Breitengrad | Zahl | ja | ≥ 48.8; ≤ 51.1 | WGS84 |  |
 
 ### Sportanlage (`<anlage-id>.json`)
 

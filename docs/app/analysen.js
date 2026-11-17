@@ -124,7 +124,7 @@ function analyseAlkis() {
     const LABEL = { flaeche_m2: "fläche m²", alkis_text: "ALKIS", alkis_oid: "ALKIS-OID",
       sportstaette_id: "Sportstätte", anlage_id: "Anlage", anzahl_anlagen: "Anlagen",
       pruefen: "zu prüfen", alkis_stand: "ALKIS-Stand", anlagen_laut_altbestand: "Anlagen (Atlas)" };
-    const ZUERST = ["name", "typ", "typgruppe", "betreiber", "eigentuemer", "adresse", "sportarten",
+    const ZUERST = ["name", "typ", "typgruppe", "kategorie", "betreiber", "eigentuemer", "adresse", "sportarten",
       "website", "email", "betriebsstatus"];
     function zeilen(p, ohne = new Set()) {
       const keys = Object.keys(p).filter(k => !ROH.test(k) && !ohne.has(k) && !leer(p[k]));
