@@ -320,7 +320,7 @@ def main(argv: list[str] | None = None) -> None:
     sp.add_argument(
         "--migrieren",
         action="store_true",
-        help="vorher die Dateien in daten/ anpassen (umbenannte Felder, z. B. baukosten_eur)",
+        help="vorher die Dateien in daten/ an das Modell anpassen (umbenannte und entfernte Felder)",
     )
     sp.set_defaults(func=cmd_modell)
 
