@@ -128,3 +128,19 @@ def test_pruefungen(daten):
     ) in meldungen
     gleich = [m for p, m in meldungen if p == "Gleiche Koordinate"]
     assert len(gleich) == 3 and all("des Sportkomplexes „Sportzentrum Berg“" in m for m in gleich)
+
+
+def test_doppelung_im_sportkomplex(tmp_path):
+    from sportstaettenatlas.validate import doppelungen
+
+    def st(sid, name, kid=None):
+        return {"id": sid, "name": name, "lage": {"lon": 7.6, "lat": 50.35}, "sportkomplex": kid}
+
+    paare = lambda bestand: {(a["id"], b["id"]) for a, b, _ in doppelungen(bestand)}
+    # ohne Komplex: ähnliche Namen sind verdächtig
+    assert paare([st(S1, "Sporthalle Berg 1"), st(S2, "Sporthalle Berg 2")]) == {(S1, S2)}
+    # im selben Komplex nur bei gleichem Namen (Groß-/Kleinschreibung, Leerzeichen egal)
+    assert paare([st(S1, "Sporthalle Berg 1", K1), st(S2, "Sporthalle Berg 2", K1)]) == set()
+    assert paare([st(S1, "Sporthalle Berg", K1), st(S2, "sporthalle  Berg ", K1)]) == {(S1, S2)}
+    # verschiedene Komplexe: wie ohne
+    assert paare([st(S1, "Sporthalle Berg 1", K1), st(S2, "Sporthalle Berg 2", K2)]) == {(S1, S2)}

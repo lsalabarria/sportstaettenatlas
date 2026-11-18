@@ -122,7 +122,7 @@ Auswahllisten, mindestens 4 Nachkommastellen bei Koordinaten, `braucht`, `teil_v
 - **Rheinland-Pfalz:** Die Koordinate liegt in einer Gemeinde des Landes.
 - **Kreis-Ordner:** Sportstätte und Sportkomplex liegen im Ordner ihres Kreises (`einordnen` verschiebt).
 - **Gleiche Koordinate:** Höchstens zwei Sportstätten auf genau derselben Koordinate (sonst wohl ein Ersatzwert; im selben Sportkomplex wohl dessen Lage).
-- **Doppelung:** Keine zwei Sportstätten mit ähnlichem Namen näher als 60 m (Regel wie im Formular).
+- **Doppelung:** Keine zwei Sportstätten mit ähnlichem Namen näher als 60 m (Regel wie im Formular); im selben Sportkomplex nur bei gleichem Namen.
 - **PLZ:** Die Postleitzahl beginnt wie eine in Rheinland-Pfalz.
 - **Straße und Hausnummer:** Keine Hausnummer in der Straße, keine Hausnummer ohne Straße.
 - **Sanierung:** Die letzte Sanierung liegt nicht vor dem Baujahr.

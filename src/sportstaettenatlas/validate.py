@@ -367,8 +367,19 @@ def fast_gleiche_organisationen(organisationen: list[dict]) -> Iterable[tuple[di
                 yield a, b
 
 
+def _doppelt(a: dict, b: dict) -> bool:
+    """Namen ähnlich genug für eine Doppelung? Im selben Sportkomplex nur bei gleichem Namen
+    (bis auf Groß- und Kleinschreibung und Leerzeichen) – dort ist „Halle 1“ neben „Halle 2“
+    gewollt."""
+    if a.get("sportkomplex") and a.get("sportkomplex") == b.get("sportkomplex"):
+        return bool(org_schluessel(a.get("name"))) and org_schluessel(
+            a.get("name")
+        ) == org_schluessel(b.get("name"))
+    return aehnlich(a.get("name"), b.get("name")) >= AEHNLICH
+
+
 def doppelungen(bestand: list[dict]) -> Iterable[tuple[dict, dict, float]]:
-    """Paare von Sportstätten mit ähnlichem Namen, die höchstens NAH_M auseinander liegen."""
+    """Paare von Sportstätten mit ähnlichem Namen (_doppelt), höchstens NAH_M auseinander."""
     zelle = 0.001  # Grad, etwa 70–110 m: Nachbarn liegen in derselben oder einer Nachbarzelle
     gitter: dict[tuple[int, int], list[tuple[dict, float, float]]] = defaultdict(list)
     for st in bestand:
@@ -381,7 +392,7 @@ def doppelungen(bestand: list[dict]) -> Iterable[tuple[dict, dict, float]]:
                 for i, (a, la, oa) in enumerate(hier):
                     for b, lb, ob in dort[i + 1 :] if dort is hier else dort:
                         d = abstand_m(la, oa, lb, ob)
-                        if d <= NAH_M and aehnlich(a.get("name"), b.get("name")) >= AEHNLICH:
+                        if d <= NAH_M and _doppelt(a, b):
                             yield a, b, d
 
 
