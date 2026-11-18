@@ -160,9 +160,10 @@ OpenStreetMap.
 
 ### Vorschläge
 
-Das Formular kennt vier Arten: **neue Sportstätte** mit ihren Sportanlagen, **Angaben einer
-Sportstätte ändern**, ihre **Sportanlagen ändern** (hinzufügen, ändern, entfernen) und
-**Organisation** eintragen, ändern oder löschen. Es prüft die Regeln des Modells und meldet
+Das Formular kennt fünf Arten: **neue Sportstätte** mit ihren Sportanlagen, **Angaben einer
+Sportstätte ändern** (auch ihren Sportkomplex), ihre **Sportanlagen ändern** (hinzufügen, ändern,
+entfernen), **Organisation** eintragen, ändern oder löschen und **Sportkomplex** anlegen,
+ändern (Name, Adresse, welche Sportstätten dazugehören) oder auflösen. Es prüft die Regeln des Modells und meldet
 mögliche Doppelungen (höchstens 60 m entfernt, gleiche Kategorie in 250 m, sehr ähnlicher
 Name oder gleiche Adresse; bei Organisationen: Name schon im Verzeichnis).
 
@@ -179,7 +180,9 @@ Feld verschieden, steht dort „a|b“ mit einer Warnung – von Hand auflösen;
 Werte als Regelverstoß, bis sie aufgelöst sind. Übernommene Antwort-IDs stehen in
 `daten/vorschlaege_uebernommen.txt` und werden beim nächsten Export übersprungen. Kommentare
 zeigt der Befehl nur an, gespeichert werden sie nicht. Liegt eine geänderte Lage danach in
-einem anderen Kreis, verschiebt `einordnen` die Sportstätte.
+einem anderen Kreis, verschiebt `einordnen` die Sportstätte. Ein vorgeschlagener Sportkomplex
+wird angelegt und bei seinen Sportstätten eingetragen; Sportstätten, die ein Vorschlag aus
+einem Komplex nimmt, verlieren ihn, ein aufgelöster Komplex verschwindet ganz.
 
 „Bug melden“ oben öffnet ein öffentliches Ticket auf GitHub (Vorlage
 `.github/ISSUE_TEMPLATE/fehler.yml`).

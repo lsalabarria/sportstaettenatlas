@@ -184,3 +184,54 @@ def test_beispiel_aus_limesurvey(tmp_path):
     assert e.uebernommen["neu"] == 1 and not e.warnungen
     (d,) = lies_bestand(daten)
     assert d["name"] == "test" and d["anlagen"] == []
+
+
+def test_sportkomplex_vorschlagen_aendern_aufloesen(tmp_path):
+    from sportstaettenatlas.bestand import lies_sportkomplexe
+
+    daten = _bestand(tmp_path)
+    s2, s3 = "22222222-2222-4222-8222-222222222222", "33333333-3333-4333-8333-333333333333"
+    weitere = [
+        {"id": s, "name": n, "kategorie": "Sporthalle", "lage": {"lon": 7.5941, "lat": 50.3515}}
+        for s, n in ((s2, "Halle Musterdorf"), (s3, "Freibad Musterdorf"))
+    ]
+    schreibe_bestand(weitere, daten, "RP", _kreis)
+    neu = {
+        "version": 1,
+        "art": "sportkomplex",
+        "sportkomplex": {"name": "Sportzentrum Musterdorf", "adresse": {"ort": "Musterdorf"}},
+        "sportstaetten": [SID, s2],
+    }
+    e = uebernimm(lies_export(_export(tmp_path, [(neu, "")])), daten, _kreis)
+    assert e.uebernommen["sportkomplex"] == 1 and not e.warnungen
+    (k,) = lies_sportkomplexe(daten)
+    assert (k["name"], k["_ordner"]) == ("Sportzentrum Musterdorf", "07111-kreis-a")
+    komplex = {d["id"]: d.get("sportkomplex") for d in lies_bestand(daten)}
+    assert komplex == {SID: k["id"], s2: k["id"], s3: None}
+
+    # ändern: umbenennen, s3 dazu, SID heraus
+    aendern = {
+        "version": 1,
+        "art": "sportkomplex",
+        "sportkomplex_id": k["id"],
+        "sportkomplex": {"name": "Sportpark Musterdorf", "adresse": {"ort": "Musterdorf"}},
+        "sportstaetten": [s2, s3],
+        "geaendert": ["name"],
+    }
+    aufloesen = {"version": 1, "art": "sportkomplex", "sportkomplex_id": k["id"], "loeschen": True}
+    export = _export(tmp_path, [(neu, ""), (aendern, "")])
+    e = uebernimm(lies_export(export), daten, _kreis)
+    assert e.uebernommen["sportkomplex"] == 1 and e.uebersprungen == 1
+    assert [x["name"] for x in lies_sportkomplexe(daten)] == ["Sportpark Musterdorf"]
+    komplex = {d["id"]: d.get("sportkomplex") for d in lies_bestand(daten)}
+    assert komplex == {SID: None, s2: k["id"], s3: k["id"]}
+
+    export = _export(tmp_path, [(neu, ""), (aendern, ""), (aufloesen, "")])
+    e = uebernimm(lies_export(export), daten, _kreis)
+    assert lies_sportkomplexe(daten) == []
+    assert not any(d.get("sportkomplex") for d in lies_bestand(daten))
+
+    # nur eine Sportstätte: passt nicht zum Modell
+    zu_klein = {**neu, "sportstaetten": [SID]}
+    e = uebernimm(lies_export(_export(tmp_path, [(zu_klein, "")])), daten, _kreis, alle=True)
+    assert any("mindestens zwei Sportstätten" in w for w in e.warnungen)

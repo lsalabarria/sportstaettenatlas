@@ -134,6 +134,18 @@ function ansichtVorschlag(bestand) {
   const ORG_FELDER = modellFelder("Organisation").filter(([, p]) => p.formular !== false)
     .map(([k, p, pflicht, t]) => ({ pfad: "org." + k, k, p, pflicht, t }));
   let orgOriginal = null;  // { o: Eintrag im Verzeichnis oder { name } aus dem Bestand, imVerzeichnis }
+  // Felder eines Sportkomplexes ("ko." davor), die Adresse je Teil; die Lage folgt aus den Sportstätten
+  const KO_FELDER = [];
+  for (const [k, p, pflicht, t] of modellFelder("Sportkomplex")) {
+    if (p.formular === false || k === "lage") continue;
+    if (t.ref) {
+      for (const [k2, p2, pf2, t2] of modellFelder(t.ref)) {
+        if (p2.formular !== false) KO_FELDER.push({ pfad: `ko.${k}.${k2}`, k: `${k}.${k2}`, p: p2, pflicht: pf2, t: t2 });
+      }
+    } else KO_FELDER.push({ pfad: "ko." + k, k, p, pflicht, t });
+  }
+  let koOriginal = null;  // gewählter Sportkomplex (aus sportkomplexe.json) oder null für einen neuen
+  let koStaetten = new Set();  // IDs der Sportstätten des Komplexes nach der Änderung
   const FELD_TYP = (() => { const x = modellFelder("Sportanlage").find(([k]) => k === "typ");
     return { pfad: "typ", p: x[1], pflicht: true, t: x[3] }; })();
 
@@ -241,7 +253,8 @@ function ansichtVorschlag(bestand) {
         <span class="radios gross"><label><input type="radio" name="art" value="neu" checked> Neue Sportstätte mit ihren Sportanlagen eintragen</label>
         <label><input type="radio" name="art" value="aenderung"> Angaben einer Sportstätte ändern (Name, Adresse, Betreiber …)</label>
         <label><input type="radio" name="art" value="anlagen"> Sportanlagen einer Sportstätte ändern (hinzufügen, ändern, entfernen)</label>
-        <label><input type="radio" name="art" value="organisation"> Organisation (Verein, Eigentümer, Betreiber …) eintragen, ändern oder löschen</label></span>
+        <label><input type="radio" name="art" value="organisation"> Organisation (Verein, Eigentümer, Betreiber …) eintragen, ändern oder löschen</label>
+        <label><input type="radio" name="art" value="sportkomplex"> Sportkomplex (mehrere Sportstätten an einem Ort) anlegen, ändern oder auflösen</label></span>
         <div id="v-auswahl" hidden><input type="search" id="v-suche" placeholder="Name, Ort oder ID der Sportstätte suchen"
           aria-label="Sportstätte suchen"><ul id="v-treffer" class="treffer"></ul></div>
         <div id="v-gewaehlt"></div>
@@ -266,6 +279,21 @@ function ansichtVorschlag(bestand) {
         <label class="bestaetigen" id="v-org-weg" hidden><input type="checkbox" name="org-loeschen">
           Diese Organisation aus dem Verzeichnis löschen (z. B. aufgelöst oder doppelt)</label>
       </fieldset>
+      <fieldset id="v-teil-komplex" hidden><legend>Sportkomplex</legend>
+        <p class="hinweis">Ein Sportkomplex fasst mehrere Sportstätten an einem Ort zusammen, z. B. ein
+        Sportzentrum mit Halle, Stadion und Freibad – mindestens zwei. Eigentümer, Betreiber und Sportanlagen
+        bleiben bei den Sportstätten.</p>
+        <input type="search" id="v-ko-suche" placeholder="vorhandenen Sportkomplex suchen (leer lassen für einen neuen)"
+          aria-label="Sportkomplex suchen"><ul id="v-ko-treffer" class="treffer"></ul>
+        <div id="v-ko-gewaehlt"></div>
+        <div id="v-ko-felder">${KO_FELDER.map(eingabe).join("")}</div>
+        <div class="chips-feld"><span class="chips-titel">Sportstätten des Sportkomplexes *</span>
+          <div class="chips" id="v-ko-staetten"></div>
+          <div class="hinzu"><input type="search" id="v-ko-staette-suche" placeholder="Sportstätte hinzufügen: Name, Ort oder ID"
+            aria-label="Sportstätte hinzufügen"></div><ul id="v-ko-staette-treffer" class="treffer"></ul></div>
+        <label class="bestaetigen" id="v-ko-weg" hidden><input type="checkbox" name="ko-loeschen">
+          Diesen Sportkomplex auflösen (die Sportstätten bleiben, nur die Klammer entfällt)</label>
+      </fieldset>
       <fieldset><legend>Anmerkung</legend>
         <textarea name="anmerkung" rows="3" maxlength="1000" placeholder="Was soll geändert werden, Quelle der Angaben …"></textarea>
       </fieldset>
@@ -286,6 +314,11 @@ function ansichtVorschlag(bestand) {
       if (ev.target.name === "art") {
         const art = F("art").value;
         if (art === "organisation") { waehleOrg(null); zeigeTeile(); zeigeGewaehlt(); planePruefung(); return; }
+        if (art === "sportkomplex") {
+          const e = original;
+          waehleKomplex(e && e.p.sportkomplex ? e.p.sportkomplex : null, e ? [e.p.id] : []);
+          zeigeTeile(); zeigeGewaehlt(); return;
+        }
         if (art === "neu") neu();
         else if (original && original.art !== art) { original.art = art; fuelle(ausEintrag(original)); }
         zeigeTeile(); zeigeGewaehlt();
@@ -360,6 +393,41 @@ function ansichtVorschlag(bestand) {
         ul.hidden = true;
       }
     }, true);
+    // Sportkomplex: vorhandenen suchen; Sportstätten dazu suchen
+    const koSuche = el.querySelector("#v-ko-suche"), koTreffer = el.querySelector("#v-ko-treffer");
+    koSuche.addEventListener("input", () => {
+      const worte = normName(koSuche.value).split(" ").filter(Boolean);
+      const t = worte.length ? komplexeNachName().filter(k => worte.every(w => normName(k.name).includes(w))).slice(0, 8) : [];
+      koTreffer.innerHTML = !worte.length ? "" : t.map(k => `<li data-ko="${esc(k.id)}">${esc(k.name)}`
+        + `<small>${zahl(k.mitglieder.length)} Sportstätten</small></li>`).join("")
+        || `<li class="gruppe">Nichts gefunden – unten einen neuen eintragen</li>`;
+    });
+    koTreffer.addEventListener("click", ev => {
+      const li = ev.target.closest("li[data-ko]");
+      if (!li) return;
+      koSuche.value = ""; koTreffer.innerHTML = "";
+      waehleKomplex(li.dataset.ko); zeigeTeile();
+    });
+    const stSuche = el.querySelector("#v-ko-staette-suche"), stTreffer = el.querySelector("#v-ko-staette-treffer");
+    stSuche.addEventListener("input", () => {
+      const worte = normName(stSuche.value).split(" ").filter(Boolean);
+      const t = [];
+      if (worte.length) for (const e of bestand.eintraege) {
+        if (koStaetten.has(e.p.id)) continue;
+        const text = normName([e.p.name, e.p.ort, e.p.adresse, e.p.id].join(" "));
+        if (worte.every(w => text.includes(w))) t.push(e);
+        if (t.length >= 8) break;
+      }
+      stTreffer.innerHTML = !worte.length ? "" : t.map(e => `<li data-st="${esc(e.p.id)}">${esc(e.p.name || e.kat)}`
+        + `<small>${esc(verbinde([e.p.kategorie, e.p.adresse]))}</small></li>`).join("")
+        || `<li class="gruppe">Keine Sportstätte gefunden</li>`;
+    });
+    stTreffer.addEventListener("click", ev => {
+      const li = ev.target.closest("li[data-st]");
+      if (!li) return;
+      stSuche.value = ""; stTreffer.innerHTML = "";
+      koStaetten.add(li.dataset.st); zeigeKoStaetten();
+    });
     orgTreffer.addEventListener("click", ev => {
       const li = ev.target.closest("li[data-org]");
       if (!li) return;
@@ -526,12 +594,68 @@ function ansichtVorschlag(bestand) {
   }
   // Teile des Formulars je nach Art des Vorschlags
   function zeigeTeile() {
-    const art = F("art").value;
-    el.querySelector("#v-teil-staette").hidden = art === "anlagen" || art === "organisation";
-    el.querySelector("#v-teil-anlagen").hidden = art === "aenderung" || art === "organisation";
+    const art = F("art").value, eigen = art === "organisation" || art === "sportkomplex";
+    el.querySelector("#v-teil-staette").hidden = art === "anlagen" || eigen;
+    el.querySelector("#v-teil-anlagen").hidden = art === "aenderung" || eigen;
     el.querySelector("#v-teil-org").hidden = art !== "organisation";
-    el.querySelector(".vorschlag aside").hidden = art === "organisation";
+    el.querySelector("#v-teil-komplex").hidden = art !== "sportkomplex";
+    el.querySelector(".vorschlag aside").hidden = eigen;
     el.querySelector("#v-org-weg").hidden = !(orgOriginal && orgOriginal.imVerzeichnis);
+    el.querySelector("#v-ko-weg").hidden = !koOriginal;
+  }
+
+  // --- Sportkomplexe ---
+  // Komplex zum Ändern wählen (ID) oder null für einen neuen, dann mit den Sportstätten `vorbelegt`
+  function waehleKomplex(id, vorbelegt = []) {
+    koOriginal = id ? SPORTKOMPLEXE.get(id) || null : null;
+    for (const f of KO_FELDER) { const w = koOriginal ? hole(koOriginal, f.k) : ""; F(f.pfad).value = leer(w) ? "" : w; }
+    koStaetten = new Set(koOriginal ? koOriginal.mitglieder.map(m => m.id) : vorbelegt);
+    if (F("ko-loeschen")) F("ko-loeschen").checked = false;
+    const g = el.querySelector("#v-ko-gewaehlt");
+    g.innerHTML = koOriginal ? `<div class="chip">Sie ändern: <b>${esc(koOriginal.name)}</b> `
+      + `<button type="button">stattdessen einen neuen</button></div>` : "";
+    const b = g.querySelector("button");
+    if (b) b.addEventListener("click", () => { waehleKomplex(null); zeigeTeile(); });
+    zeigeKoStaetten();
+  }
+  function zeigeKoStaetten() {
+    const c = el.querySelector("#v-ko-staetten");
+    c.innerHTML = [...koStaetten].map(id => {
+      const e = NACH_ID.get(id), anders = e && e.p.sportkomplex && (!koOriginal || e.p.sportkomplex !== koOriginal.id);
+      return `<span class="chip-s">${esc(e ? e.p.name || e.kat : id)}`
+        + (anders ? ` <small>(bisher in ${esc(komplexName(e.p.sportkomplex))})</small>` : "")
+        + `<button type="button" data-ko-weg="${esc(id)}" aria-label="entfernen">×</button></span>`;
+    }).join("") || `<span class="hinweis">noch keine</span>`;
+    c.querySelectorAll("[data-ko-weg]").forEach(b => b.addEventListener("click", () => {
+      koStaetten.delete(b.dataset.koWeg); zeigeKoStaetten(); }));
+  }
+  function koWerte() {
+    const k = {};
+    for (const f of KO_FELDER) { const x = String(F(f.pfad).value || "").trim(); if (x) setze(k, f.k, x); }
+    return k;
+  }
+  function weiterKomplex(v) {
+    const k = koWerte(), loeschen = !!(F("ko-loeschen") && F("ko-loeschen").checked), fehler = [];
+    if (!loeschen) {
+      for (const f of KO_FELDER) fehler.push(...regelFehler(f, hole(k, f.k), f.p.title));
+      if (koStaetten.size < 2) fehler.push("Sportstätten: mindestens zwei – ein Sportkomplex fasst mehrere zusammen");
+    }
+    if (enthaeltEmail(k)) fehler.push("Bitte keine E-Mail-Adressen eintragen");
+    const geaendert = koOriginal ? KO_FELDER.map(f => f.k).filter(x => (hole(koOriginal, x) || "") !== (hole(k, x) || "")) : [];
+    const vorher = new Set(koOriginal ? koOriginal.mitglieder.map(m => m.id) : []);
+    const gleich = vorher.size === koStaetten.size && [...koStaetten].every(id => vorher.has(id));
+    if (koOriginal && !loeschen && !geaendert.length && gleich && !v.anmerkung) {
+      fehler.push("Änderung: Name, Adresse oder Sportstätten ändern, auflösen wählen oder eine Anmerkung schreiben");
+    }
+    const daten = { version: 1, art: "sportkomplex" };
+    if (koOriginal) daten.sportkomplex_id = koOriginal.id;
+    if (loeschen) daten.loeschen = true;
+    else {
+      daten.sportkomplex = k;
+      daten.sportstaetten = [...koStaetten];
+      if (koOriginal && geaendert.length) daten.geaendert = geaendert;
+    }
+    sende(daten, v, fehler);
   }
   // Eigentümer/Betreiber: steht die Organisation im Verzeichnis, ihre Art übernehmen (wenn
   // noch keine gewählt ist); dahinter steht, ob sie im Verzeichnis ist (geschätzt wird nicht)
@@ -821,7 +945,7 @@ function ansichtVorschlag(bestand) {
   function zeigeGewaehlt() {
     const g = el.querySelector("#v-gewaehlt");
     const was = F("art").value === "anlagen" ? "die Sportanlagen von" : "die Angaben von";
-    g.innerHTML = original && F("art").value !== "organisation" ? `<div class="chip">Sie ändern ${was}: <b>${esc(original.p.name || original.kat)}</b> `
+    g.innerHTML = original && !["organisation", "sportkomplex"].includes(F("art").value) ? `<div class="chip">Sie ändern ${was}: <b>${esc(original.p.name || original.kat)}</b> `
       + `<span class="q">${esc(verbinde([original.p.kategorie, original.p.adresse]))}</span>`
       + ` <button type="button">andere wählen</button></div>` : "";
     const b = g.querySelector("button");
@@ -853,7 +977,7 @@ function ansichtVorschlag(bestand) {
   function pruefe() {
     if (!form) return;
     const v = werte();
-    if (v.art === "organisation") return;
+    if (v.art === "organisation" || v.art === "sportkomplex") return;
     dubletten = sucheDubletten(v);
     const box = el.querySelector("#v-dubletten");
     if (!dubletten.length) {
@@ -989,6 +1113,7 @@ function ansichtVorschlag(bestand) {
     pruefe();
     const v = werte(), fehler = [];
     if (v.art === "organisation") return weiterOrg(v);
+    if (v.art === "sportkomplex") return weiterKomplex(v);
     if (v.art !== "neu" && !original) fehler.push("Welche Sportstätte soll geändert werden? (oben auswählen)");
     fehler.push(...regelVerstoesse(v));
     if (enthaeltEmail(v)) fehler.push("Bitte keine E-Mail-Adressen eintragen");
@@ -1058,6 +1183,19 @@ function ansichtVorschlag(bestand) {
     hat: id => NACH_ID.has(id),
     neu(vorgabe) { zeige("vorschlag").then(() => { neu(vorgabe); pruefe(); el.scrollTop = 0; }); },
     bearbeite(id, art) { zeige("vorschlag").then(() => { bearbeite(id, art); pruefe(); el.scrollTop = 0; }); },
+    // Sportkomplex ändern (ID) oder neu, vorbelegt mit Sportstätten; von einer Sportstätte aus:
+    // ihr Komplex, sonst ein neuer mit ihr
+    komplex(id, vorbelegt = []) {
+      zeige("vorschlag").then(() => {
+        F("art").value = "sportkomplex"; waehleKomplex(id || null, vorbelegt);
+        zeigeTeile(); zeigeGewaehlt(); el.querySelector("#v-ausgabe").innerHTML = "";
+        el.querySelector("#v-fehler").hidden = true; el.scrollTop = 0;
+      });
+    },
+    komplexVon(sid) {
+      const e = NACH_ID.get(sid);
+      this.komplex(e && e.p.sportkomplex ? e.p.sportkomplex : null, e && !e.p.sportkomplex ? [sid] : []);
+    },
     // Organisation ändern oder löschen (Name wie bei den Sportstätten); ohne Namen: neue
     organisation(name) {
       zeige("vorschlag").then(() => {
@@ -1068,6 +1206,14 @@ function ansichtVorschlag(bestand) {
     },
   };
 }
+// Links „Sportkomplex“ (Popups): der Komplex der Sportstätte oder ein neuer mit ihr
+document.addEventListener("click", ev => {
+  const a = ev.target.closest("[data-komplex-von]");
+  if (!a || !ANSICHTEN.vorschlag) return;
+  ev.preventDefault();
+  karte.closePopup();
+  ANSICHTEN.vorschlag.komplexVon(a.dataset.komplexVon);
+});
 // Links „Organisation ändern“ (Liste, Popups)
 document.addEventListener("click", ev => {
   const a = ev.target.closest("[data-org-aendern]");
@@ -1101,5 +1247,6 @@ document.addEventListener("click", ev => {
 function aendernLink(id) {
   if (!ANSICHTEN.vorschlag || leer(id) || !ANSICHTEN.vorschlag.hat(id)) return "";
   return `<tr><td>Vorschlag</td><td><a href="#" data-bearbeiten="${esc(id)}">Angaben ändern</a> · `
-    + `<a href="#" data-bearbeiten="${esc(id)}" data-teil="anlagen">Sportanlagen ändern</a></td></tr>`;
+    + `<a href="#" data-bearbeiten="${esc(id)}" data-teil="anlagen">Sportanlagen ändern</a> · `
+    + `<a href="#" data-komplex-von="${esc(id)}">Sportkomplex</a></td></tr>`;
 }

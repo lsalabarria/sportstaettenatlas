@@ -22,6 +22,7 @@ Regeln zwischen Feldern (prüft Basis, das Formular ebenso):
 
 from __future__ import annotations
 
+import inspect
 import json
 from enum import Enum
 from pathlib import Path
@@ -890,11 +891,11 @@ class Vorschlag(Basis):
     )
 
     version: Literal[1] = _field("Version des Formats", default=1)
-    art: Literal["neu", "aenderung", "anlagen", "organisation"] = _field(
+    art: Literal["neu", "aenderung", "anlagen", "organisation", "sportkomplex"] = _field(
         "Art",
         "neu: neue Sportstätte mit Anlagen; aenderung: Angaben einer Sportstätte; "
         "anlagen: Sportanlagen einer Sportstätte; organisation: Organisation anlegen, "
-        "ändern oder löschen",
+        "ändern oder löschen; sportkomplex: Sportkomplex anlegen, ändern oder auflösen",
         pflicht=True,
     )
     sportstaette_id: str | None = _field("Sportstätte", "ID der geänderten Sportstätte")
@@ -915,8 +916,21 @@ class Vorschlag(Basis):
     organisation: Organisation | None = _field(
         "Angaben der Organisation", "vollständig, nach der Änderung (nicht beim Löschen)"
     )
+    sportkomplex_id: str | None = _field(
+        "Sportkomplex", "ID des geänderten oder aufgelösten Sportkomplexes (fehlt bei einem neuen)"
+    )
+    sportkomplex: Sportkomplex | None = _field(
+        "Angaben des Sportkomplexes", "vollständig, nach der Änderung (nicht beim Auflösen)"
+    )
+    sportstaetten: list[str] = _field(
+        "Sportstätten des Sportkomplexes",
+        "IDs aller Sportstätten nach der Änderung (mindestens zwei)",
+        default_factory=list,
+    )
     loeschen: bool = _field(
-        "Löschen", "die Organisation aus dem Verzeichnis entfernen", default=False
+        "Löschen",
+        "die Organisation aus dem Verzeichnis entfernen bzw. den Sportkomplex auflösen",
+        default=False,
     )
     geaendert: list[str] = _field("Geänderte Felder", default_factory=list)
     gemeinde: str | None = _field("Gemeinde", "Regionalschlüssel der Gemeinde an der Lage")
@@ -930,6 +944,14 @@ class Vorschlag(Basis):
     def _passt_zur_art(self):
         if self.art == "neu" and (self.sportstaette is None or self.anlagen is None):
             raise ValueError("neu: sportstaette und anlagen nötig")
+        if self.art == "sportkomplex":
+            if self.loeschen and not self.sportkomplex_id:
+                raise ValueError("sportkomplex: zum Auflösen sportkomplex_id nötig")
+            if not self.loeschen and self.sportkomplex is None:
+                raise ValueError("sportkomplex: sportkomplex nötig")
+            if not self.loeschen and len(set(self.sportstaetten)) < 2:
+                raise ValueError("sportkomplex: mindestens zwei Sportstätten nötig")
+            return self
         if self.art == "organisation":
             if self.loeschen and not self.organisation_id:
                 raise ValueError("organisation: zum Löschen organisation_id nötig")
@@ -1185,12 +1207,12 @@ def readme_block() -> str:
         (Lage, "Lage"),
         (Sportanlage, "Sportanlage (`<anlage-id>.json`)"),
         (Sportkomplex, "Sportkomplex (`<Kreis>/sportkomplexe/<id>.json`)"),
-        (Organisation, "Organisation (`organisationen/<id>.json`)"),
+        (Organisation, "Organisation (`organisationen/<LAND>/<Art>/<id>.json`)"),
         (Vorschlag, "Vorschlag (Formular → LimeSurvey, Frage `data`)"),
     ):
         teile += [f"### {ueberschrift}", ""]
         if modell.__doc__:
-            teile += [modell.__doc__.strip(), ""]
+            teile += [inspect.cleandoc(modell.__doc__), ""]  # ohne Einrückung: sonst Code-Block
         teile += [felder_tabelle(modell), ""]
         beispiele = (modell.model_config.get("json_schema_extra") or {}).get("examples")
         if beispiele:

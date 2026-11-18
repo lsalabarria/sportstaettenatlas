@@ -317,6 +317,50 @@ def test_organisation_aendern(oeffne):
     assert d["geaendert"] == ["website"]
 
 
+def test_sportkomplex_vorschlagen(oeffne):
+    page = oeffne("#ansicht=vorschlag")
+    # neu, von einer Sportstätte ohne Komplex aus: sie ist vorbelegt, eine zweite dazu suchen
+    page.evaluate("ANSICHTEN.vorschlag.komplexVon('33333333-3333-4333-8333-333333333333')")
+    page.wait_for_timeout(200)
+    assert page.locator("#v-teil-komplex").is_visible()
+    assert page.locator("#v-teil-staette").is_hidden()
+    page.fill("input[name='ko.name']", "Sportpark Tal")
+    _senden(page)
+    assert "mindestens zwei" in page.inner_text("#v-fehler")
+    page.fill("#v-ko-staette-suche", "Sportplatz Berg")
+    page.click("#v-ko-staette-treffer li[data-st]")
+    assert "(bisher in Sportzentrum Berg)" in page.inner_text("#v-ko-staetten")
+    _senden(page)
+    d = _gesendet(page)
+    assert modell.pruefe(modell.Vorschlag, d) == []
+    assert d["art"] == "sportkomplex" and "sportkomplex_id" not in d
+    assert d["sportkomplex"] == {"name": "Sportpark Tal"}
+    assert d["sportstaetten"] == ["33333333-3333-4333-8333-333333333333", SID]
+
+    # vorhandenen ändern: die Sportstätten sind vorbelegt
+    page.evaluate("window.__url = null")
+    page.evaluate(f"ANSICHTEN.vorschlag.komplex('{KOMPLEX['id']}')")
+    page.wait_for_timeout(200)
+    assert page.input_value("input[name='ko.name']") == "Sportzentrum Berg"
+    page.fill("input[name='ko.adresse.ort']", "Berg")
+    _senden(page)
+    d = _gesendet(page)
+    assert modell.pruefe(modell.Vorschlag, d) == []
+    assert (d["sportkomplex_id"], d["geaendert"]) == (KOMPLEX["id"], ["adresse.ort"])
+    assert sorted(d["sportstaetten"]) == [SID, "22222222-2222-4222-8222-222222222222"]
+    # auflösen
+    page.evaluate("window.__url = null")
+    page.check("input[name='ko-loeschen']")
+    _senden(page)
+    d = _gesendet(page)
+    assert d == {
+        "version": 1,
+        "art": "sportkomplex",
+        "sportkomplex_id": KOMPLEX["id"],
+        "loeschen": True,
+    }
+
+
 @pytest.mark.parametrize(
     ("feld", "wert"),
     [("adresse.plz", "5606"), ("name", "Halle (info@verein.example)")],

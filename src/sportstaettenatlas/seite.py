@@ -78,8 +78,9 @@ def _anlage_kurz(a: dict) -> list:
 
 
 def komplex_kurz(k: dict, praezision: int = 5) -> dict:
-    """Sportkomplex für die Webseite: id, name, adresse (Text), lon, lat (wenn bekannt)."""
-    out = {"id": k["id"], "name": k.get("name"), "adresse": adresse_text(k.get("adresse") or {})}
+    """Sportkomplex für die Webseite: id, name, adresse (Teile, fürs Formular), lon, lat."""
+    adresse = {x: v for x, v in (k.get("adresse") or {}).items() if v not in (None, "")}
+    out = {"id": k["id"], "name": k.get("name"), "adresse": adresse or None}
     lage = k.get("lage") or {}
     if lage.get("lon") is not None and lage.get("lat") is not None:
         out |= {"lon": round(float(lage["lon"]), praezision), "lat": round(float(lage["lat"]), praezision)}

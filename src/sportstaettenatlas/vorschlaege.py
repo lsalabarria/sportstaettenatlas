@@ -10,6 +10,9 @@ der Antwort-ID:
 - anlagen:      die genannten Anlagen (vorhandene über die Kurz-ID, ganz ersetzt), neue dazu,
                 `entfernte_anlagen` gelöscht
 - organisation: Organisation anlegen, die geänderten Felder ändern oder löschen
+- sportkomplex: Sportkomplex anlegen oder seine geänderten Felder ändern; die genannten
+                Sportstätten bekommen ihn in `sportkomplex`, bisherige, die fehlen, verlieren
+                ihn; `loeschen` löst ihn auf (Datei weg, Verweise entfernt)
 
 Eine Änderung überschreibt den Wert in daten/. Setzen zwei Vorschläge im Export dasselbe Feld
 verschieden, steht dort „a|b“ (mit | getrennt), und es gibt eine Warnung. Übernommene
@@ -28,14 +31,20 @@ from pathlib import Path
 
 from . import werte
 from .bestand import (
+    OHNE_KREIS,
     _lies_ordner,
     _staetten_ordner,
     aufteilen,
     bereinigen,
     finde_organisation,
+    komplex_dateien,
+    lies_bestand,
+    lies_sportkomplexe,
     organisation_id,
     schreibe_bestand,
     schreibe_organisation,
+    schreibe_sportkomplex,
+    sportkomplexe_einordnen,
 )
 from .modell import Vorschlag, pruefe
 
@@ -110,6 +119,8 @@ class _Uebernahme:
         self.neu: set[str] = set()
         self.entfernt: dict[str, set[str]] = {}  # Sportstätte → IDs entfernter Anlagen
         self.orgs: dict[str, dict | None] = {}  # id → Organisation; None: löschen
+        self.komplexe: dict[str, dict | None] = {}  # id → Sportkomplex; None: auflösen
+        self._mitglieder: dict[str, set[str]] | None = None  # Komplex → Sportstätten in daten/
         self.gesetzt: dict[tuple[str, str], list[tuple[str, object]]] = {}
 
     def setze(self, ziel: str, obj: dict, pfad: str, w, antwort: str, name: str) -> None:
@@ -231,6 +242,56 @@ class _Uebernahme:
         for k in v.get("geaendert") or [k for k in neu if k != "id"]:
             self.setze(oid, o, k, neu.get(k), a.id, name)
 
+    def mitglieder(self, kid: str) -> set[str]:
+        """Sportstätten mit diesem Sportkomplex: in daten/ und in diesem Lauf geändert."""
+        if self._mitglieder is None:
+            self._mitglieder = {}
+            for d in lies_bestand(self.daten):
+                if d.get("sportkomplex"):
+                    self._mitglieder.setdefault(d["sportkomplex"], set()).add(d["id"])
+        out = {
+            sid
+            for sid in self._mitglieder.get(kid, set())
+            if sid not in self.staetten or self.staetten[sid].get("sportkomplex") == kid
+        }
+        return out | {sid for sid, st in self.staetten.items() if st.get("sportkomplex") == kid}
+
+    def sportkomplex(self, a: Antwort, v: dict) -> None:
+        kid = v.get("sportkomplex_id") or str(uuid.uuid5(_NAMENSRAUM, f"limesurvey/{a.id}/komplex"))
+        if kid not in self.komplexe:
+            alt = {k["id"]: k for k in lies_sportkomplexe(self.daten)}.get(kid)
+            self.komplexe[kid] = alt
+        k = self.komplexe[kid]
+        name = f"Sportkomplex {(k or v.get('sportkomplex') or {}).get('name') or kid}"
+        bisher = self.mitglieder(kid)
+        if v.get("loeschen"):
+            if k is None:
+                self.e.warnungen.append(f"Antwort {a.id}: Sportkomplex {kid} gibt es nicht")
+                return
+            self.komplexe[kid] = None
+            for sid in sorted(bisher):
+                if st := self.staette(sid):
+                    self.setze(
+                        sid, st, "sportkomplex", None, a.id, f"Sportstätte {st.get('name') or sid}"
+                    )
+            return
+        neu = v["sportkomplex"]
+        if k is None:
+            k = self.komplexe[kid] = {**neu, "id": kid}
+            for feld in neu:
+                self.gesetzt.setdefault((kid, feld), []).append((a.id, neu[feld]))
+        else:
+            for feld in v.get("geaendert") or [x for x in neu if x != "id"]:
+                self.setze(kid, k, feld, werte.hole(neu, feld), a.id, name)
+        soll = set(v.get("sportstaetten") or [])
+        for sid in sorted(soll | bisher):
+            st = self.staette(sid)
+            if st is None:
+                self.e.warnungen.append(f"Antwort {a.id}: Sportstätte {sid} fehlt ({name})")
+                continue
+            w = kid if sid in soll else None
+            self.setze(sid, st, "sportkomplex", w, a.id, f"Sportstätte {st.get('name') or sid}")
+
     # --- schreiben ---
 
     def schreibe(self, kreis_von: Callable) -> None:
@@ -250,6 +311,20 @@ class _Uebernahme:
                 schreibe_organisation(self.daten, o)
             elif pfad := finde_organisation(self.daten, oid):
                 pfad.unlink()
+        if not self.komplexe:
+            return
+        dateien = {p.stem: p for p in komplex_dateien(self.daten)}
+        for kid, k in self.komplexe.items():
+            if k is not None:  # erst in den bisherigen Kreis, einordnen sucht den richtigen
+                ordner = dateien[kid].parent.parent.name if kid in dateien else OHNE_KREIS
+                schreibe_sportkomplex(
+                    self.daten, {x: w for x, w in k.items() if x != "_ordner"}, ordner
+                )
+            elif kid in dateien:
+                dateien[kid].unlink()
+                if not any(dateien[kid].parent.iterdir()):
+                    dateien[kid].parent.rmdir()
+        sportkomplexe_einordnen(self.daten, kreis_von)
 
 
 def uebernimm(
@@ -278,9 +353,12 @@ def uebernimm(
             e.warnungen.append(f"Antwort {a.id}: passt nicht zum Modell – " + "; ".join(fehler))
             continue
         art = v["art"]
-        {"neu": u.neu_anlegen, "aenderung": u.aendern, "anlagen": u.anlagen}.get(
-            art, u.organisation
-        )(a, v)
+        {
+            "neu": u.neu_anlegen,
+            "aenderung": u.aendern,
+            "anlagen": u.anlagen,
+            "sportkomplex": u.sportkomplex,
+        }.get(art, u.organisation)(a, v)
         e.uebernommen[art] += 1
         if a.kommentar:
             e.kommentare.append((a.id, a.kommentar))
