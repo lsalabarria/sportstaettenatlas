@@ -144,3 +144,36 @@ def test_doppelung_im_sportkomplex(tmp_path):
     assert paare([st(S1, "Sporthalle Berg", K1), st(S2, "sporthalle  Berg ", K1)]) == {(S1, S2)}
     # verschiedene Komplexe: wie ohne
     assert paare([st(S1, "Sporthalle Berg 1", K1), st(S2, "Sporthalle Berg 2", K2)]) == {(S1, S2)}
+
+
+def test_csv_einlesen(daten, tmp_path):
+    from sportstaettenatlas.bestand import schreibe_sportkomplexe
+    from sportstaettenatlas.einlesen import lies_csv, schreibe_vorlage
+
+    # die Vorlage wird als Sportkomplexe erkannt
+    vorlage = next(
+        p for p in schreibe_vorlage(tmp_path / "v") if p.name == "vorlage_sportkomplexe.csv"
+    )
+    kopf = vorlage.read_text("utf-8-sig").splitlines()[0].split(";")
+    assert kopf[:2] == ["id", "name"] and kopf[-1] == "sportstaetten" and "lat" in kopf
+    assert lies_csv(vorlage)[1].art == "sportkomplexe"
+
+    csv = tmp_path / "komplexe.csv"
+    csv.write_text(
+        "name;ort;sportstaetten\n"
+        f'Sportpark Tal;Koblenz;"{S3[:8]}; {S4}"\n'  # Kurz-ID und volle ID
+        f'Sportzentrum Berg;;"{S5[:8]}; 99999999"\n',  # 99999999 gibt es nicht
+        "utf-8",
+    )
+    datensaetze, b = lies_csv(csv)
+    assert b.art == "sportkomplexe" and len(datensaetze) == 2
+    assert datensaetze[0]["sportstaetten"] == [S3[:8], S4]
+    e = schreibe_sportkomplexe(datensaetze, daten, _kreis)
+    assert (e.neu, e.zugeordnet, e.ohne_sportstaette) == (2, 3, 1)
+    namen = {k["name"]: k for k in lies_sportkomplexe(daten)}
+    assert namen["Sportpark Tal"]["adresse"] == {"ort": "Koblenz"}
+    staetten = {d["id"]: d.get("sportkomplex") for d in lies_bestand(daten)}
+    assert staetten[S3] == staetten[S4] == namen["Sportpark Tal"]["id"]
+    # noch einmal: gleiche IDs (aus Name und Ort), nichts Neues
+    e = schreibe_sportkomplexe(lies_csv(csv)[0], daten, _kreis)
+    assert (e.neu, e.behalten, e.zugeordnet) == (0, 2, 0)

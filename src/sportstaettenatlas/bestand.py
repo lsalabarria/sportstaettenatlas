@@ -139,6 +139,7 @@ class Ergebnis:
     nicht_mehr_in_quelle: int = 0
     anlagen_neu: int = 0
     anlagen_geaendert: int = 0
+    zugeordnet: int = 0  # Sportstätten, die einem Sportkomplex zugeordnet wurden
     entfernt: Counter = field(default_factory=Counter)
     regelverstoesse: Counter = field(default_factory=Counter)  # Feld → Anzahl (modell.py)
 
@@ -697,3 +698,51 @@ def ordne_sportkomplex_zu(daten: Path, komplex_id: str | None, ids: list[str]) -
             meta.write_text(text, encoding="utf-8")
             geaendert.append(meta)
     return geaendert
+
+
+def schreibe_sportkomplexe(
+    datensaetze, daten: Path, kreis_von: KreisVon, modus: str = "neu"
+) -> Ergebnis:
+    """Sportkomplexe (z. B. aus einer CSV, mit Liste "sportstaetten": IDs oder ihr Anfang)
+    übernehmen. Vorhandene findet die ID; Modi wie bei schreibe_bestand. Die genannten
+    Sportstätten werden in jedem Modus zugeordnet (`sportkomplex`), herausgenommen wird keine.
+    Der Kreis-Ordner folgt aus der Lage, sonst aus den Sportstätten (komplex_kreis)."""
+    if modus not in MODI:
+        raise ValueError(f"Unbekannter Modus: {modus} (erlaubt: {', '.join(MODI)})")
+    vorhanden = {k["id"]: k for k in lies_sportkomplexe(daten)}
+    e = Ergebnis()
+    for roh in datensaetze:
+        d = bereinigen(roh, e.entfernt)
+        mitglieder = []
+        for sid in d.pop("sportstaetten", []) or []:
+            try:
+                mitglieder.append(finde_staette(daten, str(sid)))
+            except ValueError:
+                e.ohne_sportstaette += 1
+        alt = vorhanden.get(d.get("id", ""))
+        if alt is None:
+            k = d
+            e.neu += 1
+        elif modus == "neu":
+            k = alt
+            e.behalten += 1
+        else:
+            k = _uebernimm(alt, d, modus)
+            if k == alt:
+                e.unveraendert += 1
+            else:
+                e.aktualisiert += 1
+        for meldung in pruefe(Sportkomplex, {x: v for x, v in k.items() if x != "_ordner"}):
+            e.regelverstoesse[meldung.split(":")[0]] += 1
+        if k.get("lage"):
+            kreis = _kreis(k, kreis_von)
+        elif mitglieder:
+            kreise = Counter(p.parent.name for p in mitglieder)
+            kreis = kreise.most_common(1)[0][0]
+        else:
+            kreis = (alt or {}).get("_ordner") or OHNE_KREIS
+        if k is not alt or kreis != alt.get("_ordner"):
+            schreibe_sportkomplex(daten, k, kreis)
+        e.zugeordnet += len(ordne_sportkomplex_zu(daten, k["id"], [p.name for p in mitglieder]))
+        vorhanden[k["id"]] = {**k, "_ordner": kreis}
+    return e

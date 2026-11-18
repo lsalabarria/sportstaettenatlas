@@ -92,8 +92,9 @@ def cmd_pruefen(args):
 
 
 def cmd_bestand(args):
-    """CSV-Dateien (Atlas-Export, Sportstätten oder Sportanlagen) in daten/ übernehmen."""
-    from .bestand import schreibe_bestand, schreibe_organisationen
+    """CSV-Dateien (Atlas-Export, Sportstätten, Sportanlagen, Sportkomplexe oder
+    Organisationen) in daten/ übernehmen."""
+    from .bestand import schreibe_bestand, schreibe_organisationen, schreibe_sportkomplexe
     from .einlesen import lies_csv
 
     gelesen = []
@@ -108,6 +109,7 @@ def cmd_bestand(args):
             "atlas": "Export des bisherigen Atlas",
             "sportstaetten": "Sportstätten",
             "sportanlagen": "Sportanlagen",
+            "sportkomplexe": "Sportkomplexe",
             "organisationen": "Organisationen",
         }[b.art]
         print(f"{datei.name}: {art}, {b.zeilen} Zeilen")
@@ -131,26 +133,29 @@ def cmd_bestand(args):
         try:
             if art == "organisationen":
                 e = schreibe_organisationen(datensaetze, DATEN, args.modus)
+            elif art == "sportkomplexe":
+                e = schreibe_sportkomplexe(datensaetze, DATEN, kreis_von, args.modus)
             else:
                 e = schreibe_bestand(datensaetze, DATEN, LAND, kreis_von, args.modus)
         except ValueError as exc:
             raise SystemExit(str(exc)) from None
-        orgs = art == "organisationen"
+        orgs, komplexe = art == "organisationen", art == "sportkomplexe"
         ziel = f"{DATEN}/organisationen/" if orgs else f"{DATEN}/{LAND.upper()}/"
         print(f"{datei.name} → {ziel} (Modus {args.modus})")
-        was = "Organisationen" if orgs else "Sportstätten"
+        was = "Organisationen" if orgs else "Sportkomplexe" if komplexe else "Sportstätten"
         zeilen = [
             ("neu angelegt", e.neu, was),
             ("geändert", e.aktualisiert, was),
             ("unverändert", e.unveraendert, was),
             ("schon vorhanden", e.behalten, "(nicht verändert; --modus ergaenzen/aktualisieren)"),
             ("Sportanlagen neu", e.anlagen_neu, "zu vorhandenen Sportstätten"),
+            ("zugeordnet", e.zugeordnet, "Sportstätten einem Sportkomplex"),
             ("Sportanlagen geändert", e.anlagen_geaendert, ""),
             ("ohne Koordinate", e.ohne_lage, "(übersprungen)"),
             (
-                "ohne Sportstätte",
+                "Sportstätte unbekannt" if komplexe else "ohne Sportstätte",
                 e.ohne_sportstaette,
-                "Sportanlagen (ID nicht in daten/, übersprungen)",
+                ("IDs" if komplexe else "Sportanlagen") + " (nicht in daten/, übersprungen)",
             ),
             ("doppelte ID", e.doppelt, "(nur der erste Eintrag übernommen)"),
             ("nicht in der Quelle", e.nicht_mehr_in_quelle, "Sportstätten (bleiben)"),

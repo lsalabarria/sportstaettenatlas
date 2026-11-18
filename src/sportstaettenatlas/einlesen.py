@@ -1,9 +1,9 @@
 """CSV-Dateien in den Datenbestand daten/ übernehmen (Befehl `bestand`).
 
 `lies_csv` erkennt die Art der Tabelle (Atlas-Export, Sportstätten, Sportanlagen,
-Organisationen), ordnet die Spalten über das Modell zu (`spalten_namen`) und liest die
+Sportkomplexe, Organisationen), ordnet die Spalten über das Modell zu (`spalten_namen`) und liest die
 Werte nach dem Typ des Feldes (`wert`, mit werte.py). Geschrieben wird in bestand.py
-(`schreibe_bestand`, `schreibe_organisationen`). Die Regeln für Spalten, Werte und Modi
+(`schreibe_bestand`, `schreibe_sportkomplexe`, `schreibe_organisationen`). Die Regeln für Spalten, Werte und Modi
 beschreibt daten/README.md („CSV einlesen“); `schreibe_vorlage` schreibt die Vorlagen.
 """
 
@@ -21,6 +21,8 @@ from . import atlas, modell, werte
 from .bestand import KONTAKT, NUR_ANLAGEN
 
 _STAETTEN_NAMENSRAUM = uuid.UUID("0b6a1f63-3f7e-4f1a-9b55-6c2d9e8a4c21")
+_KOMPLEX_NAMENSRAUM = uuid.UUID("6e2b9d14-7c3a-4f85-a1d0-3b8e5c7f9a42")
+MITGLIEDER = "sportstaetten"  # Spalte der Sportkomplex-Tabelle: IDs ihrer Sportstätten
 # weitere übliche Namen für Spalten der Lage
 _LAGE = {
     "lat": ("latitude", "breite", "y", "hochwert"),
@@ -40,7 +42,7 @@ class Bericht:
     """Was beim Einlesen einer Datei passiert ist (für die Ausgabe der Kommandozeile)."""
 
     datei: str
-    art: str = ""  # "atlas", "sportstaetten", "sportanlagen" oder "organisationen"
+    art: str = ""  # "atlas", "sportstaetten", "sportanlagen", "sportkomplexe" oder "organisationen"
     zeilen: int = 0
     spalten: dict[str, str] = field(default_factory=dict)  # Spalte → Feld
     ignoriert: list[str] = field(default_factory=list)  # Spalten ohne passendes Feld
@@ -90,6 +92,8 @@ def spalten_namen(modellname: str) -> dict[str, str]:
     if modellname == "Sportstaette":
         for k in ("anlagen", "sportanlagen"):
             namen.setdefault(k, "anlagen")
+    if modellname == "Sportkomplex":
+        namen.setdefault(MITGLIEDER, MITGLIEDER)
     return namen
 
 
@@ -161,6 +165,13 @@ def _staette_id(name: str, lage: dict | None) -> str:
     return str(uuid.uuid5(_STAETTEN_NAMENSRAUM, schluessel))
 
 
+def _komplex_id(name: str, adresse: dict | None) -> str:
+    """Feste ID für einen neuen Sportkomplex ohne ID: aus Name und Ort."""
+    a = adresse or {}
+    schluessel = f"{_norm(name)}|{_norm(a.get('plz') or '')}|{_norm(a.get('ort') or '')}"
+    return str(uuid.uuid5(_KOMPLEX_NAMENSRAUM, schluessel))
+
+
 def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
     """CSV → Datensätze für bestand.schreibe_bestand, dazu ein Bericht.
 
@@ -182,13 +193,28 @@ def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
         "sportstaetteid" in normiert and "name" not in normiert
     )
     hat_staette = {staetten_namen.get(k) for k in normiert} & {"kategorie", "lage.lat", "lage.lon"}
+    ist_komplex = not ist_anlagen and MITGLIEDER in normiert
     ist_org = (
-        not ist_anlagen and not hat_staette and normiert & {"typ", "art"} and "name" in normiert
+        not ist_anlagen
+        and not ist_komplex
+        and not hat_staette
+        and normiert & {"typ", "art"}
+        and "name" in normiert
     )
-    b.art = "sportanlagen" if ist_anlagen else "organisationen" if ist_org else "sportstaetten"
-    modellname = {"sportanlagen": "Sportanlage", "organisationen": "Organisation"}.get(
-        b.art, "Sportstaette"
+    b.art = (
+        "sportanlagen"
+        if ist_anlagen
+        else "sportkomplexe"
+        if ist_komplex
+        else "organisationen"
+        if ist_org
+        else "sportstaetten"
     )
+    modellname = {
+        "sportanlagen": "Sportanlage",
+        "sportkomplexe": "Sportkomplex",
+        "organisationen": "Organisation",
+    }.get(b.art, "Sportstaette")
     namen = spalten_namen(modellname)
     zuordnung: dict[
         str, tuple[str, str | None]
@@ -227,6 +253,9 @@ def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
             if pfad_ == "anlagen":
                 d["anlagen"] = atlas.anlagen_aus(_liste(text))
                 continue
+            if pfad_ == MITGLIEDER:
+                d[MITGLIEDER] = _liste(text)
+                continue
             p = eigenschaft(pfad_)
             try:
                 if schluessel:  # eine Spalte je Wert (alter Atlas): Zahl
@@ -256,6 +285,10 @@ def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
         elif lage:
             b.nicht_lesbar["lage"] += 1
             d.pop("lage")
+        if ist_komplex:
+            d.setdefault("id", _komplex_id(d.get("name", ""), d.get("adresse")))
+            datensaetze.append(d)
+            continue
         d.setdefault("id", _staette_id(d.get("name", ""), d.get("lage")))
         datensaetze.append(d)
     datensaetze += [{"id": sid, "anlagen": a, NUR_ANLAGEN: True} for sid, a in je_staette.items()]
@@ -272,7 +305,11 @@ def _vorlage_spalten(modellname: str) -> list[str]:
             continue
         ref = _art(p).get("$ref", "").rsplit("/", 1)[-1]
         out += list(_eigenschaften(ref)) if ref else [k]
-    return out + (["anlagen"] if modellname == "Sportstaette" else [])
+    return (
+        out
+        + (["anlagen"] if modellname == "Sportstaette" else [])
+        + ([MITGLIEDER] if modellname == "Sportkomplex" else [])
+    )
 
 
 def _zelle(v) -> str:
@@ -284,7 +321,8 @@ def _zelle(v) -> str:
 
 
 def schreibe_vorlage(ordner: Path) -> list[Path]:
-    """vorlage_sportstaetten.csv, _sportanlagen.csv, _organisationen.csv: alle Spalten aus dem Modell
+    """vorlage_sportstaetten.csv, _sportanlagen.csv, _sportkomplexe.csv, _organisationen.csv: alle
+    Spalten aus dem Modell
     und eine Beispielzeile. Mit ; getrennt und mit BOM, damit Excel sie richtig öffnet."""
     ordner = Path(ordner)
     ordner.mkdir(parents=True, exist_ok=True)
@@ -297,9 +335,17 @@ def schreibe_vorlage(ordner: Path) -> list[Path]:
     }
     pfade = []
     beispiele["Organisation"] = modell.Organisation.model_config["json_schema_extra"]["examples"][0]
+    beispiele["Sportkomplex"] = {
+        **modell.Sportkomplex.model_config["json_schema_extra"]["examples"][0],
+        MITGLIEDER: [
+            modell.Sportstaette.model_config["json_schema_extra"]["examples"][0]["id"],
+            "2b7e41d0",
+        ],
+    }
     for modellname, datei in (
         ("Sportstaette", "sportstaetten"),
         ("Sportanlage", "sportanlagen"),
+        ("Sportkomplex", "sportkomplexe"),
         ("Organisation", "organisationen"),
     ):
         spalten = _vorlage_spalten(modellname)
