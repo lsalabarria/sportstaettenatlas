@@ -313,10 +313,10 @@ Eine Einheit einer Sportstätte, z. B. ein Großspielfeld, eine Halle oder ein B
 ### Sportkomplex (`<Kreis>/sportkomplexe/<id>.json`)
 
 Optionale Klammer um mehrere Sportstätten an einem Ort, z. B. ein Sportzentrum mit
-    Halle, Stadion und Freibad (daten/<LAND>/<Kreis>/sportkomplexe/<id>.json). Die
-    Sportstätten verweisen in `sportkomplex` auf ihn; Eigentümer, Betreiber und Anlagen
-    stehen weiter bei den Sportstätten. Nur anlegen, wenn mindestens zwei Sportstätten
-    dazugehören.
+Halle, Stadion und Freibad (daten/<LAND>/<Kreis>/sportkomplexe/<id>.json). Die
+Sportstätten verweisen in `sportkomplex` auf ihn; Eigentümer, Betreiber und Anlagen
+stehen weiter bei den Sportstätten. Nur anlegen, wenn mindestens zwei Sportstätten
+dazugehören.
 
 | Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
 |---|---|---|---|---|---|
@@ -341,12 +341,12 @@ Optionale Klammer um mehrere Sportstätten an einem Ort, z. B. ein Sportzentrum 
 }
 ```
 
-### Organisation (`organisationen/<id>.json`)
+### Organisation (`organisationen/<LAND>/<Art>/<id>.json`)
 
 Verein, Kommune, Verband, Unternehmen … als Eigentümer, Betreiber oder Nutzer von
-    Sportstätten (daten/organisationen/<LAND>/<Ordner der Art>/<id>.json). Sportstätten nennen sie in
-    `eigentuemer`, `betreiber` und `nutzer` beim Namen; auch die weiteren Schreibweisen
-    gelten. Keine Personen, keine Kontaktdaten.
+Sportstätten (daten/organisationen/<LAND>/<Ordner der Art>/<id>.json). Sportstätten nennen sie in
+`eigentuemer`, `betreiber` und `nutzer` beim Namen; auch die weiteren Schreibweisen
+gelten. Keine Personen, keine Kontaktdaten.
 
 | Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
 |---|---|---|---|---|---|
@@ -378,14 +378,17 @@ Was das Formular „Vorschlag“ als JSON in die LimeSurvey-Frage „data“ sch
 | Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
 |---|---|---|---|---|---|
 | `version` | Version des Formats | Auswahl |  | „1“ |  |
-| `art` | Art | Auswahl | ja | „neu“, „aenderung“, „anlagen“, „organisation“ | neu: neue Sportstätte mit Anlagen; aenderung: Angaben einer Sportstätte; anlagen: Sportanlagen einer Sportstätte; organisation: Organisation anlegen, ändern oder löschen |
+| `art` | Art | Auswahl | ja | „neu“, „aenderung“, „anlagen“, „organisation“, „sportkomplex“ | neu: neue Sportstätte mit Anlagen; aenderung: Angaben einer Sportstätte; anlagen: Sportanlagen einer Sportstätte; organisation: Organisation anlegen, ändern oder löschen; sportkomplex: Sportkomplex anlegen, ändern oder auflösen |
 | `sportstaette_id` | Sportstätte | Text |  |  | ID der geänderten Sportstätte |
 | `sportstaette` | Angaben der Sportstätte | Sportstaette |  |  | vollständig, nach der Änderung (bei neu und aenderung) |
 | `anlagen` | Sportanlagen | Liste von Sportanlage |  |  | alle Anlagen nach der Änderung (bei neu und anlagen); vorhandene mit ihrer Kurz-ID (Anfang der UUID), neue ohne |
 | `entfernte_anlagen` | Entfernte Sportanlagen | Liste von Text |  |  | Kurz-IDs |
 | `organisation_id` | Organisation | Text |  |  | ID der geänderten oder gelöschten Organisation (fehlt bei einer neuen) |
 | `organisation` | Angaben der Organisation | Organisation |  |  | vollständig, nach der Änderung (nicht beim Löschen) |
-| `loeschen` | Löschen | boolean |  |  | die Organisation aus dem Verzeichnis entfernen |
+| `sportkomplex_id` | Sportkomplex | Text |  |  | ID des geänderten oder aufgelösten Sportkomplexes (fehlt bei einem neuen) |
+| `sportkomplex` | Angaben des Sportkomplexes | Sportkomplex |  |  | vollständig, nach der Änderung (nicht beim Auflösen) |
+| `sportstaetten` | Sportstätten des Sportkomplexes | Liste von Text |  |  | IDs aller Sportstätten nach der Änderung (mindestens zwei) |
+| `loeschen` | Löschen | boolean |  |  | die Organisation aus dem Verzeichnis entfernen bzw. den Sportkomplex auflösen |
 | `geaendert` | Geänderte Felder | Liste von Text |  |  |  |
 | `gemeinde` | Gemeinde | Text |  |  | Regionalschlüssel der Gemeinde an der Lage |
 | `dubletten_geprueft` | Geprüfte Doppelungen | Liste von Text |  |  | IDs ähnlicher Sportstätten, die als verschieden bestätigt wurden |
