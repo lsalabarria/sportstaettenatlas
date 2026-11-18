@@ -59,10 +59,14 @@ uv run sportstaettenatlas sportkomplex 1fb06acd --entfernen
 
 Die Datei liegt in `<Kreis>/sportkomplexe/` des Kreises, in dem die meisten seiner
 Sportstätten liegen, oder – mit eigener `lage` – in dem seiner Lage; `einordnen` verschiebt sie.
-Adresse und Lage danach von Hand in der Datei ergänzen. Im Formular der Webseite steht unter
-„Sportkomplex“ eine Auswahl der Komplexe in der Nähe (3 km); einen neuen schlägt man in der
-Anmerkung vor. Einen Sportkomplex löschen: die Datei entfernen und `sportkomplex` aus den
-Sportstätten nehmen (`--entfernen`).
+Adresse und Lage danach von Hand in der Datei ergänzen. Viele auf einmal: als CSV mit der
+Vorlage `vorlage_sportkomplexe.csv` ([CSV einlesen](#csv-einlesen)). Einen Sportkomplex
+löschen: die Datei entfernen und `sportkomplex` aus den Sportstätten nehmen (`--entfernen`).
+
+Auf der Webseite: Im Formular einer Sportstätte steht unter „Sportkomplex“ eine Auswahl der
+Komplexe in der Nähe (3 km). Die Art „Sportkomplex“ des Vorschlags legt einen neuen an, ändert
+Name, Adresse und Sportstätten eines vorhandenen oder löst ihn auf; `vorschlaege` trägt das
+direkt ein.
 
 ## Ändern
 
@@ -86,6 +90,10 @@ JSON-Dateien. `--probe` zeigt vorher, welche Spalte in welches Feld geht. Erkann
   Sportanlagen nennen),
 - eine Tabelle der **Sportanlagen** (eine Zeile je Anlage, mit `sportstaette_id`; `id` für
   vorhandene, auch die Kurz-ID von der Webseite),
+- eine Tabelle der **Sportkomplexe** (eine Zeile je Komplex mit `name` und der Spalte
+  `sportstaetten`: die IDs seiner Sportstätten, auch die Kurz-ID; ohne `id` folgt sie aus Name
+  und Ort, gleiche Zeile, gleiche ID). Die Sportstätten bekommen den Komplex in `sportkomplex`,
+  in jedem Modus; herausgenommen wird keine.
 - eine Tabelle der **Organisationen** (`name` und `typ` bzw. „Art“, ohne Kategorie und Lage).
 
 **Spalten** heißen wie das Feld (`plz` oder `adresse.plz`) oder wie seine Beschriftung („PLZ“);
