@@ -113,8 +113,7 @@ function kopiere(text) {
 }
 karte.on("contextmenu", e => {
   const t = `${e.latlng.lat.toFixed(6)}, ${e.latlng.lng.toFixed(6)}`;
-  const link = `<a href="https://www.google.com/maps?q=${encodeURIComponent(t)}" `
-    + `target="_blank" rel="noopener">in Google Maps öffnen</a>`;
+  const link = kartenLinks(e.latlng.lat, e.latlng.lng);
   const popup = L.popup({ maxWidth: 300 }).setLatLng(e.latlng)
     .setContent(`<b class="koord">${t}</b><br>kopiere …`).openOn(karte);
   const hier = ANSICHTEN.vorschlag ? `<br><a href="#" data-vorschlag-hier="${e.latlng.lat},${e.latlng.lng}">`

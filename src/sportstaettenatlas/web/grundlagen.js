@@ -185,13 +185,29 @@ function info(layer, html) {
   layer.on("popupopen", () => layer.closeTooltip && layer.closeTooltip());
   return layer;
 }
+// Amtliches Luftbild (DOP20, LVermGeo RLP, dl-de/by-2-0): Bild von etwa 200 × 200 m mit der
+// Stelle in der Mitte, direkt vom WMS des Landes
+const LUFTBILD_WMS = "https://geo4.service24.rlp.de/wms/rp_dop20.fcgi";
+function luftbildUrl(lat, lon, halbeSeiteM = 100) {
+  const dLat = halbeSeiteM / 111320, dLon = dLat / Math.cos(lat * Math.PI / 180);
+  const bbox = [lon - dLon, lat - dLat, lon + dLon, lat + dLat].map(x => x.toFixed(6)).join(",");
+  return `${LUFTBILD_WMS}?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=rp_dop20&STYLES=`
+    + `&SRS=EPSG:4326&BBOX=${bbox}&WIDTH=1000&HEIGHT=1000&FORMAT=image/jpeg`;
+}
+// Links zu Google Maps und zum Luftbild für eine Stelle
+function kartenLinks(lat, lon) {
+  const t = `${(+lat).toFixed(6)}, ${(+lon).toFixed(6)}`;
+  return `<a href="https://www.google.com/maps?q=${encodeURIComponent(t)}" target="_blank" `
+    + `rel="noopener">Google Maps</a> · <a href="${luftbildUrl(+lat, +lon)}" target="_blank" `
+    + `rel="noopener" title="Amtliches Luftbild (DOP20, © GeoBasis-DE / LVermGeoRP, dl-de/by-2-0), `
+    + `etwa 200 × 200 m, die Stelle in der Mitte">Luftbild</a>`;
+}
 // Koordinaten im Format von Google Maps ("Breite, Länge"), zum Kopieren
 function koord(lat, lon) {
   if (leer(lat) || leer(lon)) return "";
   const t = `${(+lat).toFixed(6)}, ${(+lon).toFixed(6)}`;
   return `<tr><td>Koordinaten</td><td><span class="koord">${t}</span> `
-    + `<a href="https://www.google.com/maps?q=${encodeURIComponent(t)}" target="_blank" `
-    + `rel="noopener">Google Maps</a></td></tr>`;
+    + `${kartenLinks(lat, lon)}</td></tr>`;
 }
 function bboxVon(geom) {
   let w = 180, s = 90, o = -180, n = -90;

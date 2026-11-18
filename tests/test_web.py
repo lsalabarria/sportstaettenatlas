@@ -162,6 +162,23 @@ def test_ansicht_laedt_ohne_fehler(oeffne, hash_):
     assert page.title()
 
 
+def test_koordinaten_mit_google_maps_und_luftbild(oeffne):
+    page = oeffne()
+    zeile = page.evaluate("koord(50.4555, 7.2885)")
+    assert "google.com/maps?q=50.455500%2C%207.288500" in zeile and ">Luftbild</a>" in zeile
+    url = page.evaluate("luftbildUrl(50.4555, 7.2885)")
+    assert url.startswith("https://geo4.service24.rlp.de/wms/rp_dop20.fcgi?")
+    bbox = [
+        float(x)
+        for x in urllib.parse.parse_qs(urllib.parse.urlsplit(url).query)["BBOX"][0].split(",")
+    ]
+    assert (
+        abs((bbox[0] + bbox[2]) / 2 - 7.2885) < 1e-6
+        and abs((bbox[1] + bbox[3]) / 2 - 50.4555) < 1e-6
+    )
+    assert round((bbox[3] - bbox[1]) * 111320) == 200  # etwa 200 m hoch
+
+
 def test_uebersicht_zeigt_bestand_und_befuellung(oeffne):
     page = oeffne("#ansicht=uebersicht")
     titel = page.locator("#seite-uebersicht h2.teil-titel").all_inner_texts()
