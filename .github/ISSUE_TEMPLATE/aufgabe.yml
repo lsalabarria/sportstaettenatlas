@@ -1,0 +1,41 @@
+# Vorlage für geplante Arbeit am Projekt: neue Funktion, Umbau, Datenpflege.
+name: Aufgabe
+description: Etwas soll neu entstehen oder geändert werden – mit Begründung und Plan.
+title: "[Aufgabe] "
+labels: ["aufgabe"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Tickets sind öffentlich** – bitte keine E-Mail-Adressen, Telefonnummern, Zugangsdaten
+        oder andere persönliche Daten eintragen.
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Warum ist das nötig? Welches Problem löst es, wem hilft es?
+      placeholder: z. B. Doppelte Sportstätten fallen erst beim Auswerten auf …
+    validations:
+      required: true
+  - type: textarea
+    id: technisch
+    attributes:
+      label: Technische Informationen
+      description: >-
+        Betroffene Dateien, Befehle oder Teile der Webseite, Datenquellen, Abhängigkeiten,
+        bekannte Grenzen. Code und Ausgaben am besten in ```-Blöcke setzen.
+      placeholder: |
+        - betrifft: src/sportstaettenatlas/validate.py, results/regelverstoesse.csv
+        - Daten: …
+  - type: textarea
+    id: umsetzung
+    attributes:
+      label: Umsetzung
+      description: Die Schritte als Checkliste – sie lässt sich im Ticket abhaken.
+      value: |
+        - [ ]
+        - [ ]
+        - [ ] Tests ergänzt (`uv run pytest`)
+        - [ ] README bzw. daten/README.md angepasst
+    validations:
+      required: true
