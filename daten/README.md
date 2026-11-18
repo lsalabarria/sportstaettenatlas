@@ -12,6 +12,8 @@ RP/                                       Land
       ├─ 9c24bfa6-…_meta.json             ihre Angaben: Name, Kategorie, Adresse, Lage …
       ├─ 17abb3c4-….json                  eine Sportanlage, z. B. ein Großspielfeld
       └─ 1fb06acd-….json                  eine Sportanlage, z. B. eine Rundlaufbahn
+   └─ sportkomplexe/                      nur in Kreisen, die Sportkomplexe haben
+      └─ b1f3e6a2-….json                  ein Sportkomplex (Name, Adresse, Lage)
 organisationen/                           Verzeichnis der Organisationen
 └─ 3f0c2a8e-….json                        ein Verein, eine Gemeinde, ein Verband …
 ```
@@ -33,8 +35,34 @@ organisationen/                           Verzeichnis der Organisationen
 - Der **Kreis-Ordner** ergibt sich aus der Lage (Verwaltungsgebiete VG250). Sportstätten
   außerhalb von Rheinland-Pfalz liegen in `ohne-kreis`; nach einer Änderung der Lage bringt
   `uv run sportstaettenatlas einordnen` den Ordner in den richtigen Kreis.
-- **Sportkomplexe** (mehrere Sportstätten an einem Ort) bildet das Modell nicht ab: ein
-  gemischtes Gelände ist eine Sportstätte.
+- Ein **Sportkomplex** fasst mehrere Sportstätten an einem Ort zusammen, z. B. ein
+  Sportzentrum mit Halle, Stadion und Freibad. Er ist optional: Die meisten Sportstätten
+  gehören zu keinem. Die Sportstätten verweisen in `sportkomplex` auf seine ID; er selbst hat
+  nur Name, Adresse und (optional) Lage – Eigentümer, Betreiber und Anlagen bleiben bei den
+  Sportstätten. Siehe [Sportkomplexe](#sportkomplexe).
+
+## Sportkomplexe
+
+Ein Sportkomplex lohnt sich nur, wenn **mindestens zwei** Sportstätten zusammengehören –
+`pruefen` meldet kleinere („Kleiner Sportkomplex“) und solche, deren Sportstätten mehr als
+1 km auseinanderliegen. Ein gemischtes Gelände mit einem Betreiber bleibt eine Sportstätte mit
+mehreren Anlagen.
+
+```bash
+# neu anlegen und zuordnen (IDs oder ihr Anfang, ab 8 Zeichen)
+uv run sportstaettenatlas sportkomplex 9c24bfa6 17abb3c4 --name "Sportzentrum Musterdorf"
+# weitere Sportstätte dazu; mit --name auch umbenennen
+uv run sportstaettenatlas sportkomplex 1fb06acd --zu b1f3e6a2
+# herausnehmen
+uv run sportstaettenatlas sportkomplex 1fb06acd --entfernen
+```
+
+Die Datei liegt in `<Kreis>/sportkomplexe/` des Kreises, in dem die meisten seiner
+Sportstätten liegen, oder – mit eigener `lage` – in dem seiner Lage; `einordnen` verschiebt sie.
+Adresse und Lage danach von Hand in der Datei ergänzen. Im Formular der Webseite steht unter
+„Sportkomplex“ eine Auswahl der Komplexe in der Nähe (3 km); einen neuen schlägt man in der
+Anmerkung vor. Einen Sportkomplex löschen: die Datei entfernen und `sportkomplex` aus den
+Sportstätten nehmen (`--entfernen`).
 
 ## Ändern
 
@@ -127,6 +155,7 @@ Der Standort, z. B. ein Sportpark, ein Schulsportzentrum oder ein Freibad.
 | `schulsport` | Schulsport | Auswahl [JaNein](#auswahllisten) |  |  |  |
 | `zuschauerplaetze` | Zuschauerplätze | ganze Zahl |  | ≥ 0; ≤ 100000 |  |
 | `betriebsstatus` | Betriebsstatus | Auswahl [Betriebsstatus](#auswahllisten) |  |  |  |
+| `sportkomplex` | Sportkomplex | Text |  | Muster `^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$` | ID eines Sportkomplexes (daten/<LAND>/<Kreis>/sportkomplexe/), nur wenn mehrere Sportstätten an einem Ort zusammengehören |
 | `eigentuemer` | Eigentümer | Text |  | höchstens 200 Zeichen | Name einer Organisation (Verzeichnis daten/organisationen/), keine Personen |
 | `eigentuemer_typ` | Art des Eigentümers | Auswahl [Organisationstyp](#auswahllisten) |  | braucht `eigentuemer` |  |
 | `betreiber` | Betreiber | Text |  | höchstens 200 Zeichen | Name einer Organisation (Verzeichnis daten/organisationen/), keine Personen |
@@ -270,6 +299,37 @@ Eine Einheit einer Sportstätte, z. B. ein Großspielfeld, eine Halle oder ein B
   "flutlicht": "ja",
   "baukosten": 1200000,
   "waehrung": "DM"
+}
+```
+
+### Sportkomplex (`<Kreis>/sportkomplexe/<id>.json`)
+
+Optionale Klammer um mehrere Sportstätten an einem Ort, z. B. ein Sportzentrum mit
+    Halle, Stadion und Freibad (daten/<LAND>/<Kreis>/sportkomplexe/<id>.json). Die
+    Sportstätten verweisen in `sportkomplex` auf ihn; Eigentümer, Betreiber und Anlagen
+    stehen weiter bei den Sportstätten. Nur anlegen, wenn mindestens zwei Sportstätten
+    dazugehören.
+
+| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
+|---|---|---|---|---|---|
+| `id` | ID | Text |  |  | UUID, zugleich der Dateiname (in der Datei Pflicht) |
+| `name` | Name | Text | ja | höchstens 200 Zeichen; nicht leer |  |
+| `adresse` | Adresse | Adresse |  |  |  |
+| `lage` | Lage | Lage |  |  | Mittelpunkt; ohne Lage bestimmen die Sportstätten den Kreis-Ordner |
+
+```json
+{
+  "id": "b1f3e6a2-4c8d-4e1f-9a7b-2d5c0e8f1a36",
+  "name": "Sportzentrum Musterdorf",
+  "adresse": {
+    "strasse": "Am Weg",
+    "plz": "56068",
+    "ort": "Koblenz"
+  },
+  "lage": {
+    "lon": 7.5941,
+    "lat": 50.3515
+  }
 }
 ```
 
