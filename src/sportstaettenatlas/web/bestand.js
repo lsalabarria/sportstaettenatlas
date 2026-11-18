@@ -174,13 +174,14 @@ function ansichtBestand(fc) {
         + `</div><div class="knoepfe"><button type="button" data-keine="sp">Auswahl aufheben</button></div>`
         + `<div class="hinweis">Ohne Auswahl: alle. Mit Auswahl: Sportstätten mit mindestens einer davon.</div></details>`
         : "")
-      + (SPORTKOMPLEXE.size ? `<details><summary>Sportkomplexe <span id="b-ko-n"></span></summary>`
+      + `<details><summary>Sportkomplexe <span id="b-ko-n"></span></summary>`
         + `<label><input type="radio" name="b-ko" data-ko="" checked>alle, mit und ohne Sportkomplex</label>`
         + `<label><input type="radio" name="b-ko" data-ko="${IN_KOMPLEX}">nur in einem Sportkomplex${nSpan("ko:" + IN_KOMPLEX)}</label>`
         + `<input type="search" placeholder="Sportkomplex suchen" aria-label="Sportkomplex suchen">`
         + `<div class="ko-liste">` + komplexeNachName().map(k => `<label data-text="${esc(k.name.toLowerCase())}">`
           + `<input type="radio" name="b-ko" data-ko="${esc(k.id)}">${esc(k.name)}${nSpan("ko:" + k.id)}</label>`).join("")
-        + `</div><div class="hinweis">Mehrere Sportstätten an einem Ort, z. B. ein Sportzentrum</div></details>` : "")
+          + (SPORTKOMPLEXE.size ? "" : `<div class="hinweis">Noch keine Sportkomplexe eingetragen.</div>`)
+        + `</div><div class="hinweis">Mehrere Sportstätten an einem Ort, z. B. ein Sportzentrum</div></details>`
       + `<div class="hinweis">Klick auf einen Punkt: Angaben bleiben stehen · Rechtsklick: Koordinaten</div>`;
     zahlEl = div.querySelector("#b-zahl");
     // Häkchen: bei jeder Änderung `setze(Häkchen)` aufrufen, dann Karte und Zähler erneuern
@@ -486,8 +487,8 @@ function ansichtUebersicht(bestand) {
       + kachel("Sportstätten", zahl(n), ohneAnlagen ? `${zahl(ohneAnlagen)} ohne eingetragene Sportanlage` : "alle mit Sportanlagen")
       + kachel("Sportanlagen", zahl(na), n ? `Ø ${(na / n).toLocaleString("de-DE",
         { maximumFractionDigits: 1 })} je Sportstätte` : "")
-      + (SPORTKOMPLEXE.size ? kachel("Sportkomplexe", zahl(jeKomplex.length),
-        `mit ${zahl(imKomplex.length)} Sportstätten (${prozent(imKomplex.length, n)} %)`) : "")
+      + kachel("Sportkomplexe", zahl(jeKomplex.length), jeKomplex.length
+        ? `mit ${zahl(imKomplex.length)} Sportstätten (${prozent(imKomplex.length, n)} %)` : "noch keine eingetragen")
       + kachel("Sportarten", zahl(sportarten.size), "verschiedene")
       + kachel("Vereine", zahl(betr.Verein.size), "als Betreiber (mit angegebener Art)")
       + kachel("Kommunen", zahl(betr.Kommune.size), "als Betreiber (mit angegebener Art)")

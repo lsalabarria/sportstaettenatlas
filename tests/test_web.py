@@ -220,6 +220,9 @@ def test_uebersicht_zeigt_bestand_und_befuellung(oeffne):
     )
     assert kacheln["Sportstätten"] == "3" and kacheln["Sportanlagen"] == "3"
     assert kacheln["Sportkomplexe"] == "1"
+    # auch ohne Sportkomplexe: Auswahl in der Liste und Kachel bleiben
+    page.evaluate("SPORTKOMPLEXE.clear()")
+    assert 'data-f="komplex"' in page.evaluate("komplexAuswahlHtml('')")
 
 
 def test_liste_filtert_nach_sportart(oeffne):

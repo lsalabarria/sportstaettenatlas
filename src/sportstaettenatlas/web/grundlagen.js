@@ -123,7 +123,6 @@ function komplexeNachName() {
   return [...SPORTKOMPLEXE.values()].sort((a, b) => a.name.localeCompare(b.name, "de"));
 }
 function komplexAuswahlHtml(wert) {
-  if (!SPORTKOMPLEXE.size) return "";
   const opt = (v, text) => `<option value="${esc(v)}"${v === wert ? " selected" : ""}>${esc(text)}</option>`;
   return `<select data-f="komplex" aria-label="Sportkomplex">${opt("", "alle, mit und ohne Sportkomplex")}`
     + opt(IN_KOMPLEX, "nur in einem Sportkomplex")
