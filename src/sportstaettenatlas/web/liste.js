@@ -9,7 +9,7 @@ function ansichtListe(bestand) {
   const el = document.getElementById("seite-liste");
   const start = new URLSearchParams(location.hash.slice(1));
   const z = {  // Zustand, landet in der Adresse
-    teil: ["staetten", "anlagen", "betreiber"].includes(start.get("teil")) ? start.get("teil") : "staetten",
+    teil: ["staetten", "anlagen", "komplexe", "betreiber"].includes(start.get("teil")) ? start.get("teil") : "staetten",
     q: start.get("q") || "", sportart: start.get("sportart") || "", kategorie: start.get("kategorie") || "",
     typ: start.get("typ") || "", sort: start.get("sort") || "", ab: start.get("ab") === "1",
     id: start.get("id") || "", anlage: start.get("anlage") || "", leere: false,
@@ -161,14 +161,43 @@ function ansichtListe(bestand) {
       + (anlagen || `<div class="hinweis">Keine Sportanlagen eingetragen.</div>`);
   }
 
+  // --- Teil „Sportkomplexe“: je Komplex seine Sportstätten im Gebiet; Klick zeigt sie in der Liste ---
+  function komplexTabelle() {
+    const w = worte();
+    const zeilen = komplexeNachName().map(k => {
+      const st = k.mitglieder.map(m => NACH_ID.get(m.id)).filter(e => e && imGebiet(e.p.ars));
+      return { k, st, kat: [...new Set(st.map(e => e.kat))].sort((a, b) => a.localeCompare(b, "de")) };
+    }).filter(x => x.st.length && (!w.length || w.every(t => suchtext([x.k.name, (x.k.adresse || {}).ort,
+      ...x.st.map(e => e.p.name)]).includes(t))));
+    const such = `<div class="reiter filter-zeile"><input type="search" data-f="q" value="${esc(z.q)}" `
+      + `placeholder="Sportkomplex oder Sportstätte suchen" aria-label="Suchen"></div>`;
+    if (!SPORTKOMPLEXE.size) {
+      return such + `<p class="unter">Noch keine Sportkomplexe eingetragen. Ein Sportkomplex fasst mehrere `
+        + `Sportstätten an einem Ort zusammen; vorschlagen über „Vorschlag“ → „Sportkomplex“.</p>`;
+    }
+    return such + `<p class="unter">${zahl(zeilen.length)} Sportkomplexe · Klick auf eine Zeile: ihre Sportstätten</p>`
+      + `<table class="tabelle liste"><thead><tr><th>Name</th><th>Ort</th><th class="zahl">Sportstätten</th>`
+      + `<th>Kategorien</th><th></th></tr></thead><tbody>`
+      + (zeilen.map(({ k, st, kat }) => `<tr class="zeile" data-komplex="${esc(k.id)}"><td>${esc(k.name)}</td>`
+        + `<td class="klein">${esc((k.adresse || {}).ort || st[0].p.ort || "")}</td><td class="zahl">${zahl(st.length)}</td>`
+        + `<td class="klein">${esc(kat.join(", "))}</td>`
+        + `<td><a data-komplex-karte="${esc(k.id)}" title="Auf der Karte zeigen">Karte</a></td></tr>`).join("")
+        || `<tr><td colspan="5" class="klein">Keine Einträge.</td></tr>`)
+      + `</tbody></table>`;
+  }
+
   // --- Zeichnen ---
   function zeichne() {
     gezeichnet = true;
     const zaehlen = { staetten: staettenZeilen, anlagen: anlagenZeilen };
-    const reiter = [["staetten", "Sportstätten"], ["anlagen", "Sportanlagen"], ["betreiber", "Organisationen"]]
+    const reiter = [["staetten", "Sportstätten"], ["anlagen", "Sportanlagen"], ["komplexe", "Sportkomplexe"],
+      ["betreiber", "Organisationen"]]
       .map(([k, t]) => `<button type="button" data-teil="${k}" aria-pressed="${z.teil === k}">${t}</button>`).join("");
     let h = `<div class="inhalt liste-inhalt"><h2>Liste: ${esc(gebietName())}</h2><div class="reiter teile">${reiter}</div>`;
-    if (z.teil === "betreiber") {
+    if (z.teil === "komplexe") {
+      h += komplexTabelle() + `</div>`;
+      el.innerHTML = h;
+    } else if (z.teil === "betreiber") {
       h += `<div id="l-betreiber"></div></div>`;
       el.innerHTML = h;
       el.querySelector("#l-betreiber").replaceWith(betreiber.el);
@@ -224,6 +253,10 @@ function ansichtListe(bestand) {
       return;
     }
     if (t.closest("[data-mehr]")) { zeigen += LISTE_SCHRITT; zeichne(); return; }
+    const koKarte = t.closest("[data-komplex-karte]");
+    if (koKarte) { ev.preventDefault(); bestand.zeigeKomplex(koKarte.dataset.komplexKarte); return; }
+    const ko = t.closest("tr[data-komplex]");
+    if (ko) { z.teil = "staetten"; z.komplex = ko.dataset.komplex; z.q = ""; z.sort = ""; zeigen = LISTE_SCHRITT; zeichne(); return; }
     if (t.closest("[data-zuruecksetzen]")) { z.q = z.sportart = z.kategorie = z.typ = z.komplex = ""; zeichne(); return; }
     if (t.closest("[data-zu]")) { z.id = z.anlage = ""; zeichne(); return; }
     const th = t.closest("th[data-sort]");

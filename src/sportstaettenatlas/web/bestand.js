@@ -381,6 +381,15 @@ function ansichtBestand(fc) {
         if (pkte.length) karte.fitBounds(L.latLngBounds(pkte).pad(0.15), { maxZoom: 16 });
       });
     },
+    // nur die Sportstätten eines Sportkomplexes zeigen und auf sie zoomen
+    zeigeKomplex(id) {
+      zeige("bestand").then(() => {
+        komplexWahl = id;
+        zeigeWahl(); aktualisiere();
+        const pkte = eintraege.filter(e => e.an).map(e => [e.lat, e.lon]);
+        if (pkte.length) karte.fitBounds(L.latLngBounds(pkte).pad(0.3), { maxZoom: 18 });
+      });
+    },
     zeigeEintrag(e) {
       zeige("bestand").then(() => {
         karte.setView([e.lat, e.lon], Math.max(karte.getZoom(), 16));
@@ -483,7 +492,7 @@ function ansichtUebersicht(bestand) {
     let h = `<div class="inhalt"><h2>Übersicht: ${esc(gebietName())}</h2>`
       + `<section class="teil"><h2 class="teil-titel">Bestand</h2>`
       + `<p class="unter">Was der Datenbestand (Ordner <code>daten/</code>) enthält: Sportstätten, `
-      + `die Sportanlagen darin und wer sie betreibt</p><div class="kacheln">`
+      + `die Sportanlagen darin und wer sie betreibt</p><div class="kacheln drei">`
       + kachel("Sportstätten", zahl(n), ohneAnlagen ? `${zahl(ohneAnlagen)} ohne eingetragene Sportanlage` : "alle mit Sportanlagen")
       + kachel("Sportanlagen", zahl(na), n ? `Ø ${(na / n).toLocaleString("de-DE",
         { maximumFractionDigits: 1 })} je Sportstätte` : "")

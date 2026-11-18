@@ -111,6 +111,8 @@ table.tabelle { border-collapse: collapse; width: 100%; }
 .knopf2 { font: inherit; font-size: 13px; border: 1px solid #185FA5; color: #185FA5;
           background: #fff; border-radius: 4px; padding: 3px 10px; cursor: pointer; margin: 4px 0; }
 .kacheln { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; }
+.kacheln.drei { grid-template-columns: repeat(3, 1fr); }  /* sechs Kacheln: zwei Zeilen zu je drei */
+@media (max-width: 640px) { .kacheln.drei { grid-template-columns: repeat(2, 1fr); } }
 .kachel { border: 1px solid #e3e3e3; border-radius: 8px; padding: 12px 14px; }
 .kachel .label { color: #555; font-size: 13px; }
 .kachel .wert { font-size: 30px; font-weight: 600; font-variant-numeric: tabular-nums;

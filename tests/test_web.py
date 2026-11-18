@@ -244,6 +244,13 @@ def test_nach_sportkomplex_filtern(oeffne):
     namen = page.locator("table.liste tr.zeile td:first-child").all_inner_texts()
     assert sorted(namen) == ["Sportplatz Berg", "Tennisanlage Bergen"]
     assert "komplex=dddddddd" in page.evaluate("location.hash")
+    # Teil „Sportkomplexe“: Klick auf eine Zeile zeigt ihre Sportstätten
+    page.click('[data-teil="komplexe"]')
+    zeilen = page.locator("table.liste tr.zeile").all_inner_texts()
+    assert len(zeilen) == 1 and "Sportzentrum Berg" in zeilen[0] and "\t2\t" in zeilen[0]
+    page.click("table.liste tr[data-komplex]")
+    assert page.locator("table.liste tr.zeile").count() == 2
+    assert page.input_value('[data-f="komplex"]') == KOMPLEX["id"]
 
     page = oeffne()  # Karte
     page.locator("details:has(#b-ko-n) summary").click()

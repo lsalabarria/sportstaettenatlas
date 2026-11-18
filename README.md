@@ -147,10 +147,10 @@ liefert den Ordner aus, ohne Server und Datenbank. Lokal ansehen: `seite --vorsc
 
 | Reiter | Inhalt |
 |---|---|
-| **Karte** | ein Punkt je Sportstätte; Filter nach Sportanlagen (nach Gruppen), Kategorie, Art des Betreibers und Sportarten; das Fenster einer Sportstätte listet ihre Anlagen |
-| **Liste** | alle Sportstätten, Sportanlagen bzw. Organisationen (als Eigentümer, Betreiber oder Nutzer), filterbar nach Sportart, Kategorie, Typ und Text, sortierbar (auch nach Befüllung); ein Klick zeigt alle Angaben, „Karte“ springt zum Punkt |
+| **Karte** | ein Punkt je Sportstätte; Filter nach Sportanlagen (nach Gruppen), Kategorie, Art des Betreibers, Sportarten und Sportkomplex; das Fenster einer Sportstätte listet ihre Anlagen |
+| **Liste** | alle Sportstätten, Sportanlagen, Sportkomplexe bzw. Organisationen (als Eigentümer, Betreiber oder Nutzer), filterbar nach Sportart, Kategorie, Typ, Sportkomplex und Text, sortierbar (auch nach Befüllung); ein Klick zeigt alle Angaben, „Karte“ springt zum Punkt |
 | **Übersicht** | Zahlen, Befüllung der Angaben nach Abschnitten (Felder nur unter den Anlagen, für die sie gedacht sind), Kategorien und Typen, je Kreis |
-| **Vorschlag** | Formular für neue Sportstätten, Änderungen und Organisationen, weiter zu LimeSurvey |
+| **Vorschlag** | Formular für neue Sportstätten, Änderungen, Organisationen und Sportkomplexe, weiter zu LimeSurvey |
 | **Analysen** | der ALKIS-Abgleich; lädt erst beim Öffnen |
 
 Oben lässt sich ein Kreis, eine Verbandsgemeinde oder Gemeinde wählen. Reiter, Gebiet und
