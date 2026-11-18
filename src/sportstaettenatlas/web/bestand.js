@@ -292,6 +292,8 @@ function ansichtBestand(fc) {
       } else if (t.ref) {  // Adresse: als ein Text, dazu das Gebiet
         zeile(f.title, leer(p[k]) ? "" : esc(p[k]));
         zeile("Gebiet", esc(gemeindeName(p.ars)));
+      } else if (f.widget === "sportkomplex") {
+        zeile(f.title, leer(p[k]) ? "" : komplexZeile(p[k], p.id));
       } else if (f.widget === "url") {
         zeile(f.title, leer(p[k]) ? "" : `<a href="${esc(url(p[k]))}" target="_blank" `
           + `rel="noopener">${esc(p[k])}</a>`);
@@ -316,6 +318,7 @@ function ansichtBestand(fc) {
   const such = eintraege.map(e => ({
     titel: e.p.name || e.kat, sub: verbinde([e.p.kategorie, e.p.adresse, e.p.betreiber]),
     text: suchtext([e.p.name, e.p.adresse, e.p.kategorie, e.p.betreiber, e.p.eigentuemer, e.p.id,
+      e.p.sportkomplex ? komplexName(e.p.sportkomplex) : "",
       ...(e.p.nutzer || []),
       ...(e.p.sportarten || []), ...e.typen]),
     grenzen: () => punktGrenzen(e.lat, e.lon),

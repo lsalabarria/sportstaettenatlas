@@ -43,6 +43,7 @@ BESTAND = [
         "adresse": {"strasse": "Am Weg", "hausnummer": "1", "plz": "56068", "ort": "Berg"},
         "lage": {"lon": 7.5938, "lat": 50.3512},
         "betreiber": "TuS Berg",
+        "sportkomplex": "dddddddd-4444-4444-8444-444444444444",
         "sportarten": ["Fußball"],
         "anlagen": [
             {
@@ -58,11 +59,13 @@ BESTAND = [
         "name": "Tennisanlage Bergen",
         "kategorie": "Tennissportstätte",
         "lage": {"lon": 7.7012, "lat": 50.4034},
+        "sportkomplex": "dddddddd-4444-4444-8444-444444444444",
         "sportarten": ["Tennis"],
         "anlagen": [{"id": "cccccccc-3333-4333-8333-333333333333", "typ": "Tennisplatz"}],
     },
 ]
 SID = BESTAND[0]["id"]
+KOMPLEX = {"id": "dddddddd-4444-4444-8444-444444444444", "name": "Sportzentrum Berg"}
 
 
 def _leaflet() -> Path:
@@ -88,7 +91,9 @@ class _Leise(http.server.SimpleHTTPRequestHandler):
 def url(tmp_path_factory):
     docs = tmp_path_factory.mktemp("docs")
     shutil.copytree(_leaflet(), docs / "vendor" / "leaflet")
-    seite.schreibe_webseite(docs, bestand=BESTAND, organisationen=ORGANISATIONEN)
+    seite.schreibe_webseite(
+        docs, bestand=BESTAND, organisationen=ORGANISATIONEN, sportkomplexe=[KOMPLEX]
+    )
     konfig = docs / "konfig.js"
     konfig.write_text(
         konfig.read_text("utf-8").replace('vorschlag_url: ""', f'vorschlag_url: "{UMFRAGE}"'),
@@ -177,6 +182,24 @@ def test_koordinaten_mit_google_maps_und_luftbild(oeffne):
         and abs((bbox[1] + bbox[3]) / 2 - 50.4555) < 1e-6
     )
     assert round((bbox[3] - bbox[1]) * 111320) == 200  # etwa 200 m hoch
+
+
+def test_sportkomplex_im_popup_und_formular(oeffne):
+    page = oeffne()
+    zeile = page.evaluate(f"komplexZeile('{KOMPLEX['id']}', '{SID}')")
+    assert "<b>Sportzentrum Berg</b>" in zeile and 'data-details="22222222' in zeile
+    assert "Sportplatz Berg" not in zeile  # die Sportstätte selbst steht nicht in der Liste
+    page.evaluate(f"ANSICHTEN.vorschlag.bearbeite('{SID}')")
+    feld = page.locator('#seite-vorschlag select[name="sportkomplex"]')
+    assert feld.input_value() == KOMPLEX["id"]
+    assert feld.locator("option:checked").inner_text().startswith("Sportzentrum Berg")
+    # neue Sportstätte mitten im Komplex: er steht zur Auswahl, gewählt ist keiner
+    page.evaluate("ANSICHTEN.vorschlag.neu({ lage: { lat: 50.3773, lon: 7.6475 } })")
+    assert feld.input_value() == ""
+    assert [o.split(" (")[0] for o in feld.locator("option").all_inner_texts()] == [
+        "kein Sportkomplex",
+        "Sportzentrum Berg",
+    ]
 
 
 def test_uebersicht_zeigt_bestand_und_befuellung(oeffne):

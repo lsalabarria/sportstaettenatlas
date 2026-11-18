@@ -78,7 +78,8 @@ Alle mit `uv run sportstaettenatlas …`; `--help` zeigt die Optionen.
 | `vorschlaege EXPORT.csv` | Vorschläge aus einem LimeSurvey-Export in `daten/` übernehmen (`--probe`, `--alle`; siehe [Vorschläge](#vorschläge)) |
 | `vorlage` | Vorlagen für eigene CSV-Dateien nach `results/vorlagen/` |
 | `organisationen` | Stand des Verzeichnisses; `--gebiete` legt alle Landkreise, Städte, Verbands- und Ortsgemeinden an, `--aus-bestand` fehlende Eigentümer, Betreiber und Nutzer |
-| `einordnen` | Sportstätten in den Ordner ihres Kreises, Organisationen in den ihrer Art verschieben |
+| `einordnen` | Sportstätten und Sportkomplexe in den Ordner ihres Kreises, Organisationen in den ihrer Art verschieben |
+| `sportkomplex ID ID …` | Sportkomplex anlegen (`--name`) oder ergänzen (`--zu KOMPLEX`) und die Sportstätten zuordnen; `--entfernen` nimmt sie heraus (siehe [Sportkomplexe](daten/README.md#sportkomplexe)) |
 | `modell` | Feldtabellen in `daten/README.md` und Diagramm schreiben |
 | `migrieren` | Felder in allen Dateien von `daten/` umbenennen oder entfernen (`--umbenennen ALT=NEU`, `--entfernen FELD`, `--probe`) |
 | `pruefen` | Bestand prüfen, ohne die Webseite zu bauen (Liste in `results/regelverstoesse.csv`) |
@@ -119,8 +120,8 @@ Auswahllisten, mindestens 4 Nachkommastellen bei Koordinaten, `braucht`, `teil_v
 - **Eigentum der Kommune:** Eine Kommune als Eigentümer – die Sportstätte liegt in ihrem Gebiet (höchstens 250 m davor).
 - **Ort:** Die Koordinate liegt in der Gemeinde aus `adresse.ort` oder höchstens 250 m davor (VG250 ist vereinfacht).
 - **Rheinland-Pfalz:** Die Koordinate liegt in einer Gemeinde des Landes.
-- **Kreis-Ordner:** Die Sportstätte liegt im Ordner ihres Kreises (`einordnen` verschiebt).
-- **Gleiche Koordinate:** Höchstens zwei Sportstätten auf genau derselben Koordinate (sonst wohl ein Ersatzwert).
+- **Kreis-Ordner:** Sportstätte und Sportkomplex liegen im Ordner ihres Kreises (`einordnen` verschiebt).
+- **Gleiche Koordinate:** Höchstens zwei Sportstätten auf genau derselben Koordinate (sonst wohl ein Ersatzwert; im selben Sportkomplex wohl dessen Lage).
 - **Doppelung:** Keine zwei Sportstätten mit ähnlichem Namen näher als 60 m (Regel wie im Formular).
 - **PLZ:** Die Postleitzahl beginnt wie eine in Rheinland-Pfalz.
 - **Straße und Hausnummer:** Keine Hausnummer in der Straße, keine Hausnummer ohne Straße.
@@ -133,6 +134,9 @@ Auswahllisten, mindestens 4 Nachkommastellen bei Koordinaten, `braucht`, `teil_v
 - **Betriebsstatus:** Keine Öffnungsstunden, wenn die Anlage stillgelegt ist.
 - **Organisation ohne Art:** Jede Organisation im Verzeichnis hat eine Art.
 - **Fast gleiche Organisationen:** Keine zwei Einträge mit fast gleichem Namen (ohne Rechtsform wie „e.V.“).
+- **Sportkomplex:** Der Sportkomplex in `sportkomplex` gibt es.
+- **Kleiner Sportkomplex:** Zu jedem Sportkomplex gehören mindestens zwei Sportstätten.
+- **Ausdehnung des Sportkomplexes:** Seine Sportstätten liegen höchstens 1 km auseinander.
 
 ## Webseite
 

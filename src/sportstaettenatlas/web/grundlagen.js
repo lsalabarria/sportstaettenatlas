@@ -41,6 +41,7 @@ function feldTyp(p) {
 // Einheit (einheit, oder einheit_aus: aus einem anderen Feld des Datensatzes x), Anzahl je
 // Wert als „3× Sand, 1× Rasen“
 function feldText(p, t, v, x = {}) {
+  if (p.widget === "sportkomplex") return leer(v) ? "" : komplexName(v);
   if (leer(v) || (typeof v === "object" && !Array.isArray(v) && !Object.keys(v).length)) return "";
   if (Array.isArray(v)) return v.join(", ");
   if (typeof v === "object") return Object.entries(v).map(([k, n]) => `${zahl(n)}× ${k}`).join(", ");
@@ -95,6 +96,36 @@ function orgArt(name) {
   return o && o.typ && typen[o.typ] ? typen[o.typ] : "";
 }
 function schluesselName(s) { return String(s || "").trim().replace(/\s+/g, " ").toLowerCase(); }
+
+// ---------- Sportkomplexe (daten/sportkomplexe.json): Klammer um mehrere Sportstätten ----------
+// Sportstätten verweisen in sportkomplex auf die ID. Mitglieder und, ohne eigene Lage, der
+// Mittelpunkt kommen aus dem Bestand.
+const SPORTKOMPLEXE = new Map();  // id → { id, name, adresse, lat, lon, mitglieder: [{ id, name, lat, lon }] }
+function setzeSportkomplexe(liste, features) {
+  SPORTKOMPLEXE.clear();
+  for (const k of liste || []) SPORTKOMPLEXE.set(k.id, { ...k, mitglieder: [] });
+  for (const f of features || []) {
+    const k = SPORTKOMPLEXE.get(f.properties.sportkomplex);
+    const [lon, lat] = f.geometry.coordinates;
+    if (k) k.mitglieder.push({ id: f.properties.id, name: f.properties.name || f.properties.kategorie, lat, lon });
+  }
+  for (const k of SPORTKOMPLEXE.values()) {
+    const m = k.mitglieder;
+    if (k.lat == null && m.length) {
+      k.lat = m.reduce((s, x) => s + x.lat, 0) / m.length;
+      k.lon = m.reduce((s, x) => s + x.lon, 0) / m.length;
+    }
+  }
+}
+function komplexName(id) { const k = SPORTKOMPLEXE.get(id); return k ? k.name : String(id); }
+// Zeile im Popup: Name des Komplexes und die anderen Sportstätten darin (öffnen ihre Angaben)
+function komplexZeile(id, ohne) {
+  const k = SPORTKOMPLEXE.get(id);
+  if (!k) return esc(id);
+  const andere = k.mitglieder.filter(m => m.id !== ohne);
+  return `<b>${esc(k.name)}</b>` + (andere.length ? ", mit " + andere.map(m =>
+    `<a href="#" data-details="${esc(m.id)}">${esc(m.name)}</a>`).join(", ") : "");
+}
 
 // Werte zählen: ["a", "b", "a"] → { a: 2, b: 1 }
 function zaehle(werte) {

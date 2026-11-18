@@ -157,6 +157,7 @@ Anzahl = Annotated[int, Field(ge=0, le=10_000)]
 # (EMAIL_MUSTER, auch im Formular) und Felder bzw. Spalten, deren Name so aussieht (KONTAKT_NAME)
 EMAIL_MUSTER = r"[\w.+-]+@[\w-]+(\.[\w-]+)+"
 KONTAKT_NAME = r"e-?mail|telefon|telefax|(^|[^a-z])fax([^a-z]|$)|handy|mobilnummer|mobiltelefon|kontakt|ansprechpartner"
+UUID_MUSTER = r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
 
 # Abschnitte des Formulars in dieser Reihenfolge
 GRUPPEN = ("Sportstätte", "Adresse und Lage", "Nutzung", "Sportarten", "Organisationen")
@@ -708,6 +709,14 @@ class Sportstaette(Basis):
     schulsport: JaNein | None = _field("Schulsport", gruppe="Nutzung", widget="ja_nein")
     zuschauerplaetze: int | None = _field("Zuschauerplätze", ge=0, le=100_000, gruppe="Nutzung")
     betriebsstatus: Betriebsstatus | None = _field("Betriebsstatus", gruppe="Sportstätte")
+    sportkomplex: str | None = _field(
+        "Sportkomplex",
+        "ID eines Sportkomplexes (daten/<LAND>/<Kreis>/sportkomplexe/), nur wenn mehrere "
+        "Sportstätten an einem Ort zusammengehören",
+        pattern=UUID_MUSTER,
+        gruppe="Sportstätte",
+        widget="sportkomplex",
+    )
     eigentuemer: str | None = _field(
         "Eigentümer",
         "Name einer Organisation (Verzeichnis daten/organisationen/), keine Personen",
@@ -757,6 +766,41 @@ class Sportstaette(Basis):
         formular=False,
         datei=False,
         gruppe="Sportstätte",
+    )
+
+
+class Sportkomplex(Basis):
+    """Optionale Klammer um mehrere Sportstätten an einem Ort, z. B. ein Sportzentrum mit
+    Halle, Stadion und Freibad (daten/<LAND>/<Kreis>/sportkomplexe/<id>.json). Die
+    Sportstätten verweisen in `sportkomplex` auf ihn; Eigentümer, Betreiber und Anlagen
+    stehen weiter bei den Sportstätten. Nur anlegen, wenn mindestens zwei Sportstätten
+    dazugehören."""
+
+    model_config = ConfigDict(
+        json_schema_extra={
+            "examples": [
+                {
+                    "id": "b1f3e6a2-4c8d-4e1f-9a7b-2d5c0e8f1a36",
+                    "name": "Sportzentrum Musterdorf",
+                    "adresse": {"strasse": "Am Weg", "plz": "56068", "ort": "Koblenz"},
+                    "lage": {"lon": 7.5941, "lat": 50.3515},
+                }
+            ]
+        }
+    )
+
+    id: str | None = _field(
+        "ID",
+        "UUID, zugleich der Dateiname (in der Datei Pflicht)",
+        formular=False,
+        uebersicht=False,
+    )
+    name: str = _field("Name", pflicht=True, min_length=1, max_length=200)
+    adresse: Adresse = _field("Adresse", default_factory=Adresse)
+    lage: Lage | None = _field(
+        "Lage",
+        "Mittelpunkt; ohne Lage bestimmen die Sportstätten den Kreis-Ordner",
+        uebersicht=False,
     )
 
 
@@ -901,7 +945,7 @@ class Vorschlag(Basis):
         return self
 
 
-MODELLE = (Sportstaette, Sportanlage, Adresse, Lage, Organisation, Vorschlag)
+MODELLE = (Sportstaette, Sportanlage, Adresse, Lage, Sportkomplex, Organisation, Vorschlag)
 
 
 # --- Hilfen für den Code --------------------------------------------------------------
@@ -925,7 +969,7 @@ def ordne(d: dict, modell: type[BaseModel]) -> dict:
     out = {k: d[k] for k in modell.model_fields if k in d}
     out.update({k: v for k, v in d.items() if k not in out})
     for feld, unter in (("adresse", Adresse), ("lage", Lage)):
-        if modell is Sportstaette and isinstance(out.get(feld), dict):
+        if modell in (Sportstaette, Sportkomplex) and isinstance(out.get(feld), dict):
             out[feld] = ordne(out[feld], unter)
     for feld, info in modell.model_fields.items():  # Anzahl je Wert: Reihenfolge der Auswahl
         if angabe(modell, feld, "widget") == "zaehler" and isinstance(out.get(feld), dict):
@@ -1140,6 +1184,7 @@ def readme_block() -> str:
         (Adresse, "Adresse"),
         (Lage, "Lage"),
         (Sportanlage, "Sportanlage (`<anlage-id>.json`)"),
+        (Sportkomplex, "Sportkomplex (`<Kreis>/sportkomplexe/<id>.json`)"),
         (Organisation, "Organisation (`organisationen/<id>.json`)"),
         (Vorschlag, "Vorschlag (Formular → LimeSurvey, Frage `data`)"),
     ):

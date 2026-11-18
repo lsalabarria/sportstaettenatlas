@@ -40,7 +40,8 @@ function ansichtListe(bestand) {
   const sportText = (liste, geerbt) => liste.length
     ? `<span${geerbt ? ` class="geerbt" title="Sportarten der Sportstätte (die Anlage hat keine eigenen)"` : ""}>`
       + esc(liste.join(", ")) + `</span>` : "";
-  const suchtextE = e => (e._such ??= suchtext([e.p.name, e.p.adresse, e.p.kategorie, e.p.id, e.p.betreiber, e.p.eigentuemer, ...(e.p.nutzer || [])]));
+  const suchtextE = e => (e._such ??= suchtext([e.p.name, e.p.adresse, e.p.kategorie, e.p.id, e.p.betreiber,
+    e.p.eigentuemer, ...(e.p.nutzer || []), e.p.sportkomplex ? komplexName(e.p.sportkomplex) : ""]));
   const worte = () => z.q.toLowerCase().split(/\s+/).filter(Boolean);
 
   // --- Zeilen der beiden Listen ---

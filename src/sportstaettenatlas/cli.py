@@ -47,12 +47,13 @@ def _kreis_von_bei_bedarf():
 def _lies_bestand():
     """Datenbestand und Verzeichnis der Organisationen lesen; Fehler im Aufbau brechen ab,
     Verstöße gegen die Regeln des Modells kommen als Liste (Datei, Meldung) mit."""
-    from .bestand import lies_bestand, lies_organisationen
+    from .bestand import lies_bestand, lies_organisationen, lies_sportkomplexe
 
     verstoesse: list = []
     try:
         bestand = list(lies_bestand(DATEN, verstoesse))
         organisationen = lies_organisationen(DATEN, verstoesse)
+        lies_sportkomplexe(DATEN, verstoesse)  # nur die Regeln des Modells; validate liest selbst
     except ValueError as exc:
         raise SystemExit(f"Datenbestand: {exc}") from None
     return bestand, organisationen, verstoesse
@@ -236,23 +237,68 @@ def cmd_vorschlaege(args):
 
 
 def cmd_einordnen(args):
-    """Organisationen in den Ordner ihrer Art und Sportstätten, deren Lage in einem anderen
-    Kreis liegt, dorthin verschieben."""
-    from .bestand import einordnen, kreis_ordner, organisationen_einordnen
+    """Organisationen in den Ordner ihrer Art, Sportstätten und Sportkomplexe, deren Lage in
+    einem anderen Kreis liegt, dorthin verschieben."""
+    from .bestand import einordnen, kreis_ordner, organisationen_einordnen, sportkomplexe_einordnen
 
     if n := organisationen_einordnen(DATEN):
         print(f"{n} Organisationen in den Ordner ihrer Art verschoben.")
+    kreis_von = kreis_ordner(_gebiete())
     try:
-        n = einordnen(DATEN, kreis_ordner(_gebiete()))
+        n = einordnen(DATEN, kreis_von)
     except ValueError as exc:
         raise SystemExit(str(exc)) from None
     print(f"{n} Sportstätten verschoben." if n else "Alle Sportstätten liegen im richtigen Kreis.")
+    if n := sportkomplexe_einordnen(DATEN, kreis_von):
+        print(f"{n} Sportkomplexe verschoben.")
+
+
+def cmd_sportkomplex(args):
+    """Sportkomplex anlegen und Sportstätten zuordnen, ergänzen oder herausnehmen."""
+    from .bestand import (
+        OHNE_KREIS,
+        finde_staette,
+        lies_sportkomplexe,
+        ordne_sportkomplex_zu,
+        schreibe_sportkomplex,
+    )
+
+    try:
+        ids = [finde_staette(DATEN, i).name for i in args.ids]
+        komplexe = {k["id"]: k for k in lies_sportkomplexe(DATEN)}
+        if args.entfernen:
+            n = len(ordne_sportkomplex_zu(DATEN, None, ids))
+            print(f"{n} Sportstätten aus ihrem Sportkomplex genommen.")
+            return
+        if args.zu:
+            treffer = [i for i in komplexe if i.startswith(args.zu)]
+            if len(treffer) != 1:
+                raise ValueError(f"Sportkomplex {args.zu}: nicht gefunden oder mehrdeutig")
+            k = komplexe[treffer[0]]
+            if args.name:
+                k = {**k, "name": args.name}
+                schreibe_sportkomplex(DATEN, k, k["_ordner"])
+        else:
+            if not args.name:
+                raise ValueError("Neuer Sportkomplex: --name angeben (oder --zu ID)")
+            if len(ids) < 2:
+                raise ValueError("Ein Sportkomplex braucht mindestens zwei Sportstätten")
+            k = {"name": args.name}
+            kreise = [finde_staette(DATEN, i).parent.name for i in ids]
+            pfad = schreibe_sportkomplex(DATEN, k, max(set(kreise), key=kreise.count) or OHNE_KREIS)
+            k["id"] = pfad.stem
+            print(f"Sportkomplex „{args.name}“ angelegt: {pfad}")
+        n = len(ordne_sportkomplex_zu(DATEN, k["id"], ids))
+        print(f"{n} Sportstätten dem Sportkomplex „{k['name']}“ zugeordnet.")
+    except ValueError as exc:
+        raise SystemExit(str(exc)) from None
 
 
 def cmd_seite(args):
     """Statische Webseite für GitHub Pages (Ordner docs/) erzeugen."""
     from . import gebiete as gb
     from .modell import schreibe_doku
+    from .bestand import lies_sportkomplexe
     from .seite import lade_analysen, schreibe_webseite, speichere_analyse
 
     bestand, organisationen, verstoesse = _lies_bestand()
@@ -280,6 +326,7 @@ def cmd_seite(args):
         titel=TITEL,
         organisationen=organisationen,
         von_hand=WEBSEITE,
+        sportkomplexe=lies_sportkomplexe(DATEN),
     )
     print(f"Webseite: {DOCS}/  ({info['gesamt'] / 1e6:.1f} MB)")
     for name, _, anzahl, groesse in info["dateien"]:
@@ -401,9 +448,24 @@ def main(argv: list[str] | None = None) -> None:
 
     sp = sub.add_parser(
         "einordnen",
-        help="Sportstätten in den Ordner ihres Kreises, Organisationen in den ihrer Art verschieben",
+        help="Sportstätten und Sportkomplexe in den Ordner ihres Kreises, Organisationen in den "
+        "ihrer Art verschieben",
     )
     sp.set_defaults(func=cmd_einordnen)
+
+    sp = sub.add_parser(
+        "sportkomplex",
+        help="Sportkomplex anlegen (--name) oder ergänzen (--zu) und Sportstätten zuordnen",
+    )
+    sp.add_argument(
+        "ids", nargs="+", metavar="ID", help="Sportstätten (ID oder ihr Anfang, ab 8 Zeichen)"
+    )
+    sp.add_argument("--name", help="Name eines neuen Sportkomplexes (oder neuer Name mit --zu)")
+    sp.add_argument("--zu", metavar="KOMPLEX", help="vorhandener Sportkomplex (ID oder ihr Anfang)")
+    sp.add_argument(
+        "--entfernen", action="store_true", help="die Sportstätten aus ihrem Sportkomplex nehmen"
+    )
+    sp.set_defaults(func=cmd_sportkomplex)
 
     sp = sub.add_parser(
         "pruefen",

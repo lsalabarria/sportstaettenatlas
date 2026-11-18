@@ -2,6 +2,7 @@
 
     daten/RP/07111-koblenz/<id>/<id>_meta.json     die Sportstätte
     daten/RP/07111-koblenz/<id>/<anlage-id>.json   je Sportanlage eine Datei
+    daten/RP/07111-koblenz/sportkomplexe/<id>.json je Sportkomplex eine Datei (nur wo es welche gibt)
     daten/organisationen/RP/<art>/<id>.json        je Organisation eine Datei, Ordner = Art
 
 Felder, ihre Reihenfolge in den Dateien und die Regeln kommen aus modell.py. Werte mit einer
@@ -25,6 +26,7 @@ from .modell import (
     KONTAKT_NAME,
     Organisation,
     Sportanlage,
+    Sportkomplex,
     Sportstaette,
     ordne,
     pruefe,
@@ -150,8 +152,16 @@ def _laender(daten: Path) -> list[Path]:
     return [p for p in sorted(Path(daten).glob("*")) if p.is_dir() and p.name != ORGANISATIONEN]
 
 
+SPORTKOMPLEXE = "sportkomplexe"  # Ordner der Sportkomplexe in einem Kreis-Ordner
+
+
+def _staetten_dirs(land_ordner: Path) -> list[Path]:
+    """Ordner der Sportstätten eines Landes (<Kreis>/<id>/), ohne die der Sportkomplexe."""
+    return [p for p in sorted(land_ordner.glob("*/*")) if p.is_dir() and p.name != SPORTKOMPLEXE]
+
+
 def _staetten_ordner(land_ordner: Path) -> dict[str, Path]:
-    return {p.name: p for p in sorted(land_ordner.glob("*/*")) if p.is_dir()}
+    return {p.name: p for p in _staetten_dirs(land_ordner)}
 
 
 def _lies_ordner(st_ordner: Path) -> dict:
@@ -287,7 +297,9 @@ def einordnen(ziel: Path, kreis_von: KreisVon) -> int:
     """Ordner von Sportstätten, die nicht im Ordner ihres Kreises liegen (z. B. nach einer
     Änderung der Lage), dorthin verschieben. Liefert die Zahl der verschobenen."""
     n = 0
-    for meta in sorted(m for o in _laender(ziel) for m in o.glob("*/*/*_meta.json")):
+    for meta in sorted(
+        m for o in _laender(ziel) for p in _staetten_dirs(o) for m in p.glob("*_meta.json")
+    ):
         st_ordner = meta.parent
         soll = st_ordner.parent.parent / _kreis(_lies_json(meta), kreis_von) / st_ordner.name
         if soll == st_ordner:
@@ -322,7 +334,7 @@ def lies_bestand(ordner: Path, verstoesse: list | None = None) -> Iterator[dict]
     (modell.py, z. B. PLZ mit sechs Ziffern) brechen nicht ab, sondern landen als
     (Datei, Meldung) in `verstoesse`. Im Ergebnis steht zusätzlich "_ordner" (Kreis-Ordner).
     """
-    for st_ordner in sorted(p for o in _laender(ordner) for p in o.glob("*/*") if p.is_dir()):
+    for st_ordner in sorted(p for o in _laender(ordner) for p in _staetten_dirs(o)):
         sid = st_ordner.name
         meta_pfad = st_ordner / f"{sid}_meta.json"
         if not meta_pfad.exists():
@@ -369,16 +381,24 @@ def migriere_bestand(
     Organisationen; nur oberste Ebene. Steht der neue Name schon in einer Datei, bleibt sie
     für dieses Feld, wie sie ist (konflikte). Mit probe wird nichts geschrieben."""
     umbenennen = umbenennen or {}
-    felder = {*Sportstaette.model_fields, *Sportanlage.model_fields, *Organisation.model_fields}
+    felder = {
+        *Sportstaette.model_fields,
+        *Sportanlage.model_fields,
+        *Sportkomplex.model_fields,
+        *Organisation.model_fields,
+    }
     if fremd := sorted(set(umbenennen.values()) - felder):
         raise ValueError(f"nicht im Modell: {', '.join(fremd)}")
     e = Migration()
     daten = Path(daten)
     dateien = [
         *((p, Organisation) for p in org_dateien(daten)),
+        *((p, Sportkomplex) for p in komplex_dateien(daten)),
         *(
             (p, Sportstaette if p.name.endswith("_meta.json") else Sportanlage)
-            for p in sorted(x for o in _laender(daten) for x in o.glob("*/*/*.json"))
+            for p in sorted(
+                x for o in _laender(daten) for d in _staetten_dirs(o) for x in d.glob("*.json")
+            )
         ),
     ]
     for pfad, modell in dateien:
@@ -590,3 +610,90 @@ def schreibe_organisationen(datensaetze, daten: Path, modus: str = "neu") -> Erg
         nach_id[neu["id"]] = neu
         verzeichnis.update(org_verzeichnis([neu]))
     return e
+
+
+# --- Sportkomplexe (daten/<LAND>/<Kreis>/sportkomplexe/<id>.json) ----------------------
+
+
+def komplex_dateien(daten: Path) -> list[Path]:
+    return sorted(p for o in _laender(daten) for p in o.glob(f"*/{SPORTKOMPLEXE}/*.json"))
+
+
+def lies_sportkomplexe(daten: Path, verstoesse: list | None = None) -> list[dict]:
+    """Alle Sportkomplexe; im Ergebnis zusätzlich "_ordner" (Kreis-Ordner). Dateiname = id."""
+    out = []
+    for pfad in komplex_dateien(daten):
+        k = _lies_json(pfad)
+        if k.get("id") != pfad.stem:
+            raise ValueError(f"{pfad}: id {k.get('id')!r} passt nicht zum Dateinamen")
+        if verstoesse is not None:
+            verstoesse += [(str(pfad), m) for m in pruefe(Sportkomplex, k)]
+        out.append({**k, "_ordner": pfad.parent.parent.name})
+    return out
+
+
+def komplex_kreis(k: dict, staetten: list[dict], kreis_von: KreisVon) -> str:
+    """Kreis-Ordner eines Sportkomplexes: aus seiner Lage, sonst der häufigste Kreis-Ordner
+    seiner Sportstätten (mit "_ordner" wie aus lies_bestand)."""
+    if k.get("lage"):
+        return _kreis(k, kreis_von)
+    ordner = Counter(d["_ordner"] for d in staetten if d.get("sportkomplex") == k["id"])
+    return ordner.most_common(1)[0][0] if ordner else OHNE_KREIS
+
+
+def schreibe_sportkomplex(daten: Path, k: dict, kreis: str, land: str = ORG_LAND) -> Path:
+    """Einen Sportkomplex in daten/<LAND>/<kreis>/sportkomplexe/ schreiben (neue ID, wenn sie
+    fehlt); liegt er noch in einem anderen Kreis, wird die alte Datei entfernt."""
+    k = {key: v for key, v in k.items() if key != "_ordner"}
+    k["id"] = k.get("id") or str(uuid.uuid4())
+    pfad = Path(daten) / land / kreis / SPORTKOMPLEXE / f"{k['id']}.json"
+    for alt in komplex_dateien(daten):
+        if alt.stem == k["id"] and alt != pfad:
+            alt.unlink()
+            if not any(alt.parent.iterdir()):
+                alt.parent.rmdir()
+    pfad.parent.mkdir(parents=True, exist_ok=True)
+    text = als_json(ordne(bereinigen(k, Counter()), Sportkomplex))
+    if not pfad.exists() or pfad.read_text(encoding="utf-8") != text:
+        pfad.write_text(text, encoding="utf-8")
+    return pfad
+
+
+def sportkomplexe_einordnen(daten: Path, kreis_von: KreisVon) -> int:
+    """Sportkomplexe in den Ordner ihres Kreises verschieben (komplex_kreis)."""
+    staetten = list(lies_bestand(daten))
+    n = 0
+    for k in lies_sportkomplexe(daten):
+        soll = komplex_kreis(k, staetten, kreis_von)
+        if soll != k["_ordner"]:
+            schreibe_sportkomplex(daten, k, soll)
+            n += 1
+    return n
+
+
+def finde_staette(daten: Path, sid: str) -> Path:
+    """Ordner einer Sportstätte über ihre ID oder deren Anfang (mindestens 8 Zeichen)."""
+    treffer = [
+        p
+        for o in _laender(daten)
+        for p in _staetten_dirs(o)
+        if p.name == sid or (len(sid) >= 8 and p.name.startswith(sid))
+    ]
+    if len(treffer) != 1:
+        raise ValueError(f"Sportstätte {sid}: {'nicht gefunden' if not treffer else 'mehrdeutig'}")
+    return treffer[0]
+
+
+def ordne_sportkomplex_zu(daten: Path, komplex_id: str | None, ids: list[str]) -> list[Path]:
+    """In den Sportstätten `ids` das Feld sportkomplex setzen (None: entfernen)."""
+    geaendert = []
+    for sid in ids:
+        meta = finde_staette(daten, sid)
+        meta = meta / f"{meta.name}_meta.json"
+        d = _lies_json(meta)
+        werte.setze(d, "sportkomplex", komplex_id)
+        text = als_json(ordne(d, Sportstaette))
+        if meta.read_text(encoding="utf-8") != text:
+            meta.write_text(text, encoding="utf-8")
+            geaendert.append(meta)
+    return geaendert

@@ -120,6 +120,7 @@ function ansichtVorschlag(bestand) {
   const TITEL = Object.fromEntries(FELDER.map(f => [f.pfad, f.p.title || f.pfad]));
   TITEL.anlagen = "Sportanlagen";
   const FELD_LAGE = FELDER.find(f => f.p.widget === "karte");
+  const FELD_KOMPLEX = FELDER.find(f => f.p.widget === "sportkomplex");
   // Angaben einer Sportanlage neben Typ und Name (Baujahr, Maße, Belag …), nach Abschnitten
   const ANLAGE_DETAILS = modellFelder("Sportanlage")
     .filter(([k, p]) => p.formular !== false && k !== "typ" && k !== "bezeichnung")
@@ -202,6 +203,10 @@ function ansichtVorschlag(bestand) {
         aria-label="${label}"><button type="button" class="knopf2">Hinzufügen</button></div></div>`;
     }
     if (p.widget === "ja_nein") return `<div class="zeile-feld"><span>${label}</span>${jaNein(pfad)}</div>`;
+    if (p.widget === "sportkomplex") {
+      return feld(label, `<select name="${n}" title="Nur wählen, wenn mehrere Sportstätten an einem Ort `
+        + `zusammengehören. Einen neuen Sportkomplex bitte in der Anmerkung nennen."></select>`);
+    }
     if (t.enum) return feld(label, auswahl(pfad, t.enum, pflicht ? "– bitte wählen –" : "nicht bekannt"));
     if (istZahl(t)) {
       return feld(label, `<input name="${n}" type="number" step="1"`
@@ -708,8 +713,25 @@ function ansichtVorschlag(bestand) {
     }
     vkarte.on("click", ev => setzeLage(ev.latlng.lat, ev.latlng.lng));
   }
+  // Auswahl der Sportkomplexe: die in der Nähe der Lage, nach Abstand; der gewählte bleibt
+  const KOMPLEX_NAH_M = 3000;
+  function komplexAuswahl() {
+    const e = FELD_KOMPLEX && F(FELD_KOMPLEX.pfad);
+    if (!e) return;
+    const alt = e.value;
+    const nah = [...SPORTKOMPLEXE.values()]
+      .map(k => [k, lage && k.lat != null ? abstand(lage[0], lage[1], k.lat, k.lon) : Infinity])
+      .filter(([k, d]) => d <= KOMPLEX_NAH_M || k.id === alt)
+      .sort((a, b) => a[1] - b[1]);
+    if (alt && !nah.some(([k]) => k.id === alt)) nah.unshift([{ id: alt, name: komplexName(alt) }, Infinity]);
+    const weg = d => !isFinite(d) ? "" : ` (${d < 1000 ? Math.round(d) + " m" : (d / 1000).toFixed(1) + " km"})`;
+    e.innerHTML = `<option value="">kein Sportkomplex</option>`
+      + nah.map(([k, d]) => `<option value="${esc(k.id)}">${esc(k.name)}${weg(d)}</option>`).join("");
+    e.value = alt;
+  }
   function setzeLage(lat, lon, zoomen = false) {
     lage = lat == null ? null : [+lat, +lon];
+    komplexAuswahl();
     if (marke) { marke.remove(); marke = null; }
     const t = el.querySelector("#v-lage");
     if (!lage) { t.textContent = "Bitte in der Karte rechts auf die Sportstätte klicken."; ars = "";

@@ -12,6 +12,7 @@
     docs/daten/analysen/<name>/         Dateien einer Analyse, z. B. alkis/ (lädt erst beim Öffnen),
                                         aus webseite/analysen/<name>/ (speichere_analyse)
     docs/vendor/leaflet/                Kartenbibliothek, lokal (keine Anfragen an Dritt-CDNs)
+    docs/daten/sportkomplexe.json       Sportkomplexe (komplex_kurz)
     docs/daten/organisationen.json      Verzeichnis der Organisationen
     docs/.nojekyll                      GitHub Pages soll die Dateien unverändert ausliefern
     docs/daten/schema.json              Datenmodell (modell.schema) für Formular, Popup, Liste
@@ -74,6 +75,15 @@ def _anlage_kurz(a: dict) -> list:
     while len(out) > 2 and not out[-1]:
         out.pop()
     return out
+
+
+def komplex_kurz(k: dict, praezision: int = 5) -> dict:
+    """Sportkomplex für die Webseite: id, name, adresse (Text), lon, lat (wenn bekannt)."""
+    out = {"id": k["id"], "name": k.get("name"), "adresse": adresse_text(k.get("adresse") or {})}
+    lage = k.get("lage") or {}
+    if lage.get("lon") is not None and lage.get("lat") is not None:
+        out |= {"lon": round(float(lage["lon"]), praezision), "lat": round(float(lage["lat"]), praezision)}
+    return {x: v for x, v in out.items() if v not in (None, "")}
 
 
 def bestand_geojson(datensaetze, praezision: int = 5, organisationen=None) -> dict:
@@ -267,6 +277,7 @@ def schreibe_webseite(
     leaflet_laden: bool = True,
     organisationen: list[dict] | None = None,
     von_hand: Path | None = None,
+    sportkomplexe: list[dict] | None = None,
 ) -> dict:
     """Webseite nach `ausgabe` (z. B. docs/) schreiben. Liefert eine kleine Statistik.
 
@@ -276,6 +287,7 @@ def schreibe_webseite(
               lade_analysen. Was hier fehlt, fehlt auch auf der Seite.
     ars_von:  (lon, lat) → Regionalschlüssel der Gemeinde, für Datensätze aus `bestand`
     organisationen: Verzeichnis der Organisationen (Eigentümer, Betreiber, Nutzer) (bestand.lies_organisationen)
+    sportkomplexe: Sportkomplexe (bestand.lies_sportkomplexe)
     von_hand: Ordner mit konfig.js, impressum.html, datenschutz.html (webseite/); sie werden
               nach `ausgabe` kopiert. Fehlt eine dort, wird sie aus `ausgabe` übernommen oder
               aus der Vorlage angelegt. Ohne Ordner: in `ausgabe` nur beim ersten Mal angelegt.
@@ -305,6 +317,14 @@ def schreibe_webseite(
                 "organisationen.json",
                 "Organisationen: Eigentümer, Betreiber, Nutzer",
                 {"eintraege": eintraege},
+            )
+        )
+    if sportkomplexe is not None:
+        schreiben.append(
+            (
+                "sportkomplexe.json",
+                "Sportkomplexe (Klammer um mehrere Sportstätten)",
+                {"eintraege": [komplex_kurz(k) for k in sportkomplexe]},
             )
         )
     # Datenmodell: Felder, Regeln und Beschriftungen für Formular, Popup und Übersicht

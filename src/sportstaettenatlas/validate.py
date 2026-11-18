@@ -24,7 +24,10 @@ from .bestand import (
     _laender,
     _staetten_ordner,
     falsch_einsortiert,
+    komplex_dateien,
+    komplex_kreis,
     kreis_ordner,
+    lies_sportkomplexe,
     org_dateien,
     org_schluessel,
     org_verzeichnis,
@@ -37,7 +40,9 @@ AEHNLICH = 0.8  # … und mindestens so ähnliche Namen (wie im Formular, vorsch
 ROLLEN = ("betreiber", "eigentuemer")
 GLEICHE_LAGE_AB = 3  # so viele Sportstätten auf exakt einer Koordinate: wohl ein Ersatzwert
 FLAECHE_ABWEICHUNG = 0.25  # Fläche gegenüber Länge × Breite: höchstens 25 % mehr oder weniger
-GESCHLOSSEN = ("stillgelegt/geschlossen",)  # Betriebsstatus ohne Öffnungszeiten
+GESCHLOSSEN = ("stillgelegt/geschlossen",)
+KOMPLEX_AB = 2  # so viele Sportstätten braucht ein Sportkomplex mindestens
+KOMPLEX_AUSDEHNUNG_M = 1000  # Sportstätten eines Komplexes höchstens so weit auseinander  # Betriebsstatus ohne Öffnungszeiten
 # Postleitzahlen in Rheinland-Pfalz beginnen so (Ränder zu NRW, Hessen, Saarland, Baden)
 PLZ_RLP = (
     "515",
@@ -380,6 +385,45 @@ def doppelungen(bestand: list[dict]) -> Iterable[tuple[dict, dict, float]]:
                             yield a, b, d
 
 
+def sportkomplexe(bestand: list[dict], komplexe: list[dict]) -> Iterable[tuple[str, str, str]]:
+    """(id einer Sportstätte oder eines Komplexes, Prüfung, Meldung): Verweis auf einen
+    Komplex, den es nicht gibt; Komplex mit zu wenigen Sportstätten; zu weit verstreut."""
+    nach_id = {k["id"]: k for k in komplexe}
+    mitglieder: dict[str, list[dict]] = defaultdict(list)
+    for st in bestand:
+        kid = st.get("sportkomplex")
+        if not kid:
+            continue
+        if kid in nach_id:
+            mitglieder[kid].append(st)
+        else:
+            yield st["id"], "Sportkomplex", f"sportkomplex: {kid} gibt es nicht"
+    for k in komplexe:
+        st = mitglieder.get(k["id"], [])
+        if len(st) < KOMPLEX_AB:
+            yield (
+                k["id"],
+                "Kleiner Sportkomplex",
+                (
+                    f"name: „{k.get('name')}“ hat {len(st)} Sportstätte{'n' if len(st) != 1 else ''}"
+                    f" – ein Sportkomplex braucht mindestens {KOMPLEX_AB}"
+                ),
+            )
+        lagen = [_lage(x) for x in st if _lage(x)]
+        weit = max(
+            (abstand_m(*a, *b) for a, b in itertools.combinations(lagen, 2)),
+            default=0,
+        )
+        if weit > KOMPLEX_AUSDEHNUNG_M:
+            yield (
+                k["id"],
+                "Ausdehnung des Sportkomplexes",
+                (
+                    f"lage: Sportstätten von „{k.get('name')}“ liegen bis zu {weit:.0f} m auseinander"
+                ),
+            )
+
+
 # --- alles zusammen -------------------------------------------------------------------------
 
 
@@ -405,6 +449,9 @@ PRUEFUNGEN = (
     "Betriebsstatus",
     "Organisation ohne Art",
     "Fast gleiche Organisationen",
+    "Sportkomplex",
+    "Kleiner Sportkomplex",
+    "Ausdehnung des Sportkomplexes",
 )
 
 
@@ -419,6 +466,9 @@ def pruefe(
     Prüfungen, die sie brauchen (Ort, Land, Kreis-Ordner, Eigentum)."""
     ordner = {k: v for land in _laender(daten) for k, v in _staetten_ordner(land).items()}
     org_datei = {p.stem: str(p) for p in org_dateien(daten)}
+    komplexe = lies_sportkomplexe(daten)
+    komplex_datei = {p.stem: str(p) for p in komplex_dateien(daten)}
+    komplex_name = {k["id"]: k.get("name") for k in komplexe}
 
     def datei(st: dict, anlage: dict | None = None) -> str:
         o = ordner.get(st.get("id"), Path(daten) / "?" / str(st.get("id")))
@@ -428,6 +478,10 @@ def pruefe(
     bekannte_typen = {t for typen, _ in modell.MERKMALE for t in typen}
     gebiete_ = Gebiete(gebiete) if gebiete else None
     gleich = gleiche_lage(bestand)
+    komplexe_je_lage: dict[tuple, set] = defaultdict(set)  # Koordinate → Sportkomplexe dort
+    for st in bestand:
+        if st["id"] in gleich:
+            komplexe_je_lage[_lage(st)].add(st.get("sportkomplex"))
     schreibweise = sportarten_schreibweisen(bestand)
 
     def sportarten(x: dict) -> Iterable[str]:
@@ -456,12 +510,15 @@ def pruefe(
         ]
         if st["id"] in gleich:
             n = gleich[st["id"]]
-            meldungen.append(
-                (
-                    "Gleiche Koordinate",
-                    f"lage: Koordinate teilen sich {n} Sportstätten – Ersatzwert?",
+            dort = komplexe_je_lage[_lage(st)]
+            if len(dort) == 1 and (kid := next(iter(dort))):
+                m = (
+                    f"lage: Koordinate teilen sich {n} Sportstätten des Sportkomplexes "
+                    f"„{komplex_name.get(kid, kid)}“ – vermutlich seine Lage, bitte einzeln verorten"
                 )
-            )
+            else:
+                m = f"lage: Koordinate teilen sich {n} Sportstätten – Ersatzwert?"
+            meldungen.append(("Gleiche Koordinate", m))
         if gebiete_:
             meldungen += [
                 *ort(st),
@@ -487,10 +544,18 @@ def pruefe(
             kat = y.get("kategorie") or "ohne Kategorie"
             text = f"„{y.get('name')}“ ({kat}, {y.get('id')}), {d:.0f} m entfernt"
             out.append((datei(x), "Doppelung", f"name: ähnlich wie {text} – Doppelung?"))
+    for i, pruefung, m in sportkomplexe(bestand, komplexe):
+        ziel = komplex_datei.get(i) or datei({"id": i})
+        out.append((ziel, pruefung, m))
     if gebiete and gebiete.get("kreis"):
-        for sid, ist, soll in falsch_einsortiert(bestand, kreis_ordner(gebiete)):
+        kreis_von = kreis_ordner(gebiete)
+        for sid, ist, soll in falsch_einsortiert(bestand, kreis_von):
             m = f"lage: liegt im Kreis {soll}, die Datei aber unter {ist} (einordnen)"
             out.append((str(ordner.get(sid, sid)), "Kreis-Ordner", m))
+        for k in komplexe:
+            if (soll := komplex_kreis(k, bestand, kreis_von)) != k["_ordner"]:
+                m = f"Sportkomplex gehört in den Kreis {soll}, die Datei liegt unter {k['_ordner']} (einordnen)"
+                out.append((komplex_datei[k["id"]], "Kreis-Ordner", m))
     for o in organisationen:
         if not o.get("typ"):
             out.append(
