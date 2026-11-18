@@ -1,7 +1,10 @@
 """Prüfungen aus validate.py – synthetische Daten."""
 
+import re
+from pathlib import Path
+
 from sportstaettenatlas.bestand import schreibe_bestand, schreibe_organisation
-from sportstaettenatlas.validate import aehnlich, ort_passt, pruefe
+from sportstaettenatlas.validate import PRUEFUNGEN, aehnlich, ort_passt, pruefe
 
 
 def _quadrat(ars, name, w, s, o, n):
@@ -88,8 +91,9 @@ def test_pruefe(tmp_path):
     ]
     schreibe_bestand(bestand, daten, "RP", lambda lon, lat: "07111-koblenz")
     meldungen = pruefe(bestand, ORGS, {"gemeinde": GEMEINDEN}, daten)
+    assert {p for _, p, _ in meldungen} <= set(PRUEFUNGEN)
     nach = {}
-    for datei, m in meldungen:
+    for datei, _, m in meldungen:
         nach.setdefault(datei.rsplit("/", 1)[-1], []).append(m)
 
     assert nach[f"{S1}_meta.json"] == [
@@ -114,7 +118,7 @@ def test_pruefe(tmp_path):
 
     # ohne Gemeinden entfallen Ort und Rheinland-Pfalz, der Rest bleibt
     ohne = pruefe(bestand, ORGS, None, daten)
-    assert not any(m.startswith(("adresse.ort", "lage")) for _, m in ohne)
+    assert not any(m.startswith(("adresse.ort", "lage")) for _, _, m in ohne)
     assert len(ohne) == len(meldungen) - 3
 
 
@@ -183,7 +187,9 @@ def test_weitere_pruefungen(tmp_path):
     ]
     schreibe_bestand(bestand, daten, "RP", lambda lon, lat: "07111-koblenz")
     nach = {}
-    for datei, m in pruefe(bestand, orgs, {"gemeinde": GEMEINDEN}, daten):
+    meldungen = pruefe(bestand, orgs, {"gemeinde": GEMEINDEN}, daten)
+    assert {p for _, p, _ in meldungen} <= set(PRUEFUNGEN)
+    for datei, _, m in meldungen:
         nach.setdefault(datei.rsplit("/", 1)[-1], []).append(m)
 
     assert nach[f"{S1}_meta.json"] == [
@@ -213,3 +219,17 @@ def test_weitere_pruefungen(tmp_path):
     assert nach["o1.json"] == ["name: fast gleich wie „TuS Berg“ (o2) – doppelt?"]
     assert nach["o2.json"] == ["name: fast gleich wie „TuS Berg e.V.“ (o1) – doppelt?"]
     assert "o3.json" not in nach
+    pruefung = {m: p for _, p, m in meldungen}
+    assert pruefung["adresse.plz: 10115 ist keine Postleitzahl in Rheinland-Pfalz"] == "PLZ"
+    assert pruefung["lux: angegeben, aber Flutlicht „nein“"] == "Licht"
+    assert pruefung["typ: Art der Organisation fehlt"] == "Organisation ohne Art"
+    assert {p for m, p in pruefung.items() if m.startswith("betreiber_typ")} == {
+        "Art der Organisation"
+    }
+
+
+def test_pruefungen_heissen_wie_in_der_readme():
+    """Die Spalte „pruefung“ nennt die Prüfungen so wie der Abschnitt „Prüfungen“ der README."""
+    readme = (Path(__file__).parents[1] / "README.md").read_text("utf-8")
+    abschnitt = readme.split("## Prüfungen", 1)[1].split("\n## ", 1)[0]
+    assert tuple(re.findall(r"^- \*\*(.+?):\*\*", abschnitt, re.MULTILINE)) == PRUEFUNGEN

@@ -62,21 +62,21 @@ def _pruefe_und_melde(bestand, organisationen, verstoesse, gebiete) -> None:
     import csv
 
     from .hilfen import ERGEBNISSE
-    from .validate import pruefe
+    from .validate import DATENMODELL, pruefe
 
-    verstoesse = verstoesse + pruefe(bestand, organisationen, gebiete, DATEN)
+    alle = [(d, DATENMODELL, m) for d, m in verstoesse]
+    alle += pruefe(bestand, organisationen, gebiete, DATEN)
     datei = ERGEBNISSE / "regelverstoesse.csv"
-    if verstoesse:
+    if alle:
         datei.parent.mkdir(parents=True, exist_ok=True)
         with datei.open("w", newline="", encoding="utf-8") as f:
             w = csv.writer(f)
-            w.writerow(["datei", "meldung"])
-            w.writerows(verstoesse)
-        felder = Counter(m.split(":")[0] for _, m in verstoesse)
+            w.writerow(["datei", "pruefung", "meldung"])
+            w.writerows(alle)
+        je = Counter(p for _, p, _ in alle)
         print(
-            f"Hinweis: {len(verstoesse)} Auffälligkeiten (Regeln des Datenmodells und Prüfungen "
-            f"aus validate.py: {', '.join(f'{k} {v}×' for k, v in felder.most_common(6))}) – "
-            f"Liste: {datei}"
+            f"Hinweis: {len(alle)} Auffälligkeiten "
+            f"({', '.join(f'{k} {v}×' for k, v in je.most_common(6))}) – Liste: {datei}"
         )
     elif datei.exists():
         datei.unlink()

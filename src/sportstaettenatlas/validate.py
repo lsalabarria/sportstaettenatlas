@@ -383,14 +383,40 @@ def doppelungen(bestand: list[dict]) -> Iterable[tuple[dict, dict, float]]:
 # --- alles zusammen -------------------------------------------------------------------------
 
 
+DATENMODELL = "Datenmodell"  # Prüfung der Meldungen aus modell.py (Pflichtfelder, Formate …)
+# die Prüfungen dieser Datei, wie sie in der Spalte „pruefung“ und in README.md heißen
+PRUEFUNGEN = (
+    "Organisation",
+    "Art der Organisation",
+    "Eigentum der Kommune",
+    "Ort",
+    "Rheinland-Pfalz",
+    "Kreis-Ordner",
+    "Gleiche Koordinate",
+    "Doppelung",
+    "PLZ",
+    "Straße und Hausnummer",
+    "Sanierung",
+    "Anlagentyp",
+    "Sportarten",
+    "Schreibweise der Sportarten",
+    "Licht",
+    "Fläche",
+    "Betriebsstatus",
+    "Organisation ohne Art",
+    "Fast gleiche Organisationen",
+)
+
+
 def pruefe(
     bestand: list[dict],
     organisationen: list[dict],
     gebiete: dict | None,
     daten: Path,
-) -> list[tuple[str, str]]:
-    """Alle Prüfungen über den Bestand. `gebiete`: Verwaltungsgebiete (gebiete.lade);
-    ohne entfallen die Prüfungen, die sie brauchen (Ort, Land, Kreis-Ordner, Eigentum)."""
+) -> list[tuple[str, str, str]]:
+    """Alle Prüfungen über den Bestand → (Datei, Prüfung, Meldung); die Namen der Prüfungen
+    sind die aus README.md. `gebiete`: Verwaltungsgebiete (gebiete.lade); ohne entfallen die
+    Prüfungen, die sie brauchen (Ort, Land, Kreis-Ordner, Eigentum)."""
     ordner = {k: v for land in _laender(daten) for k, v in _staetten_ordner(land).items()}
     org_datei = {p.stem: str(p) for p in org_dateien(daten)}
 
@@ -410,57 +436,72 @@ def pruefe(
                 haeufig, n = schreibweise[s]
                 yield f"sportarten: „{s}“ – sonst meist „{haeufig}“ ({n}×)"
 
-    out: list[tuple[str, str]] = []
+    def ort(st: dict) -> Iterable[tuple[str, str]]:  # Ort und Land aus einer Prüfung
+        for m in ort_und_land(st, gebiete_):
+            yield ("Rheinland-Pfalz" if m.startswith("lage:") else "Ort"), m
+
+    out: list[tuple[str, str, str]] = []
     for st in bestand:
-        meldungen = [
-            *organisationen_der_staette(st, verzeichnis),
-            *adresse(st),
-            *sanierung(st),
-            *sportarten(st),
+        meldungen: list[tuple[str, str]] = [
+            *(
+                ("Art der Organisation" if m.split(":")[0].endswith("_typ") else "Organisation", m)
+                for m in organisationen_der_staette(st, verzeichnis)
+            ),
+            *(
+                ("PLZ" if m.startswith("adresse.plz") else "Straße und Hausnummer", m)
+                for m in adresse(st)
+            ),
+            *(("Sanierung", m) for m in sanierung(st)),
+            *(("Schreibweise der Sportarten", m) for m in sportarten(st)),
         ]
         if st["id"] in gleich:
+            n = gleich[st["id"]]
             meldungen.append(
-                f"lage: Koordinate teilen sich {gleich[st['id']]} Sportstätten – Ersatzwert?"
+                (
+                    "Gleiche Koordinate",
+                    f"lage: Koordinate teilen sich {n} Sportstätten – Ersatzwert?",
+                )
             )
         if gebiete_:
             meldungen += [
-                *ort_und_land(st, gebiete_),
-                *eigentum_der_kommune(st, verzeichnis, gebiete_),
+                *ort(st),
+                *(
+                    ("Eigentum der Kommune", m)
+                    for m in eigentum_der_kommune(st, verzeichnis, gebiete_)
+                ),
             ]
-        out += [(datei(st), m) for m in meldungen]
+        out += [(datei(st), p, m) for p, m in meldungen]
         for a in st.get("anlagen") or []:
             meldungen = [
-                *sanierung(a),
-                *felder_zum_typ(a, bekannte_typen),
-                *sportarten_der_anlage(a, st),
-                *sportarten(a),
-                *licht(a),
-                *flaeche(a),
-                *geschlossen_mit_oeffnungszeiten(a, st),
+                *(("Sanierung", m) for m in sanierung(a)),
+                *(("Anlagentyp", m) for m in felder_zum_typ(a, bekannte_typen)),
+                *(("Sportarten", m) for m in sportarten_der_anlage(a, st)),
+                *(("Schreibweise der Sportarten", m) for m in sportarten(a)),
+                *(("Licht", m) for m in licht(a)),
+                *(("Fläche", m) for m in flaeche(a)),
+                *(("Betriebsstatus", m) for m in geschlossen_mit_oeffnungszeiten(a, st)),
             ]
-            out += [(datei(st, a), m) for m in meldungen]
+            out += [(datei(st, a), p, m) for p, m in meldungen]
     for a, b, d in doppelungen(bestand):
         for x, y in ((a, b), (b, a)):
             kat = y.get("kategorie") or "ohne Kategorie"
             text = f"„{y.get('name')}“ ({kat}, {y.get('id')}), {d:.0f} m entfernt"
-            out.append((datei(x), f"name: ähnlich wie {text} – Doppelung?"))
+            out.append((datei(x), "Doppelung", f"name: ähnlich wie {text} – Doppelung?"))
     if gebiete and gebiete.get("kreis"):
         for sid, ist, soll in falsch_einsortiert(bestand, kreis_ordner(gebiete)):
-            out.append(
-                (
-                    str(ordner.get(sid, sid)),
-                    f"lage: liegt im Kreis {soll}, die Datei aber unter {ist} (einordnen)",
-                )
-            )
+            m = f"lage: liegt im Kreis {soll}, die Datei aber unter {ist} (einordnen)"
+            out.append((str(ordner.get(sid, sid)), "Kreis-Ordner", m))
     for o in organisationen:
         if not o.get("typ"):
-            out.append((org_datei.get(o["id"], o["id"]), "typ: Art der Organisation fehlt"))
-    for a, b in fast_gleiche_organisationen(organisationen):
-        for x, y in ((a, b), (b, a)):
             out.append(
                 (
-                    org_datei.get(x["id"], x["id"]),
-                    f"name: fast gleich wie „{y['name']}“ ({y['id']}) – doppelt?",
+                    org_datei.get(o["id"], o["id"]),
+                    "Organisation ohne Art",
+                    "typ: Art der Organisation fehlt",
                 )
             )
+    for a, b in fast_gleiche_organisationen(organisationen):
+        for x, y in ((a, b), (b, a)):
+            m = f"name: fast gleich wie „{y['name']}“ ({y['id']}) – doppelt?"
+            out.append((org_datei.get(x["id"], x["id"]), "Fast gleiche Organisationen", m))
     return out

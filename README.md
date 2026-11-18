@@ -90,7 +90,8 @@ umbenannt oder gestrichen, passt `migrieren` die Dateien an, z. B.
 ## Prüfungen
 
 `seite` und `pruefen` schreiben alle Auffälligkeiten nach `results/regelverstoesse.csv` (Datei,
-Meldung); sie brechen nicht ab. Zu den Regeln des Datenmodells (Pflichtfelder, Formate,
+Prüfung, Meldung); sie brechen nicht ab. Die Spalte `pruefung` nennt eine der Prüfungen unten
+oder „Datenmodell“. Zu den Regeln des Datenmodells (Pflichtfelder, Formate,
 Auswahllisten, mindestens 4 Nachkommastellen bei Koordinaten, `braucht`, `teil_von`) prüft
 `src/sportstaettenatlas/validate.py`:
 
