@@ -63,6 +63,12 @@ BESTAND = [
         "sportarten": ["Tennis"],
         "anlagen": [{"id": "cccccccc-3333-4333-8333-333333333333", "typ": "Tennisplatz"}],
     },
+    {  # ohne Sportkomplex und ohne Anlagen
+        "id": "33333333-3333-4333-8333-333333333333",
+        "name": "Bolzplatz Tal",
+        "kategorie": "Sportplatz",
+        "lage": {"lon": 7.8023, "lat": 50.2045},
+    },
 ]
 SID = BESTAND[0]["id"]
 KOMPLEX = {"id": "dddddddd-4444-4444-8444-444444444444", "name": "Sportzentrum Berg"}
@@ -212,16 +218,43 @@ def test_uebersicht_zeigt_bestand_und_befuellung(oeffne):
             page.locator("#seite-uebersicht .kachel .wert").all_inner_texts(),
         )
     )
-    assert kacheln["Sportstätten"] == "2" and kacheln["Sportanlagen"] == "3"
+    assert kacheln["Sportstätten"] == "3" and kacheln["Sportanlagen"] == "3"
+    assert kacheln["Sportkomplexe"] == "1"
 
 
 def test_liste_filtert_nach_sportart(oeffne):
     page = oeffne("#ansicht=liste")
-    assert page.locator("table.liste tr.zeile").count() == 2
+    assert page.locator("table.liste tr.zeile").count() == 3
     page.select_option('[data-f="sportart"]', "Tennis")
     page.wait_for_timeout(100)
     zeilen = page.locator("table.liste tr.zeile").all_inner_texts()
     assert len(zeilen) == 1 and "Tennisanlage Bergen" in zeilen[0]
+
+
+def test_nach_sportkomplex_filtern(oeffne):
+    page = oeffne("#ansicht=liste")
+    page.select_option('[data-f="komplex"]', "*")
+    page.wait_for_timeout(100)
+    assert page.locator("table.liste tr.zeile").count() == 2
+    page.select_option('[data-f="komplex"]', KOMPLEX["id"])
+    page.wait_for_timeout(100)
+    namen = page.locator("table.liste tr.zeile td:first-child").all_inner_texts()
+    assert sorted(namen) == ["Sportplatz Berg", "Tennisanlage Bergen"]
+    assert "komplex=dddddddd" in page.evaluate("location.hash")
+
+    page = oeffne()  # Karte
+    page.locator("details:has(#b-ko-n) summary").click()
+    page.locator('input[data-ko="*"]').check()
+    assert page.locator("#b-zahl").inner_text() == "2 von 3 Sportstätten"
+    page.locator('input[data-ko=""]').check()
+    assert page.locator("#b-zahl").inner_text() == "3 Sportstätten"
+    # im Popup: „alle auf der Karte“ zeigt nur die Sportstätten des Komplexes
+    page.evaluate(
+        f"ANSICHTEN.bestand.zeigeEintrag(ANSICHTEN.bestand.eintraege.find(e => e.p.id === '{SID}'))"
+    )
+    page.locator(".leaflet-popup [data-nur-komplex]").click()
+    assert page.locator("#b-zahl").inner_text() == "2 von 3 Sportstätten"
+    assert page.locator('input[data-ko="dddddddd-4444-4444-8444-444444444444"]').is_checked()
 
 
 # --- Vorschläge: was das Formular sendet, muss das Modell annehmen --------------------------

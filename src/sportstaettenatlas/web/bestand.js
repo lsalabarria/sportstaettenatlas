@@ -87,6 +87,7 @@ function ansichtBestand(fc) {
   for (const k of Object.keys(katAlle)) katAn[k] = true;
   for (const a of ARTEN) artAn[a] = true;
   const sportWahl = new Set(), anlagenWahl = new Set();
+  let komplexWahl = "";  // "": alle, IN_KOMPLEX: in irgendeinem Sportkomplex, sonst dessen ID
   let betreiberWahl = null;  // { rolle, schluessel, name }
 
   const mitEinem = (wahl, menge) => { for (const x of wahl) if (menge.has(x)) return true; return false; };
@@ -96,6 +97,7 @@ function ansichtBestand(fc) {
       : e[betreiberWahl.rolle] === betreiberWahl.schluessel)) return false;
     if (sportWahl.size && !mitEinem(sportWahl, e.sp)) return false;
     if (anlagenWahl.size && !mitEinem(anlagenWahl, e.typen)) return false;
+    if (komplexWahl && !(komplexWahl === IN_KOMPLEX ? e.p.sportkomplex : e.p.sportkomplex === komplexWahl)) return false;
     return true;
   }
   let zahlEl = null;
@@ -119,6 +121,7 @@ function ansichtBestand(fc) {
     for (const e of eintraege) {
       if (!imGebiet(e.p.ars)) continue;
       plus("k:" + e.kat); plus("a:" + e.art);
+      if (e.p.sportkomplex) { plus("ko:" + IN_KOMPLEX); plus("ko:" + e.p.sportkomplex); }
       for (const s of e.sp) plus("s:" + s);
       const gruppen = new Set();
       for (const t of e.typen) { plus("t:" + t); gruppen.add(anlagenGruppe(t)); }
@@ -171,6 +174,13 @@ function ansichtBestand(fc) {
         + `</div><div class="knoepfe"><button type="button" data-keine="sp">Auswahl aufheben</button></div>`
         + `<div class="hinweis">Ohne Auswahl: alle. Mit Auswahl: Sportstätten mit mindestens einer davon.</div></details>`
         : "")
+      + (SPORTKOMPLEXE.size ? `<details><summary>Sportkomplexe <span id="b-ko-n"></span></summary>`
+        + `<label><input type="radio" name="b-ko" data-ko="" checked>alle, mit und ohne Sportkomplex</label>`
+        + `<label><input type="radio" name="b-ko" data-ko="${IN_KOMPLEX}">nur in einem Sportkomplex${nSpan("ko:" + IN_KOMPLEX)}</label>`
+        + `<input type="search" placeholder="Sportkomplex suchen" aria-label="Sportkomplex suchen">`
+        + `<div class="ko-liste">` + komplexeNachName().map(k => `<label data-text="${esc(k.name.toLowerCase())}">`
+          + `<input type="radio" name="b-ko" data-ko="${esc(k.id)}">${esc(k.name)}${nSpan("ko:" + k.id)}</label>`).join("")
+        + `</div><div class="hinweis">Mehrere Sportstätten an einem Ort, z. B. ein Sportzentrum</div></details>` : "")
       + `<div class="hinweis">Klick auf einen Punkt: Angaben bleiben stehen · Rechtsklick: Koordinaten</div>`;
     zahlEl = div.querySelector("#b-zahl");
     // Häkchen: bei jeder Änderung `setze(Häkchen)` aufrufen, dann Karte und Zähler erneuern
@@ -180,6 +190,12 @@ function ansichtBestand(fc) {
     beiAenderung("input[data-k]", cb => { katAn[cb.dataset.k] = cb.checked; });
     beiAenderung("input[data-a]", cb => { artAn[cb.dataset.a] = cb.checked; });
     beiAenderung("input[data-s]", cb => schalte(sportWahl, cb.dataset.s, cb.checked));
+    beiAenderung("input[data-ko]", cb => { if (cb.checked) komplexWahl = cb.dataset.ko; });
+    const suchKo = div.querySelector(".ko-liste") && div.querySelector(".ko-liste").previousElementSibling;
+    if (suchKo) suchKo.addEventListener("input", () => {
+      const q = suchKo.value.trim().toLowerCase();
+      div.querySelectorAll(".ko-liste label").forEach(l => { l.hidden = q && !l.dataset.text.includes(q); });
+    });
     // Sportanlagen: Gruppe wählt alle ihre Typen, einzelne Typen nach Aufklappen
     beiAenderung("input[data-t]", cb => schalte(anlagenWahl, cb.dataset.t, cb.checked));
     beiAenderung("input[data-ag]", cb => cb.closest(".an-gruppe").querySelectorAll("input[data-t]")
@@ -231,6 +247,10 @@ function ansichtBestand(fc) {
     if (!panelEl) return;
     panelEl.querySelectorAll("input[data-s]").forEach(c => { c.checked = sportWahl.has(c.dataset.s); });
     panelEl.querySelectorAll("input[data-t]").forEach(c => { c.checked = anlagenWahl.has(c.dataset.t); });
+    panelEl.querySelectorAll("input[data-ko]").forEach(c => { c.checked = c.dataset.ko === komplexWahl; });
+    const koN = panelEl.querySelector("#b-ko-n");
+    if (koN) koN.textContent = !komplexWahl ? "" : komplexWahl === IN_KOMPLEX ? "(nur in einem)"
+      : `(${komplexName(komplexWahl)})`;
     panelEl.querySelectorAll("input[data-ag]").forEach(cb => {
       const typen = [...cb.closest(".an-gruppe").querySelectorAll("input[data-t]")];
       const n = typen.filter(t => t.checked).length;
@@ -255,7 +275,7 @@ function ansichtBestand(fc) {
 
   // Ein gesuchter Eintrag soll sichtbar werden, auch wenn Filter ihn gerade ausblenden
   function filterZurueck() {
-    betreiberWahl = null; sportWahl.clear(); anlagenWahl.clear();
+    betreiberWahl = null; sportWahl.clear(); anlagenWahl.clear(); komplexWahl = "";
     for (const k in katAn) katAn[k] = true;
     for (const a in artAn) artAn[a] = true;
     if (panelEl) panelEl.querySelectorAll("input[data-k],input[data-a]").forEach(c => { c.checked = true; });
@@ -273,6 +293,17 @@ function ansichtBestand(fc) {
     anlagenWahl.clear(); anlagenWahl.add(typ);
     zeigeWahl(); aktualisiere();
   }
+  // Klick auf „alle auf der Karte“ beim Sportkomplex: nur seine Sportstätten, auf sie zoomen
+  document.addEventListener("click", ev => {
+    const a = ev.target.closest("[data-nur-komplex]");
+    if (!a || AKTIV !== "bestand") return;
+    ev.preventDefault();
+    karte.closePopup();
+    komplexWahl = a.dataset.nurKomplex;
+    zeigeWahl(); aktualisiere();
+    const pkte = eintraege.filter(e => e.an).map(e => [e.lat, e.lon]);
+    if (pkte.length) karte.fitBounds(L.latLngBounds(pkte).pad(0.3), { maxZoom: 18 });
+  });
   document.addEventListener("click", ev => {
     const a = ev.target.closest("[data-nur-anlage]");
     if (!a || AKTIV !== "bestand") return;
@@ -438,6 +469,9 @@ function ansichtUebersicht(bestand) {
     const kachel = (label, wert, zusatz = "") => `<div class="kachel"><div class="label">${label}</div>`
       + `<div class="wert">${wert}</div><div class="zusatz">${zusatz}</div></div>`;
     const ohneAnlagen = liste.filter(e => !e.anlagen.length).length;
+    // Sportkomplexe mit mindestens einer Sportstätte im Gebiet: Name → Zahl dieser Sportstätten
+    const imKomplex = liste.filter(e => e.p.sportkomplex);
+    const jeKomplex = sortiert(zaehle(imKomplex.map(e => komplexName(e.p.sportkomplex))));
     const angegeben = rolle => liste.map(e => e.p[rolle + "_typ"]).filter(v => !leer(v));
     const artBalken = rolle => {
       const z = angegeben(rolle);
@@ -452,6 +486,8 @@ function ansichtUebersicht(bestand) {
       + kachel("Sportstätten", zahl(n), ohneAnlagen ? `${zahl(ohneAnlagen)} ohne eingetragene Sportanlage` : "alle mit Sportanlagen")
       + kachel("Sportanlagen", zahl(na), n ? `Ø ${(na / n).toLocaleString("de-DE",
         { maximumFractionDigits: 1 })} je Sportstätte` : "")
+      + (SPORTKOMPLEXE.size ? kachel("Sportkomplexe", zahl(jeKomplex.length),
+        `mit ${zahl(imKomplex.length)} Sportstätten (${prozent(imKomplex.length, n)} %)`) : "")
       + kachel("Sportarten", zahl(sportarten.size), "verschiedene")
       + kachel("Vereine", zahl(betr.Verein.size), "als Betreiber (mit angegebener Art)")
       + kachel("Kommunen", zahl(betr.Kommune.size), "als Betreiber (mit angegebener Art)")
@@ -461,6 +497,7 @@ function ansichtUebersicht(bestand) {
         .filter(z => z[1]), n, true)
       + `<div class="hinweis">Art angegeben bei ${zahl(angegeben("betreiber").length)} Sportstätten (bei der Sportstätte oder im Verzeichnis der Organisationen)</div>`
       + artBalken("betreiber") + artBalken("eigentuemer")
+      + (jeKomplex.length ? `<h4>Größte Sportkomplexe</h4>` + balken(jeKomplex.slice(0, 10), 0, false) : "")
       + `</div><div><h3>Sportanlagen</h3>`
       + `<h4>Nach Gruppe</h4>` + balken(ANLAGEN_GRUPPEN.map(([g, text]) =>
         [text, anlagen.filter(a => anlagenGruppe(a.typ) === g).length]).filter(z => z[1])

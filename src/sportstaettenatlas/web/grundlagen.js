@@ -117,6 +117,18 @@ function setzeSportkomplexe(liste, features) {
     }
   }
 }
+// Auswahl „Sportkomplex“ für Filter: alle, in irgendeinem Komplex oder ein bestimmter (nach Namen)
+const IN_KOMPLEX = "*";
+function komplexeNachName() {
+  return [...SPORTKOMPLEXE.values()].sort((a, b) => a.name.localeCompare(b.name, "de"));
+}
+function komplexAuswahlHtml(wert) {
+  if (!SPORTKOMPLEXE.size) return "";
+  const opt = (v, text) => `<option value="${esc(v)}"${v === wert ? " selected" : ""}>${esc(text)}</option>`;
+  return `<select data-f="komplex" aria-label="Sportkomplex">${opt("", "alle, mit und ohne Sportkomplex")}`
+    + opt(IN_KOMPLEX, "nur in einem Sportkomplex")
+    + komplexeNachName().map(k => opt(k.id, k.name)).join("") + `</select>`;
+}
 function komplexName(id) { const k = SPORTKOMPLEXE.get(id); return k ? k.name : String(id); }
 // Zeile im Popup: Name des Komplexes und die anderen Sportstätten darin (öffnen ihre Angaben)
 function komplexZeile(id, ohne) {
@@ -124,7 +136,9 @@ function komplexZeile(id, ohne) {
   if (!k) return esc(id);
   const andere = k.mitglieder.filter(m => m.id !== ohne);
   return `<b>${esc(k.name)}</b>` + (andere.length ? ", mit " + andere.map(m =>
-    `<a href="#" data-details="${esc(m.id)}">${esc(m.name)}</a>`).join(", ") : "");
+    `<a href="#" data-details="${esc(m.id)}">${esc(m.name)}</a>`).join(", ") : "")
+    + ` · <a href="#" data-nur-komplex="${esc(k.id)}" title="Nur die Sportstätten dieses Komplexes zeigen">`
+    + `alle auf der Karte</a>`;
 }
 
 // Werte zählen: ["a", "b", "a"] → { a: 2, b: 1 }
