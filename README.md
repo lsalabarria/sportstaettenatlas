@@ -39,9 +39,25 @@ ALKIS (WFS) ──alkis──▶ results/out/ (Abgleich mit daten/) ────
 
 ## Installation
 
+Nötig sind:
+
+- **Git**, um das Repository zu klonen
+- **[uv](https://docs.astral.sh/uv/)**, verwaltet Python und alle Pakete:
+  `curl -LsSf https://astral.sh/uv/install.sh | sh` (Windows: siehe Link)
+- **Python 3.12 oder neuer**: Fehlt es, lädt `uv sync` es selbst herunter.
+
 ```bash
-uv sync
+git clone https://github.com/lsalabarria/sportstaettenatlas.git
+cd sportstaettenatlas
+uv sync                                   # legt .venv an, mit allen Paketen und dev-Werkzeugen
+uv run sportstaettenatlas --help
 ```
+
+Optional:
+
+- **Node.js**: Die Tests prüfen damit die Skripte der Webseite.
+- **Chromium für Playwright**: Damit laufen die Browser-Tests (siehe [Tests](#tests)).
+- **Graphviz**: Damit wird das Diagramm des Datenmodells gezeichnet (siehe unten).
 
 Für das Diagramm des Datenmodells (`daten/datenmodell.svg`) zusätzlich Graphviz und erdantic:
 
