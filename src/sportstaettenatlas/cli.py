@@ -14,7 +14,8 @@ from .analysen.alkis import cli as alkis_cli
 
 LAND = "rp"
 DATEN = Path("daten")
-DOCS = Path("docs")
+DOCS = Path("docs")  # erzeugt, nicht im Git (baut die GitHub Action)
+WEBSEITE = Path("webseite")  # von Hand gepflegte Dateien und Analyse-Ergebnisse, im Git
 TITEL = "Sportstättenatlas Rheinland-Pfalz"
 
 
@@ -252,7 +253,7 @@ def cmd_seite(args):
     """Statische Webseite für GitHub Pages (Ordner docs/) erzeugen."""
     from . import gebiete as gb
     from .modell import schreibe_doku
-    from .seite import schreibe_webseite
+    from .seite import lade_analysen, schreibe_webseite, speichere_analyse
 
     bestand, organisationen, verstoesse = _lies_bestand()
     for hinweis in schreibe_doku(DATEN):
@@ -260,16 +261,14 @@ def cmd_seite(args):
     gebiete = _gebiete()
     _pruefe_und_melde(bestand, organisationen, verstoesse, gebiete)
     ars_von = gb.Zuordnung(gebiete["gemeinde"]).ars
-    vermerke = [gb.QUELLENVERMERK.format(jahr=dt.datetime.now(dt.UTC).year)]
-    analysen = {}
     if alkis := alkis_cli.fuer_webseite(ars_von):
         titel, dateien, texte, vermerk = alkis
-        analysen["alkis"] = (titel, dateien, texte)
-        vermerke.insert(0, vermerk)
-    else:
-        print(
-            "Hinweis: kein ALKIS-Ergebnis in results/out – der Reiter „Analysen“ bleibt, wie er ist."
-        )
+        speichere_analyse(WEBSEITE / "analysen", "alkis", titel, dateien, texte, vermerk)
+        print(f"ALKIS-Ergebnis aus results/out nach {WEBSEITE}/analysen/alkis/ (ins Git).")
+    analysen, vermerke = lade_analysen(WEBSEITE / "analysen")
+    vermerke.append(gb.QUELLENVERMERK.format(jahr=dt.datetime.now(dt.UTC).year))
+    if not analysen:
+        print(f"Hinweis: keine Analyse in {WEBSEITE}/analysen – der Reiter „Analysen“ fehlt.")
 
     info = schreibe_webseite(
         DOCS,
@@ -280,6 +279,7 @@ def cmd_seite(args):
         quellenvermerk=" | ".join(vermerke),
         titel=TITEL,
         organisationen=organisationen,
+        von_hand=WEBSEITE,
     )
     print(f"Webseite: {DOCS}/  ({info['gesamt'] / 1e6:.1f} MB)")
     for name, _, anzahl, groesse in info["dateien"]:
@@ -292,7 +292,7 @@ def cmd_seite(args):
         print("Hinweis: Leaflet nicht heruntergeladen – die Seite lädt es von unpkg.com.")
     if info["neu_angelegt"]:
         print("Neu angelegt (wird nie überschrieben): " + ", ".join(info["neu_angelegt"]))
-        print("  → in impressum.html, datenschutz.html und konfig.js die Platzhalter ausfüllen.")
+        print(f"  → in {WEBSEITE}/ die Platzhalter ausfüllen.")
     if args.vorschau:
         _vorschau(DOCS)
 

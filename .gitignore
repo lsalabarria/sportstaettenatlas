@@ -1,6 +1,8 @@
 # Rohdaten, Zwischenstände und Ergebnisse der Analysen (ALKIS, Atlas-Export) – nur lokal.
-# Ins Git gehören nur daten/ (Bestand) und docs/ (Webseite).
+# Ins Git gehören daten/ (Bestand) und webseite/ (von Hand gepflegt, Analyse-Ergebnisse).
 results/
+# Webseite: baut die GitHub Action (.github/workflows/seite.yml)
+docs/
 # früherer Name von results/
 data/
 _transfer/

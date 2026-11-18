@@ -2,14 +2,15 @@
 
     docs/index.html                     Seite (Gerüst aus web/index.html)
     docs/app/                           Stil und Skripte (aus web/, bei jedem Lauf neu)
-    docs/konfig.js                      Einstellungen – nur beim ersten Mal angelegt, danach
-    docs/impressum.html, datenschutz.html   nie überschrieben (von Hand bzw. auf GitHub gepflegt)
+    docs/konfig.js                      Einstellungen; wie Impressum und Datenschutz von Hand
+    docs/impressum.html, datenschutz.html   gepflegt in webseite/ und von dort kopiert
     docs/daten/index.html               Download-Seite
     docs/daten/bestand.geojson          Datenbestand aus daten/ (bestand_geojson)
     docs/daten/gebiete.json,            Kreise, Verbandsgemeinden, Gemeinden zur Auswahl
     docs/daten/gebiete_*.geojson        (Umrisse werden erst bei Bedarf geladen)
     docs/daten/analysen/index.json      Verzeichnis der Analysen (Reiter „Analysen“)
-    docs/daten/analysen/<name>/         Dateien einer Analyse, z. B. alkis/ (lädt erst beim Öffnen)
+    docs/daten/analysen/<name>/         Dateien einer Analyse, z. B. alkis/ (lädt erst beim Öffnen),
+                                        aus webseite/analysen/<name>/ (speichere_analyse)
     docs/vendor/leaflet/                Kartenbibliothek, lokal (keine Anfragen an Dritt-CDNs)
     docs/daten/organisationen.json      Verzeichnis der Organisationen
     docs/.nojekyll                      GitHub Pages soll die Dateien unverändert ausliefern
@@ -43,6 +44,7 @@ LEAFLET_DATEIEN = (
     "images/marker-shadow.png",
 )
 VON_HAND = ("konfig.js", "impressum.html", "datenschutz.html")  # nie überschreiben
+ANALYSE = "analyse.json"  # Titel, Beschreibungen und Quellenvermerk einer gespeicherten Analyse
 
 
 # --- Datenbestand für die Karte ---------------------------------------------------------
@@ -208,34 +210,50 @@ def _anzahl(obj) -> int | None:
 def _analysen(ordner: Path, analysen: dict) -> tuple[dict, list[tuple[str, str, dict]]]:
     """Verzeichnis der Analysen (für index.json) und ihre Dateien (Pfad, Beschreibung, Inhalt).
 
-    Analysen aus früheren Läufen bleiben im Verzeichnis, solange ihr Ordner existiert;
-    der Ordner einer neu gerechneten Analyse wird vorher geleert.
+    Der Ordner `ordner` (docs/daten/analysen) wird vorher geleert: keine Reste früherer Läufe.
     """
-    index = ordner / "index.json"
-    frueher = json.loads(index.read_text("utf-8"))["analysen"] if index.exists() else []
-    verzeichnis = {a["name"]: a for a in frueher if (ordner / a["name"]).is_dir()}
-    dateien = []
+    if ordner.exists():
+        shutil.rmtree(ordner)
+    verzeichnis, dateien = {}, []
     for name, (titel, inhalte, texte) in analysen.items():
-        if (ordner / name).exists():
-            shutil.rmtree(ordner / name)  # keine Reste früherer Läufe
         verzeichnis[name] = {"name": name, "titel": titel, "dateien": texte}
         for datei, inhalt in inhalte.items():
             dateien.append((f"analysen/{name}/{datei}", texte.get(datei, ""), inhalt))
     return verzeichnis, dateien
 
 
-def _fruehere_analysen(ordner: Path, verzeichnis: dict, neu: set[str]) -> list[tuple]:
-    """Zeilen der Download-Liste für Dateien von Analysen, die diesmal nicht neu gerechnet
-    wurden."""
-    zeilen = []
-    for name, eintrag in verzeichnis.items():
-        for datei in sorted((ordner / name).glob("*.*json")):
-            pfad = f"analysen/{name}/{datei.name}"
-            if pfad not in neu:
-                obj = json.loads(datei.read_text("utf-8"))
-                text = eintrag.get("dateien", {}).get(datei.name, "")
-                zeilen.append((pfad, text, _anzahl(obj), datei.stat().st_size))
-    return zeilen
+def speichere_analyse(
+    ordner: Path, name: str, titel: str, inhalte: dict, texte: dict, quellenvermerk: str = ""
+) -> None:
+    """Ergebnis einer Analyse für die Webseite nach `ordner/name/` (webseite/analysen/, im Git).
+
+    Dazu `analyse.json` mit Titel, Beschreibungen und Quellenvermerk. Kontaktdaten werden
+    vorher entfernt (`oeffentlich`), der Ordner vorher geleert.
+    """
+    ziel = ordner / name
+    if ziel.exists():
+        shutil.rmtree(ziel)
+    ziel.mkdir(parents=True)
+    for datei, obj in inhalte.items():
+        _schreibe_json(ziel / datei, oeffentlich(obj)[0] if "features" in obj else obj)
+    kopf = {"titel": titel, "dateien": texte, "quellenvermerk": quellenvermerk}
+    (ziel / ANALYSE).write_text(json.dumps(kopf, ensure_ascii=False, indent=2) + "\n", "utf-8")
+
+
+def lade_analysen(ordner: Path) -> tuple[dict[str, tuple[str, dict, dict]], list[str]]:
+    """Gespeicherte Analysen (speichere_analyse): ({Name: (Titel, Inhalte, Texte)}, Vermerke)."""
+    analysen, vermerke = {}, []
+    for kopf_datei in sorted(ordner.glob(f"*/{ANALYSE}")):
+        kopf = json.loads(kopf_datei.read_text("utf-8"))
+        inhalte = {
+            p.name: json.loads(p.read_text("utf-8"))
+            for p in sorted(kopf_datei.parent.glob("*.*json"))
+            if p.name != ANALYSE
+        }
+        analysen[kopf_datei.parent.name] = (kopf["titel"], inhalte, kopf.get("dateien", {}))
+        if kopf.get("quellenvermerk"):
+            vermerke.append(kopf["quellenvermerk"])
+    return analysen, vermerke
 
 
 def schreibe_webseite(
@@ -248,16 +266,19 @@ def schreibe_webseite(
     titel: str = "Sportstättenatlas Rheinland-Pfalz",
     leaflet_laden: bool = True,
     organisationen: list[dict] | None = None,
+    von_hand: Path | None = None,
 ) -> dict:
     """Webseite nach `ausgabe` (z. B. docs/) schreiben. Liefert eine kleine Statistik.
 
     bestand:  Datensätze aus daten/ (bestand.lies_bestand)
     gebiete:  Verwaltungsgebiete (gebiete.lade) für die Gebietsauswahl
     analysen: {Name: (Titel, {Datei: Inhalt}, {Datei: Beschreibung})}, z. B. aus
-              analysen.alkis.webdaten. Fehlt eine Analyse, bleiben ihre Dateien aus
-              einem früheren Lauf unverändert.
+              lade_analysen. Was hier fehlt, fehlt auch auf der Seite.
     ars_von:  (lon, lat) → Regionalschlüssel der Gemeinde, für Datensätze aus `bestand`
     organisationen: Verzeichnis der Organisationen (Eigentümer, Betreiber, Nutzer) (bestand.lies_organisationen)
+    von_hand: Ordner mit konfig.js, impressum.html, datenschutz.html (webseite/); sie werden
+              nach `ausgabe` kopiert. Fehlt eine dort, wird sie aus `ausgabe` übernommen oder
+              aus der Vorlage angelegt. Ohne Ordner: in `ausgabe` nur beim ersten Mal angelegt.
     """
     from . import gebiete as gb
 
@@ -321,7 +342,6 @@ def schreibe_webseite(
     if verzeichnis:
         (daten / "analysen").mkdir(exist_ok=True)
         _schreibe_json(daten / "analysen" / "index.json", {"analysen": list(verzeichnis.values())})
-    liste += _fruehere_analysen(daten / "analysen", verzeichnis, {p for p, *_ in liste})
 
     lokal = leaflet_laden and leaflet_lokal(ausgabe / "vendor" / "leaflet")
     web.kopiere_app(ausgabe / "app")
@@ -330,10 +350,17 @@ def schreibe_webseite(
         encoding="utf-8",
     )
     neu_angelegt = []
+    quelle = von_hand or ausgabe
     for name in VON_HAND:
-        if not (ausgabe / name).exists():
-            (ausgabe / name).write_text(web.vorlage(name, titel), encoding="utf-8")
-            neu_angelegt.append(name)
+        if not (quelle / name).exists():
+            quelle.mkdir(parents=True, exist_ok=True)
+            if (ausgabe / name).exists():  # früher nur in docs/ gepflegt
+                shutil.copy2(ausgabe / name, quelle / name)
+            else:
+                (quelle / name).write_text(web.vorlage(name, titel), encoding="utf-8")
+                neu_angelegt.append(name)
+        if quelle != ausgabe:
+            shutil.copy2(quelle / name, ausgabe / name)
     (daten / "index.html").write_text(
         download_seite(titel, quellenvermerk, liste), encoding="utf-8"
     )

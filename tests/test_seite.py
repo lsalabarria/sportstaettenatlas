@@ -7,7 +7,12 @@ import subprocess
 import pytest
 
 from sportstaettenatlas import web
-from sportstaettenatlas.seite import oeffentlich, schreibe_webseite
+from sportstaettenatlas.seite import (
+    lade_analysen,
+    oeffentlich,
+    schreibe_webseite,
+    speichere_analyse,
+)
 
 
 def _fc(*props):
@@ -222,24 +227,40 @@ def test_webseite_mit_bestand_gebieten_und_analyse(tmp_path):
     assert "Punkte der Analyse" in download
 
 
-def test_ohne_neue_analyse_bleibt_der_alte_stand(tmp_path):
+def test_analyse_speichern_und_laden(tmp_path):
+    ordner = tmp_path / "webseite" / "analysen"
+    inhalte = {"punkte.geojson": _fc({"name": "A", "email": "a.b@example.org"}), "n.json": {"n": 1}}
+    speichere_analyse(ordner, "alkis", "ALKIS-Abgleich", inhalte, {"n.json": "Zahl"}, "Quelle X")
+    # Kontaktdaten kommen nicht ins Git
+    assert _lies(ordner / "alkis/punkte.geojson")["features"][0]["properties"] == {"name": "A"}
+    analysen, vermerke = lade_analysen(ordner)
+    assert vermerke == ["Quelle X"]
+    titel, geladen, texte = analysen["alkis"]
+    assert titel == "ALKIS-Abgleich" and texte == {"n.json": "Zahl"}
+    assert sorted(geladen) == ["n.json", "punkte.geojson"]
+    # neu speichern ersetzt den ganzen Ordner; die Webseite zeigt nur, was übergeben wird
+    speichere_analyse(ordner, "alkis", "ALKIS-Abgleich", {"neu.json": {}}, {})
+    assert sorted(p.name for p in (ordner / "alkis").iterdir()) == ["analyse.json", "neu.json"]
     docs = tmp_path / "docs"
-    analyse = ("ALKIS-Abgleich", {"alt.json": {"n": 1}}, {"alt.json": "früherer Lauf"})
-    schreibe_webseite(docs, analysen={"alkis": analyse}, leaflet_laden=False)
-    # ohne neues Ergebnis (z. B. auf einem anderen Rechner) bleibt die Analyse stehen
-    info = schreibe_webseite(docs, bestand=[_datensatz(1, 7.2, 50.5)], leaflet_laden=False)
-    daten = docs / "daten"
-    assert _lies(daten / "analysen/index.json")["analysen"][0]["name"] == "alkis"
-    assert [n for n, *_ in info["dateien"]] == [
-        "bestand.geojson",
-        "schema.json",
-        "analysen/alkis/alt.json",
-    ]
-    # eine neue Rechnung ersetzt den ganzen Ordner der Analyse
-    schreibe_webseite(
-        docs, analysen={"alkis": ("ALKIS-Abgleich", {"neu.json": {}}, {})}, leaflet_laden=False
-    )
-    assert sorted(p.name for p in (daten / "analysen/alkis").iterdir()) == ["neu.json"]
+    schreibe_webseite(docs, analysen=lade_analysen(ordner)[0], leaflet_laden=False)
+    schreibe_webseite(docs, leaflet_laden=False)
+    assert not (docs / "daten" / "analysen").exists()
+
+
+def test_von_hand_gepflegt(tmp_path):
+    docs, von_hand = tmp_path / "docs", tmp_path / "webseite"
+    docs.mkdir()
+    (docs / "impressum.html").write_text("mein Impressum", encoding="utf-8")  # wie bisher
+    info = schreibe_webseite(docs, leaflet_laden=False, von_hand=von_hand)
+    # aus docs/ übernommen, die übrigen aus der Vorlage angelegt; alles nach docs/ kopiert
+    assert info["neu_angelegt"] == ["konfig.js", "datenschutz.html"]
+    assert (von_hand / "impressum.html").read_text(encoding="utf-8") == "mein Impressum"
+    (von_hand / "konfig.js").write_text("window.KONFIG = {};", encoding="utf-8")
+    shutil.rmtree(docs)  # wie in der GitHub Action: docs/ fehlt
+    info = schreibe_webseite(docs, leaflet_laden=False, von_hand=von_hand)
+    assert info["neu_angelegt"] == []
+    assert (docs / "konfig.js").read_text(encoding="utf-8") == "window.KONFIG = {};"
+    assert (docs / "impressum.html").read_text(encoding="utf-8") == "mein Impressum"
 
 
 def test_betreiber_art():

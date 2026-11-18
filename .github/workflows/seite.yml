@@ -1,0 +1,70 @@
+# Tests, Webseite bauen, auf GitHub Pages veröffentlichen (README „Auf GitHub einrichten“).
+# Bei Pull Requests nur Tests und Bau, veröffentlicht wird nur der Stand von main.
+name: Tests und Webseite
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync
+      - name: Chromium für die Browser-Tests
+        run: uv run playwright install --with-deps chromium
+      - run: uv run pytest
+
+  seite:
+    needs: tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync --no-dev
+      # Verwaltungsgebiete (VG250) nicht bei jedem Lauf neu beim BKG laden
+      - uses: actions/cache@v4
+        with:
+          path: results/cache/gebiete_*.json
+          key: gebiete-${{ hashFiles('src/sportstaettenatlas/gebiete.py') }}
+      - run: uv run sportstaettenatlas seite
+      - name: Regelverstöße zum Herunterladen
+        uses: actions/upload-artifact@v4
+        with:
+          name: regelverstoesse
+          path: results/regelverstoesse.csv
+          if-no-files-found: ignore
+      - uses: actions/upload-pages-artifact@v4
+        if: github.event_name != 'pull_request'
+        with:
+          path: docs
+
+  veroeffentlichen:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: seite
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    steps:
+      - id: pages
+        uses: actions/deploy-pages@v4

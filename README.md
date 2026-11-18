@@ -26,15 +26,17 @@ Was im Datenbestand steht, alle Felder und wie man Daten ändert oder einliest:
 
 ```
 daten/      Datenbestand (im Git, von Hand gepflegt) – siehe daten/README.md
-docs/       Webseite für GitHub Pages (von `seite` erzeugt, im Git)
+webseite/   für die Webseite, was sich nicht aus daten/ erzeugen lässt (im Git): konfig.js,
+            Impressum, Datenschutz und unter analysen/ das Ergebnis des ALKIS-Abgleichs
+docs/       Webseite (von `seite` erzeugt, nicht im Git; auf GitHub baut sie die Action)
 results/    Arbeitsordner: Downloads, Zwischenspeicher, Ergebnis des ALKIS-Abgleichs (nicht im Git)
 src/        Code (siehe „Code“)
 ```
 
 ```
-CSV-Dateien ──bestand──▶ daten/ ───────────────────────────────┐
-                            │                                   ├──seite──▶ docs/ ──▶ GitHub Pages
-ALKIS (WFS) ──alkis──▶ results/out/ (Abgleich mit daten/) ──────┘
+CSV-Dateien ──bestand──▶ daten/ ────────────────────────────────────────────┐
+                            │                                                ├──seite──▶ docs/ ──▶ GitHub Pages
+ALKIS (WFS) ──alkis──▶ results/out/ ──seite──▶ webseite/analysen/ ───────────┘
 ```
 
 ## Installation
@@ -83,7 +85,8 @@ Alle mit `uv run sportstaettenatlas …`; `--help` zeigt die Optionen.
 | `seite` | Webseite nach `docs/` (`--vorschau`: lokal ansehen); prüft dabei mit |
 | `-v alkis` | ALKIS-Abgleich (siehe unten) |
 
-Danach: `git add -A daten docs && git commit -m "…" && git push`.
+Danach: `git add -A daten webseite && git commit -m "…" && git push` – die Webseite baut
+die GitHub Action (siehe „Auf GitHub einrichten“).
 
 ## Datenmodell im Code
 
@@ -133,8 +136,8 @@ Auswahllisten, mindestens 4 Nachkommastellen bei Koordinaten, `braucht`, `teil_v
 
 ## Webseite
 
-`seite` liest `daten/` und das Ergebnis des ALKIS-Abgleichs und schreibt die Webseite nach
-`docs/`. GitHub Pages liefert den Ordner aus, ohne Server und Datenbank.
+`seite` liest `daten/` und `webseite/` und schreibt die Webseite nach `docs/`. GitHub Pages
+liefert den Ordner aus, ohne Server und Datenbank. Lokal ansehen: `seite --vorschau`.
 
 ### Reiter
 
@@ -179,22 +182,31 @@ einem anderen Kreis, verschiebt `einordnen` die Sportstätte.
 
 ### Einstellungen (konfig.js)
 
-`docs/konfig.js` wird beim ersten `seite` angelegt und danach nie überschrieben; am
-einfachsten auf GitHub bearbeiten. Die Seite lädt sie immer frisch.
+`webseite/konfig.js` wird beim ersten `seite` angelegt und danach nie überschrieben; am
+einfachsten auf GitHub bearbeiten. `seite` kopiert sie nach `docs/`, die Seite lädt sie
+immer frisch.
 
 - `vorschlag_url`: Umfrage für Vorschläge; `vorschlag_felder` nur, wenn die Fragen dort nicht
   `data` und `kommentar` heißen
 - `fehler_url`: Link für „Bug melden“; leer = kein Link
 - `impressum_url`, `datenschutz_url`: Pflicht für eine öffentliche Seite. `seite` legt einmalig
-  Entwürfe an (`impressum.html`, `datenschutz.html`, Platzhalter gelb markiert).
+  Entwürfe in `webseite/` an (`impressum.html`, `datenschutz.html`, Platzhalter gelb markiert).
 - `lizenz`, `lizenz_url`, `namensnennung`: Lizenz der Daten
 - `ortssuche`: `false` schaltet die Suche über OpenStreetMap ab
 
 ### Auf GitHub einrichten
 
-Repository → *Settings* → *Pages*: Source „Deploy from a branch“, Branch `main`, Ordner
-`/docs`. Nach ein bis zwei Minuten ist die Seite unter
-`https://<benutzer>.github.io/<repository>/` erreichbar.
+Repository → *Settings* → *Pages*: Source „GitHub Actions“. Die Action
+`.github/workflows/seite.yml` läuft bei jedem Push und Pull Request:
+
+1. **Tests**: `pytest` mit den Browser-Tests
+2. **Webseite**: `seite` baut `docs/` aus `daten/` und `webseite/`; `regelverstoesse.csv`
+   liegt danach unter *Actions* → Lauf → *Artifacts*
+3. **Veröffentlichen**: nur für `main`, wenn 1. und 2. durchlaufen
+
+Einige Minuten nach dem Push ist die Seite unter
+`https://<benutzer>.github.io/<repository>/` aktuell. Schlägt ein Schritt fehl, bleibt die
+alte Seite stehen. Von Hand starten: *Actions* → *Tests und Webseite* → *Run workflow*.
 
 ## Kontaktdaten
 
@@ -241,7 +253,10 @@ Die Antworten liegen in `results/cache/alkis_vor_ort.json`; ein neuer Lauf fragt
 Orte ab.
 
 Das Ergebnis steht in `results/out/` (`sportstaetten.gpkg` zum Öffnen in QGIS,
-`abgleich_altbestand.csv` mit einer Zeile je Sportstätte des Bestands). Auf der Webseite
+`abgleich_altbestand.csv` mit einer Zeile je Sportstätte des Bestands). `seite` legt die
+Dateien für die Webseite daraus in `webseite/analysen/alkis/` ab (ohne Kontaktdaten); erst
+mit diesem Ordner im Git zeigt auch die Seite auf GitHub den neuen Stand. Nur nach einem
+Lauf für ganz Rheinland-Pfalz einchecken, nicht nach `--gebiet koblenz-innenstadt`. Auf der Webseite
 zeigt der Reiter „Analysen“ ALKIS-Flächen und -Anlagen, die Sportstätten des Bestands ohne
 passende Fläche und je Gebiet, wie viele im Kataster stehen. Von dort führt „Als neue
 Sportstätte vorschlagen“ ins Formular.
@@ -262,7 +277,7 @@ src/sportstaettenatlas/
   werte.py        Werte aus Text lesen (Zahlen, ja/nein, Listen), CSV-Dateien öffnen
   anlagen.py      Typen und Gruppen der Sportanlagen
   gebiete.py      Verwaltungsgebiete (VG250) und Zuordnung zur Gemeinde
-  seite.py        Webseite nach docs/ schreiben
+  seite.py        Webseite nach docs/ schreiben, Analysen in webseite/ ablegen
   hilfen.py       Arbeitsordner, User-Agent
   web/            die Webseite (Dateien im Kopf von web/__init__.py)
   analysen/alkis/ ALKIS-Abgleich (Aufbau im Kopf von __init__.py)
