@@ -1,0 +1,15 @@
+{
+  "id": "f0fcdfde-863b-53d8-82a8-c54bf6a2426d",
+  "name": "Schulsporthalle Staudinger Grundschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kurfürstenstraße",
+    "hausnummer": "20",
+    "plz": "67549",
+    "ort": "{'ags': '07319000', 'ort': 'Worms, Stadt', 'postleitzahl': '67547*'}"
+  },
+  "lage": {
+    "lon": 8.349255,
+    "lat": 49.644199
+  }
+}

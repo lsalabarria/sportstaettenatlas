@@ -1,0 +1,14 @@
+{
+  "id": "7f7874f8-deff-5756-894e-e51b682639e7",
+  "name": "Sporthalle Berufsbildende Schule II",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ludwigstraße",
+    "plz": "67657",
+    "ort": "{'ags': '07312000', 'ort': 'Kaiserslautern, Stadt', 'postleitzahl': '67657*'}"
+  },
+  "lage": {
+    "lon": 7.770553,
+    "lat": 49.448188
+  }
+}

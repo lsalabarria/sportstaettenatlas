@@ -1,0 +1,15 @@
+{
+  "id": "5accb1ca-49a4-5c08-80d4-0b07134d2774",
+  "name": "Sporthalle Schlossgymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Leo-Trepp-Platz",
+    "hausnummer": "1",
+    "plz": "55116",
+    "ort": "{'ags': '07315000', 'ort': 'Mainz, Stadt', 'postleitzahl': '55116*'}"
+  },
+  "lage": {
+    "lon": 8.2691,
+    "lat": 50.00808
+  }
+}

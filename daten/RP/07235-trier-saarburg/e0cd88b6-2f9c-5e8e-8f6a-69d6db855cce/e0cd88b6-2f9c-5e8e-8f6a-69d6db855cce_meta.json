@@ -1,0 +1,15 @@
+{
+  "id": "e0cd88b6-2f9c-5e8e-8f6a-69d6db855cce",
+  "name": "Stadion Schweich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Dietrich-Bonhoeffer-Straße",
+    "hausnummer": "2",
+    "plz": "54338",
+    "ort": "{'ags': '07235125', 'ort': 'Schweich, Stadt', 'postleitzahl': '54338'}"
+  },
+  "lage": {
+    "lon": 6.746848,
+    "lat": 49.818321
+  }
+}

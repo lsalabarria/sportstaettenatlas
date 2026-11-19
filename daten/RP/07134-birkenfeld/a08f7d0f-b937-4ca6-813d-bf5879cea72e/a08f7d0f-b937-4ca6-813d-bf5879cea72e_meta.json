@@ -12,8 +12,14 @@
     "lon": 7.288963,
     "lat": 49.712396
   },
+  "entfernung_oepnv": 100,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "wlan": "nein",
-  "betriebsstatus": "in Betrieb"
+  "betriebsstatus": "in Betrieb",
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "letzte_sanierung": 2013,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2
+  }
 }

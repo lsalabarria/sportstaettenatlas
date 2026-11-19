@@ -1,0 +1,15 @@
+{
+  "id": "aade3f75-5d87-5f8f-8d27-4e8f7f4c2d37",
+  "name": "Sporthalle St. Maximin-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Maximinstraße",
+    "hausnummer": "18b",
+    "plz": "54292",
+    "ort": "{'ags': '07211000', 'ort': 'Trier, Stadt', 'postleitzahl': '54290*'}"
+  },
+  "lage": {
+    "lon": 6.651717,
+    "lat": 49.75969
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "02b102ac-85c8-58f8-96c2-b62258637427",
+  "name": "Turnhalle Röhmschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Moltkestraße",
+    "hausnummer": "27",
+    "plz": "67655",
+    "ort": "{'ags': '07312000', 'ort': 'Kaiserslautern, Stadt', 'postleitzahl': '67657*'}"
+  },
+  "lage": {
+    "lon": 7.763804,
+    "lat": 49.441247
+  }
+}

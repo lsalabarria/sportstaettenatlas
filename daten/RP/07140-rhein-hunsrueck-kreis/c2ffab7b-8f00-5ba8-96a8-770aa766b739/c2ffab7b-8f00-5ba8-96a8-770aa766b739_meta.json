@@ -1,0 +1,38 @@
+{
+  "id": "c2ffab7b-8f00-5ba8-96a8-770aa766b739",
+  "name": "Test LH",
+  "kategorie": "Sporthalle",
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "betriebsstatus": "in Betrieb",
+  "nutzer": [
+    "Testverein #1"
+  ],
+  "baujahr": 1900,
+  "letzte_sanierung": 2000,
+  "funktionsraeume": {
+    "Gastronomie": 1,
+    "Sauna": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas",
+      "einbaujahr": 2000
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Flüssiggas",
+      "einbaujahr": 2000
+    }
+  ],
+  "verbraeuche": [
+    {
+      "art": "Erdgas",
+      "menge": 10.0,
+      "einheit": "kWh"
+    }
+  ]
+}

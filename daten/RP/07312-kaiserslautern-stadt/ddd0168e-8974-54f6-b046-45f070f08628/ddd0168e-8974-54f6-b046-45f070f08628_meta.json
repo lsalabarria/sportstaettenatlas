@@ -1,0 +1,15 @@
+{
+  "id": "ddd0168e-8974-54f6-b046-45f070f08628",
+  "name": "Turnhalle Luitpoldschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Albrechtstraße",
+    "hausnummer": "3",
+    "plz": "67655",
+    "ort": "{'ags': '07312000', 'ort': 'Kaiserslautern, Stadt', 'postleitzahl': '67657*'}"
+  },
+  "lage": {
+    "lon": 7.77964,
+    "lat": 49.446243
+  }
+}

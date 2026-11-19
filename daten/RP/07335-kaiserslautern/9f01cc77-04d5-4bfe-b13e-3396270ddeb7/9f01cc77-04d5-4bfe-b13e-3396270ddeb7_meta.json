@@ -1,6 +1,6 @@
 {
   "id": "9f01cc77-04d5-4bfe-b13e-3396270ddeb7",
-  "name": "Vitalbad Pfälzer Bergland",
+  "name": "Freizeitbad Azur Ramstein",
   "kategorie": "Schwimmsportstätte",
   "adresse": {
     "strasse": "Schernauer Straße",
@@ -12,9 +12,10 @@
     "lon": 7.569452,
     "lat": 49.445611
   },
-  "oeffentlicher_zugang": "nein",
+  "oeffentlicher_zugang": "ja",
   "schulsport": "ja",
   "wlan": "nein",
   "betriebsstatus": "in Betrieb",
+  "website": "https://freizeitbad-azur.de",
   "baujahr": 2020
 }

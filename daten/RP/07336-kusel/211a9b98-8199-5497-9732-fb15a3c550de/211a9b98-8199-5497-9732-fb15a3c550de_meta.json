@@ -1,0 +1,15 @@
+{
+  "id": "211a9b98-8199-5497-9732-fb15a3c550de",
+  "name": "Turn- und Festhalle Rammelsbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "2",
+    "plz": "66887",
+    "ort": "{'ags': '07336079', 'ort': 'Rammelsbach', 'postleitzahl': '66887*'}"
+  },
+  "lage": {
+    "lon": 7.442765,
+    "lat": 49.54301
+  }
+}

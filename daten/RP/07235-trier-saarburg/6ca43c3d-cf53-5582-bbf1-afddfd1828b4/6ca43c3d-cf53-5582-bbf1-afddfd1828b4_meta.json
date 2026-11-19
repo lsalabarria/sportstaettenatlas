@@ -1,0 +1,15 @@
+{
+  "id": "6ca43c3d-cf53-5582-bbf1-afddfd1828b4",
+  "name": "Mehrzweckhalle Longuich",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Maximinstraße",
+    "hausnummer": "2",
+    "plz": "54340",
+    "ort": "{'ags': '07235078', 'ort': 'Longuich', 'postleitzahl': '54340*'}"
+  },
+  "lage": {
+    "lon": 6.770722,
+    "lat": 49.809267
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "4855c3f3-d5bc-5a7b-9d3a-2079367191ec",
+  "name": "Schulsporthalle Westend Grundschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Von-Steuben-Straße",
+    "hausnummer": "11",
+    "plz": "67549",
+    "ort": "{'ags': '07319000', 'ort': 'Worms, Stadt', 'postleitzahl': '67547*'}"
+  },
+  "lage": {
+    "lon": 8.352002,
+    "lat": 49.636542
+  }
+}

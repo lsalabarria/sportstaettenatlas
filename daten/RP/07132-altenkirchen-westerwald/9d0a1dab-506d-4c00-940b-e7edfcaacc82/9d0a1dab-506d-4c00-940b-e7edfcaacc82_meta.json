@@ -13,5 +13,22 @@
     "lat": 50.754042
   },
   "oeffentlicher_zugang": "nein",
-  "schulsport": "nein"
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "website": "https://blaurotwissen.wordpress.com",
+  "baujahr": 1978,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Holz/Pellets/Hackschnitzel"
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Strom (z.B. Durchlauferhitzer, Boiler)"
+    }
+  ]
 }

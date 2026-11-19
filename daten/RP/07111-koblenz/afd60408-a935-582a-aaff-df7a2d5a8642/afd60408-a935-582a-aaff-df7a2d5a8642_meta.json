@@ -1,0 +1,42 @@
+{
+  "id": "afd60408-a935-582a-aaff-df7a2d5a8642",
+  "name": "Sportschützengilde Koblenz-Asterstein 1962 e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Thälerweg",
+    "hausnummer": "5",
+    "plz": "56077"
+  },
+  "lage": {
+    "lon": 7.620059,
+    "lat": 50.354886
+  },
+  "entfernung_oepnv": 500,
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Stadt Koblenz (Grundstück); SSG Asterstein (Gebäude)",
+  "eigentuemer_typ": "Sonstiger Sportverein",
+  "betreiber": "Sportschützengilde Koblenz-Asterstein 1962 e.V.",
+  "betreiber_typ": "Sonstiger Sportverein",
+  "website": "https://www.ssg-asterstein.de",
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "baujahr": 1970,
+  "letzte_sanierung": 2024,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 2,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "da970353-0296-5642-95f8-718d30a68477",
+  "name": "Rhein-Lahn-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Blücherstraße",
+    "hausnummer": "16",
+    "plz": "56112",
+    "ort": "{'ags': '07141075', 'ort': 'Lahnstein, Stadt', 'postleitzahl': '56112*'}"
+  },
+  "lage": {
+    "lon": 7.595011,
+    "lat": 50.312077
+  }
+}

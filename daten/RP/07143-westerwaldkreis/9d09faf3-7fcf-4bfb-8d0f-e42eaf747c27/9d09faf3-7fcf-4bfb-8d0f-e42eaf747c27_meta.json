@@ -12,6 +12,19 @@
     "lon": 7.945993,
     "lat": 50.633868
   },
+  "entfernung_oepnv": 150,
   "oeffentlicher_zugang": "nein",
-  "schulsport": "nein"
+  "schulsport": "ja",
+  "wlan": "nein",
+  "zuschauerplaetze": 200,
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2002,
+  "letzte_sanierung": 2025,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 3,
+    "Sanitärräume - Publikum": 2,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  }
 }

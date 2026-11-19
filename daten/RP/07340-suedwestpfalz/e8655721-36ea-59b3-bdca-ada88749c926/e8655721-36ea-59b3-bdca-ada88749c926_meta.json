@@ -1,0 +1,15 @@
+{
+  "id": "e8655721-36ea-59b3-bdca-ada88749c926",
+  "name": "Mehrzweckhalle Hermersberg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "44",
+    "plz": "66919",
+    "ort": "{'ags': '07340016', 'ort': 'Hermersberg', 'postleitzahl': '74676'}"
+  },
+  "lage": {
+    "lon": 7.630498,
+    "lat": 49.324481
+  }
+}

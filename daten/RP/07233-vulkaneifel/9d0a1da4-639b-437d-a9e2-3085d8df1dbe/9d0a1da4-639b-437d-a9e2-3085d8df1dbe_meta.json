@@ -11,6 +11,9 @@
     "lon": 6.779522,
     "lat": 50.327568
   },
+  "entfernung_oepnv": 300,
   "oeffentlicher_zugang": "nein",
-  "schulsport": "nein"
+  "schulsport": "nein",
+  "betreiber": "SV Fortuna 1921 Nohn e.V.",
+  "baujahr": 1977
 }

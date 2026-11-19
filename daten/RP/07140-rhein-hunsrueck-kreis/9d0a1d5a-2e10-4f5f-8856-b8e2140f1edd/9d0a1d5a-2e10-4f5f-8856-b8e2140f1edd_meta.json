@@ -12,5 +12,24 @@
     "lat": 50.15903
   },
   "oeffentlicher_zugang": "nein",
-  "schulsport": "nein"
+  "schulsport": "nein",
+  "wlan": "nein",
+  "zuschauerplaetze": 1500,
+  "betriebsstatus": "in Betrieb",
+  "website": "https://www.fc-ek.de",
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "fassadenmaterial": "Mauerwerk mit Anstrich",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Flüssiggas"
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Erdgas"
+    }
+  ]
 }

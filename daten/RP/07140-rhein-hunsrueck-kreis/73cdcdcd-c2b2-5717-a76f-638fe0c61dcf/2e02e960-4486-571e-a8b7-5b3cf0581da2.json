@@ -1,0 +1,19 @@
+{
+  "id": "2e02e960-4486-571e-a8b7-5b3cf0581da2",
+  "sportstaette_id": "73cdcdcd-c2b2-5717-a76f-638fe0c61dcf",
+  "typ": "Schießstand",
+  "bezeichnung": "Luftgewehr",
+  "betriebsstatus": "in Betrieb",
+  "sportarten": [
+    "Gewehr",
+    "Pistole"
+  ],
+  "wettkampf": [
+    "Gewehr",
+    "Pistole"
+  ],
+  "schiessstaende_teilgedeckt": 6,
+  "flutlicht": "nein",
+  "oeffnungsstunden": 300,
+  "oeffnungsstunden_verein": 300
+}

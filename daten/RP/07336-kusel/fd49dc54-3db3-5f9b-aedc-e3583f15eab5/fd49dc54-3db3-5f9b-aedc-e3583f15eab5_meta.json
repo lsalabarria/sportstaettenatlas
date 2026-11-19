@@ -1,0 +1,15 @@
+{
+  "id": "fd49dc54-3db3-5f9b-aedc-e3583f15eab5",
+  "name": "Mehrzweckhalle Pfeffelbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kirchenstraße",
+    "hausnummer": "4",
+    "plz": "66871",
+    "ort": "{'ags': '07336077', 'ort': 'Pfeffelbach', 'postleitzahl': '66871*'}"
+  },
+  "lage": {
+    "lon": 7.328686,
+    "lat": 49.537068
+  }
+}

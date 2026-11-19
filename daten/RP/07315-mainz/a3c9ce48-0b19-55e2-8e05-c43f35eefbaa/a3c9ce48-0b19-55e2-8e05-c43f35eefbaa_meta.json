@@ -1,0 +1,15 @@
+{
+  "id": "a3c9ce48-0b19-55e2-8e05-c43f35eefbaa",
+  "name": "Sporthalle der Astrid-Lindgren-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "John F. Kennedy-Str.",
+    "hausnummer": "5-7",
+    "plz": "55122",
+    "ort": "{'ags': '07315000', 'ort': 'Mainz, Stadt', 'postleitzahl': '55116*'}"
+  },
+  "lage": {
+    "lon": 8.247932,
+    "lat": 50.002245
+  }
+}

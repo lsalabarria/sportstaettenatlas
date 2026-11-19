@@ -1,0 +1,15 @@
+{
+  "id": "56c67cbd-9afd-54c0-b699-0d4a4ef9b7be",
+  "name": "Turnhalle Grundschule Hofgartenstraße",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hofgartenstraße",
+    "hausnummer": "14",
+    "plz": "55545",
+    "ort": "{'ags': '07133006', 'ort': 'Bad Kreuznach, Stadt', 'postleitzahl': '55545'}"
+  },
+  "lage": {
+    "lon": 7.855922,
+    "lat": 49.84976
+  }
+}

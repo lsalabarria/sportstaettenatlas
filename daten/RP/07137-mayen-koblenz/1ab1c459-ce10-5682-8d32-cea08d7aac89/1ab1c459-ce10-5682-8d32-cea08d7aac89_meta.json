@@ -1,0 +1,15 @@
+{
+  "id": "1ab1c459-ce10-5682-8d32-cea08d7aac89",
+  "name": "Schulturnhalle Waldesch",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Rhenser Straße",
+    "hausnummer": "5",
+    "plz": "56323",
+    "ort": "{'ags': '07137227', 'ort': 'Waldesch', 'postleitzahl': '56323*'}"
+  },
+  "lage": {
+    "lon": 7.549646,
+    "lat": 50.27953
+  }
+}

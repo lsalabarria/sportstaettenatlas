@@ -1,0 +1,15 @@
+{
+  "id": "c5239723-e043-5090-8a7a-e10bb843b958",
+  "name": "Schulsporthalle der Pestalozzi-Grundschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Fußgönheimer Straße",
+    "hausnummer": "17",
+    "plz": "67112",
+    "ort": "{'ags': '07338019', 'ort': 'Mutterstadt', 'postleitzahl': '67112'}"
+  },
+  "lage": {
+    "lon": 8.350961,
+    "lat": 49.442544
+  }
+}

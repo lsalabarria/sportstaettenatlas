@@ -1,0 +1,13 @@
+{
+  "id": "62e37595-a4d7-5c21-8f92-6579ee7559d6",
+  "name": "Stadion Kelberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "53539",
+    "ort": "{'ags': '07233218', 'ort': 'Kelberg', 'postleitzahl': '53539'}"
+  },
+  "lage": {
+    "lon": 6.915175,
+    "lat": 50.280278
+  }
+}

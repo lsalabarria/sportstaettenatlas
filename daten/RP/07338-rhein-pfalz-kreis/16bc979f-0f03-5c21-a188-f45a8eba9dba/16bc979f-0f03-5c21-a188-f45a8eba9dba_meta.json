@@ -1,0 +1,15 @@
+{
+  "id": "16bc979f-0f03-5c21-a188-f45a8eba9dba",
+  "name": "Turnhalle Grundschule Böhl",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kirchenstraße",
+    "hausnummer": "12",
+    "plz": "67459",
+    "ort": "{'ags': '07338005', 'ort': 'Böhl-Iggelheim', 'postleitzahl': '67459'}"
+  },
+  "lage": {
+    "lon": 8.295246,
+    "lat": 49.38544
+  }
+}

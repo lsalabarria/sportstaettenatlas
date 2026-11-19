@@ -1,0 +1,12 @@
+{
+  "id": "312b7818-cf0b-5e18-9586-581952204799",
+  "name": "Test Lars",
+  "kategorie": "Wintersportstätte",
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betreiber": "Lars Henning"
+}

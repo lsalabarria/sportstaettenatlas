@@ -1,0 +1,15 @@
+{
+  "id": "499f7ef5-2001-5768-91f2-7cbe19c8828f",
+  "name": "Sporthalle Scholl-Realschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Römerweg",
+    "hausnummer": "2",
+    "plz": "76726",
+    "ort": "{'ags': '07334007', 'ort': 'Germersheim, Stadt'}"
+  },
+  "lage": {
+    "lon": 8.362226,
+    "lat": 49.216316
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "208ce70b-7f99-592c-bdaa-d0a99264f88a",
+  "name": "Turnhalle Ehrenbreitstein",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Blindtal",
+    "hausnummer": "3",
+    "plz": "56077"
+  },
+  "lage": {
+    "lon": 7.614121,
+    "lat": 50.358464
+  },
+  "entfernung_oepnv": 500,
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Turnverein Ehrenbreitstein 1892 e.V.",
+  "eigentuemer_typ": "Sonstiger Sportverein",
+  "betreiber": "Turnverein Ehrenbreitstein 1892 e.V.",
+  "betreiber_typ": "Sonstiger Sportverein",
+  "website": "https://www.tv-ehrenbreitstein.de",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 4,
+    "Geräteräume": 1
+  }
+}

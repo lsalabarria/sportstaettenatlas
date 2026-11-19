@@ -1,0 +1,11 @@
+{
+  "id": "631da0b9-38d0-5dc8-af9a-0f6c16f21d4b",
+  "name": "test",
+  "kategorie": "Sporthalle",
+  "lage": {
+    "lon": 7.228123,
+    "lat": 50.239356
+  },
+  "eigentuemer": "rerer",
+  "eigentuemer_typ": "Sonstiger Sportverein"
+}

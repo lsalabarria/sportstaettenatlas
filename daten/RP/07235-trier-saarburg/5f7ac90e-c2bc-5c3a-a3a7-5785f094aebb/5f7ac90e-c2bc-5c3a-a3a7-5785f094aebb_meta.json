@@ -1,0 +1,15 @@
+{
+  "id": "5f7ac90e-c2bc-5c3a-a3a7-5785f094aebb",
+  "name": "Turnhalle Freudenburg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Leukstraße",
+    "hausnummer": "20",
+    "plz": "54450",
+    "ort": "{'ags': '07235028', 'ort': 'Freudenburg', 'postleitzahl': '54450'}"
+  },
+  "lage": {
+    "lon": 6.529334,
+    "lat": 49.543995
+  }
+}

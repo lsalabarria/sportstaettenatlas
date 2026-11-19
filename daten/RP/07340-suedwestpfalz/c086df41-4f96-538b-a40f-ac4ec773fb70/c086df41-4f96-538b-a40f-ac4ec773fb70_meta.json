@@ -1,0 +1,15 @@
+{
+  "id": "c086df41-4f96-538b-a40f-ac4ec773fb70",
+  "name": "Wilgartishalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "25",
+    "plz": "76848",
+    "ort": "{'ags': '07340057', 'ort': 'Wilgartswiesen', 'postleitzahl': '76848*'}"
+  },
+  "lage": {
+    "lon": 7.878249,
+    "lat": 49.208937
+  }
+}

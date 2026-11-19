@@ -1,0 +1,16 @@
+{
+  "id": "78f9828b-0b5f-5154-a067-646aa2cebee7",
+  "name": "Turnhalle Grundschule Bodenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kirchbergstraße",
+    "hausnummer": "12",
+    "plz": "55294",
+    "ort": "{'ags': '07339006', 'ort': 'Bodenheim', 'postleitzahl': '55294'}"
+  },
+  "lage": {
+    "lon": 8.308046,
+    "lat": 49.928095
+  },
+  "baujahr": 1999
+}

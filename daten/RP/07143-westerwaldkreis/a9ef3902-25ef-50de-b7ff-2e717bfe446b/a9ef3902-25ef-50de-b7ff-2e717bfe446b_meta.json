@@ -1,0 +1,15 @@
+{
+  "id": "a9ef3902-25ef-50de-b7ff-2e717bfe446b",
+  "name": "Gymnastikhalle Wolfsteinschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Erlenweg",
+    "hausnummer": "2",
+    "plz": "56470",
+    "ort": "{'ags': '07143206', 'ort': 'Bad Marienberg (Westerwald), Stadt', 'postleitzahl': '56470'}"
+  },
+  "lage": {
+    "lon": 7.95467,
+    "lat": 50.657543
+  }
+}

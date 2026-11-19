@@ -1,0 +1,15 @@
+{
+  "id": "66841e2c-c7b2-55fc-8ffb-31fbe5a797cd",
+  "name": "Schottelhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Koblenzer Straße",
+    "hausnummer": "18-20",
+    "plz": "56322",
+    "ort": "{'ags': '07137223', 'ort': 'Spay', 'postleitzahl': '56322*'}"
+  },
+  "lage": {
+    "lon": 7.647976,
+    "lat": 50.25955
+  }
+}

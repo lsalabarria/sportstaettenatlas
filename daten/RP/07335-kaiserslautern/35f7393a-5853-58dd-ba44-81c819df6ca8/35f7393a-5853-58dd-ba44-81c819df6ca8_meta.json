@@ -1,0 +1,15 @@
+{
+  "id": "35f7393a-5853-58dd-ba44-81c819df6ca8",
+  "name": "Turn- und Festhalle Bruchmühlbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Alte Straße",
+    "hausnummer": "5",
+    "plz": "66892",
+    "ort": "{'ags': '07335003', 'ort': 'Bruchmühlbach-Miesau', 'postleitzahl': '66892'}"
+  },
+  "lage": {
+    "lon": 7.456477,
+    "lat": 49.384928
+  }
+}

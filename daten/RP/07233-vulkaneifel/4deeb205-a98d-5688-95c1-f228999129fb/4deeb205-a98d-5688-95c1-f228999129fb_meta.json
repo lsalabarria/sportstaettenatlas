@@ -1,0 +1,13 @@
+{
+  "id": "4deeb205-a98d-5688-95c1-f228999129fb",
+  "name": "Fair play Arena Obere Kyll",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54584",
+    "ort": "{'ags': '07233035', 'ort': 'Jünkerath', 'postleitzahl': '54584*'}"
+  },
+  "lage": {
+    "lon": 6.583198,
+    "lat": 50.347795
+  }
+}

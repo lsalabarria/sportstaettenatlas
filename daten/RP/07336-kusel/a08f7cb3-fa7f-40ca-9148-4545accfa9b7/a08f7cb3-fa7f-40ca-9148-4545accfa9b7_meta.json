@@ -10,8 +10,44 @@
     "lon": 7.436088,
     "lat": 49.494241
   },
+  "entfernung_oepnv": 1500,
   "oeffentlicher_zugang": "nein",
-  "schulsport": "nein",
-  "wlan": "nein",
-  "betriebsstatus": "in Betrieb"
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1984,
+  "letzte_sanierung": 2013,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 1,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Warmwasser",
+      "art": "Betrieb über Heizanlage"
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Flüssiggas",
+      "einbaujahr": 2005
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Solarthermie"
+    }
+  ],
+  "verbraeuche": [
+    {
+      "art": "Flüssiggas",
+      "menge": 25000.0,
+      "einheit": "kWh"
+    }
+  ]
 }

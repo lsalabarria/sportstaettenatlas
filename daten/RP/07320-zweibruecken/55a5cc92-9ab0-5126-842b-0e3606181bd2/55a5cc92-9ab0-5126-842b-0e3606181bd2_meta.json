@@ -1,0 +1,15 @@
+{
+  "id": "55a5cc92-9ab0-5126-842b-0e3606181bd2",
+  "name": "Sporthalle Albert-Schweitzer Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ernstweilerhangstraße",
+    "hausnummer": "21",
+    "plz": "66482",
+    "ort": "{'ags': '07320000', 'ort': 'Zweibrücken, Stadt', 'postleitzahl': '66482'}"
+  },
+  "lage": {
+    "lon": 7.347761,
+    "lat": 49.255679
+  }
+}

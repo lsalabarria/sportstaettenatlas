@@ -1,0 +1,15 @@
+{
+  "id": "93374e15-236f-58c5-9ed5-81f515b29bfe",
+  "name": "Sporthalle Hans-Purrmann-Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Otto-Mayer-Straße",
+    "hausnummer": "2",
+    "plz": "67346",
+    "ort": "{'ags': '07318000', 'ort': 'Speyer, Stadt', 'postleitzahl': '67346'}"
+  },
+  "lage": {
+    "lon": 8.418285,
+    "lat": 49.317803
+  }
+}

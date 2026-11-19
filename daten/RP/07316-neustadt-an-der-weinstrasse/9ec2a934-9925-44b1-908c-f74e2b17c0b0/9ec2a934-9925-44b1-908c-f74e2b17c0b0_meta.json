@@ -1,6 +1,6 @@
 {
   "id": "9ec2a934-9925-44b1-908c-f74e2b17c0b0",
-  "name": "Sportanlage TuS Diedesfeld",
+  "name": "Sportanlage TC Diedesfeld",
   "kategorie": "Tennissportstätte",
   "adresse": {
     "strasse": "Sportzentrum Pferdsaliment",
@@ -13,5 +13,20 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
-  "sportkomplex": "9ec2a934-8456-426f-a8a8-8cf7cfcacd6c"
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "9ec2a934-8456-426f-a8a8-8cf7cfcacd6c",
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "baujahr": 1986,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Sanitärräume - Publikum": 2
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas",
+      "einbaujahr": 1986
+    }
+  ]
 }

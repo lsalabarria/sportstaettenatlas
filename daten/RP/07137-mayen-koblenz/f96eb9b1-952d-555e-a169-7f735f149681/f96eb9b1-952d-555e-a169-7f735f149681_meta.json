@@ -1,0 +1,15 @@
+{
+  "id": "f96eb9b1-952d-555e-a169-7f735f149681",
+  "name": "Turnhalle Grundschule St. Veit",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Koblenzer Straße",
+    "hausnummer": "133",
+    "plz": "56727",
+    "ort": "{'ags': '07137068', 'ort': 'Mayen, Stadt', 'postleitzahl': '56727*'}"
+  },
+  "lage": {
+    "lon": 7.235731,
+    "lat": 50.328679
+  }
+}

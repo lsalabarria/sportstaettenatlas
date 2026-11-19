@@ -12,6 +12,21 @@
     "lon": 7.444594,
     "lat": 50.060792
   },
-  "oeffentlicher_zugang": "nein",
-  "schulsport": "nein"
+  "entfernung_oepnv": 1000,
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "website": "https://schuetzenverein-kastellaun.de/",
+  "letzte_sanierung": 2024,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 1,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 1,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  }
 }

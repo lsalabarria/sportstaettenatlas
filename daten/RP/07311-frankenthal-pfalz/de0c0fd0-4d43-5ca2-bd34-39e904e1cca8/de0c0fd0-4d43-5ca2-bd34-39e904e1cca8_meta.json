@@ -1,0 +1,15 @@
+{
+  "id": "de0c0fd0-4d43-5ca2-bd34-39e904e1cca8",
+  "name": "Sporthallen Neumayerschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Neumayerring",
+    "hausnummer": "7",
+    "plz": "67227",
+    "ort": "{'ags': '07311000', 'ort': 'Frankenthal (Pfalz), Stadt'}"
+  },
+  "lage": {
+    "lon": 8.351498,
+    "lat": 49.531755
+  }
+}

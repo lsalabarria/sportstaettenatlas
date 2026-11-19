@@ -4,6 +4,7 @@
   "kategorie": "Schießsportstätte",
   "adresse": {
     "strasse": "Offenheimer Str.",
+    "hausnummer": "19",
     "plz": "55234",
     "ort": "Erbes-Büdesheim"
   },
@@ -11,8 +12,19 @@
     "lon": 8.031525,
     "lat": 49.750251
   },
+  "entfernung_oepnv": 750,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "wlan": "nein",
-  "betriebsstatus": "in Betrieb"
+  "betriebsstatus": "in Betrieb",
+  "website": "https://www.sverbes-buedesheim.de/",
+  "baujahr": 1991,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 1,
+    "Sanitärräume - Publikum": 3,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 2,
+    "Geräteräume": 1
+  }
 }

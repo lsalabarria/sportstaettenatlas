@@ -14,5 +14,7 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
-  "sportkomplex": "9ec2a938-fb5e-4ed6-8742-1111ae417c5b"
+  "betriebsstatus": "im Bau",
+  "sportkomplex": "9ec2a938-fb5e-4ed6-8742-1111ae417c5b",
+  "letzte_sanierung": 2026
 }

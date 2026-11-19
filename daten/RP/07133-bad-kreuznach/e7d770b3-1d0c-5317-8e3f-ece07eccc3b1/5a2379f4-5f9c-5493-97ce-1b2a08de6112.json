@@ -1,0 +1,13 @@
+{
+  "id": "5a2379f4-5f9c-5493-97ce-1b2a08de6112",
+  "sportstaette_id": "e7d770b3-1d0c-5317-8e3f-ece07eccc3b1",
+  "typ": "Übungsraum",
+  "bezeichnung": "Ringerraum",
+  "betriebsstatus": "in Betrieb",
+  "sportarten": [
+    "Ringen",
+    "Rehasport"
+  ],
+  "flaeche": 144.0,
+  "bodenbelag": "Sonstiges"
+}

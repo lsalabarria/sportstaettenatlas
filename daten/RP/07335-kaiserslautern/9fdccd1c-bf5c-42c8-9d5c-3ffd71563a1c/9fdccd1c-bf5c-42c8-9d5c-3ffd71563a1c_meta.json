@@ -3,7 +3,8 @@
   "name": "Sportanlage im Haseltal",
   "kategorie": "Sportplatz",
   "adresse": {
-    "strasse": "Auf dem Kleehügel",
+    "strasse": "Im Haseltal",
+    "hausnummer": "1",
     "plz": "67706",
     "ort": "Krickenbach"
   },
@@ -14,5 +15,21 @@
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "wlan": "nein",
-  "betriebsstatus": "in Betrieb"
+  "betriebsstatus": "in Betrieb",
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 3,
+    "Sanitärräume - Publikum": 3,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas"
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Erdgas"
+    }
+  ]
 }

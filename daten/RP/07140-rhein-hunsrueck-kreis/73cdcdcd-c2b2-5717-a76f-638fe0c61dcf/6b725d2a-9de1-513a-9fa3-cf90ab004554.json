@@ -1,0 +1,26 @@
+{
+  "id": "6b725d2a-9de1-513a-9fa3-cf90ab004554",
+  "sportstaette_id": "73cdcdcd-c2b2-5717-a76f-638fe0c61dcf",
+  "typ": "Schießstand",
+  "bezeichnung": "Kurzwaffenschießstand",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2025,
+  "sportarten": [
+    "Pistole"
+  ],
+  "wettkampf": [
+    "Pistole"
+  ],
+  "schiessstaende_teilgedeckt": 5,
+  "flutlicht": "nein",
+  "oeffnungsstunden": 300,
+  "oeffnungsstunden_verein": 300,
+  "sanierungen": [
+    {
+      "jahr": 2025,
+      "kosten": 25000.0,
+      "waehrung": "€",
+      "beschreibung": "Der komplette Kurzwaffenstand"
+    }
+  ]
+}

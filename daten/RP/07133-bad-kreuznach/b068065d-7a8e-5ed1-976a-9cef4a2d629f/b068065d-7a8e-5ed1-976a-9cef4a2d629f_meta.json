@@ -1,0 +1,15 @@
+{
+  "id": "b068065d-7a8e-5ed1-976a-9cef4a2d629f",
+  "name": "TV-Halle Bad Sobernheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Staudernheimer Str.",
+    "hausnummer": "76",
+    "plz": "55566",
+    "ort": "{'ags': '07133501', 'ort': 'Bad Sobernheim, Stadt', 'postleitzahl': '55566'}"
+  },
+  "lage": {
+    "lon": 7.66408,
+    "lat": 49.783171
+  }
+}

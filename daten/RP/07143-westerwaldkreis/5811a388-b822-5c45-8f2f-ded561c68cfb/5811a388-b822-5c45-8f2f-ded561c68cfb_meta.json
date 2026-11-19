@@ -1,0 +1,14 @@
+{
+  "id": "5811a388-b822-5c45-8f2f-ded561c68cfb",
+  "name": "Stadion Bad Marienberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirburger Str.",
+    "plz": "56470",
+    "ort": "{'ags': '07143206', 'ort': 'Bad Marienberg (Westerwald), Stadt', 'postleitzahl': '56470'}"
+  },
+  "lage": {
+    "lon": 7.951795,
+    "lat": 50.661154
+  }
+}

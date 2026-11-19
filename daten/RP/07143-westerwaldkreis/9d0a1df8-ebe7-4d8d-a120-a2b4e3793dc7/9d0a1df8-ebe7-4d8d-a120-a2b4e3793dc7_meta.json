@@ -13,5 +13,10 @@
     "lat": 50.438219
   },
   "oeffentlicher_zugang": "nein",
-  "schulsport": "nein"
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "nutzer": [
+    "1. American Footballclub Montabaur Fighting Farmers"
+  ],
+  "letzte_sanierung": 2025
 }

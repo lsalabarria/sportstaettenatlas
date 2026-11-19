@@ -6,14 +6,27 @@
     "strasse": "Buschgasse",
     "hausnummer": "8",
     "plz": "67549",
-    "ort": "Worms, Stadt"
+    "ort": "{'ags': '07319000', 'postleitzahl': '67547'}"
   },
   "lage": {
     "lon": 8.334709,
     "lat": 49.637328
   },
-  "oeffentlicher_zugang": "nein",
-  "schulsport": "nein",
-  "wlan": "nein",
-  "betriebsstatus": "in Betrieb"
+  "entfernung_oepnv": 300,
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "website": "https://www.tc-rot-weiss-worms.de",
+  "baujahr": 1929,
+  "letzte_sanierung": 2026,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 1,
+    "Technikräume": 1,
+    "Gastronomie": 1
+  }
 }

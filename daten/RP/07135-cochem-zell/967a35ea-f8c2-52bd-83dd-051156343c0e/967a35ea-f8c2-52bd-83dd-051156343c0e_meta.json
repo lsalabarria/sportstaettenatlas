@@ -1,0 +1,13 @@
+{
+  "id": "967a35ea-f8c2-52bd-83dd-051156343c0e",
+  "name": "Stadion des SV Fortuna Ulmen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Meisericher Str.",
+    "plz": "56766"
+  },
+  "lage": {
+    "lon": 6.966137,
+    "lat": 50.206826
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "5bb888c8-ced7-5a20-a5b9-a9b4e106026a",
+  "name": "Rheintalstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Rheintalstadion",
+    "plz": "53498",
+    "ort": "{'ags': '07131006', 'ort': 'Bad Breisig, Stadt', 'postleitzahl': '53498'}"
+  },
+  "lage": {
+    "lon": 7.290658,
+    "lat": 50.519575
+  },
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,6 +1,6 @@
 {
   "id": "a0a3764d-6d20-4824-bc64-c4f8b76784fd",
-  "name": "Skipiste Salzburgerkopf",
+  "name": "Wintersportzentrum Salzburger Kopf",
   "kategorie": "Wintersportstätte",
   "adresse": {
     "plz": "56479",
@@ -11,5 +11,8 @@
     "lat": 50.672629
   },
   "oeffentlicher_zugang": "nein",
-  "schulsport": "nein"
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1970,
+  "letzte_sanierung": 2024
 }

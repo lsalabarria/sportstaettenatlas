@@ -1,0 +1,34 @@
+{
+  "id": "78fb060c-cd23-5401-8b31-1b7123baad81",
+  "name": "Tennisanlage",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Raderstraße",
+    "plz": "54568"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Tennis-Club Gerolstein e.V.",
+  "betreiber": "Tennis-Club Gerolstein e.V.",
+  "website": "https://www.tennis-club-gerolstein.de",
+  "baujahr": 1970,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas"
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Erdgas"
+    }
+  ]
+}

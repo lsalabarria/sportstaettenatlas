@@ -1,0 +1,14 @@
+{
+  "id": "f9e56b0d-54d6-5a43-a3c9-2aa41780a298",
+  "sportstaette_id": "18871df3-f187-594d-a9c1-2955c37ecc89",
+  "typ": "Bouleanlage",
+  "bezeichnung": "TC Hassloch",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2006,
+  "sportarten": [
+    "Boule"
+  ],
+  "bahnen": 1,
+  "flutlicht": "nein",
+  "oeffnungsstunden": 3000
+}

@@ -1,0 +1,44 @@
+{
+  "id": "5969a212-5a55-5141-82da-0c6d341872fd",
+  "name": "Schackberghalle Gonzerath",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Zum Schackberg",
+    "hausnummer": "3",
+    "plz": "54497",
+    "ort": "{'ags': '07231502', 'ort': 'Morbach', 'postleitzahl': '54497'}"
+  },
+  "lage": {
+    "lon": 7.118481,
+    "lat": 49.854567
+  },
+  "entfernung_oepnv": 300,
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "wlan": "ja",
+  "zuschauerplaetze": 30,
+  "betriebsstatus": "in Betrieb",
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "baujahr": 1998,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 2,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 2,
+    "Material- und Lagerräume": 2,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Strom",
+      "art": "Photovoltaik-Anlage"
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Heizöl"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "7e0f4a29-b2a2-5ccc-aecc-c33e62513f53",
+  "name": "Apollinaris-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kreuzstraße",
+    "hausnummer": "110",
+    "plz": "53474",
+    "ort": "{'ags': '07131007', 'ort': 'Bad Neuenahr-Ahrweiler, Stadt', 'postleitzahl': '53474'}"
+  },
+  "lage": {
+    "lon": 7.1512,
+    "lat": 50.543619
+  },
+  "betriebsstatus": "in Betrieb"
+}

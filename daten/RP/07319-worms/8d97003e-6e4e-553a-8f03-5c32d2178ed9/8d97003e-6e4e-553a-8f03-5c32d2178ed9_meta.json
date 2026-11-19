@@ -1,0 +1,19 @@
+{
+  "id": "8d97003e-6e4e-553a-8f03-5c32d2178ed9",
+  "name": "1. RC Pfrimmtal e.V.",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Zellertalstraße",
+    "hausnummer": "68-70",
+    "plz": "67551",
+    "ort": "{'ags': '07319000', 'ort': 'Worms, Stadt', 'postleitzahl': '67547*'}"
+  },
+  "lage": {
+    "lon": 8.264422,
+    "lat": 49.629648
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "nein",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb"
+}

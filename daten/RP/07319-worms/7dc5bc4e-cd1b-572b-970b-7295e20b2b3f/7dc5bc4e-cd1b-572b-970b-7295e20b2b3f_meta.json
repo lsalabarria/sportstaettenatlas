@@ -1,0 +1,15 @@
+{
+  "id": "7dc5bc4e-cd1b-572b-970b-7295e20b2b3f",
+  "name": "Schulsporthalle Neusatzschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Willy-Brandt-Ring",
+    "hausnummer": "5",
+    "plz": "67547",
+    "ort": "{'ags': '07319000', 'ort': 'Worms, Stadt', 'postleitzahl': '67547*'}"
+  },
+  "lage": {
+    "lon": 8.357077,
+    "lat": 49.627415
+  }
+}

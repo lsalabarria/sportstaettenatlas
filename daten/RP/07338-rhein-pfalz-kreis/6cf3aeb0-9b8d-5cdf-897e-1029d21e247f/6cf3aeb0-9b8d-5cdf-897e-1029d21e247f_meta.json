@@ -1,0 +1,15 @@
+{
+  "id": "6cf3aeb0-9b8d-5cdf-897e-1029d21e247f",
+  "name": "Sporthalle Grundschule Nord",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Rehbachstraße",
+    "hausnummer": "11",
+    "plz": "67105",
+    "ort": "{'ags': '07338025', 'ort': 'Schifferstadt, Stadt', 'postleitzahl': '67105'}"
+  },
+  "lage": {
+    "lon": 8.370928,
+    "lat": 49.388108
+  }
+}

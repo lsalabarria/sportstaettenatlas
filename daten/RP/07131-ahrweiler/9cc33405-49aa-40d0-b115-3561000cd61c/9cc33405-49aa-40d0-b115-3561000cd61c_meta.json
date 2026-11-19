@@ -34,6 +34,10 @@
       "bereich": "Heizung",
       "art": "Erdgas",
       "einbaujahr": 1996
+    },
+    {
+      "bereich": "Strom",
+      "art": "Photovoltaik-Anlage"
     }
   ],
   "sanierungen": [

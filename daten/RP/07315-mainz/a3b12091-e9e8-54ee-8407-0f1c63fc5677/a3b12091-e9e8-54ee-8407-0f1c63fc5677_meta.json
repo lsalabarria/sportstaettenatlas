@@ -1,0 +1,49 @@
+{
+  "id": "a3b12091-e9e8-54ee-8407-0f1c63fc5677",
+  "name": "Radsporthalle Mainz-Finthen",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Borngasse",
+    "hausnummer": "1",
+    "plz": "55126",
+    "ort": "{'ags': '07315000', 'ort': 'Mainz, Stadt', 'postleitzahl': '55116'}"
+  },
+  "lage": {
+    "lon": 8.173774,
+    "lat": 49.986825
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Radfahr-Verein 1905 Mainz-Finthen",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "Radfahr-Verein 1905 Mainz-Finthen",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "nutzer": [
+    "Radfahr-Verein 1905 Mainz-Finthen"
+  ],
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "baujahr": 1972,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 1,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 1,
+    "Material- und Lagerräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Warmwasser",
+      "art": "Betrieb über Heizanlage"
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas"
+    },
+    {
+      "bereich": "Strom",
+      "art": "Photovoltaik-Anlage"
+    }
+  ]
+}

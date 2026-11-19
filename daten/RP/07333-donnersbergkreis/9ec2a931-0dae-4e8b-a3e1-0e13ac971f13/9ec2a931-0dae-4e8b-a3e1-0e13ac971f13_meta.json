@@ -1,9 +1,10 @@
 {
   "id": "9ec2a931-0dae-4e8b-a3e1-0e13ac971f13",
-  "name": "Sportanlage an der Moschellandsburg",
-  "kategorie": "Tennissportstätte",
+  "name": "TuS Landsberg Obermoschel e.V. Tennis/Bogensport",
+  "kategorie": "Schießsportstätte",
   "adresse": {
     "strasse": "Moschellandsberg",
+    "hausnummer": "0",
     "plz": "67823",
     "ort": "Obermoschel, Stadt"
   },
@@ -11,7 +12,31 @@
     "lon": 7.785155,
     "lat": 49.725806
   },
+  "entfernung_oepnv": 1,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
-  "sportkomplex": "9ec2a931-0188-4e86-9d24-2fdeba8a6473"
+  "wlan": "nein",
+  "zuschauerplaetze": 100,
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "9ec2a931-0188-4e86-9d24-2fdeba8a6473",
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "baujahr": 1970,
+  "letzte_sanierung": 1980,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 1,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Holz/Pellets/Hackschnitzel"
+    }
+  ]
 }

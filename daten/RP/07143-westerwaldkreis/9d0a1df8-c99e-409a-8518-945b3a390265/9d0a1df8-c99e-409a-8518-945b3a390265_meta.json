@@ -13,5 +13,20 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
-  "sportkomplex": "9d0a1df8-bdc4-409e-82ed-57e86076a706"
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "9d0a1df8-bdc4-409e-82ed-57e86076a706",
+  "nutzer": [
+    "1. American Footballclub Montabaur Fighting Farmers"
+  ],
+  "letzte_sanierung": 2022,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 4,
+    "Umkleide- und Sanitärräume - Personal": 2,
+    "Sanitärräume - Publikum": 8,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 2,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  }
 }

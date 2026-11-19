@@ -13,5 +13,24 @@
     "lat": 50.093242
   },
   "oeffentlicher_zugang": "nein",
-  "schulsport": "nein"
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "letzte_sanierung": 2022,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Heizöl"
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Solarthermie"
+    }
+  ]
 }

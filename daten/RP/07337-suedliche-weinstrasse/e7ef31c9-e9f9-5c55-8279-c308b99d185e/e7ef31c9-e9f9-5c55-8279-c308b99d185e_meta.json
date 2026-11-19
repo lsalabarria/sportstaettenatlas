@@ -1,0 +1,15 @@
+{
+  "id": "e7ef31c9-e9f9-5c55-8279-c308b99d185e",
+  "name": "Sporthalle Paul-Gillet-Realschule plus",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Luitpoldstraße",
+    "hausnummer": "76",
+    "plz": "67480",
+    "ort": "{'ags': '07337020', 'ort': 'Edenkoben, Stadt'}"
+  },
+  "lage": {
+    "lon": 8.137887,
+    "lat": 49.284863
+  }
+}

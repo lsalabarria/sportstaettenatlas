@@ -1,0 +1,76 @@
+{
+  "id": "25867606-f705-5c06-be62-0b5d4c2477c8",
+  "name": "TuS Lachen-Speyerdorf 1910 e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Caonrad-Freytag-Straße",
+    "hausnummer": "19",
+    "plz": "67435",
+    "ort": "{'ags': '04011213', 'ort': 'Neustadt', 'postleitzahl': '24939'}"
+  },
+  "lage": {
+    "lon": 8.21022,
+    "lat": 49.328533
+  },
+  "entfernung_oepnv": 600,
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "website": "https://www.tus1910.de",
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "baujahr": 2019,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 6,
+    "Umkleide- und Sanitärräume - Personal": 2,
+    "Sanitärräume - Publikum": 1,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 2,
+    "Material- und Lagerräume": 10,
+    "Geräteräume": 2,
+    "Technikräume": 2
+  },
+  "energietraeger": [
+    {
+      "bereich": "Warmwasser",
+      "art": "Betrieb über Heizanlage",
+      "einbaujahr": 2019
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas",
+      "einbaujahr": 2019
+    },
+    {
+      "bereich": "Strom",
+      "art": "Photovoltaik-Anlage",
+      "einbaujahr": 2019
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Erdgas",
+      "einbaujahr": 2019
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Umweltwärme (Wärmepumpe)",
+      "einbaujahr": 2019
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Solarthermie",
+      "einbaujahr": 2019
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Umweltwärme (Wärmepumpe)",
+      "einbaujahr": 2019
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Solarthermie",
+      "einbaujahr": 2019
+    }
+  ]
+}

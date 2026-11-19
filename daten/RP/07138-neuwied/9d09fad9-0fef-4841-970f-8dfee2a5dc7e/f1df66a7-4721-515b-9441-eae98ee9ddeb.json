@@ -1,5 +1,20 @@
 {
   "id": "f1df66a7-4721-515b-9441-eae98ee9ddeb",
   "sportstaette_id": "9d09fad9-0fef-4841-970f-8dfee2a5dc7e",
-  "typ": "Großspielfeld"
+  "typ": "Großspielfeld",
+  "bezeichnung": "Sportplatz",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1970,
+  "sportarten": [
+    "Lauf- & Breitensport",
+    "Fußball"
+  ],
+  "laenge": 109.0,
+  "breite": 71.0,
+  "bodenbelag": "Rasen",
+  "felder_je_sportart": {
+    "Fußball": 1
+  },
+  "bewaesserung": "nein",
+  "flutlicht": "nein"
 }

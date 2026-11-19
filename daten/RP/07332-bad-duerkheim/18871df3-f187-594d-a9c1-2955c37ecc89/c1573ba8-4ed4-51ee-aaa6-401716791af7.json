@@ -1,0 +1,20 @@
+{
+  "id": "c1573ba8-4ed4-51ee-aaa6-401716791af7",
+  "sportstaette_id": "18871df3-f187-594d-a9c1-2955c37ecc89",
+  "typ": "Tennisplatz",
+  "bezeichnung": "TC Hassloch",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1957,
+  "sportarten": [
+    "Tennis"
+  ],
+  "wettkampf": [
+    "Tennis"
+  ],
+  "felder_je_belag": {
+    "Sand": 11
+  },
+  "bewaesserung": "ja",
+  "flutlicht": "nein",
+  "oeffnungsstunden": 3000
+}

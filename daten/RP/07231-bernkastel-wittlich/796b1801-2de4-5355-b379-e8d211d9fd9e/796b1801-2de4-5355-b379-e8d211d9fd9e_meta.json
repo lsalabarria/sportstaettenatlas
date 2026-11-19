@@ -1,0 +1,52 @@
+{
+  "id": "796b1801-2de4-5355-b379-e8d211d9fd9e",
+  "name": "Sportanlage \"Am Schackberg\"",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Schackberg",
+    "hausnummer": "2",
+    "plz": "54497",
+    "ort": "{'ags': '07231502', 'ort': 'Morbach', 'postleitzahl': '54497'}"
+  },
+  "lage": {
+    "lon": 7.117381,
+    "lat": 49.853931
+  },
+  "entfernung_oepnv": 300,
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "nein",
+  "wlan": "ja",
+  "zuschauerplaetze": 600,
+  "betriebsstatus": "in Betrieb",
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "baujahr": 1991,
+  "letzte_sanierung": 2005,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 2,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 2,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Warmwasser",
+      "art": "Betrieb über Heizanlage"
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Flüssiggas",
+      "einbaujahr": 1991
+    }
+  ],
+  "verbraeuche": [
+    {
+      "art": "Erdgas",
+      "menge": 1000.0,
+      "einheit": "Liter"
+    }
+  ]
+}

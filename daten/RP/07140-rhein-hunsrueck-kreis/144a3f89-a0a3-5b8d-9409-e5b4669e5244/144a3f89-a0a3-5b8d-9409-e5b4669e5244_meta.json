@@ -1,0 +1,15 @@
+{
+  "id": "144a3f89-a0a3-5b8d-9409-e5b4669e5244",
+  "name": "Stadion Emmelshausen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Stadion",
+    "hausnummer": "8",
+    "plz": "56281",
+    "ort": "{'ags': '07140036', 'ort': 'Emmelshausen, Stadt', 'postleitzahl': '56281'}"
+  },
+  "lage": {
+    "lon": 7.544067,
+    "lat": 50.155027
+  }
+}

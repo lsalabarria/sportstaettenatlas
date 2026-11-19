@@ -12,7 +12,22 @@
     "lon": 7.326592,
     "lat": 50.49787
   },
-  "oeffentlicher_zugang": "nein",
+  "oeffentlicher_zugang": "ja",
   "schulsport": "nein",
-  "sportkomplex": "9d09fad2-dea4-4a05-9bfe-eee9098742b7"
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "9d09fad2-dea4-4a05-9bfe-eee9098742b7",
+  "baujahr": 1984,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Material- und Lagerräume": 2,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas"
+    }
+  ]
 }

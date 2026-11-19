@@ -1,5 +1,20 @@
 {
   "id": "a07fe429-8517-55e5-8d19-3af59ace755a",
   "sportstaette_id": "9d0a1da4-639b-437d-a9e2-3085d8df1dbe",
-  "typ": "Kleinspielfeld"
+  "typ": "Kleinspielfeld",
+  "bezeichnung": "Tenne",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1992,
+  "sportarten": [
+    "Fußball"
+  ],
+  "wettkampf": [
+    "Fußball"
+  ],
+  "laenge": 74.0,
+  "breite": 47.0,
+  "bodenbelag": "Hartplatz/Tenne",
+  "bewaesserung": "nein",
+  "flutlicht": "ja",
+  "leuchtmittel": "Leuchtröhren"
 }

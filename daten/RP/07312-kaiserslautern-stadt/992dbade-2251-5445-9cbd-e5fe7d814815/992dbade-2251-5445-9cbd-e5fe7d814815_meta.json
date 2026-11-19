@@ -1,0 +1,15 @@
+{
+  "id": "992dbade-2251-5445-9cbd-e5fe7d814815",
+  "name": "Sporthalle BBS I",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kaiserbergring",
+    "hausnummer": "29",
+    "plz": "67657",
+    "ort": "{'ags': '07312000', 'ort': 'Kaiserslautern, Stadt', 'postleitzahl': '67657*'}"
+  },
+  "lage": {
+    "lon": 7.753333,
+    "lat": 49.452202
+  }
+}

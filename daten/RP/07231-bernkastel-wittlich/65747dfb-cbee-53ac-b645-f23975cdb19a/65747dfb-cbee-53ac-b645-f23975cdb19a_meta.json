@@ -1,0 +1,15 @@
+{
+  "id": "65747dfb-cbee-53ac-b645-f23975cdb19a",
+  "name": "Gemeindehalle Longkamp",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "12",
+    "plz": "54472",
+    "ort": "{'ags': '07231077', 'ort': 'Longkamp', 'postleitzahl': '54472*'}"
+  },
+  "lage": {
+    "lon": 7.116748,
+    "lat": 49.890975
+  }
+}

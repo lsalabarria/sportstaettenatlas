@@ -1,0 +1,11 @@
+{
+  "id": "33b17ad2-e2a8-5f37-8d10-466f4ea92664",
+  "name": "test",
+  "kategorie": "Sporthalle",
+  "lage": {
+    "lon": 7.228123,
+    "lat": 50.239356
+  },
+  "eigentuemer": "Verbandsgemeinde Nieder-Olm",
+  "eigentuemer_typ": "Landkreis"
+}

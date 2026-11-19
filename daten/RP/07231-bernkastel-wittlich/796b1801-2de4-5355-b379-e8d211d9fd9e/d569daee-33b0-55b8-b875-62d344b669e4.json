@@ -1,0 +1,30 @@
+{
+  "id": "d569daee-33b0-55b8-b875-62d344b669e4",
+  "sportstaette_id": "796b1801-2de4-5355-b379-e8d211d9fd9e",
+  "typ": "Kleinspielfeld",
+  "bezeichnung": "Trainingsplatz",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2006,
+  "laenge": 60.0,
+  "breite": 40.0,
+  "bodenbelag": "Hartplatz/Tenne",
+  "felder_je_sportart": {
+    "Fußball": 1
+  },
+  "bewaesserung": "nein",
+  "flutlicht": "ja",
+  "leuchtmittel": "LED",
+  "lux": 200,
+  "oeffnungsstunden": 1000,
+  "oeffnungsstunden_verein": 500,
+  "baukosten": 70000.0,
+  "waehrung": "€",
+  "sanierungen": [
+    {
+      "jahr": 2022,
+      "kosten": 30000.0,
+      "waehrung": "€",
+      "beschreibung": "Umbau Flutlicht zu LED"
+    }
+  ]
+}

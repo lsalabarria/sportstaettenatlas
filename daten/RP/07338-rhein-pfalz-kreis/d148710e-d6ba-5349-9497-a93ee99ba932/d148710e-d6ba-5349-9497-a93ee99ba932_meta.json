@@ -1,0 +1,15 @@
+{
+  "id": "d148710e-d6ba-5349-9497-a93ee99ba932",
+  "name": "Alois Jung Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Carl-Bosch-Straße",
+    "hausnummer": "18a",
+    "plz": "67133",
+    "ort": "{'ags': '07338018', 'ort': 'Maxdorf', 'postleitzahl': '67133'}"
+  },
+  "lage": {
+    "lon": 8.286953,
+    "lat": 49.477279
+  }
+}

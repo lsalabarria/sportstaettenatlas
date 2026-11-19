@@ -1,0 +1,15 @@
+{
+  "id": "93512d1d-c55d-53e5-a605-eb065e54f4ff",
+  "name": "Schulsporthalle Grundschule Beindersheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schlittweg",
+    "hausnummer": "13",
+    "plz": "67259",
+    "ort": "{'ags': '07338002', 'ort': 'Beindersheim', 'postleitzahl': '67259'}"
+  },
+  "lage": {
+    "lon": 8.319869,
+    "lat": 49.558765
+  }
+}

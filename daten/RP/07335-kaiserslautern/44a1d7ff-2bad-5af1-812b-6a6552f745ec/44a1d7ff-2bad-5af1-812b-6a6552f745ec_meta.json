@@ -1,0 +1,15 @@
+{
+  "id": "44a1d7ff-2bad-5af1-812b-6a6552f745ec",
+  "name": "Turn- und Festhalle Schopp",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "11a",
+    "plz": "67707",
+    "ort": "{'ags': '07335204', 'ort': 'Schopp', 'postleitzahl': '67707*'}"
+  },
+  "lage": {
+    "lon": 7.68852,
+    "lat": 49.352319
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "1681dca1-4cf0-520a-b189-f3cbafc0a48c",
+  "name": "Sporthalle Erich Kästner-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Siegener Straße",
+    "hausnummer": "26",
+    "plz": "57610",
+    "ort": "{'ags': '07132501', 'ort': 'Altenkirchen (Westerwald), Stadt', 'postleitzahl': '57610'}"
+  },
+  "lage": {
+    "lon": 7.65098,
+    "lat": 50.690037
+  }
+}

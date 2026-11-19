@@ -1,0 +1,15 @@
+{
+  "id": "e05cb51d-358d-559c-bf3f-3c1974289da0",
+  "name": "Schulsporthalle Paternusschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Grabenstraße",
+    "hausnummer": "50",
+    "plz": "67551",
+    "ort": "{'ags': '07319000', 'ort': 'Worms, Stadt', 'postleitzahl': '67547*'}"
+  },
+  "lage": {
+    "lon": 8.270473,
+    "lat": 49.635984
+  }
+}

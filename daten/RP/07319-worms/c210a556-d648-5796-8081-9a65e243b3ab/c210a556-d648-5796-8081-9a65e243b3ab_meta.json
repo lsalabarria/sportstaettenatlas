@@ -1,0 +1,15 @@
+{
+  "id": "c210a556-d648-5796-8081-9a65e243b3ab",
+  "name": "Schulsporthalle Geschwister-Scholl-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Elisabeth-Groß-Platz",
+    "hausnummer": "1",
+    "plz": "67547",
+    "ort": "{'ags': '07319000', 'ort': 'Worms, Stadt', 'postleitzahl': '67547*'}"
+  },
+  "lage": {
+    "lon": 8.354244,
+    "lat": 49.612533
+  }
+}

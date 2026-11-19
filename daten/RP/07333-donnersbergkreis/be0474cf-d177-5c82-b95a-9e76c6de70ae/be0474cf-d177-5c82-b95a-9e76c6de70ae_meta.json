@@ -1,0 +1,15 @@
+{
+  "id": "be0474cf-d177-5c82-b95a-9e76c6de70ae",
+  "name": "Eistalhalle Ramsen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Klosterstraße",
+    "hausnummer": "18",
+    "plz": "67305",
+    "ort": "{'ags': '07333060', 'ort': 'Ramsen', 'postleitzahl': '67305*'}"
+  },
+  "lage": {
+    "lon": 8.011501,
+    "lat": 49.53695
+  }
+}

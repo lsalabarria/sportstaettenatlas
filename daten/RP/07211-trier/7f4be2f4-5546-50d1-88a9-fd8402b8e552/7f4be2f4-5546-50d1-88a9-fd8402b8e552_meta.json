@@ -1,0 +1,15 @@
+{
+  "id": "7f4be2f4-5546-50d1-88a9-fd8402b8e552",
+  "name": "Turnhalle Barbara-Grundschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Friedrich-Wilhelm-Str.",
+    "hausnummer": "52",
+    "plz": "54290",
+    "ort": "{'ags': '07211000', 'ort': 'Trier, Stadt', 'postleitzahl': '54290*'}"
+  },
+  "lage": {
+    "lon": 6.629444,
+    "lat": 49.748121
+  }
+}

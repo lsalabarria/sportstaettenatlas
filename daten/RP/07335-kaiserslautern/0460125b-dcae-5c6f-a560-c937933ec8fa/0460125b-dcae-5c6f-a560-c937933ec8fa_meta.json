@@ -1,0 +1,15 @@
+{
+  "id": "0460125b-dcae-5c6f-a560-c937933ec8fa",
+  "name": "Schulsporthalle Sickingen-Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Philipp-Fauth-Straße",
+    "hausnummer": "3",
+    "plz": "66849",
+    "ort": "{'ags': '07335022', 'ort': 'Landstuhl, Sickingenstadt, Stadt', 'postleitzahl': '66849'}"
+  },
+  "lage": {
+    "lon": 7.565267,
+    "lat": 49.413481
+  }
+}

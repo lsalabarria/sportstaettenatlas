@@ -1,0 +1,41 @@
+{
+  "id": "d21279af-3683-55f8-aed2-8c395cb914a1",
+  "name": "DAV Sektion Mainz",
+  "kategorie": "Klettersportstätte",
+  "adresse": {
+    "strasse": "Turmstraße",
+    "hausnummer": "85",
+    "plz": "55120",
+    "ort": "{'ags': '07315000', 'ort': 'Mainz, Stadt', 'postleitzahl': '55116'}"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "entfernung_oepnv": 500,
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "website": "https://www.dav-mainz.de",
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "baujahr": 1989,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Sanitärräume - Publikum": 2,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 2,
+    "Geräteräume": 2
+  },
+  "energietraeger": [
+    {
+      "bereich": "Warmwasser",
+      "art": "Fernwärme"
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Solarthermie"
+    }
+  ]
+}

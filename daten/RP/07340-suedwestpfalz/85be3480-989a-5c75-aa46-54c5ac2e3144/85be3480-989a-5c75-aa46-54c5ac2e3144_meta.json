@@ -1,0 +1,15 @@
+{
+  "id": "85be3480-989a-5c75-aa46-54c5ac2e3144",
+  "name": "Turnhalle Grundschule Bechhofen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "8",
+    "plz": "66894",
+    "ort": "{'ags': '07340203', 'ort': 'Bechhofen', 'postleitzahl': '66894'}"
+  },
+  "lage": {
+    "lon": 7.406652,
+    "lat": 49.352778
+  }
+}

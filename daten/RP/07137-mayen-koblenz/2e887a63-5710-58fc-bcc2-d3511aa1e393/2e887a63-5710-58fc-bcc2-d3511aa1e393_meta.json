@@ -1,0 +1,15 @@
+{
+  "id": "2e887a63-5710-58fc-bcc2-d3511aa1e393",
+  "name": "Gymnastikhalle Grundschule Lonnig",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hinter der Ley",
+    "hausnummer": "1",
+    "plz": "56295",
+    "ort": "{'ags': '07137065', 'ort': 'Lonnig', 'postleitzahl': '56295*'}"
+  },
+  "lage": {
+    "lon": 7.405032,
+    "lat": 50.309326
+  }
+}

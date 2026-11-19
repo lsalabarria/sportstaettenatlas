@@ -1,0 +1,14 @@
+{
+  "id": "afccaf48-a240-5dae-9f3e-6ec44572e178",
+  "name": "Moorsbergstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Paul-Viehmann-Allee",
+    "plz": "56203",
+    "ort": "{'ags': '07143032', 'ort': 'Höhr-Grenzhausen, Stadt', 'postleitzahl': '56203'}"
+  },
+  "lage": {
+    "lon": 7.665254,
+    "lat": 50.447644
+  }
+}

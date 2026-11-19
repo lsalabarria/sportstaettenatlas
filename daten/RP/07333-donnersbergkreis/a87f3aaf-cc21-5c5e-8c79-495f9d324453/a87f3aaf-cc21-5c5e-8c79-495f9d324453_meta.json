@@ -1,0 +1,15 @@
+{
+  "id": "a87f3aaf-cc21-5c5e-8c79-495f9d324453",
+  "name": "Gemeinschaftshalle Marnheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "hausnummer": "17",
+    "plz": "67297",
+    "ort": "{'ags': '07333045', 'ort': 'Marnheim', 'postleitzahl': '67297*'}"
+  },
+  "lage": {
+    "lon": 8.035523,
+    "lat": 49.635372
+  }
+}

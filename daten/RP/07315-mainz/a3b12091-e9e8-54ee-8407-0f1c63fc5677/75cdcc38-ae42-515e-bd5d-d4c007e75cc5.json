@@ -1,0 +1,15 @@
+{
+  "id": "75cdcc38-ae42-515e-bd5d-d4c007e75cc5",
+  "sportstaette_id": "a3b12091-e9e8-54ee-8407-0f1c63fc5677",
+  "typ": "Radsporthalle",
+  "bezeichnung": "Radsporthalle Mainz-Finthen",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1972,
+  "sportarten": [
+    "Kunstradfahren",
+    "Yoga",
+    "Gymnastik"
+  ],
+  "bodenbelag": "Kunststoff",
+  "flutlicht": "nein"
+}

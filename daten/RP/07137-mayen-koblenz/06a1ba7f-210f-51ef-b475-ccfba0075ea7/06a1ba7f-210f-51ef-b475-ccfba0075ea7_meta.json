@@ -1,0 +1,15 @@
+{
+  "id": "06a1ba7f-210f-51ef-b475-ccfba0075ea7",
+  "name": "Mehrzweckhalle St. Sebastian",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "6",
+    "plz": "56220",
+    "ort": "{'ags': '07137222', 'ort': 'Sankt Sebastian', 'postleitzahl': '56220*'}"
+  },
+  "lage": {
+    "lon": 7.564323,
+    "lat": 50.411678
+  }
+}

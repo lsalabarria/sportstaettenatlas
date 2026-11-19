@@ -12,7 +12,22 @@
     "lon": 8.058064,
     "lat": 49.964681
   },
-  "oeffentlicher_zugang": "nein",
-  "schulsport": "nein",
-  "sportkomplex": "9ec2a92a-777f-4d27-abd1-d62ee398a8ed"
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "wlan": "ja",
+  "zuschauerplaetze": 0,
+  "betriebsstatus": "stillgelegt/geschlossen",
+  "sportkomplex": "9ec2a92a-777f-4d27-abd1-d62ee398a8ed",
+  "eigentuemer": "Stadt Ingelheim",
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 1,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 3,
+    "Technikräume": 1
+  }
 }

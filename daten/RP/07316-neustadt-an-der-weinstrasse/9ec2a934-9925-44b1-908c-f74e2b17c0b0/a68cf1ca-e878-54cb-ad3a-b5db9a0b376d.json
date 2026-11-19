@@ -1,5 +1,18 @@
 {
   "id": "a68cf1ca-e878-54cb-ad3a-b5db9a0b376d",
   "sportstaette_id": "9ec2a934-9925-44b1-908c-f74e2b17c0b0",
-  "typ": "Tennisplatz"
+  "typ": "Tennisplatz",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1986,
+  "sportarten": [
+    "Tennis"
+  ],
+  "wettkampf": [
+    "Tennis"
+  ],
+  "felder_je_belag": {
+    "Sand": 4
+  },
+  "bewaesserung": "ja",
+  "flutlicht": "nein"
 }

@@ -1,0 +1,15 @@
+{
+  "id": "29e54814-4e94-5ecf-8c20-ffe0fde41037",
+  "name": "Turnhalle Bethesda Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Waldemarstraße",
+    "hausnummer": "4",
+    "plz": "55543",
+    "ort": "{'ags': '07133006', 'ort': 'Bad Kreuznach, Stadt', 'postleitzahl': '55545'}"
+  },
+  "lage": {
+    "lon": 7.864881,
+    "lat": 49.837723
+  }
+}

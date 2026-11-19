@@ -1,0 +1,18 @@
+{
+  "id": "1ac3cfff-6790-5456-941b-70cbe5cbae66",
+  "name": "Turnhalle Bengel",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Birkenweg",
+    "plz": "54538",
+    "ort": "{'ags': '07231005', 'ort': 'Bengel', 'postleitzahl': '54538*'}"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Ortsgemeinde Bengel",
+  "eigentuemer_typ": "Kommunales Unternehmen",
+  "baujahr": 1971
+}

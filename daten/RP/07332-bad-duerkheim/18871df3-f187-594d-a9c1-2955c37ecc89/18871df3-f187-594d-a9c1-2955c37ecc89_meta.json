@@ -1,0 +1,58 @@
+{
+  "id": "18871df3-f187-594d-a9c1-2955c37ecc89",
+  "name": "Tennisclub Haßloch e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Ludwig-Gramlich-Straße",
+    "hausnummer": "3",
+    "plz": "67454",
+    "ort": "{'ags': '07332025', 'ort': 'Haßloch', 'postleitzahl': '67454'}"
+  },
+  "lage": {
+    "lon": 8.249582,
+    "lat": 49.347846
+  },
+  "entfernung_oepnv": 200,
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Tennisclub Haßloch eV",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "Tennisclub Haßloch eV",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.tc-hassloch.de/",
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "baujahr": 1957,
+  "letzte_sanierung": 1978,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Sanitärräume - Publikum": 2,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 2,
+    "Geräteräume": 2
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas"
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Fernwärme"
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Fernwärme"
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Solarthermie"
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Solarthermie"
+    }
+  ]
+}

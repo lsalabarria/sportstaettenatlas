@@ -1,17 +1,54 @@
 {
   "id": "9ec2a931-060d-45ff-9573-8b01b0c536b8",
-  "name": "Sportanlage an der Moschellandsburg",
+  "name": "TuS Landsberg Obermoschel e.V.",
   "kategorie": "Sportplatz",
   "adresse": {
     "strasse": "Moschellandsberg",
+    "hausnummer": "0",
+    "adresszusatz": "...",
     "plz": "67823",
     "ort": "Obermoschel, Stadt"
   },
   "lage": {
-    "lon": 7.784764,
-    "lat": 49.725404
+    "lon": 7.799366,
+    "lat": 49.712511
   },
-  "oeffentlicher_zugang": "nein",
-  "schulsport": "nein",
-  "sportkomplex": "9ec2a931-0188-4e86-9d24-2fdeba8a6473"
+  "entfernung_oepnv": 1,
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "wlan": "ja",
+  "zuschauerplaetze": 300,
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "9ec2a931-0188-4e86-9d24-2fdeba8a6473",
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "baujahr": 1965,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 3,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 1,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 2,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Warmwasser",
+      "art": "Betrieb über Heizanlage"
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Flüssiggas"
+    }
+  ],
+  "foerderungen": [
+    {
+      "programm": "Toilettenanlage erneurt",
+      "jahr": 2024,
+      "hoehe": 1700.0,
+      "waehrung": "€"
+    }
+  ]
 }

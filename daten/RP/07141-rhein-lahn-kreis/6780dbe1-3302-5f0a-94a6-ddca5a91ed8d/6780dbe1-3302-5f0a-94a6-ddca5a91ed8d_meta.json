@@ -1,0 +1,15 @@
+{
+  "id": "6780dbe1-3302-5f0a-94a6-ddca5a91ed8d",
+  "name": "Lehrschwimmbecken der RS+ Bad Ems Nassau",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "25",
+    "plz": "56130",
+    "ort": "{'ags': '07141006', 'ort': 'Bad Ems, Stadt', 'postleitzahl': '56130'}"
+  },
+  "lage": {
+    "lon": 7.709881,
+    "lat": 50.334664
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "5b08faf9-5bbe-58b3-ad1a-4921b4b89f24",
+  "name": "Turnhalle Gäuschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "In den Feldern",
+    "hausnummer": "1",
+    "plz": "67482",
+    "ort": "{'ags': '07337011', 'ort': 'Böbingen', 'postleitzahl': '67482'}"
+  },
+  "lage": {
+    "lon": 8.225155,
+    "lat": 49.279187
+  }
+}

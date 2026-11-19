@@ -1,0 +1,15 @@
+{
+  "id": "f16d80ef-2573-56eb-93a8-63f60c051e97",
+  "name": "Sporthalle Albert-Schweitzer Grundschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Albert-Schweitzer-Straße",
+    "hausnummer": "2",
+    "plz": "67122",
+    "ort": "{'ags': '07338001', 'ort': 'Altrip', 'postleitzahl': '67122'}"
+  },
+  "lage": {
+    "lon": 8.495114,
+    "lat": 49.434641
+  }
+}

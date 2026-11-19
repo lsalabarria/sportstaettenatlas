@@ -1,0 +1,15 @@
+{
+  "id": "4bfd796e-d0fa-55ec-b7f2-c9b5175fd2bb",
+  "name": "Gymnastikhalle Appeltal-Grundschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Wiesenstraße",
+    "hausnummer": "7",
+    "plz": "67813",
+    "ort": "{'ags': '07333025', 'ort': 'Gerbach', 'postleitzahl': '67813'}"
+  },
+  "lage": {
+    "lon": 7.86782,
+    "lat": 49.672177
+  }
+}

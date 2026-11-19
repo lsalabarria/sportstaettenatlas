@@ -1,0 +1,16 @@
+{
+  "id": "d7ee0dfe-a4da-53e0-8d9c-c37776630c5a",
+  "name": "Nettetalstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An Sagnesmühle",
+    "hausnummer": "1",
+    "plz": "56727",
+    "ort": "{'ags': '07137068', 'ort': 'Mayen, Stadt', 'postleitzahl': '56727*'}"
+  },
+  "lage": {
+    "lon": 7.212839,
+    "lat": 50.337564
+  },
+  "betriebsstatus": "in Betrieb"
+}

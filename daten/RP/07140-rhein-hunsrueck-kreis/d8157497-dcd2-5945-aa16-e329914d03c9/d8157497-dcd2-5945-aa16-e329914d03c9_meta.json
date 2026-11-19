@@ -1,0 +1,39 @@
+{
+  "id": "d8157497-dcd2-5945-aa16-e329914d03c9",
+  "name": "Schachclub Ramstein-Miesenbach",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Hauptstr.",
+    "hausnummer": "28",
+    "adresszusatz": "Haus der Vereine",
+    "plz": "66877",
+    "ort": "{'ags': '07335038', 'ort': 'Ramstein-Miesenbach, Stadt', 'postleitzahl': '66877*'}"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "entfernung_oepnv": 50,
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "baujahr": 1901,
+  "letzte_sanierung": 2019,
+  "fassadenmaterial": "Sonstiges",
+  "energietraeger": [
+    {
+      "bereich": "Warmwasser",
+      "art": "Betrieb über Heizanlage"
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas"
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Erdgas"
+    }
+  ]
+}

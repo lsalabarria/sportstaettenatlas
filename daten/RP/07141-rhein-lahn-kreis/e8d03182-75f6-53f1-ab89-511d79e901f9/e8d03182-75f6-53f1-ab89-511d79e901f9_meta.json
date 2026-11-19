@@ -1,0 +1,44 @@
+{
+  "id": "e8d03182-75f6-53f1-ab89-511d79e901f9",
+  "name": "Turngemeinde Oberlahnstein e.V",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Westallee",
+    "hausnummer": "9",
+    "plz": "56112",
+    "ort": "{'ags': '07141075', 'ort': 'Lahnstein, Stadt', 'postleitzahl': '56112'}"
+  },
+  "lage": {
+    "lon": 7.603848,
+    "lat": 50.302802
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "wlan": "ja",
+  "zuschauerplaetze": 0,
+  "betriebsstatus": "in Betrieb",
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "letzte_sanierung": 2010,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 4,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 1,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 2,
+    "Geräteräume": 2,
+    "Technikräume": 1,
+    "Schulungs- / Seminarraum": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas"
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Erdgas"
+    }
+  ]
+}

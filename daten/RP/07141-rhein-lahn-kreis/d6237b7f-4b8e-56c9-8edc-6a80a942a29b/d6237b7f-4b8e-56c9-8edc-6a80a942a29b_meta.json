@@ -1,0 +1,15 @@
+{
+  "id": "d6237b7f-4b8e-56c9-8edc-6a80a942a29b",
+  "name": "Schulsporthalle Loreleyschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Loreleyring",
+    "hausnummer": "100",
+    "plz": "56346",
+    "ort": "{'ags': '07141121', 'ort': 'Sankt Goarshausen, Loreleystadt, Stadt', 'postleitzahl': '56346'}"
+  },
+  "lage": {
+    "lon": 7.729268,
+    "lat": 50.152887
+  }
+}

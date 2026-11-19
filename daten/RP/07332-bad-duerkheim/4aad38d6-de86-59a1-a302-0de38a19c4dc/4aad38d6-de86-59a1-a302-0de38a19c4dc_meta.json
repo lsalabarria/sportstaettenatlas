@@ -1,0 +1,15 @@
+{
+  "id": "4aad38d6-de86-59a1-a302-0de38a19c4dc",
+  "name": "Turnhalle Schillerschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schillerstraße",
+    "hausnummer": "1",
+    "plz": "67454",
+    "ort": "{'ags': '07332025', 'ort': 'Haßloch', 'postleitzahl': '67454'}"
+  },
+  "lage": {
+    "lon": 8.260496,
+    "lat": 49.361207
+  }
+}

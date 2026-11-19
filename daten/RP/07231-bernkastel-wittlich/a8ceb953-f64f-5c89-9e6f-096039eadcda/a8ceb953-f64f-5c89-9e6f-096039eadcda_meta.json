@@ -1,0 +1,15 @@
+{
+  "id": "a8ceb953-f64f-5c89-9e6f-096039eadcda",
+  "name": "Sportzentrum Wittlich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Himmeroder Str.",
+    "hausnummer": "88",
+    "plz": "54516",
+    "ort": "{'ags': '07231134', 'ort': 'Wittlich, Stadt', 'postleitzahl': '54516'}"
+  },
+  "lage": {
+    "lon": 6.877966,
+    "lat": 49.991702
+  }
+}

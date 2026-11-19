@@ -1,0 +1,15 @@
+{
+  "id": "9444986a-82b8-594f-87c0-6adf94e61e30",
+  "name": "Sport- und Festhalle Frei-Laubersheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "2",
+    "plz": "55546",
+    "ort": "{'ags': '07133031', 'ort': 'Frei-Laubersheim', 'postleitzahl': '55546'}"
+  },
+  "lage": {
+    "lon": 7.898054,
+    "lat": 49.798456
+  }
+}

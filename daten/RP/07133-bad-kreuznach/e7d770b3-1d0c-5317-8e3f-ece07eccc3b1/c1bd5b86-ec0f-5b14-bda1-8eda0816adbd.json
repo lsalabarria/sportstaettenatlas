@@ -1,0 +1,37 @@
+{
+  "id": "c1bd5b86-ec0f-5b14-bda1-8eda0816adbd",
+  "sportstaette_id": "e7d770b3-1d0c-5317-8e3f-ece07eccc3b1",
+  "typ": "Zweifachsporthalle",
+  "bezeichnung": "Jahnhalle",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1980,
+  "sportarten": [
+    "Aikido",
+    "Basketball",
+    "Ju Jutsu",
+    "Judo",
+    "Cheerleading",
+    "Kampfsport",
+    "Fitness",
+    "Gymnastik",
+    "Rhythmische Sportgymnastik",
+    "Hallenhockey",
+    "Jazzdance",
+    "Karate",
+    "Leichtathletik",
+    "Ringen",
+    "Taekwondo",
+    "Tischtennis",
+    "Walking / Nordic Walking",
+    "Tanzsport"
+  ],
+  "laenge": 43.0,
+  "breite": 25.0,
+  "hoehe": 6.0,
+  "flaeche": 1075.0,
+  "bodenbelag": "Sportparkett",
+  "felder_je_sportart": {
+    "Basketball": 1,
+    "Hallenhockey": 1
+  }
+}

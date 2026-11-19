@@ -1,0 +1,21 @@
+{
+  "id": "48dfdd61-78c1-53e5-952d-dedd8cababc0",
+  "name": "Walter Assenmacher Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Erlenbrunnen",
+    "plz": "53424"
+  },
+  "lage": {
+    "lon": 7.194652,
+    "lat": 50.612442
+  },
+  "entfernung_oepnv": 500,
+  "betreiber": "TuS Oberwinter e.V.",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "nutzer": [
+    "TuS Oberwinter e.V."
+  ],
+  "baujahr": 1976,
+  "letzte_sanierung": 2015
+}

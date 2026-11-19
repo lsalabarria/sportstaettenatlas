@@ -12,8 +12,26 @@
     "lon": 8.10219,
     "lat": 49.198029
   },
-  "oeffentlicher_zugang": "nein",
+  "oeffentlicher_zugang": "ja",
   "schulsport": "nein",
-  "wlan": "nein",
-  "betriebsstatus": "in Betrieb"
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "website": "https://www.tennis-landau.de",
+  "letzte_sanierung": 2022,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 4,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 4,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas"
+    }
+  ]
 }

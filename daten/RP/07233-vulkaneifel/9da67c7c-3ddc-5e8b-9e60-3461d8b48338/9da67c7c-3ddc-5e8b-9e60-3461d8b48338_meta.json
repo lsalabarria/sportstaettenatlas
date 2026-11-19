@@ -1,0 +1,15 @@
+{
+  "id": "9da67c7c-3ddc-5e8b-9e60-3461d8b48338",
+  "name": "Turnhalle Grundschule Wallenborn",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "9",
+    "plz": "54570",
+    "ort": "{'ags': '07233079', 'ort': 'Wallenborn', 'postleitzahl': '54570*'}"
+  },
+  "lage": {
+    "lon": 6.716155,
+    "lat": 50.154457
+  }
+}

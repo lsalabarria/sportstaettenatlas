@@ -1,0 +1,15 @@
+{
+  "id": "ecee458d-7c33-5740-8d4c-a74c7de2d5e2",
+  "name": "Sporthalle IGS Plaidt",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Wilhelm-Röntgen-Straße",
+    "hausnummer": "4",
+    "plz": "56637",
+    "ort": "{'ags': '07137088', 'ort': 'Plaidt', 'postleitzahl': '56637'}"
+  },
+  "lage": {
+    "lon": 7.404667,
+    "lat": 50.392771
+  }
+}

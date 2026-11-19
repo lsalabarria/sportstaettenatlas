@@ -1,0 +1,15 @@
+{
+  "id": "290885ea-46ea-59b7-889e-51d726f86a91",
+  "name": "Sporthalle der Eisgrubschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Eisgrubweg",
+    "hausnummer": "1",
+    "plz": "55116",
+    "ort": "{'ags': '07315000', 'ort': 'Mainz, Stadt', 'postleitzahl': '55116*'}"
+  },
+  "lage": {
+    "lon": 8.268682,
+    "lat": 49.994541
+  }
+}

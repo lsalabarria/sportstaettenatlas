@@ -1,0 +1,15 @@
+{
+  "id": "c262634b-72ca-5a2b-a16d-7f9b331221d5",
+  "name": "Grundschulturnhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kettelerstraße",
+    "hausnummer": "7",
+    "plz": "76768",
+    "ort": "{'ags': '07334002', 'ort': 'Berg (Pfalz)', 'postleitzahl': '76768'}"
+  },
+  "lage": {
+    "lon": 8.203171,
+    "lat": 48.982739
+  }
+}

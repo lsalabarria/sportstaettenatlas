@@ -1,0 +1,15 @@
+{
+  "id": "f1f2d63c-a318-5919-a143-daabe0d55a23",
+  "name": "Turnhalle der Grundschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Rheinstraße",
+    "hausnummer": "32",
+    "plz": "67240",
+    "ort": "{'ags': '07338004', 'ort': 'Bobenheim-Roxheim', 'postleitzahl': '67240'}"
+  },
+  "lage": {
+    "lon": 8.367269,
+    "lat": 49.580552
+  }
+}

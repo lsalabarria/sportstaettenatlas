@@ -1,0 +1,21 @@
+{
+  "id": "00c05da0-4dd1-55c6-8afc-32cf2656efe4",
+  "name": "Schützenverein",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "plz": "67722",
+    "ort": "{'ags': '07333503', 'ort': 'Winnweiler', 'postleitzahl': '67722'}"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "wlan": "ja",
+  "baujahr": 1982,
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Flüssiggas"
+    }
+  ]
+}

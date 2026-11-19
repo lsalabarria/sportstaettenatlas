@@ -1,0 +1,15 @@
+{
+  "id": "426deb7a-538e-5b45-a4af-aacd71e70e77",
+  "name": "Siegelbach Mehrzweckhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Finkenstraße",
+    "hausnummer": "14",
+    "plz": "67661",
+    "ort": "{'ags': '07312000', 'ort': 'Kaiserslautern, Stadt', 'postleitzahl': '67657*'}"
+  },
+  "lage": {
+    "lon": 7.688981,
+    "lat": 49.466042
+  }
+}

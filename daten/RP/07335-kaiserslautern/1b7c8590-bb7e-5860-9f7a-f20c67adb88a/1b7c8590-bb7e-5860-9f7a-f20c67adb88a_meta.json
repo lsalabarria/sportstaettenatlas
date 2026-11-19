@@ -1,0 +1,15 @@
+{
+  "id": "1b7c8590-bb7e-5860-9f7a-f20c67adb88a",
+  "name": "Sporthalle der Theodor Heuss Grundschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Königsberger Straße",
+    "hausnummer": "9",
+    "plz": "66849",
+    "ort": "{'ags': '07335022', 'ort': 'Landstuhl, Sickingenstadt, Stadt', 'postleitzahl': '66849'}"
+  },
+  "lage": {
+    "lon": 7.569591,
+    "lat": 49.398791
+  }
+}

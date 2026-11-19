@@ -1,0 +1,15 @@
+{
+  "id": "5f4eedfa-776e-5cfd-b958-e126cfe95e96",
+  "name": "Schulturnhalle Waldsee",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schifferstadter Straße",
+    "hausnummer": "2",
+    "plz": "67165",
+    "ort": "{'ags': '07338026', 'ort': 'Waldsee', 'postleitzahl': '67165'}"
+  },
+  "lage": {
+    "lon": 8.43661,
+    "lat": 49.393283
+  }
+}

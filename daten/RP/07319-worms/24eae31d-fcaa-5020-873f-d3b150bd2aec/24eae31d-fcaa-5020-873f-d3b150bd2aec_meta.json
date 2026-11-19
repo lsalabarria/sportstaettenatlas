@@ -1,0 +1,15 @@
+{
+  "id": "24eae31d-fcaa-5020-873f-d3b150bd2aec",
+  "name": "Schulsporthalle Grundschule Wiesoppenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Losengewann",
+    "hausnummer": "32",
+    "plz": "67551",
+    "ort": "{'ags': '07319000', 'ort': 'Worms, Stadt', 'postleitzahl': '67547*'}"
+  },
+  "lage": {
+    "lon": 8.299774,
+    "lat": 49.604544
+  }
+}

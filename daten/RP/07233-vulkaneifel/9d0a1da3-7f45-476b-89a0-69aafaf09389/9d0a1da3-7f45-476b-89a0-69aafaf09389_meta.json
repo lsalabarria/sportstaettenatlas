@@ -1,9 +1,9 @@
 {
   "id": "9d0a1da3-7f45-476b-89a0-69aafaf09389",
-  "name": "Golfclub Eifel",
+  "name": "Golf-Club Eifel e. V.",
   "kategorie": "Golfsportstätte",
   "adresse": {
-    "strasse": "Milan Weg",
+    "strasse": "Milanweg",
     "plz": "54576",
     "ort": "Hillesheim"
   },
@@ -11,6 +11,15 @@
     "lon": 6.673245,
     "lat": 50.309046
   },
-  "oeffentlicher_zugang": "nein",
-  "schulsport": "nein"
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "website": "https://www.golfclub-eifel.de",
+  "baujahr": 1977,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 2,
+    "Sanitärräume - Publikum": 7,
+    "Büro- und Verwaltungsräume": 4
+  }
 }

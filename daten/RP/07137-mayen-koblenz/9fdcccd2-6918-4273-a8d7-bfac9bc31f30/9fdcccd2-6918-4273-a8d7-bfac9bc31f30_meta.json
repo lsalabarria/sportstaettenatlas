@@ -12,8 +12,17 @@
     "lon": 7.009408,
     "lat": 50.305378
   },
-  "oeffentlicher_zugang": "nein",
-  "schulsport": "nein",
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
   "wlan": "nein",
-  "betriebsstatus": "in Betrieb"
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1956,
+  "letzte_sanierung": 1991,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 3,
+    "Geräteräume": 1
+  }
 }

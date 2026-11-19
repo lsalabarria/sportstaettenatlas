@@ -1,0 +1,15 @@
+{
+  "id": "1875b9f1-03ae-5056-a407-0acc3a6fa014",
+  "name": "Turnhalle Stiftswaldschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Stiftswaldstraße",
+    "hausnummer": "54",
+    "plz": "67657",
+    "ort": "{'ags': '07312000', 'ort': 'Kaiserslautern, Stadt', 'postleitzahl': '67657*'}"
+  },
+  "lage": {
+    "lon": 7.798823,
+    "lat": 49.441654
+  }
+}

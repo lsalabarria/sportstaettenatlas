@@ -1,0 +1,37 @@
+{
+  "id": "df9adfa1-3dc4-5d75-ab6c-55867411fc84",
+  "name": "Schützenverein Reitzenhain",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "plz": "56357",
+    "ort": "{'ags': '07141115', 'ort': 'Reitzenhain', 'postleitzahl': '56357'}"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "website": "https://reitzenhain.welterbe-mittelrheintal.de/vereine/schuetzenverein-sv-reitzenhain-1953-ev",
+  "baujahr": 1953,
+  "letzte_sanierung": 2025,
+  "fassadenmaterial": "Putz",
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Flüssiggas",
+      "einbaujahr": 1983
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Flüssiggas"
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Holz/Pellets/Hackschnitzel",
+      "einbaujahr": 2017
+    }
+  ]
+}

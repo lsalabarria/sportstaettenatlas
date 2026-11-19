@@ -1,0 +1,15 @@
+{
+  "id": "c6f7986c-3716-52d0-911a-bf439787c7ba",
+  "name": "Turnhalle Selztalschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Oppenheimer Str.",
+    "hausnummer": "69",
+    "plz": "55268",
+    "ort": "{'ags': '07339042', 'ort': 'Nieder-Olm, Stadt', 'postleitzahl': '55268'}"
+  },
+  "lage": {
+    "lon": 8.200511,
+    "lat": 49.901754
+  }
+}

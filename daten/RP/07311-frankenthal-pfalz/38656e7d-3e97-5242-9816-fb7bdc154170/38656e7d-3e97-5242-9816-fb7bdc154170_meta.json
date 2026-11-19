@@ -1,0 +1,15 @@
+{
+  "id": "38656e7d-3e97-5242-9816-fb7bdc154170",
+  "name": "Gymnastikhalle Erkenbert Grundschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Lilienstraße",
+    "hausnummer": "10",
+    "plz": "67227",
+    "ort": "{'ags': '07311000', 'ort': 'Frankenthal (Pfalz), Stadt'}"
+  },
+  "lage": {
+    "lon": 8.340436,
+    "lat": 49.538641
+  }
+}

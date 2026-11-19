@@ -12,6 +12,55 @@
     "lon": 7.853957,
     "lat": 49.563641
   },
-  "oeffentlicher_zugang": "nein",
-  "schulsport": "nein"
+  "entfernung_oepnv": 500,
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "wlan": "ja",
+  "zuschauerplaetze": 50,
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Tennisclub Winnweiler 1980 e.V.",
+  "betreiber": "Tennisclub Winnweiler 1980 e.V.",
+  "website": "https://www.tc-winnweiler.de",
+  "wettkampfanlage": "Wettkampfanlage Typ C",
+  "baujahr": 1980,
+  "letzte_sanierung": 2002,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 2,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 1,
+    "Technikräume": 1,
+    "Gastronomie": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Warmwasser",
+      "art": "Betrieb über Heizanlage",
+      "einbaujahr": 2013
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas",
+      "einbaujahr": 1980
+    },
+    {
+      "bereich": "Strom",
+      "art": "Photovoltaik-Anlage",
+      "einbaujahr": 2013
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Solarthermie",
+      "einbaujahr": 2013
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Solarthermie",
+      "einbaujahr": 2013
+    }
+  ]
 }

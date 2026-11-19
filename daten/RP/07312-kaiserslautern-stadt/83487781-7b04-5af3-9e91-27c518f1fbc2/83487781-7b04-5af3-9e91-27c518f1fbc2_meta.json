@@ -1,0 +1,15 @@
+{
+  "id": "83487781-7b04-5af3-9e91-27c518f1fbc2",
+  "name": "Turnhalle Schule am Beilstein",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Velmannstraße",
+    "hausnummer": "13",
+    "plz": "67657",
+    "ort": "{'ags': '07312000', 'ort': 'Kaiserslautern, Stadt', 'postleitzahl': '67657*'}"
+  },
+  "lage": {
+    "lon": 7.815217,
+    "lat": 49.438052
+  }
+}

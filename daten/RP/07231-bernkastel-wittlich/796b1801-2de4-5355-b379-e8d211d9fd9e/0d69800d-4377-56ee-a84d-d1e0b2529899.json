@@ -1,0 +1,40 @@
+{
+  "id": "0d69800d-4377-56ee-a84d-d1e0b2529899",
+  "sportstaette_id": "796b1801-2de4-5355-b379-e8d211d9fd9e",
+  "typ": "Großspielfeld",
+  "bezeichnung": "Rasenplatz Gonzerath",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1991,
+  "sportarten": [
+    "Fußball"
+  ],
+  "wettkampf": [
+    "Fußball"
+  ],
+  "laenge": 100.0,
+  "breite": 60.0,
+  "bodenbelag": "Rasen",
+  "felder_je_sportart": {
+    "Fußball": 1
+  },
+  "bewaesserung": "ja",
+  "flutlicht": "ja",
+  "leuchtmittel": "LED",
+  "lux": 300,
+  "oeffnungsstunden": 2000,
+  "oeffnungsstunden_verein": 1100,
+  "sanierungen": [
+    {
+      "jahr": 2005,
+      "kosten": 50000.0,
+      "waehrung": "€",
+      "beschreibung": "Umbau Tennenplatz zu Rasenplatz"
+    },
+    {
+      "jahr": 2022,
+      "kosten": 30000.0,
+      "waehrung": "€",
+      "beschreibung": "Umbau Flutlicht auf LED"
+    }
+  ]
+}

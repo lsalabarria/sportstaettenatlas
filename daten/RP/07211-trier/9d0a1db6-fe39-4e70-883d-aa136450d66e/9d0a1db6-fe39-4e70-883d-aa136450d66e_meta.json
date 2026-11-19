@@ -3,6 +3,7 @@
   "name": "St. Sebastianus Schützenbrüderschaft Ehrang",
   "kategorie": "Schießsportstätte",
   "adresse": {
+    "strasse": "Wallenbachstr.",
     "plz": "54293",
     "ort": "Trier, Stadt"
   },
@@ -10,6 +11,44 @@
     "lon": 6.674909,
     "lat": 49.80235
   },
+  "entfernung_oepnv": 800,
   "oeffentlicher_zugang": "nein",
-  "schulsport": "nein"
+  "schulsport": "nein",
+  "wlan": "ja",
+  "zuschauerplaetze": 60,
+  "betriebsstatus": "in Betrieb",
+  "wettkampfanlage": "Wettkampfanlage Typ A",
+  "baujahr": 1980,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 1,
+    "Sanitärräume - Publikum": 2,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Flüssiggas",
+      "einbaujahr": 1980
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Strom (z.B. Durchlauferhitzer, Boiler)"
+    }
+  ],
+  "verbraeuche": [
+    {
+      "art": "Erdgas",
+      "menge": 2300.0,
+      "einheit": "Liter"
+    },
+    {
+      "art": "Strom",
+      "menge": 4500.0,
+      "einheit": "kWh"
+    }
+  ]
 }

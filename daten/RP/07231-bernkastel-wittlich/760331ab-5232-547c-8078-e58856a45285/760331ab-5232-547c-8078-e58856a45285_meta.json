@@ -1,0 +1,23 @@
+{
+  "id": "760331ab-5232-547c-8078-e58856a45285",
+  "name": "Tennisclub Morbach",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "1",
+    "plz": "54497",
+    "ort": "{'ags': '07231502', 'ort': 'Morbach', 'postleitzahl': '54497'}"
+  },
+  "lage": {
+    "lon": 7.131253,
+    "lat": 49.816687
+  },
+  "entfernung_oepnv": 300,
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Tennisclub Morbach e.V.",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "Tennisclub Morbach e.V.",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.tcmorbach.de",
+  "baujahr": 1972
+}

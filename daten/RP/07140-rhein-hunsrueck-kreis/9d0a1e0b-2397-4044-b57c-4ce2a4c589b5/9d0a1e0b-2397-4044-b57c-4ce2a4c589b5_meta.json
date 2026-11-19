@@ -3,14 +3,36 @@
   "name": "Kunstrasenplatz Emmelshausen",
   "kategorie": "Sportplatz",
   "adresse": {
-    "strasse": "Schinderhannes-Radweg",
+    "strasse": "Ringstraße",
     "plz": "56281",
     "ort": "Emmelshausen, Stadt"
   },
   "lage": {
-    "lon": 7.556047,
-    "lat": 50.152135
+    "lon": 7.555643,
+    "lat": 50.151658
   },
   "oeffentlicher_zugang": "nein",
-  "schulsport": "nein"
+  "schulsport": "nein",
+  "wlan": "nein",
+  "zuschauerplaetze": 1500,
+  "betriebsstatus": "in Betrieb",
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "letzte_sanierung": 2010,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 4,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 1,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Warmwasser",
+      "art": "Betrieb über Heizanlage"
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas"
+    }
+  ]
 }

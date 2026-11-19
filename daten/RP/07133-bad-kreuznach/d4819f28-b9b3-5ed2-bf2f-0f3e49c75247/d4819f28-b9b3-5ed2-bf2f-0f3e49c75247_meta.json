@@ -1,0 +1,16 @@
+{
+  "id": "d4819f28-b9b3-5ed2-bf2f-0f3e49c75247",
+  "name": "Staaren-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Münchwiesen",
+    "hausnummer": "41",
+    "plz": "55566",
+    "ort": "{'ags': '07133501', 'ort': 'Bad Sobernheim, Stadt', 'postleitzahl': '55566'}"
+  },
+  "lage": {
+    "lon": 7.66154,
+    "lat": 49.780882
+  },
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,5 +1,21 @@
 {
   "id": "c0584eac-7d31-5b04-9906-974671511dd4",
   "sportstaette_id": "9ec2a91b-92ff-47a0-8a4c-c105dec80b6f",
-  "typ": "Kleinspielfeld"
+  "typ": "Kleinspielfeld",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2001,
+  "laenge": 60.0,
+  "breite": 40.0,
+  "bodenbelag": "Rasen",
+  "bewaesserung": "ja",
+  "flutlicht": "ja",
+  "leuchtmittel": "LED",
+  "sanierungen": [
+    {
+      "jahr": 2023,
+      "kosten": 15000.0,
+      "waehrung": "€",
+      "beschreibung": "Flutlicht"
+    }
+  ]
 }

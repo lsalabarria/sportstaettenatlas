@@ -1,0 +1,15 @@
+{
+  "id": "a5b3206d-5c9b-5895-802e-08f6ef9105fc",
+  "name": "Sporthalle der Grundschule Dr.-Martin-Luther-King",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "John-F.-Kennedy-Straße",
+    "hausnummer": "7",
+    "plz": "55122",
+    "ort": "{'ags': '07315000', 'ort': 'Mainz, Stadt', 'postleitzahl': '55116*'}"
+  },
+  "lage": {
+    "lon": 8.248522,
+    "lat": 50.002329
+  }
+}

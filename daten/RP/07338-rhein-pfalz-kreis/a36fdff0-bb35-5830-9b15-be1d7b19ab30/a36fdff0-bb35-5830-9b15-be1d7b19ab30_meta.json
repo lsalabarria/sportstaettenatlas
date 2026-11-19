@@ -1,0 +1,15 @@
+{
+  "id": "a36fdff0-bb35-5830-9b15-be1d7b19ab30",
+  "name": "Turnhalle Schillerschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "24",
+    "plz": "67136",
+    "ort": "{'ags': '07338008', 'ort': 'Fußgönheim', 'postleitzahl': '67136'}"
+  },
+  "lage": {
+    "lon": 8.289185,
+    "lat": 49.45934
+  }
+}

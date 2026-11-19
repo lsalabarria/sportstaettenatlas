@@ -1,0 +1,13 @@
+{
+  "id": "b13eb575-36c8-50f4-a0cc-1013ede4bf21",
+  "name": "Athletik Club Rockenhausen",
+  "kategorie": "Fitnessstudio",
+  "lage": {
+    "lon": 7.824122,
+    "lat": 49.644645
+  },
+  "betriebsstatus": "in Betrieb",
+  "nutzer": [
+    "Athletik Club Rockenhausen e.V."
+  ]
+}

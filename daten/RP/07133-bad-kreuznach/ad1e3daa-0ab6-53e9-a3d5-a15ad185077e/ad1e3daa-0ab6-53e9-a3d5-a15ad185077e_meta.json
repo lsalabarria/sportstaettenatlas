@@ -1,0 +1,15 @@
+{
+  "id": "ad1e3daa-0ab6-53e9-a3d5-a15ad185077e",
+  "name": "Sporthalle Paul-Schneider-Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Präses-Held-Straße",
+    "hausnummer": "1",
+    "plz": "55590",
+    "ort": "{'ags': '07133065', 'ort': 'Meisenheim, Stadt', 'postleitzahl': '55590*'}"
+  },
+  "lage": {
+    "lon": 7.663822,
+    "lat": 49.709566
+  }
+}

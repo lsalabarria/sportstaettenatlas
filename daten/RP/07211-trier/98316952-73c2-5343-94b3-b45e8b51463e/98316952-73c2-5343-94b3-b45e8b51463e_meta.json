@@ -1,0 +1,22 @@
+{
+  "id": "98316952-73c2-5343-94b3-b45e8b51463e",
+  "name": "Bezirkssportanlage Heiligkreuz Kunstrasenplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hans - Böckler - Allee",
+    "hausnummer": "22",
+    "plz": "54295",
+    "ort": "{'ags': '07211000', 'ort': 'Trier, Stadt', 'postleitzahl': '54290*'}"
+  },
+  "lage": {
+    "lon": 6.647358,
+    "lat": 49.738959
+  },
+  "entfernung_oepnv": 100,
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Stadt Trier",
+  "eigentuemer_typ": "Kommunales Unternehmen",
+  "betreiber": "Stadt Trier",
+  "baujahr": 2026,
+  "letzte_sanierung": 2026
+}

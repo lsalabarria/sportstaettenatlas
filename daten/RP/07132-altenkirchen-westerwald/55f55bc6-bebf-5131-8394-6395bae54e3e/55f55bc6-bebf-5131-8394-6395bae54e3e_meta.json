@@ -1,0 +1,15 @@
+{
+  "id": "55f55bc6-bebf-5131-8394-6395bae54e3e",
+  "name": "Molzberg-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auf dem Molzberg",
+    "plz": "57548",
+    "ort": "{'ags': '07132006', 'ort': 'Betzdorf, Stadt', 'postleitzahl': '57518'}"
+  },
+  "lage": {
+    "lon": 7.872123,
+    "lat": 50.804236
+  },
+  "betriebsstatus": "in Betrieb"
+}

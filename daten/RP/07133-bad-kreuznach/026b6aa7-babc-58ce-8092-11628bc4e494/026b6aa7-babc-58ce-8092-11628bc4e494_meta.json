@@ -1,0 +1,15 @@
+{
+  "id": "026b6aa7-babc-58ce-8092-11628bc4e494",
+  "name": "Sporthalle Grundschule Seibersbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "21",
+    "plz": "55444",
+    "ort": "{'ags': '07133095', 'ort': 'Seibersbach', 'postleitzahl': '55444*'}"
+  },
+  "lage": {
+    "lon": 7.720406,
+    "lat": 49.964531
+  }
+}

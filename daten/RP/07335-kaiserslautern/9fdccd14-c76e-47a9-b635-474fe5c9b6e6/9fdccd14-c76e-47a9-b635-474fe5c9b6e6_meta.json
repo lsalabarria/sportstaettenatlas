@@ -16,5 +16,15 @@
   "schulsport": "nein",
   "wlan": "nein",
   "betriebsstatus": "in Betrieb",
-  "sportkomplex": "9fdccd14-4e83-4fb7-b22b-d760dcd7d227"
+  "sportkomplex": "9fdccd14-4e83-4fb7-b22b-d760dcd7d227",
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas"
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Erdgas"
+    }
+  ]
 }

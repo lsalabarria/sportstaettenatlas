@@ -1,0 +1,15 @@
+{
+  "id": "1b781af6-6b42-590c-8bc6-4a66d842bd04",
+  "name": "Turnhallen Megina-Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Knüppchen",
+    "hausnummer": "1",
+    "plz": "56727",
+    "ort": "{'ags': '07137068', 'ort': 'Mayen, Stadt', 'postleitzahl': '56727*'}"
+  },
+  "lage": {
+    "lon": 7.213222,
+    "lat": 50.332569
+  }
+}

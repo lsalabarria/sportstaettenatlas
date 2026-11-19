@@ -1,0 +1,15 @@
+{
+  "id": "e829e154-2fbb-5695-9f28-ec6d0e648399",
+  "name": "Sporthalle der Mühlbach-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "10",
+    "plz": "56357",
+    "ort": "{'ags': '07141085', 'ort': 'Miehlen', 'postleitzahl': '56357*'}"
+  },
+  "lage": {
+    "lon": 7.836814,
+    "lat": 50.229684
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "d3c639de-db9b-5231-b1c6-ece482790747",
+  "name": "Schützenverein",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Am Waldfestplatz",
+    "hausnummer": "1",
+    "plz": "67105",
+    "ort": "{'ags': '07338025', 'ort': 'Schifferstadt, Stadt', 'postleitzahl': '67105'}"
+  },
+  "lage": {
+    "lon": 8.383992,
+    "lat": 49.370237
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Schützengesellschaft der Forst- und Jagdschutzfreunde 1926 eV Schifferstadt",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "Schützengesellschaft der Forst- und Jagdschutzfreunde 1926 eV Schifferstadt",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.sg-schifferstadt.de",
+  "nutzer": [
+    "Schützengesellschaft der Forst- und Jagdschutzfreunde 1926 eV Schifferstadt"
+  ],
+  "fassadenmaterial": "Putz",
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas"
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Strom (z.B. Durchlauferhitzer, Boiler)"
+    }
+  ]
+}

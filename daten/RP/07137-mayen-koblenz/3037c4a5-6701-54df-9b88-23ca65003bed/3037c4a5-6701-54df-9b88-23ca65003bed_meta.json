@@ -1,0 +1,15 @@
+{
+  "id": "3037c4a5-6701-54df-9b88-23ca65003bed",
+  "name": "Sporthalle Theodor-Heuss-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Engerser Straße",
+    "hausnummer": "33",
+    "plz": "56170",
+    "ort": "{'ags': '07137203', 'ort': 'Bendorf, Stadt', 'postleitzahl': '56170'}"
+  },
+  "lage": {
+    "lon": 7.570449,
+    "lat": 50.420666
+  }
+}

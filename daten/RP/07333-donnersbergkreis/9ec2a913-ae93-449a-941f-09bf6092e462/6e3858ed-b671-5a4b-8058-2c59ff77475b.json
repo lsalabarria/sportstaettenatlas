@@ -1,5 +1,21 @@
 {
   "id": "6e3858ed-b671-5a4b-8058-2c59ff77475b",
   "sportstaette_id": "9ec2a913-ae93-449a-941f-09bf6092e462",
-  "typ": "Tennisplatz"
+  "typ": "Tennisplatz",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1980,
+  "sportarten": [
+    "Tennis"
+  ],
+  "wettkampf": [
+    "Tennis"
+  ],
+  "felder_je_belag": {
+    "Sand": 4
+  },
+  "bewaesserung": "ja",
+  "flutlicht": "nein",
+  "oeffnungsstunden": 200,
+  "oeffnungsstunden_schule": 100,
+  "oeffnungsstunden_verein": 200
 }

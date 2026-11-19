@@ -1,0 +1,22 @@
+{
+  "id": "79bdf7a7-55de-599b-b0e4-52827875961c",
+  "sportstaette_id": "18871df3-f187-594d-a9c1-2955c37ecc89",
+  "typ": "Tennishalle",
+  "bezeichnung": "TC Hassloch",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1995,
+  "sportarten": [
+    "Tennis"
+  ],
+  "wettkampf": [
+    "Tennis"
+  ],
+  "laenge": 54.0,
+  "breite": 36.0,
+  "hoehe": 10.0,
+  "felder_je_belag": {
+    "Teppich": 3
+  },
+  "flutlicht": "nein",
+  "oeffnungsstunden": 5500
+}

@@ -1,0 +1,15 @@
+{
+  "id": "4fbaf363-8abc-5d1b-8fd8-bd3fa94abc3b",
+  "name": "Turnhalle der Schillerschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Römerstraße",
+    "hausnummer": "20",
+    "plz": "66981",
+    "ort": "{'ags': '07340032', 'ort': 'Münchweiler an der Rodalb', 'postleitzahl': '66981*'}"
+  },
+  "lage": {
+    "lon": 7.70618,
+    "lat": 49.21675
+  }
+}

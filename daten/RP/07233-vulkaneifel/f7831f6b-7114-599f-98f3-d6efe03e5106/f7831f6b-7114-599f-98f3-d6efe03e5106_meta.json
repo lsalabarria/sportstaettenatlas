@@ -1,0 +1,12 @@
+{
+  "id": "f7831f6b-7114-599f-98f3-d6efe03e5106",
+  "name": "Zentrale Sportanlage Gerolstein",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54568"
+  },
+  "lage": {
+    "lon": 6.649024,
+    "lat": 50.220521
+  }
+}

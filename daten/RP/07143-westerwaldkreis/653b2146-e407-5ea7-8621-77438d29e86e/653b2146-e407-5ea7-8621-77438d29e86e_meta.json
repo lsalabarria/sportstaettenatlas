@@ -1,0 +1,19 @@
+{
+  "id": "653b2146-e407-5ea7-8621-77438d29e86e",
+  "name": "Test Skipiste Salzburgerkopf",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Test",
+    "hausnummer": "123",
+    "plz": "12345",
+    "ort": "{'ags': '07143291', 'ort': 'Salzburg', 'postleitzahl': '56479*'}"
+  },
+  "lage": {
+    "lon": 8.058848,
+    "lat": 50.672629
+  },
+  "entfernung_oepnv": 100,
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1970,
+  "letzte_sanierung": 2010
+}

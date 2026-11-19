@@ -1,0 +1,15 @@
+{
+  "id": "ca976082-33e9-53d0-9b70-52791519aa83",
+  "name": "Dr. Werner Dümmler Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Staudernheimer Str.",
+    "hausnummer": "117",
+    "plz": "55566",
+    "ort": "{'ags': '07133501', 'ort': 'Bad Sobernheim, Stadt', 'postleitzahl': '55566'}"
+  },
+  "lage": {
+    "lon": 7.66644,
+    "lat": 49.783164
+  }
+}

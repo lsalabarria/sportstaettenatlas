@@ -1,0 +1,67 @@
+{
+  "id": "93331ff5-af97-5d8e-97ed-0968219f0c5c",
+  "name": "Reiterverein Bissingen e.V.",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Hof Bissingen",
+    "hausnummer": "2",
+    "plz": "56388",
+    "ort": "{'ags': '07141501', 'ort': 'Braubach, Stadt', 'postleitzahl': '56338*'}"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "entfernung_oepnv": 3,
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "wlan": "ja",
+  "zuschauerplaetze": 50,
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Susanne Lebek",
+  "website": "https://reiterverein-bissingen.de",
+  "wettkampfanlage": "Wettkampfanlage Typ A",
+  "baujahr": 1975,
+  "letzte_sanierung": 2020,
+  "fassadenmaterial": "Mauerwerk mit Anstrich",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 3,
+    "Umkleide- und Sanitärräume - Personal": 3,
+    "Sanitärräume - Publikum": 3,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 4,
+    "Geräteräume": 2,
+    "Technikräume": 1,
+    "Schulungs- / Seminarraum": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Strom",
+      "art": "Photovoltaik-Anlage",
+      "einbaujahr": 2013
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Heizöl",
+      "einbaujahr": 2020
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Strom (z.B. Durchlauferhitzer, Boiler)",
+      "einbaujahr": 2024
+    }
+  ],
+  "verbraeuche": [
+    {
+      "art": "Heizöl",
+      "menge": 500.0,
+      "einheit": "Liter"
+    },
+    {
+      "art": "Strom",
+      "menge": 200.0,
+      "einheit": "kWh"
+    }
+  ]
+}

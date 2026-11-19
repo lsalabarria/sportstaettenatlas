@@ -1,0 +1,15 @@
+{
+  "id": "ff135e0a-5b82-5a6c-ab79-91401da6beb3",
+  "name": "Mehrzweckhalle Kaltenengers",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Raiffeisenstraße",
+    "hausnummer": "2",
+    "plz": "56220",
+    "ort": "{'ags': '07137209', 'ort': 'Kaltenengers', 'postleitzahl': '56220*'}"
+  },
+  "lage": {
+    "lon": 7.541943,
+    "lat": 50.416025
+  }
+}

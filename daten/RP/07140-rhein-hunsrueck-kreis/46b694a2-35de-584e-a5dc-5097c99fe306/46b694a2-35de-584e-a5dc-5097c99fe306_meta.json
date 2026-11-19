@@ -1,0 +1,46 @@
+{
+  "id": "46b694a2-35de-584e-a5dc-5097c99fe306",
+  "name": "Pferdesportverein Dannstadter Höhe e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An der Hengstweide",
+    "plz": "67125",
+    "ort": "{'ags': '07338006', 'ort': 'Dannstadt-Schauernheim', 'postleitzahl': '67125'}"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "entfernung_oepnv": 250,
+  "schulsport": "ja",
+  "wlan": "ja",
+  "zuschauerplaetze": 500,
+  "betriebsstatus": "in Betrieb",
+  "website": "https://www.psvdannstadt.net",
+  "baujahr": 1985,
+  "letzte_sanierung": 2016,
+  "fassadenmaterial": "Vorhangfassade",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 1,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 1,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 2,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Warmwasser",
+      "art": "Strom (z.B. Durchlauferhitzer, Boiler)"
+    }
+  ],
+  "verbraeuche": [
+    {
+      "art": "Strom",
+      "menge": 9000.0,
+      "einheit": "kWh"
+    }
+  ]
+}

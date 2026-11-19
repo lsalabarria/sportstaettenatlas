@@ -1,0 +1,15 @@
+{
+  "id": "b896af76-0d29-525f-b23c-cc7c752f4843",
+  "name": "Schulturnhalle Hettenleidelheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "27",
+    "plz": "67310",
+    "ort": "{'ags': '07332027', 'ort': 'Hettenleidelheim', 'postleitzahl': '67310*'}"
+  },
+  "lage": {
+    "lon": 8.068664,
+    "lat": 49.535599
+  }
+}

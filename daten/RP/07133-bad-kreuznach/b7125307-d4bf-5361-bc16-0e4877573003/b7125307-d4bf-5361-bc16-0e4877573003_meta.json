@@ -1,0 +1,15 @@
+{
+  "id": "b7125307-d4bf-5361-bc16-0e4877573003",
+  "name": "Sporthalle BBS",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ringstraße",
+    "hausnummer": "901",
+    "plz": "55543",
+    "ort": "{'ags': '07133006', 'ort': 'Bad Kreuznach, Stadt', 'postleitzahl': '55545'}"
+  },
+  "lage": {
+    "lon": 7.854538,
+    "lat": 49.834163
+  }
+}

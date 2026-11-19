@@ -1,0 +1,14 @@
+{
+  "id": "adabb473-d38d-5af9-8862-e20ed41523bc",
+  "name": "Albertine-Scherer-Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Franz-Liszt-Straße",
+    "hausnummer": "11",
+    "plz": "67134"
+  },
+  "lage": {
+    "lon": 8.266515,
+    "lat": 49.48314
+  }
+}

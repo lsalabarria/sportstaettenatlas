@@ -1,0 +1,15 @@
+{
+  "id": "5d987b59-706b-57ee-a1e6-86e264aee65a",
+  "name": "Stadion Windhagen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Reinhard-Wirtgen-Straße",
+    "hausnummer": "10",
+    "plz": "53578",
+    "ort": "{'ags': '07138077', 'ort': 'Windhagen', 'postleitzahl': '53578*'}"
+  },
+  "lage": {
+    "lon": 7.351383,
+    "lat": 50.636732
+  }
+}

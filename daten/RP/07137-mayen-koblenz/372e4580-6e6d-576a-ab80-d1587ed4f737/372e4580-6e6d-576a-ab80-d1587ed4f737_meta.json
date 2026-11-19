@@ -1,0 +1,15 @@
+{
+  "id": "372e4580-6e6d-576a-ab80-d1587ed4f737",
+  "name": "Sporthalle Albert-Schweitzer-Realschule plus",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Joignystraße",
+    "hausnummer": "5",
+    "plz": "56727",
+    "ort": "{'ags': '07137068', 'ort': 'Mayen, Stadt', 'postleitzahl': '56727*'}"
+  },
+  "lage": {
+    "lon": 7.219112,
+    "lat": 50.322288
+  }
+}

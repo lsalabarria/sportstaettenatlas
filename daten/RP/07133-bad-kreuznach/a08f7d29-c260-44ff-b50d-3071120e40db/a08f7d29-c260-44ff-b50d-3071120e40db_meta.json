@@ -15,5 +15,27 @@
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "wlan": "nein",
-  "betriebsstatus": "in Betrieb"
+  "betriebsstatus": "in Betrieb",
+  "betreiber": "TuS 1892 e.V. Stromberg",
+  "betreiber_typ": "Sonstiger Sportverein",
+  "website": "https://www.tus-stromberg,de",
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Holz/Pellets/Hackschnitzel",
+      "einbaujahr": 2005
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Holz/Pellets/Hackschnitzel",
+      "einbaujahr": 2005
+    }
+  ],
+  "verbraeuche": [
+    {
+      "art": "Holz/Pellets/Hackschnitzel",
+      "menge": 4.0,
+      "einheit": "Tonnen"
+    }
+  ]
 }

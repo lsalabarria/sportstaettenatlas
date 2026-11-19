@@ -1,0 +1,15 @@
+{
+  "id": "a217e298-e090-58ad-9137-03629ba3f4a0",
+  "name": "Schulsporthalle Hornbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Turnhallstraße",
+    "hausnummer": "1",
+    "plz": "66500",
+    "ort": "{'ags': '07340211', 'ort': 'Hornbach, Stadt', 'postleitzahl': '66500*'}"
+  },
+  "lage": {
+    "lon": 7.372137,
+    "lat": 49.189384
+  }
+}

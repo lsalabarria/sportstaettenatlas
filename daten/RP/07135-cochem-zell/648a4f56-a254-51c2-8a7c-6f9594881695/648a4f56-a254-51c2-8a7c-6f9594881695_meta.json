@@ -1,0 +1,11 @@
+{
+  "id": "648a4f56-a254-51c2-8a7c-6f9594881695",
+  "name": "test",
+  "kategorie": "Sporthalle",
+  "lage": {
+    "lon": 7.228123,
+    "lat": 50.239356
+  },
+  "eigentuemer": "er",
+  "eigentuemer_typ": "Kommunales Unternehmen"
+}

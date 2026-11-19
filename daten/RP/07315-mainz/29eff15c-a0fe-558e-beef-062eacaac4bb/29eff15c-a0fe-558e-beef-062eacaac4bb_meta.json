@@ -1,0 +1,15 @@
+{
+  "id": "29eff15c-a0fe-558e-beef-062eacaac4bb",
+  "name": "Sporthalle BBS I und III",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Judensand",
+    "hausnummer": "12",
+    "plz": "55122",
+    "ort": "{'ags': '07315000', 'ort': 'Mainz, Stadt', 'postleitzahl': '55116*'}"
+  },
+  "lage": {
+    "lon": 8.244692,
+    "lat": 50.006672
+  }
+}

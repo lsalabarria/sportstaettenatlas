@@ -1,0 +1,15 @@
+{
+  "id": "9242ecbe-593f-5689-9ec2-7380113a1b8c",
+  "name": "Sporthalle Carl-Bosch-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Carl-Bosch-Ring",
+    "hausnummer": "29",
+    "plz": "67227",
+    "ort": "{'ags': '07311000', 'ort': 'Frankenthal (Pfalz), Stadt'}"
+  },
+  "lage": {
+    "lon": 8.346648,
+    "lat": 49.523217
+  }
+}

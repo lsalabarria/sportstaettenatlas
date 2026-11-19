@@ -1,0 +1,15 @@
+{
+  "id": "837a36db-69f0-590e-b7b7-8f738970b938",
+  "name": "Turnhalle Grundschule Clemens",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bachstraße",
+    "hausnummer": "12",
+    "plz": "56727",
+    "ort": "{'ags': '07137068', 'ort': 'Mayen, Stadt', 'postleitzahl': '56727*'}"
+  },
+  "lage": {
+    "lon": 7.22416,
+    "lat": 50.331687
+  }
+}

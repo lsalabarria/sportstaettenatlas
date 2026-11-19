@@ -1,0 +1,13 @@
+{
+  "id": "c492656f-3770-5bfa-b306-1bbd45d8ad70",
+  "name": "Sportzentrum Morbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54497",
+    "ort": "{'ags': '07231502', 'ort': 'Morbach', 'postleitzahl': '54497'}"
+  },
+  "lage": {
+    "lon": 7.128567,
+    "lat": 49.815577
+  }
+}

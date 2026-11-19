@@ -1,0 +1,58 @@
+{
+  "id": "73cdcdcd-c2b2-5717-a76f-638fe0c61dcf",
+  "name": "Gülser-Schützen",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Unter der Fürstenwiese",
+    "hausnummer": "27",
+    "plz": "56072",
+    "ort": "{'ags': '07111000', 'ort': 'Koblenz, Stadt', 'postleitzahl': '56068'}"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "entfernung_oepnv": 800,
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "nein",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "St. Hubertus Schützengesellschaft Güls 1846 e.V.",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "St. Hubertus Schützengesellschaft Güls 1846 e.V.",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.guelser-schuetzen.de",
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 1,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 2,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Heizöl"
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Strom (z.B. Durchlauferhitzer, Boiler)"
+    }
+  ],
+  "verbraeuche": [
+    {
+      "art": "Heizöl",
+      "menge": 500.0,
+      "einheit": "Liter"
+    },
+    {
+      "art": "Strom",
+      "menge": 1500.0,
+      "einheit": "kWh"
+    }
+  ]
+}

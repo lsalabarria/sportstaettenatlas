@@ -1,0 +1,15 @@
+{
+  "id": "af2cc296-c72a-5607-b908-bf8d1b458ce0",
+  "name": "Sporthalle Pestalozzi-Grundschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Wormser Straße",
+    "hausnummer": "59",
+    "plz": "67227",
+    "ort": "{'ags': '07311000', 'ort': 'Frankenthal (Pfalz), Stadt'}"
+  },
+  "lage": {
+    "lon": 8.353273,
+    "lat": 49.540713
+  }
+}

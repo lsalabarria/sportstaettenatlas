@@ -1,0 +1,15 @@
+{
+  "id": "7c9c4ace-f07c-5e67-a2c6-6765734c7d00",
+  "name": "Turnhalle Grundschule Rödersheim-Gronau",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schäfergasse",
+    "hausnummer": "49",
+    "plz": "67127",
+    "ort": "{'ags': '07338022', 'ort': 'Rödersheim-Gronau', 'postleitzahl': '67127*'}"
+  },
+  "lage": {
+    "lon": 8.256054,
+    "lat": 49.426492
+  }
+}

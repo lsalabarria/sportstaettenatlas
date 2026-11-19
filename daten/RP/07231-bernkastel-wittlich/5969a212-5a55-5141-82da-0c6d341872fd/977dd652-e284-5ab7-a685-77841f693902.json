@@ -1,0 +1,29 @@
+{
+  "id": "977dd652-e284-5ab7-a685-77841f693902",
+  "sportstaette_id": "5969a212-5a55-5141-82da-0c6d341872fd",
+  "typ": "Einfachsporthalle",
+  "bezeichnung": "Schackberghalle",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1998,
+  "sportarten": [
+    "Volleyball",
+    "Gesundheitssport",
+    "Tanzsport"
+  ],
+  "wettkampf": [
+    "Volleyball"
+  ],
+  "laenge": 27.0,
+  "breite": 15.0,
+  "hoehe": 6.0,
+  "flaeche": 405.0,
+  "bodenbelag": "Sportparkett",
+  "felder_je_sportart": {
+    "Handball": 1,
+    "Basketball": 1,
+    "Volleyball": 1,
+    "Badminton": 3
+  },
+  "oeffnungsstunden": 800,
+  "oeffnungsstunden_verein": 800
+}

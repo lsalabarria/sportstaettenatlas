@@ -3,7 +3,8 @@
   "name": "ASV Sportgelände",
   "kategorie": "Sportplatz",
   "adresse": {
-    "strasse": "Freisbacher Weg",
+    "strasse": "Heilsbruckweg",
+    "hausnummer": "3",
     "plz": "67376",
     "ort": "Harthausen"
   },

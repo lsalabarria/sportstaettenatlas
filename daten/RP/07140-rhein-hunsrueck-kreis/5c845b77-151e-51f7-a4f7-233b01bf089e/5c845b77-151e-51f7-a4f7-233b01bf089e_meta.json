@@ -1,0 +1,18 @@
+{
+  "id": "5c845b77-151e-51f7-a4f7-233b01bf089e",
+  "name": "Test Datenschutz",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Konrad-Zuse-Str.",
+    "hausnummer": "1",
+    "plz": "56075",
+    "ort": "{'ags': '07111000', 'ort': 'Koblenz, Stadt', 'postleitzahl': '56068'}"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "personenbezogenes Datum",
+  "betreiber": "personenbezogenes Datum"
+}

@@ -12,8 +12,31 @@
     "lon": 7.356743,
     "lat": 50.427858
   },
+  "entfernung_oepnv": 200,
   "oeffentlicher_zugang": "nein",
-  "schulsport": "nein",
-  "wlan": "nein",
-  "betriebsstatus": "in Betrieb"
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "baujahr": 1965,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 2,
+    "Sanitärräume - Publikum": 3,
+    "Erste-Hilfe-Räume": 1,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 4,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Warmwasser",
+      "art": "Betrieb über Heizanlage"
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas"
+    }
+  ]
 }

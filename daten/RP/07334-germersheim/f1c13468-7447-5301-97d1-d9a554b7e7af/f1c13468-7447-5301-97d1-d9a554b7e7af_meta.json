@@ -1,0 +1,15 @@
+{
+  "id": "f1c13468-7447-5301-97d1-d9a554b7e7af",
+  "name": "Turnhalle Grundschule Neupotz",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstr.",
+    "hausnummer": "29",
+    "plz": "76777",
+    "ort": "{'ags': '07334022', 'ort': 'Neupotz', 'postleitzahl': '76777*'}"
+  },
+  "lage": {
+    "lon": 8.321017,
+    "lat": 49.119166
+  }
+}

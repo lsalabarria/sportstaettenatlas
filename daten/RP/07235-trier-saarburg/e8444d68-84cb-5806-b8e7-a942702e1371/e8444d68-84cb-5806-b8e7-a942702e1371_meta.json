@@ -1,0 +1,15 @@
+{
+  "id": "e8444d68-84cb-5806-b8e7-a942702e1371",
+  "name": "Kammerforst-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schadallerstraße",
+    "hausnummer": "81",
+    "plz": "54439",
+    "ort": "{'ags': '07235118', 'ort': 'Saarburg, Stadt', 'postleitzahl': '54439'}"
+  },
+  "lage": {
+    "lon": 6.572014,
+    "lat": 49.598294
+  }
+}

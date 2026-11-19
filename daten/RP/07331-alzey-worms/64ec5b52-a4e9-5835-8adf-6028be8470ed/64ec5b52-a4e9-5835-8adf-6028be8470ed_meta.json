@@ -1,0 +1,15 @@
+{
+  "id": "64ec5b52-a4e9-5835-8adf-6028be8470ed",
+  "name": "Sporthalle Grundschule am Appelbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Eleonorenstraße",
+    "hausnummer": "83",
+    "plz": "55597",
+    "ort": "{'ags': '07331072', 'ort': 'Wöllstein', 'postleitzahl': '55597'}"
+  },
+  "lage": {
+    "lon": 7.950379,
+    "lat": 49.810104
+  }
+}

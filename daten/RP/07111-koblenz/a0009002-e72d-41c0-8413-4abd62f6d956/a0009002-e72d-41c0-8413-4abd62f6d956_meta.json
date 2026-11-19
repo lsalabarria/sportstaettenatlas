@@ -12,5 +12,27 @@
     "lat": 50.36912
   },
   "oeffentlicher_zugang": "nein",
-  "schulsport": "nein"
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 3,
+    "Sanitärräume - Publikum": 2,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 2,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas"
+    },
+    {
+      "bereich": "Strom",
+      "art": "Photovoltaik-Anlage"
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Erdgas"
+    }
+  ]
 }

@@ -1,0 +1,15 @@
+{
+  "id": "6f007796-ff6c-560b-884c-d9df390f04f5",
+  "name": "Turnhalle Biersdorf",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Friedhofstraße",
+    "hausnummer": "9",
+    "plz": "57567",
+    "ort": "{'ags': '07132018', 'ort': 'Daaden, Stadt', 'postleitzahl': '57567'}"
+  },
+  "lage": {
+    "lon": 7.952803,
+    "lat": 50.747141
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "4c4be516-cb85-51a9-a0b1-915db160a86c",
+  "sportstaette_id": "18871df3-f187-594d-a9c1-2955c37ecc89",
+  "typ": "Ballwand",
+  "bezeichnung": "TC Hassloch",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1957,
+  "sportarten": [
+    "Tennis"
+  ],
+  "flutlicht": "nein",
+  "oeffnungsstunden": 3000
+}

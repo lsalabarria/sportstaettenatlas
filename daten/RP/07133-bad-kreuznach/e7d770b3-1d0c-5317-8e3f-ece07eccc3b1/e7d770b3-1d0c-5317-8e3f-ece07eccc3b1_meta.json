@@ -1,0 +1,30 @@
+{
+  "id": "e7d770b3-1d0c-5317-8e3f-ece07eccc3b1",
+  "name": "Jahnhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hochstraße",
+    "hausnummer": "27",
+    "plz": "55545",
+    "ort": "{'ags': '07133006', 'ort': 'Bad Kreuznach, Stadt', 'postleitzahl': '55545*'}"
+  },
+  "lage": {
+    "lon": 7.856834,
+    "lat": 49.848029
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "VfL Bad Kreuznach e.V.",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "VfL Bad Kreuznach e.V.",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://vfl-1848.de/",
+  "baujahr": 1980,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 4,
+    "Sanitärräume - Publikum": 2,
+    "Büro- und Verwaltungsräume": 2
+  }
+}

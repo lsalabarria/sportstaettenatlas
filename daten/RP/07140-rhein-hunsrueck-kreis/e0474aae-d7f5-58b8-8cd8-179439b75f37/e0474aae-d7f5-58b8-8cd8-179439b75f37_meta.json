@@ -1,0 +1,15 @@
+{
+  "id": "e0474aae-d7f5-58b8-8cd8-179439b75f37",
+  "name": "Rhinelander-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Hafen",
+    "plz": "55430",
+    "ort": "{'ags': '07140112', 'ort': 'Oberwesel, Stadt', 'postleitzahl': '55430*'}"
+  },
+  "lage": {
+    "lon": 7.734429,
+    "lat": 50.103841
+  },
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "8f49dfe1-403a-56e9-be58-525f435fc3c6",
+  "name": "Sporthalle Grundschule Nittel",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Mühlenweg",
+    "hausnummer": "4",
+    "plz": "54453",
+    "ort": "{'ags': '07235095', 'ort': 'Nittel', 'postleitzahl': '54453*'}"
+  },
+  "lage": {
+    "lon": 6.447548,
+    "lat": 49.651996
+  }
+}

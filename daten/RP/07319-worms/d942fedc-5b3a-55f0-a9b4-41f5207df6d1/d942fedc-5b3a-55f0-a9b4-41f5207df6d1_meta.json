@@ -1,0 +1,38 @@
+{
+  "id": "d942fedc-5b3a-55f0-a9b4-41f5207df6d1",
+  "name": "Gemeinschaftshalle Ibersheim",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Killenfeldstr.",
+    "hausnummer": "25",
+    "plz": "67550"
+  },
+  "lage": {
+    "lon": 8.399606,
+    "lat": 49.719659
+  },
+  "entfernung_oepnv": 400,
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "baujahr": 2003,
+  "letzte_sanierung": 2003,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Holz/Pellets/Hackschnitzel"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "b146cac9-2f1e-518c-b339-d14503f260fe",
+  "name": "Sporthalle Nikolaus-von-Weis Realschule plus",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Holzstraße",
+    "hausnummer": "8",
+    "plz": "67346",
+    "ort": "{'ags': '07318000', 'ort': 'Speyer, Stadt', 'postleitzahl': '67346'}"
+  },
+  "lage": {
+    "lon": 8.419079,
+    "lat": 49.314368
+  }
+}

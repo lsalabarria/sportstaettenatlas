@@ -1,0 +1,15 @@
+{
+  "id": "d72be49f-ec33-5d48-b470-b8c7cd8f3100",
+  "name": "Stadion Mühlheim-Kärlich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Judengäßchen",
+    "hausnummer": "1",
+    "plz": "56218"
+  },
+  "lage": {
+    "lon": 7.501306,
+    "lat": 50.396499
+  },
+  "betriebsstatus": "in Betrieb"
+}

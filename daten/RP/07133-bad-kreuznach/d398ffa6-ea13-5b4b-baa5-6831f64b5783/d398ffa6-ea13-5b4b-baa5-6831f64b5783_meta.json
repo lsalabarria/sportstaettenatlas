@@ -1,0 +1,15 @@
+{
+  "id": "d398ffa6-ea13-5b4b-baa5-6831f64b5783",
+  "name": "Turnhalle Berufsbildende Schulen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Berliner Platz",
+    "hausnummer": "1",
+    "plz": "55606",
+    "ort": "{'ags': '07133052', 'ort': 'Kirn, Stadt', 'postleitzahl': '55606'}"
+  },
+  "lage": {
+    "lon": 7.47552,
+    "lat": 49.78481
+  }
+}

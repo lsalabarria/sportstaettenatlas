@@ -1,0 +1,15 @@
+{
+  "id": "90421ba7-82f2-542b-855e-9b2e24eed85b",
+  "name": "Götzenberghalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Zum Stöffel",
+    "hausnummer": "14",
+    "plz": "56459",
+    "ort": "{'ags': '07143298', 'ort': 'Stockum-Püschen', 'postleitzahl': '56459*'}"
+  },
+  "lage": {
+    "lon": 7.903976,
+    "lat": 50.607247
+  }
+}

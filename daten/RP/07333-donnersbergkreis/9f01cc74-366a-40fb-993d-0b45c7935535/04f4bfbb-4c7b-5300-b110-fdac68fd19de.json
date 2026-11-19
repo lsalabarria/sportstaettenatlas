@@ -2,9 +2,23 @@
   "id": "04f4bfbb-4c7b-5300-b110-fdac68fd19de",
   "sportstaette_id": "9f01cc74-366a-40fb-993d-0b45c7935535",
   "typ": "Hallenbad",
+  "bezeichnung": "KiboBad",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1983,
+  "sportarten": [
+    "Wettkampfschwimmen",
+    "Schwimmsport",
+    "Rettungsschwimmen"
+  ],
+  "wettkampf": [
+    "Wettkampfschwimmen",
+    "Schwimmsport"
+  ],
   "wasserflaeche": 356.0,
   "becken_bis_25m": 3,
   "nichtschwimmerbecken": 1,
+  "lehrbecken": 1,
   "kinderbecken": 1,
-  "erholungsbecken": 2
+  "erholungsbecken": 2,
+  "flutlicht": "nein"
 }

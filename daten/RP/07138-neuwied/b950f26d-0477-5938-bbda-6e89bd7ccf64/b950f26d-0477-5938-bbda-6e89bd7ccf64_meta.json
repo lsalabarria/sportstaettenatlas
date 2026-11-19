@@ -1,0 +1,15 @@
+{
+  "id": "b950f26d-0477-5938-bbda-6e89bd7ccf64",
+  "name": "Sporthalle an der Realschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Engelsgarten",
+    "hausnummer": "3",
+    "plz": "53577",
+    "ort": "{'ags': '07138044', 'ort': 'Neustadt (Wied)', 'postleitzahl': '53577*'}"
+  },
+  "lage": {
+    "lon": 7.43017,
+    "lat": 50.62174
+  }
+}

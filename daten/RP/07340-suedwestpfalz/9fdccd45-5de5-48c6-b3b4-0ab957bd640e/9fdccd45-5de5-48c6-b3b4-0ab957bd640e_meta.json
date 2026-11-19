@@ -12,8 +12,23 @@
     "lon": 7.83428,
     "lat": 49.133934
   },
-  "oeffentlicher_zugang": "nein",
-  "schulsport": "nein",
-  "wlan": "nein",
-  "betriebsstatus": "in Betrieb"
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "wlan": "ja",
+  "zuschauerplaetze": 500,
+  "betriebsstatus": "in Betrieb",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 4,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 2,
+    "Technikräume": 2
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Heizöl"
+    }
+  ]
 }

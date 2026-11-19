@@ -1,0 +1,26 @@
+{
+  "id": "760d9c7b-5fda-5b8c-8bff-1a5195690981",
+  "name": "TSG Wolfstein-Roßbach Kunstraßen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "plz": "67752",
+    "ort": "{'ags': '07336105', 'ort': 'Wolfstein, Stadt', 'postleitzahl': '67752*'}"
+  },
+  "lage": {
+    "lon": 7.619877,
+    "lat": 49.578971
+  },
+  "entfernung_oepnv": 500,
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Turn- und Sportgemeinschaft Wolfstein-Roßbach e.V.",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "Turn- und Sportgemeinschaft Wolfstein-Roßbach e.V.",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.die-rowos.de",
+  "nutzer": [
+    "Turn- und Sportgemeinschaft Wolfstein-Roßbach e.V."
+  ],
+  "baujahr": 2006,
+  "letzte_sanierung": 2025
+}

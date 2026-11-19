@@ -1,0 +1,14 @@
+{
+  "id": "805feccf-4d9b-5a2e-acd1-dc4c6be725ce",
+  "name": "Turnhalle Nastätten",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Wilhelm-Nesen-Str.",
+    "hausnummer": "2a",
+    "plz": "56355"
+  },
+  "lage": {
+    "lon": 7.860621,
+    "lat": 50.195447
+  }
+}

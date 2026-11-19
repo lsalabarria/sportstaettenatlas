@@ -1,0 +1,15 @@
+{
+  "id": "a5a45916-4bad-57d4-831e-832cdee20167",
+  "name": "Turnhalle Grundschule Rodenbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Keltenplatz",
+    "hausnummer": "6",
+    "plz": "67688",
+    "ort": "{'ags': '06435023', 'ort': 'Rodenbach', 'postleitzahl': '97816'}"
+  },
+  "lage": {
+    "lon": 7.654595,
+    "lat": 49.472059
+  }
+}

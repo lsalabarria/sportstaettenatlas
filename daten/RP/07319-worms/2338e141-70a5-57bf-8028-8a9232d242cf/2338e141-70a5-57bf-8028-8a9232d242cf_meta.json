@@ -1,0 +1,15 @@
+{
+  "id": "2338e141-70a5-57bf-8028-8a9232d242cf",
+  "name": "Schulsporthalle Wiesengrundschule Heppenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kirchhofplatz",
+    "hausnummer": "9-13",
+    "plz": "67551",
+    "ort": "{'ags': '07319000', 'ort': 'Worms, Stadt', 'postleitzahl': '67547*'}"
+  },
+  "lage": {
+    "lon": 8.264583,
+    "lat": 49.604015
+  }
+}

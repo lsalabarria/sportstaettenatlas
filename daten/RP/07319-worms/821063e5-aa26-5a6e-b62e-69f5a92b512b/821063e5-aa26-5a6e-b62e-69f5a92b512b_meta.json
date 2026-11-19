@@ -1,0 +1,15 @@
+{
+  "id": "821063e5-aa26-5a6e-b62e-69f5a92b512b",
+  "name": "Schulsporthalle Ernst-Ludwig-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Gießenstraße",
+    "hausnummer": "5",
+    "plz": "67547",
+    "ort": "{'ags': '07319000', 'ort': 'Worms, Stadt', 'postleitzahl': '67547*'}"
+  },
+  "lage": {
+    "lon": 8.372623,
+    "lat": 49.629693
+  }
+}

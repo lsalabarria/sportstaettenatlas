@@ -1,0 +1,15 @@
+{
+  "id": "40ce1996-ffa2-5c99-8bb5-d8023622e893",
+  "name": "Mehrzweckhalle Spesbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "3",
+    "plz": "66882",
+    "ort": "{'ags': '07335016', 'ort': 'Hütschenhausen', 'postleitzahl': '66882*'}"
+  },
+  "lage": {
+    "lon": 7.50054,
+    "lat": 49.424068
+  }
+}

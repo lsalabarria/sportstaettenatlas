@@ -12,9 +12,20 @@
     "lon": 8.01078,
     "lat": 49.65461
   },
-  "oeffentlicher_zugang": "nein",
+  "oeffentlicher_zugang": "ja",
   "schulsport": "ja",
-  "wlan": "nein",
+  "wlan": "ja",
   "betriebsstatus": "in Betrieb",
-  "baujahr": 1983
+  "eigentuemer": "Verbandsgemeinde Kirchheimbolanden",
+  "eigentuemer_typ": "Kommunales Unternehmen",
+  "betreiber": "Verbandsgemeinde Werke",
+  "betreiber_typ": "Kommunales Unternehmen",
+  "website": "https://www.kibobad.de/",
+  "nutzer": [
+    "Schwimmverein Kirchheimbolanden eV",
+    "Turn- und Sportgemeinde 1900 Zellertal eV",
+    "DLRG Eisenberg eV"
+  ],
+  "baujahr": 1983,
+  "letzte_sanierung": 2011
 }

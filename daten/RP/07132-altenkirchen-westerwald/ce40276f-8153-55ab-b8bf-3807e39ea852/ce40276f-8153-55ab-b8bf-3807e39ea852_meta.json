@@ -1,0 +1,15 @@
+{
+  "id": "ce40276f-8153-55ab-b8bf-3807e39ea852",
+  "name": "Sporthalle FEBA",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Heinestraße",
+    "hausnummer": "5",
+    "plz": "57610",
+    "ort": "{'ags': '07336004', 'ort': 'Altenkirchen', 'postleitzahl': '66903'}"
+  },
+  "lage": {
+    "lon": 7.644145,
+    "lat": 50.699424
+  }
+}

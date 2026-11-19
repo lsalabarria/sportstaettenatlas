@@ -1,0 +1,15 @@
+{
+  "id": "5ff93d5c-2f72-5b4e-914d-e6246ca3c443",
+  "sportstaette_id": "c2ffab7b-8f00-5ba8-96a8-770aa766b739",
+  "typ": "Dreifachsporthalle",
+  "bezeichnung": "test",
+  "betriebsstatus": "in Betrieb",
+  "sanierungen": [
+    {
+      "jahr": 2000,
+      "kosten": 222.0,
+      "waehrung": "€",
+      "beschreibung": "alles"
+    }
+  ]
+}
