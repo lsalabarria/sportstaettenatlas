@@ -137,6 +137,10 @@ Auswahllisten, mindestens 4 Nachkommastellen bei Koordinaten, `braucht`, `teil_v
 - **Sportkomplex:** Der Sportkomplex in `sportkomplex` gibt es.
 - **Kleiner Sportkomplex:** Zu jedem Sportkomplex gehören mindestens zwei Sportstätten.
 - **Ausdehnung des Sportkomplexes:** Seine Sportstätten liegen höchstens 1 km auseinander.
+- **Stützpunkt abgelaufen:** `gueltig_bis` eines Stützpunkts liegt nicht in der Vergangenheit.
+- **Stützpunkt-Verweis:** Die Sportstätten und Sportkomplexe eines Stützpunkts gibt es.
+- **Stützpunkt doppelt:** Eine Sportstätte steht nicht zusätzlich einzeln drin, wenn ihr Sportkomplex schon dazugehört.
+- **Träger des Stützpunkts:** Der Träger steht im Verzeichnis der Organisationen.
 
 ## Webseite
 

@@ -47,13 +47,14 @@ def _kreis_von_bei_bedarf():
 def _lies_bestand():
     """Datenbestand und Verzeichnis der Organisationen lesen; Fehler im Aufbau brechen ab,
     Verstöße gegen die Regeln des Modells kommen als Liste (Datei, Meldung) mit."""
-    from .bestand import lies_bestand, lies_organisationen, lies_sportkomplexe
+    from .bestand import lies_bestand, lies_organisationen, lies_sportkomplexe, lies_stuetzpunkte
 
     verstoesse: list = []
     try:
         bestand = list(lies_bestand(DATEN, verstoesse))
         organisationen = lies_organisationen(DATEN, verstoesse)
         lies_sportkomplexe(DATEN, verstoesse)  # nur die Regeln des Modells; validate liest selbst
+        lies_stuetzpunkte(DATEN, verstoesse)
     except ValueError as exc:
         raise SystemExit(f"Datenbestand: {exc}") from None
     return bestand, organisationen, verstoesse
@@ -92,9 +93,14 @@ def cmd_pruefen(args):
 
 
 def cmd_bestand(args):
-    """CSV-Dateien (Atlas-Export, Sportstätten, Sportanlagen, Sportkomplexe oder
+    """CSV-Dateien (Atlas-Export, Sportstätten, Sportanlagen, Sportkomplexe, Stützpunkte oder
     Organisationen) in daten/ übernehmen."""
-    from .bestand import schreibe_bestand, schreibe_organisationen, schreibe_sportkomplexe
+    from .bestand import (
+        schreibe_bestand,
+        schreibe_organisationen,
+        schreibe_sportkomplexe,
+        schreibe_stuetzpunkte,
+    )
     from .einlesen import lies_csv
 
     gelesen = []
@@ -110,6 +116,7 @@ def cmd_bestand(args):
             "sportstaetten": "Sportstätten",
             "sportanlagen": "Sportanlagen",
             "sportkomplexe": "Sportkomplexe",
+            "stuetzpunkte": "Stützpunkte",
             "organisationen": "Organisationen",
         }[b.art]
         print(f"{datei.name}: {art}, {b.zeilen} Zeilen")
@@ -133,16 +140,32 @@ def cmd_bestand(args):
         try:
             if art == "organisationen":
                 e = schreibe_organisationen(datensaetze, DATEN, args.modus)
+            elif art == "stuetzpunkte":
+                e = schreibe_stuetzpunkte(datensaetze, DATEN, args.modus)
             elif art == "sportkomplexe":
                 e = schreibe_sportkomplexe(datensaetze, DATEN, kreis_von, args.modus)
             else:
                 e = schreibe_bestand(datensaetze, DATEN, LAND, kreis_von, args.modus)
         except ValueError as exc:
             raise SystemExit(str(exc)) from None
-        orgs, komplexe = art == "organisationen", art == "sportkomplexe"
-        ziel = f"{DATEN}/organisationen/" if orgs else f"{DATEN}/{LAND.upper()}/"
+        orgs, komplexe, stp = art == "organisationen", art == "sportkomplexe", art == "stuetzpunkte"
+        ziel = (
+            f"{DATEN}/organisationen/"
+            if orgs
+            else f"{DATEN}/stuetzpunkte/"
+            if stp
+            else f"{DATEN}/{LAND.upper()}/"
+        )
         print(f"{datei.name} → {ziel} (Modus {args.modus})")
-        was = "Organisationen" if orgs else "Sportkomplexe" if komplexe else "Sportstätten"
+        was = (
+            "Organisationen"
+            if orgs
+            else "Sportkomplexe"
+            if komplexe
+            else "Stützpunkte"
+            if stp
+            else "Sportstätten"
+        )
         zeilen = [
             ("neu angelegt", e.neu, was),
             ("geändert", e.aktualisiert, was),
@@ -153,9 +176,9 @@ def cmd_bestand(args):
             ("Sportanlagen geändert", e.anlagen_geaendert, ""),
             ("ohne Koordinate", e.ohne_lage, "(übersprungen)"),
             (
-                "Sportstätte unbekannt" if komplexe else "ohne Sportstätte",
+                "Sportstätte unbekannt" if komplexe or stp else "ohne Sportstätte",
                 e.ohne_sportstaette,
-                ("IDs" if komplexe else "Sportanlagen") + " (nicht in daten/, übersprungen)",
+                ("IDs" if komplexe or stp else "Sportanlagen") + " (nicht in daten/, übersprungen)",
             ),
             ("doppelte ID", e.doppelt, "(nur der erste Eintrag übernommen)"),
             ("nicht in der Quelle", e.nicht_mehr_in_quelle, "Sportstätten (bleiben)"),

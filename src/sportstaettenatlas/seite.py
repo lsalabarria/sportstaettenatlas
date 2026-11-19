@@ -83,7 +83,10 @@ def komplex_kurz(k: dict, praezision: int = 5) -> dict:
     out = {"id": k["id"], "name": k.get("name"), "adresse": adresse or None}
     lage = k.get("lage") or {}
     if lage.get("lon") is not None and lage.get("lat") is not None:
-        out |= {"lon": round(float(lage["lon"]), praezision), "lat": round(float(lage["lat"]), praezision)}
+        out |= {
+            "lon": round(float(lage["lon"]), praezision),
+            "lat": round(float(lage["lat"]), praezision),
+        }
     return {x: v for x, v in out.items() if v not in (None, "")}
 
 

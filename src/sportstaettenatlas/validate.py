@@ -12,11 +12,13 @@ Ergebnis: Liste (Datei, Meldung); die Meldung beginnt wie die des Modells mit de
 
 from __future__ import annotations
 
+import datetime as dt
 import itertools
 import math
 import re
 from collections import Counter, defaultdict
 from collections.abc import Iterable
+from datetime import date
 from pathlib import Path
 
 from . import modell
@@ -28,9 +30,11 @@ from .bestand import (
     komplex_kreis,
     kreis_ordner,
     lies_sportkomplexe,
+    lies_stuetzpunkte,
     org_dateien,
     org_schluessel,
     org_verzeichnis,
+    stuetzpunkt_dateien,
 )
 from .gebiete import EBENEN, Zuordnung, _ringe, schluessel
 
@@ -435,6 +439,54 @@ def sportkomplexe(bestand: list[dict], komplexe: list[dict]) -> Iterable[tuple[s
             )
 
 
+def stuetzpunkte(
+    stuetzpunkte: list[dict],
+    bestand: list[dict],
+    komplexe: list[dict],
+    verzeichnis: dict,
+    heute: date | None = None,
+) -> Iterable[tuple[str, str, str]]:
+    """(id des Stützpunkts, Prüfung, Meldung): Anerkennung abgelaufen; Verweis auf eine
+    Sportstätte oder einen Sportkomplex, den es nicht gibt; Sportstätte doppelt (einzeln und
+    über ihren Sportkomplex); Träger nicht im Verzeichnis der Organisationen."""
+    heute = heute or dt.datetime.now(dt.UTC).date()
+    ids = {st["id"] for st in bestand}
+    komplex_von = {st["id"]: st.get("sportkomplex") for st in bestand}
+    namen = {k["id"]: k.get("name") for k in komplexe}
+    for sp in stuetzpunkte:
+        bis = str(sp.get("gueltig_bis") or "")
+        if bis and bis < heute.isoformat():
+            yield sp["id"], "Stützpunkt abgelaufen", f"gueltig_bis: Anerkennung endete am {bis}"
+        for sid in sp.get("sportstaetten") or []:
+            if sid not in ids:
+                yield (
+                    sp["id"],
+                    "Stützpunkt-Verweis",
+                    f"sportstaetten: Sportstätte {sid} gibt es nicht",
+                )
+            elif (kid := komplex_von.get(sid)) in (sp.get("sportkomplexe") or []):
+                yield (
+                    sp["id"],
+                    "Stützpunkt doppelt",
+                    (
+                        f"sportstaetten: {sid} gehört schon über den Sportkomplex „{namen.get(kid, kid)}“ dazu"
+                    ),
+                )
+        for kid in sp.get("sportkomplexe") or []:
+            if kid not in namen:
+                yield (
+                    sp["id"],
+                    "Stützpunkt-Verweis",
+                    f"sportkomplexe: Sportkomplex {kid} gibt es nicht",
+                )
+        if (t := sp.get("traeger")) and org_schluessel(t) not in verzeichnis:
+            yield (
+                sp["id"],
+                "Träger des Stützpunkts",
+                (f"traeger: „{t}“ steht nicht im Verzeichnis der Organisationen"),
+            )
+
+
 # --- alles zusammen -------------------------------------------------------------------------
 
 
@@ -463,6 +515,10 @@ PRUEFUNGEN = (
     "Sportkomplex",
     "Kleiner Sportkomplex",
     "Ausdehnung des Sportkomplexes",
+    "Stützpunkt abgelaufen",
+    "Stützpunkt-Verweis",
+    "Stützpunkt doppelt",
+    "Träger des Stützpunkts",
 )
 
 
@@ -555,6 +611,9 @@ def pruefe(
             kat = y.get("kategorie") or "ohne Kategorie"
             text = f"„{y.get('name')}“ ({kat}, {y.get('id')}), {d:.0f} m entfernt"
             out.append((datei(x), "Doppelung", f"name: ähnlich wie {text} – Doppelung?"))
+    sp_datei = {p.stem: str(p) for p in stuetzpunkt_dateien(daten)}
+    for i, pruefung, m in stuetzpunkte(lies_stuetzpunkte(daten), bestand, komplexe, verzeichnis):
+        out.append((sp_datei[i], pruefung, m))
     for i, pruefung, m in sportkomplexe(bestand, komplexe):
         ziel = komplex_datei.get(i) or datei({"id": i})
         out.append((ziel, pruefung, m))

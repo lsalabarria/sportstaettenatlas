@@ -24,6 +24,7 @@ from __future__ import annotations
 
 import inspect
 import json
+from datetime import date
 from enum import Enum
 from pathlib import Path
 from typing import Annotated, Literal, get_args
@@ -66,6 +67,16 @@ BETRIEBSSTATUS = (
 )
 # Art einer Organisation → Art auf der Karte; die Art bestimmt auch den Ordner in
 # daten/organisationen/<LAND>/ (bestand.org_pfad)
+# Arten von Stützpunkten, je Ebene (Übersicht und Filter der Webseite zählen nach Ebene)
+STUETZPUNKTARTEN = {
+    "Olympiastützpunkt": "Olympia",
+    "Bundesstützpunkt": "Bund",
+    "Bundesstützpunkt Nachwuchs": "Bund",
+    "Bundesstützpunkt Para Sport": "Bund",
+    "Landesleistungszentrum": "Land",
+    "Landesstützpunkt": "Land",
+}
+
 ORGANISATIONSTYPEN = {
     "Bund": "sonstige",
     "Land Rheinland-Pfalz": "sonstige",
@@ -133,6 +144,7 @@ def _auswahl(name: str, werte, typ=str) -> type[Enum]:
 Kategorie = _auswahl("Kategorie", KATEGORIEN)
 Betriebsstatus = _auswahl("Betriebsstatus", BETRIEBSSTATUS)
 Organisationstyp = _auswahl("Organisationstyp", ORGANISATIONSTYPEN)
+Stuetzpunktart = _auswahl("Stuetzpunktart", STUETZPUNKTARTEN)
 JaNein = _auswahl("JaNein", ("ja", "nein"))
 Waehrung = _auswahl("Waehrung", WAEHRUNGEN)
 Bodenbelag = _auswahl("Bodenbelag", BODENBELAEGE)
@@ -144,6 +156,7 @@ AUSWAHL = (
     Kategorie,
     Betriebsstatus,
     Organisationstyp,
+    Stuetzpunktart,
     JaNein,
     Waehrung,
     Bodenbelag,
@@ -805,6 +818,69 @@ class Sportkomplex(Basis):
     )
 
 
+class Stuetzpunkt(Basis):
+    """Anerkennung als Stützpunkt des Leistungssports (Olympia-, Bundes-, Landesstützpunkt,
+    Landesleistungszentrum) für Sportarten an einer oder mehreren Sportstätten
+    (daten/stuetzpunkte/<id>.json). Eine Sportstätte kann zu mehreren Stützpunkten gehören.
+    Statt einzelner Sportstätten kann ein Sportkomplex stehen, wenn alle seine Sportstätten
+    dazugehören."""
+
+    model_config = ConfigDict(
+        json_schema_extra={
+            "examples": [
+                {
+                    "id": "c4d2a7e1-5b3f-4a9c-8e6d-1f0b2c3d4e5f",
+                    "name": "Bundesstützpunkt Leichtathletik Musterdorf",
+                    "art": "Bundesstützpunkt",
+                    "sportarten": ["Leichtathletik"],
+                    "traeger": "TuS Musterdorf e.V.",
+                    "anerkannt_von": "BMI und DOSB",
+                    "gueltig_ab": "2025-01-01",
+                    "gueltig_bis": "2028-12-31",
+                    "quelle": "https://www.example.org/bundesstuetzpunkte",
+                    "sportstaetten": ["9c24bfa6-3d2e-4b8f-a1c7-5e6f7a8b9c0d"],
+                }
+            ]
+        }
+    )
+
+    id: str | None = _field(
+        "ID",
+        "UUID, zugleich der Dateiname (in der Datei Pflicht)",
+        formular=False,
+        uebersicht=False,
+    )
+    name: str = _field("Name", pflicht=True, min_length=1, max_length=200)
+    art: Stuetzpunktart = _field("Art", pflicht=True)
+    sportarten: list[str] = _field("Sportarten", default_factory=list, widget="chips")
+    traeger: str | None = _field(
+        "Träger",
+        "Name einer Organisation (Verzeichnis daten/organisationen/)",
+        max_length=200,
+        widget="organisation",
+    )
+    anerkannt_von: str | None = _field(
+        "Anerkannt von", "z. B. BMI und DOSB, MdI und LSB", max_length=200
+    )
+    gueltig_ab: date | None = _field("Gültig ab")
+    gueltig_bis: date | None = _field("Gültig bis", "Ende der Anerkennung")
+    quelle: str | None = _field(
+        "Quelle",
+        "Veröffentlichung der Anerkennung, vollständige Adresse mit https://",
+        pattern=r"^https?://\S+\.\S+$",
+        widget="url",
+    )
+    sportstaetten: list[str] = _field(
+        "Sportstätten", "IDs der Sportstätten", default_factory=list, formular=False
+    )
+    sportkomplexe: list[str] = _field(
+        "Sportkomplexe",
+        "IDs von Sportkomplexen, deren Sportstätten alle dazugehören",
+        default_factory=list,
+        formular=False,
+    )
+
+
 class Organisation(Basis):
     """Verein, Kommune, Verband, Unternehmen … als Eigentümer, Betreiber oder Nutzer von
     Sportstätten (daten/organisationen/<LAND>/<Ordner der Art>/<id>.json). Sportstätten nennen sie in
@@ -891,12 +967,15 @@ class Vorschlag(Basis):
     )
 
     version: Literal[1] = _field("Version des Formats", default=1)
-    art: Literal["neu", "aenderung", "anlagen", "organisation", "sportkomplex"] = _field(
-        "Art",
-        "neu: neue Sportstätte mit Anlagen; aenderung: Angaben einer Sportstätte; "
-        "anlagen: Sportanlagen einer Sportstätte; organisation: Organisation anlegen, "
-        "ändern oder löschen; sportkomplex: Sportkomplex anlegen, ändern oder auflösen",
-        pflicht=True,
+    art: Literal["neu", "aenderung", "anlagen", "organisation", "sportkomplex", "stuetzpunkt"] = (
+        _field(
+            "Art",
+            "neu: neue Sportstätte mit Anlagen; aenderung: Angaben einer Sportstätte; "
+            "anlagen: Sportanlagen einer Sportstätte; organisation: Organisation anlegen, "
+            "ändern oder löschen; sportkomplex: Sportkomplex anlegen, ändern oder auflösen; "
+            "stuetzpunkt: Stützpunkt anlegen, ändern oder löschen",
+            pflicht=True,
+        )
     )
     sportstaette_id: str | None = _field("Sportstätte", "ID der geänderten Sportstätte")
     sportstaette: Sportstaette | None = _field(
@@ -927,9 +1006,17 @@ class Vorschlag(Basis):
         "IDs aller Sportstätten nach der Änderung (mindestens zwei)",
         default_factory=list,
     )
+    stuetzpunkt_id: str | None = _field(
+        "Stützpunkt", "ID des geänderten oder gelöschten Stützpunkts (fehlt bei einem neuen)"
+    )
+    stuetzpunkt: Stuetzpunkt | None = _field(
+        "Angaben des Stützpunkts",
+        "vollständig, nach der Änderung, mit Sportstätten und Sportkomplexen",
+    )
     loeschen: bool = _field(
         "Löschen",
-        "die Organisation aus dem Verzeichnis entfernen bzw. den Sportkomplex auflösen",
+        "die Organisation aus dem Verzeichnis entfernen, den Sportkomplex auflösen bzw. den "
+        "Stützpunkt löschen",
         default=False,
     )
     geaendert: list[str] = _field("Geänderte Felder", default_factory=list)
@@ -944,6 +1031,18 @@ class Vorschlag(Basis):
     def _passt_zur_art(self):
         if self.art == "neu" and (self.sportstaette is None or self.anlagen is None):
             raise ValueError("neu: sportstaette und anlagen nötig")
+        if self.art == "stuetzpunkt":
+            if self.loeschen and not self.stuetzpunkt_id:
+                raise ValueError("stuetzpunkt: zum Löschen stuetzpunkt_id nötig")
+            if not self.loeschen and self.stuetzpunkt is None:
+                raise ValueError("stuetzpunkt: stuetzpunkt nötig")
+            if not self.loeschen and not (
+                self.stuetzpunkt.sportstaetten or self.stuetzpunkt.sportkomplexe
+            ):
+                raise ValueError(
+                    "stuetzpunkt: mindestens eine Sportstätte oder ein Sportkomplex nötig"
+                )
+            return self
         if self.art == "sportkomplex":
             if self.loeschen and not self.sportkomplex_id:
                 raise ValueError("sportkomplex: zum Auflösen sportkomplex_id nötig")
@@ -967,7 +1066,16 @@ class Vorschlag(Basis):
         return self
 
 
-MODELLE = (Sportstaette, Sportanlage, Adresse, Lage, Sportkomplex, Organisation, Vorschlag)
+MODELLE = (
+    Sportstaette,
+    Sportanlage,
+    Adresse,
+    Lage,
+    Sportkomplex,
+    Stuetzpunkt,
+    Organisation,
+    Vorschlag,
+)
 
 
 # --- Hilfen für den Code --------------------------------------------------------------
@@ -1207,6 +1315,7 @@ def readme_block() -> str:
         (Lage, "Lage"),
         (Sportanlage, "Sportanlage (`<anlage-id>.json`)"),
         (Sportkomplex, "Sportkomplex (`<Kreis>/sportkomplexe/<id>.json`)"),
+        (Stuetzpunkt, "Stützpunkt (`stuetzpunkte/<id>.json`)"),
         (Organisation, "Organisation (`organisationen/<LAND>/<Art>/<id>.json`)"),
         (Vorschlag, "Vorschlag (Formular → LimeSurvey, Frage `data`)"),
     ):

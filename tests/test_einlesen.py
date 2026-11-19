@@ -133,7 +133,7 @@ def test_modi(tmp_path):
 
 
 def test_vorlage_laesst_sich_einlesen(tmp_path):
-    staetten, anlagen, komplexe, orgs = einlesen.schreibe_vorlage(tmp_path)
+    staetten, anlagen, komplexe, stuetzpunkte, orgs = einlesen.schreibe_vorlage(tmp_path)
     kopf = staetten.read_text("utf-8-sig").splitlines()[0].split(";")
     assert {"name", "kategorie", "lat", "lon", "betreiber_typ", "anlagen"} <= set(kopf)
     d, b = einlesen.lies_csv(staetten)
@@ -151,6 +151,9 @@ def test_vorlage_laesst_sich_einlesen(tmp_path):
     assert b.art == "sportkomplexe" and b.ignoriert == [] and not b.nicht_lesbar
     k = {x: v for x, v in d[0].items() if x != "sportstaetten"}
     assert modell.pruefe(modell.Sportkomplex, k) == [] and len(d[0]["sportstaetten"]) == 2
+    d, b = einlesen.lies_csv(stuetzpunkte)
+    assert b.art == "stuetzpunkte" and b.ignoriert == [] and not b.nicht_lesbar
+    assert modell.pruefe(modell.Stuetzpunkt, d[0]) == []
 
 
 def test_organisationen(tmp_path):

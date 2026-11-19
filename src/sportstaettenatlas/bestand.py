@@ -28,6 +28,7 @@ from .modell import (
     Sportanlage,
     Sportkomplex,
     Sportstaette,
+    Stuetzpunkt,
     ordne,
     pruefe,
 )
@@ -149,8 +150,16 @@ NUR_ANLAGEN = "_nur_anlagen"  # Datensatz trägt nur Sportanlagen zu einer vorha
 
 
 def _laender(daten: Path) -> list[Path]:
-    """Ordner der Länder in daten/ (RP …), ohne das Verzeichnis der Organisationen."""
-    return [p for p in sorted(Path(daten).glob("*")) if p.is_dir() and p.name != ORGANISATIONEN]
+    """Ordner der Länder in daten/ (RP …), ohne die Verzeichnisse der Organisationen und der
+    Stützpunkte."""
+    return [
+        p
+        for p in sorted(Path(daten).glob("*"))
+        if p.is_dir() and p.name not in (ORGANISATIONEN, STUETZPUNKTE)
+    ]
+
+
+STUETZPUNKTE = "stuetzpunkte"  # daten/stuetzpunkte/<id>.json
 
 
 SPORTKOMPLEXE = "sportkomplexe"  # Ordner der Sportkomplexe in einem Kreis-Ordner
@@ -386,6 +395,7 @@ def migriere_bestand(
         *Sportstaette.model_fields,
         *Sportanlage.model_fields,
         *Sportkomplex.model_fields,
+        *Stuetzpunkt.model_fields,
         *Organisation.model_fields,
     }
     if fremd := sorted(set(umbenennen.values()) - felder):
@@ -395,6 +405,7 @@ def migriere_bestand(
     dateien = [
         *((p, Organisation) for p in org_dateien(daten)),
         *((p, Sportkomplex) for p in komplex_dateien(daten)),
+        *((p, Stuetzpunkt) for p in stuetzpunkt_dateien(daten)),
         *(
             (p, Sportstaette if p.name.endswith("_meta.json") else Sportanlage)
             for p in sorted(
@@ -745,4 +756,93 @@ def schreibe_sportkomplexe(
             schreibe_sportkomplex(daten, k, kreis)
         e.zugeordnet += len(ordne_sportkomplex_zu(daten, k["id"], [p.name for p in mitglieder]))
         vorhanden[k["id"]] = {**k, "_ordner": kreis}
+    return e
+
+
+# --- Stützpunkte (daten/stuetzpunkte/<id>.json) -------------------------------------------
+
+
+def stuetzpunkt_dateien(daten: Path) -> list[Path]:
+    return sorted((Path(daten) / STUETZPUNKTE).glob("*.json"))
+
+
+def lies_stuetzpunkte(daten: Path, verstoesse: list | None = None) -> list[dict]:
+    """Alle Stützpunkte (Dateiname = id)."""
+    out = []
+    for pfad in stuetzpunkt_dateien(daten):
+        st = _lies_json(pfad)
+        if st.get("id") != pfad.stem:
+            raise ValueError(f"{pfad}: id {st.get('id')!r} passt nicht zum Dateinamen")
+        if verstoesse is not None:
+            verstoesse += [(str(pfad), m) for m in pruefe(Stuetzpunkt, st)]
+        out.append(st)
+    return out
+
+
+def schreibe_stuetzpunkt(daten: Path, st: dict) -> Path:
+    """Einen Stützpunkt schreiben (neue ID, wenn sie fehlt)."""
+    st = dict(st)
+    st["id"] = st.get("id") or str(uuid.uuid4())
+    pfad = Path(daten) / STUETZPUNKTE / f"{st['id']}.json"
+    pfad.parent.mkdir(parents=True, exist_ok=True)
+    text = als_json(ordne(bereinigen(st, Counter()), Stuetzpunkt))
+    if not pfad.exists() or pfad.read_text(encoding="utf-8") != text:
+        pfad.write_text(text, encoding="utf-8")
+    return pfad
+
+
+def loesche_stuetzpunkt(daten: Path, sid: str) -> bool:
+    pfad = Path(daten) / STUETZPUNKTE / f"{sid}.json"
+    if pfad.exists():
+        pfad.unlink()
+        return True
+    return False
+
+
+def _volle_ids(kurz: list, alle: list[str]) -> tuple[list[str], int]:
+    """IDs oder ihr Anfang (ab 8 Zeichen) → volle IDs aus `alle`; dazu die Zahl unbekannter."""
+    out, unbekannt = [], 0
+    for k in kurz or []:
+        k = str(k).strip()
+        treffer = [i for i in alle if i == k or (len(k) >= 8 and i.startswith(k))]
+        if len(treffer) != 1:
+            unbekannt += 1
+        elif treffer[0] not in out:
+            out.append(treffer[0])
+    return out, unbekannt
+
+
+def schreibe_stuetzpunkte(datensaetze, daten: Path, modus: str = "neu") -> Ergebnis:
+    """Stützpunkte (z. B. aus einer CSV) übernehmen. "sportstaetten" und "sportkomplexe" dürfen
+    den Anfang einer ID enthalten; unbekannte werden übersprungen (ohne_sportstaette). Vorhandene
+    findet die ID; Modi wie bei schreibe_bestand (Listen werden im Modus aktualisieren ersetzt)."""
+    if modus not in MODI:
+        raise ValueError(f"Unbekannter Modus: {modus} (erlaubt: {', '.join(MODI)})")
+    vorhanden = {x["id"]: x for x in lies_stuetzpunkte(daten)}
+    staetten = [p.name for o in _laender(daten) for p in _staetten_dirs(o)]
+    komplexe = [p.stem for p in komplex_dateien(daten)]
+    e = Ergebnis()
+    for roh in datensaetze:
+        d = bereinigen(roh, e.entfernt)
+        for feld, alle in (("sportstaetten", staetten), ("sportkomplexe", komplexe)):
+            if feld in d:
+                d[feld], n = _volle_ids(d[feld], alle)
+                e.ohne_sportstaette += n
+        alt = vorhanden.get(d.get("id", ""))
+        if alt is None:
+            st = d
+            e.neu += 1
+        elif modus == "neu":
+            e.behalten += 1
+            continue
+        else:
+            st = _uebernimm(alt, d, modus)
+            if st == alt:
+                e.unveraendert += 1
+                continue
+            e.aktualisiert += 1
+        for meldung in pruefe(Stuetzpunkt, st):
+            e.regelverstoesse[meldung.split(":")[0]] += 1
+        schreibe_stuetzpunkt(daten, st)
+        vorhanden[st["id"]] = st
     return e
