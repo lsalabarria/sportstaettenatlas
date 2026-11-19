@@ -25,11 +25,10 @@ window.KONFIG = {
   // Leer = kein Knopf.
   fehler_url: "https://github.com/lsalabarria/sportstaettenatlas/issues/new?template=fehler.yml",
 
-  // Pflichtangaben für öffentliche Webseiten. Entwürfe liegen als impressum.html und
-  // datenschutz.html bei (gelb markierte Stellen ergänzen). Alternativ hier die Adressen
-  // der Seiten der Hochschule eintragen.
-  impressum_url: "impressum.html",
-  datenschutz_url: "datenschutz.html",
+  // Pflichtangaben für öffentliche Webseiten: die Seiten der Hochschule Koblenz. Steht hier
+  // "impressum.html" bzw. "datenschutz.html", legt `seite` eigene Entwürfe in webseite/ an.
+  impressum_url: "https://www.hs-koblenz.de/rechtliche-informationen/impressum",
+  datenschutz_url: "https://www.hs-koblenz.de/rechtliche-informationen/datenschutz",
 
   // Lizenz der Daten (Download-Seite). Vorschlag: dieselbe Lizenz wie die ALKIS-Daten.
   // Vorher klären, ob die Rechte am bisherigen Atlas-Bestand das zulassen.
