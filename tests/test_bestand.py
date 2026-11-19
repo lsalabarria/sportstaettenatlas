@@ -57,7 +57,7 @@ def test_ordner_je_sportstaette(export, tmp_path):
         "Rundlaufbahn",
     ]
     for a, pfad in zip(anlagen, sorted(p for p in ordner.glob("*.json") if "_meta" not in p.name)):
-        assert a["sportstaette_id"] == "101" and pfad.stem == a["id"]
+        assert "sportstaette_id" not in a and pfad.stem == a["id"]  # die Sportstätte: der Ordner
     reit = _lies(ziel / "RP" / "07137-kreis-b" / "103" / "103_meta.json")
     assert "eigentuemer" not in reit and "betriebsstatus" not in reit  # leer → weggelassen
 
@@ -91,15 +91,15 @@ def test_jede_anlage_braucht_ihre_sportstaette(tmp_path):
     st = tmp_path / "RP" / "07111-koblenz" / "abc"
     st.mkdir(parents=True)
     (st / "abc_meta.json").write_text('{"id": "abc", "lage": {"lon": 7, "lat": 50}}', "utf-8")
-    (st / "a1.json").write_text(
-        '{"id": "a1", "sportstaette_id": "xyz", "typ": "Tennisplatz"}', "utf-8"
-    )
-    with pytest.raises(ValueError, match="im Ordner ihrer Sportstätte"):
-        list(lies_bestand(tmp_path))
+    (st / "a1.json").write_text('{"id": "a1", "typ": "Tennisplatz"}', "utf-8")
+    assert [a["typ"] for a in next(lies_bestand(tmp_path))["anlagen"]] == ["Tennisplatz"]
+    # das frühere Feld sportstaette_id meldet das Modell (uv run sportstaettenatlas migrieren)
     (st / "a1.json").write_text(
         '{"id": "a1", "sportstaette_id": "abc", "typ": "Tennisplatz"}', "utf-8"
     )
-    assert [a["typ"] for a in next(lies_bestand(tmp_path))["anlagen"]] == ["Tennisplatz"]
+    verstoesse = []
+    list(lies_bestand(tmp_path, verstoesse))
+    assert [m.split(":")[0] for _, m in verstoesse if "a1.json" in _] == ["sportstaette_id"]
     # Ordner ohne Sportstätte
     (tmp_path / "RP" / "07111-koblenz" / "def").mkdir()
     (tmp_path / "RP" / "07111-koblenz" / "def" / "a2.json").write_text('{"id": "a2"}', "utf-8")
@@ -115,9 +115,7 @@ def test_einordnen(tmp_path):
     (pfad / "s1_meta.json").write_text(
         json.dumps({"id": "s1", "lage": {"lon": 7.5, "lat": 50.0}}), "utf-8"
     )
-    (pfad / "a1.json").write_text(
-        json.dumps({"id": "a1", "sportstaette_id": "s1", "typ": "Tennisplatz"}), "utf-8"
-    )
+    (pfad / "a1.json").write_text(json.dumps({"id": "a1", "typ": "Tennisplatz"}), "utf-8")
     bestand = list(lies_bestand(tmp_path))
     assert falsch_einsortiert(bestand, lambda lon, lat: "07137-b") == [("s1", "07111-a", "07137-b")]
     assert einordnen(tmp_path, lambda lon, lat: "07137-b") == 1

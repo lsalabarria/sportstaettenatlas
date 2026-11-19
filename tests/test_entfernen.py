@@ -26,12 +26,12 @@ def _daten(tmp_path):
         kreis / S1 / f"{S1}_meta.json",
         {"id": S1, "name": "Sportplatz Berg", "betreiber": "TuS Berg e.V."},
     )
-    _json(kreis / S1 / f"{A1}.json", {"id": A1, "sportstaette_id": S1, "typ": "Großspielfeld"})
+    _json(kreis / S1 / f"{A1}.json", {"id": A1, "typ": "Großspielfeld"})
     _json(
         kreis / S2 / f"{S2}_meta.json",
         {"id": S2, "name": "Sportplatz Berg (Halle)", "sportkomplex": K1},
     )
-    _json(kreis / S2 / f"{A2}.json", {"id": A2, "sportstaette_id": S2, "typ": "Einfeldhalle"})
+    _json(kreis / S2 / f"{A2}.json", {"id": A2, "typ": "Einfeldhalle"})
     _json(kreis / "sportkomplexe" / f"{K1}.json", {"id": K1, "name": "Sportpark Berg"})
     _json(
         daten / "stuetzpunkte" / "sp1.json",

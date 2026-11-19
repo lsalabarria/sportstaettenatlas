@@ -63,7 +63,7 @@ def test_reihenfolge_in_den_dateien():
     assert list(meta) == [f for f in modell.Sportstaette.model_fields if f in STAETTE]
     assert list(meta["adresse"]) == ["strasse", "hausnummer", "plz", "ort"]
     (anlage,) = [json.loads(t) for n, t in dateien.items() if not n.endswith("_meta.json")]
-    assert list(anlage) == ["id", "sportstaette_id", "typ", "baujahr"]
+    assert list(anlage) == ["id", "typ", "baujahr"]
 
 
 def test_lies_bestand_meldet_verstoesse_ohne_abbruch(tmp_path):
@@ -236,11 +236,12 @@ def test_migrieren(tmp_path):
     with pytest.raises(ValueError, match="nicht im Modell"):
         migriere_bestand(tmp_path, {"kosten": "gibtsnicht"})
     vorher = (ordner / "a1.json").read_text("utf-8")
-    probe = migriere_bestand(tmp_path, {"kosten": "baukosten"}, {"quellen"}, probe=True)
+    weg = {"quellen", "sportstaette_id"}  # sportstaette_id: früher in jeder Sportanlage
+    probe = migriere_bestand(tmp_path, {"kosten": "baukosten"}, weg, probe=True)
     assert probe.dateien == 4 and (ordner / "a1.json").read_text("utf-8") == vorher
 
-    e = migriere_bestand(tmp_path, {"kosten": "baukosten"}, {"quellen"})
-    assert e.dateien == 4 and e.entfernt["quellen"] == 3
+    e = migriere_bestand(tmp_path, {"kosten": "baukosten"}, weg)
+    assert e.dateien == 4 and e.entfernt["quellen"] == 3 and e.entfernt["sportstaette_id"] == 2
     assert e.umbenannt["kosten → baukosten"] == 1
     assert [(a, n) for _, a, n in e.konflikte] == [("kosten", "baukosten")]  # a2 hat schon beides
     a = json.loads((ordner / "a1.json").read_text("utf-8"))
@@ -248,7 +249,7 @@ def test_migrieren(tmp_path):
     s = json.loads((ordner / f"{STAETTE['id']}_meta.json").read_text("utf-8"))
     assert "quellen" not in s and s["name"] == STAETTE["name"]
     assert list(json.loads(org.read_text("utf-8"))) == ["id", "name"]  # Reihenfolge des Modells
-    assert migriere_bestand(tmp_path, {"kosten": "baukosten"}, {"quellen"}).dateien == 0
+    assert migriere_bestand(tmp_path, {"kosten": "baukosten"}, weg).dateien == 0
     (ordner / "a2.json").unlink()
     verstoesse = []
     list(lies_bestand(tmp_path, verstoesse))

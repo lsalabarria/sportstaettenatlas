@@ -9,6 +9,8 @@ _transfer/
 
 # Quelldateien mit Kontaktdaten nie versehentlich einchecken
 *.csv
+# … außer dem Protokoll der Entfernungen (nur Sachliches, öffentlich)
+!daten/entfernt.csv
 *.xlsx
 *.xls
 *.gpkg

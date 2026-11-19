@@ -233,6 +233,8 @@ def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
         "organisationen": "Organisation",
     }.get(b.art, "Sportstaette")
     namen = spalten_namen(modellname)
+    if ist_anlagen:  # die Sportstätte steht nur in der Tabelle, in daten/ ist es der Ordner
+        namen = {**namen, "sportstaetteid": "sportstaette_id", "sportstaette": "sportstaette_id"}
     zuordnung: dict[
         str, tuple[str, str | None]
     ] = {}  # Spalte → (Pfad, Schlüssel bei Anzahl je Wert)
@@ -272,6 +274,9 @@ def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
                 continue
             if pfad_ == MITGLIEDER:
                 d[MITGLIEDER] = _liste(text)
+                continue
+            if pfad_ == "sportstaette_id":
+                d[pfad_] = text
                 continue
             p = eigenschaft(pfad_)
             try:
@@ -333,7 +338,8 @@ def _vorlage_spalten(modellname: str) -> list[str]:
         ref = _art(p).get("$ref", "").rsplit("/", 1)[-1]
         out += list(_eigenschaften(ref)) if ref else [k]
     return (
-        out
+        (["sportstaette_id"] if modellname == "Sportanlage" else [])
+        + out
         + (["anlagen"] if modellname == "Sportstaette" else [])
         + ([MITGLIEDER] if modellname == "Sportkomplex" else [])
     )
@@ -358,7 +364,12 @@ def schreibe_vorlage(ordner: Path) -> list[Path]:
             **modell.Sportstaette.model_config["json_schema_extra"]["examples"][0],
             "anlagen": ["Großspielfeld", "Rundlaufbahn"],
         },
-        "Sportanlage": modell.Sportanlage.model_config["json_schema_extra"]["examples"][0],
+        "Sportanlage": {
+            "sportstaette_id": modell.Sportstaette.model_config["json_schema_extra"]["examples"][0][
+                "id"
+            ],
+            **modell.Sportanlage.model_config["json_schema_extra"]["examples"][0],
+        },
     }
     pfade = []
     beispiele["Organisation"] = modell.Organisation.model_config["json_schema_extra"]["examples"][0]

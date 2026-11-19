@@ -64,7 +64,7 @@ from .modell import Vorschlag, pruefe
 
 UEBERNOMMEN = "vorschlaege_uebernommen.txt"
 _NAMENSRAUM = uuid.UUID("5d0c7a52-6b8e-4c1f-9a3e-2f4b8c6d1e07")
-_FEST = ("id", "sportstaette_id")  # bleiben beim Ersetzen einer Anlage
+_FEST = ("id",)  # bleibt beim Ersetzen einer Anlage
 
 
 @dataclass
@@ -273,7 +273,7 @@ class _Uebernahme:
             if not kurz:
                 aid = str(uuid.uuid5(_NAMENSRAUM, f"limesurvey/{a.id}/{i}"))
                 if not any(x.get("id") == aid for x in st["anlagen"]):
-                    st["anlagen"].append({**neu, "id": aid, "sportstaette_id": sid})
+                    st["anlagen"].append({**neu, "id": aid})
                 continue
             alt = finde(kurz)
             if alt is None:

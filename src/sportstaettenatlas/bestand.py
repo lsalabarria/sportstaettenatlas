@@ -125,9 +125,7 @@ def aufteilen(d: dict) -> dict[str, str]:
     for a in d.get("anlagen") or []:
         nr[a["typ"]] += 1
         aid = a.get("id") or anlage_id(sid, a["typ"], nr[a["typ"]])
-        dateien[f"{aid}.json"] = als_json(
-            ordne({**a, "id": aid, "sportstaette_id": sid}, Sportanlage)
-        )
+        dateien[f"{aid}.json"] = als_json(ordne({**a, "id": aid}, Sportanlage))
     return dateien
 
 
@@ -224,7 +222,7 @@ def _anlagen_zusammen(sid: str, alt: list[dict], neu: list[dict], modus: str, e:
             aid = roh
         else:
             aid = anlage_id(sid, a.get("typ", ""), nr[a.get("typ")])
-        a = {**a, "id": aid, "sportstaette_id": sid}
+        a = {**a, "id": aid}
         if aid not in out:
             out[aid] = a
             e.anlagen_neu += 1
@@ -349,8 +347,8 @@ _AUSSERHALB = re.compile(r"lage\.(lon|lat): zu (groß|klein)")
 def lies_bestand(ordner: Path, verstoesse: list | None = None) -> Iterator[dict]:
     """Alle Sportstätten unter daten/<LAND>/<Kreis>/<id>/, jeweils mit ihren Anlagen.
 
-    Prüft den Aufbau: Jeder Ordner hat seine <id>_meta.json, jede Anlage nennt in
-    `sportstaette_id` die Sportstätte ihres Ordners, Dateiname = id, typ ist gesetzt.
+    Prüft den Aufbau: Jeder Ordner hat seine <id>_meta.json; eine Anlage gehört zur
+    Sportstätte ihres Ordners (ohne eigenes Feld dafür), Dateiname = id, typ ist gesetzt.
     Ein Fehler im Aufbau bricht ab (ValueError). Verstöße gegen die Regeln des Modells
     (modell.py, z. B. PLZ mit sechs Ziffern) brechen nicht ab, sondern landen als
     (Datei, Meldung) in `verstoesse`; unter outside/ zählt nicht, dass die Lage außerhalb
@@ -368,11 +366,6 @@ def lies_bestand(ordner: Path, verstoesse: list | None = None) -> Iterator[dict]
         anlagen = []
         for pfad in sorted(p for p in st_ordner.glob("*.json") if p != meta_pfad):
             a = _lies_json(pfad)
-            if a.get("sportstaette_id") != sid:
-                raise ValueError(
-                    f"{pfad}: sportstaette_id {a.get('sportstaette_id')!r} – jede Sportanlage "
-                    f"muss im Ordner ihrer Sportstätte liegen (hier {sid})"
-                )
             if a.get("id") != pfad.stem:
                 raise ValueError(f"{pfad}: id {a.get('id')!r} passt nicht zum Dateinamen")
             if not a.get("typ"):

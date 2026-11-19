@@ -60,7 +60,7 @@ ANALYSE = "analyse.json"  # Titel, Beschreibungen und Quellenvermerk einer gespe
 ANLAGE_FELDER = tuple(
     f
     for f in modell.Sportanlage.model_fields
-    if f not in ("id", "sportstaette_id", "typ", "bezeichnung")
+    if f not in ("id", "typ", "bezeichnung")
 )
 
 

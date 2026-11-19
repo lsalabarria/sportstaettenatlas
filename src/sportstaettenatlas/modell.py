@@ -559,7 +559,8 @@ class Foerderung(Basis):
 
 
 class Sportanlage(Basis):
-    """Eine Einheit einer Sportstätte, z. B. ein Großspielfeld, eine Halle oder ein Becken."""
+    """Eine Einheit einer Sportstätte, z. B. ein Großspielfeld, eine Halle oder ein Becken.
+    Zu welcher Sportstätte sie gehört, sagt der Ordner, in dem ihre Datei liegt."""
 
     model_config = ConfigDict(
         json_schema_extra={
@@ -567,7 +568,6 @@ class Sportanlage(Basis):
             "examples": [
                 {
                     "id": "17abb3c4-7493-5549-a6ca-f432ef00fba3",
-                    "sportstaette_id": "9c24bfa6-71c1-4164-b226-061f0a139997",
                     "typ": "Großspielfeld",
                     "bezeichnung": "Kunstrasen B",
                     "betriebsstatus": "in Betrieb",
@@ -588,12 +588,6 @@ class Sportanlage(Basis):
     id: str | None = _field(
         "ID",
         "UUID, zugleich der Dateiname (in der Datei Pflicht)",
-        formular=False,
-        uebersicht=False,
-    )
-    sportstaette_id: str | None = _field(
-        "Sportstätte",
-        "ID der Sportstätte, zu der die Anlage gehört, = Name des Ordners (in der Datei Pflicht)",
         formular=False,
         uebersicht=False,
     )
