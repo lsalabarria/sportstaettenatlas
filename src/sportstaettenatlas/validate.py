@@ -375,12 +375,48 @@ def _org_kern(name) -> str:
 
 def fast_gleiche_organisationen(organisationen: list[dict]) -> Iterable[tuple[dict, dict]]:
     """Paare mit sehr ähnlichem Namen (ohne Rechtsform wie „e.V.“). Gebietskörperschaften
-    (mit Regionalschlüssel) werden nicht untereinander verglichen – ihre Namen sind amtlich."""
+    (mit Regionalschlüssel) werden nicht untereinander verglichen – ihre Namen sind amtlich –,
+    Vereine mit LSB-Nummer auch nicht: Der LSB führt sie als verschiedene."""
     ohne_ars = [o for o in organisationen if not o.get("ars")]
-    for i, a in enumerate(ohne_ars):
-        for b in [*ohne_ars[i + 1 :], *(o for o in organisationen if o.get("ars"))]:
-            if aehnlich(_org_kern(a.get("name")), _org_kern(b.get("name"))) >= AEHNLICH:
-                yield a, b
+    alle = [*ohne_ars, *(o for o in organisationen if o.get("ars"))]  # Reihenfolge der Paare
+    for i, j in _aehnliche_paare([_org_kern(o.get("name")) for o in alle], AEHNLICH):
+        a, b = alle[i], alle[j]
+        if i < len(ohne_ars) and not (a.get("lsb_nummer") and b.get("lsb_nummer")):
+            yield a, b  # zwei Vereine mit LSB-Nummer sind verschiedene
+
+
+def _aehnliche_paare(namen: list[str], schwelle: float) -> list[tuple[int, int]]:
+    """Alle (i, j) mit i < j und aehnlich(namen[i], namen[j]) >= schwelle – ohne jedes Paar zu
+    vergleichen (Präfix-Filter: zwei ähnliche Namen teilen eines ihrer seltensten
+    Buchstabenpaare). Gleiches Ergebnis wie der Vergleich aller Paare, für Tausende Namen."""
+    marken: list[list[tuple[str, int]]] = []  # Buchstabenpaare, mehrfache durchgezählt
+    for n in namen:
+        t = f" {norm_name(n)} "
+        zaehler: Counter = Counter()
+        m = []
+        if norm_name(n):
+            for k in range(len(t) - 1):
+                zaehler[t[k : k + 2]] += 1
+                m.append((t[k : k + 2], zaehler[t[k : k + 2]]))
+        marken.append(m)
+    haeufig = Counter(x for m in marken for x in m)
+    index: dict[tuple[str, int], list[int]] = defaultdict(list)
+    paare = set()
+    for i in sorted(range(len(namen)), key=lambda i: len(marken[i])):
+        m = sorted(marken[i], key=lambda x: (haeufig[x], x))
+        if not m:
+            continue
+        # Dice >= s heißt: gemeinsam >= s/(2-s) · |m|, also teilen sie eines der ersten Paare
+        praefix = len(m) - math.ceil(schwelle / (2 - schwelle) * len(m) - 1e-9) + 1
+        kandidaten = {j for x in m[:praefix] for j in index[x]}
+        menge = set(m)
+        for j in kandidaten:
+            gemeinsam = len(menge.intersection(marken[j]))
+            if 2 * gemeinsam / (len(m) + len(marken[j])) >= schwelle:
+                paare.add((min(i, j), max(i, j)))
+        for x in m[:praefix]:
+            index[x].append(i)
+    return sorted(paare)
 
 
 def _doppelt(a: dict, b: dict) -> bool:

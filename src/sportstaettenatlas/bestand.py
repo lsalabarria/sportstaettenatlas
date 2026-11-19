@@ -36,7 +36,7 @@ from .modell import (
 EMAIL = re.compile(EMAIL_MUSTER)  # Werte mit E-Mail-Adresse
 KONTAKT = re.compile(KONTAKT_NAME, re.IGNORECASE)  # Felder bzw. Spalten mit Kontaktdaten
 OHNE_KREIS = "ohne-kreis"
-# Sportstätten außerhalb von Rheinland-Pfalz (aus dem Altsystem): daten/outside/<Land>/<id>/,
+# Sportstätten außerhalb von Rheinland-Pfalz: daten/outside/<Land>/<id>/,
 # nicht auf der Webseite, nicht eingeordnet
 OUTSIDE = "outside"
 KreisVon = Callable[[float, float], str]  # (lon, lat) → Name des Kreis-Ordners
@@ -252,7 +252,7 @@ def schreibe_bestand(
     """
     if modus not in MODI:
         raise ValueError(f"Unbekannter Modus: {modus} (erlaubt: {', '.join(MODI)})")
-    ordner = ziel / land.upper()
+    ordner = ziel / (land if land == OUTSIDE else land.upper())
     ordner.mkdir(parents=True, exist_ok=True)
     vorhanden = _staetten_ordner(ordner)
     e = Ergebnis()
@@ -342,6 +342,10 @@ def _lies_json(datei: Path) -> dict:
         raise ValueError(f"{datei}: kein gültiges JSON ({exc})") from exc
 
 
+# Meldung des Modells, dass die Lage außerhalb von Rheinland-Pfalz liegt
+_AUSSERHALB = re.compile(r"lage\.(lon|lat): zu (groß|klein)")
+
+
 def lies_bestand(ordner: Path, verstoesse: list | None = None) -> Iterator[dict]:
     """Alle Sportstätten unter daten/<LAND>/<Kreis>/<id>/, jeweils mit ihren Anlagen.
 
@@ -349,7 +353,9 @@ def lies_bestand(ordner: Path, verstoesse: list | None = None) -> Iterator[dict]
     `sportstaette_id` die Sportstätte ihres Ordners, Dateiname = id, typ ist gesetzt.
     Ein Fehler im Aufbau bricht ab (ValueError). Verstöße gegen die Regeln des Modells
     (modell.py, z. B. PLZ mit sechs Ziffern) brechen nicht ab, sondern landen als
-    (Datei, Meldung) in `verstoesse`. Im Ergebnis steht zusätzlich "_ordner" (Kreis-Ordner).
+    (Datei, Meldung) in `verstoesse`; unter outside/ zählt nicht, dass die Lage außerhalb
+    von Rheinland-Pfalz liegt. Im Ergebnis stehen zusätzlich "_ordner" (Kreis-Ordner) und
+    "_land" (RP, outside …).
     """
     for st_ordner in sorted(p for o in _laender(ordner) for p in _staetten_dirs(o)):
         sid = st_ordner.name
@@ -375,7 +381,12 @@ def lies_bestand(ordner: Path, verstoesse: list | None = None) -> Iterator[dict]
                 verstoesse += [(str(pfad), m) for m in pruefe(Sportanlage, a)]
             anlagen.append(a)
         if verstoesse is not None:
-            verstoesse += [(str(meta_pfad), m) for m in pruefe(Sportstaette, meta)]
+            draussen = st_ordner.parent.parent.name == OUTSIDE
+            verstoesse += [
+                (str(meta_pfad), m)
+                for m in pruefe(Sportstaette, meta)
+                if not (draussen and _AUSSERHALB.match(m))
+            ]
         yield {
             **meta,
             "anlagen": anlagen,
@@ -703,24 +714,26 @@ def sportkomplexe_einordnen(daten: Path, kreis_von: KreisVon) -> int:
     return n
 
 
-def finde_staette(daten: Path, sid: str) -> Path:
-    """Ordner einer Sportstätte über ihre ID oder deren Anfang (mindestens 8 Zeichen)."""
-    treffer = [
-        p
-        for o in _laender(daten)
-        for p in _staetten_dirs(o)
-        if p.name == sid or (len(sid) >= 8 and p.name.startswith(sid))
-    ]
+def finde_staette(daten: Path, sid: str, ordner: dict[str, Path] | None = None) -> Path:
+    """Ordner einer Sportstätte über ihre ID oder deren Anfang (mindestens 8 Zeichen).
+    `ordner`: ID → Ordner aller Sportstätten, wenn schon gelesen (für viele Aufrufe)."""
+    if ordner is None:
+        ordner = {p.name: p for o in _laender(daten) for p in _staetten_dirs(o)}
+    if sid in ordner:
+        return ordner[sid]
+    treffer = [p for i, p in ordner.items() if len(sid) >= 8 and i.startswith(sid)]
     if len(treffer) != 1:
         raise ValueError(f"Sportstätte {sid}: {'nicht gefunden' if not treffer else 'mehrdeutig'}")
     return treffer[0]
 
 
-def ordne_sportkomplex_zu(daten: Path, komplex_id: str | None, ids: list[str]) -> list[Path]:
+def ordne_sportkomplex_zu(
+    daten: Path, komplex_id: str | None, ids: list[str], ordner: dict[str, Path] | None = None
+) -> list[Path]:
     """In den Sportstätten `ids` das Feld sportkomplex setzen (None: entfernen)."""
     geaendert = []
     for sid in ids:
-        meta = finde_staette(daten, sid)
+        meta = finde_staette(daten, sid, ordner)
         meta = meta / f"{meta.name}_meta.json"
         d = _lies_json(meta)
         werte.setze(d, "sportkomplex", komplex_id)
@@ -741,13 +754,14 @@ def schreibe_sportkomplexe(
     if modus not in MODI:
         raise ValueError(f"Unbekannter Modus: {modus} (erlaubt: {', '.join(MODI)})")
     vorhanden = {k["id"]: k for k in lies_sportkomplexe(daten)}
+    ordner = {p.name: p for o in _laender(daten) for p in _staetten_dirs(o)}
     e = Ergebnis()
     for roh in datensaetze:
         d = bereinigen(roh, e.entfernt)
         mitglieder = []
         for sid in d.pop("sportstaetten", []) or []:
             try:
-                mitglieder.append(finde_staette(daten, str(sid)))
+                mitglieder.append(finde_staette(daten, str(sid), ordner))
             except ValueError:
                 e.ohne_sportstaette += 1
         alt = vorhanden.get(d.get("id", ""))
@@ -763,19 +777,25 @@ def schreibe_sportkomplexe(
                 e.unveraendert += 1
             else:
                 e.aktualisiert += 1
-        for meldung in pruefe(Sportkomplex, {x: v for x, v in k.items() if x != "_ordner"}):
+        for meldung in pruefe(
+            Sportkomplex, {x: v for x, v in k.items() if x not in ("_ordner", "_land")}
+        ):
             e.regelverstoesse[meldung.split(":")[0]] += 1
-        if k.get("lage"):
+        land = (alt or {}).get("_land")
+        if mitglieder:  # Land und Kreis wie die meisten seiner Sportstätten
+            land, kreis = Counter(
+                (p.parent.parent.name, p.parent.name) for p in mitglieder
+            ).most_common(1)[0][0]
+        if k.get("lage") and land != OUTSIDE:
             kreis = _kreis(k, kreis_von)
-        elif mitglieder:
-            kreise = Counter(p.parent.name for p in mitglieder)
-            kreis = kreise.most_common(1)[0][0]
-        else:
+        elif not mitglieder:
             kreis = (alt or {}).get("_ordner") or OHNE_KREIS
-        if k is not alt or kreis != alt.get("_ordner"):
-            schreibe_sportkomplex(daten, k, kreis)
-        e.zugeordnet += len(ordne_sportkomplex_zu(daten, k["id"], [p.name for p in mitglieder]))
-        vorhanden[k["id"]] = {**k, "_ordner": kreis}
+        if k is not alt or kreis != alt.get("_ordner") or land != alt.get("_land"):
+            schreibe_sportkomplex(daten, k, kreis, land)
+        e.zugeordnet += len(
+            ordne_sportkomplex_zu(daten, k["id"], [p.name for p in mitglieder], ordner)
+        )
+        vorhanden[k["id"]] = {**k, "_ordner": kreis, "_land": land or ORG_LAND}
     return e
 
 

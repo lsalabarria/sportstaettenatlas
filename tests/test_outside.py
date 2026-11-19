@@ -48,6 +48,18 @@ def test_outside_wird_gelesen_aber_nicht_einsortiert(tmp_path):
     assert einordnen(daten, lambda lon, lat: "07111-koblenz") == 0
     assert (daten / "outside" / "NW" / DRAUSSEN).is_dir()
 
+    # die Grenzen der Lage gelten für Rheinland-Pfalz, nicht unter outside/
+    berlin = {"id": DRAUSSEN, "name": "Halle Berlin", "kategorie": "Sporthalle",
+              "lage": {"lon": 13.4, "lat": 52.52}}  # fmt: skip
+    _schreibe(daten / "outside" / "NW" / DRAUSSEN / f"{DRAUSSEN}_meta.json", berlin)
+    _schreibe(daten / "RP" / "07111-koblenz" / DRIN / f"{DRIN}_meta.json", {**berlin, "id": DRIN})
+    verstoesse = []
+    list(lies_bestand(daten, verstoesse))
+    assert [(DRIN in d, m.split(":")[0]) for d, m in verstoesse] == [
+        (True, "lage.lon"),
+        (True, "lage.lat"),
+    ]
+
 
 def test_outside_ohne_pruefungen_des_landes(tmp_path):
     daten = _daten(tmp_path)

@@ -135,7 +135,7 @@ Auswahllisten, mindestens 4 Nachkommastellen bei Koordinaten, `braucht`, `teil_v
 - **Fläche:** Weicht höchstens 25 % von Länge × Breite ab.
 - **Betriebsstatus:** Keine Öffnungsstunden, wenn die Anlage stillgelegt ist.
 - **Organisation ohne Art:** Jede Organisation im Verzeichnis hat eine Art.
-- **Fast gleiche Organisationen:** Keine zwei Einträge mit fast gleichem Namen (ohne Rechtsform wie „e.V.“).
+- **Fast gleiche Organisationen:** Keine zwei Einträge mit fast gleichem Namen (ohne Rechtsform wie „e.V.“); zwei Vereine mit LSB-Nummer gelten als verschieden.
 - **Sportkomplex:** Der Sportkomplex in `sportkomplex` gibt es.
 - **Kleiner Sportkomplex:** Zu jedem Sportkomplex gehören mindestens zwei Sportstätten.
 - **Ausdehnung des Sportkomplexes:** Seine Sportstätten liegen höchstens 1 km auseinander.

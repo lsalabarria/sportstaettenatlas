@@ -233,3 +233,18 @@ def test_pruefungen_heissen_wie_in_der_readme():
     readme = (Path(__file__).parents[1] / "README.md").read_text("utf-8")
     abschnitt = readme.split("## Prüfungen", 1)[1].split("\n## ", 1)[0]
     assert tuple(re.findall(r"^- \*\*(.+?):\*\*", abschnitt, re.MULTILINE)) == PRUEFUNGEN
+
+
+def test_fast_gleiche_organisationen():
+    from sportstaettenatlas.validate import fast_gleiche_organisationen
+
+    orgs = [
+        {"id": "a", "name": "SV Alsdorf e.V."},
+        {"id": "b", "name": "SSV Alsdorf"},
+        {"id": "c", "name": "TuS Berg", "lsb_nummer": "1000001"},
+        {"id": "d", "name": "TuS Berg 1", "lsb_nummer": "1000002"},  # beide beim LSB: verschieden
+        {"id": "e", "name": "TuS Berg e.V."},
+        {"id": "f", "name": "Stadt Berg", "ars": "071110000000"},
+    ]
+    paare = [(x["id"], y["id"]) for x, y in fast_gleiche_organisationen(orgs)]
+    assert paare == [("a", "b"), ("c", "e")]
