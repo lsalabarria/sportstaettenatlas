@@ -511,10 +511,10 @@ Was das Formular „Vorschlag“ als JSON in die LimeSurvey-Frage „data“ sch
 | Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
 |---|---|---|---|---|---|
 | `version` | Version des Formats | Auswahl |  | „1“ |  |
-| `art` | Art | Auswahl | ja | „neu“, „aenderung“, „anlagen“, „organisation“, „sportkomplex“, „stuetzpunkt“ | neu: neue Sportstätte mit Anlagen; aenderung: Angaben einer Sportstätte; anlagen: Sportanlagen einer Sportstätte; organisation: Organisation anlegen, ändern oder löschen; sportkomplex: Sportkomplex anlegen, ändern oder auflösen; stuetzpunkt: Stützpunkt anlegen, ändern oder löschen |
+| `art` | Art | Auswahl | ja | „neu“, „aenderung“, „anlagen“, „organisation“, „sportkomplex“, „stuetzpunkt“ | neu: neue Sportstätte mit Anlagen; aenderung: Angaben einer Sportstätte und, wenn angegeben, ihre Sportanlagen; anlagen: nur Sportanlagen einer Sportstätte; organisation: Organisation anlegen, ändern oder löschen; sportkomplex: Sportkomplex anlegen, ändern oder auflösen; stuetzpunkt: Stützpunkt anlegen, ändern oder löschen |
 | `sportstaette_id` | Sportstätte | Text |  |  | ID der geänderten Sportstätte |
 | `sportstaette` | Angaben der Sportstätte | Sportstaette |  |  | vollständig, nach der Änderung (bei neu und aenderung) |
-| `anlagen` | Sportanlagen | Liste von Sportanlage |  |  | alle Anlagen nach der Änderung (bei neu und anlagen); vorhandene mit ihrer Kurz-ID (Anfang der UUID), neue ohne |
+| `anlagen` | Sportanlagen | Liste von Sportanlage |  |  | bei neu alle Anlagen; bei aenderung und anlagen die geänderten (vorhandene mit ihrer Kurz-ID, dem Anfang der UUID) und neuen (ohne ID) |
 | `entfernte_anlagen` | Entfernte Sportanlagen | Liste von Text |  |  | Kurz-IDs |
 | `organisation_id` | Organisation | Text |  |  | ID der geänderten oder gelöschten Organisation (fehlt bei einer neuen) |
 | `organisation` | Angaben der Organisation | Organisation |  |  | vollständig, nach der Änderung (nicht beim Löschen) |
@@ -524,6 +524,9 @@ Was das Formular „Vorschlag“ als JSON in die LimeSurvey-Frage „data“ sch
 | `stuetzpunkt_id` | Stützpunkt | Text |  |  | ID des geänderten oder gelöschten Stützpunkts (fehlt bei einem neuen) |
 | `stuetzpunkt` | Angaben des Stützpunkts | Stuetzpunkt |  |  | vollständig, nach der Änderung, mit Sportstätten und Sportkomplexen |
 | `loeschen` | Löschen | boolean |  |  | die Organisation aus dem Verzeichnis entfernen, den Sportkomplex auflösen bzw. den Stützpunkt löschen |
+| `neue_organisationen` | Neue Organisationen | Liste von Organisation |  |  | trägt der Vorschlag mit ein, z. B. den Betreiber einer neuen Sportstätte (jede Art); steht der Name schon im Verzeichnis, gibt es nur eine Warnung |
+| `neue_sportstaetten` | Neue Sportstätten | Liste von NeueSportstaette |  |  | bei sportkomplex und stuetzpunkt: neue Sportstätten mit ihren Anlagen; `sportstaetten` bzw. `stuetzpunkt.sportstaetten` nennen sie mit ihrem `ref` |
+| `neuer_sportkomplex` | Neuer Sportkomplex | Sportkomplex |  |  | bei neu und aenderung: neuer Sportkomplex der Sportstätte; weitere vorhandene Sportstätten des Komplexes in `sportstaetten` |
 | `geaendert` | Geänderte Felder | Liste von Text |  |  |  |
 | `gemeinde` | Gemeinde | Text |  |  | Regionalschlüssel der Gemeinde an der Lage |
 | `dubletten_geprueft` | Geprüfte Doppelungen | Liste von Text |  |  | IDs ähnlicher Sportstätten, die als verschieden bestätigt wurden |
@@ -548,6 +551,17 @@ Was das Formular „Vorschlag“ als JSON in die LimeSurvey-Frage „data“ sch
   ]
 }
 ```
+
+### Neue Sportstätte im Vorschlag
+
+Eine neue Sportstätte innerhalb eines Vorschlags für einen Sportkomplex oder Stützpunkt;
+dessen Liste der Sportstätten nennt sie mit `ref`, die ID vergibt erst die Übernahme.
+
+| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
+|---|---|---|---|---|---|
+| `ref` | Verweis | Text | ja | Muster `^neu-\d+$` | im Vorschlag, z. B. neu-1 |
+| `sportstaette` | Angaben der Sportstätte | Sportstaette | ja |  |  |
+| `anlagen` | Sportanlagen | Liste von Sportanlage |  |  |  |
 
 ### Felder je Anlagentyp
 
