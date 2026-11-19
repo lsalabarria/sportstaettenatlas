@@ -258,7 +258,8 @@ in den Bestand.
    `src/sportstaettenatlas/analysen/alkis/regeln.toml`, welche Typgruppe zu welcher Kategorie
    des Atlas passt in `kategorien.py`.
 3. **Abgleichen:** Jede Sportstätte aus `daten/` wird der ALKIS-Fläche zugeordnet, in der sie
-   liegt oder die ihr am nächsten ist (bis 100 m). Ergebnis je Sportstätte: „in ALKIS“, „in
+   liegt oder die ihr am nächsten ist (bis 100 m); die unter `daten/outside/` nicht, ALKIS
+   deckt nur Rheinland-Pfalz ab. Ergebnis je Sportstätte: „in ALKIS“, „in
    der Nähe“ (100–200 m, Lage prüfen) oder „nicht in ALKIS“. ALKIS-Flächen ohne Gegenstück
    im Bestand sind Kandidaten für neue Sportstätten.
 

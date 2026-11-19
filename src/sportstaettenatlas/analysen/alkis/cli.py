@@ -16,7 +16,7 @@ ZIEL = ERGEBNISSE / "out"
 
 def cmd_alkis(args):
     """ALKIS laden (Cache in results/raw) → Sportstätten bauen → mit daten/ abgleichen."""
-    from ...bestand import lies_bestand
+    from ...bestand import OUTSIDE, lies_bestand
     from . import vor_ort, wfs
     from .abgleich import anreichern, aus_bestand
     from .klassifikation import Regelwerk
@@ -24,7 +24,8 @@ def cmd_alkis(args):
 
     # zuerst den Bestand lesen: ein Fehler darin soll nicht erst nach dem Download auffallen
     try:
-        bestand = list(lies_bestand(Path(args.bestand)))
+        # ALKIS deckt nur Rheinland-Pfalz ab: ohne daten/outside/
+        bestand = [d for d in lies_bestand(Path(args.bestand)) if d["_land"] != OUTSIDE]
     except ValueError as exc:
         raise SystemExit(f"Datenbestand: {exc}") from None
     if not bestand:
