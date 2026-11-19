@@ -348,9 +348,9 @@ def _zelle(v) -> str:
 
 
 def schreibe_vorlage(ordner: Path) -> list[Path]:
-    """vorlage_sportstaetten.csv, _sportanlagen.csv, _sportkomplexe.csv, _organisationen.csv: alle
-    Spalten aus dem Modell
-    und eine Beispielzeile. Mit ; getrennt und mit BOM, damit Excel sie richtig öffnet."""
+    """vorlage_sportstaetten.csv, _sportanlagen.csv, _sportkomplexe.csv, _stuetzpunkte.csv,
+    _organisationen.csv: alle Spalten aus dem Modell und eine Beispielzeile; dazu
+    vorlage_entfernen.csv (art, id, begruendung). Mit ; getrennt und mit BOM für Excel."""
     ordner = Path(ordner)
     ordner.mkdir(parents=True, exist_ok=True)
     beispiele = {
@@ -386,4 +386,7 @@ def schreibe_vorlage(ordner: Path) -> list[Path]:
             w.writerow(spalten)
             w.writerow([_zelle(flach.get(k)) for k in spalten])
         pfade.append(pfad)
+    from .entfernen import schreibe_vorlage as vorlage_entfernen
+
+    pfade.append(vorlage_entfernen(ordner / "vorlage_entfernen.csv"))
     return pfade

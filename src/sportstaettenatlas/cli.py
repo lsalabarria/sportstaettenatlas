@@ -94,7 +94,9 @@ def cmd_pruefen(args):
 
 def cmd_bestand(args):
     """CSV-Dateien (Atlas-Export, Sportstätten, Sportanlagen, Sportkomplexe, Stützpunkte oder
-    Organisationen) in daten/ übernehmen."""
+    Organisationen) in daten/ übernehmen. Tabellen zum Entfernen (art, id, begruendung) kommen
+    danach dran, in der Reihenfolge der Dateien und Zeilen."""
+    from . import entfernen
     from .bestand import (
         schreibe_bestand,
         schreibe_organisationen,
@@ -103,10 +105,15 @@ def cmd_bestand(args):
     )
     from .einlesen import lies_csv
 
-    gelesen = []
+    gelesen, zu_entfernen = [], []
     for datei in map(Path, args.dateien):
         if not datei.is_file():
             raise SystemExit(f"{datei} nicht gefunden.")
+        if entfernen.ist_tabelle(_spalten(datei)):
+            eintraege = entfernen.lies(datei)
+            print(f"{datei.name}: Entfernen, {len(eintraege)} Zeilen (nach den übrigen Dateien)")
+            zu_entfernen.append((datei, eintraege))
+            continue
         try:
             datensaetze, b = lies_csv(datei)
         except ValueError as exc:
@@ -133,6 +140,12 @@ def cmd_bestand(args):
             print(f"  Werte, die nicht zum Feld passen (übernommen, wie sie sind): {fehler}")
         gelesen.append((datei, datensaetze, b.art))
     if args.probe:
+        for datei, eintraege in zu_entfernen:
+            _zeige_entfernen(datei, entfernen.entferne(eintraege, DATEN, probe=True), probe=True)
+        if zu_entfernen and gelesen:
+            print(
+                "  (geprüft gegen daten/ ohne die übrigen Dateien – die können Verweise noch lösen)"
+            )
         print("Probelauf: nichts geschrieben.")
         return
     kreis_von = _kreis_von_bei_bedarf()
@@ -192,6 +205,26 @@ def cmd_bestand(args):
         if e.regelverstoesse:
             felder = ", ".join(f"{k} {v}×" for k, v in e.regelverstoesse.most_common())
             print(f"  passen nicht zu den Regeln des Datenmodells: {felder} (übernommen)")
+    for datei, eintraege in zu_entfernen:
+        _zeige_entfernen(datei, entfernen.entferne(eintraege, DATEN))
+
+
+def _spalten(datei: Path) -> set[str]:
+    """Normierte Spaltennamen einer CSV-Datei."""
+    from . import entfernen, werte
+
+    zeilen = werte.zeilen(werte.text(datei.read_bytes()))
+    return {entfernen._norm(k) for k in (zeilen[0] if zeilen else {}) if k}
+
+
+def _zeige_entfernen(datei: Path, e, probe: bool = False) -> None:
+    print(f"{datei.name} → entfernen{' (Probe)' if probe else ''}: {len(e.entfernt)}")
+    for art, oid, name in e.entfernt:
+        print(f"  {art} {oid[:8]} {name}")
+    for w in e.warnungen:
+        print(f"  WARNUNG: {w}")
+    if e.entfernt and not probe:
+        print(f"  protokolliert in {DATEN}/entfernt.csv")
 
 
 def cmd_organisationen(args):
@@ -430,7 +463,10 @@ def main(argv: list[str] | None = None) -> None:
         "bestand", help="CSV-Dateien in den Datenbestand daten/ übernehmen (siehe einlesen.py)"
     )
     sp.add_argument(
-        "dateien", nargs="+", help="Atlas-Export, Tabelle der Sportstätten oder der Sportanlagen"
+        "dateien",
+        nargs="+",
+        help="Atlas-Export, Tabellen der Sportstätten, Sportanlagen, Sportkomplexe, Stützpunkte, "
+        "Organisationen; Tabellen zum Entfernen kommen zuletzt dran",
     )
     sp.add_argument(
         "--modus",

@@ -75,7 +75,7 @@ Alle mit `uv run sportstaettenatlas …`; `--help` zeigt die Optionen.
 
 | Befehl | macht |
 |---|---|
-| `bestand DATEI.csv …` | CSV-Dateien in `daten/` übernehmen (`--probe`, `--modus`; Regeln: [CSV einlesen](daten/README.md#csv-einlesen)) |
+| `bestand DATEI.csv …` | CSV-Dateien in `daten/` übernehmen, auch Einträge entfernen (`--probe`, `--modus`; Regeln: [CSV einlesen](daten/README.md#csv-einlesen)) |
 | `vorschlaege EXPORT.csv` | Vorschläge aus einem LimeSurvey-Export in `daten/` übernehmen (`--probe`, `--alle`; siehe [Vorschläge](#vorschläge)) |
 | `vorlage` | Vorlagen für eigene CSV-Dateien nach `results/vorlagen/` |
 | `organisationen` | Stand des Verzeichnisses; `--gebiete` legt alle Landkreise, Städte, Verbands- und Ortsgemeinden an, `--aus-bestand` fehlende Eigentümer, Betreiber und Nutzer |
@@ -309,6 +309,7 @@ src/sportstaettenatlas/
   cli.py          Befehle (siehe „Befehle“)
   bestand.py      daten/ lesen, schreiben und zusammenführen; Kreis-Ordner; Organisationen
   einlesen.py     CSV-Dateien lesen (Spalten über das Modell), Vorlagen
+  entfernen.py    Einträge entfernen (Tabelle art, id, begruendung), Protokoll daten/entfernt.csv
   atlas.py        Export des bisherigen Atlas lesen
   werte.py        Werte aus Text lesen (Zahlen, ja/nein, Listen), CSV-Dateien öffnen
   anlagen.py      Typen und Gruppen der Sportanlagen
