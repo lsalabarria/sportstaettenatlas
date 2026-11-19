@@ -133,8 +133,9 @@ JSON-Dateien. `--probe` zeigt vorher, welche Spalte in welches Feld geht. Erkann
   Sportanlage, Sportkomplex, Stützpunkt oder Organisation; ID auch die Kurz-ID). Sie kommt nach
   allen anderen Dateien desselben Aufrufs dran, die Zeilen von oben nach unten. Übersprungen
   wird mit Warnung, was keine Begründung hat, nicht eindeutig ist oder worauf noch etwas
-  zeigt (ein Stützpunkt auf eine Sportstätte, eine Sportstätte auf ihren Sportkomplex oder
-  ihre Organisationen). Mit einer Sportstätte gehen ihre Sportanlagen. Jede Entfernung steht
+  zeigt (eine Sportanlage oder ein Stützpunkt auf eine Sportstätte, eine Sportstätte auf ihren
+  Sportkomplex oder ihre Organisationen). Vor einer Sportstätte stehen also ihre Sportanlagen
+  in der Tabelle, jede mit eigener Begründung. Jede Entfernung steht
   mit Datum und Begründung in `daten/entfernt.csv` – die Datei ist öffentlich, also nur
   Sachliches und keine Personen. Eine Doppelung zusammenführen: im selben Aufruf die
   Tabelle der Sportanlagen für die richtige Sportstätte und die Tabelle zum Entfernen der
