@@ -13,6 +13,8 @@ der Antwort-ID:
 - sportkomplex: Sportkomplex anlegen oder seine geänderten Felder ändern; die genannten
                 Sportstätten bekommen ihn in `sportkomplex`, bisherige, die fehlen, verlieren
                 ihn; `loeschen` löst ihn auf (Datei weg, Verweise entfernt)
+- stuetzpunkt:  Stützpunkt anlegen, seine geänderten Felder ändern (auch die Listen der
+                Sportstätten und Sportkomplexe) oder löschen
 
 Eine Änderung überschreibt den Wert in daten/. Setzen zwei Vorschläge im Export dasselbe Feld
 verschieden, steht dort „a|b“ (mit | getrennt), und es gibt eine Warnung. Übernommene
@@ -40,10 +42,13 @@ from .bestand import (
     komplex_dateien,
     lies_bestand,
     lies_sportkomplexe,
+    lies_stuetzpunkte,
+    loesche_stuetzpunkt,
     organisation_id,
     schreibe_bestand,
     schreibe_organisation,
     schreibe_sportkomplex,
+    schreibe_stuetzpunkt,
     sportkomplexe_einordnen,
 )
 from .modell import Vorschlag, pruefe
@@ -120,6 +125,7 @@ class _Uebernahme:
         self.entfernt: dict[str, set[str]] = {}  # Sportstätte → IDs entfernter Anlagen
         self.orgs: dict[str, dict | None] = {}  # id → Organisation; None: löschen
         self.komplexe: dict[str, dict | None] = {}  # id → Sportkomplex; None: auflösen
+        self.stuetzpunkte: dict[str, dict | None] = {}  # id → Stützpunkt; None: löschen
         self._mitglieder: dict[str, set[str]] | None = None  # Komplex → Sportstätten in daten/
         self.gesetzt: dict[tuple[str, str], list[tuple[str, object]]] = {}
 
@@ -292,6 +298,29 @@ class _Uebernahme:
             w = kid if sid in soll else None
             self.setze(sid, st, "sportkomplex", w, a.id, f"Sportstätte {st.get('name') or sid}")
 
+    def stuetzpunkt(self, a: Antwort, v: dict) -> None:
+        sid = v.get("stuetzpunkt_id") or str(
+            uuid.uuid5(_NAMENSRAUM, f"limesurvey/{a.id}/stuetzpunkt")
+        )
+        if sid not in self.stuetzpunkte:
+            self.stuetzpunkte[sid] = {x["id"]: x for x in lies_stuetzpunkte(self.daten)}.get(sid)
+        alt = self.stuetzpunkte[sid]
+        if v.get("loeschen"):
+            if alt is None:
+                self.e.warnungen.append(f"Antwort {a.id}: Stützpunkt {sid} gibt es nicht")
+            else:
+                self.stuetzpunkte[sid] = None
+            return
+        neu = v["stuetzpunkt"]
+        if alt is None:
+            self.stuetzpunkte[sid] = {**neu, "id": sid}
+            for feld in neu:
+                self.gesetzt.setdefault((sid, feld), []).append((a.id, neu[feld]))
+            return
+        name = f"Stützpunkt {alt.get('name') or sid}"
+        for feld in v.get("geaendert") or [x for x in neu if x != "id"]:
+            self.setze(sid, alt, feld, werte.hole(neu, feld), a.id, name)
+
     # --- schreiben ---
 
     def schreibe(self, kreis_von: Callable) -> None:
@@ -311,6 +340,11 @@ class _Uebernahme:
                 schreibe_organisation(self.daten, o)
             elif pfad := finde_organisation(self.daten, oid):
                 pfad.unlink()
+        for sid, sp in self.stuetzpunkte.items():
+            if sp is not None:
+                schreibe_stuetzpunkt(self.daten, sp)
+            else:
+                loesche_stuetzpunkt(self.daten, sid)
         if not self.komplexe:
             return
         dateien = {p.stem: p for p in komplex_dateien(self.daten)}
@@ -358,6 +392,7 @@ def uebernimm(
             "aenderung": u.aendern,
             "anlagen": u.anlagen,
             "sportkomplex": u.sportkomplex,
+            "stuetzpunkt": u.stuetzpunkt,
         }.get(art, u.organisation)(a, v)
         e.uebernommen[art] += 1
         if a.kommentar:

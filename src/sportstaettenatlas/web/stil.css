@@ -273,3 +273,7 @@ aside.details tr.leer td { color: #aaa; }
 .teil { border-top: 3px solid #D8DDE4; margin-top: 28px; padding-top: 6px; }
 .teil:first-of-type { margin-top: 12px; }
 .teil-titel { font-size: 20px; margin: 10px 0 2px; }
+.u-kopf { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.u-kopf .u-sport { font-size: 14px; color: #555; }
+.u-kopf select { margin-left: 6px; }
+td.abgelaufen { color: #b00020; }

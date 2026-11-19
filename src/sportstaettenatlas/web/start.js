@@ -127,11 +127,11 @@ karte.on("moveend", () => { const a = ANSICHTEN[AKTIV]; if (a && a.aktualisiere)
 
 // ---------- Start -----------------------------------------------------------------------
 (async function start() {
-  let bestand, gebiete, analysen, schema, organisationen, komplexe;
+  let bestand, gebiete, analysen, schema, organisationen, komplexe, stuetzpunkte;
   try {
-    [bestand, gebiete, analysen, schema, organisationen, komplexe] = await Promise.all(["bestand.geojson",
+    [bestand, gebiete, analysen, schema, organisationen, komplexe, stuetzpunkte] = await Promise.all(["bestand.geojson",
       "gebiete.json", "analysen/index.json", "schema.json", "organisationen.json",
-      "sportkomplexe.json"].map(holeJson));
+      "sportkomplexe.json", "stuetzpunkte.json"].map(holeJson));
   } catch (fehler) {
     ladeFehler(fehler);
     throw fehler;
@@ -139,6 +139,7 @@ karte.on("moveend", () => { const a = ANSICHTEN[AKTIV]; if (a && a.aktualisiere)
   if (schema) SCHEMA = schema;
   setzeOrganisationen(organisationen && organisationen.eintraege);
   setzeSportkomplexe(komplexe && komplexe.eintraege, bestand && bestand.features);
+  setzeStuetzpunkte(stuetzpunkte && stuetzpunkte.eintraege);
   const hash = new URLSearchParams(location.hash.slice(1));
   starteGebietswahl(gebiete);
   if (bestand && bestand.features.length) {

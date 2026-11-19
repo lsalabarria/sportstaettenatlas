@@ -326,7 +326,7 @@ def cmd_seite(args):
     """Statische Webseite für GitHub Pages (Ordner docs/) erzeugen."""
     from . import gebiete as gb
     from .modell import schreibe_doku
-    from .bestand import lies_sportkomplexe
+    from .bestand import lies_sportkomplexe, lies_stuetzpunkte
     from .seite import lade_analysen, schreibe_webseite, speichere_analyse
 
     bestand, organisationen, verstoesse = _lies_bestand()
@@ -355,6 +355,7 @@ def cmd_seite(args):
         organisationen=organisationen,
         von_hand=WEBSEITE,
         sportkomplexe=lies_sportkomplexe(DATEN),
+        stuetzpunkte=lies_stuetzpunkte(DATEN),
     )
     print(f"Webseite: {DOCS}/  ({info['gesamt'] / 1e6:.1f} MB)")
     for name, _, anzahl, groesse in info["dateien"]:

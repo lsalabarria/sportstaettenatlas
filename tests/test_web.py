@@ -72,6 +72,25 @@ BESTAND = [
 ]
 SID = BESTAND[0]["id"]
 KOMPLEX = {"id": "dddddddd-4444-4444-8444-444444444444", "name": "Sportzentrum Berg"}
+T3 = "33333333-3333-4333-8333-333333333333"
+STUETZPUNKTE = [
+    {  # über den Sportkomplex: Sportplatz Berg und Tennisanlage Bergen
+        "id": "eeeeeeee-5555-4555-8555-555555555555",
+        "name": "Bundesstützpunkt Tennis Berg",
+        "art": "Bundesstützpunkt",
+        "sportarten": ["Tennis"],
+        "gueltig_bis": "2028-12-31",
+        "sportkomplexe": [KOMPLEX["id"]],
+    },
+    {
+        "id": "eeeeeeee-6666-4666-8666-666666666666",
+        "name": "Landesstützpunkt Fußball Tal",
+        "art": "Landesstützpunkt",
+        "sportarten": ["Fußball"],
+        "gueltig_bis": "2020-12-31",
+        "sportstaetten": [T3],
+    },
+]
 
 
 def _leaflet() -> Path:
@@ -98,7 +117,11 @@ def url(tmp_path_factory):
     docs = tmp_path_factory.mktemp("docs")
     shutil.copytree(_leaflet(), docs / "vendor" / "leaflet")
     seite.schreibe_webseite(
-        docs, bestand=BESTAND, organisationen=ORGANISATIONEN, sportkomplexe=[KOMPLEX]
+        docs,
+        bestand=BESTAND,
+        organisationen=ORGANISATIONEN,
+        sportkomplexe=[KOMPLEX],
+        stuetzpunkte=STUETZPUNKTE,
     )
     konfig = docs / "konfig.js"
     konfig.write_text(
@@ -220,6 +243,21 @@ def test_uebersicht_zeigt_bestand_und_befuellung(oeffne):
     )
     assert kacheln["Sportstätten"] == "3" and kacheln["Sportanlagen"] == "3"
     assert kacheln["Sportkomplexe"] == "1"
+    assert (
+        kacheln["Olympiastützpunkte"],
+        kacheln["Bundesstützpunkte"],
+        kacheln["Landesstützpunkte"],
+    ) == ("0", "1", "1")
+    page.select_option("[data-u-sport]", "Tennis")
+    page.wait_for_timeout(100)
+    kacheln = dict(
+        zip(
+            page.locator("#seite-uebersicht .kachel .label").all_inner_texts(),
+            page.locator("#seite-uebersicht .kachel .wert").all_inner_texts(),
+        )
+    )
+    assert kacheln["Sportstätten"] == "1" and kacheln["Bundesstützpunkte"] == "1"
+    assert kacheln["Landesstützpunkte"] == "0"
     # auch ohne Sportkomplexe: Auswahl in der Liste und Kachel bleiben
     page.evaluate("SPORTKOMPLEXE.clear()")
     assert 'data-f="komplex"' in page.evaluate("komplexAuswahlHtml('')")
@@ -265,6 +303,62 @@ def test_nach_sportkomplex_filtern(oeffne):
     page.locator(".leaflet-popup [data-nur-komplex]").click()
     assert page.locator("#b-zahl").inner_text() == "2 von 3 Sportstätten"
     assert page.locator('input[data-ko="dddddddd-4444-4444-8444-444444444444"]').is_checked()
+
+
+def test_stuetzpunkte(oeffne):
+    page = oeffne()
+    assert "Bundesstützpunkt Tennis Berg" in page.evaluate(f"stpZeile('{SID}')")
+    assert "(bis 31.12.2028)" in page.evaluate(f"stpZeile('{SID}')")
+    page.locator("details:has(#b-stp-n) summary").click()
+    page.locator('input[data-sp="e:Bund"]').check()
+    assert page.locator("#b-zahl").inner_text() == "2 von 3 Sportstätten"
+    page.locator('input[data-sp="e:Land"]').check()
+    assert page.locator("#b-zahl").inner_text() == "1 von 3 Sportstätten"
+
+    page = oeffne("#ansicht=liste&teil=stuetzpunkte")
+    zeilen = page.locator("table.liste tr.zeile")
+    assert zeilen.count() == 2
+    assert page.locator("td.abgelaufen").inner_text() == "31.12.2020"
+    page.click('tr[data-stp="eeeeeeee-5555-4555-8555-555555555555"]')
+    assert sorted(page.locator("table.liste tr.zeile td:first-child").all_inner_texts()) == [
+        "Sportplatz Berg",
+        "Tennisanlage Bergen",
+    ]
+    assert page.input_value('[data-f="stp"]') == "eeeeeeee-5555-4555-8555-555555555555"
+
+
+def test_stuetzpunkt_vorschlagen(oeffne):
+    page = oeffne("#ansicht=vorschlag")
+    # von einer Sportstätte mit genau einem Stützpunkt: dieser zum Ändern
+    page.evaluate(f"ANSICHTEN.vorschlag.stuetzpunktVon('{T3}')")
+    page.wait_for_timeout(200)
+    assert page.locator("#v-teil-stp").is_visible()
+    assert page.input_value("input[name='sp.name']") == "Landesstützpunkt Fußball Tal"
+    page.fill("input[name='sp.gueltig_bis']", "2030-12-31")
+    _senden(page)
+    d = _gesendet(page)
+    assert modell.pruefe(modell.Vorschlag, d) == []
+    assert d["stuetzpunkt_id"] == "eeeeeeee-6666-4666-8666-666666666666" and d["geaendert"] == [
+        "gueltig_bis"
+    ]
+    # neu: Sportkomplex statt einzelner Sportstätten
+    page.evaluate("window.__url = null")
+    page.evaluate("ANSICHTEN.vorschlag.stuetzpunkt(null)")
+    page.wait_for_timeout(200)
+    page.fill("input[name='sp.name']", "Olympiastützpunkt Berg")
+    page.select_option("select[name='sp.art']", "Olympiastützpunkt")
+    _senden(page)
+    assert "mindestens eine Sportstätte" in page.inner_text("#v-fehler")
+    page.fill("#v-stp-staette-suche", "Sportzentrum")
+    page.click("#v-stp-staette-treffer li[data-ko]")
+    _senden(page)
+    d = _gesendet(page)
+    assert modell.pruefe(modell.Vorschlag, d) == []
+    assert d["stuetzpunkt"] == {
+        "name": "Olympiastützpunkt Berg",
+        "art": "Olympiastützpunkt",
+        "sportkomplexe": [KOMPLEX["id"]],
+    }
 
 
 # --- Vorschläge: was das Formular sendet, muss das Modell annehmen --------------------------

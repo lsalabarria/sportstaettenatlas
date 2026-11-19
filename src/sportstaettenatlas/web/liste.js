@@ -9,11 +9,12 @@ function ansichtListe(bestand) {
   const el = document.getElementById("seite-liste");
   const start = new URLSearchParams(location.hash.slice(1));
   const z = {  // Zustand, landet in der Adresse
-    teil: ["staetten", "anlagen", "komplexe", "betreiber"].includes(start.get("teil")) ? start.get("teil") : "staetten",
+    teil: ["staetten", "anlagen", "komplexe", "stuetzpunkte", "betreiber"].includes(start.get("teil")) ? start.get("teil") : "staetten",
     q: start.get("q") || "", sportart: start.get("sportart") || "", kategorie: start.get("kategorie") || "",
     typ: start.get("typ") || "", sort: start.get("sort") || "", ab: start.get("ab") === "1",
     id: start.get("id") || "", anlage: start.get("anlage") || "", leere: false,
     komplex: start.get("komplex") || "",  // "": alle, IN_KOMPLEX: in irgendeinem, sonst die ID
+    stp: start.get("stp") || "",  // Stützpunkt: "", "*", "e:<Ebene>" oder die ID (stpPasst)
   };
   let zeigen = LISTE_SCHRITT, gezeichnet = false;
   const NACH_ID = new Map(bestand.eintraege.map(e => [e.p.id, e]));
@@ -52,7 +53,7 @@ function ansichtListe(bestand) {
     return bestand.eintraege.filter(e => imGebiet(e.p.ars)
       && (!z.sportart || e.sp.has(z.sportart))
       && (!z.kategorie || e.kat === z.kategorie)
-      && (!z.typ || e.typen.has(z.typ)) && imKomplex(e)
+      && (!z.typ || e.typen.has(z.typ)) && imKomplex(e) && stpPasst(e.p.id, z.stp)
       && (!w.length || w.every(x => suchtextE(e).includes(x))));
   }
   function anlagenZeilen() {
@@ -60,7 +61,7 @@ function ansichtListe(bestand) {
     return ANLAGEN.filter(x => imGebiet(x.e.p.ars)
       && (!z.sportart || x.sp.includes(z.sportart))
       && (!z.kategorie || x.e.kat === z.kategorie)
-      && (!z.typ || x.a.typ === z.typ) && imKomplex(x.e)
+      && (!z.typ || x.a.typ === z.typ) && imKomplex(x.e) && stpPasst(x.e.p.id, z.stp)
       && (!w.length || w.every(t => (suchtextE(x.e) + " " + suchtext([x.a.typ, x.a.bezeichnung, x.a.id])).includes(t))));
   }
   const SPALTEN = {
@@ -186,16 +187,46 @@ function ansichtListe(bestand) {
       + `</tbody></table>`;
   }
 
+  // --- Teil „Stützpunkte“: je Stützpunkt seine Sportstätten im Gebiet; Klick zeigt sie ---
+  function stpTabelle() {
+    const w = worte();
+    const zeilen = stuetzpunkteNachName().map(sp => ({
+      sp, st: [...sp.alle].map(id => NACH_ID.get(id)).filter(e => e && imGebiet(e.p.ars)) }))
+      .filter(x => (x.st.length || !x.sp.alle.size) && (!z.sportart || (x.sp.sportarten || []).includes(z.sportart))
+        && (!w.length || w.every(t => suchtext([x.sp.name, x.sp.art, x.sp.traeger, ...(x.sp.sportarten || []),
+          ...x.st.map(e => e.p.name)]).includes(t))));
+    const sportarten = [...new Set(stuetzpunkteNachName().flatMap(x => x.sportarten || []))].sort((a, b) => a.localeCompare(b, "de"));
+    const such = `<div class="reiter filter-zeile"><input type="search" data-f="q" value="${esc(z.q)}" `
+      + `placeholder="Stützpunkt, Träger oder Sportstätte suchen" aria-label="Suchen">`
+      + `<select data-f="sportart" aria-label="Sportart"><option value="">alle Sportarten</option>`
+      + sportarten.map(s => `<option${s === z.sportart ? " selected" : ""}>${esc(s)}</option>`).join("") + `</select></div>`;
+    if (!STUETZPUNKTE.size) {
+      return such + `<p class="unter">Noch keine Stützpunkte eingetragen. Vorschlagen über „Vorschlag“ → „Stützpunkt“.</p>`;
+    }
+    const heute = new Date().toISOString().slice(0, 10);
+    return such + `<p class="unter">${zahl(zeilen.length)} Stützpunkte · Klick auf eine Zeile: ihre Sportstätten</p>`
+      + `<table class="tabelle liste"><thead><tr><th>Name</th><th>Art</th><th>Sportarten</th><th>Träger</th>`
+      + `<th>Gültig bis</th><th class="zahl">Sportstätten</th><th></th></tr></thead><tbody>`
+      + (zeilen.map(({ sp, st }) => `<tr class="zeile" data-stp="${esc(sp.id)}"><td>${esc(sp.name)}</td>`
+        + `<td class="klein">${esc(sp.art || "")}</td><td class="klein">${esc((sp.sportarten || []).join(", "))}</td>`
+        + `<td class="klein">${esc(sp.traeger || "")}</td>`
+        + `<td class="klein${sp.gueltig_bis && sp.gueltig_bis < heute ? " abgelaufen" : ""}">${esc(datumText(sp.gueltig_bis))}</td>`
+        + `<td class="zahl">${zahl(st.length)}</td>`
+        + `<td><a data-stp-karte="${esc(sp.id)}" title="Auf der Karte zeigen">Karte</a></td></tr>`).join("")
+        || `<tr><td colspan="7" class="klein">Keine Einträge.</td></tr>`)
+      + `</tbody></table>`;
+  }
+
   // --- Zeichnen ---
   function zeichne() {
     gezeichnet = true;
     const zaehlen = { staetten: staettenZeilen, anlagen: anlagenZeilen };
     const reiter = [["staetten", "Sportstätten"], ["anlagen", "Sportanlagen"], ["komplexe", "Sportkomplexe"],
-      ["betreiber", "Organisationen"]]
+      ["stuetzpunkte", "Stützpunkte"], ["betreiber", "Organisationen"]]
       .map(([k, t]) => `<button type="button" data-teil="${k}" aria-pressed="${z.teil === k}">${t}</button>`).join("");
     let h = `<div class="inhalt liste-inhalt"><h2>Liste: ${esc(gebietName())}</h2><div class="reiter teile">${reiter}</div>`;
-    if (z.teil === "komplexe") {
-      h += komplexTabelle() + `</div>`;
+    if (z.teil === "komplexe" || z.teil === "stuetzpunkte") {
+      h += (z.teil === "komplexe" ? komplexTabelle() : stpTabelle()) + `</div>`;
       el.innerHTML = h;
     } else if (z.teil === "betreiber") {
       h += `<div id="l-betreiber"></div></div>`;
@@ -213,8 +244,8 @@ function ansichtListe(bestand) {
         + `<select data-f="sportart" aria-label="Sportart">${optionen(SPORTARTEN, z.sportart, "alle Sportarten")}</select>`
         + `<select data-f="kategorie" aria-label="Kategorie">${optionen(KATEGORIEN, z.kategorie, "alle Kategorien")}</select>`
         + `<select data-f="typ" aria-label="Typ der Sportanlage">${optionen(TYPEN, z.typ, "alle Sportanlagen")}</select>`
-        + komplexAuswahlHtml(z.komplex)
-        + (z.q || z.sportart || z.kategorie || z.typ || z.komplex ? `<button type="button" data-zuruecksetzen>Filter aufheben</button>` : "")
+        + komplexAuswahlHtml(z.komplex) + stpAuswahlHtml(z.stp)
+        + (z.q || z.sportart || z.kategorie || z.typ || z.komplex || z.stp ? `<button type="button" data-zuruecksetzen>Filter aufheben</button>` : "")
         + `</div><p class="unter">${zahl(liste.length)} ${z.teil === "staetten" ? "Sportstätten" : "Sportanlagen"}`
         + (z.sportart && z.teil === "anlagen" ? ` · Sportart der Anlage, sonst die ihrer Sportstätte (<span class="geerbt">so</span>)` : "")
         + (z.sportart && z.teil === "staetten" ? ` · Sportart der Sportstätte oder einer ihrer Anlagen` : "")
@@ -253,11 +284,15 @@ function ansichtListe(bestand) {
       return;
     }
     if (t.closest("[data-mehr]")) { zeigen += LISTE_SCHRITT; zeichne(); return; }
+    const spKarte = t.closest("[data-stp-karte]");
+    if (spKarte) { ev.preventDefault(); bestand.zeigeStuetzpunkt(spKarte.dataset.stpKarte); return; }
+    const sp = t.closest("tr[data-stp]");
+    if (sp) { z.teil = "staetten"; z.stp = sp.dataset.stp; z.q = ""; z.sportart = ""; z.sort = ""; zeigen = LISTE_SCHRITT; zeichne(); return; }
     const koKarte = t.closest("[data-komplex-karte]");
     if (koKarte) { ev.preventDefault(); bestand.zeigeKomplex(koKarte.dataset.komplexKarte); return; }
     const ko = t.closest("tr[data-komplex]");
     if (ko) { z.teil = "staetten"; z.komplex = ko.dataset.komplex; z.q = ""; z.sort = ""; zeigen = LISTE_SCHRITT; zeichne(); return; }
-    if (t.closest("[data-zuruecksetzen]")) { z.q = z.sportart = z.kategorie = z.typ = z.komplex = ""; zeichne(); return; }
+    if (t.closest("[data-zuruecksetzen]")) { z.q = z.sportart = z.kategorie = z.typ = z.komplex = z.stp = ""; zeichne(); return; }
     if (t.closest("[data-zu]")) { z.id = z.anlage = ""; zeichne(); return; }
     const th = t.closest("th[data-sort]");
     if (th && th.closest(".liste")) {
@@ -275,7 +310,7 @@ function ansichtListe(bestand) {
     gebietGeaendert() { if (!el.hidden) { zeigen = LISTE_SCHRITT; zeichne(); } },
     zustand() {
       const teile = [["teil", z.teil !== "staetten" ? z.teil : ""], ["q", z.q], ["sportart", z.sportart],
-        ["kategorie", z.kategorie], ["typ", z.typ], ["komplex", z.komplex], ["sort", z.sort], ["ab", z.sort && z.ab ? "1" : ""],
+        ["kategorie", z.kategorie], ["typ", z.typ], ["komplex", z.komplex], ["stp", z.stp], ["sort", z.sort], ["ab", z.sort && z.ab ? "1" : ""],
         ["id", z.teil !== "betreiber" ? z.id : ""], ["anlage", z.teil !== "betreiber" ? z.anlage : ""]];
       return teile.filter(([, v]) => v).map(([k, v]) => `${k}=${encodeURIComponent(v)}`).join("&");
     },

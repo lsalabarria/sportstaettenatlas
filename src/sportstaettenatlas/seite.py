@@ -13,6 +13,7 @@
                                         aus webseite/analysen/<name>/ (speichere_analyse)
     docs/vendor/leaflet/                Kartenbibliothek, lokal (keine Anfragen an Dritt-CDNs)
     docs/daten/sportkomplexe.json       Sportkomplexe (komplex_kurz)
+    docs/daten/stuetzpunkte.json        Stützpunkte
     docs/daten/organisationen.json      Verzeichnis der Organisationen
     docs/.nojekyll                      GitHub Pages soll die Dateien unverändert ausliefern
     docs/daten/schema.json              Datenmodell (modell.schema) für Formular, Popup, Liste
@@ -282,6 +283,7 @@ def schreibe_webseite(
     organisationen: list[dict] | None = None,
     von_hand: Path | None = None,
     sportkomplexe: list[dict] | None = None,
+    stuetzpunkte: list[dict] | None = None,
 ) -> dict:
     """Webseite nach `ausgabe` (z. B. docs/) schreiben. Liefert eine kleine Statistik.
 
@@ -292,6 +294,7 @@ def schreibe_webseite(
     ars_von:  (lon, lat) → Regionalschlüssel der Gemeinde, für Datensätze aus `bestand`
     organisationen: Verzeichnis der Organisationen (Eigentümer, Betreiber, Nutzer) (bestand.lies_organisationen)
     sportkomplexe: Sportkomplexe (bestand.lies_sportkomplexe)
+    stuetzpunkte: Stützpunkte (bestand.lies_stuetzpunkte)
     von_hand: Ordner mit konfig.js, impressum.html, datenschutz.html (webseite/); sie werden
               nach `ausgabe` kopiert. Fehlt eine dort, wird sie aus `ausgabe` übernommen oder
               aus der Vorlage angelegt. Ohne Ordner: in `ausgabe` nur beim ersten Mal angelegt.
@@ -329,6 +332,19 @@ def schreibe_webseite(
                 "sportkomplexe.json",
                 "Sportkomplexe (Klammer um mehrere Sportstätten)",
                 {"eintraege": [komplex_kurz(k) for k in sportkomplexe]},
+            )
+        )
+    if stuetzpunkte is not None:
+        schreiben.append(
+            (
+                "stuetzpunkte.json",
+                "Stützpunkte des Leistungssports",
+                {
+                    "eintraege": [
+                        {k: v for k, v in sp.items() if v not in (None, "", [])}
+                        for sp in stuetzpunkte
+                    ]
+                },
             )
         )
     # Datenmodell: Felder, Regeln und Beschriftungen für Formular, Popup und Übersicht

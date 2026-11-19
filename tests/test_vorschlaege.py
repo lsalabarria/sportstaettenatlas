@@ -235,3 +235,36 @@ def test_sportkomplex_vorschlagen_aendern_aufloesen(tmp_path):
     zu_klein = {**neu, "sportstaetten": [SID]}
     e = uebernimm(lies_export(_export(tmp_path, [(zu_klein, "")])), daten, _kreis, alle=True)
     assert any("mindestens zwei Sportstätten" in w for w in e.warnungen)
+
+
+def test_stuetzpunkt_vorschlagen_aendern_loeschen(tmp_path):
+    from sportstaettenatlas.bestand import lies_stuetzpunkte
+
+    daten = _bestand(tmp_path)
+    neu = {
+        "version": 1,
+        "art": "stuetzpunkt",
+        "stuetzpunkt": {
+            "name": "Landesstützpunkt Turnen",
+            "art": "Landesstützpunkt",
+            "sportstaetten": [SID],
+        },
+    }
+    e = uebernimm(lies_export(_export(tmp_path, [(neu, "")])), daten, _kreis)
+    assert e.uebernommen["stuetzpunkt"] == 1 and not e.warnungen
+    (sp,) = lies_stuetzpunkte(daten)
+    assert (sp["name"], sp["sportstaetten"]) == ("Landesstützpunkt Turnen", [SID])
+    aendern = {
+        "version": 1,
+        "art": "stuetzpunkt",
+        "stuetzpunkt_id": sp["id"],
+        "stuetzpunkt": {**neu["stuetzpunkt"], "gueltig_bis": "2029-12-31"},
+        "geaendert": ["gueltig_bis"],
+    }
+    loeschen = {"version": 1, "art": "stuetzpunkt", "stuetzpunkt_id": sp["id"], "loeschen": True}
+    uebernimm(lies_export(_export(tmp_path, [(neu, ""), (aendern, "")])), daten, _kreis)
+    assert lies_stuetzpunkte(daten)[0]["gueltig_bis"] == "2029-12-31"
+    uebernimm(
+        lies_export(_export(tmp_path, [(neu, ""), (aendern, ""), (loeschen, "")])), daten, _kreis
+    )
+    assert lies_stuetzpunkte(daten) == []

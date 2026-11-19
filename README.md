@@ -25,7 +25,8 @@ Was im Datenbestand steht, alle Felder und wie man Daten ändert oder einliest:
 ## Aufbau
 
 ```
-daten/      Datenbestand (im Git, von Hand gepflegt) – siehe daten/README.md
+daten/      Datenbestand (im Git, von Hand gepflegt): Sportstätten, Sportkomplexe, Stützpunkte,
+            Organisationen – siehe daten/README.md
 webseite/   für die Webseite, was sich nicht aus daten/ erzeugen lässt (im Git): konfig.js,
             Impressum, Datenschutz und unter analysen/ das Ergebnis des ALKIS-Abgleichs
 docs/       Webseite (von `seite` erzeugt, nicht im Git; auf GitHub baut sie die Action)
@@ -151,10 +152,10 @@ liefert den Ordner aus, ohne Server und Datenbank. Lokal ansehen: `seite --vorsc
 
 | Reiter | Inhalt |
 |---|---|
-| **Karte** | ein Punkt je Sportstätte; Filter nach Sportanlagen (nach Gruppen), Kategorie, Art des Betreibers, Sportarten und Sportkomplex; das Fenster einer Sportstätte listet ihre Anlagen |
-| **Liste** | alle Sportstätten, Sportanlagen, Sportkomplexe bzw. Organisationen (als Eigentümer, Betreiber oder Nutzer), filterbar nach Sportart, Kategorie, Typ, Sportkomplex und Text, sortierbar (auch nach Befüllung); ein Klick zeigt alle Angaben, „Karte“ springt zum Punkt |
-| **Übersicht** | Zahlen, Befüllung der Angaben nach Abschnitten (Felder nur unter den Anlagen, für die sie gedacht sind), Kategorien und Typen, je Kreis |
-| **Vorschlag** | Formular für neue Sportstätten, Änderungen, Organisationen und Sportkomplexe, weiter zu LimeSurvey |
+| **Karte** | ein Punkt je Sportstätte; Filter nach Sportanlagen (nach Gruppen), Kategorie, Art des Betreibers, Sportarten, Sportkomplex und Stützpunkt (je Ebene oder einzeln); das Fenster einer Sportstätte listet ihre Anlagen und Stützpunkte |
+| **Liste** | alle Sportstätten, Sportanlagen, Sportkomplexe, Stützpunkte bzw. Organisationen (als Eigentümer, Betreiber oder Nutzer), filterbar nach Sportart, Kategorie, Typ, Sportkomplex, Stützpunkt und Text, sortierbar (auch nach Befüllung); ein Klick zeigt alle Angaben, „Karte“ springt zum Punkt |
+| **Übersicht** | Zahlen (auch Olympia-, Bundes- und Landesstützpunkte), filterbar nach Sportart; Befüllung der Angaben nach Abschnitten (Felder nur unter den Anlagen, für die sie gedacht sind), Kategorien und Typen, je Kreis |
+| **Vorschlag** | Formular für neue Sportstätten, Änderungen, Organisationen, Sportkomplexe und Stützpunkte, weiter zu LimeSurvey |
 | **Analysen** | der ALKIS-Abgleich; lädt erst beim Öffnen |
 
 Oben lässt sich ein Kreis, eine Verbandsgemeinde oder Gemeinde wählen. Reiter, Gebiet und
@@ -164,10 +165,12 @@ OpenStreetMap.
 
 ### Vorschläge
 
-Das Formular kennt fünf Arten: **neue Sportstätte** mit ihren Sportanlagen, **Angaben einer
+Das Formular kennt sechs Arten: **neue Sportstätte** mit ihren Sportanlagen, **Angaben einer
 Sportstätte ändern** (auch ihren Sportkomplex), ihre **Sportanlagen ändern** (hinzufügen, ändern,
-entfernen), **Organisation** eintragen, ändern oder löschen und **Sportkomplex** anlegen,
-ändern (Name, Adresse, welche Sportstätten dazugehören) oder auflösen. Es prüft die Regeln des Modells und meldet
+entfernen), **Organisation** eintragen, ändern oder löschen, **Sportkomplex** anlegen,
+ändern (Name, Adresse, welche Sportstätten dazugehören) oder auflösen und **Stützpunkt**
+eintragen (Art, Sportarten, Träger, Gültigkeit, Sportstätten oder Sportkomplexe), ändern oder
+löschen. Es prüft die Regeln des Modells und meldet
 mögliche Doppelungen (höchstens 60 m entfernt, gleiche Kategorie in 250 m, sehr ähnlicher
 Name oder gleiche Adresse; bei Organisationen: Name schon im Verzeichnis).
 
@@ -186,7 +189,8 @@ Werte als Regelverstoß, bis sie aufgelöst sind. Übernommene Antwort-IDs stehe
 zeigt der Befehl nur an, gespeichert werden sie nicht. Liegt eine geänderte Lage danach in
 einem anderen Kreis, verschiebt `einordnen` die Sportstätte. Ein vorgeschlagener Sportkomplex
 wird angelegt und bei seinen Sportstätten eingetragen; Sportstätten, die ein Vorschlag aus
-einem Komplex nimmt, verlieren ihn, ein aufgelöster Komplex verschwindet ganz.
+einem Komplex nimmt, verlieren ihn, ein aufgelöster Komplex verschwindet ganz. Ein Stützpunkt
+wird angelegt, geändert (die geänderten Felder) oder gelöscht.
 
 „Bug melden“ oben öffnet ein öffentliches Ticket auf GitHub (Vorlage
 `.github/ISSUE_TEMPLATE/fehler.yml`).
