@@ -135,6 +135,9 @@ def cmd_bestand(args):
             print(f"  ohne passendes Feld (ignoriert): {', '.join(b.ignoriert)}")
         if b.kontakt:
             print(f"  Kontaktdaten (nie gelesen): {', '.join(b.kontakt)}")
+        if b.bereinigt:
+            weg = ", ".join(f"{k} {v}×" for k, v in b.bereinigt.most_common())
+            print(f"  Formfehler behoben: {weg}")
         if b.nicht_lesbar:
             fehler = ", ".join(f"{k} {v}×" for k, v in b.nicht_lesbar.most_common())
             print(f"  Werte, die nicht zum Feld passen (übernommen, wie sie sind): {fehler}")
@@ -427,10 +430,16 @@ def cmd_migrieren(args):
     from .bestand import migriere_bestand
 
     try:
-        e = migriere_bestand(DATEN, dict(args.umbenennen), set(args.entfernen), args.probe)
+        e = migriere_bestand(
+            DATEN, dict(args.umbenennen), set(args.entfernen), args.probe, args.bereinigen
+        )
     except ValueError as exc:
         raise SystemExit(str(exc)) from None
-    for was, zaehler in (("umbenannt", e.umbenannt), ("entfernt", e.entfernt)):
+    for was, zaehler in (
+        ("umbenannt", e.umbenannt),
+        ("entfernt", e.entfernt),
+        ("bereinigt", e.bereinigt),
+    ):
         for feld, n in zaehler.items():
             print(f"  {was}: {feld} in {n} Dateien")
     for pfad, alt, neu in e.konflikte:
@@ -568,6 +577,11 @@ def main(argv: list[str] | None = None) -> None:
         action="append",
         default=[],
         help="Feld aus allen Dateien löschen, z. B. quellen (mehrfach möglich)",
+    )
+    sp.add_argument(
+        "--bereinigen",
+        action="store_true",
+        help="Formfehler beheben: Hausnummer „6.0“ → „6“, Webseite ohne https://, Platzhalter „-“",
     )
     sp.add_argument("--probe", action="store_true", help="nur zählen, nichts schreiben")
     sp.set_defaults(func=cmd_migrieren)

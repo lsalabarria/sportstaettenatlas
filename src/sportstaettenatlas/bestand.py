@@ -406,6 +406,7 @@ class Migration:
     umbenannt: Counter = field(default_factory=Counter)
     entfernt: Counter = field(default_factory=Counter)
     konflikte: list = field(default_factory=list)  # (Datei, alt, neu): beide Namen belegt
+    bereinigt: Counter = field(default_factory=Counter)  # Feld → Anzahl (werte.bereinige)
 
 
 def migriere_bestand(
@@ -413,11 +414,14 @@ def migriere_bestand(
     umbenennen: dict[str, str] | None = None,
     entfernen: set[str] | frozenset[str] = frozenset(),
     probe: bool = False,
+    bereinigen: bool = False,
 ) -> Migration:
     """Felder in allen Dateien von daten/ umbenennen ({alt: neu}) oder entfernen und die
     Schlüssel in die Reihenfolge des Modells bringen. Sportstätten, Sportanlagen und
     Organisationen; nur oberste Ebene. Steht der neue Name schon in einer Datei, bleibt sie
-    für dieses Feld, wie sie ist (konflikte). Mit probe wird nichts geschrieben."""
+    für dieses Feld, wie sie ist (konflikte). Mit bereinigen auch Formfehler beheben
+    (werte.bereinige: Hausnummer „6.0“, Webseite ohne https://, Platzhalter wie „-“). Mit
+    probe wird nichts geschrieben."""
     umbenennen = umbenennen or {}
     felder = {
         *Sportstaette.model_fields,
@@ -455,6 +459,9 @@ def migriere_bestand(
                 continue
             d = {n if k == a else k: v for k, v in d.items()}
             e.umbenannt[f"{a} → {n}"] += 1
+        if bereinigen:
+            for feld in werte.bereinige(d):
+                e.bereinigt[feld] += 1
         neu = als_json(ordne(d, modell))
         if neu != alt:
             e.dateien += 1

@@ -216,3 +216,14 @@ def test_trennzeichen_aus_der_kopfzeile():
     assert _trenner('id;name;"Art, Typ"\n1;"a, b; c";x\n') == ";"
     assert _trenner('ID,Name,"Öffentlicher Zugang"\n1,"x; y",z\n') == ","
     assert _trenner("id\tname\n1\tx\n") == "\t"
+
+
+def test_formfehler_beim_einlesen(tmp_path):
+    tabelle = tmp_path / "s.csv"
+    tabelle.write_text(
+        "name;kategorie;lat;lon;hausnummer;website\nHalle;Sporthalle;50.1;7.1;6.0;www.halle.de\n",
+        "utf-8",
+    )
+    [d], b = einlesen.lies_csv(tabelle, lage_aus=lambda lat, lon: {"lon": lon, "lat": lat})
+    assert d["adresse"]["hausnummer"] == "6" and d["website"] == "https://www.halle.de"
+    assert b.bereinigt == {"website": 1, "adresse.hausnummer": 1}

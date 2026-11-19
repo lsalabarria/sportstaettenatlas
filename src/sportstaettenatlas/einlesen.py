@@ -49,6 +49,7 @@ class Bericht:
     ignoriert: list[str] = field(default_factory=list)  # Spalten ohne passendes Feld
     kontakt: list[str] = field(default_factory=list)  # Spalten mit Kontaktdaten, nicht gelesen
     nicht_lesbar: Counter = field(default_factory=Counter)  # Feld → Werte, die nicht passten
+    bereinigt: Counter = field(default_factory=Counter)  # Feld → Werte, die werte.bereinige behob
 
 
 # --- Spalten erkennen --------------------------------------------------------------------
@@ -291,6 +292,8 @@ def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
                 werte.setze(d, pfad_, text)  # bleibt, wie er ist; die Regeln melden ihn
         if not d:
             continue
+        for feld in werte.bereinige(d):  # „6.0“ als Hausnummer, Webseite ohne https:// …
+            b.bereinigt[feld] += 1
         if ist_org:
             datensaetze.append(d)
             continue

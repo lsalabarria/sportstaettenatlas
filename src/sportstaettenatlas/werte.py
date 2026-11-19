@@ -105,6 +105,43 @@ def slug(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", t).strip("-")
 
 
+# --- Häufige Formfehler beheben (beim Einlesen und mit `migrieren --bereinigen`) -----------
+
+_PLATZHALTER = {"-", "--", "/", "?", "k.a.", "k. a.", "keine", "nicht bekannt", "unbekannt"}
+_DOMAIN = re.compile(r"^(?:www\.)?[\w-]+(?:\.[\w-]+)*\.[a-z]{2,}(?:[/?#]\S*)?$", re.IGNORECASE)
+
+
+def hausnummer(t: str) -> str | None:
+    """„6.0“ (von Excel als Zahl gespeichert) → „6“; Platzhalter wie „-“ → None."""
+    t = str(t).strip()
+    if t.lower() in _PLATZHALTER:
+        return None
+    return m.group(1) if (m := re.fullmatch(r"(\d+)\.0+", t)) else t
+
+
+def website(t: str) -> str | None:
+    """„www.verein.de“ → „https://www.verein.de“; Platzhalter wie „-“ → None. Was nicht wie
+    eine einzelne Adresse aussieht (z. B. zwei durch Komma), bleibt, wie es ist."""
+    t = str(t).strip()
+    if t.lower() in _PLATZHALTER:
+        return None
+    return f"https://{t}" if _DOMAIN.fullmatch(t) else t
+
+
+def bereinige(d: dict) -> list[str]:
+    """In einem Datensatz (Sportstätte, Sportkomplex, Organisation …) `website` und
+    `adresse.hausnummer` bereinigen; liefert die Pfade, die sich geändert haben."""
+    geaendert = []
+    for pfad, regel in (("website", website), ("adresse.hausnummer", hausnummer)):
+        alt = hole(d, pfad)
+        if isinstance(alt, str) and (neu := regel(alt)) != alt:
+            setze(d, pfad, neu)
+            if isinstance(d.get("adresse"), dict) and not d["adresse"]:
+                del d["adresse"]
+            geaendert.append(pfad)
+    return geaendert
+
+
 # --- Pfade in verschachtelten Angaben („adresse.plz“) -------------------------------------
 
 

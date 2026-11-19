@@ -289,3 +289,42 @@ def test_auswahllisten_einmal():
     b = modell.readme_block()
     assert b.count("„Sportparkett“") == 1  # die Liste steht einmal, unter „Auswahllisten“
     assert "Auswahl [Bodenbelag](#auswahllisten)" in b
+
+
+def test_bereinigen():
+    from sportstaettenatlas import werte
+
+    assert werte.hausnummer("6.0") == "6" and werte.hausnummer("12a") == "12a"
+    assert werte.hausnummer("-") is None and werte.hausnummer("2.5") == "2.5"  # bleibt (Regel)
+    assert werte.website("www.tv-arzheim.de") == "https://www.tv-arzheim.de"
+    assert werte.website("bendelit.de/verein") == "https://bendelit.de/verein"
+    assert werte.website("http://a.de") == "http://a.de" and werte.website("-") is None
+    zwei = "https://rsv-ga.de, radsportverein-gau-algesheim.de"
+    assert werte.website(zwei) == zwei  # zwei Adressen: von Hand
+    d = {"name": "X", "website": "www.x.de", "adresse": {"hausnummer": "-"}}
+    assert sorted(werte.bereinige(d)) == ["adresse.hausnummer", "website"]
+    assert d == {"name": "X", "website": "https://www.x.de"}
+
+
+def test_migrieren_bereinigen(tmp_path):
+    from sportstaettenatlas.bestand import migriere_bestand
+
+    ordner = tmp_path / "RP" / "07111-koblenz" / STAETTE["id"]
+    ordner.mkdir(parents=True)
+    st = {
+        **STAETTE,
+        "website": "www.verein.de",
+        "adresse": {**STAETTE["adresse"], "hausnummer": "6.0"},
+    }
+    (ordner / f"{STAETTE['id']}_meta.json").write_text(json.dumps(st), "utf-8")
+    org = tmp_path / "organisationen" / "RP" / "ohne-art" / "o1.json"
+    org.parent.mkdir(parents=True)
+    org.write_text(json.dumps({"id": "o1", "name": "TuS", "website": "tus.de"}), "utf-8")
+    probe = migriere_bestand(tmp_path, bereinigen=True, probe=True)
+    assert probe.bereinigt == {"website": 2, "adresse.hausnummer": 1}
+    e = migriere_bestand(tmp_path, bereinigen=True)
+    assert e.dateien == 2
+    neu = json.loads((ordner / f"{STAETTE['id']}_meta.json").read_text("utf-8"))
+    assert neu["website"] == "https://www.verein.de" and neu["adresse"]["hausnummer"] == "6"
+    assert json.loads(org.read_text("utf-8"))["website"] == "https://tus.de"
+    assert migriere_bestand(tmp_path, bereinigen=True).dateien == 0

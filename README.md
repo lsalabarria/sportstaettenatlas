@@ -82,7 +82,7 @@ Alle mit `uv run sportstaettenatlas …`; `--help` zeigt die Optionen.
 | `einordnen` | Sportstätten und Sportkomplexe in den Ordner ihres Kreises, Organisationen in den ihrer Art verschieben |
 | `sportkomplex ID ID …` | Sportkomplex anlegen (`--name`) oder ergänzen (`--zu KOMPLEX`) und die Sportstätten zuordnen; `--entfernen` nimmt sie heraus (siehe [Sportkomplexe](daten/README.md#sportkomplexe)) |
 | `modell` | Feldtabellen in `daten/README.md` und Diagramm schreiben |
-| `migrieren` | Felder in allen Dateien von `daten/` umbenennen oder entfernen (`--umbenennen ALT=NEU`, `--entfernen FELD`, `--probe`) |
+| `migrieren` | Felder in allen Dateien von `daten/` umbenennen oder entfernen (`--umbenennen ALT=NEU`, `--entfernen FELD`, `--probe`); `--bereinigen` behebt Formfehler (Hausnummer `6.0`, Webseite ohne `https://`) |
 | `pruefen` | Bestand prüfen, ohne die Webseite zu bauen (Liste in `results/regelverstoesse.csv`) |
 | `seite` | Webseite nach `docs/` (`--vorschau`: lokal ansehen); prüft dabei mit |
 | `-v alkis` | ALKIS-Abgleich (siehe unten) |
