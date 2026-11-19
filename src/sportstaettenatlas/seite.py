@@ -58,9 +58,7 @@ ANALYSE = "analyse.json"  # Titel, Beschreibungen und Quellenvermerk einer gespe
 # Angaben einer Sportanlage, die die Karte zeigt (neben Typ, Kennung und Name): alle Felder
 # des Modells außer IDs
 ANLAGE_FELDER = tuple(
-    f
-    for f in modell.Sportanlage.model_fields
-    if f not in ("id", "typ", "bezeichnung")
+    f for f in modell.Sportanlage.model_fields if f not in ("id", "typ", "bezeichnung")
 )
 
 

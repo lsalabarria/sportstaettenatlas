@@ -137,6 +137,7 @@ class Ergebnis:
     behalten: int = 0  # vorhanden, im Modus "neu" nicht angefasst
     ohne_lage: int = 0
     ohne_sportstaette: int = 0  # Sportanlagen zu einer Sportstätte, die es nicht gibt
+    unbekannt: int = 0  # Zeilen mit einer ID, die es nicht gibt (und ohne Lage für eine neue)
     doppelt: int = 0
     nicht_mehr_in_quelle: int = 0
     anlagen_neu: int = 0
@@ -260,11 +261,22 @@ def schreibe_bestand(
         d = bereinigen(roh, e.entfernt)
         nur_anlagen = bool(roh.get(NUR_ANLAGEN))
         ganze |= not nur_anlagen
+        kurz = str(d.get("id") or "")
+        if kurz and kurz not in vorhanden and 8 <= len(kurz) < 32:  # Kurz-ID von der Webseite
+            treffer = [i for i in vorhanden if i.startswith(kurz)]
+            if len(treffer) == 1:
+                d["id"] = treffer[0]
         st_ordner = vorhanden.get(d.get("id", ""))
         if nur_anlagen and st_ordner is None:
             e.ohne_sportstaette += len(d.get("anlagen") or [])
             continue
-        if not nur_anlagen and (not d.get("id") or (st_ordner is None and not d.get("lage"))):
+        if not nur_anlagen and st_ordner is None and not d.get("lage"):
+            if d.get("id") and not (roh.get("name") and roh.get("kategorie")):
+                e.unbekannt += 1  # eine Änderung (nur ID und Felder) für eine unbekannte ID
+            else:
+                e.ohne_lage += 1
+            continue
+        if not nur_anlagen and not d.get("id"):
             e.ohne_lage += 1
             continue
         if d["id"] in gesehen and not nur_anlagen:

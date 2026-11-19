@@ -188,6 +188,7 @@ def cmd_bestand(args):
             ("zugeordnet", e.zugeordnet, "Sportstätten einem Sportkomplex"),
             ("Sportanlagen geändert", e.anlagen_geaendert, ""),
             ("ohne Koordinate", e.ohne_lage, "(übersprungen)"),
+            ("ID unbekannt", e.unbekannt, "(nicht in daten/, übersprungen)"),
             (
                 "Sportstätte unbekannt" if komplexe or stp else "ohne Sportstätte",
                 e.ohne_sportstaette,

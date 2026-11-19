@@ -170,3 +170,35 @@ def test_anlagentypen():
         "Diskus-, Hammerwurfanlage",
         "Feld",
     ]
+
+
+def test_aendern_mit_id_und_einzelnen_feldern(tmp_path):
+    """Eine Zeile mit der ID (auch der Kurz-ID) und nur den Feldern, die sich ändern."""
+    from sportstaettenatlas.einlesen import lies_csv
+
+    sid = "11111111-1111-4111-8111-111111111111"
+    staette = {
+        "id": sid,
+        "name": "Platz",
+        "kategorie": "Sportplatz",
+        "lage": {"lon": 7.6, "lat": 50.35},
+        "adresse": {"strasse": "Am Weg", "hausnummer": "1", "plz": "56068", "ort": "Koblenz"},
+        "anlagen": [{"typ": "Tennisplatz"}],
+    }
+    kreis = lambda lon, lat: "07111-koblenz"
+    schreibe_bestand([staette], tmp_path, "RP", kreis)
+    tabelle = tmp_path / "aenderung.csv"
+    tabelle.write_text(f"id;hausnummer\n{sid[:8]};2\n99999999;5\n", "utf-8")
+    d, _ = lies_csv(tabelle)
+    e = schreibe_bestand(d, tmp_path, "RP", kreis, modus="ergaenzen")
+    assert (e.aktualisiert, e.unveraendert, e.unbekannt) == (0, 1, 1)  # ergaenzen: 1 bleibt
+    e = schreibe_bestand(d, tmp_path, "RP", kreis, modus="aktualisieren")
+    assert (e.aktualisiert, e.neu, e.unbekannt) == (1, 0, 1)
+    [x] = lies_bestand(tmp_path)
+    assert x["adresse"] == {
+        "strasse": "Am Weg",
+        "hausnummer": "2",
+        "plz": "56068",
+        "ort": "Koblenz",
+    }
+    assert len(x["anlagen"]) == 1 and x["name"] == "Platz"

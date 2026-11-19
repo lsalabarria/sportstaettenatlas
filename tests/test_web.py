@@ -601,3 +601,18 @@ def test_organisationssuche_rangfolge_und_auswahl(oeffne):
     assert (
         page.input_value("select[name=betreiber_typ]") == "Verbandsgemeinde"
     )  # aus dem Verzeichnis
+
+
+def test_organisationen_auch_ohne_sportstaette(oeffne):
+    page = oeffne("#ansicht=liste&teil=betreiber")
+    page.wait_for_selector("#seite-liste .betreiber .reiter")
+    teil = page.locator("#seite-liste .betreiber")
+    assert "Vereine (1)" in teil.inner_text()  # TuS Berg betreibt den Sportplatz Berg
+    teil.locator("[data-art=Kommune]").click()
+    zeilen = teil.locator("tr.zeile")
+    assert zeilen.count() == 3  # die Kommunen des Verzeichnisses, ohne Sportstätte als Betreiber
+    assert "Verbandsgemeinde Tal" in teil.inner_text()
+    zeilen.first.click()
+    assert "Keine Sportstätte als Betreiber" in teil.inner_text()
+    teil.locator("[data-ohne]").uncheck()
+    assert "Keine Einträge" in teil.inner_text()

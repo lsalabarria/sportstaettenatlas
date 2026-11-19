@@ -332,9 +332,11 @@ document.addEventListener("click", ev => {
 });
 
 // ---------- Teil „Organisationen“: Vereine, Kommunen … als Eigentümer, Betreiber, Nutzer ----
+const ROLLE_TEXT = { betreiber: "als Betreiber", eigentuemer: "als Eigentümer", nutzer: "als Nutzer" };
 function teilBetreiber(bestand, el) {
   el.className = "betreiber";
   let art = "Verein", rolle = "betreiber", filterText = "", sortierung = { feld: "n", ab: true };
+  let ohneStaette = true;  // auch Organisationen des Verzeichnisses ohne Sportstätte in der Rolle
   const offen = new Set();
   // Organisationen einer Sportstätte in der gewählten Rolle: [[Schlüssel, Name, Art]]; was im
   // Verzeichnis steht, fasst alle Schreibweisen unter einem Schlüssel zusammen
@@ -345,6 +347,14 @@ function teilBetreiber(bestand, el) {
       return [o ? "org:" + o.id : schluesselName(n), o ? o.name : n.trim().replace(/\s+/g, " "),
         (r === "nutzer" ? orgArt(n) : artVon(e.p, r)) || "unbekannt"];
     });
+  }
+  // Organisationen des Verzeichnisses ohne Sportstätte in der Rolle: [Schlüssel, Organisation, Art];
+  // im gewählten Gebiet nur, wer einen passenden Regionalschlüssel hat (Kommunen), Vereine nur landesweit
+  function ohne(belegt) {
+    if (!ohneStaette) return [];
+    const typen = ATLAS().organisationstypen || {};
+    return ORGANISATIONEN.filter(o => !belegt.has("org:" + o.id) && (!GEBIET || (o.ars && o.ars.startsWith(GEBIET.s))))
+      .map(o => ["org:" + o.id, o, (o.typ && typen[o.typ]) || "unbekannt"]);
   }
   function gruppen() {
     const g = new Map();
@@ -357,6 +367,9 @@ function teilBetreiber(bestand, el) {
       if (e.p.ort) x.orte[e.p.ort] = (x.orte[e.p.ort] || 0) + 1;
       x.kats[e.kat] = (x.kats[e.kat] || 0) + 1;
     }
+    for (const [s, o, a] of ohne(alleSchluessel())) {
+      if (a === art) g.set(s, { s, namen: { [o.name]: 1 }, liste: [], orte: {}, kats: {} });
+    }
     const top = (o, n) => Object.entries(o).sort((a, b) => b[1] - a[1]).slice(0, n).map(x => x[0]);
     return [...g.values()].map(x => ({ ...x, name: top(x.namen, 1)[0], n: x.liste.length,
       ort: top(x.orte, 3).join(", ") + (Object.keys(x.orte).length > 3 ? " …" : ""),
@@ -367,7 +380,15 @@ function teilBetreiber(bestand, el) {
     for (const e of bestand.eintraege) if (imGebiet(e.p.ars)) {
       for (const [s, , a] of namenVon(e, rolle)) (z[a] ??= new Set()).add(s);
     }
+    const belegt = new Set(Object.values(z).flatMap(x => [...x]));
+    for (const [s, , a] of ohne(belegt)) (z[a] ??= new Set()).add(s);
     return z;
+  }
+  // Schlüssel aller Organisationen mit Sportstätte in der Rolle (im Gebiet)
+  function alleSchluessel() {
+    const out = new Set();
+    for (const e of bestand.eintraege) if (imGebiet(e.p.ars)) for (const [s] of namenVon(e, rolle)) out.add(s);
+    return out;
   }
   const artZelle = x => {
     const o = x.s.startsWith("org:") ? orgVon(x.name) : null;
@@ -396,8 +417,8 @@ function teilBetreiber(bestand, el) {
         + `<td class="zahl">${zahl(x.n)}</td><td class="klein">${esc(x.ort)}</td><td class="klein">${esc(x.kat)}</td></tr>`;
       if (auf) {
         const imVerzeichnis = x.s.startsWith("org:");
-        h += `<tr class="details"><td colspan="5"><button type="button" class="knopf2" data-karte="${esc(x.s)}">`
-          + `Alle ${zahl(x.n)} auf der Karte zeigen</button> `
+        h += `<tr class="details"><td colspan="5">` + (x.n ? `<button type="button" class="knopf2" data-karte="${esc(x.s)}">`
+          + `Alle ${zahl(x.n)} auf der Karte zeigen</button> ` : `<span class="klein">Keine Sportstätte ${esc(ROLLE_TEXT[rolle])}.</span> `)
           + (ANSICHTEN.vorschlag ? `<button type="button" class="knopf2" data-org-aendern="${esc(x.name)}">`
             + (imVerzeichnis ? "Organisation ändern oder löschen" : "ins Verzeichnis eintragen") + `</button>` : "")
           + `<table class="tabelle">`
@@ -416,7 +437,9 @@ function teilBetreiber(bestand, el) {
       + `<div class="reiter">${reiter}<select aria-label="Rolle">`
       + [["betreiber", "als Betreiber"], ["eigentuemer", "als Eigentümer"], ["nutzer", "als Nutzer"]].map(([k, t]) =>
         `<option value="${k}"${rolle === k ? " selected" : ""}>${t}</option>`).join("") + `</select>`
-      + `<input type="search" placeholder="Name oder Ort filtern" value="${esc(filterText)}" aria-label="Filter"></div>`
+      + `<input type="search" placeholder="Name oder Ort filtern" value="${esc(filterText)}" aria-label="Filter">`
+      + `<label class="klein" title="${GEBIET ? "Im gewählten Gebiet nur Organisationen mit Regionalschlüssel (Kommunen)" : ""}">`
+      + `<input type="checkbox" data-ohne${ohneStaette ? " checked" : ""}> auch ohne Sportstätte</label></div>`
       + `<table class="tabelle"><thead><tr><th data-sort="name">Name${pfeil("name")}</th><th>Art</th>`
       + `<th class="zahl" data-sort="n">Sportstätten${pfeil("n")}</th><th data-sort="ort">Orte${pfeil("ort")}</th>`
       + `<th data-sort="kat">Kategorien${pfeil("kat")}</th></tr></thead><tbody>${zeilen
@@ -424,6 +447,7 @@ function teilBetreiber(bestand, el) {
     el.querySelectorAll("[data-art]").forEach(b => b.addEventListener("click", () => {
       art = b.dataset.art; offen.clear(); zeichne(); }));
     el.querySelector("select").addEventListener("change", ev => { rolle = ev.target.value; offen.clear(); zeichne(); });
+    el.querySelector("[data-ohne]").addEventListener("change", ev => { ohneStaette = ev.target.checked; offen.clear(); zeichne(); });
     const feldEl = el.querySelector("input[type=search]");
     feldEl.addEventListener("input", () => {
       filterText = feldEl.value.trim().toLowerCase().replace(/\s+/g, " ");
