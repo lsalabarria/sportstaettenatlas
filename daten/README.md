@@ -108,7 +108,7 @@ Organisation eine Datei in `organisationen/`.
 
 `seite` und `alkis` prüfen den Aufbau beim Lesen und nennen die betroffene Datei, wenn etwas
 nicht passt. Werte gegen die Regeln des [Datenmodells](#datenmodell) (z. B. eine PLZ mit sechs
-Ziffern) brechen nichts ab und stehen in `results/regelverstoesse.csv`.
+Ziffern) brechen nichts ab und stehen in [`regelverstoesse.csv`](regelverstoesse.csv).
 
 ### CSV einlesen
 
