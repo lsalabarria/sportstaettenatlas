@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbce-9c18-4ace-a8c8-8d9e6e5395f8",
+  "name": "Freibad Bielstein",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "15",
+    "plz": "51674",
+    "ort": "Wiehl, Stadt"
+  },
+  "lage": {
+    "lon": 7.50938,
+    "lat": 50.9599
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1936
+}

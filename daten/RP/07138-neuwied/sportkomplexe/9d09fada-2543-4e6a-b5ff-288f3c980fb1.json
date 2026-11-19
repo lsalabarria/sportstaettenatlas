@@ -1,0 +1,10 @@
+{
+  "id": "9d09fada-2543-4e6a-b5ff-288f3c980fb1",
+  "name": "Grundschule Melsbach",
+  "adresse": {
+    "strasse": "Friedrich-Ebert-Straße",
+    "hausnummer": "21A",
+    "plz": "56581",
+    "ort": "Melsbach"
+  }
+}

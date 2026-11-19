@@ -1,0 +1,19 @@
+{
+  "id": "a22beabe-1bd8-48ef-8d16-4664ed1b5758",
+  "name": "Rodelbahn Zwickau",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Geinitzstraße",
+    "hausnummer": "22",
+    "plz": "8056",
+    "ort": "Zwickau, Stadt, Hochschulstadt"
+  },
+  "lage": {
+    "lon": 12.487901,
+    "lat": 50.696665
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22beabd-d8f2-48bf-8bbf-f93bd5bcf23a"
+}

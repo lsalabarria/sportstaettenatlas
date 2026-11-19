@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd0-c57b-4601-9cdf-1796dda2c3ab",
+  "name": "Freizeitbad Werl",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Höppe",
+    "hausnummer": "11",
+    "plz": "59457",
+    "ort": "Werl, Stadt"
+  },
+  "lage": {
+    "lon": 7.90269,
+    "lat": 51.55883
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

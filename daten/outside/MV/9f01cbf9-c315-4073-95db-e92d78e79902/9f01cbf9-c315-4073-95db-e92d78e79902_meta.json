@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf9-c315-4073-95db-e92d78e79902",
+  "name": "Westfalenbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Stadionstraße",
+    "hausnummer": "15",
+    "plz": "58097",
+    "ort": "Hagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.47599,
+    "lat": 51.37215
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

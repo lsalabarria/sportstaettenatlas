@@ -1,0 +1,18 @@
+{
+  "id": "a22beaea-f205-4791-8fc5-e6aaf33de0a1",
+  "name": "Fritz-Meinzer-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Sepp-Herberger-Weg",
+    "hausnummer": "2",
+    "plz": "76227",
+    "ort": "Karlsruhe, Stadt"
+  },
+  "lage": {
+    "lon": 8.488438,
+    "lat": 48.997772
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

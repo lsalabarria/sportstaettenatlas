@@ -13,5 +13,7 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
-  "betriebsstatus": "in Betrieb"
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "9fdcccba-ac9c-4a3f-bd4d-6eeefbc1fe9e"
 }

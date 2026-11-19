@@ -12,8 +12,22 @@
     "lon": 8.208204,
     "lat": 49.657319
   },
+  "entfernung_oepnv": 200,
   "oeffentlicher_zugang": "ja",
   "schulsport": "ja",
+  "wlan": "nein",
   "betriebsstatus": "in Betrieb",
-  "website": "www.floersheimdalsheim.de"
+  "eigentuemer_typ": "Stadt/Gemeinde",
+  "betreiber_typ": "Stadt/Gemeinde",
+  "website": "www.floersheimdalsheim.de",
+  "baujahr": 1965,
+  "letzte_sanierung": 2012,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 1,
+    "Erste-Hilfe-Räume": 1,
+    "Material- und Lagerräume": 1,
+    "Technikräume": 1
+  }
 }

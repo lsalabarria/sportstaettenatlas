@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbeb-6054-432b-a9b9-8a855c4d6fce",
+  "name": "Hallenbad Niederpleis",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Alte Marktstr.",
+    "hausnummer": "7",
+    "plz": "53757",
+    "ort": "Sankt Augustin, Stadt"
+  },
+  "lage": {
+    "lon": 7.21185,
+    "lat": 50.77807
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

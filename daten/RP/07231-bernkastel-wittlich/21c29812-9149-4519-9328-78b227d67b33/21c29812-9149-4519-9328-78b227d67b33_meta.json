@@ -16,6 +16,9 @@
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "SSV Dreis 1958 e.V.",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
   "betreiber": "SSV Dreis 1958 e.V.",
-  "website": "https://www.schuetzen-hetzerath.de/schuetzenhaus/"
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.schuetzen-hetzerath.de/schuetzenhaus/",
+  "baujahr": 1958
 }

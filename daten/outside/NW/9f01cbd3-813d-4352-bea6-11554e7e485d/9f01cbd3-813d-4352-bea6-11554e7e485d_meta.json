@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd3-813d-4352-bea6-11554e7e485d",
+  "name": "Bad Ransberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Heesstraße",
+    "hausnummer": "82",
+    "plz": "41751",
+    "ort": "Viersen, Stadt"
+  },
+  "lage": {
+    "lon": 6.35131,
+    "lat": 51.25048
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

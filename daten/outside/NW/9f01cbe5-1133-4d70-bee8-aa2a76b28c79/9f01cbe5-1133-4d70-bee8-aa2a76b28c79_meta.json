@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe5-1133-4d70-bee8-aa2a76b28c79",
+  "name": "Erlbad Drensteinfurt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Im Erlfeld",
+    "hausnummer": "4",
+    "plz": "48317",
+    "ort": "Drensteinfurt, Stadt"
+  },
+  "lage": {
+    "lon": 7.74807,
+    "lat": 51.7895
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

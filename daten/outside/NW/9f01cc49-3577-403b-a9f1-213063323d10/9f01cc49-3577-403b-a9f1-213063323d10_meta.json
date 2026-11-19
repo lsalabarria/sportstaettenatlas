@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc49-3577-403b-a9f1-213063323d10",
+  "name": "Lehrschwimmbad Gotenstraße",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gotenstraße",
+    "hausnummer": "20",
+    "plz": "40225",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.778772,
+    "lat": 51.196179
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

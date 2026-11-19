@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc0-4ecc-4f50-b83f-9c7258037df2",
+  "name": "Hallenbad Stadtmitte",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hans-Zanders-Straße",
+    "hausnummer": "20",
+    "plz": "51465",
+    "ort": "Bergisch Gladbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.13352,
+    "lat": 50.98766
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1914
+}

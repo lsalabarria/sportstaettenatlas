@@ -1,0 +1,18 @@
+{
+  "id": "a22bea8f-091c-4cb3-9e13-8cfa9eb09a95",
+  "name": "Leichtathletikstadion Fritz-Lesch-Straße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Fritz-Lesch-Straße",
+    "hausnummer": "30",
+    "plz": "13055",
+    "ort": "Berlin, Stadt"
+  },
+  "lage": {
+    "lon": 13.47573,
+    "lat": 52.542567
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

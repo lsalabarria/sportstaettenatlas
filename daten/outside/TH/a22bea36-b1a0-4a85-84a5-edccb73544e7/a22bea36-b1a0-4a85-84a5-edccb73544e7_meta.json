@@ -1,0 +1,19 @@
+{
+  "id": "a22bea36-b1a0-4a85-84a5-edccb73544e7",
+  "name": "Hartwig-Gauder-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Sebastian-Bach-Straße",
+    "hausnummer": "2",
+    "plz": "99096",
+    "ort": "Erfurt, Stadt"
+  },
+  "lage": {
+    "lon": 11.037524,
+    "lat": 50.962272
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22bea36-63da-4152-849a-69bc3526ff0a"
+}

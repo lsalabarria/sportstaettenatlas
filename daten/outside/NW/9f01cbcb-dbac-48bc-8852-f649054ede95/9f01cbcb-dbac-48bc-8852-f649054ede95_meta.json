@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbcb-dbac-48bc-8852-f649054ede95",
+  "name": "Hallenbad Brilon",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Derkere Mauer",
+    "hausnummer": "19",
+    "plz": "59929",
+    "ort": "Brilon, Stadt"
+  },
+  "lage": {
+    "lon": 8.56635,
+    "lat": 51.3929
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1965
+}

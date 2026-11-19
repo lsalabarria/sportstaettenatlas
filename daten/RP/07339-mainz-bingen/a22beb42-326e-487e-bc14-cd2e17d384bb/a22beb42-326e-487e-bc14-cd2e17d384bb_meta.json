@@ -1,0 +1,17 @@
+{
+  "id": "a22beb42-326e-487e-bc14-cd2e17d384bb",
+  "name": "Schießsportzentrum",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Sandstraße",
+    "plz": "55411",
+    "ort": "Bingen-Dietersheim"
+  },
+  "lage": {
+    "lon": 7.91882,
+    "lat": 49.935824
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

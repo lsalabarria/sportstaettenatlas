@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc11-7427-475c-944d-e8664dbbb86d",
+  "name": "Kiliansbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gertrudenstraße",
+    "hausnummer": "12",
+    "plz": "33098",
+    "ort": "Paderborn, Stadt"
+  },
+  "lage": {
+    "lon": 8.76164,
+    "lat": 51.70288
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

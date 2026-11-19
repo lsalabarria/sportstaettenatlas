@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbdc-cba1-4489-8c6c-464cbdc90ba6",
+  "name": "Freibad Fischerteich",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Fischerteich",
+    "hausnummer": "5",
+    "plz": "32758",
+    "ort": "Detmold, Stadt"
+  },
+  "lage": {
+    "lon": 8.78009,
+    "lat": 51.93246
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

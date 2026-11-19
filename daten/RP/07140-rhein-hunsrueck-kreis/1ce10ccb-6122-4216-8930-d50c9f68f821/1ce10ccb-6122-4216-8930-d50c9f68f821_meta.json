@@ -12,10 +12,15 @@
     "lon": 7.310418,
     "lat": 49.955139
   },
+  "entfernung_oepnv": 200,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Tennisverein Longuich",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
   "betreiber": "Tennisverein Longuich",
-  "website": "www.tv-longuich.de"
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "www.tv-longuich.de",
+  "baujahr": 2025,
+  "letzte_sanierung": 2025
 }

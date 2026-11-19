@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc3c-fb41-4d08-b00b-e4c563463498",
+  "name": "Hallenbad Nord Mülheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Boverstraße",
+    "hausnummer": "150",
+    "plz": "45473",
+    "ort": "Mülheim an der Ruhr, Stadt"
+  },
+  "lage": {
+    "lon": 6.903149,
+    "lat": 51.448647
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1978
+}

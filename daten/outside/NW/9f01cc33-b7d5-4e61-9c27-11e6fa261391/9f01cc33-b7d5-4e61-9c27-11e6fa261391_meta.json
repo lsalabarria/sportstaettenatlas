@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc33-b7d5-4e61-9c27-11e6fa261391",
+  "name": "Schwimmbad Polizeischule",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Lippstädter Weg",
+    "hausnummer": "26",
+    "plz": "33758",
+    "ort": "Schloß Holte-Stukenbrock, Stadt"
+  },
+  "lage": {
+    "lon": 8.67576,
+    "lat": 51.8667
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfd-3b9d-407d-af35-0ecd6aae0116",
+  "name": "HeidenSpassBad - das Frei- und Wellenbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Sportzentrum",
+    "hausnummer": "3",
+    "plz": "46359",
+    "ort": "Heiden"
+  },
+  "lage": {
+    "lon": 6.93628,
+    "lat": 51.82216
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb"
+}

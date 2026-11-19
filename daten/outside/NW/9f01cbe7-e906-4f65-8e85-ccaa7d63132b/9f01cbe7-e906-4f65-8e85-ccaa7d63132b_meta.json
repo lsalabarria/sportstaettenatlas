@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe7-e906-4f65-8e85-ccaa7d63132b",
+  "name": "Freizeitbad düb",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Nordlandwehr",
+    "hausnummer": "99",
+    "plz": "48249",
+    "ort": "Dülmen, Stadt"
+  },
+  "lage": {
+    "lon": 7.27266,
+    "lat": 51.84522
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1998
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22bea9a-7a30-4914-bf3f-a746c994fd89",
+  "name": "Olympiastützpunkt NRW/Westfalen Bochum",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hollandstraße",
+    "hausnummer": "95",
+    "plz": "44866",
+    "ort": "Bochum, Stadt"
+  },
+  "lage": {
+    "lon": 7.119992,
+    "lat": 51.487391
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

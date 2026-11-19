@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe0-39dc-4123-bb75-c52c25175a60",
+  "name": "Wellenfreibad Schmallenberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Paul-Falke-Platz",
+    "hausnummer": "13",
+    "plz": "57392",
+    "ort": "Schmallenberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.27953,
+    "lat": 51.15123
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

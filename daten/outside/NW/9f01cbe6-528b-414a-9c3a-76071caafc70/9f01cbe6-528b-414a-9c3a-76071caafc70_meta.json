@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe6-528b-414a-9c3a-76071caafc70",
+  "name": "Schwimmstadion Duisburg-Wedau",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Margaretenstraße",
+    "hausnummer": "11",
+    "plz": "47055",
+    "ort": "Duisburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.77864,
+    "lat": 51.40767
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

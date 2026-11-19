@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc16-5e37-4ca9-a466-6c6a32a00fa8",
+  "name": "Nordbad Neuss",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Neusser Weyhe",
+    "hausnummer": "14-16",
+    "plz": "41462",
+    "ort": "Neuss, Stadt"
+  },
+  "lage": {
+    "lon": 6.670836,
+    "lat": 51.21555
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

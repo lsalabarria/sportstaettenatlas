@@ -1,0 +1,18 @@
+{
+  "id": "a22beab2-d19e-46a3-95f0-6f743f584662",
+  "name": "Bertolt-Brecht-Sporthallen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Karl-Schönleben-Straße",
+    "hausnummer": "100",
+    "plz": "90471",
+    "ort": "Nürnberg"
+  },
+  "lage": {
+    "lon": 11.125198,
+    "lat": 49.417063
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

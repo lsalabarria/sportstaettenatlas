@@ -1,0 +1,18 @@
+{
+  "id": "a22beac0-4c94-436e-847f-43c19e820165",
+  "name": "KTHC Stadion Rot-Weiss",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Olympiaweg",
+    "hausnummer": "9",
+    "plz": "50933",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 6.880277,
+    "lat": 50.936247
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

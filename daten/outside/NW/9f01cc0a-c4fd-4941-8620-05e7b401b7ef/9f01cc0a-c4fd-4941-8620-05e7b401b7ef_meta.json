@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0a-c4fd-4941-8620-05e7b401b7ef",
+  "name": "Solvay-Hallenbad Rheinberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kirchplatz",
+    "hausnummer": "10",
+    "plz": "47495",
+    "ort": "Rheinberg, Stadt"
+  },
+  "lage": {
+    "lon": 6.60332,
+    "lat": 51.546
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

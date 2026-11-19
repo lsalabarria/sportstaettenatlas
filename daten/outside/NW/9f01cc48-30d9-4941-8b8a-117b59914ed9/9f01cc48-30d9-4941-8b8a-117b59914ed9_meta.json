@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc48-30d9-4941-8b8a-117b59914ed9",
+  "name": "Lehrschwimmbecken Pantringshof",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Eberhard-Wildermuth-Str.",
+    "hausnummer": "43",
+    "plz": "44628",
+    "ort": "Herne, Stadt"
+  },
+  "lage": {
+    "lon": 7.235332,
+    "lat": 51.568747
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

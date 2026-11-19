@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0d-bd40-4b4c-97d9-a0a67cbdb419",
+  "name": "Südbad - Hallen- und Freibad Recklinghausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Pappelallee",
+    "hausnummer": "50",
+    "plz": "45663",
+    "ort": "Recklinghausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.22407,
+    "lat": 51.57411
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

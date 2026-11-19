@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc2e-c8fa-452c-9f82-43f50f86a52b",
+  "name": "cabrio Senden",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bulderner Str.",
+    "hausnummer": "15",
+    "plz": "48308",
+    "ort": "Senden"
+  },
+  "lage": {
+    "lon": 7.478645,
+    "lat": 51.853635
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2007
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc18-c4ec-44ac-962e-77cd24168ee7",
+  "name": "Wahnbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Albert-Schweitzer-Straße",
+    "hausnummer": "8",
+    "plz": "51147",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 7.087441,
+    "lat": 50.864579
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1975
+}

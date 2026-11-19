@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd1-c58f-40b7-a6ce-844b68e22369",
+  "name": "Allwetterbad Warstein",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Lortzingstr.",
+    "hausnummer": "1",
+    "plz": "59581",
+    "ort": "Warstein, Stadt"
+  },
+  "lage": {
+    "lon": 8.34344,
+    "lat": 51.45039
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

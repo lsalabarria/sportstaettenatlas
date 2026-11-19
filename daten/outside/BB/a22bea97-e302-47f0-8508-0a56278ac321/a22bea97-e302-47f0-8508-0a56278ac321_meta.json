@@ -1,0 +1,18 @@
+{
+  "id": "a22bea97-e302-47f0-8508-0a56278ac321",
+  "name": "Leichtathletikstadion Hermann-Löns-Straße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hermann-Löns-Straße",
+    "hausnummer": "1-4",
+    "plz": "3050",
+    "ort": "Cottbus/Chóśebuz, Stadt"
+  },
+  "lage": {
+    "lon": 14.337474,
+    "lat": 51.739361
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

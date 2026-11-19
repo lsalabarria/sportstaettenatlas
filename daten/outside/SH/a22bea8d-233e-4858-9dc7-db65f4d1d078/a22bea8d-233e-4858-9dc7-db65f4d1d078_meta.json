@@ -1,0 +1,18 @@
+{
+  "id": "a22bea8d-233e-4858-9dc7-db65f4d1d078",
+  "name": "Kanustrecke Hohenlimburg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Freiheitstraße",
+    "hausnummer": "3",
+    "plz": "58119",
+    "ort": "Hagen"
+  },
+  "lage": {
+    "lon": 7.567179,
+    "lat": 51.351544
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

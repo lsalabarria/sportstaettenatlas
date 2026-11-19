@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd7-0664-4b77-b204-f4270755c4c9",
+  "name": "Waldbad Steinhagen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Waldbadstr.",
+    "hausnummer": "39",
+    "plz": "33803",
+    "ort": "Steinhagen"
+  },
+  "lage": {
+    "lon": 8.43454,
+    "lat": 52.01477
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

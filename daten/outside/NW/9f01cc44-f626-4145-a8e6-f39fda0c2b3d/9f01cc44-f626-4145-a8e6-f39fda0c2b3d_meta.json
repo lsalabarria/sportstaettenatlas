@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc44-f626-4145-a8e6-f39fda0c2b3d",
+  "name": "Kleinschwimmhalle Borth",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Pastor-Wilden-Straße",
+    "hausnummer": "7",
+    "plz": "47495",
+    "ort": "Rheinberg, Stadt"
+  },
+  "lage": {
+    "lon": 6.55881,
+    "lat": 51.59314
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1962
+}

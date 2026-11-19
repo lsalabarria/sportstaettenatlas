@@ -1,0 +1,19 @@
+{
+  "id": "a22beaab-ae30-4e4d-a451-0db49bc3b75d",
+  "name": "Rennrodelbahn Oberhof",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Alte Ohrdrufer Straße",
+    "hausnummer": "10",
+    "plz": "98559",
+    "ort": "Oberhof, Stadt"
+  },
+  "lage": {
+    "lon": 10.706734,
+    "lat": 50.709325
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22beaab-a596-46a6-a862-bee8e92121b8"
+}

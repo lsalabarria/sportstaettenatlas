@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbca-c2c8-4736-bb2c-c1c442b0aa8c",
+  "name": "Kleinschwimmhalle Breckerfeld",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wahnscheider Straße",
+    "hausnummer": "1",
+    "plz": "58339",
+    "ort": "Breckerfeld, Stadt"
+  },
+  "lage": {
+    "lon": 7.46532,
+    "lat": 51.26211
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1990
+}

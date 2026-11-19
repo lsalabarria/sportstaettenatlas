@@ -1,0 +1,10 @@
+{
+  "id": "a08f7c7e-a498-4288-86fd-5bb9a98181b5",
+  "name": "Sportplatz Albig",
+  "adresse": {
+    "strasse": "Langgasse",
+    "hausnummer": "93",
+    "plz": "55234",
+    "ort": "Albig"
+  }
+}

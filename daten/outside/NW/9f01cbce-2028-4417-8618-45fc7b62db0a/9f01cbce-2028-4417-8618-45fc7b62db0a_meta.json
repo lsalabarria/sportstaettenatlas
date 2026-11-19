@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbce-2028-4417-8618-45fc7b62db0a",
+  "name": "Freizeitbad De Bütt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Schwimmbad",
+    "hausnummer": "1",
+    "plz": "47877",
+    "ort": "Willich, Stadt"
+  },
+  "lage": {
+    "lon": 6.54588,
+    "lat": 51.26041
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1993
+}

@@ -11,7 +11,10 @@
     "lon": 7.503372,
     "lat": 49.798987
   },
+  "entfernung_oepnv": 100,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
-  "betriebsstatus": "in Betrieb"
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer_typ": "Stadt/Gemeinde",
+  "betreiber_typ": "Stadt/Gemeinde"
 }

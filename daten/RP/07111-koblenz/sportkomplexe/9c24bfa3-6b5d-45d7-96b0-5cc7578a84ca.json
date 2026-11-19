@@ -1,0 +1,10 @@
+{
+  "id": "9c24bfa3-6b5d-45d7-96b0-5cc7578a84ca",
+  "name": "Grundschule Koblenz-Güls",
+  "adresse": {
+    "strasse": "Karl-Möhling-Straße",
+    "hausnummer": "12A",
+    "plz": "56072",
+    "ort": "Koblenz, Stadt"
+  }
+}

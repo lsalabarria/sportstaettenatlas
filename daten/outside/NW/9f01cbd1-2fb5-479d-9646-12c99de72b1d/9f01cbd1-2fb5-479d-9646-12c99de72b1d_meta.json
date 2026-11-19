@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbd1-2fb5-479d-9646-12c99de72b1d",
+  "name": "GrenzlandRingBad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Maaseikerstrasse",
+    "hausnummer": "67",
+    "plz": "41844",
+    "ort": "Wegberg, Stadt"
+  },
+  "lage": {
+    "lon": 6.2821,
+    "lat": 51.13464
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1975
+}

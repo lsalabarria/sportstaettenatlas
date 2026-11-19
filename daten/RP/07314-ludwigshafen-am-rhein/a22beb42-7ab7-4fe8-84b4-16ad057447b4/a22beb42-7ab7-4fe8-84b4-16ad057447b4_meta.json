@@ -1,0 +1,17 @@
+{
+  "id": "a22beb42-7ab7-4fe8-84b4-16ad057447b4",
+  "name": "Schützengesellschaft Rheingönheim - Schießsportstätte",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Am Sandloch",
+    "hausnummer": "30",
+    "plz": "67026"
+  },
+  "lage": {
+    "lon": 8.408101,
+    "lat": 49.450138
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

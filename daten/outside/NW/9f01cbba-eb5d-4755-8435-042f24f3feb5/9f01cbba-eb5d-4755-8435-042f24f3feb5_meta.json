@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbba-eb5d-4755-8435-042f24f3feb5",
+  "name": "Freizeitbad Bad Driburg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Brunnenstraße",
+    "hausnummer": "32",
+    "plz": "33014",
+    "ort": "Bad Driburg, Stadt"
+  },
+  "lage": {
+    "lon": 9.04056,
+    "lat": 51.73441
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

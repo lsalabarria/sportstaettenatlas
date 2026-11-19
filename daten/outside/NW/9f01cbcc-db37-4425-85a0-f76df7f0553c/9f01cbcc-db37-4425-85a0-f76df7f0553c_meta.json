@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbcc-db37-4425-85a0-f76df7f0553c",
+  "name": "Wülfrather Wasser Welt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Goethestraße",
+    "hausnummer": "23",
+    "plz": "42489",
+    "ort": "Wülfrath, Stadt"
+  },
+  "lage": {
+    "lon": 7.03369,
+    "lat": 51.2799
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1970
+}

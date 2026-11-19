@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc0e-2f5b-45ef-92a1-12e4fac1552d",
+  "name": "Hallenbad Herner Straße",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Herner Str.",
+    "hausnummer": "160",
+    "plz": "45659",
+    "ort": "Recklinghausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.20393,
+    "lat": 51.59761
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1957
+}

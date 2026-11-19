@@ -1,0 +1,10 @@
+{
+  "id": "bd6d7499-384e-4481-8ab9-b3042958f626",
+  "name": "BÜRGERHALLE",
+  "kategorie": "Sporthalle",
+  "lage": {
+    "lon": 7.076639,
+    "lat": 49.888962
+  },
+  "betriebsstatus": "in Betrieb"
+}

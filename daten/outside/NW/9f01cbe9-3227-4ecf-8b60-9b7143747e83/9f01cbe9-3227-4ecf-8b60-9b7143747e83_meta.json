@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe9-3227-4ecf-8b60-9b7143747e83",
+  "name": "Strandbad Lörick",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Niederkasseler Deich",
+    "hausnummer": "285",
+    "plz": "40547",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.73259,
+    "lat": 51.25032
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

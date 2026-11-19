@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd6-dc0d-493b-a5ea-c64d74d4658e",
+  "name": "Hallenbad Glashütter Weiher",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schafberg",
+    "hausnummer": "1",
+    "plz": "52223",
+    "ort": "Stolberg (Rhld.), Stadt"
+  },
+  "lage": {
+    "lon": 6.21961,
+    "lat": 50.77022
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

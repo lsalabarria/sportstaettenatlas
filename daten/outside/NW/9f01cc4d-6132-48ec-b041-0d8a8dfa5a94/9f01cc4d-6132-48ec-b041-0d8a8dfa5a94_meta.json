@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4d-6132-48ec-b041-0d8a8dfa5a94",
+  "name": "Freizeitanlage Höxter-Godelheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Godelheimer Str.",
+    "hausnummer": "33",
+    "plz": "37671",
+    "ort": "Höxter, Stadt"
+  },
+  "lage": {
+    "lon": 9.378555,
+    "lat": 51.758936
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

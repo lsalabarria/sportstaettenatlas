@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd5-5933-4c6f-b4f0-8a3f3a52a074",
+  "name": "Ü-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Dammstr.",
+    "hausnummer": "79",
+    "plz": "52531",
+    "ort": "Übach-Palenberg, Stadt"
+  },
+  "lage": {
+    "lon": 6.11402,
+    "lat": 50.91534
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

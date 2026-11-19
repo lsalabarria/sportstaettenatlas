@@ -1,0 +1,18 @@
+{
+  "id": "a22bea30-242f-4f64-bf5e-735e00536371",
+  "name": "Olympischer Fechtclub Bonn",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Neuen Lindenhof",
+    "hausnummer": "2",
+    "plz": "53117",
+    "ort": "Bonn, Stadt"
+  },
+  "lage": {
+    "lon": 7.083261,
+    "lat": 50.749588
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

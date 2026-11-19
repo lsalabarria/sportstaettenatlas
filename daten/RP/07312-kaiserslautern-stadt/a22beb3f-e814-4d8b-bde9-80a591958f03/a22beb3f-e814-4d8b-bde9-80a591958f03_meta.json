@@ -1,0 +1,17 @@
+{
+  "id": "a22beb3f-e814-4d8b-bde9-80a591958f03",
+  "name": "Südweststadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Erich-Reimann-Straße",
+    "hausnummer": "100",
+    "plz": "67061"
+  },
+  "lage": {
+    "lon": 7.755636,
+    "lat": 49.428737
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

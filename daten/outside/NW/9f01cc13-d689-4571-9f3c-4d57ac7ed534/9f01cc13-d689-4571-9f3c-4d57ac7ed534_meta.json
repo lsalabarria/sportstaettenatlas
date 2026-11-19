@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc13-d689-4571-9f3c-4d57ac7ed534",
+  "name": "Hallenbad Oelde",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Weitkampweg",
+    "hausnummer": "1",
+    "plz": "59302",
+    "ort": "Oelde, Stadt"
+  },
+  "lage": {
+    "lon": 8.160251,
+    "lat": 51.825959
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

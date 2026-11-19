@@ -10,8 +10,13 @@
     "lon": 7.18655,
     "lat": 49.581966
   },
+  "entfernung_oepnv": 800,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
-  "website": "https://www.gimbweiler.de/vereine/sportverein.html"
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.gimbweiler.de/vereine/sportverein.html",
+  "baujahr": 1980,
+  "letzte_sanierung": 2000
 }

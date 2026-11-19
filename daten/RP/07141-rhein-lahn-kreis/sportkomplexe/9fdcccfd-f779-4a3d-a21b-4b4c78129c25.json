@@ -1,0 +1,9 @@
+{
+  "id": "9fdcccfd-f779-4a3d-a21b-4b4c78129c25",
+  "name": "Sportplatz Reitzenhain",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "56357",
+    "ort": "Reitzenhain"
+  }
+}

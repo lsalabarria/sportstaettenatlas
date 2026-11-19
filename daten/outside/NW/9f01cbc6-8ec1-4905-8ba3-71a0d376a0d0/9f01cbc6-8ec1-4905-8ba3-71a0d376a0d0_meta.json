@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc6-8ec1-4905-8ba3-71a0d376a0d0",
+  "name": "Römerbad Castell",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Eduard-Spoelgen-Straße",
+    "hausnummer": "11",
+    "plz": "53117",
+    "ort": "Bonn, Stadt"
+  },
+  "lage": {
+    "lon": 7.09721,
+    "lat": 50.75363
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

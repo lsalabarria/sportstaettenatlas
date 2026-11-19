@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc35-e6d7-4232-a818-492c6d7cb683",
+  "name": "WEG Am Waltenberg 68",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Waltenberg",
+    "hausnummer": "68",
+    "plz": "59955",
+    "ort": "Winterberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.52193,
+    "lat": 51.19168
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

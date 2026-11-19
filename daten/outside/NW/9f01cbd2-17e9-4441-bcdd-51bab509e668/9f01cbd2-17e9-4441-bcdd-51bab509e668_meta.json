@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd2-17e9-4441-bcdd-51bab509e668",
+  "name": "Freibad Warendorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Breuelweg",
+    "hausnummer": "5",
+    "plz": "48231",
+    "ort": "Warendorf, Stadt"
+  },
+  "lage": {
+    "lon": 8.00261,
+    "lat": 51.95225
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

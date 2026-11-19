@@ -1,0 +1,10 @@
+{
+  "id": "9c24f4e8-93f5-47af-8464-4f5e83ead423",
+  "name": "Grundschule Dudeldorf",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "4",
+    "plz": "54647",
+    "ort": "Dudeldorf"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbec-5018-4694-bc8f-0786c37d38c3",
+  "name": "Bröltal-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "In der Schleeharth",
+    "hausnummer": "20",
+    "plz": "53809",
+    "ort": "Ruppichteroth"
+  },
+  "lage": {
+    "lon": 7.49533,
+    "lat": 50.84738
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1970
+}

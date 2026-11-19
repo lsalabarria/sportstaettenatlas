@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbd-6234-47b5-816d-d6178b4ddf3b",
+  "name": "VitaSol Therme",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Extersche Straße",
+    "hausnummer": "42",
+    "plz": "32105",
+    "ort": "Bad Salzuflen, Stadt"
+  },
+  "lage": {
+    "lon": 8.75241,
+    "lat": 52.09579
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

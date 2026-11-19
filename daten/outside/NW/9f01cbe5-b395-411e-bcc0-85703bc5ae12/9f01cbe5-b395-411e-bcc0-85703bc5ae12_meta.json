@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe5-b395-411e-bcc0-85703bc5ae12",
+  "name": "Hallenbad Wanheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Düsseldorfer Landstraße",
+    "hausnummer": "15",
+    "plz": "47249",
+    "ort": "Duisburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.75948,
+    "lat": 51.39036
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1974
+}

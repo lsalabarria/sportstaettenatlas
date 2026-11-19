@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe1-03e3-47e8-85b5-e201f0793749",
+  "name": "Freibad Schieder-Schwalenberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Parkallee",
+    "hausnummer": "22",
+    "plz": "32816",
+    "ort": "Schieder-Schwalenberg, Stadt"
+  },
+  "lage": {
+    "lon": 9.15411,
+    "lat": 51.91863
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

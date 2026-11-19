@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc26-f27f-4ace-8122-ce097e8ee06a",
+  "name": "Freibad Cappenberger See",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Cappenberger See",
+    "hausnummer": "1",
+    "plz": "44534",
+    "ort": "Lünen, Stadt"
+  },
+  "lage": {
+    "lon": 7.53822,
+    "lat": 51.63196
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1956
+}

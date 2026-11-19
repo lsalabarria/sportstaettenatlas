@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe0-60ca-46ae-af85-7a29e6c042b9",
+  "name": "Gartenhallenbad Schloß Holte-Stukenbrock",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Hallenbad",
+    "hausnummer": "1",
+    "plz": "33758",
+    "ort": "Schloß Holte-Stukenbrock, Stadt"
+  },
+  "lage": {
+    "lon": 8.63294,
+    "lat": 51.90291
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1975
+}

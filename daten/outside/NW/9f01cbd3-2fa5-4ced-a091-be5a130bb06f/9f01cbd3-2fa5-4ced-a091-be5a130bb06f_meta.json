@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd3-2fa5-4ced-a091-be5a130bb06f",
+  "name": "Hermann-Breymann-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Allee",
+    "hausnummer": "2",
+    "plz": "46562",
+    "ort": "Voerde (Niederrhein), Stadt"
+  },
+  "lage": {
+    "lon": 6.67486,
+    "lat": 51.59444
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

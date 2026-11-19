@@ -1,0 +1,19 @@
+{
+  "id": "a22beadf-732c-4b5e-ac6e-bd3c9db7603b",
+  "name": "Hartwig-Gauder-Halle",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Johann-Sebastian-Bach-Straße",
+    "hausnummer": "2",
+    "plz": "99096",
+    "ort": "Erfurt, Stadt"
+  },
+  "lage": {
+    "lon": 11.037524,
+    "lat": 50.962272
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22beadf-6b19-4c46-93a2-a53a527618e6"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0b-5797-4920-9ed8-41120d42b925",
+  "name": "Hallen- und Freibad Rhede",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Heideweg",
+    "hausnummer": "59",
+    "plz": "46414",
+    "ort": "Rhede, Stadt"
+  },
+  "lage": {
+    "lon": 6.68668,
+    "lat": 51.83139
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "9d5040a6-fcd0-4c69-b052-e714ca86922a",
+  "name": "Test Lars 2024-10-23",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Musterstr. 12a",
+    "hausnummer": "12",
+    "adresszusatz": "sdd",
+    "plz": "56170",
+    "ort": "Duisburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.752129,
+    "lat": 51.43142
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "wlan": "nein",
+  "nutzer": [
+    "MSV",
+    "VfL Altendiez"
+  ],
+  "sportarten": [
+    "Parkour"
+  ],
+  "wettkampfanlage": "keine Wettkampfanlage",
+  "letzte_sanierung": 2024,
+  "fassadenmaterial": "Vorhangfassade",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 2,
+    "Geräteräume": 2,
+    "Technikräume": 2,
+    "Schulungs- / Seminarraum": 2,
+    "Gastronomie": 1,
+    "Sauna": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Flüssiggas",
+      "einbaujahr": 2024
+    }
+  ],
+  "sanierungen": [
+    {
+      "jahr": 2024,
+      "kosten": 1232.0,
+      "waehrung": "€",
+      "beschreibung": "sdasdasd"
+    }
+  ],
+  "foerderungen": [
+    {
+      "programm": "ASAsAS",
+      "jahr": 2024,
+      "hoehe": 121.0,
+      "waehrung": "DM"
+    }
+  ]
+}

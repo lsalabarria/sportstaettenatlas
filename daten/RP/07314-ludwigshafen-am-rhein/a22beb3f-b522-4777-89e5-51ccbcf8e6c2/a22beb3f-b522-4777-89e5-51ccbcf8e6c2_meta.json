@@ -1,0 +1,18 @@
+{
+  "id": "a22beb3f-b522-4777-89e5-51ccbcf8e6c2",
+  "name": "Stadion am Bürgerwehr",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Himmeroder Str.",
+    "hausnummer": "88",
+    "plz": "54516",
+    "ort": "Wittlich"
+  },
+  "lage": {
+    "lon": 8.44135,
+    "lat": 49.468257
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

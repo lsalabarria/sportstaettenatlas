@@ -1,0 +1,18 @@
+{
+  "id": "a22beaad-18e7-4810-a481-836a3e1d102d",
+  "name": "Hans-Renner-Schanze",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Im Kanzlersgrund",
+    "plz": "98559",
+    "ort": "Oberhof, Stadt"
+  },
+  "lage": {
+    "lon": 10.679681,
+    "lat": 50.698206
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22beaab-a596-46a6-a862-bee8e92121b8"
+}

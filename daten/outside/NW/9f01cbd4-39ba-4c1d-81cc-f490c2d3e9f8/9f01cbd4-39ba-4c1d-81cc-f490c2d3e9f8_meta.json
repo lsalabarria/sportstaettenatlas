@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd4-39ba-4c1d-81cc-f490c2d3e9f8",
+  "name": "Freibad Velen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Landsbergallee",
+    "hausnummer": "50",
+    "plz": "46342",
+    "ort": "Velen, Stadt"
+  },
+  "lage": {
+    "lon": 6.97572,
+    "lat": 51.89038
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

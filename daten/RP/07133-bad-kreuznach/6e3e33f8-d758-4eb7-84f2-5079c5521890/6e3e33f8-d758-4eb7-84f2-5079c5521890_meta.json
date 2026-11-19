@@ -1,0 +1,13 @@
+{
+  "id": "6e3e33f8-d758-4eb7-84f2-5079c5521890",
+  "name": "SV-TELL Reiffelbach",
+  "kategorie": "Schießsportstätte",
+  "lage": {
+    "lon": 7.681749,
+    "lat": 49.685269
+  },
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "baujahr": 1989,
+  "letzte_sanierung": 1989
+}

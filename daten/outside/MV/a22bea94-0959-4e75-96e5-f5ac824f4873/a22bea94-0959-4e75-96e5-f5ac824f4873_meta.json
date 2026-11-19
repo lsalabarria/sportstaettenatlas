@@ -1,0 +1,18 @@
+{
+  "id": "a22bea94-0959-4e75-96e5-f5ac824f4873",
+  "name": "CJD Christopherus-Grundschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Groß Schwaßer Weg",
+    "hausnummer": "11",
+    "plz": "18057",
+    "ort": "Rostock, Hanse- und Universitätsstadt"
+  },
+  "lage": {
+    "lon": 12.076614,
+    "lat": 54.086212
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

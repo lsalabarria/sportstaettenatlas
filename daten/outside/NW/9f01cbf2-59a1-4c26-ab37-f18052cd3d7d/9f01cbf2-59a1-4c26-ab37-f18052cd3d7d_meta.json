@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf2-59a1-4c26-ab37-f18052cd3d7d",
+  "name": "Seaside Beach Baldeney",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Freiherr-vom-Stein-Str.",
+    "hausnummer": "384",
+    "plz": "45133",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 7.02051,
+    "lat": 51.40791
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

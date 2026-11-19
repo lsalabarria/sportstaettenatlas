@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a901-a16b-4bef-be55-d54036c08f73",
+  "name": "Freibad Hettenleidelheim",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "hausnummer": "25",
+    "plz": "67310",
+    "ort": "Hettenleidelheim"
+  }
+}

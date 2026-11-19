@@ -1,0 +1,16 @@
+{
+  "id": "a22beb00-2ca4-4caf-b0dd-b9e7950422b2",
+  "name": "Schießbahn Biathlon Bischofswiesen",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "plz": "83483",
+    "ort": "Bischofswiesen"
+  },
+  "lage": {
+    "lon": 12.947146,
+    "lat": 47.63061
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

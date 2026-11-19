@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc3d-45e0-4300-978e-b5757a4d1a0d",
+  "name": "Naturbad Styrum",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Friedensstraße",
+    "hausnummer": "101",
+    "plz": "45476",
+    "ort": "Mülheim an der Ruhr, Stadt"
+  },
+  "lage": {
+    "lon": 6.830002,
+    "lat": 51.44778
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2001
+}

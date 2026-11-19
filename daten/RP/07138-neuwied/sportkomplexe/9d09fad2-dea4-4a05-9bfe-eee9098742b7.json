@@ -1,0 +1,10 @@
+{
+  "id": "9d09fad2-dea4-4a05-9bfe-eee9098742b7",
+  "name": "Am Hofacker",
+  "adresse": {
+    "strasse": "Am Hofacker",
+    "hausnummer": "9A",
+    "plz": "56598",
+    "ort": "Rheinbrohl"
+  }
+}

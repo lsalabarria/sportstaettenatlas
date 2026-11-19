@@ -1,0 +1,13 @@
+{
+  "id": "a00472c0-815c-4182-9317-0be47ee6729a",
+  "name": "Hohenfels-Essingen Rasenplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Schulstr.",
+    "plz": "54570"
+  },
+  "lage": {
+    "lon": 6.741121,
+    "lat": 50.251457
+  }
+}

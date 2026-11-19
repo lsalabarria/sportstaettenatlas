@@ -1,0 +1,17 @@
+{
+  "id": "a22beab8-134a-48a1-8fe1-46999ceb6287",
+  "name": "Brandberghalle",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kreuzvorwerk",
+    "plz": "6120",
+    "ort": "Halle"
+  },
+  "lage": {
+    "lon": 11.939522,
+    "lat": 51.50527
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

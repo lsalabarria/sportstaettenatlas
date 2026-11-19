@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbdb-f9b5-49e4-a9fc-8cec7a464c17",
+  "name": "Hallenbad Weidenau",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bismarckstraße",
+    "hausnummer": "48",
+    "plz": "57076",
+    "ort": "Siegen, Stadt"
+  },
+  "lage": {
+    "lon": 8.0244,
+    "lat": 50.89426
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1956
+}

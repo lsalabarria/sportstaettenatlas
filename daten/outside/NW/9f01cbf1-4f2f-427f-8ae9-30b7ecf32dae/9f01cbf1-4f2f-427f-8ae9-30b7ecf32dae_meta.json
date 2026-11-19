@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf1-4f2f-427f-8ae9-30b7ecf32dae",
+  "name": "Stadtbad Kupferdreh",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schwermannstraße",
+    "hausnummer": "45",
+    "plz": "45257",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 7.08392,
+    "lat": 51.39286
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1971
+}

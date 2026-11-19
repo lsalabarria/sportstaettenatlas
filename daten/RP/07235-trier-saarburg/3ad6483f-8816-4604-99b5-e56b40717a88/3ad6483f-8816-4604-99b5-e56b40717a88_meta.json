@@ -1,0 +1,23 @@
+{
+  "id": "3ad6483f-8816-4604-99b5-e56b40717a88",
+  "name": "Saarburger Ruderclub 1925 e.V.",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Brückenstr.",
+    "hausnummer": "2b",
+    "plz": "54439"
+  },
+  "lage": {
+    "lon": 6.556391,
+    "lat": 49.607898
+  },
+  "entfernung_oepnv": 150,
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Saarburger Ruderclub e.V. 1925",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "Saarburger Ruderclub e.V. 1925",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://saarburger-ruderclub.de",
+  "baujahr": 1925,
+  "letzte_sanierung": 2025
+}

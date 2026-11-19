@@ -13,5 +13,14 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
-  "betriebsstatus": "in Betrieb"
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1970,
+  "letzte_sanierung": 2022,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Sanitärräume - Publikum": 1,
+    "Material- und Lagerräume": 1
+  }
 }

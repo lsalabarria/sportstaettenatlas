@@ -1,0 +1,18 @@
+{
+  "id": "a22bea96-111d-4594-8ace-34703492e3a1",
+  "name": "Haus des deutschen Sport",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hanns-Braun-Straße",
+    "hausnummer": "1",
+    "plz": "14053",
+    "ort": "Berlin, Stadt"
+  },
+  "lage": {
+    "lon": 13.241346,
+    "lat": 52.519965
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

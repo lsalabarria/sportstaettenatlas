@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfa-7ab2-47ba-b462-19fe151a3b8d",
+  "name": "Freizeitbad Aquarell",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hullerner Straße",
+    "hausnummer": "45-49",
+    "plz": "45721",
+    "ort": "Haltern am See, Stadt"
+  },
+  "lage": {
+    "lon": 7.1991,
+    "lat": 51.74176
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

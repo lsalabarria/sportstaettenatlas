@@ -1,0 +1,16 @@
+{
+  "id": "a22beae4-363d-445f-9e88-1ce279eaa66c",
+  "name": "Hockeyplatz des Landesleistungszentrum (LLZ)",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Salzburger Weg",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 6.865925,
+    "lat": 50.924209
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbca-1b71-4a12-951d-dd207654e128",
+  "name": "Hallenbad Boy Welheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Welheimer Straße",
+    "hausnummer": "64",
+    "plz": "46238",
+    "ort": "Bottrop, Stadt"
+  },
+  "lage": {
+    "lon": 6.977888,
+    "lat": 51.525243
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

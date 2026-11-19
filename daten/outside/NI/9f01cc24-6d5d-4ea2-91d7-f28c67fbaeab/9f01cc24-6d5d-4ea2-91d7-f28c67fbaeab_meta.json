@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc24-6d5d-4ea2-91d7-f28c67fbaeab",
+  "name": "Freibad Coburg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Grevener Straße",
+    "hausnummer": "125",
+    "plz": "48159",
+    "ort": "Münster, Stadt"
+  },
+  "lage": {
+    "lon": 7.61057,
+    "lat": 51.979387
+  },
+  "schulsport": "nein",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1927
+}

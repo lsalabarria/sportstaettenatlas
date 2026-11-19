@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbd9-8e55-4cb4-8d7b-a16781133261",
+  "name": "Werburger Waldbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bussche-Münch-Straße",
+    "plz": "32139",
+    "ort": "Spenge, Stadt"
+  },
+  "lage": {
+    "lon": 8.47506,
+    "lat": 52.14513
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

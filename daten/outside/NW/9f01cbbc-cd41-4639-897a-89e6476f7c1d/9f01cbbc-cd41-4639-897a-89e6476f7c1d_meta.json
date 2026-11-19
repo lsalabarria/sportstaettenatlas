@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbc-cd41-4639-897a-89e6476f7c1d",
+  "name": "Freibad Lohe",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Loher Straße",
+    "hausnummer": "30",
+    "plz": "32545",
+    "ort": "Bad Oeynhausen, Stadt"
+  },
+  "lage": {
+    "lon": 8.79135,
+    "lat": 52.17724
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

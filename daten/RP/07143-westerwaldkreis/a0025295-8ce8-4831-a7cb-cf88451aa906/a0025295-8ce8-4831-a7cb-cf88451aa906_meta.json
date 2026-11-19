@@ -5,6 +5,7 @@
   "adresse": {
     "strasse": "Mittelstraße",
     "hausnummer": "3A",
+    "adresszusatz": "b",
     "plz": "56412",
     "ort": "Girod"
   },

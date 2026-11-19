@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc02-3f0f-458a-acef-12ea7b6fc677",
+  "name": "Freibad Eggebad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Eggestadion",
+    "hausnummer": "2",
+    "plz": "32805",
+    "ort": "Horn-Bad Meinberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.93607,
+    "lat": 51.86729
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

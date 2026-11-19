@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbde-4139-48e6-baa0-4589223dd549",
+  "name": "Stadtbad Schwerte",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wittekindstraße",
+    "hausnummer": "10",
+    "plz": "58239",
+    "ort": "Schwerte, Stadt"
+  },
+  "lage": {
+    "lon": 7.57187,
+    "lat": 51.44442
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1974
+}

@@ -1,0 +1,10 @@
+{
+  "id": "a08f7c7b-cd06-4cf0-a2d2-7f19442165b6",
+  "name": "Grundschule Gau-Odernheim",
+  "adresse": {
+    "strasse": "Freiherr-vom-Stein-Straße",
+    "hausnummer": "49",
+    "plz": "55239",
+    "ort": "Gau-Odernheim"
+  }
+}

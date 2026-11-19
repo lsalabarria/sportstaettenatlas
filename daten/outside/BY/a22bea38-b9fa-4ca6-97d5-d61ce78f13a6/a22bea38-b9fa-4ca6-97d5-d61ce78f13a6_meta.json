@@ -1,0 +1,18 @@
+{
+  "id": "a22bea38-b9fa-4ca6-97d5-d61ce78f13a6",
+  "name": "Sportplatz Bertolt-Brecht-Schule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Bertolt-Brecht-Straße",
+    "hausnummer": "31",
+    "plz": "90471",
+    "ort": "Nürnberg"
+  },
+  "lage": {
+    "lon": 11.124243,
+    "lat": 49.416015
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

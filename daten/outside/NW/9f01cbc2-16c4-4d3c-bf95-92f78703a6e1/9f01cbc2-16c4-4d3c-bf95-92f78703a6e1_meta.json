@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc2-16c4-4d3c-bf95-92f78703a6e1",
+  "name": "Senner Waldbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Waldbad",
+    "hausnummer": "74",
+    "plz": "33659",
+    "ort": "Bielefeld, Stadt"
+  },
+  "lage": {
+    "lon": 8.52956,
+    "lat": 51.96231
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

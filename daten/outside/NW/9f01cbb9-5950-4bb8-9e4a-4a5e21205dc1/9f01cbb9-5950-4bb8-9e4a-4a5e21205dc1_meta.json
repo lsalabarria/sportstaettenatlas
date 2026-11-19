@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbb9-5950-4bb8-9e4a-4a5e21205dc1",
+  "name": "Luisenbad Alsdorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Luisenstraße",
+    "plz": "52477",
+    "ort": "Alsdorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.16522,
+    "lat": 50.87336
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

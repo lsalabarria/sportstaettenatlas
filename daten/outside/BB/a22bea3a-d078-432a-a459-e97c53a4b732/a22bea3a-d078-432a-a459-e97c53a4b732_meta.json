@@ -1,0 +1,18 @@
+{
+  "id": "a22bea3a-d078-432a-a459-e97c53a4b732",
+  "name": "Blu Sport- und Freizeitbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Brauhausberg",
+    "hausnummer": "1",
+    "plz": "14473",
+    "ort": "Potsdam, Stadt"
+  },
+  "lage": {
+    "lon": 13.063443,
+    "lat": 52.389854
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

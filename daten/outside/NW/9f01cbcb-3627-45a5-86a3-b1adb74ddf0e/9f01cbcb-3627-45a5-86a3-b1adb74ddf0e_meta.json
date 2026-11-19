@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbcb-3627-45a5-86a3-b1adb74ddf0e",
+  "name": "Freibad Vohwinkel",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gräfrather Str.",
+    "hausnummer": "43C",
+    "plz": "42329",
+    "ort": "Wuppertal, Stadt"
+  },
+  "lage": {
+    "lon": 7.07027,
+    "lat": 51.22695
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd0-5bae-4688-ae60-16e37eac10cd",
+  "name": "Solebad Werne",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Hagen",
+    "hausnummer": "2",
+    "plz": "59368",
+    "ort": "Werne, Stadt"
+  },
+  "lage": {
+    "lon": 7.63181,
+    "lat": 51.6597
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22beafe-15a4-438f-bbcd-250010fb4507",
+  "name": "Uplandstadion Willingen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Burgring",
+    "hausnummer": "11",
+    "plz": "34508",
+    "ort": "Willingen (Upland)"
+  },
+  "lage": {
+    "lon": 8.62075,
+    "lat": 51.307893
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

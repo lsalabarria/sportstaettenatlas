@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbcf-fa2e-47b1-829c-e8ce3be09def",
+  "name": "Freibad Werther (Westf.)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Meyerfeld",
+    "hausnummer": "9",
+    "plz": "33824",
+    "ort": "Werther (Westf.), Stadt"
+  },
+  "lage": {
+    "lon": 8.41093,
+    "lat": 52.07048
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

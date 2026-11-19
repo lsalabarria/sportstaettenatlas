@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3b-1755-4e0f-9852-d52fb029af9b",
+  "name": "Hallenbad Angerbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hauser Ring",
+    "hausnummer": "52",
+    "plz": "40878",
+    "ort": "Ratingen, Stadt"
+  },
+  "lage": {
+    "lon": 6.846039,
+    "lat": 51.302183
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a938-91ae-4caa-99c0-ab642e8b42e2",
+  "name": "IGS Mainz-Bretzenheim",
+  "adresse": {
+    "strasse": "Hans-Böckler-Straße",
+    "hausnummer": "2",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  }
+}

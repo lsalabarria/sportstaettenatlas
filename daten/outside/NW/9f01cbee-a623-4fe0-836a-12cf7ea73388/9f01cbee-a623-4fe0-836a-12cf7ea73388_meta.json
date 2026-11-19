@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbee-a623-4fe0-836a-12cf7ea73388",
+  "name": "Hallenbad Erndtebrück",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Mozartstraße",
+    "hausnummer": "3",
+    "plz": "57339",
+    "ort": "Erndtebrück"
+  },
+  "lage": {
+    "lon": 8.247,
+    "lat": 50.99081
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

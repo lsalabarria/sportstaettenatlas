@@ -11,8 +11,39 @@
     "lon": 8.201676,
     "lat": 49.917921
   },
+  "entfernung_oepnv": 400,
   "oeffentlicher_zugang": "ja",
   "schulsport": "nein",
+  "wlan": "nein",
   "betriebsstatus": "in Betrieb",
-  "website": "https://www.schützenverein-nieder-olm.de/"
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.schützenverein-nieder-olm.de/",
+  "baujahr": 1969,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Sanitärräume - Publikum": 2,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Flüssiggas",
+      "einbaujahr": 1969
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Strom (z.B. Durchlauferhitzer, Boiler)",
+      "einbaujahr": 1969
+    }
+  ],
+  "verbraeuche": [
+    {
+      "art": "Flüssiggas",
+      "menge": 1464.0,
+      "einheit": "Liter"
+    }
+  ]
 }

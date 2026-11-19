@@ -1,0 +1,18 @@
+{
+  "id": "a22bea3e-1a80-4d05-9ea0-322a628bcaf4",
+  "name": "Vogtland Arena",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Falkensteiner Straße",
+    "hausnummer": "133",
+    "plz": "8248",
+    "ort": "Klingenthal, Stadt"
+  },
+  "lage": {
+    "lon": 12.450024,
+    "lat": 50.385279
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

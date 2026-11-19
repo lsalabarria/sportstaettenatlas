@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfd-6661-4ab4-ac45-1acbfb14db9a",
+  "name": "Heljensbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Selbecker Straße",
+    "hausnummer": "12",
+    "plz": "42579",
+    "ort": "Heiligenhaus, Stadt"
+  },
+  "lage": {
+    "lon": 6.95,
+    "lat": 51.32346
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

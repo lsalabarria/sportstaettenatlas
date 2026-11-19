@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc1d-1191-4d67-82ed-31c897bf5cea",
+  "name": "Freibad Königswinter",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Oberweingartenweg",
+    "plz": "53639",
+    "ort": "Königswinter, Stadt"
+  },
+  "lage": {
+    "lon": 7.20322,
+    "lat": 50.67262
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

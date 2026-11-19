@@ -1,0 +1,18 @@
+{
+  "id": "a22beab9-bfb8-48da-99fa-e6dd1e11630a",
+  "name": "Lohrheidestadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Lohrheidestraße",
+    "hausnummer": "82",
+    "plz": "44866",
+    "ort": "Bochum, Stadt"
+  },
+  "lage": {
+    "lon": 7.118555,
+    "lat": 51.485722
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

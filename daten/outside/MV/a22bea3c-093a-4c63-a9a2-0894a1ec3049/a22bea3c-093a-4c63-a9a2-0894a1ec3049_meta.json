@@ -1,0 +1,18 @@
+{
+  "id": "a22bea3c-093a-4c63-a9a2-0894a1ec3049",
+  "name": "Radrennbahn Rostock",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Damerower Weg",
+    "hausnummer": "25",
+    "plz": "18059",
+    "ort": "Rostock"
+  },
+  "lage": {
+    "lon": 12.096186,
+    "lat": 54.070384
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

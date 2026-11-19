@@ -1,0 +1,15 @@
+{
+  "id": "a08f7cc3-cf2b-45fa-9284-a5dd35fe0216",
+  "name": "Bolzplatz Daubach",
+  "kategorie": "Öffentlicher Sport- und Bewegungsraum",
+  "adresse": {
+    "plz": "55666"
+  },
+  "lage": {
+    "lon": 7.63525,
+    "lat": 49.847314
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

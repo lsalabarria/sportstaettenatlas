@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3f-637f-4663-bf15-bb213ca09a62",
+  "name": "Hallenbad Westerholt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Storksmährstr.",
+    "hausnummer": "52",
+    "plz": "45701",
+    "ort": "Herten, Stadt"
+  },
+  "lage": {
+    "lon": 7.09012,
+    "lat": 51.606172
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

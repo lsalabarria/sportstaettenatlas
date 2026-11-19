@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc12-f2d7-4042-9ec8-e2a115d7fe89",
+  "name": "Naturbad Olfen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Alleeweg",
+    "hausnummer": "4",
+    "plz": "59399",
+    "ort": "Olfen, Stadt"
+  },
+  "lage": {
+    "lon": 7.357492,
+    "lat": 51.716135
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2007
+}

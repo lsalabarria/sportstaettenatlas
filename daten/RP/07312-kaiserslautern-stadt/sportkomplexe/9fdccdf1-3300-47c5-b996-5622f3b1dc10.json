@@ -1,0 +1,10 @@
+{
+  "id": "9fdccdf1-3300-47c5-b996-5622f3b1dc10",
+  "name": "Skatepark&Basketballcourt",
+  "adresse": {
+    "strasse": "Augustastraße",
+    "hausnummer": "20",
+    "plz": "67655",
+    "ort": "Kaiserslautern, Stadt"
+  }
+}

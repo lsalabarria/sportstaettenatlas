@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbd3-cd58-4f6f-8183-09a23b36f69b",
+  "name": "Parkbad Versmold",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Caldenhofer Weg",
+    "hausnummer": "26a",
+    "plz": "33775",
+    "ort": "Versmold, Stadt"
+  },
+  "lage": {
+    "lon": 8.15688,
+    "lat": 52.05178
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2013
+}

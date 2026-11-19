@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd23-d415-4944-be26-6411fda3e15b",
+  "name": "Jugendzentrum",
+  "adresse": {
+    "strasse": "Kleinerweg",
+    "hausnummer": "2",
+    "plz": "67240",
+    "ort": "Bobenheim-Roxheim"
+  }
+}

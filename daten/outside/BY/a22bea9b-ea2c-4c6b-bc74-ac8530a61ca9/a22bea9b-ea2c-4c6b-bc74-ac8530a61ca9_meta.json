@@ -1,0 +1,18 @@
+{
+  "id": "a22bea9b-ea2c-4c6b-bc74-ac8530a61ca9",
+  "name": "BTV Bayerischer Tennisverband",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Loh",
+    "hausnummer": "1",
+    "plz": "82041",
+    "ort": "Oberhaching"
+  },
+  "lage": {
+    "lon": 11.588683,
+    "lat": 48.035886
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

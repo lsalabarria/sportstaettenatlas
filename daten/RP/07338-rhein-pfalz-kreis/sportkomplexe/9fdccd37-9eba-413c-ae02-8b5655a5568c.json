@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd37-9eba-413c-ae02-8b5655a5568c",
+  "name": "Grundschule im Mandelgraben",
+  "adresse": {
+    "strasse": "Pfalzring",
+    "hausnummer": "88",
+    "plz": "67112",
+    "ort": "Mutterstadt"
+  }
+}

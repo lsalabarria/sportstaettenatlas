@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc10-5b87-45c6-9fd5-e9bd3197d915",
+  "name": "AquaMagis Plettenberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Böddingerhauser Feld",
+    "hausnummer": "1",
+    "plz": "58840",
+    "ort": "Plettenberg, Stadt"
+  },
+  "lage": {
+    "lon": 7.85023,
+    "lat": 51.23177
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2003
+}

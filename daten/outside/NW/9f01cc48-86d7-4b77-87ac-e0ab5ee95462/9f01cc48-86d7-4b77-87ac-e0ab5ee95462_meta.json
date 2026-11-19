@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc48-86d7-4b77-87ac-e0ab5ee95462",
+  "name": "Lehrschwimmbecken Berliner Straße",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Berliner Straße",
+    "hausnummer": "54",
+    "plz": "44866",
+    "ort": "Bochum, Stadt"
+  },
+  "lage": {
+    "lon": 7.125983,
+    "lat": 51.476495
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1975
+}

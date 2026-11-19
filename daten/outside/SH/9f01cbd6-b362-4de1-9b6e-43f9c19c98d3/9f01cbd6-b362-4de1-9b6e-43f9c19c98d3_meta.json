@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd6-b362-4de1-9b6e-43f9c19c98d3",
+  "name": "Wasser Straelen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Lingsforter Str.",
+    "hausnummer": "100",
+    "plz": "47638",
+    "ort": "Straelen, Stadt"
+  },
+  "lage": {
+    "lon": 6.25805,
+    "lat": 51.45254
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22beaba-193e-49c6-8239-36eb771cd863",
+  "name": "Eissporthalle Magdeburger Straße",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Magdeburger Straße",
+    "hausnummer": "10",
+    "plz": "1067",
+    "ort": "Dresden, Stadt"
+  },
+  "lage": {
+    "lon": 13.722214,
+    "lat": 51.062176
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

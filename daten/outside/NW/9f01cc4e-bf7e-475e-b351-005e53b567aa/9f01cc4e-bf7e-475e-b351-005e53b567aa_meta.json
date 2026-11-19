@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4e-bf7e-475e-b351-005e53b567aa",
+  "name": "Lehrschwimmbecken Maria-Montessori-Gesamtschule",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Minkweg",
+    "hausnummer": "26",
+    "plz": "47803",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.568648,
+    "lat": 51.357562
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

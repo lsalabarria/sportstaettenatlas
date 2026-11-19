@@ -15,5 +15,8 @@
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
-  "website": "www.moselflugplatz.de"
+  "eigentuemer_typ": "Stadt/Gemeinde",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "www.moselflugplatz.de",
+  "baujahr": 1957
 }

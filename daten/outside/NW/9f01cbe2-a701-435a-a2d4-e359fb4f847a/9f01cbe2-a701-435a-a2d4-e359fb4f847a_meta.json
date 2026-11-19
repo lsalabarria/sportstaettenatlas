@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe2-a701-435a-a2d4-e359fb4f847a",
+  "name": "Hallenbad Aplerbeck",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Diakon-Koch-Weg",
+    "hausnummer": "6",
+    "plz": "44287",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.56054,
+    "lat": 51.49266
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1977
+}

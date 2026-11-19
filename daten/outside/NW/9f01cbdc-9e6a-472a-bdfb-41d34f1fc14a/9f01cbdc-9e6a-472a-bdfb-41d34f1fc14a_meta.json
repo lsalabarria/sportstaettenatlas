@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbdc-9e6a-472a-bdfb-41d34f1fc14a",
+  "name": "Hallenbad Delbrück",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Nordring",
+    "hausnummer": "1",
+    "plz": "33129",
+    "ort": "Delbrück, Stadt"
+  },
+  "lage": {
+    "lon": 8.55372,
+    "lat": 51.76956
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1970
+}

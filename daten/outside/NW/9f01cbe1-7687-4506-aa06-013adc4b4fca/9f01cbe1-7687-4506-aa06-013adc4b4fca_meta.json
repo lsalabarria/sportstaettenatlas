@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe1-7687-4506-aa06-013adc4b4fca",
+  "name": "Römer Therme",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "An der Römerziegelei",
+    "hausnummer": "6",
+    "plz": "41539",
+    "ort": "Dormagen, Stadt"
+  },
+  "lage": {
+    "lon": 6.84356,
+    "lat": 51.08437
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

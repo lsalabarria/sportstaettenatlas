@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe9-c06b-4cf0-8314-09de8f4a94fa",
+  "name": "Rheinbad Hallenbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Europaplatz",
+    "hausnummer": "1",
+    "plz": "40474",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.73343,
+    "lat": 51.26499
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2000
+}

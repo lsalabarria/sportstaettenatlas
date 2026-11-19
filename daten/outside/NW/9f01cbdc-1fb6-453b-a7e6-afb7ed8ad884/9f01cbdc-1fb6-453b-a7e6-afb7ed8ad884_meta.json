@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbdc-1fb6-453b-a7e6-afb7ed8ad884",
+  "name": "Warmwasserfreibad Geisweid",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Auf der Schläfe",
+    "hausnummer": "4",
+    "plz": "57078",
+    "ort": "Siegen, Stadt"
+  },
+  "lage": {
+    "lon": 7.99878,
+    "lat": 50.91985
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

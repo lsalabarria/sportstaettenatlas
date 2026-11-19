@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a93a-2eab-441f-893c-5d0e19d72e8e",
+  "name": "Schule am Gleisberg",
+  "adresse": {
+    "strasse": "Gleisbergweg",
+    "hausnummer": "50",
+    "plz": "55122",
+    "ort": "Mainz, Stadt"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc2-6dcc-463a-8a61-e34eed527992",
+  "name": "Sportbad Aquawede",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Duisburger Straße",
+    "hausnummer": "4",
+    "plz": "33647",
+    "ort": "Bielefeld, Stadt"
+  },
+  "lage": {
+    "lon": 8.49745,
+    "lat": 51.98069
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1974
+}

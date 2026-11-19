@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc28-5214-4552-8b98-2aa232d153e4",
+  "name": "Eifel-Therme-Zikkurat Freizeitbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "An der Zikkurat",
+    "hausnummer": "2",
+    "plz": "53894",
+    "ort": "Mechernich, Stadt"
+  },
+  "lage": {
+    "lon": 6.68232,
+    "lat": 50.63167
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "d9fde97a-61cd-4460-831b-62c4abbffa00",
+  "name": "Sportzentrum TV Dannstadt 1888 e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Angelstr.",
+    "hausnummer": "17",
+    "plz": "67125"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "TV Dannstadt",
+  "betreiber": "TV Dannstadt",
+  "website": "https://www.tv-dannstadt.de",
+  "baujahr": 2019,
+  "letzte_sanierung": 2019
+}

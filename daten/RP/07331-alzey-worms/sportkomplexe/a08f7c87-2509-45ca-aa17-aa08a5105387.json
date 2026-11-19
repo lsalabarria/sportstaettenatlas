@@ -1,0 +1,10 @@
+{
+  "id": "a08f7c87-2509-45ca-aa17-aa08a5105387",
+  "name": "Altrheinhalle Eich",
+  "adresse": {
+    "strasse": "Im Wäldchen",
+    "hausnummer": "1",
+    "plz": "67575",
+    "ort": "Eich"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc39-68a1-4593-8529-a0f4484aa974",
+  "name": "Freibad Laßbruch (Freibadverein Laßbruch e.V.)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Freibad",
+    "hausnummer": "12",
+    "plz": "32699",
+    "ort": "Extertal"
+  },
+  "lage": {
+    "lon": 9.039114,
+    "lat": 52.112354
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

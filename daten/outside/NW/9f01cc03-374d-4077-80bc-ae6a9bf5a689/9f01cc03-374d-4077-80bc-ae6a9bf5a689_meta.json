@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc03-374d-4077-80bc-ae6a9bf5a689",
+  "name": "Hallenbad Riesenbeck",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Sünte-Rendel-Straße",
+    "hausnummer": "18",
+    "plz": "48477",
+    "ort": "Hörstel, Stadt"
+  },
+  "lage": {
+    "lon": 7.62839,
+    "lat": 52.26206
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1966
+}

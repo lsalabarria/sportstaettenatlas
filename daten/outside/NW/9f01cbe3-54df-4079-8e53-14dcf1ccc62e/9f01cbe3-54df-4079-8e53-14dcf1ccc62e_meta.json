@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbe3-54df-4079-8e53-14dcf1ccc62e",
+  "name": "Freibad Wellinghofen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hopmanns Mühlenweg",
+    "plz": "44265",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.49946,
+    "lat": 51.46732
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

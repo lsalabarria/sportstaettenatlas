@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbc-39c3-4b5a-a4a5-27dcafdeb0a8",
+  "name": "Freibad Feudingen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Auf den Weierhöfen",
+    "hausnummer": "13",
+    "plz": "57334",
+    "ort": "Bad Laasphe, Stadt"
+  },
+  "lage": {
+    "lon": 8.32442,
+    "lat": 50.93893
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

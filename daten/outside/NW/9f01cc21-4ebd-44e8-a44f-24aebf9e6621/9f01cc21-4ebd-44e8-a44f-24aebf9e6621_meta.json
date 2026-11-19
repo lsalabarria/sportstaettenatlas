@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc21-4ebd-44e8-a44f-24aebf9e6621",
+  "name": "Lenne Therme",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Auf m Ohl",
+    "hausnummer": "12c",
+    "plz": "57368",
+    "ort": "Lennestadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.06541,
+    "lat": 51.11339
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

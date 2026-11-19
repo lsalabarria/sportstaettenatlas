@@ -1,0 +1,18 @@
+{
+  "id": "a22bea39-f20a-4d34-831c-ea9f00cc9490",
+  "name": "Margon Arena",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bodenbacher Straße",
+    "hausnummer": "154",
+    "plz": "1277",
+    "ort": "Dresden, Stadt"
+  },
+  "lage": {
+    "lon": 13.808661,
+    "lat": 51.02249
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

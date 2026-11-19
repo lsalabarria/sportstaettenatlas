@@ -1,5 +1,10 @@
 {
   "id": "381874a4-5922-56d4-aa2d-18ac21e38a33",
   "sportstaette_id": "9f01cc75-7e13-4708-8d22-80168072f9a1",
-  "typ": "Cabriobad"
+  "typ": "Cabriobad",
+  "wasserflaeche": 513.0,
+  "becken_bis_25m": 5,
+  "lehrbecken": 1,
+  "kinderbecken": 1,
+  "erholungsbecken": 1
 }

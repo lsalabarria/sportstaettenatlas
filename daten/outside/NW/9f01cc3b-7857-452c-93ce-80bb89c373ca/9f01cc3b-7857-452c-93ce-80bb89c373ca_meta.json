@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc3b-7857-452c-93ce-80bb89c373ca",
+  "name": "Porta Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Sprengelweg",
+    "hausnummer": "10",
+    "plz": "32457",
+    "ort": "Porta Westfalica, Stadt"
+  },
+  "lage": {
+    "lon": 8.934167,
+    "lat": 52.227584
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1974
+}

@@ -1,0 +1,10 @@
+{
+  "id": "9d09faed-3c9c-4657-ae62-4b835fb3ba4d",
+  "name": "Overbergschule",
+  "adresse": {
+    "strasse": "Overbergstraße",
+    "hausnummer": "20",
+    "plz": "56427",
+    "ort": "Siershahn"
+  }
+}

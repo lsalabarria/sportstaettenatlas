@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbdd-17d6-4bce-bcdd-126403bb3783",
+  "name": "Freibad Schwarzenbrink",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Freibadstraße",
+    "hausnummer": "66",
+    "plz": "32758",
+    "ort": "Detmold, Stadt"
+  },
+  "lage": {
+    "lon": 8.8144,
+    "lat": 51.94277
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

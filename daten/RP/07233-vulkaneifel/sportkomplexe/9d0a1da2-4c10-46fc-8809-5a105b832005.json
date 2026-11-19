@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1da2-4c10-46fc-8809-5a105b832005",
+  "name": "Sportplatz Neroth",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "hausnummer": "37",
+    "plz": "54570",
+    "ort": "Neroth"
+  }
+}

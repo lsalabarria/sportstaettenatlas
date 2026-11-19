@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbda-a488-4aaa-95b6-60a4ff897345",
+  "name": "Parkbad Nord Castrop-Rauxel",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Recklinghauser Straße",
+    "hausnummer": "208",
+    "plz": "44581",
+    "ort": "Castrop-Rauxel, Stadt"
+  },
+  "lage": {
+    "lon": 7.32644,
+    "lat": 51.59109
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "44141d70-0daa-4564-8d62-ef4a038968b0",
+  "name": "Wassersportverein Sinzig",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "plz": "53489"
+  },
+  "lage": {
+    "lon": 7.279173,
+    "lat": 50.547528
+  }
+}

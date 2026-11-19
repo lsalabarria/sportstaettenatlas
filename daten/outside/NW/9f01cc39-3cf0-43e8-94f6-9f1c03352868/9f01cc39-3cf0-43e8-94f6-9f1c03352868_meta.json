@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc39-3cf0-43e8-94f6-9f1c03352868",
+  "name": "Freibad Bösingfeld",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Senckenberg",
+    "plz": "32699",
+    "ort": "Extertal"
+  },
+  "lage": {
+    "lon": 9.117217,
+    "lat": 52.065447
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

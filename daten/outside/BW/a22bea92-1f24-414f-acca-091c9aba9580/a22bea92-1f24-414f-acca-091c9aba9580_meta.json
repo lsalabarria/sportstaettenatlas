@@ -1,0 +1,18 @@
+{
+  "id": "a22bea92-1f24-414f-acca-091c9aba9580",
+  "name": "SCHARRena",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Fritz-Walter-Weg",
+    "hausnummer": "5",
+    "plz": "70372",
+    "ort": "Stuttgart, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 9.233431,
+    "lat": 48.791612
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe0-d61c-4abb-93a8-98b6ca451a11",
+  "name": "Freibad Schlangen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Badstraße",
+    "hausnummer": "29",
+    "plz": "33189",
+    "ort": "Schlangen"
+  },
+  "lage": {
+    "lon": 8.83443,
+    "lat": 51.81437
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1926
+}

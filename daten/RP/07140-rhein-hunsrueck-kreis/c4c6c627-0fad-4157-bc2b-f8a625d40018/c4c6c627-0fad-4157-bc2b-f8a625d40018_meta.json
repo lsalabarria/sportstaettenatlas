@@ -5,6 +5,7 @@
   "adresse": {
     "strasse": "Friedrichstraße",
     "hausnummer": "99",
+    "adresszusatz": "Boulodrome",
     "plz": "67069",
     "ort": "Ludwigshafen am Rhein, Stadt"
   },
@@ -12,10 +13,15 @@
     "lon": 7.310418,
     "lat": 49.955139
   },
+  "entfernung_oepnv": 500,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Verein für Sport- und Körperpflege 1900 eV Ludwigshafen-Oppau",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
   "betreiber": "Verein für Sport- und Körperpflege 1900 eV Ludwigshafen-Oppau",
-  "website": "www.athletenbouler.de"
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "www.athletenbouler.de",
+  "baujahr": 2011,
+  "letzte_sanierung": 2015
 }

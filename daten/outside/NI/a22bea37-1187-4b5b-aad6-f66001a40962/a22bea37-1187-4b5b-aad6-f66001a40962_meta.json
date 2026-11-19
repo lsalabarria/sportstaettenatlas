@@ -1,0 +1,18 @@
+{
+  "id": "a22bea37-1187-4b5b-aad6-f66001a40962",
+  "name": "Sporthalle Niedersächsisches Landesamt für Bezüge und Versorgung NLBV",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Auestraße",
+    "hausnummer": "14",
+    "plz": "30449",
+    "ort": "Hannover, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 9.721132,
+    "lat": 52.362442
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -10,10 +10,15 @@
     "lon": 7.535964,
     "lat": 50.66648
   },
+  "entfernung_oepnv": 250,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "KK-Schützen Orfgen",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
   "betreiber": "KK-Schützen Orfgen",
-  "website": "www.kksv-orfgen.de"
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "www.kksv-orfgen.de",
+  "baujahr": 1979,
+  "letzte_sanierung": 2025
 }

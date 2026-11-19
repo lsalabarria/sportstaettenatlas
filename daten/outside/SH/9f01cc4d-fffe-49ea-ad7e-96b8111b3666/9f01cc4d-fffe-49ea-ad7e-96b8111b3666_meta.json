@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4d-fffe-49ea-ad7e-96b8111b3666",
+  "name": "Lehrschwimmbecken Förderschule Haus Freudenberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Freudenberg",
+    "hausnummer": "40",
+    "plz": "47533",
+    "ort": "Bedburg-Hau"
+  },
+  "lage": {
+    "lon": 6.153169,
+    "lat": 51.770332
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

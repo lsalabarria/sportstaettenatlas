@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc47-1442-4f4f-9dd4-4b6688ea72e0",
+  "name": "Buddenkuhle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "An der Buddenkuhle",
+    "hausnummer": "115",
+    "plz": "49525",
+    "ort": "Ladbergen"
+  },
+  "lage": {
+    "lon": 7.76385,
+    "lat": 52.16826
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

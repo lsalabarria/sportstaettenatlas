@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfb-b9e9-42c4-a9b1-8e617f30dbad",
+  "name": "Maximare Erlebnistherme Bad Hamm",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Jürgen-Graef-Allee",
+    "hausnummer": "2",
+    "plz": "59065",
+    "ort": "Hamm, Stadt"
+  },
+  "lage": {
+    "lon": 7.83583,
+    "lat": 51.68747
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

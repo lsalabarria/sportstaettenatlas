@@ -1,0 +1,15 @@
+{
+  "id": "a08f7cb2-eab4-4c0b-9c70-a8afbd868c47",
+  "name": "Sportplatz im Alten Wald",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "66909"
+  },
+  "lage": {
+    "lon": 7.408504,
+    "lat": 49.47841
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22beac9-c1c0-4a18-ab7f-51638bc7fb1e",
+  "name": "Velodrom Europasportpark",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Paul-Heyse-Str.",
+    "hausnummer": "26",
+    "plz": "10407",
+    "ort": "Berlin, Stadt"
+  },
+  "lage": {
+    "lon": 13.450674,
+    "lat": 52.531153
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

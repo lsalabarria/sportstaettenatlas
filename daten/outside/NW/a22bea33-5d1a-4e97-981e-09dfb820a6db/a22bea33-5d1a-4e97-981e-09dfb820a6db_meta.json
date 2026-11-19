@@ -1,0 +1,18 @@
+{
+  "id": "a22bea33-5d1a-4e97-981e-09dfb820a6db",
+  "name": "Traglufthalle Aquadome",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "am Waldsee",
+    "hausnummer": "25",
+    "plz": "47829",
+    "ort": "Krefeld, Stadt"
+  },
+  "lage": {
+    "lon": 6.650396,
+    "lat": 51.381038
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -14,7 +14,44 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
+  "wlan": "nein",
+  "sportkomplex": "9ec2a92c-dd33-40c1-b875-c14e2db732d5",
   "sportarten": [
     "Tennis"
+  ],
+  "funktionsraeume": {
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 2,
+    "Geräteräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Fernwärme",
+      "einbaujahr": 2010
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Strom (z.B. Durchlauferhitzer, Boiler)",
+      "einbaujahr": 2000
+    },
+    {
+      "bereich": "Strom",
+      "art": "Sonstige",
+      "einbaujahr": 2025,
+      "beschreibung": "Balkonkraftwerk"
+    }
+  ],
+  "verbraeuche": [
+    {
+      "art": "Fernwärme",
+      "menge": 180000.0,
+      "einheit": "kWh"
+    },
+    {
+      "art": "Strom",
+      "menge": 35000.0,
+      "einheit": "kWh"
+    }
   ]
 }

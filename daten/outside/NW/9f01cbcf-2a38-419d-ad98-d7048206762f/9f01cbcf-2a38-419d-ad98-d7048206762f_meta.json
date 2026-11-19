@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbcf-2a38-419d-ad98-d7048206762f",
+  "name": "Sport & Freizeitbad Oberwengern",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hoffmann-von-Fallersleben-Straße",
+    "hausnummer": "30",
+    "plz": "58300",
+    "ort": "Wetter (Ruhr), Stadt"
+  },
+  "lage": {
+    "lon": 7.37521,
+    "lat": 51.38507
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

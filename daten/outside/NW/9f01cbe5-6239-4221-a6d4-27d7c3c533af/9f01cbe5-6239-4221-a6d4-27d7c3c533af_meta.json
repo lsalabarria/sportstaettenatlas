@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe5-6239-4221-a6d4-27d7c3c533af",
+  "name": "Rhein-Ruhr-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kampstraße",
+    "hausnummer": "2",
+    "plz": "47166",
+    "ort": "Duisburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.76736,
+    "lat": 51.49519
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2005
+}

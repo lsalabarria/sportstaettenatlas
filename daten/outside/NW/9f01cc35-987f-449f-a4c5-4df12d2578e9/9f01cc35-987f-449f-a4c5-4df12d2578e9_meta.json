@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc35-987f-449f-a4c5-4df12d2578e9",
+  "name": "Freibad Siedlinghausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Grimmeweg",
+    "hausnummer": "5",
+    "plz": "59955",
+    "ort": "Winterberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.469999,
+    "lat": 51.251111
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

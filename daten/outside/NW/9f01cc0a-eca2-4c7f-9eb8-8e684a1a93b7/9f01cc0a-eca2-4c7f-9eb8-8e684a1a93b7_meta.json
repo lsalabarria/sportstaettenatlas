@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc0a-eca2-4c7f-9eb8-8e684a1a93b7",
+  "name": "Underberg-Freibad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "2",
+    "plz": "47495",
+    "ort": "Rheinberg, Stadt"
+  },
+  "lage": {
+    "lon": 6.60052,
+    "lat": 51.54163
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1956
+}

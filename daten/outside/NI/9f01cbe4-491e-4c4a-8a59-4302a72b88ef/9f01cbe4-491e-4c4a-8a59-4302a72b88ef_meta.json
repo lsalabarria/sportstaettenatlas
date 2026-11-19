@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe4-491e-4c4a-8a59-4302a72b88ef",
+  "name": "Hallenbad Dortmund-Brackel",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Oesterstraße",
+    "hausnummer": "68",
+    "plz": "44309",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.55052,
+    "lat": 51.52873
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1966
+}

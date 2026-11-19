@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd96-f0b3-42eb-935d-2275df7e3efd",
+  "name": "Schulsportanlage Rhens",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "4",
+    "plz": "56321",
+    "ort": "Rhens, Stadt"
+  }
+}

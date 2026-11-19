@@ -1,0 +1,18 @@
+{
+  "id": "4b22c9fc-fc3f-40b3-aadf-c354a5fe8ae7",
+  "name": "Sporthalle am Kanal",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Kanal",
+    "hausnummer": "4",
+    "plz": "67227"
+  },
+  "lage": {
+    "lon": 8.363107,
+    "lat": 49.534561
+  },
+  "eigentuemer": "Stadt Frankenthal (Pfalz)",
+  "eigentuemer_typ": "Stadt/Gemeinde",
+  "betreiber": "Stadt Frankenthal (Pfalz)",
+  "betreiber_typ": "Stadt/Gemeinde"
+}

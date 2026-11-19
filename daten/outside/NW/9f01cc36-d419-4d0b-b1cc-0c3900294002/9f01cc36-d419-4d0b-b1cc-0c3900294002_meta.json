@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc36-d419-4d0b-b1cc-0c3900294002",
+  "name": "Gräflicher Park Health & Balance Resort",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Brunnenallee",
+    "hausnummer": "1",
+    "plz": "33014",
+    "ort": "Bad Driburg, Stadt"
+  },
+  "lage": {
+    "lon": 9.03156,
+    "lat": 51.735673
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

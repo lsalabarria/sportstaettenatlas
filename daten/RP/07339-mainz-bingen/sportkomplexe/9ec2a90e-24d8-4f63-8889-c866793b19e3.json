@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a90e-24d8-4f63-8889-c866793b19e3",
+  "name": "Sportplatz Harxheim",
+  "adresse": {
+    "strasse": "Gerbstedterstraße",
+    "hausnummer": "11",
+    "plz": "55296",
+    "ort": "Harxheim"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "a0186827-59b3-40b7-94e2-ff954a521ea9",
+  "name": "Sporthalle Clara-Viebig-Realschule plus Wittlich",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Beethovenstr.",
+    "hausnummer": "13",
+    "plz": "54516"
+  },
+  "lage": {
+    "lon": 6.898224,
+    "lat": 49.9851
+  }
+}

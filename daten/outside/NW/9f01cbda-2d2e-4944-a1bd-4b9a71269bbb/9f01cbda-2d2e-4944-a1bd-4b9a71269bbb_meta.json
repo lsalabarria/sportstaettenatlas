@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbda-2d2e-4944-a1bd-4b9a71269bbb",
+  "name": "Familienbad Vogelsang",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Focher Straße",
+    "hausnummer": "85",
+    "plz": "42719",
+    "ort": "Solingen, Stadt"
+  },
+  "lage": {
+    "lon": 7.06346,
+    "lat": 51.18964
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2019
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc1b-0429-4019-b940-bbcdd1015436",
+  "name": "Zollstockbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Raderthalgürtel",
+    "hausnummer": "8-10",
+    "plz": "50968",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 6.949134,
+    "lat": 50.904718
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1976
+}

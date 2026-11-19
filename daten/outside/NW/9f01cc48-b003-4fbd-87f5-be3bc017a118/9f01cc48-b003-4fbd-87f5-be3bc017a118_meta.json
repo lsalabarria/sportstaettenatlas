@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc48-b003-4fbd-87f5-be3bc017a118",
+  "name": "Sportzentrum Westenfeld",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Lohackerstraße",
+    "hausnummer": "7",
+    "plz": "44867",
+    "ort": "Bochum, Stadt"
+  },
+  "lage": {
+    "lon": 7.146475,
+    "lat": 51.471426
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1971
+}

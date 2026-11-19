@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc29-affd-4da3-abf1-d72c2f1fa6ff",
+  "name": "Hallen- und Freibad Meschede",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Le-Puy-Straße",
+    "hausnummer": "43",
+    "plz": "59872",
+    "ort": "Meschede, Stadt"
+  },
+  "lage": {
+    "lon": 8.27347,
+    "lat": 51.34983
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1969
+}

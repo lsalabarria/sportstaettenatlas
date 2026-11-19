@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbff-05f4-4835-a2b8-b2a40bce5a66",
+  "name": "Freibad Elverdissen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Freibad",
+    "hausnummer": "20",
+    "plz": "32052",
+    "ort": "Herford, Stadt"
+  },
+  "lage": {
+    "lon": 8.66508,
+    "lat": 52.0855
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

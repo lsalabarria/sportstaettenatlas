@@ -1,0 +1,19 @@
+{
+  "id": "a22beaba-98a9-450d-81ea-2b0ade505088",
+  "name": "Landesgymnasium für Sport",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Marschnerstraße",
+    "hausnummer": "30",
+    "plz": "4109",
+    "ort": "Leipzig, Stadt"
+  },
+  "lage": {
+    "lon": 12.355896,
+    "lat": 51.338954
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22beaba-6e7b-4c54-b9f9-92753ecf5505"
+}

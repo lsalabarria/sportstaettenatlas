@@ -1,0 +1,14 @@
+{
+  "id": "4f586376-bf49-469e-9833-a7ec9b0622f4",
+  "name": "Kurpark-Hotel Bad Dürkheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schloßplatz",
+    "hausnummer": "1-4",
+    "plz": "67098"
+  },
+  "lage": {
+    "lon": 8.168633,
+    "lat": 49.46326
+  }
+}

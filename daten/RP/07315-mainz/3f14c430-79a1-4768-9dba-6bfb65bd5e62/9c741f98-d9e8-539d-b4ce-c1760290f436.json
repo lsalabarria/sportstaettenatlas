@@ -1,5 +1,10 @@
 {
   "id": "9c741f98-d9e8-539d-b4ce-c1760290f436",
   "sportstaette_id": "3f14c430-79a1-4768-9dba-6bfb65bd5e62",
-  "typ": "Bogenschießanlage"
+  "typ": "Bogenschießanlage",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2021,
+  "flutlicht": "ja",
+  "leuchtmittel": "LED",
+  "lux": 1000
 }

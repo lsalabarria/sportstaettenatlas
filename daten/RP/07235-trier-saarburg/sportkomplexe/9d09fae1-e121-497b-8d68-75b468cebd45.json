@@ -1,0 +1,10 @@
+{
+  "id": "9d09fae1-e121-497b-8d68-75b468cebd45",
+  "name": "Sportplatz Osburg",
+  "adresse": {
+    "strasse": "Misselbachstraße",
+    "hausnummer": "24",
+    "plz": "54317",
+    "ort": "Osburg"
+  }
+}

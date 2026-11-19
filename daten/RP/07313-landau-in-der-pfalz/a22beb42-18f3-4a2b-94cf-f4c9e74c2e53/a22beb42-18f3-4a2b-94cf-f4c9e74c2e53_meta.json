@@ -1,0 +1,18 @@
+{
+  "id": "a22beb42-18f3-4a2b-94cf-f4c9e74c2e53",
+  "name": "Felswerk",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Albert-Einstein-Straße",
+    "hausnummer": "6",
+    "plz": "76829",
+    "ort": "Landau"
+  },
+  "lage": {
+    "lon": 8.132937,
+    "lat": 49.187764
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

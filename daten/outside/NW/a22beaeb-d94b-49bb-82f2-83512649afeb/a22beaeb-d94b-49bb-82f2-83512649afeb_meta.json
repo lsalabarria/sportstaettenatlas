@@ -1,0 +1,17 @@
+{
+  "id": "a22beaeb-d94b-49bb-82f2-83512649afeb",
+  "name": "Sportanlage Am Köpfchen",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Sportanlage Am Köpfchen",
+    "plz": "59955",
+    "ort": "Winterberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.473737,
+    "lat": 51.158887
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

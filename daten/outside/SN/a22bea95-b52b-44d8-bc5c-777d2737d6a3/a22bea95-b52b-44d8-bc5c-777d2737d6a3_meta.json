@@ -1,0 +1,18 @@
+{
+  "id": "a22bea95-b52b-44d8-bc5c-777d2737d6a3",
+  "name": "Dresdner Ruderclub 1902 e.V.",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Hamburger Straße",
+    "hausnummer": "80",
+    "plz": "1157",
+    "ort": "Dresden, Stadt"
+  },
+  "lage": {
+    "lon": 13.68428,
+    "lat": 51.062749
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

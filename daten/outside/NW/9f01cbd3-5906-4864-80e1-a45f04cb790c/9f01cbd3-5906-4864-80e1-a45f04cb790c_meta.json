@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd3-5906-4864-80e1-a45f04cb790c",
+  "name": "Waldfreibad Vlotho-Valdorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bäderstr.",
+    "hausnummer": "6",
+    "plz": "32602",
+    "ort": "Vlotho, Stadt"
+  },
+  "lage": {
+    "lon": 8.858,
+    "lat": 52.14033
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb"
+}

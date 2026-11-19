@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1d55-fbc4-4b36-80a2-edf2264ac94f",
+  "name": "Grundschule Landkern",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "25",
+    "plz": "56814",
+    "ort": "Landkern"
+  }
+}

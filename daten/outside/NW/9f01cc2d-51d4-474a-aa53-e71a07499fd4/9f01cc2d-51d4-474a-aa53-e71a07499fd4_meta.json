@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc2d-51d4-474a-aa53-e71a07499fd4",
+  "name": "Stadtbad Rheydt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Pahlkestraße",
+    "hausnummer": "10",
+    "plz": "41236",
+    "ort": "Mönchengladbach, Stadt"
+  },
+  "lage": {
+    "lon": 6.44621,
+    "lat": 51.17188
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1965
+}

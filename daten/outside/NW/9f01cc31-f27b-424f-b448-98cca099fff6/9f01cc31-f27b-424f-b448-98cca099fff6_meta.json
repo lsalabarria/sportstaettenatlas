@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc31-f27b-424f-b448-98cca099fff6",
+  "name": "Schwimmschule Delphin",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hüskenbörde",
+    "hausnummer": "15-17",
+    "plz": "45136",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 7.03963,
+    "lat": 51.44081
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

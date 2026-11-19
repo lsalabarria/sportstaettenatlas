@@ -1,0 +1,18 @@
+{
+  "id": "a22bea99-329f-487c-b421-5ccd61625411",
+  "name": "Sportcampus Saar Albert-Wagner-Schwimmhalle",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Hermann-Neuberger-Straße",
+    "hausnummer": "1",
+    "plz": "66123",
+    "ort": "Saarbrücken, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 7.038141,
+    "lat": 49.251204
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

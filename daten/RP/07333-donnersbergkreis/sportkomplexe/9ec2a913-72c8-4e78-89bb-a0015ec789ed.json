@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a913-72c8-4e78-89bb-a0015ec789ed",
+  "name": "Schulzentrum Grundschule Sembach",
+  "adresse": {
+    "strasse": "Heuberg",
+    "hausnummer": "17",
+    "plz": "67681",
+    "ort": "Sembach"
+  }
+}

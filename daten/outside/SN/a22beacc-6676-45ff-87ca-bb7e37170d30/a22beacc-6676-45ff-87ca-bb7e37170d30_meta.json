@@ -1,0 +1,19 @@
+{
+  "id": "a22beacc-6676-45ff-87ca-bb7e37170d30",
+  "name": "Leipziger Kanuclub e.V.",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Pistorisstraße",
+    "hausnummer": "66",
+    "plz": "4229",
+    "ort": "Leipzig, Stadt"
+  },
+  "lage": {
+    "lon": 12.343673,
+    "lat": 51.307213
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22beacc-5e0f-45ea-82a6-919bdf9f80e3"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "9d09faf1-72db-4192-922e-e5d726cf32c3",
+  "name": "Grundschule Kaden",
+  "adresse": {
+    "strasse": "Elberbütz",
+    "hausnummer": "14",
+    "plz": "56459",
+    "ort": "Kaden"
+  }
+}

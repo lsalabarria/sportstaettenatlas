@@ -1,0 +1,18 @@
+{
+  "id": "a22beae0-927b-4c0a-8469-211e89fb246b",
+  "name": "Eissportzentrum Oberstdorf",
+  "kategorie": "Eissportstätte",
+  "adresse": {
+    "strasse": "Roßbichlstraße",
+    "hausnummer": "2-6",
+    "plz": "87561",
+    "ort": "Oberstdorf, M"
+  },
+  "lage": {
+    "lon": 10.287474,
+    "lat": 47.40603
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

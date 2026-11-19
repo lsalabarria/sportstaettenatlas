@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc15-ad7c-48aa-a528-60af1fc109aa",
+  "name": "Helmut-Loos_Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Berliner Straße",
+    "hausnummer": "33",
+    "plz": "53859",
+    "ort": "Niederkassel, Stadt"
+  },
+  "lage": {
+    "lon": 7.021723,
+    "lat": 50.831338
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

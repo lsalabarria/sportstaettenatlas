@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc5-14cc-4da4-a692-9e6c48116241",
+  "name": "Hallenbad Querenburg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hustadtring",
+    "hausnummer": "157",
+    "plz": "44801",
+    "ort": "Bochum, Stadt"
+  },
+  "lage": {
+    "lon": 7.25497,
+    "lat": 51.4486
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

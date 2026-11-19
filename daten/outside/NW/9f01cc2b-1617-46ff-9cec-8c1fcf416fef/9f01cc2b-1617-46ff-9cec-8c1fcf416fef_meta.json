@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc2b-1617-46ff-9cec-8c1fcf416fef",
+  "name": "Sommerbad Minden",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Johansenstraße",
+    "hausnummer": "17-19",
+    "plz": "32423",
+    "ort": "Minden, Stadt"
+  },
+  "lage": {
+    "lon": 8.91663,
+    "lat": 52.28074
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1930
+}

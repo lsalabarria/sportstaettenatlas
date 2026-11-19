@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a93b-4002-4b65-b0b4-aace70a7c0d0",
+  "name": "Schwimmbad Mainzer Schwimmverein",
+  "adresse": {
+    "strasse": "Obere Kreuzstraße",
+    "hausnummer": "11-13",
+    "plz": "55120",
+    "ort": "Mainz, Stadt"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd2-c3e0-47f3-b964-9e8a4519a62d",
+  "name": "Frei- und Hallenbad Vreden",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Ottensteiner Straße",
+    "hausnummer": "64",
+    "plz": "48691",
+    "ort": "Vreden, Stadt"
+  },
+  "lage": {
+    "lon": 6.84466,
+    "lat": 52.04151
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0f-6deb-4422-82c9-8a525e942bdb",
+  "name": "Hallenbad Rahden",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Freibad",
+    "hausnummer": "24",
+    "plz": "32369",
+    "ort": "Rahden, Stadt"
+  },
+  "lage": {
+    "lon": 8.60289,
+    "lat": 52.43382
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc40-7b3d-4203-b2e0-7565d31384ee",
+  "name": "Schwimmschule Kirchner",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Burger Str.",
+    "hausnummer": "211",
+    "plz": "42859",
+    "ort": "Remscheid, Stadt"
+  },
+  "lage": {
+    "lon": 7.18877,
+    "lat": 51.16163
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1989
+}

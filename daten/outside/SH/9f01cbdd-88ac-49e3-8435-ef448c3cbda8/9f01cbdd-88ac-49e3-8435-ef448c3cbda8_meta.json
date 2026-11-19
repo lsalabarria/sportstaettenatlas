@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbdd-88ac-49e3-8435-ef448c3cbda8",
+  "name": "Hallenbad Sendenhorst",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Westtor",
+    "hausnummer": "31",
+    "plz": "48324",
+    "ort": "Sendenhorst, Stadt"
+  },
+  "lage": {
+    "lon": 7.81797,
+    "lat": 51.84255
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1985
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbcc-5976-4e23-bce5-f266360c1800",
+  "name": "Hallenbad Madfeld",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bruchstraße",
+    "hausnummer": "9",
+    "plz": "59929",
+    "ort": "Brilon, Stadt"
+  },
+  "lage": {
+    "lon": 8.72112,
+    "lat": 51.43293
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1971
+}

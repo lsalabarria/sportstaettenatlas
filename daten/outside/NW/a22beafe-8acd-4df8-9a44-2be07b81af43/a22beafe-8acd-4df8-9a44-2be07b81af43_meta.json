@@ -1,0 +1,18 @@
+{
+  "id": "a22beafe-8acd-4df8-9a44-2be07b81af43",
+  "name": "Schießsportclub Schale von 1972 e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Zum Wurftaubenstand",
+    "hausnummer": "6a",
+    "plz": "48496",
+    "ort": "Hopsten"
+  },
+  "lage": {
+    "lon": 7.59865,
+    "lat": 52.425738
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

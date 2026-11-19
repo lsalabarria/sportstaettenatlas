@@ -1,0 +1,19 @@
+{
+  "id": "8873c4be-af24-44b7-bde5-60ca6ba5ea6b",
+  "name": "Rollschuhbahn Bezirkssportanlage Mainz-Bretzenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Albert-Stohr-Straße",
+    "hausnummer": "50",
+    "adresszusatz": "Zugang über Albanusstraße",
+    "plz": "55128"
+  },
+  "lage": {
+    "lon": 8.250429,
+    "lat": 49.979907
+  },
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer_typ": "Stadt/Gemeinde",
+  "betreiber": "Sportamt",
+  "letzte_sanierung": 2025
+}

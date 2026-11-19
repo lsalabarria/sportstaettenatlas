@@ -1,0 +1,18 @@
+{
+  "id": "a22beac2-12b7-44e2-ae4d-20a6dbbd37e7",
+  "name": "Schwimmhalle Luftschiffhafen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Olympischer Weg",
+    "hausnummer": "10",
+    "plz": "14471",
+    "ort": "Potsdam, Stadt"
+  },
+  "lage": {
+    "lon": 13.017925,
+    "lat": 52.377655
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

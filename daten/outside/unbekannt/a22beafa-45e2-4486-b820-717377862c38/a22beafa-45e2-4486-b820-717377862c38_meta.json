@@ -1,0 +1,17 @@
+{
+  "id": "a22beafa-45e2-4486-b820-717377862c38",
+  "name": "UHC Sportplätze",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wesselblek",
+    "hausnummer": "8",
+    "plz": "22339"
+  },
+  "lage": {
+    "lon": 10.055106,
+    "lat": 53.63845
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

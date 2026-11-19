@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc46-c14d-4a0c-a263-519feb2115c0",
+  "name": "Heidebad e.V. Dieckheuer",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Heidestraße",
+    "hausnummer": "22",
+    "plz": "59174",
+    "ort": "Kamen, Stadt"
+  },
+  "lage": {
+    "lon": 7.598434,
+    "lat": 51.585159
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

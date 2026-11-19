@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0b-9a41-4605-a6dc-aa3b95040755",
+  "name": "Freibad Wiedenbrück",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Rietberger Str.",
+    "hausnummer": "30",
+    "plz": "33378",
+    "ort": "Rheda-Wiedenbrück, Stadt"
+  },
+  "lage": {
+    "lon": 8.31933,
+    "lat": 51.83295
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

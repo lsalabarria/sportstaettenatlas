@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbff-ae4a-45be-827d-f38cb6b3fec8",
+  "name": "Südpool",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "hausnummer": "27",
+    "plz": "44625",
+    "ort": "Herne, Stadt"
+  },
+  "lage": {
+    "lon": 7.23137,
+    "lat": 51.52693
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

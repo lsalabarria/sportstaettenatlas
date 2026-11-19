@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc17-c3b1-4425-a677-98e713300a89",
+  "name": "Bad am Rothaarsteig",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "3",
+    "plz": "57399",
+    "ort": "Kirchhundem"
+  },
+  "lage": {
+    "lon": 8.17097,
+    "lat": 51.08545
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

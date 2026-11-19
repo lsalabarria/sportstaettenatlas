@@ -1,0 +1,18 @@
+{
+  "id": "a22beac8-c561-4ad1-a29d-32d8ae7374bf",
+  "name": "Jahnsportforum",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Parkstraße",
+    "hausnummer": "1",
+    "plz": "17033",
+    "ort": "Neubrandenburg, Vier-Tore-Stadt"
+  },
+  "lage": {
+    "lon": 13.256402,
+    "lat": 53.549645
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

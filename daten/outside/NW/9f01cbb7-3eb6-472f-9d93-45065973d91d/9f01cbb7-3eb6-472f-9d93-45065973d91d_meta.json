@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbb7-3eb6-472f-9d93-45065973d91d",
+  "name": "Freibad Hangeweiher",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Hangeweiher",
+    "hausnummer": "32",
+    "plz": "52074",
+    "ort": "Aachen, Stadt"
+  },
+  "lage": {
+    "lon": 6.07109,
+    "lat": 50.75982
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb"
+}

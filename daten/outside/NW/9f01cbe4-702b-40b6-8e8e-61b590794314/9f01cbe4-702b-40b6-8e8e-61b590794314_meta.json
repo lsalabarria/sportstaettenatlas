@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe4-702b-40b6-8e8e-61b590794314",
+  "name": "Südbad Dortmund",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Ruhrallee",
+    "hausnummer": "30",
+    "plz": "44139",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.46835,
+    "lat": 51.50697
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1960
+}

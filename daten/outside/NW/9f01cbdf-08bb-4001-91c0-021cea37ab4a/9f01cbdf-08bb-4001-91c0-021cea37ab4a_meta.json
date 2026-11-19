@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbdf-08bb-4001-91c0-021cea37ab4a",
+  "name": "Strandbad Heidweiher",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Heidweiher",
+    "hausnummer": "1",
+    "plz": "41366",
+    "ort": "Schwalmtal"
+  },
+  "lage": {
+    "lon": 6.23692,
+    "lat": 51.24248
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

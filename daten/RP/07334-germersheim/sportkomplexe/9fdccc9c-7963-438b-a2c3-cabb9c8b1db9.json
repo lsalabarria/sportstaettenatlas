@@ -1,0 +1,10 @@
+{
+  "id": "9fdccc9c-7963-438b-a2c3-cabb9c8b1db9",
+  "name": "Rheinberghalle",
+  "adresse": {
+    "strasse": "Am Rheinberg",
+    "hausnummer": "13",
+    "plz": "76773",
+    "ort": "Kuhardt"
+  }
+}

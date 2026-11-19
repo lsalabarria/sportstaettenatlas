@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc39-12d6-447d-901d-c097f37b6918",
+  "name": "Freibad Alverdissen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Herrengarten",
+    "hausnummer": "4",
+    "plz": "32683",
+    "ort": "Barntrup, Stadt"
+  },
+  "lage": {
+    "lon": 9.123245,
+    "lat": 52.029959
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

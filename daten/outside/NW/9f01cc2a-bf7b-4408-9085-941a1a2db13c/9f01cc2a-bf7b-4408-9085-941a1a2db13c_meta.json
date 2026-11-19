@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc2a-bf7b-4408-9085-941a1a2db13c",
+  "name": "Hallenbad am Lavalplatz",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gottfried-Wetzel-Str.",
+    "hausnummer": "2 – 4",
+    "plz": "40822",
+    "ort": "Mettmann, Stadt"
+  },
+  "lage": {
+    "lon": 6.97562,
+    "lat": 51.25002
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1970
+}

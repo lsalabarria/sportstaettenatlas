@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf5-4015-4c7c-a80a-ef7dfd29cd35",
+  "name": "Hallenbad Gelsenkirchen-Horst",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Turfstraße",
+    "hausnummer": "15",
+    "plz": "45899",
+    "ort": "Gelsenkirchen, Stadt"
+  },
+  "lage": {
+    "lon": 7.02688,
+    "lat": 51.53869
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1966
+}

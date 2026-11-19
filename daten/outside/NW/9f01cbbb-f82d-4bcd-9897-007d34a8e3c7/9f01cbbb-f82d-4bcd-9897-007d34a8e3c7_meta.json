@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbb-f82d-4bcd-9897-007d34a8e3c7",
+  "name": "Westfalen-Therme",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schwimmbadstraße",
+    "hausnummer": "14",
+    "plz": "33175",
+    "ort": "Bad Lippspringe, Stadt"
+  },
+  "lage": {
+    "lon": 8.82349,
+    "lat": 51.79202
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf6-15ee-409c-968c-72eed7f0c750",
+  "name": "Elbe-Schwimmhalle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Virchowstraße",
+    "hausnummer": "9",
+    "plz": "39104",
+    "ort": "Magdeburg, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 11.631756,
+    "lat": 52.135129
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

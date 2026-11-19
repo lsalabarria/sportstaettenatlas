@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf3-d8ea-4d1c-81c2-6ec953124a10",
+  "name": "Warmwasser-Freibad in der Gambach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gambachsweg",
+    "hausnummer": "24",
+    "plz": "57258",
+    "ort": "Freudenberg, Stadt"
+  },
+  "lage": {
+    "lon": 7.87597,
+    "lat": 50.90551
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1965
+}

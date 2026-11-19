@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbd3-a4d2-4bad-b97b-597f5bc43254",
+  "name": "Stadtbad Viersen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Burgstraße",
+    "hausnummer": "60",
+    "plz": "41747",
+    "ort": "Viersen, Stadt"
+  },
+  "lage": {
+    "lon": 6.39351,
+    "lat": 51.25971
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1906
+}

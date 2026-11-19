@@ -1,0 +1,17 @@
+{
+  "id": "a22be9f5-74a5-4dce-9386-cceaf149bff5",
+  "name": "Radsportzentrum NRW",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Aachener Straße",
+    "plz": "50933",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 6.872225,
+    "lat": 50.936543
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

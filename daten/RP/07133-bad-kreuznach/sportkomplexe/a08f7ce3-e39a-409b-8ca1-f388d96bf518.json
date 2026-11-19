@@ -1,0 +1,10 @@
+{
+  "id": "a08f7ce3-e39a-409b-8ca1-f388d96bf518",
+  "name": "Grundschule Feilbingert",
+  "adresse": {
+    "strasse": "Fröbelstraße",
+    "hausnummer": "1",
+    "plz": "67824",
+    "ort": "Feilbingert"
+  }
+}

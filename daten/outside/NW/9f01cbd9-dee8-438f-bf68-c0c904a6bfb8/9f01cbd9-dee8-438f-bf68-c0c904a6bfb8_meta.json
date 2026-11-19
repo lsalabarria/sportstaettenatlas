@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd9-dee8-438f-bf68-c0c904a6bfb8",
+  "name": "Freibad Heide",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Langhansstraße",
+    "hausnummer": "100",
+    "plz": "42697",
+    "ort": "Solingen, Stadt"
+  },
+  "lage": {
+    "lon": 6.97299,
+    "lat": 51.15879
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

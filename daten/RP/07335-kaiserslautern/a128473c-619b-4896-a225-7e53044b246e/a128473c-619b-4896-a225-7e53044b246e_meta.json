@@ -1,0 +1,14 @@
+{
+  "id": "a128473c-619b-4896-a225-7e53044b246e",
+  "name": "Grün-Weiß Anlage Kirchstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "hausnummer": "120",
+    "plz": "67691"
+  },
+  "lage": {
+    "lon": 7.880249,
+    "lat": 49.435833
+  }
+}

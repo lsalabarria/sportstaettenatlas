@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbff-f1e4-4363-8228-4bcbdece594e",
+  "name": "Warmwasserfreibad Herscheid",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Unterdorfstraße",
+    "hausnummer": "24",
+    "plz": "58849",
+    "ort": "Herscheid"
+  },
+  "lage": {
+    "lon": 7.74326,
+    "lat": 51.17572
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

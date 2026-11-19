@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc46-17e9-4cc2-a24f-4356f30687ba",
+  "name": "Schwimmverein Lünen 08",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Martastraße",
+    "hausnummer": "12",
+    "plz": "44534",
+    "ort": "Lünen, Stadt"
+  },
+  "lage": {
+    "lon": 7.53262,
+    "lat": 51.61751
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

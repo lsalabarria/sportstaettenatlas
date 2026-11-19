@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc1a-007d-47df-8d5b-95df9ddcf8d1",
+  "name": "Lehrschwimmbecken Breyell",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Biether Straße",
+    "plz": "41334",
+    "ort": "Nettetal, Stadt"
+  },
+  "lage": {
+    "lon": 6.24267,
+    "lat": 51.29798
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

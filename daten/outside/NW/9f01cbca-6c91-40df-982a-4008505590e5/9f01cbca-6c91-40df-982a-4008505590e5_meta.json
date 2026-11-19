@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbca-6c91-40df-982a-4008505590e5",
+  "name": "Hallenbad Brakel",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Bahndamm",
+    "hausnummer": "28",
+    "plz": "33034",
+    "ort": "Brakel, Stadt"
+  },
+  "lage": {
+    "lon": 9.18744,
+    "lat": 51.71375
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

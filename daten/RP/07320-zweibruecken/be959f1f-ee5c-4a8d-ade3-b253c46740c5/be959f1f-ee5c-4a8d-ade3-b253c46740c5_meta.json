@@ -1,0 +1,22 @@
+{
+  "id": "be959f1f-ee5c-4a8d-ade3-b253c46740c5",
+  "name": "Sporthalle Mörsbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Steinackerstr.",
+    "hausnummer": "6",
+    "plz": "66482"
+  },
+  "lage": {
+    "lon": 7.400719,
+    "lat": 49.302692
+  },
+  "entfernung_oepnv": 10,
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "SV 21 eV Zweibrücken-Mörsbach",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "SV 21 eV Zweibrücken-Mörsbach",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "baujahr": 1980,
+  "letzte_sanierung": 2021
+}

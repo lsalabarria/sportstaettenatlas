@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc2c-5bc1-4389-a748-6c8e2c1147d8",
+  "name": "Vennbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wilhelm-Jansen-Straße",
+    "hausnummer": "1",
+    "plz": "52156",
+    "ort": "Monschau, Stadt"
+  },
+  "lage": {
+    "lon": 6.230133,
+    "lat": 50.554767
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

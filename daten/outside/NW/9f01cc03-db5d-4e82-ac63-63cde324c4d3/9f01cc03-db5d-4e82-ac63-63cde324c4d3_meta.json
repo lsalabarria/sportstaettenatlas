@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc03-db5d-4e82-ac63-63cde324c4d3",
+  "name": "Naturseebad Kapbusch",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kapbusch",
+    "plz": "41836",
+    "ort": "Hückelhoven, Stadt"
+  },
+  "lage": {
+    "lon": 6.22695,
+    "lat": 51.01703
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

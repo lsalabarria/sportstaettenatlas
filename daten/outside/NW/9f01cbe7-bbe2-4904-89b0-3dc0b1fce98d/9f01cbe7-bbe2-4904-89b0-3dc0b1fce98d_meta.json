@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe7-bbe2-4904-89b0-3dc0b1fce98d",
+  "name": "Freibad Wolfssee",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kalkweg",
+    "hausnummer": "262 a",
+    "plz": "47279",
+    "ort": "Duisburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.80005,
+    "lat": 51.38452
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

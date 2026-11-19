@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe8-e47e-4ec8-bc28-c90011752e90",
+  "name": "Gartenhallenbad Unterrath",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Mettlacher Straße",
+    "hausnummer": "55",
+    "plz": "40468",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.77235,
+    "lat": 51.27243
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbe-82d8-4023-bf9a-84b0c01db778",
+  "name": "Städtisches Hallenbad Balve",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "In der Murmke",
+    "hausnummer": "9",
+    "plz": "58802",
+    "ort": "Balve, Stadt"
+  },
+  "lage": {
+    "lon": 7.86915,
+    "lat": 51.32688
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

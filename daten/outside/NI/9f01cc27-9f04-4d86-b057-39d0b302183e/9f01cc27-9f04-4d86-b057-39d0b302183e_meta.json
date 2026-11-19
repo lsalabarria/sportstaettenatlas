@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc27-9f04-4d86-b057-39d0b302183e",
+  "name": "Freibad Hüls",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Ovelheider Weg",
+    "hausnummer": "2",
+    "plz": "45770",
+    "ort": "Marl, Stadt"
+  },
+  "lage": {
+    "lon": 7.1382,
+    "lat": 51.65647
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

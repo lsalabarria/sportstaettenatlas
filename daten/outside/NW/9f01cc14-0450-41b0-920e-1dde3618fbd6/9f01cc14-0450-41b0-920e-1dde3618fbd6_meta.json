@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc14-0450-41b0-920e-1dde3618fbd6",
+  "name": "Freibad Stromberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Hang",
+    "hausnummer": "20",
+    "plz": "59302",
+    "ort": "Oelde, Stadt"
+  },
+  "lage": {
+    "lon": 8.198212,
+    "lat": 51.797471
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

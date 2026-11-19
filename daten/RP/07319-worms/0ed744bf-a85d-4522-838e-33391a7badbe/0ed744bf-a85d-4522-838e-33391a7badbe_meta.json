@@ -14,10 +14,12 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
+  "wlan": "ja",
   "betriebsstatus": "in Betrieb",
   "sportarten": [
     "Pistole",
     "Gewehr",
     "Schießsport"
-  ]
+  ],
+  "baujahr": 1979
 }

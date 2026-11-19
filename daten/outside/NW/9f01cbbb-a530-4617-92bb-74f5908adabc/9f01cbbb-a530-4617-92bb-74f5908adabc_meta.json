@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbb-a530-4617-92bb-74f5908adabc",
+  "name": "Wabach-Bad Bad Laasphe",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gennernbach",
+    "hausnummer": "38",
+    "plz": "57334",
+    "ort": "Bad Laasphe, Stadt"
+  },
+  "lage": {
+    "lon": 8.40866,
+    "lat": 50.91863
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

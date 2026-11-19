@@ -1,0 +1,18 @@
+{
+  "id": "a22bea92-9054-4dfb-bc18-e0215d3ce4de",
+  "name": "Sporthalle MOTIV",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Furtwänglerstraße",
+    "hausnummer": "145",
+    "plz": "70195",
+    "ort": "Stuttgart, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 9.131328,
+    "lat": 48.786013
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

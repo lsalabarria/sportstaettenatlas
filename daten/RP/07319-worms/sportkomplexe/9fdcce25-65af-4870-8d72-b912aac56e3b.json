@@ -1,0 +1,10 @@
+{
+  "id": "9fdcce25-65af-4870-8d72-b912aac56e3b",
+  "name": "Sportanlage Gaustraße",
+  "adresse": {
+    "strasse": "Gaustraße",
+    "hausnummer": "210",
+    "plz": "67549",
+    "ort": "Worms, Stadt"
+  }
+}

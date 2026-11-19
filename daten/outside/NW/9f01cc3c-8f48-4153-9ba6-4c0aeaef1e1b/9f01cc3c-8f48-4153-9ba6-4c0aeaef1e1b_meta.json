@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3c-8f48-4153-9ba6-4c0aeaef1e1b",
+  "name": "Kurbad Wachtling",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Eisenbahnstraße",
+    "hausnummer": "8",
+    "plz": "41239",
+    "ort": "Mönchengladbach, Stadt"
+  },
+  "lage": {
+    "lon": 6.434487,
+    "lat": 51.165362
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

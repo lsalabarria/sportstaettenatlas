@@ -1,0 +1,16 @@
+{
+  "id": "a22beb00-7b36-484b-8df5-1fcb85141de3",
+  "name": "Biathlonarena Osterzgebirge",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "plz": "1773",
+    "ort": "Altenberg, Stadt"
+  },
+  "lage": {
+    "lon": 13.736596,
+    "lat": 50.739455
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

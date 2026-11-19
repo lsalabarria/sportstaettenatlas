@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbb9-0680-4512-9f9f-98777f3779fc",
+  "name": "Freibad Ahlen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bürgermeister-Corneli-Ring",
+    "hausnummer": "46",
+    "plz": "59227",
+    "ort": "Ahlen, Stadt"
+  },
+  "lage": {
+    "lon": 7.88983,
+    "lat": 51.77456
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

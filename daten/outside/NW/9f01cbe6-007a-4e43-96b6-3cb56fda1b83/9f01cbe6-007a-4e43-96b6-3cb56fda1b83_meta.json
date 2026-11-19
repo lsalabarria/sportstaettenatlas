@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe6-007a-4e43-96b6-3cb56fda1b83",
+  "name": "Schwimmhalle Löh",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Löh",
+    "hausnummer": "5",
+    "plz": "58579",
+    "ort": "Schalksmühle"
+  },
+  "lage": {
+    "lon": 7.52355,
+    "lat": 51.23643
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1972
+}

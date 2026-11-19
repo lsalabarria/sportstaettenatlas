@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc35-1e6b-4c88-ac07-89992a95252f",
+  "name": "Sportschule Hachen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Holthahn",
+    "hausnummer": "1",
+    "plz": "59846",
+    "ort": "Sundern (Sauerland), Stadt"
+  },
+  "lage": {
+    "lon": 7.99449,
+    "lat": 51.37305
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

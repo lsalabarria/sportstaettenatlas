@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0f-b209-46f0-942c-0e17d2e6b4fc",
+  "name": "life-ness",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Carl-Diem-Str.",
+    "hausnummer": "33",
+    "plz": "42477",
+    "ort": "Radevormwald, Stadt"
+  },
+  "lage": {
+    "lon": 7.35628,
+    "lat": 51.2056
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

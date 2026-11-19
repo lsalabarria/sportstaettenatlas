@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3e-c0bf-437e-8b6f-845dcdbd599a",
+  "name": "Thermal-Freibad Schwimmbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schwimmbadstraße",
+    "hausnummer": "10",
+    "plz": "33175",
+    "ort": "Bad Lippspringe, Stadt"
+  },
+  "lage": {
+    "lon": 8.823188,
+    "lat": 51.791747
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

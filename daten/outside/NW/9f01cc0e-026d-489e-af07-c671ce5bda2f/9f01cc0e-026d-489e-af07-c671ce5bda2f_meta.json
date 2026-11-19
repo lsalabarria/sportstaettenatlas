@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0e-026d-489e-af07-c671ce5bda2f",
+  "name": "Freibad Mollbeck",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Nesselrodestraße",
+    "hausnummer": "8",
+    "plz": "45659",
+    "ort": "Recklinghausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.18761,
+    "lat": 51.63645
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

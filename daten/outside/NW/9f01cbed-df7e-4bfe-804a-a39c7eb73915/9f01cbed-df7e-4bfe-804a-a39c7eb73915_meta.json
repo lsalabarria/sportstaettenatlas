@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbed-df7e-4bfe-804a-a39c7eb73915",
+  "name": "Freibad Kierdorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wiesenstraße",
+    "hausnummer": "1",
+    "plz": "50374",
+    "ort": "Erftstadt, Stadt"
+  },
+  "lage": {
+    "lon": 6.78393,
+    "lat": 50.8388
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1960
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cea79dcb-5afa-4a04-9ed1-7fefa7cad2f1",
+  "name": "Schießsportzentrum SC 1858 Idar-Oberstein",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Am Schützenhaus",
+    "hausnummer": "1",
+    "plz": "55743"
+  },
+  "lage": {
+    "lon": 7.299728,
+    "lat": 49.715433
+  },
+  "entfernung_oepnv": 450,
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Schützenverein 1858 Idar-Oberstein e.V.",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "Schützenverein 1858 Idar-Oberstein e.V.",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.schuetzenverein-sv1858.app",
+  "baujahr": 1896,
+  "letzte_sanierung": 2023
+}

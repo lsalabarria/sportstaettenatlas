@@ -1,0 +1,10 @@
+{
+  "id": "9d09fae8-650b-476f-b677-db219e55608a",
+  "name": "Sportplatz Serrig",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "33a",
+    "plz": "54455",
+    "ort": "Serrig"
+  }
+}

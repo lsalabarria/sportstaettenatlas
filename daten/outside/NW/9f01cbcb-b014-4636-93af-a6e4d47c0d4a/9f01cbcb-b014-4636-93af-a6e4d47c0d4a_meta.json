@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbcb-b014-4636-93af-a6e4d47c0d4a",
+  "name": "Hallenbad Hoppecke",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Berliner Straße",
+    "hausnummer": "12",
+    "plz": "59929",
+    "ort": "Brilon, Stadt"
+  },
+  "lage": {
+    "lon": 8.64254,
+    "lat": 51.37499
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1970
+}

@@ -11,10 +11,14 @@
     "lon": 7.084315,
     "lat": 49.735624
   },
+  "entfernung_oepnv": 50,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Zweckverband Wintersportplatz Erbeskopf",
+  "eigentuemer_typ": "Zweckverband",
   "betreiber": "Zweckverband Wintersportplatz Erbeskopf",
-  "website": "erbeskopf.de"
+  "betreiber_typ": "Zweckverband",
+  "website": "erbeskopf.de",
+  "baujahr": 1958
 }

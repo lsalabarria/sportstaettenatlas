@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc27-47a8-4b65-a239-484cb8fec45f",
+  "name": "Freizeit-Hallenbad Marienmünster",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "5",
+    "plz": "37696",
+    "ort": "Marienmünster, Stadt"
+  },
+  "lage": {
+    "lon": 9.2367,
+    "lat": 51.8183
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1972
+}

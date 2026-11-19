@@ -1,0 +1,22 @@
+{
+  "id": "4c7ef034-d6e7-4390-a0f0-6a1a8d2df212",
+  "name": "Große Turnhalle (TH) der TGM Gonsenheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kirchstr.",
+    "hausnummer": "45-47",
+    "plz": "55124"
+  },
+  "lage": {
+    "lon": 8.206206,
+    "lat": 50.00227
+  },
+  "entfernung_oepnv": 30,
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Turngemeinde 1861 e.V. Mainz-Gonsenheim",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "Turngemeinde 1861 e.V. Mainz-Gonsenheim",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.tgm-gonsenheim.de",
+  "baujahr": 1861
+}

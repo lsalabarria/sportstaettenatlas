@@ -1,0 +1,23 @@
+{
+  "id": "d95d8187-0f0a-48da-ad92-53db8ef6d20c",
+  "name": "Sportplatz Gutweiler",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "hausnummer": "-",
+    "plz": "54317"
+  },
+  "lage": {
+    "lon": 6.729287,
+    "lat": 49.720195
+  },
+  "entfernung_oepnv": 200,
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "SV Gutweiler e.V.",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "SV Gutweiler e.V.",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.svgutweiler.de",
+  "baujahr": 1970,
+  "letzte_sanierung": 2024
+}

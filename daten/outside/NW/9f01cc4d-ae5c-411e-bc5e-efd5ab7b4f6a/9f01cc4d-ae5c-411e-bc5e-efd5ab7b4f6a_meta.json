@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4d-ae5c-411e-bc5e-efd5ab7b4f6a",
+  "name": "Lehrschwimmbecken",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Stetiger Straße",
+    "hausnummer": "98",
+    "plz": "40595",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.900852,
+    "lat": 51.14739
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

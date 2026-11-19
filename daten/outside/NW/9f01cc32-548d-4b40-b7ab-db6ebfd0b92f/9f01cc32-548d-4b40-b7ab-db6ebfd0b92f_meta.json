@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc32-548d-4b40-b7ab-db6ebfd0b92f",
+  "name": "Werksschwimmbad Zollverein",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "UNESCO-Welterbe Zollverein Gelsenkirchener Str.",
+    "hausnummer": "181",
+    "plz": "45309",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 7.04491,
+    "lat": 51.48616
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

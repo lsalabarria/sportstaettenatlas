@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbce-6dee-4612-b93e-38f1c884e916",
+  "name": "Hallenbad Peckelsheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Grundweg",
+    "hausnummer": "1",
+    "plz": "34439",
+    "ort": "Willebadessen, Stadt"
+  },
+  "lage": {
+    "lon": 9.11528,
+    "lat": 51.59369
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

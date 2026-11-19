@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4e-6cf4-47cf-ad50-d63c3081c544",
+  "name": "Lehrschwimmbecken Grundschule Gangelt 2",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Paulssträßchen",
+    "hausnummer": "1",
+    "plz": "52538",
+    "ort": "Gangelt"
+  },
+  "lage": {
+    "lon": 6.051888,
+    "lat": 51.005295
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

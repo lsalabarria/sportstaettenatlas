@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbdb-209d-4934-b7ed-438cfca7d7c4",
+  "name": "Seelbacher Weiher",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Freudenberger Straße",
+    "hausnummer": "679",
+    "plz": "57072",
+    "ort": "Siegen, Stadt"
+  },
+  "lage": {
+    "lon": 7.9421,
+    "lat": 50.88871
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1987
+}

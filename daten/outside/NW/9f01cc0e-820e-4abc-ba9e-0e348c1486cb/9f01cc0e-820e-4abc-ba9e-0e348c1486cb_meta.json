@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0e-820e-4abc-ba9e-0e348c1486cb",
+  "name": "Schwefelbad Steinbeck",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bad",
+    "hausnummer": "40",
+    "plz": "49509",
+    "ort": "Recke"
+  },
+  "lage": {
+    "lon": 7.67563,
+    "lat": 52.35575
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

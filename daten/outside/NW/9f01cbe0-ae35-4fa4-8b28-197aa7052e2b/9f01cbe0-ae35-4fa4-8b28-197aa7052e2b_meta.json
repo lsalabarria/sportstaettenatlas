@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe0-ae35-4fa4-8b28-197aa7052e2b",
+  "name": "Erlebnisfreibad Dieffenbach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Im Wiesengrund",
+    "hausnummer": "33",
+    "plz": "53937",
+    "ort": "Schleiden, Stadt"
+  },
+  "lage": {
+    "lon": 6.46709,
+    "lat": 50.52953
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

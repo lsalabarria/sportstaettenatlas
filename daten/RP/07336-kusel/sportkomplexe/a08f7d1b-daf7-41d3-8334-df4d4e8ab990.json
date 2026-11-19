@@ -1,0 +1,10 @@
+{
+  "id": "a08f7d1b-daf7-41d3-8334-df4d4e8ab990",
+  "name": "Warmfreibad Waldmohr",
+  "adresse": {
+    "strasse": "Badstraße",
+    "hausnummer": "12",
+    "plz": "66914",
+    "ort": "Waldmohr, Stadt"
+  }
+}

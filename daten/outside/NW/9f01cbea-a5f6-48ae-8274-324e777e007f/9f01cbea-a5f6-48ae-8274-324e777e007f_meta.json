@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbea-a5f6-48ae-8274-324e777e007f",
+  "name": "EMBRICANA",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Nollenburger Weg",
+    "hausnummer": "34",
+    "plz": "46446",
+    "ort": "Emmerich am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 6.23731,
+    "lat": 51.84401
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1994
+}

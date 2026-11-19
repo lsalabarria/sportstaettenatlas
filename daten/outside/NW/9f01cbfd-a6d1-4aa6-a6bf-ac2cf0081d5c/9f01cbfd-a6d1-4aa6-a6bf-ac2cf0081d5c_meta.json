@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbfd-a6d1-4aa6-a6bf-ac2cf0081d5c",
+  "name": "Freibach Heimbach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Auf Wissen Woog",
+    "plz": "52396",
+    "ort": "Heimbach, Stadt"
+  },
+  "lage": {
+    "lon": 6.47037,
+    "lat": 50.63785
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

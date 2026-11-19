@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc2f-09a0-4030-a596-e39a66ce6c8e",
+  "name": "Kleinschwimmhalle Siersdorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Heinrich-Franken-Straße",
+    "hausnummer": "22",
+    "plz": "52457",
+    "ort": "Aldenhoven"
+  },
+  "lage": {
+    "lon": 6.229185,
+    "lat": 50.899671
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1972
+}

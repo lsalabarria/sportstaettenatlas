@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc26-763e-4469-839b-1a7b1c535b3b",
+  "name": "Freibad Elbrinxen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Obere Dorfstraße",
+    "plz": "32676",
+    "ort": "Lügde, Stadt"
+  },
+  "lage": {
+    "lon": 9.25994,
+    "lat": 51.89877
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

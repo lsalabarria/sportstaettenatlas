@@ -1,0 +1,18 @@
+{
+  "id": "a22beae5-a6a6-4cf0-92f9-8b5a629c7063",
+  "name": "Reitclub am Olympiapark",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Schirwindter Allee",
+    "hausnummer": "45",
+    "plz": "14053",
+    "ort": "Berlin, Stadt"
+  },
+  "lage": {
+    "lon": 13.228212,
+    "lat": 52.511471
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

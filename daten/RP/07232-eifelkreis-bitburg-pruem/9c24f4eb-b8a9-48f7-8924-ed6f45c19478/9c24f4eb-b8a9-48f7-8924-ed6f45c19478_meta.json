@@ -15,5 +15,12 @@
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "betriebsstatus": "im Bau",
-  "website": "www.vg-arzfeld.de"
+  "website": "www.vg-arzfeld.de",
+  "baujahr": 2022,
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Holz/Pellets/Hackschnitzel"
+    }
+  ]
 }

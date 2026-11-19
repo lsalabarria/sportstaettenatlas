@@ -1,0 +1,16 @@
+{
+  "id": "a08f7cbf-072b-48e3-90b2-a6d5273cbb81",
+  "name": "Sportplatz Becherbach",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Neue Straße",
+    "plz": "55608"
+  },
+  "lage": {
+    "lon": 7.505864,
+    "lat": 49.738963
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

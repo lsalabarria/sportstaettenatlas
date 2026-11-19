@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbda-caab-4c16-8589-ddbf8e462409",
+  "name": "Schwimmhalle SIMMBAD",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Walter-Bachmann-Straße",
+    "hausnummer": "38",
+    "plz": "52152",
+    "ort": "Simmerath"
+  },
+  "lage": {
+    "lon": 6.28729,
+    "lat": 50.60027
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2012
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc11-9c59-4e27-a637-1a66b25c554e",
+  "name": "Hallenbad Residenzbad Schloss Neuhaus",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Schloßgarten",
+    "hausnummer": "7",
+    "plz": "33104",
+    "ort": "Paderborn, Stadt"
+  },
+  "lage": {
+    "lon": 8.71312,
+    "lat": 51.74845
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1973
+}

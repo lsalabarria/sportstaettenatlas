@@ -1,0 +1,18 @@
+{
+  "id": "a22beaba-d63c-4719-a46d-30db45f3e839",
+  "name": "Herbert-Grünewald-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Marienburger Straße",
+    "hausnummer": "4",
+    "plz": "51373",
+    "ort": "Leverkusen, Stadt"
+  },
+  "lage": {
+    "lon": 6.992117,
+    "lat": 51.036672
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

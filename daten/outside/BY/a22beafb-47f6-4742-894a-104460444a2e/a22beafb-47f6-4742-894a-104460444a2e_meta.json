@@ -1,0 +1,18 @@
+{
+  "id": "a22beafb-47f6-4742-894a-104460444a2e",
+  "name": "Pascal-Gymnasium",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Wienburgstraße",
+    "hausnummer": "52",
+    "plz": "48147",
+    "ort": "Münster"
+  },
+  "lage": {
+    "lon": 7.625807,
+    "lat": 51.976156
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

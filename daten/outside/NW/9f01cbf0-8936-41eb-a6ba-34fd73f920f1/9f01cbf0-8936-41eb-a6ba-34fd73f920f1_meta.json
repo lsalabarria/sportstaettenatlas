@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf0-8936-41eb-a6ba-34fd73f920f1",
+  "name": "Grugabad Essen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Grugapark",
+    "hausnummer": "10",
+    "plz": "45131",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 6.98779,
+    "lat": 51.4233
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1964
+}

@@ -1,0 +1,14 @@
+{
+  "id": "dc7dbcc6-570f-4663-9158-827066dccf60",
+  "name": "Freiraum Basecamp",
+  "kategorie": "Klettersportstätte",
+  "adresse": {
+    "strasse": "Stadionstraße",
+    "hausnummer": "77",
+    "plz": "56626"
+  },
+  "lage": {
+    "lon": 7.422874,
+    "lat": 50.42688
+  }
+}

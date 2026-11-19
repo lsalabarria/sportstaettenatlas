@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc48-5be1-4ef8-afc6-6ef5f6d803a0",
+  "name": "Warmwasserfreibad Friedrichstal",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Friedrichstal",
+    "hausnummer": "7",
+    "plz": "58809",
+    "ort": "Neuenrade, Stadt"
+  },
+  "lage": {
+    "lon": 7.802563,
+    "lat": 51.289878
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf0-c266-46ba-9c56-72b72aaa0bc6",
+  "name": "Helmut-Körnig-Halle",
+  "kategorie": "Eissportstätte",
+  "adresse": {
+    "strasse": "Strobelallee",
+    "hausnummer": "40",
+    "plz": "44139",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.456185,
+    "lat": 51.493825
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

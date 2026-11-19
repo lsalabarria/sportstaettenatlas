@@ -1,0 +1,10 @@
+{
+  "id": "9d09faed-a993-4982-ae95-a6cb75ad7dbd",
+  "name": "Sportplatz Sessenhausen",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "77",
+    "plz": "56244",
+    "ort": "Sessenhausen"
+  }
+}

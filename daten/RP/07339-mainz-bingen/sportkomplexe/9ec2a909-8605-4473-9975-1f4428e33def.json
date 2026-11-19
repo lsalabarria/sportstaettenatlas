@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a909-8605-4473-9975-1f4428e33def",
+  "name": "IGS Gerhard Ertl",
+  "adresse": {
+    "strasse": "Am Weiher",
+    "hausnummer": "1",
+    "plz": "55576",
+    "ort": "Sprendlingen"
+  }
+}

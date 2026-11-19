@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbba-1be7-41ea-8fec-d1e5220b3303",
+  "name": "NASS-Freizeitbad Arnsberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Solepark",
+    "hausnummer": "15",
+    "plz": "59759",
+    "ort": "Arnsberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.00514,
+    "lat": 51.43283
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

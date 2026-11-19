@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc38-6b7f-4c0a-9660-8367957f5bd1",
+  "name": "Schwimmschule Sharky",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zusestr.",
+    "hausnummer": "27",
+    "plz": "50859",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 6.84509,
+    "lat": 50.95018
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2019
+}

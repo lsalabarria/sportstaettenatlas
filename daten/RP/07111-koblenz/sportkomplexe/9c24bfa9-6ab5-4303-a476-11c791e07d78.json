@@ -1,0 +1,10 @@
+{
+  "id": "9c24bfa9-6ab5-4303-a476-11c791e07d78",
+  "name": "IGS Koblenz",
+  "adresse": {
+    "strasse": "Johannesstraße",
+    "hausnummer": "58-60",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  }
+}

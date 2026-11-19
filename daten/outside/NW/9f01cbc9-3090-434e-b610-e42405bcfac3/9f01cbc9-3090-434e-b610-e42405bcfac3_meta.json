@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc9-3090-434e-b610-e42405bcfac3",
+  "name": "Schul- und Sportbad Xanten",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Heinrich Lensing Str.",
+    "hausnummer": "5",
+    "plz": "46509",
+    "ort": "Xanten, Stadt"
+  },
+  "lage": {
+    "lon": 6.44774,
+    "lat": 51.65684
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

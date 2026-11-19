@@ -16,5 +16,7 @@
   "schulsport": "ja",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Verbandsgemeinde Rhein-Nahe",
-  "betreiber": "Verbandsgemeinde Rhein-Nahe"
+  "eigentuemer_typ": "Kommunales Unternehmen",
+  "betreiber": "Verbandsgemeinde Rhein-Nahe",
+  "betreiber_typ": "Kommunales Unternehmen"
 }

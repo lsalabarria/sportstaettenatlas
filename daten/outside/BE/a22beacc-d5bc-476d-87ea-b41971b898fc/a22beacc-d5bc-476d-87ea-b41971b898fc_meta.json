@@ -1,0 +1,18 @@
+{
+  "id": "a22beacc-d5bc-476d-87ea-b41971b898fc",
+  "name": "Regattastrecke Grünau",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Regattastraße",
+    "hausnummer": "191",
+    "plz": "12527",
+    "ort": "Berlin, Stadt"
+  },
+  "lage": {
+    "lon": 13.588034,
+    "lat": 52.411941
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

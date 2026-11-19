@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc2a-9592-4209-a6d8-907554c53706",
+  "name": "Naturfreibad Mettmann",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Im Stadtwald",
+    "hausnummer": "1",
+    "plz": "40822",
+    "ort": "Mettmann, Stadt"
+  },
+  "lage": {
+    "lon": 6.99548,
+    "lat": 51.25288
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2003
+}

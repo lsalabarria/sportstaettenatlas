@@ -1,0 +1,10 @@
+{
+  "id": "9fdccdd7-b3b4-4c1e-be0c-59fefcef1a03",
+  "name": "Sportanlage Krankenhaus Lahnhöhe",
+  "adresse": {
+    "strasse": "Am Kurpark",
+    "hausnummer": "1",
+    "plz": "56112",
+    "ort": "Lahnstein, Stadt"
+  }
+}

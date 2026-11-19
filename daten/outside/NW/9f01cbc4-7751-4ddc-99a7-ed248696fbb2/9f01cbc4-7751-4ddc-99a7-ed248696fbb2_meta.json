@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc4-7751-4ddc-99a7-ed248696fbb2",
+  "name": "Inselbad Bahia",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hemdener Weg",
+    "hausnummer": "169",
+    "plz": "46399",
+    "ort": "Bocholt, Stadt"
+  },
+  "lage": {
+    "lon": 6.6097,
+    "lat": 51.86196
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

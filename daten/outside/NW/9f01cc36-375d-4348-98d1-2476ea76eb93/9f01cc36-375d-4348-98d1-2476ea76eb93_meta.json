@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc36-375d-4348-98d1-2476ea76eb93",
+  "name": "Landal-Park Winterberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "In der Büre",
+    "hausnummer": "21",
+    "plz": "59955",
+    "ort": "Winterberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.512438,
+    "lat": 51.198115
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

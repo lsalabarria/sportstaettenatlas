@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc31-2181-4670-a642-3073c65b788a",
+  "name": "Lehrschwimmbecken Köhlerwaldstraße",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Köhlerwaldstr.",
+    "hausnummer": "12",
+    "plz": "58300",
+    "ort": "Wetter (Ruhr), Stadt"
+  },
+  "lage": {
+    "lon": 7.3792,
+    "lat": 51.36451
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1964
+}

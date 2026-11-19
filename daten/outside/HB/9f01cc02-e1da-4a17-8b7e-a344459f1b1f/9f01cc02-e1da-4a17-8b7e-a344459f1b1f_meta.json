@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc02-e1da-4a17-8b7e-a344459f1b1f",
+  "name": "Waldbad Bad Meinberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Vahlhausenerstraße",
+    "hausnummer": "41",
+    "plz": "32805",
+    "ort": "Horn-Bad Meinberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.99739,
+    "lat": 51.88909
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfe-28f8-44e1-83ba-4a776dd0a9df",
+  "name": "Freibad Am Damm",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Teichstraße",
+    "hausnummer": "23",
+    "plz": "58675",
+    "ort": "Hemer, Stadt"
+  },
+  "lage": {
+    "lon": 7.76087,
+    "lat": 51.39979
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb"
+}

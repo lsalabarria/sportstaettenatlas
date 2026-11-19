@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc24-e874-406d-b0d7-0dd1dc2c9417",
+  "name": "CabrioLi - Cabrio Lippstadt Kombibad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bückeburger Strasse",
+    "hausnummer": "10",
+    "plz": "59555",
+    "ort": "Lippstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.33203,
+    "lat": 51.67469
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2013
+}

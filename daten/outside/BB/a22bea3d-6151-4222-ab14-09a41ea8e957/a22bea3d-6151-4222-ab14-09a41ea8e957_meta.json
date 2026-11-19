@@ -1,0 +1,18 @@
+{
+  "id": "a22bea3d-6151-4222-ab14-09a41ea8e957",
+  "name": "Schießsportzentrum Frankfurt (Oder)",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Eisenhüttenstädter Chaussee",
+    "hausnummer": "55",
+    "plz": "15236",
+    "ort": "Frankfurt an der Oder"
+  },
+  "lage": {
+    "lon": 14.520433,
+    "lat": 52.315956
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "d2311836-95cc-427c-b6c7-48eb81f2cccd",
+  "name": "Flugplatz Worms",
+  "kategorie": "Flugsportstätte",
+  "adresse": {
+    "strasse": "Am Flugplatz",
+    "plz": "67547"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "eigentuemer": "Flugplatz Worms GmbH"
+}

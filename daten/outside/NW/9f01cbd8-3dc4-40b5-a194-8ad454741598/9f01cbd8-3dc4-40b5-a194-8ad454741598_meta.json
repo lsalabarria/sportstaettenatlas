@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd8-3dc4-40b5-a194-8ad454741598",
+  "name": "Städtisches Freibad Harth Weiberg (HaWei)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kirchweg",
+    "hausnummer": "18",
+    "plz": "33142",
+    "ort": "Büren, Stadt"
+  },
+  "lage": {
+    "lon": 8.58348,
+    "lat": 51.50931
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

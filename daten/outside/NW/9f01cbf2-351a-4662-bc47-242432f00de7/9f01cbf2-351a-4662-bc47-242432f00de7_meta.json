@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf2-351a-4662-bc47-242432f00de7",
+  "name": "Freibad Steele",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Westfalenstraße",
+    "hausnummer": "210 a",
+    "plz": "45276",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 7.06858,
+    "lat": 51.44196
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1945
+}

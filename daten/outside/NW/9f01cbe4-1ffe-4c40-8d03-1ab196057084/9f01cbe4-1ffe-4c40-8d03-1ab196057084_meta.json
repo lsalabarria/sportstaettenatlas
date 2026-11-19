@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe4-1ffe-4c40-8d03-1ab196057084",
+  "name": "Hallenbad Mengede",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Neumarkstraße",
+    "hausnummer": "40",
+    "plz": "44359",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.39399,
+    "lat": 51.56059
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1969
+}

@@ -1,0 +1,31 @@
+{
+  "id": "92912ee4-dec6-4bf5-8b80-77abd339937d",
+  "name": "Sportplatz auf Klopp",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Kloppstraße",
+    "hausnummer": "59",
+    "plz": "55743"
+  },
+  "lage": {
+    "lon": 7.368556,
+    "lat": 49.708989
+  },
+  "entfernung_oepnv": 1000,
+  "oeffentlicher_zugang": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Spvgg. Nahbollenbach e.V.",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "Spvgg. Nahbollenbach e.V.",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.spvggnahbollenbach.de/",
+  "baujahr": 1976,
+  "letzte_sanierung": 2023,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 3,
+    "Sanitärräume - Publikum": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 2,
+    "Technikräume": 1
+  }
+}

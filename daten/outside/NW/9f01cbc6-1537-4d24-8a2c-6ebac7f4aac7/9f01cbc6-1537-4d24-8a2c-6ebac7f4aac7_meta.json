@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc6-1537-4d24-8a2c-6ebac7f4aac7",
+  "name": "Freibad Werne",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bramheide",
+    "hausnummer": "17 bis 19",
+    "plz": "44894",
+    "ort": "Bochum, Stadt"
+  },
+  "lage": {
+    "lon": 7.31438,
+    "lat": 51.49267
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

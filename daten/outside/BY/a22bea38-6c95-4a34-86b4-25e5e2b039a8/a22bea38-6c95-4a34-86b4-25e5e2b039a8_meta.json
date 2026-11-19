@@ -1,0 +1,19 @@
+{
+  "id": "a22bea38-6c95-4a34-86b4-25e5e2b039a8",
+  "name": "Rangers Sportpark",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Friedrich-List-Weg",
+    "hausnummer": "10",
+    "plz": "90471",
+    "ort": "Nürnberg"
+  },
+  "lage": {
+    "lon": 11.110158,
+    "lat": 49.409896
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22bea38-6806-472a-b24a-89c38984e9c4"
+}

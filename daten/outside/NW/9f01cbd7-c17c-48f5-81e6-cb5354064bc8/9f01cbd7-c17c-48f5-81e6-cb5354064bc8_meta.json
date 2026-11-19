@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd7-c17c-48f5-81e6-cb5354064bc8",
+  "name": "Freibad Bünde Mitte",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Freibad",
+    "hausnummer": "12",
+    "plz": "32257",
+    "ort": "Bünde, Stadt"
+  },
+  "lage": {
+    "lon": 8.58541,
+    "lat": 52.20245
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

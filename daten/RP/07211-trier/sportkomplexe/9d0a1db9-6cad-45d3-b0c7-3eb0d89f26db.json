@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1db9-6cad-45d3-b0c7-3eb0d89f26db",
+  "name": "Grundschule Matthias",
+  "adresse": {
+    "strasse": "Kentenichstraße",
+    "hausnummer": "2",
+    "plz": "54290",
+    "ort": "Trier, Stadt"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc30-a8a4-47a2-b07d-5c8a52c39a8b",
+  "name": "Freibad Sport- u. Naturfreund",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kermelberg",
+    "hausnummer": "76",
+    "plz": "58453",
+    "ort": "Witten, Stadt"
+  },
+  "lage": {
+    "lon": 7.389399,
+    "lat": 51.423377
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

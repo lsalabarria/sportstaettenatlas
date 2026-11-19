@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4b-98ee-40cf-9c95-c460e4284a72",
+  "name": "Hallenbad Löhne",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Albert-Schweitzer-Straße",
+    "hausnummer": "10",
+    "plz": "32584",
+    "ort": "Löhne, Stadt"
+  },
+  "lage": {
+    "lon": 8.717671,
+    "lat": 52.203034
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

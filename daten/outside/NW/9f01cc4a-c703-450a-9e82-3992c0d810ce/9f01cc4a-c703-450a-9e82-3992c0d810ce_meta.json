@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4a-c703-450a-9e82-3992c0d810ce",
+  "name": "Lehrschwimmbad Wrangelstraße",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wrangelstraße",
+    "hausnummer": "40",
+    "plz": "40470",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.807666,
+    "lat": 51.256606
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

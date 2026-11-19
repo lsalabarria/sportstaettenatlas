@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc17-6878-40ac-9a50-3f025918bc5e",
+  "name": "Hallenbad Räukepütt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Fritz-Linde-Straße",
+    "hausnummer": "44",
+    "plz": "58566",
+    "ort": "Kierspe, Stadt"
+  },
+  "lage": {
+    "lon": 7.593,
+    "lat": 51.12812
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

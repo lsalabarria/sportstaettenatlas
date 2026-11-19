@@ -1,0 +1,10 @@
+{
+  "id": "9d09fadd-1712-4ced-a9e7-d7be9846d3e0",
+  "name": "Keltenhalle Preist",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "20",
+    "plz": "54664",
+    "ort": "Preist"
+  }
+}

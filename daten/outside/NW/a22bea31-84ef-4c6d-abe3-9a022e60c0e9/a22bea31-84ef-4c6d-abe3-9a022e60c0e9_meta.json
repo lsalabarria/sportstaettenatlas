@@ -1,0 +1,18 @@
+{
+  "id": "a22bea31-84ef-4c6d-abe3-9a022e60c0e9",
+  "name": "Düsseldorfer Hockey Club 1905",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Seestern",
+    "hausnummer": "10",
+    "plz": "40547",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.735818,
+    "lat": 51.243438
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc37-56ad-4a6f-9e93-85f2c94fb22e",
+  "name": "GochNess",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kranenburger Straße",
+    "hausnummer": "20",
+    "plz": "47574",
+    "ort": "Goch, Stadt"
+  },
+  "lage": {
+    "lon": 6.090473,
+    "lat": 51.702436
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1999
+}

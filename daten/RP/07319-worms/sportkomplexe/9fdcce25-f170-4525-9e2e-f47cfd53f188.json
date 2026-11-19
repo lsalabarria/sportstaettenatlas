@@ -1,0 +1,10 @@
+{
+  "id": "9fdcce25-f170-4525-9e2e-f47cfd53f188",
+  "name": "Gauß-Gymnasium Worms",
+  "adresse": {
+    "strasse": "Von-Steuben-Straße",
+    "hausnummer": "31",
+    "plz": "67549",
+    "ort": "Worms, Stadt"
+  }
+}

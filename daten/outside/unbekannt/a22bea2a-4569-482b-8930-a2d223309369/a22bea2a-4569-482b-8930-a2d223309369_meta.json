@@ -1,0 +1,17 @@
+{
+  "id": "a22bea2a-4569-482b-8930-a2d223309369",
+  "name": "Beach Center Hamburg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Alter Teichweg",
+    "hausnummer": "220",
+    "plz": "22049"
+  },
+  "lage": {
+    "lon": 10.074302,
+    "lat": 53.588372
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

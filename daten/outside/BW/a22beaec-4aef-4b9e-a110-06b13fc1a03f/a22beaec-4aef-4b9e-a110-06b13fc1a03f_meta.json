@@ -1,0 +1,18 @@
+{
+  "id": "a22beaec-4aef-4b9e-a110-06b13fc1a03f",
+  "name": "ZF Arena",
+  "kategorie": "Beachvolleyballstätte",
+  "adresse": {
+    "strasse": "Sportpark",
+    "hausnummer": "6",
+    "plz": "88045",
+    "ort": "Friedrichshafen, Stadt"
+  },
+  "lage": {
+    "lon": 9.478704,
+    "lat": 47.663793
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

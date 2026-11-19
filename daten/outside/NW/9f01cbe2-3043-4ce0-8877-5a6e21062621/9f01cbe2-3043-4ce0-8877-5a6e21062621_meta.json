@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe2-3043-4ce0-8877-5a6e21062621",
+  "name": "Freibad Hardenberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Badweg",
+    "hausnummer": "30",
+    "plz": "44369",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.43534,
+    "lat": 51.55027
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

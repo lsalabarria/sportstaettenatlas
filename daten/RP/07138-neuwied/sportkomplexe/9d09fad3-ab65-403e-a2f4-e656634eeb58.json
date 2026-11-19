@@ -1,0 +1,10 @@
+{
+  "id": "9d09fad3-ab65-403e-a2f4-e656634eeb58",
+  "name": "Sportplatz Erpel",
+  "adresse": {
+    "strasse": "Am Liesenberg",
+    "hausnummer": "1",
+    "plz": "53579",
+    "ort": "Erpel"
+  }
+}

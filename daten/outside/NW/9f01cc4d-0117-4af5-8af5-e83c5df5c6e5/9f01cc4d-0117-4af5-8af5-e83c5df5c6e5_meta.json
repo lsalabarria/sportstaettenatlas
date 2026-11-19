@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4d-0117-4af5-8af5-e83c5df5c6e5",
+  "name": "Grugapark Therme",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Lührmannstraße",
+    "hausnummer": "70",
+    "plz": "45131",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 6.993088,
+    "lat": 51.430292
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1db8-5bf4-4dca-8034-9af627f78cfe",
+  "name": "Moselstadion Trier",
+  "adresse": {
+    "strasse": "Am Stadion",
+    "hausnummer": "1",
+    "plz": "54292",
+    "ort": "Trier, Stadt"
+  }
+}

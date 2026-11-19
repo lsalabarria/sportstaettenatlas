@@ -1,0 +1,18 @@
+{
+  "id": "a22beabf-e4f8-46d2-8358-94315597ff6f",
+  "name": "Wasserkraftanlage Osterbach",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Oberrieder Str.",
+    "hausnummer": "3",
+    "plz": "79199",
+    "ort": "Kirchzarten"
+  },
+  "lage": {
+    "lon": 7.956543,
+    "lat": 47.958325
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

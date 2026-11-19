@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd6-8ae4-49fe-8cdd-f9a3afe1e164",
+  "name": "Hallenbad Sundern",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Berliner Str.",
+    "hausnummer": "60",
+    "plz": "59846",
+    "ort": "Sundern (Sauerland), Stadt"
+  },
+  "lage": {
+    "lon": 8.0026,
+    "lat": 51.31978
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

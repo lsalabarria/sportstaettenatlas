@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc39-e5f5-4834-92ae-61df68b71f4f",
+  "name": "Schwimmbecken Campingplatz",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kempener Str.",
+    "hausnummer": "33",
+    "plz": "32805",
+    "ort": "Horn-Bad Meinberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.942755,
+    "lat": 51.803371
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

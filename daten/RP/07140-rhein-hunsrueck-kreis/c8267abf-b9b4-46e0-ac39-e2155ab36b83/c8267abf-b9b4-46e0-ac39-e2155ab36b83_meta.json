@@ -12,9 +12,11 @@
     "lon": 7.310418,
     "lat": 49.955139
   },
+  "entfernung_oepnv": 600,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
   "betreiber": "Mayener Bogenschützen 1978 e.V.",
+  "betreiber_typ": "Sportverein im LSB RLP",
   "website": "www.mayenerbogenschuetzen.de"
 }

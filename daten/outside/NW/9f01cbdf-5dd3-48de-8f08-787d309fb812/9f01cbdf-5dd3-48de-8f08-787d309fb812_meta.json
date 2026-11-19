@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbdf-5dd3-48de-8f08-787d309fb812",
+  "name": "Vechtebad Schöppingen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Metelener Straße",
+    "hausnummer": "2",
+    "plz": "48624",
+    "ort": "Schöppingen"
+  },
+  "lage": {
+    "lon": 7.22888,
+    "lat": 52.09689
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

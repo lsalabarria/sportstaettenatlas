@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0a-702f-4e72-9294-52ed0b2a4321",
+  "name": "Hallenbad Rheine",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hemelter Str.",
+    "hausnummer": "38",
+    "plz": "48429",
+    "ort": "Rheine, Stadt"
+  },
+  "lage": {
+    "lon": 7.44757,
+    "lat": 52.27687
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

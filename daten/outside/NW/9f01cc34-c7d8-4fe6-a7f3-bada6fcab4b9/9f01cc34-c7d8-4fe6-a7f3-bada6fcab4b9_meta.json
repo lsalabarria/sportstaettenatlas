@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc34-c7d8-4fe6-a7f3-bada6fcab4b9",
+  "name": "Hallenbad Mielinghausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Mielinghausen",
+    "hausnummer": "4",
+    "plz": "59872",
+    "ort": "Meschede, Stadt"
+  },
+  "lage": {
+    "lon": 8.26452,
+    "lat": 51.29936
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

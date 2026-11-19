@@ -1,0 +1,19 @@
+{
+  "id": "a22bea38-d197-45e7-8087-27e0d479c7af",
+  "name": "Bertolt-Brecht-Sporthallen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Berthold-Brecht-Straße",
+    "hausnummer": "6",
+    "plz": "90471",
+    "ort": "Nürnberg"
+  },
+  "lage": {
+    "lon": 11.124989,
+    "lat": 49.417295
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22bea38-6806-472a-b24a-89c38984e9c4"
+}

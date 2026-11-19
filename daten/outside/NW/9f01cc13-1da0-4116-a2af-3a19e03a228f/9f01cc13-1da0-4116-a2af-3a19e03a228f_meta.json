@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc13-1da0-4116-a2af-3a19e03a228f",
+  "name": "Freibad Oerlinghausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Kalkofen",
+    "hausnummer": "9",
+    "plz": "33813",
+    "ort": "Oerlinghausen, Stadt"
+  },
+  "lage": {
+    "lon": 8.660164,
+    "lat": 51.948834
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

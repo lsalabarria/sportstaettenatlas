@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd1-86a7-4cca-94a7-4f200cc28163",
+  "name": "Parkbad Wassenberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Auf dem Taubenkamp",
+    "hausnummer": "2",
+    "plz": "41849",
+    "ort": "Wassenberg, Stadt"
+  },
+  "lage": {
+    "lon": 6.14634,
+    "lat": 51.09644
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

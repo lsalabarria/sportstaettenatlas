@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1d68-8a70-415b-b891-32f2c7107aef",
+  "name": "Sportplatz Altrich",
+  "adresse": {
+    "strasse": "Klausener Straße",
+    "hausnummer": "15",
+    "plz": "54518",
+    "ort": "Altrich"
+  }
+}

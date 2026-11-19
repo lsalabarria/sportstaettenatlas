@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc35-70ad-437c-89d9-e7ac29200eb5",
+  "name": "Freibad Storchennest",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Hohen Nacken",
+    "hausnummer": "2",
+    "plz": "59821",
+    "ort": "Arnsberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.06767,
+    "lat": 51.380622
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

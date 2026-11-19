@@ -1,0 +1,16 @@
+{
+  "id": "bc52c26b-41d6-4481-97c6-d9f7bb45000f",
+  "name": "Kylltalbad Kordel",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Kyltallbad",
+    "hausnummer": "1"
+  },
+  "lage": {
+    "lon": 6.645448,
+    "lat": 49.845926
+  },
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1974,
+  "letzte_sanierung": 1997
+}

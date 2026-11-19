@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3b-b6a7-4a94-ae0f-be2c1d5d7287",
+  "name": "Campingplatz Osterwald",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Diepnauerstr.",
+    "hausnummer": "11",
+    "plz": "32339",
+    "ort": "Espelkamp, Stadt"
+  },
+  "lage": {
+    "lon": 8.706577,
+    "lat": 52.389413
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

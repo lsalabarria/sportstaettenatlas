@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf7-0477-482e-bb41-262070a6cbb4",
+  "name": "Hallenbad Greven",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Hallenbad",
+    "hausnummer": "3",
+    "plz": "48268",
+    "ort": "Greven, Stadt"
+  },
+  "lage": {
+    "lon": 7.60542,
+    "lat": 52.09082
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1969
+}

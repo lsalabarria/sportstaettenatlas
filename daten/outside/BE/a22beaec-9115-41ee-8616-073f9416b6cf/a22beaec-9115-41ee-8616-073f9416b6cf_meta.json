@@ -1,0 +1,18 @@
+{
+  "id": "a22beaec-9115-41ee-8616-073f9416b6cf",
+  "name": "Wasserfahrportzentrum Grünau",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Sportpromenade",
+    "hausnummer": "3",
+    "plz": "12527",
+    "ort": "Berlin, Stadt"
+  },
+  "lage": {
+    "lon": 13.602828,
+    "lat": 52.409416
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

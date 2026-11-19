@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc2-3ffc-4aea-99b0-e4eb613efa05",
+  "name": "Freibad Schröttinghausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Campingstraße",
+    "hausnummer": "20",
+    "plz": "33739",
+    "ort": "Bielefeld, Stadt"
+  },
+  "lage": {
+    "lon": 8.4699,
+    "lat": 52.0764
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

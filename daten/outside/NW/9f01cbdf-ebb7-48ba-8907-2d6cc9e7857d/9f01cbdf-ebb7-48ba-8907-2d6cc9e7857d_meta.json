@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbdf-ebb7-48ba-8907-2d6cc9e7857d",
+  "name": "DINamare",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Stadtbad",
+    "hausnummer": "7-9",
+    "plz": "46537",
+    "ort": "Dinslaken, Stadt"
+  },
+  "lage": {
+    "lon": 6.73542,
+    "lat": 51.5759
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2010
+}

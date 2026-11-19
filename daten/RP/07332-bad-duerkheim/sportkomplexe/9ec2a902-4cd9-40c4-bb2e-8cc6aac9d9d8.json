@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a902-4cd9-40c4-bb2e-8cc6aac9d9d8",
+  "name": "Sportanlage TuS Altleiningen",
+  "adresse": {
+    "strasse": "Sportplatzstraße",
+    "hausnummer": "8",
+    "plz": "67317",
+    "ort": "Altleiningen"
+  }
+}

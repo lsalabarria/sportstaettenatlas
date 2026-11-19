@@ -1,0 +1,13 @@
+{
+  "id": "6e9429e7-286e-405c-bf5e-4b14191bf438",
+  "name": "Skateboard Miniramp",
+  "kategorie": "Roll- und Skatesportstätte",
+  "adresse": {
+    "plz": "53424"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "betriebsstatus": "in Betrieb"
+}

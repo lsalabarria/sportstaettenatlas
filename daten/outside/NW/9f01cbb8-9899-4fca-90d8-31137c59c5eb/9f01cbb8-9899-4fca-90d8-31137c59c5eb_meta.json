@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbb8-9899-4fca-90d8-31137c59c5eb",
+  "name": "AquAHAUS",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Unterortwick",
+    "hausnummer": "32",
+    "plz": "48683",
+    "ort": "Ahaus, Stadt"
+  },
+  "lage": {
+    "lon": 6.9827,
+    "lat": 52.07752
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

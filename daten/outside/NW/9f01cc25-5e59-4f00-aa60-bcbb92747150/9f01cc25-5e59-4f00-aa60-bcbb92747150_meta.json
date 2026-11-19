@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc25-5e59-4f00-aa60-bcbb92747150",
+  "name": "Freibad Löhne",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Albert-Schweitzer-Straße",
+    "hausnummer": "10",
+    "plz": "32584",
+    "ort": "Löhne, Stadt"
+  },
+  "lage": {
+    "lon": 8.71831,
+    "lat": 52.20363
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1956
+}

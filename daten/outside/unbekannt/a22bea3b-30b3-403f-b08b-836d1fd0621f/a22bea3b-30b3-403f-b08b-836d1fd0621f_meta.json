@@ -1,0 +1,17 @@
+{
+  "id": "a22bea3b-30b3-403f-b08b-836d1fd0621f",
+  "name": "Christopherusschule Buchenhöhe",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Buchenhöhe",
+    "hausnummer": "46",
+    "plz": "83471"
+  },
+  "lage": {
+    "lon": 13.063127,
+    "lat": 47.631757
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

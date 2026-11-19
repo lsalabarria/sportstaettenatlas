@@ -1,5 +1,20 @@
 {
   "id": "f1dc83db-2ba1-56db-800b-26ec2242b534",
   "sportstaette_id": "14988db9-f081-4087-a33b-dc92ff22334d",
-  "typ": "Übungsraum"
+  "typ": "Übungsraum",
+  "bezeichnung": "Kursraum I",
+  "betriebsstatus": "in Betrieb",
+  "sportarten": [
+    "Gesundheitssport",
+    "Tanzsport",
+    "Fit und Gesund-Kurse",
+    "Turnen",
+    "Tischtennis",
+    "Wirbelsäulengymnastik",
+    "Fitness und Gesundheit",
+    "Pilates",
+    "Yoga",
+    "Gymnastik"
+  ],
+  "flaeche": 100.0
 }

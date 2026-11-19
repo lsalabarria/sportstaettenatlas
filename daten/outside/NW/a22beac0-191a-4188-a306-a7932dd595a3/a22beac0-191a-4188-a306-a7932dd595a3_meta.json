@@ -1,0 +1,18 @@
+{
+  "id": "a22beac0-191a-4188-a306-a7932dd595a3",
+  "name": "Radsportzentrum NRW",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Olympiastraße",
+    "hausnummer": "5",
+    "plz": "41564",
+    "ort": "Kaarst, Stadt"
+  },
+  "lage": {
+    "lon": 6.606037,
+    "lat": 51.202802
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

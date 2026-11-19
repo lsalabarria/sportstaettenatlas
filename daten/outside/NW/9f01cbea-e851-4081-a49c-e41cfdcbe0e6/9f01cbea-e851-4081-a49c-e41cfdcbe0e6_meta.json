@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbea-e851-4081-a49c-e41cfdcbe0e6",
+  "name": "Waldfreibad Emsdetten",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Blumenstraße",
+    "hausnummer": "131",
+    "plz": "48282",
+    "ort": "Emsdetten, Stadt"
+  },
+  "lage": {
+    "lon": 7.54068,
+    "lat": 52.15942
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22beab2-a3db-4d87-a7a5-94f01e8979a7",
+  "name": "Veltins Eis Arena",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Kappe",
+    "hausnummer": "3",
+    "plz": "59955",
+    "ort": "Winterberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.509339,
+    "lat": 51.183494
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

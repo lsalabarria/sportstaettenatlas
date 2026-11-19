@@ -1,0 +1,14 @@
+{
+  "id": "e623e562-b6eb-482d-be9d-d975bced3e7c",
+  "name": "Langlaufloipe Hollerath",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Luxemburger Straße",
+    "plz": "53940",
+    "ort": "Hellenthal"
+  },
+  "lage": {
+    "lon": 6.382491,
+    "lat": 50.454499
+  }
+}

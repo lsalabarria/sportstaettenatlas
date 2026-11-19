@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbee-6062-4acd-a9ae-3a3c7b77ef4f",
+  "name": "Neanderbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hochdahler Straße",
+    "hausnummer": "145",
+    "plz": "40699",
+    "ort": "Erkrath, Stadt"
+  },
+  "lage": {
+    "lon": 6.93238,
+    "lat": 51.22087
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2006
+}

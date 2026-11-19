@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc45-e63e-4a54-b34d-2239821f7fe0",
+  "name": "Lehrschwimmbad Bracht",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Südwall",
+    "hausnummer": "12",
+    "plz": "41379",
+    "ort": "Brüggen"
+  },
+  "lage": {
+    "lon": 6.19681,
+    "lat": 51.28142
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

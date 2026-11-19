@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc15-daed-4d26-a126-477848b7499b",
+  "name": "Freibad-Sonnenstrand Eschauel",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Eschaueler Weg",
+    "hausnummer": "99",
+    "plz": "52385",
+    "ort": "Nideggen, Stadt"
+  },
+  "lage": {
+    "lon": 6.41634,
+    "lat": 50.64132
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

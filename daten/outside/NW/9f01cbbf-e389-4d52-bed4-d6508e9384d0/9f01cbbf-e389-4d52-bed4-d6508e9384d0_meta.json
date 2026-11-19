@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbf-e389-4d52-bed4-d6508e9384d0",
+  "name": "Sportparkbad Bergheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Sportparkstraße",
+    "hausnummer": "1",
+    "plz": "50126",
+    "ort": "Bergheim, Stadt"
+  },
+  "lage": {
+    "lon": 6.63604,
+    "lat": 50.94287
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc23-544c-4505-89cf-9e4ffe150d53",
+  "name": "Hallenfreibad Lienen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Holperdorper Straße",
+    "hausnummer": "37",
+    "plz": "49536",
+    "ort": "Lienen"
+  },
+  "lage": {
+    "lon": 7.96933,
+    "lat": 52.15497
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

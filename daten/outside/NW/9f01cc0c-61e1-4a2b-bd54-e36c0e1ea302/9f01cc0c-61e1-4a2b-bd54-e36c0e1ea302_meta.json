@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc0c-61e1-4a2b-bd54-e36c0e1ea302",
+  "name": "Freibad Eschbachtal",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Eschbachtal",
+    "hausnummer": "5",
+    "plz": "42859",
+    "ort": "Remscheid, Stadt"
+  },
+  "lage": {
+    "lon": 7.21627,
+    "lat": 51.15895
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1912
+}

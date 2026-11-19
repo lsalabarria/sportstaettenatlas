@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd6-2f12-4ccb-8e62-34084cebd022",
+  "name": "Waldschwimmbad Klatenberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Waldweg",
+    "hausnummer": "40",
+    "plz": "48291",
+    "ort": "Telgte, Stadt"
+  },
+  "lage": {
+    "lon": 7.78795,
+    "lat": 51.99313
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

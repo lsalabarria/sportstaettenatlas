@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc3a-c181-4041-b497-e5160c64663d",
+  "name": "Freibad Leitmecke",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bürgermeister Rau Str.",
+    "hausnummer": "2",
+    "plz": "58706",
+    "ort": "Menden (Sauerland), Stadt"
+  },
+  "lage": {
+    "lon": 7.786104,
+    "lat": 51.430867
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1927
+}

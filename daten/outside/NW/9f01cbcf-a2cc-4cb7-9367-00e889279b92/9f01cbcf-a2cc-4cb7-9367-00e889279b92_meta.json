@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbcf-a2cc-4cb7-9367-00e889279b92",
+  "name": "RheinBad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Rheinpromenade",
+    "hausnummer": "1",
+    "plz": "46487",
+    "ort": "Wesel, Stadt"
+  },
+  "lage": {
+    "lon": 6.5919,
+    "lat": 51.65979
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

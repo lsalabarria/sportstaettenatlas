@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbf-bd2b-47f4-95e4-aafc143d3347",
+  "name": "Fortunabad Oberaußem",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Brieystraße",
+    "hausnummer": "1",
+    "plz": "50129",
+    "ort": "Bergheim, Stadt"
+  },
+  "lage": {
+    "lon": 6.67581,
+    "lat": 50.97839
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc7-8d94-43f3-b896-a927263f4b75",
+  "name": "Schwimmbad im Sportpark Nord",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kölnstraße",
+    "hausnummer": "250",
+    "plz": "53117",
+    "ort": "Bonn, Stadt"
+  },
+  "lage": {
+    "lon": 7.08434,
+    "lat": 50.74706
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1969
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc33-186e-417f-b4aa-deb7e6d140ec",
+  "name": "Schwimmschule Bulliplatsch",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Dillbrinkstr.",
+    "hausnummer": "24",
+    "plz": "45894",
+    "ort": "Gelsenkirchen, Stadt"
+  },
+  "lage": {
+    "lon": 7.049743,
+    "lat": 51.591982
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

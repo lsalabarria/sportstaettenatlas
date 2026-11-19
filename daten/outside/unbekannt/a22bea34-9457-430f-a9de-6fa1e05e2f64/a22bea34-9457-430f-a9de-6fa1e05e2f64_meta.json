@@ -1,0 +1,17 @@
+{
+  "id": "a22bea34-9457-430f-a9de-6fa1e05e2f64",
+  "name": "Rodlerhalle Berchtesgaden",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "An d. Schießstätte",
+    "hausnummer": "6",
+    "plz": "83471"
+  },
+  "lage": {
+    "lon": 13.00899,
+    "lat": 47.633704
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

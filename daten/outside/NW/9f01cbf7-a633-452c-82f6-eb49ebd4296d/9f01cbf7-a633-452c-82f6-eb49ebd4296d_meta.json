@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf7-a633-452c-82f6-eb49ebd4296d",
+  "name": "Parkfreibad Gronau",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Brändströmstraße",
+    "hausnummer": "25",
+    "plz": "48599",
+    "ort": "Gronau (Westf.), Stadt"
+  },
+  "lage": {
+    "lon": 7.02185,
+    "lat": 52.20474
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

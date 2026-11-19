@@ -12,13 +12,22 @@
     "lon": 7.310418,
     "lat": 49.955139
   },
+  "entfernung_oepnv": 100,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
+  "wlan": "ja",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "DJK Spvgg Moguntia Mainz-Bretzenheim",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
   "betreiber": "DJK Spvgg Moguntia Mainz-Bretzenheim",
+  "betreiber_typ": "Sportverein im LSB RLP",
   "website": "www.djk-bretzenheim.de",
   "sportarten": [
     "Tennis"
-  ]
+  ],
+  "baujahr": 1995,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 2
+  }
 }

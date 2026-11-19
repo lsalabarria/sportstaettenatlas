@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbba-8259-4e9e-89d9-ae285e17cc0a",
+  "name": "Hallenbad Attendorn",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Südwall",
+    "hausnummer": "84",
+    "plz": "57439",
+    "ort": "Attendorn, Stadt"
+  },
+  "lage": {
+    "lon": 7.90438,
+    "lat": 51.12416
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

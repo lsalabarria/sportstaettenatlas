@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbcf-4f02-4b63-9709-d251cbf81556",
+  "name": "Natur Freibad Wetter (Ruhr)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gustav-Vorsteher-Straße",
+    "hausnummer": "38",
+    "plz": "58300",
+    "ort": "Wetter (Ruhr), Stadt"
+  },
+  "lage": {
+    "lon": 7.39878,
+    "lat": 51.38426
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1964
+}

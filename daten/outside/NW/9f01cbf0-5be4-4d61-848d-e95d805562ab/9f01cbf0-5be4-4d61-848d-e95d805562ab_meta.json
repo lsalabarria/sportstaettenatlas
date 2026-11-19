@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf0-5be4-4d61-848d-e95d805562ab",
+  "name": "Sport- und Gesundheitszentrum Friedrichsbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kerckhoffstraße",
+    "hausnummer": "20b",
+    "plz": "45144",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 6.98505,
+    "lat": 51.45282
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

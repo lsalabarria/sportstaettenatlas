@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe5-d943-4ee8-95f2-08c2d2ad0aeb",
+  "name": "Hallenbad Toeppersee",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bergheimer Straße",
+    "hausnummer": "101",
+    "plz": "47239",
+    "ort": "Duisburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.67777,
+    "lat": 51.40814
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2010
+}

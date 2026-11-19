@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbf-2a74-484e-bf79-6dfa8338d713",
+  "name": "Bedburger Freibad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Erftstraße",
+    "hausnummer": "15",
+    "plz": "50181",
+    "ort": "Bedburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.57363,
+    "lat": 50.99671
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

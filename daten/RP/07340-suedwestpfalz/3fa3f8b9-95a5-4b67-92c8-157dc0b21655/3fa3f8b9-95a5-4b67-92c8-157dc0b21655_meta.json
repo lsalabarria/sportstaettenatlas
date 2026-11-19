@@ -1,0 +1,16 @@
+{
+  "id": "3fa3f8b9-95a5-4b67-92c8-157dc0b21655",
+  "name": "Rasenplatz SV Lemberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Laubbrunnerstraße",
+    "plz": "66969"
+  },
+  "lage": {
+    "lon": 7.658501,
+    "lat": 49.163649
+  },
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer_typ": "Landkreis",
+  "betreiber_typ": "Landkreis"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc9-c6dc-433c-a5c4-941d3501f0e4",
+  "name": "Schwimmoper Wuppertal (Stadtbad Johannisberg)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Südstr.",
+    "hausnummer": "29",
+    "plz": "42103",
+    "ort": "Wuppertal, Stadt"
+  },
+  "lage": {
+    "lon": 7.14044,
+    "lat": 51.25335
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1957
+}

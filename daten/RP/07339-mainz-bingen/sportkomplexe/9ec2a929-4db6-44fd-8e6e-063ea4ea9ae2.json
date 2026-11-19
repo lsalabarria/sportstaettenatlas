@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a929-4db6-44fd-8e6e-063ea4ea9ae2",
+  "name": "Sportpark Gau-Algesheim",
+  "adresse": {
+    "strasse": "Rheinstraße",
+    "hausnummer": "5",
+    "plz": "55435",
+    "ort": "Gau-Algesheim, Stadt"
+  }
+}

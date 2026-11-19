@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe6-ee10-425c-b7af-8fd0a13e511c",
+  "name": "Kombibad Homberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schillerstraße",
+    "hausnummer": "160",
+    "plz": "47198",
+    "ort": "Duisburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.69893,
+    "lat": 51.46003
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

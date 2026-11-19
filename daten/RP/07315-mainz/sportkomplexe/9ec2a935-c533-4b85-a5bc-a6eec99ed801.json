@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a935-c533-4b85-a5bc-a6eec99ed801",
+  "name": "Grundschule Mainz-Lerchenberg",
+  "adresse": {
+    "strasse": "Hindemithstraße",
+    "hausnummer": "1-5",
+    "plz": "55127",
+    "ort": "Mainz, Stadt"
+  }
+}

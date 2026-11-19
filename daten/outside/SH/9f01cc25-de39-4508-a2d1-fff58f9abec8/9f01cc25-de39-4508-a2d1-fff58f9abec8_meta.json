@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc25-de39-4508-a2d1-fff58f9abec8",
+  "name": "Familienbad Nattenberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Talstraße",
+    "hausnummer": "59",
+    "plz": "58515",
+    "ort": "Lüdenscheid, Stadt"
+  },
+  "lage": {
+    "lon": 7.62045,
+    "lat": 51.20968
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

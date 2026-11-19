@@ -1,0 +1,18 @@
+{
+  "id": "a22bea37-d4bd-4f85-895a-2505c3093d59",
+  "name": "Sporthallen Universität Bremen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Badgasteiner Str.",
+    "hausnummer": "5",
+    "plz": "28359",
+    "ort": "Bremen, Stadt"
+  },
+  "lage": {
+    "lon": 8.856707,
+    "lat": 53.10787
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

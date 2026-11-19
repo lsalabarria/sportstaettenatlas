@@ -1,0 +1,19 @@
+{
+  "id": "a22beaba-7578-40ec-a738-6b30a453d179",
+  "name": "Universitätsschwimmhalle",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Mainzer Straße",
+    "hausnummer": "4",
+    "plz": "4109",
+    "ort": "Leipzig, Stadt"
+  },
+  "lage": {
+    "lon": 12.353801,
+    "lat": 51.336801
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22beaba-6e7b-4c54-b9f9-92753ecf5505"
+}

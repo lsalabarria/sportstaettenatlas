@@ -1,0 +1,18 @@
+{
+  "id": "a22beabb-737a-46a7-bbd5-7827b46fad77",
+  "name": "Molly-Schauffele-Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Mercedesstraße",
+    "hausnummer": "85",
+    "plz": "70372",
+    "ort": "Stuttgart, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 9.233363,
+    "lat": 48.793268
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

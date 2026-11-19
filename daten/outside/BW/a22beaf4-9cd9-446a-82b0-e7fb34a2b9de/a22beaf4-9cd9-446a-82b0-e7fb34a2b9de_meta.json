@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf4-9cd9-446a-82b0-e7fb34a2b9de",
+  "name": "ASC Arena Tischtenniszentrum",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Thüringer Str.",
+    "hausnummer": "11",
+    "plz": "76228",
+    "ort": "Karlsruhe, Stadt"
+  },
+  "lage": {
+    "lon": 8.478081,
+    "lat": 48.953039
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

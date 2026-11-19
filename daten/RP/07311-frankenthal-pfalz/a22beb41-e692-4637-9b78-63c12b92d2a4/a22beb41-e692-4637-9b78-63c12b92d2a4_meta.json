@@ -1,0 +1,18 @@
+{
+  "id": "a22beb41-e692-4637-9b78-63c12b92d2a4",
+  "name": "Kletterzentrum Pfalz Rock",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Mörscher Str.",
+    "hausnummer": "89",
+    "plz": "67227",
+    "ort": "Frankenthal"
+  },
+  "lage": {
+    "lon": 8.360951,
+    "lat": 49.542174
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

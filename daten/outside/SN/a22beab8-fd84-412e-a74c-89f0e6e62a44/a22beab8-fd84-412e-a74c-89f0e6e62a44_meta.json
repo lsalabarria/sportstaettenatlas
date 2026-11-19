@@ -1,0 +1,18 @@
+{
+  "id": "a22beab8-fd84-412e-a74c-89f0e6e62a44",
+  "name": "Sporthalle Leplaystraße",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Leplaystraße",
+    "hausnummer": "11",
+    "plz": "4103",
+    "ort": "Leipzig, Stadt"
+  },
+  "lage": {
+    "lon": 12.380211,
+    "lat": 51.3344
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

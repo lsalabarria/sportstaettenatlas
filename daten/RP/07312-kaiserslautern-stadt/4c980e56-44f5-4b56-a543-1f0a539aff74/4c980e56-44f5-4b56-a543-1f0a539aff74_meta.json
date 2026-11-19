@@ -1,0 +1,14 @@
+{
+  "id": "4c980e56-44f5-4b56-a543-1f0a539aff74",
+  "name": "Freibad Waschmühle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Waschmühle",
+    "hausnummer": "1",
+    "plz": "67659"
+  },
+  "lage": {
+    "lon": 7.762904,
+    "lat": 49.46059
+  }
+}

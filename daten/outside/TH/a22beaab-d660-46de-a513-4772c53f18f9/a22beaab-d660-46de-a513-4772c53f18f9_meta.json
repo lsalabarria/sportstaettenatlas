@@ -1,0 +1,19 @@
+{
+  "id": "a22beaab-d660-46de-a513-4772c53f18f9",
+  "name": "Sportanlage am Harzwald",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Harzwald",
+    "hausnummer": "3",
+    "plz": "98559",
+    "ort": "Oberhof, Stadt"
+  },
+  "lage": {
+    "lon": 10.722229,
+    "lat": 50.703528
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22beaab-a596-46a6-a862-bee8e92121b8"
+}

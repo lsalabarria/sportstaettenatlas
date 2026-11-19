@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbd6-01fd-4428-8ebf-4d8518d3610a",
+  "name": "Hallenbad Titz",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "25",
+    "plz": "52445",
+    "ort": "Titz"
+  },
+  "lage": {
+    "lon": 6.42598,
+    "lat": 51.00133
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1970
+}

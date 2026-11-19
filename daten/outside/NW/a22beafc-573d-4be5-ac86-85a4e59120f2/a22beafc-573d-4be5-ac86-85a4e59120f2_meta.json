@@ -1,0 +1,18 @@
+{
+  "id": "a22beafc-573d-4be5-ac86-85a4e59120f2",
+  "name": "Berufsbildungszentrum Dormagen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Willy-Brandt-Platz",
+    "hausnummer": "5",
+    "plz": "41539",
+    "ort": "Dormagen, Stadt"
+  },
+  "lage": {
+    "lon": 6.818136,
+    "lat": 51.099133
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

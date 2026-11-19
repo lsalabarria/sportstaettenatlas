@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbcd-0a13-4c13-b971-0a19facf66d2",
+  "name": "Hallenbad Herbede",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Vormholzer Ring",
+    "hausnummer": "58",
+    "plz": "58456",
+    "ort": "Witten, Stadt"
+  },
+  "lage": {
+    "lon": 7.29124,
+    "lat": 51.41877
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1973
+}

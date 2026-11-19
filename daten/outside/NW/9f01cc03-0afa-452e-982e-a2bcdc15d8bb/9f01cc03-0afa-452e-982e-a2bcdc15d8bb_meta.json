@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc03-0afa-452e-982e-a2bcdc15d8bb",
+  "name": "Strandbad HERTHA-SEE",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Herthaseestraße",
+    "hausnummer": "70",
+    "plz": "48477",
+    "ort": "Hörstel, Stadt"
+  },
+  "lage": {
+    "lon": 7.60115,
+    "lat": 52.32769
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

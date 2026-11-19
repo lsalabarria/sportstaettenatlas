@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe3-cc30-44e5-abb3-11710446b5f8",
+  "name": "Nordbad Dortmund",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Leopoldstraße",
+    "hausnummer": "50-58",
+    "plz": "44147",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.46054,
+    "lat": 51.52157
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1982
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc1d-fb89-4d9a-824b-8f080b079b7f",
+  "name": "Stadtbad Uerdingen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kurfürstenstraße",
+    "hausnummer": "18",
+    "plz": "47829",
+    "ort": "Krefeld, Stadt"
+  },
+  "lage": {
+    "lon": 6.6474,
+    "lat": 51.35569
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1907
+}

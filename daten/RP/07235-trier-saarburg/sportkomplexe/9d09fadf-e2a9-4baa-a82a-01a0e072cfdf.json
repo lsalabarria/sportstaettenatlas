@@ -1,0 +1,10 @@
+{
+  "id": "9d09fadf-e2a9-4baa-a82a-01a0e072cfdf",
+  "name": "Sportplatz zum Johannisberg",
+  "adresse": {
+    "strasse": "Zum Johannisberg",
+    "hausnummer": "9",
+    "plz": "54318",
+    "ort": "Mertesdorf"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc23-29d5-40c0-923f-969809dde7d3",
+  "name": "Freibad Lichtenau (NRW)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Driburger Straße",
+    "hausnummer": "36",
+    "plz": "33165",
+    "ort": "Lichtenau, Stadt"
+  },
+  "lage": {
+    "lon": 8.9039,
+    "lat": 51.62152
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1965
+}

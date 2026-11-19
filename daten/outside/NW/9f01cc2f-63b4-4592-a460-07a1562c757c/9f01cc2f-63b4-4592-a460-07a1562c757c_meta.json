@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc2f-63b4-4592-a460-07a1562c757c",
+  "name": "Beachers Island",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "In der Rurale",
+    "hausnummer": "31",
+    "plz": "52459",
+    "ort": "Inden"
+  },
+  "lage": {
+    "lon": 6.416257,
+    "lat": 50.875815
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

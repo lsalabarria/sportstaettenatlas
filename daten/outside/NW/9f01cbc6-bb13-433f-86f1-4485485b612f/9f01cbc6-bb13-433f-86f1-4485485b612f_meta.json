@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc6-bb13-433f-86f1-4485485b612f",
+  "name": "Beueler Bütt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Goetheallee",
+    "hausnummer": "29 - 35",
+    "plz": "53225",
+    "ort": "Bonn, Stadt"
+  },
+  "lage": {
+    "lon": 7.12389,
+    "lat": 50.73732
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1969
+}

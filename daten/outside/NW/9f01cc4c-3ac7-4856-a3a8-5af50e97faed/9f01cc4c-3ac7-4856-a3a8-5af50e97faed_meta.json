@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc4c-3ac7-4856-a3a8-5af50e97faed",
+  "name": "Hallenbad Höxter",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "An der Steinmühle",
+    "hausnummer": "1d",
+    "plz": "37671",
+    "ort": "Höxter, Stadt"
+  },
+  "lage": {
+    "lon": 9.372718,
+    "lat": 51.774308
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2021
+}

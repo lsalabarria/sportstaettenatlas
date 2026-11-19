@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbb-3aa9-4bd4-9898-4a17467762e2",
+  "name": "Driburg Therme GmbH",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Georg-Nave-Straße",
+    "hausnummer": "24",
+    "plz": "33014",
+    "ort": "Bad Driburg, Stadt"
+  },
+  "lage": {
+    "lon": 9.02642,
+    "lat": 51.74233
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

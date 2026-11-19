@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc19-d9cd-40b5-b732-52c43c599a79",
+  "name": "Nettebad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Buschstraße",
+    "hausnummer": "26",
+    "plz": "41334",
+    "ort": "Nettetal, Stadt"
+  },
+  "lage": {
+    "lon": 6.189274,
+    "lat": 51.317089
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

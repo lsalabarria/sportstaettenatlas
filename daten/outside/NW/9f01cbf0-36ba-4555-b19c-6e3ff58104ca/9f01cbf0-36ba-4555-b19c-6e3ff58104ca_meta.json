@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf0-36ba-4555-b19c-6e3ff58104ca",
+  "name": "Sport- und GesundheitsCenter Altenessen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Altenessener Strasse",
+    "hausnummer": "393",
+    "plz": "45326",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 7.00819,
+    "lat": 51.49532
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1930
+}

@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a911-5b5f-419e-a68f-ddd9ce039fc4",
+  "name": "Sportplatz Guntersblum",
+  "adresse": {
+    "strasse": "Alsheimer Straße",
+    "hausnummer": "67",
+    "plz": "67583",
+    "ort": "Guntersblum"
+  }
+}

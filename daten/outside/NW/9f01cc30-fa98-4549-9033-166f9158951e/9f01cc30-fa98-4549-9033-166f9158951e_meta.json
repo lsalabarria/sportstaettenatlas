@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc30-fa98-4549-9033-166f9158951e",
+  "name": "Freibad Herdecke",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hengsteyseestraße",
+    "hausnummer": "26",
+    "plz": "58313",
+    "ort": "Herdecke, Stadt"
+  },
+  "lage": {
+    "lon": 7.436356,
+    "lat": 51.395041
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

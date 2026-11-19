@@ -1,0 +1,18 @@
+{
+  "id": "a22beadf-df29-4591-8c1d-b0ee9b7fdcf0",
+  "name": "HFU-Building A",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Robert-Gerwig-Platz",
+    "hausnummer": "1",
+    "plz": "78120",
+    "ort": "Furtwangen im Schwarzwald, Stadt"
+  },
+  "lage": {
+    "lon": 8.207142,
+    "lat": 48.051218
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

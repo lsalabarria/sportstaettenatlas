@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3d-b111-401e-a692-533110dcb1c8",
+  "name": "Hallenbad Fliednerstrasse",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Fliednerstraße",
+    "hausnummer": "21",
+    "plz": "48149",
+    "ort": "Münster, Stadt"
+  },
+  "lage": {
+    "lon": 7.59421,
+    "lat": 51.96352
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc05-8f3e-46cd-a7d0-0070b8459f15",
+  "name": "Freibad Laggenbeck",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Tecklenburger Straße",
+    "hausnummer": "11",
+    "plz": "49479",
+    "ort": "Ibbenbüren, Stadt"
+  },
+  "lage": {
+    "lon": 7.79096,
+    "lat": 52.26105
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

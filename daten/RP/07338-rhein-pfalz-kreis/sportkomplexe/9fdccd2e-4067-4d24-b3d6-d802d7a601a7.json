@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd2e-4067-4d24-b3d6-d802d7a601a7",
+  "name": "Grundschule Hanhofen",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "3",
+    "plz": "67374",
+    "ort": "Hanhofen"
+  }
+}

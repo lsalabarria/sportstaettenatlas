@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc1-6df7-4380-b4e9-f1b3c97c8f71",
+  "name": "Freibad Kamen-Mitte",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "hausnummer": "8",
+    "plz": "59174",
+    "ort": "Kamen, Stadt"
+  },
+  "lage": {
+    "lon": 7.6554,
+    "lat": 51.58671
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

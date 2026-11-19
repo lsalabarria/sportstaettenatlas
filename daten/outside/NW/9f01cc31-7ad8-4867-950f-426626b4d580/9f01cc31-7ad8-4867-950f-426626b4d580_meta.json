@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc31-7ad8-4867-950f-426626b4d580",
+  "name": "VGSU Sportstätte",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Henri-Dunant-Str.",
+    "hausnummer": "65",
+    "plz": "45131",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 7.020794,
+    "lat": 51.434079
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

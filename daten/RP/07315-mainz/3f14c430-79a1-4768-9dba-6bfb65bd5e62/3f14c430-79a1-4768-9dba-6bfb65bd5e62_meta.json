@@ -12,14 +12,80 @@
     "lon": 8.242074,
     "lat": 50.00249
   },
+  "entfernung_oepnv": 15,
   "oeffentlicher_zugang": "ja",
   "schulsport": "ja",
+  "wlan": "ja",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Schützengesellschaft zu Mainz 1862",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
   "betreiber": "Schützengesellschaft zu Mainz 1862",
+  "betreiber_typ": "Sportverein im LSB RLP",
   "website": "www.msg1862.de",
   "sportarten": [
     "Schießsport",
     "Bogenschießen"
+  ],
+  "baujahr": 2021,
+  "letzte_sanierung": 2021,
+  "fassadenmaterial": "Wärmedämmverbundsystem",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 1,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 3,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 2,
+    "Material- und Lagerräume": 4,
+    "Geräteräume": 2,
+    "Technikräume": 2
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas",
+      "einbaujahr": 2021
+    },
+    {
+      "bereich": "Strom",
+      "art": "Photovoltaik-Anlage",
+      "einbaujahr": 2021
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Erdgas",
+      "einbaujahr": 2021
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Umweltwärme (Wärmepumpe)",
+      "einbaujahr": 2021
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Umweltwärme (Wärmepumpe)",
+      "einbaujahr": 2021
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Strom (z.B. Nachtspeicherofen, Konvektoren etc.)",
+      "einbaujahr": 2021
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Strom (z.B. Durchlauferhitzer, Boiler)",
+      "einbaujahr": 2021
+    }
+  ],
+  "verbraeuche": [
+    {
+      "art": "Erdgas",
+      "menge": 120000.0,
+      "einheit": "kWh"
+    },
+    {
+      "art": "Strom",
+      "menge": 120000.0,
+      "einheit": "kWh"
+    }
   ]
 }

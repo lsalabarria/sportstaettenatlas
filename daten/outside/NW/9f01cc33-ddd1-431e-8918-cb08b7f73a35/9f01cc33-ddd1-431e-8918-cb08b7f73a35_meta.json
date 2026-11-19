@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc33-ddd1-431e-8918-cb08b7f73a35",
+  "name": "Swim&Gym",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Brummelweg",
+    "hausnummer": "20",
+    "plz": "33415",
+    "ort": "Verl, Stadt"
+  },
+  "lage": {
+    "lon": 8.480914,
+    "lat": 51.880785
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

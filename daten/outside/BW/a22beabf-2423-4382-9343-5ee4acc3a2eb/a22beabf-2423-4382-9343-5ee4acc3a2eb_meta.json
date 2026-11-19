@@ -1,0 +1,18 @@
+{
+  "id": "a22beabf-2423-4382-9343-5ee4acc3a2eb",
+  "name": "Sparkassen-Arena",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Notschrei-Passhöhe",
+    "hausnummer": "6",
+    "plz": "79674",
+    "ort": "Todtnau, Stadt"
+  },
+  "lage": {
+    "lon": 7.920342,
+    "lat": 47.87643
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

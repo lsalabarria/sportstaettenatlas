@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbcd-9769-4469-b8b3-ad2fa6a2861e",
+  "name": "Schwimmbad Winterberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Buchenweg",
+    "plz": "59955",
+    "ort": "Winterberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.53768,
+    "lat": 51.19677
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

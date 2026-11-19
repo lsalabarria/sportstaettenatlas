@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc49-9556-4c23-ab26-0769bccd1d3a",
+  "name": "Lehrschwimmbad Lohbachweg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Lohbachweg",
+    "hausnummer": "18",
+    "plz": "40625",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.843008,
+    "lat": 51.229916
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

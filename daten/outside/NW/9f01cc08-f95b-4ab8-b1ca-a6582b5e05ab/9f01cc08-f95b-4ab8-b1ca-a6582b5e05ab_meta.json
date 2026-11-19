@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc08-f95b-4ab8-b1ca-a6582b5e05ab",
+  "name": "Hallenbad Kerpen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Phillipp-Schneider-Straße",
+    "hausnummer": "22",
+    "plz": "50171",
+    "ort": "Kerpen, Stadt"
+  },
+  "lage": {
+    "lon": 6.68696,
+    "lat": 50.87833
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22bea2c-61c0-4eec-a385-3f4a290acc95",
+  "name": "Bundesstützpunkt für Eishockey und Curling Füssen",
+  "kategorie": "Eissportstätte",
+  "adresse": {
+    "strasse": "Am Eisstadion",
+    "hausnummer": "1",
+    "plz": "87629",
+    "ort": "Füssen, St"
+  },
+  "lage": {
+    "lon": 10.689128,
+    "lat": 47.566954
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

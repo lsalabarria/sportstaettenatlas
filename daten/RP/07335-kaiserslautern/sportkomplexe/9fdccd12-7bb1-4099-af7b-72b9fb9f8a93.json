@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd12-7bb1-4099-af7b-72b9fb9f8a93",
+  "name": "Waldstadion",
+  "adresse": {
+    "strasse": "Heidestraße",
+    "hausnummer": "33",
+    "plz": "67677",
+    "ort": "Enkenbach-Alsenborn"
+  }
+}

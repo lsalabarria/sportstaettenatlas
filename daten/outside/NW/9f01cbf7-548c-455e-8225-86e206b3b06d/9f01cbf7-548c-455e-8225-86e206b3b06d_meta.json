@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf7-548c-455e-8225-86e206b3b06d",
+  "name": "Hallenbad Neukirchen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Viehstraße",
+    "hausnummer": "50",
+    "plz": "41516",
+    "ort": "Grevenbroich, Stadt"
+  },
+  "lage": {
+    "lon": 6.68084,
+    "lat": 51.11736
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1982
+}

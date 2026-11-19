@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe3-a60f-4986-9644-00f1fcc9fab8",
+  "name": "Westbad (Hallenbad Dortmund-Dorstfeld)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kortental",
+    "hausnummer": "15",
+    "plz": "44149",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.4178,
+    "lat": 51.50793
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1984
+}

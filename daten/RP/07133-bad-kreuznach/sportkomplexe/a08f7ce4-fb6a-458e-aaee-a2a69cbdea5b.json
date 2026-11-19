@@ -1,0 +1,10 @@
+{
+  "id": "a08f7ce4-fb6a-458e-aaee-a2a69cbdea5b",
+  "name": "Birkenberghalle",
+  "adresse": {
+    "strasse": "Rüdesheimer Straße",
+    "hausnummer": "12",
+    "plz": "55595",
+    "ort": "Roxheim"
+  }
+}

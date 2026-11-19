@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc43-e65e-40a5-a6aa-63e056bf8bc7",
+  "name": "Freibad Neuenhof",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Neuenhof",
+    "hausnummer": "1",
+    "plz": "42349",
+    "ort": "Wuppertal, Stadt"
+  },
+  "lage": {
+    "lon": 7.14469,
+    "lat": 51.22447
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1930
+}

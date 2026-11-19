@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc04-d09e-4657-9fc2-6c10ddec6195",
+  "name": "Freibad Vossenack",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Pfarrer-Dickmann-Straße",
+    "hausnummer": "15a",
+    "plz": "52393",
+    "ort": "Hürtgenwald"
+  },
+  "lage": {
+    "lon": 6.37174,
+    "lat": 50.68679
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

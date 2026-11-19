@@ -1,0 +1,18 @@
+{
+  "id": "a22bea8c-f629-4fdc-a496-24082b956661",
+  "name": "Schwimmsportkomplex Freiberger Platz",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Freiberger Platz",
+    "hausnummer": "1",
+    "plz": "1067",
+    "ort": "Dresden, Stadt"
+  },
+  "lage": {
+    "lon": 13.724399,
+    "lat": 51.049585
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

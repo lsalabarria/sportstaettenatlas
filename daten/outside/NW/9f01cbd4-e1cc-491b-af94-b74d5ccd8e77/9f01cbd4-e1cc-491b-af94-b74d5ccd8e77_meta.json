@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd4-e1cc-491b-af94-b74d5ccd8e77",
+  "name": "Hallenbad Unna",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bergenkamp",
+    "hausnummer": "7",
+    "plz": "59425",
+    "ort": "Unna, Stadt"
+  },
+  "lage": {
+    "lon": 7.69963,
+    "lat": 51.54611
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

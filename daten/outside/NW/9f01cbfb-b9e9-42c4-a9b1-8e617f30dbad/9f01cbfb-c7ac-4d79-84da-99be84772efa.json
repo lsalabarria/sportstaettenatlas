@@ -1,0 +1,11 @@
+{
+  "id": "9f01cbfb-c7ac-4d79-84da-99be84772efa",
+  "sportstaette_id": "9f01cbfb-b9e9-42c4-a9b1-8e617f30dbad",
+  "typ": "Hallenbad",
+  "wasserflaeche": 450.0,
+  "becken_bis_25m": 1,
+  "becken_25_bis_50m": 1,
+  "nichtschwimmerbecken": 3,
+  "lehrbecken": 1,
+  "erholungsbecken": 2
+}

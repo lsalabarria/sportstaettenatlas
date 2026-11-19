@@ -1,0 +1,9 @@
+{
+  "id": "9d09fad3-f2e5-4c28-84f2-ec87c3a5ba63",
+  "name": "Westerwaldstraße Rheinbreitbach",
+  "adresse": {
+    "strasse": "Westerwaldstraße",
+    "plz": "53619",
+    "ort": "Rheinbreitbach"
+  }
+}

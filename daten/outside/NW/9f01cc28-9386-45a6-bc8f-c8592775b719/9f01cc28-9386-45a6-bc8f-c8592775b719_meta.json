@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc28-9386-45a6-bc8f-c8592775b719",
+  "name": "Hallenbad Medebach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schützenstraße",
+    "hausnummer": "10",
+    "plz": "59964",
+    "ort": "Medebach, Stadt"
+  },
+  "lage": {
+    "lon": 8.70088,
+    "lat": 51.19463
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

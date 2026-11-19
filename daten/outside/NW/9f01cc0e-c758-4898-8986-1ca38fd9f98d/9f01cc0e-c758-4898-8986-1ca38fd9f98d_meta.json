@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc0e-c758-4898-8986-1ca38fd9f98d",
+  "name": "Waldfreibad Recke",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Auf der Haar",
+    "plz": "49509",
+    "ort": "Recke"
+  },
+  "lage": {
+    "lon": 7.71007,
+    "lat": 52.35271
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

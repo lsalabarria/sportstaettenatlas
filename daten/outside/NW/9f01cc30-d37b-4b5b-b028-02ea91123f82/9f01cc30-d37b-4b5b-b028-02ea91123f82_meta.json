@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc30-d37b-4b5b-b028-02ea91123f82",
+  "name": "Hallenbad Bleichstein",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hengsteyseestr.",
+    "hausnummer": "26",
+    "plz": "58313",
+    "ort": "Herdecke, Stadt"
+  },
+  "lage": {
+    "lon": 7.43637,
+    "lat": 51.39645
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

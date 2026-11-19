@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc20-d1f3-4ac6-8f9f-db5eff3e952d",
+  "name": "Hallen- und Freibad Lengerich",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "In den Rietbroken",
+    "hausnummer": "8-10",
+    "plz": "49525",
+    "ort": "Lengerich, Stadt"
+  },
+  "lage": {
+    "lon": 7.846828,
+    "lat": 52.193318
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

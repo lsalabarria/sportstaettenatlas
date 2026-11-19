@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc42-3a20-43e0-be09-15abbf22f2e0",
+  "name": "Hallenbad Much",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "12-14",
+    "plz": "53804",
+    "ort": "Much"
+  },
+  "lage": {
+    "lon": 7.401408,
+    "lat": 50.903281
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -5,6 +5,7 @@
   "adresse": {
     "strasse": "Oberstraße",
     "hausnummer": "8",
+    "adresszusatz": "a",
     "plz": "54293",
     "ort": "Trier, Stadt"
   },

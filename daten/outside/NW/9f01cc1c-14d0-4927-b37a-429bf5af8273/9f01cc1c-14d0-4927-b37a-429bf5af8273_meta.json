@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc1c-14d0-4927-b37a-429bf5af8273",
+  "name": "Krieler Welle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Krieler Straße",
+    "hausnummer": "15",
+    "plz": "50935",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 6.90732,
+    "lat": 50.92585
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

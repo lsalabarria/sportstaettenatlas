@@ -12,10 +12,45 @@
     "lon": 7.776538,
     "lat": 49.480865
   },
+  "entfernung_oepnv": 550,
   "oeffentlicher_zugang": "ja",
   "schulsport": "ja",
+  "wlan": "ja",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Fußball-Club eV 1931 Kaiserslautern-Erlenbach",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
   "betreiber": "Fußball-Club eV 1931 Kaiserslautern-Erlenbach",
-  "website": "www.fcerlenbach.de"
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "www.fcerlenbach.de",
+  "baujahr": 1956,
+  "letzte_sanierung": 2024,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 4,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 3,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 2,
+    "Technikräume": 2
+  },
+  "energietraeger": [
+    {
+      "bereich": "Warmwasser",
+      "art": "Betrieb über Heizanlage",
+      "einbaujahr": 2018
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas",
+      "einbaujahr": 2018
+    }
+  ],
+  "verbraeuche": [
+    {
+      "art": "Erdgas",
+      "menge": 7100.0,
+      "einheit": "m³"
+    }
+  ]
 }

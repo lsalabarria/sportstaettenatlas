@@ -1,0 +1,10 @@
+{
+  "id": "9c24f4e6-6f43-4210-bbcb-63a701e25581",
+  "name": "Sportschule Bitburg",
+  "adresse": {
+    "strasse": "Charles-Lindbergh-Allee",
+    "hausnummer": "12",
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  }
+}

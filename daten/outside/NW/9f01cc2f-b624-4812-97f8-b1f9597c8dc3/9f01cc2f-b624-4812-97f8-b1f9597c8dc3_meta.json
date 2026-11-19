@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc2f-b624-4812-97f8-b1f9597c8dc3",
+  "name": "Freibad BGHM",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bandwirkenweg",
+    "hausnummer": "79",
+    "plz": "58332",
+    "ort": "Schwelm, Stadt"
+  },
+  "lage": {
+    "lon": 7.28493,
+    "lat": 51.27334
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

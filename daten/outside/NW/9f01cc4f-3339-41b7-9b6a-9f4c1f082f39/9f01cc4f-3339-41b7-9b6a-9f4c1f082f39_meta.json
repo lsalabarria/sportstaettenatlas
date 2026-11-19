@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc4f-3339-41b7-9b6a-9f4c1f082f39",
+  "name": "Felsenmeerbad Hemer",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "14",
+    "plz": "58675",
+    "ort": "Hemer, Stadt"
+  },
+  "lage": {
+    "lon": 7.768145,
+    "lat": 51.387093
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2024
+}

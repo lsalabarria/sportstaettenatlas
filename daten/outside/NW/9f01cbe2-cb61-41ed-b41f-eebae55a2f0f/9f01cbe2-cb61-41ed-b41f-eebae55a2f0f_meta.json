@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe2-cb61-41ed-b41f-eebae55a2f0f",
+  "name": "Hallenbad Hörde",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Eichsfeld",
+    "hausnummer": "5",
+    "plz": "44265",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.4884,
+    "lat": 51.47577
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1969
+}

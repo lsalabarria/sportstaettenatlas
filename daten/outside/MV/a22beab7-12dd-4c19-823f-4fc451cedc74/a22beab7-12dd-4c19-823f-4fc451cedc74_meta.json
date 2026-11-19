@@ -1,0 +1,19 @@
+{
+  "id": "a22beab7-12dd-4c19-823f-4fc451cedc74",
+  "name": "Laufhalle Trotzenburger Weg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Trotzenburger Weg",
+    "hausnummer": "15",
+    "plz": "18057",
+    "ort": "Rostock, Hanse- und Universitätsstadt"
+  },
+  "lage": {
+    "lon": 12.092834,
+    "lat": 54.082856
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22beab6-a090-445f-a821-b97210b4ee8e"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22beac1-e36e-4948-8b2c-246832b51590",
+  "name": "Leichtathletik Nebenstadion Luftschiffhafen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Olympischer Weg",
+    "hausnummer": "8",
+    "plz": "14471",
+    "ort": "Potsdam, Stadt"
+  },
+  "lage": {
+    "lon": 13.019817,
+    "lat": 52.378504
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

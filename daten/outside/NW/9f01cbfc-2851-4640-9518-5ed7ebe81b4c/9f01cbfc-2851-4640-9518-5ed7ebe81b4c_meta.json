@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbfc-2851-4640-9518-5ed7ebe81b4c",
+  "name": "Hallenbad Hamminkeln",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Hallenbad",
+    "plz": "46499",
+    "ort": "Hamminkeln, Stadt"
+  },
+  "lage": {
+    "lon": 6.58845,
+    "lat": 51.72602
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

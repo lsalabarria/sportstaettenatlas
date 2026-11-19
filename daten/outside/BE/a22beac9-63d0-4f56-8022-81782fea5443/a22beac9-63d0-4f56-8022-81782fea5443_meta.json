@@ -1,0 +1,18 @@
+{
+  "id": "a22beac9-63d0-4f56-8022-81782fea5443",
+  "name": "Berliner Box-Verband e.v.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Paul-Heyse-Str.",
+    "hausnummer": "29",
+    "plz": "10407",
+    "ort": "Berlin, Stadt"
+  },
+  "lage": {
+    "lon": 13.450213,
+    "lat": 52.531951
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

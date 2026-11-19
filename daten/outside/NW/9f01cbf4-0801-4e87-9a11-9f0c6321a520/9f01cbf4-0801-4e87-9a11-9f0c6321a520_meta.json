@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf4-0801-4e87-9a11-9f0c6321a520",
+  "name": "Freibad Dellwig",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "hausnummer": "1c",
+    "plz": "58730",
+    "ort": "Fröndenberg/Ruhr, Stadt"
+  },
+  "lage": {
+    "lon": 7.693581,
+    "lat": 51.48218
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1975
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc00-b9b5-4049-b5c6-1b77928dffbc",
+  "name": "Hallenbad Herzogenrath-Mitte",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bergerstraße",
+    "hausnummer": "20",
+    "plz": "52134",
+    "ort": "Herzogenrath, Stadt"
+  },
+  "lage": {
+    "lon": 6.10507,
+    "lat": 50.86738
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

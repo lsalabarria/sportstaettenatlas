@@ -1,0 +1,18 @@
+{
+  "id": "a22bea3c-ff45-4f4f-8e02-9c8d0b95fab8",
+  "name": "Lausitz Arena Cottbus",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Dresdener Str.",
+    "hausnummer": "18",
+    "plz": "3050",
+    "ort": "Cottbus/Chóśebuz, Stadt"
+  },
+  "lage": {
+    "lon": 14.342135,
+    "lat": 51.739778
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

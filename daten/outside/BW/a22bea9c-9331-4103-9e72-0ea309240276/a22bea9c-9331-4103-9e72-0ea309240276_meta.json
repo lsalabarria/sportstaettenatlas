@@ -1,0 +1,18 @@
+{
+  "id": "a22bea9c-9331-4103-9e72-0ea309240276",
+  "name": "Olympiastützpunkt Rhein-Neckar",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Neuenheimer Feld",
+    "hausnummer": "710",
+    "plz": "69120",
+    "ort": "Heidelberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.660841,
+    "lat": 49.423506
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

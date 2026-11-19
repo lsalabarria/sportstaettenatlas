@@ -12,6 +12,7 @@
     "lon": 6.628275,
     "lat": 49.748605
   },
+  "entfernung_oepnv": 500,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb"

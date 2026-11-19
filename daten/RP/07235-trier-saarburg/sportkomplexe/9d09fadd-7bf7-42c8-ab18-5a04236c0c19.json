@@ -1,0 +1,9 @@
+{
+  "id": "9d09fadd-7bf7-42c8-ab18-5a04236c0c19",
+  "name": "Sportplatz Zemmer",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "54313",
+    "ort": "Zemmer"
+  }
+}

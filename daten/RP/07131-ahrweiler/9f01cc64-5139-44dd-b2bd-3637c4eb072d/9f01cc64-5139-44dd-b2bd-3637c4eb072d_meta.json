@@ -13,5 +13,7 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "ja",
-  "betriebsstatus": "in Betrieb"
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1974
 }

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbd3-077c-46a1-9826-b0b917f8eef6",
+  "name": "Hallenbad Voerde-Friedrichsfeld",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Hallenbad",
+    "hausnummer": "11",
+    "plz": "46562",
+    "ort": "Voerde (Niederrhein), Stadt"
+  },
+  "lage": {
+    "lon": 6.64541,
+    "lat": 51.61709
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1975
+}

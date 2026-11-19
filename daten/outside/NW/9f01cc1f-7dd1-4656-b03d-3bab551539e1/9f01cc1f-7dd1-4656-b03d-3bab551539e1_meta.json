@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc1f-7dd1-4656-b03d-3bab551539e1",
+  "name": "Wasserski Langenfeld",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Baumberger Straße",
+    "hausnummer": "88",
+    "plz": "40764",
+    "ort": "Langenfeld (Rhld.), Stadt"
+  },
+  "lage": {
+    "lon": 6.91364,
+    "lat": 51.1134
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

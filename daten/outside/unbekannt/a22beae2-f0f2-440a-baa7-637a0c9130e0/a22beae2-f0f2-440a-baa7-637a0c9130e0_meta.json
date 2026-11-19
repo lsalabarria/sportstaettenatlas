@@ -1,0 +1,17 @@
+{
+  "id": "a22beae2-f0f2-440a-baa7-637a0c9130e0",
+  "name": "THC Horn Hamm e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Saarlandstraße",
+    "hausnummer": "69",
+    "plz": "22303"
+  },
+  "lage": {
+    "lon": 10.027921,
+    "lat": 53.597847
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

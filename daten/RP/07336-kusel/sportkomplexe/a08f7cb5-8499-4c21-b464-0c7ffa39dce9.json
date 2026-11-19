@@ -1,0 +1,10 @@
+{
+  "id": "a08f7cb5-8499-4c21-b464-0c7ffa39dce9",
+  "name": "Sportplatz Jettenbach",
+  "adresse": {
+    "strasse": "Austraße",
+    "hausnummer": "25",
+    "plz": "66887",
+    "ort": "Jettenbach"
+  }
+}

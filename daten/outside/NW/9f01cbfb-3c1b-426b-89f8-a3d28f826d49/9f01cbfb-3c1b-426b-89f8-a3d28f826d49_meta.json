@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfb-3c1b-426b-89f8-a3d28f826d49",
+  "name": "Familien-Oase Heessen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "An der Marienkirche",
+    "hausnummer": "12",
+    "plz": "59073",
+    "ort": "Hamm, Stadt"
+  },
+  "lage": {
+    "lon": 7.82301,
+    "lat": 51.71495
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

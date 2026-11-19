@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbd7-2c44-434f-b752-a373e07f6805",
+  "name": "Brüggener Hallenbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hochstraße",
+    "hausnummer": "33",
+    "plz": "41379",
+    "ort": "Brüggen"
+  },
+  "lage": {
+    "lon": 6.1839,
+    "lat": 51.24485
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1973
+}

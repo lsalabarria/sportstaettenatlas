@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc08-99de-4cd5-8f07-50acbb58f854",
+  "name": "ERFTLAGUNE Vierjahreszeiten-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bruchhöhe",
+    "hausnummer": "20",
+    "plz": "50170",
+    "ort": "Kerpen, Stadt"
+  },
+  "lage": {
+    "lon": 6.68955,
+    "lat": 50.90923
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

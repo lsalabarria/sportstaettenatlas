@@ -1,0 +1,19 @@
+{
+  "id": "a22beabe-7272-42c5-8de5-608326899131",
+  "name": "Sportzentrum Pausitzer Straße",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Pausitzer Straße",
+    "hausnummer": "34",
+    "plz": "1589",
+    "ort": "Riesa, Stadt"
+  },
+  "lage": {
+    "lon": 13.299072,
+    "lat": 51.299099
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22beabd-d8f2-48bf-8bbf-f93bd5bcf23a"
+}

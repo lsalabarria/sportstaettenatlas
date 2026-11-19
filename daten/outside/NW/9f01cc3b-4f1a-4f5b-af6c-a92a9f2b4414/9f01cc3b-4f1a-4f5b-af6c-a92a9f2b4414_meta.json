@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3b-4f1a-4f5b-af6c-a92a9f2b4414",
+  "name": "Sportmühle Hilden",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Berliner Str.",
+    "hausnummer": "55",
+    "plz": "40721",
+    "ort": "Hilden, Stadt"
+  },
+  "lage": {
+    "lon": 6.944233,
+    "lat": 51.169942
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf9-43f7-45fb-bbb1-1b360d43163f",
+  "name": "Schwimm- und Sportbad Haan",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Alter Kirchplatz",
+    "hausnummer": "12",
+    "plz": "42781",
+    "ort": "Haan, Stadt"
+  },
+  "lage": {
+    "lon": 7.01374,
+    "lat": 51.19482
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

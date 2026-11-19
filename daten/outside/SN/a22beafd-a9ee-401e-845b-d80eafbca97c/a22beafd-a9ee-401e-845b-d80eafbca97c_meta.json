@@ -1,0 +1,18 @@
+{
+  "id": "a22beafd-a9ee-401e-845b-d80eafbca97c",
+  "name": "Eissportzentrum Jutta Müller",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Wittgensdorfer Straße",
+    "hausnummer": "2a",
+    "plz": "9117",
+    "ort": "Chemnitz, Stadt"
+  },
+  "lage": {
+    "lon": 12.898927,
+    "lat": 50.849847
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

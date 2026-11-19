@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc7-2cd7-48f5-9706-b3d4ffe703b5",
+  "name": "Melbbad Poppelsdorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Trierer Straße",
+    "hausnummer": "59",
+    "plz": "53115",
+    "ort": "Bonn, Stadt"
+  },
+  "lage": {
+    "lon": 7.08717,
+    "lat": 50.71511
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

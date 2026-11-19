@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc42-6170-4c90-984c-09428d4814a8",
+  "name": "Camping Krawinkel",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bogenstraße",
+    "hausnummer": "26",
+    "plz": "53819",
+    "ort": "Neunkirchen-Seelscheid"
+  },
+  "lage": {
+    "lon": 7.36891,
+    "lat": 50.84609
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

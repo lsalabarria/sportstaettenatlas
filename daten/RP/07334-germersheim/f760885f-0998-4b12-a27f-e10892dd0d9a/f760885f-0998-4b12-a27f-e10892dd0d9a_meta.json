@@ -13,8 +13,24 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
+  "wlan": "nein",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Stadtwerke Germersheim",
+  "eigentuemer_typ": "Kommunales Unternehmen",
   "betreiber": "Germersheimer Segler-Club eV",
-  "website": "www.gscl-ev.de"
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "www.gscl-ev.de",
+  "letzte_sanierung": 2025,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 1,
+    "Sanitärräume - Publikum": 1,
+    "Material- und Lagerräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Strom (z.B. Nachtspeicherofen, Konvektoren etc.)",
+      "einbaujahr": 2020
+    }
+  ]
 }

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc07-d61d-4f29-a697-b07ae977cc3b",
+  "name": "Freibad Kalletal Hohenhausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Römerweg",
+    "hausnummer": "4",
+    "plz": "32689",
+    "ort": "Kalletal"
+  },
+  "lage": {
+    "lon": 8.93552,
+    "lat": 52.10518
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

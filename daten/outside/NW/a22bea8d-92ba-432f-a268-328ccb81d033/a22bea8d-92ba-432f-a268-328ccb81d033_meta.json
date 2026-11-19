@@ -1,0 +1,18 @@
+{
+  "id": "a22bea8d-92ba-432f-a268-328ccb81d033",
+  "name": "Deutsches Olympiadekommitee für Reiterei",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Freiherr-von- Langen Straße",
+    "hausnummer": "15",
+    "plz": "48231",
+    "ort": "Warendorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.990445,
+    "lat": 51.974468
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

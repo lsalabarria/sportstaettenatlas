@@ -1,0 +1,18 @@
+{
+  "id": "a22bea8e-e6d1-4c83-bc23-d4040f28a862",
+  "name": "Beachvolleyballplätze im Sportforum Berlin",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Fritz-Lesch-Straße",
+    "hausnummer": "29",
+    "plz": "14053",
+    "ort": "Berlin, Stadt"
+  },
+  "lage": {
+    "lon": 13.474556,
+    "lat": 52.539682
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

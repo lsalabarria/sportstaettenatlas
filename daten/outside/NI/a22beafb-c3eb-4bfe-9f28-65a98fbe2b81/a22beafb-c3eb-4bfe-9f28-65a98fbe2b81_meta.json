@@ -1,0 +1,18 @@
+{
+  "id": "a22beafb-c3eb-4bfe-9f28-65a98fbe2b81",
+  "name": "Niedersächsischer Sportschüzenverband",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Wilkenburger Straße",
+    "hausnummer": "30",
+    "plz": "30519",
+    "ort": "Hannover, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 9.773661,
+    "lat": 52.322494
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

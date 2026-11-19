@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc06-a749-494f-9e22-bf1a7dda0159",
+  "name": "Hallenbad Jüchen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Stadionstraße",
+    "hausnummer": "73",
+    "plz": "41363",
+    "ort": "Jüchen, Stadt"
+  },
+  "lage": {
+    "lon": 6.51295,
+    "lat": 51.1045
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc16-34ea-4d30-b57d-7ef989700350",
+  "name": "Stadtbad Neuss",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Niederwallstraße",
+    "hausnummer": "3",
+    "plz": "41460",
+    "ort": "Neuss, Stadt"
+  },
+  "lage": {
+    "lon": 6.68883,
+    "lat": 51.20128
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

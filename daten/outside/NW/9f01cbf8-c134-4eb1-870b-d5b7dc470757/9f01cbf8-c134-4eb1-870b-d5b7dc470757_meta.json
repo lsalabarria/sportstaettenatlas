@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf8-c134-4eb1-870b-d5b7dc470757",
+  "name": "Nordbad Gütersloh",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kahlertstraße",
+    "hausnummer": "70",
+    "plz": "33330",
+    "ort": "Gütersloh, Stadt"
+  },
+  "lage": {
+    "lon": 8.38419,
+    "lat": 51.91664
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

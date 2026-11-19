@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc4b-e938-4d43-8e25-9a6df13d35ac",
+  "name": "Vereinsbad DSV 98",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kruppstraße",
+    "hausnummer": "26",
+    "plz": "47055",
+    "ort": "Duisburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.783362,
+    "lat": 51.410544
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1960
+}

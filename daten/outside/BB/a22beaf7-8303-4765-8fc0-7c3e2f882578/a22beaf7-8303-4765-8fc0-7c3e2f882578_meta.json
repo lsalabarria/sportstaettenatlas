@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf7-8303-4765-8fc0-7c3e2f882578",
+  "name": "Palmberg Arena Beachplätze",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Von-Flotow-Straße",
+    "hausnummer": "20",
+    "plz": "19059",
+    "ort": "Schwerin"
+  },
+  "lage": {
+    "lon": 11.390738,
+    "lat": 53.626692
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

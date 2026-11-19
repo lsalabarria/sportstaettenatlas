@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc38-40ba-4f90-8350-ba613be7d804",
+  "name": "Aquino Babyschwimmen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Mainzer.",
+    "hausnummer": "7",
+    "plz": "50678",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 7.022256,
+    "lat": 50.897109
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2018
+}

@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1db4-5986-400f-8816-7f0b2dac03db",
+  "name": "Roscheider Hof",
+  "adresse": {
+    "strasse": "Roscheider Straße",
+    "hausnummer": "5",
+    "plz": "54329",
+    "ort": "Konz, Stadt"
+  }
+}

@@ -5,6 +5,7 @@
   "adresse": {
     "strasse": "Schönbornstraße",
     "hausnummer": "3",
+    "adresszusatz": "1.Etage",
     "plz": "54293",
     "ort": "Trier, Stadt"
   },
@@ -12,8 +13,12 @@
     "lon": 6.65612,
     "lat": 49.761507
   },
+  "entfernung_oepnv": 10,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
-  "website": "www.tcfantasy.eu"
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "www.tcfantasy.eu",
+  "letzte_sanierung": 2019
 }

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0a-98f9-40ce-994d-3ad6b0025c91",
+  "name": "Hallenbad Mesum",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hassenbrockweg",
+    "hausnummer": "55",
+    "plz": "48432",
+    "ort": "Rheine, Stadt"
+  },
+  "lage": {
+    "lon": 7.48355,
+    "lat": 52.22699
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

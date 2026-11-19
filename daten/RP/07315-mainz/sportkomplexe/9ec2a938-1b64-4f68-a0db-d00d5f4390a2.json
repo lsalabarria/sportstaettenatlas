@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a938-1b64-4f68-a0db-d00d5f4390a2",
+  "name": "Bezirkssportanlage Schillstraße",
+  "adresse": {
+    "strasse": "Schillstraße",
+    "hausnummer": "15",
+    "plz": "55131",
+    "ort": "Mainz, Stadt"
+  }
+}

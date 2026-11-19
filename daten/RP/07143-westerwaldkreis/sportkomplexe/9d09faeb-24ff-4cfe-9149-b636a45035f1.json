@@ -1,0 +1,10 @@
+{
+  "id": "9d09faeb-24ff-4cfe-9149-b636a45035f1",
+  "name": "Sportplatz Heiligenroth",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "26",
+    "plz": "56412",
+    "ort": "Heiligenroth"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22bea97-0027-4ca0-a4a1-35254c43f6b4",
+  "name": "TSV Milbertshofen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hans-Denzinger-Straße",
+    "hausnummer": "2",
+    "plz": "80807"
+  },
+  "lage": {
+    "lon": 11.575937,
+    "lat": 48.180191
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22bea96-6f9d-40c0-975d-95f5a0405a29"
+}

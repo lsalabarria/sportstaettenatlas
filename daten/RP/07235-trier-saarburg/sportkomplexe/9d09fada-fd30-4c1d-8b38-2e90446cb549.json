@@ -1,0 +1,9 @@
+{
+  "id": "9d09fada-fd30-4c1d-8b38-2e90446cb549",
+  "name": "Sportplatz Welschbillig",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "plz": "54298",
+    "ort": "Welschbillig"
+  }
+}

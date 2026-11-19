@@ -1,0 +1,13 @@
+{
+  "id": "0a9ed1ba-850b-43d8-be35-8121b2321e12",
+  "name": "Loipe 2 Ernstberg",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "K35",
+    "plz": "54570"
+  },
+  "lage": {
+    "lon": 6.768745,
+    "lat": 50.225899
+  }
+}

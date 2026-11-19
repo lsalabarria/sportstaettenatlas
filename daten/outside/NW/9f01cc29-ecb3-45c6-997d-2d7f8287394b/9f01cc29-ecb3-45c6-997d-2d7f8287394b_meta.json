@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc29-ecb3-45c6-997d-2d7f8287394b",
+  "name": "Freibad Grevenstein",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Freibad",
+    "hausnummer": "19",
+    "plz": "59872",
+    "ort": "Meschede, Stadt"
+  },
+  "lage": {
+    "lon": 8.12532,
+    "lat": 51.30189
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1937
+}

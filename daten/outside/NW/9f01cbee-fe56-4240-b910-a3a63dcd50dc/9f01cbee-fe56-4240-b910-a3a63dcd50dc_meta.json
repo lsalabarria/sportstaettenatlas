@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbee-fe56-4240-b910-a3a63dcd50dc",
+  "name": "Hellweg-Sole-Thermen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Weringhauser Straße",
+    "hausnummer": "17",
+    "plz": "59597",
+    "ort": "Erwitte, Stadt"
+  },
+  "lage": {
+    "lon": 8.35423,
+    "lat": 51.63168
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1981
+}

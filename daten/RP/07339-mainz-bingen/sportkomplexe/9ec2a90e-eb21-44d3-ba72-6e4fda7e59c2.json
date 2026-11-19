@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a90e-eb21-44d3-ba72-6e4fda7e59c2",
+  "name": "Tennis Academy Mainz",
+  "adresse": {
+    "strasse": "Rheinallee",
+    "hausnummer": "95",
+    "plz": "55294",
+    "ort": "Bodenheim"
+  }
+}

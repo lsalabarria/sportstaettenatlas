@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3c-35aa-49df-bbed-c73fbf4f0a65",
+  "name": "TV 1848 e. V. Mönchengladbach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bökelstraße",
+    "hausnummer": "63",
+    "plz": "41063",
+    "ort": "Mönchengladbach, Stadt"
+  },
+  "lage": {
+    "lon": 6.438473,
+    "lat": 51.204591
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc2-c229-4b31-b7c3-17da7704415c",
+  "name": "Freibad Dornberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Forellenweg",
+    "hausnummer": "8",
+    "plz": "33619",
+    "ort": "Bielefeld, Stadt"
+  },
+  "lage": {
+    "lon": 8.46893,
+    "lat": 52.04437
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

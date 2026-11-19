@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc14-9a68-49fb-bcd5-29d9b11ccd0e",
+  "name": "Hallenbad Sterkrade",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Holtener Str.",
+    "hausnummer": "2",
+    "plz": "46145",
+    "ort": "Oberhausen, Stadt"
+  },
+  "lage": {
+    "lon": 6.85497,
+    "lat": 51.517441
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfb-1154-4e0e-bb50-d58fd483f56b",
+  "name": "Freibad Süd Hamm",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Südbad",
+    "hausnummer": "1",
+    "plz": "59069",
+    "ort": "Hamm, Stadt"
+  },
+  "lage": {
+    "lon": 7.83818,
+    "lat": 51.65252
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

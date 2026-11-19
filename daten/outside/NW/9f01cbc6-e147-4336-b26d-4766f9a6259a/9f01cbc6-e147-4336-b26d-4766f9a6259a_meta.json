@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc6-e147-4336-b26d-4766f9a6259a",
+  "name": "Ennertbad Pützchen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Holtorfer Straße",
+    "hausnummer": "40",
+    "plz": "53229",
+    "ort": "Bonn, Stadt"
+  },
+  "lage": {
+    "lon": 7.15092,
+    "lat": 50.73941
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

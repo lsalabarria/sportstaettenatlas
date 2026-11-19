@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd8-d1ef-4607-a3f5-40d7f75319d2",
+  "name": "BagnoMare",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Tecklenburger Straße",
+    "hausnummer": "48 a",
+    "plz": "48565",
+    "ort": "Steinfurt, Stadt"
+  },
+  "lage": {
+    "lon": 7.34995,
+    "lat": 52.15131
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

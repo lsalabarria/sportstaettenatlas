@@ -1,0 +1,10 @@
+{
+  "id": "9d09faed-c405-46a8-b2d4-efff5d5f97c5",
+  "name": "Pfauenhalle",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "7",
+    "plz": "56242",
+    "ort": "Nordhofen"
+  }
+}

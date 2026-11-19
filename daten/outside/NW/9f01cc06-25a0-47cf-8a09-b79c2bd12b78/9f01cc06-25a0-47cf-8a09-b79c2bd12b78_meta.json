@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc06-25a0-47cf-8a09-b79c2bd12b78",
+  "name": "Freibad Schleddenhof",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Seeuferstraße",
+    "hausnummer": "22",
+    "plz": "58636",
+    "ort": "Iserlohn, Stadt"
+  },
+  "lage": {
+    "lon": 7.716433,
+    "lat": 51.384527
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd2c-59c2-4d3b-9d52-9427b06f3c34",
+  "name": "Sportplatz am Wasserturm",
+  "adresse": {
+    "strasse": "Lindenstraße",
+    "hausnummer": "8",
+    "plz": "67459",
+    "ort": "Böhl-Iggelheim"
+  }
+}

@@ -1,5 +1,23 @@
 {
   "id": "2e6e5429-ab7e-51be-bc9c-3249c59b91f6",
   "sportstaette_id": "3f14c430-79a1-4768-9dba-6bfb65bd5e62",
-  "typ": "Schießstand"
+  "typ": "Schießstand",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2021,
+  "sportarten": [
+    "Schießsport",
+    "Bogenschießen"
+  ],
+  "wettkampf": [
+    "Schießsport",
+    "Bogenschießen"
+  ],
+  "schiessstaende_gedeckt": 1,
+  "schiessstaende_teilgedeckt": 4,
+  "leuchtmittel": "LED",
+  "lux": 150,
+  "oeffnungsstunden": 400,
+  "oeffnungsstunden_verein": 400,
+  "baukosten": 7000000.0,
+  "waehrung": "€"
 }

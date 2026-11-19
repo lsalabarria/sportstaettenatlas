@@ -1,0 +1,27 @@
+{
+  "id": "b10bd188-7c18-4da0-a554-14db906413ee",
+  "name": "Beachvolleyballplatz",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Kirchstraße",
+    "hausnummer": "50",
+    "plz": "55595"
+  },
+  "lage": {
+    "lon": 7.796207,
+    "lat": 49.875853
+  },
+  "entfernung_oepnv": 350,
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "nein",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer_typ": "Stadt/Gemeinde",
+  "betreiber": "TuS Gutenberg e.V.",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://tusgutenberg.de",
+  "baujahr": 2025,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2
+  }
+}

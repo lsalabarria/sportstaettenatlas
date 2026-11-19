@@ -1,0 +1,18 @@
+{
+  "id": "a22beade-4d7d-491b-a994-709b31f600f6",
+  "name": "Sporthalle Schmiden",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Remstalstr.",
+    "hausnummer": "36",
+    "plz": "70736",
+    "ort": "Fellbach, Stadt"
+  },
+  "lage": {
+    "lon": 9.267387,
+    "lat": 48.834119
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

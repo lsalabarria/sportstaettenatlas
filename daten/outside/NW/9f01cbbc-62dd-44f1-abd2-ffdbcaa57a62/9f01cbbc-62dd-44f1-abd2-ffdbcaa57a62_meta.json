@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbc-62dd-44f1-abd2-ffdbcaa57a62",
+  "name": "Eifelbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Dr.-Greve-Straße",
+    "hausnummer": "16",
+    "plz": "53902",
+    "ort": "Bad Münstereifel, Stadt"
+  },
+  "lage": {
+    "lon": 6.76481,
+    "lat": 50.54575
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

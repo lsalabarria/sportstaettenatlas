@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc24-1915-4e4e-a027-5caca089c59e",
+  "name": "Hallenbad Kinderhaus",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Idenbrockpl.",
+    "hausnummer": "8",
+    "plz": "48159",
+    "ort": "Münster, Stadt"
+  },
+  "lage": {
+    "lon": 7.604395,
+    "lat": 51.995895
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

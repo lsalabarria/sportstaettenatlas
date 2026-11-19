@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc47-d8d3-435b-a1b3-82cc8d4b4745",
+  "name": "Hallenbad Wettringen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Friedhofstraße",
+    "hausnummer": "18",
+    "plz": "48493",
+    "ort": "Wettringen"
+  },
+  "lage": {
+    "lon": 7.327033,
+    "lat": 52.20788
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1972
+}

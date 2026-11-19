@@ -14,8 +14,13 @@
   },
   "oeffentlicher_zugang": "ja",
   "schulsport": "ja",
+  "wlan": "ja",
   "betriebsstatus": "in Betrieb",
   "sportarten": [
     "Tennis"
-  ]
+  ],
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 4,
+    "Sanitärräume - Publikum": 6
+  }
 }

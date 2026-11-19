@@ -1,0 +1,18 @@
+{
+  "id": "a22beaed-83c7-4322-b6d7-4f7022c2e2a8",
+  "name": "ARAG CenterCourt",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Staufenplatz",
+    "hausnummer": "6",
+    "plz": "40629",
+    "ort": "Düsseldorf"
+  },
+  "lage": {
+    "lon": 6.827948,
+    "lat": 51.243178
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

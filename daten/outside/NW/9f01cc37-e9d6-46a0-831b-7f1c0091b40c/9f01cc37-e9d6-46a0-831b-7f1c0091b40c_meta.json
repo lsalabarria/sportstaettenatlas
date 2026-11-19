@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc37-e9d6-46a0-831b-7f1c0091b40c",
+  "name": "Naturfreibad Wachtendonk",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wankumer Straße",
+    "hausnummer": "10",
+    "plz": "47669",
+    "ort": "Wachtendonk"
+  },
+  "lage": {
+    "lon": 6.329579,
+    "lat": 51.406749
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc24-421e-42c0-beae-685cb7633ec0",
+  "name": "Bürgerbad Handorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hobbeltstr.",
+    "hausnummer": "144",
+    "plz": "48157",
+    "ort": "Münster, Stadt"
+  },
+  "lage": {
+    "lon": 7.706277,
+    "lat": 51.98925
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2020
+}

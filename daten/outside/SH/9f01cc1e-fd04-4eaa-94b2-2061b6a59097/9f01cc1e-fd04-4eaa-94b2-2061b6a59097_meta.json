@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc1e-fd04-4eaa-94b2-2061b6a59097",
+  "name": "Waldfreibad Hörste",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Freibad",
+    "plz": "32791",
+    "ort": "Lage, Stadt"
+  },
+  "lage": {
+    "lon": 8.74184,
+    "lat": 51.94044
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

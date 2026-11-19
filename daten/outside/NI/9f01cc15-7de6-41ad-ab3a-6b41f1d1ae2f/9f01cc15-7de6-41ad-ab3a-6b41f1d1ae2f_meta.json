@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc15-7de6-41ad-ab3a-6b41f1d1ae2f",
+  "name": "Freibad Niederkrüchten",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Kamp",
+    "hausnummer": "25",
+    "plz": "41372",
+    "ort": "Niederkrüchten"
+  },
+  "lage": {
+    "lon": 6.222249,
+    "lat": 51.20036
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1967
+}

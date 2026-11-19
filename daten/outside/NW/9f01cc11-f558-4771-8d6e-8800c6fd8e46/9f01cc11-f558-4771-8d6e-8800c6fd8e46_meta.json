@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc11-f558-4771-8d6e-8800c6fd8e46",
+  "name": "Beverbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hanfgarten",
+    "hausnummer": "22",
+    "plz": "48346",
+    "ort": "Ostbevern"
+  },
+  "lage": {
+    "lon": 7.84469,
+    "lat": 52.036726
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

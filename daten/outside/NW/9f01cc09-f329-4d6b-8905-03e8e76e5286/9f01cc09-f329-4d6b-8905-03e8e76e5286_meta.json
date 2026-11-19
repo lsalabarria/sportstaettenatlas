@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc09-f329-4d6b-8905-03e8e76e5286",
+  "name": "Freibad Rietberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Torfweg",
+    "hausnummer": "40",
+    "plz": "33397",
+    "ort": "Rietberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.43305,
+    "lat": 51.8065
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

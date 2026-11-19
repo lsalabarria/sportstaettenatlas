@@ -1,0 +1,18 @@
+{
+  "id": "a22beb44-10cc-48cd-9e86-99be6a70a079",
+  "name": "Stadionbad Neustadt",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Talstraße",
+    "hausnummer": "110",
+    "plz": "67433",
+    "ort": "Neustadt"
+  },
+  "lage": {
+    "lon": 8.121099,
+    "lat": 49.352368
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc2b-c4b4-4fad-9602-3f3a39a7ff1b",
+  "name": "Aktivbad und Freibad ENNI Solimare",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Filder Straße",
+    "hausnummer": "144",
+    "plz": "47447",
+    "ort": "Moers, Stadt"
+  },
+  "lage": {
+    "lon": 6.61782,
+    "lat": 51.44001
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

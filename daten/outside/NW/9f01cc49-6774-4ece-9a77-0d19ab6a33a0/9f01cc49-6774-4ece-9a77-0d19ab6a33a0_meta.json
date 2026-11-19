@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc49-6774-4ece-9a77-0d19ab6a33a0",
+  "name": "Lehrschwimmbad Sonnenstraße",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Sonnenstraße",
+    "hausnummer": "10",
+    "plz": "40227",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.791695,
+    "lat": 51.212852
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

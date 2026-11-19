@@ -1,0 +1,18 @@
+{
+  "id": "a22bea8e-3a84-46b6-8913-80832b9a77ef",
+  "name": "Leichtathletik",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Friedrich Ebert Straße",
+    "hausnummer": "68",
+    "plz": "39114",
+    "ort": "Magdeburg, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 11.667259,
+    "lat": 52.125413
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

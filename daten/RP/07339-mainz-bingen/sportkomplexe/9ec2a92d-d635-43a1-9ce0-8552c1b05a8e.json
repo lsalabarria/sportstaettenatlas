@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a92d-d635-43a1-9ce0-8552c1b05a8e",
+  "name": "Grundschule Nierstein",
+  "adresse": {
+    "strasse": "Ernst-Ludwig-Straße",
+    "hausnummer": "22",
+    "plz": "55283",
+    "ort": "Nierstein, Stadt"
+  }
+}

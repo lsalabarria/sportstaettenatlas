@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc8-ba0d-4c9c-81b5-7d08df99fc18",
+  "name": "Hallenbad im Sportpark",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Parkstraße",
+    "hausnummer": "41",
+    "plz": "46236",
+    "ort": "Bottrop, Stadt"
+  },
+  "lage": {
+    "lon": 6.917972,
+    "lat": 51.526802
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2008
+}

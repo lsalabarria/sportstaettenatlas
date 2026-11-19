@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc10-cd27-4910-bb5e-f349bd5762c3",
+  "name": "Hallenbad Alisobad Elsen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Schlengerbusch",
+    "hausnummer": "29",
+    "plz": "33106",
+    "ort": "Paderborn, Stadt"
+  },
+  "lage": {
+    "lon": 8.68288,
+    "lat": 51.74007
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1974
+}

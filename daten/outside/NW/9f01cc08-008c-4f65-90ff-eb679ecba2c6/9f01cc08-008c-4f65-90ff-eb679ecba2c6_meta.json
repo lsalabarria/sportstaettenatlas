@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc08-008c-4f65-90ff-eb679ecba2c6",
+  "name": "Hallenbad Methler",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Germaniastraße",
+    "hausnummer": "45",
+    "plz": "59174",
+    "ort": "Kamen, Stadt"
+  },
+  "lage": {
+    "lon": 7.61195,
+    "lat": 51.57263
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1976
+}

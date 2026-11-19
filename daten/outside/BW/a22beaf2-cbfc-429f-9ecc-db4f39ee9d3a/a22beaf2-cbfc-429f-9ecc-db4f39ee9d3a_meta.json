@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf2-cbfc-429f-9ecc-db4f39ee9d3a",
+  "name": "Stadion Festwiese Stuttgart",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Talstraße",
+    "hausnummer": "200",
+    "plz": "70372",
+    "ort": "Stuttgart, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 9.227201,
+    "lat": 48.789899
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

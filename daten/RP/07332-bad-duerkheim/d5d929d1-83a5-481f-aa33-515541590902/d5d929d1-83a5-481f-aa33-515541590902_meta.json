@@ -14,5 +14,12 @@
   },
   "oeffentlicher_zugang": "ja",
   "schulsport": "nein",
-  "betriebsstatus": "in Betrieb"
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1985,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Sanitärräume - Publikum": 2,
+    "Gastronomie": 1
+  }
 }

@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd3d-6134-4dc6-b927-9342ee8646ce",
+  "name": "Sportanlage im Neuroth",
+  "adresse": {
+    "strasse": "im Neuroth",
+    "hausnummer": "2",
+    "plz": "67165",
+    "ort": "Waldsee"
+  }
+}

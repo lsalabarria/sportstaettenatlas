@@ -1,0 +1,10 @@
+{
+  "id": "a08f7cdf-e0c2-4af1-af16-89a2583fb35b",
+  "name": "Sportanlage Schulstraße",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "26",
+    "plz": "55595",
+    "ort": "Weinsheim"
+  }
+}

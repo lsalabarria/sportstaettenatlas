@@ -1,0 +1,17 @@
+{
+  "id": "a22bea93-b27e-4614-8dcb-6cf368f33c82",
+  "name": "Sportpark Duisberg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Gravensteiner Weg",
+    "hausnummer": "27",
+    "plz": "22049"
+  },
+  "lage": {
+    "lon": 10.068137,
+    "lat": 53.586835
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

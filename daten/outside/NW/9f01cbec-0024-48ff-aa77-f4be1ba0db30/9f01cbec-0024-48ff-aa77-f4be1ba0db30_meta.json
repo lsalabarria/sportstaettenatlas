@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbec-0024-48ff-aa77-f4be1ba0db30",
+  "name": "Freibad Wallefeld",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Auf der Mauer",
+    "hausnummer": "3",
+    "plz": "51766",
+    "ort": "Engelskirchen"
+  },
+  "lage": {
+    "lon": 7.4697,
+    "lat": 51.01436
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

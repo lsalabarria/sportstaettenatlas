@@ -1,0 +1,18 @@
+{
+  "id": "a22bea35-a9e8-42ca-a528-65ba7b2b3cd8",
+  "name": "TSV Bayer Sportcenter",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "An der  Römerziegelei",
+    "hausnummer": "1",
+    "plz": "41539",
+    "ort": "Dormagen, Stadt"
+  },
+  "lage": {
+    "lon": 6.847074,
+    "lat": 51.084882
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

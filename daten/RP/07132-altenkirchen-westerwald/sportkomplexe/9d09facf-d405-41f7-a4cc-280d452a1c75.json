@@ -1,0 +1,10 @@
+{
+  "id": "9d09facf-d405-41f7-a4cc-280d452a1c75",
+  "name": "Grundschule Etzbach",
+  "adresse": {
+    "strasse": "Wiesenstraße",
+    "hausnummer": "21",
+    "plz": "57539",
+    "ort": "Etzbach"
+  }
+}

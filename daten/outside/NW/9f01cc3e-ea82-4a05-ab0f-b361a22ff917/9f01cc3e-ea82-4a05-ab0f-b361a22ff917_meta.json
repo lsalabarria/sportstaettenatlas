@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3e-ea82-4a05-ab0f-b361a22ff917",
+  "name": "Freizeitpark Tillessensee",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bestener Str.",
+    "hausnummer": "253",
+    "plz": "46282",
+    "ort": "Dorsten, Stadt"
+  },
+  "lage": {
+    "lon": 6.920782,
+    "lat": 51.645177
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

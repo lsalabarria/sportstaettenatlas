@@ -1,0 +1,19 @@
+{
+  "id": "a22bea31-b251-4680-90fc-ccd3b4fc33ac",
+  "name": "Sportforum Chemnitz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Reichenhhainer Straße",
+    "hausnummer": "154",
+    "plz": "9125",
+    "ort": "Chemnitz, Stadt"
+  },
+  "lage": {
+    "lon": 12.933704,
+    "lat": 50.8046
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22bea31-a2eb-4c1f-8a44-83a948b69876"
+}

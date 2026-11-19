@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1e06-8876-4603-a2eb-52f90f2bb79b",
+  "name": "Realschule plus Cochem",
+  "adresse": {
+    "strasse": "Schlossstraße",
+    "hausnummer": "34",
+    "plz": "56812",
+    "ort": "Cochem, Stadt"
+  }
+}

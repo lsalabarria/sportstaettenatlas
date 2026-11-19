@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbd9-664c-4246-b5ea-c07ac49fb7b4",
+  "name": "Freibad Lenzinghausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Stiller Frieden",
+    "plz": "32139",
+    "ort": "Spenge, Stadt"
+  },
+  "lage": {
+    "lon": 8.4959,
+    "lat": 52.12151
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

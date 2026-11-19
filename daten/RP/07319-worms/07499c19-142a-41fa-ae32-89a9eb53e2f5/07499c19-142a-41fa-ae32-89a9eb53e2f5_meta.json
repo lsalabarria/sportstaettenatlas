@@ -12,10 +12,34 @@
     "lon": 8.324879,
     "lat": 49.607768
   },
+  "entfernung_oepnv": 100,
   "oeffentlicher_zugang": "nein",
   "schulsport": "ja",
+  "wlan": "ja",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Turnverein 1879 Worms-Horchheim e.V.",
   "betreiber": "Turnverein 1879 Worms-Horchheim e.V.",
-  "website": "www.tvhorchheim.de"
+  "website": "www.tvhorchheim.de",
+  "baujahr": 2020,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 4,
+    "Sanitärräume - Publikum": 2,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Warmwasser",
+      "art": "Erdgas",
+      "einbaujahr": 2020
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Umweltwärme (Wärmepumpe)",
+      "einbaujahr": 2020
+    }
+  ]
 }

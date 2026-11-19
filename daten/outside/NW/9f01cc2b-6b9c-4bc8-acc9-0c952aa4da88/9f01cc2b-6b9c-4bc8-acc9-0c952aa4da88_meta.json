@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc2b-6b9c-4bc8-acc9-0c952aa4da88",
+  "name": "Melittabad Minden",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Sieben Bauern",
+    "hausnummer": "43",
+    "plz": "32425",
+    "ort": "Minden, Stadt"
+  },
+  "lage": {
+    "lon": 8.88782,
+    "lat": 52.30174
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1968
+}

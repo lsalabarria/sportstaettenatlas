@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc27-1c98-4959-96ad-163dfe7a27cb",
+  "name": "Lippe Bad Lünen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Konrad-Adenauer-Straße",
+    "hausnummer": "28",
+    "plz": "44534",
+    "ort": "Lünen, Stadt"
+  },
+  "lage": {
+    "lon": 7.5175,
+    "lat": 51.61687
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

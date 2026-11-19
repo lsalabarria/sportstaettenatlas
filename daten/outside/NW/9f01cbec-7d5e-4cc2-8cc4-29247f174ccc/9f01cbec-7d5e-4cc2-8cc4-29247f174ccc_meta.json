@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbec-7d5e-4cc2-8cc4-29247f174ccc",
+  "name": "Gartenhallenbad Enger",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Ringstraße",
+    "hausnummer": "4",
+    "plz": "32130",
+    "ort": "Enger, Stadt"
+  },
+  "lage": {
+    "lon": 8.55328,
+    "lat": 52.13504
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

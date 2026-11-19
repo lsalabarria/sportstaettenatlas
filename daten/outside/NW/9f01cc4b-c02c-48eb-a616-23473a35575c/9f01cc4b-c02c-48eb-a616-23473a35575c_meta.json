@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4b-c02c-48eb-a616-23473a35575c",
+  "name": "Vereinsbad ASC Duisburg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kruppstraße",
+    "hausnummer": "32a",
+    "plz": "47055",
+    "ort": "Duisburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.789578,
+    "lat": 51.411504
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

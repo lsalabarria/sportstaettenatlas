@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf4-1bd1-4284-9c9a-bbd31d6f96b4",
+  "name": "Beachvolleyballplätze VfB Friedrichshafen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Teuringer Str",
+    "hausnummer": "2",
+    "plz": "88045",
+    "ort": "Friedrichshafen, Stadt"
+  },
+  "lage": {
+    "lon": 9.481852,
+    "lat": 47.670021
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

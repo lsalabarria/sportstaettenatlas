@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf9-e42d-4b87-9337-763a754fe1aa",
+  "name": "Wurftaubenclub Wiesbaden",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Weißer Weg",
+    "hausnummer": "11",
+    "plz": "65201",
+    "ort": "Wiesbaden, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 8.15487,
+    "lat": 50.083155
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

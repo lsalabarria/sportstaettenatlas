@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc42-8afe-450f-974d-c41c585076d6",
+  "name": "Dive4Life Tauchcenter",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zeithstraße",
+    "hausnummer": "110",
+    "plz": "53721",
+    "ort": "Siegburg, Stadt"
+  },
+  "lage": {
+    "lon": 7.219276,
+    "lat": 50.802341
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

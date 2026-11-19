@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a92a-04d9-47b7-bc25-13bc7b7ac499",
+  "name": "Brüder-Grimm-Schule",
+  "adresse": {
+    "strasse": "Brüder-Grimm-Straße",
+    "hausnummer": "27",
+    "plz": "55218",
+    "ort": "Ingelheim am Rhein, Stadt"
+  }
+}

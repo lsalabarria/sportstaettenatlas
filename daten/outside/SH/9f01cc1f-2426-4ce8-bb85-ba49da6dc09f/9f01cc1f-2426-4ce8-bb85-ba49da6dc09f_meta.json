@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc1f-2426-4ce8-bb85-ba49da6dc09f",
+  "name": "Freibad Werreanger",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Breite Straße",
+    "hausnummer": "30",
+    "plz": "32791",
+    "ort": "Lage, Stadt"
+  },
+  "lage": {
+    "lon": 8.80188,
+    "lat": 51.98517
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

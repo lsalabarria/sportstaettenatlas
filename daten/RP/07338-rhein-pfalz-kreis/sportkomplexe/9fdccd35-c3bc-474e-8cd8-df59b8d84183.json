@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd35-c3bc-474e-8cd8-df59b8d84183",
+  "name": "Kurpfalzhalle",
+  "adresse": {
+    "strasse": "Haardtstraße",
+    "hausnummer": "75",
+    "plz": "67125",
+    "ort": "Dannstadt-Schauernheim"
+  }
+}

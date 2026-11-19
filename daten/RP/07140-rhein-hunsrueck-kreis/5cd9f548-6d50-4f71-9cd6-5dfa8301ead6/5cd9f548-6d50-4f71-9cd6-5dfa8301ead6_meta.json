@@ -1,0 +1,43 @@
+{
+  "id": "5cd9f548-6d50-4f71-9cd6-5dfa8301ead6",
+  "name": "SpVgg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gönnheimer Straße",
+    "hausnummer": "100",
+    "plz": "67127"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "entfernung_oepnv": 500,
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2001,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 4,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 2,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 4,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Warmwasser",
+      "art": "Betrieb über Heizanlage",
+      "einbaujahr": 2015
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Heizöl",
+      "einbaujahr": 2015
+    }
+  ]
+}

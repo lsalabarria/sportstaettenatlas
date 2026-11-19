@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc0a-1c21-455f-8084-e3675f5911ba",
+  "name": "Hallenbad Rheurdt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Hallenbad",
+    "hausnummer": "7",
+    "plz": "47509",
+    "ort": "Rheurdt"
+  },
+  "lage": {
+    "lon": 6.46971,
+    "lat": 51.46338
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1972
+}

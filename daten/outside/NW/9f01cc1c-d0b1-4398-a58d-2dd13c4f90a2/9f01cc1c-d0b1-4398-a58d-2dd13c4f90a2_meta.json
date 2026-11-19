@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc1c-d0b1-4398-a58d-2dd13c4f90a2",
+  "name": "Saunapark Siebengebirge",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Dollendorfer Straße",
+    "hausnummer": "106-110",
+    "plz": "53639",
+    "ort": "Königswinter, Stadt"
+  },
+  "lage": {
+    "lon": 7.26406,
+    "lat": 50.70587
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

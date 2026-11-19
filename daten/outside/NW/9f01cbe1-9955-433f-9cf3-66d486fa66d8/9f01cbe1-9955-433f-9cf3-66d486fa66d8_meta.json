@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe1-9955-433f-9cf3-66d486fa66d8",
+  "name": "Stadtbad Dormagen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Robert-Koch-Straße",
+    "hausnummer": "34",
+    "plz": "41539",
+    "ort": "Dormagen, Stadt"
+  },
+  "lage": {
+    "lon": 6.82329,
+    "lat": 51.10164
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2017
+}

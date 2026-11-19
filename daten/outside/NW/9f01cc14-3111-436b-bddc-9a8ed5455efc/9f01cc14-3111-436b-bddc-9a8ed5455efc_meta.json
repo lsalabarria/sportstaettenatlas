@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc14-3111-436b-bddc-9a8ed5455efc",
+  "name": "Solbad Vonderort",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bottroper Straße",
+    "hausnummer": "322",
+    "plz": "46117",
+    "ort": "Oberhausen, Stadt"
+  },
+  "lage": {
+    "lon": 6.902487,
+    "lat": 51.509254
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb"
+}

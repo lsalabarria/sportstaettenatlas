@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe9-5b66-4adb-a49e-2115ba7d8f3d",
+  "name": "Familienbad Niederheid",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Paul-Thomas-Straße",
+    "hausnummer": "35",
+    "plz": "40589",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.85135,
+    "lat": 51.17032
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1976
+}

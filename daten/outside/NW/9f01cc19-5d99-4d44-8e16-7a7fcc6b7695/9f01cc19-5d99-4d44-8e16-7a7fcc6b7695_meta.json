@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc19-5d99-4d44-8e16-7a7fcc6b7695",
+  "name": "Agrippabad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kämmergasse",
+    "hausnummer": "1",
+    "plz": "50676",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 6.95214,
+    "lat": 50.932759
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1958
+}

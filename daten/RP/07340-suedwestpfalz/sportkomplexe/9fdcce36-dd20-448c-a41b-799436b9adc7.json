@@ -1,0 +1,10 @@
+{
+  "id": "9fdcce36-dd20-448c-a41b-799436b9adc7",
+  "name": "Tennis-Club Contwig e.V.",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "hausnummer": "2",
+    "plz": "66497",
+    "ort": "Contwig"
+  }
+}

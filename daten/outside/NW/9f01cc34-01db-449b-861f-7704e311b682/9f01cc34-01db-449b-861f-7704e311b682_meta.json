@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc34-01db-449b-861f-7704e311b682",
+  "name": "Freibad Henkhausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hasselbach",
+    "hausnummer": "30",
+    "plz": "58119",
+    "ort": "Hagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.55598,
+    "lat": 51.37249
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

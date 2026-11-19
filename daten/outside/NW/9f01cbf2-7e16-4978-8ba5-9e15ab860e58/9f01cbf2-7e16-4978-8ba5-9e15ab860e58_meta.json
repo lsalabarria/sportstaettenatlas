@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf2-7e16-4978-8ba5-9e15ab860e58",
+  "name": "Sportbad Thurmfeld",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Reckhammerweg",
+    "hausnummer": "84",
+    "plz": "45141",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 6.99999,
+    "lat": 51.46769
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2016
+}

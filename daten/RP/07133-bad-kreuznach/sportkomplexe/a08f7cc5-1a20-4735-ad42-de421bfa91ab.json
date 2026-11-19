@@ -1,0 +1,9 @@
+{
+  "id": "a08f7cc5-1a20-4735-ad42-de421bfa91ab",
+  "name": "Freibad Winterbach",
+  "adresse": {
+    "strasse": "Am Felsen",
+    "plz": "55595",
+    "ort": "Winterbach"
+  }
+}

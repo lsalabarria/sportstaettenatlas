@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf5-2f87-4f53-9a43-f0daa2c96d60",
+  "name": "Loipennetz Schmallenberg",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Unterm Werth",
+    "hausnummer": "1",
+    "plz": "57392",
+    "ort": "Schmallenberg"
+  },
+  "lage": {
+    "lon": 8.28519,
+    "lat": 51.145793
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -14,7 +14,11 @@
   },
   "oeffentlicher_zugang": "ja",
   "schulsport": "ja",
+  "wlan": "ja",
   "betriebsstatus": "in Betrieb",
+  "eigentuemer_typ": "Stadt/Gemeinde",
   "betreiber": "Keep GmbH",
-  "website": "https://www.vg-eisenberg.de/freizeit-tourismus/die-top-9-erlebnisse/waldschwimmbad/"
+  "betreiber_typ": "Kommunales Unternehmen",
+  "website": "https://www.vg-eisenberg.de/freizeit-tourismus/die-top-9-erlebnisse/waldschwimmbad/",
+  "fassadenmaterial": "Sonstiges"
 }

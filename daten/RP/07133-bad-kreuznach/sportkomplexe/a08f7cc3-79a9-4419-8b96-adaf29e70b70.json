@@ -1,0 +1,10 @@
+{
+  "id": "a08f7cc3-79a9-4419-8b96-adaf29e70b70",
+  "name": "Sportplatz am Kaisergarten",
+  "adresse": {
+    "strasse": "Zum Kaisergarten",
+    "hausnummer": "4",
+    "plz": "55569",
+    "ort": "Monzingen"
+  }
+}

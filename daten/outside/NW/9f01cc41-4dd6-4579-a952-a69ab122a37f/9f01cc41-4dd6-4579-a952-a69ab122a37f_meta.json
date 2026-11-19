@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc41-4dd6-4579-a952-a69ab122a37f",
+  "name": "Swim4Fun",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Berta-Benz-Str.",
+    "hausnummer": "4",
+    "plz": "40670",
+    "ort": "Meerbusch, Stadt"
+  },
+  "lage": {
+    "lon": 6.644675,
+    "lat": 51.276558
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2018
+}

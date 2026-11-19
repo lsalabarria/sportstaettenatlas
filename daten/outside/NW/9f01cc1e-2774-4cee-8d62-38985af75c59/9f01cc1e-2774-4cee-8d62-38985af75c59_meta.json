@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc1e-2774-4cee-8d62-38985af75c59",
+  "name": "Sommerbad Neptun",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Mühlenfeld",
+    "hausnummer": "121",
+    "plz": "47807",
+    "ort": "Krefeld, Stadt"
+  },
+  "lage": {
+    "lon": 6.57358,
+    "lat": 51.30899
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

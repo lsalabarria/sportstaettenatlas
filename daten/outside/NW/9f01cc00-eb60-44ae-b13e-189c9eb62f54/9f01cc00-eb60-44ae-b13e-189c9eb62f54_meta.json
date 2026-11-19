@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc00-eb60-44ae-b13e-189c9eb62f54",
+  "name": "Freibad Herzogenrath-Merkstein",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Buschhoferweg",
+    "plz": "52134",
+    "ort": "Herzogenrath, Stadt"
+  },
+  "lage": {
+    "lon": 6.12636,
+    "lat": 50.89017
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc05-fc2c-4be6-83d1-bf7ceb3aad13",
+  "name": "Schwimmzentrum Heidebad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Heideplatz",
+    "hausnummer": "4",
+    "plz": "58638",
+    "ort": "Iserlohn, Stadt"
+  },
+  "lage": {
+    "lon": 7.689335,
+    "lat": 51.398238
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

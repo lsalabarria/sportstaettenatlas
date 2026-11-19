@@ -1,0 +1,18 @@
+{
+  "id": "a22beae2-476a-49d0-a85c-5139934a96a2",
+  "name": "Glaspalast Sindelfingen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Rudolf-Harbig-Str",
+    "hausnummer": "10",
+    "plz": "71063",
+    "ort": "Sindelfingen, Stadt"
+  },
+  "lage": {
+    "lon": 8.98366,
+    "lat": 48.716003
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

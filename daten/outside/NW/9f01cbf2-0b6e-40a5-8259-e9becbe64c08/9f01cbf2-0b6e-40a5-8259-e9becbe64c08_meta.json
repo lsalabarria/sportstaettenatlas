@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf2-0b6e-40a5-8259-e9becbe64c08",
+  "name": "Stadtbad Werden",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Körholzstraße",
+    "hausnummer": "2",
+    "plz": "45239",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 7.00041,
+    "lat": 51.38937
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1971
+}

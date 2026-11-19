@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbd1-599b-4765-8d89-eff39661cc16",
+  "name": "Gartenhallenbad Wesseling",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Saarlandstraße\\t",
+    "plz": "50389",
+    "ort": "Wesseling, Stadt"
+  },
+  "lage": {
+    "lon": 6.97728,
+    "lat": 50.81897
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

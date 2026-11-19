@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd5-0bc5-496b-bc64-594c85ffdf55",
+  "name": "Nizzabad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Nizzatal",
+    "hausnummer": "4",
+    "plz": "42555",
+    "ort": "Velbert, Stadt"
+  },
+  "lage": {
+    "lon": 7.13567,
+    "lat": 51.34344
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

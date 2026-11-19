@@ -1,0 +1,18 @@
+{
+  "id": "a22beb3d-e972-445b-b00d-dd44493c1a8f",
+  "name": "Geschäftsstelle LStP Gewichtheben",
+  "kategorie": "Leistungsstützpunkt",
+  "adresse": {
+    "strasse": "Friedrich-Ebert-Straße",
+    "hausnummer": "57c",
+    "plz": "55130",
+    "ort": "Mainz-Weisenau"
+  },
+  "lage": {
+    "lon": 8.247505,
+    "lat": 49.347362
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

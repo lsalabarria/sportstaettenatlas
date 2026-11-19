@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc43-b831-4e25-9c91-316ffd222a40",
+  "name": "Lehrschwimmbecken Sichtigvor",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "8",
+    "plz": "59581",
+    "ort": "Warstein, Stadt"
+  },
+  "lage": {
+    "lon": 8.27539,
+    "lat": 51.48818
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

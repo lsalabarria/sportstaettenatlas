@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc2a-e9e8-4014-ba41-15ac988f36e1",
+  "name": "Kreisschwimmhalle Minden-Lübbecke",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bayernring",
+    "hausnummer": "52",
+    "plz": "32427",
+    "ort": "Minden, Stadt"
+  },
+  "lage": {
+    "lon": 8.8918,
+    "lat": 52.29786
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1975
+}

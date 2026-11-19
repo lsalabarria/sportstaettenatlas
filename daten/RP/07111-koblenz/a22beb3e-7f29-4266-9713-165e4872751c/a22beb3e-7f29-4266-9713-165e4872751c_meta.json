@@ -1,0 +1,18 @@
+{
+  "id": "a22beb3e-7f29-4266-9713-165e4872751c",
+  "name": "Sporthalle der Berufsbildenden Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Max-Planck-Straße",
+    "hausnummer": "5",
+    "plz": "54516",
+    "ort": "Wittlich"
+  },
+  "lage": {
+    "lon": 7.565172,
+    "lat": 50.350599
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

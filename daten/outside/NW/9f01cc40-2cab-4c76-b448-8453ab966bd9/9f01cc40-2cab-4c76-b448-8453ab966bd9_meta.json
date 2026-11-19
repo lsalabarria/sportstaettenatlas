@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc40-2cab-4c76-b448-8453ab966bd9",
+  "name": "Freizeitpark Flaesheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Flaesheimer Str.",
+    "hausnummer": "600",
+    "plz": "45721",
+    "ort": "Haltern am See, Stadt"
+  },
+  "lage": {
+    "lon": 7.265634,
+    "lat": 51.712694
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

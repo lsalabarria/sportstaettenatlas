@@ -1,0 +1,18 @@
+{
+  "id": "a22beb3c-e359-4d60-abfe-b7d01118a3a9",
+  "name": "Anschubamlage Bob und Skeleton",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Lohmühle",
+    "hausnummer": "1",
+    "plz": "57627",
+    "ort": "Hachenburg"
+  },
+  "lage": {
+    "lon": 7.817915,
+    "lat": 50.656663
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22bea92-ac72-47bb-9216-84247450c8c7",
+  "name": "Horst-Kober-Sportzentrum",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Glockenturmstraße",
+    "hausnummer": "3-5",
+    "plz": "14053",
+    "ort": "Berlin, Stadt"
+  },
+  "lage": {
+    "lon": 13.228599,
+    "lat": 52.51277
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "a22bea37-2fd8-42e9-820e-8ed47727a033",
+  "name": "EWF Biathlon Arena",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Auf dem Roth",
+    "plz": "34508",
+    "ort": "Willingen (Upland)"
+  },
+  "lage": {
+    "lon": 8.63573,
+    "lat": 51.274372
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc8-7692-45ee-9821-68934aa94163",
+  "name": "HallenFreizeitBad Bornheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Rilkestraße",
+    "hausnummer": "3",
+    "plz": "53332",
+    "ort": "Bornheim, Stadt"
+  },
+  "lage": {
+    "lon": 6.99784,
+    "lat": 50.76233
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

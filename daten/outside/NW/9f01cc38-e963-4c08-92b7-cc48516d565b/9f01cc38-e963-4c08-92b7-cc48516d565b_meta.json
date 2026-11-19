@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc38-e963-4c08-92b7-cc48516d565b",
+  "name": "Freibad Barntrup",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Badeanstaltsweg",
+    "hausnummer": "3",
+    "plz": "32683",
+    "ort": "Barntrup, Stadt"
+  },
+  "lage": {
+    "lon": 9.109377,
+    "lat": 51.987558
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

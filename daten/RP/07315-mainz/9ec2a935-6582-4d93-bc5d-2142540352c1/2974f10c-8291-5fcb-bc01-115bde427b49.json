@@ -1,5 +1,8 @@
 {
   "id": "2974f10c-8291-5fcb-bc01-115bde427b49",
   "sportstaette_id": "9ec2a935-6582-4d93-bc5d-2142540352c1",
-  "typ": "sonstige Sportanlage"
+  "typ": "sonstige Sportanlage",
+  "sportarten": [
+    "Basketball"
+  ]
 }

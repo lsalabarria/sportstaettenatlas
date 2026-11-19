@@ -1,0 +1,18 @@
+{
+  "id": "a22bea9d-ae50-4c4f-9260-b3bf08741f8d",
+  "name": "Leistungszentrum der Kunstturnerinnen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Pfeifferswörth",
+    "hausnummer": "8",
+    "plz": "68167",
+    "ort": "Mannheim, Universitätsstadt"
+  },
+  "lage": {
+    "lon": 8.499057,
+    "lat": 49.488761
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

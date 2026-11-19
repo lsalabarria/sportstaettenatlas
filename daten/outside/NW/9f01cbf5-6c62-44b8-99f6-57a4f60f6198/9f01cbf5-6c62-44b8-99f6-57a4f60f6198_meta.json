@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf5-6c62-44b8-99f6-57a4f60f6198",
+  "name": "Physiozentrum Hörnemann",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Katharinenstraße",
+    "hausnummer": "21",
+    "plz": "48712",
+    "ort": "Gescher, Stadt"
+  },
+  "lage": {
+    "lon": 7.00774,
+    "lat": 51.95395
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

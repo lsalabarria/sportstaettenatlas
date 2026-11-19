@@ -1,0 +1,18 @@
+{
+  "id": "a22beac9-1e7d-4a60-abf2-3fbcf099e7a5",
+  "name": "Sportkomplex Paul-Heyse-Straße",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Paul-Heyse-Staße",
+    "hausnummer": "25",
+    "plz": "10407",
+    "ort": "Berlin, Stadt"
+  },
+  "lage": {
+    "lon": 13.446834,
+    "lat": 52.532052
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

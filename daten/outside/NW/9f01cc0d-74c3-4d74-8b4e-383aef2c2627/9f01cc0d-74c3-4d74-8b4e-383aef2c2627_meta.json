@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc0d-74c3-4d74-8b4e-383aef2c2627",
+  "name": "Stadtbad Rees",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Grüttweg",
+    "hausnummer": "26",
+    "plz": "46459",
+    "ort": "Rees, Stadt"
+  },
+  "lage": {
+    "lon": 6.38769,
+    "lat": 51.76396
+  },
+  "schulsport": "nein",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2014
+}

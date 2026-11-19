@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc40-f862-4b7c-934b-48ef7f31f5fd",
+  "name": "Hotel Ling Bao",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Berggeiststraße",
+    "hausnummer": "31-41",
+    "plz": "50321",
+    "ort": "Brühl, Stadt"
+  },
+  "lage": {
+    "lon": 6.884287,
+    "lat": 50.798386
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

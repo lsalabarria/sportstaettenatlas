@@ -1,0 +1,10 @@
+{
+  "id": "9d09fae8-2c03-42c2-8473-891525000478",
+  "name": "Sportplatz Freudenburg",
+  "adresse": {
+    "strasse": "Leukstraße",
+    "hausnummer": "20",
+    "plz": "54450",
+    "ort": "Freudenburg"
+  }
+}

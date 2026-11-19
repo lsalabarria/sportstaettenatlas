@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc1b-c92f-4b19-8586-638af02eab06",
+  "name": "Ossendorfbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Äußere Kanalstraße",
+    "hausnummer": "191",
+    "plz": "50827",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 6.909407,
+    "lat": 50.964302
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2009
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc35-c0b5-41bc-906b-4ee406fd1214",
+  "name": "Apartments Am Waltenberg 70",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Wartenberg",
+    "hausnummer": "70",
+    "plz": "59955",
+    "ort": "Winterberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.521004,
+    "lat": 51.1914
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

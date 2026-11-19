@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd7-5897-4edc-a9b8-e1e1847cbf96",
+  "name": "KarlsBad Brühl",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kurfürstenstraße",
+    "hausnummer": "40",
+    "plz": "50321",
+    "ort": "Brühl, Stadt"
+  },
+  "lage": {
+    "lon": 6.90477,
+    "lat": 50.83663
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

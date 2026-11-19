@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbb9-8917-43f4-adc3-87d9788b2109",
+  "name": "Frei- und Hallenbad Dahle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Mondhahnstraße",
+    "hausnummer": "1",
+    "plz": "58762",
+    "ort": "Altena, Stadt"
+  },
+  "lage": {
+    "lon": 7.75209,
+    "lat": 51.29801
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

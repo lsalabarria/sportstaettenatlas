@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc42-e4ba-46c5-aefc-2bf184f93c91",
+  "name": "Naturfreibad Ferndorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "In der Zitzenbach",
+    "plz": "57223",
+    "ort": "Kreuztal, Stadt"
+  },
+  "lage": {
+    "lon": 8.023116,
+    "lat": 50.973222
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22beafd-5ddf-474f-bee1-65e941f2b02c",
+  "name": "Mehrzweckhalle Wittenburger Straße",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Wittenburger Straße",
+    "hausnummer": "120a",
+    "plz": "19059",
+    "ort": "Schwerin"
+  },
+  "lage": {
+    "lon": 11.390988,
+    "lat": 53.627737
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

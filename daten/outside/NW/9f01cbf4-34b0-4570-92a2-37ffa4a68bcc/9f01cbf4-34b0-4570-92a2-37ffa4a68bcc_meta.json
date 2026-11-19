@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf4-34b0-4570-92a2-37ffa4a68bcc",
+  "name": "Waldfreibad Walbeck",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Freibad",
+    "hausnummer": "24",
+    "plz": "47608",
+    "ort": "Geldern, Stadt"
+  },
+  "lage": {
+    "lon": 6.22386,
+    "lat": 51.49616
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1973
+}

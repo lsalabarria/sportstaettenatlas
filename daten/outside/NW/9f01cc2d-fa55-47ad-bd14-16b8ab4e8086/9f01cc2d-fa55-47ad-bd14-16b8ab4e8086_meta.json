@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc2d-fa55-47ad-bd14-16b8ab4e8086",
+  "name": "Freibad Ramsdorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Velener Str.",
+    "hausnummer": "47",
+    "plz": "46342",
+    "ort": "Velen, Stadt"
+  },
+  "lage": {
+    "lon": 6.924941,
+    "lat": 51.890096
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

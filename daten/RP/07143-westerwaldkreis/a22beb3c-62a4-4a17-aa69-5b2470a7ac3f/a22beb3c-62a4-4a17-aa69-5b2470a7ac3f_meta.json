@@ -1,0 +1,18 @@
+{
+  "id": "a22beb3c-62a4-4a17-aa69-5b2470a7ac3f",
+  "name": "Sporthalle ASV Landau Badminton",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schneider-Straße",
+    "hausnummer": "71",
+    "plz": "76829",
+    "ort": "Landau"
+  },
+  "lage": {
+    "lon": 7.953765,
+    "lat": 50.660242
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

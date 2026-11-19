@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe5-89ec-45be-bbcf-77f4bb6a9693",
+  "name": "Freibad Duisburg Großenbaum",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Buscherstraße",
+    "hausnummer": "65",
+    "plz": "47269",
+    "ort": "Duisburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.77078,
+    "lat": 51.36164
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

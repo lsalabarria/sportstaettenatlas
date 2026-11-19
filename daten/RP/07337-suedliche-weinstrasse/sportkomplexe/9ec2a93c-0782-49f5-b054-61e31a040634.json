@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a93c-0782-49f5-b054-61e31a040634",
+  "name": "Freibad Kalmitbad",
+  "adresse": {
+    "strasse": "Wiesenstraße",
+    "hausnummer": "18",
+    "plz": "67487",
+    "ort": "Sankt Martin"
+  }
+}

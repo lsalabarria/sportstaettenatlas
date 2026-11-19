@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd30-3553-4bba-ad4a-f6e90e4c902b",
+  "name": "Rhein-Pfalz-Halle",
+  "adresse": {
+    "strasse": "Viehtriftstraße",
+    "hausnummer": "108",
+    "plz": "67354",
+    "ort": "Römerberg"
+  }
+}

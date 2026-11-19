@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc2c-b702-4b97-b621-1dfe875d6174",
+  "name": "ENNI.Sportpark Rheinkamp",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Sportzentrum",
+    "hausnummer": "5",
+    "plz": "47445",
+    "ort": "Moers, Stadt"
+  },
+  "lage": {
+    "lon": 6.60995,
+    "lat": 51.48159
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2013
+}

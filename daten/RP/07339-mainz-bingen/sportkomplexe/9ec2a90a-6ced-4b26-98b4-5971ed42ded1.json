@@ -1,0 +1,9 @@
+{
+  "id": "9ec2a90a-6ced-4b26-98b4-5971ed42ded1",
+  "name": "Sportplatz Engelstadt",
+  "adresse": {
+    "strasse": "Reiffeisenstraße",
+    "plz": "55270",
+    "ort": "Engelstadt"
+  }
+}

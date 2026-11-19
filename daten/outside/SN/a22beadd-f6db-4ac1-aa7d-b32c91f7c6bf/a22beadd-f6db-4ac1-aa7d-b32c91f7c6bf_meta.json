@@ -1,0 +1,19 @@
+{
+  "id": "a22beadd-f6db-4ac1-aa7d-b32c91f7c6bf",
+  "name": "Sportforum Chemnitz",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Reichenhhainer Straße",
+    "hausnummer": "206",
+    "plz": "9125",
+    "ort": "Chemnitz, Stadt"
+  },
+  "lage": {
+    "lon": 12.932628,
+    "lat": 50.804617
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22beadd-a77c-4b0d-9a10-3f24f85fca3b"
+}

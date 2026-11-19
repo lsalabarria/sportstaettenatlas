@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc26-9e63-4c7a-afe5-8c3ba2ac5233",
+  "name": "Freibad Hummersen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Weserberglandstraße",
+    "hausnummer": "11",
+    "plz": "32676",
+    "ort": "Lügde, Stadt"
+  },
+  "lage": {
+    "lon": 9.3279,
+    "lat": 51.87661
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

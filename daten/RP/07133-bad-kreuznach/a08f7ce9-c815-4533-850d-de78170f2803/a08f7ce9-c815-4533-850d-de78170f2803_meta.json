@@ -12,7 +12,16 @@
     "lon": 7.886812,
     "lat": 49.875583
   },
+  "entfernung_oepnv": 700,
   "oeffentlicher_zugang": "nein",
   "schulsport": "ja",
-  "betriebsstatus": "in Betrieb"
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a08f7ce9-c2d7-4b5c-b221-0b665a917f54",
+  "baujahr": 2009,
+  "letzte_sanierung": 2024,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 4,
+    "Sanitärräume - Publikum": 2
+  }
 }

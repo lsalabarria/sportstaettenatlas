@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc2c-0590-4825-9259-3490fd47a91b",
+  "name": "Naturfreibad Bettenkamper Meer",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Krefelder Straße",
+    "hausnummer": "190",
+    "plz": "47447",
+    "ort": "Moers, Stadt"
+  },
+  "lage": {
+    "lon": 6.61047,
+    "lat": 51.43842
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1924
+}

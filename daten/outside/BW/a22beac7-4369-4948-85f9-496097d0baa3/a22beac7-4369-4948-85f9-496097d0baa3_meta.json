@@ -1,0 +1,18 @@
+{
+  "id": "a22beac7-4369-4948-85f9-496097d0baa3",
+  "name": "Golfanlage St. Leon-Rot",
+  "kategorie": "Golfsportstätte",
+  "adresse": {
+    "strasse": "Opelstraße",
+    "hausnummer": "30",
+    "plz": "68789",
+    "ort": "St. Leon-Rot"
+  },
+  "lage": {
+    "lon": 8.634353,
+    "lat": 49.244894
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc43-0e28-4e48-809c-62888a98ec8a",
+  "name": "Naturfreibad Eichen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Sonnenhang",
+    "hausnummer": "12A",
+    "plz": "57223",
+    "ort": "Kreuztal, Stadt"
+  },
+  "lage": {
+    "lon": 7.981787,
+    "lat": 50.977872
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf8-ffa8-437f-92b6-b0dc02c7aaf0",
+  "name": "Freizeitbad DIE WELLE",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Stadtring Sundern",
+    "hausnummer": "10",
+    "plz": "33332",
+    "ort": "Gütersloh, Stadt"
+  },
+  "lage": {
+    "lon": 8.40528,
+    "lat": 51.89961
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbca-eb2d-4934-9ccb-77bfbb472b04",
+  "name": "Schwimmsportleistungszentrum Wuppertal",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Küllenhahner Str",
+    "hausnummer": "130",
+    "plz": "42349",
+    "ort": "Wuppertal, Stadt"
+  },
+  "lage": {
+    "lon": 7.14008,
+    "lat": 51.22999
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1972
+}

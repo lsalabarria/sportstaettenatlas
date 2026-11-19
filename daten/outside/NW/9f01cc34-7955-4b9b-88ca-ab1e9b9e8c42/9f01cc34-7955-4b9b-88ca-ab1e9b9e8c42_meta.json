@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc34-7955-4b9b-88ca-ab1e9b9e8c42",
+  "name": "GELO Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Pestalozzistr.",
+    "hausnummer": "31",
+    "plz": "52511",
+    "ort": "Geilenkirchen, Stadt"
+  },
+  "lage": {
+    "lon": 6.108501,
+    "lat": 50.972251
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2017
+}

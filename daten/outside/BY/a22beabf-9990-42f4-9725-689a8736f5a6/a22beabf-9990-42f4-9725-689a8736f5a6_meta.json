@@ -1,0 +1,18 @@
+{
+  "id": "a22beabf-9990-42f4-9725-689a8736f5a6",
+  "name": "Wolfgang-Adami-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Oberer Bogenweg",
+    "hausnummer": "1",
+    "plz": "97074",
+    "ort": "Würzburg"
+  },
+  "lage": {
+    "lon": 9.956604,
+    "lat": 49.778879
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

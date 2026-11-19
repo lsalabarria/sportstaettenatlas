@@ -1,0 +1,18 @@
+{
+  "id": "a22bea2c-fe7a-4713-82b1-25cb6535969e",
+  "name": "Rudi Seiter Turnzentrum",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Fächerbad",
+    "hausnummer": "9",
+    "plz": "76131",
+    "ort": "Karlsruhe, Stadt"
+  },
+  "lage": {
+    "lon": 8.446671,
+    "lat": 49.024844
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

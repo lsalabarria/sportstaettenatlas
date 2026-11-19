@@ -1,0 +1,18 @@
+{
+  "id": "a22beac4-734b-4074-a59d-2963f01513e6",
+  "name": "Geräteturnhalle Luftschiffhafen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Olympischer Weg",
+    "hausnummer": "08-dic",
+    "plz": "14471",
+    "ort": "Potsdam, Stadt"
+  },
+  "lage": {
+    "lon": 13.019537,
+    "lat": 52.381305
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

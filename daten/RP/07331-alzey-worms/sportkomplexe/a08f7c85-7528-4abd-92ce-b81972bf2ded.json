@@ -1,0 +1,10 @@
+{
+  "id": "a08f7c85-7528-4abd-92ce-b81972bf2ded",
+  "name": "Sportanlage Danziger Straße",
+  "adresse": {
+    "strasse": "Dresdener Straße",
+    "hausnummer": "24",
+    "plz": "67577",
+    "ort": "Alsheim"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd17-ca3a-45e0-b101-2e57ee15511b",
+  "name": "Sportplatz Schallodenbach",
+  "adresse": {
+    "strasse": "Felsstraße",
+    "hausnummer": "23a",
+    "plz": "67701",
+    "ort": "Schallodenbach"
+  }
+}

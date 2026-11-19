@@ -1,0 +1,53 @@
+{
+  "id": "83ded0a7-be80-49e7-a6d8-3f8f3e98850b",
+  "name": "Bootshaus Kanu Club Oppenheim",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Hafenstr.",
+    "hausnummer": "17",
+    "plz": "55276"
+  },
+  "lage": {
+    "lon": 8.35816,
+    "lat": 49.858274
+  },
+  "oeffentlicher_zugang": "ja",
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://kc-oppenheim.de",
+  "baujahr": 1984,
+  "letzte_sanierung": 2008,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Sanitärräume - Publikum": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 2
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas",
+      "einbaujahr": 2002
+    },
+    {
+      "bereich": "Strom",
+      "art": "Photovoltaik-Anlage",
+      "einbaujahr": 2023
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Strom (z.B. Durchlauferhitzer, Boiler)",
+      "einbaujahr": 1984
+    }
+  ],
+  "verbraeuche": [
+    {
+      "art": "Erdgas",
+      "menge": 1500.0
+    }
+  ]
+}

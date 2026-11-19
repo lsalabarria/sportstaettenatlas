@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf4-fb92-4808-86af-3a7e96db97ae",
+  "name": "HTC Uhlenhorst",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Uhlenhorstweg",
+    "hausnummer": "19",
+    "plz": "45479",
+    "ort": "Mülheim an der Ruhr, Stadt"
+  },
+  "lage": {
+    "lon": 6.839959,
+    "lat": 51.408521
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

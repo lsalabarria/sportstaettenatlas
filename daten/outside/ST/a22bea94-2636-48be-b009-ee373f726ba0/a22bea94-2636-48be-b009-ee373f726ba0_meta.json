@@ -1,0 +1,18 @@
+{
+  "id": "a22bea94-2636-48be-b009-ee373f726ba0",
+  "name": "Schwimmhalle Große Diesdorfer Straße",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Große Diesdorfer Straße",
+    "hausnummer": "104A",
+    "plz": "39110",
+    "ort": "Magdeburg, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 11.580837,
+    "lat": 52.129578
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

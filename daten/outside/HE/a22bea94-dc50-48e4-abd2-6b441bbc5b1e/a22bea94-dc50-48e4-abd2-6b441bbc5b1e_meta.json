@@ -1,0 +1,18 @@
+{
+  "id": "a22bea94-dc50-48e4-abd2-6b441bbc5b1e",
+  "name": "HLV-Leistungszentrum",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hahnstraße",
+    "hausnummer": "75",
+    "plz": "60528",
+    "ort": "Frankfurt am Main, Stadt"
+  },
+  "lage": {
+    "lon": 8.636938,
+    "lat": 50.076604
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

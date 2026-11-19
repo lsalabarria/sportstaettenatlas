@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0b-f059-4677-a39b-4ba9fb493505",
+  "name": "Sportbad am Park",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schützenplatz",
+    "hausnummer": "3",
+    "plz": "42853",
+    "ort": "Remscheid, Stadt"
+  },
+  "lage": {
+    "lon": 7.17094,
+    "lat": 51.18594
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

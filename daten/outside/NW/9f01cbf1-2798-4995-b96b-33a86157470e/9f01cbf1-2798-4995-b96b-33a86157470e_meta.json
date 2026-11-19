@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf1-2798-4995-b96b-33a86157470e",
+  "name": "Stadtbad Borbeck",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Vinckestraße",
+    "hausnummer": "3",
+    "plz": "45355",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 6.95414,
+    "lat": 51.47524
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1962
+}

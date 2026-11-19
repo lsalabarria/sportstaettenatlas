@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe8-bdba-4b4a-bfac-2f63218c13f6",
+  "name": "Freibad Kaiserswerth",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kreuzbergstraße",
+    "hausnummer": "33",
+    "plz": "40489",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.74298,
+    "lat": 51.30211
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

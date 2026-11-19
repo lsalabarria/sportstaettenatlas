@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a90c-48a7-44df-8fcc-51b9a2ed8cbe",
+  "name": "Sportplatz Jugenheim",
+  "adresse": {
+    "strasse": "Im Wiesenweg",
+    "hausnummer": "16",
+    "plz": "55270",
+    "ort": "Jugenheim in Rheinhessen"
+  }
+}

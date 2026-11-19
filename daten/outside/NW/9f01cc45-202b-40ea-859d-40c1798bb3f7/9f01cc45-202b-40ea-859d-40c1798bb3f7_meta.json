@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc45-202b-40ea-859d-40c1798bb3f7",
+  "name": "Lehrschwimmbecken Lippborg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Ludgeristraße",
+    "hausnummer": "5",
+    "plz": "59510",
+    "ort": "Lippetal"
+  },
+  "lage": {
+    "lon": 8.043833,
+    "lat": 51.66489
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

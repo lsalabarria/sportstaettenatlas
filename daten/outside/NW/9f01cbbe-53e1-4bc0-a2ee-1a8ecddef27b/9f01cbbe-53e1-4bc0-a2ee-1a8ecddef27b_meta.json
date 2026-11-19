@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbe-53e1-4bc0-a2ee-1a8ecddef27b",
+  "name": "Freizeitbad Baesweiler",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Parkstraße",
+    "hausnummer": "102",
+    "plz": "52499",
+    "ort": "Baesweiler, Stadt"
+  },
+  "lage": {
+    "lon": 6.19156,
+    "lat": 50.90817
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

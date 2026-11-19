@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc02-1661-4f7e-887b-e6cab72f4d80",
+  "name": "Freibad Schöne Flöte",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Steinbruchstraße",
+    "hausnummer": "38",
+    "plz": "59439",
+    "ort": "Holzwickede"
+  },
+  "lage": {
+    "lon": 7.64353,
+    "lat": 51.5052
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

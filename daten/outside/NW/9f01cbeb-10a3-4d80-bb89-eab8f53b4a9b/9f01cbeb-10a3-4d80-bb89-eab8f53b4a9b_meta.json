@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbeb-10a3-4d80-bb89-eab8f53b4a9b",
+  "name": "Hallenbad Emsdetten",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Stauffenbergstraße",
+    "hausnummer": "2",
+    "plz": "48282",
+    "ort": "Emsdetten, Stadt"
+  },
+  "lage": {
+    "lon": 7.5231,
+    "lat": 52.18173
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1982
+}

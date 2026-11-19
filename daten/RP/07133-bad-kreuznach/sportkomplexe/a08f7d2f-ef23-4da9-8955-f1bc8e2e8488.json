@@ -1,0 +1,10 @@
+{
+  "id": "a08f7d2f-ef23-4da9-8955-f1bc8e2e8488",
+  "name": "Dr. Martin-Luther-King Grundschule",
+  "adresse": {
+    "strasse": "Richard-Wagner-Straße",
+    "hausnummer": "39",
+    "plz": "55543",
+    "ort": "Bad Kreuznach, Stadt"
+  }
+}

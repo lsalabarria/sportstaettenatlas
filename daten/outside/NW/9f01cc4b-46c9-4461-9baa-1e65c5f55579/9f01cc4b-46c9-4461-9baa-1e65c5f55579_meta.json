@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4b-46c9-4461-9baa-1e65c5f55579",
+  "name": "Waldsee SV Bayer Uerdigen 08 e.V.",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Waldsee",
+    "hausnummer": "25",
+    "plz": "47829",
+    "ort": "Krefeld, Stadt"
+  },
+  "lage": {
+    "lon": 6.648766,
+    "lat": 51.380865
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22bea3a-b676-4a91-9389-dd32b0003962",
+  "name": "DJK Eppelheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Boschstraße",
+    "hausnummer": "10",
+    "plz": "69214",
+    "ort": "Eppelheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.625237,
+    "lat": 49.40627
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

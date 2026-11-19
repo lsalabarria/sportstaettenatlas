@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc19-ad15-463e-8d90-218687ad511e",
+  "name": "Naturfreibad Neuenkirchen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wettringer Str.",
+    "hausnummer": "76",
+    "plz": "48485",
+    "ort": "Neuenkirchen"
+  },
+  "lage": {
+    "lon": 7.34084,
+    "lat": 52.238852
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

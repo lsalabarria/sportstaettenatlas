@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc0-edce-41b3-95d9-2ae64fe802ff",
+  "name": "Hallenbad Bergkamen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Stadion",
+    "hausnummer": "3",
+    "plz": "59192",
+    "ort": "Bergkamen, Stadt"
+  },
+  "lage": {
+    "lon": 7.64375,
+    "lat": 51.61686
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1960
+}

@@ -1,0 +1,10 @@
+{
+  "id": "9fdccdd7-2892-4f6d-bf61-05c937108949",
+  "name": "Tennispark Rhein-Lahn",
+  "adresse": {
+    "strasse": "Am Tennispark",
+    "hausnummer": "1",
+    "plz": "56112",
+    "ort": "Lahnstein, Stadt"
+  }
+}

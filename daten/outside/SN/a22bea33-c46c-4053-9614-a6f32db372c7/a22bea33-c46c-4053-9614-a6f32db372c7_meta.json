@@ -1,0 +1,18 @@
+{
+  "id": "a22bea33-c46c-4053-9614-a6f32db372c7",
+  "name": "Sportgymnasium Klingenthal",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Amtsberg",
+    "hausnummer": "20",
+    "plz": "8248",
+    "ort": "Klingenthal, Stadt"
+  },
+  "lage": {
+    "lon": 12.465194,
+    "lat": 50.359624
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

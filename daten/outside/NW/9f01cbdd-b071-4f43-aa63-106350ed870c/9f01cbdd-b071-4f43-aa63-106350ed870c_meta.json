@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbdd-b071-4f43-aa63-106350ed870c",
+  "name": "Aqualip",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Georg-Weerth-Straße",
+    "hausnummer": "19",
+    "plz": "32756",
+    "ort": "Detmold, Stadt"
+  },
+  "lage": {
+    "lon": 8.88771,
+    "lat": 51.93229
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1992
+}

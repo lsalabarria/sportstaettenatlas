@@ -1,0 +1,17 @@
+{
+  "id": "a22bea9f-8237-4fce-ad18-5f130f4303d9",
+  "name": "Bayerischer Schützenbund e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ingolstädter Landstraße",
+    "hausnummer": "110",
+    "plz": "85748"
+  },
+  "lage": {
+    "lon": 11.602852,
+    "lat": 48.23104
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

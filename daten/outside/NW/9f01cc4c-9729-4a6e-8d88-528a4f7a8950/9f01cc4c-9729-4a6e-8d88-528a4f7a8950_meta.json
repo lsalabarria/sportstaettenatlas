@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc4c-9729-4a6e-8d88-528a4f7a8950",
+  "name": "Rurbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Nippesstraße",
+    "hausnummer": "6",
+    "plz": "52349",
+    "ort": "Düren, Stadt"
+  },
+  "lage": {
+    "lon": 6.486669,
+    "lat": 50.793873
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2022
+}

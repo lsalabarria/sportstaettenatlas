@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfa-e4ec-4772-bd66-88075b194597",
+  "name": "Schwimmhalle Halver",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Humboldtstraße",
+    "hausnummer": "5",
+    "plz": "58553",
+    "ort": "Halver, Stadt"
+  },
+  "lage": {
+    "lon": 7.49524,
+    "lat": 51.1872
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

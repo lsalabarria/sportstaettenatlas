@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf6-eaa1-4b86-983e-b69809696206",
+  "name": "Sportwerk Düsseldorf e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Volmerswerther Straße",
+    "hausnummer": "26",
+    "plz": "40221",
+    "ort": "Düsseldorf"
+  },
+  "lage": {
+    "lon": 6.762545,
+    "lat": 51.209148
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

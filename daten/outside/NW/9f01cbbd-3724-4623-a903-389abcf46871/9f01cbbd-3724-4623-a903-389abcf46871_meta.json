@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbd-3724-4623-a903-389abcf46871",
+  "name": "Bega-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Begakamp",
+    "hausnummer": "10",
+    "plz": "32105",
+    "ort": "Bad Salzuflen, Stadt"
+  },
+  "lage": {
+    "lon": 8.74258,
+    "lat": 52.07831
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22bea97-ae1a-4c14-9772-03fc827eec57",
+  "name": "Tennis-und Hockey-Club Altona-Bahrenfeld e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hemmingstedter Weg",
+    "hausnummer": "140",
+    "plz": "22609",
+    "ort": "Hamburg"
+  },
+  "lage": {
+    "lon": 9.856132,
+    "lat": 53.566863
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

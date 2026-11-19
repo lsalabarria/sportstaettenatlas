@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a91b-78f6-4821-ba7b-3a98b35fb22d",
+  "name": "Schulsportanlage Grundschule Offenbach",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "84",
+    "plz": "76877",
+    "ort": "Offenbach an der Queich"
+  }
+}

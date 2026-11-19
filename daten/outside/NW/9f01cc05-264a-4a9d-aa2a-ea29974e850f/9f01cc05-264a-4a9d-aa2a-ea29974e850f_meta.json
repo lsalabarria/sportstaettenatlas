@@ -1,0 +1,21 @@
+{
+  "id": "9f01cc05-264a-4a9d-aa2a-ea29974e850f",
+  "name": "Aaseebad Ibbenbüren",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "An der Umfluth",
+    "hausnummer": "99",
+    "plz": "49479",
+    "ort": "Ibbenbüren, Stadt"
+  },
+  "lage": {
+    "lon": 7.72985,
+    "lat": 52.26281
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportarten": [
+    "Schwimmsport"
+  ]
+}

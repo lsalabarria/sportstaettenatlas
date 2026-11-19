@@ -4,6 +4,7 @@
   "kategorie": "Schießsportstätte",
   "adresse": {
     "strasse": "Im Grund",
+    "adresszusatz": "OT Patersbach",
     "plz": "66885",
     "ort": "Altenglan"
   },
@@ -11,8 +12,12 @@
     "lon": 7.310418,
     "lat": 49.955139
   },
+  "entfernung_oepnv": 800,
   "oeffentlicher_zugang": "ja",
   "schulsport": "ja",
   "betriebsstatus": "in Betrieb",
-  "website": "svpatersbach1964.hpage.com"
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "svpatersbach1964.hpage.com",
+  "baujahr": 2007
 }

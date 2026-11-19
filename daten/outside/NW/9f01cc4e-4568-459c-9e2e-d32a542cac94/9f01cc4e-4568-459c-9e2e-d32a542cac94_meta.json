@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4e-4568-459c-9e2e-d32a542cac94",
+  "name": "Therapiebecken ViaNobis GmbH",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kathrina-Kasper-Straße",
+    "hausnummer": "6",
+    "plz": "52538",
+    "ort": "Gangelt"
+  },
+  "lage": {
+    "lon": 5.994818,
+    "lat": 50.992896
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

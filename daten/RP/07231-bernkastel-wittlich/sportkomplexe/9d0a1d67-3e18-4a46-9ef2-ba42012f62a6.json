@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1d67-3e18-4a46-9ef2-ba42012f62a6",
+  "name": "Sportplatz Longkamp",
+  "adresse": {
+    "strasse": "Kleinicher Straße",
+    "hausnummer": "13",
+    "plz": "54472",
+    "ort": "Longkamp"
+  }
+}

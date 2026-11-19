@@ -11,7 +11,11 @@
     "lon": 7.755677,
     "lat": 49.889346
   },
+  "entfernung_oepnv": 800,
   "oeffentlicher_zugang": "ja",
   "schulsport": "nein",
-  "betriebsstatus": "in Betrieb"
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1968,
+  "letzte_sanierung": 2023
 }

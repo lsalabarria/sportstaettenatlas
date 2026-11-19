@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbcc-2fea-44f7-8c1d-6f732f7bd19a",
+  "name": "Gartenhallenbad Langerfeld",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Timpen",
+    "hausnummer": "51",
+    "plz": "42389",
+    "ort": "Wuppertal, Stadt"
+  },
+  "lage": {
+    "lon": 7.24864,
+    "lat": 51.27317
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1981
+}

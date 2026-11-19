@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc20-8e78-49b7-89df-f59e237b5e69",
+  "name": "Eau-Le",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Pagenhelle",
+    "hausnummer": "14",
+    "plz": "32657",
+    "ort": "Lemgo, Stadt"
+  },
+  "lage": {
+    "lon": 8.91221,
+    "lat": 52.0246
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

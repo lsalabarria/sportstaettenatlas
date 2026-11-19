@@ -1,0 +1,17 @@
+{
+  "id": "a22bea97-5820-4736-954f-5217047ad65c",
+  "name": "Loogehalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Loogestraße",
+    "hausnummer": "17",
+    "plz": "20249"
+  },
+  "lage": {
+    "lon": 9.990031,
+    "lat": 53.587712
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc3e-086e-4b10-aa86-1eab21baf9a1",
+  "name": "Balneo - Badewelt Waldbröl",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Vennstraße",
+    "hausnummer": "38",
+    "plz": "51545",
+    "ort": "Waldbröl, Stadt"
+  },
+  "lage": {
+    "lon": 7.607839,
+    "lat": 50.874679
+  },
+  "schulsport": "nein",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2021
+}

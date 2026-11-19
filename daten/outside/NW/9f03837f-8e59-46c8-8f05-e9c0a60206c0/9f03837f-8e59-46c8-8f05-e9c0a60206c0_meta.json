@@ -1,0 +1,15 @@
+{
+  "id": "9f03837f-8e59-46c8-8f05-e9c0a60206c0",
+  "name": "TEST",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Römerstraße",
+    "hausnummer": "148",
+    "plz": "53117",
+    "ort": "Bonn, Stadt"
+  },
+  "lage": {
+    "lon": 7.097473,
+    "lat": 50.750376
+  }
+}

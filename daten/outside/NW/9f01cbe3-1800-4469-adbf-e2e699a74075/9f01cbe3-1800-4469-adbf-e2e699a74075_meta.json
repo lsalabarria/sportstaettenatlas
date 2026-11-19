@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe3-1800-4469-adbf-e2e699a74075",
+  "name": "Revierpark Wischlingen Solebad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Höfker Straße",
+    "hausnummer": "12",
+    "plz": "44149",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.40718,
+    "lat": 51.51957
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1976
+}

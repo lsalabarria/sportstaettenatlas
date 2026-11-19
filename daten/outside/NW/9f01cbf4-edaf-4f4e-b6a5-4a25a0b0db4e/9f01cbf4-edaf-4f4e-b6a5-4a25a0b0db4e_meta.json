@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf4-edaf-4f4e-b6a5-4a25a0b0db4e",
+  "name": "Hallenbad Gelsenkirchen-Buer",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gustav-Bär-Platz",
+    "hausnummer": "1",
+    "plz": "45894",
+    "ort": "Gelsenkirchen, Stadt"
+  },
+  "lage": {
+    "lon": 7.05361,
+    "lat": 51.57553
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1958
+}

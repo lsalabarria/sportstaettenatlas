@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf9-98f6-45a1-ba92-1a8de1b226cb",
+  "name": "Familienbad Hengstey",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Seestraße",
+    "hausnummer": "4",
+    "plz": "58089",
+    "ort": "Hagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.45605,
+    "lat": 51.40467
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

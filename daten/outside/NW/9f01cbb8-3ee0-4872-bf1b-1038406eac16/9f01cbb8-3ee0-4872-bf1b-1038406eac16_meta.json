@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbb8-3ee0-4872-bf1b-1038406eac16",
+  "name": "Schwimmhalle Ost Aachen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "St. Josefsplatz",
+    "hausnummer": "8",
+    "plz": "52068",
+    "ort": "Aachen, Stadt"
+  },
+  "lage": {
+    "lon": 6.10925,
+    "lat": 50.77463
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

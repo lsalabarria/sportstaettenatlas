@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3b-e1d1-4bc1-b781-4345be1059e7",
+  "name": "Hallenbad Rheindahlen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Geusenstraße",
+    "hausnummer": "33",
+    "plz": "41179",
+    "ort": "Mönchengladbach, Stadt"
+  },
+  "lage": {
+    "lon": 6.366937,
+    "lat": 51.149476
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

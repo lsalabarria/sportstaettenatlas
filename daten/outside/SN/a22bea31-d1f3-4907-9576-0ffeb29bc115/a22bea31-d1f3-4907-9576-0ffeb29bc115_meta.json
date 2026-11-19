@@ -1,0 +1,19 @@
+{
+  "id": "a22bea31-d1f3-4907-9576-0ffeb29bc115",
+  "name": "Sportanlage am Zentralstadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportforum",
+    "hausnummer": "5",
+    "plz": "4105",
+    "ort": "Leipzig, Stadt"
+  },
+  "lage": {
+    "lon": 12.34526,
+    "lat": 51.349784
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22bea31-a2eb-4c1f-8a44-83a948b69876"
+}

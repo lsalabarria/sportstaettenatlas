@@ -14,8 +14,15 @@
   },
   "oeffentlicher_zugang": "ja",
   "schulsport": "nein",
+  "wlan": "ja",
   "betriebsstatus": "in Betrieb",
   "sportarten": [
     "Tennis"
-  ]
+  ],
+  "baujahr": 1962,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Sanitärräume - Publikum": 2,
+    "Gastronomie": 1
+  }
 }

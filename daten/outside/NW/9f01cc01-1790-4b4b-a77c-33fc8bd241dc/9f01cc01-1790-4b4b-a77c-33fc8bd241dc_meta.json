@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc01-1790-4b4b-a77c-33fc8bd241dc",
+  "name": "Waldfreibad Hiddenhausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Badstrasse",
+    "hausnummer": "13",
+    "plz": "32120",
+    "ort": "Hiddenhausen"
+  },
+  "lage": {
+    "lon": 8.61639,
+    "lat": 52.17417
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

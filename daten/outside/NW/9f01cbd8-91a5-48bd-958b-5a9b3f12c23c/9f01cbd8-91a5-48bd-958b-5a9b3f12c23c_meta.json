@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbd8-91a5-48bd-958b-5a9b3f12c23c",
+  "name": "Kombibad Borghorst",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gräfin-Bertha-Straße",
+    "hausnummer": "13",
+    "plz": "48565",
+    "ort": "Steinfurt, Stadt"
+  },
+  "lage": {
+    "lon": 7.40522,
+    "lat": 52.12136
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1933
+}

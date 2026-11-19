@@ -1,0 +1,13 @@
+{
+  "id": "49591d4f-911e-49ac-a664-a6eddfa5aa75",
+  "name": "Sportplatz Dahnen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Murbachstraße",
+    "plz": "54689"
+  },
+  "lage": {
+    "lon": 6.148244,
+    "lat": 50.071784
+  }
+}

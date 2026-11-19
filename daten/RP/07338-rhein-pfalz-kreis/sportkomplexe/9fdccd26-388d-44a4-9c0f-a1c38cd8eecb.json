@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd26-388d-44a4-9c0f-a1c38cd8eecb",
+  "name": "Sportplatz Heßheim",
+  "adresse": {
+    "strasse": "Bleichstraße",
+    "hausnummer": "22",
+    "plz": "67258",
+    "ort": "Heßheim"
+  }
+}

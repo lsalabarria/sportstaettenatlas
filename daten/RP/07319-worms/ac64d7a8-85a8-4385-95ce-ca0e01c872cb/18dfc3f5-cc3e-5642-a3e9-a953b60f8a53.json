@@ -1,5 +1,8 @@
 {
   "id": "18dfc3f5-cc3e-5642-a3e9-a953b60f8a53",
   "sportstaette_id": "ac64d7a8-85a8-4385-95ce-ca0e01c872cb",
-  "typ": "Sport-/Turnhalle"
+  "typ": "Sport-/Turnhalle",
+  "laenge": 18.0,
+  "breite": 10.0,
+  "flaeche": 180.0
 }

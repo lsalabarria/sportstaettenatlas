@@ -1,0 +1,9 @@
+{
+  "id": "a08f7ca8-86e5-472e-926d-6253ae1db5b1",
+  "name": "Sportplatz Herrstein",
+  "adresse": {
+    "strasse": "Brühlstraße",
+    "plz": "55756",
+    "ort": "Herrstein"
+  }
+}

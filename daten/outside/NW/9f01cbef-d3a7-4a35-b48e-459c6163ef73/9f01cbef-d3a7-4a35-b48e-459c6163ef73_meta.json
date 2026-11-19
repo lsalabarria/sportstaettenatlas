@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbef-d3a7-4a35-b48e-459c6163ef73",
+  "name": "Waldfreibad Espelkamp",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Trakehner Straße",
+    "hausnummer": "7",
+    "plz": "32339",
+    "ort": "Espelkamp, Stadt"
+  },
+  "lage": {
+    "lon": 8.62814,
+    "lat": 52.38076
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1952
+}

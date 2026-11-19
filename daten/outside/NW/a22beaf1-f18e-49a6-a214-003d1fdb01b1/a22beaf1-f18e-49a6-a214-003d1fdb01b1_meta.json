@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf1-f18e-49a6-a214-003d1fdb01b1",
+  "name": "Badminton Landesverband NRW",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Südstraße",
+    "hausnummer": "23",
+    "plz": "45470",
+    "ort": "Mülheim an der Ruhr, Stadt"
+  },
+  "lage": {
+    "lon": 6.893902,
+    "lat": 51.42219
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc08-2ab8-41e0-b97b-e49c8f5c013c",
+  "name": "Panoramabad Pappelsee",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bertastraße",
+    "hausnummer": "74",
+    "plz": "47475",
+    "ort": "Kamp-Lintfort, Stadt"
+  },
+  "lage": {
+    "lon": 6.53808,
+    "lat": 51.49939
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

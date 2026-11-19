@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a939-e4d1-444e-b748-a4e674990fe5",
+  "name": "Goetheschule",
+  "adresse": {
+    "strasse": "Scheffelstraße",
+    "hausnummer": "2",
+    "plz": "55118",
+    "ort": "Mainz, Stadt"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc41-7ae6-456c-957c-2ac19aa1479a",
+  "name": "Naherholungsgebiet Diepental",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Diepentaler Str.",
+    "hausnummer": "88",
+    "plz": "42799",
+    "ort": "Leichlingen (Rhld.), Stadt"
+  },
+  "lage": {
+    "lon": 7.068832,
+    "lat": 51.097307
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

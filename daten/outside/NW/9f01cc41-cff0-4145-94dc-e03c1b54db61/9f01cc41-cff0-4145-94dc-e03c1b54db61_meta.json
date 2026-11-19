@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc41-cff0-4145-94dc-e03c1b54db61",
+  "name": "Hallenfreizeitbad Meckenheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Siebengebirgsring",
+    "hausnummer": "6",
+    "plz": "53340",
+    "ort": "Meckenheim, Stadt"
+  },
+  "lage": {
+    "lon": 7.042946,
+    "lat": 50.624507
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1979
+}

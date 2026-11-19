@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc1f-5125-48bc-b44c-cbd84ac2ba81",
+  "name": "Freibad Heiden",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Tannenbergstraße",
+    "hausnummer": "9",
+    "plz": "32791",
+    "ort": "Lage, Stadt"
+  },
+  "lage": {
+    "lon": 8.84325,
+    "lat": 51.98157
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1948
+}

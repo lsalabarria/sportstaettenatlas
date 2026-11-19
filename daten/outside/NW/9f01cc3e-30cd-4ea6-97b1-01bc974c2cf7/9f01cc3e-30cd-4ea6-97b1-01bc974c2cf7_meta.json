@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3e-30cd-4ea6-97b1-01bc974c2cf7",
+  "name": "Helios Familiensportgemeinschaft Köln e.V.",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Lennefer Mühle",
+    "hausnummer": "1a",
+    "plz": "51789",
+    "ort": "Lindlar"
+  },
+  "lage": {
+    "lon": 7.285868,
+    "lat": 50.977669
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

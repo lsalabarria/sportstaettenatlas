@@ -12,10 +12,15 @@
     "lon": 7.066057,
     "lat": 49.924786
   },
+  "entfernung_oepnv": 200,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Bernkasteler Ruderverein 1874 e.V.",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
   "betreiber": "Bernkasteler Ruderverein 1874 e.V.",
-  "website": "www.bernkasteler-ruderverein.de"
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "www.bernkasteler-ruderverein.de",
+  "baujahr": 1980,
+  "letzte_sanierung": 2025
 }

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbcc-843d-4a2e-86e4-a578674c1a0c",
+  "name": "Bandwirker Bad Ronsdorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Stadtbahnhof",
+    "hausnummer": "30",
+    "plz": "42369",
+    "ort": "Wuppertal, Stadt"
+  },
+  "lage": {
+    "lon": 7.19969,
+    "lat": 51.22455
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1967
+}

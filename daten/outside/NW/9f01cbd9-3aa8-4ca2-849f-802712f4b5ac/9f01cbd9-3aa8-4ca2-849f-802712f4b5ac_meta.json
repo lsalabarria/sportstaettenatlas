@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd9-3aa8-4ca2-849f-802712f4b5ac",
+  "name": "Freibad Sprockhövel",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bleichwiese",
+    "hausnummer": "9",
+    "plz": "45549",
+    "ort": "Sprockhövel, Stadt"
+  },
+  "lage": {
+    "lon": 7.24987,
+    "lat": 51.36739
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

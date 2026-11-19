@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a908-0dfd-4b2b-aa4b-88fad1eb75bd",
+  "name": "Stadion an der Waldstraße",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "1",
+    "plz": "55425",
+    "ort": "Waldalgesheim"
+  }
+}

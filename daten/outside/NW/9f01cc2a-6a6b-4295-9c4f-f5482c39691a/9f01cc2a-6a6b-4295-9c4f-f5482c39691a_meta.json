@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc2a-6a6b-4295-9c4f-f5482c39691a",
+  "name": "Freibad Mettingen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Neuenkirchener Str.",
+    "hausnummer": "69",
+    "plz": "49497",
+    "ort": "Mettingen"
+  },
+  "lage": {
+    "lon": 7.77512,
+    "lat": 52.32496
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

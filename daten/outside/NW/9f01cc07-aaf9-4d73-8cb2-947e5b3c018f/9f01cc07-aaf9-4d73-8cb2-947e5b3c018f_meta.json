@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc07-aaf9-4d73-8cb2-947e5b3c018f",
+  "name": "Hallenbad Kall",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Hallenbad",
+    "plz": "53925",
+    "ort": "Kall"
+  },
+  "lage": {
+    "lon": 6.55381,
+    "lat": 50.53599
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

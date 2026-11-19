@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc1-415a-4b1f-96c4-d11acaecebfd",
+  "name": "Hallenbad Bönen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wolfgang-Fräger-Straße",
+    "hausnummer": "4",
+    "plz": "59199",
+    "ort": "Bönen"
+  },
+  "lage": {
+    "lon": 7.75216,
+    "lat": 51.59408
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2010
+}

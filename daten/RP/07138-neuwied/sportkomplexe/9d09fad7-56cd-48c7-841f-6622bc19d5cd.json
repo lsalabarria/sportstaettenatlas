@@ -1,0 +1,10 @@
+{
+  "id": "9d09fad7-56cd-48c7-841f-6622bc19d5cd",
+  "name": "Sportplatz Urbach",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "1",
+    "plz": "56317",
+    "ort": "Urbach"
+  }
+}

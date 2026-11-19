@@ -1,0 +1,18 @@
+{
+  "id": "e050ce3c-c3cf-407b-96a6-b507ca0c4cbe",
+  "name": "Sporthalle Gleisbergschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Gleisbergweg",
+    "hausnummer": "50",
+    "plz": "55122"
+  },
+  "lage": {
+    "lon": 8.224951,
+    "lat": 50.002961
+  },
+  "entfernung_oepnv": 350,
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer_typ": "Stadt/Gemeinde",
+  "betreiber_typ": "Stadt/Gemeinde"
+}

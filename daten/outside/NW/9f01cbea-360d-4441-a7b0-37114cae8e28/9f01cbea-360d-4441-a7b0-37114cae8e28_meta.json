@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbea-360d-4441-a7b0-37114cae8e28",
+  "name": "Hermann-Weber-Bad Eitorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Eichelkamp",
+    "hausnummer": "14",
+    "plz": "53783",
+    "ort": "Eitorf"
+  },
+  "lage": {
+    "lon": 7.44752,
+    "lat": 50.77514
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

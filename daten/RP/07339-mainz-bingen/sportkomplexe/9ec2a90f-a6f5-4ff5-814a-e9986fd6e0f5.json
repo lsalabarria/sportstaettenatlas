@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a90f-a6f5-4ff5-814a-e9986fd6e0f5",
+  "name": "Wiesgartenstadion",
+  "adresse": {
+    "strasse": "Herrweg",
+    "hausnummer": "1",
+    "plz": "55278",
+    "ort": "Mommenheim"
+  }
+}

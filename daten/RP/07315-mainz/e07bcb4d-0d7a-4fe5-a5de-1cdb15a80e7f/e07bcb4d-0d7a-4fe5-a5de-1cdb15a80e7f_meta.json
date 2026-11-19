@@ -5,6 +5,7 @@
   "adresse": {
     "strasse": "Mombacher Straße",
     "hausnummer": "11",
+    "adresszusatz": "Post",
     "plz": "55118",
     "ort": "Mainz, Stadt"
   },
@@ -14,7 +15,9 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
+  "wlan": "nein",
   "sportarten": [
     "Skateboarden"
-  ]
+  ],
+  "fassadenmaterial": "Putz"
 }

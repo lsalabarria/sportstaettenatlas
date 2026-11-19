@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1d61-de14-48bc-8da7-194cc6575bed",
+  "name": "Sportplatz Neuerkirch",
+  "adresse": {
+    "strasse": "Külzbachstraße",
+    "hausnummer": "10",
+    "plz": "55471",
+    "ort": "Neuerkirch"
+  }
+}

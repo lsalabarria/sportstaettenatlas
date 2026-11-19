@@ -1,0 +1,18 @@
+{
+  "id": "a22beab5-3a75-45a2-b9c6-67250d572257",
+  "name": "Traingshallenkomplex Konrad-Wolf-Straße",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Konrad-Wolf-Straße",
+    "hausnummer": "40",
+    "plz": "13053",
+    "ort": "Berlin, Stadt"
+  },
+  "lage": {
+    "lon": 13.481926,
+    "lat": 52.539343
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd4-0fd6-4525-bd1d-bfd1ef3f031d",
+  "name": "Freibad Verl",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Meierhof",
+    "hausnummer": "91",
+    "plz": "33415",
+    "ort": "Verl, Stadt"
+  },
+  "lage": {
+    "lon": 8.50125,
+    "lat": 51.88848
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

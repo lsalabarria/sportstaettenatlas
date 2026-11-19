@@ -1,0 +1,18 @@
+{
+  "id": "a22beb3c-8277-4600-9768-ea9de7c01c10",
+  "name": "Sporthalle Bleichstraße",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bleichstraße",
+    "hausnummer": "23",
+    "plz": "55232",
+    "ort": "Alzey"
+  },
+  "lage": {
+    "lon": 8.130358,
+    "lat": 49.20118
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

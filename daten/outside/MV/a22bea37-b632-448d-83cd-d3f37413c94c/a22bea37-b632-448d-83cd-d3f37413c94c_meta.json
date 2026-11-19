@@ -1,0 +1,18 @@
+{
+  "id": "a22bea37-b632-448d-83cd-d3f37413c94c",
+  "name": "Friedrich-Ludwig-Jahn-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Badeweg",
+    "hausnummer": "4B",
+    "plz": "17033",
+    "ort": "Neubrandenburg, Vier-Tore-Stadt"
+  },
+  "lage": {
+    "lon": 13.260542,
+    "lat": 53.549188
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

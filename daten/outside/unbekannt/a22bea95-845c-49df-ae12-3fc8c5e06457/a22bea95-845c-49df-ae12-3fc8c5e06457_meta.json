@@ -1,0 +1,17 @@
+{
+  "id": "a22bea95-845c-49df-ae12-3fc8c5e06457",
+  "name": "Sportplätze am Rothenbaum",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hallerstraße",
+    "hausnummer": "91",
+    "plz": "20149"
+  },
+  "lage": {
+    "lon": 9.991657,
+    "lat": 53.573103
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

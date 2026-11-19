@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc38-ba80-42dc-b88e-ab9780c45422",
+  "name": "Elfrather See",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Parkstraße",
+    "plz": "47829",
+    "ort": "Krefeld, Stadt"
+  },
+  "lage": {
+    "lon": 6.625209,
+    "lat": 51.385978
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

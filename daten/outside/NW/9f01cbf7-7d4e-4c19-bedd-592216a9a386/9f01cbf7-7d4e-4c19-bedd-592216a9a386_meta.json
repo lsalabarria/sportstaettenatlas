@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf7-7d4e-4c19-bedd-592216a9a386",
+  "name": "Bültenfreibad Epe",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Alfertring",
+    "hausnummer": "48",
+    "plz": "48599",
+    "ort": "Gronau (Westf.), Stadt"
+  },
+  "lage": {
+    "lon": 7.04843,
+    "lat": 52.17097
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

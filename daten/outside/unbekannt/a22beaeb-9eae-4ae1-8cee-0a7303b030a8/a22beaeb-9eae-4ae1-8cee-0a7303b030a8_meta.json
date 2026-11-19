@@ -1,0 +1,18 @@
+{
+  "id": "a22beaeb-9eae-4ae1-8cee-0a7303b030a8",
+  "name": "Aufwärmplatz Olympiapark München",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Spiridon-Louis-Ring",
+    "hausnummer": "25",
+    "plz": "80809"
+  },
+  "lage": {
+    "lon": 11.543522,
+    "lat": 48.172049
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22beaeb-2d89-4977-8938-b864d69d19fd"
+}

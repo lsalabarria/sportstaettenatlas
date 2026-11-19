@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc7-51ae-49dc-9a28-a814da82e7e9",
+  "name": "Hardtbergbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "In der Dehlen",
+    "hausnummer": "6",
+    "plz": "53125",
+    "ort": "Bonn, Stadt"
+  },
+  "lage": {
+    "lon": 7.044165,
+    "lat": 50.705775
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1968
+}

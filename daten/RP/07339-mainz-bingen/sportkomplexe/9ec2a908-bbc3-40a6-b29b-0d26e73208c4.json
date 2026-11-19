@@ -1,0 +1,9 @@
+{
+  "id": "9ec2a908-bbc3-40a6-b29b-0d26e73208c4",
+  "name": "Sportplatz Badenheim",
+  "adresse": {
+    "strasse": "Hinter der Mühle",
+    "plz": "55576",
+    "ort": "Badenheim"
+  }
+}

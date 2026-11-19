@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbde-689b-43a1-a13c-dadf2cd542b5",
+  "name": "Elsebad Schwerte",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Winkelstück",
+    "hausnummer": "113",
+    "plz": "58239",
+    "ort": "Schwerte, Stadt"
+  },
+  "lage": {
+    "lon": 7.58434,
+    "lat": 51.42451
+  },
+  "schulsport": "nein",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1939
+}

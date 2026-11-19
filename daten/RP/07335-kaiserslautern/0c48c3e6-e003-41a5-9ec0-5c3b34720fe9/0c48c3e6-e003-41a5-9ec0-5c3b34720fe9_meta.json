@@ -1,0 +1,19 @@
+{
+  "id": "0c48c3e6-e003-41a5-9ec0-5c3b34720fe9",
+  "name": "Schützenverein Alsenborn e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Am Schützenhaus",
+    "hausnummer": "6",
+    "plz": "67677"
+  },
+  "lage": {
+    "lon": 7.927408,
+    "lat": 49.493591
+  },
+  "entfernung_oepnv": 300,
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "website": "https://www.sv-alsenborn.de",
+  "baujahr": 1934
+}

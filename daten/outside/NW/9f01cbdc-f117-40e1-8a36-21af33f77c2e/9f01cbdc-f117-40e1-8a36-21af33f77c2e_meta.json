@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbdc-f117-40e1-8a36-21af33f77c2e",
+  "name": "Naturfreibad Eiserfeld",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Freibad",
+    "hausnummer": "3",
+    "plz": "57080",
+    "ort": "Siegen, Stadt"
+  },
+  "lage": {
+    "lon": 7.99846,
+    "lat": 50.82328
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2005
+}

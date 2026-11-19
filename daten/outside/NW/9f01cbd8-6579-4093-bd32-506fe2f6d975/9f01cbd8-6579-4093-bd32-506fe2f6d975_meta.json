@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbd8-6579-4093-bd32-506fe2f6d975",
+  "name": "Hallenbad Steinhagen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Cronsbach",
+    "hausnummer": "2-4",
+    "plz": "33803",
+    "ort": "Steinhagen"
+  },
+  "lage": {
+    "lon": 8.42241,
+    "lat": 52.00084
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1972
+}

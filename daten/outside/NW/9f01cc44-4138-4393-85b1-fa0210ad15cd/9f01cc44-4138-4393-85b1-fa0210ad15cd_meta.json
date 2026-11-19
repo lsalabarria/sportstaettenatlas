@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc44-4138-4393-85b1-fa0210ad15cd",
+  "name": "Schwimmschule Flipper",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Obere Lichtenplatzer Str.",
+    "hausnummer": "235a",
+    "plz": "42287",
+    "ort": "Wuppertal, Stadt"
+  },
+  "lage": {
+    "lon": 7.19686,
+    "lat": 51.25454
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

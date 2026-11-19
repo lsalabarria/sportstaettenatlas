@@ -1,0 +1,18 @@
+{
+  "id": "a22beabd-a2dd-461f-9abe-3a51b694b9d2",
+  "name": "Berliner Segler-Verband",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Müggelseedamm",
+    "hausnummer": "74",
+    "plz": "12587",
+    "ort": "Berlin, Stadt"
+  },
+  "lage": {
+    "lon": 13.61139,
+    "lat": 52.447801
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "a22beacc-9261-478c-906b-850c2bbcb0d2",
+  "name": "Kanupark Markkleeberg",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Wildwasserkehre",
+    "hausnummer": "1",
+    "plz": "41416",
+    "ort": "Markkleeberg, Stadt"
+  },
+  "lage": {
+    "lon": 12.426796,
+    "lat": 51.257865
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22beacc-5e0f-45ea-82a6-919bdf9f80e3"
+}

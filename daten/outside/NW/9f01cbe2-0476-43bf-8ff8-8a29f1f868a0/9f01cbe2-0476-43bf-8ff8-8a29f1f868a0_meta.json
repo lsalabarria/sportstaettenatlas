@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe2-0476-43bf-8ff8-8a29f1f868a0",
+  "name": "Hallenbad Dorsten-Wulfen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wulfener Markt",
+    "hausnummer": "5",
+    "plz": "46286",
+    "ort": "Dorsten, Stadt"
+  },
+  "lage": {
+    "lon": 7.0297,
+    "lat": 51.72624
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1982
+}

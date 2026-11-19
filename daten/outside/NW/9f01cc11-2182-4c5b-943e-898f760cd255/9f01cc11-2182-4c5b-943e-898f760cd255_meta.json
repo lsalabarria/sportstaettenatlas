@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc11-2182-4c5b-943e-898f760cd255",
+  "name": "Hallenbad Schwimmoper",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schützenweg",
+    "hausnummer": "1b",
+    "plz": "33102",
+    "ort": "Paderborn, Stadt"
+  },
+  "lage": {
+    "lon": 8.75319,
+    "lat": 51.72434
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc22-d39e-4207-be78-5d2bb806a9cf",
+  "name": "Hallenbad Bergisch Neukirchen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wuppertalstraße",
+    "hausnummer": "10",
+    "plz": "51381",
+    "ort": "Leverkusen, Stadt"
+  },
+  "lage": {
+    "lon": 7.03491,
+    "lat": 51.08092
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1974
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc04-a88f-436a-aa49-a8230faf9c21",
+  "name": "Strandbad Tenderingssee",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Tenderingsweg",
+    "hausnummer": "1",
+    "plz": "46562",
+    "ort": "Voerde (Niederrhein), Stadt"
+  },
+  "lage": {
+    "lon": 6.71664,
+    "lat": 51.5929
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22bea3e-4d5c-4673-b83f-fac0a20cd7f0",
+  "name": "Sportleistungszentrum Niedersachsen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ferdinand-Wilhelm-Fricke-Weg",
+    "hausnummer": "2a",
+    "plz": "30169",
+    "ort": "Hannover, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 9.736619,
+    "lat": 52.356927
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

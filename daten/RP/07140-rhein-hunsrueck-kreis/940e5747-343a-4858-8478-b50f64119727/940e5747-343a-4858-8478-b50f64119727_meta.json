@@ -1,0 +1,19 @@
+{
+  "id": "940e5747-343a-4858-8478-b50f64119727",
+  "name": "Tanzsportclub Neuwied e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Schützengrund",
+    "hausnummer": "82 b",
+    "plz": "56566"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "entfernung_oepnv": 100,
+  "eigentuemer": "TSC Neuwied",
+  "betreiber": "TSC Neuwied",
+  "website": "https://www.tsc-neuwied.de",
+  "baujahr": 1999
+}

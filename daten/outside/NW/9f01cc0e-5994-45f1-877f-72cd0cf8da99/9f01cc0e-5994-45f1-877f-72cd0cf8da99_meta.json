@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0e-5994-45f1-877f-72cd0cf8da99",
+  "name": "Naturfreibad Suderwich",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Freibad",
+    "hausnummer": "20",
+    "plz": "45665",
+    "ort": "Recklinghausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.26968,
+    "lat": 51.60572
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

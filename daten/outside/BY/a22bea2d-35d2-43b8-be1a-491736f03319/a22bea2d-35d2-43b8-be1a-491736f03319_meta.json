@@ -1,0 +1,18 @@
+{
+  "id": "a22bea2d-35d2-43b8-be1a-491736f03319",
+  "name": "Audi Arena",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Am Faltenbach",
+    "hausnummer": "27",
+    "plz": "87561",
+    "ort": "Oberstdorf, M"
+  },
+  "lage": {
+    "lon": 10.293119,
+    "lat": 47.405476
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

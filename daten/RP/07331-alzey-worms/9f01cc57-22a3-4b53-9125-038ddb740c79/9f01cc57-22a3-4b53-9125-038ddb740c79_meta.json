@@ -12,10 +12,15 @@
     "lon": 8.38302,
     "lat": 49.77774
   },
+  "entfernung_oepnv": 550,
   "oeffentlicher_zugang": "nein",
   "schulsport": "ja",
+  "wlan": "ja",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Schwimmverein Freibad Gimbsheim",
+  "eigentuemer_typ": "Sonstiger Sportverein",
   "betreiber": "Schwimmverein Freibad Gimbsheim",
-  "website": "www.schwimmbad-gimbsheim.de"
+  "betreiber_typ": "Sonstiger Sportverein",
+  "website": "www.schwimmbad-gimbsheim.de",
+  "baujahr": 1973
 }

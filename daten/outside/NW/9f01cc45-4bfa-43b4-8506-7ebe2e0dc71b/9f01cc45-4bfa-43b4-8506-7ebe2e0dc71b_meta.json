@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc45-4bfa-43b4-8506-7ebe2e0dc71b",
+  "name": "Hallenbad Körbecke",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hospitalstraße",
+    "hausnummer": "9",
+    "plz": "59519",
+    "ort": "Möhnesee"
+  },
+  "lage": {
+    "lon": 8.12871,
+    "lat": 51.499347
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

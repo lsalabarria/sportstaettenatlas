@@ -16,6 +16,10 @@
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Idarer Turnverein 1873 e.V.",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
   "betreiber": "Idarer Turnverein 1873 e.V.",
-  "website": "www.idarer-tv.de"
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "www.idarer-tv.de",
+  "baujahr": 1982,
+  "letzte_sanierung": 2019
 }

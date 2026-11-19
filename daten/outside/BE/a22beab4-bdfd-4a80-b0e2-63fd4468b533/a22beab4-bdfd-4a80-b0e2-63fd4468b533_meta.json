@@ -1,0 +1,18 @@
+{
+  "id": "a22beab4-bdfd-4a80-b0e2-63fd4468b533",
+  "name": "Traingshallenkomplex Konrad-Wolf-Straße",
+  "kategorie": "Eissportstätte",
+  "adresse": {
+    "strasse": "Konrad-Wolf-Straße",
+    "hausnummer": "78",
+    "plz": "13055",
+    "ort": "Berlin, Stadt"
+  },
+  "lage": {
+    "lon": 13.481076,
+    "lat": 52.539962
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

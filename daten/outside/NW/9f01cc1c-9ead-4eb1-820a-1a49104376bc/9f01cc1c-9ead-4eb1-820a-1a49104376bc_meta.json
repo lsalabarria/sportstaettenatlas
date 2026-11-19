@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc1c-9ead-4eb1-820a-1a49104376bc",
+  "name": "Naturfreibad Vingst",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Vingster Ring",
+    "plz": "51107",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 7.025915,
+    "lat": 50.926457
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

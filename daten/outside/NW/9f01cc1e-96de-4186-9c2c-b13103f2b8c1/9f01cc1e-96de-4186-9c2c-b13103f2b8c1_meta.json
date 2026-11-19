@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc1e-96de-4186-9c2c-b13103f2b8c1",
+  "name": "Warmwasserfreibad Buschhütten",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Mattenbachstraße",
+    "hausnummer": "37",
+    "plz": "57223",
+    "ort": "Kreuztal, Stadt"
+  },
+  "lage": {
+    "lon": 8.00973,
+    "lat": 50.94299
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

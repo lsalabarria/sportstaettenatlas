@@ -13,7 +13,35 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
+  "wlan": "ja",
   "betriebsstatus": "im Bau",
   "eigentuemer": "Ahrweiler, Landkreis",
-  "betreiber": "Ahrweiler, Landkreis"
+  "eigentuemer_typ": "Landkreis",
+  "betreiber": "Ahrweiler, Landkreis",
+  "betreiber_typ": "Landkreis",
+  "nutzer": [
+    "TTF Remagen e.V.",
+    "Badminton Club Remagen e.V."
+  ],
+  "baujahr": 1935,
+  "fassadenmaterial": "Vorhangfassade",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 3,
+    "Schulungs- / Seminarraum": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas",
+      "einbaujahr": 1996
+    }
+  ],
+  "sanierungen": [
+    {
+      "jahr": 1996,
+      "kosten": 10000.0,
+      "waehrung": "€",
+      "beschreibung": "alles"
+    }
+  ]
 }

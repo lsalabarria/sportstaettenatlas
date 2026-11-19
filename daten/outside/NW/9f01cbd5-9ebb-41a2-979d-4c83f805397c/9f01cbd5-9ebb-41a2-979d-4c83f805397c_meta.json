@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd5-9ebb-41a2-979d-4c83f805397c",
+  "name": "AGGUA TROISDORF",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Aggerdamm",
+    "hausnummer": "22",
+    "plz": "53840",
+    "ort": "Troisdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.17656,
+    "lat": 50.80952
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd5-315d-4f10-b747-0c6e4ac2aba8",
+  "name": "Freibad Bornekamp",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bornekampstr.",
+    "hausnummer": "3",
+    "plz": "59423",
+    "ort": "Unna, Stadt"
+  },
+  "lage": {
+    "lon": 7.68973,
+    "lat": 51.53111
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

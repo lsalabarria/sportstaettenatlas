@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc01-421b-415b-9949-2953f34418fb",
+  "name": "Hallenbad Dahlbruch",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bernhard-Weiss-Platz",
+    "hausnummer": "6",
+    "plz": "57271",
+    "ort": "Hilchenbach, Stadt"
+  },
+  "lage": {
+    "lon": 8.05407,
+    "lat": 50.97735
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

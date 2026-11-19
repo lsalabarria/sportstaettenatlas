@@ -1,5 +1,21 @@
 {
   "id": "34d5123e-f2c1-5993-8b62-7ec1f1a8f60a",
   "sportstaette_id": "9d09fad1-d88e-4d08-a64f-1511dc3fe2a3",
-  "typ": "Schießstand"
+  "typ": "Schießstand",
+  "bezeichnung": "Kleinkaliber 50 mtr",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2020,
+  "sportarten": [
+    "Gewehr",
+    "Pistole"
+  ],
+  "wettkampf": [
+    "Gewehr",
+    "Pistole"
+  ],
+  "schiessstaende_teilgedeckt": 12,
+  "schiessstaende_offen": 10,
+  "flutlicht": "ja",
+  "leuchtmittel": "LED",
+  "oeffnungsstunden": 400
 }

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe4-e642-4f2e-a950-ea41b49e4b63",
+  "name": "Hallenbad Eving",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Württembergerstraße",
+    "hausnummer": "2",
+    "plz": "44339",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.46894,
+    "lat": 51.55229
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1967
+}

@@ -1,0 +1,10 @@
+{
+  "id": "a08f7c74-0648-4642-a917-bdbaf4068842",
+  "name": "Sportplatz Udenheim",
+  "adresse": {
+    "strasse": "Osterstraße",
+    "hausnummer": "39",
+    "plz": "55288",
+    "ort": "Udenheim"
+  }
+}

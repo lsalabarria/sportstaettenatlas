@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe1-51c6-42ce-8b06-0ee9ea254104",
+  "name": "Strabeach (Straberger See)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Straberger See",
+    "hausnummer": "16",
+    "plz": "41542",
+    "ort": "Dormagen, Stadt"
+  },
+  "lage": {
+    "lon": 6.7715,
+    "lat": 51.10303
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

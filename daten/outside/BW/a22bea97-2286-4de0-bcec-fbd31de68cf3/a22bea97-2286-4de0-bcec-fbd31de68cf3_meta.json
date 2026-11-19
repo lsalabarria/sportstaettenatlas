@@ -1,0 +1,18 @@
+{
+  "id": "a22bea97-2286-4de0-bcec-fbd31de68cf3",
+  "name": "Bundesstützpunkt Kanurennsport Karlsruhe",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Hansastr.",
+    "hausnummer": "20b",
+    "plz": "76189",
+    "ort": "Karlsruhe, Stadt"
+  },
+  "lage": {
+    "lon": 8.335605,
+    "lat": 49.00982
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

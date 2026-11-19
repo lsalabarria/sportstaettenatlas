@@ -1,0 +1,17 @@
+{
+  "id": "a22bea29-f0aa-4582-a978-573138ad22ec",
+  "name": "Allgemeiner Alster-Club",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Allermöher Deich",
+    "hausnummer": "36",
+    "plz": "21037"
+  },
+  "lage": {
+    "lon": 10.114428,
+    "lat": 53.482204
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

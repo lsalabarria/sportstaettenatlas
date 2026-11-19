@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe9-0b51-40de-a2c8-83fc46becb6a",
+  "name": "Münster-Therme",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Münsterstraße",
+    "hausnummer": "13",
+    "plz": "40477",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.78328,
+    "lat": 51.24096
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1902
+}

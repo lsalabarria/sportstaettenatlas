@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc3c-d8bb-41af-81ff-ef9baa8f0dde",
+  "name": "Friedrich-Wennmann-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Yorckstraße",
+    "hausnummer": "2",
+    "plz": "45472",
+    "ort": "Mülheim an der Ruhr, Stadt"
+  },
+  "lage": {
+    "lon": 6.931193,
+    "lat": 51.433339
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1974
+}

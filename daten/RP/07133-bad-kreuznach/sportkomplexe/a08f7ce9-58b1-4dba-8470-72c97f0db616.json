@@ -1,0 +1,10 @@
+{
+  "id": "a08f7ce9-58b1-4dba-8470-72c97f0db616",
+  "name": "Freibad Langenlonsheim",
+  "adresse": {
+    "strasse": "Am Alten Mühlengraben",
+    "hausnummer": "13",
+    "plz": "55450",
+    "ort": "Langenlonsheim"
+  }
+}

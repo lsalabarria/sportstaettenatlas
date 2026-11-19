@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbce-ffcc-4bad-bb5a-afb4788851c9",
+  "name": "Freibad Wickede (Ruhr)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Im Winkel",
+    "hausnummer": "24",
+    "plz": "58739",
+    "ort": "Wickede (Ruhr)"
+  },
+  "lage": {
+    "lon": 7.88095,
+    "lat": 51.4991
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb"
+}

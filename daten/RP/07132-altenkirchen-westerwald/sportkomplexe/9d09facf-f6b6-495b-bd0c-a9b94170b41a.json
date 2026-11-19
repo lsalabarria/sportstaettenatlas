@@ -1,0 +1,10 @@
+{
+  "id": "9d09facf-f6b6-495b-bd0c-a9b94170b41a",
+  "name": "Fürthener Sportplatz",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "2",
+    "plz": "57539",
+    "ort": "Fürthen"
+  }
+}

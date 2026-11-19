@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbde-baeb-4029-a9f8-9681f0a641c4",
+  "name": "Hallenbad Schwelm",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Mittelstr.",
+    "hausnummer": "33",
+    "plz": "58332",
+    "ort": "Schwelm, Stadt"
+  },
+  "lage": {
+    "lon": 7.29407,
+    "lat": 51.28982
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1974
+}

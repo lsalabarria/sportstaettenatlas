@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbff-307f-4a31-99ec-08a77fb06556",
+  "name": "Sport- und Erlebnisbad Wananas",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Wananas",
+    "hausnummer": "1",
+    "plz": "44653",
+    "ort": "Herne, Stadt"
+  },
+  "lage": {
+    "lon": 7.1714,
+    "lat": 51.54015
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

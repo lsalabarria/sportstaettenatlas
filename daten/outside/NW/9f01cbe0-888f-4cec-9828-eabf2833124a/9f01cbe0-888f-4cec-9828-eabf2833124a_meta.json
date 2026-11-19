@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe0-888f-4cec-9828-eabf2833124a",
+  "name": "Hallenbad Vogelsang",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Vogelsang",
+    "hausnummer": "100",
+    "plz": "53937",
+    "ort": "Schleiden, Stadt"
+  },
+  "lage": {
+    "lon": 6.44711,
+    "lat": 50.58895
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1951
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbb8-6c38-4222-8220-7022385e3f69",
+  "name": "Schwimmhalle Brand",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wolferskaul",
+    "hausnummer": "19 A",
+    "plz": "52078",
+    "ort": "Aachen, Stadt"
+  },
+  "lage": {
+    "lon": 6.15715,
+    "lat": 50.74672
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

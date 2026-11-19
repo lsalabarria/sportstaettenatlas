@@ -1,0 +1,18 @@
+{
+  "id": "a22beaea-bb8f-4168-9bbd-c7a10d8b221a",
+  "name": "Sportclub Magdeburg e.V. Rudern",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Seilerweg",
+    "hausnummer": "23",
+    "plz": "39114",
+    "ort": "Magdeburg, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 11.656711,
+    "lat": 52.10782
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

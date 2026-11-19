@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0e-f50e-4fae-a3de-1e5fd5f8966f",
+  "name": "Freibad Angerbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Lintorfer Straße",
+    "hausnummer": "64",
+    "plz": "40878",
+    "ort": "Ratingen, Stadt"
+  },
+  "lage": {
+    "lon": 6.84429,
+    "lat": 51.30265
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

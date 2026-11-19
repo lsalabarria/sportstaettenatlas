@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc33-6a98-41e0-8a81-5e5ecd7375d3",
+  "name": "Freibad Rheda",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Reinkenweg",
+    "hausnummer": "11",
+    "plz": "33378",
+    "ort": "Rheda-Wiedenbrück, Stadt"
+  },
+  "lage": {
+    "lon": 8.298892,
+    "lat": 51.855849
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1936
+}

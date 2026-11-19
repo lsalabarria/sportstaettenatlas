@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe6-a197-43c1-917e-034ffd291447",
+  "name": "Hallenbad Obermeiderich",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Neumühlerstraße",
+    "hausnummer": "80",
+    "plz": "47138",
+    "ort": "Duisburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.79425,
+    "lat": 51.48009
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

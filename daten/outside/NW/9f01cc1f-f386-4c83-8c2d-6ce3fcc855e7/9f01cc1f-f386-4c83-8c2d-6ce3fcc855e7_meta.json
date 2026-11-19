@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc1f-f386-4c83-8c2d-6ce3fcc855e7",
+  "name": "Blütenbad Leichlingen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Büscherhof",
+    "hausnummer": "45",
+    "plz": "42799",
+    "ort": "Leichlingen (Rhld.), Stadt"
+  },
+  "lage": {
+    "lon": 7.01901,
+    "lat": 51.10143
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

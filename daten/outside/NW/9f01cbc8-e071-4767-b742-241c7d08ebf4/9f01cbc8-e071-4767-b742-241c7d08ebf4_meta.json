@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc8-e071-4767-b742-241c7d08ebf4",
+  "name": "Hallenbad Kirchhellen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kirchhellener Ring",
+    "hausnummer": "30",
+    "plz": "46244",
+    "ort": "Bottrop, Stadt"
+  },
+  "lage": {
+    "lon": 6.921282,
+    "lat": 51.606697
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "18393423-ad91-4a9f-a098-bf9664d55668",
+  "name": "kleine Sporthalle Siedlungsschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Birkenweg",
+    "hausnummer": "10",
+    "plz": "67346"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Stadt Speyer",
+  "eigentuemer_typ": "Stadt/Gemeinde",
+  "betreiber": "Stadt Speyer",
+  "betreiber_typ": "Stadt/Gemeinde",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2
+  }
+}

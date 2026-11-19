@@ -12,5 +12,6 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
-  "betriebsstatus": "in Betrieb"
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer_typ": "Stadt/Gemeinde"
 }

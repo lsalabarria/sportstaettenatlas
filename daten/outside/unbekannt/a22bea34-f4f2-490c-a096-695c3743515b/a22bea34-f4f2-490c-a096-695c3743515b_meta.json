@@ -1,0 +1,17 @@
+{
+  "id": "a22bea34-f4f2-490c-a096-695c3743515b",
+  "name": "Eisarena Königsee",
+  "kategorie": "Eissportstätte",
+  "adresse": {
+    "strasse": "An d. Seeklause",
+    "hausnummer": "45",
+    "plz": "83471"
+  },
+  "lage": {
+    "lon": 12.984365,
+    "lat": 47.587986
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

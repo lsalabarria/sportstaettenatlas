@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc4-1f67-48a9-9308-f5aad43e8a5b",
+  "name": "Hallenbad Blomberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Ulmenallee",
+    "plz": "32825",
+    "ort": "Blomberg, Stadt"
+  },
+  "lage": {
+    "lon": 9.1063,
+    "lat": 51.94827
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1973
+}

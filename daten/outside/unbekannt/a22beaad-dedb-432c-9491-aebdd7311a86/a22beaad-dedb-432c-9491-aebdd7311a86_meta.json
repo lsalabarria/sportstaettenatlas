@@ -1,0 +1,17 @@
+{
+  "id": "a22beaad-dedb-432c-9491-aebdd7311a86",
+  "name": "Skizentrum Jenner/ Krautkaser",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Jennerbahnstraße",
+    "hausnummer": "18",
+    "plz": "83471"
+  },
+  "lage": {
+    "lon": 12.994697,
+    "lat": 47.591092
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

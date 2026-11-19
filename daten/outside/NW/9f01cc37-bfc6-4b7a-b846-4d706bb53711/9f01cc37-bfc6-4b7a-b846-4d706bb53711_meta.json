@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc37-bfc6-4b7a-b846-4d706bb53711",
+  "name": "Die Blaue Lagune",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Jülicher Straße",
+    "hausnummer": "1",
+    "plz": "47669",
+    "ort": "Wachtendonk"
+  },
+  "lage": {
+    "lon": 6.269954,
+    "lat": 51.380714
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

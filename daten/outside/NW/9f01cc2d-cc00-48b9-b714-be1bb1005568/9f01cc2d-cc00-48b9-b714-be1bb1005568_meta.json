@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc2d-cc00-48b9-b714-be1bb1005568",
+  "name": "Freibad Gescher",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Auf dem Brink",
+    "hausnummer": "80",
+    "plz": "48712",
+    "ort": "Gescher, Stadt"
+  },
+  "lage": {
+    "lon": 7.005713,
+    "lat": 51.964564
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

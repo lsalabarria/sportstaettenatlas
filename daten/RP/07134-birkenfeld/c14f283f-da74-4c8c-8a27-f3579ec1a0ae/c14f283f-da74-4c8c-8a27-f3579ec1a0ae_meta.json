@@ -1,0 +1,16 @@
+{
+  "id": "c14f283f-da74-4c8c-8a27-f3579ec1a0ae",
+  "name": "Kunstrasenplatz 2",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Haag",
+    "hausnummer": "14",
+    "plz": "55743"
+  },
+  "lage": {
+    "lon": 7.29445,
+    "lat": 49.734215
+  },
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2025
+}

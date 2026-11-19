@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf6-d940-4ed1-a5e1-dcbd345efe70",
+  "name": "Freibad Schöneflieth (Greven)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Freibad",
+    "hausnummer": "27",
+    "plz": "48268",
+    "ort": "Greven, Stadt"
+  },
+  "lage": {
+    "lon": 7.61807,
+    "lat": 52.0824
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1969
+}

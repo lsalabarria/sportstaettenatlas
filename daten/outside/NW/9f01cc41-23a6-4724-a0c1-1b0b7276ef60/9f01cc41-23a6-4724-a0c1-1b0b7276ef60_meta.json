@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc41-23a6-4724-a0c1-1b0b7276ef60",
+  "name": "Walzwerkwelle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Rommerskirchener Str.",
+    "hausnummer": "21",
+    "plz": "50259",
+    "ort": "Pulheim, Stadt"
+  },
+  "lage": {
+    "lon": 6.793222,
+    "lat": 51.000292
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

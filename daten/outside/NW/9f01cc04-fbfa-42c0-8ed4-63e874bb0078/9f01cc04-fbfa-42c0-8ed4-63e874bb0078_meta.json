@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc04-fbfa-42c0-8ed4-63e874bb0078",
+  "name": "Familienbad De Bütt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Sudetenstraße",
+    "hausnummer": "91",
+    "plz": "50354",
+    "ort": "Hürth, Stadt"
+  },
+  "lage": {
+    "lon": 6.86685,
+    "lat": 50.88385
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

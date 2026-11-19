@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc22-1758-430c-b940-9b994440aaad",
+  "name": "Gartenhallenbad Nachrodt-Wiblingwerde",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Holensiepen",
+    "hausnummer": "3",
+    "plz": "58769",
+    "ort": "Nachrodt-Wiblingwerde"
+  },
+  "lage": {
+    "lon": 7.639222,
+    "lat": 51.332168
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

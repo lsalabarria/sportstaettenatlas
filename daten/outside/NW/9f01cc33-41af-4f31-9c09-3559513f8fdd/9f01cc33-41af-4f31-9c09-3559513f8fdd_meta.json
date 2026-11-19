@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc33-41af-4f31-9c09-3559513f8fdd",
+  "name": "Schwimmhalle der Brinkmannschule",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Brinkstraße",
+    "hausnummer": "8-12",
+    "plz": "33449",
+    "ort": "Langenberg"
+  },
+  "lage": {
+    "lon": 8.314,
+    "lat": 51.77291
+  },
+  "schulsport": "nein",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1982
+}

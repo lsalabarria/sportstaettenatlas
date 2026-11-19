@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc44-9b63-4fd5-88a6-e274b4ed6df8",
+  "name": "Strandbad, Cafe & Lounge am Freizeitsee - Menzelen-Ost",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gester Str.",
+    "hausnummer": "35",
+    "plz": "46519",
+    "ort": "Alpen"
+  },
+  "lage": {
+    "lon": 6.5407,
+    "lat": 51.62436
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

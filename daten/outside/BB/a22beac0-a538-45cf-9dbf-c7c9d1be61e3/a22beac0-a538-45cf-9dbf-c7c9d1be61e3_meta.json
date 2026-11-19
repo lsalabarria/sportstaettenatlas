@@ -1,0 +1,18 @@
+{
+  "id": "a22beac0-a538-45cf-9dbf-c7c9d1be61e3",
+  "name": "Kanuzentrum Potsdam",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Olympischer Weg",
+    "hausnummer": "3",
+    "plz": "14471",
+    "ort": "Potsdam, Stadt"
+  },
+  "lage": {
+    "lon": 13.020785,
+    "lat": 52.379875
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

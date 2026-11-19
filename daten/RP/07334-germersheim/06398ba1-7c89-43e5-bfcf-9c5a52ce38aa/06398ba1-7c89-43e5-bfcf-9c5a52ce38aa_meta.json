@@ -13,5 +13,38 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "ja",
-  "betriebsstatus": "in Betrieb"
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1983,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 2,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Strom",
+      "art": "Photovoltaik-Anlage",
+      "einbaujahr": 2025
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Strom (z.B. Nachtspeicherofen, Konvektoren etc.)",
+      "einbaujahr": 2004
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Strom (z.B. Durchlauferhitzer, Boiler)",
+      "einbaujahr": 2004
+    }
+  ],
+  "verbraeuche": [
+    {
+      "art": "Strom",
+      "menge": 1700.0
+    }
+  ]
 }

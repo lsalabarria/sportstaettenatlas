@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc49-c1ba-4d33-ab57-df78a2f68842",
+  "name": "Lehrschwimmbecken Vennhauser Allee",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Vennhauser Allee",
+    "hausnummer": "167",
+    "plz": "40627",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.85745,
+    "lat": 51.206319
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

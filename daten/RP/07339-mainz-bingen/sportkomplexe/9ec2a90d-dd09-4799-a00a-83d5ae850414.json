@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a90d-dd09-4799-a00a-83d5ae850414",
+  "name": "Sportanlage Zornheim",
+  "adresse": {
+    "strasse": "Zum neuen Sportplatz",
+    "hausnummer": "3",
+    "plz": "55270",
+    "ort": "Zornheim"
+  }
+}

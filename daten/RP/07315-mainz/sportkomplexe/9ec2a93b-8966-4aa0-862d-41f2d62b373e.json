@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a93b-8966-4aa0-862d-41f2d62b373e",
+  "name": "Grundschule Am Lemmchen",
+  "adresse": {
+    "strasse": "Am Lemmchen",
+    "hausnummer": "50",
+    "plz": "55120",
+    "ort": "Mainz, Stadt"
+  }
+}

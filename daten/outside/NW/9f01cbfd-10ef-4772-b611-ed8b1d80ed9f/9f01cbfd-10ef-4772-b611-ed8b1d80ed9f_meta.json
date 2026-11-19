@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfd-10ef-4772-b611-ed8b1d80ed9f",
+  "name": "Freibad Havixbeck",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kardinal-von-Hartmann-Straße",
+    "hausnummer": "12",
+    "plz": "48329",
+    "ort": "Havixbeck"
+  },
+  "lage": {
+    "lon": 7.42189,
+    "lat": 51.97608
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

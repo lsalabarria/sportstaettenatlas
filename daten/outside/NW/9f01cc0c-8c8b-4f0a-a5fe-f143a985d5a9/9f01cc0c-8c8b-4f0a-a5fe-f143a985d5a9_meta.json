@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0c-8c8b-4f0a-a5fe-f143a985d5a9",
+  "name": "Frei- und Hallenbad Reken",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Berge",
+    "hausnummer": "2",
+    "plz": "48734",
+    "ort": "Reken"
+  },
+  "lage": {
+    "lon": 7.05882,
+    "lat": 51.82857
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

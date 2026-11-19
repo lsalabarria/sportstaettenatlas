@@ -1,0 +1,18 @@
+{
+  "id": "a22bea2f-79ff-4f8f-97af-6277161d452b",
+  "name": "Sport & Freizeitzentrum Kalbach",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Martinszehnten",
+    "hausnummer": "2",
+    "plz": "60437",
+    "ort": "Frankfurt am Main, Stadt"
+  },
+  "lage": {
+    "lon": 8.65092,
+    "lat": 50.186276
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

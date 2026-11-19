@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbd2-6fd2-467a-a45c-c20484fe0a4d",
+  "name": "Hallenbad Waldfeucht-Haaren",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Alter Klauser Kirchweg",
+    "hausnummer": "18",
+    "plz": "52525",
+    "ort": "Waldfeucht"
+  },
+  "lage": {
+    "lon": 6.02338,
+    "lat": 51.09099
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1975
+}

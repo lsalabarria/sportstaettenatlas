@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc23-ebd8-4239-b8b0-2eeaaed88aa4",
+  "name": "Parkbad Lindlar",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Brionner Straße",
+    "hausnummer": "1",
+    "plz": "51789",
+    "ort": "Lindlar"
+  },
+  "lage": {
+    "lon": 7.36703,
+    "lat": 51.01568
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

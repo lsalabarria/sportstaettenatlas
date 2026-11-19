@@ -5,6 +5,7 @@
   "adresse": {
     "strasse": "Hauptstraße",
     "hausnummer": "9",
+    "adresszusatz": "9",
     "plz": "66919",
     "ort": "Hettenhausen"
   },
@@ -14,5 +15,18 @@
   },
   "oeffentlicher_zugang": "ja",
   "schulsport": "nein",
-  "betriebsstatus": "in Betrieb"
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1970,
+  "letzte_sanierung": 2025,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 1,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 2,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  }
 }

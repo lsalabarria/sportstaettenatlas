@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc28-22d6-48d7-b924-81628af17a5a",
+  "name": "Hallenbad- und Saunalandschaft Diemeltal Marsberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "9-11",
+    "plz": "34431",
+    "ort": "Marsberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.8502,
+    "lat": 51.45992
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbb8-170f-4ab3-959f-434ecea38965",
+  "name": "Ulla-Klinger-Halle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kronenberg",
+    "plz": "52074",
+    "ort": "Aachen, Stadt"
+  },
+  "lage": {
+    "lon": 6.05783,
+    "lat": 50.76781
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbef-3f8b-4a80-84e4-1d25dff910b9",
+  "name": "Hallenbad Jahnstraße",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "16",
+    "plz": "52249",
+    "ort": "Eschweiler, Stadt"
+  },
+  "lage": {
+    "lon": 6.25675,
+    "lat": 50.81946
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1964
+}

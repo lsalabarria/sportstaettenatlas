@@ -16,6 +16,10 @@
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Rhein-Pfalz-Kreis",
+  "eigentuemer_typ": "Landkreis",
   "betreiber": "Rhein-Pfalz-Kreis",
-  "website": "www.msc-altrip.de"
+  "betreiber_typ": "Landkreis",
+  "website": "www.msc-altrip.de",
+  "baujahr": 1952,
+  "letzte_sanierung": 2026
 }

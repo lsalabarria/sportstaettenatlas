@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbbe-fca8-46a6-ad2b-96e83b425855",
+  "name": "Hallenbad Beckum",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Paterweg",
+    "hausnummer": "4",
+    "plz": "59269",
+    "ort": "Beckum, Stadt"
+  },
+  "lage": {
+    "lon": 8.03454,
+    "lat": 51.7515
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1972
+}

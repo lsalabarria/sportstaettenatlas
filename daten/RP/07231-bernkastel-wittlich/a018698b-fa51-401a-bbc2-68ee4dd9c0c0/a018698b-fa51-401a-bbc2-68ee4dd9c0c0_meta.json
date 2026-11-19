@@ -1,0 +1,13 @@
+{
+  "id": "a018698b-fa51-401a-bbc2-68ee4dd9c0c0",
+  "name": "Bernkastel-Kues Halle Schulzentrum",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Peter-Kremer-Weg 1",
+    "plz": "54470"
+  },
+  "lage": {
+    "lon": 7.065138,
+    "lat": 49.924937
+  }
+}

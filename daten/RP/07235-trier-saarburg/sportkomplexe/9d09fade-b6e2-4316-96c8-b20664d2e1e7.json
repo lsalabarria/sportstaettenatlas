@@ -1,0 +1,10 @@
+{
+  "id": "9d09fade-b6e2-4316-96c8-b20664d2e1e7",
+  "name": "Sportplatz Leiwen",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "12",
+    "plz": "54340",
+    "ort": "Leiwen"
+  }
+}

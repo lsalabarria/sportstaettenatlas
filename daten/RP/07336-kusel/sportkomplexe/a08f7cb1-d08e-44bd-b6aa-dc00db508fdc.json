@@ -1,0 +1,10 @@
+{
+  "id": "a08f7cb1-d08e-44bd-b6aa-dc00db508fdc",
+  "name": "Sportplatz Nanzdietschweiler",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "65",
+    "plz": "66909",
+    "ort": "Nanzdietschweiler"
+  }
+}

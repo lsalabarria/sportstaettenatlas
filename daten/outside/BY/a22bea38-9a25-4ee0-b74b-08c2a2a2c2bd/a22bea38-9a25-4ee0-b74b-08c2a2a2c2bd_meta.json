@@ -1,0 +1,18 @@
+{
+  "id": "a22bea38-9a25-4ee0-b74b-08c2a2a2c2bd",
+  "name": "Dirtpark Ezelsdorf",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Bucher Straße",
+    "plz": "90559",
+    "ort": "Burgthann"
+  },
+  "lage": {
+    "lon": 11.359375,
+    "lat": 49.326685
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22bea38-6806-472a-b24a-89c38984e9c4"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "6a024d41-96af-474b-bd81-d294146cea8d",
+  "name": "Bendorfer Schützengesellschaft 1844 e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Brauereistraße",
+    "hausnummer": "62",
+    "plz": "56170"
+  },
+  "lage": {
+    "lon": 7.565934,
+    "lat": 50.42561
+  },
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Bendorfer Schützengesellschaft 1844 e.V.",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "Bendorfer Schützengesellschaft 1844 e.V.",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.bendorfer-schuetzen.de",
+  "baujahr": 1986,
+  "letzte_sanierung": 2025
+}

@@ -1,0 +1,10 @@
+{
+  "id": "9d09fae0-aaed-45ff-a81c-e6155d32dbd8",
+  "name": "Sportplatz Gutweiler",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "hausnummer": "8",
+    "plz": "54317",
+    "ort": "Gutweiler"
+  }
+}

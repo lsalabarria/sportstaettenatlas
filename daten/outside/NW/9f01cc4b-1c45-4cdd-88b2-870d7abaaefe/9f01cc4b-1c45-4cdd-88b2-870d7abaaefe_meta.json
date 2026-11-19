@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4b-1c45-4cdd-88b2-870d7abaaefe",
+  "name": "Lehrschwimmbecken St. Josef",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Klosterhof",
+    "hausnummer": "1",
+    "plz": "40472",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.790832,
+    "lat": 51.273737
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

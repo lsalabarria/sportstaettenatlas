@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbed-2cfd-4cc7-a1a0-cc7aecd1daf9",
+  "name": "Hallenbad Olympiabad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Berliner Straße",
+    "hausnummer": "35",
+    "plz": "59320",
+    "ort": "Ennigerloh, Stadt"
+  },
+  "lage": {
+    "lon": 8.0296,
+    "lat": 51.84298
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1973
+}

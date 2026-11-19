@@ -1,0 +1,18 @@
+{
+  "id": "a22bea35-83df-45c3-804e-c72e01b856af",
+  "name": "Ruderclub Germania von 1929 e.V.",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "An den Bootshäusern",
+    "hausnummer": "11",
+    "plz": "44147",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.434946,
+    "lat": 51.540583
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

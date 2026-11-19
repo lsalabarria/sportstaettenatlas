@@ -1,0 +1,18 @@
+{
+  "id": "a22beac7-dfc3-4d6c-8d91-4148a4850bee",
+  "name": "Hessischer Volleyballverband e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Otto-Fleck-Schneise",
+    "hausnummer": "8",
+    "plz": "60528",
+    "ort": "Frankfurt am Main, Stadt"
+  },
+  "lage": {
+    "lon": 8.641711,
+    "lat": 50.066921
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

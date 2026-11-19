@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc2f-8d59-4b0a-872c-2496034a6e08",
+  "name": "Sommerbad des DTV",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Dr.-Overhues-Allee",
+    "plz": "52355",
+    "ort": "Düren, Stadt"
+  },
+  "lage": {
+    "lon": 6.478995,
+    "lat": 50.78126
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

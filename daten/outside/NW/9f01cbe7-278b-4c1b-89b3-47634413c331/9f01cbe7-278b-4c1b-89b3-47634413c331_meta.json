@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe7-278b-4c1b-89b3-47634413c331",
+  "name": "Allwetterbad Walsum",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Scholte-Rahm-Straße",
+    "hausnummer": "16",
+    "plz": "47178",
+    "ort": "Duisburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.72496,
+    "lat": 51.53349
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1957
+}

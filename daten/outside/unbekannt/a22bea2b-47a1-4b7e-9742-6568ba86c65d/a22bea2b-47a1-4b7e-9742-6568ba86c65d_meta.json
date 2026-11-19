@@ -1,0 +1,17 @@
+{
+  "id": "a22bea2b-47a1-4b7e-9742-6568ba86c65d",
+  "name": "Leistungszentrum Schwimmen (Duisbergbad)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Dulsbergbad",
+    "hausnummer": "5",
+    "plz": "22049"
+  },
+  "lage": {
+    "lon": 10.072582,
+    "lat": 53.587027
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

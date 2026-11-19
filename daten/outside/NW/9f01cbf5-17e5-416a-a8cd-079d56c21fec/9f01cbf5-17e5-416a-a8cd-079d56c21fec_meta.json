@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf5-17e5-416a-a8cd-079d56c21fec",
+  "name": "Freibad Jahnplatz",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kanzlerstraße",
+    "hausnummer": "40",
+    "plz": "45883",
+    "ort": "Gelsenkirchen, Stadt"
+  },
+  "lage": {
+    "lon": 7.0618,
+    "lat": 51.52203
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

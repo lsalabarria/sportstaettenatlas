@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc3-13f2-495e-9f19-460544d9ca13",
+  "name": "Freibad Hillegossen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Oelkerstraße",
+    "hausnummer": "24",
+    "plz": "33699",
+    "ort": "Bielefeld, Stadt"
+  },
+  "lage": {
+    "lon": 8.60914,
+    "lat": 51.99078
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -5,6 +5,7 @@
   "adresse": {
     "strasse": "Erfurter Straße",
     "hausnummer": "9",
+    "adresszusatz": "FeG City Church Andernach",
     "plz": "56626",
     "ort": "Andernach, Stadt"
   },
@@ -16,5 +17,8 @@
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "FeG City Church Andernach",
-  "website": "www.csv-andernach.de"
+  "eigentuemer_typ": "Sonstige",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "www.csv-andernach.de",
+  "baujahr": 2020
 }

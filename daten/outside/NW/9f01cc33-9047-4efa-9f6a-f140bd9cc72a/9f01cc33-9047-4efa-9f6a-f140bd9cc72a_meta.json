@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc33-9047-4efa-9f6a-f140bd9cc72a",
+  "name": "Hallenbad Rietberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Torfweg",
+    "hausnummer": "69",
+    "plz": "33397",
+    "ort": "Rietberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.43727,
+    "lat": 51.81047
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2012
+}

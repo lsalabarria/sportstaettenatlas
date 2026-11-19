@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3a-9751-4afc-b452-59c45bc6aed2",
+  "name": "Hallenbad Menden (Sauerland)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Hünenköpfchen",
+    "hausnummer": "7",
+    "plz": "58706",
+    "ort": "Menden (Sauerland), Stadt"
+  },
+  "lage": {
+    "lon": 7.80526,
+    "lat": 51.43463
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

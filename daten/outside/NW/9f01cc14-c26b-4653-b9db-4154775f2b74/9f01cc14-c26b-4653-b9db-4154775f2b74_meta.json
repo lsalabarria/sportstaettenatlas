@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc14-c26b-4653-b9db-4154775f2b74",
+  "name": "AQUApark Oberhausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Heinz-Schleußer-Straße",
+    "hausnummer": "1",
+    "plz": "46047",
+    "ort": "Oberhausen, Stadt"
+  },
+  "lage": {
+    "lon": 6.88463,
+    "lat": 51.493889
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2009
+}

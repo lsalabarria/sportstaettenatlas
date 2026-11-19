@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc2d-a267-490e-a763-20c0f8afd5d0",
+  "name": "Naturerlebnisbad Simmerath",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Rurstraße",
+    "hausnummer": "300",
+    "plz": "52152",
+    "ort": "Simmerath"
+  },
+  "lage": {
+    "lon": 6.38067,
+    "lat": 50.585208
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

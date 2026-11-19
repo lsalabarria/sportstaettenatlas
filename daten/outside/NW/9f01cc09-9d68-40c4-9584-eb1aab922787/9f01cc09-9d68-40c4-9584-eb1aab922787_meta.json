@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc09-9d68-40c4-9584-eb1aab922787",
+  "name": "Sonnenbad Rommerskirchen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gorchheimer Weg",
+    "hausnummer": "2",
+    "plz": "41569",
+    "ort": "Rommerskirchen"
+  },
+  "lage": {
+    "lon": 6.68693,
+    "lat": 51.03952
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

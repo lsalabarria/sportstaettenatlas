@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbcf-cb20-4476-8213-3e26f50ac050",
+  "name": "HeubergBad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gantesweilerstraße",
+    "hausnummer": "6",
+    "plz": "46483",
+    "ort": "Wesel, Stadt"
+  },
+  "lage": {
+    "lon": 6.62285,
+    "lat": 51.66019
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1998
+}

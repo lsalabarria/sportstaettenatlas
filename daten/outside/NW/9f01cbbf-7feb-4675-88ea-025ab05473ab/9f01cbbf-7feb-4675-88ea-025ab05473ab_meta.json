@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbbf-7feb-4675-88ea-025ab05473ab",
+  "name": "Oleanderbad Quadrath-Ichendorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Auf der Helle",
+    "hausnummer": "32",
+    "plz": "50127",
+    "ort": "Bergheim, Stadt"
+  },
+  "lage": {
+    "lon": 6.68115,
+    "lat": 50.93485
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1966
+}

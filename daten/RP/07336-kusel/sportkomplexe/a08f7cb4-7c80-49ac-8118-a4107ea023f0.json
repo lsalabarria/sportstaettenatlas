@@ -1,0 +1,10 @@
+{
+  "id": "a08f7cb4-7c80-49ac-8118-a4107ea023f0",
+  "name": "Realschule plus Altenglan",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "14",
+    "plz": "66885",
+    "ort": "Altenglan"
+  }
+}

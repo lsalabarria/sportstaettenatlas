@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4a-456a-459b-b0d1-dfef281159a3",
+  "name": "Bad Schwimm-Vereinigung Krefeld 1972 e.V.",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Palmstraße",
+    "hausnummer": "8",
+    "plz": "47803",
+    "ort": "Krefeld, Stadt"
+  },
+  "lage": {
+    "lon": 6.573022,
+    "lat": 51.353517
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

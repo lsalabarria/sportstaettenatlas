@@ -1,0 +1,10 @@
+{
+  "id": "a08f7d13-f8bf-4947-ab88-81954f62cc0a",
+  "name": "Peter-Caesar-Schule",
+  "adresse": {
+    "strasse": "Weissborr",
+    "hausnummer": "15",
+    "plz": "55743",
+    "ort": "Idar-Oberstein, Stadt"
+  }
+}

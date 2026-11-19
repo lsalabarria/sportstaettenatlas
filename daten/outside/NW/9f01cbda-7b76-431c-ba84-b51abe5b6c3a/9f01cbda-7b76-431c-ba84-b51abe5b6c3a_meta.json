@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbda-7b76-431c-ba84-b51abe5b6c3a",
+  "name": "VitalBad Burscheid",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Im Hagen",
+    "hausnummer": "9",
+    "plz": "51399",
+    "ort": "Burscheid, Stadt"
+  },
+  "lage": {
+    "lon": 7.10649,
+    "lat": 51.08292
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1976
+}

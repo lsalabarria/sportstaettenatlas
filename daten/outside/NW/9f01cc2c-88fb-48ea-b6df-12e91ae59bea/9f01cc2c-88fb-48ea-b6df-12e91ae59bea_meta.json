@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc2c-88fb-48ea-b6df-12e91ae59bea",
+  "name": "Mona Mare",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kurt-Schumacher-Str.",
+    "hausnummer": "2",
+    "plz": "40789",
+    "ort": "Monheim am Rhein, Stadt"
+  },
+  "lage": {
+    "lon": 6.899935,
+    "lat": 51.085104
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1998
+}

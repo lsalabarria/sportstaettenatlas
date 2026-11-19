@@ -1,0 +1,24 @@
+{
+  "id": "59e12ced-205b-4218-849f-b53b6861e6eb",
+  "name": "SV Reichenberg 1912 e.V. - Luftgewehrstand",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Untertal",
+    "hausnummer": "3",
+    "adresszusatz": "Hinterhof",
+    "plz": "56357"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "entfernung_oepnv": 100,
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Schützenverein \"Horrido\" e.V. Reichenberg",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "Schützenverein \"Horrido\" e.V. Reichenberg",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.reichenberg-1912.de/",
+  "baujahr": 1981,
+  "letzte_sanierung": 2024
+}

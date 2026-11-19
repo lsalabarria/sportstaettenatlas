@@ -1,0 +1,17 @@
+{
+  "id": "a22beabc-bd02-4af6-8bd1-2054dd747eee",
+  "name": "Gustav-Stuhlmacher-Sportplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mollerstraße",
+    "hausnummer": "2",
+    "plz": "20148"
+  },
+  "lage": {
+    "lon": 9.989634,
+    "lat": 53.570117
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22bea2b-ed60-4a2e-bbd9-d91cf79f9905",
+  "name": "Bundesleistungszentrum für Kanuslalom und Wildwasser Augsburg",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Am Eiskanal",
+    "hausnummer": "30a",
+    "plz": "86161",
+    "ort": "Augsburg"
+  },
+  "lage": {
+    "lon": 10.935087,
+    "lat": 48.349935
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

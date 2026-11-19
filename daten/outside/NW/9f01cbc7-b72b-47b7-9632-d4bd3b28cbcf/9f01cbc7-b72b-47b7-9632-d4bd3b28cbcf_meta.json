@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc7-b72b-47b7-9632-d4bd3b28cbcf",
+  "name": "Hallenbad Borgentreich",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Platz der Stadt Rue",
+    "hausnummer": "2a",
+    "plz": "34434",
+    "ort": "Borgentreich, Stadt"
+  },
+  "lage": {
+    "lon": 9.23513,
+    "lat": 51.5719
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

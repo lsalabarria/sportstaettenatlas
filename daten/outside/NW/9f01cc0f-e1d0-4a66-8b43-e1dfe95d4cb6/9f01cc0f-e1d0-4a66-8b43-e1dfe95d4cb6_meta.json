@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0f-e1d0-4a66-8b43-e1dfe95d4cb6",
+  "name": "aquarena Pulheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "In den Benden",
+    "plz": "50259",
+    "ort": "Pulheim, Stadt"
+  },
+  "lage": {
+    "lon": 6.74917,
+    "lat": 51.01461
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2016
+}

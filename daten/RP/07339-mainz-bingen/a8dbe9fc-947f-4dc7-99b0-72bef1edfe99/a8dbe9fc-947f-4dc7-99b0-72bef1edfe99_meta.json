@@ -13,7 +13,35 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
+  "wlan": "nein",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Turnverein 1861 Undenheim",
-  "betreiber": "Turnverein 1861 Undenheim"
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "Turnverein 1861 Undenheim",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "letzte_sanierung": 2026,
+  "energietraeger": [
+    {
+      "bereich": "Warmwasser",
+      "art": "Betrieb über Heizanlage",
+      "einbaujahr": 2025
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas",
+      "einbaujahr": 2025
+    }
+  ],
+  "verbraeuche": [
+    {
+      "art": "Erdgas",
+      "menge": 4000.0,
+      "einheit": "kWh"
+    },
+    {
+      "art": "Strom",
+      "menge": 600.0,
+      "einheit": "kWh"
+    }
+  ]
 }

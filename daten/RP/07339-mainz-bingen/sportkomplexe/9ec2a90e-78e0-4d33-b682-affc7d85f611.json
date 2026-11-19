@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a90e-78e0-4d33-b682-affc7d85f611",
+  "name": "Sportplatz Bodenheim",
+  "adresse": {
+    "strasse": "Laubenheimer Str.",
+    "hausnummer": "12",
+    "plz": "55294",
+    "ort": "Bodenheim"
+  }
+}

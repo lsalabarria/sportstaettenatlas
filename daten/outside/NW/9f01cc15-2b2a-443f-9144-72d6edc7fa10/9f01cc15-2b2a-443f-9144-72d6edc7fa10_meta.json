@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc15-2b2a-443f-9144-72d6edc7fa10",
+  "name": "Hallenbad Nottuln",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Rudolf-Harbig-Straße",
+    "hausnummer": "20",
+    "plz": "48301",
+    "ort": "Nottuln"
+  },
+  "lage": {
+    "lon": 7.346822,
+    "lat": 51.925477
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

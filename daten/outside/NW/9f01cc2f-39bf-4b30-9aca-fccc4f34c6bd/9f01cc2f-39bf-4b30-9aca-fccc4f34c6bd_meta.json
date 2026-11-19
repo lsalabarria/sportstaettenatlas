@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc2f-39bf-4b30-9aca-fccc4f34c6bd",
+  "name": "Freibad Blens",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "St.-Georg-Str.",
+    "hausnummer": "99",
+    "plz": "52396",
+    "ort": "Heimbach, Stadt"
+  },
+  "lage": {
+    "lon": 6.4912,
+    "lat": 50.65453
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

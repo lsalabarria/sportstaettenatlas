@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbc4-4902-418e-9140-d8ab5618c101",
+  "name": "Freibad Blomberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wesselweg",
+    "plz": "32825",
+    "ort": "Blomberg, Stadt"
+  },
+  "lage": {
+    "lon": 9.09759,
+    "lat": 51.95106
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb"
+}

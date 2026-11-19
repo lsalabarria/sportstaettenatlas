@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc07-5739-4207-bd07-f055ac90a5cc",
+  "name": "Strandbad Kaarster See",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Kaarster See",
+    "plz": "41564",
+    "ort": "Kaarst, Stadt"
+  },
+  "lage": {
+    "lon": 6.58275,
+    "lat": 51.2302
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

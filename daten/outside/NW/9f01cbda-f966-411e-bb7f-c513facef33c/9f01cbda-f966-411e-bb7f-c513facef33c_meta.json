@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbda-f966-411e-bb7f-c513facef33c",
+  "name": "Hallenbad Löhrtor",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Löhrtor",
+    "hausnummer": "15",
+    "plz": "57072",
+    "ort": "Siegen, Stadt"
+  },
+  "lage": {
+    "lon": 8.0227,
+    "lat": 50.87172
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1963
+}

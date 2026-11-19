@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbd0-9dbc-4be8-aa96-9cb2d6a97c16",
+  "name": "Freibad Dabringhausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Coenenmühle",
+    "hausnummer": "1",
+    "plz": "42929",
+    "ort": "Wermelskirchen, Stadt"
+  },
+  "lage": {
+    "lon": 7.19263,
+    "lat": 51.08562
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1935
+}

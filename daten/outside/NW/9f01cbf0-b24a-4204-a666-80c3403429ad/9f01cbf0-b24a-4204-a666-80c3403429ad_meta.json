@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf0-b24a-4204-a666-80c3403429ad",
+  "name": "Sport- und Gesundheitszentrum Nord-Ost-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schonnebeckhöfe",
+    "hausnummer": "60",
+    "plz": "45309",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 7.05553,
+    "lat": 51.48542
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

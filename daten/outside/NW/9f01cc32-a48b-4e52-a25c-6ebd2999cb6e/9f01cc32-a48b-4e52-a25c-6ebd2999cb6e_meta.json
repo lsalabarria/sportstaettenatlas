@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc32-a48b-4e52-a25c-6ebd2999cb6e",
+  "name": "Rosenbad Gemünd",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kurparkstraße",
+    "plz": "53937",
+    "ort": "Schleiden, Stadt"
+  },
+  "lage": {
+    "lon": 6.495377,
+    "lat": 50.577693
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

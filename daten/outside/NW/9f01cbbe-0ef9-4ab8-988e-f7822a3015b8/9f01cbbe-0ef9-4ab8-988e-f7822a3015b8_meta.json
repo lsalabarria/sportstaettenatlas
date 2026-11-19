@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbe-0ef9-4ab8-988e-f7822a3015b8",
+  "name": "Waldschwimmbad Bad Wünnenberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "In den Erlen",
+    "hausnummer": "31",
+    "plz": "33181",
+    "ort": "Bad Wünnenberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.70347,
+    "lat": 51.51502
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

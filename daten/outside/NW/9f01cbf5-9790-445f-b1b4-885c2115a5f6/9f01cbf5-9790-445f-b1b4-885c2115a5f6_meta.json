@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbf5-9790-445f-b1b4-885c2115a5f6",
+  "name": "Lehrschwimmbecken Störmede",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Albert-Brand-Straße",
+    "plz": "59590",
+    "ort": "Geseke, Stadt"
+  },
+  "lage": {
+    "lon": 8.46708,
+    "lat": 51.63748
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb"
+}

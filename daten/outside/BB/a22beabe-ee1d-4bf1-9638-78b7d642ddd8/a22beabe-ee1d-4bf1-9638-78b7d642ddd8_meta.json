@@ -1,0 +1,18 @@
+{
+  "id": "a22beabe-ee1d-4bf1-9638-78b7d642ddd8",
+  "name": "Kiezbad am Stern",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Newtonstraße",
+    "hausnummer": "12",
+    "plz": "14480",
+    "ort": "Potsdam, Stadt"
+  },
+  "lage": {
+    "lon": 13.132278,
+    "lat": 52.376816
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

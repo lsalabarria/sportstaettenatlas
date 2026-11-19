@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbb7-f01f-4f33-af64-17d62ecfb607",
+  "name": "Elisabethhalle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Elisabethstraße",
+    "hausnummer": "10",
+    "plz": "52062",
+    "ort": "Aachen, Stadt"
+  },
+  "lage": {
+    "lon": 6.08548,
+    "lat": 50.77332
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1911
+}

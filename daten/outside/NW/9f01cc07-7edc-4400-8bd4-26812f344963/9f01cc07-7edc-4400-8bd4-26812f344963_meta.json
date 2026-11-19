@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc07-7edc-4400-8bd4-26812f344963",
+  "name": "Hallenbad Büttgen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Olympiastraße",
+    "hausnummer": "1",
+    "plz": "41564",
+    "ort": "Kaarst, Stadt"
+  },
+  "lage": {
+    "lon": 6.60472,
+    "lat": 51.20193
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1972
+}

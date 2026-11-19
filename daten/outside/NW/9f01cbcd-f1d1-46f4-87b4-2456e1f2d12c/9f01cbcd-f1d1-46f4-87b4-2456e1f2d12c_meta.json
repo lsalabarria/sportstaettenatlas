@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbcd-f1d1-46f4-87b4-2456e1f2d12c",
+  "name": "Hallenbad Dattenfeld",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bergische Str.",
+    "hausnummer": "21",
+    "plz": "51570",
+    "ort": "Windeck"
+  },
+  "lage": {
+    "lon": 7.56087,
+    "lat": 50.80754
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

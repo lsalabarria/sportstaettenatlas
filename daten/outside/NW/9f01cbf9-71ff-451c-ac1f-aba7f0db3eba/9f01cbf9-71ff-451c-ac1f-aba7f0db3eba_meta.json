@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf9-71ff-451c-ac1f-aba7f0db3eba",
+  "name": "Richard-Römer-Lennebad Hohenlimburg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Im Klosterkamp",
+    "hausnummer": "40",
+    "plz": "58119",
+    "ort": "Hagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.5649,
+    "lat": 51.35429
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1968
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22beae4-7373-4c80-9935-cf105fe73dcc",
+  "name": "Halle 1 Olympiastützpunkt",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Sandfangweg",
+    "hausnummer": "4",
+    "plz": "79102",
+    "ort": "Freiburg im Breisgau, Stadt"
+  },
+  "lage": {
+    "lon": 7.882883,
+    "lat": 47.990817
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbed-8468-4ba1-b516-ef0c561c3cfb",
+  "name": "Strandbad Liblarer See",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Liblarer See",
+    "hausnummer": "1",
+    "plz": "50374",
+    "ort": "Erftstadt, Stadt"
+  },
+  "lage": {
+    "lon": 6.83301,
+    "lat": 50.8231
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

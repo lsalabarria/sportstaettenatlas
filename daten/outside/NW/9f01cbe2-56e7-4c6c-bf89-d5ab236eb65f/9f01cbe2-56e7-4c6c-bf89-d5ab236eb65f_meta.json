@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe2-56e7-4c6c-bf89-d5ab236eb65f",
+  "name": "Freibad Stockheide",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Brackelerstraße",
+    "hausnummer": "100",
+    "plz": "44145",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.49433,
+    "lat": 51.52555
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

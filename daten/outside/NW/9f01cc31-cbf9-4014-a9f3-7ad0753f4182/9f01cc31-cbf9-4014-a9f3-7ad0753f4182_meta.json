@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc31-cbf9-4014-a9f3-7ad0753f4182",
+  "name": "ehemals: Schwimmschule Helf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kreuzeskirchstraße",
+    "hausnummer": "1",
+    "plz": "45127",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 7.01305,
+    "lat": 51.45899
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

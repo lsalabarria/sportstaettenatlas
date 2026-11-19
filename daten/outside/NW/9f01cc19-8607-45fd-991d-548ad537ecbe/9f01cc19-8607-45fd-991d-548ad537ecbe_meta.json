@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc19-8607-45fd-991d-548ad537ecbe",
+  "name": "Lentpark",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Lentstraße",
+    "hausnummer": "30",
+    "plz": "50668",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 6.964437,
+    "lat": 50.958533
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2011
+}

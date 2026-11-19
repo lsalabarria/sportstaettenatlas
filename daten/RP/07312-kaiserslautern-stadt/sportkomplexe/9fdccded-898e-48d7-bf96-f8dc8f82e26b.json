@@ -1,0 +1,10 @@
+{
+  "id": "9fdccded-898e-48d7-bf96-f8dc8f82e26b",
+  "name": "Pestalozzischule",
+  "adresse": {
+    "strasse": "Pfaffenbergstraße",
+    "hausnummer": "108",
+    "plz": "67663",
+    "ort": "Kaiserslautern, Stadt"
+  }
+}

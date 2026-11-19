@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbb8-db52-4eca-8894-11d26d0f70a4",
+  "name": "Freibad Alstätte",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Runder Berg",
+    "hausnummer": "1",
+    "plz": "48683",
+    "ort": "Ahaus, Stadt"
+  },
+  "lage": {
+    "lon": 6.91179,
+    "lat": 52.1317
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

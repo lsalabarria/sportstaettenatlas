@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf7-30b9-473d-b2f9-bd0907407891",
+  "name": "Schlossbad Grevenbroich",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schlossstraße",
+    "hausnummer": "11",
+    "plz": "41515",
+    "ort": "Grevenbroich, Stadt"
+  },
+  "lage": {
+    "lon": 6.58954,
+    "lat": 51.08624
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2019
+}

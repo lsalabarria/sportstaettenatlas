@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf6-538d-461c-a675-dae4f2a7d698",
+  "name": "Freibad Gladbeck",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schützenstraße",
+    "hausnummer": "120",
+    "plz": "45964",
+    "ort": "Gladbeck, Stadt"
+  },
+  "lage": {
+    "lon": 6.9874,
+    "lat": 51.56321
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbee-3451-4856-bbda-da6db8a395e2",
+  "name": "Hallenbad Erkelenz-Gerderath",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hermann-Josef-Straße",
+    "plz": "41812",
+    "ort": "Erkelenz, Stadt"
+  },
+  "lage": {
+    "lon": 6.218611,
+    "lat": 51.097327
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1967
+}

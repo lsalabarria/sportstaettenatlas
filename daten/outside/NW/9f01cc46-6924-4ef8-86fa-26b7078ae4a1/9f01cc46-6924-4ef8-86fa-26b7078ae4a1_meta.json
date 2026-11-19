@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc46-6924-4ef8-86fa-26b7078ae4a1",
+  "name": "Hallenbad des LAFP",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Im Sundern",
+    "plz": "59379",
+    "ort": "Selm, Stadt"
+  },
+  "lage": {
+    "lon": 7.46934,
+    "lat": 51.65566
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

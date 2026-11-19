@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a93a-7df1-45c3-bd74-d52d8ab65958",
+  "name": "Maler-Becker-Schule",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "7",
+    "plz": "55124",
+    "ort": "Mainz, Stadt"
+  }
+}

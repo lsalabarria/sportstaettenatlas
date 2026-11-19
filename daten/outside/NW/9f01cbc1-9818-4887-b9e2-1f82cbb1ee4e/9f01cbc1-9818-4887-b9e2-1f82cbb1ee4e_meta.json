@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc1-9818-4887-b9e2-1f82cbb1ee4e",
+  "name": "Freibad Bergneustadt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kölner Straße",
+    "hausnummer": "397",
+    "plz": "51702",
+    "ort": "Bergneustadt, Stadt"
+  },
+  "lage": {
+    "lon": 7.67289,
+    "lat": 51.02299
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

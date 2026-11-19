@@ -1,0 +1,10 @@
+{
+  "id": "9fdcce2f-c110-43aa-a455-bd2dcfd4e8f9",
+  "name": "Hochschule Kaiserslautern",
+  "adresse": {
+    "strasse": "Amerikastraße",
+    "hausnummer": "1",
+    "plz": "66482",
+    "ort": "Zweibrücken, Stadt"
+  }
+}

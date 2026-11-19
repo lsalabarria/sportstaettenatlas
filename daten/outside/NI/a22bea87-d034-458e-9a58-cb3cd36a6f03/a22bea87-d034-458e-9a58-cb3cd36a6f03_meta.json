@@ -1,0 +1,18 @@
+{
+  "id": "a22bea87-d034-458e-9a58-cb3cd36a6f03",
+  "name": "Erika-Fisch-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Ferdinand-Wilhelm-Fricke-Weg",
+    "hausnummer": "2a",
+    "plz": "30169",
+    "ort": "Hannover, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 9.732433,
+    "lat": 52.356413
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

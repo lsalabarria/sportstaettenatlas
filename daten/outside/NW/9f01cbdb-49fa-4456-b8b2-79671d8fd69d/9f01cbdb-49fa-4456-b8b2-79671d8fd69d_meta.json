@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbdb-49fa-4456-b8b2-79671d8fd69d",
+  "name": "Hallenbad Castrop-Rauxel",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "189",
+    "plz": "44575",
+    "ort": "Castrop-Rauxel, Stadt"
+  },
+  "lage": {
+    "lon": 7.30718,
+    "lat": 51.56479
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1960
+}

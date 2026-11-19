@@ -1,0 +1,10 @@
+{
+  "id": "9d09fad2-8f59-43f9-9e07-48a5fc36ce24",
+  "name": "SV Rengsdorf",
+  "adresse": {
+    "strasse": "Tannenweg",
+    "hausnummer": "1",
+    "plz": "56579",
+    "ort": "Rengsdorf"
+  }
+}

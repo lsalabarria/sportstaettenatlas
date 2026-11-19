@@ -1,0 +1,23 @@
+{
+  "id": "0448d8a2-5dba-4a61-94dd-92ce74afbb40",
+  "name": "Altenberghalle Gutweiler",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Zum Sportplatz",
+    "hausnummer": "-",
+    "plz": "54317",
+    "ort": "Gutweiler"
+  },
+  "lage": {
+    "lon": 6.729282,
+    "lat": 49.720904
+  },
+  "entfernung_oepnv": 190,
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Verbandsgemeinde Ruwer",
+  "eigentuemer_typ": "Landkreis",
+  "betreiber": "SV Gutweiler e.V.",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.ruwer.de",
+  "baujahr": 1990
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe4-befc-4c6f-ad28-678f421cf32b",
+  "name": "Hallenbad Lütgendortmund",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Volksgartenstraße",
+    "hausnummer": "80",
+    "plz": "44388",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.3295,
+    "lat": 51.50462
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1966
+}

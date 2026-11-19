@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbcd-30ee-44ac-9750-bf529a5444ce",
+  "name": "Freizeitbad Heveney",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Querenburger Str.",
+    "hausnummer": "35",
+    "plz": "58455",
+    "ort": "Witten, Stadt"
+  },
+  "lage": {
+    "lon": 7.28328,
+    "lat": 51.43624
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1986
+}

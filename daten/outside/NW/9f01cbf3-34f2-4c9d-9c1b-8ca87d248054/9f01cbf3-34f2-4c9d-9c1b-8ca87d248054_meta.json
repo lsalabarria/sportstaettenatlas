@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf3-34f2-4c9d-9c1b-8ca87d248054",
+  "name": "Erlebnisbad Finto",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Markt",
+    "hausnummer": "2",
+    "plz": "57413",
+    "ort": "Finnentrop"
+  },
+  "lage": {
+    "lon": 7.97299,
+    "lat": 51.17262
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc47-acfe-4bae-91db-a503ff9dc9fc",
+  "name": "treibgut - Sport & Wohlbefinden",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Saerbecker Str.",
+    "hausnummer": "141",
+    "plz": "48268",
+    "ort": "Greven, Stadt"
+  },
+  "lage": {
+    "lon": 7.611588,
+    "lat": 52.10849
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

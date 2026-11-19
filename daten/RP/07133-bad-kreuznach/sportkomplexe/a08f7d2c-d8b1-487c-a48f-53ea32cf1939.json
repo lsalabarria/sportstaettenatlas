@@ -1,0 +1,10 @@
+{
+  "id": "a08f7d2c-d8b1-487c-a48f-53ea32cf1939",
+  "name": "Schule am Ellerbach",
+  "adresse": {
+    "strasse": "Ellerbachstraße",
+    "hausnummer": "17",
+    "plz": "55545",
+    "ort": "Bad Kreuznach, Stadt"
+  }
+}

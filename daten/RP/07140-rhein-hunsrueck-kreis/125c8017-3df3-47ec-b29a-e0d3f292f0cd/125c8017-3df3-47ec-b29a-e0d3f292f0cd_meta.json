@@ -1,0 +1,20 @@
+{
+  "id": "125c8017-3df3-47ec-b29a-e0d3f292f0cd",
+  "name": "Radsporthalle",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Appenheimer Str.",
+    "hausnummer": "51",
+    "plz": "55435"
+  },
+  "lage": {
+    "lon": 7.310418,
+    "lat": 49.955139
+  },
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Radsportverein 1898 Gau-Algesheim",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "Radsportverein 1898 Gau-Algesheim",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://rsv-ga.de, radsportverein-gau-algesheim.de"
+}

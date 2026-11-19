@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc22-6bb6-4767-ab08-2e92c3b87ab3",
+  "name": "Hallen- und Freibad Wiembachtal",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Talstraße",
+    "hausnummer": "62",
+    "plz": "51379",
+    "ort": "Leverkusen, Stadt"
+  },
+  "lage": {
+    "lon": 7.01949,
+    "lat": 51.07044
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

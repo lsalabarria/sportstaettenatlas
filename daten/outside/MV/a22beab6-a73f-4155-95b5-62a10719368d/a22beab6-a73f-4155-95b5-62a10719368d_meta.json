@@ -1,0 +1,19 @@
+{
+  "id": "a22beab6-a73f-4155-95b5-62a10719368d",
+  "name": "Hallenschwimmbad Neptun",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kopernikusstraße",
+    "hausnummer": "17",
+    "plz": "18057",
+    "ort": "Rostock, Hanse- und Universitätsstadt"
+  },
+  "lage": {
+    "lon": 12.088743,
+    "lat": 54.085535
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22beab6-a090-445f-a821-b97210b4ee8e"
+}

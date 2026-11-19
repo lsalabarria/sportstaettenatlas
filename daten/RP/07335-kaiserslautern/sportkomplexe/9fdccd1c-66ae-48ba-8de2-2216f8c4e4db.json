@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd1c-66ae-48ba-8de2-2216f8c4e4db",
+  "name": "Mehrzweckhalle Krickenbach",
+  "adresse": {
+    "strasse": "Dorfwiesen",
+    "hausnummer": "1",
+    "plz": "67706",
+    "ort": "Krickenbach"
+  }
+}

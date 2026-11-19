@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbeb-35b8-4733-a8b7-e076bf4ea785",
+  "name": "Freibad Engelskirchen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Freibad",
+    "plz": "51766",
+    "ort": "Engelskirchen"
+  },
+  "lage": {
+    "lon": 7.40948,
+    "lat": 50.99019
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

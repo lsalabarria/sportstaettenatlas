@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc48-dbd8-4600-a599-f91d735772ad",
+  "name": "Strandbad im Erholungsgebiet Feldmark (Feldmarksee)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Knapp",
+    "plz": "48336",
+    "ort": "Sassenberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.063313,
+    "lat": 52.00382
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb"
+}

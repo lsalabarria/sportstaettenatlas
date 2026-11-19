@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe7-4bd3-4f33-b5e9-d7dc24ffe042",
+  "name": "Niederrhein-Therme",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wehofer Straße",
+    "hausnummer": "42",
+    "plz": "47169",
+    "ort": "Duisburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.77943,
+    "lat": 51.52052
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

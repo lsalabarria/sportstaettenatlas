@@ -1,0 +1,18 @@
+{
+  "id": "a22bea96-82f3-4a8e-8e43-7dfdd4b1c80d",
+  "name": "Werner-von-Linde-Halle München",
+  "kategorie": "Eissportstätte",
+  "adresse": {
+    "strasse": "Spiridon-Louis-Ring",
+    "hausnummer": "27",
+    "plz": "80809"
+  },
+  "lage": {
+    "lon": 11.543408,
+    "lat": 48.173577
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22bea96-6f9d-40c0-975d-95f5a0405a29"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc39-b8d8-4309-b113-d89b79f88ace",
+  "name": "Erholungszentrum Schieder",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kronenbruch",
+    "hausnummer": "4a",
+    "plz": "32816",
+    "ort": "Schieder-Schwalenberg, Stadt"
+  },
+  "lage": {
+    "lon": 9.163772,
+    "lat": 51.919804
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd5-c75c-4743-a9d4-95c98b7cc533",
+  "name": "Sport- und Freizeitbad H2O",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schelthofer Straße",
+    "hausnummer": "80",
+    "plz": "47918",
+    "ort": "Tönisvorst, Stadt"
+  },
+  "lage": {
+    "lon": 6.48095,
+    "lat": 51.32203
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

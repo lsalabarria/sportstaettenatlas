@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc04-4e00-4013-8585-699fb84c989d",
+  "name": "Bürgerbad Hückeswagen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Sportzentrum",
+    "hausnummer": "9",
+    "plz": "42499",
+    "ort": "Hückeswagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.32673,
+    "lat": 51.14556
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

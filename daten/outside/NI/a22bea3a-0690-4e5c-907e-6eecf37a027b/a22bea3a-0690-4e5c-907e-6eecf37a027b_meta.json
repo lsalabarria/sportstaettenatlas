@@ -1,0 +1,18 @@
+{
+  "id": "a22bea3a-0690-4e5c-907e-6eecf37a027b",
+  "name": "DTB Bundesstützpunkt",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Bonner Straße",
+    "hausnummer": "12a",
+    "plz": "30173",
+    "ort": "Hannover, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 9.763215,
+    "lat": 52.352223
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf4-80b0-431d-80ab-b733095fa8d9",
+  "name": "SPORT-PARADIES",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Adenauerallee",
+    "hausnummer": "118",
+    "plz": "45891",
+    "ort": "Gelsenkirchen, Stadt"
+  },
+  "lage": {
+    "lon": 7.07353,
+    "lat": 51.5531
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

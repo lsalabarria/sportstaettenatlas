@@ -1,0 +1,17 @@
+{
+  "id": "e48d39d6-7ed3-4a6c-9f7d-41162f0c6712",
+  "name": "Waldfreibad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "plz": "54595"
+  },
+  "lage": {
+    "lon": 6.440581,
+    "lat": 50.220199
+  },
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer_typ": "Stadt/Gemeinde",
+  "betreiber_typ": "Stadt/Gemeinde",
+  "baujahr": 1970,
+  "letzte_sanierung": 2000
+}

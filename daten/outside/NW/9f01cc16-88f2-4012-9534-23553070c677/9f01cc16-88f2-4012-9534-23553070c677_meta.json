@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc16-88f2-4012-9534-23553070c677",
+  "name": "Südbad Neuss",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Jakob-Koch-Straße",
+    "hausnummer": "1",
+    "plz": "41466",
+    "ort": "Neuss, Stadt"
+  },
+  "lage": {
+    "lon": 6.679011,
+    "lat": 51.176122
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbec-c003-4ae7-a174-26c15a53e78b",
+  "name": "Platsch Ennepetal",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Mittelstraße",
+    "hausnummer": "108",
+    "plz": "58256",
+    "ort": "Ennepetal, Stadt"
+  },
+  "lage": {
+    "lon": 7.37646,
+    "lat": 51.29235
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2019
+}

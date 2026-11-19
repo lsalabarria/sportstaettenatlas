@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf2-5fe2-4559-a6c9-6d59da1da67b",
+  "name": "BMX  Strecke Ingersheim",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Talstraße",
+    "hausnummer": "10",
+    "plz": "74379",
+    "ort": "Ingersheim"
+  },
+  "lage": {
+    "lon": 9.197029,
+    "lat": 48.969448
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

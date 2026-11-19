@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbdb-bf29-4394-ad93-e215387fd6e1",
+  "name": "CoeBad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Osterwicker Straße",
+    "hausnummer": "19",
+    "plz": "48653",
+    "ort": "Coesfeld, Stadt"
+  },
+  "lage": {
+    "lon": 7.17065,
+    "lat": 51.95118
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2006
+}

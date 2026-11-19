@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc5-e974-4815-b1e1-75147d456d61",
+  "name": "Freibad Südfeldmark",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Märkische Straße",
+    "hausnummer": "13",
+    "plz": "44866",
+    "ort": "Bochum, Stadt"
+  },
+  "lage": {
+    "lon": 7.15217,
+    "lat": 51.48537
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

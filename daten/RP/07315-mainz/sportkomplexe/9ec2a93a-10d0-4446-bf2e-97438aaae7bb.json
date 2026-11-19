@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a93a-10d0-4446-bf2e-97438aaae7bb",
+  "name": "Leibnizschule",
+  "adresse": {
+    "strasse": "Leibnizstraße",
+    "hausnummer": "15",
+    "plz": "55118",
+    "ort": "Mainz, Stadt"
+  }
+}

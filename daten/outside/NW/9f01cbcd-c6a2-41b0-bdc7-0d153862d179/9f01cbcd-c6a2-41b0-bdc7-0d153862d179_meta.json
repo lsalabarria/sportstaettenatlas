@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbcd-c6a2-41b0-bdc7-0d153862d179",
+  "name": "Freibad Windeck",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Freibad",
+    "hausnummer": "1",
+    "plz": "51570",
+    "ort": "Windeck"
+  },
+  "lage": {
+    "lon": 7.61223,
+    "lat": 50.79498
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

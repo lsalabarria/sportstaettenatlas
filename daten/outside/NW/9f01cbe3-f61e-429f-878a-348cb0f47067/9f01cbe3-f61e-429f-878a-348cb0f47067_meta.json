@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe3-f61e-429f-878a-348cb0f47067",
+  "name": "Freibad Froschloch",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Löttringhauser Straße",
+    "hausnummer": "103",
+    "plz": "44225",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.44135,
+    "lat": 51.46681
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1927
+}

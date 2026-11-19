@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1d54-20c7-46f7-a931-dd5d7f8f621b",
+  "name": "Sportplatz Treis",
+  "adresse": {
+    "strasse": "Im Schafsberg",
+    "hausnummer": "12",
+    "plz": "56253",
+    "ort": "Treis-Karden"
+  }
+}

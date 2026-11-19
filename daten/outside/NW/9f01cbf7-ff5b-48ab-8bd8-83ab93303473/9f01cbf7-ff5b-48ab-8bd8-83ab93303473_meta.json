@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf7-ff5b-48ab-8bd8-83ab93303473",
+  "name": "Naturfreibad Bruch - Aggertalsperre",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Vorbecken",
+    "hausnummer": "13",
+    "plz": "51647",
+    "ort": "Gummersbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.65237,
+    "lat": 51.0545
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

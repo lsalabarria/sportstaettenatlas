@@ -1,0 +1,16 @@
+{
+  "id": "d284041c-c500-40b7-8d03-943cade0d52b",
+  "name": "TG Frankenthal",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jahnplatz",
+    "hausnummer": "6",
+    "plz": "67227"
+  },
+  "lage": {
+    "lon": 8.357114,
+    "lat": 49.530351
+  },
+  "schulsport": "nein",
+  "wlan": "nein"
+}

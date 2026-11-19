@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbba-5614-4014-8dcc-62cabac638a8",
+  "name": "Freibad Neheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Jahnalle",
+    "hausnummer": "47",
+    "plz": "59757",
+    "ort": "Arnsberg, Stadt"
+  },
+  "lage": {
+    "lon": 7.95327,
+    "lat": 51.44479
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

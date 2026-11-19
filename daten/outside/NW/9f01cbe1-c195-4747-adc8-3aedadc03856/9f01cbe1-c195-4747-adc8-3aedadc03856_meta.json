@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe1-c195-4747-adc8-3aedadc03856",
+  "name": "Atlantis Dorsten",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Konrad-Adenauer-Platz",
+    "hausnummer": "1",
+    "plz": "46282",
+    "ort": "Dorsten, Stadt"
+  },
+  "lage": {
+    "lon": 6.96438,
+    "lat": 51.66687
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

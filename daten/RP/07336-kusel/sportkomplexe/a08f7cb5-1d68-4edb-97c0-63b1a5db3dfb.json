@@ -1,0 +1,10 @@
+{
+  "id": "a08f7cb5-1d68-4edb-97c0-63b1a5db3dfb",
+  "name": "Schwimmbad Bosenbach",
+  "adresse": {
+    "strasse": "Eckstraße",
+    "hausnummer": "28",
+    "plz": "66887",
+    "ort": "Bosenbach"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22bea99-66c0-42b5-8fde-8172f78ee23e",
+  "name": "Ringer-Zentrum Aschaffenburg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hilde-Catz-Straße",
+    "hausnummer": "3",
+    "plz": "63743",
+    "ort": "Aschaffenburg"
+  },
+  "lage": {
+    "lon": 9.170794,
+    "lat": 49.962999
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22bea98-26f5-4eb2-8dea-7c5d71c75993",
+  "name": "Sportcampus Saar Sportplatz 3",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hermann-Neuberger-Straße",
+    "hausnummer": "2",
+    "plz": "66123",
+    "ort": "Saarbrücken, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 7.03249,
+    "lat": 49.250354
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

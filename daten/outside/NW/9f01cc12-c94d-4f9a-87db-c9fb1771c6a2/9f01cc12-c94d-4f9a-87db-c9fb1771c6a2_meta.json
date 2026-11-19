@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc12-c94d-4f9a-87db-c9fb1771c6a2",
+  "name": "Städtisches Hallenbad Olfen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Von-Vincke-Straße",
+    "hausnummer": "2",
+    "plz": "59399",
+    "ort": "Olfen, Stadt"
+  },
+  "lage": {
+    "lon": 7.379571,
+    "lat": 51.711503
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1968
+}

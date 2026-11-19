@@ -1,0 +1,18 @@
+{
+  "id": "a22bea2d-a33e-4642-bc5e-72e9883e74e2",
+  "name": "Kaserne am Rennsteig",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Grenzadler",
+    "plz": "98559",
+    "ort": "Oberhof, Stadt"
+  },
+  "lage": {
+    "lon": 10.689379,
+    "lat": 50.705473
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22bea2d-7126-4233-bc25-8a13cf46cdf8"
+}

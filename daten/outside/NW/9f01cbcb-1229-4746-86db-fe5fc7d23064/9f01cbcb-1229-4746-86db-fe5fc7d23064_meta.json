@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbcb-1229-4746-86db-fe5fc7d23064",
+  "name": "Freibad Mirke",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "In der Mirke",
+    "hausnummer": "1",
+    "plz": "42109",
+    "ort": "Wuppertal, Stadt"
+  },
+  "lage": {
+    "lon": 7.14611,
+    "lat": 51.27417
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

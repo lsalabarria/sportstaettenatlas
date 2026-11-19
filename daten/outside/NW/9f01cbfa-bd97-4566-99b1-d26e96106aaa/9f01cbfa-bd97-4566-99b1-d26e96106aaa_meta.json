@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfa-bd97-4566-99b1-d26e96106aaa",
+  "name": "Waldfreibad Herpine",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Herpiner Weg",
+    "hausnummer": "17",
+    "plz": "58553",
+    "ort": "Halver, Stadt"
+  },
+  "lage": {
+    "lon": 7.51558,
+    "lat": 51.18904
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

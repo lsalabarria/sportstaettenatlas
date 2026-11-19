@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc3-bff3-46f4-bd20-171de07aa38e",
+  "name": "Wiesenbad Bielefeld",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Werner-Bock-Straße",
+    "hausnummer": "34",
+    "plz": "33602",
+    "ort": "Bielefeld, Stadt"
+  },
+  "lage": {
+    "lon": 8.54576,
+    "lat": 52.02415
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

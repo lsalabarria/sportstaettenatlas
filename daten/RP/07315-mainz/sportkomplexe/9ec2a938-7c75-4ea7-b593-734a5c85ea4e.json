@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a938-7c75-4ea7-b593-734a5c85ea4e",
+  "name": "Erich-Kästner-Schule",
+  "adresse": {
+    "strasse": "Küferweg",
+    "hausnummer": "53",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  }
+}

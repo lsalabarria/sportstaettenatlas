@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc9-5e43-49dd-b48b-3fd5cdadb0ba",
+  "name": "Aquana Würselen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Willy-Brandt-Ring",
+    "hausnummer": "100",
+    "plz": "52146",
+    "ort": "Würselen, Stadt"
+  },
+  "lage": {
+    "lon": 6.14265,
+    "lat": 50.82183
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1998
+}

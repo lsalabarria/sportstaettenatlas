@@ -1,0 +1,10 @@
+{
+  "id": "9d09fad3-288e-4d37-ac8b-6541be1499e2",
+  "name": "Sportplatz Leubsdorf",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "202",
+    "plz": "53547",
+    "ort": "Leubsdorf"
+  }
+}

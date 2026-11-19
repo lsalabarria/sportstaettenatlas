@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc20-62c1-4a3c-968f-5d68e4b95871",
+  "name": "Freibad Lieme",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bielefelder Straße",
+    "hausnummer": "204",
+    "plz": "32657",
+    "ort": "Lemgo, Stadt"
+  },
+  "lage": {
+    "lon": 8.82146,
+    "lat": 52.0229
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

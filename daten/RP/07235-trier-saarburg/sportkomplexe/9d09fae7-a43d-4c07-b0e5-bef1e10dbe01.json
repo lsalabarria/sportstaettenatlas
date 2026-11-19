@@ -1,0 +1,10 @@
+{
+  "id": "9d09fae7-a43d-4c07-b0e5-bef1e10dbe01",
+  "name": "Waldsportplatz",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "15",
+    "plz": "54457",
+    "ort": "Wincheringen"
+  }
+}

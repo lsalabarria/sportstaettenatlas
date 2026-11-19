@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc18-7c76-4587-b164-ea9838975335",
+  "name": "Stadionbad Köln",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Olympiaweg",
+    "hausnummer": "20",
+    "plz": "50933",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 6.878935,
+    "lat": 50.9336
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1923
+}

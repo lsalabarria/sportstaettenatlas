@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc01-9a0c-49b1-ab19-ad17d3908f49",
+  "name": "Natur-Freibad Müsen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Werbelsbrunnen",
+    "hausnummer": "4a",
+    "plz": "57271",
+    "ort": "Hilchenbach, Stadt"
+  },
+  "lage": {
+    "lon": 8.0426,
+    "lat": 50.9932
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

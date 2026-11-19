@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc10-a400-4a0d-bf1a-5cc5adb9270c",
+  "name": "Freibad Lahde",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bultweg",
+    "hausnummer": "8",
+    "plz": "32469",
+    "ort": "Petershagen, Stadt"
+  },
+  "lage": {
+    "lon": 8.99799,
+    "lat": 52.37242
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

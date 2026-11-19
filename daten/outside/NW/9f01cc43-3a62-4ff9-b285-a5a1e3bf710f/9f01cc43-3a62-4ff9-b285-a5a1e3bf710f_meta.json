@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc43-3a62-4ff9-b285-a5a1e3bf710f",
+  "name": "Naturfreibad Krombach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Lange Wiese",
+    "hausnummer": "10",
+    "plz": "57223",
+    "ort": "Kreuztal, Stadt"
+  },
+  "lage": {
+    "lon": 7.96067,
+    "lat": 50.999726
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

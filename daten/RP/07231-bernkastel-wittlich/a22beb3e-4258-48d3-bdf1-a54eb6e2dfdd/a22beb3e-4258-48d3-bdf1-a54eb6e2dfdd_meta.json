@@ -1,0 +1,17 @@
+{
+  "id": "a22beb3e-4258-48d3-bdf1-a54eb6e2dfdd",
+  "name": "Günter-Braun-Sporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Eschenbachstr.",
+    "hausnummer": "85",
+    "plz": "67063"
+  },
+  "lage": {
+    "lon": 6.903842,
+    "lat": 49.983624
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22bea9b-8228-49af-9a56-b4db16678476",
+  "name": "Sportschule Oberhaching",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Loh",
+    "hausnummer": "2",
+    "plz": "82041",
+    "ort": "Oberhaching"
+  },
+  "lage": {
+    "lon": 11.590572,
+    "lat": 48.036301
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

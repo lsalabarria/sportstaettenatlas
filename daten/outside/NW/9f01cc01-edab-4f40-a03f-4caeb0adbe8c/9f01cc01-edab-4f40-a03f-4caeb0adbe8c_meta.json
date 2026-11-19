@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc01-edab-4f40-a03f-4caeb0adbe8c",
+  "name": "Hildorado",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Grünstraße",
+    "hausnummer": "2",
+    "plz": "40723",
+    "ort": "Hilden, Stadt"
+  },
+  "lage": {
+    "lon": 6.94845,
+    "lat": 51.16685
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

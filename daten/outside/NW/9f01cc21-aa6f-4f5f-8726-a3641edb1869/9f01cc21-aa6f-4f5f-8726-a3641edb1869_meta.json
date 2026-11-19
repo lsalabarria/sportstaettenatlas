@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc21-aa6f-4f5f-8726-a3641edb1869",
+  "name": "Freizeitbad CaLevornia",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bismarckstraße",
+    "hausnummer": "182",
+    "plz": "51373",
+    "ort": "Leverkusen, Stadt"
+  },
+  "lage": {
+    "lon": 7.00348,
+    "lat": 51.03676
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1998
+}

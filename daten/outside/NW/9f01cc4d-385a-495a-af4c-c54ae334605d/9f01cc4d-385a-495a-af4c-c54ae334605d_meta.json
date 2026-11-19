@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc4d-385a-495a-af4c-c54ae334605d",
+  "name": "Werksschwimmbad auf Zollverein",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kokereialle",
+    "plz": "45141",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 7.038752,
+    "lat": 51.490591
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

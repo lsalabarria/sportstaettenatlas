@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc6-4171-4382-a345-154666fa18f7",
+  "name": "Frankenbad Nordstadt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Adolfstraße",
+    "hausnummer": "45",
+    "plz": "53111",
+    "ort": "Bonn, Stadt"
+  },
+  "lage": {
+    "lon": 7.08907,
+    "lat": 50.73912
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

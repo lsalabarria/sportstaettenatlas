@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc0-0fa3-4f71-9357-f26240f8ac08",
+  "name": "Kombibad Paffrath",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Borngasse",
+    "hausnummer": "2",
+    "plz": "51469",
+    "ort": "Bergisch Gladbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.08821,
+    "lat": 50.99902
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1970
+}

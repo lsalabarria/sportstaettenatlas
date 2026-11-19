@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a912-c2df-47f6-a2bc-61dc6fb25a7a",
+  "name": "Schul-, Sport- und Freizeitzentrum Göllheim",
+  "adresse": {
+    "strasse": "Carl-Diem-Weg",
+    "hausnummer": "5",
+    "plz": "67307",
+    "ort": "Göllheim"
+  }
+}

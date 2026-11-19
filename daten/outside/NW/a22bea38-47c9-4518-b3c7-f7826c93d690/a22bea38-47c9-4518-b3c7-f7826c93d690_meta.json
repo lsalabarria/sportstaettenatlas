@@ -1,0 +1,18 @@
+{
+  "id": "a22bea38-47c9-4518-b3c7-f7826c93d690",
+  "name": "Schwimmstadion Duisburg",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Bertaallee",
+    "hausnummer": "4",
+    "plz": "47055",
+    "ort": "Duisburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.779889,
+    "lat": 51.407884
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbef-67b7-4c41-8ec2-07576a46d51a",
+  "name": "Freibad Dürwiß",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Blausteinsee",
+    "plz": "52249",
+    "ort": "Eschweiler, Stadt"
+  },
+  "lage": {
+    "lon": 6.2825,
+    "lat": 50.84457
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

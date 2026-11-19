@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc17-94ac-450e-a78b-a00483c69ac9",
+  "name": "Strandbad Rönsahl",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Strandbadweg",
+    "plz": "58566",
+    "ort": "Kierspe, Stadt"
+  },
+  "lage": {
+    "lon": 7.51973,
+    "lat": 51.10865
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

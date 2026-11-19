@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a917-3549-4d7d-b4a9-27cc23c431ef",
+  "name": "Sportzentrum Morschheim",
+  "adresse": {
+    "strasse": "Am Sportpl.",
+    "hausnummer": "1",
+    "plz": "67294",
+    "ort": "Morschheim"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf5-e811-4629-92a5-180af903e876",
+  "name": "Schwimm in Gevelsberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Ochsenkamp",
+    "hausnummer": "54",
+    "plz": "58285",
+    "ort": "Gevelsberg, Stadt"
+  },
+  "lage": {
+    "lon": 7.31996,
+    "lat": 51.32277
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

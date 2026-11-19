@@ -1,0 +1,18 @@
+{
+  "id": "a22bea33-3458-4378-b485-b6176c5af647",
+  "name": "Sporthalle der Anne-Frank-Schule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Turnpl.",
+    "hausnummer": "4",
+    "plz": "76337",
+    "ort": "Waldbronn"
+  },
+  "lage": {
+    "lon": 8.463869,
+    "lat": 48.934601
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

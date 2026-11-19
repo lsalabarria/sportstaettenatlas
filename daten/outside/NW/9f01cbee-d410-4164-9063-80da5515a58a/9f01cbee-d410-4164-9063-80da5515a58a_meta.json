@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbee-d410-4164-9063-80da5515a58a",
+  "name": "Schlossbad Erwitte",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Graf-Landsberg-Straße",
+    "hausnummer": "15a",
+    "plz": "59597",
+    "ort": "Erwitte, Stadt"
+  },
+  "lage": {
+    "lon": 8.34139,
+    "lat": 51.61765
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

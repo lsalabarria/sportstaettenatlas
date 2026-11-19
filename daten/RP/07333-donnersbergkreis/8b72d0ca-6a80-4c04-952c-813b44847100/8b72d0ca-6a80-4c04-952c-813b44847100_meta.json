@@ -1,0 +1,18 @@
+{
+  "id": "8b72d0ca-6a80-4c04-952c-813b44847100",
+  "name": "Sportplatz Kerzenheim",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "An der Haardt",
+    "plz": "67304"
+  },
+  "lage": {
+    "lon": 8.057647,
+    "lat": 49.577402
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer_typ": "Stadt/Gemeinde",
+  "betreiber_typ": "Stadt/Gemeinde"
+}

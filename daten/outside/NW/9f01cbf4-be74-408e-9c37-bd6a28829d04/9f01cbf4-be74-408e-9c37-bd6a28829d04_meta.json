@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf4-be74-408e-9c37-bd6a28829d04",
+  "name": "Freibad Gesundheitspark Nienhausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Feldmarkstraße",
+    "hausnummer": "201",
+    "plz": "45883",
+    "ort": "Gelsenkirchen, Stadt"
+  },
+  "lage": {
+    "lon": 7.06514,
+    "lat": 51.50268
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

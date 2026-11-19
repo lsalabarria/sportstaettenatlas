@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc13-6bcc-4c03-9c9e-7dd23a727e03",
+  "name": "martimo Oer-Erkenschwick",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Stimbergpark",
+    "hausnummer": "80",
+    "plz": "45739",
+    "ort": "Oer-Erkenschwick, Stadt"
+  },
+  "lage": {
+    "lon": 7.24811,
+    "lat": 51.658033
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

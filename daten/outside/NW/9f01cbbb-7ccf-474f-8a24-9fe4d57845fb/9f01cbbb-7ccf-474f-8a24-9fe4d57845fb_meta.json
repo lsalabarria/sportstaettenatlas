@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbbb-7ccf-474f-8a24-9fe4d57845fb",
+  "name": "Freibad Grafenwerth",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Insel Grafenwerth",
+    "plz": "53604",
+    "ort": "Bad Honnef, Stadt"
+  },
+  "lage": {
+    "lon": 7.21541,
+    "lat": 50.63813
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

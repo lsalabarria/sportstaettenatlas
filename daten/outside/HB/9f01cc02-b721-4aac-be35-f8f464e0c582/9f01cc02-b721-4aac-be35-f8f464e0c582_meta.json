@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc02-b721-4aac-be35-f8f464e0c582",
+  "name": "Freibad Belle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Pyrmonter Straße",
+    "hausnummer": "101",
+    "plz": "32805",
+    "ort": "Horn-Bad Meinberg, Stadt"
+  },
+  "lage": {
+    "lon": 9.04494,
+    "lat": 51.89738
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

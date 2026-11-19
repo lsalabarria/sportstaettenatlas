@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc42-ba5b-4421-99b3-7711e9e1142e",
+  "name": "PraeVita Rhein-Sieg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Röhrichtsiefen",
+    "hausnummer": "3",
+    "plz": "53840",
+    "ort": "Troisdorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.175175,
+    "lat": 50.814776
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

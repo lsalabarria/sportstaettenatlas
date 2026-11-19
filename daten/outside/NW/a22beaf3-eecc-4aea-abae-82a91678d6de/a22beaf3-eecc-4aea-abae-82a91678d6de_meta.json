@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf3-eecc-4aea-abae-82a91678d6de",
+  "name": "Kurt-Rieß-Halle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Tannenbergstraße",
+    "hausnummer": "57",
+    "plz": "51373",
+    "ort": "Leverkusen, Stadt"
+  },
+  "lage": {
+    "lon": 6.995011,
+    "lat": 51.037251
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

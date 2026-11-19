@@ -14,7 +14,9 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
+  "sportkomplex": "9c24bfa3-2460-4bca-a29c-6ef41b2b83db",
   "sportarten": [
     "Parkour"
-  ]
+  ],
+  "letzte_sanierung": 2025
 }

@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbff-6d3d-4472-82f3-606eab2eec0a",
+  "name": "LAGO – DIE THERME",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Ruhmbach",
+    "plz": "44627",
+    "ort": "Herne, Stadt"
+  },
+  "lage": {
+    "lon": 7.26162,
+    "lat": 51.53397
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

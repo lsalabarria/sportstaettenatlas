@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0b-18f5-485d-a98e-6599331a079c",
+  "name": "monte mare Rheinbach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Münstereifeler Str.",
+    "hausnummer": "69",
+    "plz": "53359",
+    "ort": "Rheinbach, Stadt"
+  },
+  "lage": {
+    "lon": 6.93351,
+    "lat": 50.61877
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd27-1972-430e-b67f-a038b6199854",
+  "name": "Karl-Wendel-Schule",
+  "adresse": {
+    "strasse": "Neustadter Straße",
+    "hausnummer": "23",
+    "plz": "67245",
+    "ort": "Lambsheim"
+  }
+}

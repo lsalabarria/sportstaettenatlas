@@ -15,5 +15,6 @@
   "oeffentlicher_zugang": "nein",
   "schulsport": "ja",
   "betriebsstatus": "in Betrieb",
-  "eigentuemer": "Bad Kreuznach, Landkreis"
+  "eigentuemer": "Bad Kreuznach, Landkreis",
+  "eigentuemer_typ": "Landkreis"
 }

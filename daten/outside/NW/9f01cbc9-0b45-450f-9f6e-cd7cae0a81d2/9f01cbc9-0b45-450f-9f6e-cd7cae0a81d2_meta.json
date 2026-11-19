@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc9-0b45-450f-9f6e-cd7cae0a81d2",
+  "name": "Naturbad Xantener Südsee",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Meerend",
+    "hausnummer": "2",
+    "plz": "46509",
+    "ort": "Xanten, Stadt"
+  },
+  "lage": {
+    "lon": 6.43771,
+    "lat": 51.68522
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

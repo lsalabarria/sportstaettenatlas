@@ -1,0 +1,17 @@
+{
+  "id": "9fdccdce-99bd-4237-b3a3-9e013c99bf76",
+  "name": "Tennis-Club St. Goarshausen",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Bachstraße",
+    "plz": "56346",
+    "ort": "Sankt Goarshausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.693925,
+    "lat": 50.174967
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

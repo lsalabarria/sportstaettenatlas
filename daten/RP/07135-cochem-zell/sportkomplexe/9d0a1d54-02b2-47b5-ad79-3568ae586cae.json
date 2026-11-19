@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1d54-02b2-47b5-ad79-3568ae586cae",
+  "name": "Tennis-Club Treis",
+  "adresse": {
+    "strasse": "Am Laach",
+    "hausnummer": "19",
+    "plz": "56253",
+    "ort": "Treis-Karden"
+  }
+}

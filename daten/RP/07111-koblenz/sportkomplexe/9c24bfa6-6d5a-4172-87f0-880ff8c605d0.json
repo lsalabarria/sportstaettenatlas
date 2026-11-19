@@ -1,0 +1,10 @@
+{
+  "id": "9c24bfa6-6d5a-4172-87f0-880ff8c605d0",
+  "name": "Schulzentrum Asterstein",
+  "adresse": {
+    "strasse": "Lehrhohl",
+    "hausnummer": "46",
+    "plz": "56077",
+    "ort": "Koblenz, Stadt"
+  }
+}

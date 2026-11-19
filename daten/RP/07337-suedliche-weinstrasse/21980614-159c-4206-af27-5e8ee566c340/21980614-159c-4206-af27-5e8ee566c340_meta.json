@@ -15,5 +15,9 @@
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
-  "website": "https://www.sgi-klm.de"
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.sgi-klm.de",
+  "baujahr": 1965,
+  "letzte_sanierung": 2025
 }

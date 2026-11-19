@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a909-4911-4dd5-b2de-c18baa4e175b",
+  "name": "Grundschule Gensingen",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "2-4",
+    "plz": "55457",
+    "ort": "Gensingen"
+  }
+}

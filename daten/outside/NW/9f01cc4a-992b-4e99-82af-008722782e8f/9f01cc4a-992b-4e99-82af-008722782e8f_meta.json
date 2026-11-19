@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4a-992b-4e99-82af-008722782e8f",
+  "name": "Hallenbad SV Bayer Uerdingen 08 e.V.",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Waldsee",
+    "hausnummer": "25",
+    "plz": "47829",
+    "ort": "Krefeld, Stadt"
+  },
+  "lage": {
+    "lon": 6.650018,
+    "lat": 51.380794
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb"
+}

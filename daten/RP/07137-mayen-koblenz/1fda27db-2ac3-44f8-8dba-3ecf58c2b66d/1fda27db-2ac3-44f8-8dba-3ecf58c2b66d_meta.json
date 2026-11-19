@@ -1,0 +1,22 @@
+{
+  "id": "1fda27db-2ac3-44f8-8dba-3ecf58c2b66d",
+  "name": "St. Seb. Schützengesellschaft 1280 Mayen e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Frankenweg",
+    "hausnummer": "10",
+    "adresszusatz": "Geschäftsadresse",
+    "plz": "56736"
+  },
+  "lage": {
+    "lon": 7.215949,
+    "lat": 50.334829
+  },
+  "entfernung_oepnv": 50,
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Schützen Mayen e.V.",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "Schützen Mayen e.V.",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.schuetzen-mayen.de"
+}

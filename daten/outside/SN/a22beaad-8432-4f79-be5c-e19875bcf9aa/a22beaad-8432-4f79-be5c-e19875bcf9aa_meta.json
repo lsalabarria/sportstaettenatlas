@@ -1,0 +1,18 @@
+{
+  "id": "a22beaad-8432-4f79-be5c-e19875bcf9aa",
+  "name": "Fechthalle Universität Leipzig",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jahnallee",
+    "hausnummer": "59",
+    "plz": "4109",
+    "ort": "Leipzig, Stadt"
+  },
+  "lage": {
+    "lon": 12.351117,
+    "lat": 51.337813
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

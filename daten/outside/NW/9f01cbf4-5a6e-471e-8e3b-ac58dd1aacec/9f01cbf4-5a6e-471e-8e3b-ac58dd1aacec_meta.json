@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf4-5a6e-471e-8e3b-ac58dd1aacec",
+  "name": "Parkbad Gelderland",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Friedrich-Spee-Straße",
+    "hausnummer": "19 – 21",
+    "plz": "47608",
+    "ort": "Geldern, Stadt"
+  },
+  "lage": {
+    "lon": 6.32916,
+    "lat": 51.51737
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1965
+}

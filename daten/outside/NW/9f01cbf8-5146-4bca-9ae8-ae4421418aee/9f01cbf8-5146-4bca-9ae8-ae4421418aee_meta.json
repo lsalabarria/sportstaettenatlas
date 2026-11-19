@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf8-5146-4bca-9ae8-ae4421418aee",
+  "name": "Gumbala Bade- und Saunaland",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Singerbrinkstraße",
+    "hausnummer": "31",
+    "plz": "51643",
+    "ort": "Gummersbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.57318,
+    "lat": 51.02658
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2002
+}

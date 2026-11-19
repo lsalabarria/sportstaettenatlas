@@ -1,0 +1,18 @@
+{
+  "id": "a22beab3-06b8-4feb-93d1-76683db82801",
+  "name": "Schießanlage Pforzheim",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Kirschenpfad",
+    "hausnummer": "1",
+    "plz": "75181",
+    "ort": "Pforzheim, Stadt"
+  },
+  "lage": {
+    "lon": 8.750576,
+    "lat": 48.876562
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

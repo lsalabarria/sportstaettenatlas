@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc3c-b468-48c9-b359-fe3304de9981",
+  "name": "Hallenbad Süd Mülheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "An den Sportstätten",
+    "hausnummer": "2",
+    "plz": "45468",
+    "ort": "Mülheim an der Ruhr, Stadt"
+  },
+  "lage": {
+    "lon": 6.89234,
+    "lat": 51.422964
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1965
+}

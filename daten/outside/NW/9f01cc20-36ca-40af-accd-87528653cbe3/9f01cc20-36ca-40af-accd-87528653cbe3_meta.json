@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc20-36ca-40af-accd-87528653cbe3",
+  "name": "Freibad Kirchheide",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Freibad",
+    "plz": "32657",
+    "ort": "Lemgo, Stadt"
+  },
+  "lage": {
+    "lon": 8.86385,
+    "lat": 52.08412
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

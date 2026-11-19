@@ -1,0 +1,9 @@
+{
+  "id": "9d0a1dab-e801-4b98-a50f-33a67f147e59",
+  "name": "Schillerstraße",
+  "adresse": {
+    "strasse": "Schillerstraße",
+    "plz": "56567",
+    "ort": "Neuwied, Stadt"
+  }
+}

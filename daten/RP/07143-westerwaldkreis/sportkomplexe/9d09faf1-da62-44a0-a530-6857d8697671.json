@@ -1,0 +1,10 @@
+{
+  "id": "9d09faf1-da62-44a0-a530-6857d8697671",
+  "name": "Löwenzahnschule",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "6",
+    "plz": "56479",
+    "ort": "Irmtraut"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc46-9a10-4866-8c3e-a1395f426d11",
+  "name": "Löhnbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Im Wiesengrund",
+    "hausnummer": "35",
+    "plz": "58730",
+    "ort": "Fröndenberg/Ruhr, Stadt"
+  },
+  "lage": {
+    "lon": 7.77543,
+    "lat": 51.47801
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

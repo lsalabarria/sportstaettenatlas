@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1d53-97ea-44d8-a1d6-9df1363790ec",
+  "name": "Wendelinus-Grundschule",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "9",
+    "plz": "56290",
+    "ort": "Lieg"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfe-9cb1-4f74-8507-5d3baeea5b62",
+  "name": "H2O Herford",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wiesestraße",
+    "hausnummer": "90",
+    "plz": "32052",
+    "ort": "Herford, Stadt"
+  },
+  "lage": {
+    "lon": 8.68601,
+    "lat": 52.10657
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

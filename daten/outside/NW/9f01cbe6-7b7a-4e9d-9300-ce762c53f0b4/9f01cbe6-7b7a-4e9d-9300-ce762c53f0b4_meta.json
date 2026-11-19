@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe6-7b7a-4e9d-9300-ce762c53f0b4",
+  "name": "Hallenbad Neudorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Memelstraße",
+    "hausnummer": "70 - 72",
+    "plz": "47057",
+    "ort": "Duisburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.78774,
+    "lat": 51.42837
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

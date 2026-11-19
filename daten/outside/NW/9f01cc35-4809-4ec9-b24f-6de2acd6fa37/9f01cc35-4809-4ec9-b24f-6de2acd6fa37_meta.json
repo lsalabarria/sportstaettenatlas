@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc35-4809-4ec9-b24f-6de2acd6fa37",
+  "name": "Kursanatorium Hochsauerland",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bastenstraße",
+    "hausnummer": "50",
+    "plz": "59929",
+    "ort": "Brilon, Stadt"
+  },
+  "lage": {
+    "lon": 8.598426,
+    "lat": 51.372492
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

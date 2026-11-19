@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc09-4c0d-4ec6-98a7-03e66016b750",
+  "name": "Hallenbad Kevelaer",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hüls",
+    "hausnummer": "13",
+    "plz": "47623",
+    "ort": "Kevelaer, Stadt"
+  },
+  "lage": {
+    "lon": 6.23462,
+    "lat": 51.57847
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

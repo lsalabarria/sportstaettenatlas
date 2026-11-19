@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1da2-a8e0-410b-b33f-93c865f86628",
+  "name": "Sportplatz Stadtkyll",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "16",
+    "plz": "54589",
+    "ort": "Stadtkyll"
+  }
+}

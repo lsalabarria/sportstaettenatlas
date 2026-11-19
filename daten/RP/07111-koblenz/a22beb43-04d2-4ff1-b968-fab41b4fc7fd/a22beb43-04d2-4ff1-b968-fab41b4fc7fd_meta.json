@@ -1,0 +1,17 @@
+{
+  "id": "a22beb43-04d2-4ff1-b968-fab41b4fc7fd",
+  "name": "Tennisanalge BASF",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Weiherstraße",
+    "hausnummer": "39",
+    "plz": "67063"
+  },
+  "lage": {
+    "lon": 7.567406,
+    "lat": 50.333865
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

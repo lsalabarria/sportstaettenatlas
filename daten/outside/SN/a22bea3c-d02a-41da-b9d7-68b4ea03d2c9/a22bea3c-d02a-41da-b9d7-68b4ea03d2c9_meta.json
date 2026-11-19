@@ -1,0 +1,19 @@
+{
+  "id": "a22bea3c-d02a-41da-b9d7-68b4ea03d2c9",
+  "name": "Sommerrodelbahn Oberwiesenthal",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Vierenstraße",
+    "hausnummer": "3c",
+    "plz": "9484",
+    "ort": "Oberwiesenthal, Kurort, Stadt"
+  },
+  "lage": {
+    "lon": 12.967222,
+    "lat": 50.424549
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22bea3c-a478-46e4-9384-be728adb69a9"
+}

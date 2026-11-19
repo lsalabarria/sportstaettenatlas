@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a93c-d38c-46be-a752-1766cdf0a6af",
+  "name": "Sportschule Edenkoben",
+  "adresse": {
+    "strasse": "Villastraße",
+    "hausnummer": "63",
+    "plz": "67480",
+    "ort": "Edenkoben, Stadt"
+  }
+}

@@ -12,8 +12,10 @@
     "lon": 7.804371,
     "lat": 50.811531
   },
+  "entfernung_oepnv": 400,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
+  "wlan": "ja",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Schützenverein Elkhausen-Katzwinkel e.V.",
   "betreiber": "Schützenverein Elkhausen-Katzwinkel e.V.",
@@ -21,5 +23,41 @@
   "sportarten": [
     "Gewehr",
     "Pistole"
+  ],
+  "baujahr": 2026,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 1,
+    "Sanitärräume - Publikum": 2,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 3,
+    "Geräteräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Holz/Pellets/Hackschnitzel",
+      "einbaujahr": 2011
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Strom (z.B. Durchlauferhitzer, Boiler)",
+      "einbaujahr": 2026
+    }
+  ],
+  "verbraeuche": [
+    {
+      "art": "Holz/Pellets/Hackschnitzel",
+      "menge": 5.0,
+      "einheit": "Tonnen"
+    }
+  ],
+  "sanierungen": [
+    {
+      "jahr": 2026,
+      "kosten": 18000.0,
+      "waehrung": "€",
+      "beschreibung": "Elektroinstallation"
+    }
   ]
 }

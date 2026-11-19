@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf7-d02f-44a9-bdc9-91601f757653",
+  "name": "Hallenbad Gronau",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Laubstiege",
+    "hausnummer": "31",
+    "plz": "48599",
+    "ort": "Gronau (Westf.), Stadt"
+  },
+  "lage": {
+    "lon": 7.03931,
+    "lat": 52.205
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

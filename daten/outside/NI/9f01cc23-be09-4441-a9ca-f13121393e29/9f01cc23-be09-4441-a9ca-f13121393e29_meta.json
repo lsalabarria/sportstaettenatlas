@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc23-be09-4441-a9ca-f13121393e29",
+  "name": "Freibad Stapelskotten",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Laerer Werseufer",
+    "hausnummer": "2",
+    "plz": "48157",
+    "ort": "Münster, Stadt"
+  },
+  "lage": {
+    "lon": 7.691706,
+    "lat": 51.947945
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

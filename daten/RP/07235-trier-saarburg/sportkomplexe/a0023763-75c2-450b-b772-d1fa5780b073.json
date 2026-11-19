@@ -1,0 +1,10 @@
+{
+  "id": "a0023763-75c2-450b-b772-d1fa5780b073",
+  "name": "Sportzentrum Tawern",
+  "adresse": {
+    "strasse": "Wawerner Straße",
+    "hausnummer": "101",
+    "plz": "54456",
+    "ort": "Tawern"
+  }
+}

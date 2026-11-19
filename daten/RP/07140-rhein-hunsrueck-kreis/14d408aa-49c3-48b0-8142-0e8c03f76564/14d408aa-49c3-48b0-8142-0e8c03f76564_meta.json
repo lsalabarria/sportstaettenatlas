@@ -5,6 +5,7 @@
   "adresse": {
     "strasse": "Hasenpfuhlstrasse",
     "hausnummer": "33",
+    "adresszusatz": "b",
     "plz": "67346",
     "ort": "Speyer, Stadt"
   },
@@ -12,10 +13,14 @@
     "lon": 7.310418,
     "lat": 49.955139
   },
+  "entfernung_oepnv": 450,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Dominikanerinnenkloster St. Magdalena",
+  "eigentuemer_typ": "Zweckverband",
   "betreiber": "Dominikanerinnenkloster St. Magdalena",
-  "website": "http://www.kloster-st-magdalena-speyer.de/"
+  "betreiber_typ": "Zweckverband",
+  "website": "http://www.kloster-st-magdalena-speyer.de/",
+  "baujahr": 2020
 }

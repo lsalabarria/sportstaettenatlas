@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc4b-700f-4658-8def-26428ba55671",
+  "name": "Lehrschwimmbad Schwerte-Ergste",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Derkmannsstück",
+    "hausnummer": "29",
+    "plz": "58239",
+    "ort": "Schwerte, Stadt"
+  },
+  "lage": {
+    "lon": 7.57744,
+    "lat": 51.41956
+  },
+  "schulsport": "nein",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1964
+}

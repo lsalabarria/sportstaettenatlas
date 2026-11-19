@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc17-3c88-4ab3-8306-101938ebe809",
+  "name": "Freizeitbad Neukirchen-Vluyn",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Tersteegenstraße",
+    "hausnummer": "91",
+    "plz": "47506",
+    "ort": "Neukirchen-Vluyn, Stadt"
+  },
+  "lage": {
+    "lon": 6.546727,
+    "lat": 51.446396
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

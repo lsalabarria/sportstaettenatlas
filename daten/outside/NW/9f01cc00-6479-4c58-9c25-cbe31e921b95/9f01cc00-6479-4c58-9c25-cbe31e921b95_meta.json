@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc00-6479-4c58-9c25-cbe31e921b95",
+  "name": "Hallenbad Herzebrock",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Hallenbad",
+    "hausnummer": "6",
+    "plz": "33442",
+    "ort": "Herzebrock-Clarholz"
+  },
+  "lage": {
+    "lon": 8.24428,
+    "lat": 51.88772
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc3f-1215-4d5f-8a84-186117470874",
+  "name": "Kleinschwimmhalle Lembeck",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schluerweg",
+    "hausnummer": "251",
+    "plz": "46286",
+    "ort": "Dorsten, Stadt"
+  },
+  "lage": {
+    "lon": 7.00265,
+    "lat": 51.76153
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1971
+}

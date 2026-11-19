@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1df7-49a0-4f86-a786-52dc6a83b75d",
+  "name": "Petrisberg",
+  "adresse": {
+    "strasse": "Behringstraße",
+    "hausnummer": "4",
+    "plz": "54296",
+    "ort": "Trier, Stadt"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd8-17ca-464e-811c-6857f3c9ad69",
+  "name": "Städtisches Freibad Büren",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Jühengrund",
+    "hausnummer": "1a",
+    "plz": "33142",
+    "ort": "Büren, Stadt"
+  },
+  "lage": {
+    "lon": 8.56507,
+    "lat": 51.55026
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

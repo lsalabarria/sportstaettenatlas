@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf3-af10-48b4-bfc4-5ba9090ea8ff",
+  "name": "Terrassenfreibad Frechen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hans-Schaeven-Weg",
+    "hausnummer": "1",
+    "plz": "50226",
+    "ort": "Frechen, Stadt"
+  },
+  "lage": {
+    "lon": 6.79646,
+    "lat": 50.91654
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

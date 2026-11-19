@@ -16,5 +16,7 @@
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
   "betreiber": "TC Rot-Weiß Worms",
-  "website": "https://rotweissworms.ebusy.de/Hallen-Buchung"
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://rotweissworms.ebusy.de/Hallen-Buchung",
+  "baujahr": 1988
 }

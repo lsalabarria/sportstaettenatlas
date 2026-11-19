@@ -1,0 +1,18 @@
+{
+  "id": "a22bea8f-c93f-48ad-9b4e-17bce18cff07",
+  "name": "Frauenturnhalle Fritz-Lesch-Straße",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Fritz-Lesch-Straße",
+    "hausnummer": "35",
+    "plz": "14053",
+    "ort": "Berlin, Stadt"
+  },
+  "lage": {
+    "lon": 13.476908,
+    "lat": 52.547154
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

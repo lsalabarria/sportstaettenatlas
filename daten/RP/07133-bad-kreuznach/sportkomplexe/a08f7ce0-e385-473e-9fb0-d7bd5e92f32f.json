@@ -1,0 +1,10 @@
+{
+  "id": "a08f7ce0-e385-473e-9fb0-d7bd5e92f32f",
+  "name": "Sportplatz Waldböckelheim",
+  "adresse": {
+    "strasse": "Sportheim",
+    "hausnummer": "1",
+    "plz": "55596",
+    "ort": "Waldböckelheim"
+  }
+}

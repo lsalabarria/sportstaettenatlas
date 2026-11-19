@@ -1,0 +1,18 @@
+{
+  "id": "a22bea38-fd3d-4f5c-8881-e1ef763a8046",
+  "name": "Taekwondo Bundesstützpunkt Nürnberg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bertolt-Brecht-Straße",
+    "hausnummer": "1",
+    "plz": "90471",
+    "ort": "Nürnberg"
+  },
+  "lage": {
+    "lon": 11.122649,
+    "lat": 49.416225
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

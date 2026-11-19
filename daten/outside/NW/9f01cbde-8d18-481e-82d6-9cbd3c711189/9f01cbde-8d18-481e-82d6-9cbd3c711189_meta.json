@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbde-8d18-481e-82d6-9cbd3c711189",
+  "name": "Freibad Hiddesen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hindenburgstraße",
+    "plz": "32760",
+    "ort": "Detmold, Stadt"
+  },
+  "lage": {
+    "lon": 8.8376,
+    "lat": 51.92135
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

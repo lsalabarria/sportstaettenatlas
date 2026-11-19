@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc29-322c-4049-8478-8d0564422f83",
+  "name": "Freibad Meinerzhagen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Stadion",
+    "hausnummer": "1",
+    "plz": "58540",
+    "ort": "Meinerzhagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.65768,
+    "lat": 51.10459
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

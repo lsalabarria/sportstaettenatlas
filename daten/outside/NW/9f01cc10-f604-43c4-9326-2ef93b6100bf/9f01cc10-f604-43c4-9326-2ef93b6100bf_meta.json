@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc10-f604-43c4-9326-2ef93b6100bf",
+  "name": "Freibad Rolandsbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Stolbergallee",
+    "hausnummer": "20",
+    "plz": "33102",
+    "ort": "Paderborn, Stadt"
+  },
+  "lage": {
+    "lon": 8.74724,
+    "lat": 51.72727
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

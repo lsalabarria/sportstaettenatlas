@@ -14,5 +14,8 @@
   },
   "oeffentlicher_zugang": "ja",
   "schulsport": "nein",
-  "betriebsstatus": "im Bau"
+  "wlan": "ja",
+  "betriebsstatus": "im Bau",
+  "eigentuemer_typ": "Kommunales Unternehmen",
+  "betreiber_typ": "Kommunales Unternehmen"
 }

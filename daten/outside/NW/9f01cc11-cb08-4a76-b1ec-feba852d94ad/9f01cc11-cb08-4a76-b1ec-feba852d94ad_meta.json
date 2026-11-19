@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc11-cb08-4a76-b1ec-feba852d94ad",
+  "name": "Badino",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Propsteistraße",
+    "hausnummer": "25",
+    "plz": "51491",
+    "ort": "Overath, Stadt"
+  },
+  "lage": {
+    "lon": 7.283662,
+    "lat": 50.9294
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

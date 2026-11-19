@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc2d-7829-4cac-b690-15fc4c824329",
+  "name": "Volksbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Peter-Krall-Straße",
+    "hausnummer": "63",
+    "plz": "41065",
+    "ort": "Mönchengladbach, Stadt"
+  },
+  "lage": {
+    "lon": 6.47289,
+    "lat": 51.19564
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a91a-cb16-4f5d-9780-65864a1c79a1",
+  "name": "Freizeitcenter Bornheim",
+  "adresse": {
+    "strasse": "Hornbachstraße",
+    "hausnummer": "19",
+    "plz": "76879",
+    "ort": "Bornheim"
+  }
+}

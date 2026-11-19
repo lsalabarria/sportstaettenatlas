@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe3-7d54-4cd8-8021-c9e5c981e08f",
+  "name": "Freibad Derne",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Im Sperrfeld",
+    "hausnummer": "32",
+    "plz": "44329",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.50271,
+    "lat": 51.57456
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

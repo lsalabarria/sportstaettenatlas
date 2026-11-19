@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbcb-85ee-41f1-8db8-795ba679a173",
+  "name": "Waldfreibad Gudenhagen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Waldsee",
+    "hausnummer": "1",
+    "plz": "59929",
+    "ort": "Brilon, Stadt"
+  },
+  "lage": {
+    "lon": 8.59209,
+    "lat": 51.37241
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

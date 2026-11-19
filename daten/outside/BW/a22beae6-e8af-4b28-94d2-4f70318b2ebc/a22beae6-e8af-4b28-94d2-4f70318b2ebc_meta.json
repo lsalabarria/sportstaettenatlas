@@ -1,0 +1,18 @@
+{
+  "id": "a22beae6-e8af-4b28-94d2-4f70318b2ebc",
+  "name": "Skisprungstadion Hochfirstschanze",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Schützenstraße",
+    "hausnummer": "100-122",
+    "plz": "79822",
+    "ort": "Titisee-Neustadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.217683,
+    "lat": 47.904288
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

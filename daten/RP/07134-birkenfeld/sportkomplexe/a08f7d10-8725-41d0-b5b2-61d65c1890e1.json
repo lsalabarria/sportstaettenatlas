@@ -1,0 +1,10 @@
+{
+  "id": "a08f7d10-8725-41d0-b5b2-61d65c1890e1",
+  "name": "Jahnhaus",
+  "adresse": {
+    "strasse": "Saarring",
+    "hausnummer": "9A",
+    "plz": "55743",
+    "ort": "Idar-Oberstein, Stadt"
+  }
+}

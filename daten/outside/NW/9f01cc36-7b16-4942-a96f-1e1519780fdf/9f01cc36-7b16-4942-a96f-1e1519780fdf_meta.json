@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc36-7b16-4942-a96f-1e1519780fdf",
+  "name": "aqua-everfit GmbH & Co. KG",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Lütmarser Str.",
+    "hausnummer": "60",
+    "plz": "37671",
+    "ort": "Höxter, Stadt"
+  },
+  "lage": {
+    "lon": 9.36474,
+    "lat": 51.773821
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

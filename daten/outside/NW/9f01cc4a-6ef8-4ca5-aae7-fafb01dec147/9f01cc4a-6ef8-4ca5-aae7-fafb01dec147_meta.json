@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4a-6ef8-4ca5-aae7-fafb01dec147",
+  "name": "SSF Aegir Uerdingen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Duisburger Straße",
+    "hausnummer": "383",
+    "plz": "47829",
+    "ort": "Krefeld, Stadt"
+  },
+  "lage": {
+    "lon": 6.649137,
+    "lat": 51.37962
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

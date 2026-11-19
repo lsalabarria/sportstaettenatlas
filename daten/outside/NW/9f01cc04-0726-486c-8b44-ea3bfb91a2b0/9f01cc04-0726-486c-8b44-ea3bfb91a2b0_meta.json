@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc04-0726-486c-8b44-ea3bfb91a2b0",
+  "name": "Freizeitbad Hückelhoven",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Martin-Luther-Straße",
+    "hausnummer": "22",
+    "plz": "41836",
+    "ort": "Hückelhoven, Stadt"
+  },
+  "lage": {
+    "lon": 6.22472,
+    "lat": 51.05627
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3a-ec35-434e-a882-8a0cfb607bc3",
+  "name": "Theraquamed",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Ginsterweg",
+    "hausnummer": "23",
+    "plz": "42781",
+    "ort": "Haan, Stadt"
+  },
+  "lage": {
+    "lon": 6.98169,
+    "lat": 51.192516
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

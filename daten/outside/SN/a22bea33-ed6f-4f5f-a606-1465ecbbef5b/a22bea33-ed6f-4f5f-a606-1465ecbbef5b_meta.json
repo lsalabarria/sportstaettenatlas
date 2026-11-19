@@ -1,0 +1,18 @@
+{
+  "id": "a22bea33-ed6f-4f5f-a606-1465ecbbef5b",
+  "name": "Skiinternat Klingenthal",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Amtsberg",
+    "hausnummer": "27",
+    "plz": "8248",
+    "ort": "Klingenthal, Stadt"
+  },
+  "lage": {
+    "lon": 12.463995,
+    "lat": 50.360543
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

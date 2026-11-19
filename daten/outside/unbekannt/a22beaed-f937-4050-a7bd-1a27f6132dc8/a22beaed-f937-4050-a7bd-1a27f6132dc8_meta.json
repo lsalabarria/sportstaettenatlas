@@ -1,0 +1,17 @@
+{
+  "id": "a22beaed-f937-4050-a7bd-1a27f6132dc8",
+  "name": "Sporthalle (Gewichtheben, Boxen) Stendaler Str.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Stendaler Str.",
+    "hausnummer": "26",
+    "plz": "15234"
+  },
+  "lage": {
+    "lon": 14.528288,
+    "lat": 52.355482
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

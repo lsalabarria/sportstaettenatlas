@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a907-aea6-4c1c-8b53-fec7e662aca4",
+  "name": "Grundschule Petersackerhof",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "19",
+    "plz": "55413",
+    "ort": "Oberdiebach"
+  }
+}

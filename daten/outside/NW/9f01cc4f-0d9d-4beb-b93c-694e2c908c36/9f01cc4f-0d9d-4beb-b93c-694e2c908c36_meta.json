@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc4f-0d9d-4beb-b93c-694e2c908c36",
+  "name": "Schwimmtreff Königswinter",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bahnhofsallee",
+    "hausnummer": "65",
+    "plz": "53639",
+    "ort": "Königswinter, Stadt"
+  },
+  "lage": {
+    "lon": 7.188805,
+    "lat": 50.68313
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2022
+}

@@ -1,0 +1,9 @@
+{
+  "id": "9d09faec-c2f2-406e-8f02-4c4dc581187d",
+  "name": "Sportplatz Staudt",
+  "adresse": {
+    "strasse": "Bergstraße",
+    "plz": "56424",
+    "ort": "Staudt"
+  }
+}

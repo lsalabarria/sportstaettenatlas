@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf9-f034-45a8-a9ec-3170f17e5965",
+  "name": "Erlebnisbad Hestert",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Westfalenstraße",
+    "hausnummer": "6",
+    "plz": "58135",
+    "ort": "Hagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.43298,
+    "lat": 51.34067
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

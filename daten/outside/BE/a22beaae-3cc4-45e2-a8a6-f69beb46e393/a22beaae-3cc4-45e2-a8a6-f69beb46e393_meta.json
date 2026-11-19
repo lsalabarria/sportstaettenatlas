@@ -1,0 +1,18 @@
+{
+  "id": "a22beaae-3cc4-45e2-a8a6-f69beb46e393",
+  "name": "Landesruderverband Leistungszentrum",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jungefernheideweg",
+    "hausnummer": "80",
+    "plz": "13629",
+    "ort": "Berlin, Stadt"
+  },
+  "lage": {
+    "lon": 13.272206,
+    "lat": 52.547719
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

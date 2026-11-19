@@ -1,5 +1,19 @@
 {
   "id": "400000d8-33b5-5cc7-8e24-92cb4b66919c",
   "sportstaette_id": "5932e35b-9670-49ff-9ac4-297e92380f13",
-  "typ": "Tennisplatz"
+  "typ": "Tennisplatz",
+  "bezeichnung": "Park-Tennisclub Grünstadt e.V.",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1962,
+  "sportarten": [
+    "Tennis"
+  ],
+  "wettkampf": [
+    "Tennis"
+  ],
+  "felder_je_belag": {
+    "Sand": 10
+  },
+  "bewaesserung": "ja",
+  "flutlicht": "nein"
 }

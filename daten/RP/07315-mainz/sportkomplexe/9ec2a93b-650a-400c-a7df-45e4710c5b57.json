@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a93b-650a-400c-a7df-45e4710c5b57",
+  "name": "Pestalozzigrundschule",
+  "adresse": {
+    "strasse": "Pestalozziplatz",
+    "hausnummer": "6",
+    "plz": "55120",
+    "ort": "Mainz, Stadt"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf0-4909-4ca4-a9d3-db2ca80190da",
+  "name": "Eissportzentrum Westfahlen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Strobelallee",
+    "hausnummer": "32",
+    "plz": "44139",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.458669,
+    "lat": 51.495277
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

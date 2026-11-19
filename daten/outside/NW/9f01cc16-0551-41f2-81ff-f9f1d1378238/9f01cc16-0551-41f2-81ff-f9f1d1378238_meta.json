@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc16-0551-41f2-81ff-f9f1d1378238",
+  "name": "Freibad Abenden",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Rurweg",
+    "hausnummer": "10",
+    "plz": "52385",
+    "ort": "Nideggen, Stadt"
+  },
+  "lage": {
+    "lon": 6.477223,
+    "lat": 50.673758
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbd8-fc76-4df1-826b-afbcbafed5b1",
+  "name": "Frei- und Hallenbad Stadtlohn",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Uferstraße",
+    "hausnummer": "31",
+    "plz": "48703",
+    "ort": "Stadtlohn, Stadt"
+  },
+  "lage": {
+    "lon": 6.92491,
+    "lat": 51.99663
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1974
+}

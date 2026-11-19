@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0d-1ca1-4cbd-9c76-f429f3166b0a",
+  "name": "Hallenbad Recke",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Brookweg",
+    "hausnummer": "11",
+    "plz": "49509",
+    "ort": "Recke"
+  },
+  "lage": {
+    "lon": 7.71508,
+    "lat": 52.36848
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

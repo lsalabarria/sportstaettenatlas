@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbed-05e6-4f8e-a3bf-370f9fd8f66a",
+  "name": "Naturbad Ennigerloh",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Freibad",
+    "hausnummer": "3",
+    "plz": "59320",
+    "ort": "Ennigerloh, Stadt"
+  },
+  "lage": {
+    "lon": 8.01604,
+    "lat": 51.83301
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2020
+}

@@ -12,8 +12,12 @@
     "lon": 8.137377,
     "lat": 49.197843
   },
+  "entfernung_oepnv": 80,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
-  "website": "www.la-boule.de"
+  "eigentuemer_typ": "Stadt/Gemeinde",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "www.la-boule.de",
+  "baujahr": 2020
 }

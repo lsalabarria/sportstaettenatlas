@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a929-2e37-42e1-a18e-6f42b9a046c1",
+  "name": "Sportanlage Schloss Ardeck Gau-Algesheim",
+  "adresse": {
+    "strasse": "Schlossgasse",
+    "hausnummer": "14",
+    "plz": "55435",
+    "ort": "Gau-Algesheim, Stadt"
+  }
+}

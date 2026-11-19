@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc27-769e-4d6e-a372-2e149d202c5d",
+  "name": "Guido-Heiland-Bad Marl",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Volkspark",
+    "hausnummer": "1",
+    "plz": "45768",
+    "ort": "Marl, Stadt"
+  },
+  "lage": {
+    "lon": 7.08204,
+    "lat": 51.64587
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1924
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc41-a3d9-45eb-a8c2-8e102c8ab623",
+  "name": "Camping Paul",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Viersbrücken",
+    "hausnummer": "9",
+    "plz": "51491",
+    "ort": "Overath, Stadt"
+  },
+  "lage": {
+    "lon": 7.301628,
+    "lat": 50.912209
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

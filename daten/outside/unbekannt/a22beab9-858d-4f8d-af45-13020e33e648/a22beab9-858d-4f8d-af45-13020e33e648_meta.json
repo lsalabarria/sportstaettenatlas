@@ -1,0 +1,17 @@
+{
+  "id": "a22beab9-858d-4f8d-af45-13020e33e648",
+  "name": "Jahnkampfbahn",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Linnering",
+    "hausnummer": "3",
+    "plz": "22299"
+  },
+  "lage": {
+    "lon": 10.007406,
+    "lat": 53.597771
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

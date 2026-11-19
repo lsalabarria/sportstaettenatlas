@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc45-7510-499c-be19-2e5f8a8d7f17",
+  "name": "Badegewässer Möhnesee Wamel",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "28",
+    "plz": "59519",
+    "ort": "Möhnesee"
+  },
+  "lage": {
+    "lon": 8.17633,
+    "lat": 51.48356
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

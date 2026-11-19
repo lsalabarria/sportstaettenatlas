@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc38-92b9-4b4c-8878-30770171335f",
+  "name": "Schwimmzentrum DSHS Köln",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Guts-Muths-Weg",
+    "hausnummer": "1",
+    "plz": "50933",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 6.869086,
+    "lat": 50.931612
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22bea39-c09e-4453-acbb-0243a9bd6442",
+  "name": "Wassersportverein Neu-Ahlbeck",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Birkenstrasse",
+    "hausnummer": "11",
+    "plz": "12559",
+    "ort": "Berlin, Stadt"
+  },
+  "lage": {
+    "lon": 13.602279,
+    "lat": 52.446677
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

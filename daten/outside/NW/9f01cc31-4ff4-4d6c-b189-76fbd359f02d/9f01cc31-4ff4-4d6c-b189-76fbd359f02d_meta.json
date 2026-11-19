@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc31-4ff4-4d6c-b189-76fbd359f02d",
+  "name": "Saunabad Paulikat",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bergerst.",
+    "hausnummer": "23",
+    "plz": "58452",
+    "ort": "Witten, Stadt"
+  },
+  "lage": {
+    "lon": 7.334733,
+    "lat": 51.433273
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

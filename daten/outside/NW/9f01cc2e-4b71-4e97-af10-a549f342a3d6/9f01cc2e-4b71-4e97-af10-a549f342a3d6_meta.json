@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc2e-4b71-4e97-af10-a549f342a3d6",
+  "name": "FSG Marbecker Bund e.V.",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Fleter Esch",
+    "hausnummer": "7",
+    "plz": "46325",
+    "ort": "Borken, Stadt"
+  },
+  "lage": {
+    "lon": 6.8862,
+    "lat": 51.82855
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfa-1eb1-4ead-b00b-f9bb507b21b5",
+  "name": "Lindenbad Halle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gausekampweg",
+    "hausnummer": "4",
+    "plz": "33790",
+    "ort": "Halle (Westf.), Stadt"
+  },
+  "lage": {
+    "lon": 8.35337,
+    "lat": 52.06326
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

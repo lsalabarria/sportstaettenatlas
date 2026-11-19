@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbce-c4a1-4393-a01d-3498153120cf",
+  "name": "Wiehler Wasser Welt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Mühlenstraße",
+    "hausnummer": "23",
+    "plz": "51674",
+    "ort": "Wiehl, Stadt"
+  },
+  "lage": {
+    "lon": 7.554702,
+    "lat": 50.947223
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2016
+}

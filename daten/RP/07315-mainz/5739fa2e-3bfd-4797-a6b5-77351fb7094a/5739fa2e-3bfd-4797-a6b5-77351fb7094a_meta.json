@@ -1,0 +1,17 @@
+{
+  "id": "5739fa2e-3bfd-4797-a6b5-77351fb7094a",
+  "name": "Angelsportverein Laubenheim-Hechtsheim 1936 e.V.",
+  "kategorie": "Sportgelegenheiten in sonstigen Gebäuden",
+  "adresse": {
+    "strasse": "Laubenheimer Ried"
+  },
+  "lage": {
+    "lon": 8.322401,
+    "lat": 49.952958
+  },
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://asv-laubenheim.de/",
+  "baujahr": 1936
+}

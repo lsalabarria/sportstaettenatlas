@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbed-b0b8-464c-83c8-e37a1100deef",
+  "name": "Hallenbad Liblar",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Holzdamm",
+    "hausnummer": "4",
+    "plz": "50374",
+    "ort": "Erftstadt, Stadt"
+  },
+  "lage": {
+    "lon": 6.81495,
+    "lat": 50.80343
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1978
+}

@@ -1,0 +1,17 @@
+{
+  "id": "a22beb41-25e2-4fa7-81c8-89fbf00b4ee2",
+  "name": "Spotrhalle IGS Edigheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Mühlaustraße",
+    "hausnummer": "51",
+    "plz": "67069"
+  },
+  "lage": {
+    "lon": 8.381036,
+    "lat": 49.528675
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

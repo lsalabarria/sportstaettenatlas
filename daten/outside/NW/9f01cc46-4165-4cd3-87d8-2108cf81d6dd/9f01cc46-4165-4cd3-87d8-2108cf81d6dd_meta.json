@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc46-4165-4cd3-87d8-2108cf81d6dd",
+  "name": "Hellwegschwimmbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Königsberger Str.",
+    "hausnummer": "12",
+    "plz": "59427",
+    "ort": "Unna, Stadt"
+  },
+  "lage": {
+    "lon": 7.65328,
+    "lat": 51.54243
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1966
+}

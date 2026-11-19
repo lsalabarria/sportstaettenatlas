@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a920-77a3-4ae4-95b0-5fd33e884abe",
+  "name": "Sportanlage TSV Wernersberg",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "5",
+    "plz": "76857",
+    "ort": "Wernersberg"
+  }
+}

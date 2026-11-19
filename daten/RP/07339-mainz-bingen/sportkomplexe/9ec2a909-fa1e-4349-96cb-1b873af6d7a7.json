@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a909-fa1e-4349-96cb-1b873af6d7a7",
+  "name": "Turnhalle Wolfsheim",
+  "adresse": {
+    "strasse": "Kirchgasse",
+    "hausnummer": "37",
+    "plz": "55578",
+    "ort": "Wolfsheim"
+  }
+}

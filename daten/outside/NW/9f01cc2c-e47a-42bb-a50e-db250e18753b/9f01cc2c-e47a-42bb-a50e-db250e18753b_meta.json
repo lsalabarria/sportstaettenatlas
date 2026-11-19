@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc2c-e47a-42bb-a50e-db250e18753b",
+  "name": "Schlossbad Niederrhein",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Auf dem Damm",
+    "hausnummer": "107",
+    "plz": "41189",
+    "ort": "Mönchengladbach, Stadt"
+  },
+  "lage": {
+    "lon": 6.41225,
+    "lat": 51.12192
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

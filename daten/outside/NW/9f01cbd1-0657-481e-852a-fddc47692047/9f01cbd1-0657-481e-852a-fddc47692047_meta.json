@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbd1-0657-481e-852a-fddc47692047",
+  "name": "Lehrschwimmbecken Welver",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Im Hagen",
+    "hausnummer": "19",
+    "plz": "59514",
+    "ort": "Welver"
+  },
+  "lage": {
+    "lon": 7.96129,
+    "lat": 51.61922
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1965
+}

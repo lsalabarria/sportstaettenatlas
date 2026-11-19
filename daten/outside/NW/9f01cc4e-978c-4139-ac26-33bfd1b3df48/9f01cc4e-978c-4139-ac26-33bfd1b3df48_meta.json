@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4e-978c-4139-ac26-33bfd1b3df48",
+  "name": "Lehrschwimmbecken Bad Laasphe",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kursstraße",
+    "hausnummer": "22",
+    "plz": "57334",
+    "ort": "Bad Laasphe, Stadt"
+  },
+  "lage": {
+    "lon": 8.411917,
+    "lat": 50.929254
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

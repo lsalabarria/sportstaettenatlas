@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd17-4f24-4614-a69b-feb2e3937eb8",
+  "name": "Sportplatz Römerstraße",
+  "adresse": {
+    "strasse": "Römerstraße",
+    "hausnummer": "4",
+    "plz": "67699",
+    "ort": "Heiligenmoschel"
+  }
+}

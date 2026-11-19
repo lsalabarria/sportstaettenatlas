@@ -1,0 +1,18 @@
+{
+  "id": "a22beaff-1432-4367-bde6-4521852ed7df",
+  "name": "Chemnitzer Athletenclub",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Zwickauer Straße",
+    "hausnummer": "485",
+    "plz": "9117",
+    "ort": "Chemnitz, Stadt"
+  },
+  "lage": {
+    "lon": 12.828473,
+    "lat": 50.811486
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf4-ce28-40c1-8211-b3fbb3b77918",
+  "name": "SSN Sportclub Neuenheim 02 e.V. Abt. Rugby",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Tiergartenstraße",
+    "hausnummer": "7A",
+    "plz": "69120",
+    "ort": "Heidelberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.659348,
+    "lat": 49.417045
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a912-0f1e-4999-bbbc-4f6851a5bb01",
+  "name": "Grundschule am Gartenfeld",
+  "adresse": {
+    "strasse": "Gartenfeldstraße",
+    "hausnummer": "17",
+    "plz": "55278",
+    "ort": "Dolgesheim"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf8-288d-4f74-9f95-4a2c390638ea",
+  "name": "Hallenbad Derschlag",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Epelstraße",
+    "hausnummer": "23",
+    "plz": "51645",
+    "ort": "Gummersbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.61854,
+    "lat": 51.00796
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb"
+}

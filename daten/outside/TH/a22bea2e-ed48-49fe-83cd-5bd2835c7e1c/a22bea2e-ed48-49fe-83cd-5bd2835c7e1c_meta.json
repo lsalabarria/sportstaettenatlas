@@ -1,0 +1,19 @@
+{
+  "id": "a22bea2e-ed48-49fe-83cd-5bd2835c7e1c",
+  "name": "Schanzenanlage am Wadeberg",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Crawinkler Straße",
+    "hausnummer": "17A",
+    "plz": "98559",
+    "ort": "Oberhof, Stadt"
+  },
+  "lage": {
+    "lon": 10.720845,
+    "lat": 50.709996
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22bea2d-7126-4233-bc25-8a13cf46cdf8"
+}

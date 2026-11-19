@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc1-c157-46d5-9b5f-dc6b7c5a7e97",
+  "name": "Schwimmhalle Velmede",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gartenstraße",
+    "hausnummer": "11",
+    "plz": "59909",
+    "ort": "Bestwig"
+  },
+  "lage": {
+    "lon": 8.3912,
+    "lat": 51.35647
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

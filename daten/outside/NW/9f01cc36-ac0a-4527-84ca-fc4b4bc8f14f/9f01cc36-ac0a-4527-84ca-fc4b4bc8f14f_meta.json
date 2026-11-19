@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc36-ac0a-4527-84ca-fc4b4bc8f14f",
+  "name": "Freibad Steinheim",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schützenpatzallee",
+    "plz": "32839",
+    "ort": "Steinheim, Stadt"
+  },
+  "lage": {
+    "lon": 9.08778,
+    "lat": 51.85801
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

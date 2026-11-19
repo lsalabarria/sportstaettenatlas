@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc8-0901-45e0-ab7d-79857d03e496",
+  "name": "Freibad Borgholzhausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Masch",
+    "hausnummer": "2b",
+    "plz": "33829",
+    "ort": "Borgholzhausen, Stadt"
+  },
+  "lage": {
+    "lon": 8.30491,
+    "lat": 52.10251
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

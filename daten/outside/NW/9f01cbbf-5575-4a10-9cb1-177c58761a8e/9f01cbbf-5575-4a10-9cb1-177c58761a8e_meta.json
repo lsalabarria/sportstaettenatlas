@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbbf-5575-4a10-9cb1-177c58761a8e",
+  "name": "Hallenschwimmbad BedburgerNass",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Rosendaler Weg",
+    "hausnummer": "10 a",
+    "plz": "47551",
+    "ort": "Bedburg-Hau"
+  },
+  "lage": {
+    "lon": 6.18961,
+    "lat": 51.76181
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1976
+}

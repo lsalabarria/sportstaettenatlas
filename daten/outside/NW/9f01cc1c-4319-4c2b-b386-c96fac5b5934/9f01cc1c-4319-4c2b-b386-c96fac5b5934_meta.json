@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc1c-4319-4c2b-b386-c96fac5b5934",
+  "name": "Chorweilerbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Liller Straße",
+    "plz": "50765",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 6.899599,
+    "lat": 51.022245
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1981
+}

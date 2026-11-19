@@ -1,0 +1,17 @@
+{
+  "id": "a22beab2-5ccd-4f53-99a9-3e2c5f5dc19d",
+  "name": "Kanal/Regattastrecke Halle",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Kanal",
+    "plz": "6120",
+    "ort": "Halle"
+  },
+  "lage": {
+    "lon": 11.945204,
+    "lat": 51.469169
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

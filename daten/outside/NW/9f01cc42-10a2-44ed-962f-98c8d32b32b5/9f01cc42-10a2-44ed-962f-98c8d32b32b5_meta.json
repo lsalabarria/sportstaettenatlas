@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc42-10a2-44ed-962f-98c8d32b32b5",
+  "name": "Pleiser Camp",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Pleiserhohner Str.",
+    "hausnummer": "12",
+    "plz": "53639",
+    "ort": "Königswinter, Stadt"
+  },
+  "lage": {
+    "lon": 7.286673,
+    "lat": 50.719529
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

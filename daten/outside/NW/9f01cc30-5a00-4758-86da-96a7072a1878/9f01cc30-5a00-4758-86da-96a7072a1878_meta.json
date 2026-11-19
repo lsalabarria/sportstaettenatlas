@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc30-5a00-4758-86da-96a7072a1878",
+  "name": "Lehrschwimmbad DGB Jugendbildungsstätte",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Marxstraße",
+    "hausnummer": "1",
+    "plz": "45529",
+    "ort": "Hattingen, Stadt"
+  },
+  "lage": {
+    "lon": 7.162005,
+    "lat": 51.381809
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

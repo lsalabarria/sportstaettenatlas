@@ -1,0 +1,14 @@
+{
+  "id": "f9b58bcd-85c3-4a44-805f-39f48ee7bf07",
+  "name": "Schießanlage SSG Queidersbach",
+  "kategorie": "Schießsportstätte",
+  "lage": {
+    "lon": 7.642772,
+    "lat": 49.381813
+  },
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Sportschützengilde 1955 eV Queidersbach",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "Sportschützengilde 1955 eV Queidersbach",
+  "betreiber_typ": "Sportverein im LSB RLP"
+}

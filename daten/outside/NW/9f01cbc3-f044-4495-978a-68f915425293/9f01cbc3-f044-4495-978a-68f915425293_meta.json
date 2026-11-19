@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc3-f044-4495-978a-68f915425293",
+  "name": "Freibad Billerbeck",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Osterwicker Straße",
+    "plz": "48727",
+    "ort": "Billerbeck, Stadt"
+  },
+  "lage": {
+    "lon": 7.28123,
+    "lat": 51.97968
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1960
+}

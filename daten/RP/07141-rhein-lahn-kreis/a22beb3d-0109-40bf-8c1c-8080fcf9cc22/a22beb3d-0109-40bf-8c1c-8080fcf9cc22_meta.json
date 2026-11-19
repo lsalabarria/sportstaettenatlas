@@ -1,0 +1,18 @@
+{
+  "id": "a22beb3d-0109-40bf-8c1c-8080fcf9cc22",
+  "name": "Eissportzentrum \"Am Heckenweg\"",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Am Hallenbad",
+    "hausnummer": "4",
+    "plz": "65582",
+    "ort": "Diez"
+  },
+  "lage": {
+    "lon": 8.032372,
+    "lat": 50.37569
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

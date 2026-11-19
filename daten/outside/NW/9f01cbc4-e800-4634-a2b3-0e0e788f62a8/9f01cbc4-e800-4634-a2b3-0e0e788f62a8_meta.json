@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc4-e800-4634-a2b3-0e0e788f62a8",
+  "name": "Fildekenbad Bocholt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Rheinstraße",
+    "hausnummer": "6",
+    "plz": "46395",
+    "ort": "Bocholt, Stadt"
+  },
+  "lage": {
+    "lon": 6.62169,
+    "lat": 51.82795
+  },
+  "schulsport": "nein",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1976
+}

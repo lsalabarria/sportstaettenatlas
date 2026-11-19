@@ -1,0 +1,10 @@
+{
+  "id": "9d09fad3-0409-4a21-b1ff-6e4702c4ff3b",
+  "name": "Römerwall",
+  "adresse": {
+    "strasse": "Ruth-Dany-Weg",
+    "hausnummer": "4",
+    "plz": "56598",
+    "ort": "Rheinbrohl"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf7-b73f-45b1-b46d-4ab9903c04b4",
+  "name": "Boxclub Traktor Schwerin e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Von-Flotow-Straße",
+    "hausnummer": "19",
+    "plz": "19059",
+    "ort": "Schwerin"
+  },
+  "lage": {
+    "lon": 11.392612,
+    "lat": 53.62615
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

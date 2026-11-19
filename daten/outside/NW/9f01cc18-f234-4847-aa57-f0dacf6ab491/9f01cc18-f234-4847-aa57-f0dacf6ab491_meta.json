@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc18-f234-4847-aa57-f0dacf6ab491",
+  "name": "Sundown Beach am Escher See",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Baggerfeld",
+    "hausnummer": "4",
+    "plz": "50767",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 6.86213,
+    "lat": 51.008121
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

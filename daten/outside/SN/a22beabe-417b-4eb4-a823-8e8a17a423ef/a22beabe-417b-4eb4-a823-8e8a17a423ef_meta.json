@@ -1,0 +1,18 @@
+{
+  "id": "a22beabe-417b-4eb4-a823-8e8a17a423ef",
+  "name": "Leistungssportzentrum Altenberg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Schellerhauer Weg",
+    "plz": "1773",
+    "ort": "Altenberg, Stadt"
+  },
+  "lage": {
+    "lon": 13.740321,
+    "lat": 50.770624
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22beabd-d8f2-48bf-8bbf-f93bd5bcf23a"
+}

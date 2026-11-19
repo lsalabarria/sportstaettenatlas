@@ -1,0 +1,18 @@
+{
+  "id": "a22beabb-3091-440f-b649-96ccb197fbe0",
+  "name": "Beachvolleyballfeld Olympiastützpunkt Stuttgart",
+  "kategorie": "Beachvolleyballstätte",
+  "adresse": {
+    "strasse": "Mercedesstraße",
+    "hausnummer": "83",
+    "plz": "70372",
+    "ort": "Stuttgart, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 9.23354,
+    "lat": 48.794227
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

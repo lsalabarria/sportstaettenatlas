@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc12-3d42-4c8e-bf64-eaef1ee1866c",
+  "name": "Aqua Olsberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zur Sauerlandtherme",
+    "hausnummer": "1",
+    "plz": "59939",
+    "ort": "Olsberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.483703,
+    "lat": 51.357639
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

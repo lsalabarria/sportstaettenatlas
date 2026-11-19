@@ -1,0 +1,10 @@
+{
+  "id": "9c24f4e7-a6bf-423b-a06e-75fc0fc34941",
+  "name": "St. Matthias Schule Bitburg",
+  "adresse": {
+    "strasse": "Prümer Straße",
+    "hausnummer": "18",
+    "plz": "54634",
+    "ort": "Bitburg, Stadt"
+  }
+}

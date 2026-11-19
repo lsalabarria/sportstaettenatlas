@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc31-a35a-4342-8c6d-6a147f2033d0",
+  "name": "Sportzentrum Ruhr",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Steeler Str.",
+    "hausnummer": "261",
+    "plz": "45138",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 7.04156,
+    "lat": 51.44801
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

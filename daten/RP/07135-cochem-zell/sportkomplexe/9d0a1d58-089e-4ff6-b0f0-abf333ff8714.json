@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1d58-089e-4ff6-b0f0-abf333ff8714",
+  "name": "schule blankenrath",
+  "adresse": {
+    "strasse": "Waldstraße",
+    "hausnummer": "4",
+    "plz": "56865",
+    "ort": "Blankenrath"
+  }
+}

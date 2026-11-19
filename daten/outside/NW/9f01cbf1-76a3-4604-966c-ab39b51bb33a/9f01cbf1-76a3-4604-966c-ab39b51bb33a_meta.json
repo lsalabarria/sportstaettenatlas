@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf1-76a3-4604-966c-ab39b51bb33a",
+  "name": "Freibad Dellwig (Hesse)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Scheppmannskamp",
+    "hausnummer": "6",
+    "plz": "45357",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 6.93325,
+    "lat": 51.49696
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

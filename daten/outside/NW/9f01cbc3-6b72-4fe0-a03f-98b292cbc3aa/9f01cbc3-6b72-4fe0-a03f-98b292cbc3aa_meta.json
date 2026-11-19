@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc3-6b72-4fe0-a03f-98b292cbc3aa",
+  "name": "Familienbad Heepen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schlauden",
+    "hausnummer": "11",
+    "plz": "33719",
+    "ort": "Bielefeld, Stadt"
+  },
+  "lage": {
+    "lon": 8.60002,
+    "lat": 52.03094
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1972
+}

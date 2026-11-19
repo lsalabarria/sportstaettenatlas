@@ -1,0 +1,14 @@
+{
+  "id": "a0183aa2-8545-49f8-8eb8-be7a3ccc9874",
+  "name": "Sporthalle Max-Planck-Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Sichelstr.",
+    "hausnummer": "3",
+    "plz": "54290"
+  },
+  "lage": {
+    "lon": 6.646244,
+    "lat": 49.756122
+  }
+}

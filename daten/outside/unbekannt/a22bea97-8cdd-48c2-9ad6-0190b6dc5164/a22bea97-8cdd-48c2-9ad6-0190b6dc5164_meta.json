@@ -1,0 +1,17 @@
+{
+  "id": "a22bea97-8cdd-48c2-9ad6-0190b6dc5164",
+  "name": "Judohalle TSV Großhadern",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Heiglhofstraße",
+    "hausnummer": "25",
+    "plz": "81377"
+  },
+  "lage": {
+    "lon": 11.478063,
+    "lat": 48.11118
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

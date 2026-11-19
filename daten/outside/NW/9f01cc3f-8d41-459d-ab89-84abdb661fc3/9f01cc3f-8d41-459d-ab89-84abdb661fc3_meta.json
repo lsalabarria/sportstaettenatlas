@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3f-8d41-459d-ab89-84abdb661fc3",
+  "name": "Strandbad Sorpesee",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Sorpesee",
+    "hausnummer": "47",
+    "plz": "59846",
+    "ort": "Sundern (Sauerland), Stadt"
+  },
+  "lage": {
+    "lon": 7.952804,
+    "lat": 51.34645
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

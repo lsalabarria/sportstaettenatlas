@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbef-941b-488e-a4bc-60d62f82f23e",
+  "name": "Esselbad Eslohe",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kupferstraße",
+    "hausnummer": "40",
+    "plz": "59889",
+    "ort": "Eslohe (Sauerland)"
+  },
+  "lage": {
+    "lon": 8.17169,
+    "lat": 51.25782
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1971
+}

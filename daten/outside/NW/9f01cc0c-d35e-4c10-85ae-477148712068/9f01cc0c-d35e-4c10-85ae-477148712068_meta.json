@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0c-d35e-4c10-85ae-477148712068",
+  "name": "monte mare Reichshof-Eckenhagen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hahnbucher Straße",
+    "hausnummer": "21",
+    "plz": "51580",
+    "ort": "Reichshof"
+  },
+  "lage": {
+    "lon": 7.69208,
+    "lat": 50.99307
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

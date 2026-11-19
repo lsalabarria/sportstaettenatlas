@@ -1,0 +1,18 @@
+{
+  "id": "a22bea9a-f25b-4666-ae68-50af024dd61e",
+  "name": "CHTC 1890 e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hüttenallee",
+    "hausnummer": "106",
+    "plz": "47800",
+    "ort": "Krefeld, Stadt"
+  },
+  "lage": {
+    "lon": 6.586805,
+    "lat": 51.351345
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

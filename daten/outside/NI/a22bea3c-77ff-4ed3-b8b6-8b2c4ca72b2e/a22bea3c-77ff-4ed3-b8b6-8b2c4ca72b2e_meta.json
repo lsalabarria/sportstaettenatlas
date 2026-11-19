@@ -1,0 +1,18 @@
+{
+  "id": "a22bea3c-77ff-4ed3-b8b6-8b2c4ca72b2e",
+  "name": "Skilanglaufzentrum Hochsauerland",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Dorfstraße",
+    "hausnummer": "24",
+    "plz": "57392",
+    "ort": "Schmallenberg"
+  },
+  "lage": {
+    "lon": 8.430086,
+    "lat": 51.156437
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

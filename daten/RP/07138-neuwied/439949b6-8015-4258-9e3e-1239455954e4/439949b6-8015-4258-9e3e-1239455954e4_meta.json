@@ -1,0 +1,23 @@
+{
+  "id": "439949b6-8015-4258-9e3e-1239455954e4",
+  "name": "Neuwieder Ruder-Gesellschaft 1883 e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Rheinstr.",
+    "hausnummer": "52",
+    "plz": "56564"
+  },
+  "lage": {
+    "lon": 7.458359,
+    "lat": 50.424595
+  },
+  "entfernung_oepnv": 400,
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "nein",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Neuwieder Ruder-Gesellschaft 1883 e.V.",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "Neuwieder Ruder-Gesellschaft 1883 e.V.",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.neuwieder-rg.de"
+}

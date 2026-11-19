@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4d-88f5-46a3-9305-2bdc0111f5cb",
+  "name": "Strandbad Otto-Maigler-See",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zieskovener Str.",
+    "hausnummer": "85",
+    "plz": "50354",
+    "ort": "Hürth, Stadt"
+  },
+  "lage": {
+    "lon": 6.838665,
+    "lat": 50.877926
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

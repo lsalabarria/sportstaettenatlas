@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbd-9fe8-4801-a701-55e9ff82d273",
+  "name": "Hallenbad Lohfeld",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wasserfuhr",
+    "hausnummer": "25e",
+    "plz": "32108",
+    "ort": "Bad Salzuflen, Stadt"
+  },
+  "lage": {
+    "lon": 8.76356,
+    "lat": 52.07718
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

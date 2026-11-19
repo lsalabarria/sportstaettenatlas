@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbfc-bd08-4c98-98c0-83d961aabab5",
+  "name": "Hallenbad Holthausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Halweg",
+    "plz": "45527",
+    "ort": "Hattingen, Stadt"
+  },
+  "lage": {
+    "lon": 7.20366,
+    "lat": 51.3969
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbfd-fc12-4604-9d4e-7384ffe596de",
+  "name": "Freibad Kirchhoven",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schwimmbadstraße",
+    "hausnummer": "59/61",
+    "plz": "52525",
+    "ort": "Heinsberg (Rhld.), Stadt"
+  },
+  "lage": {
+    "lon": 6.07801,
+    "lat": 51.07721
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1928
+}

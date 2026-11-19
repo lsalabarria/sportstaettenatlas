@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe8-2a3a-4f5d-91b4-4be1d3e593d8",
+  "name": "Badesee Düren-Echtz",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Campingstraße",
+    "hausnummer": "50",
+    "plz": "52353",
+    "ort": "Düren, Stadt"
+  },
+  "lage": {
+    "lon": 6.42403,
+    "lat": 50.81621
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

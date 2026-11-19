@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc2e-a02f-4293-9583-25554e45636b",
+  "name": "Lehrschwimmbecken Rosendahl",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Droste-Hülshoff-Weg",
+    "hausnummer": "18",
+    "plz": "48720",
+    "ort": "Rosendahl"
+  },
+  "lage": {
+    "lon": 7.213336,
+    "lat": 52.015677
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1966
+}

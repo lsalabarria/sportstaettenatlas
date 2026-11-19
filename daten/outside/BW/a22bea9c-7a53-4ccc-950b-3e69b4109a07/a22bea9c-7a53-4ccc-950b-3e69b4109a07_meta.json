@@ -1,0 +1,18 @@
+{
+  "id": "a22bea9c-7a53-4ccc-950b-3e69b4109a07",
+  "name": "Institut für Sport und Sportwissenschaft",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Neuenheimer Feld",
+    "hausnummer": "710",
+    "plz": "68120",
+    "ort": "Heidelberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.660071,
+    "lat": 49.422561
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

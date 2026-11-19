@@ -13,5 +13,21 @@
     "lat": 49.955317
   },
   "oeffentlicher_zugang": "ja",
-  "schulsport": "ja"
+  "schulsport": "ja",
+  "wlan": "nein",
+  "sportkomplex": "9ec2a935-e7f9-450d-9b42-7aee50867d5c",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "letzte_sanierung": 2020,
+  "fassadenmaterial": "Sonstiges",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 3,
+    "Umkleide- und Sanitärräume - Personal": 1,
+    "Sanitärräume - Publikum": 2,
+    "Erste-Hilfe-Räume": 1,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 2,
+    "Technikräume": 1
+  }
 }

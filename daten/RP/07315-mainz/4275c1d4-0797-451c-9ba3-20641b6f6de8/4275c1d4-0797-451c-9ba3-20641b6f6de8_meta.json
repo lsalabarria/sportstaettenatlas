@@ -11,6 +11,7 @@
     "lon": 8.256242,
     "lat": 49.939918
   },
+  "entfernung_oepnv": 500,
   "oeffentlicher_zugang": "ja",
   "schulsport": "ja",
   "betriebsstatus": "in Betrieb",
@@ -23,5 +24,13 @@
     "Eishockey",
     "Eiskunstlauf",
     "Eislauf"
-  ]
+  ],
+  "baujahr": 2024,
+  "fassadenmaterial": "Sonstiges",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Umkleide- und Sanitärräume - Personal": 2,
+    "Sanitärräume - Publikum": 1,
+    "Erste-Hilfe-Räume": 1
+  }
 }

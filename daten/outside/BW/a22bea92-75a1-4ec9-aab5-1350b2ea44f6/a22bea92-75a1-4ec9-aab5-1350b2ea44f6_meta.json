@@ -1,0 +1,18 @@
+{
+  "id": "a22bea92-75a1-4ec9-aab5-1350b2ea44f6",
+  "name": "Sporthalle Karls-Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Furtbachstraße",
+    "hausnummer": "18",
+    "plz": "70178",
+    "ort": "Stuttgart, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 9.171019,
+    "lat": 48.768833
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

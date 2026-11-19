@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd4-a364-497d-ac20-15b8e190dd7a",
+  "name": "Parkbad Velbert",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Parkstraße",
+    "hausnummer": "21",
+    "plz": "42549",
+    "ort": "Velbert, Stadt"
+  },
+  "lage": {
+    "lon": 7.03218,
+    "lat": 51.34081
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc24-bc93-4637-8a40-543caa824536",
+  "name": "Linnicher RUBA Städtisches Hallenbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bendenweg",
+    "hausnummer": "18",
+    "plz": "52441",
+    "ort": "Linnich, Stadt"
+  },
+  "lage": {
+    "lon": 6.27122,
+    "lat": 50.98266
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1969
+}

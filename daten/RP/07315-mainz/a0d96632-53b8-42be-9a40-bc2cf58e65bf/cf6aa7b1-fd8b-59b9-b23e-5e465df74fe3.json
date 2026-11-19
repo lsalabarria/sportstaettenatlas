@@ -1,5 +1,8 @@
 {
   "id": "cf6aa7b1-fd8b-59b9-b23e-5e465df74fe3",
   "sportstaette_id": "a0d96632-53b8-42be-9a40-bc2cf58e65bf",
-  "typ": "Spielplatz"
+  "typ": "Spielplatz",
+  "sportarten": [
+    "Basketball"
+  ]
 }

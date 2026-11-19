@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc34-9f2d-4319-ab57-a4d5ee7f96bf",
+  "name": "Kleinschwimmhalle Hallenberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Elbersbach",
+    "hausnummer": "12",
+    "plz": "59969",
+    "ort": "Hallenberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.61524,
+    "lat": 51.11506
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

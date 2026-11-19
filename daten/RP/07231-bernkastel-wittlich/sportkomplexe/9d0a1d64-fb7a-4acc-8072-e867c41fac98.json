@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1d64-fb7a-4acc-8072-e867c41fac98",
+  "name": "Grundschule Morbach",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "21",
+    "plz": "54497",
+    "ort": "Morbach"
+  }
+}

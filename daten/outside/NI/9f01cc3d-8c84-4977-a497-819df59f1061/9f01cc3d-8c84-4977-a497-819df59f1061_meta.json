@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc3d-8c84-4977-a497-819df59f1061",
+  "name": "Hallenbad Mitte",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Badestraße",
+    "hausnummer": "8",
+    "plz": "48149",
+    "ort": "Münster, Stadt"
+  },
+  "lage": {
+    "lon": 7.61629,
+    "lat": 51.959788
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1889
+}

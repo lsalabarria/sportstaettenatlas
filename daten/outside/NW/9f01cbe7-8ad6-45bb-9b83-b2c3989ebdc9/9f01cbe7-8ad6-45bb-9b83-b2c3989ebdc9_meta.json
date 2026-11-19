@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe7-8ad6-45bb-9b83-b2c3989ebdc9",
+  "name": "Freibad Kruppsee",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bachstraße",
+    "hausnummer": "2",
+    "plz": "47229",
+    "ort": "Duisburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.70364,
+    "lat": 51.39053
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

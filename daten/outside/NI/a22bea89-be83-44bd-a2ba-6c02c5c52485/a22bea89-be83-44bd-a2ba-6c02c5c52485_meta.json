@@ -1,0 +1,18 @@
+{
+  "id": "a22bea89-be83-44bd-a2ba-6c02c5c52485",
+  "name": "Akademie des Sports Niedersachsen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ferdinand-Wilhelm-Fricke-Weg",
+    "hausnummer": "10",
+    "plz": "30169",
+    "ort": "Hannover, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 9.730113,
+    "lat": 52.35783
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

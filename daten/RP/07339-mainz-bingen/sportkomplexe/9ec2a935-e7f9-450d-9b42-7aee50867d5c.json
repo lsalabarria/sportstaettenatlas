@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a935-e7f9-450d-9b42-7aee50867d5c",
+  "name": "Sportzentrum Rilkeallee",
+  "adresse": {
+    "strasse": "Rilkeallee",
+    "hausnummer": "58",
+    "plz": "55127",
+    "ort": "Mainz, Stadt"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbed-5666-40f6-95c5-829f91ea58f6",
+  "name": "Lehrschwimmbecken Ense",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Westenbruch",
+    "hausnummer": "10",
+    "plz": "59469",
+    "ort": "Ense"
+  },
+  "lage": {
+    "lon": 7.99313,
+    "lat": 51.49421
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1976
+}

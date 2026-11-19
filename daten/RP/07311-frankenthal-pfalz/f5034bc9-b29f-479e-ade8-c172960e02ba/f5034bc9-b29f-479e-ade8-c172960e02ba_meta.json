@@ -1,0 +1,15 @@
+{
+  "id": "f5034bc9-b29f-479e-ade8-c172960e02ba",
+  "name": "Sporthalle am Kanal",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Kanal",
+    "hausnummer": "4",
+    "plz": "67227"
+  },
+  "lage": {
+    "lon": 8.363822,
+    "lat": 49.535275
+  },
+  "betriebsstatus": "in Betrieb"
+}

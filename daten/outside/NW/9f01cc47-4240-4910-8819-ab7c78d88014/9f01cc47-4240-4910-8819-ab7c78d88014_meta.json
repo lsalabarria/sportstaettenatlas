@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc47-4240-4910-8819-ab7c78d88014",
+  "name": "aqua maris",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Mühlenstraße",
+    "hausnummer": "40",
+    "plz": "48282",
+    "ort": "Emsdetten, Stadt"
+  },
+  "lage": {
+    "lon": 7.529292,
+    "lat": 52.172014
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2007
+}

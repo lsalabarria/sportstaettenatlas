@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc40-0604-48ca-a5ff-7eb1323882df",
+  "name": "Campingplatz Königsmoor Freibad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Markfelder Weg",
+    "plz": "45731",
+    "ort": "Waltrop, Stadt"
+  },
+  "lage": {
+    "lon": 7.38748,
+    "lat": 51.64803
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

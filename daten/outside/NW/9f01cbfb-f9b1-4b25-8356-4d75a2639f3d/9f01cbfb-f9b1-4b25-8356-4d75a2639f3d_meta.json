@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfb-f9b1-4b25-8356-4d75a2639f3d",
+  "name": "Freibad Selbachpark",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kamener Straße",
+    "plz": "59077",
+    "ort": "Hamm, Stadt"
+  },
+  "lage": {
+    "lon": 7.73056,
+    "lat": 51.63344
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1975
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22bea30-7fc9-48ea-aa22-2970804162a2",
+  "name": "Grundschule Winterberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Postteich",
+    "hausnummer": "9a",
+    "plz": "59955",
+    "ort": "Winterberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.543927,
+    "lat": 51.190834
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbdf-8620-4843-9e97-32ab3b8d01a0",
+  "name": "Hallenbad Bödefeld",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zur Rehmecke",
+    "hausnummer": "2",
+    "plz": "57392",
+    "ort": "Schmallenberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.39075,
+    "lat": 51.25038
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

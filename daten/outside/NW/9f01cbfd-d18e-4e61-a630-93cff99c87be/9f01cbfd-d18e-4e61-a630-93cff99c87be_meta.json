@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfd-d18e-4e61-a630-93cff99c87be",
+  "name": "Hallenbad Heinsberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schafhausener Straße",
+    "hausnummer": "39",
+    "plz": "52525",
+    "ort": "Heinsberg (Rhld.), Stadt"
+  },
+  "lage": {
+    "lon": 6.10447,
+    "lat": 51.05868
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

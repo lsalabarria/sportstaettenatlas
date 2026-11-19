@@ -1,0 +1,19 @@
+{
+  "id": "a22beabd-e257-4aee-9149-eef9978d35c9",
+  "name": "Rennschlitten- und Bobbahn Altenberg",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Neuer Kohlgrundweg",
+    "hausnummer": "1",
+    "plz": "1773",
+    "ort": "Altenberg, Stadt"
+  },
+  "lage": {
+    "lon": 13.729677,
+    "lat": 50.786783
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22beabd-d8f2-48bf-8bbf-f93bd5bcf23a"
+}

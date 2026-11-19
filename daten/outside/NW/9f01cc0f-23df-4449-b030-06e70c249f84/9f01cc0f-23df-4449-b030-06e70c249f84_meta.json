@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0f-23df-4449-b030-06e70c249f84",
+  "name": "Allwetterbad Lintorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "35",
+    "plz": "40885",
+    "ort": "Ratingen, Stadt"
+  },
+  "lage": {
+    "lon": 6.83772,
+    "lat": 51.33166
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

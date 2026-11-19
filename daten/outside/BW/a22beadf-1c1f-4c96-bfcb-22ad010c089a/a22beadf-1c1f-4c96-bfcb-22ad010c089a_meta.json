@@ -1,0 +1,18 @@
+{
+  "id": "a22beadf-1c1f-4c96-bfcb-22ad010c089a",
+  "name": "Skipiste Bolgengrat",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Riedbergpass",
+    "hausnummer": "1",
+    "plz": "87538",
+    "ort": "Obermaiselstein"
+  },
+  "lage": {
+    "lon": 10.176784,
+    "lat": 47.442486
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

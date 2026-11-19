@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbdd-4581-4196-8d15-6f7f0363a23d",
+  "name": "Gesundheits- und Erlebnispark Oktopus",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zeithstrasse",
+    "hausnummer": "110",
+    "plz": "53721",
+    "ort": "Siegburg, Stadt"
+  },
+  "lage": {
+    "lon": 7.2188,
+    "lat": 50.80248
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

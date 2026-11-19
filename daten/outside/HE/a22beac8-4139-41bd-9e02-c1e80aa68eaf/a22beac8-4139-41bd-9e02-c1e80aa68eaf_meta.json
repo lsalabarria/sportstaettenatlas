@@ -1,0 +1,18 @@
+{
+  "id": "a22beac8-4139-41bd-9e02-c1e80aa68eaf",
+  "name": "Landessportbund Hessen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Otto-Fleck-Schneise",
+    "hausnummer": "4",
+    "plz": "60528",
+    "ort": "Frankfurt am Main, Stadt"
+  },
+  "lage": {
+    "lon": 8.640834,
+    "lat": 50.067619
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

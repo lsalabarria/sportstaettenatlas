@@ -1,0 +1,18 @@
+{
+  "id": "a22bea9d-8227-409e-8031-e557766c8ad8",
+  "name": "Michael-Hoffmann-Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Im Pfeifferswörth",
+    "hausnummer": "13",
+    "plz": "68167",
+    "ort": "Mannheim, Universitätsstadt"
+  },
+  "lage": {
+    "lon": 8.508677,
+    "lat": 49.487697
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

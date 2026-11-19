@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf6-a812-4a64-a9ad-0760311f71b2",
+  "name": "Hallenbad Dorenburg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Stadionstraße",
+    "hausnummer": "69 a",
+    "plz": "47929",
+    "ort": "Grefrath"
+  },
+  "lage": {
+    "lon": 6.34252,
+    "lat": 51.34219
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "2c4ebc78-02ed-4885-ab06-06b9941e969d",
+  "name": "Rasenplatz Trier-Olewig",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Zur Mühle",
+    "hausnummer": "17",
+    "plz": "54295"
+  },
+  "lage": {
+    "lon": 6.674979,
+    "lat": 49.737626
+  },
+  "entfernung_oepnv": 500,
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer_typ": "Stadt/Gemeinde",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "baujahr": 2021,
+  "letzte_sanierung": 2021
+}

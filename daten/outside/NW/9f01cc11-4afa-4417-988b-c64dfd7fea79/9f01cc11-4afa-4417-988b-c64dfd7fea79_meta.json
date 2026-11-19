@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc11-4afa-4417-988b-c64dfd7fea79",
+  "name": "Freibad Waldbad Schloss Neuhaus",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Herman-Löns-Str.",
+    "hausnummer": "129",
+    "plz": "33104",
+    "ort": "Paderborn, Stadt"
+  },
+  "lage": {
+    "lon": 8.69887,
+    "lat": 51.758163
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

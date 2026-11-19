@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf8-95e9-4397-b384-9ecee797453c",
+  "name": "Parkbad Gütersloh",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Parkbad",
+    "hausnummer": "7-9",
+    "plz": "33332",
+    "ort": "Gütersloh, Stadt"
+  },
+  "lage": {
+    "lon": 8.3994,
+    "lat": 51.89672
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1928
+}

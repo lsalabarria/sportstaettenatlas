@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4e-22c6-4846-9e79-1056884adbee",
+  "name": "Lehrschwimmbecken Realschule Belecke",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Pietrapaola-Platz",
+    "hausnummer": "4",
+    "plz": "59581",
+    "ort": "Warstein, Stadt"
+  },
+  "lage": {
+    "lon": 8.339351,
+    "lat": 51.487362
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

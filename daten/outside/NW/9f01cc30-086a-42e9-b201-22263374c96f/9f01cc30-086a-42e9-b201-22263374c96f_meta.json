@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc30-086a-42e9-b201-22263374c96f",
+  "name": "Lehrschwimmbad Haßlinghausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Rathausplatz",
+    "hausnummer": "6",
+    "plz": "45549",
+    "ort": "Sprockhövel, Stadt"
+  },
+  "lage": {
+    "lon": 7.28414,
+    "lat": 51.33504
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc05-6621-40a8-99bb-875a819571ec",
+  "name": "Holsterkampbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Holsterkampstraße",
+    "plz": "49477",
+    "ort": "Ibbenbüren, Stadt"
+  },
+  "lage": {
+    "lon": 7.71841,
+    "lat": 52.27953
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1965
+}

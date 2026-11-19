@@ -5,6 +5,7 @@
   "adresse": {
     "strasse": "Heddesheimer Straße",
     "hausnummer": "22",
+    "adresszusatz": "Sonnenberg-Campus Gebäude 2",
     "plz": "55450",
     "ort": "Langenlonsheim"
   },
@@ -12,10 +13,14 @@
     "lon": 7.896429,
     "lat": 49.894395
   },
+  "entfernung_oepnv": 200,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "TV 1994 Langenlonsheim e.V.",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
   "betreiber": "TV 1994 Langenlonsheim e.V.",
-  "website": "www.tv-lalo.de"
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "www.tv-lalo.de",
+  "baujahr": 2018
 }

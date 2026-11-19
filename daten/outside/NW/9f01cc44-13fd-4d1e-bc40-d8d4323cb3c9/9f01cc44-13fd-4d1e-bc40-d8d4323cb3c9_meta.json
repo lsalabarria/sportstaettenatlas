@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc44-13fd-4d1e-bc40-d8d4323cb3c9",
+  "name": "Schwimmschule Eisenhardt - Wuppertal",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Obere Lichtenplatzer Str.",
+    "hausnummer": "255",
+    "plz": "42287",
+    "ort": "Wuppertal, Stadt"
+  },
+  "lage": {
+    "lon": 7.19473,
+    "lat": 51.25316
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

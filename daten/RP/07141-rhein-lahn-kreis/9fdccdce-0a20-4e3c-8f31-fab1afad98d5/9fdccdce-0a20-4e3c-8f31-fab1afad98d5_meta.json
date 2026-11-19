@@ -1,0 +1,18 @@
+{
+  "id": "9fdccdce-0a20-4e3c-8f31-fab1afad98d5",
+  "name": "Loreleyhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "24",
+    "plz": "56346",
+    "ort": "Sankt Goarshausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.715812,
+    "lat": 50.15519
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbcc-07c5-4ead-b559-b8de1fff1fca",
+  "name": "Freibad Alme (Badcelona)",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Graf-von-Spee-Straße",
+    "hausnummer": "6",
+    "plz": "59929",
+    "ort": "Brilon, Stadt"
+  },
+  "lage": {
+    "lon": 8.62053,
+    "lat": 51.45817
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

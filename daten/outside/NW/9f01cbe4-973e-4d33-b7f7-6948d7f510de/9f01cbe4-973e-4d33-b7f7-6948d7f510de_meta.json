@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe4-973e-4d33-b7f7-6948d7f510de",
+  "name": "Freibad Volkspark",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schwimmweg",
+    "hausnummer": "2",
+    "plz": "44139",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.45542,
+    "lat": 51.49158
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1927
+}

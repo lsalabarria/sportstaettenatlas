@@ -1,0 +1,15 @@
+{
+  "id": "eb03e3eb-be0b-43cd-95fb-c2c005141055",
+  "name": "Isenachsporthalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Eppsteiner Str.",
+    "hausnummer": "58",
+    "plz": "67227"
+  },
+  "lage": {
+    "lon": 8.334574,
+    "lat": 49.511469
+  },
+  "betriebsstatus": "in Betrieb"
+}

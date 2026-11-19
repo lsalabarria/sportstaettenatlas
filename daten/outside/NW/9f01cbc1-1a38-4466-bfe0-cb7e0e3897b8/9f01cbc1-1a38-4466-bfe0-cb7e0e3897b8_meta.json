@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc1-1a38-4466-bfe0-cb7e0e3897b8",
+  "name": "Hallenbad Kamen-Mitte",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gutenbergstraße",
+    "hausnummer": "2",
+    "plz": "59174",
+    "ort": "Kamen, Stadt"
+  },
+  "lage": {
+    "lon": 7.6777,
+    "lat": 51.58898
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1978
+}

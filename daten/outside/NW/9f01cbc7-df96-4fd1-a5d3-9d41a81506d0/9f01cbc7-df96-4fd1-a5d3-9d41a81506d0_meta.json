@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc7-df96-4fd1-a5d3-9d41a81506d0",
+  "name": "Freibad Borgentreich",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Alter Graben",
+    "hausnummer": "38",
+    "plz": "34434",
+    "ort": "Borgentreich, Stadt"
+  },
+  "lage": {
+    "lon": 9.24602,
+    "lat": 51.56809
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

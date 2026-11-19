@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc47-6c56-48f1-8bde-8b2eec719366",
+  "name": "Rheni Vita",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Edisonstraße",
+    "hausnummer": "12",
+    "plz": "48432",
+    "ort": "Rheine, Stadt"
+  },
+  "lage": {
+    "lon": 7.493001,
+    "lat": 52.290082
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

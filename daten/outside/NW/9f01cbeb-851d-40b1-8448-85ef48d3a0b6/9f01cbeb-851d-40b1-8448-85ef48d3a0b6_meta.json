@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbeb-851d-40b1-8448-85ef48d3a0b6",
+  "name": "Freibad Sankt Augustin",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Husarenstraße",
+    "hausnummer": "51",
+    "plz": "53757",
+    "ort": "Sankt Augustin, Stadt"
+  },
+  "lage": {
+    "lon": 7.17383,
+    "lat": 50.77534
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

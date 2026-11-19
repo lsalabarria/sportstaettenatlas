@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0d-46f9-4175-b9ad-64fdd0b4c0c0",
+  "name": "Strandbad Millinger Meer",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Luisendorf",
+    "hausnummer": "16",
+    "plz": "46459",
+    "ort": "Rees, Stadt"
+  },
+  "lage": {
+    "lon": 6.39052,
+    "lat": 51.80298
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

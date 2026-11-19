@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc1d-3f33-4bae-b1b9-caaab73ba73d",
+  "name": "Hallenbad Korschenbroich",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Von-Bodelschwingh-Straße",
+    "hausnummer": "1",
+    "plz": "41352",
+    "ort": "Korschenbroich, Stadt"
+  },
+  "lage": {
+    "lon": 6.5151,
+    "lat": 51.1889
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfe-d98f-4d53-beb0-c48f4ddeda14",
+  "name": "Freibad Im Kleinen Felde",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Westring",
+    "hausnummer": "120",
+    "plz": "32051",
+    "ort": "Herford, Stadt"
+  },
+  "lage": {
+    "lon": 8.65182,
+    "lat": 52.11356
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd02-f8ce-4f4d-8dc6-30ac7442022b",
+  "name": "Werner-Reifferscheid-Platz",
+  "adresse": {
+    "strasse": "Filsener Str.",
+    "hausnummer": "100",
+    "plz": "56340",
+    "ort": "Osterspai"
+  }
+}

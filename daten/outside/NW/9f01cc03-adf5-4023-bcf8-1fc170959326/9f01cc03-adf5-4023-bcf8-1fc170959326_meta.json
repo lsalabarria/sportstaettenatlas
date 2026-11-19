@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc03-adf5-4023-bcf8-1fc170959326",
+  "name": "Freibad Höxter",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Sportzentrum",
+    "hausnummer": "7",
+    "plz": "37671",
+    "ort": "Höxter, Stadt"
+  },
+  "lage": {
+    "lon": 9.38153,
+    "lat": 51.76706
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

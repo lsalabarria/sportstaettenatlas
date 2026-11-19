@@ -1,0 +1,31 @@
+{
+  "id": "113b0a82-6907-4de2-87fb-f2e60093634d",
+  "name": "Rudi Klein Stadion",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Burgstraße",
+    "hausnummer": "31",
+    "plz": "56746"
+  },
+  "lage": {
+    "lon": 7.125769,
+    "lat": 50.41487
+  },
+  "oeffentlicher_zugang": "nein",
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer_typ": "Stadt/Gemeinde",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.sc-kempenich.info/",
+  "letzte_sanierung": 2015,
+  "fassadenmaterial": "Klinker",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 4,
+    "Sanitärräume - Publikum": 2,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 1,
+    "Technikräume": 1
+  }
+}

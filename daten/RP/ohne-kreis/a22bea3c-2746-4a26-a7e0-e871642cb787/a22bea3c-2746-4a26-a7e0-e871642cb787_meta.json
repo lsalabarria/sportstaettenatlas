@@ -1,0 +1,18 @@
+{
+  "id": "a22bea3c-2746-4a26-a7e0-e871642cb787",
+  "name": "August-Bebel-Gesamtschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "dammstraße",
+    "hausnummer": "64",
+    "plz": "35576",
+    "ort": "Wetzlar"
+  },
+  "lage": {
+    "lon": 8.513918,
+    "lat": 50.576241
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

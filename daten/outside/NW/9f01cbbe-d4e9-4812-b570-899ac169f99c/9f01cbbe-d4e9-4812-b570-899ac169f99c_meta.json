@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbe-d4e9-4812-b570-899ac169f99c",
+  "name": "Freibad Neubeckum",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Graf-Galen-Straße",
+    "hausnummer": "122",
+    "plz": "59269",
+    "ort": "Beckum, Stadt"
+  },
+  "lage": {
+    "lon": 8.04428,
+    "lat": 51.80453
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

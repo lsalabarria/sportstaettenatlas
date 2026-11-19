@@ -13,8 +13,12 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
+  "wlan": "nein",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "TuS Berndorf",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
   "betreiber": "TuS Berndorf",
-  "website": "www.tus-berndorf.de"
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "www.tus-berndorf.de",
+  "baujahr": 1999
 }

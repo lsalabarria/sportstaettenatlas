@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd15-6e49-4b2d-968e-d1a8d896cdc8",
+  "name": "Sportanlage Schafmühle",
+  "adresse": {
+    "strasse": "Schafmühle",
+    "hausnummer": "6",
+    "plz": "67734",
+    "ort": "Katzweiler"
+  }
+}

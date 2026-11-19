@@ -1,0 +1,14 @@
+{
+  "id": "c85851c9-fdfb-42b1-80ab-923da96a2cd2",
+  "name": "Lehrschwimmhalle Poseidon Worms Schwimmschule Triton",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Carl-Villinger-Straße",
+    "hausnummer": "47",
+    "plz": "67549"
+  },
+  "lage": {
+    "lon": 8.337724,
+    "lat": 49.631735
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22beac2-e0d1-46f7-a88b-d7720e018dcc",
+  "name": "Stadion Luftschiffhafen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Olympischer Weg",
+    "hausnummer": "11",
+    "plz": "14471",
+    "ort": "Potsdam, Stadt"
+  },
+  "lage": {
+    "lon": 13.016447,
+    "lat": 52.378471
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

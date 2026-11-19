@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf5-bdf8-472b-bc7a-f732a62dd633",
+  "name": "Freibad Geseke",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Huchtweg",
+    "hausnummer": "13",
+    "plz": "59590",
+    "ort": "Geseke, Stadt"
+  },
+  "lage": {
+    "lon": 8.51682,
+    "lat": 51.64542
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb"
+}

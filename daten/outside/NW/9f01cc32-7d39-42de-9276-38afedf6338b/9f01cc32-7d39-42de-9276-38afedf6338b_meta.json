@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc32-7d39-42de-9276-38afedf6338b",
+  "name": "Feriendorf Freilingen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Feriendorf Freilingen",
+    "hausnummer": "16",
+    "plz": "53945",
+    "ort": "Blankenheim"
+  },
+  "lage": {
+    "lon": 6.72584,
+    "lat": 50.42823
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1975
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc06-7a59-43b4-9de4-7dbafb6ec986",
+  "name": "Spaßbad Hexenland",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Scheepersdyck",
+    "hausnummer": "1",
+    "plz": "47661",
+    "ort": "Issum"
+  },
+  "lage": {
+    "lon": 6.43946,
+    "lat": 51.49907
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

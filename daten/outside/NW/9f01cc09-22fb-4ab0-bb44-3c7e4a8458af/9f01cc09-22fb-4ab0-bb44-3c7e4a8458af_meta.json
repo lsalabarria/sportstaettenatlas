@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc09-22fb-4ab0-bb44-3c7e4a8458af",
+  "name": "Freibad Kevelaer",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Dondertstraße",
+    "hausnummer": "25",
+    "plz": "47623",
+    "ort": "Kevelaer, Stadt"
+  },
+  "lage": {
+    "lon": 6.24696,
+    "lat": 51.58731
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

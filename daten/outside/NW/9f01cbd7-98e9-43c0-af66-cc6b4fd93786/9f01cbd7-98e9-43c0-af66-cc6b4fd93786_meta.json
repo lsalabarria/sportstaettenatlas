@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd7-98e9-43c0-af66-cc6b4fd93786",
+  "name": "Bündner Welle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kloppenburgstraße",
+    "hausnummer": "25",
+    "plz": "32257",
+    "ort": "Bünde, Stadt"
+  },
+  "lage": {
+    "lon": 8.55589,
+    "lat": 52.20256
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

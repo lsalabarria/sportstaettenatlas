@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc37-9703-4f7d-8efe-89cb83b8cc56",
+  "name": "Naturfreibad Copa Gochana",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kranenburger Str.",
+    "hausnummer": "20",
+    "plz": "47574",
+    "ort": "Goch, Stadt"
+  },
+  "lage": {
+    "lon": 6.090446,
+    "lat": 51.70253
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

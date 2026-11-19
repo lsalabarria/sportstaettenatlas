@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc3d-2127-4cb4-9942-1363173e0cad",
+  "name": "Hallenbad an der Rembergstraße",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Rembergstraße",
+    "hausnummer": "7",
+    "plz": "45470",
+    "ort": "Mülheim an der Ruhr, Stadt"
+  },
+  "lage": {
+    "lon": 6.9176,
+    "lat": 51.41593
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1983
+}

@@ -1,0 +1,10 @@
+{
+  "id": "9d09facb-3263-4945-9850-191a1c719c22",
+  "name": "Mehrzweckhalle Krunkel",
+  "adresse": {
+    "strasse": "Auf der Burg",
+    "hausnummer": "2",
+    "plz": "56593",
+    "ort": "Krunkel"
+  }
+}

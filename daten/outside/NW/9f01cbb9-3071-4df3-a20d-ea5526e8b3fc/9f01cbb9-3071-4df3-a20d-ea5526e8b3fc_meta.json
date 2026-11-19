@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbb9-3071-4df3-a20d-ea5526e8b3fc",
+  "name": "Parkbad Ahlen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Dolberger Straße",
+    "hausnummer": "66",
+    "plz": "59229",
+    "ort": "Ahlen, Stadt"
+  },
+  "lage": {
+    "lon": 7.89543,
+    "lat": 51.75566
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

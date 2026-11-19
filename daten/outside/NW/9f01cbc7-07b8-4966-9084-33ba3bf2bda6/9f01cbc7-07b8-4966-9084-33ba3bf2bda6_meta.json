@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc7-07b8-4966-9084-33ba3bf2bda6",
+  "name": "Freibad Friesdorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Margaretenstraße",
+    "hausnummer": "14",
+    "plz": "53175",
+    "ort": "Bonn, Stadt"
+  },
+  "lage": {
+    "lon": 7.12487,
+    "lat": 50.69775
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1961
+}

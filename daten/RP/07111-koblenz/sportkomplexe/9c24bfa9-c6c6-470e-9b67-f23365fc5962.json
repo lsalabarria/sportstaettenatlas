@@ -1,0 +1,10 @@
+{
+  "id": "9c24bfa9-c6c6-470e-9b67-f23365fc5962",
+  "name": "Universität Koblenz-Landau",
+  "adresse": {
+    "strasse": "Universitätsstraße",
+    "hausnummer": "1",
+    "plz": "56070",
+    "ort": "Koblenz, Stadt"
+  }
+}

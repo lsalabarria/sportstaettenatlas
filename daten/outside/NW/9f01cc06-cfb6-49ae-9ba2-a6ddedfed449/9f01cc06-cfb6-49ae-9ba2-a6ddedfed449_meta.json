@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc06-cfb6-49ae-9ba2-a6ddedfed449",
+  "name": "Hallenbad Hochneukirch",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gartenstraße",
+    "hausnummer": "13",
+    "plz": "41363",
+    "ort": "Jüchen, Stadt"
+  },
+  "lage": {
+    "lon": 6.46526,
+    "lat": 51.10044
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

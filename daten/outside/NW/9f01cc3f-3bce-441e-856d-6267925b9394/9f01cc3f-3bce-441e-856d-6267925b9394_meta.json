@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3f-3bce-441e-856d-6267925b9394",
+  "name": "Freibad Sythen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Mosskamp",
+    "hausnummer": "30",
+    "plz": "45721",
+    "ort": "Haltern am See, Stadt"
+  },
+  "lage": {
+    "lon": 7.219245,
+    "lat": 51.775995
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

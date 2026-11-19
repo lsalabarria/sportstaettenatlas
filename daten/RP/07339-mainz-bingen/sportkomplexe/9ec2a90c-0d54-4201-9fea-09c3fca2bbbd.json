@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a90c-0d54-4201-9fea-09c3fca2bbbd",
+  "name": "Domherrnhalle Essenheim",
+  "adresse": {
+    "strasse": "Im Klotzklauer",
+    "hausnummer": "1",
+    "plz": "55270",
+    "ort": "Essenheim"
+  }
+}

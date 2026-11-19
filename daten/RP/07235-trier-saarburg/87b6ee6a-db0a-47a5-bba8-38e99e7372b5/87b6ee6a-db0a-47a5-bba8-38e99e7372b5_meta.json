@@ -1,0 +1,13 @@
+{
+  "id": "87b6ee6a-db0a-47a5-bba8-38e99e7372b5",
+  "name": "Bolzplatz Höfchen",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Friedrichstraße",
+    "plz": "54411"
+  },
+  "lage": {
+    "lon": 6.906837,
+    "lat": 49.672797
+  }
+}

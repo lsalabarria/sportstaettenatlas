@@ -1,0 +1,18 @@
+{
+  "id": "a22beae7-3271-4f4e-9df3-8776987477f4",
+  "name": "Hessischer Schützenverband e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Schwanheimer Bahnstraße",
+    "hausnummer": "115",
+    "plz": "60529",
+    "ort": "Frankfurt am Main, Stadt"
+  },
+  "lage": {
+    "lon": 8.578222,
+    "lat": 50.072803
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

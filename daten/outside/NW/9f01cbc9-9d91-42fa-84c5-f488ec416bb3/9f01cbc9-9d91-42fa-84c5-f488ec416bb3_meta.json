@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc9-9d91-42fa-84c5-f488ec416bb3",
+  "name": "Gartenhallenbad Cronenberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Tal",
+    "hausnummer": "27",
+    "plz": "42349",
+    "ort": "Wuppertal, Stadt"
+  },
+  "lage": {
+    "lon": 7.1381,
+    "lat": 51.20514
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc1a-d962-46a2-9266-ca089a9b2a31",
+  "name": "Waldbad Köln-Dünnwald",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Peter-Baum-Weg",
+    "hausnummer": "20",
+    "plz": "51069",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 7.061336,
+    "lat": 50.993924
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1923
+}

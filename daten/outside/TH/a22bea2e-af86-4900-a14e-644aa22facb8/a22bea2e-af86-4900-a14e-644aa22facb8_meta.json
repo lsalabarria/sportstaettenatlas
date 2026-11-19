@@ -1,0 +1,19 @@
+{
+  "id": "a22bea2e-af86-4900-a14e-644aa22facb8",
+  "name": "LOTTO Thüringen ARENA am Rennsteig",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Am Grenzadler",
+    "hausnummer": "2",
+    "plz": "98559",
+    "ort": "Oberhof, Stadt"
+  },
+  "lage": {
+    "lon": 10.695002,
+    "lat": 50.707329
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22bea2d-7126-4233-bc25-8a13cf46cdf8"
+}

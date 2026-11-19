@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0b-c473-41f2-af14-87df55c84320",
+  "name": "Hallenbad Rheda-Wiedenbrück",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Ostring",
+    "hausnummer": "134",
+    "plz": "33378",
+    "ort": "Rheda-Wiedenbrück, Stadt"
+  },
+  "lage": {
+    "lon": 8.32349,
+    "lat": 51.83161
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

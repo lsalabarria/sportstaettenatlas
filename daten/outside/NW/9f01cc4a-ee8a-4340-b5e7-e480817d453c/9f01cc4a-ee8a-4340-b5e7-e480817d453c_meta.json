@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4a-ee8a-4340-b5e7-e480817d453c",
+  "name": "Warmbad im Wohnstift Uhlenhorst",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Broicher Waldweg",
+    "hausnummer": "95",
+    "plz": "45478",
+    "ort": "Mülheim an der Ruhr, Stadt"
+  },
+  "lage": {
+    "lon": 6.841808,
+    "lat": 51.414129
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

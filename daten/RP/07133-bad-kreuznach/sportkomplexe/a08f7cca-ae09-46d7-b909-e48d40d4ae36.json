@@ -1,0 +1,10 @@
+{
+  "id": "a08f7cca-ae09-46d7-b909-e48d40d4ae36",
+  "name": "Sportplatz Soonwaldstraße",
+  "adresse": {
+    "strasse": "Soonwaldstraße",
+    "hausnummer": "17",
+    "plz": "55444",
+    "ort": "Seibersbach"
+  }
+}

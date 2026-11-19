@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc29-81e3-4ede-8249-890ca40a11dc",
+  "name": "Freibad Valbert",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Heidehang",
+    "hausnummer": "2",
+    "plz": "58540",
+    "ort": "Meinerzhagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.75951,
+    "lat": 51.12372
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

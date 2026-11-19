@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc49-077a-4eae-b432-2151d5e182e4",
+  "name": "Polizeibad Buschland",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Buschland",
+    "hausnummer": "35",
+    "plz": "42285",
+    "ort": "Wuppertal, Stadt"
+  },
+  "lage": {
+    "lon": 7.187319,
+    "lat": 51.248887
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

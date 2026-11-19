@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc2b-964b-416a-a3ee-954e96053157",
+  "name": "Fritz-Homann-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Schulkamp",
+    "hausnummer": "1",
+    "plz": "32425",
+    "ort": "Minden, Stadt"
+  },
+  "lage": {
+    "lon": 8.87359,
+    "lat": 52.33789
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1964
+}

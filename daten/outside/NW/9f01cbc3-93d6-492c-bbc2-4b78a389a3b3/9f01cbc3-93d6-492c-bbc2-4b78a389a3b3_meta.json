@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc3-93d6-492c-bbc2-4b78a389a3b3",
+  "name": "Sportbad Sennestadt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Travestraße",
+    "hausnummer": "28",
+    "plz": "33689",
+    "ort": "Bielefeld, Stadt"
+  },
+  "lage": {
+    "lon": 8.59038,
+    "lat": 51.95363
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2009
+}

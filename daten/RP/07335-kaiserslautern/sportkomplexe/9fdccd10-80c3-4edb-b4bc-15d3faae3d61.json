@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd10-80c3-4edb-b4bc-15d3faae3d61",
+  "name": "Freibad Enkenbach-Alsenborn",
+  "adresse": {
+    "strasse": "Burgstraße",
+    "hausnummer": "17",
+    "plz": "67677",
+    "ort": "Enkenbach-Alsenborn"
+  }
+}

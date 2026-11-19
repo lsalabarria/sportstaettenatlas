@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbca-96a3-4231-b2f2-67b7512f6d98",
+  "name": "Sommer-Bad Brakel",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hahnenhof",
+    "hausnummer": "24",
+    "plz": "33034",
+    "ort": "Brakel, Stadt"
+  },
+  "lage": {
+    "lon": 9.1913,
+    "lat": 51.71749
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

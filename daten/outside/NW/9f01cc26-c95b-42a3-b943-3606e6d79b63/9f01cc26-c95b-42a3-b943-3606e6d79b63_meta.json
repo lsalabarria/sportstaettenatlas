@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc26-c95b-42a3-b943-3606e6d79b63",
+  "name": "Freibad Brambauer",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Freibad",
+    "hausnummer": "12",
+    "plz": "44536",
+    "ort": "Lünen, Stadt"
+  },
+  "lage": {
+    "lon": 7.44585,
+    "lat": 51.60564
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb"
+}

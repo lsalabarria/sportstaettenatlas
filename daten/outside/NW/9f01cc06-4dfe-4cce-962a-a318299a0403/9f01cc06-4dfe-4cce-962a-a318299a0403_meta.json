@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc06-4dfe-4cce-962a-a318299a0403",
+  "name": "Seilerseebad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Seeuferstraße",
+    "hausnummer": "26",
+    "plz": "58636",
+    "ort": "Iserlohn, Stadt"
+  },
+  "lage": {
+    "lon": 7.715225,
+    "lat": 51.384467
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

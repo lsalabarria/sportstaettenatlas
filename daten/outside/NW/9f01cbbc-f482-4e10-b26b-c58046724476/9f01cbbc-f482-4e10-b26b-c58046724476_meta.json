@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbc-f482-4e10-b26b-c58046724476",
+  "name": "Bali Therme",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Morsbachallee",
+    "hausnummer": "5",
+    "plz": "32545",
+    "ort": "Bad Oeynhausen, Stadt"
+  },
+  "lage": {
+    "lon": 8.79444,
+    "lat": 52.19764
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

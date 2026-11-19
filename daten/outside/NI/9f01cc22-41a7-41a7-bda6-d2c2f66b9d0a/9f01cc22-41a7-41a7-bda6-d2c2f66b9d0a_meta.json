@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc22-41a7-41a7-bda6-d2c2f66b9d0a",
+  "name": "Freibad Hiltrup",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Hiltruper See",
+    "hausnummer": "171",
+    "plz": "48165",
+    "ort": "Münster, Stadt"
+  },
+  "lage": {
+    "lon": 7.656579,
+    "lat": 51.889303
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

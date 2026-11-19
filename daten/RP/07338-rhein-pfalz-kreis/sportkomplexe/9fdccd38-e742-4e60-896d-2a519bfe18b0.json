@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd38-e742-4e60-896d-2a519bfe18b0",
+  "name": "Waldstadion",
+  "adresse": {
+    "strasse": "Hermann-Löns-Straße",
+    "hausnummer": "2c",
+    "plz": "67117",
+    "ort": "Limburgerhof"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc15-5529-4d50-b9aa-3271c1bfab6f",
+  "name": "Wellenfreibad Nottuln",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Rudolf-Harbig-Straße",
+    "hausnummer": "16",
+    "plz": "48301",
+    "ort": "Nottuln"
+  },
+  "lage": {
+    "lon": 7.346555,
+    "lat": 51.925213
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

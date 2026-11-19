@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd32-57aa-42d0-b3eb-3e0c0e4dbf66",
+  "name": "Grundschule Berghausen",
+  "adresse": {
+    "strasse": "Gutenbergstraße",
+    "hausnummer": "15",
+    "plz": "67354",
+    "ort": "Römerberg"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbde-e188-41c6-af0d-a2d6e78c7418",
+  "name": "Solarbad Schwalmtal",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "hausnummer": "54",
+    "plz": "41366",
+    "ort": "Schwalmtal"
+  },
+  "lage": {
+    "lon": 6.28197,
+    "lat": 51.2149
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1982
+}

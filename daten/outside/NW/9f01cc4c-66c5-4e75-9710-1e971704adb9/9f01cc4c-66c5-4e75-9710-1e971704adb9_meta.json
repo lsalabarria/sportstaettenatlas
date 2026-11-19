@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc4c-66c5-4e75-9710-1e971704adb9",
+  "name": "Rheinblick 741",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Pariser Straße",
+    "hausnummer": "41",
+    "plz": "40549",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.733382,
+    "lat": 51.23181
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2021
+}

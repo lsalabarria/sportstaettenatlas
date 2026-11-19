@@ -1,0 +1,10 @@
+{
+  "id": "a08f7d33-e023-49f5-8264-a26a310ec6ed",
+  "name": "Schwimmbad Bosenheim",
+  "adresse": {
+    "strasse": "Am Sportfeld",
+    "hausnummer": "5",
+    "plz": "55545",
+    "ort": "Bad Kreuznach, Stadt"
+  }
+}

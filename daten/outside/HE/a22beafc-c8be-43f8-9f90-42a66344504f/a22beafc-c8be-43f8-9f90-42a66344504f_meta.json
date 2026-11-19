@@ -1,0 +1,18 @@
+{
+  "id": "a22beafc-c8be-43f8-9f90-42a66344504f",
+  "name": "Grundschule Dutenhofe",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Wingertenstraße",
+    "hausnummer": "3",
+    "plz": "35582",
+    "ort": "Wetzlar, Stadt"
+  },
+  "lage": {
+    "lon": 8.601267,
+    "lat": 50.560396
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

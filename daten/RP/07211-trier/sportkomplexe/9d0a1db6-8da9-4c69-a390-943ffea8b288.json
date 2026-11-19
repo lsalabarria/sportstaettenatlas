@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1db6-8da9-4c69-a390-943ffea8b288",
+  "name": "Grundschule Quint",
+  "adresse": {
+    "strasse": "Taubenbergstraße",
+    "hausnummer": "16",
+    "plz": "54293",
+    "ort": "Trier, Stadt"
+  }
+}

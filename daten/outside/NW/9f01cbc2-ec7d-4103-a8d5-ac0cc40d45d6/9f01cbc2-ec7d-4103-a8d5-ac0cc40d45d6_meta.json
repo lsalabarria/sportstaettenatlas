@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc2-ec7d-4103-a8d5-ac0cc40d45d6",
+  "name": "Freibad Gadderbaum",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Im Holschebruch",
+    "hausnummer": "7",
+    "plz": "33617",
+    "ort": "Bielefeld, Stadt"
+  },
+  "lage": {
+    "lon": 8.5229,
+    "lat": 52.00261
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

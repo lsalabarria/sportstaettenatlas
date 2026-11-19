@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc17-f087-4aae-80d2-a57fde126f1e",
+  "name": "Freizeitbad Aqua Fun",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Hallenbad",
+    "hausnummer": "1",
+    "plz": "32278",
+    "ort": "Kirchlengern"
+  },
+  "lage": {
+    "lon": 8.62747,
+    "lat": 52.20139
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2022
+}

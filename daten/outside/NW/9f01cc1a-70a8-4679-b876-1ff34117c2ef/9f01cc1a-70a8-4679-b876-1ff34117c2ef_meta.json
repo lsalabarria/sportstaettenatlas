@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc1a-70a8-4679-b876-1ff34117c2ef",
+  "name": "Martinsbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Lintgasse",
+    "hausnummer": "10-12",
+    "plz": "50667",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 6.960915,
+    "lat": 50.938034
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

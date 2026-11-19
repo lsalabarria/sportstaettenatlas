@@ -1,0 +1,10 @@
+{
+  "id": "a08f7cc2-64b7-4397-b029-c948f23b0446",
+  "name": "Sportplatz Staudernheim",
+  "adresse": {
+    "strasse": "Zum Sportfeld",
+    "hausnummer": "18",
+    "plz": "55568",
+    "ort": "Staudernheim"
+  }
+}

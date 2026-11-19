@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe5-385d-4783-945d-95ad1e94aad3",
+  "name": "Stadtbad Drolshagen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schillerstraße",
+    "hausnummer": "2",
+    "plz": "57489",
+    "ort": "Drolshagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.76722,
+    "lat": 51.02548
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1974
+}

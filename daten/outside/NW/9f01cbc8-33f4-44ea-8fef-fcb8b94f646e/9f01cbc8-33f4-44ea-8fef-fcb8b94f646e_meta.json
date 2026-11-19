@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc8-33f4-44ea-8fef-fcb8b94f646e",
+  "name": "Aquarius Borken",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Parkstraße",
+    "hausnummer": "20",
+    "plz": "46325",
+    "ort": "Borken, Stadt"
+  },
+  "lage": {
+    "lon": 6.86232,
+    "lat": 51.83652
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc40-54b2-427f-a464-f8a4a8944e91",
+  "name": "Seebad Haltern",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hullerner Str.",
+    "hausnummer": "52",
+    "plz": "45721",
+    "ort": "Haltern am See, Stadt"
+  },
+  "lage": {
+    "lon": 7.213922,
+    "lat": 51.742957
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

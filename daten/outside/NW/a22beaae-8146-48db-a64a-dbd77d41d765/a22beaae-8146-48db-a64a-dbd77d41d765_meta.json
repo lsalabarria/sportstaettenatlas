@@ -1,0 +1,18 @@
+{
+  "id": "a22beaae-8146-48db-a64a-dbd77d41d765",
+  "name": "Fritz-Jacobi-Halle Leverkusen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kalkstraße",
+    "hausnummer": "46",
+    "plz": "51377",
+    "ort": "Leverkusen, Stadt"
+  },
+  "lage": {
+    "lon": 7.022777,
+    "lat": 51.030939
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

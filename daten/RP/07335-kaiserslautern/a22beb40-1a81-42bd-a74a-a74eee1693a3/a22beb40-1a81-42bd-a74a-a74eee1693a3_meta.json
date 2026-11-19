@@ -1,0 +1,18 @@
+{
+  "id": "a22beb40-1a81-42bd-a74a-a74eee1693a3",
+  "name": "Sporthalle Grundschule Offenbach a. d. Queich",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Hauptstr.",
+    "hausnummer": "84",
+    "plz": "76877",
+    "ort": "Offenbach"
+  },
+  "lage": {
+    "lon": 7.63049,
+    "lat": 49.372645
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

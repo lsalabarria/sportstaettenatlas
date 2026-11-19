@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbec-28b5-49df-b721-5d4b60fea0db",
+  "name": "Biberbad Rüthen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Biberbad",
+    "hausnummer": "9",
+    "plz": "59602",
+    "ort": "Rüthen, Stadt"
+  },
+  "lage": {
+    "lon": 8.45046,
+    "lat": 51.48006
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

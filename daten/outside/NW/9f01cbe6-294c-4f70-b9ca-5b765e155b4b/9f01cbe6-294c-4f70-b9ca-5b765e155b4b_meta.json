@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe6-294c-4f70-b9ca-5b765e155b4b",
+  "name": "Freibad im Sportgelände Brook",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Graffelder Esche",
+    "hausnummer": "5",
+    "plz": "48336",
+    "ort": "Sassenberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.04942,
+    "lat": 51.98573
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1958
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfa-4cf7-4112-a179-aad29141bb69",
+  "name": "Naturbad Hallenberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Nuhnestraße",
+    "hausnummer": "32",
+    "plz": "59969",
+    "ort": "Hallenberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.61578,
+    "lat": 51.12049
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "a22bea96-9e40-4c93-b4e9-2236524570db",
+  "name": "ASV München Kunstrasenplätze",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Am Poschinger Weiher",
+    "hausnummer": "4",
+    "plz": "85774",
+    "ort": "Unterföhring"
+  },
+  "lage": {
+    "lon": 11.649459,
+    "lat": 48.202159
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22bea96-6f9d-40c0-975d-95f5a0405a29"
+}

@@ -5,6 +5,7 @@
   "adresse": {
     "strasse": "Kirchstraße",
     "hausnummer": "45-47",
+    "adresszusatz": "Eingang in Richtung Breitestraße",
     "plz": "55124",
     "ort": "Mainz, Stadt"
   },
@@ -12,10 +13,16 @@
     "lon": 8.206337,
     "lat": 50.002444
   },
+  "entfernung_oepnv": 550,
   "oeffentlicher_zugang": "ja",
   "schulsport": "ja",
+  "wlan": "ja",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Turngemeinde 1861 e.V. Mainz-Gonsenheim",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
   "betreiber": "Turngemeinde 1861 e.V. Mainz-Gonsenheim",
-  "website": "www.tgm-gonsenheim.de"
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "www.tgm-gonsenheim.de",
+  "baujahr": 1861,
+  "letzte_sanierung": 2025
 }

@@ -1,5 +1,9 @@
 {
   "id": "44ef95ee-690c-5f86-903d-eb194ff0542e",
   "sportstaette_id": "a8dbe9fc-947f-4dc7-99b0-72bef1edfe99",
-  "typ": "Calisthenicsanlage"
+  "typ": "Calisthenicsanlage",
+  "baujahr": 2026,
+  "flutlicht": "nein",
+  "baukosten": 12000.0,
+  "waehrung": "€"
 }

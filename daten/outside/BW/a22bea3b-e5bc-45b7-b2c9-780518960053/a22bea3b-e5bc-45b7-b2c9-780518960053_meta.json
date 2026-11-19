@@ -1,0 +1,18 @@
+{
+  "id": "a22bea3b-e5bc-45b7-b2c9-780518960053",
+  "name": "BMX Supercross Strecke Stuttgart",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Burgholzstraße",
+    "hausnummer": "45",
+    "plz": "70376",
+    "ort": "Stuttgart, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 9.206059,
+    "lat": 48.819934
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

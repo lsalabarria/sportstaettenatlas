@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc29-5a1b-46da-a8cb-4abd54ed39bb",
+  "name": "Kleinschwimmhalle und Sauna Meinerzhagen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Genkeler Str.",
+    "hausnummer": "24A",
+    "plz": "58540",
+    "ort": "Meinerzhagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.63416,
+    "lat": 51.10014
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

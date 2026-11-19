@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbb9-c38e-4036-90d9-8f0d3d77934d",
+  "name": "Hallenbad Altenberge",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gooiker Platz",
+    "hausnummer": "2",
+    "plz": "48341",
+    "ort": "Altenberge"
+  },
+  "lage": {
+    "lon": 7.46708,
+    "lat": 52.04955
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1976
+}

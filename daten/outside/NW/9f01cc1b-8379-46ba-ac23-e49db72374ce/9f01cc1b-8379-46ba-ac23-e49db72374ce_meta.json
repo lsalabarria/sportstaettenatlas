@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc1b-8379-46ba-ac23-e49db72374ce",
+  "name": "Höhenbergbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schwarzburger Straße",
+    "hausnummer": "4",
+    "plz": "51103",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 7.020165,
+    "lat": 50.942072
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1975
+}

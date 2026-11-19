@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc0a-48c0-46d0-a80a-5179a3aeb5a1",
+  "name": "Freibad Rheine",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kopernikusstr.",
+    "hausnummer": "58",
+    "plz": "48429",
+    "ort": "Rheine, Stadt"
+  },
+  "lage": {
+    "lon": 7.45522,
+    "lat": 52.27974
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

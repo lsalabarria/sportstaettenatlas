@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc1d-ab1e-4914-85fe-fca731ba9c76",
+  "name": "Lehrbad Linn",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Danziger Platz",
+    "hausnummer": "13",
+    "plz": "47809",
+    "ort": "Krefeld, Stadt"
+  },
+  "lage": {
+    "lon": 6.64347,
+    "lat": 51.33537
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1964
+}

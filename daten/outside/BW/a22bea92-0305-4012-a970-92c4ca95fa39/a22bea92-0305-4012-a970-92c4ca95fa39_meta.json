@@ -1,0 +1,18 @@
+{
+  "id": "a22bea92-0305-4012-a970-92c4ca95fa39",
+  "name": "Kunst-Turn-Forum",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Fritz-Walter-Weg",
+    "hausnummer": "15",
+    "plz": "70372",
+    "ort": "Stuttgart, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 9.234547,
+    "lat": 48.792778
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

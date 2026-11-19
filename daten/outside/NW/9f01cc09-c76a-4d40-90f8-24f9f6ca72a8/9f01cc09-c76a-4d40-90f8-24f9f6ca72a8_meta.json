@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc09-c76a-4d40-90f8-24f9f6ca72a8",
+  "name": "Freibad Rödinghausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bruchmühlener Str.",
+    "hausnummer": "53-55",
+    "plz": "32289",
+    "ort": "Rödinghausen"
+  },
+  "lage": {
+    "lon": 8.47355,
+    "lat": 52.23361
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

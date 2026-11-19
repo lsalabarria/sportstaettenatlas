@@ -1,5 +1,7 @@
 {
   "id": "a3c499d3-f284-53da-99e1-a73d43d09c42",
   "sportstaette_id": "9f01cc70-3f5f-426f-8509-8d1a5d5485eb",
-  "typ": "Hallenbad"
+  "typ": "Hallenbad",
+  "nichtschwimmerbecken": 1,
+  "kinderbecken": 1
 }

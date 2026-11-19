@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe0-12c8-4add-9f7b-0f673ca2905e",
+  "name": "Freibad Dörentrup",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Mühlenstraße",
+    "hausnummer": "34",
+    "plz": "32694",
+    "ort": "Dörentrup"
+  },
+  "lage": {
+    "lon": 9.00651,
+    "lat": 52.03793
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

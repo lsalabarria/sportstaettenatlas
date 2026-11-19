@@ -1,0 +1,18 @@
+{
+  "id": "a22beabc-f619-43b9-967b-6db6247307a3",
+  "name": "Großspielfeld im Südpark",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Mozartallee",
+    "plz": "99096",
+    "ort": "Erfurt, Stadt"
+  },
+  "lage": {
+    "lon": 11.038617,
+    "lat": 50.962909
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22beabc-eef8-4462-854d-73d7a8a3d803"
+}

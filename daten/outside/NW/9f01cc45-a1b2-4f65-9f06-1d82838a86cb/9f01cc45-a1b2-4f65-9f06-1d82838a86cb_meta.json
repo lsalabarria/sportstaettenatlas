@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc45-a1b2-4f65-9f06-1d82838a86cb",
+  "name": "Aqua Fun Soest",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Ardeyweg",
+    "hausnummer": "35",
+    "plz": "59494",
+    "ort": "Soest, Stadt"
+  },
+  "lage": {
+    "lon": 8.079638,
+    "lat": 51.5696
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbdc-491e-4363-9445-e9eb9a90bc2f",
+  "name": "Stadtbad Datteln",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wiesenstraße",
+    "hausnummer": "1",
+    "plz": "45711",
+    "ort": "Datteln, Stadt"
+  },
+  "lage": {
+    "lon": 7.33359,
+    "lat": 51.64898
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2007
+}

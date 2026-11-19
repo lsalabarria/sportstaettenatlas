@@ -1,0 +1,9 @@
+{
+  "id": "9d09fae5-582a-4b23-9624-8aeb91ac6526",
+  "name": "Sportplatz an der Schule",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "54314",
+    "ort": "Greimerath"
+  }
+}

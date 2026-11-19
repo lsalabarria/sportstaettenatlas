@@ -1,0 +1,10 @@
+{
+  "id": "9c24f4ec-b5bf-46c9-b502-b5f57b5ed101",
+  "name": "Sportplatz Daleiden",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "5",
+    "plz": "54689",
+    "ort": "Daleiden"
+  }
+}

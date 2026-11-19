@@ -1,0 +1,18 @@
+{
+  "id": "a22bea36-01e6-4e06-a938-66475cc26fba",
+  "name": "Potsdamer Rudergesellschaft e.V.",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "An der Pirschheide",
+    "hausnummer": "28",
+    "plz": "14471",
+    "ort": "Potsdam, Stadt"
+  },
+  "lage": {
+    "lon": 13.014901,
+    "lat": 52.37291
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

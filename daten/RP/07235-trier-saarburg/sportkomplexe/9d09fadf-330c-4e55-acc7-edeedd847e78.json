@@ -1,0 +1,10 @@
+{
+  "id": "9d09fadf-330c-4e55-acc7-edeedd847e78",
+  "name": "Ferienzentrum Sonnenberg",
+  "adresse": {
+    "strasse": "Sonnenberg",
+    "hausnummer": "1",
+    "plz": "54340",
+    "ort": "Leiwen"
+  }
+}

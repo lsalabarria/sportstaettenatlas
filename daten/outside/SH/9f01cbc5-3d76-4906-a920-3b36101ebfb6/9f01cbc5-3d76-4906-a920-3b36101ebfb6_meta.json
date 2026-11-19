@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc5-3d76-4906-a920-3b36101ebfb6",
+  "name": "Hallenfreibad Linden",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Brannenweg",
+    "hausnummer": "10",
+    "plz": "44879",
+    "ort": "Bochum, Stadt"
+  },
+  "lage": {
+    "lon": 7.16189,
+    "lat": 51.42897
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1968
+}

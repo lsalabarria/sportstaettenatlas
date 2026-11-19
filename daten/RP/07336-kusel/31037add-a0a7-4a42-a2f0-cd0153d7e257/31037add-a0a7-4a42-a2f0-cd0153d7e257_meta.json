@@ -15,5 +15,9 @@
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
-  "website": "www.tv-kusel.de"
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "www.tv-kusel.de",
+  "baujahr": 1907,
+  "letzte_sanierung": 2019
 }

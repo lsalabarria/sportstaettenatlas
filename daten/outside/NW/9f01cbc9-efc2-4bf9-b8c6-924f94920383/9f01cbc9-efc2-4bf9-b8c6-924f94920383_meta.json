@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc9-efc2-4bf9-b8c6-924f94920383",
+  "name": "Stadtbad Uellendahl",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Röttgen",
+    "hausnummer": "149",
+    "plz": "42109",
+    "ort": "Wuppertal, Stadt"
+  },
+  "lage": {
+    "lon": 7.15602,
+    "lat": 51.28314
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1974
+}

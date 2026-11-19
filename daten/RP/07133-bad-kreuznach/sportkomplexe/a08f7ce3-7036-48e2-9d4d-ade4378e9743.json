@@ -1,0 +1,10 @@
+{
+  "id": "a08f7ce3-7036-48e2-9d4d-ade4378e9743",
+  "name": "Lemberghalle",
+  "adresse": {
+    "strasse": "Kolpingstraße",
+    "hausnummer": "2",
+    "plz": "67824",
+    "ort": "Feilbingert"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22beab3-73b0-4109-a97d-43fa5c920b71",
+  "name": "Landesleistungszentrum & Bundesstützpunkt Kanu",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Kleiner Werder",
+    "hausnummer": "5",
+    "plz": "39144",
+    "ort": "Magdeburg, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 11.647731,
+    "lat": 52.128642
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

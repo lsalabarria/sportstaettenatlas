@@ -1,0 +1,16 @@
+{
+  "id": "9fdcce39-2167-4439-a192-653b72712531",
+  "name": "Sportplatz Im Kartenteich",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "plz": "66484"
+  },
+  "lage": {
+    "lon": 7.467138,
+    "lat": 49.299339
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

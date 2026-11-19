@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc08-5320-4abe-a8e4-ee9af6076cba",
+  "name": "Sauna und Wasserwelt AquaSol Kempen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Berliner Allee",
+    "hausnummer": "53",
+    "plz": "47906",
+    "ort": "Kempen, Stadt"
+  },
+  "lage": {
+    "lon": 6.4083,
+    "lat": 51.36792
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

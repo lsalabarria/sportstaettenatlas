@@ -1,0 +1,10 @@
+{
+  "id": "9fdccc88-2299-41e0-8e12-637cdde92d65",
+  "name": "Sportanlage Freisbach",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "19",
+    "plz": "67361",
+    "ort": "Freisbach"
+  }
+}

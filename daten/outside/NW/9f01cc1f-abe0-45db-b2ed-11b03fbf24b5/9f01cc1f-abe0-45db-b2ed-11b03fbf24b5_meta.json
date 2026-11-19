@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc1f-abe0-45db-b2ed-11b03fbf24b5",
+  "name": "Stadtbad Langenfeld",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Langforter Straße",
+    "hausnummer": "72",
+    "plz": "40764",
+    "ort": "Langenfeld (Rhld.), Stadt"
+  },
+  "lage": {
+    "lon": 6.9394,
+    "lat": 51.11568
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

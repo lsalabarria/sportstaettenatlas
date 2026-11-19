@@ -1,0 +1,18 @@
+{
+  "id": "a22beafe-cebe-47af-9f7f-fbc24e2f0af1",
+  "name": "Hessischer Volleyballverband e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Zur Waldau",
+    "hausnummer": "21",
+    "plz": "60529",
+    "ort": "Frankfurt am Main, Stadt"
+  },
+  "lage": {
+    "lon": 8.612129,
+    "lat": 50.079153
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

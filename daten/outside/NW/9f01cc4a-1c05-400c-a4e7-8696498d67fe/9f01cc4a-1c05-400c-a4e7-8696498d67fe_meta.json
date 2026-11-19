@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4a-1c05-400c-a4e7-8696498d67fe",
+  "name": "Lehrschwimmbad Am Massenberger Kamp",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Massenberger Kamp",
+    "hausnummer": "45",
+    "plz": "40589",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.820796,
+    "lat": 51.181011
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

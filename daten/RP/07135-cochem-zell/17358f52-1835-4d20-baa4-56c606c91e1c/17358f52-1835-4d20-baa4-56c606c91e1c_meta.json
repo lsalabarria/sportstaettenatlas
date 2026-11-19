@@ -1,0 +1,21 @@
+{
+  "id": "17358f52-1835-4d20-baa4-56c606c91e1c",
+  "name": "Anlegesteg",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Sehler Anlagen",
+    "hausnummer": "16",
+    "plz": "56812"
+  },
+  "lage": {
+    "lon": 7.177257,
+    "lat": 50.138793
+  },
+  "entfernung_oepnv": 50,
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Cochemer Rudergesellschaft e.V.",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.cochemer-rudergesellschaft.de",
+  "baujahr": 2009
+}

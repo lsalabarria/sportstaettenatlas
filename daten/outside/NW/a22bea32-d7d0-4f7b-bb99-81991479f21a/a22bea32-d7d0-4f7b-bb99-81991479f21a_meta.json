@@ -1,0 +1,18 @@
+{
+  "id": "a22bea32-d7d0-4f7b-bb99-81991479f21a",
+  "name": "Halle 1 DSHS",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Sportpark Müngersdorf",
+    "hausnummer": "6",
+    "plz": "50933",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 6.869595,
+    "lat": 50.934197
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

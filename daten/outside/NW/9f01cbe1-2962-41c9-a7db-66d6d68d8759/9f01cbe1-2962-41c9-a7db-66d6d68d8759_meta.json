@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe1-2962-41c9-a7db-66d6d68d8759",
+  "name": "Hallenbad Schermbeck",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Weseler Straße",
+    "hausnummer": "11",
+    "plz": "46514",
+    "ort": "Schermbeck"
+  },
+  "lage": {
+    "lon": 6.86579,
+    "lat": 51.68953
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1978
+}

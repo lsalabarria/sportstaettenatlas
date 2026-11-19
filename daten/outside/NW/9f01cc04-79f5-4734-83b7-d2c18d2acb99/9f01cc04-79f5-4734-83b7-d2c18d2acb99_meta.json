@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc04-79f5-4734-83b7-d2c18d2acb99",
+  "name": "Hallenbad Hünxe",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "In den Elsen",
+    "hausnummer": "26",
+    "plz": "46569",
+    "ort": "Hünxe"
+  },
+  "lage": {
+    "lon": 6.7694,
+    "lat": 51.63499
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

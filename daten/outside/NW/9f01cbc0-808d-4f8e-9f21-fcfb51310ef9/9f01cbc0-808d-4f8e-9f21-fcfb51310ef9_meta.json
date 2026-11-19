@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc0-808d-4f8e-9f21-fcfb51310ef9",
+  "name": "Mediterana",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Saaler Mühle",
+    "hausnummer": "1",
+    "plz": "51429",
+    "ort": "Bergisch Gladbach, Stadt"
+  },
+  "lage": {
+    "lon": 7.13638,
+    "lat": 50.96527
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

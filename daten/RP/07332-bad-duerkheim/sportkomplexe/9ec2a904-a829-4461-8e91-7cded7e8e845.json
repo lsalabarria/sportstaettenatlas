@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a904-a829-4461-8e91-7cded7e8e845",
+  "name": "Sportplatz Meckenheim",
+  "adresse": {
+    "strasse": "Rödersheimer Str.",
+    "hausnummer": "20",
+    "plz": "67149",
+    "ort": "Meckenheim"
+  }
+}

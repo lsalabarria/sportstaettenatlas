@@ -1,0 +1,18 @@
+{
+  "id": "a22beae0-2d98-4f05-8485-ac1ec3b8824c",
+  "name": "Sportzentrum Robert-Koch-Straße",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Robert-Koch-Straße",
+    "hausnummer": "33",
+    "plz": "6120",
+    "ort": "Halle"
+  },
+  "lage": {
+    "lon": 11.964982,
+    "lat": 51.461636
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

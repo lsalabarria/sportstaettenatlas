@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbdd-f1c5-45d5-a820-8276fd083aa6",
+  "name": "Freibad Selm",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Badestraße",
+    "hausnummer": "26",
+    "plz": "59379",
+    "ort": "Selm, Stadt"
+  },
+  "lage": {
+    "lon": 7.47679,
+    "lat": 51.70377
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1930
+}

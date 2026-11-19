@@ -1,0 +1,18 @@
+{
+  "id": "a22beab8-63f5-4e56-be00-0ac406704f5e",
+  "name": "Amateur-Schwimmclub Duisburg",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Kruppstraße",
+    "hausnummer": "32a",
+    "plz": "47055",
+    "ort": "Duisburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.789349,
+    "lat": 51.41211
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

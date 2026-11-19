@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1e10-7800-469f-96ab-e1b942242d93",
+  "name": "Sportplatz Mülheim",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "2a",
+    "plz": "54486",
+    "ort": "Mülheim an der Mosel"
+  }
+}

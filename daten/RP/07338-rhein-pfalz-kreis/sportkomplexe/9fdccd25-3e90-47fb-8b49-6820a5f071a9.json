@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd25-3e90-47fb-8b49-6820a5f071a9",
+  "name": "Sportplatz Rudolf-Harbig-Straße",
+  "adresse": {
+    "strasse": "Rudolf-Harbig-Straße",
+    "hausnummer": "11",
+    "plz": "67259",
+    "ort": "Beindersheim"
+  }
+}

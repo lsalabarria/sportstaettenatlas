@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1d5d-ccd6-4c58-8b37-98cfcb147ca7",
+  "name": "Schulzentrum Büchenbeuren",
+  "adresse": {
+    "strasse": "In den Fichten",
+    "hausnummer": "2",
+    "plz": "55491",
+    "ort": "Büchenbeuren"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc09-75d9-402c-908a-1c0a9c8d2c64",
+  "name": "Freibad Hoffnungsthal",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hover Weg",
+    "hausnummer": "4",
+    "plz": "51503",
+    "ort": "Rösrath, Stadt"
+  },
+  "lage": {
+    "lon": 7.20002,
+    "lat": 50.91544
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1935
+}

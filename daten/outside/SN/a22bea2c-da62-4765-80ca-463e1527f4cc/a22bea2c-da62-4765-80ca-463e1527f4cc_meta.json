@@ -1,0 +1,18 @@
+{
+  "id": "a22bea2c-da62-4765-80ca-463e1527f4cc",
+  "name": "SC DHfK Leipzig e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Elsterwehr",
+    "hausnummer": "5",
+    "plz": "4109",
+    "ort": "Leipzig, Stadt"
+  },
+  "lage": {
+    "lon": 12.351444,
+    "lat": 51.335169
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

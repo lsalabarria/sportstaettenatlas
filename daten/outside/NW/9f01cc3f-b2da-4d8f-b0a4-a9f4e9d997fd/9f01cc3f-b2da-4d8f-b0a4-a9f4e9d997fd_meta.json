@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3f-b2da-4d8f-b0a4-a9f4e9d997fd",
+  "name": "Come back Prävention Herten",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Auf dem Hochstück",
+    "hausnummer": "1",
+    "plz": "45701",
+    "ort": "Herten, Stadt"
+  },
+  "lage": {
+    "lon": 7.106881,
+    "lat": 51.602836
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

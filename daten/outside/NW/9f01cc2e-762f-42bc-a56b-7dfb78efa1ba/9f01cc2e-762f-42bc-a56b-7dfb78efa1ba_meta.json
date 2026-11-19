@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc2e-762f-42bc-a56b-7dfb78efa1ba",
+  "name": "Sport- und Gesundheitszentrum mobile",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Haugen Kamp",
+    "hausnummer": "28",
+    "plz": "48653",
+    "ort": "Coesfeld, Stadt"
+  },
+  "lage": {
+    "lon": 7.15065,
+    "lat": 51.93945
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2002
+}

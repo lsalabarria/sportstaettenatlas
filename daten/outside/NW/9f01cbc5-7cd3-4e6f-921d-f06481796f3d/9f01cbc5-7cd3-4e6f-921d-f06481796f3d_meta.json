@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbc5-7cd3-4e6f-921d-f06481796f3d",
+  "name": "Hallenfreibad Langendreer",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Eschweg",
+    "hausnummer": "50",
+    "plz": "44892",
+    "ort": "Bochum, Stadt"
+  },
+  "lage": {
+    "lon": 7.31475,
+    "lat": 51.46523
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

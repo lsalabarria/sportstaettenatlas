@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc13-ad73-474f-8c04-ed95b1c19f94",
+  "name": "Parkbad Oelde",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Mühlenteich",
+    "hausnummer": "16",
+    "plz": "59302",
+    "ort": "Oelde, Stadt"
+  },
+  "lage": {
+    "lon": 8.144247,
+    "lat": 51.819681
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

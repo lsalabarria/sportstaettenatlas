@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc3e-9550-44c8-89d5-e79462047e40",
+  "name": "Eggebad Altenbeken",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gardeweg",
+    "hausnummer": "7",
+    "plz": "33184",
+    "ort": "Altenbeken"
+  },
+  "lage": {
+    "lon": 8.944112,
+    "lat": 51.759393
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1970
+}

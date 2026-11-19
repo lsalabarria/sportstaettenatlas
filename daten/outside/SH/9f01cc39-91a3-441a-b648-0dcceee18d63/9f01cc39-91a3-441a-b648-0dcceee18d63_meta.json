@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc39-91a3-441a-b648-0dcceee18d63",
+  "name": "Freibad Waddenhausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Altdorfer Str.",
+    "hausnummer": "60",
+    "plz": "32791",
+    "ort": "Lage, Stadt"
+  },
+  "lage": {
+    "lon": 8.772795,
+    "lat": 52.017554
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

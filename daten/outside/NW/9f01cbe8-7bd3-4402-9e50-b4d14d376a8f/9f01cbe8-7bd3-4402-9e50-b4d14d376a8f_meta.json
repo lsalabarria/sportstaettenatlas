@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe8-7bd3-4402-9e50-b4d14d376a8f",
+  "name": "Freizeitbad Düsselstrand",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kettwiger Straße",
+    "hausnummer": "50",
+    "plz": "40233",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.81083,
+    "lat": 51.2243
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1995
+}

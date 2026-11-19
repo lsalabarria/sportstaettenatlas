@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a938-fb5e-4ed6-8742-1111ae417c5b",
+  "name": "Universitätsstadion",
+  "adresse": {
+    "strasse": "Dahlheimer Weg",
+    "hausnummer": "2",
+    "plz": "55128",
+    "ort": "Mainz, Stadt"
+  }
+}

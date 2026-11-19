@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc34-2860-44e4-a29c-d2dd8b8c79e5",
+  "name": "Kleinschwimmhalle Weißenstein",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Leopoldstr.",
+    "hausnummer": "62",
+    "plz": "58135",
+    "ort": "Hagen, Stadt"
+  },
+  "lage": {
+    "lon": 7.44979,
+    "lat": 51.36144
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc25-16d3-4fc7-a865-ad2a777379ff",
+  "name": "Walibo Therme",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Quellenstraße",
+    "hausnummer": "60",
+    "plz": "59556",
+    "ort": "Lippstadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.33739,
+    "lat": 51.71443
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1974
+}

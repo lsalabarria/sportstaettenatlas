@@ -1,0 +1,10 @@
+{
+  "id": "a08f7ca5-8862-49d0-928b-f3a01ee8cf6d",
+  "name": "Grundschule Wildenburg",
+  "adresse": {
+    "strasse": "Wildenburgerstraße",
+    "hausnummer": "11",
+    "plz": "55758",
+    "ort": "Kempfeld"
+  }
+}

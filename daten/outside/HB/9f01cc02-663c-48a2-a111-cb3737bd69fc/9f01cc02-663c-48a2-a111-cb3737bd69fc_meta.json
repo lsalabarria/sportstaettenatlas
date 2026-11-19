@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc02-663c-48a2-a111-cb3737bd69fc",
+  "name": "Schwimmhalle Horn",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Franz-Hausmann-Straße",
+    "hausnummer": "18",
+    "plz": "32805",
+    "ort": "Horn-Bad Meinberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.94392,
+    "lat": 51.86826
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

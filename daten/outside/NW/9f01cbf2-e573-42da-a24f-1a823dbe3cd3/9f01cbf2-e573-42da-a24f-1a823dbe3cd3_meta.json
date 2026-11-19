@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf2-e573-42da-a24f-1a823dbe3cd3",
+  "name": "Waldfreibad Steinbachtalsperre",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Talsperrenstraße",
+    "hausnummer": "125",
+    "plz": "53881",
+    "ort": "Euskirchen, Stadt"
+  },
+  "lage": {
+    "lon": 6.83135,
+    "lat": 50.58826
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

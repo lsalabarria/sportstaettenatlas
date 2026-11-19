@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3d-6968-482a-8c62-5a46c906f689",
+  "name": "Aqua Vitalis",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Andreas-Hofer-Straße",
+    "hausnummer": "72-76",
+    "plz": "48145",
+    "ort": "Münster, Stadt"
+  },
+  "lage": {
+    "lon": 7.653699,
+    "lat": 51.960089
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

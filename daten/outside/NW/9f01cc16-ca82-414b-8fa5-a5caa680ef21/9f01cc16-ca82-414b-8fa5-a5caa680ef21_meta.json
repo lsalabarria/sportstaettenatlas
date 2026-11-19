@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc16-ca82-414b-8fa5-a5caa680ef21",
+  "name": "AQUARENA",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Prälat-Lewen-Straße",
+    "hausnummer": "5",
+    "plz": "53819",
+    "ort": "Neunkirchen-Seelscheid"
+  },
+  "lage": {
+    "lon": 7.334739,
+    "lat": 50.838256
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1972
+}

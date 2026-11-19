@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbe-ac7a-4582-8e53-df40c81ef175",
+  "name": "Freibad Beckum",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Dalmerweg",
+    "hausnummer": "44",
+    "plz": "59269",
+    "ort": "Beckum, Stadt"
+  },
+  "lage": {
+    "lon": 8.03571,
+    "lat": 51.75086
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

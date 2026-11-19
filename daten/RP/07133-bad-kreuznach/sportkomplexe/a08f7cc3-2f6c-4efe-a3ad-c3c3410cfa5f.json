@@ -1,0 +1,10 @@
+{
+  "id": "a08f7cc3-2f6c-4efe-a3ad-c3c3410cfa5f",
+  "name": "Grundschule Monzingen",
+  "adresse": {
+    "strasse": "Beindestraße",
+    "hausnummer": "18",
+    "plz": "55569",
+    "ort": "Monzingen"
+  }
+}

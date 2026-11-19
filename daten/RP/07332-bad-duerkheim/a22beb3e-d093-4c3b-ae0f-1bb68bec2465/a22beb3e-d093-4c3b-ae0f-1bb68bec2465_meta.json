@@ -1,0 +1,18 @@
+{
+  "id": "a22beb3e-d093-4c3b-ae0f-1bb68bec2465",
+  "name": "Hockeplatz Jahnstraße",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "33",
+    "plz": "67098",
+    "ort": "Bad Dürkheim"
+  },
+  "lage": {
+    "lon": 8.190597,
+    "lat": 49.467437
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

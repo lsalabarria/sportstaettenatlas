@@ -1,0 +1,18 @@
+{
+  "id": "a22bea3c-42cd-44e5-bd75-ad3f7faf5032",
+  "name": "CVJM-Freizeit und Segelzentrum Ratzeburg",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Domhof",
+    "hausnummer": "37",
+    "plz": "23909",
+    "ort": "Ratzeburg"
+  },
+  "lage": {
+    "lon": 10.772428,
+    "lat": 53.702144
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbb7-c449-4c6b-8fa0-87c2e63906d3",
+  "name": "Schwimmhalle Süd Aachen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Amyastraße",
+    "plz": "52066",
+    "ort": "Aachen, Stadt"
+  },
+  "lage": {
+    "lon": 6.08765,
+    "lat": 50.76053
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

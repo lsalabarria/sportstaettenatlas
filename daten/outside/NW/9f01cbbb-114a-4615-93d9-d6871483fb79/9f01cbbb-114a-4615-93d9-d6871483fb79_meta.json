@@ -1,0 +1,17 @@
+{
+  "id": "9f01cbbb-114a-4615-93d9-d6871483fb79",
+  "name": "Eggefreibad Neuenheerse",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Feriendorf",
+    "plz": "33014",
+    "ort": "Bad Driburg, Stadt"
+  },
+  "lage": {
+    "lon": 8.99359,
+    "lat": 51.66984
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

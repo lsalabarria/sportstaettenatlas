@@ -1,0 +1,16 @@
+{
+  "id": "a22beb00-cdcf-4794-8873-f65e148a28b3",
+  "name": "Sparkassen Skiarena",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "plz": "9484",
+    "ort": "Oberwiesenthal, Kurort, Stadt"
+  },
+  "lage": {
+    "lon": 12.934888,
+    "lat": 50.417887
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

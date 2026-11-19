@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbda-5218-4ad1-add3-51253eac692f",
+  "name": "Städtisches Hallenbad Büren",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kleffnerstraße",
+    "hausnummer": "8",
+    "plz": "33142",
+    "ort": "Büren, Stadt"
+  },
+  "lage": {
+    "lon": 8.55468,
+    "lat": 51.5493
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

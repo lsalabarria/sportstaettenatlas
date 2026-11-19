@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbde-16be-4df8-8dfd-2d56277e1dcd",
+  "name": "Hallenbad 4elements",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Sandforter Weg",
+    "hausnummer": "2",
+    "plz": "59379",
+    "ort": "Selm, Stadt"
+  },
+  "lage": {
+    "lon": 7.46505,
+    "lat": 51.6968
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

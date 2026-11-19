@@ -1,0 +1,18 @@
+{
+  "id": "a22bea8f-6810-4627-a38f-d6700a3ca381",
+  "name": "Bogensporthalle im Sportforum Berlin",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Fritz-Lesch-Straße",
+    "hausnummer": "29",
+    "plz": "13053",
+    "ort": "Berlin, Stadt"
+  },
+  "lage": {
+    "lon": 13.474667,
+    "lat": 52.541606
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

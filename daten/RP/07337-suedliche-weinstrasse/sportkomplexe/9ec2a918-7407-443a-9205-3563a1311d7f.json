@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a918-7407-443a-9205-3563a1311d7f",
+  "name": "Sportplatz Venningen",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "3",
+    "plz": "67482",
+    "ort": "Venningen"
+  }
+}

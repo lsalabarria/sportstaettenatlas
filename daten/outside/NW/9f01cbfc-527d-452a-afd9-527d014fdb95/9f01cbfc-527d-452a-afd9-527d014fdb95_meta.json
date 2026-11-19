@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfc-527d-452a-afd9-527d014fdb95",
+  "name": "Freibad Dingden",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Krechtinger Straße",
+    "hausnummer": "30",
+    "plz": "46499",
+    "ort": "Hamminkeln, Stadt"
+  },
+  "lage": {
+    "lon": 6.62045,
+    "lat": 51.77239
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

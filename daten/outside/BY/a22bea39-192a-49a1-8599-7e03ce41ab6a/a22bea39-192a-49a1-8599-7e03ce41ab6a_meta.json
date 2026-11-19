@@ -1,0 +1,18 @@
+{
+  "id": "a22bea39-192a-49a1-8599-7e03ce41ab6a",
+  "name": "Chiemgau Arena",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Biathlonzentrum",
+    "hausnummer": "1",
+    "plz": "83324",
+    "ort": "Ruhpolding"
+  },
+  "lage": {
+    "lon": 12.647807,
+    "lat": 47.714979
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

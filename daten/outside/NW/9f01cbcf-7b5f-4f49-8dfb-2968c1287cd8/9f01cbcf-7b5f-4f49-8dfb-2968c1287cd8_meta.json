@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbcf-7b5f-4f49-8dfb-2968c1287cd8",
+  "name": "Freibad Bullerteich",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bullerteichstraße",
+    "hausnummer": "12",
+    "plz": "49492",
+    "ort": "Westerkappeln"
+  },
+  "lage": {
+    "lon": 7.8816,
+    "lat": 52.31542
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

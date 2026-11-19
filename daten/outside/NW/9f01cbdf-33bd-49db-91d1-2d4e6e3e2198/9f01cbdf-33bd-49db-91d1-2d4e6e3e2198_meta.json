@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbdf-33bd-49db-91d1-2d4e6e3e2198",
+  "name": "Freibad Berlebeck-Heiligenkirchen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Paderborner Straße",
+    "hausnummer": "110",
+    "plz": "32760",
+    "ort": "Detmold, Stadt"
+  },
+  "lage": {
+    "lon": 8.87967,
+    "lat": 51.90072
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

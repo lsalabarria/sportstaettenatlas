@@ -1,0 +1,22 @@
+{
+  "id": "2f4cb110-e57a-403f-9b09-f8e92f0017ac",
+  "name": "Reitanlage Zucht-, Reit-, und Fahrverein Diez e.V",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Am Kirschenberg",
+    "hausnummer": "1",
+    "plz": "65582",
+    "ort": "Diez, Stadt"
+  },
+  "lage": {
+    "lon": 8.00735,
+    "lat": 50.37419
+  },
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Zucht-, Reit-, und Fahrverein Diez e.V",
+  "betreiber": "Zucht-, Reit-, und Fahrverein Diez e.V",
+  "website": "https://www.reitverein-diez.de/",
+  "baujahr": 1972,
+  "letzte_sanierung": 1972
+}

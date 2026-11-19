@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc29-03f3-4746-b875-655d41592504",
+  "name": "Hallenbad Meerbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Friedenstraße",
+    "hausnummer": "21",
+    "plz": "40667",
+    "ort": "Meerbusch, Stadt"
+  },
+  "lage": {
+    "lon": 6.68907,
+    "lat": 51.25485
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1966
+}

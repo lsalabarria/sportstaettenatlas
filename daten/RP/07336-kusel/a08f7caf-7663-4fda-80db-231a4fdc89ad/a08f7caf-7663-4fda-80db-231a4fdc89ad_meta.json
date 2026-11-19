@@ -1,0 +1,17 @@
+{
+  "id": "a08f7caf-7663-4fda-80db-231a4fdc89ad",
+  "name": "Turn- und Festhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Feldstraße",
+    "hausnummer": "9",
+    "plz": "66904"
+  },
+  "lage": {
+    "lon": 7.35741,
+    "lat": 49.428708
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

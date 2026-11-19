@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3a-4310-4412-8832-c2c8022a2294",
+  "name": "Frei- und Hallenbad Werdohl",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Ütterlingser Str.",
+    "hausnummer": "59",
+    "plz": "58791",
+    "ort": "Werdohl, Stadt"
+  },
+  "lage": {
+    "lon": 7.745619,
+    "lat": 51.256663
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

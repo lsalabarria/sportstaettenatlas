@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfc-e7c5-460c-9444-30f805eecc33",
+  "name": "Freibad Welper",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Marxstraße",
+    "hausnummer": "99",
+    "plz": "45527",
+    "ort": "Hattingen, Stadt"
+  },
+  "lage": {
+    "lon": 7.21759,
+    "lat": 51.40907
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

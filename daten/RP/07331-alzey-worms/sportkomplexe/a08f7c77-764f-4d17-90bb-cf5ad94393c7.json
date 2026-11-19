@@ -1,0 +1,10 @@
+{
+  "id": "a08f7c77-764f-4d17-90bb-cf5ad94393c7",
+  "name": "Schloßstadion",
+  "adresse": {
+    "strasse": "Eleonorenstraße",
+    "hausnummer": "76",
+    "plz": "55597",
+    "ort": "Wöllstein"
+  }
+}

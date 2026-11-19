@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc05-ba7c-4b30-a8dc-b88afbf6361c",
+  "name": "AQUAMATHE Sportbad & Sauna",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Aucheler Straße",
+    "hausnummer": "4",
+    "plz": "58642",
+    "ort": "Iserlohn, Stadt"
+  },
+  "lage": {
+    "lon": 7.6078,
+    "lat": 51.373417
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

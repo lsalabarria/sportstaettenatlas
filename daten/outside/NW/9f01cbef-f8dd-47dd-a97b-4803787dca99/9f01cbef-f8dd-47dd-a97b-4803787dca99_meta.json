@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbef-f8dd-47dd-a97b-4803787dca99",
+  "name": "Freizeitbad Atoll",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Trakehner Straße",
+    "hausnummer": "9",
+    "plz": "32339",
+    "ort": "Espelkamp, Stadt"
+  },
+  "lage": {
+    "lon": 8.62831,
+    "lat": 52.37942
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

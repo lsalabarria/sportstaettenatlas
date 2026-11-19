@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbea-789f-40f8-8aca-8f2aca32abf8",
+  "name": "Freibad Elsdorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Zum Freibad",
+    "hausnummer": "1",
+    "plz": "50189",
+    "ort": "Elsdorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.56459,
+    "lat": 50.94001
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1959
+}

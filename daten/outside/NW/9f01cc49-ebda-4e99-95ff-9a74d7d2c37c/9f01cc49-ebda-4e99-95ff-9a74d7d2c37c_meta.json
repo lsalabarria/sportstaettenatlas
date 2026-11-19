@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc49-ebda-4e99-95ff-9a74d7d2c37c",
+  "name": "Unterbacher See - Nord",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Großer Torfbruch",
+    "hausnummer": "18",
+    "plz": "40627",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.89115,
+    "lat": 51.19708
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2001
+}

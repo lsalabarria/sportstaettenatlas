@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc34-50c9-4983-be35-7f9f508955e4",
+  "name": "Freibad Gangelt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Burgstraße",
+    "hausnummer": "10",
+    "plz": "52538",
+    "ort": "Gangelt"
+  },
+  "lage": {
+    "lon": 5.997676,
+    "lat": 50.986326
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

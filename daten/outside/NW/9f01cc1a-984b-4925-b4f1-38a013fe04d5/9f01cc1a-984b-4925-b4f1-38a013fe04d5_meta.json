@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc1a-984b-4925-b4f1-38a013fe04d5",
+  "name": "AQUALAND Freizeitbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Merianstraße",
+    "hausnummer": "1",
+    "plz": "50765",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 6.908413,
+    "lat": 51.026753
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

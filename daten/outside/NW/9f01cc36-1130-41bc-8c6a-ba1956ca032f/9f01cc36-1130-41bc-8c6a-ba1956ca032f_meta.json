@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc36-1130-41bc-8c6a-ba1956ca032f",
+  "name": "WEG Am Waltenberg 72-72a",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Waltenberg",
+    "hausnummer": "72/72a",
+    "plz": "59955",
+    "ort": "Winterberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.52,
+    "lat": 51.19119
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

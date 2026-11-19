@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc2a-4463-40d5-a9c6-caeca9331e99",
+  "name": "Hallenbad Mettingen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bahnhofstraße",
+    "hausnummer": "18 - 20",
+    "plz": "49497",
+    "ort": "Mettingen"
+  },
+  "lage": {
+    "lon": 7.78351,
+    "lat": 52.31708
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

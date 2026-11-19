@@ -1,0 +1,18 @@
+{
+  "id": "a22bea3d-9539-43a9-ae62-498945a06e34",
+  "name": "Württembergischer Tennis-Bund e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Emerholzweg",
+    "hausnummer": "79",
+    "plz": "70439",
+    "ort": "Stuttgart, Landeshauptstadt"
+  },
+  "lage": {
+    "lon": 9.137576,
+    "lat": 48.853719
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4d-d82c-47eb-8ef3-b082c5b84c22",
+  "name": "Max-Wittmann-Schule-Hallenbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Dollersweg",
+    "hausnummer": "18",
+    "plz": "44319",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.619834,
+    "lat": 51.535926
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

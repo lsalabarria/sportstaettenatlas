@@ -14,7 +14,36 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "ja",
+  "wlan": "nein",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Worms",
-  "betreiber": "Worms"
+  "eigentuemer_typ": "Stadt/Gemeinde",
+  "betreiber": "Worms",
+  "betreiber_typ": "Stadt/Gemeinde",
+  "letzte_sanierung": 2013,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 4,
+    "Sanitärräume - Publikum": 2,
+    "Büro- und Verwaltungsräume": 1,
+    "Material- und Lagerräume": 2,
+    "Geräteräume": 2,
+    "Technikräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Warmwasser",
+      "art": "Betrieb über Heizanlage",
+      "einbaujahr": 2015
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Erdgas",
+      "einbaujahr": 2015
+    },
+    {
+      "bereich": "Strom",
+      "art": "Photovoltaik-Anlage",
+      "einbaujahr": 2025
+    }
+  ]
 }

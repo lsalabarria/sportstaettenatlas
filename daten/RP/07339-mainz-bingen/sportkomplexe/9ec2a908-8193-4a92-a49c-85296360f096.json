@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a908-8193-4a92-a49c-85296360f096",
+  "name": "Rhein-Nahe Halle Weiler",
+  "adresse": {
+    "strasse": "Mannesmannstraße",
+    "hausnummer": "10",
+    "plz": "55413",
+    "ort": "Weiler bei Bingen"
+  }
+}

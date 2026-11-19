@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbfb-9202-4b20-8a1c-2555e16db9ed",
+  "name": "Hallenbad Sport-Aquarium Bockum-Hövel",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Günter-Degelmann-Weg",
+    "hausnummer": "1",
+    "plz": "59075",
+    "ort": "Hamm, Stadt"
+  },
+  "lage": {
+    "lon": 7.75549,
+    "lat": 51.69173
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1964
+}

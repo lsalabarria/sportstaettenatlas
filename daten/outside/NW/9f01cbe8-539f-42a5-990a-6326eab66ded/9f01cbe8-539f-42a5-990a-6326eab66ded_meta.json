@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe8-539f-42a5-990a-6326eab66ded",
+  "name": "Schwimm in Bilk",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bachstraße",
+    "hausnummer": "145",
+    "plz": "40217",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.77528,
+    "lat": 51.20929
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2008
+}

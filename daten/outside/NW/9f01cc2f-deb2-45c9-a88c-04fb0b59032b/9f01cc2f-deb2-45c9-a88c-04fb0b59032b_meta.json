@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc2f-deb2-45c9-a88c-04fb0b59032b",
+  "name": "Freibad FSG-Lichtbund",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Eichenhofer Weg",
+    "hausnummer": "26",
+    "plz": "45549",
+    "ort": "Sprockhövel, Stadt"
+  },
+  "lage": {
+    "lon": 7.269908,
+    "lat": 51.314807
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

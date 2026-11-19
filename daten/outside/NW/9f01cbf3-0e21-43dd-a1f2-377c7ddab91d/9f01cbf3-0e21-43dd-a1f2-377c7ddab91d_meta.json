@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf3-0e21-43dd-a1f2-377c7ddab91d",
+  "name": "Vitus-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Alverskirchener Straße",
+    "hausnummer": "29",
+    "plz": "48351",
+    "ort": "Everswinkel"
+  },
+  "lage": {
+    "lon": 7.83846,
+    "lat": 51.92214
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

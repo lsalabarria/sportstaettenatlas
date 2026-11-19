@@ -1,0 +1,18 @@
+{
+  "id": "a22beafd-0e6d-48a4-9ae9-723cacde481a",
+  "name": "Große Vogtlandschanze",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Winselburg",
+    "hausnummer": "3",
+    "plz": "8248",
+    "ort": "Klingenthal, Stadt"
+  },
+  "lage": {
+    "lon": 12.474058,
+    "lat": 50.414904
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

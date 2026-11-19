@@ -1,0 +1,10 @@
+{
+  "id": "a08f7c91-738c-45e0-b7cf-4cd3df89dc04",
+  "name": "Ferienpark Hambachtal",
+  "adresse": {
+    "strasse": "Hauptstraße",
+    "hausnummer": "60",
+    "plz": "55765",
+    "ort": "Oberhambach"
+  }
+}

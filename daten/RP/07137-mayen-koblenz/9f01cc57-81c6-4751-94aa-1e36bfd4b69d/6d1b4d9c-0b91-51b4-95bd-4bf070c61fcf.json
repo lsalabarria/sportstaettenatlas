@@ -1,5 +1,7 @@
 {
   "id": "6d1b4d9c-0b91-51b4-95bd-4bf070c61fcf",
   "sportstaette_id": "9f01cc57-81c6-4751-94aa-1e36bfd4b69d",
-  "typ": "Freibad"
+  "typ": "Freibad",
+  "becken_bis_25m": 1,
+  "kinderbecken": 1
 }

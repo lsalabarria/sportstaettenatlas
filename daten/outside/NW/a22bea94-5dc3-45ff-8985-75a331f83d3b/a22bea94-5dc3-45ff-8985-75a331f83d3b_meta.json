@@ -1,0 +1,18 @@
+{
+  "id": "a22bea94-5dc3-45ff-8985-75a331f83d3b",
+  "name": "Leistungszentrum Hockey und Judo",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Guts-Muths-Weg",
+    "hausnummer": "1",
+    "plz": "50933",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 6.868755,
+    "lat": 50.930929
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

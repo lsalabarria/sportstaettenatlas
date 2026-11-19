@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc2b-3f8d-4fef-a2bf-9281843eb43d",
+  "name": "Waldfreibad Much",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bockemsweg",
+    "hausnummer": "7",
+    "plz": "53804",
+    "ort": "Much"
+  },
+  "lage": {
+    "lon": 7.413853,
+    "lat": 50.903371
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

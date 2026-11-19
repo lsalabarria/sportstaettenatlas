@@ -1,0 +1,18 @@
+{
+  "id": "a22beae6-8ef7-4aa9-a0dd-a536bc2a619b",
+  "name": "Schießsportzentrum Suhl-Friedberg",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Schützenstraße",
+    "hausnummer": "6",
+    "plz": "98527",
+    "ort": "Suhl, Stadt"
+  },
+  "lage": {
+    "lon": 10.713972,
+    "lat": 50.584355
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

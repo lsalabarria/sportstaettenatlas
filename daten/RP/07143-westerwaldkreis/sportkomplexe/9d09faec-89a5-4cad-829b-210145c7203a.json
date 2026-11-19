@@ -1,0 +1,10 @@
+{
+  "id": "9d09faec-89a5-4cad-829b-210145c7203a",
+  "name": "Sportplatz Dernbach",
+  "adresse": {
+    "strasse": "Burgweg",
+    "hausnummer": "3",
+    "plz": "56428",
+    "ort": "Dernbach"
+  }
+}

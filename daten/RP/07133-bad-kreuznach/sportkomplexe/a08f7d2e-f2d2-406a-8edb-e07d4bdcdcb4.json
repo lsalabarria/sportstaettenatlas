@@ -1,0 +1,10 @@
+{
+  "id": "a08f7d2e-f2d2-406a-8edb-e07d4bdcdcb4",
+  "name": "Freizeitpark Kuhberg",
+  "adresse": {
+    "strasse": "Rheingrafenstraße",
+    "hausnummer": "159",
+    "plz": "55543",
+    "ort": "Bad Kreuznach, Stadt"
+  }
+}

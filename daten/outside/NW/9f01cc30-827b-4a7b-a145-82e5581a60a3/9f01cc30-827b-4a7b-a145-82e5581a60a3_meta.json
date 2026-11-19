@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc30-827b-4a7b-a145-82e5581a60a3",
+  "name": "Freibad Annen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Herdecker Str.",
+    "hausnummer": "66",
+    "plz": "58453",
+    "ort": "Witten, Stadt"
+  },
+  "lage": {
+    "lon": 7.383523,
+    "lat": 51.438921
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22bea9d-fb6e-42f4-bed3-9b849f137c79",
+  "name": "Erster Mannheimer Judo Club e.V.",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Im Pfeifferswörth",
+    "hausnummer": "26",
+    "plz": "68167",
+    "ort": "Mannheim, Universitätsstadt"
+  },
+  "lage": {
+    "lon": 8.502667,
+    "lat": 49.487769
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

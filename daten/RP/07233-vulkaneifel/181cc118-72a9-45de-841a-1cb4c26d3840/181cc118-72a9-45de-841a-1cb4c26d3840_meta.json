@@ -1,0 +1,13 @@
+{
+  "id": "181cc118-72a9-45de-841a-1cb4c26d3840",
+  "name": "Steiningen Hartplatz",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "plz": "54552"
+  },
+  "lage": {
+    "lon": 6.929692,
+    "lat": 50.191286
+  },
+  "betriebsstatus": "stillgelegt/geschlossen"
+}

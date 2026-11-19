@@ -1,0 +1,19 @@
+{
+  "id": "a22bea96-be78-4234-a040-f8f350dd6ea2",
+  "name": "NHTC Nürnberg Kunstrasenplätze",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Siedlerstraße",
+    "hausnummer": "111",
+    "plz": "90480",
+    "ort": "Nürnberg"
+  },
+  "lage": {
+    "lon": 11.130197,
+    "lat": 49.451788
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22bea96-6f9d-40c0-975d-95f5a0405a29"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd00-5b05-4ec2-873c-cd411c67ae72",
+  "name": "Sportanlage Weyer",
+  "adresse": {
+    "strasse": "Am Sportplatz",
+    "hausnummer": "2",
+    "plz": "56357",
+    "ort": "Weyer"
+  }
+}

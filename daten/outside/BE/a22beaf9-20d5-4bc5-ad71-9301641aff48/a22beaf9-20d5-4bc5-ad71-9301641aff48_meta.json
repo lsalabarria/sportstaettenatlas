@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf9-20d5-4bc5-ad71-9301641aff48",
+  "name": "Wellblechpalast Konrad-Wolf-Straße",
+  "kategorie": "Eissportstätte",
+  "adresse": {
+    "strasse": "Weißenseer Weg",
+    "hausnummer": "53",
+    "plz": "13055",
+    "ort": "Berlin, Stadt"
+  },
+  "lage": {
+    "lon": 13.481428,
+    "lat": 52.541231
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

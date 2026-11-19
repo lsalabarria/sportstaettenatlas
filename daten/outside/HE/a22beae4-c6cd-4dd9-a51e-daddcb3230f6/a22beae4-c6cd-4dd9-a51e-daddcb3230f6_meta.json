@@ -1,0 +1,18 @@
+{
+  "id": "a22beae4-c6cd-4dd9-a51e-daddcb3230f6",
+  "name": "Frankfurter RG Germania 1869 e.V.",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Schaumainkai",
+    "hausnummer": "65",
+    "plz": "60596",
+    "ort": "Frankfurt am Main, Stadt"
+  },
+  "lage": {
+    "lon": 8.672913,
+    "lat": 50.102708
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

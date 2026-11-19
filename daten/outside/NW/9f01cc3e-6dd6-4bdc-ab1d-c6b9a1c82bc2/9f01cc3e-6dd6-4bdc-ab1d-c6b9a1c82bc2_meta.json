@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3e-6dd6-4bdc-ab1d-c6b9a1c82bc2",
+  "name": "AQUATIK Schwimmschule und Bäderverwaltung",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hangstraße",
+    "hausnummer": "11",
+    "plz": "57368",
+    "ort": "Lennestadt, Stadt"
+  },
+  "lage": {
+    "lon": 8.018072,
+    "lat": 51.138377
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

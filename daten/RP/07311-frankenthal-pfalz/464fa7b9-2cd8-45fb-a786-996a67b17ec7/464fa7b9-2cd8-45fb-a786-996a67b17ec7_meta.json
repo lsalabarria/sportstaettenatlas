@@ -1,0 +1,16 @@
+{
+  "id": "464fa7b9-2cd8-45fb-a786-996a67b17ec7",
+  "name": "Neumayerschule",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Neumayerring",
+    "hausnummer": "7",
+    "plz": "67227"
+  },
+  "lage": {
+    "lon": 8.351526,
+    "lat": 49.531747
+  },
+  "schulsport": "nein",
+  "betriebsstatus": "stillgelegt/geschlossen"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22bea33-809c-41c2-8f24-4de2aa209349",
+  "name": "Langlaufstadion & Biathlon Bremberg",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Am Waltenberg",
+    "hausnummer": "105",
+    "plz": "59955",
+    "ort": "Winterberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.501584,
+    "lat": 51.188187
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

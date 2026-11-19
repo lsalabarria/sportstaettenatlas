@@ -1,0 +1,18 @@
+{
+  "id": "a22bea3a-ee50-412e-86b9-8d9e7f4a3869",
+  "name": "Langwasserbad Nürnberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Breslauer Straße",
+    "hausnummer": "251",
+    "plz": "90471",
+    "ort": "Nürnberg"
+  },
+  "lage": {
+    "lon": 11.144355,
+    "lat": 49.411574
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

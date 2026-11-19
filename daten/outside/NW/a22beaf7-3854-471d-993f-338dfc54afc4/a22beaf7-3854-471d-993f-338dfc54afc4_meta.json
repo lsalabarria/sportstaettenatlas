@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf7-3854-471d-993f-338dfc54afc4",
+  "name": "Schwimmzentrum Essen-Ruttenscheid",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Von-Einem-Straße",
+    "hausnummer": "77",
+    "plz": "45130",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 7.015428,
+    "lat": 51.434891
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

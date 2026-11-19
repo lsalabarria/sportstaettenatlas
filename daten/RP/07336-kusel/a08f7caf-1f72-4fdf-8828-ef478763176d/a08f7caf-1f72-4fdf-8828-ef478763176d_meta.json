@@ -1,0 +1,17 @@
+{
+  "id": "a08f7caf-1f72-4fdf-8828-ef478763176d",
+  "name": "Reit- und Fahrverein Brücken",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Zum Karstwald",
+    "plz": "66904"
+  },
+  "lage": {
+    "lon": 7.370592,
+    "lat": 49.426666
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a08f7cae-d766-45be-b104-f7d4224dd2ae"
+}

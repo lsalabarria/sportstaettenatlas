@@ -1,0 +1,17 @@
+{
+  "id": "a08f7caf-47d7-4ecc-96ec-a7477a90de30",
+  "name": "Tennisanlage Brücken",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Zum Karstwald",
+    "plz": "66904"
+  },
+  "lage": {
+    "lon": 7.368041,
+    "lat": 49.42713
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a08f7cae-d766-45be-b104-f7d4224dd2ae"
+}

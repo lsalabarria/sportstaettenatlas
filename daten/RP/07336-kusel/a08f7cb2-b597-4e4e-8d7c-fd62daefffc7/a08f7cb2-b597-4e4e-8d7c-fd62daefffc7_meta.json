@@ -1,0 +1,17 @@
+{
+  "id": "a08f7cb2-b597-4e4e-8d7c-fd62daefffc7",
+  "name": "Reitanlage Delmeshof",
+  "kategorie": "Reitsportstätte",
+  "adresse": {
+    "strasse": "Delmeshof",
+    "hausnummer": "1",
+    "plz": "66909"
+  },
+  "lage": {
+    "lon": 7.41186,
+    "lat": 49.471748
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

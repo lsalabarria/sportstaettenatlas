@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc4e-e922-49c5-ad87-cddc019e4376",
+  "name": "Fitness-Wohlfühlen-Schwimmbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Vogt-von-Belle-Platz",
+    "plz": "47661",
+    "ort": "Issum"
+  },
+  "lage": {
+    "lon": 6.428798,
+    "lat": 51.535519
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf7-f465-4422-bb0b-714bbdb22030",
+  "name": "Palmberg Arena",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Von-Flotow-Straße",
+    "hausnummer": "18",
+    "plz": "19059",
+    "ort": "Schwerin"
+  },
+  "lage": {
+    "lon": 11.390964,
+    "lat": 53.626239
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

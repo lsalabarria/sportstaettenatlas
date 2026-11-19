@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc4c-0f5b-42c3-ad93-deb666c6ecba",
+  "name": "Sportschule der Bundeswehr Warendorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Dr.-Rau-Allee",
+    "hausnummer": "32",
+    "plz": "48231",
+    "ort": "Warendorf, Stadt"
+  },
+  "lage": {
+    "lon": 7.994631,
+    "lat": 51.966201
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

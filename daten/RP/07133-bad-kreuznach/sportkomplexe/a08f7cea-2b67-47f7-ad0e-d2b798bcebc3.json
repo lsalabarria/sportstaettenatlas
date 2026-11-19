@@ -1,0 +1,10 @@
+{
+  "id": "a08f7cea-2b67-47f7-ad0e-d2b798bcebc3",
+  "name": "Rheinhessenhalle",
+  "adresse": {
+    "strasse": "Binger Weg",
+    "hausnummer": "8",
+    "plz": "55546",
+    "ort": "Hackenheim"
+  }
+}

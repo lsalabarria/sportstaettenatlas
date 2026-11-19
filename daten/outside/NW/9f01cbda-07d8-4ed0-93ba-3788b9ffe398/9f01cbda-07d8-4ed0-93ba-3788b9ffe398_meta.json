@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbda-07d8-4ed0-93ba-3788b9ffe398",
+  "name": "Sportbad Klingenhalle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kotter Straße",
+    "hausnummer": "9",
+    "plz": "42655",
+    "ort": "Solingen, Stadt"
+  },
+  "lage": {
+    "lon": 7.07697,
+    "lat": 51.17159
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1973
+}

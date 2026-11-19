@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc1e-beec-4f13-b35d-b2410af71213",
+  "name": "Splash! Sauna- und Badeland",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Broch",
+    "hausnummer": "8",
+    "plz": "51515",
+    "ort": "Kürten"
+  },
+  "lage": {
+    "lon": 7.29038,
+    "lat": 51.05575
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

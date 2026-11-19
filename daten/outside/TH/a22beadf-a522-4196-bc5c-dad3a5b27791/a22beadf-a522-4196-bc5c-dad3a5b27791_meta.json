@@ -1,0 +1,19 @@
+{
+  "id": "a22beadf-a522-4196-bc5c-dad3a5b27791",
+  "name": "Radrennbahn Andreasried",
+  "kategorie": "Radsportstätte",
+  "adresse": {
+    "strasse": "Riethstraße",
+    "hausnummer": "29A",
+    "plz": "99089",
+    "ort": "Erfurt, Stadt"
+  },
+  "lage": {
+    "lon": 11.010453,
+    "lat": 51.001558
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22beadf-6b19-4c46-93a2-a53a527618e6"
+}

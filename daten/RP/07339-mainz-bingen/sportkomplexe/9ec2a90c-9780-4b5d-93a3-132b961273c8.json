@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a90c-9780-4b5d-93a3-132b961273c8",
+  "name": "Haybachhalle",
+  "adresse": {
+    "strasse": "Am Bandweidenweg",
+    "hausnummer": "1",
+    "plz": "55270",
+    "ort": "Klein-Winternheim"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd9-bad0-4f57-8b30-1cc73fa036f8",
+  "name": "Freibad Ittertal",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Mittelitter",
+    "hausnummer": "10",
+    "plz": "42719",
+    "ort": "Solingen, Stadt"
+  },
+  "lage": {
+    "lon": 7.03538,
+    "lat": 51.18994
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

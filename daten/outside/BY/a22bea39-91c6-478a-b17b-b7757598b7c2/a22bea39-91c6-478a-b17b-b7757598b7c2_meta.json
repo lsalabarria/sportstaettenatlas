@@ -1,0 +1,18 @@
+{
+  "id": "a22bea39-91c6-478a-b17b-b7757598b7c2",
+  "name": "Stadion Ried",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Birgsauer Straße",
+    "hausnummer": "39",
+    "plz": "87561",
+    "ort": "Oberstdorf, M"
+  },
+  "lage": {
+    "lon": 10.283363,
+    "lat": 47.384658
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

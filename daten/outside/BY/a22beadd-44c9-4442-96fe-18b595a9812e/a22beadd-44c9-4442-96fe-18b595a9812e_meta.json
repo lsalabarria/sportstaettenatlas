@@ -1,0 +1,18 @@
+{
+  "id": "a22beadd-44c9-4442-96fe-18b595a9812e",
+  "name": "Max-Aicher-Arena",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Reichenhaller Straße",
+    "hausnummer": "79",
+    "plz": "83334",
+    "ort": "Inzell"
+  },
+  "lage": {
+    "lon": 12.752276,
+    "lat": 47.752517
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

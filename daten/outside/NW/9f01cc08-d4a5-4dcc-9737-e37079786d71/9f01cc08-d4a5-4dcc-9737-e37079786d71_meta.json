@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc08-d4a5-4dcc-9737-e37079786d71",
+  "name": "Freibad Türnich",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Heerstraße",
+    "hausnummer": "127",
+    "plz": "50169",
+    "ort": "Kerpen, Stadt"
+  },
+  "lage": {
+    "lon": 6.752,
+    "lat": 50.86107
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

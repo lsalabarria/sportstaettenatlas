@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc06-fe07-4c94-9e5f-6084c0ee4a08",
+  "name": "Freibad Jülich",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Stadionweg",
+    "hausnummer": "8",
+    "plz": "52428",
+    "ort": "Jülich, Stadt"
+  },
+  "lage": {
+    "lon": 6.34719,
+    "lat": 50.92756
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

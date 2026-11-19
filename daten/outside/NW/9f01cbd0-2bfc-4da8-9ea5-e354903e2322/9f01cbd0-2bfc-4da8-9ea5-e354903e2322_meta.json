@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbd0-2bfc-4da8-9ea5-e354903e2322",
+  "name": "Quellenbad Wermelskirchen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Quellenweg",
+    "hausnummer": "1",
+    "plz": "42929",
+    "ort": "Wermelskirchen, Stadt"
+  },
+  "lage": {
+    "lon": 7.22189,
+    "lat": 51.13588
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1973
+}

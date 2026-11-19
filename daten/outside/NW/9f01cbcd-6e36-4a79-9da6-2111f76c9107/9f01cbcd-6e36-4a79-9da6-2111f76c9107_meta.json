@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbcd-6e36-4a79-9da6-2111f76c9107",
+  "name": "Walter-Leo-Schmitz-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Ostlandstraße",
+    "hausnummer": "32",
+    "plz": "51688",
+    "ort": "Wipperfürth, Stadt"
+  },
+  "lage": {
+    "lon": 7.41045,
+    "lat": 51.11578
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2010
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe2-7df0-4936-b116-aa87da25362b",
+  "name": "Hallenbad Dortmund-Hombruch",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Deutsch-Luxemburgerstraße",
+    "hausnummer": "63",
+    "plz": "44225",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.43541,
+    "lat": 51.47197
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1972
+}

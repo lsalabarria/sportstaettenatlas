@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbee-0993-43e7-9242-c603f3e0c162",
+  "name": "ERKA-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Krefelder Straße",
+    "hausnummer": "1b",
+    "plz": "41812",
+    "ort": "Erkelenz, Stadt"
+  },
+  "lage": {
+    "lon": 6.31,
+    "lat": 51.08104
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2012
+}

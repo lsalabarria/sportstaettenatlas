@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbfc-7d06-490e-a5fe-3a53a0dfb615",
+  "name": "Frei- und Hallenbad Harsewinkel",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Prozessionsweg",
+    "hausnummer": "8",
+    "plz": "33428",
+    "ort": "Harsewinkel, Stadt"
+  },
+  "lage": {
+    "lon": 8.21994,
+    "lat": 51.96562
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1960
+}

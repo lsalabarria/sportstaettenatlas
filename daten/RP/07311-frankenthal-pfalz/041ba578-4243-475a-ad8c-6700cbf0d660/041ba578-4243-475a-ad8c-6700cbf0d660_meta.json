@@ -1,0 +1,18 @@
+{
+  "id": "041ba578-4243-475a-ad8c-6700cbf0d660",
+  "name": "Jahnhalle",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Jahnplatz",
+    "hausnummer": "6",
+    "plz": "67227"
+  },
+  "lage": {
+    "lon": 8.356034,
+    "lat": 49.530345
+  },
+  "wlan": "nein",
+  "eigentuemer": "TG Frankenthal",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://tgf1846.de/"
+}

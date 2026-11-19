@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc21-ed55-4214-9b97-5537c28c1a1d",
+  "name": "Naturerlebnisbad Deuz",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Freibad",
+    "plz": "57250",
+    "ort": "Netphen, Stadt"
+  },
+  "lage": {
+    "lon": 8.147832,
+    "lat": 50.880273
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

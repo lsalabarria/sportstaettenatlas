@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf1-a042-42e1-b082-e1fac400600f",
+  "name": "Schwimmzentrum Kettwig",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Im Teelbruch",
+    "hausnummer": "10",
+    "plz": "45219",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 6.93388,
+    "lat": 51.37373
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1974
+}

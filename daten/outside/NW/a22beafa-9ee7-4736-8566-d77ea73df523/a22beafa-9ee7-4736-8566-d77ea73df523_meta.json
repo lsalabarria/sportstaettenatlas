@@ -1,0 +1,18 @@
+{
+  "id": "a22beafa-9ee7-4736-8566-d77ea73df523",
+  "name": "VfL Tennis 1929 e.V.",
+  "kategorie": "Tennissportstätte",
+  "adresse": {
+    "strasse": "Westicker Straße",
+    "hausnummer": "32",
+    "plz": "59174",
+    "ort": "Kamen, Stadt"
+  },
+  "lage": {
+    "lon": 7.655977,
+    "lat": 51.585589
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

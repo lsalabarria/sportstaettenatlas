@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd13-21c6-4e1f-9353-33303a143d41",
+  "name": "Bereitschaftspolizei Rheinland-Pfalz",
+  "adresse": {
+    "strasse": "Birkenstraße",
+    "hausnummer": "107",
+    "plz": "67677",
+    "ort": "Enkenbach-Alsenborn"
+  }
+}

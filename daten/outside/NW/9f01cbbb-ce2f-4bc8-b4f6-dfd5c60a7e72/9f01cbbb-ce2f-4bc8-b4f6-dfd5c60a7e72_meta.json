@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbbb-ce2f-4bc8-b4f6-dfd5c60a7e72",
+  "name": "Freibad Hesselbach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Hesselbacher Straße",
+    "hausnummer": "2a",
+    "plz": "57334",
+    "ort": "Bad Laasphe, Stadt"
+  },
+  "lage": {
+    "lon": 8.35989,
+    "lat": 50.88529
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1987
+}

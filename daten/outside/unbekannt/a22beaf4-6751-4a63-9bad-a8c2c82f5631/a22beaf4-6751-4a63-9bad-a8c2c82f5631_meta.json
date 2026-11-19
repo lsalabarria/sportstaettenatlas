@@ -1,0 +1,17 @@
+{
+  "id": "a22beaf4-6751-4a63-9bad-a8c2c82f5631",
+  "name": "Kinder- und Jugendtreff 2Club",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Thalkirchner Straße",
+    "hausnummer": "209",
+    "plz": "81371"
+  },
+  "lage": {
+    "lon": 11.54611,
+    "lat": 48.106367
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -16,5 +16,14 @@
   "schulsport": "ja",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "TuS Haardt 1886 e.V. und Pfalzbiker e.V.",
-  "betreiber": "TuS Haardt 1886 e.V. und Pfalzbiker e.V."
+  "betreiber": "TuS Haardt 1886 e.V. und Pfalzbiker e.V.",
+  "baujahr": 2024,
+  "sanierungen": [
+    {
+      "jahr": 2024,
+      "kosten": 360000.0,
+      "waehrung": "€",
+      "beschreibung": "Der ehemalige Fussballplatz des TuS Haardt e.V. wurde zusammen mit den Pfalzbiker e.V. mit Mitteln aus der Stadt Neustadt und dem Land Rheinland Pfalz umgestaltet"
+    }
+  ]
 }

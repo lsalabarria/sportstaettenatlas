@@ -16,8 +16,12 @@
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
   "betreiber": "Altenkirchener Schützengesellschaft 1845 e.V.",
+  "betreiber_typ": "Sportverein im LSB RLP",
   "website": "www.sg-altenkirchen.de",
   "sportarten": [
     "Schießsport"
-  ]
+  ],
+  "funktionsraeume": {
+    "Gastronomie": 1
+  }
 }

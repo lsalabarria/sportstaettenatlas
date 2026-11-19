@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbc6-67c5-43c1-8779-5584bf9ec513",
+  "name": "Panoramabad Rüngsdorf",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Schwimmbad",
+    "hausnummer": "8",
+    "plz": "53179",
+    "ort": "Bonn, Stadt"
+  },
+  "lage": {
+    "lon": 7.17771,
+    "lat": 50.68105
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1930
+}

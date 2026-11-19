@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc27-f46d-4f11-972e-3912181caa58",
+  "name": "Schwimmbad Kämpgens Hof",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Denkhauser Höfe",
+    "hausnummer": "46-54",
+    "plz": "45475",
+    "ort": "Mülheim an der Ruhr, Stadt"
+  },
+  "lage": {
+    "lon": 6.89295,
+    "lat": 51.457877
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

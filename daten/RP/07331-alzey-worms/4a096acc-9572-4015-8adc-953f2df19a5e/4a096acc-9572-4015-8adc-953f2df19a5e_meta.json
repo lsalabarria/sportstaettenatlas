@@ -1,0 +1,23 @@
+{
+  "id": "4a096acc-9572-4015-8adc-953f2df19a5e",
+  "name": "Sportschützenverein Gimbsheim e.V.",
+  "kategorie": "Schießsportstätte",
+  "adresse": {
+    "strasse": "Rheinstr.",
+    "hausnummer": "32",
+    "plz": "67578"
+  },
+  "lage": {
+    "lon": 8.385152,
+    "lat": 49.783068
+  },
+  "entfernung_oepnv": 600,
+  "betriebsstatus": "in Betrieb",
+  "eigentuemer": "Sportschützenverein Gimbsheim",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
+  "betreiber": "Sportschützenverein Gimbsheim",
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "https://www.ssv-gimbsheim.de",
+  "baujahr": 1967,
+  "letzte_sanierung": 2026
+}

@@ -1,0 +1,10 @@
+{
+  "id": "a08f7ceb-6fa9-4fb7-9989-b50f7515d7b0",
+  "name": "Sportplatz Fürfeld",
+  "adresse": {
+    "strasse": "Außerhalb",
+    "hausnummer": "901",
+    "plz": "55546",
+    "ort": "Fürfeld"
+  }
+}

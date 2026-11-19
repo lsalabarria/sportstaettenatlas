@@ -1,0 +1,17 @@
+{
+  "id": "a22bea2b-99c5-403c-baad-cc81b770eef6",
+  "name": "CJD Christopherusschule Berchtesgaden",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Dürreck",
+    "hausnummer": "4",
+    "plz": "83471"
+  },
+  "lage": {
+    "lon": 13.023485,
+    "lat": 47.601628
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

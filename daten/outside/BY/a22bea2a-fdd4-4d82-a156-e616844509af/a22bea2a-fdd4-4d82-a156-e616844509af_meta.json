@@ -1,0 +1,18 @@
+{
+  "id": "a22bea2a-fdd4-4d82-a156-e616844509af",
+  "name": "Sporthalle Berg Fidel",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Berg Fidel",
+    "hausnummer": "51",
+    "plz": "48153",
+    "ort": "Münster"
+  },
+  "lage": {
+    "lon": 7.62393,
+    "lat": 51.928543
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

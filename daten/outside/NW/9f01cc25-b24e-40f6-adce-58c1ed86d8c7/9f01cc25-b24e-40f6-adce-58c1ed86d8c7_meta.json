@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc25-b24e-40f6-adce-58c1ed86d8c7",
+  "name": "Freibad Gehlenbeck",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Frotheimer Straße",
+    "hausnummer": "59",
+    "plz": "32312",
+    "ort": "Lübbecke, Stadt"
+  },
+  "lage": {
+    "lon": 8.66769,
+    "lat": 52.32988
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9fdccdce-29b9-4973-b016-77b1253af419",
+  "name": "Schulsportanlage Wilhelm Hofmann Gymnasium",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Gymnasialstraße",
+    "hausnummer": "4",
+    "plz": "56346",
+    "ort": "Sankt Goarshausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.715057,
+    "lat": 50.154651
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe9-85b4-43e8-9cd1-337d1f9cf26b",
+  "name": "Hallenfreibad Benrath",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Regerstraße",
+    "hausnummer": "9",
+    "plz": "40593",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.87702,
+    "lat": 51.16046
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

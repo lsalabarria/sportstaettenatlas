@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc22-ab8d-43b7-bc34-f1511f5ac9f1",
+  "name": "Hallenbad Hiltrup",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Westfalenstraße",
+    "hausnummer": "201",
+    "plz": "48165",
+    "ort": "Münster, Stadt"
+  },
+  "lage": {
+    "lon": 7.640158,
+    "lat": 51.900728
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

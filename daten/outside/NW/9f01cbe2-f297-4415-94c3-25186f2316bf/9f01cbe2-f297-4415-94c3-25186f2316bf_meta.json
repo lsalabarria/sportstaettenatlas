@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe2-f297-4415-94c3-25186f2316bf",
+  "name": "Hallenbad Die Welle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Gleiwitzstraße",
+    "hausnummer": "279a",
+    "plz": "44328",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.54421,
+    "lat": 51.55198
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1976
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22beacb-e017-48b7-9d5f-0ad4807ae420",
+  "name": "Fechtzentrum Tauberbischofsheim",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Pestalozziallee",
+    "hausnummer": "12",
+    "plz": "97941",
+    "ort": "Tauberbischofsheim, Stadt"
+  },
+  "lage": {
+    "lon": 9.663468,
+    "lat": 49.628246
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

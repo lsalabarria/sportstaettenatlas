@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc00-2009-4c02-9f1c-bbe3158e6742",
+  "name": "Copa Ca Backum",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Teichstraße",
+    "hausnummer": "20",
+    "plz": "45699",
+    "ort": "Herten, Stadt"
+  },
+  "lage": {
+    "lon": 7.13752,
+    "lat": 51.60276
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

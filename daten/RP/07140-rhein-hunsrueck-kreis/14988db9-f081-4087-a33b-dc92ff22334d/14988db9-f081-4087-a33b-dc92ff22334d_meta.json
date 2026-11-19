@@ -12,6 +12,7 @@
     "lon": 7.310418,
     "lat": 49.955139
   },
+  "entfernung_oepnv": 100,
   "oeffentlicher_zugang": "nein",
   "schulsport": "nein",
   "betriebsstatus": "in Betrieb",
@@ -26,5 +27,8 @@
     "Pilates",
     "Yoga",
     "Gymnastik"
-  ]
+  ],
+  "funktionsraeume": {
+    "Büro- und Verwaltungsräume": 1
+  }
 }

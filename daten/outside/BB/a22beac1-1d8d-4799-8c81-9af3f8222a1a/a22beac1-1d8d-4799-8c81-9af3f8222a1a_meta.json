@@ -1,0 +1,18 @@
+{
+  "id": "a22beac1-1d8d-4799-8c81-9af3f8222a1a",
+  "name": "Leichtathletikhalle Luftschiffhafen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Olympischer Weg",
+    "hausnummer": "9",
+    "plz": "14471",
+    "ort": "Potsdam, Stadt"
+  },
+  "lage": {
+    "lon": 13.018599,
+    "lat": 52.378931
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

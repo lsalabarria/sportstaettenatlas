@@ -1,0 +1,10 @@
+{
+  "id": "9fdccc89-dccd-4599-ab7d-76d021cb0780",
+  "name": "Schulzentrum Lingenfeld",
+  "adresse": {
+    "strasse": "Schillerstraße",
+    "hausnummer": "10",
+    "plz": "67360",
+    "ort": "Lingenfeld"
+  }
+}

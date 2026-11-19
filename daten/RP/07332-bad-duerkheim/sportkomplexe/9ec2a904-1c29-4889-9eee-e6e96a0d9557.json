@@ -1,0 +1,10 @@
+{
+  "id": "9ec2a904-1c29-4889-9eee-e6e96a0d9557",
+  "name": "Sportpark Friedelsheim",
+  "adresse": {
+    "strasse": "Am Schwabenbach",
+    "hausnummer": "22",
+    "plz": "67159",
+    "ort": "Friedelsheim"
+  }
+}

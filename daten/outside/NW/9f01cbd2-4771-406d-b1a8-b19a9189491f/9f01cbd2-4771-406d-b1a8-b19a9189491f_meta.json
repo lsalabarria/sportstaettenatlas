@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbd2-4771-406d-b1a8-b19a9189491f",
+  "name": "Hallenschwimmbad Warburg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Stiepenweg",
+    "hausnummer": "7",
+    "plz": "34414",
+    "ort": "Warburg, Stadt"
+  },
+  "lage": {
+    "lon": 9.13748,
+    "lat": 51.48736
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1973
+}

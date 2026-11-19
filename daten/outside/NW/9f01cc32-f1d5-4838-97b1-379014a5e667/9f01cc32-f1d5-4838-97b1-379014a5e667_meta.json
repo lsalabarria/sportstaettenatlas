@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc32-f1d5-4838-97b1-379014a5e667",
+  "name": "Come back",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Urban-von-Vorst-Weg",
+    "hausnummer": "6",
+    "plz": "45894",
+    "ort": "Gelsenkirchen, Stadt"
+  },
+  "lage": {
+    "lon": 7.040911,
+    "lat": 51.583157
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

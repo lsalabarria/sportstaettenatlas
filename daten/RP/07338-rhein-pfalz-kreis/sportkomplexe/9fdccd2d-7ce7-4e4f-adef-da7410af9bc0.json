@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd2d-7ce7-4e4f-adef-da7410af9bc0",
+  "name": "Sportanlage am Neugraben",
+  "adresse": {
+    "strasse": "Am Neugraben",
+    "hausnummer": "14",
+    "plz": "67459",
+    "ort": "Böhl-Iggelheim"
+  }
+}

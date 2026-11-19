@@ -1,0 +1,17 @@
+{
+  "id": "a22bea2a-ae53-4846-9134-0d7c2f0af6f2",
+  "name": "Sportpark Duisberg",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Alter Tecihweg",
+    "hausnummer": "200",
+    "plz": "22049"
+  },
+  "lage": {
+    "lon": 10.068588,
+    "lat": 53.586188
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd19-3a68-4330-828f-946693c09023",
+  "name": "Sportplatz am halben Morgen",
+  "adresse": {
+    "strasse": "Am Halben Morgen",
+    "hausnummer": "7",
+    "plz": "67705",
+    "ort": "Stelzenberg"
+  }
+}

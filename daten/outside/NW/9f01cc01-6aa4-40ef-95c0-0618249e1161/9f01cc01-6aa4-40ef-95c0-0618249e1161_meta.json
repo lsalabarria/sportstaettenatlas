@@ -1,0 +1,17 @@
+{
+  "id": "9f01cc01-6aa4-40ef-95c0-0618249e1161",
+  "name": "Freibad Hilchenbach",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Ferndorfstraße",
+    "plz": "57271",
+    "ort": "Hilchenbach, Stadt"
+  },
+  "lage": {
+    "lon": 8.11559,
+    "lat": 50.99927
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

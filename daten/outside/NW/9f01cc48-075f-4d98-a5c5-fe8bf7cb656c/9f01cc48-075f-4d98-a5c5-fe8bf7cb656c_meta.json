@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc48-075f-4d98-a5c5-fe8bf7cb656c",
+  "name": "Bergfreibad Ochtrup",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Freibad",
+    "hausnummer": "3",
+    "plz": "48607",
+    "ort": "Ochtrup, Stadt"
+  },
+  "lage": {
+    "lon": 7.168334,
+    "lat": 52.210576
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

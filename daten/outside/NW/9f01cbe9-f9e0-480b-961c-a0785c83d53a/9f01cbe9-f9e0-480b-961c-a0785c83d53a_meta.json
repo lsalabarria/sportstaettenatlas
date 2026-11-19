@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbe9-f9e0-480b-961c-a0785c83d53a",
+  "name": "Allwetterbad Flingern",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Flinger Broich",
+    "hausnummer": "91a",
+    "plz": "40235",
+    "ort": "Düsseldorf, Stadt"
+  },
+  "lage": {
+    "lon": 6.83301,
+    "lat": 51.22492
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2020
+}

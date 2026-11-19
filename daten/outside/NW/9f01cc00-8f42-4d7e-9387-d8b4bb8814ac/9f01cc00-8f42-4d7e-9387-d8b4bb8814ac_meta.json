@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc00-8f42-4d7e-9387-d8b4bb8814ac",
+  "name": "Hallenbad Clarholz",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Holzhofstraße",
+    "hausnummer": "22",
+    "plz": "33442",
+    "ort": "Herzebrock-Clarholz"
+  },
+  "lage": {
+    "lon": 8.19683,
+    "lat": 51.9038
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

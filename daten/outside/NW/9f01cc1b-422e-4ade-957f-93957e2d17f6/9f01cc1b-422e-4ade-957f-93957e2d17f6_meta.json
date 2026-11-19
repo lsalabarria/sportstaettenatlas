@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc1b-422e-4ade-957f-93957e2d17f6",
+  "name": "Claudius Therme",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Sachsenbergstrasse",
+    "hausnummer": "1",
+    "plz": "50679",
+    "ort": "Köln, Stadt"
+  },
+  "lage": {
+    "lon": 6.980473,
+    "lat": 50.950565
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

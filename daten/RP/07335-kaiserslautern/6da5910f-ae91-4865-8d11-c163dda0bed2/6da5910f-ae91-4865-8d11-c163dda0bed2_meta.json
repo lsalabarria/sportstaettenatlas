@@ -12,10 +12,38 @@
     "lon": 7.90948,
     "lat": 49.453445
   },
+  "entfernung_oepnv": 1,
   "oeffentlicher_zugang": "ja",
   "schulsport": "ja",
+  "wlan": "ja",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Sportverein Fischbach 1959 eV",
+  "eigentuemer_typ": "Sportverein im LSB RLP",
   "betreiber": "Sportverein Fischbach 1959 eV",
-  "website": "www.svfischbach.net"
+  "betreiber_typ": "Sportverein im LSB RLP",
+  "website": "www.svfischbach.net",
+  "baujahr": 1979,
+  "fassadenmaterial": "Sonstiges",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Sanitärräume - Publikum": 4,
+    "Material- und Lagerräume": 2,
+    "Geräteräume": 1,
+    "Technikräume": 3,
+    "Schulungs- / Seminarraum": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Sonstige",
+      "einbaujahr": 2024,
+      "beschreibung": "Nahwärme"
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Sonstige",
+      "einbaujahr": 2024,
+      "beschreibung": "Nahwärme"
+    }
+  ]
 }

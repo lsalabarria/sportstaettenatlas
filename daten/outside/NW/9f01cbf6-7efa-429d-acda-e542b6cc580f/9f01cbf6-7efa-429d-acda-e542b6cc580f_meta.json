@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbf6-7efa-429d-acda-e542b6cc580f",
+  "name": "Freibad Dorenburg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Am Freilichtmuseum",
+    "hausnummer": "2",
+    "plz": "47929",
+    "ort": "Grefrath"
+  },
+  "lage": {
+    "lon": 6.34013,
+    "lat": 51.34651
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

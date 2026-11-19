@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf1-6d28-46dc-ac0c-9835cd9e1891",
+  "name": "Stadion Rote Erde",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Strobelallee",
+    "hausnummer": "50",
+    "plz": "44139",
+    "ort": "Dortmund, Stadt"
+  },
+  "lage": {
+    "lon": 7.454145,
+    "lat": 51.49287
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

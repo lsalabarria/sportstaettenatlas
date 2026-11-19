@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc2a-1d17-49f2-8ba2-5334dc6bd8ac",
+  "name": "WOFI BAD",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Im Ohl",
+    "hausnummer": "13",
+    "plz": "59872",
+    "ort": "Meschede, Stadt"
+  },
+  "lage": {
+    "lon": 8.17753,
+    "lat": 51.37565
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

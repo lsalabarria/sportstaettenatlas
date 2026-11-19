@@ -1,0 +1,9 @@
+{
+  "id": "9ec2a90a-fe37-4879-ac44-099335967edf",
+  "name": "Sportplatz Ockenheim",
+  "adresse": {
+    "strasse": "Sporkenheimer Weg",
+    "plz": "55435",
+    "ort": "Ockenheim"
+  }
+}

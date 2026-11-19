@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc15-0243-46c2-a5b9-968cf1af246c",
+  "name": "Schwimmbad Element Nümbrecht",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Mateh-Yehuda Str.",
+    "hausnummer": "1",
+    "plz": "51588",
+    "ort": "Nümbrecht"
+  },
+  "lage": {
+    "lon": 7.535565,
+    "lat": 50.904192
+  },
+  "schulsport": "nein",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb"
+}

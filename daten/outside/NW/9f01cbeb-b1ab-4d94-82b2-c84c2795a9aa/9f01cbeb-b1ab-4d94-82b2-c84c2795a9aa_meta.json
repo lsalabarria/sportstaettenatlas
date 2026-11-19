@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbeb-b1ab-4d94-82b2-c84c2795a9aa",
+  "name": "Freibad Sälzer Lagune",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Alte Bleiche",
+    "hausnummer": "10",
+    "plz": "33154",
+    "ort": "Salzkotten, Stadt"
+  },
+  "lage": {
+    "lon": 8.61511,
+    "lat": 51.6738
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

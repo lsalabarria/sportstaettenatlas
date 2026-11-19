@@ -14,14 +14,50 @@
   },
   "oeffentlicher_zugang": "ja",
   "schulsport": "nein",
+  "wlan": "nein",
   "betriebsstatus": "in Betrieb",
   "eigentuemer": "Container Transporte Gerolstein",
+  "eigentuemer_typ": "Privatwirtschaftlich/kommerziell",
   "betreiber": "Eisenbahner-Sportverein Gerolstein e.V.",
+  "betreiber_typ": "Sportverein im LSB RLP",
   "website": "www.esv-geerolstein.de",
   "sportarten": [
     "Kegeln",
     "Tischtennis",
     "Badminton",
     "Volkstanz"
+  ],
+  "baujahr": 1960,
+  "letzte_sanierung": 2010,
+  "fassadenmaterial": "Putz",
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 2,
+    "Sanitärräume - Publikum": 2,
+    "Material- und Lagerräume": 1,
+    "Geräteräume": 1
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Heizöl",
+      "einbaujahr": 1960
+    },
+    {
+      "bereich": "Warmwasser",
+      "art": "Strom (z.B. Durchlauferhitzer, Boiler)",
+      "einbaujahr": 2010
+    }
+  ],
+  "verbraeuche": [
+    {
+      "art": "Heizöl",
+      "menge": 5000.0,
+      "einheit": "Liter"
+    },
+    {
+      "art": "Strom",
+      "menge": 3500.0,
+      "einheit": "kWh"
+    }
   ]
 }

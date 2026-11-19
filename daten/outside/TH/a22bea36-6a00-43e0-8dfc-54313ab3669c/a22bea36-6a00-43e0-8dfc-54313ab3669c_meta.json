@@ -1,0 +1,19 @@
+{
+  "id": "a22bea36-6a00-43e0-8dfc-54313ab3669c",
+  "name": "Eissportzentrum Erfurt",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Arnstädter Straße",
+    "hausnummer": "53",
+    "plz": "99096",
+    "ort": "Erfurt, Stadt"
+  },
+  "lage": {
+    "lon": 11.03575,
+    "lat": 50.962143
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "a22bea36-63da-4152-849a-69bc3526ff0a"
+}

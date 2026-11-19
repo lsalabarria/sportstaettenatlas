@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc1a-2ee5-4ac1-97f6-e20ab27244a6",
+  "name": "N-FLOW Freizeitpark Netphen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Brauersdorfer Str.",
+    "hausnummer": "52-62",
+    "plz": "57250",
+    "ort": "Netphen, Stadt"
+  },
+  "lage": {
+    "lon": 8.123381,
+    "lat": 50.911851
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "a22beae2-0e72-4b50-ac75-4f16e2f506da",
+  "name": "Sport- und Tanzinternat Essen",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Rosastraße",
+    "hausnummer": "82",
+    "plz": "45130",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 7.016623,
+    "lat": 51.435204
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

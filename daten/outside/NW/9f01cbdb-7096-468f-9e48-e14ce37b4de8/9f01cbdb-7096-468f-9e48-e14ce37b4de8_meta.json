@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbdb-7096-468f-9e48-e14ce37b4de8",
+  "name": "Hallenbad Eiserfeld",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Eiserfelder Straße",
+    "hausnummer": "418",
+    "plz": "57080",
+    "ort": "Siegen, Stadt"
+  },
+  "lage": {
+    "lon": 7.98684,
+    "lat": 50.83816
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1972
+}

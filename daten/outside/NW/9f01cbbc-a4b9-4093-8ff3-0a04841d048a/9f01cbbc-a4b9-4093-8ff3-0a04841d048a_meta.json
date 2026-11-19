@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbbc-a4b9-4093-8ff3-0a04841d048a",
+  "name": "Freibad Sielbad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Kanalstraße",
+    "hausnummer": "1",
+    "plz": "32547",
+    "ort": "Bad Oeynhausen, Stadt"
+  },
+  "lage": {
+    "lon": 8.79885,
+    "lat": 52.20648
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

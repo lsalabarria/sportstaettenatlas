@@ -1,0 +1,19 @@
+{
+  "id": "9fdccdcd-7a1d-4a72-9b76-669600d45981",
+  "name": "Schulsportanlage Loreleyschule",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Loreleyring",
+    "hausnummer": "100",
+    "plz": "56346",
+    "ort": "Sankt Goarshausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.727984,
+    "lat": 50.15231
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "sportkomplex": "9fdccdcd-7669-4927-8448-088ae6b48d1d"
+}

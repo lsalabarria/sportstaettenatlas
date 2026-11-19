@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbe6-c745-4ab3-88e9-3758b8430525",
+  "name": "Hallenbad Neuenkamo",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Paul-Rücker-Straße",
+    "hausnummer": "33",
+    "plz": "47059",
+    "ort": "Duisburg, Stadt"
+  },
+  "lage": {
+    "lon": 6.73274,
+    "lat": 51.4348
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

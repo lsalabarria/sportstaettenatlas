@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc46-e776-4f4d-8102-a40ceac02e58",
+  "name": "Naturfreibad Heil",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Westenhellweg",
+    "hausnummer": "131",
+    "plz": "59192",
+    "ort": "Bergkamen, Stadt"
+  },
+  "lage": {
+    "lon": 7.577671,
+    "lat": 51.633895
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

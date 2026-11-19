@@ -1,0 +1,10 @@
+{
+  "id": "9d09fac8-f6f1-415f-935e-18fa6e8d6d18",
+  "name": "Pestalozzi Grundschule",
+  "adresse": {
+    "strasse": "Ziegelweg",
+    "hausnummer": "4",
+    "plz": "57610",
+    "ort": "Altenkirchen"
+  }
+}

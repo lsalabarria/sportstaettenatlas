@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbfe-5941-4b20-9e17-0f3899369c43",
+  "name": "Sportschule Hennef",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Sövener Straße",
+    "hausnummer": "60",
+    "plz": "53773",
+    "ort": "Hennef (Sieg), Stadt"
+  },
+  "lage": {
+    "lon": 7.27412,
+    "lat": 50.76192
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

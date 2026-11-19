@@ -1,0 +1,18 @@
+{
+  "id": "a22beb43-b5d0-4062-8bd0-853aa8e12d95",
+  "name": "Sporthalle Stefan-George-Gymnasium",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Morschfeldweg",
+    "hausnummer": "5",
+    "plz": "55411",
+    "ort": "Bingen"
+  },
+  "lage": {
+    "lon": 7.900604,
+    "lat": 49.963645
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

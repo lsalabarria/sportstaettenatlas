@@ -1,0 +1,19 @@
+{
+  "id": "9f01cbf0-e1a5-44ff-8b80-fea93b260caf",
+  "name": "Städtisches Hallenbad Oststadt",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Schultenweg",
+    "hausnummer": "44",
+    "plz": "45279",
+    "ort": "Essen, Stadt"
+  },
+  "lage": {
+    "lon": 7.10556,
+    "lat": 51.44332
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1974
+}

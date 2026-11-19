@@ -1,0 +1,17 @@
+{
+  "id": "a22bea38-1c64-4139-b9aa-f3c802f56683",
+  "name": "Harvestehuder Tennis- und Hockey-Club e.V.",
+  "kategorie": "Sportplatz",
+  "adresse": {
+    "strasse": "Barmbeker Straße",
+    "hausnummer": "106",
+    "plz": "22303"
+  },
+  "lage": {
+    "lon": 10.010275,
+    "lat": 53.591245
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

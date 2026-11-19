@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd1d-a803-48de-a0a2-15cccdde946b",
+  "name": "Grundschule Queidersbach",
+  "adresse": {
+    "strasse": "Jahnstraße",
+    "hausnummer": "23a",
+    "plz": "66851",
+    "ort": "Queidersbach"
+  }
+}

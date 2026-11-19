@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc24-93f9-4412-ba69-44adf48b9dd5",
+  "name": "Freibad Sudmühle",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Dyckburgstraße",
+    "hausnummer": "468",
+    "plz": "48157",
+    "ort": "Münster, Stadt"
+  },
+  "lage": {
+    "lon": 7.699157,
+    "lat": 51.999984
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

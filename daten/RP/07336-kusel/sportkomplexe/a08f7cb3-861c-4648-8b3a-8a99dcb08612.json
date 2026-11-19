@@ -1,0 +1,10 @@
+{
+  "id": "a08f7cb3-861c-4648-8b3a-8a99dcb08612",
+  "name": "Glantalschule",
+  "adresse": {
+    "strasse": "Glanstraße",
+    "hausnummer": "9",
+    "plz": "66907",
+    "ort": "Glan-Münchweiler"
+  }
+}

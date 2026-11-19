@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd2-99c3-4c84-84a7-022f0fe9085f",
+  "name": "Hallenbad Wachtberg",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Oberdorfstraße",
+    "hausnummer": "20",
+    "plz": "53343",
+    "ort": "Wachtberg"
+  },
+  "lage": {
+    "lon": 7.13044,
+    "lat": 50.62693
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc30-3315-4026-9e81-9689b29331fa",
+  "name": "Lehrschwimmbad Rauendahl",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Rauendahlstr.",
+    "hausnummer": "40-42",
+    "plz": "45529",
+    "ort": "Hattingen, Stadt"
+  },
+  "lage": {
+    "lon": 7.17958,
+    "lat": 51.41774
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

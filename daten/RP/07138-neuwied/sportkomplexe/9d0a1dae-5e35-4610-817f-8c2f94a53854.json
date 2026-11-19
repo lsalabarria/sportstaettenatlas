@@ -1,0 +1,10 @@
+{
+  "id": "9d0a1dae-5e35-4610-817f-8c2f94a53854",
+  "name": "Sportplatz Block",
+  "adresse": {
+    "strasse": "Krasnaer Straße",
+    "hausnummer": "3",
+    "plz": "56566",
+    "ort": "Neuwied, Stadt"
+  }
+}

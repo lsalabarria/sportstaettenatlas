@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc3c-0b17-4c5b-856d-927f6e91d6a0",
+  "name": "Hallenbad Giesenkirchen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Asternweg",
+    "hausnummer": "1",
+    "plz": "41238",
+    "ort": "Mönchengladbach, Stadt"
+  },
+  "lage": {
+    "lon": 6.48624,
+    "lat": 51.15728
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

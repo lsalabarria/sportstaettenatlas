@@ -1,0 +1,18 @@
+{
+  "id": "a22beabe-a110-4a6b-83fb-d08e5a5c9c6c",
+  "name": "Olympischer Ruderclub Rostock von 1956 e.V.",
+  "kategorie": "Wassersportstätte",
+  "adresse": {
+    "strasse": "Neunbrandenburger Straße",
+    "hausnummer": "47",
+    "plz": "18196",
+    "ort": "Kessin"
+  },
+  "lage": {
+    "lon": 12.171267,
+    "lat": 54.065013
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

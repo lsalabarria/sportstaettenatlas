@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc26-2046-4fb3-bfcc-119bd8b409bd",
+  "name": "Klutensee-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Rohrkamp",
+    "hausnummer": "23",
+    "plz": "59348",
+    "ort": "Lüdinghausen, Stadt"
+  },
+  "lage": {
+    "lon": 7.427599,
+    "lat": 51.772977
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1974
+}

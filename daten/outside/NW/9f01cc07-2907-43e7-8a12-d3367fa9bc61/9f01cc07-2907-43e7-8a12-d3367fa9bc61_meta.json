@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc07-2907-43e7-8a12-d3367fa9bc61",
+  "name": "Hallenbad Jülich",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bongardstraße",
+    "hausnummer": "22",
+    "plz": "52428",
+    "ort": "Jülich, Stadt"
+  },
+  "lage": {
+    "lon": 6.35881,
+    "lat": 50.91932
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

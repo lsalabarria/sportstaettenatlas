@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbcb-5c28-47a1-ac0c-e0c6299ff5c4",
+  "name": "Alfred-Panke-Bad",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Bendahler Str.",
+    "hausnummer": "136",
+    "plz": "42285",
+    "ort": "Wuppertal, Stadt"
+  },
+  "lage": {
+    "lon": 7.16315,
+    "lat": 51.24938
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

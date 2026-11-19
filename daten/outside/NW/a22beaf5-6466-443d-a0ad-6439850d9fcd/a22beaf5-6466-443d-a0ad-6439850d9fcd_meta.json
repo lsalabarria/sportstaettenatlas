@@ -1,0 +1,18 @@
+{
+  "id": "a22beaf5-6466-443d-a0ad-6439850d9fcd",
+  "name": "Geschwister-Scholl-Gymnasium (Winterberg)",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Ursulinenstraße",
+    "hausnummer": "24",
+    "plz": "59955",
+    "ort": "Winterberg, Stadt"
+  },
+  "lage": {
+    "lon": 8.526781,
+    "lat": 51.188525
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

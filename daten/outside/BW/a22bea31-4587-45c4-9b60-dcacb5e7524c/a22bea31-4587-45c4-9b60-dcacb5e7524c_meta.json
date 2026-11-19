@@ -1,0 +1,18 @@
+{
+  "id": "a22bea31-4587-45c4-9b60-dcacb5e7524c",
+  "name": "Würtembergischer Yachtclub",
+  "kategorie": "Sporthalle",
+  "adresse": {
+    "strasse": "Am Seemooser Horn",
+    "hausnummer": "1",
+    "plz": "88045",
+    "ort": "Friedrichshafen, Stadt"
+  },
+  "lage": {
+    "lon": 9.437367,
+    "lat": 47.657005
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

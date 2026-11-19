@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc44-c4e2-4c37-91c0-f4e683ca08b8",
+  "name": "Hallenbad Alpen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Fürst-Bentheim-Straße",
+    "hausnummer": "37",
+    "plz": "46519",
+    "ort": "Alpen"
+  },
+  "lage": {
+    "lon": 6.51941,
+    "lat": 51.57705
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

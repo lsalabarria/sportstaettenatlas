@@ -1,0 +1,18 @@
+{
+  "id": "a22bea2f-3192-4a62-a3a4-cd70ba3ae156",
+  "name": "Skipiste Kandahar AF/SG/RS",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Am Kreuzeckbahnhof",
+    "hausnummer": "1",
+    "plz": "82467",
+    "ort": "Garmisch-Partenkirchen, M"
+  },
+  "lage": {
+    "lon": 11.069604,
+    "lat": 47.460345
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

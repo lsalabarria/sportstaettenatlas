@@ -1,0 +1,10 @@
+{
+  "id": "9fdccd12-02c1-48dd-8252-f49c7e3244a1",
+  "name": "Hans-Zulliger-Schule",
+  "adresse": {
+    "strasse": "Neukircher Straße",
+    "hausnummer": "4",
+    "plz": "67677",
+    "ort": "Enkenbach-Alsenborn"
+  }
+}

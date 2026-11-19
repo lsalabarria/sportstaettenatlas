@@ -1,0 +1,18 @@
+{
+  "id": "9f01cbd4-63ff-4abe-8d10-cbd3d43fec48",
+  "name": "Panoramabad Velbert",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Wiesenweg",
+    "hausnummer": "60",
+    "plz": "42553",
+    "ort": "Velbert, Stadt"
+  },
+  "lage": {
+    "lon": 7.08475,
+    "lat": 51.30509
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

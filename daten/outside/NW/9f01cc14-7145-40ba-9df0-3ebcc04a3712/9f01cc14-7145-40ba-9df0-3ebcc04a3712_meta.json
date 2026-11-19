@@ -1,0 +1,18 @@
+{
+  "id": "9f01cc14-7145-40ba-9df0-3ebcc04a3712",
+  "name": "Hallenbad Oberhausen",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Lothringer Straße",
+    "hausnummer": "75",
+    "plz": "46045",
+    "ort": "Oberhausen, Stadt"
+  },
+  "lage": {
+    "lon": 6.852499,
+    "lat": 51.46619
+  },
+  "schulsport": "ja",
+  "wlan": "ja",
+  "betriebsstatus": "in Betrieb"
+}

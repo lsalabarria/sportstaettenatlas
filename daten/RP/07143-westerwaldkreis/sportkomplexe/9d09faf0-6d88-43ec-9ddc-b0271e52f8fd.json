@@ -1,0 +1,9 @@
+{
+  "id": "9d09faf0-6d88-43ec-9ddc-b0271e52f8fd",
+  "name": "Sportplatz Schulstraße",
+  "adresse": {
+    "strasse": "Schulstraße",
+    "plz": "56414",
+    "ort": "Meudt"
+  }
+}

@@ -5,6 +5,7 @@
   "adresse": {
     "strasse": "Weiser Str.",
     "hausnummer": "40",
+    "adresszusatz": "A",
     "plz": "56170",
     "ort": "Bendorf, Stadt"
   },
@@ -14,8 +15,13 @@
   },
   "oeffentlicher_zugang": "nein",
   "schulsport": "ja",
+  "wlan": "ja",
   "betriebsstatus": "in Planung",
   "website": "bendelit.de",
+  "nutzer": [
+    "Ballspielverein Andernach",
+    "Altenkirchener Sportgemeinschaft 1883 e.V."
+  ],
   "sportarten": [
     "American Football",
     "Fußball",
@@ -24,5 +30,67 @@
     "Wurfscheibe",
     "Schwimmsport",
     "Parkour"
+  ],
+  "wettkampfanlage": "Wettkampfanlage Typ A",
+  "baujahr": 2020,
+  "letzte_sanierung": 2025,
+  "funktionsraeume": {
+    "Umkleide- und Sanitärräume - Sporttreibende": 10,
+    "Umkleide- und Sanitärräume - Personal": 10,
+    "Geräteräume": 10,
+    "Technikräume": 10
+  },
+  "energietraeger": [
+    {
+      "bereich": "Heizung",
+      "art": "Holz/Pellets/Hackschnitzel",
+      "einbaujahr": 2001
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Sonstige",
+      "einbaujahr": 1937,
+      "beschreibung": "Kohle"
+    },
+    {
+      "bereich": "Heizung",
+      "art": "Fernwärme",
+      "einbaujahr": 2024
+    }
+  ],
+  "verbraeuche": [
+    {
+      "art": "Holz/Pellets/Hackschnitzel",
+      "menge": 1000.0,
+      "einheit": "m³"
+    }
+  ],
+  "sanierungen": [
+    {
+      "jahr": 2025,
+      "kosten": 400.0,
+      "waehrung": "€",
+      "beschreibung": "Test"
+    },
+    {
+      "jahr": 2025,
+      "kosten": 200.0,
+      "waehrung": "€",
+      "beschreibung": "test cost"
+    }
+  ],
+  "foerderungen": [
+    {
+      "programm": "test",
+      "jahr": 2025,
+      "hoehe": 500.0,
+      "waehrung": "€"
+    },
+    {
+      "programm": "asdas",
+      "jahr": 1998,
+      "hoehe": 234.0,
+      "waehrung": "€"
+    }
   ]
 }

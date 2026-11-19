@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc3d-ded8-4660-adb9-372090e0e67b",
+  "name": "Universitätssporthalle Münster",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Horstmarer Landweg",
+    "hausnummer": "51",
+    "plz": "48149",
+    "ort": "Münster, Stadt"
+  },
+  "lage": {
+    "lon": 7.59918,
+    "lat": 51.970283
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 1965
+}

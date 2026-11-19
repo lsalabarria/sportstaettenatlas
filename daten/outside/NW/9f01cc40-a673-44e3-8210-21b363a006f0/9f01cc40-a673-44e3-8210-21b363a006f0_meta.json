@@ -1,0 +1,19 @@
+{
+  "id": "9f01cc40-a673-44e3-8210-21b363a006f0",
+  "name": "Schwimmbad Hesselbach GmbH",
+  "kategorie": "Schwimmsportstätte",
+  "adresse": {
+    "strasse": "Freiheitsstraße",
+    "hausnummer": "73",
+    "plz": "42853",
+    "ort": "Remscheid, Stadt"
+  },
+  "lage": {
+    "lon": 7.192284,
+    "lat": 51.177291
+  },
+  "schulsport": "ja",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb",
+  "baujahr": 2007
+}

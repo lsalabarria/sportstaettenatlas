@@ -1,0 +1,18 @@
+{
+  "id": "a22bea29-8020-4676-94cb-da9eaf352683",
+  "name": "Adler-Skistadion",
+  "kategorie": "Wintersportstätte",
+  "adresse": {
+    "strasse": "Adlerschanze",
+    "hausnummer": "1",
+    "plz": "79856",
+    "ort": "Hinterzarten"
+  },
+  "lage": {
+    "lon": 8.111638,
+    "lat": 47.898939
+  },
+  "schulsport": "nein",
+  "wlan": "nein",
+  "betriebsstatus": "in Betrieb"
+}

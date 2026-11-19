@@ -1,5 +1,19 @@
 {
   "id": "2b6863f3-2c6d-5f89-97ad-c30f3a4efad4",
   "sportstaette_id": "9ec2a92d-2336-4c24-a1c7-393fa67a6bb7",
-  "typ": "Tennisplatz"
+  "typ": "Tennisplatz",
+  "bezeichnung": "Außenplätze Tennisclub Nieder-Olm e.V.",
+  "betriebsstatus": "in Betrieb",
+  "sportarten": [
+    "Tennis"
+  ],
+  "wettkampf": [
+    "Tennis"
+  ],
+  "felder_je_belag": {
+    "Sand": 7
+  },
+  "bewaesserung": "ja",
+  "flutlicht": "nein",
+  "oeffnungsstunden": 3
 }
