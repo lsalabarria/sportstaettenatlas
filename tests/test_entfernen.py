@@ -62,6 +62,8 @@ def test_von_oben_nach_unten(tmp_path):
                 "Doppelung: Halle gehört zu Sportplatz Berg",
             ],  # Stützpunkt zeigt drauf
             ["Stützpunkt", "sp1", "aufgelöst"],
+            ["Sportstätte", S2[:8], "Doppelung: Halle gehört zu Sportplatz Berg"],  # Anlage da
+            ["Sportanlage", A2[:8], "Doppelung: als Anlage bei Sportplatz Berg"],
             ["Sportstätte", S2[:8], "Doppelung: Halle gehört zu Sportplatz Berg"],  # jetzt frei
             ["Sportkomplex", K1, "nur noch eine Sportstätte"],  # S2 ist weg: frei
             ["Organisation", "o1", "Doppelung"],  # Sportplatz Berg nennt den Betreiber
@@ -76,6 +78,7 @@ def test_von_oben_nach_unten(tmp_path):
     probe = entfernen.entferne(eintraege, daten, probe=True)
     assert [(a, i[:8]) for a, i, _ in probe.entfernt] == [
         ("Stützpunkt", "sp1"),
+        ("Sportanlage", "bbbbbbbb"),
         ("Sportstätte", "22222222"),
         ("Sportkomplex", "33333333"),
     ]
@@ -83,9 +86,13 @@ def test_von_oben_nach_unten(tmp_path):
     assert not (daten / entfernen.PROTOKOLL).exists()
 
     e = entfernen.entferne(eintraege, daten)
-    assert [w.split(":")[0] for w in e.warnungen] == [f"Zeile {i}" for i in (2, 6, 7, 8, 9, 10)]
-    assert "noch verwendet von Stützpunkt „LSP Turnen“" in e.warnungen[0]
-    assert "noch verwendet von Sportstätte „Sportplatz Berg“" in e.warnungen[1]
+    assert [w.split(":")[0] for w in e.warnungen] == [
+        f"Zeile {i}" for i in (2, 4, 8, 9, 10, 11, 12)
+    ]
+    anlage = "Sportanlage „Einfeldhalle“ (bbbbbbbb)"
+    assert f"noch verwendet von {anlage}, Stützpunkt „LSP Turnen“" in e.warnungen[0]
+    assert f"noch verwendet von {anlage} (übersprungen)" in e.warnungen[1]
+    assert "noch verwendet von Sportstätte „Sportplatz Berg“" in e.warnungen[2]
     assert {d["id"] for d in lies_bestand(daten)} == {S1}
     assert lies_stuetzpunkte(daten) == [] and len(lies_organisationen(daten)) == 1
     assert not list((daten / "RP").glob("*/sportkomplexe/*.json"))
@@ -94,10 +101,11 @@ def test_von_oben_nach_unten(tmp_path):
         protokoll = list(csv.DictReader(f, delimiter=";"))
     assert [(z["art"], z["id"][:8], z["name"]) for z in protokoll] == [
         ("Stützpunkt", "sp1", "LSP Turnen"),
+        ("Sportanlage", "bbbbbbbb", "Einfeldhalle"),
         ("Sportstätte", "22222222", "Sportplatz Berg (Halle)"),
         ("Sportkomplex", "33333333", "Sportpark Berg"),
     ]
-    assert protokoll[1]["begruendung"].startswith("Doppelung")
+    assert protokoll[2]["begruendung"].startswith("Doppelung")
 
 
 def test_bestand_entfernt_nach_den_uebrigen_dateien(tmp_path, monkeypatch, capsys):
@@ -106,7 +114,12 @@ def test_bestand_entfernt_nach_den_uebrigen_dateien(tmp_path, monkeypatch, capsy
     daten = _daten(tmp_path)
     monkeypatch.setattr(cli, "DATEN", daten)
     weg = _csv(
-        tmp_path / "weg.csv", [["Stützpunkt", "sp1", "aufgelöst"], ["Sportstätte", S2, "Doppelung"]]
+        tmp_path / "weg.csv",
+        [
+            ["Stützpunkt", "sp1", "aufgelöst"],
+            ["Sportanlage", A2, "Doppelung"],
+            ["Sportstätte", S2, "Doppelung"],
+        ],
     )
     anlagen = tmp_path / "anlagen.csv"
     anlagen.write_text(f"sportstaette_id;typ\n{S1};Einfeldhalle\n", "utf-8")
@@ -115,4 +128,4 @@ def test_bestand_entfernt_nach_den_uebrigen_dateien(tmp_path, monkeypatch, capsy
     [s1] = list(lies_bestand(daten))
     assert sorted(a["typ"] for a in s1["anlagen"]) == ["Einfeldhalle", "Großspielfeld"]
     aus = capsys.readouterr().out
-    assert aus.index("anlagen.csv →") < aus.index("weg.csv → entfernen: 2")
+    assert aus.index("anlagen.csv →") < aus.index("weg.csv → entfernen: 3")

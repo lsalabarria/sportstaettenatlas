@@ -1,8 +1,8 @@
 """Einträge aus daten/ entfernen (Tabelle mit art, id, begruendung; Befehl `bestand`).
 
-Die Zeilen werden von oben nach unten abgearbeitet. Zeigt noch etwas auf den Eintrag (ein
-Stützpunkt auf eine Sportstätte, eine Sportstätte auf ihren Sportkomplex oder ihren Betreiber
-…), wird er mit einer Warnung übersprungen; was vorher Verweise löst, steht also weiter oben
+Die Zeilen werden von oben nach unten abgearbeitet. Zeigt noch etwas auf den Eintrag (eine
+Sportanlage oder ein Stützpunkt auf eine Sportstätte, eine Sportstätte auf ihren Sportkomplex
+oder ihren Betreiber …), wird er mit einer Warnung übersprungen; was vorher Verweise löst, steht also weiter oben
 oder in einer Tabelle, die `bestand` vorher einliest. Jede Entfernung kommt mit Datum und
 Begründung nach daten/entfernt.csv, damit sie nachvollziehbar bleibt.
 """
@@ -107,6 +107,12 @@ class _Bestand:
         out = []
         stp = [s for _, s in self.stuetzpunkte.values()]
         if art == "Sportstätte":
+            ordner = self.staetten[oid][0]
+            out += [
+                f"Sportanlage „{a.get('typ')}“ ({i[:8]})"
+                for i, (p, a) in self.anlagen.items()
+                if p.parent == ordner
+            ]
             out += [
                 f"Stützpunkt „{s.get('name')}“"
                 for s in stp
@@ -149,9 +155,7 @@ class _Bestand:
 
     def entferne(self, art: str, oid: str) -> None:
         pfad, _ = self.sammlung(art).pop(oid)
-        if art == "Sportstätte":
-            for aid in [a for a, (p, _) in self.anlagen.items() if p.parent == pfad]:
-                del self.anlagen[aid]
+        if art == "Sportstätte":  # nur noch die Meta-Datei: die Anlagen sind schon entfernt
             shutil.rmtree(pfad)
         else:
             pfad.unlink()
