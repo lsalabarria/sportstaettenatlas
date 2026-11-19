@@ -158,6 +158,11 @@ Tabelle eine Vorlage mit allen Spalten und einer Beispielzeile (vor dem Einlesen
 | Zahl | `12,5` oder `12.5`; `1.200.000`; ganze Zahlen auch `1.200` |
 | Auswahl | wie im Modell, Groß-/Kleinschreibung egal |
 | Lage | `lat`/`lon` in Grad (WGS84); UTM-Werte (EPSG:25832) werden umgerechnet |
+| Hausnummer | `12`, `12a`, `2-4`; `6.0` (von Excel als Zahl gespeichert) wird `6` |
+| Webseite | mit `https://`; `www.verein.de` bekommt es vorangestellt |
+
+Platzhalter wie `-` oder `k. A.` bei Hausnummer und Webseite gelten als leer. Für den
+vorhandenen Bestand macht das `uv run sportstaettenatlas migrieren --bereinigen`.
 
 Ein Wert, der nicht passt, wird übernommen, wie er ist, und erscheint unter den
 Regelverstößen.
@@ -170,7 +175,9 @@ Regelverstößen.
 | `ergaenzen` | anlegen | füllen | bleiben |
 | `aktualisieren` | anlegen | füllen | überschreiben |
 
-Gelöscht wird nie etwas, leere Zellen ändern nichts. Eine Tabelle der Sportanlagen legt auch
+Gelöscht wird nie etwas, leere Zellen ändern nichts. Eine **Änderung** braucht nur die `id`
+(auch die Kurz-ID) und die Spalten, die sich ändern, mit `--modus aktualisieren`. Eine
+Tabelle der Sportanlagen legt auch
 im Modus `neu` Anlagen bei vorhandenen Sportstätten an. Vorhandene Anlagen findet die ID
 (auch die Kurz-ID); ohne ID ist die n-te Anlage eines Typs in der Tabelle die n-te dieses Typs
 der Sportstätte. Organisationen findet die ID oder der Name.
