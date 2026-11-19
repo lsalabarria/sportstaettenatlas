@@ -18,6 +18,8 @@ organisationen/RP/<Art>/                  Verzeichnis der Organisationen, je Art
 └─ 3f0c2a8e-….json                        ein Verein, eine Gemeinde, ein Verband …
 stuetzpunkte/                             Stützpunkte des Leistungssports
 └─ c4d2a7e1-….json                        z. B. ein Bundesstützpunkt (Art, Sportarten, Sportstätten)
+outside/                                  Sportstätten außerhalb von Rheinland-Pfalz
+└─ NW/                                    Land (aus dem Gemeindeschlüssel), aufgebaut wie ein Kreis
 ```
 
 ## Begriffe
@@ -35,8 +37,12 @@ stuetzpunkte/                             Stützpunkte des Leistungssports
   sie unbekannt – aus dem Namen wird nichts geschätzt. Auf der Karte zählt sie als Verein,
   Kommune oder sonstige (`ORGANISATIONSTYPEN` in `modell.py`).
 - Der **Kreis-Ordner** ergibt sich aus der Lage (Verwaltungsgebiete VG250). Sportstätten
-  außerhalb von Rheinland-Pfalz liegen in `ohne-kreis`; nach einer Änderung der Lage bringt
+  ohne passenden Kreis liegen in `ohne-kreis`; nach einer Änderung der Lage bringt
   `uv run sportstaettenatlas einordnen` den Ordner in den richtigen Kreis.
+- Sportstätten **außerhalb von Rheinland-Pfalz** liegen in `outside/<Land>/`, ihre
+  Sportkomplexe in `outside/<Land>/sportkomplexe/`. Sie erscheinen nicht auf der Webseite,
+  `einordnen` lässt sie liegen, und die Prüfungen des Landes (Ort, Rheinland-Pfalz, PLZ,
+  Kreis-Ordner, Eigentum der Kommune) entfallen.
 - Ein **Sportkomplex** fasst mehrere Sportstätten an einem Ort zusammen, z. B. ein
   Sportzentrum mit Halle, Stadion und Freibad. Er ist optional: Die meisten Sportstätten
   gehören zu keinem. Die Sportstätten verweisen in `sportkomplex` auf seine ID; er selbst hat
@@ -187,8 +193,10 @@ Der Standort, z. B. ein Sportpark, ein Schulsportzentrum oder ein Freibad.
 | `kategorie` | Sportstättenkategorie | Auswahl [Kategorie](#auswahllisten) | ja |  |  |
 | `adresse` | Adresse | Adresse |  |  |  |
 | `lage` | Lage | Lage | ja |  | bestimmt Kreis und Gemeinde |
+| `entfernung_oepnv` | Entfernung zum ÖPNV | ganze Zahl |  | ≥ 0; ≤ 100000; in m | zur nächsten Haltestelle |
 | `oeffentlicher_zugang` | Öffentlicher Zugang | Auswahl [JaNein](#auswahllisten) |  |  |  |
 | `schulsport` | Schulsport | Auswahl [JaNein](#auswahllisten) |  |  |  |
+| `wlan` | WLAN | Auswahl [JaNein](#auswahllisten) |  |  |  |
 | `zuschauerplaetze` | Zuschauerplätze | ganze Zahl |  | ≥ 0; ≤ 100000 |  |
 | `betriebsstatus` | Betriebsstatus | Auswahl [Betriebsstatus](#auswahllisten) |  |  |  |
 | `sportkomplex` | Sportkomplex | Text |  | Muster `^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$` | ID eines Sportkomplexes (daten/<LAND>/<Kreis>/sportkomplexe/), nur wenn mehrere Sportstätten an einem Ort zusammengehören |
@@ -199,6 +207,15 @@ Der Standort, z. B. ein Sportpark, ein Schulsportzentrum oder ein Freibad.
 | `website` | Webseite | Text |  | Muster `^https?://\S+\.\S+$` | vollständige Adresse mit https:// |
 | `nutzer` | Nutzer | Liste von Text |  |  | Vereine und andere Organisationen, die die Sportstätte nutzen (Verzeichnis daten/organisationen/) |
 | `sportarten` | Sportarten | Liste von Text |  |  |  |
+| `wettkampfanlage` | Wettkampfanlage | Auswahl [Wettkampfanlage](#auswahllisten) |  |  |  |
+| `baujahr` | Baujahr | ganze Zahl |  | ≥ 1800; ≤ 2100 | des Gebäudes bzw. Geländes |
+| `letzte_sanierung` | Letzte Sanierung | ganze Zahl |  | ≥ 1800; ≤ 2100 | Jahr |
+| `fassadenmaterial` | Fassadenmaterial | Auswahl [Fassade](#auswahllisten) |  |  |  |
+| `funktionsraeume` | Funktionsräume | Anzahl je Wert |  | Anzahl je [Funktionsraum](#auswahllisten) | Anzahl je Art, z. B. 4 Umkleiden |
+| `energietraeger` | Energieträger | Liste von Energietraeger |  |  |  |
+| `verbraeuche` | Jahresverbräuche | Liste von Verbrauch |  |  |  |
+| `sanierungen` | Sanierungen | Liste von Sanierung |  |  |  |
+| `foerderungen` | Förderungen | Liste von Foerderung |  |  |  |
 | `anlagen` | Sportanlagen | Liste von Sportanlage |  |  | stehen als eigene Dateien im Ordner der Sportstätte, nicht in `<id>_meta.json` |
 
 ```json
@@ -243,6 +260,50 @@ Immer WGS84 (EPSG:4326), Grad mit Dezimalstellen.
 |---|---|---|---|---|---|
 | `lon` | Längengrad | Zahl | ja | ≥ 5.8; ≤ 9; mindestens 4 Nachkommastellen | WGS84 |
 | `lat` | Breitengrad | Zahl | ja | ≥ 48.8; ≤ 51.1; mindestens 4 Nachkommastellen | WGS84 |
+
+### Energieträger
+
+Ein Energieträger einer Sportstätte, z. B. Erdgas für die Heizung.
+
+| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
+|---|---|---|---|---|---|
+| `bereich` | Bereich | Auswahl [Energiebereich](#auswahllisten) |  |  | Heizung, Warmwasser oder Strom |
+| `art` | Art | Auswahl [Energietraegerart](#auswahllisten) | ja |  |  |
+| `einbaujahr` | Einbaujahr | ganze Zahl |  | ≥ 1800; ≤ 2100 |  |
+| `beschreibung` | Beschreibung | Text |  | höchstens 500 Zeichen |  |
+
+### Jahresverbrauch
+
+Ein Jahresverbrauch einer Sportstätte (Menge und Einheit).
+
+| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
+|---|---|---|---|---|---|
+| `art` | Art | Auswahl [Verbrauchsart](#auswahllisten) | ja |  |  |
+| `menge` | Menge | Zahl | ja | ≥ 0 |  |
+| `einheit` | Einheit | Auswahl [Einheit](#auswahllisten) |  |  |  |
+| `jahr` | Jahr | ganze Zahl |  | ≥ 1990; ≤ 2100 |  |
+
+### Sanierung
+
+Eine Sanierung (Sportstätte oder Sportanlage).
+
+| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
+|---|---|---|---|---|---|
+| `jahr` | Jahr | ganze Zahl |  | ≥ 1800; ≤ 2100 |  |
+| `kosten` | Kosten | Zahl |  | ≥ 0; braucht `waehrung` |  |
+| `waehrung` | Währung | Auswahl [Waehrung](#auswahllisten) |  |  |  |
+| `beschreibung` | Beschreibung | Text |  | höchstens 1000 Zeichen |  |
+
+### Förderung
+
+Eine Förderung (Sportstätte oder Sportanlage).
+
+| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
+|---|---|---|---|---|---|
+| `programm` | Programm | Text |  | höchstens 300 Zeichen |  |
+| `jahr` | Jahr | ganze Zahl |  | ≥ 1800; ≤ 2100 |  |
+| `hoehe` | Höhe | Zahl |  | ≥ 0; braucht `waehrung` |  |
+| `waehrung` | Währung | Auswahl [Waehrung](#auswahllisten) |  |  |  |
 
 ### Sportanlage (`<anlage-id>.json`)
 
@@ -314,6 +375,8 @@ Eine Einheit einer Sportstätte, z. B. ein Großspielfeld, eine Halle oder ein B
 | `geeignet_mental` | Geeignet bei geistiger Beeinträchtigung | Auswahl [JaNein](#auswahllisten) |  |  |  |
 | `baukosten` | Baukosten | Zahl |  | ≥ 0; braucht `waehrung`; Einheit aus `waehrung` | damalige Kosten |
 | `waehrung` | Währung | Auswahl [Waehrung](#auswahllisten) |  |  | der Baukosten |
+| `sanierungen` | Sanierungen | Liste von Sanierung |  |  |  |
+| `foerderungen` | Förderungen | Liste von Foerderung |  |  |  |
 
 ```json
 {
@@ -424,6 +487,7 @@ gelten. Keine Personen, keine Kontaktdaten.
 | `typ` | Art | Auswahl [Organisationstyp](#auswahllisten) |  |  | bestimmt auch den Ordner in daten/organisationen/ |
 | `ars` | Regionalschlüssel | Text |  | Muster `^\d{5}(\d{4}(\d{3})?)?$` | amtlicher Schlüssel einer Gebietskörperschaft: Kreis 5, Verbandsgemeinde 9, Gemeinde 12 Stellen |
 | `website` | Webseite | Text |  | Muster `^https?://\S+\.\S+$` | vollständige Adresse mit https:// |
+| `lsb_nummer` | Vereinsnummer im LSB | Text |  | Muster `^\d{7}$` | siebenstellig |
 | `uebergeordnet` | Übergeordnet | Text |  | höchstens 200 Zeichen | Name der übergeordneten Organisation, z. B. des Verbands |
 | `weitere_namen` | Weitere Schreibweisen | Liste von Text |  |  | andere Namen, unter denen Sportstätten sie nennen |
 
@@ -532,8 +596,15 @@ Felder, die nicht hier stehen, gelten für alle Typen.
 | Betriebsstatus | „in Betrieb“, „vorübergehend geschlossen“, „stillgelegt/geschlossen“, „im Bau“, „in Planung“ |
 | Organisationstyp | „Bund“, „Land Rheinland-Pfalz“, „Landkreis“, „Kreisfreie Stadt“, „Verbandsgemeinde“, „Verbandsfreie Gemeinde“, „Verbandsangehörige Stadt“, „Ortsgemeinde“, „Stadt/Gemeinde“, „Kommunales Unternehmen“, „Zweckverband“, „Sportverein im LSB RLP“, „Sonstiger Sportverein“, „Sportverband im LSB RLP“, „Sonstiger Sportverband“, „Privatwirtschaftlich/kommerziell“, „Sonstige“ |
 | Stuetzpunktart | „Olympiastützpunkt“, „Bundesstützpunkt“, „Bundesstützpunkt Nachwuchs“, „Bundesstützpunkt Para Sport“, „Landesleistungszentrum“, „Landesstützpunkt“ |
+| Fassade | „Klinker“, „Vorhangfassade“, „Putz“, „Sichtbeton“, „Glas“, „Wärmedämmverbundsystem“, „Holz“, „Mauerwerk mit Anstrich“, „Sonstiges“, „nicht zutreffend“ |
+| Wettkampfanlage | „keine Wettkampfanlage“, „Wettkampfanlage Typ A“, „Wettkampfanlage Typ B“, „Wettkampfanlage Typ C“ |
+| Funktionsraum | „Umkleide- und Sanitärräume - Sporttreibende“, „Umkleide- und Sanitärräume - Personal“, „Sanitärräume - Publikum“, „Erste-Hilfe-Räume“, „Büro- und Verwaltungsräume“, „Material- und Lagerräume“, „Geräteräume“, „Technikräume“, „Schulungs- / Seminarraum“, „Gastronomie“, „Sauna“ |
+| Energiebereich | „Heizung“, „Warmwasser“, „Strom“ |
+| Energietraegerart | „Erdgas“, „Flüssiggas“, „Heizöl“, „Holz/Pellets/Hackschnitzel“, „Fernwärme“, „Umweltwärme (Wärmepumpe)“, „Solarthermie“, „Strom (z.B. Nachtspeicherofen, Konvektoren etc.)“, „Strom (z.B. Durchlauferhitzer, Boiler)“, „Betrieb über Heizanlage“, „Photovoltaik-Anlage“, „Windkraftanlage“, „Sonstige“ |
+| Verbrauchsart | „Erdgas“, „Fernwärme“, „Flüssiggas“, „Heizöl“, „Holz/Pellets/Hackschnitzel“, „Strom“ |
+| Einheit | „kWh“, „Liter“, „m³“, „Festmeter“, „Tonnen“, „Schüttraummeter“ |
 | JaNein | „ja“, „nein“ |
-| Waehrung | „€“, „DM“, „RM“ |
+| Waehrung | „€“, „DM“, „DDR-Mark“, „RM“ |
 | Bodenbelag | „Sportparkett“, „Rasen“, „Kunstrasen“, „Hartplatz/Tenne“, „Beton“, „Sand“, „Kunststoff“, „Teppich“, „Granulat“, „Linoleum“, „Sonstiges“ |
 | Spielfeldart | „Fußball“, „Handball“, „Basketball“, „Volleyball“, „Beachvolleyball“, „Badminton“, „Futsal“, „Funino“, „Hallenhockey“, „Feldhockey“, „Faustball“, „American Football“, „Rugby“, „Baseball“, „Softball“, „Cricket“, „Streetball“, „Sonstige“ |
 | Kleinfeldart | „Fußball“, „Hockey“, „Basketball“, „Streetball“, „Sonstige“ |
