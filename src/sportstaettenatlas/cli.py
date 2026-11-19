@@ -14,6 +14,7 @@ from .analysen.alkis import cli as alkis_cli
 
 LAND = "rp"
 DATEN = Path("daten")
+REGELVERSTOESSE = "regelverstoesse.csv"  # in daten/, im Git: für alle ohne Installation
 DOCS = Path("docs")  # erzeugt, nicht im Git (baut die GitHub Action)
 WEBSEITE = Path("webseite")  # von Hand gepflegte Dateien und Analyse-Ergebnisse, im Git
 TITEL = "Sportstättenatlas Rheinland-Pfalz"
@@ -61,15 +62,17 @@ def _lies_bestand():
 
 
 def _pruefe_und_melde(bestand, organisationen, verstoesse, gebiete) -> None:
-    """Regeln des Modells und Prüfungen aus validate.py nach results/regelverstoesse.csv."""
+    """Regeln des Modells und Prüfungen aus validate.py nach daten/regelverstoesse.csv – im
+    Git, damit sie jeder ohne Installation sieht (auf GitHub als Tabelle mit Suche). Sortiert,
+    damit ein Commit nur zeigt, was sich wirklich geändert hat."""
     import csv
 
-    from .hilfen import ERGEBNISSE
     from .validate import DATENMODELL, pruefe
 
     alle = [(d, DATENMODELL, m) for d, m in verstoesse]
     alle += pruefe(bestand, organisationen, gebiete, DATEN)
-    datei = ERGEBNISSE / "regelverstoesse.csv"
+    alle = sorted(set(alle))
+    datei = DATEN / REGELVERSTOESSE
     if alle:
         datei.parent.mkdir(parents=True, exist_ok=True)
         with datei.open("w", newline="", encoding="utf-8") as f:
@@ -86,7 +89,7 @@ def _pruefe_und_melde(bestand, organisationen, verstoesse, gebiete) -> None:
 
 
 def cmd_pruefen(args):
-    """Nur prüfen: Regeln des Datenmodells und validate.py, Liste nach results/."""
+    """Nur prüfen: Regeln des Datenmodells und validate.py, Liste nach daten/."""
     bestand, organisationen, verstoesse = _lies_bestand()
     _pruefe_und_melde(bestand, organisationen, verstoesse, _gebiete())
     print(f"{len(bestand)} Sportstätten, {len(organisationen)} Organisationen geprüft.")
@@ -545,7 +548,7 @@ def main(argv: list[str] | None = None) -> None:
     sp = sub.add_parser(
         "pruefen",
         help="Datenbestand prüfen (Datenmodell und validate.py) – Liste in "
-        "results/regelverstoesse.csv, ohne die Webseite zu bauen",
+        "daten/regelverstoesse.csv, ohne die Webseite zu bauen",
     )
     sp.set_defaults(func=cmd_pruefen)
 

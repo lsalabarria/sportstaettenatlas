@@ -45,7 +45,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: regelverstoesse
-          path: results/regelverstoesse.csv
+          path: daten/regelverstoesse.csv
           if-no-files-found: ignore
       - uses: actions/upload-pages-artifact@v4
         if: github.event_name != 'pull_request'

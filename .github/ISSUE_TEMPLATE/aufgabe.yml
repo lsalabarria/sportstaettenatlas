@@ -25,7 +25,7 @@ body:
         Betroffene Dateien, Befehle oder Teile der Webseite, Datenquellen, Abhängigkeiten,
         bekannte Grenzen. Code und Ausgaben am besten in ```-Blöcke setzen.
       placeholder: |
-        - betrifft: src/sportstaettenatlas/validate.py, results/regelverstoesse.csv
+        - betrifft: src/sportstaettenatlas/validate.py, daten/regelverstoesse.csv
         - Daten: …
   - type: textarea
     id: umsetzung

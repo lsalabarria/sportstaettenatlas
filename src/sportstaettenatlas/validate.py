@@ -1,4 +1,4 @@
-"""Prüfungen über das Datenmodell hinaus – Auffälligkeiten für results/regelverstoesse.csv.
+"""Prüfungen über das Datenmodell hinaus – Auffälligkeiten für daten/regelverstoesse.csv.
 
 Das Datenmodell (modell.py) prüft jeden Datensatz für sich: Pflichtfelder, Formate,
 Auswahllisten, Nachkommastellen, `braucht` und `teil_von`. Hier stehen Prüfungen, die mehr

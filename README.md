@@ -83,7 +83,7 @@ Alle mit `uv run sportstaettenatlas …`; `--help` zeigt die Optionen.
 | `sportkomplex ID ID …` | Sportkomplex anlegen (`--name`) oder ergänzen (`--zu KOMPLEX`) und die Sportstätten zuordnen; `--entfernen` nimmt sie heraus (siehe [Sportkomplexe](daten/README.md#sportkomplexe)) |
 | `modell` | Feldtabellen in `daten/README.md` und Diagramm schreiben |
 | `migrieren` | Felder in allen Dateien von `daten/` umbenennen oder entfernen (`--umbenennen ALT=NEU`, `--entfernen FELD`, `--probe`); `--bereinigen` behebt Formfehler (Hausnummer `6.0`, Webseite ohne `https://`) |
-| `pruefen` | Bestand prüfen, ohne die Webseite zu bauen (Liste in `results/regelverstoesse.csv`) |
+| `pruefen` | Bestand prüfen, ohne die Webseite zu bauen (Liste in `daten/regelverstoesse.csv`) |
 | `seite` | Webseite nach `docs/` (`--vorschau`: lokal ansehen); prüft dabei mit |
 | `-v alkis` | ALKIS-Abgleich (siehe unten) |
 
@@ -97,7 +97,7 @@ Auswahllisten, Regeln, die Felder je Anlagentyp (`MERKMALE`) und die Zuordnungen
 Feld (Organisationstypen, Muster für Kontaktdaten). Daraus folgt:
 
 - `bestand`, `seite` und `alkis` prüfen `daten/` beim Lesen. Ein Fehler im Aufbau bricht ab,
-  ein Wert gegen die Regeln nicht; er steht in `results/regelverstoesse.csv`.
+  ein Wert gegen die Regeln nicht; er steht in `daten/regelverstoesse.csv`.
 - `seite` schreibt `docs/daten/schema.json`. Formular, Popup, Liste und Übersicht der Webseite
   nehmen Felder, Beschriftungen, Regeln und Zuordnungen von dort.
 - `modell` erzeugt den Teil „Datenmodell“ in `daten/README.md`; ein Test meldet, wenn er nicht
@@ -110,8 +110,11 @@ umbenannt oder gestrichen, passt `migrieren` die Dateien an, z. B.
 
 ## Prüfungen
 
-`seite` und `pruefen` schreiben alle Auffälligkeiten nach `results/regelverstoesse.csv` (Datei,
-Prüfung, Meldung); sie brechen nicht ab. Die Spalte `pruefung` nennt eine der Prüfungen unten
+`seite` und `pruefen` schreiben alle Auffälligkeiten nach `daten/regelverstoesse.csv` (Datei,
+Prüfung, Meldung, sortiert); sie brechen nicht ab. Die Datei gehört ins Git: Wer nichts
+installiert hat, sieht sie auf GitHub als durchsuchbare Tabelle. Nach jedem Batch mit
+`pruefen` erneuern und mit committen – der Commit zeigt dann, welche Meldungen weg und welche
+neu sind. Die Spalte `pruefung` nennt eine der Prüfungen unten
 oder „Datenmodell“. Zu den Regeln des Datenmodells (Pflichtfelder, Formate,
 Auswahllisten, mindestens 4 Nachkommastellen bei Koordinaten, `braucht`, `teil_von`) prüft
 `src/sportstaettenatlas/validate.py`:
@@ -235,8 +238,8 @@ Repository → *Settings* → *Pages*: Source „GitHub Actions“. Die Action
 `.github/workflows/seite.yml` läuft bei jedem Push und Pull Request:
 
 1. **Tests**: `pytest` mit den Browser-Tests
-2. **Webseite**: `seite` baut `docs/` aus `daten/` und `webseite/`; `regelverstoesse.csv`
-   liegt danach unter *Actions* → Lauf → *Artifacts*
+2. **Webseite**: `seite` baut `docs/` aus `daten/` und `webseite/`; die dabei neu erzeugte
+   `regelverstoesse.csv` liegt zusätzlich unter *Actions* → Lauf → *Artifacts*
 3. **Veröffentlichen**: nur für `main`, wenn 1. und 2. durchlaufen
 
 Einige Minuten nach dem Push ist die Seite unter
