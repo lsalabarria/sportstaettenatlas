@@ -1111,6 +1111,15 @@ class Organisation(Basis):
 # --- Vorschlag (Formular → LimeSurvey) ------------------------------------------------
 
 
+class NeueSportstaette(Basis):
+    """Eine neue Sportstätte innerhalb eines Vorschlags für einen Sportkomplex oder Stützpunkt;
+    dessen Liste der Sportstätten nennt sie mit `ref`, die ID vergibt erst die Übernahme."""
+
+    ref: str = _field("Verweis", "im Vorschlag, z. B. neu-1", pflicht=True, pattern=r"^neu-\d+$")
+    sportstaette: Sportstaette = _field("Angaben der Sportstätte", pflicht=True)
+    anlagen: list[Sportanlage] = _field("Sportanlagen", default_factory=list)
+
+
 class Vorschlag(Basis):
     """Was das Formular „Vorschlag“ als JSON in die LimeSurvey-Frage „data“ schreibt."""
 
@@ -1135,8 +1144,8 @@ class Vorschlag(Basis):
     art: Literal["neu", "aenderung", "anlagen", "organisation", "sportkomplex", "stuetzpunkt"] = (
         _field(
             "Art",
-            "neu: neue Sportstätte mit Anlagen; aenderung: Angaben einer Sportstätte; "
-            "anlagen: Sportanlagen einer Sportstätte; organisation: Organisation anlegen, "
+            "neu: neue Sportstätte mit Anlagen; aenderung: Angaben einer Sportstätte und, wenn "
+            "angegeben, ihre Sportanlagen; anlagen: nur Sportanlagen einer Sportstätte; organisation: Organisation anlegen, "
             "ändern oder löschen; sportkomplex: Sportkomplex anlegen, ändern oder auflösen; "
             "stuetzpunkt: Stützpunkt anlegen, ändern oder löschen",
             pflicht=True,
@@ -1148,8 +1157,8 @@ class Vorschlag(Basis):
     )
     anlagen: list[Sportanlage] | None = _field(
         "Sportanlagen",
-        "alle Anlagen nach der Änderung (bei neu und anlagen); vorhandene mit ihrer "
-        "Kurz-ID (Anfang der UUID), neue ohne",
+        "bei neu alle Anlagen; bei aenderung und anlagen die geänderten (vorhandene mit ihrer "
+        "Kurz-ID, dem Anfang der UUID) und neuen (ohne ID)",
     )
     entfernte_anlagen: list[str] = _field(
         "Entfernte Sportanlagen", "Kurz-IDs", default_factory=list
@@ -1184,6 +1193,23 @@ class Vorschlag(Basis):
         "Stützpunkt löschen",
         default=False,
     )
+    neue_organisationen: list[Organisation] = _field(
+        "Neue Organisationen",
+        "trägt der Vorschlag mit ein, z. B. den Betreiber einer neuen Sportstätte (jede Art); "
+        "steht der Name schon im Verzeichnis, gibt es nur eine Warnung",
+        default_factory=list,
+    )
+    neue_sportstaetten: list[NeueSportstaette] = _field(
+        "Neue Sportstätten",
+        "bei sportkomplex und stuetzpunkt: neue Sportstätten mit ihren Anlagen; `sportstaetten` "
+        "bzw. `stuetzpunkt.sportstaetten` nennen sie mit ihrem `ref`",
+        default_factory=list,
+    )
+    neuer_sportkomplex: Sportkomplex | None = _field(
+        "Neuer Sportkomplex",
+        "bei neu und aenderung: neuer Sportkomplex der Sportstätte; weitere vorhandene "
+        "Sportstätten des Komplexes in `sportstaetten`",
+    )
     geaendert: list[str] = _field("Geänderte Felder", default_factory=list)
     gemeinde: str | None = _field("Gemeinde", "Regionalschlüssel der Gemeinde an der Lage")
     dubletten_geprueft: list[str] = _field(
@@ -1194,6 +1220,18 @@ class Vorschlag(Basis):
 
     @model_validator(mode="after")
     def _passt_zur_art(self):
+        refs = [n.ref for n in self.neue_sportstaetten]
+        if refs and self.art not in ("sportkomplex", "stuetzpunkt"):
+            raise ValueError(f"{self.art}: neue_sportstaetten nur bei sportkomplex und stuetzpunkt")
+        if len(set(refs)) != len(refs):
+            raise ValueError("neue_sportstaetten: ref doppelt")
+        genannt = set(self.sportstaetten) | set(
+            self.stuetzpunkt.sportstaetten if self.stuetzpunkt else []
+        )
+        if fehlt := [r for r in refs if r not in genannt]:
+            raise ValueError(f"neue_sportstaetten: {', '.join(fehlt)} gehört nirgends dazu")
+        if self.neuer_sportkomplex is not None and self.art not in ("neu", "aenderung"):
+            raise ValueError(f"{self.art}: neuer_sportkomplex nur bei neu und aenderung")
         if self.art == "neu" and (self.sportstaette is None or self.anlagen is None):
             raise ValueError("neu: sportstaette und anlagen nötig")
         if self.art == "stuetzpunkt":
@@ -1243,6 +1281,7 @@ MODELLE = (
     Sportkomplex,
     Stuetzpunkt,
     Organisation,
+    NeueSportstaette,
     Vorschlag,
 )
 
@@ -1491,6 +1530,7 @@ def readme_block() -> str:
         (Stuetzpunkt, "Stützpunkt (`stuetzpunkte/<id>.json`)"),
         (Organisation, "Organisation (`organisationen/<LAND>/<Art>/<id>.json`)"),
         (Vorschlag, "Vorschlag (Formular → LimeSurvey, Frage `data`)"),
+        (NeueSportstaette, "Neue Sportstätte im Vorschlag"),
     ):
         teile += [f"### {ueberschrift}", ""]
         if modell.__doc__:

@@ -228,6 +228,7 @@ def test_sportkomplex_im_popup_und_formular(oeffne):
     assert [o.split(" (")[0] for o in feld.locator("option").all_inner_texts()] == [
         "kein Sportkomplex",
         "Sportzentrum Berg",
+        "+ neuer Sportkomplex …",
     ]
 
 
@@ -400,13 +401,109 @@ def test_sportanlagen_aendern(oeffne):
     _senden(page)
     d = _gesendet(page)
     assert modell.pruefe(modell.Vorschlag, d) == []
-    assert d["art"] == "anlagen" and d["sportstaette_id"] == SID
-    assert sorted(a["typ"] for a in d["anlagen"]) == [
-        "Großspielfeld",
-        "Kleinspielfeld",
-        "Rundlaufbahn",
+    # nur Anlagen geändert: ohne die Angaben der Sportstätte, nur die neue Anlage
+    assert d["art"] == "anlagen" and d["sportstaette_id"] == SID and "sportstaette" not in d
+    assert d["anlagen"] == [{"typ": "Kleinspielfeld"}]
+
+
+def test_angaben_und_anlagen_zusammen(oeffne):
+    page = oeffne("#ansicht=vorschlag")
+    page.evaluate(f"ANSICHTEN.vorschlag.bearbeite('{SID}')")
+    page.wait_for_timeout(200)
+    assert page.locator("#v-teil-anlagen").is_visible()
+    page.fill("input[name=zuschauerplaetze]", "120")
+    page.locator("#v-anlagen tr.anlage").last.locator(".weg").click()  # Rundlaufbahn entfernen
+    _senden(page)
+    d = _gesendet(page)
+    assert modell.pruefe(modell.Vorschlag, d) == []
+    assert (d["art"], d["geaendert"]) == ("aenderung", ["zuschauerplaetze"])
+    assert d["anlagen"] == [] and d["entfernte_anlagen"] == ["bbbbbbbb"]
+
+
+def test_neue_organisation_mit_warnung(oeffne):
+    page = oeffne("#ansicht=vorschlag")
+    page.evaluate("ANSICHTEN.vorschlag.neu({ lage: { lat: 50.0012, lon: 7.0034 } })")
+    page.wait_for_timeout(200)
+    page.fill("input[name=name]", "Neue Halle")
+    page.select_option("select[name=kategorie]", "Sporthalle")
+    page.fill("input[name=betreiber]", "TuS Berg 1")
+    page.fill("input[name=eigentuemer]", "Stadtwerke Tal")
+    page.wait_for_timeout(400)
+    neu = page.locator("#v-teil-neue-orgs")
+    assert neu.is_visible() and "TuS Berg 1" in neu.inner_text()
+    assert "Mögliche Doppelung" in page.locator('.neue-org[data-k="tus berg 1"]').inner_text()
+    assert (
+        "Mögliche Doppelung" not in page.locator('.neue-org[data-k="stadtwerke tal"]').inner_text()
+    )
+    page.locator('.neue-org[data-k="stadtwerke tal"] select[data-no=typ]').select_option(
+        "Kommunales Unternehmen"
+    )
+    _senden(page)
+    assert "Organisation „TuS Berg 1“ prüfen" in page.inner_text("#v-fehler")
+    page.check('.neue-org[data-k="tus berg 1"] input[data-no=geprueft]')
+    _senden(page)
+    d = _gesendet(page)
+    assert modell.pruefe(modell.Vorschlag, d) == []
+    assert d["neue_organisationen"] == [  # in der Reihenfolge der Felder: Eigentümer, Betreiber
+        {"name": "Stadtwerke Tal", "typ": "Kommunales Unternehmen"},
+        {"name": "TuS Berg 1"},
     ]
-    assert {a.get("id") for a in d["anlagen"]} >= {"aaaaaaaa", "bbbbbbbb"}  # vorhandene: Kurz-ID
+    # „stattdessen diese“: der vorhandene Name ersetzt den neuen
+    page.evaluate("window.__url = null")
+    page.click('.neue-org[data-k="tus berg 1"] [data-org-statt="TuS Berg"]')
+    assert page.input_value("input[name=betreiber]") == "TuS Berg"
+    _senden(page)
+    d = _gesendet(page)
+    assert [o["name"] for o in d["neue_organisationen"]] == ["Stadtwerke Tal"]
+
+
+def test_neuer_sportkomplex_bei_sportstaette(oeffne):
+    page = oeffne("#ansicht=vorschlag")
+    page.evaluate(f"ANSICHTEN.vorschlag.bearbeite('{T3}')")
+    page.wait_for_timeout(200)
+    page.select_option("select[name=sportkomplex]", "__neu")
+    page.fill("input[name='nk.name']", "Sportpark Tal")
+    _senden(page)
+    assert "mindestens eine weitere Sportstätte" in page.inner_text("#v-fehler")
+    page.fill("#v-nk-suche", "Tennisanlage")
+    page.click("#v-nk-treffer li[data-st]")
+    _senden(page)
+    d = _gesendet(page)
+    assert modell.pruefe(modell.Vorschlag, d) == []
+    assert d["art"] == "aenderung" and d["sportstaette_id"] == T3
+    assert d["neuer_sportkomplex"] == {"name": "Sportpark Tal"}
+    assert d["sportstaetten"] == ["22222222-2222-4222-8222-222222222222"]
+
+
+def test_neue_sportstaette_im_sportkomplex(oeffne):
+    page = oeffne("#ansicht=vorschlag")
+    page.evaluate(f"ANSICHTEN.vorschlag.komplexVon('{T3}')")
+    page.wait_for_timeout(200)
+    page.fill("input[name='ko.name']", "Sportpark Tal")
+    page.click('[data-neue-staette="sportkomplex"]')
+    page.wait_for_timeout(200)
+    assert page.locator("#v-unter").is_visible() and page.locator("#v-teil-komplex").is_hidden()
+    page.fill("input[name=name]", "Halle Tal")
+    page.select_option("select[name=kategorie]", "Sporthalle")
+    page.evaluate("ANSICHTEN.vorschlag.lage(50.2051, 7.8031)")
+    page.fill("input[name=betreiber]", "Hallenverein Tal")
+    page.click("#v-anlage-dazu")
+    page.locator("#v-anlagen tr.anlage").last.locator("input[data-f=typ]").fill("Einfeldhalle")
+    page.wait_for_timeout(400)
+    _senden(page)  # übernimmt die Sportstätte in den Komplex
+    page.wait_for_timeout(200)
+    assert page.locator("#v-teil-komplex").is_visible()
+    assert page.input_value("input[name='ko.name']") == "Sportpark Tal"
+    assert "Halle Tal (neu)" in page.inner_text("#v-ko-staetten")
+    assert "Hallenverein Tal" in page.inner_text("#v-teil-neue-orgs")
+    _senden(page)
+    d = _gesendet(page)
+    assert modell.pruefe(modell.Vorschlag, d) == []
+    assert d["sportstaetten"] == [T3, "neu-1"]
+    [n] = d["neue_sportstaetten"]
+    assert n["ref"] == "neu-1" and n["sportstaette"]["name"] == "Halle Tal"
+    assert n["anlagen"] == [{"typ": "Einfeldhalle"}]
+    assert d["neue_organisationen"] == [{"name": "Hallenverein Tal"}]
 
 
 def test_organisation_aendern(oeffne):

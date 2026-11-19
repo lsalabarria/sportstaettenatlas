@@ -6,7 +6,7 @@ der Antwort-ID:
 
 - neu:          neue Sportstätte mit ihren Anlagen
 - aenderung:    die geänderten Felder (`geaendert`) der Sportstätte; ein Feld, das dort steht,
-                aber fehlt, wird geleert
+                aber fehlt, wird geleert; dazu, wenn angegeben, ihre Anlagen wie bei „anlagen“
 - anlagen:      die genannten Anlagen (vorhandene über die Kurz-ID, ganz ersetzt), neue dazu,
                 `entfernte_anlagen` gelöscht
 - organisation: Organisation anlegen, die geänderten Felder ändern oder löschen
@@ -15,6 +15,11 @@ der Antwort-ID:
                 ihn; `loeschen` löst ihn auf (Datei weg, Verweise entfernt)
 - stuetzpunkt:  Stützpunkt anlegen, seine geänderten Felder ändern (auch die Listen der
                 Sportstätten und Sportkomplexe) oder löschen
+
+Jeder Vorschlag kann weitere neue Objekte mitbringen: `neue_organisationen` (angelegt, wenn
+der Name noch nicht im Verzeichnis steht, sonst eine Warnung), `neue_sportstaetten` bei
+Sportkomplex und Stützpunkt (ihre `ref` in den Listen wird zur neuen ID) und
+`neuer_sportkomplex` bei neu und aenderung (mit der Sportstätte und denen in `sportstaetten`).
 
 Eine Änderung überschreibt den Wert in daten/. Setzen zwei Vorschläge im Export dasselbe Feld
 verschieden, steht dort „a|b“ (mit | getrennt), und es gibt eine Warnung. Übernommene
@@ -42,9 +47,12 @@ from .bestand import (
     finde_organisation,
     komplex_dateien,
     lies_bestand,
+    lies_organisationen,
     lies_sportkomplexe,
     lies_stuetzpunkte,
     loesche_stuetzpunkt,
+    org_schluessel,
+    org_verzeichnis,
     organisation_id,
     schreibe_bestand,
     schreibe_organisation,
@@ -130,6 +138,7 @@ class _Uebernahme:
         self.komplexe: dict[str, dict | None] = {}  # id → Sportkomplex; None: auflösen
         self.stuetzpunkte: dict[str, dict | None] = {}  # id → Stützpunkt; None: löschen
         self._mitglieder: dict[str, set[str]] | None = None  # Komplex → Sportstätten in daten/
+        self._verzeichnis: dict[str, dict] | None = None  # Name → Organisation (mit neuen)
         self.gesetzt: dict[tuple[str, str], list[tuple[str, object]]] = {}
 
     def setze(self, ziel: str, obj: dict, pfad: str, w, antwort: str, name: str) -> None:
@@ -156,18 +165,74 @@ class _Uebernahme:
     # --- je Art ---
 
     def neu_anlegen(self, a: Antwort, v: dict) -> None:
-        sid = str(uuid.uuid5(_NAMENSRAUM, f"limesurvey/{a.id}"))
+        self._neue_staette(a, f"limesurvey/{a.id}", v["sportstaette"], v.get("anlagen") or [])
+        if v.get("neuer_sportkomplex"):
+            self._neuer_komplex(a, v, str(uuid.uuid5(_NAMENSRAUM, f"limesurvey/{a.id}")))
+
+    def _neue_staette(self, a: Antwort, schluessel: str, angaben: dict, anlagen: list) -> str:
+        """Neue Sportstätte (ID aus Antwort und `schluessel`); gibt es sie schon (z. B. mit
+        --alle), werden ihre Felder gesetzt. Liefert die ID."""
+        sid = str(uuid.uuid5(_NAMENSRAUM, schluessel))
         st = self.staette(sid)
         if st is None:
             anlagen = [
-                {**x, "id": str(uuid.uuid5(_NAMENSRAUM, f"limesurvey/{a.id}/{i}"))}
-                for i, x in enumerate(v.get("anlagen") or [])
+                {**x, "id": str(uuid.uuid5(_NAMENSRAUM, f"{schluessel}/{i}"))}
+                for i, x in enumerate(anlagen)
             ]
-            self.staetten[sid] = {**v["sportstaette"], "id": sid, "anlagen": anlagen}
+            self.staetten[sid] = {**angaben, "id": sid, "anlagen": anlagen}
             self.neu.add(sid)
             self.e.neue_ids.append(sid)
+        else:
+            self._felder(a, st, angaben, None)
+        return sid
+
+    def neue_sportstaetten(self, a: Antwort, v: dict) -> None:
+        """Neue Sportstätten eines Sportkomplexes oder Stützpunkts anlegen und ihre `ref` in
+        den Listen durch die ID ersetzen."""
+        ids = {
+            n["ref"]: self._neue_staette(
+                a, f"limesurvey/{a.id}/{n['ref']}", n["sportstaette"], n.get("anlagen") or []
+            )
+            for n in v.get("neue_sportstaetten") or []
+        }
+        if not ids:
             return
-        self._felder(a, st, v["sportstaette"], None)  # schon da (z. B. mit --alle)
+        v["sportstaetten"] = [ids.get(x, x) for x in v.get("sportstaetten") or []]
+        if v.get("stuetzpunkt"):
+            sp = v["stuetzpunkt"]
+            sp["sportstaetten"] = [ids.get(x, x) for x in sp.get("sportstaetten") or []]
+
+    def neue_organisationen(self, a: Antwort, v: dict) -> None:
+        """Mit eingetragene Organisationen anlegen; steht der Name (auch eine weitere
+        Schreibweise) schon im Verzeichnis, nur warnen."""
+        if self._verzeichnis is None:
+            self._verzeichnis = org_verzeichnis(lies_organisationen(self.daten))
+        for o in v.get("neue_organisationen") or []:
+            namen = [o["name"], *(o.get("weitere_namen") or [])]
+            if alt := next(
+                (
+                    self._verzeichnis[k]
+                    for n in namen
+                    if (k := org_schluessel(n)) in self._verzeichnis
+                ),
+                None,
+            ):
+                self.e.warnungen.append(
+                    f"Antwort {a.id}: Organisation „{o['name']}“ steht schon im Verzeichnis "
+                    f"(„{alt['name']}“) – nicht neu angelegt"
+                )
+                continue
+            oid = organisation_id(o["name"])
+            self.orgs[oid] = {**o, "id": oid}
+            self._verzeichnis.update(org_verzeichnis([self.orgs[oid]]))
+
+    def _neuer_komplex(self, a: Antwort, v: dict, sid: str) -> None:
+        """Neuer Sportkomplex einer neuen oder geänderten Sportstätte, mit den weiteren
+        Sportstätten aus `sportstaetten`."""
+        weitere = [x for x in v.get("sportstaetten") or [] if x != sid]
+        self.sportkomplex(
+            a, {"sportkomplex": v["neuer_sportkomplex"], "sportstaetten": [sid, *weitere]}
+        )
 
     def aendern(self, a: Antwort, v: dict) -> None:
         st = self.staette(v["sportstaette_id"])
@@ -175,6 +240,10 @@ class _Uebernahme:
             self.e.warnungen.append(f"Antwort {a.id}: Sportstätte {v['sportstaette_id']} fehlt")
             return
         self._felder(a, st, v["sportstaette"], v.get("geaendert") or None)
+        if v.get("anlagen") or v.get("entfernte_anlagen"):  # Anlagen im selben Vorschlag
+            self.anlagen(a, v)
+        if v.get("neuer_sportkomplex"):
+            self._neuer_komplex(a, v, st["id"])
 
     def _felder(self, a: Antwort, st: dict, neu: dict, geaendert: list[str] | None) -> None:
         if geaendert is None:  # ohne Liste: alle angegebenen Felder, die Adresse je Teil
@@ -390,6 +459,8 @@ def uebernimm(
             e.warnungen.append(f"Antwort {a.id}: passt nicht zum Modell – " + "; ".join(fehler))
             continue
         art = v["art"]
+        u.neue_organisationen(a, v)
+        u.neue_sportstaetten(a, v)
         {
             "neu": u.neu_anlegen,
             "aenderung": u.aendern,

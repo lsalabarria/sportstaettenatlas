@@ -170,14 +170,26 @@ OpenStreetMap.
 
 ### Vorschläge
 
-Das Formular kennt sechs Arten: **neue Sportstätte** mit ihren Sportanlagen, **Angaben einer
-Sportstätte ändern** (auch ihren Sportkomplex), ihre **Sportanlagen ändern** (hinzufügen, ändern,
-entfernen), **Organisation** eintragen, ändern oder löschen, **Sportkomplex** anlegen,
-ändern (Name, Adresse, welche Sportstätten dazugehören) oder auflösen und **Stützpunkt**
-eintragen (Art, Sportarten, Träger, Gültigkeit, Sportstätten oder Sportkomplexe), ändern oder
-löschen. Es prüft die Regeln des Modells und meldet
-mögliche Doppelungen (höchstens 60 m entfernt, gleiche Kategorie in 250 m, sehr ähnlicher
-Name oder gleiche Adresse; bei Organisationen: Name schon im Verzeichnis).
+Das Formular kennt fünf Arten: **neue Sportstätte** mit ihren Sportanlagen, **Sportstätte
+ändern** (Angaben, Sportkomplex und Sportanlagen: hinzufügen, ändern, entfernen),
+**Organisation** eintragen, ändern oder löschen, **Sportkomplex** anlegen, ändern (Name,
+Adresse, welche Sportstätten dazugehören) oder auflösen und **Stützpunkt** eintragen (Art,
+Sportarten, Träger, Gültigkeit, Sportstätten oder Sportkomplexe), ändern oder löschen.
+
+Neues lässt sich im selben Vorschlag mit anlegen:
+
+- **Organisationen:** Steht ein Eigentümer, Betreiber, Nutzer, Träger oder eine übergeordnete
+  Organisation noch nicht im Verzeichnis, bietet das Formular an, sie mit Art und Webseite
+  einzutragen (`neue_organisationen`).
+- **Sportstätten** beim Sportkomplex und beim Stützpunkt: „+ neue Sportstätte“ öffnet das
+  Formular der Sportstätte, „Sportstätte übernehmen“ führt zurück (`neue_sportstaetten`).
+- **Sportkomplex** bei einer Sportstätte: „+ neuer Sportkomplex …“ mit Name, Adresse und den
+  weiteren Sportstätten (`neuer_sportkomplex`).
+
+Das Formular prüft die Regeln des Modells und meldet mögliche Doppelungen (höchstens 60 m
+entfernt, gleiche Kategorie in 250 m, sehr ähnlicher Name oder gleiche Adresse; bei
+Organisationen: Name schon im Verzeichnis oder sehr ähnlich). Eine mögliche Doppelung muss
+man bestätigen, bevor der Vorschlag weitergeht.
 
 „Weiter zu LimeSurvey“ öffnet die Umfrage aus `konfig.js`. Sie hat zwei Fragen: `data`
 (versteckt) bekommt den ganzen Vorschlag als JSON nach dem Modell `Vorschlag` (Felder in
@@ -195,7 +207,9 @@ zeigt der Befehl nur an, gespeichert werden sie nicht. Liegt eine geänderte Lag
 einem anderen Kreis, verschiebt `einordnen` die Sportstätte. Ein vorgeschlagener Sportkomplex
 wird angelegt und bei seinen Sportstätten eingetragen; Sportstätten, die ein Vorschlag aus
 einem Komplex nimmt, verlieren ihn, ein aufgelöster Komplex verschwindet ganz. Ein Stützpunkt
-wird angelegt, geändert (die geänderten Felder) oder gelöscht.
+wird angelegt, geändert (die geänderten Felder) oder gelöscht. Was ein Vorschlag mit anlegt,
+kommt zuerst: neue Organisationen (steht der Name schon im Verzeichnis, nur eine Warnung) und
+neue Sportstätten (die Listen des Sportkomplexes bzw. Stützpunkts bekommen ihre IDs).
 
 „Bug melden“ oben öffnet ein öffentliches Ticket auf GitHub (Vorlage
 `.github/ISSUE_TEMPLATE/fehler.yml`).

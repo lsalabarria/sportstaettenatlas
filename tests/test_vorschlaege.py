@@ -268,3 +268,93 @@ def test_stuetzpunkt_vorschlagen_aendern_loeschen(tmp_path):
         lies_export(_export(tmp_path, [(neu, ""), (aendern, ""), (loeschen, "")])), daten, _kreis
     )
     assert lies_stuetzpunkte(daten) == []
+
+
+def test_verschachtelte_vorschlaege(tmp_path):
+    from sportstaettenatlas.bestand import lies_sportkomplexe, lies_stuetzpunkte
+
+    daten = _bestand(tmp_path)
+    neue_halle = {
+        "name": "Neue Halle",
+        "kategorie": "Sporthalle",
+        "lage": {"lon": 7.5941, "lat": 50.3514},
+        "betreiber": "SV Neu",
+    }
+    export = _export(
+        tmp_path,
+        [
+            # 1: neue Sportstätte mit neuem Betreiber, einem schon bekannten und neuem Komplex
+            (
+                {
+                    "version": 1,
+                    "art": "neu",
+                    "sportstaette": {**neue_halle, "eigentuemer": "tus musterdorf"},
+                    "anlagen": [{"typ": "Einfachsporthalle"}],
+                    "neue_organisationen": [
+                        {"name": "SV Neu", "typ": "Sonstiger Sportverein"},
+                        {"name": "TuS Musterdorf"},  # gibt es schon: nur eine Warnung
+                    ],
+                    "neuer_sportkomplex": {"name": "Sportpark Musterdorf"},
+                    "sportstaetten": [SID],
+                },
+                "",
+            ),
+            # 2: Stützpunkt mit einer neuen Sportstätte
+            (
+                {
+                    "version": 1,
+                    "art": "stuetzpunkt",
+                    "stuetzpunkt": {
+                        "name": "LSP Tennis",
+                        "art": "Landesstützpunkt",
+                        "sportstaetten": [SID, "neu-1"],
+                    },
+                    "neue_sportstaetten": [
+                        {
+                            "ref": "neu-1",
+                            "sportstaette": {**neue_halle, "name": "Tennishalle"},
+                            "anlagen": [{"typ": "Tennishalle"}],
+                        }
+                    ],
+                },
+                "",
+            ),
+            # 3: Angaben und Anlagen einer Sportstätte in einem Vorschlag
+            (
+                {
+                    **AENDERUNG,
+                    "sportstaette": {
+                        "name": "Sportpark Am Weg",
+                        "kategorie": "Sportplatz",
+                        "lage": {"lon": 7.5938, "lat": 50.3512},
+                    },
+                    "geaendert": ["name"],
+                    "anlagen": [{"id": A1[:8], "typ": "Großspielfeld", "baujahr": 1995}],
+                    "entfernte_anlagen": [A2[:8]],
+                },
+                "",
+            ),
+        ],
+    )
+    e = uebernimm(lies_export(export), daten, _kreis)
+    assert e.warnungen == [
+        (
+            "Antwort 1: Organisation „TuS Musterdorf“ steht schon im Verzeichnis"
+            " („TuS Musterdorf“) – nicht neu angelegt"
+        )
+    ]
+    orgs = {o["name"]: o for o in lies_organisationen(daten)}
+    assert set(orgs) == {"TuS Musterdorf", "SV Neu"}
+    assert orgs["SV Neu"]["typ"] == "Sonstiger Sportverein"
+
+    bestand = {d["name"]: d for d in lies_bestand(daten)}
+    assert set(bestand) == {"Sportpark Am Weg", "Neue Halle", "Tennishalle"}
+    [k] = lies_sportkomplexe(daten)
+    assert k["name"] == "Sportpark Musterdorf"
+    assert bestand["Neue Halle"]["sportkomplex"] == k["id"]
+    assert bestand["Sportpark Am Weg"]["sportkomplex"] == k["id"]
+    assert [a["typ"] for a in bestand["Tennishalle"]["anlagen"]] == ["Tennishalle"]
+    [sp] = lies_stuetzpunkte(daten)
+    assert sp["sportstaetten"] == [SID, bestand["Tennishalle"]["id"]]
+    alt = bestand["Sportpark Am Weg"]
+    assert [(a["id"], a.get("baujahr")) for a in alt["anlagen"]] == [(A1, 1995)]
