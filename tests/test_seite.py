@@ -255,12 +255,27 @@ def test_von_hand_gepflegt(tmp_path):
     # aus docs/ übernommen, die übrigen aus der Vorlage angelegt; alles nach docs/ kopiert
     assert info["neu_angelegt"] == ["konfig.js", "datenschutz.html"]
     assert (von_hand / "impressum.html").read_text(encoding="utf-8") == "mein Impressum"
-    (von_hand / "konfig.js").write_text("window.KONFIG = {};", encoding="utf-8")
+    eigene = (
+        'window.KONFIG = { impressum_url: "impressum.html", datenschutz_url: "datenschutz.html" };'
+    )
+    (von_hand / "konfig.js").write_text(eigene, encoding="utf-8")
     shutil.rmtree(docs)  # wie in der GitHub Action: docs/ fehlt
     info = schreibe_webseite(docs, leaflet_laden=False, von_hand=von_hand)
     assert info["neu_angelegt"] == []
-    assert (docs / "konfig.js").read_text(encoding="utf-8") == "window.KONFIG = {};"
+    assert (docs / "konfig.js").read_text(encoding="utf-8") == eigene
     assert (docs / "impressum.html").read_text(encoding="utf-8") == "mein Impressum"
+    # verweist konfig.js auf fremde Seiten, gibt es keine eigenen (und keine alten Kopien)
+    (von_hand / "konfig.js").write_text(
+        'window.KONFIG = { impressum_url: "https://example.org/impressum", '
+        'datenschutz_url: "https://example.org/datenschutz" };',
+        encoding="utf-8",
+    )
+    (von_hand / "impressum.html").unlink()
+    (von_hand / "datenschutz.html").unlink()
+    info = schreibe_webseite(docs, leaflet_laden=False, von_hand=von_hand)
+    assert info["neu_angelegt"] == []
+    assert not (von_hand / "impressum.html").exists() and not (docs / "impressum.html").exists()
+    assert not (docs / "datenschutz.html").exists()
 
 
 def test_betreiber_art():

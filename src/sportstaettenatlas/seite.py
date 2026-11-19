@@ -45,7 +45,11 @@ LEAFLET_DATEIEN = (
     "images/marker-icon-2x.png",
     "images/marker-shadow.png",
 )
-VON_HAND = ("konfig.js", "impressum.html", "datenschutz.html")  # nie überschreiben
+VON_HAND = (
+    "konfig.js",
+    "impressum.html",
+    "datenschutz.html",
+)  # nie überschreiben; konfig.js zuerst
 ANALYSE = "analyse.json"  # Titel, Beschreibungen und Quellenvermerk einer gespeicherten Analyse
 
 
@@ -392,6 +396,12 @@ def schreibe_webseite(
     neu_angelegt = []
     quelle = von_hand or ausgabe
     for name in VON_HAND:
+        # Impressum und Datenschutz nur, solange konfig.js auf die eigene Seite verweist (statt
+        # z. B. auf die der Hochschule); sonst auch keine alte Kopie in `ausgabe` stehen lassen
+        if name != VON_HAND[0] and name not in (quelle / VON_HAND[0]).read_text("utf-8"):
+            if quelle != ausgabe:
+                (ausgabe / name).unlink(missing_ok=True)
+            continue
         if not (quelle / name).exists():
             quelle.mkdir(parents=True, exist_ok=True)
             if (ausgabe / name).exists():  # früher nur in docs/ gepflegt

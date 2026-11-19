@@ -204,8 +204,9 @@ immer frisch.
 - `vorschlag_url`: Umfrage für Vorschläge; `vorschlag_felder` nur, wenn die Fragen dort nicht
   `data` und `kommentar` heißen
 - `fehler_url`: Link für „Bug melden“; leer = kein Link
-- `impressum_url`, `datenschutz_url`: Pflicht für eine öffentliche Seite. `seite` legt einmalig
-  Entwürfe in `webseite/` an (`impressum.html`, `datenschutz.html`, Platzhalter gelb markiert).
+- `impressum_url`, `datenschutz_url`: Pflicht für eine öffentliche Seite, hier die Seiten der
+  Hochschule Koblenz. Verweisen sie auf `impressum.html` bzw. `datenschutz.html`, legt `seite`
+  einmalig Entwürfe in `webseite/` an (Platzhalter gelb markiert) und veröffentlicht sie.
 - `lizenz`, `lizenz_url`, `namensnennung`: Lizenz der Daten
 - `ortssuche`: `false` schaltet die Suche über OpenStreetMap ab
 
