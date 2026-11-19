@@ -27,8 +27,8 @@ outside/                                  Sportstätten außerhalb von Rheinland
 - Eine **Sportstätte** ist der Standort, z. B. ein Sportpark, ein Schulsportzentrum oder ein
   Freibad – ein Punkt auf der Karte. Ihre Angaben gelten für alle ihre Anlagen.
 - Eine **Sportanlage** ist eine Einheit einer Sportstätte, z. B. ein Großspielfeld, eine
-  Rundlaufbahn, eine Halle oder ein Becken. Sie liegt im Ordner ihrer Sportstätte und nennt sie
-  in `sportstaette_id`. Eine Sportstätte kann (noch) ohne Anlagen sein.
+  Rundlaufbahn, eine Halle oder ein Becken. Zu welcher Sportstätte sie gehört, sagt allein der
+  Ordner, in dem ihre Datei liegt. Eine Sportstätte kann (noch) ohne Anlagen sein.
 - Eine **Organisation** ist ein Verein, eine Kommune, ein Verband oder ein Unternehmen, das
   Sportstätten besitzt (`eigentuemer`), betreibt (`betreiber`) oder nutzt (`nutzer`). Sie steht
   einmal in `organisationen/`; die Sportstätten nennen sie beim Namen, auch in einer ihrer
@@ -102,7 +102,7 @@ und `vorschlaege` übernimmt das direkt.
 ## Ändern
 
 **Von Hand:** die JSON-Datei bearbeiten. Eine neue Sportanlage ist eine neue Datei im Ordner
-der Sportstätte (neue UUID als Name und `id`, dazu `sportstaette_id` und `typ`), eine neue
+der Sportstätte (neue UUID als Name und `id`, dazu `typ`), eine neue
 Sportstätte ein neuer Ordner im Ordner ihres Kreises mit `<id>_meta.json`, eine neue
 Organisation eine Datei in `organisationen/`.
 
@@ -119,8 +119,8 @@ JSON-Dateien. `--probe` zeigt vorher, welche Spalte in welches Feld geht. Erkann
   Longitude),
 - eine Tabelle der **Sportstätten** (eine Zeile je Sportstätte; `anlagen` darf die Typen ihrer
   Sportanlagen nennen),
-- eine Tabelle der **Sportanlagen** (eine Zeile je Anlage, mit `sportstaette_id`; `id` für
-  vorhandene, auch die Kurz-ID von der Webseite),
+- eine Tabelle der **Sportanlagen** (eine Zeile je Anlage, mit `sportstaette_id`: in welchen
+  Ordner sie kommt; `id` für vorhandene, auch die Kurz-ID von der Webseite),
 - eine Tabelle der **Sportkomplexe** (eine Zeile je Komplex mit `name` und der Spalte
   `sportstaetten`: die IDs seiner Sportstätten, auch die Kurz-ID; ohne `id` folgt sie aus Name
   und Ort, gleiche Zeile, gleiche ID). Die Sportstätten bekommen den Komplex in `sportkomplex`,
@@ -181,8 +181,8 @@ Der folgende Teil bis zur Überschrift „Typen und Gruppen“ wird aus
 `src/sportstaettenatlas/modell.py` erzeugt (`uv run sportstaettenatlas modell`) – bitte dort
 ändern, nicht hier.
 
-- **Pflicht:** ohne den Wert ist der Datensatz unvollständig. In den Dateien sind außerdem `id`
-  und bei Anlagen `sportstaette_id` Pflicht. Leere Angaben werden weggelassen; ein unbekanntes
+- **Pflicht:** ohne den Wert ist der Datensatz unvollständig. In den Dateien ist außerdem `id`
+  Pflicht. Leere Angaben werden weggelassen; ein unbekanntes
   Feld ist ein Regelverstoß.
 - **nur für bestimmte Typen:** welche, steht unter [Felder je Anlagentyp](#felder-je-anlagentyp)
   (`MERKMALE` in `modell.py`). Das Formular zeigt das Feld nur dort, die Übersicht zählt es nur
@@ -319,11 +319,11 @@ Eine Förderung (Sportstätte oder Sportanlage).
 ### Sportanlage (`<anlage-id>.json`)
 
 Eine Einheit einer Sportstätte, z. B. ein Großspielfeld, eine Halle oder ein Becken.
+Zu welcher Sportstätte sie gehört, sagt der Ordner, in dem ihre Datei liegt.
 
 | Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
 |---|---|---|---|---|---|
 | `id` | ID | Text |  |  | UUID, zugleich der Dateiname (in der Datei Pflicht) |
-| `sportstaette_id` | Sportstätte | Text |  |  | ID der Sportstätte, zu der die Anlage gehört, = Name des Ordners (in der Datei Pflicht) |
 | `typ` | Typ | Text | ja | höchstens 100 Zeichen; nicht leer | einheitlicher Typ aus src/sportstaettenatlas/anlagen.py, z. B. „Großspielfeld“ |
 | `bezeichnung` | Name | Text |  | höchstens 100 Zeichen | eigener Name der Anlage, z. B. „Halle 1“, „Kunstrasen B“ |
 | `betriebsstatus` | Betriebsstatus | Auswahl [Betriebsstatus](#auswahllisten) |  |  |  |
@@ -392,7 +392,6 @@ Eine Einheit einer Sportstätte, z. B. ein Großspielfeld, eine Halle oder ein B
 ```json
 {
   "id": "17abb3c4-7493-5549-a6ca-f432ef00fba3",
-  "sportstaette_id": "9c24bfa6-71c1-4164-b226-061f0a139997",
   "typ": "Großspielfeld",
   "bezeichnung": "Kunstrasen B",
   "betriebsstatus": "in Betrieb",
