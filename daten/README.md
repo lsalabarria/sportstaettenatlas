@@ -129,6 +129,16 @@ JSON-Dateien. `--probe` zeigt vorher, welche Spalte in welches Feld geht. Erkann
   `sportstaetten` bzw. `sportkomplexe`: IDs, auch die Kurz-ID; Datum als `31.12.2028` oder
   `2028-12-31`; ohne `id` folgt sie aus dem Namen). Unbekannte IDs werden gezählt und übersprungen.
 - eine Tabelle der **Organisationen** (`name` und `typ` bzw. „Art“, ohne Kategorie und Lage).
+- eine Tabelle zum **Entfernen** (Spalten `art`, `id`, `begruendung`; Art: Sportstätte,
+  Sportanlage, Sportkomplex, Stützpunkt oder Organisation; ID auch die Kurz-ID). Sie kommt nach
+  allen anderen Dateien desselben Aufrufs dran, die Zeilen von oben nach unten. Übersprungen
+  wird mit Warnung, was keine Begründung hat, nicht eindeutig ist oder worauf noch etwas
+  zeigt (ein Stützpunkt auf eine Sportstätte, eine Sportstätte auf ihren Sportkomplex oder
+  ihre Organisationen). Mit einer Sportstätte gehen ihre Sportanlagen. Jede Entfernung steht
+  mit Datum und Begründung in `daten/entfernt.csv` – die Datei ist öffentlich, also nur
+  Sachliches und keine Personen. Eine Doppelung zusammenführen: im selben Aufruf die
+  Tabelle der Sportanlagen für die richtige Sportstätte und die Tabelle zum Entfernen der
+  überzähligen angeben.
 
 **Spalten** heißen wie das Feld (`plz` oder `adresse.plz`) oder wie seine Beschriftung („PLZ“);
 Groß-/Kleinschreibung, Umlaute und Satzzeichen sind egal. Eine Anzahl je Wert steht in einer
