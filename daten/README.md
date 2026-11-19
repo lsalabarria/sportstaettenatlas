@@ -14,8 +14,10 @@ RP/                                       Land
       └─ 1fb06acd-….json                  eine Sportanlage, z. B. eine Rundlaufbahn
    └─ sportkomplexe/                      nur in Kreisen, die Sportkomplexe haben
       └─ b1f3e6a2-….json                  ein Sportkomplex (Name, Adresse, Lage)
-organisationen/                           Verzeichnis der Organisationen
+organisationen/RP/<Art>/                  Verzeichnis der Organisationen, je Art ein Ordner
 └─ 3f0c2a8e-….json                        ein Verein, eine Gemeinde, ein Verband …
+stuetzpunkte/                             Stützpunkte des Leistungssports
+└─ c4d2a7e1-….json                        z. B. ein Bundesstützpunkt (Art, Sportarten, Sportstätten)
 ```
 
 ## Begriffe
@@ -40,6 +42,11 @@ organisationen/                           Verzeichnis der Organisationen
   gehören zu keinem. Die Sportstätten verweisen in `sportkomplex` auf seine ID; er selbst hat
   nur Name, Adresse und (optional) Lage – Eigentümer, Betreiber und Anlagen bleiben bei den
   Sportstätten. Siehe [Sportkomplexe](#sportkomplexe).
+- Ein **Stützpunkt** ist die Anerkennung als Olympiastützpunkt, Bundesstützpunkt (auch
+  Nachwuchs, Para Sport), Landesleistungszentrum oder Landesstützpunkt für bestimmte Sportarten.
+  Er nennt seine Sportstätten in `sportstaetten` und, wenn alle Sportstätten eines Sportkomplexes
+  dazugehören, diesen in `sportkomplexe`. Eine Sportstätte kann zu mehreren Stützpunkten
+  gehören. Siehe [Stützpunkte](#stützpunkte).
 
 ## Sportkomplexe
 
@@ -68,6 +75,24 @@ Komplexe in der Nähe (3 km). Die Art „Sportkomplex“ des Vorschlags legt ein
 Name, Adresse und Sportstätten eines vorhandenen oder löst ihn auf; `vorschlaege` trägt das
 direkt ein.
 
+## Stützpunkte
+
+Ein Stützpunkt steht in `stuetzpunkte/<id>.json` mit Name, Art, Sportarten, Träger (eine
+Organisation aus dem Verzeichnis), anerkannt von, Gültigkeit (`gueltig_ab`, `gueltig_bis`,
+als Datum `2028-12-31`), Quelle der Anerkennung und den Sportstätten bzw. Sportkomplexen.
+`pruefen` meldet:
+
+- eine abgelaufene Anerkennung („Stützpunkt abgelaufen“) – dann `gueltig_bis` verlängern oder
+  den Stützpunkt löschen,
+- Sportstätten oder Sportkomplexe, die es nicht gibt („Stützpunkt-Verweis“),
+- Sportstätten, die zusätzlich über ihren Sportkomplex dazugehören („Stützpunkt doppelt“),
+- einen Träger, der nicht im Verzeichnis steht („Träger des Stützpunkts“).
+
+Viele auf einmal: als CSV mit der Vorlage `vorlage_stuetzpunkte.csv` ([CSV einlesen](#csv-einlesen)).
+Auf der Webseite: Filter auf der Karte, eigener Teil in der Liste, Zahlen je Ebene in der
+Übersicht; die Art „Stützpunkt“ des Vorschlags trägt einen neuen ein, ändert oder löscht ihn,
+und `vorschlaege` übernimmt das direkt.
+
 ## Ändern
 
 **Von Hand:** die JSON-Datei bearbeiten. Eine neue Sportanlage ist eine neue Datei im Ordner
@@ -94,6 +119,9 @@ JSON-Dateien. `--probe` zeigt vorher, welche Spalte in welches Feld geht. Erkann
   `sportstaetten`: die IDs seiner Sportstätten, auch die Kurz-ID; ohne `id` folgt sie aus Name
   und Ort, gleiche Zeile, gleiche ID). Die Sportstätten bekommen den Komplex in `sportkomplex`,
   in jedem Modus; herausgenommen wird keine.
+- eine Tabelle der **Stützpunkte** (eine Zeile je Stützpunkt mit `name`, `art` und den Spalten
+  `sportstaetten` bzw. `sportkomplexe`: IDs, auch die Kurz-ID; Datum als `31.12.2028` oder
+  `2028-12-31`; ohne `id` folgt sie aus dem Namen). Unbekannte IDs werden gezählt und übersprungen.
 - eine Tabelle der **Organisationen** (`name` und `typ` bzw. „Art“, ohne Kategorie und Lage).
 
 **Spalten** heißen wie das Feld (`plz` oder `adresse.plz`) oder wie seine Beschriftung („PLZ“);
@@ -341,6 +369,47 @@ dazugehören.
 }
 ```
 
+### Stützpunkt (`stuetzpunkte/<id>.json`)
+
+Anerkennung als Stützpunkt des Leistungssports (Olympia-, Bundes-, Landesstützpunkt,
+Landesleistungszentrum) für Sportarten an einer oder mehreren Sportstätten
+(daten/stuetzpunkte/<id>.json). Eine Sportstätte kann zu mehreren Stützpunkten gehören.
+Statt einzelner Sportstätten kann ein Sportkomplex stehen, wenn alle seine Sportstätten
+dazugehören.
+
+| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
+|---|---|---|---|---|---|
+| `id` | ID | Text |  |  | UUID, zugleich der Dateiname (in der Datei Pflicht) |
+| `name` | Name | Text | ja | höchstens 200 Zeichen; nicht leer |  |
+| `art` | Art | Auswahl [Stuetzpunktart](#auswahllisten) | ja |  |  |
+| `sportarten` | Sportarten | Liste von Text |  |  |  |
+| `traeger` | Träger | Text |  | höchstens 200 Zeichen | Name einer Organisation (Verzeichnis daten/organisationen/) |
+| `anerkannt_von` | Anerkannt von | Text |  | höchstens 200 Zeichen | z. B. BMI und DOSB, MdI und LSB |
+| `gueltig_ab` | Gültig ab | Text |  |  |  |
+| `gueltig_bis` | Gültig bis | Text |  |  | Ende der Anerkennung |
+| `quelle` | Quelle | Text |  | Muster `^https?://\S+\.\S+$` | Veröffentlichung der Anerkennung, vollständige Adresse mit https:// |
+| `sportstaetten` | Sportstätten | Liste von Text |  |  | IDs der Sportstätten |
+| `sportkomplexe` | Sportkomplexe | Liste von Text |  |  | IDs von Sportkomplexen, deren Sportstätten alle dazugehören |
+
+```json
+{
+  "id": "c4d2a7e1-5b3f-4a9c-8e6d-1f0b2c3d4e5f",
+  "name": "Bundesstützpunkt Leichtathletik Musterdorf",
+  "art": "Bundesstützpunkt",
+  "sportarten": [
+    "Leichtathletik"
+  ],
+  "traeger": "TuS Musterdorf e.V.",
+  "anerkannt_von": "BMI und DOSB",
+  "gueltig_ab": "2025-01-01",
+  "gueltig_bis": "2028-12-31",
+  "quelle": "https://www.example.org/bundesstuetzpunkte",
+  "sportstaetten": [
+    "9c24bfa6-3d2e-4b8f-a1c7-5e6f7a8b9c0d"
+  ]
+}
+```
+
 ### Organisation (`organisationen/<LAND>/<Art>/<id>.json`)
 
 Verein, Kommune, Verband, Unternehmen … als Eigentümer, Betreiber oder Nutzer von
@@ -378,7 +447,7 @@ Was das Formular „Vorschlag“ als JSON in die LimeSurvey-Frage „data“ sch
 | Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |
 |---|---|---|---|---|---|
 | `version` | Version des Formats | Auswahl |  | „1“ |  |
-| `art` | Art | Auswahl | ja | „neu“, „aenderung“, „anlagen“, „organisation“, „sportkomplex“ | neu: neue Sportstätte mit Anlagen; aenderung: Angaben einer Sportstätte; anlagen: Sportanlagen einer Sportstätte; organisation: Organisation anlegen, ändern oder löschen; sportkomplex: Sportkomplex anlegen, ändern oder auflösen |
+| `art` | Art | Auswahl | ja | „neu“, „aenderung“, „anlagen“, „organisation“, „sportkomplex“, „stuetzpunkt“ | neu: neue Sportstätte mit Anlagen; aenderung: Angaben einer Sportstätte; anlagen: Sportanlagen einer Sportstätte; organisation: Organisation anlegen, ändern oder löschen; sportkomplex: Sportkomplex anlegen, ändern oder auflösen; stuetzpunkt: Stützpunkt anlegen, ändern oder löschen |
 | `sportstaette_id` | Sportstätte | Text |  |  | ID der geänderten Sportstätte |
 | `sportstaette` | Angaben der Sportstätte | Sportstaette |  |  | vollständig, nach der Änderung (bei neu und aenderung) |
 | `anlagen` | Sportanlagen | Liste von Sportanlage |  |  | alle Anlagen nach der Änderung (bei neu und anlagen); vorhandene mit ihrer Kurz-ID (Anfang der UUID), neue ohne |
@@ -388,7 +457,9 @@ Was das Formular „Vorschlag“ als JSON in die LimeSurvey-Frage „data“ sch
 | `sportkomplex_id` | Sportkomplex | Text |  |  | ID des geänderten oder aufgelösten Sportkomplexes (fehlt bei einem neuen) |
 | `sportkomplex` | Angaben des Sportkomplexes | Sportkomplex |  |  | vollständig, nach der Änderung (nicht beim Auflösen) |
 | `sportstaetten` | Sportstätten des Sportkomplexes | Liste von Text |  |  | IDs aller Sportstätten nach der Änderung (mindestens zwei) |
-| `loeschen` | Löschen | boolean |  |  | die Organisation aus dem Verzeichnis entfernen bzw. den Sportkomplex auflösen |
+| `stuetzpunkt_id` | Stützpunkt | Text |  |  | ID des geänderten oder gelöschten Stützpunkts (fehlt bei einem neuen) |
+| `stuetzpunkt` | Angaben des Stützpunkts | Stuetzpunkt |  |  | vollständig, nach der Änderung, mit Sportstätten und Sportkomplexen |
+| `loeschen` | Löschen | boolean |  |  | die Organisation aus dem Verzeichnis entfernen, den Sportkomplex auflösen bzw. den Stützpunkt löschen |
 | `geaendert` | Geänderte Felder | Liste von Text |  |  |  |
 | `gemeinde` | Gemeinde | Text |  |  | Regionalschlüssel der Gemeinde an der Lage |
 | `dubletten_geprueft` | Geprüfte Doppelungen | Liste von Text |  |  | IDs ähnlicher Sportstätten, die als verschieden bestätigt wurden |
@@ -460,6 +531,7 @@ Felder, die nicht hier stehen, gelten für alle Typen.
 | Kategorie | „Sportplatz“, „Sporthalle“, „Tennissportstätte“, „Öffentlicher Sport- und Bewegungsraum“, „Reitsportstätte“, „Schwimmsportstätte“, „Schießsportstätte“, „Fitnessstudio“, „Golfsportstätte“, „Roll- und Skatesportstätte“, „Sportgelegenheiten in sonstigen Gebäuden“, „Radsportstätte“, „Flugsportstätte“, „Wintersportstätte“, „Wassersportstätte“, „Klettersportstätte“, „Motorsportstätte“, „Eissportstätte“, „Leistungsstützpunkt“, „Segelsportstätte“ |
 | Betriebsstatus | „in Betrieb“, „vorübergehend geschlossen“, „stillgelegt/geschlossen“, „im Bau“, „in Planung“ |
 | Organisationstyp | „Bund“, „Land Rheinland-Pfalz“, „Landkreis“, „Kreisfreie Stadt“, „Verbandsgemeinde“, „Verbandsfreie Gemeinde“, „Verbandsangehörige Stadt“, „Ortsgemeinde“, „Stadt/Gemeinde“, „Kommunales Unternehmen“, „Zweckverband“, „Sportverein im LSB RLP“, „Sonstiger Sportverein“, „Sportverband im LSB RLP“, „Sonstiger Sportverband“, „Privatwirtschaftlich/kommerziell“, „Sonstige“ |
+| Stuetzpunktart | „Olympiastützpunkt“, „Bundesstützpunkt“, „Bundesstützpunkt Nachwuchs“, „Bundesstützpunkt Para Sport“, „Landesleistungszentrum“, „Landesstützpunkt“ |
 | JaNein | „ja“, „nein“ |
 | Waehrung | „€“, „DM“, „RM“ |
 | Bodenbelag | „Sportparkett“, „Rasen“, „Kunstrasen“, „Hartplatz/Tenne“, „Beton“, „Sand“, „Kunststoff“, „Teppich“, „Granulat“, „Linoleum“, „Sonstiges“ |
