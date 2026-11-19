@@ -43,7 +43,10 @@ function feldTyp(p) {
 function feldText(p, t, v, x = {}) {
   if (p.widget === "sportkomplex") return leer(v) ? "" : komplexName(v);
   if (leer(v) || (typeof v === "object" && !Array.isArray(v) && !Object.keys(v).length)) return "";
-  if (Array.isArray(v)) return v.join(", ");
+  if (Array.isArray(v)) {  // Liste von Werten oder von Objekten (Energieträger, Sanierungen …)
+    if (!v.some(x => x && typeof x === "object")) return v.join(", ");
+    return v.map(x => Object.values(x).filter(y => !leer(y)).join(" ")).join("; ");
+  }
   if (typeof v === "object") return Object.entries(v).map(([k, n]) => `${zahl(n)}× ${k}`).join(", ");
   if ((t.type === "integer" || t.type === "number") && p.widget !== "jahr") {
     const einheit = p.einheit_aus ? x[p.einheit_aus] : p.einheit;

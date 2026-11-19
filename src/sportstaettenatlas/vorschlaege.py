@@ -34,6 +34,7 @@ from pathlib import Path
 from . import werte
 from .bestand import (
     OHNE_KREIS,
+    _laender,
     _lies_ordner,
     _staetten_ordner,
     aufteilen,
@@ -119,7 +120,9 @@ class _Uebernahme:
     def __init__(self, daten: Path, e: Ergebnis):
         self.daten = daten
         self.e = e
-        self.vorhanden = _staetten_ordner(daten / "RP")
+        self.vorhanden = {
+            k: v for land in _laender(daten) for k, v in _staetten_ordner(land).items()
+        }
         self.staetten: dict[str, dict] = {}  # id → Sportstätte mit "anlagen"
         self.neu: set[str] = set()
         self.entfernt: dict[str, set[str]] = {}  # Sportstätte → IDs entfernter Anlagen
@@ -350,10 +353,10 @@ class _Uebernahme:
         dateien = {p.stem: p for p in komplex_dateien(self.daten)}
         for kid, k in self.komplexe.items():
             if k is not None:  # erst in den bisherigen Kreis, einordnen sucht den richtigen
-                ordner = dateien[kid].parent.parent.name if kid in dateien else OHNE_KREIS
-                schreibe_sportkomplex(
-                    self.daten, {x: w for x, w in k.items() if x != "_ordner"}, ordner
-                )
+                alt = dateien.get(kid)
+                ordner = alt.parent.parent.name if alt else OHNE_KREIS
+                land = alt.parent.parent.parent.name if alt else None
+                schreibe_sportkomplex(self.daten, k, ordner, land)
             elif kid in dateien:
                 dateien[kid].unlink()
                 if not any(dateien[kid].parent.iterdir()):

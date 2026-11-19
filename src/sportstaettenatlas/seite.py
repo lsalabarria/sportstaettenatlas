@@ -34,7 +34,7 @@ from pathlib import Path
 
 from . import anlagen as anlagen_typen
 from . import modell, web
-from .bestand import EMAIL, KONTAKT, adresse_text
+from .bestand import EMAIL, KONTAKT, OUTSIDE, adresse_text
 
 LEAFLET_DATEIEN = (
     "leaflet.js",
@@ -275,6 +275,35 @@ def lade_analysen(ordner: Path) -> tuple[dict[str, tuple[str, dict, dict]], list
     return analysen, vermerke
 
 
+def ohne_outside(
+    bestand: list[dict] | None, sportkomplexe: list[dict] | None, stuetzpunkte: list[dict] | None
+) -> tuple[list[dict] | None, list[dict] | None, list[dict] | None]:
+    """Was unter daten/outside/ liegt (außerhalb von RLP), kommt nicht auf die Webseite:
+    Stützpunkte verlieren diese Verweise und fallen weg, wenn keiner übrig bleibt."""
+    draussen = {
+        x["id"] for x in [*(bestand or []), *(sportkomplexe or [])] if x.get("_land") == OUTSIDE
+    }
+    if bestand is not None:
+        bestand = [d for d in bestand if d["id"] not in draussen]
+    if sportkomplexe is not None:
+        sportkomplexe = [k for k in sportkomplexe if k["id"] not in draussen]
+    if stuetzpunkte is not None:
+        rest = []
+        for sp in stuetzpunkte:
+            alle = [*(sp.get("sportstaetten") or []), *(sp.get("sportkomplexe") or [])]
+            sp = {
+                **sp,
+                **{
+                    k: [i for i in sp.get(k) or [] if i not in draussen]
+                    for k in ("sportstaetten", "sportkomplexe")
+                },
+            }
+            if not alle or sp["sportstaetten"] or sp["sportkomplexe"]:
+                rest.append(sp)
+        stuetzpunkte = rest
+    return bestand, sportkomplexe, stuetzpunkte
+
+
 def schreibe_webseite(
     ausgabe: Path,
     bestand: list[dict] | None = None,
@@ -305,6 +334,7 @@ def schreibe_webseite(
     """
     from . import gebiete as gb
 
+    bestand, sportkomplexe, stuetzpunkte = ohne_outside(bestand, sportkomplexe, stuetzpunkte)
     ausgabe.mkdir(parents=True, exist_ok=True)
     daten = ausgabe / "daten"
     daten.mkdir(exist_ok=True)

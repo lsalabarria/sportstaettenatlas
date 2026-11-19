@@ -65,8 +65,6 @@ BETRIEBSSTATUS = (
     "im Bau",
     "in Planung",
 )
-# Art einer Organisation → Art auf der Karte; die Art bestimmt auch den Ordner in
-# daten/organisationen/<LAND>/ (bestand.org_pfad)
 # Arten von Stützpunkten, je Ebene (Übersicht und Filter der Webseite zählen nach Ebene)
 STUETZPUNKTARTEN = {
     "Olympiastützpunkt": "Olympia",
@@ -77,6 +75,8 @@ STUETZPUNKTARTEN = {
     "Landesstützpunkt": "Land",
 }
 
+# Art einer Organisation → Art auf der Karte; die Art bestimmt auch den Ordner in
+# daten/organisationen/<LAND>/ (bestand.org_pfad)
 ORGANISATIONSTYPEN = {
     "Bund": "sonstige",
     "Land Rheinland-Pfalz": "sonstige",
@@ -96,7 +96,63 @@ ORGANISATIONSTYPEN = {
     "Privatwirtschaftlich/kommerziell": "sonstige",
     "Sonstige": "sonstige",
 }
-WAEHRUNGEN = ("€", "DM", "RM")
+WAEHRUNGEN = ("€", "DM", "DDR-Mark", "RM")
+FASSADEN = (
+    "Klinker",
+    "Vorhangfassade",
+    "Putz",
+    "Sichtbeton",
+    "Glas",
+    "Wärmedämmverbundsystem",
+    "Holz",
+    "Mauerwerk mit Anstrich",
+    "Sonstiges",
+    "nicht zutreffend",
+)
+WETTKAMPFANLAGEN = (
+    "keine Wettkampfanlage",
+    "Wettkampfanlage Typ A",
+    "Wettkampfanlage Typ B",
+    "Wettkampfanlage Typ C",
+)
+FUNKTIONSRAEUME = (
+    "Umkleide- und Sanitärräume - Sporttreibende",
+    "Umkleide- und Sanitärräume - Personal",
+    "Sanitärräume - Publikum",
+    "Erste-Hilfe-Räume",
+    "Büro- und Verwaltungsräume",
+    "Material- und Lagerräume",
+    "Geräteräume",
+    "Technikräume",
+    "Schulungs- / Seminarraum",
+    "Gastronomie",
+    "Sauna",
+)
+ENERGIEBEREICHE = ("Heizung", "Warmwasser", "Strom")
+ENERGIETRAEGER = (
+    "Erdgas",
+    "Flüssiggas",
+    "Heizöl",
+    "Holz/Pellets/Hackschnitzel",
+    "Fernwärme",
+    "Umweltwärme (Wärmepumpe)",
+    "Solarthermie",
+    "Strom (z.B. Nachtspeicherofen, Konvektoren etc.)",
+    "Strom (z.B. Durchlauferhitzer, Boiler)",
+    "Betrieb über Heizanlage",
+    "Photovoltaik-Anlage",
+    "Windkraftanlage",
+    "Sonstige",
+)
+VERBRAUCHSARTEN = (
+    "Erdgas",
+    "Fernwärme",
+    "Flüssiggas",
+    "Heizöl",
+    "Holz/Pellets/Hackschnitzel",
+    "Strom",
+)
+EINHEITEN = ("kWh", "Liter", "m³", "Festmeter", "Tonnen", "Schüttraummeter")
 BODENBELAEGE = (
     "Sportparkett",
     "Rasen",
@@ -145,6 +201,13 @@ Kategorie = _auswahl("Kategorie", KATEGORIEN)
 Betriebsstatus = _auswahl("Betriebsstatus", BETRIEBSSTATUS)
 Organisationstyp = _auswahl("Organisationstyp", ORGANISATIONSTYPEN)
 Stuetzpunktart = _auswahl("Stuetzpunktart", STUETZPUNKTARTEN)
+Fassade = _auswahl("Fassade", FASSADEN)
+Wettkampfanlage = _auswahl("Wettkampfanlage", WETTKAMPFANLAGEN)
+Funktionsraum = _auswahl("Funktionsraum", FUNKTIONSRAEUME)
+Energiebereich = _auswahl("Energiebereich", ENERGIEBEREICHE)
+Energietraegerart = _auswahl("Energietraegerart", ENERGIETRAEGER)
+Verbrauchsart = _auswahl("Verbrauchsart", VERBRAUCHSARTEN)
+Einheit = _auswahl("Einheit", EINHEITEN)
 JaNein = _auswahl("JaNein", ("ja", "nein"))
 Waehrung = _auswahl("Waehrung", WAEHRUNGEN)
 Bodenbelag = _auswahl("Bodenbelag", BODENBELAEGE)
@@ -157,6 +220,13 @@ AUSWAHL = (
     Betriebsstatus,
     Organisationstyp,
     Stuetzpunktart,
+    Fassade,
+    Wettkampfanlage,
+    Funktionsraum,
+    Energiebereich,
+    Energietraegerart,
+    Verbrauchsart,
+    Einheit,
     JaNein,
     Waehrung,
     Bodenbelag,
@@ -174,7 +244,15 @@ KONTAKT_NAME = r"e-?mail|telefon|telefax|(^|[^a-z])fax([^a-z]|$)|handy|mobilnumm
 UUID_MUSTER = r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
 
 # Abschnitte des Formulars in dieser Reihenfolge
-GRUPPEN = ("Sportstätte", "Adresse und Lage", "Nutzung", "Sportarten", "Organisationen")
+GRUPPEN = (
+    "Sportstätte",
+    "Adresse und Lage",
+    "Nutzung",
+    "Sportarten",
+    "Organisationen",
+    "Gebäude und Energie",
+    "Kosten",
+)
 ANLAGE_GRUPPEN = (
     "Allgemein",
     "Sportarten",
@@ -444,6 +522,42 @@ def _numeric(titel, beschreibung=None, gruppe="Maße", **angaben):
     return _general(titel, beschreibung, gruppe, ge=0, **angaben)
 
 
+class Energietraeger(Basis):
+    """Ein Energieträger einer Sportstätte, z. B. Erdgas für die Heizung."""
+
+    bereich: Energiebereich | None = _field("Bereich", "Heizung, Warmwasser oder Strom")
+    art: Energietraegerart = _field("Art", pflicht=True)
+    einbaujahr: int | None = _field("Einbaujahr", ge=1800, le=2100, widget="jahr")
+    beschreibung: str | None = _field("Beschreibung", max_length=500)
+
+
+class Verbrauch(Basis):
+    """Ein Jahresverbrauch einer Sportstätte (Menge und Einheit)."""
+
+    art: Verbrauchsart = _field("Art", pflicht=True)
+    menge: float = _field("Menge", pflicht=True, ge=0)
+    einheit: Einheit | None = _field("Einheit")
+    jahr: int | None = _field("Jahr", ge=1990, le=2100, widget="jahr")
+
+
+class Sanierung(Basis):
+    """Eine Sanierung (Sportstätte oder Sportanlage)."""
+
+    jahr: int | None = _field("Jahr", ge=1800, le=2100, widget="jahr")
+    kosten: float | None = _field("Kosten", ge=0, braucht="waehrung")
+    waehrung: Waehrung | None = _field("Währung")
+    beschreibung: str | None = _field("Beschreibung", max_length=1000)
+
+
+class Foerderung(Basis):
+    """Eine Förderung (Sportstätte oder Sportanlage)."""
+
+    programm: str | None = _field("Programm", max_length=300)
+    jahr: int | None = _field("Jahr", ge=1800, le=2100, widget="jahr")
+    hoehe: float | None = _field("Höhe", ge=0, braucht="waehrung")
+    waehrung: Waehrung | None = _field("Währung")
+
+
 class Sportanlage(Basis):
     """Eine Einheit einer Sportstätte, z. B. ein Großspielfeld, eine Halle oder ein Becken."""
 
@@ -664,6 +778,12 @@ class Sportanlage(Basis):
     waehrung: Waehrung | None = _general(
         "Währung", "der Baukosten", gruppe="Kosten", uebersicht=False
     )
+    sanierungen: list[Sanierung] = _general(
+        "Sanierungen", gruppe="Kosten", default_factory=list, formular=False
+    )
+    foerderungen: list[Foerderung] = _general(
+        "Förderungen", gruppe="Kosten", default_factory=list, formular=False
+    )
 
 
 class Sportstaette(Basis):
@@ -715,12 +835,21 @@ class Sportstaette(Basis):
         widget="karte",
         uebersicht=False,
     )
+    entfernung_oepnv: int | None = _field(
+        "Entfernung zum ÖPNV",
+        "zur nächsten Haltestelle",
+        ge=0,
+        le=100_000,
+        gruppe="Adresse und Lage",
+        einheit="m",
+    )
     oeffentlicher_zugang: JaNein | None = _field(
         "Öffentlicher Zugang",
         gruppe="Nutzung",
         widget="ja_nein",
     )
     schulsport: JaNein | None = _field("Schulsport", gruppe="Nutzung", widget="ja_nein")
+    wlan: JaNein | None = _field("WLAN", gruppe="Nutzung", widget="ja_nein")
     zuschauerplaetze: int | None = _field("Zuschauerplätze", ge=0, le=100_000, gruppe="Nutzung")
     betriebsstatus: Betriebsstatus | None = _field("Betriebsstatus", gruppe="Sportstätte")
     sportkomplex: str | None = _field(
@@ -772,6 +901,39 @@ class Sportstaette(Basis):
     )
     sportarten: list[str] = _field(
         "Sportarten", default_factory=list, gruppe="Sportarten", widget="chips"
+    )
+    wettkampfanlage: Wettkampfanlage | None = _field("Wettkampfanlage", gruppe="Sportarten")
+    baujahr: int | None = _field(
+        "Baujahr",
+        "des Gebäudes bzw. Geländes",
+        ge=1800,
+        le=2100,
+        gruppe="Gebäude und Energie",
+        widget="jahr",
+    )
+    letzte_sanierung: int | None = _field(
+        "Letzte Sanierung", "Jahr", ge=1800, le=2100, gruppe="Gebäude und Energie", widget="jahr"
+    )
+    fassadenmaterial: Fassade | None = _field("Fassadenmaterial", gruppe="Gebäude und Energie")
+    funktionsraeume: dict[Funktionsraum, Anzahl] = _field(
+        "Funktionsräume",
+        "Anzahl je Art, z. B. 4 Umkleiden",
+        default_factory=dict,
+        gruppe="Gebäude und Energie",
+        widget="zaehler",
+        formular=False,
+    )
+    energietraeger: list[Energietraeger] = _field(
+        "Energieträger", default_factory=list, gruppe="Gebäude und Energie", formular=False
+    )
+    verbraeuche: list[Verbrauch] = _field(
+        "Jahresverbräuche", default_factory=list, gruppe="Gebäude und Energie", formular=False
+    )
+    sanierungen: list[Sanierung] = _field(
+        "Sanierungen", default_factory=list, gruppe="Kosten", formular=False
+    )
+    foerderungen: list[Foerderung] = _field(
+        "Förderungen", default_factory=list, gruppe="Kosten", formular=False
     )
     anlagen: list[Sportanlage] = _field(
         "Sportanlagen",
@@ -930,6 +1092,9 @@ class Organisation(Basis):
         pattern=r"^https?://\S+\.\S+$",
         widget="url",
     )
+    lsb_nummer: str | None = _field(
+        "Vereinsnummer im LSB", "siebenstellig", pattern=r"^\d{7}$", formular=False
+    )
     uebergeordnet: str | None = _field(
         "Übergeordnet",
         "Name der übergeordneten Organisation, z. B. des Verbands",
@@ -1071,6 +1236,10 @@ MODELLE = (
     Sportanlage,
     Adresse,
     Lage,
+    Energietraeger,
+    Verbrauch,
+    Sanierung,
+    Foerderung,
     Sportkomplex,
     Stuetzpunkt,
     Organisation,
@@ -1313,6 +1482,10 @@ def readme_block() -> str:
         (Sportstaette, "Sportstätte (`<id>_meta.json`)"),
         (Adresse, "Adresse"),
         (Lage, "Lage"),
+        (Energietraeger, "Energieträger"),
+        (Verbrauch, "Jahresverbrauch"),
+        (Sanierung, "Sanierung"),
+        (Foerderung, "Förderung"),
         (Sportanlage, "Sportanlage (`<anlage-id>.json`)"),
         (Sportkomplex, "Sportkomplex (`<Kreis>/sportkomplexe/<id>.json`)"),
         (Stuetzpunkt, "Stützpunkt (`stuetzpunkte/<id>.json`)"),

@@ -23,6 +23,7 @@ from pathlib import Path
 
 from . import modell
 from .bestand import (
+    OUTSIDE,
     _laender,
     _staetten_ordner,
     falsch_einsortiert,
@@ -248,6 +249,17 @@ def sanierung(d: dict) -> Iterable[str]:
     bau, san = d.get("baujahr"), d.get("letzte_sanierung")
     if isinstance(bau, int) and isinstance(san, int) and san < bau:
         yield f"letzte_sanierung: {san} liegt vor dem Baujahr {bau}"
+
+
+def baujahr(st: dict) -> Iterable[tuple[str, str]]:
+    """(Anlagen-ID, Meldung) für jede Anlage, die vor ihrer Sportstätte gebaut sein soll;
+    ein gleiches Jahr ist in Ordnung, fehlende Jahre werden übersprungen."""
+    bau = st.get("baujahr")
+    if not isinstance(bau, int):
+        return
+    for a in st.get("anlagen") or []:
+        if isinstance(j := a.get("baujahr"), int) and j < bau:
+            yield a.get("id"), f"baujahr: {j} liegt vor dem Baujahr der Sportstätte ({bau})"
 
 
 def felder_zum_typ(a: dict, bekannte_typen: set[str]) -> Iterable[str]:
@@ -504,6 +516,7 @@ PRUEFUNGEN = (
     "PLZ",
     "Straße und Hausnummer",
     "Sanierung",
+    "Baujahr",
     "Anlagentyp",
     "Sportarten",
     "Schreibweise der Sportarten",
@@ -563,6 +576,7 @@ def pruefe(
 
     out: list[tuple[str, str, str]] = []
     for st in bestand:
+        draussen = st.get("_land") == OUTSIDE  # außerhalb von RLP: keine Prüfungen des Landes
         meldungen: list[tuple[str, str]] = [
             *(
                 ("Art der Organisation" if m.split(":")[0].endswith("_typ") else "Organisation", m)
@@ -571,6 +585,7 @@ def pruefe(
             *(
                 ("PLZ" if m.startswith("adresse.plz") else "Straße und Hausnummer", m)
                 for m in adresse(st)
+                if not (draussen and m.startswith("adresse.plz"))
             ),
             *(("Sanierung", m) for m in sanierung(st)),
             *(("Schreibweise der Sportarten", m) for m in sportarten(st)),
@@ -586,7 +601,7 @@ def pruefe(
             else:
                 m = f"lage: Koordinate teilen sich {n} Sportstätten – Ersatzwert?"
             meldungen.append(("Gleiche Koordinate", m))
-        if gebiete_:
+        if gebiete_ and not draussen:
             meldungen += [
                 *ort(st),
                 *(
@@ -595,6 +610,8 @@ def pruefe(
                 ),
             ]
         out += [(datei(st), p, m) for p, m in meldungen]
+        anlage = {a.get("id"): a for a in st.get("anlagen") or []}
+        out += [(datei(st, anlage[i]), "Baujahr", m) for i, m in baujahr(st)]
         for a in st.get("anlagen") or []:
             meldungen = [
                 *(("Sanierung", m) for m in sanierung(a)),
@@ -623,6 +640,8 @@ def pruefe(
             m = f"lage: liegt im Kreis {soll}, die Datei aber unter {ist} (einordnen)"
             out.append((str(ordner.get(sid, sid)), "Kreis-Ordner", m))
         for k in komplexe:
+            if k.get("_land") == OUTSIDE:
+                continue
             if (soll := komplex_kreis(k, bestand, kreis_von)) != k["_ordner"]:
                 m = f"Sportkomplex gehört in den Kreis {soll}, die Datei liegt unter {k['_ordner']} (einordnen)"
                 out.append((komplex_datei[k["id"]], "Kreis-Ordner", m))

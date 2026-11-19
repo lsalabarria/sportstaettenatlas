@@ -325,8 +325,8 @@ def cmd_sportkomplex(args):
 def cmd_seite(args):
     """Statische Webseite für GitHub Pages (Ordner docs/) erzeugen."""
     from . import gebiete as gb
-    from .modell import schreibe_doku
     from .bestand import lies_sportkomplexe, lies_stuetzpunkte
+    from .modell import schreibe_doku
     from .seite import lade_analysen, schreibe_webseite, speichere_analyse
 
     bestand, organisationen, verstoesse = _lies_bestand()

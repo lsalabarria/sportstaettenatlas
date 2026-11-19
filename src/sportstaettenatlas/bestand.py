@@ -36,6 +36,9 @@ from .modell import (
 EMAIL = re.compile(EMAIL_MUSTER)  # Werte mit E-Mail-Adresse
 KONTAKT = re.compile(KONTAKT_NAME, re.IGNORECASE)  # Felder bzw. Spalten mit Kontaktdaten
 OHNE_KREIS = "ohne-kreis"
+# Sportstätten außerhalb von Rheinland-Pfalz (aus dem Altsystem): daten/outside/<Land>/<id>/,
+# nicht auf der Webseite, nicht eingeordnet
+OUTSIDE = "outside"
 KreisVon = Callable[[float, float], str]  # (lon, lat) → Name des Kreis-Ordners
 
 # feste Basis, damit dieselbe Anlage bei jedem Einlesen dieselbe ID bekommt
@@ -308,7 +311,11 @@ def einordnen(ziel: Path, kreis_von: KreisVon) -> int:
     Änderung der Lage), dorthin verschieben. Liefert die Zahl der verschobenen."""
     n = 0
     for meta in sorted(
-        m for o in _laender(ziel) for p in _staetten_dirs(o) for m in p.glob("*_meta.json")
+        m
+        for o in _laender(ziel)
+        if o.name != OUTSIDE
+        for p in _staetten_dirs(o)
+        for m in p.glob("*_meta.json")
     ):
         st_ordner = meta.parent
         soll = st_ordner.parent.parent / _kreis(_lies_json(meta), kreis_von) / st_ordner.name
@@ -369,7 +376,12 @@ def lies_bestand(ordner: Path, verstoesse: list | None = None) -> Iterator[dict]
             anlagen.append(a)
         if verstoesse is not None:
             verstoesse += [(str(meta_pfad), m) for m in pruefe(Sportstaette, meta)]
-        yield {**meta, "anlagen": anlagen, "_ordner": st_ordner.parent.name}
+        yield {
+            **meta,
+            "anlagen": anlagen,
+            "_ordner": st_ordner.parent.name,
+            "_land": st_ordner.parent.parent.name,
+        }
 
 
 @dataclass
@@ -439,6 +451,8 @@ def falsch_einsortiert(datensaetze, kreis_von: KreisVon) -> list[tuple[str, str,
     """Sportstätten, die nicht im Ordner ihres Kreises liegen: [(id, ist, soll)]."""
     out = []
     for d in datensaetze:
+        if d.get("_land") == OUTSIDE:
+            continue
         soll = _kreis(d, kreis_von)
         if d.get("_ordner") and d["_ordner"] != soll:
             out.append((d["id"], d["_ordner"], soll))
@@ -640,7 +654,9 @@ def lies_sportkomplexe(daten: Path, verstoesse: list | None = None) -> list[dict
             raise ValueError(f"{pfad}: id {k.get('id')!r} passt nicht zum Dateinamen")
         if verstoesse is not None:
             verstoesse += [(str(pfad), m) for m in pruefe(Sportkomplex, k)]
-        out.append({**k, "_ordner": pfad.parent.parent.name})
+        out.append(
+            {**k, "_ordner": pfad.parent.parent.name, "_land": pfad.parent.parent.parent.name}
+        )
     return out
 
 
@@ -653,10 +669,12 @@ def komplex_kreis(k: dict, staetten: list[dict], kreis_von: KreisVon) -> str:
     return ordner.most_common(1)[0][0] if ordner else OHNE_KREIS
 
 
-def schreibe_sportkomplex(daten: Path, k: dict, kreis: str, land: str = ORG_LAND) -> Path:
+def schreibe_sportkomplex(daten: Path, k: dict, kreis: str, land: str | None = None) -> Path:
     """Einen Sportkomplex in daten/<LAND>/<kreis>/sportkomplexe/ schreiben (neue ID, wenn sie
-    fehlt); liegt er noch in einem anderen Kreis, wird die alte Datei entfernt."""
-    k = {key: v for key, v in k.items() if key != "_ordner"}
+    fehlt); liegt er noch in einem anderen Kreis, wird die alte Datei entfernt. Ohne `land`:
+    das bisherige ("_land" wie aus lies_sportkomplexe), sonst RP."""
+    land = land or k.get("_land") or ORG_LAND
+    k = {key: v for key, v in k.items() if key not in ("_ordner", "_land")}
     k["id"] = k.get("id") or str(uuid.uuid4())
     pfad = Path(daten) / land / kreis / SPORTKOMPLEXE / f"{k['id']}.json"
     for alt in komplex_dateien(daten):
@@ -676,6 +694,8 @@ def sportkomplexe_einordnen(daten: Path, kreis_von: KreisVon) -> int:
     staetten = list(lies_bestand(daten))
     n = 0
     for k in lies_sportkomplexe(daten):
+        if k["_land"] == OUTSIDE:
+            continue
         soll = komplex_kreis(k, staetten, kreis_von)
         if soll != k["_ordner"]:
             schreibe_sportkomplex(daten, k, soll)

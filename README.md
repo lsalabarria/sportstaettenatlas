@@ -127,6 +127,7 @@ Auswahllisten, mindestens 4 Nachkommastellen bei Koordinaten, `braucht`, `teil_v
 - **PLZ:** Die Postleitzahl beginnt wie eine in Rheinland-Pfalz.
 - **Straße und Hausnummer:** Keine Hausnummer in der Straße, keine Hausnummer ohne Straße.
 - **Sanierung:** Die letzte Sanierung liegt nicht vor dem Baujahr.
+- **Baujahr:** Keine Sportanlage ist älter als ihre Sportstätte (gleiches Jahr ist in Ordnung, fehlende Jahre zählen nicht).
 - **Anlagentyp:** Kein Feld ist befüllt, das nicht zum Typ der Sportanlage passt (`MERKMALE`).
 - **Sportarten:** Die Sportarten einer Anlage stehen auch bei ihrer Sportstätte.
 - **Schreibweise der Sportarten:** Keine Varianten wie „Fussball“ neben „Fußball“.
@@ -142,6 +143,10 @@ Auswahllisten, mindestens 4 Nachkommastellen bei Koordinaten, `braucht`, `teil_v
 - **Stützpunkt-Verweis:** Die Sportstätten und Sportkomplexe eines Stützpunkts gibt es.
 - **Stützpunkt doppelt:** Eine Sportstätte steht nicht zusätzlich einzeln drin, wenn ihr Sportkomplex schon dazugehört.
 - **Träger des Stützpunkts:** Der Träger steht im Verzeichnis der Organisationen.
+
+Sportstätten und Sportkomplexe unter `daten/outside/<Land>/` liegen außerhalb von
+Rheinland-Pfalz. Für sie entfallen Ort, Rheinland-Pfalz, PLZ, Kreis-Ordner und Eigentum der
+Kommune; `einordnen` lässt sie liegen, und `seite` zeigt sie nicht an.
 
 ## Webseite
 
