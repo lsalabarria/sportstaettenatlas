@@ -125,21 +125,11 @@ def _ebene(*features):
     return {"type": "FeatureCollection", "features": list(features)}
 
 
-# Zwei Kreise mit je einer Gemeinde: Sportplatz Berg und Tennisanlage Bergen in Bergland, der
-# Bolzplatz Tal in Talheim (synthetisch, nebeneinanderliegende Rechtecke)
+# Ein Kreis mit einer Gemeinde, darin alle drei Sportstätten (synthetisch, ein Rechteck)
 GEBIETE = {
-    "kreis": _ebene(
-        _rechteck("071370000000", "Kreis Berg", "Landkreis", 7.5, 50.1, 7.75, 50.5),
-        _rechteck("071380000000", "Kreis Tal", "Landkreis", 7.75, 50.1, 7.9, 50.5),
-    ),
-    "vg": _ebene(
-        _rechteck("071375001000", "VG Berg", "Verbandsgemeinde", 7.5, 50.1, 7.75, 50.5),
-        _rechteck("071385001000", "VG Tal", "Verbandsgemeinde", 7.75, 50.1, 7.9, 50.5),
-    ),
-    "gemeinde": _ebene(
-        _rechteck("071375001001", "Bergland", "Ortsgemeinde", 7.5, 50.1, 7.75, 50.5),
-        _rechteck("071385001001", "Talheim", "Ortsgemeinde", 7.75, 50.1, 7.9, 50.5),
-    ),
+    "kreis": _ebene(_rechteck("071370000000", "Kreis Berg", "Landkreis", 7.5, 50.1, 7.9, 50.5)),
+    "vg": _ebene(_rechteck("071375001000", "VG Berg", "Verbandsgemeinde", 7.5, 50.1, 7.9, 50.5)),
+    "gemeinde": _ebene(_rechteck("071375001001", "Bergland", "Ortsgemeinde", 7.5, 50.1, 7.9, 50.5)),
 }
 
 
@@ -660,11 +650,10 @@ def test_haufen_je_kreis_und_gemeinde(oeffne):
         page.evaluate(f"void karte.setView([50.3, 7.7], {z}, {{ animate: false }})")
         page.wait_for_timeout(300)
 
-    zoom(8)  # Kreise: Berg und Bergen zusammen, Tal allein bleibt ein Punkt
+    zoom(8)  # Kreise
     kreise = page.locator(".haufen.kreis")
-    assert kreise.count() == 1 and kreise.inner_text() == "2"
-    assert kreise.get_attribute("title") == "Kreis Berg (Landkreis): 2 Sportstätten – hineinzoomen"
-    assert page.locator(".haufen").count() == 1
+    assert kreise.count() == 1 and kreise.inner_text() == "3"
+    assert kreise.get_attribute("title") == "Kreis Berg (Landkreis): 3 Sportstätten – hineinzoomen"
     kreise.hover()  # Umriss des Kreises
     page.wait_for_function("hoverEbene.getLayers().length === 1")
     page.mouse.move(5, 300)
@@ -676,11 +665,39 @@ def test_haufen_je_kreis_und_gemeinde(oeffne):
     zoom(11)  # Gemeinden
     assert page.locator(".haufen.kreis").count() == 0
     gemeinden = page.locator(".haufen.gemeinde")
-    assert gemeinden.count() == 1 and gemeinden.inner_text() == "2"
+    assert gemeinden.count() == 1 and gemeinden.inner_text() == "3"
     assert "Bergland (Ortsgemeinde)" in gemeinden.get_attribute("title")
     gemeinden.hover()
     page.wait_for_function("hoverEbene.getLayers().length === 1")
-    gemeinden.click()  # bis zu den Sportstätten
+    # nur noch zwei Sportstätten (Filter Sportkomplex): zu wenige für einen Haufen, also Punkte
+    page.locator("details:has(#b-ko-n) summary").click()
+    page.locator('input[data-ko="*"]').check()
+    page.wait_for_timeout(300)
+    assert page.locator(".haufen").count() == 0
+    page.locator('input[data-ko=""]').check()
+    page.wait_for_timeout(300)
+    page.locator(".haufen.gemeinde").click()  # bis zu den Sportstätten
     page.wait_for_timeout(400)
     assert page.evaluate("karte.getZoom()") >= 13
     assert page.locator(".haufen").count() == 0
+
+
+def test_punkt_beim_darueberfahren(oeffne):
+    page = oeffne("")
+    page.wait_for_timeout(500)
+    page.evaluate("void karte.setView([50.3512, 7.5938], 15, { animate: false })")
+    page.wait_for_timeout(300)
+    radius = (
+        "ANSICHTEN.bestand.eintraege.find(e => e.p.name === 'Sportplatz Berg').layer.getRadius()"
+    )
+    assert page.evaluate(radius) == 4
+    mitte = page.evaluate(
+        "(() => { const p = karte.latLngToContainerPoint([50.3512, 7.5938]),"
+        " r = karte.getContainer().getBoundingClientRect(); return [r.x + p.x, r.y + p.y]; })()"
+    )
+    page.mouse.move(*mitte)
+    page.wait_for_timeout(200)
+    assert page.evaluate(radius) == 7  # größer, mit hellem Ring
+    page.mouse.move(5, 300)
+    page.wait_for_timeout(200)
+    assert page.evaluate(radius) == 4

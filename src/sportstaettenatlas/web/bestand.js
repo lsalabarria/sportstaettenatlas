@@ -70,8 +70,8 @@ function ansichtBestand(fc) {
       // Sportarten: die der Sportstätte und die ihrer Anlagen
       sp: new Set([...(p.sportarten || []), ...anlagen.flatMap(a => a.sportarten || [])]),
       betreiber: schluesselName(p.betreiber), eigentuemer: schluesselName(p.eigentuemer) };
-    e.layer = info(L.circleMarker([lat, lon], { radius: 4, weight: 1, color: "#fff",
-      fillColor: PUNKT_FARBE, fillOpacity: 0.95 }), () => tipBestand(e));
+    e.layer = info(hervorheben(L.circleMarker([lat, lon], { radius: 4, weight: 1, color: "#fff",
+      fillColor: PUNKT_FARBE, fillOpacity: 0.95 })), () => tipBestand(e));
     if (p.ars) arsVon.set(e.layer, p.ars);
     eintraege.push(e);
   }

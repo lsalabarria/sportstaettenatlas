@@ -269,13 +269,13 @@ karte.setView([49.95, 7.45], 8);
 // seines Gebiets (auch außerhalb des Bildes) und steht an dem Punkt, der dem Mittel am nächsten
 // liegt (also im Gebiet); liegen zwei zu dicht, schieben sie sich auseinander. Darüberfahren
 // zeigt den Umriss des Gebiets, ein Klick zoomt hinein (mindestens bis zur nächsten Stufe).
-// Punkte ohne Gebiet bleiben einzeln. Dieselben Methoden wie eine L.layerGroup (addLayer,
-// removeLayer), dazu einzeln(layer): diesen Punkt immer zeigen (z. B. für sein Popup), bis das
+// Punkte ohne Gebiet und Gebiete mit weniger als HAUFEN_AB Punkten bleiben einzeln.
+// Dieselben Methoden wie eine L.layerGroup (addLayer, removeLayer), dazu einzeln(layer): diesen Punkt immer zeigen (z. B. für sein Popup), bis das
 // Popup zu ist.
 // optionen: ars(layer) → Regionalschlüssel der Gemeinde oder null; name(ebene, schlüssel);
 // grenzen(ebene, schlüssel) → Bounds oder null; umriss(ebene, schlüssel) zeigt den Umriss,
 // umriss(null) nimmt ihn weg
-const KREISE_BIS = 10, GEMEINDEN_BIS = 13;
+const KREISE_BIS = 10, GEMEINDEN_BIS = 13, HAUFEN_AB = 3;
 const HAUFEN_STUFEN = [{ ebene: "kreis", bis: KREISE_BIS, stellen: 5 },
   { ebene: "gemeinde", bis: GEMEINDEN_BIS, stellen: 12 }];
 function haufen(optionen = {}) {
@@ -308,7 +308,8 @@ function haufen(optionen = {}) {
     for (const l of vorher) if (!jetzt.has(l)) sicht.removeLayer(l);
     for (const l of jetzt) if (!vorher.has(l)) sicht.addLayer(l);
   }
-  const groesse = n => (n < 10 ? 28 : n < 100 ? 34 : n < 1000 ? 40 : 46);
+  // Größe wächst stufenlos mit der Zahl (logarithmisch): 3 → 26 px, 100 → 38 px, 1.000 → 46 px
+  const groesse = n => Math.round(22 + 8 * Math.log10(Math.max(n, 1)));
   function zeigeGruppen(stufe, gruppen, z, rand) {
     const blasen = [];
     for (const [k, g] of gruppen) {
@@ -321,7 +322,7 @@ function haufen(optionen = {}) {
         if (d < best) { best = d; ort = ll; }
       }
       if (!rand.contains(ort)) continue;
-      if (g.length === 1) { merke(g[0]); continue; }
+      if (g.length < HAUFEN_AB) { g.forEach(merke); continue; }  // kleine Haufen: Punkte
       blasen.push({ k, g, pt: karteH.project(ort, z), r: groesse(g.length) / 2 });
     }
     auseinander(blasen);
@@ -404,6 +405,14 @@ function info(layer, html) {
   layer.bindPopup(typeof html === "function" ? () => html() + KOPIERHINWEIS
     : html + KOPIERHINWEIS, POPUP);
   layer.on("popupopen", () => layer.closeTooltip && layer.closeTooltip());
+  return layer;
+}
+// Punkt beim Darüberfahren größer, mit hellem Ring, und vor den anderen
+const HERVOR = { radius: 7, weight: 2.5, color: "#fff" };
+function hervorheben(layer) {
+  const normal = { radius: layer.getRadius(), weight: layer.options.weight, color: layer.options.color };
+  layer.on("mouseover", () => { layer.setStyle(HERVOR); layer.bringToFront(); });
+  layer.on("mouseout", () => layer.setStyle(normal));
   return layer;
 }
 // Amtliches Luftbild (DOP20, LVermGeo RLP, dl-de/by-2-0): Bild von etwa 200 × 200 m mit der

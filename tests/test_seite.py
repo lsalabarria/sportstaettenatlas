@@ -103,7 +103,8 @@ def test_schreibe_webseite(tmp_path):
         docs, bestand=[_datensatz(1, 7.2, 50.5)], titel="Mein Atlas", leaflet_laden=False
     )
     assert (docs / ".nojekyll").exists() and (docs / "daten" / "index.html").exists()
-    assert sorted(p.name for p in (docs / "app").iterdir()) == sorted([web.STIL, *web.SKRIPTE])
+    app = sorted(p.name for p in (docs / "app").iterdir())
+    assert app == sorted([web.STIL, *web.SKRIPTE, "schrift"])
     assert info["neu_angelegt"] == ["konfig.js", "impressum.html", "datenschutz.html"]
     assert "GitHub Pages" in (docs / "datenschutz.html").read_text(encoding="utf-8")
     assert "unpkg.com/leaflet" in (docs / "index.html").read_text(encoding="utf-8")
@@ -213,6 +214,10 @@ def test_webseite_mit_bestand_gebieten_und_analyse(tmp_path):
     assert _lies(daten / "gebiete_gemeinde.geojson")["features"][0]["properties"] == {
         "s": "071375001001"
     }
+    schrift = docs / "app" / "schrift"  # liegt der Seite bei, mit ihrer Lizenz
+    assert sorted(x.name for x in schrift.iterdir()) == sorted(web.SCHRIFTEN)
+    assert (schrift / "inter-400.woff").read_bytes()[:4] == b"wOFF"
+    assert "schrift/inter-400.woff" in (docs / "app" / "stil.css").read_text(encoding="utf-8")
     land = _lies(daten / "gebiete_land.geojson")["features"]  # für die Maske der Karte
     assert len(land) == 1 and land[0]["geometry"]["type"] == "MultiPolygon"
     # Analyse: eigener Ordner, Verzeichnis für den Reiter, Kontaktdaten entfernt

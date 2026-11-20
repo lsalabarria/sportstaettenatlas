@@ -1,13 +1,25 @@
+/* Schrift Inter (schrift/, SIL Open Font License, siehe schrift/OFL.txt) – liegt der Seite bei */
+@font-face { font-family: "Inter"; font-weight: 400; font-display: swap;
+  src: url("schrift/inter-400.woff") format("woff"); }
+@font-face { font-family: "Inter"; font-weight: 600; font-display: swap;
+  src: url("schrift/inter-600.woff") format("woff"); }
+@font-face { font-family: "Inter"; font-weight: 700; font-display: swap;
+  src: url("schrift/inter-700.woff") format("woff"); }
+:root { --schrift: "Inter", system-ui, sans-serif; --text: #1f1f1f; --leise: #6b6b6b;
+  --linie: #e7e3e4; --akzent: #871D33; }
 html, body { height: 100%; margin: 0; }
-body { font: 13px/1.4 system-ui, sans-serif; display: flex; flex-direction: column; color: #222; }
+body { font: 13.5px/1.5 var(--schrift); display: flex; flex-direction: column; color: var(--text);
+  -webkit-font-smoothing: antialiased; }
+.leaflet-container { font-family: var(--schrift); }
 #bereich { position: relative; flex: 1; min-height: 0; }
 #karte { position: absolute; inset: 0; }
-#kopf { background: #fff; border-bottom: 3px solid #871D33; z-index: 1001; padding: 6px 14px 0; }
+#kopf { background: #fff; border-bottom: 3px solid var(--akzent); z-index: 1001; padding: 8px 18px 0; }
 #kopf .zeile { display: flex; align-items: center; gap: 6px 14px; flex-wrap: wrap; }
-#kopf h1 { font-size: 18px; margin: 0 auto 4px 0; font-weight: 700; }
-#links a { color: #333; text-decoration: none; font-size: 14px; margin-left: 14px; }
+#kopf h1 { font-size: 19px; margin: 0 auto 4px 0; font-weight: 700; letter-spacing: -0.015em; }
+#links a { color: #333; text-decoration: none; font-size: 14px; margin-left: 16px; }
 #links a:hover { text-decoration: underline; }
-#links a.knopf { background: #871D33; color: #fff; padding: 5px 12px; border-radius: 6px; }
+#links a.knopf { background: var(--akzent); color: #fff; padding: 6px 14px; border-radius: 6px;
+  font-weight: 600; }
 #links a.knopf:hover { background: #6d1729; text-decoration: none; }
 #ansichten { display: flex; gap: 2px; margin-right: auto; }
 #ansichten button { font: inherit; font-size: 14px; border: 0; background: none; cursor: pointer;
@@ -16,8 +28,8 @@ body { font: 13px/1.4 system-ui, sans-serif; display: flex; flex-direction: colu
 #ansichten button[aria-selected="true"] { border-bottom-color: #871D33; color: #871D33;
   font-weight: 600; }
 #gebietwahl { display: flex; align-items: center; gap: 6px; padding: 3px 0 6px; }
-#gebietwahl select { font: inherit; padding: 3px 4px; max-width: 260px; border: 1px solid #bbb;
-  border-radius: 4px; background: #fff; }
+#gebietwahl select { font: inherit; padding: 4px 6px; max-width: 260px; border: 1px solid #ccc;
+  border-radius: 6px; background: #fff; }
 #gebietwahl button { font: inherit; border: 1px solid #bbb; background: #f6f6f6; border-radius: 4px;
   cursor: pointer; padding: 2px 8px; }
 #laden { position: absolute; inset: 0; z-index: 1100; display: flex; align-items: center;
@@ -29,33 +41,40 @@ body { font: 13px/1.4 system-ui, sans-serif; display: flex; flex-direction: colu
            border-radius: 50%; animation: dreh 0.8s linear infinite; flex: none; }
 .fehler .kreisel { display: none; }
 @keyframes dreh { to { transform: rotate(360deg); } }
-.panel { background: #fff; padding: 8px 10px; border-radius: 6px;
-         box-shadow: 0 1px 4px rgba(0,0,0,.25); max-width: 270px; }
-.panel h1 { font-size: 14px; margin: 0 0 6px; font-weight: 600; }
-.panel h2 { font-size: 12px; margin: 8px 0 4px; font-weight: 600; color: #444; }
-.panel label { display: flex; align-items: center; gap: 6px; cursor: pointer; }
-.panel label.null { color: #aaa; }
-.panel .n { margin-left: auto; color: #666; font-variant-numeric: tabular-nums; padding-left: 6px; }
-.panel hr { border: 0; border-top: 1px solid #ddd; margin: 6px 0; }
+.panel { background: #fff; padding: 12px 14px; border-radius: 10px;
+         box-shadow: 0 2px 12px rgba(0,0,0,.12), 0 0 0 1px rgba(0,0,0,.05); max-width: 270px; }
+.panel h1 { font-size: 15px; margin: 0 0 8px; font-weight: 700; letter-spacing: -0.01em; }
+.panel h2 { font-size: 11px; margin: 12px 0 4px; font-weight: 600; color: var(--leise);
+  text-transform: uppercase; letter-spacing: 0.05em; }
+.panel label { display: flex; align-items: center; gap: 7px; cursor: pointer; padding: 1.5px 0; }
+.panel label.null { color: #b3b3b3; }
+.panel .n { margin-left: auto; color: var(--leise); font-size: 12px; font-variant-numeric: tabular-nums;
+  padding-left: 8px; }
+.panel hr { border: 0; border-top: 1px solid var(--linie); margin: 8px 0; }
+.panel input[type=checkbox] { accent-color: var(--akzent); margin: 0; }
 .filter { width: 260px; max-height: calc(100vh - 170px); overflow: auto; }
-.filter details { border-top: 1px solid #e3e3e3; padding: 4px 0; }
-.filter summary { cursor: pointer; font-weight: 600; color: #444; padding: 2px 0; }
+.filter details { border-top: 1px solid var(--linie); padding: 7px 0; }
+.filter summary { cursor: pointer; font-weight: 600; color: #333; padding: 1px 0; }
+.filter summary:hover { color: var(--akzent); }
+.filter details[open] > summary { margin-bottom: 4px; }
 .filter .knoepfe { display: flex; gap: 8px; margin: 2px 0 4px; }
 .filter .knoepfe button, .chip button { font: inherit; font-size: 12px; border: 0; background: none;
   color: #185FA5; cursor: pointer; padding: 0; }
-.filter input[type=search] { width: 100%; box-sizing: border-box; padding: 3px 6px; font: inherit;
-  border: 1px solid #bbb; border-radius: 4px; margin: 4px 0; }
+.filter input[type=search] { width: 100%; box-sizing: border-box; padding: 5px 8px; font: inherit;
+  border: 1px solid #ccc; border-radius: 6px; margin: 4px 0 6px; }
+input:focus-visible, select:focus-visible, button:focus-visible {
+  outline: 2px solid rgba(135, 29, 51, 0.35); outline-offset: 1px; }
 .sp-liste, .ko-liste { max-height: 220px; overflow: auto; }
 .chip { background: #EEF2F7; border-radius: 4px; padding: 4px 6px; margin: 4px 0; }
 .swatch { width: 12px; height: 12px; border-radius: 50%; flex: none; }
 .art { display: inline-block; font-size: 11px; padding: 0 5px; border-radius: 4px;
        background: #EEF2F7; color: #333; margin-left: 4px; }
-.tip h3 { font-size: 13px; margin: 0 0 4px; }
-.tip h4 { font-size: 12px; margin: 8px 0 2px; color: #444; border-top: 1px solid #ddd;
-          padding-top: 6px; }
+.tip h3 { font-size: 14px; margin: 0 0 6px; font-weight: 700; }
+.tip h4 { font-size: 11px; margin: 10px 0 3px; color: var(--leise); border-top: 1px solid var(--linie);
+          padding-top: 8px; text-transform: uppercase; letter-spacing: 0.05em; }
 .meta { border-collapse: collapse; }
-.meta td { padding: 1px 6px 1px 0; vertical-align: top; }
-.meta td:first-child { color: #666; white-space: nowrap; }
+.meta td { padding: 2px 10px 2px 0; vertical-align: top; }
+.meta td:first-child { color: var(--leise); white-space: nowrap; }
 .q { color: #888; font-size: 11px; }
 .verif { display: inline-block; padding: 1px 6px; border-radius: 4px; font-weight: 600; }
 .stufe-0 { background: #F1EFE8; color: #444441; }
@@ -63,8 +82,10 @@ body { font: 13px/1.4 system-ui, sans-serif; display: flex; flex-direction: colu
 .schraffur { width: 16px; height: 16px; border-radius: 3px; flex: none;
              border: 1px solid #888; background-color: #B4B2A9; }
 .stufe-1 { background: #EAF3DE; color: #27500A; }
-.leaflet-tooltip { max-width: 420px; white-space: normal; }
-.leaflet-popup-content { margin: 10px 12px; font: 13px/1.4 system-ui, sans-serif;
+.leaflet-tooltip { max-width: 420px; white-space: normal; font: 12.5px/1.45 var(--schrift);
+  border: 0; border-radius: 6px; box-shadow: 0 2px 10px rgba(0,0,0,.18); padding: 6px 9px; }
+.leaflet-popup-content-wrapper { border-radius: 10px; box-shadow: 0 4px 18px rgba(0,0,0,.18); }
+.leaflet-popup-content { margin: 14px 16px; font: 13px/1.5 var(--schrift);
                          user-select: text; max-height: 60vh; overflow: auto; }
 .pfeil { color: #854F0B; font-size: 22px; line-height: 22px; text-align: center;
          text-shadow: 0 0 2px #fff, 0 0 2px #fff; }
@@ -72,10 +93,11 @@ body { font: 13px/1.4 system-ui, sans-serif; display: flex; flex-direction: colu
 .koord { font-variant-numeric: tabular-nums; user-select: all; }
 .suche { width: 270px; }
 .suche form { display: flex; gap: 4px; }
-.suche input { flex: 1; min-width: 0; padding: 4px 6px; font: inherit;
-               border: 1px solid #bbb; border-radius: 4px; }
-.suche button { padding: 4px 8px; font: inherit; cursor: pointer; border: 1px solid #bbb;
-                border-radius: 4px; background: #f6f6f6; }
+.suche input { flex: 1; min-width: 0; padding: 6px 9px; font: inherit;
+               border: 1px solid #ccc; border-radius: 6px; }
+.suche button { padding: 6px 11px; font: inherit; font-weight: 600; cursor: pointer;
+                border: 1px solid #ccc; border-radius: 6px; background: #f7f5f5; }
+.suche button:hover { background: #efeaeb; }
 .suche ul { list-style: none; margin: 6px 0 0; padding: 0; max-height: 45vh; overflow: auto; }
 .suche li { padding: 4px 4px; cursor: pointer; border-radius: 4px; }
 .suche li:hover, .suche li.aktiv { background: #EEF2F7; }
@@ -86,8 +108,8 @@ body { font: 13px/1.4 system-ui, sans-serif; display: flex; flex-direction: colu
 .seite { position: absolute; inset: 0; z-index: 1050; background: #fff; overflow: auto; }
 .seite[hidden] { display: none; }
 .inhalt { max-width: 1100px; margin: 0 auto; padding: 16px 20px 40px; font-size: 14px; }
-.inhalt h2 { font-size: 20px; margin: 4px 0 4px; }
-.inhalt h3 { font-size: 15px; margin: 26px 0 8px; }
+.inhalt h2 { font-size: 22px; margin: 4px 0 4px; letter-spacing: -0.015em; }
+.inhalt h3 { font-size: 16px; margin: 28px 0 10px; }
 .unter { color: #666; margin: 0 0 14px; }
 .reiter { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin: 10px 0; }
 .reiter button { font: inherit; border: 1px solid #ccc; background: #fff; border-radius: 16px;
@@ -288,7 +310,7 @@ td.abgelaufen { color: #b00020; }
 /* Haufen je Kreis oder Gemeinde (grundlagen.js, haufen) */
 .haufen { background: rgba(135, 29, 51, 0.25); border-radius: 50%; }
 .haufen span { position: absolute; inset: 4px; border-radius: 50%; background: #871D33; color: #fff;
-  font: 600 12px/1 system-ui, sans-serif; display: flex; align-items: center; justify-content: center;
+  font: 600 12px/1 var(--schrift); font-variant-numeric: tabular-nums; display: flex; align-items: center; justify-content: center;
   box-shadow: 0 0 0 1.5px #fff; }
 .haufen.kreis { background: rgba(135, 29, 51, 0.32); }
 .haufen.kreis span { inset: 3px; font-size: 13px; }

@@ -9,6 +9,7 @@
     analysen.js     Ansicht Analysen, darin der ALKIS-Abgleich
     start.js        Suche, Rechtsklick-Menü, Start
     vorlagen/       konfig.js, Impressum, Datenschutz, Download-Seite
+    schrift/        Schrift Inter (WOFF, lateinische Zeichen) mit ihrer Lizenz (OFL.txt)
 
 `html_seite` setzt Titel und Quellenvermerk ein und verlinkt Stil und Skripte, die
 `kopiere_app` nach docs/app/ kopiert; die Daten lädt die Seite aus docs/daten/ nach.
@@ -28,6 +29,8 @@ from pathlib import Path
 LEAFLET = "https://unpkg.com/leaflet@1.9.4/dist"
 STIL = "stil.css"
 SKRIPTE = ("grundlagen.js", "bestand.js", "liste.js", "vorschlag.js", "analysen.js", "start.js")
+# Schrift: liegt der Seite bei (kein Abruf bei Google Fonts o. Ä.), stil.css bindet sie ein
+SCHRIFTEN = ("inter-400.woff", "inter-600.woff", "inter-700.woff", "OFL.txt")
 
 
 def datei(name: str) -> str:
@@ -60,13 +63,20 @@ def html_seite(titel: str, quellenvermerk: str = "", leaflet: str = LEAFLET) -> 
 
 
 def kopiere_app(ziel: Path) -> None:
-    """Stil und Skripte nach `ziel` (docs/app/) kopieren; veraltete Dateien entfernen."""
+    """Stil, Skripte und Schrift nach `ziel` (docs/app/) kopieren; veraltete Dateien entfernen."""
     ziel.mkdir(parents=True, exist_ok=True)
     namen = [STIL, *SKRIPTE]
     for n in namen:
         (ziel / n).write_text(datei(n), encoding="utf-8")
     for alt in ziel.iterdir():
         if alt.is_file() and alt.name not in namen:
+            alt.unlink()
+    schrift = ziel / "schrift"
+    schrift.mkdir(exist_ok=True)
+    for n in SCHRIFTEN:
+        (schrift / n).write_bytes(resources.files(__name__).joinpath("schrift", n).read_bytes())
+    for alt in schrift.iterdir():
+        if alt.is_file() and alt.name not in SCHRIFTEN:
             alt.unlink()
 
 
