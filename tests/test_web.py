@@ -112,6 +112,11 @@ class _Leise(http.server.SimpleHTTPRequestHandler):
         pass
 
 
+def _ars_von(lon: float, lat: float) -> str:
+    """Zwei Kreise: Sportplatz Berg und Tennisanlage Bergen im einen, Bolzplatz Tal im anderen."""
+    return "071370000000" if lon < 7.75 else "071380000000"
+
+
 @pytest.fixture(scope="module")
 def url(tmp_path_factory):
     docs = tmp_path_factory.mktemp("docs")
@@ -122,6 +127,7 @@ def url(tmp_path_factory):
         organisationen=ORGANISATIONEN,
         sportkomplexe=[KOMPLEX],
         stuetzpunkte=STUETZPUNKTE,
+        ars_von=_ars_von,
     )
     konfig = docs / "konfig.js"
     konfig.write_text(
@@ -618,15 +624,19 @@ def test_organisationen_auch_ohne_sportstaette(oeffne):
     assert "Keine Einträge" in teil.inner_text()
 
 
-def test_haufen_beim_herauszoomen(oeffne):
+def test_haufen_je_kreis_beim_herauszoomen(oeffne):
     page = oeffne("")
     page.wait_for_timeout(500)  # erst die Startansicht (passt die Karte an den Bestand an)
     page.evaluate("void karte.setView([50.3, 7.7], 8, { animate: false })")
     page.wait_for_timeout(300)
-    haufen = page.locator(".haufen")
-    assert haufen.count() >= 1
-    n = sum(int(t) for t in haufen.all_inner_texts())
-    assert n >= 2  # nahe Sportstätten in einem Haufen mit ihrer Zahl
-    haufen.first.click()
+    kreise = page.locator(".haufen.kreis")
+    assert kreise.count() == 1  # Berg und Bergen in einem Kreis; Tal allein bleibt ein Punkt
+    assert kreise.inner_text() == "2"
+    assert "2 Sportstätten" in kreise.get_attribute("title")
+    assert page.locator(".leaflet-interactive").count() == 1  # der Punkt Tal
+    kreise.click()
     page.wait_for_timeout(600)
-    assert page.evaluate("karte.getZoom()") > 8
+    assert 8 < page.evaluate("karte.getZoom()") < 12
+    page.evaluate("void karte.setView([50.3, 7.7], 10, { animate: false })")
+    page.wait_for_timeout(300)
+    assert page.locator(".haufen.kreis").count() == 0  # ab Zoomstufe 10 keine Kreise mehr

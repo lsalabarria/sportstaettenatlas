@@ -290,3 +290,5 @@ td.abgelaufen { color: #b00020; }
 .haufen span { position: absolute; inset: 4px; border-radius: 50%; background: #871D33; color: #fff;
   font: 600 12px/1 system-ui, sans-serif; display: flex; align-items: center; justify-content: center;
   box-shadow: 0 0 0 1.5px #fff; }
+.haufen.kreis { background: rgba(135, 29, 51, 0.32); }
+.haufen.kreis span { inset: 3px; font-size: 13px; }

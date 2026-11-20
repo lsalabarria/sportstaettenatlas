@@ -264,13 +264,17 @@ hintergruende["basemap.de Farbe"].addTo(karte);
 L.control.layers(hintergruende, null, { position: "topleft" }).addTo(karte);
 karte.setView([49.95, 7.45], 8);
 
-// Punkte zu Haufen zusammenfassen: Unterhalb von HAUFEN_BIS sammelt ein Haufen alle Punkte
-// bis HAUFEN_PX Bildpunkte um seinen ersten Punkt (wie Leaflet.markercluster) und zeigt ihre
-// Zahl; ein Klick zoomt hinein. Dieselben Methoden wie eine L.layerGroup (addLayer,
-// removeLayer), dazu einzeln(layer): diesen Punkt immer zeigen (z. B. für sein Popup), bis das
-// Popup zu ist.
-const HAUFEN_BIS = 12, HAUFEN_PX = 50;
-function haufen() {
+// Punkte zu Haufen zusammenfassen, je nach Zoomstufe:
+// - unter KREISE_BIS: ein Haufen je Kreis (gruppe(layer) → Schlüssel des Kreises), an der
+//   Sportstätte, die dem Mittel seiner Punkte am nächsten liegt (liegt also im Kreis);
+// - unter HAUFEN_BIS: alle Punkte bis HAUFEN_PX Bildpunkte um den ersten Punkt eines Haufens
+//   (wie Leaflet.markercluster);
+// - darüber jeder Punkt einzeln.
+// Ein Klick zoomt hinein. Dieselben Methoden wie eine L.layerGroup (addLayer, removeLayer),
+// dazu einzeln(layer): diesen Punkt immer zeigen (z. B. für sein Popup), bis das Popup zu ist.
+// optionen: gruppe(layer) → Schlüssel oder null, name(schluessel), grenzen(schluessel) → Bounds
+const KREISE_BIS = 10, HAUFEN_BIS = 12, HAUFEN_PX = 50;
+function haufen(optionen = {}) {
   const punkte = new Set(), sicht = L.layerGroup();
   let karteH = null, geheftet = null, geplant = false;
   const plane = () => {
@@ -286,12 +290,20 @@ function haufen() {
       for (const p of punkte) if (p === geheftet || rand.contains(p.getLatLng())) sicht.addLayer(p);
       return;
     }
+    // Kreise: alle Punkte (auch außerhalb des Bildes), damit die Zahl den ganzen Kreis zählt
+    const kreise = new Map(), rest = [];
+    for (const p of punkte) {
+      if (p === geheftet) { sicht.addLayer(p); continue; }
+      const k = z < KREISE_BIS && optionen.gruppe ? optionen.gruppe(p) : null;
+      if (k) (kreise.get(k) || kreise.set(k, []).get(k)).push(p);
+      else rest.push(p);
+    }
+    zeigeKreise(kreise, z);
     // Raster von HAUFEN_PX nur zum schnellen Finden: ein Punkt kommt zum ersten Haufen, dessen
     // Mitte (sein erster Punkt) in den 3 × 3 Nachbarzellen höchstens HAUFEN_PX entfernt ist
     const raster = new Map(), alle = [], r2 = HAUFEN_PX * HAUFEN_PX;
-    for (const p of punkte) {
+    for (const p of rest) {
       const ll = p.getLatLng();
-      if (p === geheftet) { sicht.addLayer(p); continue; }
       if (!rand.contains(ll)) continue;
       const pt = karteH.project(ll, z), cx = Math.floor(pt.x / HAUFEN_PX), cy = Math.floor(pt.y / HAUFEN_PX);
       let ziel = null;
@@ -310,12 +322,55 @@ function haufen() {
       if (g.length === 1) { sicht.addLayer(g[0]); continue; }
       let lat = 0, lon = 0;
       for (const p of g) { const ll = p.getLatLng(); lat += ll.lat; lon += ll.lng; }
-      const n = g.length, gr = n < 10 ? 28 : n < 100 ? 34 : n < 1000 ? 40 : 46;
-      const m = L.marker([lat / n, lon / n], { icon: L.divIcon({ className: "haufen",
-        html: `<span>${zahl(n)}</span>`, iconSize: [gr, gr] }), keyboard: false,
-        title: `${zahl(n)} Sportstätten – hineinzoomen` });
+      const m = kreis([lat / g.length, lon / g.length], g.length, "haufen",
+        `${zahl(g.length)} Sportstätten – hineinzoomen`);
       m.on("click", () => karteH.fitBounds(L.latLngBounds(g.map(p => p.getLatLng())).pad(0.2),
         { maxZoom: HAUFEN_BIS + 1 }));
+      sicht.addLayer(m);
+    }
+  }
+  const groesse = n => (n < 10 ? 28 : n < 100 ? 34 : n < 1000 ? 40 : 46);
+  function kreis(ll, n, klasse, titel) {
+    const gr = groesse(n);
+    return L.marker(ll, { icon: L.divIcon({ className: klasse, html: `<span>${zahl(n)}</span>`,
+      iconSize: [gr, gr] }), keyboard: false, title: titel });
+  }
+  // Ein Haufen je Kreis; liegen zwei zu dicht (kreisfreie Stadt im Landkreis), schieben sie
+  // sich auseinander, bis sie sich nicht mehr überdecken
+  function zeigeKreise(kreise, z) {
+    const blasen = [];
+    for (const [k, g] of kreise) {
+      if (g.length === 1) { sicht.addLayer(g[0]); continue; }
+      let lat = 0, lon = 0;
+      for (const p of g) { const ll = p.getLatLng(); lat += ll.lat; lon += ll.lng; }
+      lat /= g.length; lon /= g.length;
+      let ort = null, best = Infinity;
+      for (const p of g) {
+        const ll = p.getLatLng(), d = (ll.lat - lat) ** 2 + ((ll.lng - lon) * 0.64) ** 2;
+        if (d < best) { best = d; ort = ll; }
+      }
+      blasen.push({ k, g, pt: karteH.project(ort, z), r: groesse(g.length) / 2 });
+    }
+    for (let runde = 0; runde < 40; runde++) {
+      let bewegt = false;
+      for (let i = 0; i < blasen.length; i++) for (let j = i + 1; j < blasen.length; j++) {
+        const a = blasen[i], b = blasen[j], dx = b.pt.x - a.pt.x, dy = b.pt.y - a.pt.y;
+        const d = Math.hypot(dx, dy) || 0.01, soll = a.r + b.r + 3;
+        if (d >= soll) continue;
+        const s = (soll - d) / 2 / d;
+        a.pt = L.point(a.pt.x - dx * s, a.pt.y - dy * s);
+        b.pt = L.point(b.pt.x + dx * s, b.pt.y + dy * s);
+        bewegt = true;
+      }
+      if (!bewegt) break;
+    }
+    for (const { k, g, pt } of blasen) {
+      const name = optionen.name ? optionen.name(k) : "";
+      const m = kreis(karteH.unproject(pt, z), g.length, "haufen kreis",
+        `${name ? name + ": " : ""}${zahl(g.length)} Sportstätten – hineinzoomen`);
+      const grenzen = (optionen.grenzen && optionen.grenzen(k))
+        || L.latLngBounds(g.map(p => p.getLatLng())).pad(0.1);
+      m.on("click", () => karteH.fitBounds(grenzen, { maxZoom: HAUFEN_BIS - 1 }));
       sicht.addLayer(m);
     }
   }
