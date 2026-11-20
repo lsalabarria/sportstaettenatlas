@@ -280,7 +280,7 @@ const HAUFEN_STUFEN = [{ ebene: "kreis", bis: KREISE_BIS, stellen: 5 },
   { ebene: "gemeinde", bis: GEMEINDEN_BIS, stellen: 12 }];
 function haufen(optionen = {}) {
   const punkte = new Set(), sicht = L.layerGroup();
-  let karteH = null, geheftet = null, geplant = false;
+  let karteH = null, geheftet = null, geplant = false, merke = null;
   const umriss = (e, k) => optionen.umriss && optionen.umriss(e, k);
   const plane = () => {
     if (!karteH || geplant) return;
@@ -289,7 +289,10 @@ function haufen(optionen = {}) {
   };
   function zeichne() {
     if (!karteH) return;
-    sicht.clearLayers();
+    // Neu zeichnen, ohne Punkte, die bleiben, abzunehmen: sonst schlösse sich ihr Popup
+    // (z. B. wenn die Karte für ein Popup verschoben wird und dabei neu zeichnet)
+    const vorher = new Set(sicht.getLayers()), jetzt = new Set();
+    merke = l => jetzt.add(l);
     umriss(null);
     const z = karteH.getZoom(), rand = karteH.getBounds().pad(0.5);
     const stufe = optionen.ars ? HAUFEN_STUFEN.find(s => z < s.bis) : null;
@@ -299,9 +302,11 @@ function haufen(optionen = {}) {
       if (ars && ars.length >= stufe.stellen) {
         const k = ars.slice(0, stufe.stellen);
         (gruppen.get(k) || gruppen.set(k, []).get(k)).push(p);
-      } else if (p === geheftet || rand.contains(p.getLatLng())) sicht.addLayer(p);
+      } else if (p === geheftet || rand.contains(p.getLatLng())) merke(p);
     }
     if (stufe) zeigeGruppen(stufe, gruppen, z, rand);
+    for (const l of vorher) if (!jetzt.has(l)) sicht.removeLayer(l);
+    for (const l of jetzt) if (!vorher.has(l)) sicht.addLayer(l);
   }
   const groesse = n => (n < 10 ? 28 : n < 100 ? 34 : n < 1000 ? 40 : 46);
   function zeigeGruppen(stufe, gruppen, z, rand) {
@@ -316,7 +321,7 @@ function haufen(optionen = {}) {
         if (d < best) { best = d; ort = ll; }
       }
       if (!rand.contains(ort)) continue;
-      if (g.length === 1) { sicht.addLayer(g[0]); continue; }
+      if (g.length === 1) { merke(g[0]); continue; }
       blasen.push({ k, g, pt: karteH.project(ort, z), r: groesse(g.length) / 2 });
     }
     auseinander(blasen);
@@ -329,7 +334,7 @@ function haufen(optionen = {}) {
       m.on("mouseover", () => umriss(stufe.ebene, k));
       m.on("mouseout", () => umriss(null));
       m.on("click", () => hinein(stufe, k, g));
-      sicht.addLayer(m);
+      merke(m);
     }
   }
   // Blasen, die sich überdecken, paarweise auseinanderschieben (Raster zum schnellen Finden)
