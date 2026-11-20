@@ -229,7 +229,10 @@ def ort_und_land(st: dict, gemeinden: Gebiete) -> Iterable[str]:
     lat, lon = lage
     ars = gemeinden.von(lon, lat)
     if ars is None:
-        yield "lage: liegt in keiner Gemeinde von Rheinland-Pfalz"
+        yield (
+            "lage: liegt in keiner Gemeinde von Rheinland-Pfalz (nicht auf der Karte) – Lage "
+            "korrigieren oder nach daten/outside/<Land>/ verschieben"
+        )
         return
     ort = (st.get("adresse") or {}).get("ort")
     gemeinde = gemeinden.name.get(ars, "")

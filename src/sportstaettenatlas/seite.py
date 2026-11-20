@@ -274,13 +274,17 @@ def lade_analysen(ordner: Path) -> tuple[dict[str, tuple[str, dict, dict]], list
 
 
 def ohne_outside(
-    bestand: list[dict] | None, sportkomplexe: list[dict] | None, stuetzpunkte: list[dict] | None
+    bestand: list[dict] | None,
+    sportkomplexe: list[dict] | None,
+    stuetzpunkte: list[dict] | None,
+    weitere: set[str] = frozenset(),
 ) -> tuple[list[dict] | None, list[dict] | None, list[dict] | None]:
-    """Was unter daten/outside/ liegt (außerhalb von RLP), kommt nicht auf die Webseite:
-    Stützpunkte verlieren diese Verweise und fallen weg, wenn keiner übrig bleibt."""
+    """Was unter daten/outside/ liegt (außerhalb von RLP), kommt nicht auf die Webseite,
+    ebenso die IDs in `weitere` (z. B. Lage in keiner Gemeinde des Landes): Stützpunkte
+    verlieren diese Verweise und fallen weg, wenn keiner übrig bleibt."""
     draussen = {
         x["id"] for x in [*(bestand or []), *(sportkomplexe or [])] if x.get("_land") == OUTSIDE
-    }
+    } | set(weitere)
     if bestand is not None:
         bestand = [d for d in bestand if d["id"] not in draussen]
     if sportkomplexe is not None:
@@ -332,7 +336,18 @@ def schreibe_webseite(
     """
     from . import gebiete as gb
 
-    bestand, sportkomplexe, stuetzpunkte = ohne_outside(bestand, sportkomplexe, stuetzpunkte)
+    # Lage in keiner Gemeinde des Landes (falsche Koordinate oder eigentlich outside): nicht
+    # auf die Karte; validate meldet sie als Regelverstoß
+    ausserhalb = set()
+    if ars_von and bestand:
+        for d in bestand:
+            lon, lat = (d.get("lage") or {}).get("lon"), (d.get("lage") or {}).get("lat")
+            drin = d.get("_land") == OUTSIDE or lon is None or lat is None or ars_von(lon, lat)
+            if not drin:
+                ausserhalb.add(d["id"])
+    bestand, sportkomplexe, stuetzpunkte = ohne_outside(
+        bestand, sportkomplexe, stuetzpunkte, ausserhalb
+    )
     ausgabe.mkdir(parents=True, exist_ok=True)
     daten = ausgabe / "daten"
     daten.mkdir(exist_ok=True)
@@ -451,5 +466,6 @@ def schreibe_webseite(
         "entfernt": dict(entfernt),
         "leaflet_lokal": lokal,
         "neu_angelegt": neu_angelegt,
+        "ausserhalb": len(ausserhalb),
         "gesamt": sum(f.stat().st_size for f in ausgabe.rglob("*") if f.is_file()),
     }

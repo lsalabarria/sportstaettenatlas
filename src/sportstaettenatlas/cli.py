@@ -404,6 +404,12 @@ def cmd_seite(args):
     if info["entfernt"]:
         weg = ", ".join(f"{k}: {v}" for k, v in sorted(info["entfernt"].items()))
         print(f"Nicht veröffentlicht (Kontaktdaten): {weg}")
+    if info["ausserhalb"]:
+        print(
+            f"Nicht auf der Karte: {info['ausserhalb']} Sportstätten, deren Lage in keiner Gemeinde "
+            "von Rheinland-Pfalz liegt (Lage korrigieren oder nach daten/outside/<Land>/ "
+            f"verschieben; Liste in daten/{REGELVERSTOESSE})."
+        )
     if not info["leaflet_lokal"]:
         print("Hinweis: Leaflet nicht heruntergeladen – die Seite lädt es von unpkg.com.")
     if info["neu_angelegt"]:

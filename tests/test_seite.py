@@ -202,7 +202,7 @@ def test_webseite_mit_bestand_gebieten_und_analyse(tmp_path):
         f["properties"]["id"]: f["properties"] for f in _lies(daten / "bestand.geojson")["features"]
     }
     assert b["RP-1"]["ars"] == "071375001001" and b["RP-2"]["ars"] == "071375001002"
-    assert "ars" not in b["RP-3"]  # außerhalb aller Gemeinden
+    assert "RP-3" not in b and info["ausserhalb"] == 1  # in keiner Gemeinde: nicht auf die Karte
     assert b["RP-1"]["betreiber_art"] == "Verein"  # aus der angegebenen Art
     assert "betreiber_art" not in b["RP-2"]  # ohne Art: unbekannt, nicht geschätzt
     assert "eigentuemer" not in b["RP-2"]  # E-Mail-Adresse entfernt

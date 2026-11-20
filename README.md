@@ -150,6 +150,9 @@ Auswahllisten, mindestens 4 Nachkommastellen bei Koordinaten, `braucht`, `teil_v
 Sportstätten und Sportkomplexe unter `daten/outside/<Land>/` liegen außerhalb von
 Rheinland-Pfalz. Für sie entfallen Ort, Rheinland-Pfalz, PLZ, Kreis-Ordner und Eigentum der
 Kommune; `einordnen` lässt sie liegen, und `seite` zeigt sie nicht an.
+Liegt die Lage einer Sportstätte unter `daten/RP/` in keiner Gemeinde des Landes (Ordner
+`ohne-kreis`), zeigt `seite` sie ebenfalls nicht an und meldet sie als Regelverstoß: entweder
+ist die Koordinate falsch, oder die Sportstätte gehört nach `daten/outside/<Land>/`.
 
 ## Webseite
 

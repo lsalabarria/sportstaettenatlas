@@ -113,7 +113,9 @@ def test_pruefe(tmp_path):
     assert nach[f"{S6}_meta.json"] == [
         "adresse.ort: „Niederberg“ ist keine Gemeinde, die Koordinate liegt in Koblenz"
     ]
-    assert nach[f"{S4}_meta.json"] == ["lage: liegt in keiner Gemeinde von Rheinland-Pfalz"]
+    assert nach[f"{S4}_meta.json"][0].startswith(
+        "lage: liegt in keiner Gemeinde von Rheinland-Pfalz"
+    )
     assert f"{S3}_meta.json" not in nach
 
     # ohne Gemeinden entfallen Ort und Rheinland-Pfalz, der Rest bleibt
