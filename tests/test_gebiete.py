@@ -1,6 +1,8 @@
 """Gebietszuordnung ohne Geo-Bibliotheken."""
 
-from sportstaettenatlas.gebiete import Zuordnung, index, punkt_in, schluessel
+import pytest
+
+from sportstaettenatlas.gebiete import Zuordnung, index, land, punkt_in, schluessel
 
 
 def _quadrat(w, s, groesse=1.0, loch=None):
@@ -49,3 +51,41 @@ def test_zuordnung_und_index():
     assert [e["n"] for e in eintraege] == ["A", "B"]
     assert schluessel("kreis", "071375001001") == "07137"
     assert schluessel("vg", "071375001001") == "071375001"
+
+
+def _kreise(*geometrien):
+    return {
+        "kreis": {
+            "type": "FeatureCollection",
+            "features": [{"type": "Feature", "properties": {}, "geometry": g} for g in geometrien],
+        }
+    }
+
+
+def test_land_ohne_shapely(monkeypatch):
+    import builtins
+
+    echt = builtins.__import__
+
+    def ohne_shapely(name, *args, **kwargs):
+        if name.startswith("shapely"):
+            raise ImportError(name)
+        return echt(name, *args, **kwargs)
+
+    monkeypatch.setattr(builtins, "__import__", ohne_shapely)
+    # ohne shapely: die Außenringe der Kreise einzeln, Löcher fallen weg
+    fc = land(_kreise(_quadrat(7, 50, loch=(7.4, 50.4, 0.2)), _quadrat(8, 50)))
+    polygone = fc["features"][0]["geometry"]["coordinates"]
+    assert [len(p) for p in polygone] == [1, 1]
+    assert land({})["features"] == []
+
+
+def test_land_mit_shapely():
+    pytest.importorskip("shapely")
+    # zwei Kreise mit einem schmalen Spalt (vereinfachte Grenzen) → ein Umriss ohne Loch
+    links = _quadrat(7, 50)
+    rechts = _quadrat(8.0003, 50)
+    polygone = land(_kreise(links, rechts))["features"][0]["geometry"]["coordinates"]
+    assert len(polygone) == 1 and len(polygone[0]) == 1
+    xs = [x for x, _ in polygone[0][0]]
+    assert min(xs) == pytest.approx(7, abs=1e-3) and max(xs) == pytest.approx(9.0003, abs=1e-3)

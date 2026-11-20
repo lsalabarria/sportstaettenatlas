@@ -52,11 +52,12 @@ function anlagenNachGruppe(liste) {
 function ansichtBestand(fc) {
   ANLAGEN_GRUPPEN = fc.anlagengruppen || [["weitere", "Weitere"]];
   ANLAGEN_TYPEN = fc.anlagentypen || {};
-  const kreisVon = new Map();  // Punkt → Schlüssel seines Kreises (5 Stellen des ars)
+  const arsVon = new Map();  // Punkt → Regionalschlüssel seiner Gemeinde
   const ebene = haufen({
-    gruppe: layer => kreisVon.get(layer) || null,
-    name: k => (NACH_S[k] ? gebietTitel(NACH_S[k]) : ""),
-    grenzen: k => (NACH_S[k] ? grenzenVon(NACH_S[k]) : null),
+    ars: layer => arsVon.get(layer) || null,
+    name: (_, k) => (NACH_S[k] ? gebietTitel(NACH_S[k]) : ""),
+    grenzen: (_, k) => (NACH_S[k] ? grenzenVon(NACH_S[k]) : null),
+    umriss: umrissZeigen,
   });
   const eintraege = [];
   for (const f of fc.features) {
@@ -71,7 +72,7 @@ function ansichtBestand(fc) {
       betreiber: schluesselName(p.betreiber), eigentuemer: schluesselName(p.eigentuemer) };
     e.layer = info(L.circleMarker([lat, lon], { radius: 4, weight: 1, color: "#fff",
       fillColor: PUNKT_FARBE, fillOpacity: 0.95 }), () => tipBestand(e));
-    if (p.ars && p.ars.length >= 5) kreisVon.set(e.layer, p.ars.slice(0, 5));
+    if (p.ars) arsVon.set(e.layer, p.ars);
     eintraege.push(e);
   }
   // Zahl der Sportstätten je Kategorie, Sportart und Anlagentyp (ganzes Land)

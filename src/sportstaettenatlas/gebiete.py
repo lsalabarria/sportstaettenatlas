@@ -246,3 +246,43 @@ def umrisse(gebiete: dict[str, dict], ebene: str) -> dict:
             if (f.get("properties") or {}).get("ars") and f.get("geometry")
         ],
     }
+
+
+def land(gebiete: dict[str, dict]) -> dict:
+    """Umriss des Landes (Vereinigung der Kreise) für die Maske der Karte: außerhalb grau.
+
+    Mit shapely werden die Kreise vereinigt; schmale Spalten zwischen ihren (einzeln
+    vereinfachten) Grenzen schließt ein Puffer von etwa 50 m, Löcher fallen weg. Ohne shapely
+    stehen die Außenringe der Kreise einzeln darin (die Karte zeigt dann an den Kreisgrenzen
+    feine Linien).
+    """
+    kreise = [
+        f["geometry"]
+        for f in gebiete.get("kreis", {}).get("features", [])
+        if f.get("geometry") and _ringe(f["geometry"])
+    ]
+    if not kreise:
+        return {"type": "FeatureCollection", "features": []}
+    try:
+        import shapely
+        from shapely.geometry import shape
+    except ImportError:
+        polygone = [[poly[0]] for g in kreise for poly in _ringe(g)]
+    else:
+        puffer = 0.0005  # Grad, etwa 50 m
+        ganz = shapely.union_all([shape(g).buffer(puffer) for g in kreise]).buffer(-puffer)
+        polygone = []
+        for poly in getattr(ganz, "geoms", [ganz]):
+            if poly.geom_type == "Polygon" and poly.area > 1e-6:
+                ring = [[round(x, 5), round(y, 5)] for x, y in poly.exterior.coords]
+                polygone.append([ring])
+    return {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {"type": "MultiPolygon", "coordinates": polygone},
+            }
+        ],
+    }

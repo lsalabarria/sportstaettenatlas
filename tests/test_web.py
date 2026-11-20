@@ -19,6 +19,7 @@ import pytest
 
 sync_api = pytest.importorskip("playwright.sync_api")
 
+from sportstaettenatlas import gebiete as gb
 from sportstaettenatlas import modell, seite
 
 WURZEL = Path(__file__).resolve().parents[1]
@@ -112,9 +113,34 @@ class _Leise(http.server.SimpleHTTPRequestHandler):
         pass
 
 
-def _ars_von(lon: float, lat: float) -> str:
-    """Zwei Kreise: Sportplatz Berg und Tennisanlage Bergen im einen, Bolzplatz Tal im anderen."""
-    return "071370000000" if lon < 7.75 else "071380000000"
+def _rechteck(ars, name, bez, w, s, o, n):
+    return {
+        "type": "Feature",
+        "properties": {"ars": ars, "name": name, "bez": bez},
+        "geometry": {"type": "Polygon", "coordinates": [[[w, s], [o, s], [o, n], [w, n], [w, s]]]},
+    }
+
+
+def _ebene(*features):
+    return {"type": "FeatureCollection", "features": list(features)}
+
+
+# Zwei Kreise mit je einer Gemeinde: Sportplatz Berg und Tennisanlage Bergen in Bergland, der
+# Bolzplatz Tal in Talheim (synthetisch, nebeneinanderliegende Rechtecke)
+GEBIETE = {
+    "kreis": _ebene(
+        _rechteck("071370000000", "Kreis Berg", "Landkreis", 7.5, 50.1, 7.75, 50.5),
+        _rechteck("071380000000", "Kreis Tal", "Landkreis", 7.75, 50.1, 7.9, 50.5),
+    ),
+    "vg": _ebene(
+        _rechteck("071375001000", "VG Berg", "Verbandsgemeinde", 7.5, 50.1, 7.75, 50.5),
+        _rechteck("071385001000", "VG Tal", "Verbandsgemeinde", 7.75, 50.1, 7.9, 50.5),
+    ),
+    "gemeinde": _ebene(
+        _rechteck("071375001001", "Bergland", "Ortsgemeinde", 7.5, 50.1, 7.75, 50.5),
+        _rechteck("071385001001", "Talheim", "Ortsgemeinde", 7.75, 50.1, 7.9, 50.5),
+    ),
+}
 
 
 @pytest.fixture(scope="module")
@@ -127,7 +153,8 @@ def url(tmp_path_factory):
         organisationen=ORGANISATIONEN,
         sportkomplexe=[KOMPLEX],
         stuetzpunkte=STUETZPUNKTE,
-        ars_von=_ars_von,
+        gebiete=GEBIETE,
+        ars_von=gb.Zuordnung(GEBIETE["gemeinde"]).ars,
     )
     konfig = docs / "konfig.js"
     konfig.write_text(
@@ -624,19 +651,36 @@ def test_organisationen_auch_ohne_sportstaette(oeffne):
     assert "Keine Einträge" in teil.inner_text()
 
 
-def test_haufen_je_kreis_beim_herauszoomen(oeffne):
+def test_haufen_je_kreis_und_gemeinde(oeffne):
     page = oeffne("")
     page.wait_for_timeout(500)  # erst die Startansicht (passt die Karte an den Bestand an)
-    page.evaluate("void karte.setView([50.3, 7.7], 8, { animate: false })")
-    page.wait_for_timeout(300)
+    assert page.locator(".leaflet-maske-pane path").count() == 2  # außerhalb grau, Landesgrenze
+
+    def zoom(z):
+        page.evaluate(f"void karte.setView([50.3, 7.7], {z}, {{ animate: false }})")
+        page.wait_for_timeout(300)
+
+    zoom(8)  # Kreise: Berg und Bergen zusammen, Tal allein bleibt ein Punkt
     kreise = page.locator(".haufen.kreis")
-    assert kreise.count() == 1  # Berg und Bergen in einem Kreis; Tal allein bleibt ein Punkt
-    assert kreise.inner_text() == "2"
-    assert "2 Sportstätten" in kreise.get_attribute("title")
-    assert page.locator(".leaflet-interactive").count() == 1  # der Punkt Tal
-    kreise.click()
-    page.wait_for_timeout(600)
-    assert 8 < page.evaluate("karte.getZoom()") < 12
-    page.evaluate("void karte.setView([50.3, 7.7], 10, { animate: false })")
-    page.wait_for_timeout(300)
-    assert page.locator(".haufen.kreis").count() == 0  # ab Zoomstufe 10 keine Kreise mehr
+    assert kreise.count() == 1 and kreise.inner_text() == "2"
+    assert kreise.get_attribute("title") == "Kreis Berg (Landkreis): 2 Sportstätten – hineinzoomen"
+    assert page.locator(".haufen").count() == 1
+    kreise.hover()  # Umriss des Kreises
+    page.wait_for_function("hoverEbene.getLayers().length === 1")
+    page.mouse.move(5, 300)
+    page.wait_for_function("hoverEbene.getLayers().length === 0")
+    kreise.click()  # mindestens bis zu den Gemeinden
+    page.wait_for_timeout(400)
+    assert 10 <= page.evaluate("karte.getZoom()") < 13
+
+    zoom(11)  # Gemeinden
+    assert page.locator(".haufen.kreis").count() == 0
+    gemeinden = page.locator(".haufen.gemeinde")
+    assert gemeinden.count() == 1 and gemeinden.inner_text() == "2"
+    assert "Bergland (Ortsgemeinde)" in gemeinden.get_attribute("title")
+    gemeinden.hover()
+    page.wait_for_function("hoverEbene.getLayers().length === 1")
+    gemeinden.click()  # bis zu den Sportstätten
+    page.wait_for_timeout(400)
+    assert page.evaluate("karte.getZoom()") >= 13
+    assert page.locator(".haufen").count() == 0

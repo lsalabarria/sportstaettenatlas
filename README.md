@@ -160,7 +160,7 @@ liefert den Ordner aus, ohne Server und Datenbank. Lokal ansehen: `seite --vorsc
 
 | Reiter | Inhalt |
 |---|---|
-| **Karte** | ein Punkt je Sportstätte; Filter nach Sportanlagen (nach Gruppen), Kategorie, Art des Betreibers, Sportarten, Sportkomplex und Stützpunkt (je Ebene oder einzeln); das Fenster einer Sportstätte listet ihre Anlagen und Stützpunkte |
+| **Karte** | ein Punkt je Sportstätte, herausgezoomt zusammengefasst je Kreis (bis Zoomstufe 9) und je Gemeinde (bis 12), mit dem Umriss beim Darüberfahren; außerhalb von Rheinland-Pfalz grau; Filter nach Sportanlagen (nach Gruppen), Kategorie, Art des Betreibers, Sportarten, Sportkomplex und Stützpunkt (je Ebene oder einzeln); das Fenster einer Sportstätte listet ihre Anlagen und Stützpunkte |
 | **Liste** | alle Sportstätten, Sportanlagen, Sportkomplexe, Stützpunkte bzw. Organisationen (als Eigentümer, Betreiber oder Nutzer), filterbar nach Sportart, Kategorie, Typ, Sportkomplex, Stützpunkt und Text, sortierbar (auch nach Befüllung); ein Klick zeigt alle Angaben, „Karte“ springt zum Punkt |
 | **Übersicht** | Zahlen (auch Olympia-, Bundes- und Landesstützpunkte), filterbar nach Sportart; Befüllung der Angaben nach Abschnitten (Felder nur unter den Anlagen, für die sie gedacht sind), Kategorien und Typen, je Kreis |
 | **Vorschlag** | Formular für neue Sportstätten, Änderungen, Organisationen, Sportkomplexe und Stützpunkte, weiter zu LimeSurvey |

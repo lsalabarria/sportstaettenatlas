@@ -213,6 +213,8 @@ def test_webseite_mit_bestand_gebieten_und_analyse(tmp_path):
     assert _lies(daten / "gebiete_gemeinde.geojson")["features"][0]["properties"] == {
         "s": "071375001001"
     }
+    land = _lies(daten / "gebiete_land.geojson")["features"]  # für die Maske der Karte
+    assert len(land) == 1 and land[0]["geometry"]["type"] == "MultiPolygon"
     # Analyse: eigener Ordner, Verzeichnis für den Reiter, Kontaktdaten entfernt
     assert _lies(daten / "analysen" / "index.json") == {
         "analysen": [

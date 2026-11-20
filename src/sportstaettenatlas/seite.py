@@ -397,6 +397,9 @@ def schreibe_webseite(
                     gb.umrisse(gebiete, ebene),
                 )
             )
+        schreiben.append(
+            ("gebiete_land.geojson", "Umriss des Landes (Maske der Karte)", gb.land(gebiete))
+        )
     elif (daten / "gebiete.json").exists():
         (daten / "gebiete.json").unlink()  # sonst zeigt die Karte eine veraltete Auswahl
 
