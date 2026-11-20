@@ -35,7 +35,13 @@ def _daten(tmp_path):
     _json(kreis / "sportkomplexe" / f"{K1}.json", {"id": K1, "name": "Sportpark Berg"})
     _json(
         daten / "stuetzpunkte" / "sp1.json",
-        {"id": "sp1", "name": "LSP Turnen", "art": "Landesstützpunkt", "sportstaetten": [S2]},
+        {
+            "id": "sp1",
+            "name": "LSP Turnen",
+            "art": "Landesstützpunkt",
+            "sportstaetten": [S2],
+            "anerkannt_von": "TuS Berg e.V.",  # freier Text: kein Verweis auf die Organisation
+        },
     )
     _json(
         daten / "organisationen" / "RP" / "sonstiger-sportverein" / "o1.json",
@@ -129,3 +135,26 @@ def test_bestand_entfernt_nach_den_uebrigen_dateien(tmp_path, monkeypatch, capsy
     assert sorted(a["typ"] for a in s1["anlagen"]) == ["Einfeldhalle", "Großspielfeld"]
     aus = capsys.readouterr().out
     assert aus.index("anlagen.csv →") < aus.index("weg.csv → entfernen: 3")
+
+
+def test_anerkannt_von_ist_kein_verweis(tmp_path):
+    daten = tmp_path / "daten"
+    _json(
+        daten / "stuetzpunkte" / "sp1.json",
+        {
+            "id": "sp1",
+            "name": "LSP Turnen",
+            "anerkannt_von": "Landessportbund RLP",
+            "traeger": "Turnverband",
+        },
+    )
+    for oid, name in (("o1", "Landessportbund RLP"), ("o2", "Turnverband")):
+        _json(
+            daten / "organisationen" / "RP" / "ohne-art" / f"{oid}.json", {"id": oid, "name": name}
+        )
+    tabelle = _csv(
+        tmp_path / "e.csv", [["Organisation", "o1", "Test"], ["Organisation", "o2", "Test"]]
+    )
+    e = entfernen.entferne(entfernen.lies(tabelle), daten)
+    assert [i for _, i, _ in e.entfernt] == ["o1"]  # nur im Text genannt: wird entfernt
+    assert "Stützpunkt „LSP Turnen“" in e.warnungen[0]  # Träger: bleibt

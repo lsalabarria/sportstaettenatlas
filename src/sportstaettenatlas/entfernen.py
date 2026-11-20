@@ -137,12 +137,8 @@ class _Bestand:
                 rollen = [m.get("eigentuemer"), m.get("betreiber"), *(m.get("nutzer") or [])]
                 if any(org_schluessel(r) in namen for r in rollen if r):
                     out.append(f"Sportstätte „{m.get('name')}“")
-            for s in stp:
-                if any(
-                    org_schluessel(s.get(k)) in namen
-                    for k in ("traeger", "anerkannt_von")
-                    if s.get(k)
-                ):
+            for s in stp:  # nur der Träger; anerkannt_von ist freier Text, kein Verweis
+                if s.get("traeger") and org_schluessel(s["traeger"]) in namen:
                     out.append(f"Stützpunkt „{s.get('name')}“")
             for _, o in self.organisationen.values():
                 if (
