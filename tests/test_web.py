@@ -616,3 +616,17 @@ def test_organisationen_auch_ohne_sportstaette(oeffne):
     assert "Keine Sportstätte als Betreiber" in teil.inner_text()
     teil.locator("[data-ohne]").uncheck()
     assert "Keine Einträge" in teil.inner_text()
+
+
+def test_haufen_beim_herauszoomen(oeffne):
+    page = oeffne("")
+    page.wait_for_timeout(500)  # erst die Startansicht (passt die Karte an den Bestand an)
+    page.evaluate("void karte.setView([50.3, 7.7], 8, { animate: false })")
+    page.wait_for_timeout(300)
+    haufen = page.locator(".haufen")
+    assert haufen.count() >= 1
+    n = sum(int(t) for t in haufen.all_inner_texts())
+    assert n >= 2  # nahe Sportstätten in einem Haufen mit ihrer Zahl
+    haufen.first.click()
+    page.wait_for_timeout(600)
+    assert page.evaluate("karte.getZoom()") > 8

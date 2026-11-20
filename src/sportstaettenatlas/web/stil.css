@@ -282,3 +282,11 @@ td.abgelaufen { color: #b00020; }
 .neue-org .warnung { flex-basis: 100%; margin: 4px 0 0; }
 .nk { border-left: 3px solid #EEF2F7; padding-left: 10px; margin: 4px 0 10px; }
 .chip-s.neu a { color: #185FA5; text-decoration: none; }
+
+/* Hintergrundkarte: farbig, aber etwas zurückgenommen, damit sich die Punkte abheben */
+.leaflet-tile-pane .sanft { filter: saturate(0.75) brightness(1.04); }
+/* Haufen nahe beieinanderliegender Sportstätten (grundlagen.js, haufen) */
+.haufen { background: rgba(135, 29, 51, 0.25); border-radius: 50%; }
+.haufen span { position: absolute; inset: 4px; border-radius: 50%; background: #871D33; color: #fff;
+  font: 600 12px/1 system-ui, sans-serif; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 0 0 1.5px #fff; }

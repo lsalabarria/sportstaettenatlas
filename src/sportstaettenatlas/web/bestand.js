@@ -1,18 +1,8 @@
 // Ansichten zum Datenbestand des Atlas (daten/): Karte, Übersicht (Liste: liste.js).
 
-// Kategorien des Atlas: feste Farben, damit eine Kategorie immer dieselbe Farbe behält;
-// die seltenen teilen sich Grau („weitere“).
-const KATEGORIE_FARBEN = {
-  "Sportplatz": "#2a78d6",
-  "Sporthalle": "#eb6834",
-  "Tennissportstätte": "#1baf7a",
-  "Öffentlicher Sport- und Bewegungsraum": "#eda100",
-  "Reitsportstätte": "#e87ba4",
-  "Schwimmsportstätte": "#008300",
-  "Schießsportstätte": "#6250d6",
-  "Fitnessstudio": "#e34948",
-};
-const WEITERE = "#8a8984";
+// Alle Sportstätten in einer Farbe: was man sucht, zeigen die Filter (viele Farben auf
+// tausenden Punkten lassen sich nicht auseinanderhalten).
+const PUNKT_FARBE = "#871D33";
 
 // ---------- Ansicht „Karte“: der Datenbestand -------------------------------------------
 // Art von Betreiber bzw. Eigentümer: aus der Angabe bei der Sportstätte oder dem Verzeichnis der
@@ -23,7 +13,6 @@ function artText(a) { return ART_MEHRZAHL[a] || a; }
 function artVon(p, rolle = "betreiber") {
   return p[rolle + "_art"] || (leer(p[rolle]) ? "ohne Angabe" : "unbekannt");
 }
-function katFarbe(k) { return KATEGORIE_FARBEN[k] || WEITERE; }
 
 // Gruppen der Sportanlagen (aus anlagen.py, stehen in bestand.geojson)
 let ANLAGEN_GRUPPEN = [], ANLAGEN_TYPEN = {};
@@ -63,7 +52,7 @@ function anlagenNachGruppe(liste) {
 function ansichtBestand(fc) {
   ANLAGEN_GRUPPEN = fc.anlagengruppen || [["weitere", "Weitere"]];
   ANLAGEN_TYPEN = fc.anlagentypen || {};
-  const ebene = L.layerGroup();
+  const ebene = haufen();
   const eintraege = [];
   for (const f of fc.features) {
     const p = f.properties, [lon, lat] = f.geometry.coordinates;
@@ -76,7 +65,7 @@ function ansichtBestand(fc) {
       sp: new Set([...(p.sportarten || []), ...anlagen.flatMap(a => a.sportarten || [])]),
       betreiber: schluesselName(p.betreiber), eigentuemer: schluesselName(p.eigentuemer) };
     e.layer = info(L.circleMarker([lat, lon], { radius: 4, weight: 1, color: "#fff",
-      fillColor: katFarbe(kat), fillOpacity: 0.95 }), () => tipBestand(e));
+      fillColor: PUNKT_FARBE, fillOpacity: 0.95 }), () => tipBestand(e));
     eintraege.push(e);
   }
   // Zahl der Sportstätten je Kategorie, Sportart und Anlagentyp (ganzes Land)
@@ -166,7 +155,7 @@ function ansichtBestand(fc) {
       + `<details><summary>Sportstätten nach Kategorie <span id="b-kat-n"></span></summary><div class="knoepfe">`
       + `<button type="button" data-alle="kat">alle</button><button type="button" data-keine="kat">keine</button></div>`
       + kats.map(k => `<label><input type="checkbox" data-k="${esc(k)}" checked>`
-        + `<span class="swatch" style="background:${katFarbe(k)}"></span>${esc(k)}${nSpan("k:" + k)}</label>`).join("")
+        + `${esc(k)}${nSpan("k:" + k)}</label>`).join("")
       + `</details>`
       + anlagenFilterHtml()
       + `<details open><summary>Betreiber</summary>`
@@ -309,7 +298,7 @@ function ansichtBestand(fc) {
     if (!imGebiet(e.p.ars)) setzeGebiet(null, false);
     if (!passt(e)) filterZurueck();
     aktualisiere();
-    if (e.an) e.layer.openPopup();
+    if (e.an) { ebene.einzeln(e.layer); e.layer.openPopup(); }
   }
   // Klick auf eine Anlage im Popup: alle Sportstätten mit dieser Anlage zeigen
   function nurAnlage(typ) {
@@ -342,8 +331,7 @@ function ansichtBestand(fc) {
     for (const [k, f, , t] of modellFelder("Sportstaette")) {
       if (k === "name" || k === "id" || f.formular === false || t.ref === "Lage") continue;
       if (k === "kategorie") {
-        zeile(f.title, leer(p.kategorie) ? "" : `<span class="swatch" style="display:inline-block;`
-          + `background:${katFarbe(e.kat)};vertical-align:-1px"></span> ${esc(p.kategorie)}`);
+        zeile(f.title, leer(p.kategorie) ? "" : esc(p.kategorie));
       } else if (t.ref) {  // Adresse: als ein Text, dazu das Gebiet
         zeile(f.title, leer(p[k]) ? "" : esc(p[k]));
         zeile("Gebiet", esc(gemeindeName(p.ars)));
@@ -392,7 +380,7 @@ function ansichtBestand(fc) {
       }
       erstmals = false;
     },
-    verbergen() { karte.removeLayer(ebene); panel.remove(); },
+    verbergen() { ebene.remove(); panel.remove(); },
     gebietGeaendert() { zaehleGebiet(); aktualisiere(); },
     suchindex: () => such,
     // Sportstätten einer Organisation zeigen; ids: die Sportstätten (sonst über den Namen)

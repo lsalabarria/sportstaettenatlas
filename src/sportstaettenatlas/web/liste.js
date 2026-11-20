@@ -94,7 +94,7 @@ function ansichtListe(bestand) {
       + `<th></th>`;
     const zeile = z.teil === "staetten"
       ? e => `<tr class="zeile${e.p.id === z.id ? " offen" : ""}" data-id="${esc(e.p.id)}">`
-        + `<td>${esc(e.p.name || e.kat)}</td><td class="klein"><span class="swatch" style="background:${katFarbe(e.kat)}"></span>${esc(e.kat)}</td>`
+        + `<td>${esc(e.p.name || e.kat)}</td><td class="klein">${esc(e.kat)}</td>`
         + `<td class="klein">${esc(e.p.ort || "")}</td><td class="klein">${sportText([...e.sp])}</td>`
         + `<td class="zahl">${e.anlagen.length}</td><td class="zahl">${balkenKlein(SPALTEN.staetten[5][2](e))}</td>`
         + `<td><a data-karte="${esc(e.p.id)}" title="Auf der Karte zeigen">Karte</a></td></tr>`

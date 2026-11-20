@@ -248,19 +248,96 @@ const BASEMAP = "https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/"
   + "{layer}/default/GLOBAL_WEBMERCATOR/{z}/{y}/{x}.png";
 const BKG = '&copy; <a href="https://basemap.de">basemap.de</a> / BKG '
   + new Date().getFullYear() + " (CC BY 4.0)";
+// Standard: die farbige Karte, etwas zurückgenommen (Klasse „sanft“, stil.css), damit sich die
+// Punkte abheben; die graue bleibt zur Auswahl
 const hintergruende = {
-  "basemap.de Grau": L.tileLayer(BASEMAP, { layer: "de_basemapde_web_raster_grau",
-    maxNativeZoom: 18, maxZoom: 19, attribution: BKG + DATEN_HINWEIS }),
   "basemap.de Farbe": L.tileLayer(BASEMAP, { layer: "de_basemapde_web_raster_farbe",
+    maxNativeZoom: 18, maxZoom: 19, className: "sanft", attribution: BKG + DATEN_HINWEIS }),
+  "basemap.de Grau": L.tileLayer(BASEMAP, { layer: "de_basemapde_web_raster_grau",
     maxNativeZoom: 18, maxZoom: 19, attribution: BKG + DATEN_HINWEIS }),
   "OpenStreetMap (nur über http://)": L.tileLayer(
     "https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       + DATEN_HINWEIS }),
 };
-hintergruende["basemap.de Grau"].addTo(karte);
+hintergruende["basemap.de Farbe"].addTo(karte);
 L.control.layers(hintergruende, null, { position: "topleft" }).addTo(karte);
 karte.setView([49.95, 7.45], 8);
+
+// Punkte zu Haufen zusammenfassen: Unterhalb von HAUFEN_BIS sammelt ein Haufen alle Punkte
+// bis HAUFEN_PX Bildpunkte um seinen ersten Punkt (wie Leaflet.markercluster) und zeigt ihre
+// Zahl; ein Klick zoomt hinein. Dieselben Methoden wie eine L.layerGroup (addLayer,
+// removeLayer), dazu einzeln(layer): diesen Punkt immer zeigen (z. B. für sein Popup), bis das
+// Popup zu ist.
+const HAUFEN_BIS = 12, HAUFEN_PX = 50;
+function haufen() {
+  const punkte = new Set(), sicht = L.layerGroup();
+  let karteH = null, geheftet = null, geplant = false;
+  const plane = () => {
+    if (!karteH || geplant) return;
+    geplant = true;
+    requestAnimationFrame(() => { geplant = false; zeichne(); });
+  };
+  function zeichne() {
+    if (!karteH) return;
+    sicht.clearLayers();
+    const z = karteH.getZoom(), rand = karteH.getBounds().pad(0.5);
+    if (z >= HAUFEN_BIS) {
+      for (const p of punkte) if (p === geheftet || rand.contains(p.getLatLng())) sicht.addLayer(p);
+      return;
+    }
+    // Raster von HAUFEN_PX nur zum schnellen Finden: ein Punkt kommt zum ersten Haufen, dessen
+    // Mitte (sein erster Punkt) in den 3 × 3 Nachbarzellen höchstens HAUFEN_PX entfernt ist
+    const raster = new Map(), alle = [], r2 = HAUFEN_PX * HAUFEN_PX;
+    for (const p of punkte) {
+      const ll = p.getLatLng();
+      if (p === geheftet) { sicht.addLayer(p); continue; }
+      if (!rand.contains(ll)) continue;
+      const pt = karteH.project(ll, z), cx = Math.floor(pt.x / HAUFEN_PX), cy = Math.floor(pt.y / HAUFEN_PX);
+      let ziel = null;
+      for (let dx = -1; dx <= 1 && !ziel; dx++) for (let dy = -1; dy <= 1 && !ziel; dy++) {
+        for (const h of raster.get((cx + dx) + ":" + (cy + dy)) || []) {
+          if ((h.x - pt.x) ** 2 + (h.y - pt.y) ** 2 <= r2) { ziel = h; break; }
+        }
+      }
+      if (ziel) { ziel.g.push(p); continue; }
+      const h = { x: pt.x, y: pt.y, g: [p] }, k = cx + ":" + cy;
+      (raster.get(k) || raster.set(k, []).get(k)).push(h);
+      alle.push(h);
+    }
+    const zellen = alle.map(h => h.g);
+    for (const g of zellen) {
+      if (g.length === 1) { sicht.addLayer(g[0]); continue; }
+      let lat = 0, lon = 0;
+      for (const p of g) { const ll = p.getLatLng(); lat += ll.lat; lon += ll.lng; }
+      const n = g.length, gr = n < 10 ? 28 : n < 100 ? 34 : n < 1000 ? 40 : 46;
+      const m = L.marker([lat / n, lon / n], { icon: L.divIcon({ className: "haufen",
+        html: `<span>${zahl(n)}</span>`, iconSize: [gr, gr] }), keyboard: false,
+        title: `${zahl(n)} Sportstätten – hineinzoomen` });
+      m.on("click", () => karteH.fitBounds(L.latLngBounds(g.map(p => p.getLatLng())).pad(0.2),
+        { maxZoom: HAUFEN_BIS + 1 }));
+      sicht.addLayer(m);
+    }
+  }
+  const ebene = {
+    addLayer(p) { punkte.add(p); plane(); return ebene; },
+    removeLayer(p) { punkte.delete(p); if (p === geheftet) geheftet = null; plane(); return ebene; },
+    hasLayer: p => punkte.has(p),
+    einzeln(p) {
+      geheftet = p;
+      p.once("popupclose", () => { if (geheftet === p) { geheftet = null; plane(); } });
+      zeichne();
+    },
+    addTo(m) {
+      karteH = m; sicht.addTo(m); m.on("zoomend moveend", plane); zeichne(); return ebene;
+    },
+    remove() {
+      if (karteH) { karteH.off("zoomend moveend", plane); karteH.removeLayer(sicht); }
+      karteH = null; return ebene;
+    },
+  };
+  return ebene;
+}
 
 const POPUP = { maxWidth: 460, minWidth: 260, autoPanPadding: [30, 30] };
 const KOPIERHINWEIS = `<div class="hinweis">Text markieren und kopieren möglich</div>`;
