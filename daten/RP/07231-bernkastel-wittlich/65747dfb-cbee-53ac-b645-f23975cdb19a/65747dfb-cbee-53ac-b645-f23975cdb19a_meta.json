@@ -6,7 +6,7 @@
     "strasse": "Schulstraße",
     "hausnummer": "12",
     "plz": "54472",
-    "ort": "{'ags': '07231077', 'ort': 'Longkamp', 'postleitzahl': '54472*'}"
+    "ort": "Longkamp"
   },
   "lage": {
     "lon": 7.116748,

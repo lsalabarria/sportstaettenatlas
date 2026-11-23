@@ -6,7 +6,7 @@
     "strasse": "Turnhallstraße",
     "hausnummer": "1",
     "plz": "66500",
-    "ort": "{'ags': '07340211', 'ort': 'Hornbach, Stadt', 'postleitzahl': '66500*'}"
+    "ort": "Hornbach, Stadt"
   },
   "lage": {
     "lon": 7.372137,

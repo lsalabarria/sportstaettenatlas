@@ -6,7 +6,7 @@
     "strasse": "Dietrich-Bonhoeffer-Straße",
     "hausnummer": "2",
     "plz": "54338",
-    "ort": "{'ags': '07235125', 'ort': 'Schweich, Stadt', 'postleitzahl': '54338'}"
+    "ort": "Schweich, Stadt"
   },
   "lage": {
     "lon": 6.746848,

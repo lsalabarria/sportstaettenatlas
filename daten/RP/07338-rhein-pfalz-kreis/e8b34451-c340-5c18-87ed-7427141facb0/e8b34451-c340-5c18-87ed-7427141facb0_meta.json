@@ -6,7 +6,7 @@
     "strasse": "Schulstraße",
     "hausnummer": "3",
     "plz": "67258",
-    "ort": "{'ags': '07338012', 'ort': 'Heßheim', 'postleitzahl': '67258*'}"
+    "ort": "Heßheim"
   },
   "lage": {
     "lon": 8.308067,

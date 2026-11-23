@@ -6,7 +6,7 @@
     "strasse": "Holzstraße",
     "hausnummer": "8",
     "plz": "67346",
-    "ort": "{'ags': '07318000', 'ort': 'Speyer, Stadt', 'postleitzahl': '67346'}"
+    "ort": "Speyer, Stadt"
   },
   "lage": {
     "lon": 8.419079,

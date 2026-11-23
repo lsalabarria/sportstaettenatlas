@@ -4,7 +4,7 @@
   "kategorie": "Sportplatz",
   "adresse": {
     "plz": "53539",
-    "ort": "{'ags': '07233218', 'ort': 'Kelberg', 'postleitzahl': '53539'}"
+    "ort": "Kelberg"
   },
   "lage": {
     "lon": 6.915175,

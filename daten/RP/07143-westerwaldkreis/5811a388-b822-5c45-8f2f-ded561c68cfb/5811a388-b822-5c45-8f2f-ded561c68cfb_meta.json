@@ -5,7 +5,7 @@
   "adresse": {
     "strasse": "Kirburger Str.",
     "plz": "56470",
-    "ort": "{'ags': '07143206', 'ort': 'Bad Marienberg (Westerwald), Stadt', 'postleitzahl': '56470'}"
+    "ort": "Bad Marienberg (Westerwald), Stadt"
   },
   "lage": {
     "lon": 7.951795,

@@ -6,7 +6,7 @@
     "strasse": "Hochstraße",
     "hausnummer": "27",
     "plz": "55545",
-    "ort": "{'ags': '07133006', 'ort': 'Bad Kreuznach, Stadt', 'postleitzahl': '55545*'}"
+    "ort": "Bad Kreuznach, Stadt"
   },
   "lage": {
     "lon": 7.856834,

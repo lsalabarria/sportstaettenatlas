@@ -5,7 +5,7 @@
   "adresse": {
     "strasse": "Paul-Viehmann-Allee",
     "plz": "56203",
-    "ort": "{'ags': '07143032', 'ort': 'Höhr-Grenzhausen, Stadt', 'postleitzahl': '56203'}"
+    "ort": "Höhr-Grenzhausen, Stadt"
   },
   "lage": {
     "lon": 7.665254,

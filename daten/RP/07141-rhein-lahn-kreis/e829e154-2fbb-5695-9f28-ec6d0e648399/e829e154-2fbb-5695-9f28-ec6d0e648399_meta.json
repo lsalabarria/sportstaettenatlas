@@ -6,7 +6,7 @@
     "strasse": "Schulstraße",
     "hausnummer": "10",
     "plz": "56357",
-    "ort": "{'ags': '07141085', 'ort': 'Miehlen', 'postleitzahl': '56357*'}"
+    "ort": "Miehlen"
   },
   "lage": {
     "lon": 7.836814,

@@ -5,7 +5,7 @@
   "adresse": {
     "strasse": "Am Schwimmbad",
     "plz": "67752",
-    "ort": "{'ags': '07336105', 'ort': 'Wolfstein, Stadt', 'postleitzahl': '67752*'}"
+    "ort": "Wolfstein, Stadt"
   },
   "lage": {
     "lon": 7.619877,

@@ -6,7 +6,7 @@
     "strasse": "Eisgrubweg",
     "hausnummer": "1",
     "plz": "55116",
-    "ort": "{'ags': '07315000', 'ort': 'Mainz, Stadt', 'postleitzahl': '55116*'}"
+    "ort": "Mainz, Stadt"
   },
   "lage": {
     "lon": 8.268682,

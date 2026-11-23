@@ -5,7 +5,7 @@
   "adresse": {
     "strasse": "Birkenweg",
     "plz": "54538",
-    "ort": "{'ags': '07231005', 'ort': 'Bengel', 'postleitzahl': '54538*'}"
+    "ort": "Bengel"
   },
   "lage": {
     "lon": 7.310418,

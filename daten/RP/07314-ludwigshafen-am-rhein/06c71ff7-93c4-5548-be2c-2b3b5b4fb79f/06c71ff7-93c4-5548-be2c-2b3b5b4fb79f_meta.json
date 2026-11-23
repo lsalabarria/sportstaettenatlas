@@ -6,7 +6,7 @@
     "strasse": "Bliesstraße",
     "hausnummer": "1",
     "plz": "67059",
-    "ort": "{'ags': '07314000', 'ort': 'Ludwigshafen am Rhein, Stadt', 'postleitzahl': '67059*'}"
+    "ort": "Ludwigshafen am Rhein, Stadt"
   },
   "lage": {
     "lon": 8.422716,

@@ -6,7 +6,7 @@
     "strasse": "Test",
     "hausnummer": "123",
     "plz": "12345",
-    "ort": "{'ags': '07143291', 'ort': 'Salzburg', 'postleitzahl': '56479*'}"
+    "ort": "Salzburg"
   },
   "lage": {
     "lon": 8.058848,

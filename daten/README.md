@@ -594,7 +594,7 @@ Felder, die nicht hier stehen, gelten für alle Typen.
 | Kleinspielfeld, Nicht normiertes Spielfeld | Länge, Breite, Bodenbelag, Bewässerung, Spielfelder je Sportart |
 | Rundlaufbahn, Kurzstreckenbahn, Radrennbahn | Bodenbelag, Länge, Bahnen |
 | Tennishalle | Länge, Breite, Höhe, Felder je Belag |
-| Tennisplatz | Bewässerung, Felder je Belag |
+| Tennisplatz | Bodenbelag, Bewässerung, Felder je Belag |
 | Schießen | Schießstände gedeckt, Schießstände offen, Schießstände teilgedeckt |
 | Führ- und Longierplatz, Sportkindergarten | Fläche |
 | Führ- und Longierhalle, Stall, Eissporthalle, Bootshaus/-halle | Länge, Breite, Höhe |
@@ -603,7 +603,7 @@ Felder, die nicht hier stehen, gelten für alle Typen.
 | Reitplatz | Bodenbelag, Fläche, Bewässerung, Dressurplatz |
 | Reithalle, Radsporthalle, Rollsporthalle, Skatehalle | Länge, Breite, Höhe, Bodenbelag |
 | Hallenbad, Freibad, Cabriobad, Kombibad | Becken bis 25 m, Becken 25 bis 50 m, Becken über 50 m, Nichtschwimmerbecken, Kinderbecken, Erholungsbecken, Lehrbecken, Wasserfläche, Wasserfläche Lern- und Kursbecken, Bahnlänge, Relevante Wasserfläche, Becken tiefer als 3 m, Sprungturm, Sprungtürme 3 m, Sprungtürme 5 m, Sprungtürme 10 m, ID bei baederleben.de |
-| Naturbad | Wasserfläche, Nichtschwimmerbecken, Bahnlänge, Relevante Wasserfläche, Becken tiefer als 3 m, Sprungturm, Sprungtürme 3 m, Sprungtürme 5 m, Sprungtürme 10 m, ID bei baederleben.de |
+| Naturbad | Wasserfläche, Nichtschwimmerbecken, Kinderbecken, Bahnlänge, Relevante Wasserfläche, Becken tiefer als 3 m, Sprungturm, Sprungtürme 3 m, Sprungtürme 5 m, Sprungtürme 10 m, ID bei baederleben.de |
 | Golfplatz | Löcher |
 | Bahnengolf, Bowlingbahn, Kegelbahn | Bahnen |
 | Luftsport, Eissportanlage ungedeckt | Länge, Breite |

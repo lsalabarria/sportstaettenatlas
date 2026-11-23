@@ -5,7 +5,7 @@
   "adresse": {
     "strasse": "Rheintalstadion",
     "plz": "53498",
-    "ort": "{'ags': '07131006', 'ort': 'Bad Breisig, Stadt', 'postleitzahl': '53498'}"
+    "ort": "Bad Breisig, Stadt"
   },
   "lage": {
     "lon": 7.290658,

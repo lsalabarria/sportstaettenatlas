@@ -6,7 +6,7 @@
     "strasse": "Schulstraße",
     "hausnummer": "4",
     "plz": "66871",
-    "ort": "{'ags': '07336052', 'ort': 'Konken', 'postleitzahl': '66871*'}"
+    "ort": "Konken"
   },
   "lage": {
     "lon": 7.35392,

@@ -6,7 +6,7 @@
     "strasse": "John F. Kennedy-Str.",
     "hausnummer": "5-7",
     "plz": "55122",
-    "ort": "{'ags': '07315000', 'ort': 'Mainz, Stadt', 'postleitzahl': '55116*'}"
+    "ort": "Mainz, Stadt"
   },
   "lage": {
     "lon": 8.247932,

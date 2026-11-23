@@ -5,7 +5,7 @@
   "adresse": {
     "strasse": "Am Hafen",
     "plz": "55430",
-    "ort": "{'ags': '07140112', 'ort': 'Oberwesel, Stadt', 'postleitzahl': '55430*'}"
+    "ort": "Oberwesel, Stadt"
   },
   "lage": {
     "lon": 7.734429,

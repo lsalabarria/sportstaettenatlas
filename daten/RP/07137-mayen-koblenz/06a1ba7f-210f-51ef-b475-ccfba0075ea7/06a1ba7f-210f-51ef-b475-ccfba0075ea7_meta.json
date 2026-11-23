@@ -6,7 +6,7 @@
     "strasse": "Hauptstraße",
     "hausnummer": "6",
     "plz": "56220",
-    "ort": "{'ags': '07137222', 'ort': 'Sankt Sebastian', 'postleitzahl': '56220*'}"
+    "ort": "Sankt Sebastian"
   },
   "lage": {
     "lon": 7.564323,

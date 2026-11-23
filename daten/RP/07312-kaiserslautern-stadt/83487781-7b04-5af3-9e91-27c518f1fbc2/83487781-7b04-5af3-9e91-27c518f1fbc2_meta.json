@@ -6,7 +6,7 @@
     "strasse": "Velmannstraße",
     "hausnummer": "13",
     "plz": "67657",
-    "ort": "{'ags': '07312000', 'ort': 'Kaiserslautern, Stadt', 'postleitzahl': '67657*'}"
+    "ort": "Kaiserslautern, Stadt"
   },
   "lage": {
     "lon": 7.815217,

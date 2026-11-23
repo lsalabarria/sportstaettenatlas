@@ -6,7 +6,7 @@
     "strasse": "Blücherstraße",
     "hausnummer": "16",
     "plz": "56112",
-    "ort": "{'ags': '07141075', 'ort': 'Lahnstein, Stadt', 'postleitzahl': '56112*'}"
+    "ort": "Lahnstein, Stadt"
   },
   "lage": {
     "lon": 7.595011,

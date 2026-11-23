@@ -5,7 +5,7 @@
   "adresse": {
     "strasse": "Auf dem Molzberg",
     "plz": "57548",
-    "ort": "{'ags': '07132006', 'ort': 'Betzdorf, Stadt', 'postleitzahl': '57518'}"
+    "ort": "Betzdorf, Stadt"
   },
   "lage": {
     "lon": 7.872123,

@@ -6,7 +6,7 @@
     "strasse": "Finkenstraße",
     "hausnummer": "14",
     "plz": "67661",
-    "ort": "{'ags': '07312000', 'ort': 'Kaiserslautern, Stadt', 'postleitzahl': '67657*'}"
+    "ort": "Kaiserslautern, Stadt"
   },
   "lage": {
     "lon": 7.688981,

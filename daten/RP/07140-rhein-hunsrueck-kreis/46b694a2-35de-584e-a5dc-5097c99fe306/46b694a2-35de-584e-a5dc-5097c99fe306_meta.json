@@ -5,7 +5,7 @@
   "adresse": {
     "strasse": "An der Hengstweide",
     "plz": "67125",
-    "ort": "{'ags': '07338006', 'ort': 'Dannstadt-Schauernheim', 'postleitzahl': '67125'}"
+    "ort": "Dannstadt-Schauernheim"
   },
   "lage": {
     "lon": 7.310418,

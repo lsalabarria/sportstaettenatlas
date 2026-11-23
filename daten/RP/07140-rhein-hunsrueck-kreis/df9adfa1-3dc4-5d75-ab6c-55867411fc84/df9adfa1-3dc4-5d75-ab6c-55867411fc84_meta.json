@@ -4,7 +4,7 @@
   "kategorie": "Sporthalle",
   "adresse": {
     "plz": "56357",
-    "ort": "{'ags': '07141115', 'ort': 'Reitzenhain', 'postleitzahl': '56357'}"
+    "ort": "Reitzenhain"
   },
   "lage": {
     "lon": 7.310418,
