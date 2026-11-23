@@ -158,3 +158,27 @@ def test_kontakt_nur_ascii(monkeypatch):
         h.USER_AGENT.encode("latin-1")  # als HTTP-Header gültig
     monkeypatch.delenv("SPORTSTAETTENATLAS_KONTAKT")
     importlib.reload(hilfen)
+
+
+def test_quelle_faellt_weg_statt_abzubrechen(tmp_path, monkeypatch, capsys):
+    monkeypatch.setattr(crawler, "CACHE", tmp_path)
+    monkeypatch.setattr(crawler, "PAUSE_S", 0)
+    versuche = []
+
+    def kaputt():
+        versuche.append(1)
+        raise OSError("502 Server Error: Bad Gateway")
+
+    assert crawler._lade_json("wd.json", kaputt, neu=True) is None
+    assert len(versuche) == 3 and not (tmp_path / "wd.json").exists()  # nichts im Cache
+    assert "übersprungen" in capsys.readouterr().err
+    ok = iter([OSError("503"), [{"x": 1}]])
+
+    def einmal_kaputt():
+        w = next(ok)
+        if isinstance(w, Exception):
+            raise w
+        return w
+
+    assert crawler._lade_json("wd.json", einmal_kaputt, neu=True) == [{"x": 1}]
+    assert crawler._lade_json("wd.json", kaputt, neu=False) == [{"x": 1}]  # aus dem Cache

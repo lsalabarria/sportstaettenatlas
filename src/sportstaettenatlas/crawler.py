@@ -156,11 +156,17 @@ area["ISO3166-2"="DE-RP"]->.rp;
 );
 out tags center;"""
 
-WIKIDATA_ABFRAGE = """SELECT ?item ?itemLabel ?website WHERE {
-  ?item wdt:P31/wdt:P279* wd:Q847017;
-        wdt:P131* wd:Q1200;
-        wdt:P856 ?website.
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "de". }
+# Sportvereine und Fußballvereine mit offizieller Webseite, deren Ort (P131) oder Sitz (P159)
+# eine Gemeinde in RLP ist (Gemeindeschlüssel P439 beginnt mit 07). Ohne transitive Pfade
+# (P131*, P279*): die liefen beim Abfragedienst in das Zeitlimit.
+WIKIDATA_ABFRAGE = """SELECT DISTINCT ?item ?itemLabel ?website WHERE {
+  VALUES ?art { wd:Q847017 wd:Q476028 }
+  ?ort wdt:P439 ?ags .
+  FILTER(STRSTARTS(?ags, "07"))
+  ?item wdt:P31 ?art ;
+        wdt:P856 ?website ;
+        (wdt:P131|wdt:P159) ?ort .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "de,en". }
 }"""
 
 
@@ -380,17 +386,32 @@ def _plus(a: str, b: str) -> str:
 # --- Ablauf --------------------------------------------------------------------------------
 
 
-def _lade_json(name: str, holen, neu: bool):
+def _lade_json(name: str, holen, neu: bool, versuche: int = 3):
+    """Antwort aus dem Cache oder neu holen (bis zu `versuche` Mal, mit Pause dazwischen –
+    Overpass und Wikidata antworten bei Last mit 429, 502, 503 oder 504). Klappt es nicht,
+    None: die Quelle fällt für diesen Lauf weg, der Rest läuft weiter."""
     CACHE.mkdir(parents=True, exist_ok=True)
     pfad = CACHE / name
     if pfad.exists() and not neu:
         return json.loads(pfad.read_text(encoding="utf-8"))
-    daten = holen()
-    pfad.write_text(json.dumps(daten, ensure_ascii=False), encoding="utf-8")
-    return daten
+    for versuch in range(1, versuche + 1):
+        try:
+            daten = holen()
+        except Exception as exc:  # noqa: BLE001 – Netz, Zeitlimit, HTTP-Fehler
+            print(f"{name}: Versuch {versuch}/{versuche} fehlgeschlagen: {exc}", file=sys.stderr)
+            if versuch < versuche:
+                time.sleep(PAUSE_S * versuch)
+            continue
+        pfad.write_text(json.dumps(daten, ensure_ascii=False), encoding="utf-8")
+        return daten
+    print(f"{name}: übersprungen – später mit --neu erneut versuchen", file=sys.stderr)
+    return None
 
 
-def hole_osm(neu: bool = False) -> list[dict]:
+PAUSE_S = 20
+
+
+def hole_osm(neu: bool = False) -> list[dict] | None:
     import requests
 
     def holen():
@@ -404,7 +425,7 @@ def hole_osm(neu: bool = False) -> list[dict]:
     return _lade_json("osm_rp.json", holen, neu)
 
 
-def hole_wikidata(neu: bool = False) -> list[dict]:
+def hole_wikidata(neu: bool = False) -> list[dict] | None:
     import requests
 
     def holen():
