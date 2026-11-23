@@ -591,8 +591,9 @@ def main(argv: list[str] | None = None) -> None:
     sp.add_argument(
         "--bereinigen",
         action="store_true",
-        help="Formfehler beheben: Hausnummer „6.0“ → „6“, Webseite ohne https://, Platzhalter "
-        "„-“, Fläche einer Halle, die nur Länge × Breite ist",
+        help="Formfehler beheben: Hausnummer „6.0“ → „6“ und „Aug 14“ → „8-14“, PLZ ohne "
+        "führende Null, Ort als Dict-Text, Webseite ohne https://, Platzhalter „-“, Fläche einer "
+        "Halle, die nur Länge × Breite ist",
     )
     sp.add_argument("--probe", action="store_true", help="nur zählen, nichts schreiben")
     sp.set_defaults(func=cmd_migrieren)

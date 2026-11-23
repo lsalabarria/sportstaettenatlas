@@ -304,6 +304,27 @@ def test_bereinigen():
     d = {"name": "X", "website": "www.x.de", "adresse": {"hausnummer": "-"}}
     assert sorted(werte.bereinige(d)) == ["adresse.hausnummer", "website"]
     assert d == {"name": "X", "website": "https://www.x.de"}
+    # Hausnummer, die Excel zum Datum gemacht hat: kleinere Zahl vorne
+    assert werte.hausnummer("02. Apr") == "2-4" and werte.hausnummer("Aug 14") == "8-14"
+    assert werte.hausnummer("14. Aug") == "8-14" and werte.hausnummer("Mär-03") == "3-3"
+    assert werte.hausnummer("Mai 2") == "2-5" and werte.hausnummer("12 b") == "12 b"
+    assert werte.hausnummer("Augustastraße 2") == "Augustastraße 2"  # kein Monat
+    # PLZ ohne führende Null; Ort als Dict-Text (Altsystem)
+    assert werte.plz("4109") == "04109" and werte.plz("56068") == "56068"
+    d = {
+        "name": "X",
+        "adresse": {
+            "plz": "9125",
+            "ort": "{'ags': '07131006', 'ort': 'Bad Breisig, Stadt', 'postleitzahl': '53498'}",
+        },
+    }
+    assert sorted(werte.bereinige(d)) == ["adresse.ort", "adresse.plz"]
+    assert d["adresse"] == {"plz": "09125", "ort": "Bad Breisig, Stadt"}  # PLZ bleibt die eigene
+    ohne = {"adresse": {"ort": "{'ort': 'Worms, Stadt', 'postleitzahl': '67547'}"}}
+    assert werte.bereinige(ohne) == ["adresse.ort"]
+    assert ohne["adresse"] == {"ort": "Worms, Stadt", "plz": "67547"}
+    kaputt = {"adresse": {"ort": "{kein dict"}}
+    assert werte.bereinige(kaputt) == [] and kaputt["adresse"]["ort"] == "{kein dict"
     # Fläche einer Halle, nur Länge × Breite (Altsystem): fällt weg; beim Reitplatz bleibt sie
     halle = {"typ": "Dreifachsporthalle", "laenge": 45.0, "breite": 27.0, "flaeche": 1215.0}
     assert werte.bereinige(halle) == ["flaeche"] and "flaeche" not in halle

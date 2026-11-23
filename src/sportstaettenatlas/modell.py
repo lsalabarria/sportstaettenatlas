@@ -429,7 +429,7 @@ MERKMALE: tuple[tuple[tuple[str, ...], tuple[str, ...]], ...] = (
     ),
     (("Rundlaufbahn", "Kurzstreckenbahn", "Radrennbahn"), ("bodenbelag", "laenge", "bahnen")),
     (("Tennishalle",), ("laenge", "breite", "hoehe", "felder_je_belag")),
-    (("Tennisplatz",), ("bewaesserung", "felder_je_belag")),
+    (("Tennisplatz",), ("bodenbelag", "bewaesserung", "felder_je_belag")),
     (
         ("Bogenschießanlage", "Schießstand", "Wurfscheibenanlage"),
         ("schiessstaende_gedeckt", "schiessstaende_offen", "schiessstaende_teilgedeckt"),
@@ -486,6 +486,7 @@ MERKMALE: tuple[tuple[tuple[str, ...], tuple[str, ...]], ...] = (
         (
             "wasserflaeche",
             "nichtschwimmerbecken",
+            "kinderbecken",
             "bahnlaenge",
             "wasserflaeche_relevant",
             "becken_tiefer_3m",

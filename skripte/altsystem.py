@@ -377,13 +377,18 @@ class Altsystem:
     def adresse(self, z: dict) -> dict:
         a = z.get("adresse") if isinstance(z.get("adresse"), dict) else None
         a = a or self.adressen.get(z.get("adresseid") or "", {})
+        ort = a.get("ort")
+        if isinstance(ort, dict):  # im Formular: {"ags", "ort", "postleitzahl"}
+            ort, plz = ort.get("ort"), a.get("postleitzahl") or ort.get("postleitzahl")
+        else:
+            plz = a.get("postleitzahl")
         return _ohne_leere(
             {
                 "strasse": _text(a.get("strasse")),
                 "hausnummer": _text(a.get("hausnummer")),
                 "adresszusatz": _text(a.get("adresszusatz")),
-                "plz": _text(a.get("postleitzahl")),
-                "ort": _text(a.get("ort")),
+                "plz": _text(plz),
+                "ort": _text(ort),
             }
         )
 

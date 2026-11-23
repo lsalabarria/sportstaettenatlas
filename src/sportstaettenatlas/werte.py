@@ -111,12 +111,74 @@ _PLATZHALTER = {"-", "--", "/", "?", "k.a.", "k. a.", "keine", "nicht bekannt", 
 _DOMAIN = re.compile(r"^(?:www\.)?[\w-]+(?:\.[\w-]+)*\.[a-z]{2,}(?:[/?#]\S*)?$", re.IGNORECASE)
 
 
+# Monate, wie Excel sie in Hausnummern schreibt, die es für ein Datum hält („2-4“ → „02. Apr“)
+_MONATE = {
+    **dict.fromkeys(("jan", "januar", "january"), 1),
+    **dict.fromkeys(("feb", "februar", "february"), 2),
+    **dict.fromkeys(("mär", "mrz", "mar", "märz", "march"), 3),
+    **dict.fromkeys(("apr", "april"), 4),
+    **dict.fromkeys(("mai", "may"), 5),
+    **dict.fromkeys(("jun", "juni", "june"), 6),
+    **dict.fromkeys(("jul", "juli", "july"), 7),
+    **dict.fromkeys(("aug", "august"), 8),
+    **dict.fromkeys(("sep", "sept", "september"), 9),
+    **dict.fromkeys(("okt", "oct", "oktober", "october"), 10),
+    **dict.fromkeys(("nov", "november"), 11),
+    **dict.fromkeys(("dez", "dec", "dezember", "december"), 12),
+}
+_TAG_MONAT = re.compile(r"(\d{1,2})\.?[ -]?([a-zäA-ZÄ]{3,9})\.?")  # „02. Apr“, „2-Apr“
+_MONAT_ZAHL = re.compile(r"([a-zäA-ZÄ]{3,9})\.?[ -]?(\d{1,2})")  # „Aug 14“, „Aug-14“
+
+
+def _hausnummer_aus_datum(t: str) -> str | None:
+    """Von Excel zum Datum gemachte Hausnummer zurück: „02. Apr“ → „2-4“, „Aug 14“ → „8-14“
+    (die kleinere Zahl vorne). None, wenn es nicht so aussieht."""
+    for muster, monat_vorne in ((_TAG_MONAT, False), (_MONAT_ZAHL, True)):
+        if m := muster.fullmatch(t):
+            wort, zahl = (m.group(1), m.group(2)) if monat_vorne else (m.group(2), m.group(1))
+            if (monat := _MONATE.get(wort.lower())) and int(zahl):
+                a, b = sorted((monat, int(zahl)))
+                return f"{a}-{b}"
+    return None
+
+
 def hausnummer(t: str) -> str | None:
-    """„6.0“ (von Excel als Zahl gespeichert) → „6“; Platzhalter wie „-“ → None."""
+    """„6.0“ (von Excel als Zahl gespeichert) → „6“; von Excel zum Datum gemacht („02. Apr“,
+    „Aug 14“) → „2-4“, „8-14“; Platzhalter wie „-“ → None."""
     t = str(t).strip()
     if t.lower() in _PLATZHALTER:
         return None
-    return m.group(1) if (m := re.fullmatch(r"(\d+)\.0+", t)) else t
+    if m := re.fullmatch(r"(\d+)\.0+", t):
+        return m.group(1)
+    return _hausnummer_aus_datum(t) or t
+
+
+def plz(t: str) -> str:
+    """Vierstellige PLZ, deren führende Null verloren ging (als Zahl gespeichert): „4109“ →
+    „04109“."""
+    t = str(t).strip()
+    return f"0{t}" if re.fullmatch(r"\d{4}", t) else t
+
+
+def ort_aus_dict(adresse: dict) -> bool:
+    """Ort, der als Text eines Python-Dicts gespeichert ist („{'ags': '07131006', 'ort': 'Bad
+    Breisig, Stadt', 'postleitzahl': '53498'}“, Altsystem): Ort daraus, fehlende PLZ auch.
+    True, wenn sich etwas geändert hat."""
+    import ast
+
+    t = adresse.get("ort")
+    if not (isinstance(t, str) and t.strip().startswith("{")):
+        return False
+    try:
+        d = ast.literal_eval(t.strip())
+    except (ValueError, SyntaxError):
+        return False
+    if not isinstance(d, dict) or not str(d.get("ort") or "").strip():
+        return False
+    adresse["ort"] = str(d["ort"]).strip()
+    if not adresse.get("plz") and str(d.get("postleitzahl") or "").strip():
+        adresse["plz"] = str(d["postleitzahl"]).strip()
+    return True
 
 
 def website(t: str) -> str | None:
@@ -142,14 +204,21 @@ def flaeche_berechnet(d: dict) -> bool:
 
 
 def bereinige(d: dict) -> list[str]:
-    """In einem Datensatz (Sportstätte, Sportkomplex, Organisation …) `website` und
-    `adresse.hausnummer` bereinigen, bei einer Sportanlage eine nur berechnete `flaeche`
-    (flaeche_berechnet) weglassen; liefert die Pfade, die sich geändert haben."""
+    """In einem Datensatz (Sportstätte, Sportkomplex, Organisation …) `website`,
+    `adresse.hausnummer`, `adresse.plz` und einen Ort als Dict-Text (ort_aus_dict) bereinigen,
+    bei einer Sportanlage eine nur berechnete `flaeche` (flaeche_berechnet) weglassen; liefert
+    die Pfade, die sich geändert haben."""
     geaendert = []
     if flaeche_berechnet(d):
         del d["flaeche"]
         geaendert.append("flaeche")
-    for pfad, regel in (("website", website), ("adresse.hausnummer", hausnummer)):
+    if isinstance(d.get("adresse"), dict) and ort_aus_dict(d["adresse"]):
+        geaendert.append("adresse.ort")
+    for pfad, regel in (
+        ("website", website),
+        ("adresse.hausnummer", hausnummer),
+        ("adresse.plz", plz),
+    ):
         alt = hole(d, pfad)
         if isinstance(alt, str) and (neu := regel(alt)) != alt:
             setze(d, pfad, neu)
