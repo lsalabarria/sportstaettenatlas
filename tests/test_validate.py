@@ -249,7 +249,8 @@ def test_fast_gleiche_organisationen():
         {"id": "f", "name": "Stadt Berg", "ars": "071110000000"},
     ]
     paare = [(x["id"], y["id"]) for x, y in fast_gleiche_organisationen(orgs)]
-    assert paare == [("a", "b"), ("c", "e")]
+    # „e.V.“ zählt nicht (auch mit Punkten): TuS Berg e.V. ist fast gleich TuS Berg und TuS Berg 1
+    assert paare == [("a", "b"), ("c", "e"), ("d", "e")]
 
 
 def test_name_zu(tmp_path):

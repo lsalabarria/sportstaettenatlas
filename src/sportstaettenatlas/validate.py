@@ -40,9 +40,9 @@ from .bestand import (
 )
 from .gebiete import EBENEN, Zuordnung, _ringe, schluessel
 
-NAH_M = 60  # Doppelung: höchstens so weit auseinander …
+NAH_M = modell.PRUEFUNG["nah_m"]  # Doppelung: höchstens so weit auseinander …
 ORT_TOLERANZ_M = 250  # Ort: VG250 ist generalisiert (1:250 000) – Grenzen weichen so weit ab
-AEHNLICH = 0.8  # … und mindestens so ähnliche Namen (wie im Formular, vorschlag.js)
+AEHNLICH = modell.PRUEFUNG["aehnlich"]  # … und mindestens so ähnliche Namen (auch im Formular)
 ROLLEN = ("betreiber", "eigentuemer")
 GLEICHE_LAGE_AB = 3  # so viele Sportstätten auf exakt einer Koordinate: wohl ein Ersatzwert
 FLAECHE_ABWEICHUNG = 0.25  # Fläche gegenüber Länge × Breite: höchstens 25 % mehr oder weniger
@@ -84,9 +84,7 @@ GEMEINDE_EBENEN = {
     "Verbandsangehörige Stadt",
     "Ortsgemeinde",
 }
-RECHTSFORM = re.compile(
-    r"\b(e\s*v|g?gmbh|mbh|ggmbh|ag|kg|gbr)\b\.?", re.IGNORECASE
-)  # zählt beim Vergleich nicht
+RECHTSFORM = re.compile(modell.PRUEFUNG["rechtsform"])  # nach norm_name; zählt nicht
 
 
 # --- Hilfen ---------------------------------------------------------------------------------
@@ -373,8 +371,9 @@ def sportarten_schreibweisen(bestand: list[dict]) -> dict[str, tuple[str, int]]:
     return out
 
 
-def _org_kern(name) -> str:
-    return norm_name(RECHTSFORM.sub(" ", str(name or "")))
+def org_kern(name) -> str:
+    """Wie orgKern in vorschlag.js: norm_name ohne Rechtsform („TuS Berg e.V.“ → „tus berg“)."""
+    return " ".join(RECHTSFORM.sub(" ", norm_name(name)).split())
 
 
 def fast_gleiche_organisationen(organisationen: list[dict]) -> Iterable[tuple[dict, dict]]:
@@ -383,7 +382,7 @@ def fast_gleiche_organisationen(organisationen: list[dict]) -> Iterable[tuple[di
     Vereine mit LSB-Nummer auch nicht: Der LSB führt sie als verschiedene."""
     ohne_ars = [o for o in organisationen if not o.get("ars")]
     alle = [*ohne_ars, *(o for o in organisationen if o.get("ars"))]  # Reihenfolge der Paare
-    for i, j in _aehnliche_paare([_org_kern(o.get("name")) for o in alle], AEHNLICH):
+    for i, j in _aehnliche_paare([org_kern(o.get("name")) for o in alle], AEHNLICH):
         a, b = alle[i], alle[j]
         if i < len(ohne_ars) and not (a.get("lsb_nummer") and b.get("lsb_nummer")):
             yield a, b  # zwei Vereine mit LSB-Nummer sind verschiedene

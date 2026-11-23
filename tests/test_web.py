@@ -701,3 +701,29 @@ def test_punkt_beim_darueberfahren(oeffne):
     page.mouse.move(5, 300)
     page.wait_for_timeout(200)
     assert page.evaluate(radius) == 4
+
+
+def test_regeln_wie_in_python(oeffne):
+    """Dieselben Testfälle wie tests/test_regeln_faelle.py, im Formular gerechnet."""
+    faelle = json.loads((Path(__file__).parent / "regeln_faelle.json").read_text(encoding="utf-8"))
+    page = oeffne("#ansicht=vorschlag")
+    ergebnis = page.evaluate(
+        """f => ({
+          norm_name: f.norm_name.map(([n]) => normName(n)),
+          org_kern: f.org_kern.map(([n]) => orgKern(n)),
+          aehnlich: f.aehnlich.map(([a, b]) => aehnlich(a, b)),
+          abstand_m: f.abstand_m.map(([a, b, c, d]) => abstand(a, b, c, d)),
+          zwischen_feldern: f.zwischen_feldern.map(x =>
+            regelFunde(x.modell, x.objekt).map(r => [r.regel, r.feld])),
+          texte: regelnZwischen("Sanierung", { jahr: 2010, kosten: 1000 }),
+        })""",
+        faelle,
+    )
+    assert ergebnis["norm_name"] == [e for _, e in faelle["norm_name"]]
+    assert ergebnis["org_kern"] == [e for _, e in faelle["org_kern"]]
+    for wert, (*_, e) in zip(ergebnis["aehnlich"], faelle["aehnlich"], strict=True):
+        assert wert == pytest.approx(e, abs=1e-9)
+    for wert, (*_, e) in zip(ergebnis["abstand_m"], faelle["abstand_m"], strict=True):
+        assert wert == pytest.approx(e, abs=1e-3)
+    assert ergebnis["zwischen_feldern"] == [x["funde"] for x in faelle["zwischen_feldern"]]
+    assert ergebnis["texte"] == ["Währung: nötig, wenn Kosten angegeben ist"]  # mit Titeln

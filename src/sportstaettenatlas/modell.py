@@ -243,6 +243,26 @@ EMAIL_MUSTER = r"[\w.+-]+@[\w-]+(\.[\w-]+)+"
 KONTAKT_NAME = r"e-?mail|telefon|telefax|(^|[^a-z])fax([^a-z]|$)|handy|mobilnummer|mobiltelefon|kontakt|ansprechpartner"
 UUID_MUSTER = r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
 
+# Grenzen und Muster der Prüfungen auf Doppelungen. Sie gelten in validate.py und im Formular
+# (schema.json → atlas.pruefung); tests/regeln_faelle.json prüft, dass beide gleich rechnen.
+PRUEFUNG = {
+    "aehnlich": 0.8,  # Namen mindestens so ähnlich (Dice-Koeffizient der Buchstabenpaare) …
+    "nah_m": 60,  # … und höchstens so weit auseinander: wohl dieselbe Sportstätte
+    "gleicher_name": 0.99,  # Formular: ab hier „gleicher Name“
+    "kategorie_nah_m": 250,  # Formular: gleiche Kategorie so nah – mögliche Doppelung
+    "name_nah_m": 3000,  # Formular: ein ähnlicher Name zählt nur so nah
+    "komplex_nah_m": 3000,  # Formular: Sportkomplexe in diesem Umkreis zur Auswahl
+    # Rechtsform, zählt beim Vergleich von Organisationen nicht (auf den Namen nach norm_name)
+    "rechtsform": r"\b(e ?v|g?gmbh|mbh|ag|kg|ug|gbr)\b",
+}
+# Meldungen der Regeln zwischen Feldern (zwischen_feldern; im Formular grundlagen.js). {feld}
+# ist in Python der Name des Feldes (die Regelverstöße zählen danach), im Formular sein Titel.
+MELDUNGEN = {
+    "braucht": "{feld}: nötig, wenn {wenn} angegeben ist",
+    "nachkommastellen": "{feld}: mindestens {n} Nachkommastellen ({wert} ist zu ungenau)",
+    "teil_von": "{feld}: {fehlt} fehlt unter {unter}",
+}
+
 # Abschnitte des Formulars in dieser Reihenfolge
 GRUPPEN = (
     "Sportstätte",
@@ -288,29 +308,42 @@ class Basis(BaseModel):
 
     @model_validator(mode="after")
     def _regeln_zwischen_feldern(self):
-        fehler = []
-        for name, feld in type(self).model_fields.items():
-            extra = feld.json_schema_extra or {}
-            wert = getattr(self, name)
-            if extra.get("braucht") and wert not in (None, "", [], {}):
-                anderes = extra["braucht"]
-                if getattr(self, anderes) in (None, "", [], {}):
-                    fehler.append(f"{anderes}: nötig, wenn {feld.title} angegeben ist")
-            if extra.get("nachkommastellen") and isinstance(wert, float):
-                n = extra["nachkommastellen"]
-                if len(repr(wert).partition(".")[2]) < n:  # 50.35: nur auf ~1 km genau
-                    fehler.append(
-                        f"{name}: mindestens {n} Nachkommastellen ({wert} ist zu ungenau)"
-                    )
-            if extra.get("teil_von") and wert:
-                alle = getattr(self, extra["teil_von"]) or []
-                fehlt = [w for w in wert if w not in alle]
-                if fehlt:
-                    titel = type(self).model_fields[extra["teil_von"]].title
-                    fehler.append(f"{name}: {', '.join(fehlt)} fehlt unter {titel}")
-        if fehler:
-            raise ValueError("; ".join(fehler))
+        werte = {name: getattr(self, name) for name in type(self).model_fields}
+        if fehler := zwischen_feldern(type(self), werte):
+            raise ValueError("; ".join(m for _, _, m in fehler))
         return self
+
+
+def _leer(w) -> bool:
+    return w in (None, "", [], {})
+
+
+def zwischen_feldern(modell: type[BaseModel], werte: dict) -> list[tuple[str, str, str]]:
+    """Regeln zwischen Feldern (Angaben braucht, nachkommastellen, teil_von) für die Werte eines
+    Objekts → [(Regel, Feld, Meldung)]. Dieselbe Rechnung wie regelFunde in grundlagen.js."""
+    felder = modell.model_fields
+    out = []
+    for name, feld in felder.items():
+        extra = feld.json_schema_extra or {}
+        wert = werte.get(name)
+        if extra.get("braucht") and not _leer(wert) and _leer(werte.get(extra["braucht"])):
+            m = MELDUNGEN["braucht"].format(feld=extra["braucht"], wenn=feld.title)
+            out.append(("braucht", extra["braucht"], m))
+        n = extra.get("nachkommastellen")
+        zahl = isinstance(wert, (int, float)) and not isinstance(wert, bool)
+        if n and zahl and len(repr(wert).partition(".")[2]) < n:  # 50.35: nur auf ~1 km genau
+            m = MELDUNGEN["nachkommastellen"].format(feld=name, n=n, wert=wert)
+            out.append(("nachkommastellen", name, m))
+        if extra.get("teil_von") and isinstance(wert, list) and wert:
+            alle = werte.get(extra["teil_von"]) or []
+            if fehlt := [w for w in wert if w not in alle]:
+                m = MELDUNGEN["teil_von"].format(
+                    feld=name,
+                    fehlt=", ".join(map(str, fehlt)),
+                    unter=felder[extra["teil_von"]].title,
+                )
+                out.append(("teil_von", name, m))
+    return out
 
 
 # --- Datenbestand -----------------------------------------------------------------------
@@ -1392,6 +1425,8 @@ def schema() -> dict:
     s["atlas"] = {
         "organisationstypen": ORGANISATIONSTYPEN,
         "email": EMAIL_MUSTER,
+        "pruefung": PRUEFUNG,
+        "meldungen": MELDUNGEN,
     }
     s["description"] = "Datenmodell des Sportstättenatlas (aus src/sportstaettenatlas/modell.py)"
     return s

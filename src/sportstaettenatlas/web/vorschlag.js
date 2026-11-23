@@ -9,6 +9,8 @@ const VORSCHLAG_FRAGEN = { data: "data", kommentar: "kommentar",
   ...(KONFIG.vorschlag_felder && KONFIG.vorschlag_felder.data ? KONFIG.vorschlag_felder : {}) };
 const URL_HOECHSTENS = 8000;  // längere Adressen lehnen manche Webserver ab
 
+// norm_name, aehnlich, abstand_m und org_kern rechnen in validate.py (Python) genauso;
+// tests/regeln_faelle.json prüft beide
 function normName(s) {
   return String(s || "").toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe")
     .replace(/ü/g, "ue").replace(/ß/g, "ss").replace(/[^a-z0-9]+/g, " ").trim();
@@ -29,6 +31,9 @@ function aehnlich(a, b) {
   for (const v of y.values()) n += v;
   return n ? 2 * gemeinsam / n : 0;
 }
+// Name einer Organisation ohne Rechtsform („TuS Berg e.V.“ → „tus berg“)
+const orgKern = n => normName(n).replace(new RegExp(PRUEFUNG().rechtsform, "g"), " ")
+  .replace(/\s+/g, " ").trim();
 function abstand(lat1, lon1, lat2, lon2) {
   const r = Math.PI / 180, dlat = (lat2 - lat1) * r, dlon = (lon2 - lon1) * r;
   const h = Math.sin(dlat / 2) ** 2 + Math.cos(lat1 * r) * Math.cos(lat2 * r) * Math.sin(dlon / 2) ** 2;
@@ -1043,15 +1048,15 @@ function ansichtVorschlag(bestand) {
     }
     vkarte.on("click", ev => setzeLage(ev.latlng.lat, ev.latlng.lng));
   }
-  // Auswahl der Sportkomplexe: die in der Nähe der Lage, nach Abstand; der gewählte bleibt
-  const KOMPLEX_NAH_M = 3000;
+  // Auswahl der Sportkomplexe: die in der Nähe der Lage (PRUEFUNG().komplex_nah_m), nach
+  // Abstand; der gewählte bleibt
   function komplexAuswahl() {
     const e = FELD_KOMPLEX && F(FELD_KOMPLEX.pfad);
     if (!e) return;
     const alt = e.value;
     const nah = [...SPORTKOMPLEXE.values()]
       .map(k => [k, lage && k.lat != null ? abstand(lage[0], lage[1], k.lat, k.lon) : Infinity])
-      .filter(([k, d]) => d <= KOMPLEX_NAH_M || k.id === alt)
+      .filter(([k, d]) => d <= PRUEFUNG().komplex_nah_m || k.id === alt)
       .sort((a, b) => a[1] - b[1]);
     if (alt && !nah.some(([k]) => k.id === alt)) nah.unshift([{ id: alt, name: komplexName(alt) }, Infinity]);
     const weg = d => !isFinite(d) ? "" : ` (${d < 1000 ? Math.round(d) + " m" : (d / 1000).toFixed(1) + " km"})`;
@@ -1291,8 +1296,6 @@ function ansichtVorschlag(bestand) {
 
   // --- Neue Organisationen: Namen in den Feldern, die nicht im Verzeichnis stehen ---
   const ORG_TYPEN = (ORG_FELDER.find(f => f.k === "typ") || { t: {} }).t.enum || [];
-  const ORG_KERN = /\b(e ?v|ev|gmbh|ggmbh|mbh|ag|kg|ug|gbr)\b/g;
-  const orgKern = n => normName(n).replace(ORG_KERN, " ").replace(/\s+/g, " ").trim();
   // Namen mit vorgeschlagener Art aus den Feldern der Sportstätte (auch neuer Sportstätten
   // eines Komplexes bzw. Stützpunkts), des Stützpunkts oder der Organisation
   function orgNamen(v) {
@@ -1324,7 +1327,7 @@ function ansichtVorschlag(bestand) {
   // Ähnliche Einträge im Verzeichnis (wie bei der Prüfung „Fast gleiche Organisationen“)
   function aehnlicheOrgs(name) {
     const k = orgKern(name);
-    return ORGANISATIONEN.filter(o => [o.name, ...(o.weitere_namen || [])].some(n => aehnlich(k, orgKern(n)) >= 0.8)).slice(0, 4);
+    return ORGANISATIONEN.filter(o => [o.name, ...(o.weitere_namen || [])].some(n => aehnlich(k, orgKern(n)) >= PRUEFUNG().aehnlich)).slice(0, 4);
   }
   let neueOrgsZuletzt = "";
   function zeigeNeueOrgs(v) {
@@ -1436,10 +1439,11 @@ function ansichtVorschlag(bestand) {
       const d = lage ? abstand(lage[0], lage[1], e.lat, e.lon) : null;
       const sim = aehnlich(s.name, e.p.name);
       const gleicheKat = s.kategorie && s.kategorie === e.p.kategorie;
-      if (d !== null && d <= 60) { g.push(`nur ${Math.round(d)} m entfernt`); punkte += 3; }
-      else if (d !== null && d <= 250 && gleicheKat) { g.push(`gleiche Kategorie, ${Math.round(d)} m entfernt`); punkte += 2; }
-      const nahGenug = d === null ? (a.ort && normName(a.ort) === normName(e.p.ort)) || (a.plz && a.plz === e.p.plz) : d <= 3000;
-      if (sim >= 0.8 && nahGenug) { g.push(sim >= 0.99 ? "gleicher Name" : "sehr ähnlicher Name"); punkte += 2; }
+      const P = PRUEFUNG();
+      if (d !== null && d <= P.nah_m) { g.push(`nur ${Math.round(d)} m entfernt`); punkte += 3; }
+      else if (d !== null && d <= P.kategorie_nah_m && gleicheKat) { g.push(`gleiche Kategorie, ${Math.round(d)} m entfernt`); punkte += 2; }
+      const nahGenug = d === null ? (a.ort && normName(a.ort) === normName(e.p.ort)) || (a.plz && a.plz === e.p.plz) : d <= P.name_nah_m;
+      if (sim >= P.aehnlich && nahGenug) { g.push(sim >= P.gleicher_name ? "gleicher Name" : "sehr ähnlicher Name"); punkte += 2; }
       if (adresse && a.hausnummer && adresse === normName(`${e.p.strasse || ""} ${e.p.hausnummer || ""}`)
           && (!a.plz || a.plz === e.p.plz)) { g.push("gleiche Adresse"); punkte += 2; }
       if (punkte) out.push({ e, gruende: g, punkte, d: d ?? 1e9 });

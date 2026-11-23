@@ -63,22 +63,35 @@ function passtFuer(p, typ) {
 function nurEinheit(modell) {
   return new Set(modellFelder(modell).map(([, p]) => p.einheit_aus).filter(Boolean));
 }
-// Regeln zwischen Feldern (braucht, teil_von) für ein Objekt nach dem Modell → Meldungen
-function regelnZwischen(modell, o, praefix = "") {
+// Grenzen und Muster der Prüfungen (modell.PRUEFUNG) und Meldungen (modell.MELDUNGEN)
+const PRUEFUNG = () => ATLAS().pruefung || {};
+const meldung = (regel, werte) =>
+  (ATLAS().meldungen || {})[regel].replace(/\{(\w+)\}/g, (_, k) => werte[k]);
+// Regeln zwischen Feldern (braucht, nachkommastellen, teil_von) für ein Objekt nach dem Modell
+// → [{ regel, feld, text }]. Dieselbe Rechnung wie modell.zwischen_feldern (Python);
+// tests/regeln_faelle.json prüft beide. Im Text steht der Titel des Feldes, nicht sein Name.
+function regelFunde(modell, o, praefix = "") {
   const out = [], titel = k => (SCHEMA.$defs[modell].properties[k] || {}).title || k;
   for (const [k, p] of modellFelder(modell)) {
     const w = o[k];
-    if (p.braucht && !leer(w) && leer(o[p.braucht])) out.push(`${praefix}${titel(p.braucht)}: nötig, wenn ${p.title} angegeben ist`);
-    if (p.nachkommastellen && typeof w === "number" && (String(w).split(".")[1] || "").length < p.nachkommastellen) {
-      out.push(`${praefix}${p.title}: mindestens ${p.nachkommastellen} Nachkommastellen (${w} ist zu ungenau)`);
+    if (p.braucht && !leer(w) && leer(o[p.braucht])) {
+      out.push({ regel: "braucht", feld: p.braucht,
+        text: praefix + meldung("braucht", { feld: titel(p.braucht), wenn: p.title }) });
     }
-    if (p.teil_von && Array.isArray(w)) {
+    if (p.nachkommastellen && typeof w === "number"
+        && (String(w).split(".")[1] || "").length < p.nachkommastellen) {
+      out.push({ regel: "nachkommastellen", feld: k,
+        text: praefix + meldung("nachkommastellen", { feld: p.title, n: p.nachkommastellen, wert: w }) });
+    }
+    if (p.teil_von && Array.isArray(w) && w.length) {
       const fehlt = w.filter(x => !(o[p.teil_von] || []).includes(x));
-      if (fehlt.length) out.push(`${praefix}${p.title}: ${fehlt.join(", ")} fehlt unter ${titel(p.teil_von)}`);
+      if (fehlt.length) out.push({ regel: "teil_von", feld: k,
+        text: praefix + meldung("teil_von", { feld: p.title, fehlt: fehlt.join(", "), unter: titel(p.teil_von) }) });
     }
   }
   return out;
 }
+const regelnZwischen = (modell, o, praefix = "") => regelFunde(modell, o, praefix).map(f => f.text);
 // ---------- Organisationen (daten/organisationen.json): Vereine, Kommunen, Verbände … ----------
 // Sportstätten nennen sie in eigentuemer, betreiber und nutzer beim Namen (auch weitere_namen).
 let ORGANISATIONEN = [];

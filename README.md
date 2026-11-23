@@ -345,4 +345,12 @@ uv run playwright install chromium        # unter Linux ggf. mit --with-deps
 uv run pytest tests/test_web.py           # nur die Browser-Tests (gut 30 Sekunden)
 ```
 
+Manche Regeln rechnen Python und das Formular je für sich: die Regeln zwischen Feldern
+(`braucht`, `nachkommastellen`, `teil_von`) und die Hilfen für Doppelungen (Namen
+normalisieren, Ähnlichkeit, Abstand, Name ohne Rechtsform). Grenzwerte und Meldungen stehen
+nur in `modell.py` (`PRUEFUNG`, `MELDUNGEN`) und kommen über `schema.json` ins Formular.
+`tests/regeln_faelle.json` enthält Testfälle, die beide Seiten prüfen
+(`test_regeln_faelle.py` und `test_web.py`); wer eine dieser Regeln ändert, ergänzt dort
+einen Fall.
+
 Leaflet kommt dabei aus `docs/vendor/leaflet` oder wird einmal nach `results/cache/` geladen.

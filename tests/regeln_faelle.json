@@ -1,0 +1,211 @@
+{
+ "_hinweis": "Gemeinsame Testfälle für Python (tests/test_regeln_faelle.py) und das Formular (tests/test_web.py): beide müssen dasselbe herausbekommen. Erwartete Zahlen auf 9 Stellen gerundet.",
+ "norm_name": [
+  [
+   "Ärztehaus-Süd  ",
+   "aerztehaus sued"
+  ],
+  [
+   "Straße 1a",
+   "strasse 1a"
+  ],
+  [
+   "",
+   ""
+  ],
+  [
+   "TuS 1926 e.V.",
+   "tus 1926 e v"
+  ],
+  [
+   "Sporthalle  (alt) – Nord",
+   "sporthalle alt nord"
+  ]
+ ],
+ "org_kern": [
+  [
+   "TuS Berg e.V.",
+   "tus berg"
+  ],
+  [
+   "Sport gGmbH Mainz",
+   "sport mainz"
+  ],
+  [
+   "Bad Berg UG (haftungsbeschränkt)",
+   "bad berg haftungsbeschraenkt"
+  ],
+  [
+   "Evangelische Kirche Berg",
+   "evangelische kirche berg"
+  ],
+  [
+   "Kegelbahn AG",
+   "kegelbahn"
+  ],
+  [
+   "SV Berg e. V.",
+   "sv berg"
+  ]
+ ],
+ "aehnlich": [
+  [
+   "Sportplatz Berg",
+   "Sportplatz Berg",
+   1.0
+  ],
+  [
+   "Dr. Darge-Halle",
+   "Dr. Darge Halle",
+   1.0
+  ],
+  [
+   "Sportplatz Berg",
+   "Tennishalle Tal",
+   0.0
+  ],
+  [
+   "Turnhalle Grundschule",
+   "Grundschule Turnhalle",
+   1.0
+  ],
+  [
+   "",
+   "Sportplatz",
+   0.0
+  ],
+  [
+   "Halle 1",
+   "Halle 2",
+   0.75
+  ]
+ ],
+ "abstand_m": [
+  [
+   50.3512,
+   7.5938,
+   50.3612,
+   7.6038,
+   1318.989
+  ],
+  [
+   49.0,
+   8.0,
+   49.0,
+   8.0,
+   0.0
+  ],
+  [
+   50.0,
+   6.0,
+   51.0,
+   9.0,
+   239530.588
+  ]
+ ],
+ "zwischen_feldern": [
+  {
+   "modell": "Sanierung",
+   "objekt": {
+    "jahr": 2010,
+    "kosten": 1000
+   },
+   "funde": [
+    [
+     "braucht",
+     "waehrung"
+    ]
+   ]
+  },
+  {
+   "modell": "Sanierung",
+   "objekt": {
+    "jahr": 2010,
+    "kosten": 1000,
+    "waehrung": "EUR"
+   },
+   "funde": []
+  },
+  {
+   "modell": "Lage",
+   "objekt": {
+    "lon": 7.5,
+    "lat": 50.3512
+   },
+   "funde": [
+    [
+     "nachkommastellen",
+     "lon"
+    ]
+   ]
+  },
+  {
+   "modell": "Lage",
+   "objekt": {
+    "lon": 7,
+    "lat": 50.35
+   },
+   "funde": [
+    [
+     "nachkommastellen",
+     "lon"
+    ],
+    [
+     "nachkommastellen",
+     "lat"
+    ]
+   ]
+  },
+  {
+   "modell": "Lage",
+   "objekt": {
+    "lon": 7.59381,
+    "lat": 50.3512
+   },
+   "funde": []
+  },
+  {
+   "modell": "Sportanlage",
+   "objekt": {
+    "typ": "Großspielfeld",
+    "sportarten": [
+     "Tennis"
+    ],
+    "wettkampf": [
+     "Fußball",
+     "Tennis"
+    ]
+   },
+   "funde": [
+    [
+     "teil_von",
+     "wettkampf"
+    ]
+   ]
+  },
+  {
+   "modell": "Sportanlage",
+   "objekt": {
+    "typ": "Großspielfeld",
+    "sportarten": [
+     "Fußball"
+    ],
+    "wettkampf": []
+   },
+   "funde": []
+  },
+  {
+   "modell": "Sportstaette",
+   "objekt": {
+    "name": "x",
+    "eigentuemer_typ": "Verein"
+   },
+   "funde": [
+    [
+     "braucht",
+     "eigentuemer"
+    ]
+   ]
+  }
+ ]
+}
