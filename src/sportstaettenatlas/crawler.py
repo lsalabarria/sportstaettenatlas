@@ -46,7 +46,8 @@ from urllib.parse import urljoin, urlparse
 
 from . import modell
 from .bestand import ROLLEN, lies_organisationen, org_pfad
-from .hilfen import ERGEBNISSE, USER_AGENT
+from .hilfen import _ROH as KONTAKT_ROH
+from .hilfen import ERGEBNISSE, KONTAKT, USER_AGENT
 from .validate import abstand_m, aehnlich, norm_name, org_kern, ort_passt
 
 ERGEBNIS = ERGEBNISSE / "vereinswebseiten.csv"
@@ -489,12 +490,15 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--neu", action="store_true", help="OSM und Wikidata neu abfragen (Cache)")
     p.add_argument("--ziel", type=Path, default=ERGEBNIS)
     a = p.parse_args(argv)
-    if "@" not in USER_AGENT:
+    if not KONTAKT:
+        grund = "ungültig (nur ASCII-Zeichen)" if KONTAKT_ROH.strip() else "nicht gesetzt"
         print(
-            "Hinweis: SPORTSTAETTENATLAS_KONTAKT ist nicht gesetzt – Overpass und Wikidata "
-            "bitten um einen Kontakt im User-Agent.",
+            f"Hinweis: SPORTSTAETTENATLAS_KONTAKT ist {grund} – Overpass und Wikidata bitten "
+            "um einen Kontakt im User-Agent, z. B. eine Mail-Adresse des Projekts.",
             file=sys.stderr,
         )
+    elif KONTAKT != KONTAKT_ROH.strip():
+        print(f"Hinweis: Kontakt im User-Agent ohne Sonderzeichen: {KONTAKT}", file=sys.stderr)
     vereine = vereine_ohne_webseite(a.daten, a.kreis)
     if a.max:
         vereine = vereine[: a.max]

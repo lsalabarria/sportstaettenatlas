@@ -11,8 +11,11 @@ ERGEBNISSE = Path("results")
 
 # Kontakt im User-Agent für Abfragen bei BKG und LVermGeo (freiwillig):
 #   export SPORTSTAETTENATLAS_KONTAKT="name@example.org"
-_KONTAKT = os.environ.get("SPORTSTAETTENATLAS_KONTAKT", "")
-USER_AGENT = "sportstaettenatlas/0.1 (Sportstaettenatlas" + (f"; {_KONTAKT})" if _KONTAKT else ")")
+# Nur druckbare ASCII-Zeichen (HTTP-Header); ein Platzhalter wie „…“ zählt nicht als Kontakt.
+_ROH = os.environ.get("SPORTSTAETTENATLAS_KONTAKT", "")
+KONTAKT = "".join(c for c in _ROH if 32 <= ord(c) < 127).strip()
+KONTAKT = KONTAKT if any(c.isalnum() for c in KONTAKT) else ""
+USER_AGENT = "sportstaettenatlas/0.1 (Sportstaettenatlas" + (f"; {KONTAKT})" if KONTAKT else ")")
 
 
 def datum_text(s):

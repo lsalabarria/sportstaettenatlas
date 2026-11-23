@@ -140,3 +140,21 @@ def test_robots_und_sperrliste(monkeypatch):
         None, raten=False, abrufer=netz, meldung=lambda _: None,
     )  # fmt: skip
     assert t == []  # Verzeichnis: fällt weg, wird nicht geladen
+
+
+def test_kontakt_nur_ascii(monkeypatch):
+    import importlib
+
+    from sportstaettenatlas import hilfen
+
+    for roh, soll in (
+        ("…", ""),
+        ("atlas@example.org", "atlas@example.org"),
+        ("a…b@x.de", "ab@x.de"),
+    ):
+        monkeypatch.setenv("SPORTSTAETTENATLAS_KONTAKT", roh)
+        h = importlib.reload(hilfen)
+        assert h.KONTAKT == soll
+        h.USER_AGENT.encode("latin-1")  # als HTTP-Header gültig
+    monkeypatch.delenv("SPORTSTAETTENATLAS_KONTAKT")
+    importlib.reload(hilfen)
