@@ -304,6 +304,37 @@ def test_bereinigen():
     d = {"name": "X", "website": "www.x.de", "adresse": {"hausnummer": "-"}}
     assert sorted(werte.bereinige(d)) == ["adresse.hausnummer", "website"]
     assert d == {"name": "X", "website": "https://www.x.de"}
+    # Fläche einer Halle, nur Länge × Breite (Altsystem): fällt weg; beim Reitplatz bleibt sie
+    halle = {"typ": "Dreifachsporthalle", "laenge": 45.0, "breite": 27.0, "flaeche": 1215.0}
+    assert werte.bereinige(halle) == ["flaeche"] and "flaeche" not in halle
+    anders = {"typ": "Dreifachsporthalle", "laenge": 45.0, "breite": 27.0, "flaeche": 1400.0}
+    assert werte.bereinige(anders) == []  # weicht ab: bleibt, die Prüfung meldet sie
+    reitplatz = {"typ": "Reitplatz", "laenge": 40.0, "breite": 20.0, "flaeche": 800.0}
+    assert werte.bereinige(reitplatz) == []
+
+
+def test_diagramm_zeigt_felder_je_typ(tmp_path, monkeypatch):
+    import sys
+    import types
+
+    gezeichnet = {}
+
+    def feld(name):
+        return types.SimpleNamespace(name=name, type_name="Optional[float]")
+
+    anlage = types.SimpleNamespace(
+        name="Sportanlage", fields={n: feld(n) for n in ("bezeichnung", "trennvorhang")}
+    )
+
+    def create(*_):
+        d = types.SimpleNamespace(models={"x.Sportanlage": anlage})
+        d.draw = lambda out: gezeichnet.setdefault("out", out)
+        return d
+
+    monkeypatch.setitem(sys.modules, "erdantic", types.SimpleNamespace(create=create))
+    assert modell.zeichne(tmp_path / "d.svg") and gezeichnet["out"] == tmp_path / "d.svg"
+    assert anlage.fields["trennvorhang"].type_name == "Optional[float] · nur Bühne"
+    assert anlage.fields["bezeichnung"].type_name == "Optional[float]"  # für alle Typen
 
 
 def test_migrieren_bereinigen(tmp_path):

@@ -1603,13 +1603,31 @@ def aktualisiere_readme(pfad: Path) -> bool:
 
 
 def zeichne(ziel: Path) -> bool:
-    """Diagramm mit erdantic (braucht Graphviz). False, wenn erdantic fehlt."""
+    """Diagramm mit erdantic (braucht Graphviz). False, wenn erdantic fehlt. Felder der
+    Sportanlage, die nur zu bestimmten Anlagentypen gehören, tragen „· nur …“ hinter ihrem Typ."""
     try:
         import erdantic as erd
     except ImportError:
         return False
-    erd.draw(Vorschlag, out=ziel)
+    diagramm = erd.create(Vorschlag)
+    try:  # bei der Sportanlage: hinter dem Typ eines Feldes, für welche Anlagentypen es ist
+        for m in diagramm.models.values():
+            if m.name == "Sportanlage":
+                for name, f in m.fields.items():
+                    if typen := fuer_von(name):
+                        f.type_name = f"{f.type_name} · nur {nur_fuer(typen)}"
+    except (AttributeError, TypeError):  # andere Version von erdantic: ohne diese Angabe
+        pass
+    diagramm.draw(out=ziel)
     return True
+
+
+def nur_fuer(typen: list[str], hoechstens: int = 48) -> str:
+    """fuer_text, gekürzt für das Diagramm (die volle Liste steht in daten/README.md)."""
+    text = fuer_text(typen)
+    if len(text) <= hoechstens:
+        return text
+    return f"{len(typen)} Typen: " + text[: hoechstens - 1].rsplit(", ", 1)[0] + " …"
 
 
 def schreibe_doku(ordner: Path) -> list[str]:

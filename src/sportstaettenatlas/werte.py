@@ -128,10 +128,27 @@ def website(t: str) -> str | None:
     return f"https://{t}" if _DOMAIN.fullmatch(t) else t
 
 
+def flaeche_berechnet(d: dict) -> bool:
+    """Sportanlage, deren `flaeche` nur Länge × Breite ist (auf 1 % genau) und nicht zu ihrem
+    Typ gehört: im Altsystem bei Hallen so berechnet – ohne neue Angabe."""
+    from .modell import fuer_von
+
+    f, lg, br = d.get("flaeche"), d.get("laenge"), d.get("breite")
+    if not d.get("typ") or not all(isinstance(x, (int, float)) for x in (f, lg, br)):
+        return False
+    if d["typ"] in (fuer_von("flaeche") or ()):
+        return False
+    return lg * br > 0 and abs(f - lg * br) <= 0.01 * lg * br
+
+
 def bereinige(d: dict) -> list[str]:
     """In einem Datensatz (Sportstätte, Sportkomplex, Organisation …) `website` und
-    `adresse.hausnummer` bereinigen; liefert die Pfade, die sich geändert haben."""
+    `adresse.hausnummer` bereinigen, bei einer Sportanlage eine nur berechnete `flaeche`
+    (flaeche_berechnet) weglassen; liefert die Pfade, die sich geändert haben."""
     geaendert = []
+    if flaeche_berechnet(d):
+        del d["flaeche"]
+        geaendert.append("flaeche")
     for pfad, regel in (("website", website), ("adresse.hausnummer", hausnummer)):
         alt = hole(d, pfad)
         if isinstance(alt, str) and (neu := regel(alt)) != alt:
