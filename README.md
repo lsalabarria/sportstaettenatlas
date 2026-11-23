@@ -90,6 +90,14 @@ Alle mit `uv run sportstaettenatlas …`; `--help` zeigt die Optionen.
 Danach: `git add -A daten webseite && git commit -m "…" && git push` – die Webseite baut
 die GitHub Action (siehe „Auf GitHub einrichten“).
 
+**Webseiten für Vereine suchen:** `uv run python -m sportstaettenatlas.crawler` sucht für
+Vereine ohne Webseite in OpenStreetMap und Wikidata und rät Domains (`tus-berg.de` …). Jede
+Webseite wird am Impressum geprüft (Name, Ort, Vereinsregister → Punkte); gespeichert wird
+davon nichts. Ergebnis: `results/vereinswebseiten.csv` zum Prüfen; passende Zeilen behalten,
+dann `bestand --modus ergaenzen`. Probelauf: `--kreis 07111 --max 20`. Beachtet robots.txt,
+fragt je Webseite höchstens einmal pro Sekunde, fragt Verzeichnisse wie fussball.de nicht ab
+und lädt keine Seiten sozialer Netzwerke. Kontakt im User-Agent: `SPORTSTAETTENATLAS_KONTAKT`.
+
 ## Datenmodell im Code
 
 Das Modell steht an **einer** Stelle: `src/sportstaettenatlas/modell.py` (Pydantic) – Felder,
