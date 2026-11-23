@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 
 from sportstaettenatlas.bestand import schreibe_bestand, schreibe_organisation
-from sportstaettenatlas.validate import PRUEFUNGEN, aehnlich, ort_passt, pruefe
+from sportstaettenatlas.validate import PRUEFUNGEN, aehnlich, name_zu, ort_passt, pruefe
 
 
 def _quadrat(ars, name, w, s, o, n):
@@ -250,3 +250,22 @@ def test_fast_gleiche_organisationen():
     ]
     paare = [(x["id"], y["id"]) for x, y in fast_gleiche_organisationen(orgs)]
     assert paare == [("a", "b"), ("c", "e")]
+
+
+def test_name_zu(tmp_path):
+    staette = tmp_path / "RP" / "07111-koblenz" / "s1"
+    staette.mkdir(parents=True)
+    (staette / "s1_meta.json").write_text('{"name": "Sportplatz Berg"}', encoding="utf-8")
+    (staette / "a1.json").write_text(
+        '{"typ": "Großspielfeld", "bezeichnung": "Kunstrasen B"}', encoding="utf-8"
+    )
+    (staette / "a2.json").write_text('{"typ": "Kleinspielfeld"}', encoding="utf-8")
+    komplexe = tmp_path / "RP" / "07111-koblenz" / "sportkomplexe"
+    komplexe.mkdir()
+    (komplexe / "k1.json").write_text('{"name": "Sportzentrum", "typ": "x"}', encoding="utf-8")
+    cache: dict = {}
+    assert name_zu(staette / "s1_meta.json", cache) == "Sportplatz Berg"
+    assert name_zu(staette / "a1.json", cache) == "Großspielfeld „Kunstrasen B“ – Sportplatz Berg"
+    assert name_zu(staette / "a2.json", cache) == "Kleinspielfeld – Sportplatz Berg"
+    assert name_zu(komplexe / "k1.json", cache) == "Sportzentrum"
+    assert name_zu(tmp_path / "fehlt.json", cache) == ""

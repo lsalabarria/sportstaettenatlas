@@ -111,7 +111,7 @@ umbenannt oder gestrichen, passt `migrieren` die Dateien an, z. B.
 ## Prüfungen
 
 `seite` und `pruefen` schreiben alle Auffälligkeiten nach `daten/regelverstoesse.csv` (Datei,
-Prüfung, Meldung, sortiert); sie brechen nicht ab. Die Datei gehört ins Git: Wer nichts
+Name, Prüfung, Meldung, sortiert; Name einer Sportanlage: Typ, Bezeichnung und ihre Sportstätte); sie brechen nicht ab. Die Datei gehört ins Git: Wer nichts
 installiert hat, sieht sie auf GitHub als durchsuchbare Tabelle. Nach jedem Batch mit
 `pruefen` erneuern und mit committen – der Commit zeigt dann, welche Meldungen weg und welche
 neu sind. Die Spalte `pruefung` nennt eine der Prüfungen unten

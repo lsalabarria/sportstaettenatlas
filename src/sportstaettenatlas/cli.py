@@ -67,7 +67,7 @@ def _pruefe_und_melde(bestand, organisationen, verstoesse, gebiete) -> None:
     damit ein Commit nur zeigt, was sich wirklich geändert hat."""
     import csv
 
-    from .validate import DATENMODELL, pruefe
+    from .validate import DATENMODELL, name_zu, pruefe
 
     alle = [(d, DATENMODELL, m) for d, m in verstoesse]
     alle += pruefe(bestand, organisationen, gebiete, DATEN)
@@ -77,8 +77,9 @@ def _pruefe_und_melde(bestand, organisationen, verstoesse, gebiete) -> None:
         datei.parent.mkdir(parents=True, exist_ok=True)
         with datei.open("w", newline="", encoding="utf-8") as f:
             w = csv.writer(f)
-            w.writerow(["datei", "pruefung", "meldung"])
-            w.writerows(alle)
+            w.writerow(["datei", "name", "pruefung", "meldung"])
+            cache: dict = {}
+            w.writerows((d, name_zu(d, cache), p, m) for d, p, m in alle)
         je = Counter(p for _, p, _ in alle)
         print(
             f"Hinweis: {len(alle)} Auffälligkeiten "

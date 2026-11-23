@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import datetime as dt
 import itertools
+import json
 import math
 import re
 from collections import Counter, defaultdict
@@ -698,3 +699,29 @@ def pruefe(
             m = f"name: fast gleich wie „{y['name']}“ ({y['id']}) – doppelt?"
             out.append((org_datei.get(x["id"], x["id"]), "Fast gleiche Organisationen", m))
     return out
+
+
+def name_zu(datei: str | Path, cache: dict | None = None) -> str:
+    """Lesbarer Name zu einer Datei aus der Liste der Regelverstöße, damit niemand die UUID
+    nachschlagen muss: Sportstätte, Sportkomplex, Stützpunkt und Organisation mit ihrem Namen,
+    eine Sportanlage mit Typ, Bezeichnung und dem Namen ihrer Sportstätte
+    („Großspielfeld „Kunstrasen B“ – Sportplatz Berg“). Leer, wenn die Datei fehlt."""
+    cache = {} if cache is None else cache
+    pfad = Path(datei)
+
+    def lies(f: Path) -> dict:
+        if f not in cache:
+            try:
+                cache[f] = json.loads(f.read_text(encoding="utf-8"))
+            except (OSError, ValueError):
+                cache[f] = {}
+        return cache[f] if isinstance(cache[f], dict) else {}
+
+    d = lies(pfad)
+    meta = pfad.parent / f"{pfad.parent.name}_meta.json"
+    if pfad == meta or not meta.exists():  # keine Sportanlage
+        return str(d.get("name") or "")
+    staette = lies(meta).get("name") or ""
+    anlage = str(d.get("typ") or "Sportanlage")
+    anlage += f" „{d['bezeichnung']}“" if d.get("bezeichnung") else ""
+    return f"{anlage} – {staette}" if staette else anlage
