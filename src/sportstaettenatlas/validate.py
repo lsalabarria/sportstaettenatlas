@@ -425,8 +425,11 @@ def _aehnliche_paare(namen: list[str], schwelle: float) -> list[tuple[int, int]]
 def _doppelt(a: dict, b: dict) -> bool:
     """Namen ähnlich genug für eine Doppelung? Im selben Sportkomplex nur bei gleichem Namen
     (bis auf Groß- und Kleinschreibung und Leerzeichen) – dort ist „Halle 1“ neben „Halle 2“
-    gewollt."""
+    gewollt – und gleicher Kategorie: Tennisplätze und Sportplatz eines Komplexes unter seinem
+    Namen sind keine Doppelung (so im Altsystem angelegt)."""
     if a.get("sportkomplex") and a.get("sportkomplex") == b.get("sportkomplex"):
+        if a.get("kategorie") and b.get("kategorie") and a["kategorie"] != b["kategorie"]:
+            return False
         return bool(org_schluessel(a.get("name"))) and org_schluessel(
             a.get("name")
         ) == org_schluessel(b.get("name"))

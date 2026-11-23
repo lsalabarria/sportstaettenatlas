@@ -270,3 +270,34 @@ def test_name_zu(tmp_path):
     assert name_zu(staette / "a2.json", cache) == "Kleinspielfeld – Sportplatz Berg"
     assert name_zu(komplexe / "k1.json", cache) == "Sportzentrum"
     assert name_zu(tmp_path / "fehlt.json", cache) == ""
+
+
+def test_doppelungen_im_sportkomplex():
+    from sportstaettenatlas.validate import doppelungen
+
+    def st(i, name, kategorie, komplex=None, lon=7.59380):
+        d = {"id": i, "name": name, "kategorie": kategorie, "lage": {"lat": 50.3512, "lon": lon}}
+        return {**d, "sportkomplex": komplex} if komplex else d
+
+    def paare(*staetten):
+        return sorted(tuple(sorted((a["id"], b["id"]))) for a, b, _ in doppelungen(staetten))
+
+    k = "kkkkkkkk-0000-4000-8000-000000000000"
+    # ein Komplex, unter seinem Namen eine Tennissportstätte und ein Sportplatz: gewollt
+    assert (
+        paare(
+            st("a", "Sportanlage Berg", "Tennissportstätte", k),
+            st("b", "Sportanlage Berg", "Sportplatz", k, 7.59385),
+        )
+        == []
+    )
+    # gleiche Kategorie im selben Komplex: weiter eine Doppelung
+    assert paare(
+        st("a", "Sportanlage Berg", "Sportplatz", k),
+        st("b", "Sportanlage Berg", "Sportplatz", k, 7.59385),
+    ) == [("a", "b")]
+    # ohne Komplex zählt die Kategorie nicht
+    assert paare(
+        st("a", "Sportanlage Berg", "Tennissportstätte"),
+        st("b", "Sportanlage Berg", "Sportplatz", lon=7.59385),
+    ) == [("a", "b")]
