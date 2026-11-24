@@ -278,10 +278,13 @@ def test_von_hand_gepflegt(tmp_path):
     assert info["neu_angelegt"] == []
     assert (docs / "konfig.js").read_text(encoding="utf-8") == eigene
     assert (docs / "impressum.html").read_text(encoding="utf-8") == "mein Impressum"
-    # verweist konfig.js auf fremde Seiten, gibt es keine eigenen (und keine alten Kopien)
+    # verweist konfig.js auf fremde Seiten, gibt es keine eigenen (und keine alten Kopien);
+    # dass ein Kommentar die Dateien nennt, zählt nicht
     (von_hand / "konfig.js").write_text(
-        'window.KONFIG = { impressum_url: "https://example.org/impressum", '
-        'datenschutz_url: "https://example.org/datenschutz" };',
+        "window.KONFIG = {\n"
+        '  // eigene Seiten: "impressum.html" bzw. "datenschutz.html"\n'
+        '  impressum_url: "https://example.org/impressum",\n'
+        '  datenschutz_url: "https://example.org/datenschutz",\n};\n',
         encoding="utf-8",
     )
     (von_hand / "impressum.html").unlink()
@@ -290,6 +293,15 @@ def test_von_hand_gepflegt(tmp_path):
     assert info["neu_angelegt"] == []
     assert not (von_hand / "impressum.html").exists() and not (docs / "impressum.html").exists()
     assert not (docs / "datenschutz.html").exists()
+
+
+def test_eigene_seiten(tmp_path):
+    from sportstaettenatlas.webseite.bauen import eigene_seiten
+
+    konfig = tmp_path / "konfig.js"
+    assert eigene_seiten(konfig) == set()
+    konfig.write_text(web.vorlage("konfig.js", "Atlas"), encoding="utf-8")
+    assert eigene_seiten(konfig) == {"impressum.html", "datenschutz.html"}
 
 
 def test_betreiber_art():

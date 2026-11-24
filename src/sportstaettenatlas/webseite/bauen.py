@@ -26,6 +26,7 @@ from __future__ import annotations
 import datetime as dt
 import html
 import json
+import re
 import shutil
 import urllib.request
 from collections import Counter
@@ -52,6 +53,8 @@ VON_HAND = (
     "impressum.html",
     "datenschutz.html",
 )  # nie überschreiben; konfig.js zuerst
+# In konfig.js: impressum_url: "…" (Kommentare zählen nicht)
+_KONFIG_URL = re.compile(r'\b(\w+_url)\s*:\s*"([^"]*)"')
 ANALYSE = "analyse.json"  # Titel, Beschreibungen und Quellenvermerk einer gespeicherten Analyse
 
 
@@ -308,6 +311,15 @@ def ohne_outside(
     return bestand, sportkomplexe, stuetzpunkte
 
 
+def eigene_seiten(konfig: Path) -> set[str]:
+    """Welche Adressen in konfig.js (impressum_url, datenschutz_url …) auf eine eigene Datei
+    der Webseite zeigen statt auf eine andere Seite, z. B. {"impressum.html"}."""
+    text = konfig.read_text("utf-8") if konfig.exists() else ""
+    ohne_kommentare = "\n".join(z for z in text.splitlines() if not z.lstrip().startswith("//"))
+    werte = _KONFIG_URL.findall(ohne_kommentare)
+    return {url for _, url in werte if url and "://" not in url and not url.startswith("//")}
+
+
 def schreibe_webseite(
     ausgabe: Path,
     bestand: list[dict] | None = None,
@@ -446,7 +458,7 @@ def schreibe_webseite(
     for name in VON_HAND:
         # Impressum und Datenschutz nur, solange konfig.js auf die eigene Seite verweist (statt
         # z. B. auf die der Hochschule); sonst auch keine alte Kopie in `ausgabe` stehen lassen
-        if name != VON_HAND[0] and name not in (quelle / VON_HAND[0]).read_text("utf-8"):
+        if name != VON_HAND[0] and name not in eigene_seiten(quelle / VON_HAND[0]):
             if quelle != ausgabe:
                 (ausgabe / name).unlink(missing_ok=True)
             continue
