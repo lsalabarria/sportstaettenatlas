@@ -84,7 +84,7 @@ def test_nur_alkis_unbestimmt():
         }
     )
     st, an = verifiziere(st, an)
-    stufe = dict(zip(st["sportstaette_id"], st["verifikation_stufe"]))
+    stufe = dict(zip(st["sportstaette_id"], st["verifikation_stufe"], strict=True))
     assert stufe["S1"] == "nur ALKIS – unbestimmt"
     assert stufe["S2"] == "nur ALKIS"  # Halle darin: kein Sammelbegriff allein
     assert stufe["S3"] == "bestätigt"  # der Atlas kennt sie

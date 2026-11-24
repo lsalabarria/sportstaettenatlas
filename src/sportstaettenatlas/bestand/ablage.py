@@ -19,6 +19,9 @@ from collections import Counter
 from collections.abc import Callable, Iterator
 from dataclasses import dataclass, field
 from pathlib import Path
+from typing import Any
+
+from pydantic import BaseModel
 
 from ..modell import (
     EMAIL_MUSTER,
@@ -39,7 +42,7 @@ OHNE_KREIS = "ohne-kreis"
 # Sportstätten außerhalb von Rheinland-Pfalz: daten/outside/<Land>/<id>/,
 # nicht auf der Webseite, nicht eingeordnet
 OUTSIDE = "outside"
-KreisVon = Callable[[float, float], str]  # (lon, lat) → Name des Kreis-Ordners
+KreisVon = Callable[[float | None, float | None], str]  # (lon, lat) → Name des Kreis-Ordners
 
 # feste Basis, damit dieselbe Anlage bei jedem Einlesen dieselbe ID bekommt
 _ANLAGEN_NAMENSRAUM = uuid.UUID("5c1e0b8e-6d0a-4c57-9a43-2f1d6b0c7a11")
@@ -72,7 +75,7 @@ def kreis_ordner(gebiete: dict) -> KreisVon:
         )
     zuordnung = Zuordnung(gebiete["gemeinde"])
 
-    def kreis_von(lon: float, lat: float) -> str:
+    def kreis_von(lon: float | None, lat: float | None) -> str:
         ars = zuordnung.ars(lon, lat)
         return ordner.get(ars[:5], OHNE_KREIS) if ars else OHNE_KREIS
 
@@ -80,7 +83,7 @@ def kreis_ordner(gebiete: dict) -> KreisVon:
 
 
 def _kreis(d: dict, kreis_von: KreisVon) -> str:
-    lage = d.get("lage") or {}
+    lage: dict[str, Any] = d.get("lage") or {}
     return kreis_von(lage.get("lon"), lage.get("lat"))
 
 
@@ -284,7 +287,7 @@ def schreibe_bestand(
             continue
         gesehen.add(d["id"])
         neu = st_ordner is None
-        if neu:
+        if st_ordner is None:
             st_ordner = ordner / _kreis(d, kreis_von) / d["id"]
             st_ordner.mkdir(parents=True)
             e.neu += 1
@@ -434,7 +437,7 @@ def migriere_bestand(
         raise ValueError(f"nicht im Modell: {', '.join(fremd)}")
     e = Migration()
     daten = Path(daten)
-    dateien = [
+    dateien: list[tuple[Path, type[BaseModel]]] = [
         *((p, Organisation) for p in org_dateien(daten)),
         *((p, Sportkomplex) for p in komplex_dateien(daten)),
         *((p, Stuetzpunkt) for p in stuetzpunkt_dateien(daten)),
@@ -520,7 +523,8 @@ def lies_organisationen(daten: Path, verstoesse: list | None = None) -> list[dic
     """Alle Organisationen aus daten/organisationen/. Dateiname = id; ein Name (auch eine
     weitere Schreibweise) darf nur bei einer Organisation stehen; der Ordner folgt aus der Art
     (sonst Verstoß; `einordnen` verschiebt)."""
-    out, namen = [], {}
+    out: list[dict] = []
+    namen: dict[str, str] = {}
     for pfad in org_dateien(daten):
         o = _lies_json(pfad)
         if o.get("id") != pfad.stem:
@@ -540,7 +544,7 @@ def lies_organisationen(daten: Path, verstoesse: list | None = None) -> list[dic
 
 def org_verzeichnis(organisationen: list[dict]) -> dict[str, dict]:
     """Name und weitere Schreibweisen (org_schluessel) → Organisation."""
-    out = {}
+    out: dict[str, dict] = {}
     for o in organisationen:
         for n in [o.get("name"), *(o.get("weitere_namen") or [])]:
             if n:

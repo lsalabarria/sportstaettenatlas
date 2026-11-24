@@ -12,7 +12,11 @@ from sportstaettenatlas.pflege.kommunen import aus_gebieten, lege_an
 
 
 def _fc(*eintraege):
-    return {"features": [{"properties": dict(zip(("ars", "name", "bez"), e))} for e in eintraege]}
+    return {
+        "features": [
+            {"properties": dict(zip(("ars", "name", "bez"), e, strict=True))} for e in eintraege
+        ]
+    }
 
 
 # Land 07: Landkreis 07901 mit VG 079015001 und

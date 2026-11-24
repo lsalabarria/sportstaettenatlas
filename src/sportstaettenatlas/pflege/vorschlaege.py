@@ -222,8 +222,8 @@ class _Uebernahme:
                 )
                 continue
             oid = organisation_id(o["name"])
-            self.orgs[oid] = {**o, "id": oid}
-            self._verzeichnis.update(org_verzeichnis([self.orgs[oid]]))
+            neu = self.orgs[oid] = {**o, "id": oid}
+            self._verzeichnis.update(org_verzeichnis([neu]))
 
     def _neuer_komplex(self, a: Antwort, v: dict, sid: str) -> None:
         """Neuer Sportkomplex einer neuen oder geänderten Sportstätte, mit den weiteren
@@ -409,8 +409,8 @@ class _Uebernahme:
         for oid, o in self.orgs.items():
             if o is not None:
                 schreibe_organisation(self.daten, o)
-            elif pfad := finde_organisation(self.daten, oid):
-                pfad.unlink()
+            elif org_datei := finde_organisation(self.daten, oid):
+                org_datei.unlink()
         for sid, sp in self.stuetzpunkte.items():
             if sp is not None:
                 schreibe_stuetzpunkt(self.daten, sp)
@@ -422,9 +422,9 @@ class _Uebernahme:
         for kid, k in self.komplexe.items():
             if k is not None:  # erst in den bisherigen Kreis, einordnen sucht den richtigen
                 alt = dateien.get(kid)
-                ordner = alt.parent.parent.name if alt else OHNE_KREIS
+                kreis = alt.parent.parent.name if alt else OHNE_KREIS
                 land = alt.parent.parent.parent.name if alt else None
-                schreibe_sportkomplex(self.daten, k, ordner, land)
+                schreibe_sportkomplex(self.daten, k, kreis, land)
             elif kid in dateien:
                 dateien[kid].unlink()
                 if not any(dateien[kid].parent.iterdir()):

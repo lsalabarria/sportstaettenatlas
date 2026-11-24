@@ -365,6 +365,20 @@ Bestand und von Hand geschriebener Text.
 uv run pytest
 ```
 
+### Code prüfen
+
+Neben den Tests prüft die CI bei jedem Push den Stil (ruff: Formatierung, typische Fehler,
+sortierte Importe) und die Typen (mypy, Einstellungen in `pyproject.toml`). Dieselben
+Prüfungen laufen auf Wunsch vor jedem Commit (`.pre-commit-config.yaml`); ruff behebt dabei,
+was sicher geht, und der Commit muss dann noch einmal mit den Korrekturen:
+
+```bash
+uv run pre-commit install                 # einmal je Rechner
+uv run pre-commit run --all-files         # alles prüfen, ohne zu committen
+uv run ruff check --fix && uv run ruff format && uv run mypy   # dasselbe von Hand
+git commit --no-verify                    # im Notfall ohne Prüfung
+```
+
 Die Tests nutzen nur ausgedachte Daten. Die Skripte der Webseite werden mit `node --check`
 geprüft, wenn Node.js installiert ist.
 

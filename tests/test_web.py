@@ -286,6 +286,7 @@ def test_uebersicht_zeigt_bestand_und_befuellung(oeffne):
         zip(
             page.locator("#seite-uebersicht .kachel .label").all_inner_texts(),
             page.locator("#seite-uebersicht .kachel .wert").all_inner_texts(),
+            strict=True,
         )
     )
     assert kacheln["Sportstätten"] == "3" and kacheln["Sportanlagen"] == "3"
@@ -303,6 +304,7 @@ def test_uebersicht_zeigt_bestand_und_befuellung(oeffne):
         zip(
             page.locator("#seite-uebersicht .kachel .label").all_inner_texts(),
             page.locator("#seite-uebersicht .kachel .wert").all_inner_texts(),
+            strict=True,
         )
     )
     assert kacheln["Sportstätten"] == "1" and kacheln["Bundesstützpunkte"] == "1"

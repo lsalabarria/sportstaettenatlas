@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import contextlib
 import datetime as dt
 from pathlib import Path
 
@@ -83,10 +84,8 @@ def _vorschau(ordner: Path, port: int = 8000) -> None:
         url = f"http://localhost:{port}/"
         print(f"Vorschau: {url}  (beenden mit Strg+C)")
         webbrowser.open(url)
-        try:
+        with contextlib.suppress(KeyboardInterrupt):
             server.serve_forever()
-        except KeyboardInterrupt:
-            pass
 
 
 def befehle(sub) -> None:

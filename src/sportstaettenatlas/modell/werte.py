@@ -9,6 +9,7 @@ from __future__ import annotations
 import csv
 import io
 import re
+from typing import Any
 
 from . import anlagen as anlagen_typen
 
@@ -35,7 +36,7 @@ def trenner(inhalt: str) -> str:
     Inhalt der ersten Zeilen schwankt."""
     kopf = re.sub(r'"[^"]*"', "", inhalt.split("\n", 1)[0])
     zahl_je = {t: kopf.count(t) for t in (";", ",", "\t")}
-    return max(zahl_je, key=zahl_je.get) if any(zahl_je.values()) else ","
+    return max(zahl_je, key=zahl_je.__getitem__) if any(zahl_je.values()) else ","
 
 
 def zeilen(inhalt: str) -> list[dict]:
@@ -196,7 +197,9 @@ def flaeche_berechnet(d: dict) -> bool:
     from .klassen import fuer_von
 
     f, lg, br = d.get("flaeche"), d.get("laenge"), d.get("breite")
-    if not d.get("typ") or not all(isinstance(x, (int, float)) for x in (f, lg, br)):
+    if not d.get("typ") or not (
+        isinstance(f, int | float) and isinstance(lg, int | float) and isinstance(br, int | float)
+    ):
         return False
     if d["typ"] in (fuer_von("flaeche") or ()):
         return False
@@ -231,13 +234,14 @@ def bereinige(d: dict) -> list[str]:
 # --- Pfade in verschachtelten Angaben („adresse.plz“) -------------------------------------
 
 
-def hole(d: dict, pfad: str):
+def hole(d: dict, pfad: str) -> Any:
     """Wert unter einem Pfad wie "adresse.plz"; None, wenn er fehlt."""
+    wert: Any = d
     for teil in pfad.split("."):
-        if not isinstance(d, dict):
+        if not isinstance(wert, dict):
             return None
-        d = d.get(teil)
-    return d
+        wert = wert.get(teil)
+    return wert
 
 
 def setze(d: dict, pfad: str, w) -> None:

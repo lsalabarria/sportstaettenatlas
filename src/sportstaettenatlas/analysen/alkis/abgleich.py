@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import logging
 from dataclasses import dataclass, field
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Any
 
 from .kategorien import gruppe
 
@@ -39,14 +39,16 @@ def _paare(kandidaten: gpd.GeoDataFrame, objekte: gpd.GeoDataFrame, max_m: float
     schnitt = gk.intersection(go).area.to_numpy()
     fk, fo = gk.area.to_numpy(), go.area.to_numpy()
     p["ueberlappung"] = [
-        s / min(a, b) if min(a, b) > 0 else 0.0 for s, a, b in zip(schnitt, fk, fo)
+        s / min(a, b) if min(a, b) > 0 else 0.0 for s, a, b in zip(schnitt, fk, fo, strict=True)
     ]
-    iou = [s / (a + b - s) if (a + b - s) > 0 else 0.0 for s, a, b in zip(schnitt, fk, fo)]
+    iou = [
+        s / (a + b - s) if (a + b - s) > 0 else 0.0 for s, a, b in zip(schnitt, fk, fo, strict=True)
+    ]
     # Überlappende Paare schlagen benachbarte immer; bei gleicher Überlappung
     # gewinnt die ähnlichere Form (IoU), z. B. Laufbahn-Fläche vor Teilspielfeld.
     p["score"] = [
         1 + u + 0.5 * j if d == 0 else 1 / (1 + d)
-        for u, j, d in zip(p["ueberlappung"], iou, p["abstand_m"])
+        for u, j, d in zip(p["ueberlappung"], iou, p["abstand_m"], strict=True)
     ]
     return p
 
@@ -120,7 +122,7 @@ def nachbarn_mitbestaetigen(
         predicate="intersects",
     )
     nachbarn: dict = {}
-    for a, b in zip(paare.index, paare["index_right"]):
+    for a, b in zip(paare.index, paare["index_right"], strict=True):
         if a != b:
             nachbarn.setdefault(a, set()).add(b)
     objekt_geo = objekte.to_crs(kandidaten.crs).set_index(id_spalte).geometry
@@ -155,7 +157,7 @@ def nachbarn_mitbestaetigen(
 class Bericht:
     zeilen: list[str] = field(default_factory=list)
     lizenzen: list[str] = field(default_factory=list)
-    abgleich_altbestand: object = None  # DataFrame mit dem Abgleich Atlas ↔ ALKIS
+    abgleich_altbestand: Any = None  # DataFrame mit dem Abgleich Atlas ↔ ALKIS
 
     def __call__(self, text: str) -> None:
         log.info(text)
@@ -293,7 +295,7 @@ def atlas_bericht(alt, staetten, anlagen, zuordnung, max_nah_m: float = 200) -> 
     # wer hat welches Objekt bekommen?
     hat = {}
     if "alt_id" in zuordnung:
-        for sid, ids in zip(staetten["sportstaette_id"], zuordnung["alt_id"]):
+        for sid, ids in zip(staetten["sportstaette_id"], zuordnung["alt_id"], strict=False):
             for i in str(ids).split(" | ") if isinstance(ids, str) else []:
                 hat[i] = sid
     bericht["sportstaette_id"] = bericht["alt_id"].map(hat)
@@ -327,7 +329,7 @@ def atlas_bericht(alt, staetten, anlagen, zuordnung, max_nah_m: float = 200) -> 
             return None
         return g in vor_ort
 
-    bericht["typ_passt"] = [passt(o, g) for o, g in zip(ort, bericht["alt_typgruppe"])]
+    bericht["typ_passt"] = [passt(o, g) for o, g in zip(ort, bericht["alt_typgruppe"], strict=True)]
     spalten = [
         "alt_id",
         "status",

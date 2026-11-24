@@ -31,6 +31,7 @@ import urllib.request
 from collections import Counter
 from collections.abc import Callable
 from pathlib import Path
+from typing import Any
 
 from .. import modell
 from ..bestand import EMAIL, KONTAKT, OUTSIDE, adresse_text
@@ -117,7 +118,7 @@ def bestand_geojson(datensaetze, praezision: int = 5, organisationen=None) -> di
         typen.update(x[0] for x in anlagen)
         # alle Felder des Modells, flach: die Teile der Adresse stehen einzeln daneben,
         # "adresse" ist der Text; die Lage steckt in der Geometrie
-        p = {}
+        p: dict[str, Any] = {}
         for feld in modell.Sportstaette.model_fields:
             if feld == "adresse":
                 p["adresse"] = adresse_text(a)
@@ -198,7 +199,7 @@ def _schreibe_json(pfad: Path, obj: dict) -> int:
 
 
 def download_seite(
-    titel: str, quellenvermerk: str, dateien: list[tuple[str, str, int, int]]
+    titel: str, quellenvermerk: str, dateien: list[tuple[str, str, int | None, int]]
 ) -> str:
     zeilen = "".join(
         f'<tr><td><a href="{html.escape(name)}" download>{html.escape(name)}</a></td>'
@@ -278,7 +279,7 @@ def ohne_outside(
     bestand: list[dict] | None,
     sportkomplexe: list[dict] | None,
     stuetzpunkte: list[dict] | None,
-    weitere: set[str] = frozenset(),
+    weitere: set[str] | frozenset[str] = frozenset(),
 ) -> tuple[list[dict] | None, list[dict] | None, list[dict] | None]:
     """Was unter daten/outside/ liegt (außerhalb von RLP), kommt nicht auf die Webseite,
     ebenso die IDs in `weitere` (z. B. Lage in keiner Gemeinde des Landes): Stützpunkte

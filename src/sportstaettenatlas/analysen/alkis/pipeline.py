@@ -99,7 +99,8 @@ def sportflaechen(
     maske = nutzung["nutzart"].map(regeln.ist_sportflaeche).fillna(False).astype(bool)
     df = nutzung.loc[maske].copy()
     treffer = [
-        regeln.nutzung(b, n) for b, n in zip(_spalte(df, "bez", "funktion"), _spalte(df, "name"))
+        regeln.nutzung(b, n)
+        for b, n in zip(_spalte(df, "bez", "funktion"), _spalte(df, "name"), strict=True)
     ]
     df["typgruppe"] = [t.typgruppe if t else None for t in treffer]
     df["typ"] = [t.typ if t else None for t in treffer]
@@ -127,7 +128,7 @@ def sport_gebaeude(gebaeude: gpd.GeoDataFrame, regeln: Regelwerk) -> gpd.GeoData
     """Gebäude und Bauwerke mit Sportbezug."""
     treffer = [
         regeln.gebaeude(f, n)
-        for f, n in zip(_spalte(gebaeude, "funktion"), _spalte(gebaeude, "name"))
+        for f, n in zip(_spalte(gebaeude, "funktion"), _spalte(gebaeude, "name"), strict=True)
     ]
     df = gebaeude.copy()
     df["_t"] = treffer

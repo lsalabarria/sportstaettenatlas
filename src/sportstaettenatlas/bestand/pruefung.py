@@ -325,7 +325,12 @@ def licht(a: dict) -> Iterable[str]:
 
 def flaeche(a: dict) -> Iterable[str]:
     l, b, f = a.get("laenge"), a.get("breite"), a.get("flaeche")
-    if all(isinstance(x, int | float) and x > 0 for x in (l, b, f)):
+    if (
+        isinstance(l, int | float)
+        and isinstance(b, int | float)
+        and isinstance(f, int | float)
+        and min(l, b, f) > 0
+    ):
         soll = l * b
         if abs(f - soll) > FLAECHE_ABWEICHUNG * soll:
             yield f"flaeche: {f:g} m², Länge × Breite ergibt aber {soll:g} m²"
@@ -363,7 +368,7 @@ def sportarten_schreibweisen(bestand: list[dict]) -> dict[str, tuple[str, int]]:
     gruppen: dict[str, list[str]] = defaultdict(list)
     for s in zahl:
         gruppen[_sportart_kern(s)].append(s)
-    out = {}
+    out: dict[str, tuple[str, int]] = {}
     for namen in gruppen.values():
         if len(namen) > 1:
             haeufig = max(namen, key=lambda n: (zahl[n], n))
@@ -468,17 +473,17 @@ def sportkomplexe(bestand: list[dict], komplexe: list[dict]) -> Iterable[tuple[s
         else:
             yield st["id"], "Sportkomplex", f"sportkomplex: {kid} gibt es nicht"
     for k in komplexe:
-        st = mitglieder.get(k["id"], [])
-        if len(st) < KOMPLEX_AB:
+        ihre = mitglieder.get(k["id"], [])
+        if len(ihre) < KOMPLEX_AB:
             yield (
                 k["id"],
                 "Kleiner Sportkomplex",
                 (
-                    f"name: „{k.get('name')}“ hat {len(st)} Sportstätte{'n' if len(st) != 1 else ''}"
+                    f"name: „{k.get('name')}“ hat {len(ihre)} Sportstätte{'n' if len(ihre) != 1 else ''}"
                     f" – ein Sportkomplex braucht mindestens {KOMPLEX_AB}"
                 ),
             )
-        lagen = [_lage(x) for x in st if _lage(x)]
+        lagen = [la for x in ihre if (la := _lage(x))]
         weit = max(
             (abstand_m(*a, *b) for a, b in itertools.combinations(lagen, 2)),
             default=0,
@@ -593,14 +598,16 @@ def pruefe(
     komplex_name = {k["id"]: k.get("name") for k in komplexe}
 
     def datei(st: dict, anlage: dict | None = None) -> str:
-        o = ordner.get(st.get("id"), Path(daten) / "?" / str(st.get("id")))
+        o = ordner.get(str(st.get("id")), Path(daten) / "?" / str(st.get("id")))
         return str(o / (f"{anlage.get('id')}.json" if anlage else f"{o.name}_meta.json"))
 
     verzeichnis = org_verzeichnis(organisationen)
     bekannte_typen = {t for typen, _ in modell.MERKMALE for t in typen}
     gebiete_ = Gebiete(gebiete) if gebiete else None
     gleich = gleiche_lage(bestand)
-    komplexe_je_lage: dict[tuple, set] = defaultdict(set)  # Koordinate → Sportkomplexe dort
+    komplexe_je_lage: dict[tuple[float, float] | None, set] = defaultdict(
+        set
+    )  # Koordinate → Sportkomplexe dort
     for st in bestand:
         if st["id"] in gleich:
             komplexe_je_lage[_lage(st)].add(st.get("sportkomplex"))
@@ -613,6 +620,8 @@ def pruefe(
                 yield f"sportarten: „{s}“ – sonst meist „{haeufig}“ ({n}×)"
 
     def ort(st: dict) -> Iterable[tuple[str, str]]:  # Ort und Land aus einer Prüfung
+        if gebiete_ is None:
+            return
         for m in ort_und_land(st, gebiete_):
             yield ("Rheinland-Pfalz" if m.startswith("lage:") else "Ort"), m
 

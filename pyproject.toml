@@ -24,7 +24,9 @@ sportstaettenatlas = "sportstaettenatlas.cli:main"
 
 [dependency-groups]
 dev = [
+    "mypy>=1.11",  # Typprüfung (uv run mypy; Einstellungen unten)
     "playwright>=1.40",  # Browser-Tests (tests/test_web.py); danach: playwright install chromium
+    "pre-commit>=3.7",  # Prüfungen vor jedem Commit (.pre-commit-config.yaml)
     "pytest>=8",
     "ruff>=0.6",
 ]
@@ -36,5 +38,43 @@ build-backend = "uv_build"
 [tool.ruff]
 line-length = 100
 
+[tool.ruff.lint]
+# zu den Standardregeln (Syntax, unbenutzte Namen …): typische Fehler (B), neuere
+# Schreibweisen (UP), Vereinfachungen (SIM), sortierte Importe (I)
+extend-select = ["B", "UP", "SIM", "I"]
+# „Yoda“ meldet auch Vergleiche mit Konstanten links, z. B. PFLICHT <= set(kopf) (Teilmenge)
+ignore = ["SIM300"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.mypy]
+# uv run mypy – prüft src/; erst nachsichtig (Funktionen ohne Typangaben bleiben ungeprüft)
+python_version = "3.12"
+files = ["src"]
+mypy_path = "src"
+plugins = ["pydantic.mypy"]
+warn_unused_ignores = true
+warn_redundant_casts = true
+
+[[tool.mypy.overrides]]
+# ohne Typangaben (oder nur mit Zusatzpaketen): als Any behandeln, überall gleich
+module = [
+    "erdantic.*",
+    "geopandas.*",
+    "pandas.*",
+    "playwright.*",
+    "pyogrio.*",
+    "pyproj.*",
+    "requests.*",
+    "shapely.*",
+    "tqdm.*",
+]
+ignore_missing_imports = true
+follow_imports = "skip"
+
+[[tool.mypy.overrides]]
+# Die Auswahllisten (Enum aus den Werten in anlagen.py u. a.) entstehen zur Laufzeit;
+# als Typ der Felder sind sie für mypy unbekannt
+module = "sportstaettenatlas.modell.klassen"
+disable_error_code = ["valid-type"]

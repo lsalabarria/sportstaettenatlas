@@ -56,7 +56,9 @@ def test_ordner_je_sportstaette(export, tmp_path):
         "Großspielfeld (ab 5.000 m², Rasen)",
         "Rundlaufbahn",
     ]
-    for a, pfad in zip(anlagen, sorted(p for p in ordner.glob("*.json") if "_meta" not in p.name)):
+    for a, pfad in zip(
+        anlagen, sorted(p for p in ordner.glob("*.json") if "_meta" not in p.name), strict=True
+    ):
         assert "sportstaette_id" not in a and pfad.stem == a["id"]  # die Sportstätte: der Ordner
     reit = _lies(ziel / "RP" / "07137-kreis-b" / "103" / "103_meta.json")
     assert "eigentuemer" not in reit and "betriebsstatus" not in reit  # leer → weggelassen

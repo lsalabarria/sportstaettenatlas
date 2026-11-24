@@ -24,9 +24,10 @@ from __future__ import annotations
 
 from datetime import date
 from enum import Enum
-from typing import Annotated, Literal, get_args
+from typing import Annotated, Any, Literal, cast, get_args
 
 from pydantic import BaseModel, ConfigDict, Field, ValidationError, model_validator
+from pydantic.fields import FieldInfo
 
 # --- Auswahllisten ----------------------------------------------------------------------
 
@@ -188,7 +189,7 @@ LUXWERTE = (100, 150, 200, 300, 500, 750, 1000)
 def _auswahl(name: str, werte, typ=str) -> type[Enum]:
     """Auswahlliste als Enum: im Diagramm und im Modell einmal benannt statt bei jedem Feld
     ausgeschrieben. Die Werte bleiben Text bzw. Zahlen (schema löst sie im Schema wieder auf)."""
-    return Enum(name, [(f"w{i}", w) for i, w in enumerate(werte)], type=typ)
+    return cast(type[Enum], Enum(name, [(f"w{i}", w) for i, w in enumerate(werte)], type=typ))
 
 
 Kategorie = _auswahl("Kategorie", KATEGORIEN)
@@ -239,7 +240,7 @@ UUID_MUSTER = r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
 
 # Grenzen und Muster der Prüfungen auf Doppelungen. Sie gelten in bestand/pruefung.py und im Formular
 # (schema.json → atlas.pruefung); tests/regeln_faelle.json prüft, dass beide gleich rechnen.
-PRUEFUNG = {
+PRUEFUNG: dict[str, Any] = {
     "aehnlich": 0.8,  # Namen mindestens so ähnlich (Dice-Koeffizient der Buchstabenpaare) …
     "nah_m": 60,  # … und höchstens so weit auseinander: wohl dieselbe Sportstätte
     "gleicher_name": 0.99,  # Formular: ab hier „gleicher Name“
@@ -308,6 +309,20 @@ class Basis(BaseModel):
         return self
 
 
+def feld_angaben(feld: FieldInfo) -> dict[str, Any]:
+    """Die Angaben eines Feldes (json_schema_extra aus _field) – immer ein dict."""
+    extra = feld.json_schema_extra
+    return extra if isinstance(extra, dict) else {}
+
+
+def beispiel(modell: type[BaseModel]) -> dict[str, Any]:
+    """Das erste Beispiel aus model_config (json_schema_extra.examples)."""
+    extra = modell.model_config.get("json_schema_extra")
+    beispiele = extra.get("examples") if isinstance(extra, dict) else None
+    erstes = beispiele[0] if isinstance(beispiele, list) and beispiele else None
+    return dict(erstes) if isinstance(erstes, dict) else {}
+
+
 def _leer(w) -> bool:
     return w in (None, "", [], {})
 
@@ -318,7 +333,7 @@ def zwischen_feldern(modell: type[BaseModel], werte: dict) -> list[tuple[str, st
     felder = modell.model_fields
     out = []
     for name, feld in felder.items():
-        extra = feld.json_schema_extra or {}
+        extra = feld_angaben(feld)
         wert = werte.get(name)
         if extra.get("braucht") and not _leer(wert) and _leer(werte.get(extra["braucht"])):
             m = MELDUNGEN["braucht"].format(feld=extra["braucht"], wenn=feld.title)
@@ -1315,8 +1330,7 @@ def angabe(modell: type[BaseModel], feld: str, schluessel: str, vorgabe=None):
     """Angabe für die Webseite (gruppe, widget, formular …) eines Feldes."""
     if schluessel == "fuer" and modell is Sportanlage:
         return fuer_von(feld) or vorgabe
-    extra = modell.model_fields[feld].json_schema_extra or {}
-    return extra.get(schluessel, vorgabe)
+    return feld_angaben(modell.model_fields[feld]).get(schluessel, vorgabe)
 
 
 def datei_felder(modell: type[BaseModel]) -> list[str]:

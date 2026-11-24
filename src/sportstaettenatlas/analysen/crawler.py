@@ -128,7 +128,8 @@ def vereine_ohne_webseite(daten: Path, kreis: str | None = None) -> list[Verein]
     """Vereine ohne `website`; mit den Orten und Lagen der Sportstätten, bei denen sie
     Eigentümer, Betreiber oder Nutzer sind. Mit `kreis` (Schlüssel, z. B. 07111) nur
     Vereine, die eine Sportstätte in diesem Kreis haben."""
-    vereine, namen = {}, {}
+    vereine: dict[str, Verein] = {}
+    namen: dict[str, Verein] = {}
     for o in lies_organisationen(daten):
         if o.get("typ") in VEREINSTYPEN and not (o.get("website") or "").strip():
             v = Verein(o["id"], o["name"], o["typ"], str(org_pfad(daten, o)))
@@ -143,13 +144,13 @@ def vereine_ohne_webseite(daten: Path, kreis: str | None = None) -> list[Verein]
         for rolle in ROLLEN:
             werte = st.get(rolle) or []
             for n in [werte] if isinstance(werte, str) else werte:
-                if v := namen.get(_schluessel(n)):
+                if ver := namen.get(_schluessel(n)):
                     if ort:
-                        v.orte.add(ort)
+                        ver.orte.add(ort)
                     if lage.get("lat") is not None and lage.get("lon") is not None:
-                        v.lagen.append((float(lage["lat"]), float(lage["lon"])))
+                        ver.lagen.append((float(lage["lat"]), float(lage["lon"])))
                     if kreis and meta.parent.parent.name.startswith(kreis):
-                        im_kreis.add(v.id)
+                        im_kreis.add(ver.id)
     out = sorted(vereine.values(), key=lambda v: v.name.lower())
     return [v for v in out if v.id in im_kreis] if kreis else out
 
@@ -205,7 +206,9 @@ def osm_treffer(vereine: list[Verein], elemente: list[dict]) -> list[Treffer]:
         tags = el.get("tags") or {}
         if not (web := webseite_aus_tags(tags)):
             continue
-        for n in {tags.get("operator"), tags.get("name")} - {None, ""}:
+        for n in {tags.get("operator"), tags.get("name")}:
+            if not n:
+                continue
             for w in kennwoerter(n):
                 if len(w) >= 3:
                     index[w].append((n, web, el))
@@ -523,7 +526,7 @@ def suche(
         )
         kandidaten += neu
     # eine Webseite je Verein nur einmal prüfen
-    einmal = {}
+    einmal: dict[tuple[str, str], Treffer] = {}
     for t in kandidaten:
         einmal.setdefault((t.verein.id, domain_von(t.website)), t)
     return _parallel(
@@ -636,7 +639,8 @@ def auswahl(zeilen: list[dict]) -> tuple[list[dict], Counter]:
     for z in sicher:
         vereine_je_seite[_seite(z["website"])].add(z["id"])
         je_verein[z["id"]].append(z)
-    out, weg = [], Counter()
+    out: list[dict] = []
+    weg: Counter = Counter()
     for zs in je_verein.values():
         seiten = {_seite(z["website"]) for z in zs}
         if any(len(vereine_je_seite[s]) > 1 for s in seiten):

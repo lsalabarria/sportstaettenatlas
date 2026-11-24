@@ -20,6 +20,7 @@ import json
 import logging
 import re
 from collections import defaultdict
+from typing import Any
 
 log = logging.getLogger(__name__)
 
@@ -183,7 +184,7 @@ class Zuordnung:
     ZELLE = 0.05  # Grad, etwa 4–5 km
 
     def __init__(self, gemeinden: dict):
-        self.flaechen = []
+        self.flaechen: list[tuple[str, tuple[float, float, float, float], dict]] = []
         self.gitter: dict[tuple[int, int], list[int]] = defaultdict(list)
         for f in gemeinden.get("features", []):
             g, ars = f.get("geometry"), (f.get("properties") or {}).get("ars")
@@ -212,7 +213,7 @@ class Zuordnung:
 
 def index(gebiete: dict[str, dict]) -> list[dict]:
     """Kleine Liste für die Auswahl: Schlüssel, Ebene, Name, Bezeichnung, Ausdehnung."""
-    out = []
+    out: list[dict[str, Any]] = []
     for ebene in EBENEN:
         for f in gebiete.get(ebene, {}).get("features", []):
             p, g = f.get("properties") or {}, f.get("geometry")

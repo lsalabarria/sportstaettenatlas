@@ -246,8 +246,8 @@ def lies_csv(pfad: Path, lage_aus=atlas.lage) -> tuple[list[dict], Bericht]:
             b.kontakt.append(k)
         elif _norm(k) in namen:
             zuordnung[k] = (namen[_norm(k)], None)
-        elif z := _zaehler_spalte(modellname, k):
-            zuordnung[k] = z
+        elif zs := _zaehler_spalte(modellname, k):
+            zuordnung[k] = zs
         else:
             b.ignoriert.append(k)
     b.spalten = {k: p + (f"[{s}]" if s else "") for k, (p, s) in zuordnung.items()}
@@ -364,28 +364,18 @@ def schreibe_vorlage(ordner: Path) -> list[Path]:
     vorlage_entfernen.csv (art, id, begruendung). Mit ; getrennt und mit BOM für Excel."""
     ordner = Path(ordner)
     ordner.mkdir(parents=True, exist_ok=True)
+    staette = modell.beispiel(modell.Sportstaette)
     beispiele = {
-        "Sportstaette": {
-            **modell.Sportstaette.model_config["json_schema_extra"]["examples"][0],
-            "anlagen": ["Großspielfeld", "Rundlaufbahn"],
-        },
-        "Sportanlage": {
-            "sportstaette_id": modell.Sportstaette.model_config["json_schema_extra"]["examples"][0][
-                "id"
-            ],
-            **modell.Sportanlage.model_config["json_schema_extra"]["examples"][0],
+        "Sportstaette": {**staette, "anlagen": ["Großspielfeld", "Rundlaufbahn"]},
+        "Sportanlage": {"sportstaette_id": staette["id"], **modell.beispiel(modell.Sportanlage)},
+        "Organisation": modell.beispiel(modell.Organisation),
+        "Stuetzpunkt": modell.beispiel(modell.Stuetzpunkt),
+        "Sportkomplex": {
+            **modell.beispiel(modell.Sportkomplex),
+            MITGLIEDER: [staette["id"], "2b7e41d0"],
         },
     }
     pfade = []
-    beispiele["Organisation"] = modell.Organisation.model_config["json_schema_extra"]["examples"][0]
-    beispiele["Stuetzpunkt"] = modell.Stuetzpunkt.model_config["json_schema_extra"]["examples"][0]
-    beispiele["Sportkomplex"] = {
-        **modell.Sportkomplex.model_config["json_schema_extra"]["examples"][0],
-        MITGLIEDER: [
-            modell.Sportstaette.model_config["json_schema_extra"]["examples"][0]["id"],
-            "2b7e41d0",
-        ],
-    }
     for modellname, datei in (
         ("Sportstaette", "sportstaetten"),
         ("Sportanlage", "sportanlagen"),

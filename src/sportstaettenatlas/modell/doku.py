@@ -26,6 +26,7 @@ from .klassen import (
     Stuetzpunkt,
     Verbrauch,
     Vorschlag,
+    beispiel,
     fuer_von,
 )
 
@@ -172,10 +173,9 @@ def readme_block() -> str:
         if modell.__doc__:
             teile += [inspect.cleandoc(modell.__doc__), ""]  # ohne Einrückung: sonst Code-Block
         teile += [felder_tabelle(modell), ""]
-        beispiele = (modell.model_config.get("json_schema_extra") or {}).get("examples")
-        if beispiele:
-            teile += ["```json", json.dumps(beispiele[0], ensure_ascii=False, indent=2), "```", ""]
-    titel = {k: f.title for k, f in Sportanlage.model_fields.items()}
+        if b := beispiel(modell):
+            teile += ["```json", json.dumps(b, ensure_ascii=False, indent=2), "```", ""]
+    titel = {k: f.title or k for k, f in Sportanlage.model_fields.items()}
     teile += [
         "### Felder je Anlagentyp",
         "",

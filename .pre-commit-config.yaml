@@ -1,0 +1,30 @@
+# Prüfungen vor jedem Commit (nur die geänderten Dateien; siehe README „Code prüfen“).
+# Einmal je Rechner einrichten:   uv run pre-commit install
+# Alles prüfen:                   uv run pre-commit run --all-files
+# ruff und mypy laufen über uv, also in den Versionen aus uv.lock – wie in der CI.
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: check-toml
+      - id: detect-private-key
+  - repo: local
+    hooks:
+      - id: ruff-check
+        name: ruff check (behebt, was sicher geht)
+        entry: uv run ruff check --fix
+        language: system
+        types_or: [python, pyi]
+      - id: ruff-format
+        name: ruff format
+        entry: uv run ruff format
+        language: system
+        types_or: [python, pyi]
+      - id: mypy
+        name: mypy (ganzes Paket)
+        entry: uv run mypy
+        language: system
+        types: [python]
+        pass_filenames: false
