@@ -101,7 +101,7 @@ function kopiere(text) {
     const t = document.createElement("textarea");
     t.value = text; t.style.position = "fixed"; t.style.opacity = "0";
     document.body.appendChild(t); t.select();
-    let ok = false;
+    let ok;
     try { ok = document.execCommand("copy"); } catch (_) { ok = false; }
     t.remove();
     return ok;

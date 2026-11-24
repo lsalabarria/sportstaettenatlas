@@ -28,3 +28,9 @@ repos:
         language: system
         types: [python]
         pass_filenames: false
+      - id: eslint
+        name: ESLint (alle Skripte der Webseite)
+        entry: npm run --silent lint
+        language: system
+        files: ^src/sportstaettenatlas/webseite/(app/.*\.js|app/__init__\.py|pruefe_js\.mjs)$
+        pass_filenames: false

@@ -16,7 +16,7 @@ function ansichtListe(bestand) {
     komplex: start.get("komplex") || "",  // "": alle, IN_KOMPLEX: in irgendeinem, sonst die ID
     stp: start.get("stp") || "",  // Stützpunkt: "", "*", "e:<Ebene>" oder die ID (stpPasst)
   };
-  let zeigen = LISTE_SCHRITT, gezeichnet = false;
+  let zeigen = LISTE_SCHRITT;
   const NACH_ID = new Map(bestand.eintraege.map(e => [e.p.id, e]));
   const betreiber = teilBetreiber(bestand, document.createElement("div"));
 
@@ -219,7 +219,6 @@ function ansichtListe(bestand) {
 
   // --- Zeichnen ---
   function zeichne() {
-    gezeichnet = true;
     const zaehlen = { staetten: staettenZeilen, anlagen: anlagenZeilen };
     const reiter = [["staetten", "Sportstätten"], ["anlagen", "Sportanlagen"], ["komplexe", "Sportkomplexe"],
       ["stuetzpunkte", "Stützpunkte"], ["betreiber", "Organisationen"]]

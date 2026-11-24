@@ -27,6 +27,13 @@ jobs:
           uv run ruff format --check
       - name: Typen (mypy)
         run: uv run mypy
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Skripte der Webseite (ESLint)
+        run: npm run lint
       - name: Chromium für die Browser-Tests
         run: uv run playwright install --with-deps chromium
       - run: uv run pytest
