@@ -6,8 +6,8 @@ import subprocess
 
 import pytest
 
-from sportstaettenatlas import web
-from sportstaettenatlas.seite import (
+from sportstaettenatlas.webseite import app as web
+from sportstaettenatlas.webseite.bauen import (
     lade_analysen,
     oeffentlich,
     schreibe_webseite,
@@ -167,7 +167,7 @@ def _datensatz(i, lon, lat, **mehr):
 
 
 def test_webseite_mit_bestand_gebieten_und_analyse(tmp_path):
-    from sportstaettenatlas import gebiete as gb
+    from sportstaettenatlas.bestand import gebiete as gb
 
     gebiete = _gebiete()
     ars_von = gb.Zuordnung(gebiete["gemeinde"]).ars
@@ -286,7 +286,7 @@ def test_von_hand_gepflegt(tmp_path):
 
 
 def test_betreiber_art():
-    from sportstaettenatlas.seite import betreiber_art
+    from sportstaettenatlas.webseite.bauen import betreiber_art
 
     assert betreiber_art("TuS Koblenz 1911 e.V.", "Sportverein im LSB RLP") == "Verein"
     assert betreiber_art("Ortsgemeinde Musterdorf", "Stadt/Gemeinde") == "Kommune"
@@ -296,7 +296,7 @@ def test_betreiber_art():
 
 
 def test_bestand_geojson_mit_anlagen():
-    from sportstaettenatlas.seite import bestand_geojson
+    from sportstaettenatlas.webseite.bauen import bestand_geojson
 
     d = {
         "id": "abc",
@@ -316,3 +316,12 @@ def test_bestand_geojson_mit_anlagen():
     ]
     assert fc["anlagentypen"]["Rundlaufbahn"] == "leichtathletik"
     assert ["bad", "Bäder"] in fc["anlagengruppen"]
+
+
+def test_vorschlag_aus_teilen():
+    """app/vorschlag.js wird aus app/vorschlag/*.js zusammengesetzt, der Reihe nach."""
+    teile = web.teile("vorschlag.js")
+    assert teile[0] == "00_hilfen.js" and teile[-1] == "99_links.js" and len(teile) > 5
+    ganz = web.datei("vorschlag.js")
+    assert "function ansichtVorschlag(bestand) {" in ganz and "function aendernLink(id)" in ganz
+    assert ganz.index("function ansichtVorschlag") < ganz.index("function aendernLink")

@@ -6,7 +6,7 @@ const PUNKT_FARBE = "#871D33";
 
 // ---------- Ansicht „Karte“: der Datenbestand -------------------------------------------
 // Art von Betreiber bzw. Eigentümer: aus der Angabe bei der Sportstätte oder dem Verzeichnis der
-// Organisationen (seite.py, betreiber_art); ohne Art "unbekannt", ohne Namen "ohne Angabe"
+// Organisationen (webseite/bauen.py, betreiber_art); ohne Art "unbekannt", ohne Namen "ohne Angabe"
 const ARTEN = ["Verein", "Kommune", "sonstige", "unbekannt", "ohne Angabe"];
 const ART_MEHRZAHL = { Verein: "Vereine", Kommune: "Kommunen", unbekannt: "Art unbekannt" };
 function artText(a) { return ART_MEHRZAHL[a] || a; }
@@ -14,7 +14,7 @@ function artVon(p, rolle = "betreiber") {
   return p[rolle + "_art"] || (leer(p[rolle]) ? "ohne Angabe" : "unbekannt");
 }
 
-// Gruppen der Sportanlagen (aus anlagen.py, stehen in bestand.geojson)
+// Gruppen der Sportanlagen (aus modell/anlagen.py, stehen in bestand.geojson)
 let ANLAGEN_GRUPPEN = [], ANLAGEN_TYPEN = {};
 function anlagenGruppe(t) { return ANLAGEN_TYPEN[t] || "weitere"; }
 function gruppenText(g) { const x = ANLAGEN_GRUPPEN.find(y => y[0] === g); return x ? x[1] : g; }

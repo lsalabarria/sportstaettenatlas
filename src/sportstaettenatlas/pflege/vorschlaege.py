@@ -36,8 +36,7 @@ from collections.abc import Callable
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from . import werte
-from .bestand import (
+from ..bestand import (
     OHNE_KREIS,
     _laender,
     _lies_ordner,
@@ -60,7 +59,7 @@ from .bestand import (
     schreibe_stuetzpunkt,
     sportkomplexe_einordnen,
 )
-from .modell import Vorschlag, pruefe
+from ..modell import Vorschlag, pruefe, werte
 
 UEBERNOMMEN = "vorschlaege_uebernommen.txt"
 _NAMENSRAUM = uuid.UUID("5d0c7a52-6b8e-4c1f-9a3e-2f4b8c6d1e07")

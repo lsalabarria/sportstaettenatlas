@@ -37,8 +37,7 @@ import uuid
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from sportstaettenatlas import anlagen as anlagen_typen
-from sportstaettenatlas import atlas, modell
+from sportstaettenatlas import modell
 from sportstaettenatlas.bestand import (
     OHNE_KREIS,
     OUTSIDE,
@@ -53,8 +52,10 @@ from sportstaettenatlas.bestand import (
     schreibe_sportkomplexe,
     schreibe_stuetzpunkte,
 )
-from sportstaettenatlas.kommunen import _kern
-from sportstaettenatlas.vorschlaege import _NAMENSRAUM
+from sportstaettenatlas.modell import anlagen as anlagen_typen
+from sportstaettenatlas.pflege import atlas_export as atlas
+from sportstaettenatlas.pflege.kommunen import _kern
+from sportstaettenatlas.pflege.vorschlaege import _NAMENSRAUM
 
 csv.field_size_limit(10**9)
 
@@ -916,7 +917,7 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--probe", action="store_true", help="in einer Kopie von daten/, nur zählen")
     args = p.parse_args(argv)
 
-    from sportstaettenatlas import gebiete as gb
+    from sportstaettenatlas.bestand import gebiete as gb
     from sportstaettenatlas.hilfen import ERGEBNISSE
 
     kreis_von = kreis_ordner(gb.lade("rp"))

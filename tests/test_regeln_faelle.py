@@ -7,7 +7,7 @@ from pathlib import Path
 import pytest
 
 from sportstaettenatlas import modell
-from sportstaettenatlas.validate import abstand_m, aehnlich, norm_name, org_kern
+from sportstaettenatlas.bestand.pruefung import abstand_m, aehnlich, norm_name, org_kern
 
 FAELLE = json.loads((Path(__file__).parent / "regeln_faelle.json").read_text(encoding="utf-8"))
 

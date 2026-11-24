@@ -1,10 +1,10 @@
-"""Prüfungen aus validate.py – synthetische Daten."""
+"""Prüfungen aus bestand/pruefung.py – synthetische Daten."""
 
 import re
 from pathlib import Path
 
 from sportstaettenatlas.bestand import schreibe_bestand, schreibe_organisation
-from sportstaettenatlas.validate import PRUEFUNGEN, aehnlich, name_zu, ort_passt, pruefe
+from sportstaettenatlas.bestand.pruefung import PRUEFUNGEN, aehnlich, name_zu, ort_passt, pruefe
 
 
 def _quadrat(ars, name, w, s, o, n):
@@ -238,7 +238,7 @@ def test_pruefungen_heissen_wie_in_der_readme():
 
 
 def test_fast_gleiche_organisationen():
-    from sportstaettenatlas.validate import fast_gleiche_organisationen
+    from sportstaettenatlas.bestand.pruefung import fast_gleiche_organisationen
 
     orgs = [
         {"id": "a", "name": "SV Alsdorf e.V."},
@@ -273,7 +273,7 @@ def test_name_zu(tmp_path):
 
 
 def test_doppelungen_im_sportkomplex():
-    from sportstaettenatlas.validate import doppelungen
+    from sportstaettenatlas.bestand.pruefung import doppelungen
 
     def st(i, name, kategorie, komplex=None, lon=7.59380):
         d = {"id": i, "name": name, "kategorie": kategorie, "lage": {"lat": 50.3512, "lon": lon}}

@@ -1,4 +1,4 @@
-"""Datenmodell (modell.py): Regeln, Reihenfolge in den Dateien, Schema, Doku."""
+"""Datenmodell (modell/): Regeln, Reihenfolge in den Dateien, Schema, Doku."""
 
 import json
 import re
@@ -77,7 +77,7 @@ def test_lies_bestand_meldet_verstoesse_ohne_abbruch(tmp_path):
 
 
 def test_atlas_export_nutzt_nur_felder_des_modells():
-    from sportstaettenatlas import atlas
+    from sportstaettenatlas.pflege import atlas_export as atlas
 
     d = next(atlas.lies_export(_export(), lage_aus=lambda a, b: {"lon": b, "lat": a}))
     assert set(d) <= set(modell.Sportstaette.model_fields)
@@ -139,26 +139,39 @@ def test_vorschlag(daten, fehler):
     assert bool(modell.pruefe(modell.Vorschlag, daten)) is fehler
 
 
-def test_readme_block(tmp_path):
-    readme = tmp_path / "README.md"
-    readme.write_text("# Datenbestand\n\nText davor.\n", encoding="utf-8")
-    assert modell.aktualisiere_readme(readme)
-    text = readme.read_text("utf-8")
-    assert text.startswith("# Datenbestand\n\nText davor.")
+def test_datenmodell_md(tmp_path):
+    ziel = tmp_path / "erzeugt" / "datenmodell.md"
+    assert modell.aktualisiere_readme(ziel)
+    text = ziel.read_text("utf-8")
+    assert text.startswith("<!-- erzeugt aus src/sportstaettenatlas/modell/")
     assert "| `plz` | PLZ | Text |" in text and "datenmodell.svg" in text
-    assert not modell.aktualisiere_readme(readme)  # zweiter Lauf: nichts zu tun
-    readme.write_text(text.replace("| `plz` | PLZ", "| `plz` | Postleitzahl"), "utf-8")
-    assert modell.aktualisiere_readme(readme)  # Handänderung im Block wird ersetzt
-    assert readme.read_text("utf-8") == text
+    assert not modell.aktualisiere_readme(ziel)  # zweiter Lauf: nichts zu tun
+    ziel.write_text(text.replace("| `plz` | PLZ", "| `plz` | Postleitzahl"), "utf-8")
+    assert modell.aktualisiere_readme(ziel)  # Handänderung wird ersetzt
+    assert ziel.read_text("utf-8") == text
 
 
-def test_readme_im_repository_ist_aktuell():
-    """daten/README.md muss zum Modell passen: sonst `sportstaettenatlas modell` ausführen."""
-    pfad = Path(__file__).parents[1] / "daten" / "README.md"
+def test_alter_block_im_readme_wird_verweis(tmp_path):
+    readme = tmp_path / "README.md"
+    alt = (
+        "# Daten\n\nText.\n\n<!-- modell:anfang – erzeugt -->\nalt\n<!-- modell:ende -->\n\nNach.\n"
+    )
+    readme.write_text(alt, "utf-8")
+    assert modell.alten_block_ersetzen(readme)
+    text = readme.read_text("utf-8")
+    assert "modell:anfang" not in text and "erzeugt/datenmodell.md" in text
+    assert text.startswith("# Daten\n\nText.") and text.endswith("Nach.\n")
+    assert not modell.alten_block_ersetzen(readme)  # nur einmal
+
+
+def test_datenmodell_im_repository_ist_aktuell():
+    """daten/erzeugt/datenmodell.md muss zum Modell passen: sonst `sportstaettenatlas modell`."""
+    pfad = Path(__file__).parents[1] / "daten" / "erzeugt" / "datenmodell.md"
     if not pfad.exists():
-        pytest.skip("kein daten/README.md")
-    assert modell.readme_block() in pfad.read_text("utf-8"), (
-        "daten/README.md passt nicht zum Modell – `uv run sportstaettenatlas modell` ausführen"
+        pytest.skip("kein daten/erzeugt/datenmodell.md")
+    assert modell.readme_block() == pfad.read_text("utf-8"), (
+        "daten/erzeugt/datenmodell.md passt nicht zum Modell – "
+        "`uv run sportstaettenatlas modell` ausführen"
     )
 
 
@@ -186,7 +199,7 @@ def test_anzahl_je_wert():
 
 
 def test_merkmale_je_anlagentyp():
-    from sportstaettenatlas import anlagen
+    from sportstaettenatlas.modell import anlagen
 
     felder = set(modell.Sportanlage.model_fields)
     assert set(modell.MERKMALE_ALLE) <= felder
@@ -257,7 +270,7 @@ def test_migrieren(tmp_path):
 
 
 def test_art_von_eigentuemer_und_betreiber():
-    from sportstaettenatlas.seite import betreiber_art
+    from sportstaettenatlas.webseite.bauen import betreiber_art
 
     assert betreiber_art("Stadtwerke X GmbH", "Kommunales Unternehmen") == "Kommune"
     assert betreiber_art("TuS Musterdorf e.V.") is None  # ohne Art: unbekannt
@@ -266,7 +279,9 @@ def test_art_von_eigentuemer_und_betreiber():
 
 
 def test_kontaktdaten_an_einer_stelle():
-    from sportstaettenatlas import bestand, einlesen, seite
+    from sportstaettenatlas import bestand
+    from sportstaettenatlas.pflege import einlesen
+    from sportstaettenatlas.webseite import bauen as seite
 
     assert bestand.EMAIL.pattern == modell.EMAIL_MUSTER
     assert einlesen.KONTAKT.pattern == seite.KONTAKT.pattern == modell.KONTAKT_NAME
@@ -292,7 +307,7 @@ def test_auswahllisten_einmal():
 
 
 def test_bereinigen():
-    from sportstaettenatlas import werte
+    from sportstaettenatlas.modell import werte
 
     assert werte.hausnummer("6.0") == "6" and werte.hausnummer("12a") == "12a"
     assert werte.hausnummer("-") is None and werte.hausnummer("2.5") == "2.5"  # bleibt (Regel)

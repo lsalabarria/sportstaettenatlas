@@ -4,8 +4,8 @@ synthetische Daten."""
 import json
 
 from sportstaettenatlas.bestand import einordnen, lies_bestand, lies_sportkomplexe
-from sportstaettenatlas.seite import ohne_outside
-from sportstaettenatlas.validate import baujahr, pruefe
+from sportstaettenatlas.bestand.pruefung import baujahr, pruefe
+from sportstaettenatlas.webseite.bauen import ohne_outside
 
 DRIN = "11111111-1111-4111-8111-111111111111"
 DRAUSSEN = "22222222-2222-4222-8222-222222222222"

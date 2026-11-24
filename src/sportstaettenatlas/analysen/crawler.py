@@ -1,7 +1,7 @@
 """Webseiten für Vereine suchen, die noch keine haben – zum Prüfen, nicht direkt in die Daten.
 
-    uv run python -m sportstaettenatlas.crawler            # alle Vereine ohne Webseite
-    uv run python -m sportstaettenatlas.crawler --kreis 07111 --max 20   # Probelauf
+    uv run sportstaettenatlas crawler            # alle Vereine ohne Webseite
+    uv run sportstaettenatlas crawler --max 20   # Probelauf (zufällige Stichprobe)
 
 1. Vereine (Art „Verein“, z. B. „Sportverein im LSB RLP“) ohne `website` aus
    daten/organisationen/; Orte und Lagen ihrer Sportstätten (Eigentümer, Betreiber, Nutzer)
@@ -45,11 +45,11 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
-from . import modell
-from .bestand import ROLLEN, lies_organisationen, org_pfad
-from .hilfen import _ROH as KONTAKT_ROH
-from .hilfen import ERGEBNISSE, KONTAKT, USER_AGENT
-from .validate import abstand_m, aehnlich, norm_name, org_kern, ort_passt
+from .. import modell
+from ..bestand import ROLLEN, lies_organisationen, org_pfad
+from ..bestand.pruefung import abstand_m, aehnlich, norm_name, org_kern, ort_passt
+from ..hilfen import _ROH as KONTAKT_ROH
+from ..hilfen import ERGEBNISSE, KONTAKT, USER_AGENT
 
 ERGEBNIS = ERGEBNISSE / "vereinswebseiten.csv"
 CACHE = ERGEBNISSE / "cache" / "crawler"
@@ -603,11 +603,8 @@ def schreibe(treffer: list[Treffer], ziel: Path = ERGEBNIS) -> int:
     return len(zeilen)
 
 
-def main(argv: list[str] | None = None) -> int:
-    p = argparse.ArgumentParser(
-        prog="python -m sportstaettenatlas.crawler",
-        description="Webseiten für Vereine ohne Webseite suchen → results/vereinswebseiten.csv",
-    )
+def argumente(p: argparse.ArgumentParser) -> None:
+    """Optionen des Befehls `sportstaettenatlas crawler`."""
     p.add_argument("--daten", type=Path, default=Path("daten"))
     p.add_argument("--kreis", help="nur Vereine mit Sportstätte in diesem Kreis (z. B. 07111)")
     p.add_argument(
@@ -619,7 +616,9 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--ohne-raten", action="store_true", help="keine Domains raten")
     p.add_argument("--neu", action="store_true", help="OSM und Wikidata neu abfragen (Cache)")
     p.add_argument("--ziel", type=Path, default=ERGEBNIS)
-    a = p.parse_args(argv)
+
+
+def ausfuehren(a) -> int:
     if not KONTAKT:
         grund = "ungültig (nur ASCII-Zeichen)" if KONTAKT_ROH.strip() else "nicht gesetzt"
         print(
@@ -640,6 +639,15 @@ def main(argv: list[str] | None = None) -> int:
     print(zusammenfassung(treffer, len(vereine)))
     print(f"{a.ziel}: {n} Treffer zum Prüfen (ohne „weg“)")
     return 0
+
+
+def main(argv: list[str] | None = None) -> int:
+    p = argparse.ArgumentParser(
+        prog="sportstaettenatlas crawler",
+        description="Webseiten für Vereine ohne Webseite suchen → results/vereinswebseiten.csv",
+    )
+    argumente(p)
+    return ausfuehren(p.parse_args(argv))
 
 
 if __name__ == "__main__":

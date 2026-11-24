@@ -62,7 +62,7 @@ Optional:
 - **Chromium für Playwright**: Damit laufen die Browser-Tests (siehe [Tests](#tests)).
 - **Graphviz**: Damit wird das Diagramm des Datenmodells gezeichnet (siehe unten).
 
-Für das Diagramm des Datenmodells (`daten/datenmodell.svg`) zusätzlich Graphviz und erdantic:
+Für das Diagramm des Datenmodells (`daten/erzeugt/datenmodell.svg`) zusätzlich Graphviz und erdantic:
 
 ```bash
 sudo apt install graphviz graphviz-dev
@@ -81,51 +81,52 @@ Alle mit `uv run sportstaettenatlas …`; `--help` zeigt die Optionen.
 | `organisationen` | Stand des Verzeichnisses; `--gebiete` legt alle Landkreise, Städte, Verbands- und Ortsgemeinden an, `--aus-bestand` fehlende Eigentümer, Betreiber und Nutzer |
 | `einordnen` | Sportstätten und Sportkomplexe in den Ordner ihres Kreises, Organisationen in den ihrer Art verschieben |
 | `sportkomplex ID ID …` | Sportkomplex anlegen (`--name`) oder ergänzen (`--zu KOMPLEX`) und die Sportstätten zuordnen; `--entfernen` nimmt sie heraus (siehe [Sportkomplexe](daten/README.md#sportkomplexe)) |
-| `modell` | Feldtabellen in `daten/README.md` und Diagramm schreiben |
+| `modell` | Feldtabellen (`daten/erzeugt/datenmodell.md`) und Diagramm schreiben |
 | `migrieren` | Felder in allen Dateien von `daten/` umbenennen oder entfernen (`--umbenennen ALT=NEU`, `--entfernen FELD`, `--probe`); `--bereinigen` behebt Formfehler (Hausnummer `6.0` oder als Datum wie `Aug 14` → `8-14`, PLZ ohne führende Null, Ort als Dict-Text, Webseite ohne `https://`, Fläche einer Halle, die nur Länge × Breite ist) |
-| `pruefen` | Bestand prüfen, ohne die Webseite zu bauen (Liste in `daten/regelverstoesse.csv`) |
+| `pruefen` | Bestand prüfen, ohne die Webseite zu bauen (Liste in `daten/erzeugt/regelverstoesse.csv`) |
 | `seite` | Webseite nach `docs/` (`--vorschau`: lokal ansehen); prüft dabei mit |
 | `-v alkis` | ALKIS-Abgleich (siehe unten) |
+| `crawler` | Webseiten für Vereine ohne Webseite suchen (siehe unten) |
 
 Danach: `git add -A daten webseite && git commit -m "…" && git push` – die Webseite baut
 die GitHub Action (siehe „Auf GitHub einrichten“).
 
-**Webseiten für Vereine suchen:** `uv run python -m sportstaettenatlas.crawler` sucht für
+**Webseiten für Vereine suchen:** `uv run sportstaettenatlas crawler` sucht für
 Vereine ohne Webseite in OpenStreetMap und Wikidata und rät Domains (`tus-berg.de` …). Jede
 Webseite wird am Impressum geprüft (Name, Ort, Vereinsregister → Punkte); gespeichert wird
 davon nichts. Ergebnis: `results/vereinswebseiten.csv` zum Prüfen; passende Zeilen behalten,
-dann `bestand --modus ergaenzen`. Probelauf: `--kreis 07111 --max 20`. Beachtet robots.txt,
+dann `bestand --modus ergaenzen`. Probelauf: `--max 20` (zufällige, wiederholbare Stichprobe). Beachtet robots.txt,
 fragt je Webseite höchstens einmal pro Sekunde, fragt Verzeichnisse wie fussball.de nicht ab
 und lädt keine Seiten sozialer Netzwerke. Kontakt im User-Agent: `SPORTSTAETTENATLAS_KONTAKT`.
 
 ## Datenmodell im Code
 
-Das Modell steht an **einer** Stelle: `src/sportstaettenatlas/modell.py` (Pydantic) – Felder,
+Das Modell steht an **einer** Stelle: `src/sportstaettenatlas/modell/` (Pydantic) – Felder,
 Auswahllisten, Regeln, die Felder je Anlagentyp (`MERKMALE`) und die Zuordnungen ohne eigenes
 Feld (Organisationstypen, Muster für Kontaktdaten). Daraus folgt:
 
 - `bestand`, `seite` und `alkis` prüfen `daten/` beim Lesen. Ein Fehler im Aufbau bricht ab,
-  ein Wert gegen die Regeln nicht; er steht in `daten/regelverstoesse.csv`.
+  ein Wert gegen die Regeln nicht; er steht in `daten/erzeugt/regelverstoesse.csv`.
 - `seite` schreibt `docs/daten/schema.json`. Formular, Popup, Liste und Übersicht der Webseite
   nehmen Felder, Beschriftungen, Regeln und Zuordnungen von dort.
-- `modell` erzeugt den Teil „Datenmodell“ in `daten/README.md`; ein Test meldet, wenn er nicht
-  mehr passt. Die Tabellen hängen von der Pydantic-Version ab – also mit der aus `uv.lock`
+- `modell` erzeugt `daten/erzeugt/datenmodell.md` (alle Felder, Felder je Anlagentyp,
+  Auswahllisten) und das Diagramm daneben; ein Test meldet, wenn die Datei nicht mehr passt. Die Tabellen hängen von der Pydantic-Version ab – also mit der aus `uv.lock`
   erzeugen.
 
-Ein neues Feld ist eine Zeile in `modell.py`, danach `modell` und `seite`. Wird ein Feld
+Ein neues Feld ist eine Zeile in `modell/klassen.py`, danach `modell` und `seite`. Wird ein Feld
 umbenannt oder gestrichen, passt `migrieren` die Dateien an, z. B.
 `migrieren --umbenennen baukosten_eur=baukosten` oder `migrieren --entfernen quellen`.
 
 ## Prüfungen
 
-`seite` und `pruefen` schreiben alle Auffälligkeiten nach `daten/regelverstoesse.csv` (Datei,
+`seite` und `pruefen` schreiben alle Auffälligkeiten nach `daten/erzeugt/regelverstoesse.csv` (Datei,
 Name, Prüfung, Meldung, sortiert; Name einer Sportanlage: Typ, Bezeichnung und ihre Sportstätte); sie brechen nicht ab. Die Datei gehört ins Git: Wer nichts
 installiert hat, sieht sie auf GitHub als durchsuchbare Tabelle. Nach jedem Batch mit
 `pruefen` erneuern und mit committen – der Commit zeigt dann, welche Meldungen weg und welche
 neu sind. Die Spalte `pruefung` nennt eine der Prüfungen unten
 oder „Datenmodell“. Zu den Regeln des Datenmodells (Pflichtfelder, Formate,
 Auswahllisten, mindestens 4 Nachkommastellen bei Koordinaten, `braucht`, `teil_von`) prüft
-`src/sportstaettenatlas/validate.py`:
+`src/sportstaettenatlas/bestand/pruefung.py`:
 
 - **Organisation:** Betreiber, Eigentümer und Nutzer stehen im Verzeichnis der Organisationen.
 - **Art der Organisation:** `betreiber_typ`/`eigentuemer_typ` widerspricht nicht der Art im Verzeichnis.
@@ -207,7 +208,7 @@ man bestätigen, bevor der Vorschlag weitergeht.
 
 „Weiter zu LimeSurvey“ öffnet die Umfrage aus `konfig.js`. Sie hat zwei Fragen: `data`
 (versteckt) bekommt den ganzen Vorschlag als JSON nach dem Modell `Vorschlag` (Felder in
-[daten/README.md](daten/README.md#datenmodell)), `kommentar` die Anmerkung. Ändert sich das
+[daten/erzeugt/datenmodell.md](daten/erzeugt/datenmodell.md)), `kommentar` die Anmerkung. Ändert sich das
 Datenmodell, bleibt die Umfrage, wie sie ist. Die Umfrage zum Importieren:
 `sportstaette_vorschlagen.lss` (nicht im Repository, enthält die Adresse der Verwaltung).
 
@@ -262,7 +263,7 @@ alte Seite stehen. Von Hand starten: *Actions* → *Tests und Webseite* → *Run
 E-Mail-Adressen und Telefonnummern werden weder gespeichert noch veröffentlicht – im Bestand,
 im Verzeichnis der Organisationen, in Vorschlägen und im ALKIS-Abgleich. Felder und Spalten,
 die so heißen, werden nie gelesen, und jeder Wert mit einer E-Mail-Adresse entfällt (Muster
-`EMAIL_MUSTER` und `KONTAKT_NAME` in `modell.py`). Exporte und andere CSV-Dateien mit solchen
+`EMAIL_MUSTER` und `KONTAKT_NAME` in `modell/klassen.py`). Exporte und andere CSV-Dateien mit solchen
 Angaben gehören nicht ins Repository.
 
 ## ALKIS-Abgleich
@@ -317,22 +318,43 @@ Ein Bad besteht dort oft aus mehreren Gebäudeteilen, und auch private Becken he
 
 ## Code
 
+Vier Teile, jeder mit klarer Aufgabe. Ein Teil importiert nur aus den Teilen darüber;
+`tests/test_aufbau.py` meldet, wenn jemand das verletzt.
+
 ```
 src/sportstaettenatlas/
-  modell.py       Datenmodell (Pydantic): Felder, Regeln, Zuordnungen, Schema, Doku
-  cli.py          Befehle (siehe „Befehle“)
-  bestand.py      daten/ lesen, schreiben und zusammenführen; Kreis-Ordner; Organisationen
-  einlesen.py     CSV-Dateien lesen (Spalten über das Modell), Vorlagen
-  entfernen.py    Einträge entfernen (Tabelle art, id, begruendung), Protokoll daten/entfernt.csv
-  atlas.py        Export des bisherigen Atlas lesen
-  werte.py        Werte aus Text lesen (Zahlen, ja/nein, Listen), CSV-Dateien öffnen
-  anlagen.py      Typen und Gruppen der Sportanlagen
-  gebiete.py      Verwaltungsgebiete (VG250) und Zuordnung zur Gemeinde
-  seite.py        Webseite nach docs/ schreiben, Analysen in webseite/ ablegen
-  hilfen.py       Arbeitsordner, User-Agent
-  web/            die Webseite (Dateien im Kopf von web/__init__.py)
-  analysen/alkis/ ALKIS-Abgleich (Aufbau im Kopf von __init__.py)
+  hilfen.py          Ordner, User-Agent – für alle
+  modell/            Daten: das Datenmodell (importiert nichts aus den anderen Teilen)
+    klassen.py         Modelle, Auswahllisten, Regeln, Grenzwerte der Prüfungen
+    anlagen.py         Typen und Gruppen der Sportanlagen
+    werte.py           Werte aus Text lesen und bereinigen
+    export.py          schema.json für die Webseite
+    doku.py            daten/erzeugt/datenmodell.md und Diagramm (Befehl `modell`)
+  bestand/           Daten: daten/ lesen, schreiben, prüfen (Befehle `pruefen`, `einordnen`,
+                     `sportkomplex`)
+    ablage.py          Ordner, Dateien, Organisationen, Sportkomplexe, Stützpunkte
+    pruefung.py        Prüfungen über das Modell hinaus → daten/erzeugt/regelverstoesse.csv
+    gebiete.py         Verwaltungsgebiete (VG250) und Zuordnung zur Gemeinde
+  pflege/            Befüllung und Integration – verändert daten/ (Befehle `bestand`,
+                     `organisationen`, `vorschlaege`, `vorlage`, `migrieren`)
+    einlesen.py        CSV-Dateien lesen (Spalten über das Modell), Vorlagen
+    entfernen.py       Einträge entfernen (Tabelle art, id, begruendung)
+    vorschlaege.py     Vorschläge aus dem Formular übernehmen
+    kommunen.py        Gebietskörperschaften als Organisationen
+    atlas_export.py    Export des bisherigen Atlas lesen
+  analysen/          Auswertungen – lesen daten/ nur (Befehle `alkis`, `crawler`)
+    alkis/             ALKIS-Abgleich (Aufbau im Kopf von __init__.py)
+    crawler.py         Webseiten für Vereine suchen
+  webseite/          Darstellung (Befehl `seite`)
+    bauen.py           docs/ schreiben, Analysen in webseite/ ablegen
+    app/               die Seite: HTML, JavaScript, Stil, Schrift, Vorlagen; das Formular
+                       liegt in Teilen in app/vorschlag/ (siehe app/__init__.py)
+  cli.py             verteilt auf die Befehle der Teile (jeder Teil hat seine cli.py)
 ```
+
+Erzeugte Dateien, die ins Git gehören, liegen in `daten/erzeugt/`
+(`regelverstoesse.csv`, `datenmodell.md`, `datenmodell.svg`); der Rest von `daten/` ist der
+Bestand und von Hand geschriebener Text.
 
 ## Tests
 
@@ -356,7 +378,7 @@ uv run pytest tests/test_web.py           # nur die Browser-Tests (gut 30 Sekund
 Manche Regeln rechnen Python und das Formular je für sich: die Regeln zwischen Feldern
 (`braucht`, `nachkommastellen`, `teil_von`) und die Hilfen für Doppelungen (Namen
 normalisieren, Ähnlichkeit, Abstand, Name ohne Rechtsform). Grenzwerte und Meldungen stehen
-nur in `modell.py` (`PRUEFUNG`, `MELDUNGEN`) und kommen über `schema.json` ins Formular.
+nur in `modell/klassen.py` (`PRUEFUNG`, `MELDUNGEN`) und kommen über `schema.json` ins Formular.
 `tests/regeln_faelle.json` enthält Testfälle, die beide Seiten prüfen
 (`test_regeln_faelle.py` und `test_web.py`); wer eine dieser Regeln ändert, ergänzt dort
 einen Fall.

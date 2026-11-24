@@ -4,8 +4,8 @@ import json
 
 import pytest
 
-from sportstaettenatlas.atlas import lies_export
 from sportstaettenatlas.bestand import einordnen, lies_bestand, schreibe_bestand
+from sportstaettenatlas.pflege.atlas_export import lies_export
 
 KOPF = (
     "ID,Name,Straße,Hausnummer,PLZ,Stadt,Sportstättenkategorie,Schulsport,"
@@ -158,7 +158,7 @@ def test_kreis_ordner():
 
 
 def test_anlagentypen():
-    from sportstaettenatlas import anlagen
+    from sportstaettenatlas.modell import anlagen
 
     assert anlagen.typ(" Nichtnormiertes  Spielfeld") == "Nicht normiertes Spielfeld"
     assert anlagen.typ("Dreifach-Sporthalle (Größe V)") == "Dreifachsporthalle"
@@ -174,7 +174,7 @@ def test_anlagentypen():
 
 def test_aendern_mit_id_und_einzelnen_feldern(tmp_path):
     """Eine Zeile mit der ID (auch der Kurz-ID) und nur den Feldern, die sich ändern."""
-    from sportstaettenatlas.einlesen import lies_csv
+    from sportstaettenatlas.pflege.einlesen import lies_csv
 
     sid = "11111111-1111-4111-8111-111111111111"
     staette = {

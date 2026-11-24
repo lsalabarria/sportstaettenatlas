@@ -14,7 +14,7 @@ from sportstaettenatlas.bestand import (
     lies_stuetzpunkte,
     schreibe_bestand,
 )
-from sportstaettenatlas.vorschlaege import lies_export
+from sportstaettenatlas.pflege.vorschlaege import lies_export
 
 _spec = importlib.util.spec_from_file_location(
     "altsystem", Path(__file__).parents[1] / "skripte" / "altsystem.py"

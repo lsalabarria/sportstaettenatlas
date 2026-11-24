@@ -121,7 +121,7 @@ def _hole_ebene(session, url: str, typ: str, land: str, seite: int = 1000):
 
 def lade(land: str) -> dict[str, dict]:
     """Ebenen als {ebene: GeoJSON}; einmal vom BKG geladen, danach aus dem Cache."""
-    from .hilfen import ERGEBNISSE, USER_AGENT
+    from ..hilfen import ERGEBNISSE, USER_AGENT
 
     cache = ERGEBNISSE / "cache" / f"gebiete_{land}.json"
     if cache.exists():

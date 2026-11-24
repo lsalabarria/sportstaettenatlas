@@ -12,8 +12,8 @@ from sportstaettenatlas.bestand import (
     schreibe_stuetzpunkt,
     schreibe_stuetzpunkte,
 )
-from sportstaettenatlas.einlesen import lies_csv
-from sportstaettenatlas.validate import pruefe, stuetzpunkte
+from sportstaettenatlas.bestand.pruefung import pruefe, stuetzpunkte
+from sportstaettenatlas.pflege.einlesen import lies_csv
 
 S1, S2, S3 = (f"{i * 8}-2222-4222-8222-222222222222" for i in "123")
 K1 = "aaaaaaaa-0000-4000-8000-000000000001"

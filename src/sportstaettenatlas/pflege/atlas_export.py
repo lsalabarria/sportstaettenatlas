@@ -11,8 +11,8 @@ import re
 from collections.abc import Iterator
 from pathlib import Path
 
-from . import anlagen as anlagen_typen
-from . import werte
+from ..modell import anlagen as anlagen_typen
+from ..modell import werte
 
 PFLICHT = {"ID", "Name", "Sportstättenkategorie", "Latitude", "Longitude"}
 

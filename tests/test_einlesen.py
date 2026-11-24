@@ -2,8 +2,9 @@
 
 import json
 
-from sportstaettenatlas import einlesen, modell
+from sportstaettenatlas import modell
 from sportstaettenatlas.bestand import lies_bestand, schreibe_bestand
+from sportstaettenatlas.pflege import einlesen
 
 
 def _fake(a, b):  # Ersatz für pyproj
@@ -154,7 +155,7 @@ def test_vorlage_laesst_sich_einlesen(tmp_path):
     d, b = einlesen.lies_csv(stuetzpunkte)
     assert b.art == "stuetzpunkte" and b.ignoriert == [] and not b.nicht_lesbar
     assert modell.pruefe(modell.Stuetzpunkt, d[0]) == []
-    from sportstaettenatlas import entfernen
+    from sportstaettenatlas.pflege import entfernen
 
     [z] = entfernen.lies(entf)
     assert (z["art"], z["id"]) == ("Sportstätte", "5e6f7a8b") and z["begruendung"]
@@ -166,7 +167,7 @@ def test_organisationen(tmp_path):
         organisationen_aus_bestand,
         schreibe_organisationen,
     )
-    from sportstaettenatlas.seite import bestand_geojson
+    from sportstaettenatlas.webseite.bauen import bestand_geojson
 
     ziel = tmp_path / "daten"
     platz = {
@@ -211,7 +212,7 @@ def test_organisationen(tmp_path):
 
 
 def test_trennzeichen_aus_der_kopfzeile():
-    from sportstaettenatlas.werte import trenner as _trenner
+    from sportstaettenatlas.modell.werte import trenner as _trenner
 
     assert _trenner('id;name;"Art, Typ"\n1;"a, b; c";x\n') == ";"
     assert _trenner('ID,Name,"Öffentlicher Zugang"\n1,"x; y",z\n') == ","

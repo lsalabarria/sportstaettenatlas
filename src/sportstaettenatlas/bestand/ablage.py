@@ -5,7 +5,7 @@
     daten/RP/07111-koblenz/sportkomplexe/<id>.json je Sportkomplex eine Datei (nur wo es welche gibt)
     daten/organisationen/RP/<art>/<id>.json        je Organisation eine Datei, Ordner = Art
 
-Felder, ihre Reihenfolge in den Dateien und die Regeln kommen aus modell.py. Werte mit einer
+Felder, ihre Reihenfolge in den Dateien und die Regeln kommen aus modell/. Werte mit einer
 E-Mail-Adresse entfallen beim Schreiben (`bereinigen`).
 """
 
@@ -20,8 +20,7 @@ from collections.abc import Callable, Iterator
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from . import werte
-from .modell import (
+from ..modell import (
     EMAIL_MUSTER,
     KONTAKT_NAME,
     Organisation,
@@ -31,6 +30,7 @@ from .modell import (
     Stuetzpunkt,
     ordne,
     pruefe,
+    werte,
 )
 
 EMAIL = re.compile(EMAIL_MUSTER)  # Werte mit E-Mail-Adresse
@@ -144,7 +144,7 @@ class Ergebnis:
     anlagen_geaendert: int = 0
     zugeordnet: int = 0  # Sportstätten, die einem Sportkomplex zugeordnet wurden
     entfernt: Counter = field(default_factory=Counter)
-    regelverstoesse: Counter = field(default_factory=Counter)  # Feld → Anzahl (modell.py)
+    regelverstoesse: Counter = field(default_factory=Counter)  # Feld → Anzahl (modell/)
 
 
 MODI = ("neu", "ergaenzen", "aktualisieren")
@@ -362,7 +362,7 @@ def lies_bestand(ordner: Path, verstoesse: list | None = None) -> Iterator[dict]
     Prüft den Aufbau: Jeder Ordner hat seine <id>_meta.json; eine Anlage gehört zur
     Sportstätte ihres Ordners (ohne eigenes Feld dafür), Dateiname = id, typ ist gesetzt.
     Ein Fehler im Aufbau bricht ab (ValueError). Verstöße gegen die Regeln des Modells
-    (modell.py, z. B. PLZ mit sechs Ziffern) brechen nicht ab, sondern landen als
+    (modell/, z. B. PLZ mit sechs Ziffern) brechen nicht ab, sondern landen als
     (Datei, Meldung) in `verstoesse`; unter outside/ zählt nicht, dass die Lage außerhalb
     von Rheinland-Pfalz liegt. Im Ergebnis stehen zusätzlich "_ordner" (Kreis-Ordner) und
     "_land" (RP, outside …).

@@ -12,7 +12,7 @@ _transfer/
 # … außer dem Protokoll der Entfernungen (nur Sachliches, öffentlich)
 !daten/entfernt.csv
 # … und der Liste der Regelverstöße (für alle ohne Installation sichtbar)
-!daten/regelverstoesse.csv
+!daten/erzeugt/regelverstoesse.csv
 *.xlsx
 *.xls
 *.gpkg

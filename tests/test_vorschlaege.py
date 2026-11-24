@@ -9,7 +9,7 @@ from sportstaettenatlas.bestand import (
     schreibe_bestand,
     schreibe_organisation,
 )
-from sportstaettenatlas.vorschlaege import UEBERNOMMEN, lies_export, uebernimm
+from sportstaettenatlas.pflege.vorschlaege import UEBERNOMMEN, lies_export, uebernimm
 
 SID = "11111111-1111-4111-8111-111111111111"
 A1 = "aaaaaaaa-1111-4111-8111-111111111111"

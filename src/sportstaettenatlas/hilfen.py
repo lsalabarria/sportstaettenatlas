@@ -1,4 +1,5 @@
-"""Kleine Hilfen: Arbeitsordner, User-Agent, Datum als Text."""
+"""Kleine Hilfen für alle Teile: Ordner, User-Agent, Datum als Text. Importiert nichts aus
+dem Paket."""
 
 from __future__ import annotations
 
@@ -8,6 +9,13 @@ from pathlib import Path
 # Arbeitsordner, nicht im Git: raw/ (Downloads), cache/, out/ (Ergebnisse der Analysen).
 # Nicht zu verwechseln mit daten/, dem gepflegten Datenbestand.
 ERGEBNISSE = Path("results")
+
+# Ordner im Repository (Befehle laufen im Wurzelordner)
+LAND = "rp"
+DATEN = Path("daten")  # der gepflegte Datenbestand, im Git
+DOCS = Path("docs")  # erzeugt, nicht im Git (baut die GitHub Action)
+WEBSEITE = Path("webseite")  # von Hand gepflegte Dateien und Analyse-Ergebnisse, im Git
+TITEL = "Sportstättenatlas Rheinland-Pfalz"
 
 # Kontakt im User-Agent für Abfragen bei BKG und LVermGeo (freiwillig):
 #   export SPORTSTAETTENATLAS_KONTAKT="name@example.org"

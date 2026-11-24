@@ -3,8 +3,8 @@
 import csv
 import json
 
-from sportstaettenatlas import crawler
-from sportstaettenatlas.crawler import Abrufer, Verein, domain_kandidaten, kennwoerter
+from sportstaettenatlas.analysen import crawler
+from sportstaettenatlas.analysen.crawler import Abrufer, Verein, domain_kandidaten, kennwoerter
 
 S1 = "11111111-1111-4111-8111-111111111111"
 

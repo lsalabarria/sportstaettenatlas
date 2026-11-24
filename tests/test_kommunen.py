@@ -8,7 +8,7 @@ from sportstaettenatlas.bestand import (
     organisationen_einordnen,
     schreibe_organisation,
 )
-from sportstaettenatlas.kommunen import aus_gebieten, lege_an
+from sportstaettenatlas.pflege.kommunen import aus_gebieten, lege_an
 
 
 def _fc(*eintraege):

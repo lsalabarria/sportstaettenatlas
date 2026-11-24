@@ -19,15 +19,15 @@ from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from .bestand import (
+from ..bestand import (
     lies_organisationen,
     org_dateien,
     org_schluessel,
     organisation_id,
     schreibe_organisation,
 )
-from .gebiete import schluessel
-from .modell import ORGANISATIONSTYPEN
+from ..bestand.gebiete import schluessel
+from ..modell import ORGANISATIONSTYPEN
 
 # Wörter, die beim Vergleich vorhandener Namen nicht zählen, und welche Art sie nahelegen
 _ZUSATZ = {

@@ -19,8 +19,9 @@ import pytest
 
 sync_api = pytest.importorskip("playwright.sync_api")
 
-from sportstaettenatlas import gebiete as gb
-from sportstaettenatlas import modell, seite
+from sportstaettenatlas import modell
+from sportstaettenatlas.bestand import gebiete as gb
+from sportstaettenatlas.webseite import bauen as seite
 
 WURZEL = Path(__file__).resolve().parents[1]
 UMFRAGE = "https://umfrage.example/index.php/1"

@@ -4,8 +4,8 @@ import argparse
 import csv
 import json
 
-from sportstaettenatlas import cli, entfernen
 from sportstaettenatlas.bestand import lies_bestand, lies_organisationen, lies_stuetzpunkte
+from sportstaettenatlas.pflege import cli, entfernen
 
 S1 = "11111111-1111-4111-8111-111111111111"  # Sportplatz, behält
 S2 = "22222222-2222-4222-8222-222222222222"  # Doppelung von S1

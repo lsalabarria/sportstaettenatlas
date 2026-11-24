@@ -1,4 +1,4 @@
-"""Werte aus Text lesen – gemeinsam für den Atlas-Export (atlas.py) und andere CSV (einlesen.py).
+"""Werte aus Text lesen – gemeinsam für den Atlas-Export (pflege/atlas_export.py) und andere CSV (einlesen.py).
 
 Die Regeln für Zellen (Zahlen, ja/nein, Listen) beschreibt daten/README.md („CSV einlesen“).
 Jede Funktion wirft ValueError, wenn der Text nicht passt; `oder_none` macht daraus None.
@@ -193,7 +193,7 @@ def website(t: str) -> str | None:
 def flaeche_berechnet(d: dict) -> bool:
     """Sportanlage, deren `flaeche` nur Länge × Breite ist (auf 1 % genau) und nicht zu ihrem
     Typ gehört: im Altsystem bei Hallen so berechnet – ohne neue Angabe."""
-    from .modell import fuer_von
+    from .klassen import fuer_von
 
     f, lg, br = d.get("flaeche"), d.get("laenge"), d.get("breite")
     if not d.get("typ") or not all(isinstance(x, (int, float)) for x in (f, lg, br)):

@@ -1,7 +1,7 @@
 """Statische Webseite für GitHub Pages bauen (Ordner docs/).
 
-    docs/index.html                     Seite (Gerüst aus web/index.html)
-    docs/app/                           Stil und Skripte (aus web/, bei jedem Lauf neu)
+    docs/index.html                     Seite (Gerüst aus webseite/app/index.html)
+    docs/app/                           Stil und Skripte (aus webseite/app/, bei jedem Lauf neu)
     docs/konfig.js                      Einstellungen; wie Impressum und Datenschutz von Hand
     docs/impressum.html, datenschutz.html   gepflegt in webseite/ und von dort kopiert
     docs/daten/index.html               Download-Seite
@@ -32,9 +32,10 @@ from collections import Counter
 from collections.abc import Callable
 from pathlib import Path
 
-from . import anlagen as anlagen_typen
-from . import modell, web
-from .bestand import EMAIL, KONTAKT, OUTSIDE, adresse_text
+from .. import modell
+from ..bestand import EMAIL, KONTAKT, OUTSIDE, adresse_text
+from ..modell import anlagen as anlagen_typen
+from . import app as web
 
 LEAFLET_DATEIEN = (
     "leaflet.js",
@@ -98,7 +99,7 @@ def bestand_geojson(datensaetze, praezision: int = 5, organisationen=None) -> di
     Gruppen der Anlagentypen für den Filter (`anlagengruppen`, `anlagentypen`).
     Steht ein Eigentümer oder Betreiber im Verzeichnis der Organisationen, gilt dessen Art,
     wenn bei der Sportstätte keine angegeben ist."""
-    from .bestand import org_schluessel, org_verzeichnis
+    from ..bestand import org_schluessel, org_verzeichnis
 
     verzeichnis = org_verzeichnis(organisationen or [])
     features = []
@@ -334,7 +335,7 @@ def schreibe_webseite(
               nach `ausgabe` kopiert. Fehlt eine dort, wird sie aus `ausgabe` übernommen oder
               aus der Vorlage angelegt. Ohne Ordner: in `ausgabe` nur beim ersten Mal angelegt.
     """
-    from . import gebiete as gb
+    from ..bestand import gebiete as gb
 
     # Lage in keiner Gemeinde des Landes (falsche Koordinate oder eigentlich outside): nicht
     # auf die Karte; validate meldet sie als Regelverstoß

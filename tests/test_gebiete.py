@@ -2,7 +2,7 @@
 
 import pytest
 
-from sportstaettenatlas.gebiete import Zuordnung, index, land, punkt_in, schluessel
+from sportstaettenatlas.bestand.gebiete import Zuordnung, index, land, punkt_in, schluessel
 
 
 def _quadrat(w, s, groesse=1.0, loch=None):

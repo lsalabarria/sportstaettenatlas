@@ -22,17 +22,11 @@ Regeln zwischen Feldern (prüft Basis, das Formular ebenso):
 
 from __future__ import annotations
 
-import inspect
-import json
 from datetime import date
 from enum import Enum
-from pathlib import Path
 from typing import Annotated, Literal, get_args
 
 from pydantic import BaseModel, ConfigDict, Field, ValidationError, model_validator
-from pydantic.json_schema import models_json_schema
-
-from . import anlagen
 
 # --- Auswahllisten ----------------------------------------------------------------------
 
@@ -243,7 +237,7 @@ EMAIL_MUSTER = r"[\w.+-]+@[\w-]+(\.[\w-]+)+"
 KONTAKT_NAME = r"e-?mail|telefon|telefax|(^|[^a-z])fax([^a-z]|$)|handy|mobilnummer|mobiltelefon|kontakt|ansprechpartner"
 UUID_MUSTER = r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
 
-# Grenzen und Muster der Prüfungen auf Doppelungen. Sie gelten in validate.py und im Formular
+# Grenzen und Muster der Prüfungen auf Doppelungen. Sie gelten in bestand/pruefung.py und im Formular
 # (schema.json → atlas.pruefung); tests/regeln_faelle.json prüft, dass beide gleich rechnen.
 PRUEFUNG = {
     "aehnlich": 0.8,  # Namen mindestens so ähnlich (Dice-Koeffizient der Buchstabenpaare) …
@@ -628,7 +622,7 @@ class Sportanlage(Basis):
     # Sportanlage
     typ: str = _general(
         "Typ",
-        "einheitlicher Typ aus src/sportstaettenatlas/anlagen.py, z. B. „Großspielfeld“",
+        "einheitlicher Typ aus src/sportstaettenatlas/modell/anlagen.py, z. B. „Großspielfeld“",
         pflicht=True,
         min_length=1,
         max_length=100,
@@ -1391,256 +1385,3 @@ def pruefe(modell: type[BaseModel], daten: dict) -> list[str]:
             out.append(f"{feld}: {text}")
         return out
     return []
-
-
-def _auswahl_einsetzen(knoten, auswahl: dict):
-    """Verweise auf Auswahllisten ($ref auf ein Enum) durch die Liste selbst ersetzen."""
-    if isinstance(knoten, list):
-        return [_auswahl_einsetzen(x, auswahl) for x in knoten]
-    if not isinstance(knoten, dict):
-        return knoten
-    out = {k: _auswahl_einsetzen(v, auswahl) for k, v in knoten.items()}
-    ziel = out.get("$ref", "").rsplit("/", 1)[-1]
-    if ziel in auswahl:
-        del out["$ref"]
-        out = {**{k: v for k, v in auswahl[ziel].items() if k != "title"}, **out}
-    return out
-
-
-def schema() -> dict:
-    """JSON Schema aller Modelle (unter $defs) – für die Webseite (docs/daten/schema.json).
-    Auswahllisten stehen dort direkt am Feld (enum), nicht als eigene Definition."""
-    _, s = models_json_schema([(m, "validation") for m in MODELLE], title="Sportstättenatlas")
-    auswahl = {k: v for k, v in s["$defs"].items() if "enum" in v}
-    s["$defs"] = {
-        k: _auswahl_einsetzen(v, auswahl) for k, v in s["$defs"].items() if k not in auswahl
-    }
-    # Pydantic lässt den Titel bei Verweisen weg (z. B. lage → Lage); die Webseite braucht ihn
-    for m in MODELLE:
-        for name, feld in m.model_fields.items():
-            s["$defs"][m.__name__]["properties"][name].setdefault("title", feld.title)
-    for name, p in s["$defs"]["Sportanlage"]["properties"].items():
-        if fuer := fuer_von(name):
-            p["fuer"] = fuer
-    # Zuordnungen und Regeln, die nicht an einem Feld hängen (für die Webseite)
-    s["atlas"] = {
-        "organisationstypen": ORGANISATIONSTYPEN,
-        "email": EMAIL_MUSTER,
-        "pruefung": PRUEFUNG,
-        "meldungen": MELDUNGEN,
-    }
-    s["description"] = "Datenmodell des Sportstättenatlas (aus src/sportstaettenatlas/modell.py)"
-    return s
-
-
-# --- Dokumentation: daten/README.md und Diagramm ---------------------------------------
-
-ANFANG = (
-    "<!-- modell:anfang – erzeugt aus src/sportstaettenatlas/modell.py, nicht von Hand ändern -->"
-)
-ENDE = "<!-- modell:ende -->"
-
-
-def _ref(t: dict) -> str:
-    return t.get("$ref", "").rsplit("/", 1)[-1]
-
-
-def _auswahl_namen() -> set[str]:
-    return {a.__name__ for a in AUSWAHL}
-
-
-def _typ_text(p: dict) -> str:
-    teile = p.get("anyOf") or [p]
-    texte = []
-    for t in teile:
-        if t.get("type") == "null":
-            continue
-        if _ref(t) in _auswahl_namen():
-            texte.append(f"Auswahl [{_ref(t)}](#auswahllisten)")
-        elif "$ref" in t:
-            texte.append(_ref(t))
-        elif "enum" in t or "const" in t:
-            texte.append("Auswahl")
-        elif t.get("type") == "array":
-            innen = t.get("items", {})
-            texte.append(
-                f"Liste von {innen['$ref'].rsplit('/', 1)[-1]}"
-                if "$ref" in innen
-                else "Liste von Text"
-            )
-        else:
-            texte.append(
-                {
-                    "object": "Anzahl je Wert" if "propertyNames" in t else "Objekt",
-                    "string": "Text",
-                    "integer": "ganze Zahl",
-                    "number": "Zahl",
-                }.get(t.get("type"), str(t.get("type", "")))
-            )
-    return " oder ".join(texte)
-
-
-def _regeln_text(p: dict) -> str:
-    teile = p.get("anyOf") or [p]
-    out = []
-    for t in teile:
-        if "enum" in t:
-            out.append(", ".join(f"„{w}“" for w in t["enum"]))
-        if "const" in t:
-            out.append(f"„{t['const']}“")
-        if "minimum" in t:
-            out.append(f"≥ {t['minimum']:g}")
-        if "maximum" in t:
-            out.append(f"≤ {t['maximum']:g}")
-        if "pattern" in t:
-            out.append(f"Muster `{t['pattern']}`")
-        if "maxLength" in t:
-            out.append(f"höchstens {t['maxLength']} Zeichen")
-        if t.get("minLength") == 1:
-            out.append("nicht leer")
-        if "propertyNames" in t:
-            out.append(f"Anzahl je [{_ref(t['propertyNames'])}](#auswahllisten)")
-    for k, text in (
-        ("braucht", "braucht `{}`"),
-        ("teil_von", "Teil von `{}`"),
-        ("einheit", "in {}"),
-        ("einheit_aus", "Einheit aus `{}`"),
-        ("nachkommastellen", "mindestens {} Nachkommastellen"),
-    ):
-        if p.get(k):
-            out.append(text.format(p[k]))
-    if p.get("fuer"):
-        out.append("nur für bestimmte Typen ([Felder je Anlagentyp](#felder-je-anlagentyp))")
-    return "; ".join(out)
-
-
-def fuer_text(typen: list[str]) -> str:
-    """Typen kurz: ganze Gruppen aus anlagen.GRUPPEN mit ihrem Namen, der Rest einzeln."""
-    rest, teile = list(typen), []
-    for text, gruppe in anlagen.GRUPPEN.values():
-        if len(gruppe) > 1 and all(t in rest for t in gruppe):
-            teile.append(text)
-            rest = [t for t in rest if t not in gruppe]
-    return ", ".join(teile + rest)
-
-
-def felder_tabelle(modell: type[BaseModel]) -> str:
-    s = modell.model_json_schema()
-    if modell is Sportanlage:
-        for name, p in s["properties"].items():
-            if fuer := fuer_von(name):
-                p["fuer"] = fuer
-    pflicht = set(s.get("required", []))
-    zeilen = [
-        "| Feld | Bezeichnung | Typ | Pflicht | Regeln | Beschreibung |",
-        "|---|---|---|---|---|---|",
-    ]
-    for name, p in s["properties"].items():
-        zeilen.append(
-            f"| `{name}` | {modell.model_fields[name].title or ''} | {_typ_text(p)} | "
-            f"{'ja' if name in pflicht else ''} | {_regeln_text(p)} | "
-            f"{(p.get('description') or '').replace('|', '/')} |"
-        )
-    return "\n".join(zeilen)
-
-
-def readme_block() -> str:
-    """Teil von daten/README.md, der aus dem Modell erzeugt wird."""
-    teile = [ANFANG, "", "![Datenmodell](datenmodell.svg)", ""]
-    for modell, ueberschrift in (
-        (Sportstaette, "Sportstätte (`<id>_meta.json`)"),
-        (Adresse, "Adresse"),
-        (Lage, "Lage"),
-        (Energietraeger, "Energieträger"),
-        (Verbrauch, "Jahresverbrauch"),
-        (Sanierung, "Sanierung"),
-        (Foerderung, "Förderung"),
-        (Sportanlage, "Sportanlage (`<anlage-id>.json`)"),
-        (Sportkomplex, "Sportkomplex (`<Kreis>/sportkomplexe/<id>.json`)"),
-        (Stuetzpunkt, "Stützpunkt (`stuetzpunkte/<id>.json`)"),
-        (Organisation, "Organisation (`organisationen/<LAND>/<Art>/<id>.json`)"),
-        (Vorschlag, "Vorschlag (Formular → LimeSurvey, Frage `data`)"),
-        (NeueSportstaette, "Neue Sportstätte im Vorschlag"),
-    ):
-        teile += [f"### {ueberschrift}", ""]
-        if modell.__doc__:
-            teile += [inspect.cleandoc(modell.__doc__), ""]  # ohne Einrückung: sonst Code-Block
-        teile += [felder_tabelle(modell), ""]
-        beispiele = (modell.model_config.get("json_schema_extra") or {}).get("examples")
-        if beispiele:
-            teile += ["```json", json.dumps(beispiele[0], ensure_ascii=False, indent=2), "```", ""]
-    titel = {k: f.title for k, f in Sportanlage.model_fields.items()}
-    teile += [
-        "### Felder je Anlagentyp",
-        "",
-        "Felder, die nicht hier stehen, gelten für alle Typen.",
-        "",
-    ]
-    teile += ["| Anlagentypen | Felder |", "|---|---|"]
-    for typen, felder in MERKMALE:
-        teile.append(f"| {fuer_text(list(typen))} | {', '.join(titel[f] for f in felder)} |")
-    teile += ["", "### Auswahllisten", "", "| Liste | Werte |", "|---|---|"]
-    for a in AUSWAHL:
-        teile.append(f"| {a.__name__} | " + ", ".join(f"„{w.value}“" for w in a) + " |")
-    teile += [""]
-    teile.append(ENDE)
-    return "\n".join(teile)
-
-
-def aktualisiere_readme(pfad: Path) -> bool:
-    """Ersetzt den erzeugten Teil in daten/README.md. Liefert True, wenn sich etwas änderte."""
-    text = pfad.read_text("utf-8") if pfad.exists() else ""
-    block = readme_block()
-    if ANFANG.split(" –")[0] in text and ENDE in text:
-        a = text.index(ANFANG.split(" –")[0])
-        e = text.index(ENDE) + len(ENDE)
-        neu = text[:a] + block + text[e:]
-    else:
-        neu = text.rstrip() + "\n\n## Datenmodell\n\n" + block + "\n"
-    if neu != text:
-        pfad.write_text(neu, "utf-8")
-        return True
-    return False
-
-
-def zeichne(ziel: Path) -> bool:
-    """Diagramm mit erdantic (braucht Graphviz). False, wenn erdantic fehlt. Felder der
-    Sportanlage, die nur zu bestimmten Anlagentypen gehören, tragen „· nur …“ hinter ihrem Typ."""
-    try:
-        import erdantic as erd
-    except ImportError:
-        return False
-    diagramm = erd.create(Vorschlag)
-    try:  # bei der Sportanlage: hinter dem Typ eines Feldes, für welche Anlagentypen es ist
-        for m in diagramm.models.values():
-            if m.name == "Sportanlage":
-                for name, f in m.fields.items():
-                    if typen := fuer_von(name):
-                        f.type_name = f"{f.type_name} · nur {nur_fuer(typen)}"
-    except (AttributeError, TypeError):  # andere Version von erdantic: ohne diese Angabe
-        pass
-    diagramm.draw(out=ziel)
-    return True
-
-
-def nur_fuer(typen: list[str], hoechstens: int = 48) -> str:
-    """fuer_text, gekürzt für das Diagramm (die volle Liste steht in daten/README.md)."""
-    text = fuer_text(typen)
-    if len(text) <= hoechstens:
-        return text
-    return f"{len(typen)} Typen: " + text[: hoechstens - 1].rsplit(", ", 1)[0] + " …"
-
-
-def schreibe_doku(ordner: Path) -> list[str]:
-    """daten/README.md und daten/datenmodell.svg aus dem Modell. Liefert Hinweise."""
-    hinweise = []
-    if aktualisiere_readme(ordner / "README.md"):
-        hinweise.append(f"{ordner}/README.md: Datenmodell aktualisiert")
-    if zeichne(ordner / "datenmodell.svg"):
-        hinweise.append(f"{ordner}/datenmodell.svg geschrieben")
-    else:
-        hinweise.append(
-            "Diagramm nicht erzeugt: erdantic fehlt (sudo apt install graphviz graphviz-dev; "
-            "uv sync --extra doku)"
-        )
-    return hinweise

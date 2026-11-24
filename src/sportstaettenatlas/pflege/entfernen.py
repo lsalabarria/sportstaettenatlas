@@ -15,8 +15,7 @@ import shutil
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from . import werte
-from .bestand import (
+from ..bestand import (
     EMAIL,
     _laender,
     _lies_json,
@@ -26,6 +25,7 @@ from .bestand import (
     org_schluessel,
     stuetzpunkt_dateien,
 )
+from ..modell import werte
 
 PROTOKOLL = "entfernt.csv"  # in daten/
 SPALTEN = ("art", "id", "begruendung")

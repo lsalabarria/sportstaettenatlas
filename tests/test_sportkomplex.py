@@ -15,7 +15,7 @@ from sportstaettenatlas.bestand import (
     schreibe_sportkomplex,
     sportkomplexe_einordnen,
 )
-from sportstaettenatlas.validate import pruefe
+from sportstaettenatlas.bestand.pruefung import pruefe
 
 S1, S2, S3, S4, S5 = (f"{i}{i}{i}{i}{i}{i}{i}{i}-2222-4222-8222-222222222222" for i in range(1, 6))
 K1, K2 = "aaaaaaaa-0000-4000-8000-000000000001", "aaaaaaaa-0000-4000-8000-000000000002"
@@ -131,7 +131,7 @@ def test_pruefungen(daten):
 
 
 def test_doppelung_im_sportkomplex(tmp_path):
-    from sportstaettenatlas.validate import doppelungen
+    from sportstaettenatlas.bestand.pruefung import doppelungen
 
     def st(sid, name, kid=None):
         return {"id": sid, "name": name, "lage": {"lon": 7.6, "lat": 50.35}, "sportkomplex": kid}
@@ -148,7 +148,7 @@ def test_doppelung_im_sportkomplex(tmp_path):
 
 def test_csv_einlesen(daten, tmp_path):
     from sportstaettenatlas.bestand import schreibe_sportkomplexe
-    from sportstaettenatlas.einlesen import lies_csv, schreibe_vorlage
+    from sportstaettenatlas.pflege.einlesen import lies_csv, schreibe_vorlage
 
     # die Vorlage wird als Sportkomplexe erkannt
     vorlage = next(

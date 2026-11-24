@@ -5,7 +5,9 @@
     grundlagen.js   Hilfen, Karte, Gebietsauswahl, Umschalten der Ansichten
     bestand.js      Ansichten Karte und Übersicht (Datenbestand des Atlas)
     liste.js        Ansicht Liste: Sportstätten, Sportanlagen, Betreiber; alle Angaben je Eintrag
-    vorschlag.js    Ansicht Vorschlag (Formular mit Doppelungsprüfung → LimeSurvey)
+    vorschlag/      Ansicht Vorschlag (Formular mit Doppelungsprüfung → LimeSurvey), in Teilen:
+                    00_hilfen.js, 10_formular.js … 95_senden.js, 99_links.js; werden der
+                    Reihe nach zu app/vorschlag.js zusammengesetzt (siehe ZUSAMMENGESETZT)
     analysen.js     Ansicht Analysen, darin der ALKIS-Abgleich
     start.js        Suche, Rechtsklick-Menü, Start
     vorlagen/       konfig.js, Impressum, Datenschutz, Download-Seite
@@ -14,8 +16,11 @@
 `html_seite` setzt Titel und Quellenvermerk ein und verlinkt Stil und Skripte, die
 `kopiere_app` nach docs/app/ kopiert; die Daten lädt die Seite aus docs/daten/ nach.
 
-Die Skripte sind normale Browser-Skripte ohne Build-Schritt; sie teilen sich ihre
-Funktionen über den globalen Namensraum und werden in der Reihenfolge SKRIPTE geladen.
+Die Skripte sind normale Browser-Skripte; sie teilen sich ihre Funktionen über den
+globalen Namensraum und werden in der Reihenfolge SKRIPTE geladen. Einziger Build-Schritt:
+vorschlag.js wird aus den Dateien in vorschlag/ zusammengesetzt (nur aneinandergehängt). Die
+Teile 10–95 bilden zusammen den Rumpf von ansichtVorschlag und sind einzeln kein gültiges
+JavaScript; 00 und 99 stehen für sich.
 """
 
 from __future__ import annotations
@@ -33,8 +38,22 @@ SKRIPTE = ("grundlagen.js", "bestand.js", "liste.js", "vorschlag.js", "analysen.
 SCHRIFTEN = ("inter-400.woff", "inter-600.woff", "inter-700.woff", "OFL.txt")
 
 
+# Skripte, die aus mehreren Dateien eines Ordners zusammengesetzt werden (nach Namen sortiert)
+ZUSAMMENGESETZT = {"vorschlag.js": "vorschlag"}
+
+
+def teile(name: str) -> list[str]:
+    """Namen der Teile eines zusammengesetzten Skripts, in der Reihenfolge."""
+    ordner = resources.files(__name__).joinpath(ZUSAMMENGESETZT[name])
+    return sorted(t.name for t in ordner.iterdir() if t.name.endswith(".js"))
+
+
 def datei(name: str) -> str:
-    """Inhalt einer Datei aus diesem Ordner (auch aus dem installierten Paket)."""
+    """Inhalt einer Datei aus diesem Ordner (auch aus dem installierten Paket); ein
+    zusammengesetztes Skript (ZUSAMMENGESETZT) als seine Teile hintereinander."""
+    if name in ZUSAMMENGESETZT:
+        ordner = resources.files(__name__).joinpath(ZUSAMMENGESETZT[name])
+        return "".join(ordner.joinpath(t).read_text("utf-8") for t in teile(name))
     return resources.files(__name__).joinpath(name).read_text("utf-8")
 
 

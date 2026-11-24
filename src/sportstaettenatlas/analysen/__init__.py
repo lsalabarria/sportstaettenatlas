@@ -1,7 +1,10 @@
-"""Analysen: Auswertungen, die den Datenbestand prüfen oder ergänzen.
+"""Analysen: Auswertungen, die den Datenbestand lesen (nie verändern) und Ergebnisse nach
+results/ schreiben.
 
-Eine Analyse ist ein Unterpaket mit einem Befehl (`cli.py`: `befehle(sub)`) und einer
-Funktion, die die Dateien für die Webseite liefert; `seite` schreibt sie nach
-docs/daten/analysen/<name>/. Im Browser gehört dazu ein Eintrag in ANALYSEN
-(web/analysen.js). Bisher: alkis – Abgleich mit dem Liegenschaftskataster.
+    alkis/       Abgleich mit dem Liegenschaftskataster; liefert auch Dateien für die
+                 Webseite (`seite` schreibt sie nach docs/daten/analysen/alkis/; im Browser
+                 gehört dazu ein Eintrag in ANALYSEN in webseite/app/analysen.js)
+    crawler.py   Webseiten für Vereine ohne Webseite suchen → results/vereinswebseiten.csv
+
+Importiert aus modell und bestand, nie aus pflege oder webseite.
 """

@@ -1,6 +1,6 @@
 """Prüfungen über das Datenmodell hinaus – Auffälligkeiten für daten/regelverstoesse.csv.
 
-Das Datenmodell (modell.py) prüft jeden Datensatz für sich: Pflichtfelder, Formate,
+Das Datenmodell (modell/) prüft jeden Datensatz für sich: Pflichtfelder, Formate,
 Auswahllisten, Nachkommastellen, `braucht` und `teil_von`. Hier stehen Prüfungen, die mehr
 brauchen – das Verzeichnis der Organisationen, die Verwaltungsgebiete, andere Sportstätten oder
 die Felder je Anlagentyp. Alle laufen offline über den ganzen Bestand (wenige Sekunden) und
@@ -22,8 +22,8 @@ from collections.abc import Iterable
 from datetime import date
 from pathlib import Path
 
-from . import modell
-from .bestand import (
+from .. import modell
+from .ablage import (
     OUTSIDE,
     _laender,
     _staetten_ordner,
@@ -91,7 +91,7 @@ RECHTSFORM = re.compile(modell.PRUEFUNG["rechtsform"])  # nach norm_name; zählt
 
 
 def norm_name(s) -> str:
-    """Wie normName in vorschlag.js: klein, Umlaute ausgeschrieben, nur a-z, 0-9, Leerzeichen."""
+    """Wie normName in vorschlag/00_hilfen.js: klein, Umlaute ausgeschrieben, nur a-z, 0-9, Leerzeichen."""
     t = str(s or "").lower()
     for a, b in (("ä", "ae"), ("ö", "oe"), ("ü", "ue"), ("ß", "ss")):
         t = t.replace(a, b)
@@ -99,7 +99,7 @@ def norm_name(s) -> str:
 
 
 def aehnlich(a, b) -> float:
-    """Wie aehnlich in vorschlag.js: Dice-Koeffizient der Buchstabenpaare (0 … 1)."""
+    """Wie aehnlich in vorschlag/00_hilfen.js: Dice-Koeffizient der Buchstabenpaare (0 … 1)."""
 
     def paare(s):
         t = f" {norm_name(s)} "
@@ -372,7 +372,7 @@ def sportarten_schreibweisen(bestand: list[dict]) -> dict[str, tuple[str, int]]:
 
 
 def org_kern(name) -> str:
-    """Wie orgKern in vorschlag.js: norm_name ohne Rechtsform („TuS Berg e.V.“ → „tus berg“)."""
+    """Wie orgKern in vorschlag/00_hilfen.js: norm_name ohne Rechtsform („TuS Berg e.V.“ → „tus berg“)."""
     return " ".join(RECHTSFORM.sub(" ", norm_name(name)).split())
 
 
@@ -544,7 +544,7 @@ def stuetzpunkte(
 # --- alles zusammen -------------------------------------------------------------------------
 
 
-DATENMODELL = "Datenmodell"  # Prüfung der Meldungen aus modell.py (Pflichtfelder, Formate …)
+DATENMODELL = "Datenmodell"  # Prüfung der Meldungen aus modell/ (Pflichtfelder, Formate …)
 # die Prüfungen dieser Datei, wie sie in der Spalte „pruefung“ und in README.md heißen
 PRUEFUNGEN = (
     "Organisation",

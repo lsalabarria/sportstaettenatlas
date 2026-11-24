@@ -18,7 +18,7 @@ function prozent(a, b) { return b ? Math.round(100 * a / b) : 0; }
 function url(u) { return /^https?:\/\//i.test(u) ? u : "https://" + u; }
 function wertText(v) { return typeof v === "boolean" ? (v ? "ja" : "nein") : esc(v); }
 
-// ---------- Datenmodell (daten/schema.json, erzeugt aus src/sportstaettenatlas/modell.py) ----
+// ---------- Datenmodell (daten/schema.json, erzeugt aus src/sportstaettenatlas/modell/) ----
 // Felder, Beschriftungen (title), Auswahllisten (enum), Regeln (minimum, pattern …) und
 // Angaben für die Webseite (gruppe, widget, formular, uebersicht, einheit) stehen nur dort.
 let SCHEMA = { $defs: {} };

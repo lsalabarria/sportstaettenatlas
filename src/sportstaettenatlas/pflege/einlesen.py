@@ -2,7 +2,7 @@
 
 `lies_csv` erkennt die Art der Tabelle (Atlas-Export, Sportstätten, Sportanlagen,
 Sportkomplexe, Stützpunkte, Organisationen), ordnet die Spalten über das Modell zu (`spalten_namen`) und liest die
-Werte nach dem Typ des Feldes (`wert`, mit werte.py). Geschrieben wird in bestand.py
+Werte nach dem Typ des Feldes (`wert`, mit werte.py). Geschrieben wird in bestand/ablage.py
 (`schreibe_bestand`, `schreibe_sportkomplexe`, `schreibe_organisationen`). Die Regeln für Spalten, Werte und Modi
 beschreibt daten/README.md („CSV einlesen“); `schreibe_vorlage` schreibt die Vorlagen.
 """
@@ -17,8 +17,10 @@ from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from . import atlas, modell, werte
-from .bestand import KONTAKT, NUR_ANLAGEN
+from .. import modell
+from ..bestand import KONTAKT, NUR_ANLAGEN
+from ..modell import werte
+from . import atlas_export as atlas
 
 _STAETTEN_NAMENSRAUM = uuid.UUID("0b6a1f63-3f7e-4f1a-9b55-6c2d9e8a4c21")
 _KOMPLEX_NAMENSRAUM = uuid.UUID("6e2b9d14-7c3a-4f85-a1d0-3b8e5c7f9a42")
