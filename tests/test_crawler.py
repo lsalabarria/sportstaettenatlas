@@ -191,3 +191,42 @@ def test_quelle_faellt_weg_statt_abzubrechen(tmp_path, monkeypatch, capsys):
 
     assert crawler._lade_json("wd.json", einmal_kaputt, neu=True) == [{"x": 1}]
     assert crawler._lade_json("wd.json", kaputt, neu=False) == [{"x": 1}]  # aus dem Cache
+
+
+def test_fortschritt_und_zusammenfassung(monkeypatch):
+    import sys
+    import types
+
+    balken = []
+
+    class FalscherBalken:
+        def __init__(self, total, desc, **_):
+            self.total, self.desc, self.n, self.postfix = total, desc, 0, ""
+            balken.append(self)
+
+        def set_postfix_str(self, s, refresh=True):
+            self.postfix = s
+
+        def update(self):
+            self.n += 1
+
+        def close(self):
+            pass
+
+    monkeypatch.setitem(sys.modules, "tqdm", types.SimpleNamespace(tqdm=FalscherBalken))
+    v = Verein("o1", "TuS Berg", "Verein", "")
+    treffer = [
+        crawler.Treffer(v, "a.de", "domain geraten", 4),
+        crawler.Treffer(v, "b.de", "openstreetmap", -1),
+        crawler.Treffer(Verein("o2", "SV Tal", "Verein", ""), "c.de", "wikidata", 2),
+    ]
+    out = crawler._parallel(lambda t: t, treffer, 4, "Webseiten prüfen", True, crawler.einstufung)
+    assert out == treffer  # Reihenfolge wie die Werte, auch wenn parallel
+    b = balken[0]
+    assert (b.desc, b.total, b.n) == ("Webseiten prüfen", 3, 3)
+    assert b.postfix == "sicher=1 wahrscheinlich=1 weg=1"
+    text = crawler.zusammenfassung(treffer, vereine=5)
+    assert "sicher" in text and "weg" in text
+    assert text.splitlines()[-1] == (
+        "Vereine: 5; mit sicherem Treffer (3–4 Punkte) 1, mit wahrscheinlichem (2 Punkte) 1, ohne 3"
+    )

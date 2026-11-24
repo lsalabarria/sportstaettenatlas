@@ -39,8 +39,8 @@ import sys
 import threading
 import time
 import urllib.robotparser
-from collections import defaultdict
-from concurrent.futures import ThreadPoolExecutor
+from collections import Counter, defaultdict
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
@@ -492,40 +492,96 @@ def suche(
     if wikidata is not None:
         kandidaten += wikidata_treffer(vereine, wikidata)
     kandidaten = [t for t in kandidaten if not _gesperrt(domain_von(t.website), SPERRLISTE)]
-    meldung(f"OpenStreetMap/Wikidata: {len(kandidaten)} Kandidaten")
+    je_quelle = Counter(t.quelle for t in kandidaten)
+    meldung(
+        f"OpenStreetMap: {je_quelle['openstreetmap']} Kandidaten, "
+        f"Wikidata: {je_quelle['wikidata']} Kandidaten"
+    )
     if raten:
         mit = {t.verein.id for t in kandidaten}
         geraten = [
             (v, d) for v in vereine if v.id not in mit for d in domain_kandidaten(v.name, v.orte)
         ]
-        with ThreadPoolExecutor(parallel) as pool:
-            da = list(
-                _balken(
-                    pool.map(lambda vd: abrufer.existiert(vd[1]), geraten), len(geraten),
-                    "Domains", fortschritt,
-                )
-            )  # fmt: skip
+        da = _parallel(
+            lambda vd: abrufer.existiert(vd[1]), geraten, parallel, "DNS prüfen",
+            fortschritt, lambda ok: "existieren" if ok else None,
+        )  # fmt: skip
         neu = [
             Treffer(v, d, "domain geraten") for (v, d), ok in zip(geraten, da, strict=True) if ok
         ]
-        meldung(f"Domains geraten: {len(geraten)} versucht, {len(neu)} existieren")
+        n_vereine = len({v.id for v, _ in geraten})
+        meldung(
+            f"Domains geraten für {n_vereine} Vereine: {len(geraten)} versucht, "
+            f"{len(neu)} existieren"
+        )
         kandidaten += neu
     # eine Webseite je Verein nur einmal prüfen
     einmal = {}
     for t in kandidaten:
         einmal.setdefault((t.verein.id, domain_von(t.website)), t)
+    return _parallel(
+        lambda t: pruefe(t, abrufer), list(einmal.values()), parallel, "Webseiten prüfen",
+        fortschritt, einstufung,
+    )  # fmt: skip
+
+
+def einstufung(t: Treffer) -> str:
+    """Für Fortschritt und Zusammenfassung: wie verlässlich ist ein geprüfter Treffer?"""
+    if t.punkte < 0:
+        return "weg"  # nicht erreichbar oder Weiterleitung auf ein Verzeichnis
+    if "soziales Netzwerk" in t.nachweis:
+        return "sozial"
+    if "robots.txt" in t.nachweis:
+        return "robots"
+    return "sicher" if t.punkte >= 3 else "wahrscheinlich" if t.punkte == 2 else "unsicher"
+
+
+def _parallel(fn, werte: list, parallel: int, text: str, fortschritt: bool, art=None) -> list:
+    """`fn` für alle `werte` parallel; Ergebnisse in der Reihenfolge der Werte. Mit
+    `fortschritt` ein Balken (tqdm, auf stderr), der laufend zählt, was `art(ergebnis)`
+    liefert (z. B. „sicher=12 weg=30“)."""
+    out = [None] * len(werte)
+    zaehler: Counter = Counter()
+    balken = None
+    if fortschritt and werte:
+        from tqdm import tqdm
+
+        balken = tqdm(total=len(werte), desc=text, unit=" ", dynamic_ncols=True, smoothing=0.05)
     with ThreadPoolExecutor(parallel) as pool:
-        laeufe = pool.map(lambda t: pruefe(t, abrufer), einmal.values())
-        return list(_balken(laeufe, len(einmal), "Webseiten prüfen", fortschritt))
+        laeufe = {pool.submit(fn, w): i for i, w in enumerate(werte)}
+        for f in as_completed(laeufe):
+            out[laeufe[f]] = ergebnis = f.result()
+            if balken is not None:
+                if art and (k := art(ergebnis)):
+                    zaehler[k] += 1
+                    balken.set_postfix_str(
+                        " ".join(f"{k}={n}" for k, n in sorted(zaehler.items())), refresh=False
+                    )
+                balken.update()
+    if balken is not None:
+        balken.close()
+    return out
 
 
-def _balken(it, gesamt: int, text: str, an: bool):
-    """Fortschrittsbalken (tqdm, auf stderr), wenn `an`; sonst die Werte unverändert."""
-    if not an:
-        return it
-    from tqdm import tqdm
-
-    return tqdm(it, total=gesamt, desc=text, unit=" ", leave=True)
+def zusammenfassung(treffer: list[Treffer], vereine: int) -> str:
+    """Kurze Übersicht am Ende: Treffer nach Einstufung und Quelle, Vereine mit gutem Treffer."""
+    stufen = ("sicher", "wahrscheinlich", "unsicher", "sozial", "robots", "weg")
+    quellen = sorted({t.quelle for t in treffer})
+    zeilen = [f"{'':16}" + "".join(f"{q:>16}" for q in quellen) + f"{'zusammen':>12}"]
+    for s in stufen:
+        n = [sum(t.quelle == q and einstufung(t) == s for t in treffer) for q in quellen]
+        if sum(n):
+            zeilen.append(f"{s:16}" + "".join(f"{x:>16}" for x in n) + f"{sum(n):>12}")
+    beste: dict[str, int] = {}
+    for t in treffer:
+        beste[t.verein.id] = max(beste.get(t.verein.id, -1), t.punkte)
+    gut = sum(p >= 3 for p in beste.values())
+    eher = sum(p == 2 for p in beste.values())
+    zeilen.append(
+        f"Vereine: {vereine}; mit sicherem Treffer (3–4 Punkte) {gut}, mit wahrscheinlichem "
+        f"(2 Punkte) {eher}, ohne {vereine - gut - eher}"
+    )
+    return "\n".join(zeilen)
 
 
 def schreibe(treffer: list[Treffer], ziel: Path = ERGEBNIS) -> int:
@@ -581,8 +637,8 @@ def main(argv: list[str] | None = None) -> int:
     wd = None if a.ohne_wikidata else hole_wikidata(a.neu)
     treffer = suche(vereine, osm, wd, raten=not a.ohne_raten, parallel=a.parallel, fortschritt=True)
     n = schreibe(treffer, a.ziel)
-    gut = len({t.verein.id for t in treffer if t.punkte >= 2})
-    print(f"{a.ziel}: {n} Treffer; {gut} Vereine mit Name im Impressum (2 Punkte und mehr)")
+    print(zusammenfassung(treffer, len(vereine)))
+    print(f"{a.ziel}: {n} Treffer zum Prüfen (ohne „weg“)")
     return 0
 
 
