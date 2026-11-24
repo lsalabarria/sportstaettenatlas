@@ -32,6 +32,7 @@ import argparse
 import csv
 import html
 import json
+import random
 import re
 import socket
 import sys
@@ -100,6 +101,17 @@ class Treffer:
     quelle: str
     punkte: int = 0
     nachweis: str = ""
+
+
+# übliche Kürzel in Vereinsnamen und Wörter, für die ein Kürzel steht (für geratene Domains)
+KUERZEL = {"sv", "tv", "tus", "tsv", "fc", "sc", "sg", "vfl", "vfb", "djk", "ssv", "fsv", "spvgg",
+           "tc", "ttc", "rv", "fv", "asv", "bsv", "esv", "psv", "tg", "tsg"}  # fmt: skip
+ABKUERZUNG = {
+    "sportverein": "sv", "turnverein": "tv", "tennisclub": "tc", "tennisverein": "tv",
+    "sportclub": "sc", "fussballverein": "fv", "fussballclub": "fc", "reitverein": "rv",
+    "schwimmverein": "sv", "tischtennisclub": "ttc", "spielvereinigung": "spvgg",
+    "sportgemeinschaft": "sg", "turngemeinde": "tg", "turnerschaft": "ts",
+}  # fmt: skip
 
 
 # --- 1. Vereine ohne Webseite -------------------------------------------------------------
@@ -233,23 +245,44 @@ def wikidata_treffer(vereine: list[Verein], zeilen: list[dict]) -> list[Treffer]
 # --- 3. Domains raten ----------------------------------------------------------------------
 
 
-def domain_kandidaten(name: str, hoechstens: int = 8) -> list[str]:
-    """Domains, die ein Verein wahrscheinlich hat: „TuS Berg 1926 e.V.“ → tus-berg.de,
-    tusberg.de, tus-berg-1926.de, tusberg1926.de, berg.de … (nur .de)."""
+def domain_kandidaten(name: str, orte=(), hoechstens: int = 10) -> list[str]:
+    """Domains, die ein Verein wahrscheinlich hat (nur .de), die üblichen zuerst:
+    „TuS Berg 1926 e.V.“ → tus-berg.de, tusberg.de, …; „1. Badminton-Club Westerburg e.V.“ →
+    bc-westerburg.de, 1bc-westerburg.de, bcwesterburg.de, badminton-club-westerburg.de, …
+    Kürzel aus den Anfangsbuchstaben, der Ort (aus `orte` oder das letzte Wort) bleibt
+    ausgeschrieben; eine führende Ordnungszahl („1.“) fällt weg oder steht vorn am Kürzel."""
     woerter = [w for w in org_kern(name).split() if w not in FUELLWOERTER]
-    ohne_jahr = [w for w in woerter if not re.fullmatch(r"(18|19|20)\d\d", w)]
+    nummer = woerter.pop(0) if woerter and re.fullmatch(r"\d{1,2}", woerter[0]) else ""
+    jahr = re.compile(r"(18|19|20)\d\d|\d\d")
+    ohne_jahr = [w for w in woerter if not jahr.fullmatch(w)]
+    if not ohne_jahr:
+        return []
+    bekannte = {norm_name(o.split(",")[0]) for o in orte} - {""}
+    ort_teile = next((b.split() for b in bekannte if " ".join(ohne_jahr).endswith(b)), None)
+    ort_teile = ort_teile or ohne_jahr[-1:]
+    vorn = ohne_jahr[: len(ohne_jahr) - len(ort_teile)]
+    ort = "-".join(ort_teile)
     varianten = []
+    kuerzel = [w for w in vorn if w in KUERZEL]
+    kenn = [w for w in vorn if w not in ALLGEMEIN]
+    if kuerzel:  # „sv-berg“
+        rest = kenn + ort_teile
+        varianten += [f"{kuerzel[0]}-{'-'.join(rest)}", kuerzel[0] + "".join(rest)]
+    # Anfangsbuchstaben: „badminton club“ → „bc“, „allgemeiner sportverein“ → „asv“
+    if 2 <= len(vorn) <= 5 or (len(vorn) == 1 and vorn[0] in ABKUERZUNG):
+        k = "".join(ABKUERZUNG.get(w, w if w in KUERZEL else w[0]) for w in vorn)
+        varianten += [
+            f"{k}-{ort}",
+            f"{nummer}{k}-{ort}" if nummer else "",
+            f"{k}{ort.replace('-', '')}",
+        ]
     for teile in (ohne_jahr, woerter):
-        if teile:
-            varianten += ["-".join(teile), "".join(teile)]
-    # nur der unterscheidende Teil mit dem Kürzel davor („sv-berg“, wenn der Name länger ist)
-    kenn = [w for w in ohne_jahr if w not in ALLGEMEIN]
-    kuerzel = [w for w in ohne_jahr if w in ALLGEMEIN and len(w) <= 5]
-    if kenn and kuerzel:
-        varianten += [f"{kuerzel[0]}-{'-'.join(kenn)}", kuerzel[0] + "".join(kenn)]
+        varianten += ["-".join(teile), "".join(teile)]
+    if nummer:
+        varianten.append(f"{nummer}-{'-'.join(ohne_jahr)}")
     out = []
     for v in varianten:
-        if 4 <= len(v) <= 63 and v not in out and not v.startswith("-"):
+        if v and 4 <= len(v) <= 63 and v not in out and not v.startswith("-"):
             out.append(v)
     return [f"{v}.de" for v in out[:hoechstens]]
 
@@ -448,6 +481,7 @@ def suche(
     parallel: int = 16,
     abrufer: Abrufer | None = None,
     meldung=print,
+    fortschritt: bool = False,
 ) -> list[Treffer]:
     """Kandidaten sammeln (OSM, Wikidata, geratene Domains), parallel prüfen; Verzeichnisse
     (SPERRLISTE) fallen weg. Geraten wird nur für Vereine ohne Treffer aus OSM/Wikidata."""
@@ -461,9 +495,16 @@ def suche(
     meldung(f"OpenStreetMap/Wikidata: {len(kandidaten)} Kandidaten")
     if raten:
         mit = {t.verein.id for t in kandidaten}
-        geraten = [(v, d) for v in vereine if v.id not in mit for d in domain_kandidaten(v.name)]
+        geraten = [
+            (v, d) for v in vereine if v.id not in mit for d in domain_kandidaten(v.name, v.orte)
+        ]
         with ThreadPoolExecutor(parallel) as pool:
-            da = list(pool.map(lambda vd: abrufer.existiert(vd[1]), geraten))
+            da = list(
+                _balken(
+                    pool.map(lambda vd: abrufer.existiert(vd[1]), geraten), len(geraten),
+                    "Domains", fortschritt,
+                )
+            )  # fmt: skip
         neu = [
             Treffer(v, d, "domain geraten") for (v, d), ok in zip(geraten, da, strict=True) if ok
         ]
@@ -474,7 +515,17 @@ def suche(
     for t in kandidaten:
         einmal.setdefault((t.verein.id, domain_von(t.website)), t)
     with ThreadPoolExecutor(parallel) as pool:
-        return list(pool.map(lambda t: pruefe(t, abrufer), einmal.values()))
+        laeufe = pool.map(lambda t: pruefe(t, abrufer), einmal.values())
+        return list(_balken(laeufe, len(einmal), "Webseiten prüfen", fortschritt))
+
+
+def _balken(it, gesamt: int, text: str, an: bool):
+    """Fortschrittsbalken (tqdm, auf stderr), wenn `an`; sonst die Werte unverändert."""
+    if not an:
+        return it
+    from tqdm import tqdm
+
+    return tqdm(it, total=gesamt, desc=text, unit=" ", leave=True)
 
 
 def schreibe(treffer: list[Treffer], ziel: Path = ERGEBNIS) -> int:
@@ -503,7 +554,9 @@ def main(argv: list[str] | None = None) -> int:
     )
     p.add_argument("--daten", type=Path, default=Path("daten"))
     p.add_argument("--kreis", help="nur Vereine mit Sportstätte in diesem Kreis (z. B. 07111)")
-    p.add_argument("--max", type=int, help="höchstens so viele Vereine (Probelauf)")
+    p.add_argument(
+        "--max", type=int, help="Probelauf: so viele zufällig gewählte Vereine (immer dieselben)"
+    )
     p.add_argument("--parallel", type=int, default=16, help="gleichzeitige Abrufe (Standard 16)")
     p.add_argument("--ohne-osm", action="store_true")
     p.add_argument("--ohne-wikidata", action="store_true")
@@ -521,12 +574,12 @@ def main(argv: list[str] | None = None) -> int:
     elif KONTAKT != KONTAKT_ROH.strip():
         print(f"Hinweis: Kontakt im User-Agent ohne Sonderzeichen: {KONTAKT}", file=sys.stderr)
     vereine = vereine_ohne_webseite(a.daten, a.kreis)
-    if a.max:
-        vereine = vereine[: a.max]
+    if a.max and a.max < len(vereine):  # Stichprobe über das ganze Alphabet, wiederholbar
+        vereine = sorted(random.Random(a.max).sample(vereine, a.max), key=lambda v: v.name.lower())
     print(f"Vereine ohne Webseite: {len(vereine)}")
     osm = None if a.ohne_osm else hole_osm(a.neu)
     wd = None if a.ohne_wikidata else hole_wikidata(a.neu)
-    treffer = suche(vereine, osm, wd, raten=not a.ohne_raten, parallel=a.parallel)
+    treffer = suche(vereine, osm, wd, raten=not a.ohne_raten, parallel=a.parallel, fortschritt=True)
     n = schreibe(treffer, a.ziel)
     gut = len({t.verein.id for t in treffer if t.punkte >= 2})
     print(f"{a.ziel}: {n} Treffer; {gut} Vereine mit Name im Impressum (2 Punkte und mehr)")

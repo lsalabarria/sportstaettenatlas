@@ -55,6 +55,15 @@ def test_kennwoerter_und_domains():
     assert d[:4] == ["tus-berg.de", "tusberg.de", "tus-berg-1926.de", "tusberg1926.de"]
     assert "sv-bergland.de" in domain_kandidaten("Sportverein SV Bergland e. V.")
     assert all(x.endswith(".de") and len(x) <= 66 for x in d)
+    # Kürzel aus Anfangsbuchstaben, Ordnungszahl vorn am Kürzel, bekannter Ort ausgeschrieben
+    assert domain_kandidaten("1. Badminton-Club Westerburg e.V.")[:3] == [
+        "bc-westerburg.de", "1bc-westerburg.de", "bcwesterburg.de"
+    ]  # fmt: skip
+    assert (
+        domain_kandidaten("Allgemeiner Sportverein 1946 Birkenheide eV")[0] == "asv-birkenheide.de"
+    )
+    assert domain_kandidaten("Turnverein Bad Ems", {"Bad Ems"})[0] == "tv-bad-ems.de"
+    assert domain_kandidaten("1906") == []
 
 
 def test_osm_und_wikidata_treffer():
