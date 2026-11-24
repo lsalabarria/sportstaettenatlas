@@ -1,6 +1,8 @@
 """Webseite für GitHub Pages – ohne Geo-Bibliotheken testbar (synthetische Daten)."""
 
 import json
+import posixpath
+import re
 import shutil
 import subprocess
 
@@ -69,8 +71,11 @@ def test_webseite_verlinkt_app_und_laedt_daten_nach():
     assert '<script src="vendor/leaflet/leaflet.js"></script>' in seite
     assert "konfig.js?' + Date.now()" in seite and "const QUELLE = " in seite
     assert '<link rel="stylesheet" href="app/stil.css?v=' in seite
-    for name in web.SKRIPTE:
-        assert f'<script src="app/{name}?v=' in seite
+    # Module: start.js als Einstieg, die Import-Map hängt jedem Modul seine Version an
+    assert '<script type="module" src="app/start.js?v=' in seite
+    karte = json.loads(seite.split('<script type="importmap">')[1].split("</script>")[0])["imports"]
+    assert set(karte) == {f"./app/{m}" for m in web.module()}
+    assert all(v.startswith(k + "?v=") for k, v in karte.items())
     assert 'id="laden"' in seite and 'id="analysewahl"' in seite
     assert "<h1>Atlas &lt;RLP&gt;</h1>" in seite
     assert "__" not in seite.split("<body>")[1].replace("__log", "")
@@ -88,8 +93,9 @@ def test_vorlagen():
 
 @pytest.mark.skipif(shutil.which("node") is None, reason="Node.js nicht installiert")
 def test_skripte_sind_gueltiges_javascript(tmp_path):
-    for name in [*web.SKRIPTE, "vorlagen/konfig.js"]:
-        datei = tmp_path / name.replace("/", "_")
+    for name in [*web.module(), "vorlagen/konfig.js"]:
+        endung = ".js" if name.startswith("vorlagen/") else ".mjs"  # .mjs: als Modul prüfen
+        datei = tmp_path / (name.replace("/", "_") + endung)
         datei.write_text(web.datei(name), encoding="utf-8")
         ergebnis = subprocess.run(
             ["node", "--check", str(datei)], capture_output=True, text=True, check=False
@@ -103,8 +109,9 @@ def test_schreibe_webseite(tmp_path):
         docs, bestand=[_datensatz(1, 7.2, 50.5)], titel="Mein Atlas", leaflet_laden=False
     )
     assert (docs / ".nojekyll").exists() and (docs / "daten" / "index.html").exists()
-    app = sorted(p.name for p in (docs / "app").iterdir())
-    assert app == sorted([web.STIL, *web.SKRIPTE, "schrift"])
+    app = sorted(p.relative_to(docs / "app").as_posix() for p in (docs / "app").rglob("*.js"))
+    assert app == web.module() and (docs / "app" / web.STIL).exists()
+    assert sorted(p.name for p in (docs / "app" / "schrift").iterdir()) == sorted(web.SCHRIFTEN)
     assert info["neu_angelegt"] == ["konfig.js", "impressum.html", "datenschutz.html"]
     assert "GitHub Pages" in (docs / "datenschutz.html").read_text(encoding="utf-8")
     assert "unpkg.com/leaflet" in (docs / "index.html").read_text(encoding="utf-8")
@@ -318,10 +325,47 @@ def test_bestand_geojson_mit_anlagen():
     assert ["bad", "Bäder"] in fc["anlagengruppen"]
 
 
-def test_vorschlag_aus_teilen():
-    """app/vorschlag.js wird aus app/vorschlag/*.js zusammengesetzt, der Reihe nach."""
-    teile = web.teile("vorschlag.js")
-    assert teile[0] == "00_hilfen.js" and teile[-1] == "99_links.js" and len(teile) > 5
-    ganz = web.datei("vorschlag.js")
-    assert "function ansichtVorschlag(bestand) {" in ganz and "function aendernLink(id)" in ganz
-    assert ganz.index("function ansichtVorschlag") < ganz.index("function aendernLink")
+IMPORT = re.compile(r'^import [^;]*? from "([^"]+)";', re.MULTILINE | re.DOTALL)
+
+
+def _importe(m: str) -> list[str]:
+    """Pfade (unter app/), die das Modul m importiert."""
+    return [
+        posixpath.normpath(posixpath.join(posixpath.dirname(m), ziel))
+        for ziel in IMPORT.findall(web.datei(m))
+    ]
+
+
+def test_module_importieren_nur_vorhandene_module():
+    """Jeder Import zeigt auf ein Modul der Seite; jedes Modul außer start.js wird importiert."""
+    module = set(web.module())
+    importiert = set()
+    for m in module:
+        for pfad in _importe(m):
+            assert pfad in module, f"{m}: {pfad} gibt es nicht"
+            importiert.add(pfad)
+    assert module - importiert == {web.EINSTIEG}
+
+
+SCHICHTEN = {"lib": 0, "daten": 1, "seite.js": 1, "karte": 2, "ansichten": 3, "start.js": 4}
+
+
+def test_module_nur_aus_tieferen_schichten():
+    """lib ← daten, seite.js ← karte ← ansichten ← start.js: kein Modul importiert aus einer
+    höheren Schicht (wie tests/test_aufbau.py für Python)."""
+    falsch = [
+        f"{m} → {pfad}"
+        for m in web.module()
+        for pfad in _importe(m)
+        if SCHICHTEN[pfad.split("/")[0]] > SCHICHTEN[m.split("/")[0]]
+    ]
+    assert falsch == []
+
+
+def test_kopiere_app_entfernt_alte_dateien(tmp_path):
+    (tmp_path / "vorschlag").mkdir()
+    (tmp_path / "vorschlag" / "10_formular.js").write_text("alt", encoding="utf-8")
+    (tmp_path / "grundlagen.js").write_text("alt", encoding="utf-8")
+    web.kopiere_app(tmp_path)
+    assert not (tmp_path / "grundlagen.js").exists() and not (tmp_path / "vorschlag").exists()
+    assert (tmp_path / "ansichten" / "vorschlag" / "ansicht.js").exists()

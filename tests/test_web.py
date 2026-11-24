@@ -190,11 +190,26 @@ def oeffne(browser, url):
         )
         page.goto(url + hash_)
         page.wait_for_selector("#laden", state="hidden", timeout=30_000)
+        page.evaluate(_ALLE_EXPORTE)
         return page
 
     yield oeffne_
     kontext.close()
     assert fehler == [], fehler
+
+
+# Die Seite besteht aus ES-Modulen: Für die Tests stehen ihre Exporte (live, als Getter) auch
+# auf window (auch vor gleichnamigen Elementen wie #karte), damit page.evaluate("ANSICHTEN…")
+# sie erreicht – dieselben Instanzen wie in der Seite, denn import() geht über ihre Import-Map.
+_ALLE_EXPORTE = """async () => {
+  const karte = JSON.parse(document.querySelector('script[type=importmap]').textContent).imports;
+  for (const pfad of Object.keys(karte)) {
+    const ns = await import(pfad);
+    for (const k of Object.keys(ns)) {
+      if (!(k in window) || window[k] instanceof Element) Object.defineProperty(window, k, { get: () => ns[k], configurable: true });
+    }
+  }
+}"""
 
 
 def _gesendet(page) -> dict:

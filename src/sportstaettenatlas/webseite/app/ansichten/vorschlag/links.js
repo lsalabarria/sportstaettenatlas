@@ -1,5 +1,11 @@
-// vorschlag/99_links.js: Links aus Popups und Liste in das Formular.
+// Links aus Popups und Liste in das Formular.
 // Links „Stützpunkt“ (Popups): ihr Stützpunkt oder ein neuer mit ihr
+import { karte } from "../../karte/karte.js";
+import { esc, leer } from "../../lib/text.js";
+import { zerlegeAdresse } from "../../lib/vergleich.js";
+import { ALKIS_STAETTEN } from "../analysen.js";
+import { ANSICHTEN } from "../umschalten.js";
+
 document.addEventListener("click", ev => {
   const a = ev.target.closest("[data-stp-von]");
   if (!a || !ANSICHTEN.vorschlag) return;
@@ -45,7 +51,7 @@ document.addEventListener("click", ev => {
 });
 // Zeile „Angaben ändern · Sportanlagen ändern“ für Popups (Karte und ALKIS-Abgleich), nur
 // für Sportstätten, die im Datenbestand stehen
-function aendernLink(id) {
+export function aendernLink(id) {
   if (!ANSICHTEN.vorschlag || leer(id) || !ANSICHTEN.vorschlag.hat(id)) return "";
   return `<tr><td>Vorschlag</td><td><a href="#" data-bearbeiten="${esc(id)}">Angaben ändern</a> · `
     + `<a href="#" data-bearbeiten="${esc(id)}" data-teil="anlagen">Sportanlagen ändern</a> · `

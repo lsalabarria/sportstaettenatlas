@@ -2,10 +2,25 @@
 // Typ filterbar), Organisationen (Eigentümer, Betreiber, Nutzer). Klick auf eine Zeile öffnet rechts alle bisher
 // befüllten Angaben der Sportstätte und ihrer Anlagen; von dort geht es zur Karte oder zum
 // Vorschlag. Die Auswahl steht in der Adresse der Seite (#ansicht=liste&teil=anlagen&sportart=…).
+import { ANLAGEN_GRUPPEN, anlagenGruppe } from "../daten/anlagen.js";
+import { ORGANISATIONEN, orgArt, orgVon } from "../daten/organisationen.js";
+import { ATLAS, SCHEMA, feldText, modellFelder, nurEinheit, passtFuer } from "../daten/schema.js";
+import {
+  IN_KOMPLEX, SPORTKOMPLEXE, komplexAuswahlHtml, komplexName, komplexeNachName,
+} from "../daten/sportkomplexe.js";
+import {
+  STUETZPUNKTE, datumText, stpAuswahlHtml, stpPasst, stuetzpunkteNachName,
+} from "../daten/stuetzpunkte.js";
+import { GEBIET, gebietName, gemeindeName, imGebiet } from "../karte/gebiete.js";
+import { karte, koord } from "../karte/karte.js";
+import { esc, leer, schluesselName, suchtext, url, zahl } from "../lib/text.js";
+import { artText, artVon } from "./bestand.js";
+import { FELDER_ANLAGE, FELDER_STAETTE } from "./uebersicht.js";
+import { AKTIV, ANSICHTEN, merkeZustand, zeige } from "./umschalten.js";
 
 const LISTE_SCHRITT = 200;  // so viele Zeilen auf einmal, „weitere zeigen“ lädt nach
 
-function ansichtListe(bestand) {
+export function ansichtListe(bestand) {
   const el = document.getElementById("seite-liste");
   const start = new URLSearchParams(location.hash.slice(1));
   const z = {  // Zustand, landet in der Adresse

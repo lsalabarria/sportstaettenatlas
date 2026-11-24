@@ -29,7 +29,7 @@ NUR_ATLAS = ("nicht in ALKIS", "nah")  # diese Einträge erscheinen als eigene P
 # alle anderen alt_* stecken schon in den zusammengeführten Feldern
 ALT_BEHALTEN = {"alt_bezug", "alt_name", "alt_adresse", "alt_typ", "alt_atlas_id", "alt_id"}
 UEBERFLUESSIG = {"verifikation_sportstaette", "verifikation_anzahl"}
-# Spalten des Abgleichs, die die Karte zu jedem Atlas-Punkt zeigt (Beschriftung: analysen.js)
+# Spalten des Abgleichs, die die Karte zu jedem Atlas-Punkt zeigt (Beschriftung: app/ansichten/analysen.js)
 ATLAS_SPALTEN = (
     "alt_name",
     "alt_typ",

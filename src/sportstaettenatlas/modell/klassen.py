@@ -250,7 +250,7 @@ PRUEFUNG: dict[str, Any] = {
     # Rechtsform, zählt beim Vergleich von Organisationen nicht (auf den Namen nach norm_name)
     "rechtsform": r"\b(e ?v|g?gmbh|mbh|ag|kg|ug|gbr)\b",
 }
-# Meldungen der Regeln zwischen Feldern (zwischen_feldern; im Formular grundlagen.js). {feld}
+# Meldungen der Regeln zwischen Feldern (zwischen_feldern; im Formular webseite/app/daten/schema.js). {feld}
 # ist in Python der Name des Feldes (die Regelverstöße zählen danach), im Formular sein Titel.
 MELDUNGEN = {
     "braucht": "{feld}: nötig, wenn {wenn} angegeben ist",
@@ -329,7 +329,7 @@ def _leer(w) -> bool:
 
 def zwischen_feldern(modell: type[BaseModel], werte: dict) -> list[tuple[str, str, str]]:
     """Regeln zwischen Feldern (Angaben braucht, nachkommastellen, teil_von) für die Werte eines
-    Objekts → [(Regel, Feld, Meldung)]. Dieselbe Rechnung wie regelFunde in grundlagen.js."""
+    Objekts → [(Regel, Feld, Meldung)]. Dieselbe Rechnung wie regelFunde in webseite/app/daten/schema.js."""
     felder = modell.model_fields
     out = []
     for name, feld in felder.items():

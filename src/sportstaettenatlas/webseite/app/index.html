@@ -33,6 +33,10 @@ __STIL__
      Browser bis zu zehn Minuten den alten Stand aus seinem Zwischenspeicher -->
 <script>document.write('<script src="konfig.js?' + Date.now() + '"><\/script>');</script>
 <script>const QUELLE = __QUELLE__;</script>
+<!-- Module laden Browser nicht aus file:// – dann gleich sagen, warum nichts erscheint -->
+<script>if (location.protocol === "file:") { const l = document.getElementById("laden");
+  l.className = "fehler"; l.textContent = "Die Seite muss über einen Webserver geöffnet werden "
+    + "(lokal: sportstaettenatlas seite --vorschau)."; }</script>
 __SKRIPTE__
 </body>
 </html>

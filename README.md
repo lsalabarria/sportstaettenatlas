@@ -350,8 +350,8 @@ src/sportstaettenatlas/
     crawler.py         Webseiten für Vereine suchen
   webseite/          Darstellung (Befehl `seite`)
     bauen.py           docs/ schreiben, Analysen in webseite/ ablegen
-    app/               die Seite: HTML, JavaScript, Stil, Schrift, Vorlagen; das Formular
-                       liegt in Teilen in app/vorschlag/ (siehe app/__init__.py)
+    app/               die Seite: HTML, Stil, Schrift, Vorlagen und JavaScript als
+                       ES-Module in lib/, daten/, karte/, ansichten/ (siehe app/__init__.py)
   cli.py             verteilt auf die Befehle der Teile (jeder Teil hat seine cli.py)
 ```
 
@@ -369,9 +369,8 @@ uv run pytest
 
 Neben den Tests prüft die CI bei jedem Push den Stil (ruff: Formatierung, typische Fehler,
 sortierte Importe), die Typen (mypy, Einstellungen in `pyproject.toml`) und die Skripte der
-Webseite (ESLint: undefinierte und unbenutzte Namen, doppelte Schlüssel … – keine Stilregeln).
-ESLint prüft alle Skripte zusammen, so wie der Browser sie lädt, und nennt Datei und Zeile des
-Teils (`src/sportstaettenatlas/webseite/pruefe_js.mjs`); dafür braucht es Node.js. Dieselben
+Webseite (ESLint: undefinierte und unbenutzte Namen, doppelte Schlüssel … – keine Stilregeln;
+Einstellungen in `eslint.config.js`, braucht Node.js). Dieselben
 Prüfungen laufen auf Wunsch vor jedem Commit (`.pre-commit-config.yaml`); ruff behebt dabei,
 was sicher geht, und der Commit muss dann noch einmal mit den Korrekturen:
 

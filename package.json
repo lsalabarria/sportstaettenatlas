@@ -3,7 +3,7 @@
   "description": "Nur Werkzeuge: ESLint für die Skripte der Webseite (npm run lint)",
   "type": "module",
   "scripts": {
-    "lint": "node src/sportstaettenatlas/webseite/pruefe_js.mjs"
+    "lint": "eslint src/sportstaettenatlas/webseite/app"
   },
   "devDependencies": {
     "eslint": "^10.1.0",

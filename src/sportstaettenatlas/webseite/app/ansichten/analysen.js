@@ -3,14 +3,23 @@
 // docs/daten/analysen/index.json. Hier steht, wie sie auf der Karte erscheint: ein
 // Eintrag in ANALYSEN mit Titel und einer Funktion, die ein Objekt wie eine Ansicht
 // liefert (starte, zeigen, verbergen, aktualisiere, gebietGeaendert, suchindex).
+import { GEBIET, gebietName, imGebiet } from "../karte/gebiete.js";
+import {
+  bboxVon, info, karte, koord, nSpan, panelDiv, punktGrenzen, setzeZahlen, svgRenderer,
+} from "../karte/karte.js";
+import { esc, leer, suchtext, url, verbinde, wertText, zaehle, zahl } from "../lib/text.js";
+import { fertig, holeJson, ladeFehler, zeigeLaden } from "../seite.js";
+import { balken } from "./uebersicht.js";
+import { AKTIV, ANSICHTEN, merkeZustand } from "./umschalten.js";
+import { aendernLink } from "./vorschlag/links.js";
 
-const ANALYSEN = {
+export const ANALYSEN = {
   alkis: { titel: "ALKIS-Abgleich", erzeuge: () => analyseAlkis() },
 };
 // Sportstätten aus ALKIS, für „Als neue Sportstätte vorschlagen“ (vorschlag.js)
-let ALKIS_STAETTEN = {};
+export let ALKIS_STAETTEN = {};
 
-function ansichtAnalysen(namen, gewuenscht) {
+export function ansichtAnalysen(namen, gewuenscht) {
   const inst = {};
   let aktiv = null, aktivName = null;
   const wahl = document.getElementById("analysewahl");

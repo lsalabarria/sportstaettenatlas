@@ -91,7 +91,7 @@ RECHTSFORM = re.compile(modell.PRUEFUNG["rechtsform"])  # nach norm_name; zählt
 
 
 def norm_name(s) -> str:
-    """Wie normName in vorschlag/00_hilfen.js: klein, Umlaute ausgeschrieben, nur a-z, 0-9, Leerzeichen."""
+    """Wie normName in webseite/app/lib/vergleich.js: klein, Umlaute ausgeschrieben, nur a-z, 0-9, Leerzeichen."""
     t = str(s or "").lower()
     for a, b in (("ä", "ae"), ("ö", "oe"), ("ü", "ue"), ("ß", "ss")):
         t = t.replace(a, b)
@@ -99,7 +99,7 @@ def norm_name(s) -> str:
 
 
 def aehnlich(a, b) -> float:
-    """Wie aehnlich in vorschlag/00_hilfen.js: Dice-Koeffizient der Buchstabenpaare (0 … 1)."""
+    """Wie aehnlich in webseite/app/lib/vergleich.js: Dice-Koeffizient der Buchstabenpaare (0 … 1)."""
 
     def paare(s):
         t = f" {norm_name(s)} "
@@ -377,7 +377,7 @@ def sportarten_schreibweisen(bestand: list[dict]) -> dict[str, tuple[str, int]]:
 
 
 def org_kern(name) -> str:
-    """Wie orgKern in vorschlag/00_hilfen.js: norm_name ohne Rechtsform („TuS Berg e.V.“ → „tus berg“)."""
+    """Wie orgKern in webseite/app/daten/organisationen.js: norm_name ohne Rechtsform („TuS Berg e.V.“ → „tus berg“)."""
     return " ".join(RECHTSFORM.sub(" ", norm_name(name)).split())
 
 
