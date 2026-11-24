@@ -10,10 +10,10 @@
 <title>Entity Relationship Diagram created by erdantic</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-2404.25 2244.25,-2404.25 2244.25,4 -4,4"/>
 <text xml:space="preserve" text-anchor="middle" x="1120.12" y="-5.95" font-family="Times New Roman,Times,Liberation Serif,serif" font-size="9.00" fill="#a8a8a8">Created by erdantic v1.2.1 &lt;https://github.com/drivendataorg/erdantic&gt;</text>
-<!-- sportstaettenatlas.modell.Adresse -->
+<!-- sportstaettenatlas.modell.klassen.Adresse -->
 <g id="node1" class="node">
-<title>sportstaettenatlas.modell.Adresse</title>
-<g id="a_node1"><a xlink:title="sportstaettenatlas.modell.Adresse&#10;&#10;Gemeinsame Einstellungen und die Regeln zwischen Feldern (Angaben braucht, teil_von).&#10;">
+<title>sportstaettenatlas.modell.klassen.Adresse</title>
+<g id="a_node1"><a xlink:title="sportstaettenatlas.modell.klassen.Adresse&#10;&#10;Gemeinsame Einstellungen und die Regeln zwischen Feldern (Angaben braucht, teil_von).&#10;">
 <polygon fill="none" stroke="black" points="1592.62,-2305 1592.62,-2327.5 1729.12,-2327.5 1729.12,-2305 1592.62,-2305"/>
 <text xml:space="preserve" text-anchor="start" x="1638" y="-2312.2" font-family="Times New Roman,Times,Liberation Serif,serif" font-weight="bold" font-size="14.00">Adresse</text>
 <polygon fill="none" stroke="black" points="1592.62,-2282.5 1592.62,-2305 1669.88,-2305 1669.88,-2282.5 1592.62,-2282.5"/>
@@ -39,10 +39,10 @@
 </a>
 </g>
 </g>
-<!-- sportstaettenatlas.modell.Energietraeger -->
+<!-- sportstaettenatlas.modell.klassen.Energietraeger -->
 <g id="node2" class="node">
-<title>sportstaettenatlas.modell.Energietraeger</title>
-<g id="a_node2"><a xlink:title="sportstaettenatlas.modell.Energietraeger&#10;&#10;Ein Energieträger einer Sportstätte, z. B. Erdgas für die Heizung.&#10;">
+<title>sportstaettenatlas.modell.klassen.Energietraeger</title>
+<g id="a_node2"><a xlink:title="sportstaettenatlas.modell.klassen.Energietraeger&#10;&#10;Ein Energieträger einer Sportstätte, z. B. Erdgas für die Heizung.&#10;">
 <polygon fill="none" stroke="black" points="1558.12,-1926.75 1558.12,-1949.25 1763.62,-1949.25 1763.62,-1926.75 1558.12,-1926.75"/>
 <text xml:space="preserve" text-anchor="start" x="1617.38" y="-1933.95" font-family="Times New Roman,Times,Liberation Serif,serif" font-weight="bold" font-size="14.00">Energietraeger</text>
 <polygon fill="none" stroke="black" points="1558.12,-1904.25 1558.12,-1926.75 1636.12,-1926.75 1636.12,-1904.25 1558.12,-1904.25"/>
@@ -64,10 +64,10 @@
 </a>
 </g>
 </g>
-<!-- sportstaettenatlas.modell.Foerderung -->
+<!-- sportstaettenatlas.modell.klassen.Foerderung -->
 <g id="node3" class="node">
-<title>sportstaettenatlas.modell.Foerderung</title>
-<g id="a_node3"><a xlink:title="sportstaettenatlas.modell.Foerderung&#10;&#10;Eine Förderung (Sportstätte oder Sportanlage).&#10;">
+<title>sportstaettenatlas.modell.klassen.Foerderung</title>
+<g id="a_node3"><a xlink:title="sportstaettenatlas.modell.klassen.Foerderung&#10;&#10;Eine Förderung (Sportstätte oder Sportanlage).&#10;">
 <polygon fill="none" stroke="black" points="2067.38,-745.75 2067.38,-768.25 2233.12,-768.25 2233.12,-745.75 2067.38,-745.75"/>
 <text xml:space="preserve" text-anchor="start" x="2116.12" y="-752.95" font-family="Times New Roman,Times,Liberation Serif,serif" font-weight="bold" font-size="14.00">Foerderung</text>
 <polygon fill="none" stroke="black" points="2067.38,-723.25 2067.38,-745.75 2131.12,-745.75 2131.12,-723.25 2067.38,-723.25"/>
@@ -89,10 +89,10 @@
 </a>
 </g>
 </g>
-<!-- sportstaettenatlas.modell.Lage -->
+<!-- sportstaettenatlas.modell.klassen.Lage -->
 <g id="node4" class="node">
-<title>sportstaettenatlas.modell.Lage</title>
-<g id="a_node4"><a xlink:title="sportstaettenatlas.modell.Lage&#10;&#10;Immer WGS84 (EPSG:4326), Grad mit Dezimalstellen.&#10;">
+<title>sportstaettenatlas.modell.klassen.Lage</title>
+<g id="a_node4"><a xlink:title="sportstaettenatlas.modell.klassen.Lage&#10;&#10;Immer WGS84 (EPSG:4326), Grad mit Dezimalstellen.&#10;">
 <polygon fill="none" stroke="black" points="1633.88,-2122.25 1633.88,-2144.75 1687.88,-2144.75 1687.88,-2122.25 1633.88,-2122.25"/>
 <text xml:space="preserve" text-anchor="start" x="1646.62" y="-2129.45" font-family="Times New Roman,Times,Liberation Serif,serif" font-weight="bold" font-size="14.00">Lage</text>
 <polygon fill="none" stroke="black" points="1633.88,-2099.75 1633.88,-2122.25 1657.12,-2122.25 1657.12,-2099.75 1633.88,-2099.75"/>
@@ -106,10 +106,10 @@
 </a>
 </g>
 </g>
-<!-- sportstaettenatlas.modell.NeueSportstaette -->
+<!-- sportstaettenatlas.modell.klassen.NeueSportstaette -->
 <g id="node5" class="node">
-<title>sportstaettenatlas.modell.NeueSportstaette</title>
-<g id="a_node5"><a xlink:title="sportstaettenatlas.modell.NeueSportstaette&#10;&#10;Eine neue Sportstätte innerhalb eines Vorschlags für einen Sportkomplex oder Stützpunkt;&#10;dessen Liste der Sportstätten nennt sie mit `ref`, die ID vergibt erst die Übernahme.&#10;">
+<title>sportstaettenatlas.modell.klassen.NeueSportstaette</title>
+<g id="a_node5"><a xlink:title="sportstaettenatlas.modell.klassen.NeueSportstaette&#10;&#10;Eine neue Sportstätte innerhalb eines Vorschlags für einen Sportkomplex oder Stützpunkt;&#10;dessen Liste der Sportstätten nennt sie mit `ref`, die ID vergibt erst die Übernahme.&#10;">
 <polygon fill="none" stroke="black" points="694.88,-1396.5 694.88,-1419 858.38,-1419 858.38,-1396.5 694.88,-1396.5"/>
 <text xml:space="preserve" text-anchor="start" x="727.12" y="-1403.7" font-family="Times New Roman,Times,Liberation Serif,serif" font-weight="bold" font-size="14.00">NeueSportstaette</text>
 <polygon fill="none" stroke="black" points="694.88,-1374 694.88,-1396.5 762.38,-1396.5 762.38,-1374 694.88,-1374"/>
@@ -127,10 +127,10 @@
 </a>
 </g>
 </g>
-<!-- sportstaettenatlas.modell.Sportanlage -->
+<!-- sportstaettenatlas.modell.klassen.Sportanlage -->
 <g id="node8" class="node">
-<title>sportstaettenatlas.modell.Sportanlage</title>
-<g id="a_node8"><a xlink:title="sportstaettenatlas.modell.Sportanlage&#10;&#10;Eine Einheit einer Sportstätte, z. B. ein Großspielfeld, eine Halle oder ein Becken.&#10;Zu welcher Sportstätte sie gehört, sagt der Ordner, in dem ihre Datei liegt.&#10;">
+<title>sportstaettenatlas.modell.klassen.Sportanlage</title>
+<g id="a_node8"><a xlink:title="sportstaettenatlas.modell.klassen.Sportanlage&#10;&#10;Eine Einheit einer Sportstätte, z. B. ein Großspielfeld, eine Halle oder ein Becken.&#10;Zu welcher Sportstätte sie gehört, sagt der Ordner, in dem ihre Datei liegt.&#10;">
 <polygon fill="none" stroke="black" points="1369.5,-1481 1369.5,-1503.5 1952.25,-1503.5 1952.25,-1481 1369.5,-1481"/>
 <text xml:space="preserve" text-anchor="start" x="1626" y="-1488.2" font-family="Times New Roman,Times,Liberation Serif,serif" font-weight="bold" font-size="14.00">Sportanlage</text>
 <polygon fill="none" stroke="black" points="1369.5,-1458.5 1369.5,-1481 1520.25,-1481 1520.25,-1458.5 1369.5,-1458.5"/>
@@ -396,19 +396,19 @@
 </a>
 </g>
 </g>
-<!-- sportstaettenatlas.modell.NeueSportstaette&#45;&gt;sportstaettenatlas.modell.Sportanlage -->
+<!-- sportstaettenatlas.modell.klassen.NeueSportstaette&#45;&gt;sportstaettenatlas.modell.klassen.Sportanlage -->
 <g id="edge1" class="edge">
-<title>sportstaettenatlas.modell.NeueSportstaette:e&#45;&gt;sportstaettenatlas.modell.Sportanlage:w</title>
+<title>sportstaettenatlas.modell.klassen.NeueSportstaette:e&#45;&gt;sportstaettenatlas.modell.klassen.Sportanlage:w</title>
 <path fill="none" stroke="black" d="M869.31,-1340.34C1091.92,-1344.43 1134.42,-1485.69 1354.07,-1492.03"/>
 <polyline fill="none" stroke="black" points="859.38,-1340.25 864.37,-1340.3"/>
 <polyline fill="none" stroke="black" points="864.37,-1340.3 869.37,-1340.34"/>
 <polygon fill="black" stroke="black" points="1359.17,-1492.1 1369.1,-1496.74 1364.5,-1492.18 1368.83,-1492.24 1368.83,-1492.24 1368.83,-1492.24 1364.5,-1492.18 1369.23,-1487.75 1359.17,-1492.1"/>
 <polyline fill="none" stroke="black" points="1357.95,-1492.08 1352.95,-1492.01"/>
 </g>
-<!-- sportstaettenatlas.modell.Sportstaette -->
+<!-- sportstaettenatlas.modell.klassen.Sportstaette -->
 <g id="node10" class="node">
-<title>sportstaettenatlas.modell.Sportstaette</title>
-<g id="a_node10"><a xlink:title="sportstaettenatlas.modell.Sportstaette&#10;&#10;Der Standort, z. B. ein Sportpark, ein Schulsportzentrum oder ein Freibad.&#10;">
+<title>sportstaettenatlas.modell.klassen.Sportstaette</title>
+<g id="a_node10"><a xlink:title="sportstaettenatlas.modell.klassen.Sportstaette&#10;&#10;Der Standort, z. B. ein Sportpark, ein Schulsportzentrum oder ein Freibad.&#10;">
 <polygon fill="none" stroke="black" points="998.25,-2229 998.25,-2251.5 1261.5,-2251.5 1261.5,-2229 998.25,-2229"/>
 <text xml:space="preserve" text-anchor="start" x="1095" y="-2236.2" font-family="Times New Roman,Times,Liberation Serif,serif" font-weight="bold" font-size="14.00">Sportstaette</text>
 <polygon fill="none" stroke="black" points="998.25,-2206.5 998.25,-2229 1119,-2229 1119,-2206.5 998.25,-2206.5"/>
@@ -530,9 +530,9 @@
 </a>
 </g>
 </g>
-<!-- sportstaettenatlas.modell.NeueSportstaette&#45;&gt;sportstaettenatlas.modell.Sportstaette -->
+<!-- sportstaettenatlas.modell.klassen.NeueSportstaette&#45;&gt;sportstaettenatlas.modell.klassen.Sportstaette -->
 <g id="edge2" class="edge">
-<title>sportstaettenatlas.modell.NeueSportstaette:e&#45;&gt;sportstaettenatlas.modell.Sportstaette:w</title>
+<title>sportstaettenatlas.modell.klassen.NeueSportstaette:e&#45;&gt;sportstaettenatlas.modell.klassen.Sportstaette:w</title>
 <path fill="none" stroke="black" d="M869.1,-1363.51C1043.38,-1391.71 817,-2195.31 983.55,-2238.45"/>
 <polyline fill="none" stroke="black" points="859.38,-1362.75 864.36,-1363.14"/>
 <polyline fill="none" stroke="black" points="864.36,-1363.14 869.34,-1363.53"/>
@@ -542,10 +542,10 @@
 <polygon fill="black" stroke="black" points="987.94,-2233.95 986.72,-2243.87 984.74,-2243.63 985.95,-2233.71 987.94,-2233.95"/>
 <polyline fill="none" stroke="black" points="988.32,-2239.03 983.36,-2238.43"/>
 </g>
-<!-- sportstaettenatlas.modell.Organisation -->
+<!-- sportstaettenatlas.modell.klassen.Organisation -->
 <g id="node6" class="node">
-<title>sportstaettenatlas.modell.Organisation</title>
-<g id="a_node6"><a xlink:title="sportstaettenatlas.modell.Organisation&#10;&#10;Verein, Kommune, Verband, Unternehmen … als Eigentümer, Betreiber oder Nutzer von&#10;Sportstätten (daten/organisationen/&lt;LAND&gt;/&lt;Ordner der Art&gt;/&lt;id&gt;.json). Sportstätten nennen sie in&#10;`eigentuemer`, `betreiber` und `nutzer` beim Namen; auch die weiteren Schreibweisen&#10;gelten. Keine Personen, keine Kontaktdaten.&#10;">
+<title>sportstaettenatlas.modell.klassen.Organisation</title>
+<g id="a_node6"><a xlink:title="sportstaettenatlas.modell.klassen.Organisation&#10;&#10;Verein, Kommune, Verband, Unternehmen … als Eigentümer, Betreiber oder Nutzer von&#10;Sportstätten (daten/organisationen/&lt;LAND&gt;/&lt;Ordner der Art&gt;/&lt;id&gt;.json). Sportstätten nennen sie in&#10;`eigentuemer`, `betreiber` und `nutzer` beim Namen; auch die weiteren Schreibweisen&#10;gelten. Keine Personen, keine Kontaktdaten.&#10;">
 <polygon fill="none" stroke="black" points="663,-2014.75 663,-2037.25 890.25,-2037.25 890.25,-2014.75 663,-2014.75"/>
 <text xml:space="preserve" text-anchor="start" x="738.38" y="-2021.95" font-family="Times New Roman,Times,Liberation Serif,serif" font-weight="bold" font-size="14.00">Organisation</text>
 <polygon fill="none" stroke="black" points="663,-1992.25 663,-2014.75 752.25,-2014.75 752.25,-1992.25 663,-1992.25"/>
@@ -583,10 +583,10 @@
 </a>
 </g>
 </g>
-<!-- sportstaettenatlas.modell.Sanierung -->
+<!-- sportstaettenatlas.modell.klassen.Sanierung -->
 <g id="node7" class="node">
-<title>sportstaettenatlas.modell.Sanierung</title>
-<g id="a_node7"><a xlink:title="sportstaettenatlas.modell.Sanierung&#10;&#10;Eine Sanierung (Sportstätte oder Sportanlage).&#10;">
+<title>sportstaettenatlas.modell.klassen.Sanierung</title>
+<g id="a_node7"><a xlink:title="sportstaettenatlas.modell.klassen.Sanierung&#10;&#10;Eine Sanierung (Sportstätte oder Sportanlage).&#10;">
 <polygon fill="none" stroke="black" points="2060.25,-1257.75 2060.25,-1280.25 2240.25,-1280.25 2240.25,-1257.75 2060.25,-1257.75"/>
 <text xml:space="preserve" text-anchor="start" x="2120.62" y="-1264.95" font-family="Times New Roman,Times,Liberation Serif,serif" font-weight="bold" font-size="14.00">Sanierung</text>
 <polygon fill="none" stroke="black" points="2060.25,-1235.25 2060.25,-1257.75 2138.25,-1257.75 2138.25,-1235.25 2060.25,-1235.25"/>
@@ -608,28 +608,28 @@
 </a>
 </g>
 </g>
-<!-- sportstaettenatlas.modell.Sportanlage&#45;&gt;sportstaettenatlas.modell.Foerderung -->
+<!-- sportstaettenatlas.modell.klassen.Sportanlage&#45;&gt;sportstaettenatlas.modell.klassen.Foerderung -->
 <g id="edge3" class="edge">
-<title>sportstaettenatlas.modell.Sportanlage:e&#45;&gt;sportstaettenatlas.modell.Foerderung:w</title>
+<title>sportstaettenatlas.modell.klassen.Sportanlage:e&#45;&gt;sportstaettenatlas.modell.klassen.Foerderung:w</title>
 <path fill="none" stroke="black" d="M1962.04,-29.98C2263.5,-44.35 1759.28,-734.22 2051.38,-756.45"/>
 <polyline fill="none" stroke="black" points="1952.25,-29.75 1957.25,-29.87"/>
 <polyline fill="none" stroke="black" points="1957.25,-29.87 1962.25,-29.98"/>
 <polygon fill="black" stroke="black" points="2056.05,-756.62 2065.88,-761.48 2061.38,-756.82 2065.71,-756.98 2065.71,-756.98 2065.71,-756.98 2061.38,-756.82 2066.21,-752.49 2056.05,-756.62"/>
 <polyline fill="none" stroke="black" points="2054.83,-756.58 2049.83,-756.39"/>
 </g>
-<!-- sportstaettenatlas.modell.Sportanlage&#45;&gt;sportstaettenatlas.modell.Sanierung -->
+<!-- sportstaettenatlas.modell.klassen.Sportanlage&#45;&gt;sportstaettenatlas.modell.klassen.Sanierung -->
 <g id="edge4" class="edge">
-<title>sportstaettenatlas.modell.Sportanlage:e&#45;&gt;sportstaettenatlas.modell.Sanierung:w</title>
+<title>sportstaettenatlas.modell.klassen.Sportanlage:e&#45;&gt;sportstaettenatlas.modell.klassen.Sanierung:w</title>
 <path fill="none" stroke="black" d="M1961.88,-52.79C2208.16,-81.19 1808.7,-1221.93 2044.96,-1267.59"/>
 <polyline fill="none" stroke="black" points="1952.25,-52.25 1957.24,-52.53"/>
 <polyline fill="none" stroke="black" points="1957.24,-52.53 1962.23,-52.81"/>
 <polygon fill="black" stroke="black" points="2049.96,-1268.05 2059.5,-1273.45 2055.27,-1268.54 2059.58,-1268.94 2059.58,-1268.94 2059.58,-1268.94 2055.27,-1268.54 2060.33,-1264.49 2049.96,-1268.05"/>
 <polyline fill="none" stroke="black" points="2048.75,-1267.94 2043.77,-1267.48"/>
 </g>
-<!-- sportstaettenatlas.modell.Sportkomplex -->
+<!-- sportstaettenatlas.modell.klassen.Sportkomplex -->
 <g id="node9" class="node">
-<title>sportstaettenatlas.modell.Sportkomplex</title>
-<g id="a_node9"><a xlink:title="sportstaettenatlas.modell.Sportkomplex&#10;&#10;Optionale Klammer um mehrere Sportstätten an einem Ort, z. B. ein Sportzentrum mit&#10;Halle, Stadion und Freibad (daten/&lt;LAND&gt;/&lt;Kreis&gt;/sportkomplexe/&lt;id&gt;.json). Die&#10;Sportstätten verweisen in `sportkomplex` auf ihn; Eigentümer, Betreiber und Anlagen&#10;stehen weiter bei den Sportstätten. Nur anlegen, wenn mindestens zwei Sportstätten&#10;dazugehören.&#10;">
+<title>sportstaettenatlas.modell.klassen.Sportkomplex</title>
+<g id="a_node9"><a xlink:title="sportstaettenatlas.modell.klassen.Sportkomplex&#10;&#10;Optionale Klammer um mehrere Sportstätten an einem Ort, z. B. ein Sportzentrum mit&#10;Halle, Stadion und Freibad (daten/&lt;LAND&gt;/&lt;Kreis&gt;/sportkomplexe/&lt;id&gt;.json). Die&#10;Sportstätten verweisen in `sportkomplex` auf ihn; Eigentümer, Betreiber und Anlagen&#10;stehen weiter bei den Sportstätten. Nur anlegen, wenn mindestens zwei Sportstätten&#10;dazugehören.&#10;">
 <polygon fill="none" stroke="black" points="1070.62,-2377.75 1070.62,-2400.25 1189.12,-2400.25 1189.12,-2377.75 1070.62,-2377.75"/>
 <text xml:space="preserve" text-anchor="start" x="1088.62" y="-2384.95" font-family="Times New Roman,Times,Liberation Serif,serif" font-weight="bold" font-size="14.00">Sportkomplex</text>
 <polygon fill="none" stroke="black" points="1070.62,-2355.25 1070.62,-2377.75 1116.38,-2377.75 1116.38,-2355.25 1070.62,-2355.25"/>
@@ -651,9 +651,9 @@
 </a>
 </g>
 </g>
-<!-- sportstaettenatlas.modell.Sportkomplex&#45;&gt;sportstaettenatlas.modell.Adresse -->
+<!-- sportstaettenatlas.modell.klassen.Sportkomplex&#45;&gt;sportstaettenatlas.modell.klassen.Adresse -->
 <g id="edge5" class="edge">
-<title>sportstaettenatlas.modell.Sportkomplex:e&#45;&gt;sportstaettenatlas.modell.Adresse:w</title>
+<title>sportstaettenatlas.modell.klassen.Sportkomplex:e&#45;&gt;sportstaettenatlas.modell.klassen.Adresse:w</title>
 <path fill="none" stroke="black" d="M1199.92,-2321.49C1365.46,-2321.31 1413.76,-2316.53 1577.05,-2316.26"/>
 <polyline fill="none" stroke="black" points="1190.12,-2321.5 1195.12,-2321.5"/>
 <polyline fill="none" stroke="black" points="1195.12,-2321.5 1200.12,-2321.49"/>
@@ -663,9 +663,9 @@
 <polygon fill="black" stroke="black" points="1580.62,-2311.26 1580.63,-2321.26 1578.63,-2321.26 1578.62,-2311.26 1580.62,-2311.26"/>
 <polyline fill="none" stroke="black" points="1581.63,-2316.26 1576.63,-2316.26"/>
 </g>
-<!-- sportstaettenatlas.modell.Sportkomplex&#45;&gt;sportstaettenatlas.modell.Lage -->
+<!-- sportstaettenatlas.modell.klassen.Sportkomplex&#45;&gt;sportstaettenatlas.modell.klassen.Lage -->
 <g id="edge6" class="edge">
-<title>sportstaettenatlas.modell.Sportkomplex:e&#45;&gt;sportstaettenatlas.modell.Lage:w</title>
+<title>sportstaettenatlas.modell.klassen.Sportkomplex:e&#45;&gt;sportstaettenatlas.modell.klassen.Lage:w</title>
 <path fill="none" stroke="black" d="M1199.98,-2298.7C1286.79,-2293.23 1284.85,-2214.73 1369.5,-2175 1472.16,-2126.81 1511.01,-2132.85 1618.04,-2133.46"/>
 <polyline fill="none" stroke="black" points="1190.12,-2299 1195.12,-2298.85"/>
 <polyline fill="none" stroke="black" points="1195.12,-2298.85 1200.12,-2298.69"/>
@@ -675,9 +675,9 @@
 <polygon fill="black" stroke="black" points="1621.89,-2128.47 1621.86,-2138.47 1619.86,-2138.46 1619.89,-2128.46 1621.89,-2128.47"/>
 <polyline fill="none" stroke="black" points="1622.88,-2133.47 1617.88,-2133.46"/>
 </g>
-<!-- sportstaettenatlas.modell.Sportstaette&#45;&gt;sportstaettenatlas.modell.Adresse -->
+<!-- sportstaettenatlas.modell.klassen.Sportstaette&#45;&gt;sportstaettenatlas.modell.klassen.Adresse -->
 <g id="edge7" class="edge">
-<title>sportstaettenatlas.modell.Sportstaette:e&#45;&gt;sportstaettenatlas.modell.Adresse:w</title>
+<title>sportstaettenatlas.modell.klassen.Sportstaette:e&#45;&gt;sportstaettenatlas.modell.klassen.Adresse:w</title>
 <path fill="none" stroke="black" d="M1271.4,-2150.46C1421.04,-2156.78 1430.31,-2306.45 1576.99,-2315.79"/>
 <polyline fill="none" stroke="black" points="1261.5,-2150.25 1266.5,-2150.35"/>
 <polyline fill="none" stroke="black" points="1266.5,-2150.35 1271.5,-2150.46"/>
@@ -687,27 +687,27 @@
 <polygon fill="black" stroke="black" points="1580.79,-2310.91 1580.47,-2320.9 1578.48,-2320.84 1578.79,-2310.85 1580.79,-2310.91"/>
 <polyline fill="none" stroke="black" points="1581.63,-2315.94 1576.63,-2315.78"/>
 </g>
-<!-- sportstaettenatlas.modell.Sportstaette&#45;&gt;sportstaettenatlas.modell.Energietraeger -->
+<!-- sportstaettenatlas.modell.klassen.Sportstaette&#45;&gt;sportstaettenatlas.modell.klassen.Energietraeger -->
 <g id="edge9" class="edge">
-<title>sportstaettenatlas.modell.Sportstaette:e&#45;&gt;sportstaettenatlas.modell.Energietraeger:w</title>
+<title>sportstaettenatlas.modell.klassen.Sportstaette:e&#45;&gt;sportstaettenatlas.modell.klassen.Energietraeger:w</title>
 <path fill="none" stroke="black" d="M1271.47,-1678.27C1337.77,-1685.51 1314.1,-1767.24 1369.5,-1818 1438.56,-1881.28 1456.29,-1932.25 1541.87,-1937.55"/>
 <polyline fill="none" stroke="black" points="1261.5,-1677.75 1266.49,-1678.01"/>
 <polyline fill="none" stroke="black" points="1266.49,-1678.01 1271.49,-1678.27"/>
 <polygon fill="black" stroke="black" points="1546.8,-1937.69 1556.66,-1942.49 1552.13,-1937.85 1556.46,-1937.98 1556.46,-1937.98 1556.46,-1937.98 1552.13,-1937.85 1556.92,-1933.49 1546.8,-1937.69"/>
 <polyline fill="none" stroke="black" points="1545.58,-1937.66 1540.58,-1937.51"/>
 </g>
-<!-- sportstaettenatlas.modell.Sportstaette&#45;&gt;sportstaettenatlas.modell.Foerderung -->
+<!-- sportstaettenatlas.modell.klassen.Sportstaette&#45;&gt;sportstaettenatlas.modell.klassen.Foerderung -->
 <g id="edge10" class="edge">
-<title>sportstaettenatlas.modell.Sportstaette:e&#45;&gt;sportstaettenatlas.modell.Foerderung:w</title>
+<title>sportstaettenatlas.modell.klassen.Sportstaette:e&#45;&gt;sportstaettenatlas.modell.klassen.Foerderung:w</title>
 <path fill="none" stroke="black" d="M1271.4,-1609.97C1312.65,-1607.57 1324.11,-1590.22 1369.5,-1582 1497.6,-1558.79 1858.13,-1611.94 1952.25,-1522 2072.64,-1406.97 1905.57,-796.88 2051.28,-758.86"/>
 <polyline fill="none" stroke="black" points="1261.5,-1610.25 1266.5,-1610.11"/>
 <polyline fill="none" stroke="black" points="1266.5,-1610.11 1271.5,-1609.97"/>
 <polygon fill="black" stroke="black" points="2056.12,-758.26 2066.59,-761.51 2061.41,-757.61 2065.71,-757.08 2065.71,-757.08 2065.71,-757.08 2061.41,-757.61 2065.49,-752.57 2056.12,-758.26"/>
 <polyline fill="none" stroke="black" points="2054.91,-758.41 2049.95,-759.02"/>
 </g>
-<!-- sportstaettenatlas.modell.Sportstaette&#45;&gt;sportstaettenatlas.modell.Lage -->
+<!-- sportstaettenatlas.modell.klassen.Sportstaette&#45;&gt;sportstaettenatlas.modell.klassen.Lage -->
 <g id="edge11" class="edge">
-<title>sportstaettenatlas.modell.Sportstaette:e&#45;&gt;sportstaettenatlas.modell.Lage:w</title>
+<title>sportstaettenatlas.modell.klassen.Sportstaette:e&#45;&gt;sportstaettenatlas.modell.klassen.Lage:w</title>
 <path fill="none" stroke="black" d="M1271.03,-2127.76C1423.32,-2127.97 1468.24,-2133.16 1618.04,-2133.48"/>
 <polyline fill="none" stroke="black" points="1261.5,-2127.75 1266.5,-2127.75"/>
 <polyline fill="none" stroke="black" points="1266.5,-2127.75 1271.5,-2127.76"/>
@@ -717,28 +717,28 @@
 <polygon fill="black" stroke="black" points="1621.88,-2128.49 1621.87,-2138.49 1619.87,-2138.49 1619.88,-2128.49 1621.88,-2128.49"/>
 <polyline fill="none" stroke="black" points="1622.88,-2133.49 1617.88,-2133.48"/>
 </g>
-<!-- sportstaettenatlas.modell.Sportstaette&#45;&gt;sportstaettenatlas.modell.Sanierung -->
+<!-- sportstaettenatlas.modell.klassen.Sportstaette&#45;&gt;sportstaettenatlas.modell.klassen.Sanierung -->
 <g id="edge12" class="edge">
-<title>sportstaettenatlas.modell.Sportstaette:e&#45;&gt;sportstaettenatlas.modell.Sanierung:w</title>
+<title>sportstaettenatlas.modell.klassen.Sportstaette:e&#45;&gt;sportstaettenatlas.modell.klassen.Sanierung:w</title>
 <path fill="none" stroke="black" d="M1271.29,-1632.81C1432.23,-1634.66 1832.73,-1678.76 1952.25,-1587 2066.25,-1499.48 1922.45,-1285.67 2044.88,-1269.92"/>
 <polyline fill="none" stroke="black" points="1261.5,-1632.75 1266.5,-1632.78"/>
 <polyline fill="none" stroke="black" points="1266.5,-1632.78 1271.5,-1632.81"/>
 <polygon fill="black" stroke="black" points="2049.93,-1269.62 2060.18,-1273.51 2055.26,-1269.3 2059.58,-1269.04 2059.58,-1269.04 2059.58,-1269.04 2055.26,-1269.3 2059.65,-1264.53 2049.93,-1269.62"/>
 <polyline fill="none" stroke="black" points="2048.72,-1269.69 2043.73,-1269.99"/>
 </g>
-<!-- sportstaettenatlas.modell.Sportstaette&#45;&gt;sportstaettenatlas.modell.Sportanlage -->
+<!-- sportstaettenatlas.modell.klassen.Sportstaette&#45;&gt;sportstaettenatlas.modell.klassen.Sportanlage -->
 <g id="edge8" class="edge">
-<title>sportstaettenatlas.modell.Sportstaette:e&#45;&gt;sportstaettenatlas.modell.Sportanlage:w</title>
+<title>sportstaettenatlas.modell.klassen.Sportstaette:e&#45;&gt;sportstaettenatlas.modell.klassen.Sportanlage:w</title>
 <path fill="none" stroke="black" d="M1271.28,-1586.92C1318.72,-1578.47 1311.1,-1507.58 1354.33,-1494.37"/>
 <polyline fill="none" stroke="black" points="1261.5,-1587.75 1266.48,-1587.33"/>
 <polyline fill="none" stroke="black" points="1266.48,-1587.33 1271.46,-1586.91"/>
 <polygon fill="black" stroke="black" points="1359.26,-1493.68 1369.79,-1496.75 1364.55,-1492.94 1368.84,-1492.34 1368.84,-1492.34 1368.84,-1492.34 1364.55,-1492.94 1368.55,-1487.84 1359.26,-1493.68"/>
 <polyline fill="none" stroke="black" points="1358.06,-1493.85 1353.11,-1494.54"/>
 </g>
-<!-- sportstaettenatlas.modell.Verbrauch -->
+<!-- sportstaettenatlas.modell.klassen.Verbrauch -->
 <g id="node12" class="node">
-<title>sportstaettenatlas.modell.Verbrauch</title>
-<g id="a_node12"><a xlink:title="sportstaettenatlas.modell.Verbrauch&#10;&#10;Ein Jahresverbrauch einer Sportstätte (Menge und Einheit).&#10;">
+<title>sportstaettenatlas.modell.klassen.Verbrauch</title>
+<g id="a_node12"><a xlink:title="sportstaettenatlas.modell.klassen.Verbrauch&#10;&#10;Ein Jahresverbrauch einer Sportstätte (Menge und Einheit).&#10;">
 <polygon fill="none" stroke="black" points="1597.12,-1777.75 1597.12,-1800.25 1724.62,-1800.25 1724.62,-1777.75 1597.12,-1777.75"/>
 <text xml:space="preserve" text-anchor="start" x="1630.12" y="-1784.95" font-family="Times New Roman,Times,Liberation Serif,serif" font-weight="bold" font-size="14.00">Verbrauch</text>
 <polygon fill="none" stroke="black" points="1597.12,-1755.25 1597.12,-1777.75 1639.88,-1777.75 1639.88,-1755.25 1597.12,-1755.25"/>
@@ -760,19 +760,19 @@
 </a>
 </g>
 </g>
-<!-- sportstaettenatlas.modell.Sportstaette&#45;&gt;sportstaettenatlas.modell.Verbrauch -->
+<!-- sportstaettenatlas.modell.klassen.Sportstaette&#45;&gt;sportstaettenatlas.modell.klassen.Verbrauch -->
 <g id="edge13" class="edge">
-<title>sportstaettenatlas.modell.Sportstaette:e&#45;&gt;sportstaettenatlas.modell.Verbrauch:w</title>
+<title>sportstaettenatlas.modell.klassen.Sportstaette:e&#45;&gt;sportstaettenatlas.modell.klassen.Verbrauch:w</title>
 <path fill="none" stroke="black" d="M1271.17,-1655.42C1417.29,-1660.5 1437.97,-1780.61 1580.95,-1788.58"/>
 <polyline fill="none" stroke="black" points="1261.5,-1655.25 1266.5,-1655.34"/>
 <polyline fill="none" stroke="black" points="1266.5,-1655.34 1271.5,-1655.42"/>
 <polygon fill="black" stroke="black" points="1585.79,-1788.72 1595.67,-1793.49 1591.13,-1788.86 1595.46,-1788.98 1595.46,-1788.98 1595.46,-1788.98 1591.13,-1788.86 1595.91,-1784.49 1585.79,-1788.72"/>
 <polyline fill="none" stroke="black" points="1584.58,-1788.68 1579.58,-1788.55"/>
 </g>
-<!-- sportstaettenatlas.modell.Stuetzpunkt -->
+<!-- sportstaettenatlas.modell.klassen.Stuetzpunkt -->
 <g id="node11" class="node">
-<title>sportstaettenatlas.modell.Stuetzpunkt</title>
-<g id="a_node11"><a xlink:title="sportstaettenatlas.modell.Stuetzpunkt&#10;&#10;Anerkennung als Stützpunkt des Leistungssports (Olympia&#45;, Bundes&#45;, Landesstützpunkt,&#10;Landesleistungszentrum) für Sportarten an einer oder mehreren Sportstätten&#10;(daten/stuetzpunkte/&lt;id&gt;.json). Eine Sportstätte kann zu mehreren Stützpunkten gehören.&#10;Statt einzelner Sportstätten kann ein Sportkomplex stehen, wenn alle seine Sportstätten&#10;dazugehören.&#10;">
+<title>sportstaettenatlas.modell.klassen.Stuetzpunkt</title>
+<g id="a_node11"><a xlink:title="sportstaettenatlas.modell.klassen.Stuetzpunkt&#10;&#10;Anerkennung als Stützpunkt des Leistungssports (Olympia&#45;, Bundes&#45;, Landesstützpunkt,&#10;Landesleistungszentrum) für Sportarten an einer oder mehreren Sportstätten&#10;(daten/stuetzpunkte/&lt;id&gt;.json). Eine Sportstätte kann zu mehreren Stützpunkten gehören.&#10;Statt einzelner Sportstätten kann ein Sportkomplex stehen, wenn alle seine Sportstätten&#10;dazugehören.&#10;">
 <polygon fill="none" stroke="black" points="690.75,-1776.5 690.75,-1799 862.5,-1799 862.5,-1776.5 690.75,-1776.5"/>
 <text xml:space="preserve" text-anchor="start" x="741.38" y="-1783.7" font-family="Times New Roman,Times,Liberation Serif,serif" font-weight="bold" font-size="14.00">Stuetzpunkt</text>
 <polygon fill="none" stroke="black" points="690.75,-1754 690.75,-1776.5 777.75,-1776.5 777.75,-1754 690.75,-1754"/>
@@ -822,10 +822,10 @@
 </a>
 </g>
 </g>
-<!-- sportstaettenatlas.modell.Vorschlag -->
+<!-- sportstaettenatlas.modell.klassen.Vorschlag -->
 <g id="node13" class="node">
-<title>sportstaettenatlas.modell.Vorschlag</title>
-<g id="a_node13"><a xlink:title="sportstaettenatlas.modell.Vorschlag&#10;&#10;Was das Formular „Vorschlag“ als JSON in die LimeSurvey&#45;Frage „data“ schreibt.&#10;">
+<title>sportstaettenatlas.modell.klassen.Vorschlag</title>
+<g id="a_node13"><a xlink:title="sportstaettenatlas.modell.klassen.Vorschlag&#10;&#10;Was das Formular „Vorschlag“ als JSON in die LimeSurvey&#45;Frage „data“ schreibt.&#10;">
 <polygon fill="none" stroke="black" points="0,-2193.75 0,-2216.25 555,-2216.25 555,-2193.75 0,-2193.75"/>
 <text xml:space="preserve" text-anchor="start" x="249" y="-2200.95" font-family="Times New Roman,Times,Liberation Serif,serif" font-weight="bold" font-size="14.00">Vorschlag</text>
 <polygon fill="none" stroke="black" points="0,-2171.25 0,-2193.75 117.75,-2193.75 117.75,-2171.25 0,-2171.25"/>
@@ -911,27 +911,27 @@
 </a>
 </g>
 </g>
-<!-- sportstaettenatlas.modell.Vorschlag&#45;&gt;sportstaettenatlas.modell.NeueSportstaette -->
+<!-- sportstaettenatlas.modell.klassen.Vorschlag&#45;&gt;sportstaettenatlas.modell.klassen.NeueSportstaette -->
 <g id="edge16" class="edge">
-<title>sportstaettenatlas.modell.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.NeueSportstaette:w</title>
+<title>sportstaettenatlas.modell.klassen.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.klassen.NeueSportstaette:w</title>
 <path fill="none" stroke="black" d="M564.77,-1844.64C745.12,-1830.98 506.83,-1430.17 678.69,-1408.65"/>
 <polyline fill="none" stroke="black" points="555,-1845 560,-1844.82"/>
 <polyline fill="none" stroke="black" points="560,-1844.82 564.99,-1844.63"/>
 <polygon fill="black" stroke="black" points="683.56,-1408.36 693.81,-1412.26 688.88,-1408.05 693.21,-1407.79 693.21,-1407.79 693.21,-1407.79 688.88,-1408.05 693.28,-1403.28 683.56,-1408.36"/>
 <polyline fill="none" stroke="black" points="682.34,-1408.43 677.35,-1408.73"/>
 </g>
-<!-- sportstaettenatlas.modell.Vorschlag&#45;&gt;sportstaettenatlas.modell.Organisation -->
+<!-- sportstaettenatlas.modell.klassen.Vorschlag&#45;&gt;sportstaettenatlas.modell.klassen.Organisation -->
 <g id="edge15" class="edge">
-<title>sportstaettenatlas.modell.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.Organisation:w</title>
+<title>sportstaettenatlas.modell.klassen.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.klassen.Organisation:w</title>
 <path fill="none" stroke="black" d="M564.76,-1868.28C630.54,-1879.42 588.07,-2006.7 648.06,-2024.05"/>
 <polyline fill="none" stroke="black" points="555,-1867.5 559.98,-1867.9"/>
 <polyline fill="none" stroke="black" points="559.98,-1867.9 564.97,-1868.29"/>
 <polygon fill="black" stroke="black" points="652.75,-2024.66 662.08,-2030.42 658.04,-2025.35 662.34,-2025.91 662.34,-2025.91 662.34,-2025.91 658.04,-2025.35 663.25,-2021.49 652.75,-2024.66"/>
 <polyline fill="none" stroke="black" points="651.54,-2024.5 646.59,-2023.85"/>
 </g>
-<!-- sportstaettenatlas.modell.Vorschlag&#45;&gt;sportstaettenatlas.modell.Organisation -->
+<!-- sportstaettenatlas.modell.klassen.Vorschlag&#45;&gt;sportstaettenatlas.modell.klassen.Organisation -->
 <g id="edge18" class="edge">
-<title>sportstaettenatlas.modell.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.Organisation:w</title>
+<title>sportstaettenatlas.modell.klassen.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.klassen.Organisation:w</title>
 <path fill="none" stroke="black" d="M564.87,-2025.01C600.07,-2025.12 614.8,-2025.8 648.08,-2025.96"/>
 <polyline fill="none" stroke="black" points="555,-2025 560,-2025.01"/>
 <polyline fill="none" stroke="black" points="560,-2025.01 565,-2025.02"/>
@@ -941,9 +941,9 @@
 <polygon fill="black" stroke="black" points="652.01,-2020.97 651.99,-2030.97 649.99,-2030.97 650.01,-2020.97 652.01,-2020.97"/>
 <polyline fill="none" stroke="black" points="653,-2025.98 648,-2025.96"/>
 </g>
-<!-- sportstaettenatlas.modell.Vorschlag&#45;&gt;sportstaettenatlas.modell.Sportanlage -->
+<!-- sportstaettenatlas.modell.klassen.Vorschlag&#45;&gt;sportstaettenatlas.modell.klassen.Sportanlage -->
 <g id="edge14" class="edge">
-<title>sportstaettenatlas.modell.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.Sportanlage:w</title>
+<title>sportstaettenatlas.modell.klassen.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.klassen.Sportanlage:w</title>
 <path fill="none" stroke="black" d="M564.99,-2092.59C708.27,-2095.24 781.42,-2153.16 890.25,-2055 1057.78,-1903.89 835.84,-1715.59 998.25,-1559 1115.28,-1446.16 1196.8,-1489.4 1354.5,-1492.12"/>
 <polyline fill="none" stroke="black" points="555,-2092.5 560,-2092.55"/>
 <polyline fill="none" stroke="black" points="560,-2092.55 565,-2092.59"/>
@@ -953,9 +953,9 @@
 <polygon fill="black" stroke="black" points="1358.54,-1487.15 1358.46,-1497.15 1356.46,-1497.14 1356.54,-1487.14 1358.54,-1487.15"/>
 <polyline fill="none" stroke="black" points="1359.5,-1492.16 1354.5,-1492.12"/>
 </g>
-<!-- sportstaettenatlas.modell.Vorschlag&#45;&gt;sportstaettenatlas.modell.Sportkomplex -->
+<!-- sportstaettenatlas.modell.klassen.Vorschlag&#45;&gt;sportstaettenatlas.modell.klassen.Sportkomplex -->
 <g id="edge17" class="edge">
-<title>sportstaettenatlas.modell.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.Sportkomplex:w</title>
+<title>sportstaettenatlas.modell.klassen.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.klassen.Sportkomplex:w</title>
 <path fill="none" stroke="black" d="M564.81,-1822.13C694.28,-1811.96 546.42,-1593.97 663,-1511 745.29,-1452.44 813.97,-1444.8 890.25,-1511 1187.24,-1768.72 684.41,-2373.39 1054.9,-2388.7"/>
 <polyline fill="none" stroke="black" points="555,-1822.5 560,-1822.31"/>
 <polyline fill="none" stroke="black" points="560,-1822.31 564.99,-1822.12"/>
@@ -965,9 +965,9 @@
 <polygon fill="black" stroke="black" points="1058.73,-2383.78 1058.53,-2393.78 1056.53,-2393.74 1056.73,-2383.74 1058.73,-2383.78"/>
 <polyline fill="none" stroke="black" points="1059.63,-2388.8 1054.63,-2388.7"/>
 </g>
-<!-- sportstaettenatlas.modell.Vorschlag&#45;&gt;sportstaettenatlas.modell.Sportkomplex -->
+<!-- sportstaettenatlas.modell.klassen.Vorschlag&#45;&gt;sportstaettenatlas.modell.klassen.Sportkomplex -->
 <g id="edge19" class="edge">
-<title>sportstaettenatlas.modell.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.Sportkomplex:w</title>
+<title>sportstaettenatlas.modell.klassen.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.klassen.Sportkomplex:w</title>
 <path fill="none" stroke="black" d="M564.96,-1980.51C631.23,-1987.7 608.04,-2068.89 663,-2120 817.96,-2264.1 851.4,-2383.29 1054.69,-2388.8"/>
 <polyline fill="none" stroke="black" points="555,-1980 559.99,-1980.26"/>
 <polyline fill="none" stroke="black" points="559.99,-1980.26 564.99,-1980.51"/>
@@ -977,9 +977,9 @@
 <polygon fill="black" stroke="black" points="1058.69,-2383.85 1058.56,-2393.85 1056.56,-2393.83 1056.69,-2383.83 1058.69,-2383.85"/>
 <polyline fill="none" stroke="black" points="1059.63,-2388.87 1054.63,-2388.8"/>
 </g>
-<!-- sportstaettenatlas.modell.Vorschlag&#45;&gt;sportstaettenatlas.modell.Sportstaette -->
+<!-- sportstaettenatlas.modell.klassen.Vorschlag&#45;&gt;sportstaettenatlas.modell.klassen.Sportstaette -->
 <g id="edge20" class="edge">
-<title>sportstaettenatlas.modell.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.Sportstaette:w</title>
+<title>sportstaettenatlas.modell.klassen.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.klassen.Sportstaette:w</title>
 <path fill="none" stroke="black" d="M564.76,-2115.1C755.97,-2118.91 794.94,-2234.28 983.51,-2240.03"/>
 <polyline fill="none" stroke="black" points="555,-2115 560,-2115.05"/>
 <polyline fill="none" stroke="black" points="560,-2115.05 565,-2115.1"/>
@@ -989,9 +989,9 @@
 <polygon fill="black" stroke="black" points="987.33,-2235.08 987.18,-2245.08 985.18,-2245.05 985.33,-2235.05 987.33,-2235.08"/>
 <polyline fill="none" stroke="black" points="988.25,-2240.1 983.25,-2240.02"/>
 </g>
-<!-- sportstaettenatlas.modell.Vorschlag&#45;&gt;sportstaettenatlas.modell.Stuetzpunkt -->
+<!-- sportstaettenatlas.modell.klassen.Vorschlag&#45;&gt;sportstaettenatlas.modell.klassen.Stuetzpunkt -->
 <g id="edge21" class="edge">
-<title>sportstaettenatlas.modell.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.Stuetzpunkt:w</title>
+<title>sportstaettenatlas.modell.klassen.Vorschlag:e&#45;&gt;sportstaettenatlas.modell.klassen.Stuetzpunkt:w</title>
 <path fill="none" stroke="black" d="M564.93,-1911.83C629.62,-1902.68 614.32,-1802.88 675.08,-1789.28"/>
 <polyline fill="none" stroke="black" points="555,-1912.5 559.99,-1912.16"/>
 <polyline fill="none" stroke="black" points="559.99,-1912.16 564.98,-1911.83"/>
