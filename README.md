@@ -94,8 +94,11 @@ die GitHub Action (siehe „Auf GitHub einrichten“).
 **Webseiten für Vereine suchen:** `uv run sportstaettenatlas crawler` sucht für
 Vereine ohne Webseite in OpenStreetMap und Wikidata und rät Domains (`tus-berg.de` …). Jede
 Webseite wird am Impressum geprüft (Name, Ort, Vereinsregister → Punkte); gespeichert wird
-davon nichts. Ergebnis: `results/vereinswebseiten.csv` zum Prüfen; passende Zeilen behalten,
-dann `bestand --modus ergaenzen`. Probelauf: `--max 20` (zufällige, wiederholbare Stichprobe). Beachtet robots.txt,
+davon nichts. Ergebnis: `results/vereinswebseiten.csv` zum Prüfen und daraus
+`results/vereinswebseiten_sicher.csv` – je Verein genau eine sichere Startseite, die kein
+anderer Verein hat – zum direkten Einlesen mit `bestand … --modus ergaenzen` (füllt nur die
+leere Webseite). Die übrigen Zeilen von Hand prüfen; `crawler --nur-auswahl` schreibt die
+Auswahl neu, ohne neu zu suchen. Probelauf: `--max 20` (zufällige, wiederholbare Stichprobe). Beachtet robots.txt,
 fragt je Webseite höchstens einmal pro Sekunde, fragt Verzeichnisse wie fussball.de nicht ab
 und lädt keine Seiten sozialer Netzwerke. Kontakt im User-Agent: `SPORTSTAETTENATLAS_KONTAKT`.
 
@@ -174,7 +177,7 @@ liefert den Ordner aus, ohne Server und Datenbank. Lokal ansehen: `seite --vorsc
 |---|---|
 | **Karte** | ein Punkt je Sportstätte, herausgezoomt zusammengefasst je Kreis (bis Zoomstufe 9) und je Gemeinde (bis 12), mit dem Umriss beim Darüberfahren; außerhalb von Rheinland-Pfalz grau; Filter nach Sportanlagen (nach Gruppen), Kategorie, Art des Betreibers, Sportarten, Sportkomplex und Stützpunkt (je Ebene oder einzeln); das Fenster einer Sportstätte listet ihre Anlagen und Stützpunkte |
 | **Liste** | alle Sportstätten, Sportanlagen, Sportkomplexe, Stützpunkte bzw. Organisationen (als Eigentümer, Betreiber oder Nutzer), filterbar nach Sportart, Kategorie, Typ, Sportkomplex, Stützpunkt und Text, sortierbar (auch nach Befüllung); ein Klick zeigt alle Angaben, „Karte“ springt zum Punkt |
-| **Übersicht** | Zahlen (auch Olympia-, Bundes- und Landesstützpunkte), filterbar nach Sportart; Befüllung der Angaben nach Abschnitten (Felder nur unter den Anlagen, für die sie gedacht sind), Kategorien und Typen, je Kreis |
+| **Übersicht** | Zahlen (auch Olympia-, Bundes- und Landesstützpunkte), filterbar nach Sportart; Befüllung der Angaben von Sportstätten, Sportanlagen, Sportkomplexen und Organisationen nach Abschnitten (Felder nur unter den Einträgen, für die sie gedacht sind), Kategorien und Typen, je Kreis |
 | **Vorschlag** | Formular für neue Sportstätten, Änderungen, Organisationen, Sportkomplexe und Stützpunkte, weiter zu LimeSurvey |
 | **Analysen** | der ALKIS-Abgleich; lädt erst beim Öffnen |
 

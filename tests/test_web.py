@@ -18,6 +18,7 @@ from pathlib import Path
 import pytest
 
 sync_api = pytest.importorskip("playwright.sync_api")
+expect = sync_api.expect  # wartet, bis die Bedingung gilt (statt fester Pausen)
 
 from sportstaettenatlas import modell
 from sportstaettenatlas.bestand import gebiete as gb
@@ -204,8 +205,29 @@ def _gesendet(page) -> dict:
 
 
 def _senden(page) -> None:
-    page.click(".knopf-gross")
-    page.wait_for_timeout(100)
+    page.click(".knopf-gross")  # prüft und übergibt ohne Verzögerung
+
+
+def _maus_bis(page, wohin, bedingung: str, versuche: int = 40) -> None:
+    """Maus nach wohin bewegen, bis die Bedingung gilt. Leaflets Canvas übergeht Bewegungen
+    in den 32 ms nach einem Darüberfahren; darum wird die Bewegung wiederholt (1 px daneben)."""
+    x, y = wohin
+    for i in range(versuche):
+        page.mouse.move(x + i % 2, y)
+        try:
+            page.wait_for_function(bedingung, timeout=100)
+            return
+        except sync_api.TimeoutError:
+            pass
+    assert page.evaluate(bedingung), bedingung
+
+
+def _karte_ruhig(page) -> None:
+    """Bis die Karte nicht mehr zoomt oder schiebt und die Haufen neu gezeichnet sind."""
+    page.wait_for_function(
+        "!karte._animatingZoom && !(karte._panAnim && karte._panAnim._inProgress)"
+    )
+    page.evaluate("new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)))")
 
 
 # --- Ansichten -----------------------------------------------------------------------------
@@ -274,7 +296,9 @@ def test_uebersicht_zeigt_bestand_und_befuellung(oeffne):
         kacheln["Landesstützpunkte"],
     ) == ("0", "1", "1")
     page.select_option("[data-u-sport]", "Tennis")
-    page.wait_for_timeout(100)
+    expect(
+        page.locator("#seite-uebersicht .kachel:has(.label:text-is('Sportstätten')) .wert")
+    ).to_have_text("1")
     kacheln = dict(
         zip(
             page.locator("#seite-uebersicht .kachel .label").all_inner_texts(),
@@ -283,6 +307,16 @@ def test_uebersicht_zeigt_bestand_und_befuellung(oeffne):
     )
     assert kacheln["Sportstätten"] == "1" and kacheln["Bundesstützpunkte"] == "1"
     assert kacheln["Landesstützpunkte"] == "0"
+    # Befüllung auch der Sportkomplexe und Organisationen (mit Sportart: nur die der Auswahl)
+    assert kacheln["Angaben Sportkomplexe"] == "20 %"  # nur der Name von fünf Feldern
+    org = page.locator(".kachel:has(.label:text-is('Angaben Organisationen')) .zusatz")
+    assert org.inner_text() == "keine zu dieser Auswahl"  # die Tennisanlage ohne Betreiber
+    page.select_option("[data-u-sport]", "Fußball")
+    expect(org).to_contain_text("bei 1 Organisation,")  # TuS Berg betreibt den Sportplatz
+    page.select_option("[data-u-sport]", "")
+    expect(org).to_contain_text("bei 4 Organisationen")  # das ganze Verzeichnis
+    h3 = page.locator("#seite-uebersicht section.teil:nth-of-type(2) h3").all_inner_texts()
+    assert h3[:4] == ["Sportstätten", "Sportanlagen", "Sportkomplexe", "Organisationen"]
     # auch ohne Sportkomplexe: Auswahl in der Liste und Kachel bleiben
     page.evaluate("SPORTKOMPLEXE.clear()")
     assert 'data-f="komplex"' in page.evaluate("komplexAuswahlHtml('')")
@@ -292,7 +326,7 @@ def test_liste_filtert_nach_sportart(oeffne):
     page = oeffne("#ansicht=liste")
     assert page.locator("table.liste tr.zeile").count() == 3
     page.select_option('[data-f="sportart"]', "Tennis")
-    page.wait_for_timeout(100)
+    expect(page.locator("table.liste tr.zeile")).to_have_count(1)
     zeilen = page.locator("table.liste tr.zeile").all_inner_texts()
     assert len(zeilen) == 1 and "Tennisanlage Bergen" in zeilen[0]
 
@@ -300,10 +334,9 @@ def test_liste_filtert_nach_sportart(oeffne):
 def test_nach_sportkomplex_filtern(oeffne):
     page = oeffne("#ansicht=liste")
     page.select_option('[data-f="komplex"]', "*")
-    page.wait_for_timeout(100)
-    assert page.locator("table.liste tr.zeile").count() == 2
+    expect(page.locator("table.liste tr.zeile")).to_have_count(2)
     page.select_option('[data-f="komplex"]', KOMPLEX["id"])
-    page.wait_for_timeout(100)
+    expect(page.locator("table.liste tr.zeile")).to_have_count(2)
     namen = page.locator("table.liste tr.zeile td:first-child").all_inner_texts()
     assert sorted(namen) == ["Sportplatz Berg", "Tennisanlage Bergen"]
     assert "komplex=dddddddd" in page.evaluate("location.hash")
@@ -356,8 +389,7 @@ def test_stuetzpunkt_vorschlagen(oeffne):
     page = oeffne("#ansicht=vorschlag")
     # von einer Sportstätte mit genau einem Stützpunkt: dieser zum Ändern
     page.evaluate(f"ANSICHTEN.vorschlag.stuetzpunktVon('{T3}')")
-    page.wait_for_timeout(200)
-    assert page.locator("#v-teil-stp").is_visible()
+    expect(page.locator("#v-teil-stp")).to_be_visible()
     assert page.input_value("input[name='sp.name']") == "Landesstützpunkt Fußball Tal"
     page.fill("input[name='sp.gueltig_bis']", "2030-12-31")
     _senden(page)
@@ -369,7 +401,6 @@ def test_stuetzpunkt_vorschlagen(oeffne):
     # neu: Sportkomplex statt einzelner Sportstätten
     page.evaluate("window.__url = null")
     page.evaluate("ANSICHTEN.vorschlag.stuetzpunkt(null)")
-    page.wait_for_timeout(200)
     page.fill("input[name='sp.name']", "Olympiastützpunkt Berg")
     page.select_option("select[name='sp.art']", "Olympiastützpunkt")
     _senden(page)
@@ -392,7 +423,6 @@ def test_stuetzpunkt_vorschlagen(oeffne):
 def test_neue_sportstaette(oeffne):
     page = oeffne("#ansicht=vorschlag")
     page.evaluate("ANSICHTEN.vorschlag.neu({ lage: { lat: 50.0012, lon: 7.0034 } })")
-    page.wait_for_timeout(200)
     page.fill("input[name=name]", "Neue Halle")
     page.select_option("select[name=kategorie]", "Sporthalle")
     page.click("#v-anlage-dazu")
@@ -407,7 +437,6 @@ def test_neue_sportstaette(oeffne):
 def test_angaben_aendern(oeffne):
     page = oeffne("#ansicht=vorschlag")
     page.evaluate(f"ANSICHTEN.vorschlag.bearbeite('{SID}')")
-    page.wait_for_timeout(200)
     page.fill("input[name=zuschauerplaetze]", "120")
     _senden(page)
     d = _gesendet(page)
@@ -419,7 +448,6 @@ def test_angaben_aendern(oeffne):
 def test_sportanlagen_aendern(oeffne):
     page = oeffne("#ansicht=vorschlag")
     page.evaluate(f"ANSICHTEN.vorschlag.bearbeite('{SID}', 'anlagen')")
-    page.wait_for_timeout(200)
     page.click("#v-anlage-dazu")
     page.locator("#v-anlagen tr.anlage").last.locator("input[data-f=typ]").fill("Kleinspielfeld")
     _senden(page)
@@ -433,8 +461,7 @@ def test_sportanlagen_aendern(oeffne):
 def test_angaben_und_anlagen_zusammen(oeffne):
     page = oeffne("#ansicht=vorschlag")
     page.evaluate(f"ANSICHTEN.vorschlag.bearbeite('{SID}')")
-    page.wait_for_timeout(200)
-    assert page.locator("#v-teil-anlagen").is_visible()
+    expect(page.locator("#v-teil-anlagen")).to_be_visible()
     page.fill("input[name=zuschauerplaetze]", "120")
     page.locator("#v-anlagen tr.anlage").last.locator(".weg").click()  # Rundlaufbahn entfernen
     _senden(page)
@@ -447,14 +474,14 @@ def test_angaben_und_anlagen_zusammen(oeffne):
 def test_neue_organisation_mit_warnung(oeffne):
     page = oeffne("#ansicht=vorschlag")
     page.evaluate("ANSICHTEN.vorschlag.neu({ lage: { lat: 50.0012, lon: 7.0034 } })")
-    page.wait_for_timeout(200)
     page.fill("input[name=name]", "Neue Halle")
     page.select_option("select[name=kategorie]", "Sporthalle")
     page.fill("input[name=betreiber]", "TuS Berg 1")
     page.fill("input[name=eigentuemer]", "Stadtwerke Tal")
-    page.wait_for_timeout(400)
     neu = page.locator("#v-teil-neue-orgs")
-    assert neu.is_visible() and "TuS Berg 1" in neu.inner_text()
+    expect(neu).to_be_visible()
+    expect(neu).to_contain_text("TuS Berg 1")
+    expect(page.locator('.neue-org[data-k="stadtwerke tal"]')).to_be_visible()
     assert "Mögliche Doppelung" in page.locator('.neue-org[data-k="tus berg 1"]').inner_text()
     assert (
         "Mögliche Doppelung" not in page.locator('.neue-org[data-k="stadtwerke tal"]').inner_text()
@@ -484,7 +511,6 @@ def test_neue_organisation_mit_warnung(oeffne):
 def test_neuer_sportkomplex_bei_sportstaette(oeffne):
     page = oeffne("#ansicht=vorschlag")
     page.evaluate(f"ANSICHTEN.vorschlag.bearbeite('{T3}')")
-    page.wait_for_timeout(200)
     page.select_option("select[name=sportkomplex]", "__neu")
     page.fill("input[name='nk.name']", "Sportpark Tal")
     _senden(page)
@@ -502,21 +528,18 @@ def test_neuer_sportkomplex_bei_sportstaette(oeffne):
 def test_neue_sportstaette_im_sportkomplex(oeffne):
     page = oeffne("#ansicht=vorschlag")
     page.evaluate(f"ANSICHTEN.vorschlag.komplexVon('{T3}')")
-    page.wait_for_timeout(200)
     page.fill("input[name='ko.name']", "Sportpark Tal")
     page.click('[data-neue-staette="sportkomplex"]')
-    page.wait_for_timeout(200)
-    assert page.locator("#v-unter").is_visible() and page.locator("#v-teil-komplex").is_hidden()
+    expect(page.locator("#v-unter")).to_be_visible()
+    expect(page.locator("#v-teil-komplex")).to_be_hidden()
     page.fill("input[name=name]", "Halle Tal")
     page.select_option("select[name=kategorie]", "Sporthalle")
     page.evaluate("ANSICHTEN.vorschlag.lage(50.2051, 7.8031)")
     page.fill("input[name=betreiber]", "Hallenverein Tal")
     page.click("#v-anlage-dazu")
     page.locator("#v-anlagen tr.anlage").last.locator("input[data-f=typ]").fill("Einfeldhalle")
-    page.wait_for_timeout(400)
     _senden(page)  # übernimmt die Sportstätte in den Komplex
-    page.wait_for_timeout(200)
-    assert page.locator("#v-teil-komplex").is_visible()
+    expect(page.locator("#v-teil-komplex")).to_be_visible()
     assert page.input_value("input[name='ko.name']") == "Sportpark Tal"
     assert "Halle Tal (neu)" in page.inner_text("#v-ko-staetten")
     assert "Hallenverein Tal" in page.inner_text("#v-teil-neue-orgs")
@@ -533,7 +556,6 @@ def test_neue_sportstaette_im_sportkomplex(oeffne):
 def test_organisation_aendern(oeffne):
     page = oeffne("#ansicht=vorschlag")
     page.evaluate("ANSICHTEN.vorschlag.organisation('TuS Berg')")
-    page.wait_for_timeout(200)
     page.fill("input[name='org.website']", "https://tus-berg.example")
     _senden(page)
     d = _gesendet(page)
@@ -546,9 +568,8 @@ def test_sportkomplex_vorschlagen(oeffne):
     page = oeffne("#ansicht=vorschlag")
     # neu, von einer Sportstätte ohne Komplex aus: sie ist vorbelegt, eine zweite dazu suchen
     page.evaluate("ANSICHTEN.vorschlag.komplexVon('33333333-3333-4333-8333-333333333333')")
-    page.wait_for_timeout(200)
-    assert page.locator("#v-teil-komplex").is_visible()
-    assert page.locator("#v-teil-staette").is_hidden()
+    expect(page.locator("#v-teil-komplex")).to_be_visible()
+    expect(page.locator("#v-teil-staette")).to_be_hidden()
     page.fill("input[name='ko.name']", "Sportpark Tal")
     _senden(page)
     assert "mindestens zwei" in page.inner_text("#v-fehler")
@@ -565,7 +586,6 @@ def test_sportkomplex_vorschlagen(oeffne):
     # vorhandenen ändern: die Sportstätten sind vorbelegt
     page.evaluate("window.__url = null")
     page.evaluate(f"ANSICHTEN.vorschlag.komplex('{KOMPLEX['id']}')")
-    page.wait_for_timeout(200)
     assert page.input_value("input[name='ko.name']") == "Sportzentrum Berg"
     page.fill("input[name='ko.adresse.ort']", "Berg")
     _senden(page)
@@ -593,7 +613,6 @@ def test_sportkomplex_vorschlagen(oeffne):
 def test_formular_lehnt_ab_was_das_modell_ablehnt(oeffne, feld, wert):
     page = oeffne("#ansicht=vorschlag")
     page.evaluate("ANSICHTEN.vorschlag.neu({ lage: { lat: 50.0012, lon: 7.0034 } })")
-    page.wait_for_timeout(200)
     page.fill("input[name=name]", "Neue Halle")
     page.select_option("select[name=kategorie]", "Sporthalle")
     page.fill(f"input[name='{feld}']", wert)
@@ -608,7 +627,6 @@ def test_formular_lehnt_ab_was_das_modell_ablehnt(oeffne, feld, wert):
 def test_organisationssuche_rangfolge_und_auswahl(oeffne):
     page = oeffne("#ansicht=vorschlag")
     page.evaluate("ANSICHTEN.vorschlag.neu({ lage: { lat: 50.0012, lon: 7.0034 } })")
-    page.wait_for_timeout(200)
     liste = page.locator("input[name=betreiber] + ul.org-vorschlaege li")
 
     page.type("input[name=betreiber]", "berg")
@@ -644,12 +662,12 @@ def test_organisationen_auch_ohne_sportstaette(oeffne):
 
 def test_haufen_je_kreis_und_gemeinde(oeffne):
     page = oeffne("")
-    page.wait_for_timeout(500)  # erst die Startansicht (passt die Karte an den Bestand an)
-    assert page.locator(".leaflet-maske-pane path").count() == 2  # außerhalb grau, Landesgrenze
+    _karte_ruhig(page)  # erst die Startansicht (passt die Karte an den Bestand an)
+    expect(page.locator(".leaflet-maske-pane path")).to_have_count(2)  # außen grau, Grenze
 
     def zoom(z):
         page.evaluate(f"void karte.setView([50.3, 7.7], {z}, {{ animate: false }})")
-        page.wait_for_timeout(300)
+        _karte_ruhig(page)
 
     zoom(8)  # Kreise
     kreise = page.locator(".haufen.kreis")
@@ -660,7 +678,8 @@ def test_haufen_je_kreis_und_gemeinde(oeffne):
     page.mouse.move(5, 300)
     page.wait_for_function("hoverEbene.getLayers().length === 0")
     kreise.click()  # mindestens bis zu den Gemeinden
-    page.wait_for_timeout(400)
+    page.wait_for_function("karte.getZoom() >= 10")
+    _karte_ruhig(page)
     assert 10 <= page.evaluate("karte.getZoom()") < 13
 
     zoom(11)  # Gemeinden
@@ -673,21 +692,19 @@ def test_haufen_je_kreis_und_gemeinde(oeffne):
     # nur noch zwei Sportstätten (Filter Sportkomplex): zu wenige für einen Haufen, also Punkte
     page.locator("details:has(#b-ko-n) summary").click()
     page.locator('input[data-ko="*"]').check()
-    page.wait_for_timeout(300)
-    assert page.locator(".haufen").count() == 0
+    expect(page.locator(".haufen")).to_have_count(0)
     page.locator('input[data-ko=""]').check()
-    page.wait_for_timeout(300)
     page.locator(".haufen.gemeinde").click()  # bis zu den Sportstätten
-    page.wait_for_timeout(400)
-    assert page.evaluate("karte.getZoom()") >= 13
-    assert page.locator(".haufen").count() == 0
+    page.wait_for_function("karte.getZoom() >= 13")
+    _karte_ruhig(page)
+    expect(page.locator(".haufen")).to_have_count(0)
 
 
 def test_punkt_beim_darueberfahren(oeffne):
     page = oeffne("")
-    page.wait_for_timeout(500)
+    _karte_ruhig(page)
     page.evaluate("void karte.setView([50.3512, 7.5938], 15, { animate: false })")
-    page.wait_for_timeout(300)
+    _karte_ruhig(page)
     radius = (
         "ANSICHTEN.bestand.eintraege.find(e => e.p.name === 'Sportplatz Berg').layer.getRadius()"
     )
@@ -696,12 +713,8 @@ def test_punkt_beim_darueberfahren(oeffne):
         "(() => { const p = karte.latLngToContainerPoint([50.3512, 7.5938]),"
         " r = karte.getContainer().getBoundingClientRect(); return [r.x + p.x, r.y + p.y]; })()"
     )
-    page.mouse.move(*mitte)
-    page.wait_for_timeout(200)
-    assert page.evaluate(radius) == 7  # größer, mit hellem Ring
-    page.mouse.move(5, 300)
-    page.wait_for_timeout(200)
-    assert page.evaluate(radius) == 4
+    _maus_bis(page, mitte, f"{radius} === 7")  # größer, mit hellem Ring
+    _maus_bis(page, (5, 300), f"{radius} === 4")
 
 
 def test_regeln_wie_in_python(oeffne):

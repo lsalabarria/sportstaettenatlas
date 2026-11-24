@@ -436,16 +436,39 @@ function feldTests(modell, gruppe) {
   const out = [];
   for (const [k, p, , t] of modellFelder(modell)) {
     if (p.uebersicht === false) continue;
-    if (t.ref) out.push(...feldTests(t.ref, p.gruppe));
-    else out.push({ titel: p.title || k, gruppe: gruppe || p.gruppe || "Weitere Angaben",
+    if (t.ref) out.push(...feldTests(t.ref, p.gruppe || gruppe));
+    else out.push({ k, titel: p.title || k, gruppe: gruppe || p.gruppe || "Weitere Angaben",
       fuer: p.fuer ? x => passtFuer(p, x.typ) : null,
       test: x => !leer(x[k]) && !(typeof x[k] === "object" && !Array.isArray(x[k]) && !Object.keys(x[k]).length) });
   }
   return out;
 }
-let _felder, _anlageFelder;
+let _felder, _anlageFelder, _orgFelder, _komplexFelder;
 const FELDER_STAETTE = () => _felder ??= feldTests("Sportstaette");
 const FELDER_ANLAGE = () => _anlageFelder ??= feldTests("Sportanlage");
+// Regionalschlüssel nur bei Kommunen, Vereinsnummer im LSB nur bei Vereinen gedacht
+const FELDER_ORG = () => _orgFelder ??= feldTests("Organisation", "Angaben").map(f => {
+  const nur = { ars: "Kommune", lsb_nummer: "Verein" }[f.k];
+  return nur ? { ...f, fuer: o => (ATLAS().organisationstypen || {})[o.typ] === nur } : f;
+});
+const FELDER_KOMPLEX = () => _komplexFelder ??= feldTests("Sportkomplex", "Angaben");
+// Organisationen der Auswahl: ohne Gebiet und Sportart das ganze Verzeichnis; sonst die
+// Eigentümer, Betreiber und Nutzer der Sportstätten (und mit Gebiet die Kommunen darin)
+function orgsDerAuswahl(liste, alle) {
+  if (alle) return ORGANISATIONEN;
+  const out = new Set();
+  for (const e of liste) for (const n of [e.p.betreiber, e.p.eigentuemer, ...(e.p.nutzer || [])]) {
+    const o = !leer(n) && orgVon(n);
+    if (o) out.add(o);
+  }
+  if (GEBIET) for (const o of ORGANISATIONEN) if (o.ars && o.ars.startsWith(GEBIET.s)) out.add(o);
+  return [...out];
+}
+// Sportkomplex für die Befüllung: Angaben flach wie bei den Sportstätten (Adresse in Teilen)
+function komplexAngaben(id) {
+  const k = SPORTKOMPLEXE.get(id);
+  return k ? { name: k.name, ...(k.adresse || {}) } : null;
+}
 // Befüllung eines Feldes: [befüllt, gedacht für] – nur unter den Einträgen, für die es gedacht ist
 function befuellt(liste, f) {
   let ja = 0, n = 0;
@@ -563,18 +586,33 @@ function ansichtUebersicht(bestand) {
         e.anlagen.length >= 5 ? "5 und mehr" : String(e.anlagen.length)))).sort((a, b) => a[0].localeCompare(b[0])), 0, false)
       + `</div></div></section>`;
     // Teil 2: wie vollständig die Angaben sind
+    const komplexe = [...new Set(imKomplex.map(e => e.p.sportkomplex))].map(komplexAngaben).filter(Boolean);
+    const alleOrgs = !GEBIET && !sport, orgs = orgsDerAuswahl(liste, alleOrgs);
     h += `<section class="teil"><h2 class="teil-titel">Befüllung</h2>`
       + `<p class="unter">Wie vollständig die Angaben im Bestand sind: Anteil der befüllten Felder `
       + `des Datenmodells</p><div class="kacheln">`
       + kachel("Angaben Sportstätten", `${Math.round(100 * befuellung(liste))} %`, `befüllt, Durchschnitt über ${FELDER_STAETTE().length} Felder`)
       + kachel("Angaben Sportanlagen", `${Math.round(100 * anteil(anlagen, FELDER_ANLAGE()))} %`,
         `befüllt, Durchschnitt über die Felder, die zum Typ passen (bis ${FELDER_ANLAGE().length})`)
+      + kachel("Angaben Sportkomplexe", komplexe.length ? `${Math.round(100 * anteil(komplexe, FELDER_KOMPLEX()))} %` : "–",
+        komplexe.length ? `befüllt bei ${zahl(komplexe.length)} ${komplexe.length === 1 ? "Sportkomplex" : "Sportkomplexen"}, Durchschnitt über ${FELDER_KOMPLEX().length} Felder` : "keine eingetragen")
+      + kachel("Angaben Organisationen", orgs.length ? `${Math.round(100 * anteil(orgs, FELDER_ORG()))} %` : "–",
+        orgs.length ? `befüllt bei ${zahl(orgs.length)} ${orgs.length === 1 ? "Organisation" : "Organisationen"}, Durchschnitt über ${FELDER_ORG().length} Felder` : alleOrgs ? "keine im Verzeichnis" : "keine zu dieser Auswahl")
       + `</div><div class="spalten"><div><h3>Sportstätten</h3>`
       + befuellungNachGruppe("Sportstaette", liste.map(e => e.p), FELDER_STAETTE(), "Sportstätten")
       + `</div><div><h3>Sportanlagen</h3>`
       + `<div class="hinweis">Felder, die nur für bestimmte Sportanlagen gedacht sind (z. B. Becken für Bäder), `
       + `zählen nur unter diesen; die Zahl dahinter nennt, wie viele es sind.</div>`
       + befuellungNachGruppe("Sportanlage", anlagen, FELDER_ANLAGE(), "Sportanlagen")
+      + `</div></div><div class="spalten"><div><h3>Sportkomplexe</h3>`
+      + (komplexe.length ? `<div class="hinweis">Sportkomplexe mit mindestens einer Sportstätte der Auswahl</div>`
+        + befuellungNachGruppe("Sportkomplex", komplexe, FELDER_KOMPLEX(), "Sportkomplexe")
+        : `<div class="hinweis">Keine Sportkomplexe eingetragen.</div>`)
+      + `</div><div><h3>Organisationen</h3>`
+      + (orgs.length ? `<div class="hinweis">${alleOrgs ? "Alle im Verzeichnis der Organisationen"
+        : "Eigentümer, Betreiber und Nutzer der Sportstätten der Auswahl" + (GEBIET ? " und die Kommunen im Gebiet" : "")}</div>`
+        + befuellungNachGruppe("Organisation", orgs, FELDER_ORG(), "Organisationen")
+        : `<div class="hinweis">${alleOrgs ? "Keine Organisationen im Verzeichnis." : "Keine Organisationen zu dieser Auswahl."}</div>`)
       + `</div></div>`;
     // Teilgebiete: Befüllung je Kreis bzw. je Verbandsgemeinde/Gemeinde
     const ebene = !GEBIET ? "kreis" : GEBIET.e === "kreis" ? "vg" : GEBIET.e === "vg" ? "gemeinde" : null;

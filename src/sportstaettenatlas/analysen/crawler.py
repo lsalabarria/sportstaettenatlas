@@ -16,9 +16,14 @@ Name des Vereins (und sein Ort) steht. Vom Impressum wird nichts gespeichert, nu
 – keine Personen, Mail-Adressen, Telefonnummern.
 
 Ergebnis: results/vereinswebseiten.csv (id, name, typ, website, quelle, punkte, nachweis,
-orte), je Verein die besten Treffer zuerst. Nach dem Prüfen (passende Zeilen behalten, den
-Rest löschen) einlesen mit `sportstaettenatlas bestand --modus ergaenzen`; die Spalten
-quelle, punkte, nachweis und orte werden dabei ignoriert.
+orte), je Verein die besten Treffer zuerst. Daraus die eindeutigen sicheren Treffer (siehe
+`auswahl`) in results/vereinswebseiten_sicher.csv (id, name, typ, website), zum Einlesen:
+
+    uv run sportstaettenatlas bestand results/vereinswebseiten_sicher.csv --modus ergaenzen
+    uv run sportstaettenatlas crawler --nur-auswahl   # Auswahl neu, ohne neue Suche
+
+Die übrigen Zeilen von Hand prüfen (passende behalten, den Rest löschen) und ebenso
+einlesen; die Spalten quelle, punkte, nachweis und orte werden dabei ignoriert.
 
 Rücksicht: robots.txt wird beachtet, je Webseite höchstens eine Anfrage pro Sekunde (parallel
 nur über verschiedene Webseiten), User-Agent mit Kontakt aus SPORTSTAETTENATLAS_KONTAKT.
@@ -52,6 +57,8 @@ from ..hilfen import _ROH as KONTAKT_ROH
 from ..hilfen import ERGEBNISSE, KONTAKT, USER_AGENT
 
 ERGEBNIS = ERGEBNISSE / "vereinswebseiten.csv"
+SICHER = ERGEBNISSE / "vereinswebseiten_sicher.csv"
+SICHER_AB = 3  # Punkte für einen sicheren Treffer
 CACHE = ERGEBNISSE / "cache" / "crawler"
 OVERPASS = "https://overpass-api.de/api/interpreter"
 WIKIDATA = "https://query.wikidata.org/sparql"
@@ -603,6 +610,57 @@ def schreibe(treffer: list[Treffer], ziel: Path = ERGEBNIS) -> int:
     return len(zeilen)
 
 
+def _seite(url: str) -> str:
+    """Vergleichsschlüssel einer Webseite: Host ohne www, Pfad ohne / am Ende."""
+    u = urlparse(url)
+    return u.netloc.lower().removeprefix("www.") + u.path.rstrip("/").lower()
+
+
+def auswahl(zeilen: list[dict]) -> tuple[list[dict], Counter]:
+    """Sichere Treffer, die ohne Prüfung übernommen werden können: je Verein genau eine
+    Webseite mit mindestens SICHER_AB Punkten, und zwar
+    - die Startseite (ein Pfad wie /verein/tus.html ist oft eine Seite der Gemeinde),
+    - die kein anderer Verein als sicheren Treffer hat (z. B. Abteilungen eines Vereins, gleich
+      benannte Schützenbruderschaften),
+    - und keine zweite sichere Webseite daneben (z. B. tus-berg.de und tusberg.de).
+    Ergebnis: Zeilen (id, name, typ, website) und je Grund, wie viele Vereine wegfallen."""
+    sicher = [
+        z for z in zeilen
+        if int(z.get("punkte") or 0) >= SICHER_AB
+        and "soziales Netzwerk" not in z.get("nachweis", "")
+        and "robots.txt" not in z.get("nachweis", "")
+        and not _gesperrt(domain_von(z["website"]), SPERRLISTE | SOZIAL)
+    ]  # fmt: skip
+    vereine_je_seite: dict[str, set[str]] = defaultdict(set)
+    je_verein: dict[str, list[dict]] = defaultdict(list)
+    for z in sicher:
+        vereine_je_seite[_seite(z["website"])].add(z["id"])
+        je_verein[z["id"]].append(z)
+    out, weg = [], Counter()
+    for zs in je_verein.values():
+        seiten = {_seite(z["website"]) for z in zs}
+        if any(len(vereine_je_seite[s]) > 1 for s in seiten):
+            weg["Webseite auch bei einem anderen Verein"] += 1
+        elif len(seiten) > 1:
+            weg["mehrere sichere Webseiten"] += 1
+        elif urlparse(zs[0]["website"]).path.strip("/"):
+            weg["Unterseite statt Startseite"] += 1
+        else:
+            z = max(zs, key=lambda z: (int(z["punkte"]), z["website"].startswith("https")))
+            out.append({k: z[k] for k in ("id", "name", "typ", "website")})
+    return sorted(out, key=lambda z: (z["name"].lower(), z["id"])), weg
+
+
+def schreibe_auswahl(quelle: Path = ERGEBNIS, ziel: Path = SICHER) -> tuple[int, Counter]:
+    with quelle.open(newline="", encoding="utf-8") as f:
+        zeilen, weg = auswahl(list(csv.DictReader(f)))
+    with ziel.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, ["id", "name", "typ", "website"])
+        w.writeheader()
+        w.writerows(zeilen)
+    return len(zeilen), weg
+
+
 def argumente(p: argparse.ArgumentParser) -> None:
     """Optionen des Befehls `sportstaettenatlas crawler`."""
     p.add_argument("--daten", type=Path, default=Path("daten"))
@@ -616,9 +674,28 @@ def argumente(p: argparse.ArgumentParser) -> None:
     p.add_argument("--ohne-raten", action="store_true", help="keine Domains raten")
     p.add_argument("--neu", action="store_true", help="OSM und Wikidata neu abfragen (Cache)")
     p.add_argument("--ziel", type=Path, default=ERGEBNIS)
+    p.add_argument(
+        "--nur-auswahl",
+        action="store_true",
+        help=f"nicht suchen, nur aus --ziel die sicheren Treffer nach {SICHER.name} schreiben",
+    )
+
+
+def _melde_auswahl(quelle: Path) -> None:
+    ziel = quelle.with_name(quelle.stem + "_sicher.csv")
+    n, weg = schreibe_auswahl(quelle, ziel)
+    print(f"{ziel}: {n} Vereine mit eindeutigem sicherem Treffer (Startseite) zum Einlesen")
+    for grund, k in weg.most_common():
+        print(f"  nicht dabei, von Hand prüfen: {k}× {grund}")
+    print(f"  einlesen: uv run sportstaettenatlas bestand {ziel} --modus ergaenzen")
 
 
 def ausfuehren(a) -> int:
+    if a.nur_auswahl:
+        if not a.ziel.exists():
+            raise SystemExit(f"{a.ziel} fehlt – erst suchen (ohne --nur-auswahl)")
+        _melde_auswahl(a.ziel)
+        return 0
     if not KONTAKT:
         grund = "ungültig (nur ASCII-Zeichen)" if KONTAKT_ROH.strip() else "nicht gesetzt"
         print(
@@ -638,6 +715,7 @@ def ausfuehren(a) -> int:
     n = schreibe(treffer, a.ziel)
     print(zusammenfassung(treffer, len(vereine)))
     print(f"{a.ziel}: {n} Treffer zum Prüfen (ohne „weg“)")
+    _melde_auswahl(a.ziel)
     return 0
 
 

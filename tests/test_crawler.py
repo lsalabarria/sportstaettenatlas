@@ -230,3 +230,60 @@ def test_fortschritt_und_zusammenfassung(monkeypatch):
     assert text.splitlines()[-1] == (
         "Vereine: 5; mit sicherem Treffer (3–4 Punkte) 1, mit wahrscheinlichem (2 Punkte) 1, ohne 3"
     )
+
+
+def _z(i, website, punkte=3, nachweis="Name in Impressum"):
+    return {"id": i, "name": f"Verein {i}", "typ": "Sportverein im LSB RLP",
+            "website": website, "quelle": "domain geraten", "punkte": str(punkte),
+            "nachweis": nachweis, "orte": ""}  # fmt: skip
+
+
+def test_auswahl_nur_eindeutige_sichere_startseiten():
+    zeilen = [
+        _z("a", "https://tus-a.de/"),
+        _z("a", "http://www.tus-a.de"),  # dieselbe Seite: bleibt ein Treffer, https gewinnt
+        _z("a", "https://tusa.de/", punkte=2),  # nur wahrscheinlich: zählt nicht
+        _z("b", "https://sv-b.de/"),
+        _z("b", "https://svb.de/"),  # zwei sichere Seiten: von Hand
+        _z("c", "https://schuetzen.de/"),
+        _z("d", "https://www.schuetzen.de"),  # zwei Vereine, eine Seite: von Hand
+        _z("e", "https://gemeinde-e.de/vereine/tus.html"),  # Unterseite: von Hand
+        _z("f", "https://f.example/", punkte=0),
+        _z("g", "https://facebook.com/tusg", nachweis="soziales Netzwerk"),
+    ]
+    sicher, weg = crawler.auswahl(zeilen)
+    assert sicher == [
+        {
+            "id": "a",
+            "name": "Verein a",
+            "typ": "Sportverein im LSB RLP",
+            "website": "https://tus-a.de/",
+        }
+    ]
+    assert weg == {
+        "mehrere sichere Webseiten": 1,
+        "Webseite auch bei einem anderen Verein": 2,
+        "Unterseite statt Startseite": 1,
+    }
+
+
+def test_auswahl_einlesen_fuellt_nur_die_webseite(tmp_path):
+    """Die Auswahl lässt sich mit `bestand --modus ergaenzen` einlesen: die Organisation
+    bekommt ihre Webseite, sonst ändert sich nichts und nichts kommt neu dazu."""
+    from sportstaettenatlas.bestand import lies_organisationen, schreibe_organisationen
+    from sportstaettenatlas.pflege.einlesen import lies_csv
+
+    _daten(tmp_path)
+    quelle = tmp_path / "vereinswebseiten.csv"
+    with quelle.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, list(_z("o1", "").keys()))
+        w.writeheader()
+        w.writerow({**_z("o1", "https://tus-berg.de/"), "name": "TuS Berg 1926 e.V."})
+    ziel = tmp_path / "sicher.csv"
+    assert crawler.schreibe_auswahl(quelle, ziel)[0] == 1
+    datensaetze, bericht = lies_csv(ziel)
+    assert bericht.art == "organisationen"
+    e = schreibe_organisationen(datensaetze, tmp_path, "ergaenzen")
+    assert (e.neu, e.aktualisiert) == (0, 1)
+    o1 = next(o for o in lies_organisationen(tmp_path) if o["id"] == "o1")
+    assert o1["website"] == "https://tus-berg.de/" and o1["name"] == "TuS Berg 1926 e.V."
