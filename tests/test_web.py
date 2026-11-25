@@ -164,7 +164,14 @@ def url(tmp_path_factory):
 def browser():
     with sync_api.sync_playwright() as p:
         try:
-            b = p.chromium.launch()
+            # Kein Netz außer dem Testserver: Namen anderer Hosts lösen nicht auf. Das greift auch
+            # dort, wo die Sperre über route() eine Anfrage nicht abfängt (Kacheln von basemap.de)
+            b = p.chromium.launch(
+                args=[
+                    "--no-proxy-server",
+                    "--host-resolver-rules=MAP * ~NOTFOUND, EXCLUDE 127.0.0.1",
+                ]
+            )
         except Exception as exc:  # noqa: BLE001 – Chromium nicht installiert
             pytest.skip(
                 f"Chromium nicht verfügbar ({exc.__class__.__name__}): playwright install chromium"
@@ -188,8 +195,36 @@ def oeffne(browser, url):
             "window.__url = null; window.open = u => { window.__url = u; };"
             "Element.prototype.scrollIntoView = function () {};"
         )
-        page.goto(url + hash_)
-        page.wait_for_selector("#laden", state="hidden", timeout=30_000)
+        # Was beim Laden schiefgeht (Konsole, fehlgeschlagene oder fehlende eigene Dateien),
+        # steht in der Meldung, falls die Seite nicht fertig wird
+        meldungen: list[str] = []
+        page.on(
+            "console",
+            lambda m: (
+                meldungen.append(f"Konsole {m.type}: {m.text}")
+                if m.type in ("error", "warning")
+                else None
+            ),
+        )
+        page.on(
+            "requestfailed",
+            lambda r: (
+                None
+                if r.url.startswith("https://")  # absichtlich gesperrt (Kacheln, Dienste)
+                else meldungen.append(f"fehlgeschlagen: {r.url} ({r.failure})")
+            ),
+        )
+        page.on(
+            "response",
+            lambda r: meldungen.append(f"HTTP {r.status}: {r.url}") if r.status >= 400 else None,
+        )
+        # nicht auf „load“ warten: das hängt an Bildern und Kacheln; fertig ist die Seite,
+        # wenn #laden verschwindet
+        page.goto(url + hash_, wait_until="domcontentloaded")
+        try:
+            page.wait_for_selector("#laden", state="hidden", timeout=30_000)
+        except sync_api.TimeoutError:
+            pytest.fail("Seite nicht fertig geladen:\n" + "\n".join([*meldungen, *fehler]))
         page.evaluate(_ALLE_EXPORTE)
         return page
 
