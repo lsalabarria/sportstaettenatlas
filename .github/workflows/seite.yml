@@ -20,7 +20,7 @@ jobs:
       - uses: astral-sh/setup-uv@v6
         with:
           enable-cache: true
-      - run: uv sync
+      - run: uv sync --locked  # bricht ab, wenn uv.lock nicht zu pyproject.toml passt
       - name: Stil (ruff)
         run: |
           uv run ruff check
@@ -47,7 +47,7 @@ jobs:
       - uses: astral-sh/setup-uv@v6
         with:
           enable-cache: true
-      - run: uv sync --no-dev
+      - run: uv sync --locked --no-dev
       # Verwaltungsgebiete (VG250) nicht bei jedem Lauf neu beim BKG laden
       - uses: actions/cache@v4
         with:

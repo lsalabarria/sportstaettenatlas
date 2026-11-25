@@ -368,7 +368,7 @@ def test_diagramm_zeigt_felder_je_typ(tmp_path, monkeypatch):
         return d
 
     monkeypatch.setitem(sys.modules, "erdantic", types.SimpleNamespace(create=create))
-    assert modell.zeichne(tmp_path / "d.svg") and gezeichnet["out"] == tmp_path / "d.svg"
+    assert modell.zeichne(tmp_path / "d.svg") is None and gezeichnet["out"] == tmp_path / "d.svg"
     assert anlage.fields["trennvorhang"].type_name == "Optional[float] · nur Bühne"
     assert anlage.fields["bezeichnung"].type_name == "Optional[float]"  # für alle Typen
 

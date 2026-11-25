@@ -69,6 +69,9 @@ sudo apt install graphviz graphviz-dev
 uv sync --extra doku
 ```
 
+`uv sync` gleicht die Umgebung genau an: Ohne `--extra doku` entfernt es erdantic wieder.
+Wer das Diagramm zeichnet, nimmt also immer `uv sync --extra doku`.
+
 ## Befehle
 
 Alle mit `uv run sportstaettenatlas …`; `--help` zeigt die Optionen.

@@ -215,13 +215,14 @@ def alten_block_ersetzen(readme: Path) -> bool:
     return True
 
 
-def zeichne(ziel: Path) -> bool:
-    """Diagramm mit erdantic (braucht Graphviz). False, wenn erdantic fehlt. Felder der
-    Sportanlage, die nur zu bestimmten Anlagentypen gehören, tragen „· nur …“ hinter ihrem Typ."""
+def zeichne(ziel: Path) -> str | None:
+    """Diagramm mit erdantic (braucht Graphviz). Liefert None oder, wenn erdantic nicht lädt,
+    den Grund. Felder der Sportanlage, die nur zu bestimmten Anlagentypen gehören, tragen
+    „· nur …“ hinter ihrem Typ."""
     try:
         import erdantic as erd
-    except ImportError:
-        return False
+    except ImportError as exc:  # erdantic fehlt oder pygraphviz lädt nicht (Graphviz fehlt)
+        return f"{type(exc).__name__}: {exc}"
     diagramm = erd.create(Vorschlag)
     try:  # bei der Sportanlage: hinter dem Typ eines Feldes, für welche Anlagentypen es ist
         for m in diagramm.models.values():
@@ -232,7 +233,7 @@ def zeichne(ziel: Path) -> bool:
     except (AttributeError, TypeError):  # andere Version von erdantic: ohne diese Angabe
         pass
     diagramm.draw(out=ziel)
-    return True
+    return None
 
 
 def nur_fuer(typen: list[str], hoechstens: int = 48) -> str:
@@ -252,11 +253,11 @@ def schreibe_doku(ordner: Path) -> list[str]:
         hinweise.append(f"{ziel}/{DATENMODELL_MD}: Datenmodell aktualisiert")
     if alten_block_ersetzen(ordner / "README.md"):
         hinweise.append(f"{ordner}/README.md: erzeugter Teil durch Verweis ersetzt")
-    if zeichne(ziel / DIAGRAMM):
+    if (grund := zeichne(ziel / DIAGRAMM)) is None:
         hinweise.append(f"{ziel}/{DIAGRAMM} geschrieben")
     else:
         hinweise.append(
-            "Diagramm nicht erzeugt: erdantic fehlt (sudo apt install graphviz graphviz-dev; "
-            "uv sync --extra doku)"
+            f"Diagramm nicht erzeugt ({grund}). Nötig: sudo apt install graphviz graphviz-dev "
+            "und uv sync --extra doku – ein uv sync ohne --extra doku entfernt erdantic wieder"
         )
     return hinweise
